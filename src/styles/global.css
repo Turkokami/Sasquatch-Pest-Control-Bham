@@ -783,6 +783,100 @@ section[data-boilerplate]:not(.cta) > h2 {
   }
 }
 
+/* -------------------------------------------- §13a  mobile action bar */
+
+/* The fixed call/form bar at the foot of a phone screen —
+   src/components/MobileActionBar.astro, which carries the reasoning for
+   having it at all. Two rules decide everything here: it is a PHONE control,
+   and it must never cover the last line of the page.
+
+   Hidden by default and revealed below 48rem, rather than the reverse. A
+   fixed bar that exists at every width and is switched off at the top is one
+   forgotten media query away from sitting across a desktop footer; this way
+   the default state is the safe one. */
+.actionbar {
+  display: none;
+}
+
+@media (max-width: 47.99rem) {
+  .actionbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40; /* above .phonebar's 30 — this one is the last word */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px; /* the seam between the two buttons, drawn by the bar's own ground */
+    background: var(--inv-rule-2);
+    border-top: 2px solid var(--inv-marker);
+    /* The home indicator on a modern phone sits over the bottom of the
+       viewport. Without this the second row of pixels is under it and the
+       buttons feel short; with it the bar grows only on hardware that has
+       one. */
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+
+  .actionbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 3rem of text box plus the padding clears the 44px touch target every
+       accessibility guideline asks for, at every font size the site ships. */
+    min-height: 3rem;
+    padding: 0.75rem 0.5rem;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* CALL GETS THE BRAND SOLID. Same lime-on-near-black as .btn in §10, and
+     the same reasoning: this is the one place the acid green is used at size,
+     it is a button, and it is the action this trade actually converts on. */
+  .actionbar-call {
+    background: var(--btn-bg);
+    color: var(--btn-ink);
+  }
+  .actionbar-call:hover,
+  .actionbar-call:active {
+    background: var(--btn-bg-hover);
+    color: var(--btn-ink);
+  }
+
+  /* The form is the alternative, so it is the quieter half — the inverted
+     ground with the marker's ink, which reads as a second option rather than
+     as a competing primary. */
+  .actionbar-form {
+    background: var(--inv-bg);
+    color: var(--inv-marker);
+  }
+  .actionbar-form:hover,
+  .actionbar-form:active {
+    background: var(--inv-well);
+    color: var(--inv-link-hover);
+  }
+
+  /* THE CLEARANCE, and it is the half of this that is easy to forget. A
+     fixed bar is out of flow, so without this it lands on top of the last
+     rows of the footer — the license numbers and the copyright line — on
+     every page. Two button-heights plus the safe-area inset, applied to the
+     footer rather than to body so it cannot interact with the sticky top
+     bar's layout. */
+  footer.site {
+    padding-bottom: calc(4.5rem + env(safe-area-inset-bottom, 0));
+  }
+}
+
+/* §23 is a rule about paper and a floating button is not a thing paper has.
+   Stated here as well as there so deleting one does not silently print it. */
+@media print {
+  .actionbar {
+    display: none;
+  }
+}
+
 /* ----------------------------------------------------------- §14  header */
 
 header.site {

@@ -6,40 +6,25 @@
  *
  *  `market` names the page's own market so the CTA is not generic. */
 import { business, isReady } from '../data/business';
-import LeadForm from './LeadForm.astro';
+import { freeInspectionForSlug, offerLabel } from '../lib/offer';
 
 interface Props { market?: string; service?: string; serviceSlug?: string }
 const { market = 'Whatcom County', service, serviceSlug } = Astro.props;
 
-/* Free inspection everywhere EXCEPT the enumerated exceptions (bed bugs carry
-   a paid verification visit). The exception list lives in business.ts so a
-   bulk copy edit can never silently apply the wrong policy — Keystone Part 14.
+/* THE POLICY AND THE WORDING BOTH MOVED to src/lib/offer.ts, because the
+   sticky mobile action bar now makes the same offer and two components
+   deciding it separately is exactly the duplication Keystone Part 14 records
+   as the most expensive mistake on a prior build. The exception list still
+   lives in business.ts; offer.ts reads it. Nothing about which pages get a
+   free offer changed — only where the question is answered.
 
-   This is a general pre-service assessment, NOT a WSDA structural pest /
-   wood-destroying-organism inspection, which stays gated on the separate
-   inspector credential. */
-const freeInspection =
-  business.freeInspection.default &&
-  !(serviceSlug && business.freeInspection.exceptions.includes(serviceSlug));
-
-/* WORDING, and it is deliberate: "free visit", not "free inspection".
-   The offer itself is unchanged — we come out and look, at no charge. What
-   changed is the noun.
-
-   Two reasons, and the second decided it. First, "inspection" is a regulated
-   term in this industry, and the company holds treatment licenses rather than
-   an inspector credential; the one sentence that renders on every page is the
-   loudest possible place to use a word we would rather not lean on. Second,
-   this CTA renders at the foot of pages whose whole compliance posture is
-   that we do not inspect — the Pacific dampwood termite profile states in its
-   body that we do not issue findings, and the footer was then offering an
-   inspection. No page could opt out, because the component takes no prop for
-   it, and adding one would have put the policy in two places, which is the
-   defect this codebase keeps hitting.
-
-   This is a wording change to owner-confirmed policy and the owner should
-   confirm it. Reverting is this one line. */
-const offer = freeInspection ? 'Book a free visit' : 'Get a free estimate';
+   The label reads "Request a free inspection" as of 2 Sep 2026. The previous
+   "Book a free visit" was a cautious softening whose own comment said the
+   owner should confirm it and that reverting was one line; the owner asked
+   for inspection wording and this is that line. It is permitted copy: see the
+   note above INSPECTION_CLAIMS in src/lib/seo.ts, which excludes a general
+   free inspection offer from the regulated terms on purpose. */
+const offer = offerLabel(freeInspectionForSlug(serviceSlug));
 ---
 <section class="cta" data-boilerplate>
   <h2>{service ? `${service} in ${market}?` : `Pest problem in ${market}?`}</h2>
@@ -51,16 +36,4 @@ const offer = freeInspection ? 'Book a free visit' : 'Get a free estimate';
     <a class="btn" href={`tel:${business.phoneE164}`}>{offer} — {business.phone}</a>
   </p>
 
-  {/* THE LEAD FORM, ON EVERY PAGE, and this component is why it is one edit.
-      The CTA was already the sitewide vehicle — 18 route files include it and
-      that covers all 207 pages — so hanging the form here spreads it without
-      touching a single page body. The phone link above stays the first thing
-      offered: this trade is a pest problem, people call, and the form is for
-      the reader who is browsing at 11pm and will not.
-
-      LeadForm's root is an <aside>, deliberately. This is a <section
-      data-boilerplate> and the harness's strip is non-greedy — a nested
-      <section> here would leak the tail of this CTA into the word count on
-      every page. See the note in LeadForm.astro. */}
-  <LeadForm />
 </section>

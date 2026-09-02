@@ -31,6 +31,11 @@
  * form_embed.js returns 200 and 34KB. Re-verify by hand if either is edited.
  */
 import { business } from '../data/business';
+import {
+  LEAD_FORM_ID,
+  freeInspectionForPath,
+  offerLabel,
+} from '../lib/offer';
 
 interface Props {
   /** The visible heading. Kept a prop so the contact page can lead with it. */
@@ -38,7 +43,21 @@ interface Props {
   /** Contact page renders the form as the point of the page, not as a footnote. */
   primary?: boolean;
 }
-const { heading = 'Request a free estimate', primary = false } = Astro.props;
+/* THE DEFAULT HEADING IS COMPUTED, NOT TYPED, and the bug that made it so is
+   worth recording: it shipped as a hard-coded "Request a free estimate" and
+   every page then carried a form headed "estimate" beneath a CTA button and a
+   sticky bar both offering an inspection. Three controls, one offer, two
+   different nouns. The rule lives in src/lib/offer.ts and all three read it.
+
+   Astro.url.pathname rather than a prop, because this component is rendered
+   from twenty route files and a prop is twenty chances to forget one — which
+   is how the wording drifted in the first place. Paths carry a trailing slash
+   (vercel.json sets trailingSlash), which is the shape freeInspectionForPath
+   expects. */
+const {
+  heading = offerLabel(freeInspectionForPath(Astro.url.pathname)),
+  primary = false,
+} = Astro.props;
 
 const f = business.crmForm;
 const src = `${f.host}/widget/form/${f.id}`;
@@ -49,7 +68,16 @@ const frameId = `inline-${f.id}`;
    every page. GHL's own name for the form is "GET A FREE ESTIMATE", so the
    heading and the form agree, and harness check 2c stays quiet. */
 ---
-<aside class:list={['leadform', primary && 'is-primary']} data-boilerplate>
+{/* id is the sticky action bar's jump target, and it is on the OUTER element
+    so the reader lands on the heading rather than mid-form. There is exactly
+    one form per page — the GHL loader finds its frame by id, so a second copy
+    would break both — which is what makes a bare id safe here. §3's
+    [id] { scroll-margin-top } keeps the landing clear of the sticky top bar. */}
+<aside
+  id={LEAD_FORM_ID}
+  class:list={['leadform', primary && 'is-primary']}
+  data-boilerplate
+>
   <h2>{heading}</h2>
 
   {/* THE RESERVED BOX. min-height rather than the aspect-ratio box the map

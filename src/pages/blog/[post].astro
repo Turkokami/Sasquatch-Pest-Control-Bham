@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
+import LeadForm from '../../components/LeadForm.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
@@ -74,6 +75,18 @@ const imported = p.data.imported.toLocaleDateString('en-US', {
   )}
 
   {p.data.answer && <AnswerBox text={p.data.answer} />}
+
+  {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
+      It used to hang off the foot of Cta.astro, which put it under three
+      thousand words: a reader who had already decided to act had to scroll
+      an entire article to find anything to act on. The quick answer still
+      leads — it is one short paragraph and the schema's speakable selector
+      points at it — and the form comes straight after.
+  
+      ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
+      copy would break both; the CTA at the foot no longer carries one and
+      keeps its phone button. The sticky mobile bar jumps to this. */}
+  <LeadForm />
 
   <div class="prose"><Content /></div>
 

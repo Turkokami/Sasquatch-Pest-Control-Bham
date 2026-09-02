@@ -1,0 +1,65 @@
+---
+/**
+ * MobileActionBar — the fixed two-button bar at the bottom of every page on a
+ * phone: call, or jump to the lead form.
+ *
+ * WHY IT EXISTS. These pages run to 3,000 words. On a phone that is a long
+ * scroll between a reader deciding to act and anything they can act on, and
+ * the site's own top bar only carries a number as small text. This puts both
+ * actions permanently in the thumb zone.
+ *
+ * MOBILE ONLY, AND THAT IS A DESIGN DECISION RATHER THAN A BREAKPOINT
+ * ACCIDENT. On a desktop the phone number is already in the sticky top bar,
+ * the header and the footer, and a fixed bar across the foot of a wide window
+ * is an advert rather than a convenience. It is hidden from 48rem up, and it
+ * is hidden in print — §23 is a rule about paper, and a floating button is
+ * not a thing paper has.
+ *
+ * TWO BUTTONS, NOT THREE, AND CALL IS FIRST. This trade runs on the phone:
+ * somebody with wasps at the door is not filling in a form. The call button
+ * gets the brand solid and the leading position; the form is the alternative
+ * for the reader browsing at 11pm who will not ring a stranger.
+ *
+ * THE WORDING IS COMPUTED. src/lib/offer.ts owns whether this page may say
+ * the visit is free — bed bug pages carry a paid verification visit and this
+ * bar renders on them too. Never hard-code the label here.
+ */
+import { business } from '../data/business';
+import {
+  freeInspectionForPath,
+  offerLabelShort,
+  LEAD_FORM_ID,
+} from '../lib/offer';
+
+interface Props {
+  /** The page's own path, so the offer wording can respect the exceptions. */
+  path: string;
+}
+const { path } = Astro.props;
+
+const label = offerLabelShort(freeInspectionForPath(path));
+
+/* WHERE THE SECOND BUTTON GOES, and it is not always this page.
+   Every page carries the lead form except /network/, which routes Texas
+   enquiries to the separately operated Houston franchise and deliberately has
+   no Washington form on it. A same-page anchor there would scroll to nothing,
+   which is the worst kind of dead control: it looks like it worked. So that
+   one page sends the reader to /contact/ instead. Deriving it from the path
+   keeps the exception in the same file as the bar rather than in a prop that
+   200 pages would have to remember to pass. */
+const hasFormOnPage = path !== '/network/';
+const formHref = hasFormOnPage ? `#${LEAD_FORM_ID}` : `/contact/#${LEAD_FORM_ID}`;
+---
+{/* aria-label because this is a second navigation landmark and "navigation"
+    on its own tells a screen reader user nothing about which one they are in.
+    data-boilerplate for the reason every other chrome component carries it:
+    it is furniture on 206 pages and neither the word count nor the duplicate
+    sentence scanner should ever see it. */}
+<nav class="actionbar" aria-label="Contact actions" data-boilerplate>
+  <a class="actionbar-call" href={`tel:${business.phoneE164}`}>
+    {/* aria-hidden on the glyph: the link already says "Call now", and a
+        screen reader announcing "telephone receiver Call now" is noise. */}
+    <span aria-hidden="true">📞</span> Call now
+  </a>
+  <a class="actionbar-form" href={formHref}>{label}</a>
+</nav>
