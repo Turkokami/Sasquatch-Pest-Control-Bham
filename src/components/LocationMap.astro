@@ -1,6 +1,6 @@
 ---
 /**
- * LocationMap — the orientation map at the foot of a place page.
+ * LocationMap — the orientation map near the top of a place page.
  *
  * ONE COMPONENT, twenty-odd pages. Every location tier renders this: the city
  * route, the neighborhood route and both county routes. An iframe pasted into
@@ -30,9 +30,14 @@
  * maps at all. We are accepting it because a service-area page is one of the
  * few places where a map earns its keep — "is this company anywhere near me"
  * is the question the page exists to answer, and a static screenshot cannot be
- * panned out to answer it. Two things keep the cost bounded: `loading="lazy"`,
- * so the frame is never fetched for a reader who does not scroll to the foot
- * of a 3,000-word page, and `referrerpolicy`, below. If the trade is ever
+ * panned out to answer it. `referrerpolicy` below keeps part of the cost
+ * bounded. NOTE: the block moved up next to the lead form on 2 Sep 2026, so
+ * `loading="lazy"` no longer saves the fetch for most readers — the frame is
+ * now near the top and usually in or close to the viewport on arrival. The
+ * attribute stays because it still defers the fetch until layout says it is
+ * needed, but the privacy trade above is now paid on essentially every visit
+ * to a place page rather than only by readers who scrolled to the end. That
+ * is a real change to the calculus and whoever revisits it should know it. If the trade is ever
  * revisited, this is the single file to change — delete the iframe here and
  * the maps come off every location page at once. A future reader should treat
  * this paragraph as the decision, not as an accident.

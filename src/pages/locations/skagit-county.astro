@@ -79,6 +79,14 @@ const faqs = [
       keeps its phone button. The sticky mobile bar jumps to this. */}
   <LeadForm />
 
+  {/* THE MAP, MOVED UP FROM THE FOOT OF THE PAGE. It used to sit below
+      the FAQ and the link rails, which put the one element that answers
+      "do you actually cover where I live" behind three thousand words of
+      prose. On a place page that question is the reason the reader came,
+      so it is answered next to the form rather than after everything.
+      The component still carries the privacy and keyless-embed reasoning. */}
+  <LocationMap place="Skagit County" />
+
   <div class="prose">
     <h2>Straight about where we stand</h2>
     <p>
@@ -454,7 +462,6 @@ const faqs = [
       section in particular — the page names the half of the county we decline
       before the county outline appears, which is the order that keeps the map
       from reading as a claim. */}
-  <LocationMap place="Skagit County" />
 
   <Cta market="Skagit County" />
 </BaseLayout>

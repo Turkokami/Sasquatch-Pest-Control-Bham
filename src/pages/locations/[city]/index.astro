@@ -91,6 +91,14 @@ const guideLinks = await guideLinksFor(path);
       keeps its phone button. The sticky mobile bar jumps to this. */}
   <LeadForm />
 
+  {/* THE MAP, MOVED UP FROM THE FOOT OF THE PAGE. It used to sit below
+      the FAQ and the link rails, which put the one element that answers
+      "do you actually cover where I live" behind three thousand words of
+      prose. On a place page that question is the reason the reader came,
+      so it is answered next to the form rather than after everything.
+      The component still carries the privacy and keyless-embed reasoning. */}
+  <LocationMap place={t.name} />
+
   {Body ? (
     <div class="prose"><Body /></div>
   ) : (
@@ -135,7 +143,6 @@ const guideLinks = await guideLinksFor(path);
       this company from me" is the question actually left over. Above the
       fold it would push 3,000 words of the thing they came for below a
       third-party rectangle. */}
-  <LocationMap place={t.name} />
 
   <Cta market={t.name} />
 </BaseLayout>

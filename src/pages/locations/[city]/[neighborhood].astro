@@ -84,6 +84,14 @@ const guideLinks = await guideLinksFor(path);
       keeps its phone button. The sticky mobile bar jumps to this. */}
   <LeadForm />
 
+  {/* THE MAP, MOVED UP FROM THE FOOT OF THE PAGE. It used to sit below
+      the FAQ and the link rails, which put the one element that answers
+      "do you actually cover where I live" behind three thousand words of
+      prose. On a place page that question is the reason the reader came,
+      so it is answered next to the form rather than after everything.
+      The component still carries the privacy and keyless-embed reasoning. */}
+  <LocationMap place={`${n.name}, ${t.name}`} />
+
   {Body ? (
     <div class="prose"><Body /></div>
   ) : (
@@ -113,7 +121,6 @@ const guideLinks = await guideLinksFor(path);
   {/* Same position as the city tier: orientation after the copy, not before
       it. Queried as "<neighborhood>, <city>" so Google resolves the district
       rather than whatever else shares the name statewide. */}
-  <LocationMap place={`${n.name}, ${t.name}`} />
 
   <Cta market={n.name} />
 </BaseLayout>
