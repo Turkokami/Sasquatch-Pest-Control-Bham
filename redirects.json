@@ -1,0 +1,1432 @@
+[
+  {
+    "from": "/rodent-control/",
+    "to": "/services/rodent-control/",
+    "code": 301
+  },
+  {
+    "from": "/rat-control/",
+    "to": "/services/rodent-control/",
+    "code": 301
+  },
+  {
+    "from": "/mouse-control/",
+    "to": "/services/rodent-control/",
+    "code": 301
+  },
+  {
+    "from": "/rodent-exclusion/",
+    "to": "/services/rodent-control/",
+    "code": 301
+  },
+  {
+    "from": "/wasp-control/",
+    "to": "/services/wasp-control/",
+    "code": 301
+  },
+  {
+    "from": "/hornet-control/",
+    "to": "/services/wasp-control/",
+    "code": 301
+  },
+  {
+    "from": "/yellowjacket-control/",
+    "to": "/services/wasp-control/",
+    "code": 301
+  },
+  {
+    "from": "/wasp-nest-removal/",
+    "to": "/services/wasp-control/",
+    "code": 301
+  },
+  {
+    "from": "/bee-removal/",
+    "to": "/services/bee-removal/",
+    "code": 301
+  },
+  {
+    "from": "/bee-control/",
+    "to": "/services/bee-removal/",
+    "code": 301
+  },
+  {
+    "from": "/fly-control/",
+    "to": "/services/fly-control/",
+    "code": 301
+  },
+  {
+    "from": "/gnat-control/",
+    "to": "/services/fly-control/",
+    "code": 301
+  },
+  {
+    "from": "/fruit-fly-control/",
+    "to": "/services/fly-control/",
+    "code": 301
+  },
+  {
+    "from": "/cluster-fly-control/",
+    "to": "/services/fly-control/",
+    "code": 301
+  },
+  {
+    "from": "/drain-fly-control/",
+    "to": "/services/fly-control/",
+    "code": 301
+  },
+  {
+    "from": "/house-fly-control/",
+    "to": "/services/fly-control/",
+    "code": 301
+  },
+  {
+    "from": "/ant-control/",
+    "to": "/services/ant-control/",
+    "code": 301
+  },
+  {
+    "from": "/carpenter-ant-control/",
+    "to": "/services/ant-control/",
+    "code": 301
+  },
+  {
+    "from": "/moisture-ant-control/",
+    "to": "/services/ant-control/",
+    "code": 301
+  },
+  {
+    "from": "/odorous-house-ant-control/",
+    "to": "/services/ant-control/",
+    "code": 301
+  },
+  {
+    "from": "/spider-control/",
+    "to": "/services/spider-control/",
+    "code": 301
+  },
+  {
+    "from": "/hobo-spider-control/",
+    "to": "/services/spider-control/",
+    "code": 301
+  },
+  {
+    "from": "/giant-house-spider-control/",
+    "to": "/services/spider-control/",
+    "code": 301
+  },
+  {
+    "from": "/bed-bug-control/",
+    "to": "/services/bed-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/bed-bug-treatment/",
+    "to": "/services/bed-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/bed-bug-heat-treatment/",
+    "to": "/services/bed-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/cockroach-control/",
+    "to": "/services/cockroach-control/",
+    "code": 301
+  },
+  {
+    "from": "/roach-control/",
+    "to": "/services/cockroach-control/",
+    "code": 301
+  },
+  {
+    "from": "/german-cockroach-control/",
+    "to": "/services/cockroach-control/",
+    "code": 301
+  },
+  {
+    "from": "/american-cockroach-control/",
+    "to": "/services/cockroach-control/",
+    "code": 301
+  },
+  {
+    "from": "/flea-control/",
+    "to": "/services/flea-control/",
+    "code": 301
+  },
+  {
+    "from": "/flea-exterminator/",
+    "to": "/services/flea-control/",
+    "code": 301
+  },
+  {
+    "from": "/silverfish-control/",
+    "to": "/services/silverfish-control/",
+    "code": 301
+  },
+  {
+    "from": "/earwig-control/",
+    "to": "/services/earwig-control/",
+    "code": 301
+  },
+  {
+    "from": "/pillbug-control/",
+    "to": "/services/earwig-control/",
+    "code": 301
+  },
+  {
+    "from": "/sowbug-control/",
+    "to": "/services/earwig-control/",
+    "code": 301
+  },
+  {
+    "from": "/stink-bug-control/",
+    "to": "/services/stink-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/boxelder-bug-control/",
+    "to": "/services/stink-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/overwintering-pest-control/",
+    "to": "/services/stink-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/stink-bug-control-services/",
+    "to": "/services/stink-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/lady-bug-asian-lady-beetle-control/",
+    "to": "/services/stink-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/beetle-control/",
+    "to": "/services/beetle-control/",
+    "code": 301
+  },
+  {
+    "from": "/carpet-beetle-control/",
+    "to": "/services/beetle-control/",
+    "code": 301
+  },
+  {
+    "from": "/pantry-pest-control/",
+    "to": "/services/beetle-control/",
+    "code": 301
+  },
+  {
+    "from": "/ground-beetle-control/",
+    "to": "/services/beetle-control/",
+    "code": 301
+  },
+  {
+    "from": "/carpet-beetle-clothes-moth-control/",
+    "to": "/services/beetle-control/",
+    "code": 301
+  },
+  {
+    "from": "/moth-control/",
+    "to": "/services/moth-control/",
+    "code": 301
+  },
+  {
+    "from": "/clothes-moth-control/",
+    "to": "/services/moth-control/",
+    "code": 301
+  },
+  {
+    "from": "/centipede-control/",
+    "to": "/services/centipede-control/",
+    "code": 301
+  },
+  {
+    "from": "/millipede-control/",
+    "to": "/services/centipede-control/",
+    "code": 301
+  },
+  {
+    "from": "/termite-control/",
+    "to": "/services/termite-control/",
+    "code": 301
+  },
+  {
+    "from": "/dampwood-termite-control/",
+    "to": "/services/termite-control/",
+    "code": 301
+  },
+  {
+    "from": "/wood-destroying-pest-control/",
+    "to": "/services/termite-control/",
+    "code": 301
+  },
+  {
+    "from": "/carpenter-bee-control/",
+    "to": "/services/carpenter-bee-control/",
+    "code": 301
+  },
+  {
+    "from": "/wood-boring-beetle-control/",
+    "to": "/services/carpenter-bee-control/",
+    "code": 301
+  },
+  {
+    "from": "/powderpost-beetle-control/",
+    "to": "/services/carpenter-bee-control/",
+    "code": 301
+  },
+  {
+    "from": "/repairs/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/pest-exclusion/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/crawlspace-repair/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/exclusion-services/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/crawlspace-cleanout/",
+    "to": "/services/crawlspace-restoration/",
+    "code": 301
+  },
+  {
+    "from": "/insulation-removal/",
+    "to": "/services/crawlspace-restoration/",
+    "code": 301
+  },
+  {
+    "from": "/attic-restoration/",
+    "to": "/services/crawlspace-restoration/",
+    "code": 301
+  },
+  {
+    "from": "/attic-insulation/",
+    "to": "/services/attic-insulation/",
+    "code": 301
+  },
+  {
+    "from": "/insulation-replacement/",
+    "to": "/services/attic-insulation/",
+    "code": 301
+  },
+  {
+    "from": "/home-protection-plan/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/quarterly-pest-control/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/pest-control-plans/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/commercial-pest-control/",
+    "to": "/services/commercial-pest-control/",
+    "code": 301
+  },
+  {
+    "from": "/commercial-services/",
+    "to": "/services/commercial-pest-control/",
+    "code": 301
+  },
+  {
+    "from": "/bat-exclusion/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/bat-removal/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/bird-control/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/bird-exclusion/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/bird-netting/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/bird-spikes/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/nuisance-wildlife/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/opossum-removal/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/pigeon-control/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/raccoon-removal/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/squirrel-control/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/squirrel-removal/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/wildlife-control/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/cricket-control/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/springtail-control/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/tick-control/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/mosquito-control/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/mosquito-control-services/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/rodents-birds-bellingham/",
+    "to": "/services/?category=rodents-birds",
+    "code": 301
+  },
+  {
+    "from": "/stinging-flying-insects-bellingham/",
+    "to": "/services/?category=stinging-flying",
+    "code": 301
+  },
+  {
+    "from": "/household-bugs-bellingham/",
+    "to": "/services/?category=household",
+    "code": 301
+  },
+  {
+    "from": "/termites-structural-bellingham/",
+    "to": "/services/?category=structural",
+    "code": 301
+  },
+  {
+    "from": "/pest-control-services/",
+    "to": "/services/",
+    "code": 301
+  },
+  {
+    "from": "/service-areas/",
+    "to": "/locations/",
+    "code": 301
+  },
+  {
+    "from": "/whatcom-county-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/skagit-county-pest-control/",
+    "to": "/locations/skagit-county/",
+    "code": 301
+  },
+  {
+    "from": "/pest-control-bellingham-wa/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/lynden-wa/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/blaine-wa/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/blaine-wa-pest-control/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/guarantee/",
+    "to": "/our-guarantee/",
+    "code": 301
+  },
+  {
+    "from": "/meridian-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/puget-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/lettered-streets-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/lettered-streets/",
+    "code": 301
+  },
+  {
+    "from": "/sunnyland-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/cornwall-park-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/welcome-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/birchwood-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/kendall-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/cordata-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/cordata/",
+    "code": 301
+  },
+  {
+    "from": "/fairhaven-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/fairhaven/",
+    "code": 301
+  },
+  {
+    "from": "/peace-portal-blaine-wa-pest-control/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/bell-road-blaine-wa-pest-control/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/california-creek-blaine-wa-pest-control/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/blaine-harbor-blaine-wa-pest-control/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/downtown-blaine-blaine-wa-pest-control/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/drayton-harbor-blaine-wa-pest-control/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/birch-bay-blaine-wa-pest-control/",
+    "to": "/locations/birch-bay/",
+    "code": 301
+  },
+  {
+    "from": "/semiahmoo-blaine-wa-pest-control/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/bingham-sedro-woolley-wa-pest-control/",
+    "to": "/locations/sedro-woolley/",
+    "code": 301
+  },
+  {
+    "from": "/riverfront-sedro-woolley-wa-pest-control/",
+    "to": "/locations/sedro-woolley/",
+    "code": 301
+  },
+  {
+    "from": "/northern-state-sedro-woolley-wa-pest-control/",
+    "to": "/locations/sedro-woolley/",
+    "code": 301
+  },
+  {
+    "from": "/jameson-sedro-woolley-wa-pest-control/",
+    "to": "/locations/sedro-woolley/",
+    "code": 301
+  },
+  {
+    "from": "/central-sedro-woolley-wa-pest-control/",
+    "to": "/locations/sedro-woolley/",
+    "code": 301
+  },
+  {
+    "from": "/cascade-sedro-woolley-wa-pest-control/",
+    "to": "/locations/sedro-woolley/",
+    "code": 301
+  },
+  {
+    "from": "/downtown-sedro-woolley-sedro-woolley-wa-pest-control/",
+    "to": "/locations/sedro-woolley/",
+    "code": 301
+  },
+  {
+    "from": "/fairhaven-avenue-burlington-wa-pest-control/",
+    "to": "/locations/burlington/",
+    "code": 301
+  },
+  {
+    "from": "/cascade-burlington-wa-pest-control/",
+    "to": "/locations/burlington/",
+    "code": 301
+  },
+  {
+    "from": "/george-hopper-burlington-wa-pest-control/",
+    "to": "/locations/burlington/",
+    "code": 301
+  },
+  {
+    "from": "/pulver-burlington-wa-pest-control/",
+    "to": "/locations/burlington/",
+    "code": 301
+  },
+  {
+    "from": "/skagit-burlington-wa-pest-control/",
+    "to": "/locations/burlington/",
+    "code": 301
+  },
+  {
+    "from": "/gardner-burlington-wa-pest-control/",
+    "to": "/locations/burlington/",
+    "code": 301
+  },
+  {
+    "from": "/west-burlington-burlington-wa-pest-control/",
+    "to": "/locations/burlington/",
+    "code": 301
+  },
+  {
+    "from": "/downtown-burlington-burlington-wa-pest-control/",
+    "to": "/locations/burlington/",
+    "code": 301
+  },
+  {
+    "from": "/eaglemont-mount-vernon-wa-pest-control/",
+    "to": "/locations/mount-vernon/",
+    "code": 301
+  },
+  {
+    "from": "/kulshan-mount-vernon-wa-pest-control/",
+    "to": "/locations/mount-vernon/",
+    "code": 301
+  },
+  {
+    "from": "/riverside-mount-vernon-wa-pest-control/",
+    "to": "/locations/mount-vernon/",
+    "code": 301
+  },
+  {
+    "from": "/college-way-mount-vernon-wa-pest-control/",
+    "to": "/locations/mount-vernon/",
+    "code": 301
+  },
+  {
+    "from": "/skagit-highlands-mount-vernon-wa-pest-control/",
+    "to": "/locations/mount-vernon/",
+    "code": 301
+  },
+  {
+    "from": "/little-mountain-mount-vernon-wa-pest-control/",
+    "to": "/locations/mount-vernon/",
+    "code": 301
+  },
+  {
+    "from": "/west-mount-vernon-mount-vernon-wa-pest-control/",
+    "to": "/locations/mount-vernon/",
+    "code": 301
+  },
+  {
+    "from": "/downtown-mount-vernon-mount-vernon-wa-pest-control/",
+    "to": "/locations/mount-vernon/",
+    "code": 301
+  },
+  {
+    "from": "/river-road-lynden-wa-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/pole-road-lynden-wa-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/berthusen-lynden-wa-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/depot-lynden-wa-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/guide-meridian-lynden-wa-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/bender-lynden-wa-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/fishtrap-lynden-wa-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/downtown-lynden-lynden-wa-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/woodland-ferndale-wa-pest-control/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/star-ferndale-wa-pest-control/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/pheasant-run-ferndale-wa-pest-control/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/sunset-ferndale-wa-pest-control/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/malloy-ferndale-wa-pest-control/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/church-road-ferndale-wa-pest-control/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/vista-ferndale-wa-pest-control/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/downtown-ferndale-ferndale-wa-pest-control/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/fairhaven-wa-pest-control/",
+    "to": "/locations/bellingham/fairhaven/",
+    "code": 301
+  },
+  {
+    "from": "/columbia-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/roosevelt-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/york-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/whatcom-falls-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/whatcom-falls/",
+    "code": 301
+  },
+  {
+    "from": "/silver-beach-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/silver-beach/",
+    "code": 301
+  },
+  {
+    "from": "/barkley-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/barkley/",
+    "code": 301
+  },
+  {
+    "from": "/alabama-hill-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/alabama-hill/",
+    "code": 301
+  },
+  {
+    "from": "/samish-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/sehome-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/sehome/",
+    "code": 301
+  },
+  {
+    "from": "/chuckanut-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/edgemoor/",
+    "code": 301
+  },
+  {
+    "from": "/south-hill-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/edgemoor-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/edgemoor/",
+    "code": 301
+  },
+  {
+    "from": "/happy-valley-bellingham-wa-pest-control/",
+    "to": "/locations/bellingham/happy-valley/",
+    "code": 301
+  },
+  {
+    "from": "/van-zandt-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/wickersham-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/geneva-wa-pest-control/",
+    "to": "/locations/bellingham/",
+    "code": 301
+  },
+  {
+    "from": "/bay-view-wa-pest-control/",
+    "to": "/locations/skagit-county/",
+    "code": 301
+  },
+  {
+    "from": "/clear-lake-wa-pest-control/",
+    "to": "/locations/skagit-county/",
+    "code": 301
+  },
+  {
+    "from": "/edison-wa-pest-control/",
+    "to": "/locations/skagit-county/",
+    "code": 301
+  },
+  {
+    "from": "/la-conner-wa-pest-control/",
+    "to": "/locations/skagit-county/",
+    "code": 301
+  },
+  {
+    "from": "/custer-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/sumas-wa-pest-control/",
+    "to": "/locations/sumas/",
+    "code": 301
+  },
+  {
+    "from": "/samish-island-wa-pest-control/",
+    "to": "/locations/skagit-county/",
+    "code": 301
+  },
+  {
+    "from": "/lummi-island-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/sedro-woolley-wa-pest-control/",
+    "to": "/locations/sedro-woolley/",
+    "code": 301
+  },
+  {
+    "from": "/sudden-valley-pest-control/",
+    "to": "/locations/sudden-valley/",
+    "code": 301
+  },
+  {
+    "from": "/sandy-point-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/everson-wa-pest-control/",
+    "to": "/locations/everson/",
+    "code": 301
+  },
+  {
+    "from": "/mt-vernon-wa-pest-control/",
+    "to": "/locations/mount-vernon/",
+    "code": 301
+  },
+  {
+    "from": "/maple-falls-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/glacier-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/deming-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/burlington-wa-pest-control/",
+    "to": "/locations/burlington/",
+    "code": 301
+  },
+  {
+    "from": "/acme-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/nooksack-wa-pest-control/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/bow-wa-pest-control/",
+    "to": "/locations/bow/",
+    "code": 301
+  },
+  {
+    "from": "/alger-wa-pest-control/",
+    "to": "/locations/alger/",
+    "code": 301
+  },
+  {
+    "from": "/lynden-wa-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/ferndale-wa-pest-control/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/termites-bellingham-wa/",
+    "to": "/services/termite-control/",
+    "code": 301
+  },
+  {
+    "from": "/what-is-integrated-pest-management/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/eco-friendly-pest-control-bellingham/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/rodent-proofing-home-winter-bellingham/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/bed-bugs-holiday-travel-whatcom/",
+    "to": "/services/bed-bug-control/bed-bugs-after-a-trip/",
+    "code": 301
+  },
+  {
+    "from": "/more-spiders-fall-bellingham/",
+    "to": "/services/spider-control/spiders-appearing-every-fall/",
+    "code": 301
+  },
+  {
+    "from": "/government-industrial-winter-pest-prep-whatcom/",
+    "to": "/commercial/",
+    "code": 301
+  },
+  {
+    "from": "/seagull-swallow-exclusion-washington/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/pest-trends-whatcom-county-year-in-review/",
+    "to": "/locations/whatcom-county/",
+    "code": 301
+  },
+  {
+    "from": "/fall-rodent-prevention-bellingham/",
+    "to": "/services/rodent-control/",
+    "code": 301
+  },
+  {
+    "from": "/ladybugs-vs-asian-lady-beetles-bellingham/",
+    "to": "/services/stink-bug-control/bugs-on-the-south-wall-every-october/",
+    "code": 301
+  },
+  {
+    "from": "/bird-exclusion-bellingham-wa/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/landlord-pest-control-washington/",
+    "to": "/commercial/",
+    "code": 301
+  },
+  {
+    "from": "/how-to-know-if-you-have-bed-bugs-bellingham/",
+    "to": "/services/bed-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/bees-vs-wasps-vs-hornets-identification/",
+    "to": "/services/wasp-control/",
+    "code": 301
+  },
+  {
+    "from": "/stink-bugs-fall-bellingham/",
+    "to": "/services/stink-bug-control/bugs-on-the-south-wall-every-october/",
+    "code": 301
+  },
+  {
+    "from": "/bird-nesting-solar-panels-washington/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/how-cockroaches-get-in-bellingham/",
+    "to": "/services/cockroach-control/",
+    "code": 301
+  },
+  {
+    "from": "/when-do-wasps-build-nests-bellingham/",
+    "to": "/services/wasp-control/",
+    "code": 301
+  },
+  {
+    "from": "/mosquito-control-bellingham-wa/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/earwigs-millipedes-clover-mites-bellingham/",
+    "to": "/services/earwig-control/",
+    "code": 301
+  },
+  {
+    "from": "/flea-season-pacific-northwest/",
+    "to": "/services/flea-control/",
+    "code": 301
+  },
+  {
+    "from": "/commercial-summer-pest-control-whatcom/",
+    "to": "/commercial/",
+    "code": 301
+  },
+  {
+    "from": "/apartment-pest-control-bellingham/",
+    "to": "/commercial/",
+    "code": 301
+  },
+  {
+    "from": "/dont-remove-wasp-nest-yourself-bellingham/",
+    "to": "/services/wasp-control/yellowjackets-in-the-lawn/",
+    "code": 301
+  },
+  {
+    "from": "/spring-pest-prevention-checklist-whatcom/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/commercial-winter-pest-checklist-whatcom/",
+    "to": "/commercial/",
+    "code": 301
+  },
+  {
+    "from": "/black-spiders-washington-state/",
+    "to": "/services/spider-control/is-this-a-hobo-spider/",
+    "code": 301
+  },
+  {
+    "from": "/why-ants-invade-homes-spring-bellingham/",
+    "to": "/services/ant-control/ant-trails-across-the-kitchen-counter/",
+    "code": 301
+  },
+  {
+    "from": "/carpenter-ants-vs-sugar-ants-bellingham/",
+    "to": "/services/ant-control/",
+    "code": 301
+  },
+  {
+    "from": "/rats-vs-mice-bellingham/",
+    "to": "/services/rodent-control/",
+    "code": 301
+  },
+  {
+    "from": "/spider-control-bellingham-wa/",
+    "to": "/services/spider-control/",
+    "code": 301
+  },
+  {
+    "from": "/what-is-rodent-exclusion/",
+    "to": "/services/exclusion-and-repairs/",
+    "code": 301
+  },
+  {
+    "from": "/rodent-entry-points-bellingham/",
+    "to": "/services/exclusion-and-repairs/sealing-a-quarter-inch-foundation-gap/",
+    "code": 301
+  },
+  {
+    "from": "/free-pest-inspection-bellingham/",
+    "to": "/contact/",
+    "code": 301
+  },
+  {
+    "from": "/pest-prevention-guide-pacific-northwest/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/common-pests-bellingham-wa/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/how-to-choose-pest-control-whatcom/",
+    "to": "/about/",
+    "code": 301
+  },
+  {
+    "from": "/pest-control-cost-bellingham/",
+    "to": "/our-guarantee/",
+    "code": 301
+  },
+  {
+    "from": "/why-powder-post-beetle-treatment-is-critical-after-flooding/",
+    "to": "/services/beetle-control/",
+    "code": 301
+  },
+  {
+    "from": "/why-earwigs-are-invading-your-home/",
+    "to": "/services/earwig-control/",
+    "code": 301
+  },
+  {
+    "from": "/eco-friendly-pest-control-in-bellingham/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/clover-mites-invading-your-home/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/understanding-bed-bugs-bites-identification/",
+    "to": "/services/bed-bug-control/bites-but-no-bugs-found/",
+    "code": 301
+  },
+  {
+    "from": "/carpet-beetles-control/",
+    "to": "/services/beetle-control/",
+    "code": 301
+  },
+  {
+    "from": "/weevils-in-your-pantry/",
+    "to": "/services/beetle-control/",
+    "code": 301
+  },
+  {
+    "from": "/brown-recluse-spiders/",
+    "to": "/services/spider-control/is-this-a-hobo-spider/",
+    "code": 301
+  },
+  {
+    "from": "/yellow-jackets/",
+    "to": "/services/wasp-control/yellowjackets-in-the-lawn/",
+    "code": 301
+  },
+  {
+    "from": "/wood-boring-beetles-a-silent-threat-to-your-home/",
+    "to": "/services/beetle-control/",
+    "code": 301
+  },
+  {
+    "from": "/mud-dauber-wasps-in-washington-state-natures-non-aggressive-pollinators/",
+    "to": "/services/wasp-control/",
+    "code": 301
+  },
+  {
+    "from": "/identifying-pest-activity/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/protect-your-home-with-sasquatch-pest-control/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/preventative-pest-control/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/bumble-bees-in-washington-state/",
+    "to": "/services/bee-removal/",
+    "code": 301
+  },
+  {
+    "from": "/how-to-identify-termites/",
+    "to": "/services/termite-control/",
+    "code": 301
+  },
+  {
+    "from": "/combating-fleas/",
+    "to": "/services/flea-control/",
+    "code": 301
+  },
+  {
+    "from": "/bed-bug-infestations/",
+    "to": "/services/bed-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/combatting-rodent-invaders/",
+    "to": "/services/rodent-control/",
+    "code": 301
+  },
+  {
+    "from": "/battling-mosquitoes/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/know-your-bees/",
+    "to": "/services/bee-removal/",
+    "code": 301
+  },
+  {
+    "from": "/understanding-wasps-vs-yellowjackets/",
+    "to": "/services/wasp-control/",
+    "code": 301
+  },
+  {
+    "from": "/why-do-i-have-millipedes-in-my-home/",
+    "to": "/services/centipede-control/",
+    "code": 301
+  },
+  {
+    "from": "/wasp-sting/",
+    "to": "/services/wasp-control/",
+    "code": 301
+  },
+  {
+    "from": "/tiny-black-spiders-in-washington/",
+    "to": "/services/spider-control/",
+    "code": 301
+  },
+  {
+    "from": "/sasquatch-pest-control-defending-against-stink-bugs/",
+    "to": "/services/stink-bug-control/",
+    "code": 301
+  },
+  {
+    "from": "/pest-control-in-ferndale-wa/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/locally-owned-and-family-operated/",
+    "to": "/about/",
+    "code": 301
+  },
+  {
+    "from": "/pest-control-in-blaine-wa/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/the-sasquatch-advantage-in-preventative-pest-control/",
+    "to": "/services/home-protection-plan/",
+    "code": 301
+  },
+  {
+    "from": "/the-blaine-peace-arch-a-symbol-of-unity/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/fortifying-homes-in-blaine-wa-the-essence-of-effective-pest-control/",
+    "to": "/locations/blaine/",
+    "code": 301
+  },
+  {
+    "from": "/defending-lynden-homes-pest-control/",
+    "to": "/locations/lynden/",
+    "code": 301
+  },
+  {
+    "from": "/the-vital-role-of-proper-pest-control-in-bow-wa/",
+    "to": "/locations/bow/",
+    "code": 301
+  },
+  {
+    "from": "/keeping-your-home-pest-free-in-ferndale-wa/",
+    "to": "/locations/ferndale/",
+    "code": 301
+  },
+  {
+    "from": "/unwanted-buzzing-how-to-locate-the-best-beehive-exterminator-near-you/",
+    "to": "/services/bee-removal/",
+    "code": 301
+  },
+  {
+    "from": "/the-ultimate-guide-to-rodent-control-how-to-find-the-best-pest-control-services-near-you/",
+    "to": "/services/rodent-control/",
+    "code": 301
+  },
+  {
+    "from": "/trusted-partners/",
+    "to": "/network/",
+    "code": 301
+  },
+  {
+    "from": "/food-processing-pest-control/",
+    "to": "/commercial/",
+    "code": 301
+  },
+  {
+    "from": "/leave-a-review/",
+    "to": "/contact/",
+    "code": 301
+  },
+  {
+    "from": "/insulation-service/",
+    "to": "/services/attic-insulation/",
+    "code": 301
+  },
+  {
+    "from": "/sasquatch-pest-control-awards-and-recognition/",
+    "to": "/about/",
+    "code": 301
+  },
+  {
+    "from": "/pest-control-videos/",
+    "to": "/about/",
+    "code": 301
+  },
+  {
+    "from": "/gallery/",
+    "to": "/about/",
+    "code": 301
+  },
+  {
+    "from": "/the-squatch-blog/",
+    "to": "/pest-library/",
+    "code": 301
+  },
+  {
+    "from": "/ty-inspection/",
+    "to": "/contact/",
+    "code": 301
+  },
+  {
+    "from": "/ty-instant-price/",
+    "to": "/contact/",
+    "code": 301
+  },
+  {
+    "from": "/thank-you/",
+    "to": "/contact/",
+    "code": 301
+  },
+  {
+    "from": "/pest-control-coupons/",
+    "to": "/contact/",
+    "code": 301
+  }
+]

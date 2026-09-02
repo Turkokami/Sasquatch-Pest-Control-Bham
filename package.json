@@ -1,0 +1,28 @@
+{
+  "name": "sasquatch-wa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Sasquatch Pest Control WA — Keystone v1 Tier 3.0 static build (Astro).",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/sitemap.mjs",
+    "preview": "astro preview",
+    "check": "astro check",
+    "harness": "node scripts/harness.mjs",
+    "redirects": "node scripts/redirects.mjs",
+    "pending": "node scripts/pending.mjs",
+    "test": "tsx scripts/tests/schema-graph.test.ts && tsx scripts/tests/inspection-claims.test.ts && tsx scripts/tests/wdo-findings.test.ts && tsx scripts/tests/guide-matching.test.ts && tsx scripts/tests/us-spelling.test.ts",
+    "gate": "npm run test && npm run build && npm run harness && npm run redirects:check && node scripts/pending.mjs --gate",
+    "typecheck": "tsc --noEmit -p tsconfig.check.json",
+    "slugs": "node scripts/slugs.mjs",
+    "redirects:emit": "node scripts/redirects.mjs --emit",
+    "redirects:check": "node scripts/redirects.mjs --check"
+  },
+  "dependencies": {
+    "astro": "^4.16.18"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
