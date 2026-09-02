@@ -1,16 +1,16 @@
 ---
 service: attic-insulation
 title: "Attic Insulation Removal & Replacement | Bellingham"
-description: "Contaminated attic insulation removal and replacement for Bellingham and Whatcom County after rodent activity. Air-sealed and re-insulated. 360-410-2199."
+description: "Contaminated attic insulation removal and replacement for Bellingham and Whatcom County after rodent activity. Vacuumed out, treated and re-insulated. 360-410-2199."
 h1: "Attic Insulation Removal & Replacement"
-answer: "After rodents, attic insulation is usually contaminated through rather than in patches. We remove it, treat the surfaces, air-seal the ceiling below, then re-insulate to current levels. It is the one job on this site that is both the pest fix and the largest efficiency gain available on an older home."
+answer: "After rodents, attic insulation is usually contaminated through rather than in patches. We remove it, treat the surfaces, then re-insulate to current levels. It is the one job on this site that is both the pest fix and the largest efficiency gain available on an older home."
 expert: kristofer-elling
 ready: true
 faqs:
   - q: "Does the insulation really need removing, or can you just add on top?"
     a: "If it is contaminated, it needs removing. Adding new insulation over rodent-fouled material seals the contamination in, does nothing about the odor, and puts good material on top of bad. Where insulation is simply thin but clean and dry, topping up is legitimate and cheaper, and we will say so."
-  - q: "Why air-seal before re-insulating?"
-    a: "Because insulation slows heat transfer but does not stop air movement, and warm moist air leaking up through ceiling penetrations is what wets the sheathing and reduces the insulation's performance. Air-sealing first is the step most companies skip, and it is the difference between insulation that works and insulation that is just present."
+  - q: "Do you air-seal the ceiling before re-insulating?"
+    a: "No. Air sealing is not work we offer, and we would rather say so than let you assume it is included. We are trained in it — the crew has completed the Comfort Ready Home air sealing course — so we know what an unsealed ceiling looks like from above and we will tell you where the leaks are before new material goes over them. Having the work done is a job for a weatherization or insulation contractor, and it is worth doing while the attic is open."
   - q: "How much insulation should I have?"
     a: "For our climate zone the current recommendation for attics is roughly R-49 to R-60. A great many older Bellingham homes have half that, and a fair number have compressed or fallen material that is performing well below its nominal rating."
   - q: "Will I actually notice a difference?"
@@ -56,7 +56,7 @@ Same rule as the [crawlspace](/services/crawlspace-restoration/), and it is wort
 repeating because getting it wrong is expensive.
 
 **Exclusion and trapping first**, confirmed quiet over several visits. **Then**
-removal, treatment, air-sealing and re-insulation.
+removal, treatment and re-insulation.
 
 New insulation installed into an attic that still has an active population is
 nesting material you have paid to provide. Any company willing to re-insulate
@@ -76,7 +76,9 @@ anything an animal has brought up there.
 **Surface treatment.** Appropriate disinfection of the joists, ceiling deck and
 framing where contamination was heaviest.
 
-**Air-sealing.** Described below, and the step that most changes the outcome.
+**A note on air leaks.** Not work we do, and described below — but with the
+attic stripped it is the one moment the ceiling penetrations are visible, so we
+photograph what we find and tell you before anything goes back over it.
 
 **Ventilation check.** Soffit vents clear rather than stuffed with old
 insulation, baffles installed so new material cannot block airflow at the eaves,
@@ -90,17 +92,24 @@ project.
 **Re-insulation** to current recommended levels, evenly distributed, with the
 depth marked so it can be verified later.
 
-## Air-sealing, and why it is skipped
+## Air leaks, which we will point out and do not seal
 
-This is the part worth understanding, because it separates a real job from a
-quick one.
+We do not offer air sealing. It is worth saying plainly, because a lot of
+companies fold it into an insulation quote and it is the kind of thing a
+homeowner assumes is included. It is not included here.
 
-Insulation slows heat conduction. It does not stop air moving. Warm, moist air
-from the living space rises and leaks into the attic through every penetration in
-the ceiling — recessed light fixtures, bath fan housings, plumbing stacks, wiring
-holes, the attic hatch, and the top plates of interior walls, which are usually
-the single largest leak in the building and are invisible once insulation is
-down.
+What we do have is the training. The crew has completed the Comfort Ready Home
+air sealing course, which means we know what an unsealed ceiling looks like from
+above and can tell you what you are looking at. With the attic stripped back to
+the joists, that is the one moment in the life of the house when every ceiling
+penetration is visible, and it would be a waste of the access not to say so.
+
+Here is why it matters. Insulation slows heat conduction. It does not stop air
+moving. Warm, moist air from the living space rises and leaks into the attic
+through every penetration in the ceiling — recessed light fixtures, bath fan
+housings, plumbing stacks, wiring holes, the attic hatch, and the top plates of
+interior walls, which are usually the single largest leak in the building and
+are invisible once insulation is down.
 
 Two consequences. The heat you paid for leaves. And the moisture it carries
 condenses on cold roof sheathing, which over winters produces damp sheathing,
@@ -108,12 +117,12 @@ degraded insulation and eventually the moisture conditions that bring in the
 [wood-destroying insects](/services/termite-control/) discussed elsewhere on this
 site.
 
-Blowing new insulation over unsealed penetrations buries the problem under
-material that will then underperform for the life of the house. Sealing them
-first costs a fraction of the insulation itself.
-
-Most insulation contractors do not do it, because the attic is already open and
-the incentive is to blow and go. It is the single highest-value hour in this job.
+So if you are going to have it done, the moment is while the attic is open and
+before new material goes down — sealing costs a fraction of the insulation
+itself, and blowing over unsealed penetrations buries the problem under material
+that will then underperform for the life of the house. We photograph what we
+find and hand it to whoever does the sealing, which will be a weatherization or
+insulation contractor rather than us.
 
 ## What you get for it
 
@@ -178,7 +187,7 @@ We are a small local company and we would rather tell you the limits of that
 than stretch past them.
 
 **We do this work ourselves** at the scale a small crew should: contaminated
-removal, surface treatment, air-sealing, baffles and ventilation correction, and
+removal, surface treatment, baffles and ventilation correction, and
 re-insulation on a normal residential attic.
 
 **Beyond that we bring in a local insulation contractor we work with.** A
@@ -207,7 +216,7 @@ and hand you a warmer version of it.
 ## What it costs
 
 Priced from the attic, driven by square footage, existing insulation type and
-depth, contamination extent, access, and how much air-sealing the ceiling needs.
+depth, contamination extent and access.
 
 Two honest notes.
 

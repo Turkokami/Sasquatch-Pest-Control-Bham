@@ -108,9 +108,15 @@ const guideLinks = await guideLinksFor(path);
   )}
   {s.slug === 'exclusion-and-repairs' && (
     <>
+      {/* Heading rewritten 2 Sep 2026. It read "Air sealing is the same skill
+          as exclusion", which was true about the skill and wrong about the
+          offer — the owner does not sell air sealing and a heading like that
+          on a service page reads as a service. The training is still worth
+          showing here, because it is why we can tell a sealed building from an
+          unsealed one; it is just not a thing to buy from us. */}
       <Training
         only={['air sealing']}
-        heading="Air sealing is the same skill as exclusion"
+        heading="Related training we hold"
       />
       <Training installers heading="Product certifications we hold" />
     </>
