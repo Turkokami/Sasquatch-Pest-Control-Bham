@@ -1715,17 +1715,27 @@ footer.site .colophon {
 
 /* ---- numbered callouts ---- */
 
+/* SIZED FOR THE RENDER, NOT FOR THE viewBox. This drawing lands about 520px
+   wide inside the measure, so a 15px label in an 870-unit viewBox came out
+   under 9px on screen — present, and not readable. These numbers are the only
+   thing tying the picture to the list beneath it, so they are set large enough
+   to read at the size the drawing is actually used. */
 .ep-marks circle {
   fill: var(--marker);
   stroke: var(--badge-well);
-  stroke-width: 2;
+  stroke-width: 2.5;
+  r: 17;
 }
 .ep-marks text {
   fill: var(--btn-ink);
   font-family: var(--sans);
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 700;
+  /* Both axes handled by the renderer. text-anchor centres horizontally;
+     dominant-baseline centres vertically, which is what stops a number sliding
+     off centre the moment the font-size changes in the mobile block below. */
   text-anchor: middle;
+  dominant-baseline: central;
 }
 .ep-leader {
   stroke: var(--marker);
@@ -1758,10 +1768,10 @@ footer.site .colophon {
    so they scale up rather than staying proportional to a 900px viewBox. */
 @media (max-width: 34rem) {
   .ep-marks text {
-    font-size: 22px;
+    font-size: 26px;
   }
   .ep-marks circle {
-    r: 19;
+    r: 23;
   }
   .ep-frame {
     padding: var(--space-2);
