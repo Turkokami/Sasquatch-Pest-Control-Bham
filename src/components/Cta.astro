@@ -1,0 +1,52 @@
+---
+/** Boilerplate lives HERE, not in page bodies. Keystone Part 6.3:
+ *  "Keep boilerplate in components, not bodies. Process/CTA/positioning prose
+ *  repeated across pages is the tell." The duplicate-sentence scanner ignores
+ *  nothing, so this text must never be pasted into a markdown body.
+ *
+ *  `market` names the page's own market so the CTA is not generic. */
+import { business, isReady } from '../data/business';
+
+interface Props { market?: string; service?: string; serviceSlug?: string }
+const { market = 'Whatcom County', service, serviceSlug } = Astro.props;
+
+/* Free inspection everywhere EXCEPT the enumerated exceptions (bed bugs carry
+   a paid verification visit). The exception list lives in business.ts so a
+   bulk copy edit can never silently apply the wrong policy — Keystone Part 14.
+
+   This is a general pre-service assessment, NOT a WSDA structural pest /
+   wood-destroying-organism inspection, which stays gated on the separate
+   inspector credential. */
+const freeInspection =
+  business.freeInspection.default &&
+  !(serviceSlug && business.freeInspection.exceptions.includes(serviceSlug));
+
+/* WORDING, and it is deliberate: "free visit", not "free inspection".
+   The offer itself is unchanged — we come out and look, at no charge. What
+   changed is the noun.
+
+   Two reasons, and the second decided it. First, "inspection" is a regulated
+   term in this industry, and the company holds treatment licenses rather than
+   an inspector credential; the one sentence that renders on every page is the
+   loudest possible place to use a word we would rather not lean on. Second,
+   this CTA renders at the foot of pages whose whole compliance posture is
+   that we do not inspect — the Pacific dampwood termite profile states in its
+   body that we do not issue findings, and the footer was then offering an
+   inspection. No page could opt out, because the component takes no prop for
+   it, and adding one would have put the policy in two places, which is the
+   defect this codebase keeps hitting.
+
+   This is a wording change to owner-confirmed policy and the owner should
+   confirm it. Reverting is this one line. */
+const offer = freeInspection ? 'Book a free visit' : 'Get a free estimate';
+---
+<section class="cta" data-boilerplate>
+  <h2>{service ? `${service} in ${market}?` : `Pest problem in ${market}?`}</h2>
+  <p>
+    Family-owned, no long-term contracts, and every treatment is backed by our
+    <a href="/our-guarantee/">100% Service Guarantee</a>.
+  </p>
+  <p>
+    <a class="btn" href={`tel:${business.phoneE164}`}>{offer} — {business.phone}</a>
+  </p>
+</section>

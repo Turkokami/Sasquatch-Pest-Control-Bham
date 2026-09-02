@@ -1,0 +1,106 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import Faq from '../../../components/Faq.astro';
+import Cta from '../../../components/Cta.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import LocationMap from '../../../components/LocationMap.astro';
+import { guideLinksFor } from '../../../lib/guides';
+import { liveServices } from '../../../data/services';
+import { builtTowns, pagedNeighborhoods } from '../../../lib/geo';
+
+export async function getStaticPaths() {
+  const out = [];
+  for (const t of builtTowns()) {
+    for (const n of pagedNeighborhoods(t)) {
+      out.push({ params: { city: t.slug, neighborhood: n.slug }, props: { t, n } });
+    }
+  }
+  return out;
+}
+
+const { t, n } = Astro.props;
+const path = `/locations/${t.slug}/${n.slug}/`;
+
+const entries = await getCollection(
+  'locations',
+  (e) => e.data.town === t.slug && e.data.neighborhood === n.slug,
+);
+const entry = entries[0];
+const Body = entry ? (await entry.render()).Content : null;
+const ready = entry?.data.ready === true;
+
+const title = entry?.data.title ?? `${n.name} Pest Control — ${t.name}, WA`;
+const description =
+  entry?.data.description ??
+  `Pest control and exclusion for ${n.name} in ${t.name}, WA. Local crews, no long-term contracts, and a 100% Service Guarantee on every treatment we perform.`;
+const faqs = entry?.data.faqs ?? [];
+
+const siblings = pagedNeighborhoods(t)
+  .filter((x) => x.slug !== n.slug)
+  .map((x) => ({ href: `/locations/${t.slug}/${x.slug}/`, label: x.name }));
+
+const svc = liveServices().slice(0, 8).map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+
+/* Related guides, resolved from the guides' own relatedTo declarations —
+   one list, queried, rather than a second list maintained here. */
+const guideLinks = await guideLinksFor(path);
+---
+<BaseLayout
+  path={path}
+  title={title}
+  description={description}
+  kind="location"
+  noindex={!ready}
+  {/* Conditional AnswerBox — see the speakable note in src/lib/schema.ts. */}
+  hasAnswer={Boolean(entry?.data.answer)}
+  faqs={faqs}
+  image={entry?.data.hero}
+  {/* Containment chain, outermost LAST — neighborhood, city, county. This is
+      what the page's Place node is built from. */}
+  areaServed={[n.name, t.name, t.county]}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Service areas', path: '/locations/' },
+    { name: t.name, path: `/locations/${t.slug}/` },
+    { name: n.name, path },
+  ]}
+>
+  <h1>{entry?.data.h1 ?? `${n.name} Pest Control — ${t.name}, WA`}</h1>
+
+  {entry?.data.answer && <AnswerBox text={entry.data.answer} />}
+
+  {Body ? (
+    <div class="prose"><Body /></div>
+  ) : (
+    <>
+      {n.note && <p class="prose">{n.note}.</p>}
+      <div class="stub">
+        <b>Route live, content pending.</b> The neighborhood tier is the most
+        templated on the old site and needs the most real detail: housing stock
+        and era, specific streets or landmarks, and the pest pressure that
+        actually differs from the next neighborhood over. If those three things
+        aren't real, this page should be dropped rather than filled.
+      </div>
+    </>
+  )}
+
+  <Faq items={faqs} />
+
+  <LinkRail heading={`Services we run in ${n.name}`} links={svc} />
+  <LinkRail heading={`Other ${t.name} neighborhoods`} links={siblings} />
+  <LinkRail
+    heading="Up a level"
+    links={[{ href: `/locations/${t.slug}/`, label: `All of ${t.name}` }]}
+  />
+
+  <LinkRail heading="Guides" links={guideLinks} />
+
+  {/* Same position as the city tier: orientation after the copy, not before
+      it. Queried as "<neighborhood>, <city>" so Google resolves the district
+      rather than whatever else shares the name statewide. */}
+  <LocationMap place={`${n.name}, ${t.name}`} />
+
+  <Cta market={n.name} />
+</BaseLayout>

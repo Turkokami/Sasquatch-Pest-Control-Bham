@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import LinkRail from '../../components/LinkRail.astro';
+
+/* Imported legacy posts. Like guides, these are generated FROM the collection
+   rather than from a data row — there is no such thing as a blog route that
+   needs to stand up before its content arrives, because the content is the
+   only reason the route exists. */
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((p) => ({ params: { post: p.slug }, props: { p } }));
+}
+
+const { p } = Astro.props;
+const path = `/blog/${p.slug}/`;
+const { Content } = await p.render();
+
+const superseded = p.data.supersededBy;
+
+/* Sibling rail: other posts that are NOT superseded, so the rail sends people
+   toward the posts that still stand on their own rather than circulating them
+   around a set of archived duplicates. */
+const all = await getCollection('blog');
+const siblings = all
+  .filter((x) => x.slug !== p.slug && !x.data.supersededBy)
+  .slice(0, 6)
+  .map((x) => ({ href: `/blog/${x.slug}/`, label: x.data.h1 }));
+
+const imported = p.data.imported.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+<BaseLayout
+  path={path}
+  title={p.data.title}
+  description={p.data.description}
+  kind="article"
+  noindex={Boolean(superseded)}
+  canonicalTo={superseded}
+  {/* The blog collection makes `answer` optional — 70 of the 76 imported posts
+      predate the AEO contract and render no AnswerBox at all. Passing the real
+      answer keeps the speakable selector off pages that have no such region.
+      `imported` is the date this build brought the post across rather than the
+      date it was written, so it is deliberately NOT published as
+      datePublished; `updated` is used where an author has set one. */}
+  hasAnswer={Boolean(p.data.answer)}
+  dateModified={p.data.updated}
+  faqs={p.data.faqs}
+  image={p.data.hero}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Blog', path: '/blog/' },
+    { name: p.data.h1, path },
+  ]}
+>
+  <h1>{p.data.h1}</h1>
+
+  {superseded && (
+    <aside class="archived">
+      <p>
+        <strong>This is an archived post.</strong> It was published on our previous
+        website and is kept here so the writing is not lost. We have since written
+        a fuller, more current page on this subject, and that is the one to read
+        if you want the up-to-date answer.
+      </p>
+      <p><a href={superseded}>Read the current page on this topic →</a></p>
+    </aside>
+  )}
+
+  {p.data.answer && <AnswerBox text={p.data.answer} />}
+
+  <div class="prose"><Content /></div>
+
+  {p.data.faqs && <Faq items={p.data.faqs} />}
+
+  {/* data-boilerplate: identical on all 67 imported posts by design. It is a
+      provenance notice, not writing — the same reason the CTA and the legal
+      disclaimer carry the attribute. */}
+  <p class="provenance" data-boilerplate>
+    Originally published on our previous website at
+    <code>{p.data.legacyUrl}</code>. Brought across {imported}, with the text
+    left as it was written apart from corrections to anything that is no longer
+    accurate.
+  </p>
+
+  {siblings.length > 0 && <LinkRail heading="More from the blog" links={siblings} />}
+
+  <Cta market="Whatcom County" />
+</BaseLayout>
+
+{/* No scoped <style> here, on purpose. The archived-post banner and the provenance note used to be styled locally,
+    out of hard-coded hex fallbacks and opacity — including var(--tint),
+    a token that never existed, so every one of those rules silently
+    resolved to its fallback and could not follow a brand change. It is
+    styled from the token system in src/styles/global.css instead. */}

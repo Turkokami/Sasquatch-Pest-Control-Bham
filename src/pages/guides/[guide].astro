@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import SourceList from '../../components/SourceList.astro';
+
+/* Guides differ from every other page type here in one respect: they are
+   generated FROM the content collection rather than from a data file.
+   Services, towns and problems all have a data row that owns the route and a
+   markdown file that fills it, because those routes must stand up before the
+   content exists. A guide with no content is not a page that needs a stub —
+   it is a page that should not exist. So the file is the source of truth. */
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((g) => ({ params: { guide: g.slug }, props: { g } }));
+}
+
+const { g } = Astro.props;
+const path = `/guides/${g.slug}/`;
+const { Content } = await g.render();
+
+const siblings = (await getCollection('guides'))
+  .filter((x) => x.slug !== g.slug && x.data.cluster === g.data.cluster)
+  .map((x) => ({ href: `/guides/${x.slug}/`, label: x.data.h1 }));
+---
+<BaseLayout
+  path={path}
+  title={g.data.title}
+  description={g.data.description}
+  kind="article"
+  noindex={g.data.ready !== true}
+  faqs={g.data.faqs}
+  image={g.data.hero}
+  {/* The same sources SourceList renders below, as Article `citation`. One
+      array read twice — the visible citation block and the structured data
+      cannot disagree, because there is nothing for them to disagree about.
+      `updated` is optional in the collection and unset on every guide today,
+      so dateModified is absent rather than derived from a file timestamp,
+      which would be a build artifact rather than a fact about the writing. */}
+  citations={g.data.sources}
+  dateModified={g.data.updated}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Guides', path: '/guides/' },
+    { name: g.data.h1, path },
+  ]}
+>
+  <h1>{g.data.h1}</h1>
+
+  <AnswerBox text={g.data.answer} />
+
+  <div class="prose"><Content /></div>
+
+  <Faq items={g.data.faqs} />
+
+  <SourceList
+    sources={g.data.sources}
+    reviewBy={g.data.reviewBy}
+    legalDisclaimer={g.data.legalDisclaimer}
+  />
+
+  <LinkRail heading="Related guides" links={siblings} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

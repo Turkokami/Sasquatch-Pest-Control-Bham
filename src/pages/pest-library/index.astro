@@ -1,0 +1,239 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import { getCollection } from 'astro:content';
+import { PEST_GROUPS, pestsInGroup } from '../../data/pests';
+
+const path = '/pest-library/';
+
+/* The old site had a pest library hub but no profiles beneath it. The 48
+   profiles are the topical-authority backbone — Phase 5. This hub exists now
+   so each profile has a parent to link up to as it lands. */
+const answer =
+  'Our pest library covers the insects and rodents that actually turn up in Whatcom County homes and buildings — how to identify each one, when in the year it shows up here, what it does to a structure, and what treatment realistically involves.';
+
+/* The species list lives in src/data/pests.ts and only there. It used to be a
+   literal array here; once profiles got their own routes that array became a
+   second copy of the enumeration and would have drifted from it — the defect
+   this codebase keeps hitting. The hub now renders from the data file, links
+   the profiles that exist, and shows the rest as plain names. */
+const profiles = await getCollection('pests');
+const written = new Set(profiles.filter((x) => x.data.ready === true).map((x) => x.data.species));
+
+const faqs = [
+  {
+    q: 'How do I identify a pest I found in my house?',
+    a: 'Take a clear photo next to something for scale and send it to us. Identification drives treatment — moisture ants and carpenter ants call for genuinely different responses, and getting the species wrong wastes a visit.',
+  },
+  {
+    q: 'Are hobo spiders dangerous?',
+    a: 'The Washington State Department of Health states that hobo spiders are not considered dangerous as previously thought, and that evidence does not support a link between their venom and skin necrosis. Most large fall spiders found indoors here are actually giant house spiders.',
+  },
+  {
+    q: 'Do we have termites in Whatcom County?',
+    a: 'Yes, but not the aggressive subterranean species that drives treatment in the South. The Pacific dampwood termite is the common one here, and it goes after wood that is already wet — which usually means the real problem is a moisture source.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  title="Pest Library | Whatcom County, WA"
+  description="Identification, seasonal behavior and treatment notes for the insects and rodents that actually show up in Whatcom County homes and buildings."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Pest library', path }]}
+>
+  <h1>Pest Library — What Actually Lives Here</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <p>
+      Most pest libraries are national copy pasted onto a local site, which is
+      why they list species that have never been recorded in this county. This
+      one covers what our technicians actually find in Whatcom County, with the
+      seasonal timing that applies here rather than to a national average.
+    </p>
+
+    <h2>The four things worth knowing about pests in Whatcom County</h2>
+
+    <h3>Damp matters more than cold</h3>
+    <p>
+      We do not get a hard winter, so populations are never reset. What we get
+      instead is about thirty-five inches of rain spread across a long gray
+      season, which keeps wood damp year-round. That single fact explains most of
+      our call volume. Dampwood termites only attack wood that is already wet.
+      Moisture ants nest in it. Carpenter ants prefer wood that has begun to
+      soften. Silverfish, sowbugs and millipedes are all humidity-driven. When one
+      of those appears indoors here, the useful question is where the water is,
+      not which product to spray.
+    </p>
+
+    <h3>Most of what frightens people here is harmless</h3>
+    <p>
+      The giant house spider is the largest spider most people in this county will
+      ever see indoors, and it is not dangerous. Its close relative the hobo
+      spider carries a reputation built on research that has since been walked
+      back — the Washington State Department of Health states plainly that hobo
+      spiders are not considered dangerous as previously thought, and that
+      evidence does not support the claimed link to skin necrosis. We include this
+      because scaring customers is an easy way to sell treatments and we would
+      rather not.
+    </p>
+
+    <h3>Our termites are not the ones you have read about</h3>
+    <p>
+      Termite content online is overwhelmingly written about aggressive
+      subterranean species in the South and East. The common species here is the
+      Pacific dampwood termite, which is a moisture-follower rather than a
+      structural predator of sound wood. Finding them is genuinely bad news, but
+      the news is usually about a water problem that has been running for a while
+      rather than about an invading colony.
+    </p>
+
+    <h3>What this library does not cover</h3>
+    <p>
+      Birds and nuisance wildlife are not in here, because they are not what we
+      do. Sasquatch is a pest control and exclusion company, and bird work,
+      bats, squirrels, raccoons and opossums are all somebody else's specialty.
+      Several of those are federally or state protected with hard seasonal
+      timing attached, and that is work for an operator set up to handle it
+      properly rather than for us.
+    </p>
+    <p>
+      If that is what you have, call anyway — we will tell you what it sounds
+      like from the description and point you somewhere useful.
+    </p>
+
+    <h3>Identification is most of the value</h3>
+    <p>
+      A surprising share of what we get called about needs no treatment at all,
+      and the difference between the two is nearly always identification. A
+      carpenter ant and a moisture ant call for genuinely different responses. A
+      giant house spider and a hobo spider are routinely confused, and only one
+      of those confusions leads to unnecessary treatment. Winged carpenter ants
+      in spring get mistaken for termite swarmers constantly.
+    </p>
+    <p>
+      That is why these entries lead with what the thing actually is and what it
+      is telling you about the building, rather than with a treatment.
+    </p>
+
+    <h2>How to use this library</h2>
+    <p>
+      Each profile covers identification, when in the year it shows up in this
+      county, what it actually does to a structure or to people, the signs that
+      distinguish it from the species it gets confused with, and what treatment
+      realistically involves. Where the honest answer is that no treatment is
+      warranted, the profile says so.
+    </p>
+    <p>
+      If you have something in front of you and cannot place it, photograph it
+      next to a coin or a fingertip for scale and send it over. Identification is
+      free and it is the step that determines everything after it.
+    </p>
+    <h2>When to call and when not to</h2>
+    <p>
+      Not everything in this library warrants a treatment, and we would rather say
+      so here than after you have paid for a visit.
+    </p>
+    <p>
+      <strong>Usually does not need us:</strong> a single large spider indoors in
+      autumn, a few ants scouting a counter in early spring, one wasp in a room
+      with an open window, a cluster of conifer seed bugs on a sunny wall in
+      October. These are seasonal and self-limiting.
+    </p>
+    <p>
+      <strong>Worth a call:</strong> droppings anywhere in a kitchen or pantry,
+      scratching in a wall or ceiling at night, sawdust-like frass below trim,
+      soft or spongy wood around a window or sill, an ant trail that persists
+      after cleaning, any wasp or hornet nest near a door or a play area, or bites appearing overnight.
+    </p>
+    <p>
+      <strong>Worth a call quickly:</strong> anything structural you want sealed
+      before autumn, because the useful window for exclusion work is August and
+      the queue for it fills up.
+    </p>
+
+  </div>
+    <h2>A note on sources</h2>
+    <p>
+      Where a profile makes a claim about risk, law or biology, it says where that
+      comes from — Washington State Department of Health for the spider guidance,
+      and WSU Extension for regional species behavior. We date those references so
+      you can see how current they are.
+    </p>
+    <p>
+      That matters more in this field than it sounds. Pest content online is
+      dominated by material written to sell rather than to inform, and a good deal
+      of what circulates about hobo spiders, "murder hornets" and termites in the
+      Pacific Northwest is either outdated or was never accurate here.
+    </p>
+
+    <h2>What is not in this library</h2>
+    <p>
+      You will not find fire ants, Formosan termites or brown recluse profiles
+      here, because none of them is established in Whatcom County. They appear on
+      a great many Pacific Northwest pest sites anyway, copied from national
+      templates, and every time they do they make a local site slightly less
+      trustworthy.
+    </p>
+    <p>
+      The black widow is a separate case and we would rather draw the line
+      accurately than tidily. It is a genuine Washington spider rather than a
+      national template entry: the state Department of Health describes the
+      western black widow as common to eastern Washington, and its range follows
+      the drier, warmer country east and south of the Cascades. On this side of
+      the mountains it is uncommon, and the ones that do turn up are in woodpiles,
+      meter boxes and undisturbed shed corners rather than in living space. That
+      is a different statement from saying the species does not occur in the
+      state, and we are not going to make the stronger one just because it reads
+      more cleanly next to the recluse.
+    </p>
+    <p>
+      The widow is also only half of what the state actually says, and it is the
+      half this page had been giving all the room to. The Department of Health
+      names two spiders in Washington as being of medical significance, and the
+      second is the yellow sac spider — which, unlike the widow, is common on
+      this side of the Cascades. It is small, pale and easy to miss: it spends
+      the day in a silk pocket where a wall meets a ceiling and hunts across
+      walls, floors and bedding at night rather than waiting in a web, which is
+      exactly why it is the one realistically likely to bite somebody in a
+      Whatcom County bedroom. The bite itself is a minor event — a sharp sting,
+      then redness and itching that settle within a day or two — and the
+      skin-necrosis stories attached to it are as poorly supported as the ones
+      attached to the hobo spider. Both halves of that are worth having, which is
+      why it gets <a href="/pest-library/yellow-sac-spider/">a profile of its
+      own</a> rather than a line in somebody else's.
+    </p>
+    <p>
+      If you have been told you have a brown recluse here, the identification is
+      worth a second look before anyone treats for it.
+    </p>
+
+
+  {PEST_GROUPS.map((g) => (
+    <section>
+      <h2>{g.name}</h2>
+      <p class="blurb">{g.blurb}</p>
+      <ul class="rail">
+        {pestsInGroup(g.key).map((s) =>
+          written.has(s.slug)
+            ? <li><a href={`/pest-library/${s.slug}/`}>{s.name}</a></li>
+            : <li><span>{s.name}</span></li>,
+        )}
+      </ul>
+    </section>
+  ))}
+
+  <Faq items={faqs} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>
+
+{/* No scoped <style> here, on purpose. The group blurbs and rail counts used to be styled locally,
+    out of hard-coded hex fallbacks and opacity — including var(--tint),
+    a token that never existed, so every one of those rules silently
+    resolved to its fallback and could not follow a brand change. It is
+    styled from the token system in src/styles/global.css instead. */}

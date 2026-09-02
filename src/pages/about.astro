@@ -1,0 +1,771 @@
+---
+import fs from 'node:fs';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import ExpertBlock from '../components/ExpertBlock.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import { business, people, isReady, credentialMaintenance } from '../data/business';
+import type { Owed } from '../data/business';
+
+const path = '/about/';
+
+/* The team splits two ways and the split is the point, not a layout choice.
+   A WSDA license type means the state licenses that person to apply pesticides
+   and they are on staff here. Jorge holds an ESA certification, no WSDA
+   license, and consults rather than works here — rendering him as a sixth
+   technician would claim an employment relationship the data does not carry.
+   See OWNER DECISION #3 in business.ts: permission to NAME him is not
+   permission to describe him as staff. */
+const licensed = people.filter((p) => p.publishable === true && p.licenseType !== null);
+const advisers = people.filter((p) => p.publishable === true && p.licenseType === null);
+
+/* Awards render from business.awards and assert nothing the badge does not.
+   A PENDING url renders as plain text — never as a link, and never as an
+   invented one. See the evidence note above the array. */
+const awards = business.awards;
+const press = business.press;
+
+/* isReady() guards the PENDING sentinel and nothing else. Several award
+   fields are legitimately `null` because the badge names no category, no
+   level or no year, and null is not PENDING — so `isReady(a.level)` was true
+   for every badge without a level and the built page rendered "· null"
+   fifteen times. Anything optional has to clear both. */
+const shown = <T,>(v: Owed<T> | null | undefined): v is T =>
+  v !== null && v !== undefined && isReady(v as Owed<T>);
+
+/* THE TIER SPLIT IS THE HONEST PART OF THIS SECTION, not a layout choice.
+   `local-vote` means a named local publication or platform put a category to
+   a vote; `directory` means a listing site or ratings aggregator issued a
+   badge, some of which are generated from public review data and some of
+   which are sold. Rendering the two groups in one list would borrow the
+   credibility of the first for the second. See the tier note in business.ts. */
+const localVote = awards.filter((a) => a.tier === 'local-vote');
+const directory = awards.filter((a) => a.tier === 'directory');
+/* A shortlisting is not a win. Pulled out so the page can say so in prose as
+   well as label it on the row — this is the single most likely thing in the
+   list to drift into "award-winning" the next time somebody edits it. */
+const finalists = localVote.filter((a) => a.result !== 'winner');
+const voteWins = localVote.filter((a) => a.result === 'winner');
+const votePublishers = Array.from(new Set(voteWins.map((a) => a.publisher)));
+const dirPublishers = Array.from(new Set(directory.map((a) => a.publisher)));
+/* Every row currently sits at `owner-badge`: we hold the artwork, not the
+   publisher's own winners listing. Guarded rather than asserted, so the
+   sentence disappears by itself the day one row is upgraded. */
+const allOwnerBadge = awards.every((a) => a.via === 'owner-badge');
+
+/* The previous version sorted `a.year` numerically across every row and
+   joined it. Two badges print no year, so the data carries null rather than a
+   guess, and a null in a numeric sort produced "in and 2022 and 2023 and
+   2024 and 2025 and 2026" on the live page. Nulls are dropped here rather
+   than coerced, and nothing is ever printed for a field the badge left
+   blank. */
+const yearsOf = (rows: readonly { year: number | null }[]) =>
+  Array.from(new Set(rows.map((r) => r.year)))
+    .filter((y): y is number => typeof y === 'number')
+    .sort((a, b) => a - b);
+const listOf = (items: readonly (string | number)[]) =>
+  items.length < 2
+    ? items.join('')
+    : `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+const NUMBER_WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
+  'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
+  'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
+const spell = (n: number) => NUMBER_WORDS[n] ?? String(n);
+/* Same word, capitalized, for the start of a sentence. Spelled numbers open
+   three sentences here and "eleven of them came from" shipped lowercase the
+   first time this ran. */
+const Spell = (n: number) => {
+  const w = spell(n);
+  return w.charAt(0).toUpperCase() + w.slice(1);
+};
+const voteYears = listOf(yearsOf(localVote));
+
+/* What the row says under the name. "Winner", "Finalist" and "Listed" are
+   rendered on EVERY row, never inferred from the section it sits in, because
+   a finalist badge in a list of winners is exactly how a shortlisting becomes
+   a claim to have won. */
+const RESULT: Record<string, string> = {
+  winner: 'Winner',
+  finalist: 'Finalist — shortlisted, not a win',
+  listed: 'Listed',
+};
+
+/* Intrinsic dimensions are read from the files at build time rather than
+   transcribed into this page. Two reasons. Sixteen <img> tags without width
+   and height reflow the whole page as they decode, and a number typed by hand
+   goes stale silently the day a badge is re-cropped. Reading also means a
+   badge path in business.ts that is not on disk fails the BUILD, here, with
+   the path in the message — rather than shipping a broken image for harness
+   check 1b to catch after the fact. */
+const PUBLIC_DIR = new URL('../../public/', import.meta.url);
+function intrinsicSize(publicPath: string): { width: number; height: number } {
+  const buf = fs.readFileSync(new URL(publicPath.replace(/^\//, ''), PUBLIC_DIR));
+  if (buf.length > 24 && buf.readUInt32BE(0) === 0x89504e47) {
+    return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };  // PNG IHDR
+  }
+  let i = 2;                                                               // JPEG SOFn
+  while (i + 9 < buf.length) {
+    if (buf[i] !== 0xff) { i++; continue; }
+    const marker = buf[i + 1];
+    if (marker >= 0xc0 && marker <= 0xcf && marker !== 0xc4 && marker !== 0xc8 && marker !== 0xcc) {
+      return { height: buf.readUInt16BE(i + 5), width: buf.readUInt16BE(i + 7) };
+    }
+    i += 2 + buf.readUInt16BE(i + 2);
+  }
+  throw new Error(`about.astro: cannot read image dimensions from ${publicPath} (expected JPEG or PNG)`);
+}
+const artwork = new Map<string, { width: number; height: number }>(
+  [...awards.map((a) => a.badge), ...press.map((p) => p.image)]
+    .filter((p): p is string => typeof p === 'string' && p.length > 0)
+    .map((p) => [p, intrinsicSize(p)]),
+);
+const sizeOf = (p: string) => artwork.get(p) ?? { width: 0, height: 0 };
+
+/* UTC so an ISO date string cannot slip back a day in a local timezone —
+   same reason as the credential source date below. */
+const usDate = (iso: string) =>
+  new Date(iso).toLocaleDateString('en-US', {
+    day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+  });
+/* The one item on this page read on the publisher's own site rather than
+   taken from artwork. It gets to say so; nothing else does. */
+const pressVerified = press.filter((p) => p.via === 'publisher-verified');
+
+const cm = credentialMaintenance;
+/* UTC so an ISO date string cannot slip back a day in a local timezone. */
+const cmSourceRead = new Date(cm.source.read).toLocaleDateString('en-US', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+
+/* The old /about/ carried three H1s and opened with a 113-word run-on.
+   It also asserted "Licensed pest management professional" with no number
+   anywhere on the site — that claim does not render until the license
+   field is filled (see scripts/pending.mjs). */
+/* OWNERSHIP WORDING — SETTLED 2 Sep 2026 by the owner, and the history is
+   kept because it explains why two published sources disagree with this page.
+
+   The owner states that Kristofer Elling has taken FULL ownership, and that
+   Tyson Elling is now Office Manager. business.ts is updated to match.
+
+   Anyone checking us against the press will find otherwise, so here is why
+   that is not an error: the Pest Management Professional article in
+   business.press was published on 18 August 2023 and names brothers Tyson and
+   Kristofer Elling as the owners, and the Markel feature card captions
+   Kristofer as "Co-owner". Both were accurate when they were written. The
+   ownership changed afterwards. A 2023 article is a record of 2023, not a
+   contradiction of today, and it should not be used to "correct" this page
+   back — which is exactly what a future reader comparing the two would
+   otherwise be tempted to do.
+
+   What is claimed here is now what the owner states and what nothing
+   disputes: he founded it, he owns it, it is family-run.
+   40–60 words on the answer (src/lib/seo.ts checkAnswer) — recount on edit.
+   This is 49. */
+const answer =
+  'Sasquatch Pest Control is a family-run pest control and exclusion company in Bellingham, Washington, founded and owned by Kristofer Elling. We work our own routes across Whatcom County rather than dispatching from a regional call center, and every treatment we carry out is backed by our 100% Service Guarantee.';
+
+const faqs = [
+  { q: 'Who owns Sasquatch Pest Control?', a: 'Kristofer Elling founded Sasquatch Pest Control and owns it outright. It is run as a family business out of Bellingham, Washington, rather than as a franchise or the branch office of a company headquartered in another state.' },
+  { q: 'Is Sasquatch Pest Control locally owned?', a: 'Yes. We are locally owned and operated in Bellingham. Our technicians live in the area and run the routes themselves rather than dispatching from another region.' },
+  { q: 'What makes Sasquatch different from a national pest company?', a: 'We do not use long-term contracts, our crews are local, and the person who sets our standards works in the field rather than at a corporate office in another state.' },
+];
+
+const canClaim = business.hasLicensedStaff;
+---
+<BaseLayout
+  path={path}
+  title="About Sasquatch Pest Control | Bellingham, WA"
+  description="Family-owned pest control and exclusion founded by Kristofer Elling, serving Bellingham and Whatcom County with no long-term contracts and a 100% Service Guarantee."
+  kind="page"
+  faqs={faqs}
+  image={{
+    src: '/img/sasquatch-team-and-trucks.jpg',
+    alt: 'The Sasquatch Pest Control crew standing with two branded service vehicles at sunset',
+    width: 1600,
+    height: 814,
+  }}
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'About', path }]}
+>
+  <h1>About Sasquatch Pest Control</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>How it started</h2>
+    <p>
+      Sasquatch Pest Control was founded in Bellingham to do pest work the way a
+      local company can: showing up when we say we will, explaining what we
+      found, and standing behind the result without a contract holding anyone in
+      place.
+    </p>
+
+    {awards.length > 0 && (
+      <>
+        <h2>Recognition</h2>
+        <p>
+          There are {spell(awards.length)} badges on the shelf and they are not
+          all the same kind of thing, so they are not shown as though they
+          were. {Spell(localVote.length)} of them come from local publications,
+          platforms and organizations in this county.
+          {' '}{Spell(directory.length)} come from directory sites that issue
+          badges of their own. Those two groups have
+          separate headings below, because running them together as one long
+          row of logos would lend the second group credibility the first one
+          earned.
+        </p>
+
+        <h3>Local awards and readers' votes</h3>
+        <p>
+          {Spell(voteWins.length)} of these were awarded after a named local
+          publication or platform ran a vote and readers picked this company:
+          {' '}{listOf(votePublishers)}. The years run {voteYears}. That is the
+          part of this section worth your attention, because whatever else a
+          readers' vote is, the people casting it live here and had to choose
+          somebody.
+        </p>
+        {finalists.length > 0 && (
+          <p>
+            Not everything in that group is a win, and the ones that are not
+            say so on the row rather than being quietly filed with the rest.
+            {finalists.map((f) => (
+              <>
+                {' '}The {shown(f.year) ? `${f.year} ` : ''}{f.publisher} entry
+                {shown(f.category) ? ` for ${f.category}` : ''} is a finalist —
+                shortlisted, which is a genuinely good thing to be and a
+                different thing from winning.
+              </>
+            ))}
+          </p>
+        )}
+        <ul class="badges">
+          {localVote.map((a) => (
+            <li>
+              {/* A row can have a result and no artwork — the 2026 Cascades
+                  Best silver was found on the publisher's listing and no
+                  badge for it was ever supplied. Render the row anyway; an
+                  award is not less real for lacking a picture. */}
+              {shown(a.badge) && shown(a.alt) && (
+                <img
+                  src={a.badge}
+                  alt={a.alt}
+                  width={sizeOf(a.badge).width}
+                  height={sizeOf(a.badge).height}
+                  loading="lazy"
+                  decoding="async"
+                />
+              )}
+              <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+              <span>
+                {a.publisher}{shown(a.year) ? ` · ${a.year}` : ''}
+              </span>
+              {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
+              {shown(a.level) && <span>{a.level}</span>}
+              <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+            </li>
+          ))}
+        </ul>
+
+        <h3>Directory and aggregator badges</h3>
+        <p>
+          The other {spell(directory.length)} came from listing sites and
+          ratings aggregators rather than from a vote:
+          {' '}{listOf(dirPublishers)}. Badges of this kind are a weaker thing
+          than the group above, and it is worth knowing why rather than being
+          left to guess: some are generated automatically from whatever public
+          review data the site has scraped, and some are simply sold to the
+          business that wants to display one. They are shown here because the
+          artwork is real and quietly dropping the less flattering half of a
+          list is its own kind of edit. They are shown separately because they
+          are not the same claim.
+        </p>
+        <ul class="badges">
+          {directory.map((a) => (
+            <li>
+              {/* A row can have a result and no artwork — the 2026 Cascades
+                  Best silver was found on the publisher's listing and no
+                  badge for it was ever supplied. Render the row anyway; an
+                  award is not less real for lacking a picture. */}
+              {shown(a.badge) && shown(a.alt) && (
+                <img
+                  src={a.badge}
+                  alt={a.alt}
+                  width={sizeOf(a.badge).width}
+                  height={sizeOf(a.badge).height}
+                  loading="lazy"
+                  decoding="async"
+                />
+              )}
+              <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+              <span>
+                {a.publisher}{shown(a.year) ? ` · ${a.year}` : ''}
+              </span>
+              {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
+              {shown(a.level) && <span>{a.level}</span>}
+              <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+            </li>
+          ))}
+        </ul>
+
+        <p>
+          It is worth saying what {spell(awards.length)} pieces of artwork
+          deliberately leave out. There is no star rating and no review count
+          beside any of them, because an award from a publisher is not a
+          measurement of anything and dressing one up as a score would be
+          exactly the sleight of hand the rest of this page argues against.
+          There is no superlative either. Each badge is quoted in the terms its
+          issuer used — the award, who gave it, the year where the artwork
+          carries one, and whether it was a win — and a claim to be the best at
+          something in this county would be us adding a word the issuer did
+          not.
+        </p>
+        <p>
+          {allOwnerBadge
+            ? 'What we hold for every one of them is the artwork itself. We have not been able to open each publisher’s own winners listing and read the company name on it, so none of these entries links anywhere yet.'
+            : 'Where a publisher puts its winners listing somewhere a reader can reach, the entry links to it.'}
+          {' '}An entry stays plain text rather than pointing at a page we have
+          not read ourselves, and you should weigh it accordingly. Something you
+          can click through and check yourself is worth several you cannot,
+          which is the whole argument for the section that follows.
+        </p>
+      </>
+    )}
+
+    {press.length > 0 && (
+      <>
+        <h2>Press</h2>
+        <p>
+          An award is somebody handing you a badge. Press is somebody deciding
+          to write about you without being asked, which is a different signal
+          and belongs in a different list.
+        </p>
+        {pressVerified.map((p) => (
+          <p>
+            {p.publication} is a trade magazine for people who do this work
+            rather than a consumer title, so the piece below was written for an
+            audience of other operators. It is also the only item anywhere on
+            this page that has been checked against the publisher's own site
+            rather than taken from artwork somebody sent us — the article, the
+            byline and the date are all where they should be, and the entry
+            links straight to them. We are not going to summarize it here.
+            Read it there if you want it.
+          </p>
+        ))}
+        <ul class="press">
+          {press.map((p) => (
+            <li>
+              {/* Both, not either: an <img> with an empty alt is an
+                  accessibility failure and a harness failure, so a press image
+                  without alt text does not render at all. */}
+              {shown(p.image) && shown(p.alt) && (
+                <img
+                  src={p.image}
+                  alt={p.alt}
+                  width={sizeOf(p.image).width}
+                  height={sizeOf(p.image).height}
+                  loading="lazy"
+                  decoding="async"
+                />
+              )}
+              <div>
+                <b>{shown(p.url) ? <a href={p.url} rel="nofollow noopener">{p.title}</a> : p.title}</b>
+                <span>
+                  {p.publication}
+                  {shown(p.published) ? ` · ${usDate(p.published)}` : ''}
+                  {shown(p.author) ? ` · ${p.author}` : ''}
+                </span>
+                <span class="via">
+                  {p.via === 'publisher-verified'
+                    ? "Checked against the publisher's own page"
+                    : 'Supplied by the owner as artwork; not checked against the publisher, so it does not link'}
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    <h2>Our service area</h2>
+    <p>
+      We work throughout <a href="/locations/">Whatcom County</a> — Bellingham
+      and its neighborhoods, plus Ferndale, Lynden, Blaine, Birch Bay, Everson,
+      Nooksack, Sumas, Sudden Valley, Custer, Deming and Acme.
+    </p>
+
+    <h2>What we believe about this work</h2>
+    <p>
+      Pest control has a reputation problem, and it is largely earned. The
+      industry's worst habits are all variations on the same theme: sell a
+      recurring treatment for a problem that a repair would end, describe a
+      harmless species as dangerous, and write a guarantee vague enough that it
+      never has to be honored.
+    </p>
+    <p>
+      We have built this company around not doing those things, which sometimes
+      costs us a sale. When moisture ants turn up in a sill plate, the finding
+      that matters is where the water is coming from — and the person who needs
+      to hear it is often a contractor rather than us. When someone calls in
+      October about a large spider in the bathtub, the honest answer is usually
+      that it is a giant house spider doing what they do every autumn and that no
+      treatment is warranted. We would rather be the company that told you that
+      than the one that sold you a quarterly plan for it.
+    </p>
+    <p>
+      The same applies to the jobs we decline. We do not sell mole trapping,
+      because the traps sold for it are prohibited body-gripping traps under
+      Washington law. We do not do bird work or nuisance wildlife removal, so if
+      that is what you need we will tell you on the phone and point you to
+      somebody who does it properly rather than taking the booking. Those
+      conversations are harder than saying yes, and they are the reason people
+      call us back.
+    </p>
+
+    <h2>How we work in the field</h2>
+    <p>
+      Our technicians live here and run these routes themselves. That is not a
+      slogan — it is the reason someone can tell you that the housing stock in the
+      Lettered Streets behaves differently from the housing stock in Barkley, or
+      that the rodent movement out along the river starts three weeks before it
+      does in town.
+    </p>
+    <p>
+      Every job starts with identification, because it drives everything after it.
+      Carpenter ants and moisture ants call for genuinely different responses.
+      A hobo spider and a giant house spider are routinely confused and only one
+      of those confusions leads to unnecessary treatment. Getting the species
+      right first is the cheapest thing we do.
+    </p>
+    <p>
+      We put the scope in writing before work starts, we do not require long-term
+      contracts, and every treatment carries our
+      <a href="/our-guarantee/">100% Service Guarantee</a> — which is a defined
+      re-service commitment with published terms rather than an open-ended
+      promise.
+    </p>
+
+    <h2>The visit that comes first</h2>
+    <p>
+      Almost nothing in this trade can be honestly priced down a phone line, so
+      most jobs open with somebody driving out to look at the actual building.
+      {business.freeInspection.default && ' That assessment is free.'} It is free
+      because charging for the conversation gives a company a reason to find
+      something in it, and because we would rather absorb the drive than talk
+      someone into a treatment their house did not need.
+    </p>
+    <p>
+      There is one exception on our list and we would rather name it here than
+      have you meet it at the door. Bed bug work carries a paid verification
+      visit instead, and it is credited toward the treatment if you go ahead.
+      Confirming an active bed bug population is an hour of careful looking
+      rather than ten minutes of it, and a wrong call in either direction costs
+      the customer far more than the visit does.
+    </p>
+    <p>
+      Two words of precision about what that first visit is. It is a
+      pre-service assessment — somebody working out what you have and what it
+      would take to deal with it. We do not present it as a wood-destroying
+      organism inspection, which is a separately licensed activity in
+      Washington and is dealt with below.
+    </p>
+
+    <h2>What you get in writing</h2>
+    <p>
+      Two documents matter here and they are genuinely different documents, so
+      it is worth pulling them apart. The first is the scope, and it reaches you
+      before anyone treats anything: what we propose to do, where we propose to
+      do it, and what it will cost, set down while you can still decline the
+      whole thing. Nobody should be reading the plan for their house after the
+      truck has left.
+    </p>
+    <p>
+      The second is the record of the treatment performed, and it reaches you
+      afterwards. It sets down the material used, the target pest, the areas
+      treated and the rate applied, because that is what a label, an auditor, a
+      property manager or the next technician on the account will need to know.
+      Commercial customers usually want it filed and referenced; a homeowner
+      usually wants it once and never thinks about it again. Both are fine, and
+      both get the same record.
+    </p>
+    <p>
+      That record has a boundary, and it is a legal one rather than a
+      preference. A document identifying damage or infestation by
+      wood-destroying organisms is a regulated instrument in this state,
+      carrying a state-issued control number and the license number of the
+      person who signed it. We are not licensed structural pest inspectors and
+      we do not produce that document. An account of the treatment we carried
+      out is a different thing doing a different job, and it is the one we can
+      hand you.
+    </p>
+
+    <h2>Exclusion, and why we invested in it</h2>
+    <p>
+      Plenty of companies will spray a perimeter on a schedule. Far fewer will go
+      under a house on their back with a light and work out how the animal is
+      actually getting in. We went the other way and built the exclusion side
+      into a specialty, because in a climate this wet the entry point outlasts
+      every product on the truck.
+    </p>
+    <p>
+      It is physical work and it is genuinely skilled — knowing which vent screen
+      will fail in three winters, which foamed penetration a rat opens in an
+      evening, which gap under a garage door matters and which does not. Done
+      badly it looks fine and fails by November. Done well it is close to
+      invisible and it holds for years.
+    </p>
+    <p>
+      It is also the work that lets us give an honest answer about what is
+      actually wrong. A great deal of what we find is a building problem rather
+      than a pest problem, and saying so costs us the recurring service and earns
+      the next three referrals.
+    </p>
+
+    {canClaim && (
+      <>
+        <h2>Our licensing</h2>
+        <p>
+          The people who come to your property are licensed applicators, and we
+          publish the numbers rather than asking you to take our word for it.
+          Each number appears beside the name that holds it further down this
+          page, and you can check any of them with the Washington State
+          Department of Agriculture directly.
+        </p>
+        <p>
+          We think that should be normal and it is not. The previous version of
+          this page said "licensed pest management professional" with no number
+          behind it anywhere on the site, which is the industry standard and is
+          worth nothing to you. A credential you cannot check is a claim, not a
+          credential.
+        </p>
+        <p>
+          Two license types appear in that list, and the difference is worth a
+          sentence because it is structural rather than a matter of seniority.
+          Washington's Pesticide Application Act defines a
+          <strong>commercial pesticide applicator</strong> as a person who
+          engages in the business of applying pesticides to the land of
+          another, and a <strong>commercial pesticide operator</strong> as an
+          employee of such an applicator who uses or supervises the use of
+          pesticides. So the applicator license attaches to the business of
+          applying and the operator license to the people doing it.
+        </p>
+        <p>
+          Whichever type, every WSDA license on this page carries the same two
+          categories:
+          <strong>PCO Structural</strong> and <strong>PCO General</strong>. The
+          first is the one worth explaining, because it is what covers
+          wood-destroying organisms and because the industry is routinely vague
+          about where its authority ends.
+        </p>
+        <p>
+          PCO Structural covers the control of pests that attack structural
+          material — fungus, termites, carpenter ants and wood-boring beetles.
+          That is a treatment category. It is what allows us to deal with an
+          active problem in the wood of your building.
+        </p>
+        <p>
+          <strong>We are not licensed structural pest inspectors.</strong> We do
+          not issue the wood-destroying organism report that a lender or an
+          escrow company relies on in a property sale. That is a separate
+          credential and we do not hold it, so if a sale is what you are dealing
+          with, the report needs to come from an independent inspector.
+        </p>
+        <p>
+          What we do is the other half. Where that inspector has identified
+          dampwood or subterranean termites, carpenter ants, wood-boring
+          beetles, moisture ants or a decay fungus condition, our PCO Structural
+          category is what lets us carry out the treatment. You are better
+          served by those two roles sitting in different hands anyway, because
+          the party identifying the problem then has no financial stake in the
+          size of the remedy.
+        </p>
+        <h3>A license is not a one-time exam</h3>
+        <p>
+          The part of this nobody advertises is that these credentials have to
+          be kept alive.
+          {cm.renewsAnnually && ' Each of the WSDA licenses listed further down renews every year.'}
+          On top of that, Washington runs a {cm.recertYears}-year
+          recertification cycle: an applicator or operator earns
+          <strong>{cm.recertCredits} continuing education credits</strong> over
+          those {cm.recertYears} years — capped at {cm.maxCreditsPerYear} in any
+          one calendar year, so the total cannot be crammed into the last of
+          them — or faces {cm.alternative} instead.
+        </p>
+        <p>
+          Recertification is due by {cm.deadline} in the final year of the
+          cycle. The practical effect of a cap and a deadline together is that
+          the learning is spread across working years rather than sat in a
+          single afternoon at the end, and it lands on the subjects that
+          actually move — label changes, handling and storage rules, and what
+          the department has revised since the last time around.
+        </p>
+        {cm.staffRegisteredUnderCompany && (
+          <p>
+            Everyone in the licensed crew is on that cycle, and each of those
+            WSDA licenses is held by an employee of Sasquatch Pest Control
+            registered with the state as such, rather than by a subcontractor
+            whose credentials are somebody else's problem. We track the renewals
+            and the credits as a matter of course, because a lapsed license is
+            not a paperwork issue — it is the difference between a legal
+            treatment and an illegal one.
+          </p>
+        )}
+        <p>
+          We mention it because "licensed and insured" appears on every pest
+          control website in the county and tells you nothing about whether the
+          person at your door has learned anything since the day they passed an
+          exam. Ask a company how many credits its technicians carried into this
+          year and you will learn more from the pause than from the answer.
+        </p>
+        <p>
+          One caveat on the figures themselves, since this page keeps asking you
+          to check things. They come from the owner and are corroborated by
+          <a href={cm.source.url} rel="nofollow noopener">{cm.source.label}</a>,
+          read {cmSourceRead}. WSDA sets the requirement and is the authority
+          on it, so if you want the definitive version, take it from the
+          department rather than from us — along with any of the license numbers
+          we publish.
+        </p>
+      </>
+    )}
+    <h2>Where we work</h2>
+    <p>
+      Bellingham is home, and the rest of Whatcom County is a short drive in every
+      direction that matters. We cover the city and its neighborhoods, the ring
+      towns of Ferndale and Sudden Valley, the agricultural north around Lynden,
+      Everson, Nooksack and Sumas, and the waterfront communities at Blaine, Birch
+      Bay and Semiahmoo.
+    </p>
+    <p>
+      We do not claim territory we cannot service properly. Where an address falls
+      outside the routes we run, we say so before scheduling rather than adding a
+      travel charge afterwards, and where someone else covers that ground better
+      we will tell you that too.
+    </p>
+
+    <h2>Family-owned, and what that actually changes</h2>
+    <p>
+      "Family-owned" appears on almost every pest control site in the country, so
+      it is worth saying what it changes here rather than using it as decoration.
+      It means the family that owns the company answers for the work, and that
+      there is no regional manager between a complaint and someone who can fix
+      it. It means we can turn down a job on principle without explaining the
+      decision to a corporate office. And it means our pricing does not have to
+      cover a franchise royalty, a national call center or a marketing budget set
+      in another state.
+    </p>
+    <p>
+      It also has limits worth being straight about. We are not open twenty-four
+      hours, we are not everywhere at once, and in late August when every wasp
+      nest in the county reaches peak size, we prioritize the jobs where someone
+      is likely to get stung over the ones that can wait a few days.
+    </p>
+
+    <h2>The company we are trying to build</h2>
+    <p>
+      The measure we care about is whether people call us back and whether they
+      send their neighbors. Both of those are earned slowly and lost quickly, and
+      neither survives a company that oversells. So the standards are simple: find
+      the actual cause, put the price in writing first, say no to work that should
+      not be done, and stand behind what we did on terms a customer can read.
+    </p>
+    <p>
+      That is a slower way to grow a pest control company than the alternative,
+      and we are fine with it. The businesses in this industry that scale fastest
+      tend to do it on recurring plans sold to people who did not need one, and
+      the bill for that arrives later as churn and reputation. We would rather
+      grow at the speed of work we can stand behind.
+    </p>
+    <p>
+      If you have read this far, the practical next step is simple. Tell us what
+      you are seeing, send a photo if you have one, and we will tell you honestly
+      whether it needs us.
+    </p>
+
+    <h2>Who you will deal with</h2>
+    <p>
+      Sasquatch is small enough that you will recognize the people who come to
+      your property. That is deliberate. Continuity is worth more in this work
+      than most customers realize — a technician who saw your crawlspace last
+      autumn knows whether the activity is new, and that is context no written
+      record captures on its own.
+    </p>
+
+    <figure class="team">
+      <img
+        src="/img/sasquatch-team-and-trucks.jpg"
+        alt="The Sasquatch Pest Control crew standing with two branded service vehicles at sunset"
+        width="1600"
+        height="814"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption>
+        The crew and the trucks that run these routes. It is a photograph of
+        the actual team rather than a stock image, which ought to be too
+        obvious to point out and, in this industry, is not.
+      </figcaption>
+    </figure>
+
+    <h3>The licensed crew</h3>
+    <p>
+      These are the people who hold the licenses described above and who do the
+      work at your property. Each entry carries the license type, the number and
+      the WSDA categories it covers, so every claim on this page can be checked
+      against the state's own record rather than taken on trust.
+    </p>
+  </div>
+
+  {licensed.map((p) => <ExpertBlock slug={p.slug} />)}
+
+  {advisers.length > 0 && (
+    <div class="prose">
+      <h3>The entomologist we consult</h3>
+      <p>
+        Identification drives every decision that follows it, and there is a
+        point past which a good field technician should stop guessing and ask
+        somebody whose training is in the insects themselves. That is what the
+        arrangement below is for.
+      </p>
+      <p>
+        Jorge Bedoya is a consulting entomologist who holds the Associate
+        Certified Entomologist credential from the Entomological Society of
+        America. He reviews species identification and treatment protocols for
+        us. Two things about that are worth stating plainly rather than leaving
+        for you to assume. He is a consultant and not a member of staff, so he
+        does not run routes, attend jobs or supervise the technicians, and the
+        ACE credential is a professional certification from a scientific
+        society rather than a Washington pesticide license — a different thing
+        from the WSDA licenses above, doing a different job.
+      </p>
+      <p>
+        Where it earns its keep is the awkward specimen: an ant that could
+        plausibly be two species with different responses, or a protocol worth
+        a second opinion before it becomes standard practice on our routes. A
+        review by somebody outside the company has the useful property that he
+        gains nothing from the answer being the more expensive one.
+      </p>
+    </div>
+  )}
+
+  {advisers.map((p) => <ExpertBlock slug={p.slug} />)}
+
+  <Faq items={faqs} />
+  <Cta market="Bellingham" />
+</BaseLayout>
+
+{/* No scoped <style> here, on purpose. The team photograph, the badge wall
+    and the press list are styled in §20–21 of src/styles/global.css.
+
+    The badge wall in particular is a system problem, not a page problem.
+    Sixteen issuers supplied artwork running 225x225 to 900x1926, some on
+    white, some on black and one over a photograph, and the only thing that
+    makes a set like that read as a shelf rather than a link farm is identical
+    geometry: one plate, one image box, one hairline grid. The plate colour
+    has to change between light and dark, so it is a token, and the rules that
+    depend on it belong next to it rather than in a style block on one page.
+
+    The old rules also carried three !important declarations to beat the
+    specificity of the rule sitting next to them. Those are gone; .badges
+    .result now simply outranks .badges span. */}

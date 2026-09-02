@@ -1,0 +1,228 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import LinkRail from '../components/LinkRail.astro';
+import { liveServices } from '../data/services';
+import { builtTowns } from '../lib/geo';
+import { business } from '../data/business';
+
+const path = '/';
+
+/* The old homepage opened with "Tap any category below to see the full
+   details" — 15 words, and an instruction rather than an answer. This is a
+   real 40–60 word answer to "who are you and what do you do". */
+const answer =
+  'Sasquatch Pest Control is a family-owned pest control and exclusion company based in Bellingham, Washington. We handle rodents, ants, spiders, wasps, bed bugs and exclusion work for homes and businesses across Whatcom County, with no long-term contracts and a 100% Service Guarantee behind every treatment.';
+
+const svc = liveServices().slice(0, 12).map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+const cities = builtTowns()
+  .filter((t) => t.county === 'Whatcom County')
+  .map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
+
+const faqs = [
+  {
+    q: 'Where is Sasquatch Pest Control located?',
+    a: `We are based at ${business.address.street} in ${business.address.locality}, ${business.address.region} ${business.address.postalCode}, and we run routes throughout Whatcom County.`,
+  },
+  {
+    q: 'Do you require a long-term contract?',
+    a: 'No. We do not lock customers into long-term contracts. Recurring plans are available for people who want scheduled visits, and the cancellation terms are published on our guarantee page.',
+  },
+  {
+    q: 'What does the 100% Service Guarantee cover?',
+    a: 'If pests return between scheduled visits on a covered program, we come back and re-service at no additional charge. The full terms, including what is and is not covered, are on our guarantee page.',
+  },
+  {
+    q: 'Who owns Sasquatch Pest Control?',
+    a: 'Sasquatch Pest Control is family-owned and operated, founded by Kristofer Elling, and run locally out of Bellingham rather than from a regional call center.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  title="Pest Control & Exclusion | Bellingham, WA"
+  description="Family-owned pest control and exclusion for Bellingham and Whatcom County. No long-term contracts and a 100% Service Guarantee. Call or text 360-410-2199."
+  kind="home"
+  brandSuffix={true}
+  faqs={faqs}
+  image={{
+    src: '/img/sasquatch-hero-banner.jpg',
+    /* Alt describes what is in the picture, not what we want to rank for —
+       Keystone M6. A screen reader user gets the scene; they do not get a
+       keyword list. */
+    alt: 'Sasquatch Pest Control banner: a forested lake and mountain scene with the company logo',
+    width: 1800,
+    height: 900,
+  }}
+>
+  <img
+    class="hero"
+    src="/img/sasquatch-hero-banner.jpg"
+    alt="Sasquatch Pest Control banner: a forested lake and mountain scene with the company logo"
+    width="1800"
+    height="900"
+    fetchpriority="high"
+  />
+
+  <h1>Pest Control in Bellingham, Washington</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Bellingham's family-owned pest control company</h2>
+    <p>
+      Sasquatch Pest Control works out of Bellingham and runs its own routes
+      across Whatcom County. We are not a franchise office dispatching from
+      another region, and the person who sets our standards works in the field.
+      That matters more than it sounds, because pest work in the Pacific
+      Northwest is unusually local — what actually shows up in a house here has
+      more to do with the age of the crawlspace and how much rain the siding has
+      taken than with anything in a national playbook.
+    </p>
+
+    <h2>Why homeowners here call us</h2>
+    <p>
+      <strong>No long-term contracts.</strong> Recurring programs exist for people
+      who want scheduled visits, and they can be canceled. We do not lock anyone
+      into a multi-year term to get a better price on the first visit.
+    </p>
+    <p>
+      <strong>We find the cause, not just the pest.</strong> Most of the insects
+      we get called about in Whatcom County are downstream of a moisture problem.
+      Moisture ants in a sill plate are telling you where water is getting in.
+      Dampwood termites only work wood that is already wet. We would rather point
+      at the gutter than sell you a treatment that has to be repeated every year.
+    </p>
+    <p>
+      <strong>Exclusion is the work, not an upsell.</strong> Most companies
+      treat and leave. We would rather find the gap the animal is using and close
+      it, because in a climate this wet the entry point is still there long after
+      any product has stopped working. That is physical work — crawlspaces,
+      vents, penetrations, seals — and it is the part that actually ends the
+      problem.
+    </p>
+    <p>
+      <strong>The guarantee has terms you can read.</strong> Our
+      <a href="/our-guarantee/">100% Service Guarantee</a> is a defined
+      re-service commitment with published conditions, not an open-ended promise
+      designed to sound good in an advert.
+    </p>
+
+    <h2>What we get called for most</h2>
+    <p>
+      Rodents lead, and the pattern is seasonal — as the rain sets in through
+      September and October, rats and mice move from the greenbelts and
+      farmland into crawlspaces, wall voids and attics. Carpenter and moisture
+      ants come next, concentrated in the older housing stock. Giant house
+      spiders arrive indoors through the autumn wandering season, roughly August
+      to October, and are almost always harmless despite their size. Wasps and
+      hornets peak in late summer when colonies are at their largest. Bed bugs
+      run year-round with a January spike after holiday travel, and cluster
+      flies, boxelder bugs and conifer seed bugs pile onto south-facing walls
+      every October looking for somewhere to overwinter.
+    </p>
+
+    <h2>Residential and commercial</h2>
+    <p>
+      Most of our work is residential, and a growing share is commercial —
+      dairy and agricultural operations in the Lynden and Everson corridor,
+      marinas and waterfront facilities, restaurants and food handling, schools,
+      apartments and HOAs. Commercial programs are documented well enough to hand
+      to an inspector or an auditor, because for those accounts the record is part
+      of the job. You can read more on our
+      <a href="/commercial/">commercial page</a>.
+    </p>
+
+    <h2>What happens when you call</h2>
+    <p>
+      You describe the problem, and if a photo helps we will ask for one —
+      identification drives everything downstream, and a clear picture next to
+      something for scale often saves a visit. We schedule a look at the property,
+      and for most jobs that visit produces a written scope and a price before any
+      work begins. The estimate is free and there is no obligation attached to it.
+    </p>
+    <p>
+      If we think the honest answer is that you do not need us, we will say so.
+      That happens more often than you would expect — a single large spider in
+      October is a seasonal wanderer, not an infestation, and a handful of ants on
+      a counter in April is usually a scout trail that a change in housekeeping
+      will end.
+    </p>
+    <p>
+      If you rent, call anyway. The visit itself usually has to be arranged by
+      whoever is responsible for the building, because most of what we would
+      recommend is work on the structure rather than in your unit. We will still
+      tell you free of charge what you are looking at and what to ask your
+      landlord for. Washington puts most of that duty on the owner, and the
+      detail is in our
+      <a href="/guides/who-pays-for-pest-control-in-a-rental/">guide to who pays in a rental</a>.
+    </p>
+
+    <h2>Serving Whatcom County from Bellingham</h2>
+    <p>
+      We cover Bellingham and its neighborhoods, Ferndale, Lynden, Blaine, Birch
+      Bay, Everson, Nooksack, Sumas, Sudden Valley, Custer, Deming and Acme, plus the
+      unincorporated communities between them. Each area has its own page with the
+      pest pressure that actually applies there, because the problems in a 1920s
+      house in the Lettered Streets and a 1970s cedar home above Lake Whatcom have
+      very little in common.
+    </p>
+    <h2>Exclusion, which is where we are most useful</h2>
+    <p>
+      Plenty of companies will spray a perimeter every quarter. Far fewer will go
+      into a crawlspace on their back with a light and work out how the animal is
+      actually getting in, and that is the part that decides whether you are
+      still calling somebody about it next year.
+    </p>
+    <p>
+      In this county the entry point is nearly always structural: a rusted vent
+      screen, a foamed service penetration, a gap at a garage door seal, skirting
+      that never met the ground properly, a rim joist somebody drilled oversize
+      twenty years ago. Sealing those is unglamorous and it is what holds.
+    </p>
+    <p>
+      It is also seasonal work. August is the right month — dry crawlspaces, dry
+      ground, and the autumn rodent movement still weeks away. We spend most of
+      the spring telling people that, and most of November proving it.
+    </p>
+
+    <h2>What it costs</h2>
+    <p>
+      We quote from a site visit rather than a published price list, because a
+      one-bedroom condo with a single ant trail and a 1920s farmhouse with rats in
+      the crawlspace are not the same job. The estimate is free and the price is
+      in writing before work starts.
+    </p>
+    <p>
+      Bed bug work is the exception, because the scope there is genuinely
+      predictable and we publish the figures. Where we can be specific, we are.
+    </p>
+
+    <h2>Getting an answer today</h2>
+    <p>
+      Call or text and you will reach someone locally rather than a national
+      answering service reading from a script. If it is an active wasp nest near a
+      door or a rodent in living space, say so — those get moved up.
+    </p>
+    <p>
+      For anything less urgent, a photograph is the fastest way to a useful
+      answer. Identification is free, and it is often enough for us to tell you
+      whether you need a visit at all.
+    </p>
+
+
+  <LinkRail heading="What we handle" links={svc} />
+  <LinkRail heading="Where we work" links={cities} />
+
+  <Faq items={faqs} />
+  </div>
+  <Cta market="Bellingham" />
+</BaseLayout>
+
+{/* No scoped <style> here, on purpose. The hero banner is styled from the
+    token system in src/styles/global.css (§20), alongside the team photograph
+    and the badge wall, so the three pieces of imagery on this site share one
+    radius and one placeholder ground in both themes. The width and height
+    attributes above stay on the tag — they are what stop the banner from
+    reflowing the page as it decodes. */}

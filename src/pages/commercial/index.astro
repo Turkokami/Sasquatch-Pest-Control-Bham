@@ -1,0 +1,239 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import { guideLinksFor } from '../../lib/guides';
+
+const path = '/commercial/';
+
+/* The old /commercial-pest-control/ page was the thinnest money page on the
+   site at ~1,100 words with no FAQ block. It is also the doorway to the
+   twelve vertical pages in Phase 5, which no competitor in this market has
+   built. This hub exists now so the verticals have a parent to link up to. */
+const answer =
+  'Sasquatch Pest Control runs recurring, documented pest control and exclusion programs for businesses across Whatcom County. We build the program around your facility, keep records clean enough for an inspection or an audit, and work on a schedule that fits your operation rather than ours.';
+
+/* Phase 5 verticals. Listed here with their planned slugs so the hub is the
+   parent from day one — pages light up as each is built. */
+const verticals = [
+  ['dairy-and-livestock', 'Dairy & livestock'],
+  ['berry-and-food-processing', 'Berry & food processing'],
+  ['marinas-and-waterfront', 'Marinas & waterfront'],
+  ['restaurants-and-food-service', 'Restaurants & food service'],
+  ['schools-and-childcare', 'Schools & childcare'],
+  ['healthcare-and-senior-living', 'Healthcare & senior living'],
+  ['retail-and-grocery', 'Retail & grocery'],
+  ['multifamily-and-apartments', 'Multifamily & apartments'],
+  ['hoa-and-community-associations', 'HOAs & community associations'],
+  ['property-management', 'Property management'],
+  ['government-and-municipal', 'Government & municipal'],
+  ['solar-arrays', 'Solar arrays'],
+];
+
+const faqs = [
+  {
+    q: 'Do you provide documentation for audits and inspections?',
+    a: 'Yes. Every commercial visit is logged with what was found, what was done and what was recommended, and the service history is available when an inspector or auditor asks for it. For food-handling accounts that record is part of the deliverable, not an extra.',
+  },
+  {
+    q: 'Can you work outside our business hours?',
+    a: 'Usually. Retail, food service and healthcare accounts are commonly serviced before opening or after close, and we schedule around your operation. Tell us the window that works and we will build the route around it.',
+  },
+  {
+    q: 'Do commercial accounts require a long-term contract?',
+    a: 'No. Commercial programs are recurring by design because pest pressure is recurring, but we do not lock you into a multi-year term. The service agreement sets the schedule, the scope and the cancellation terms in writing.',
+  },
+  {
+    q: 'What kinds of businesses do you work with?',
+    a: 'Dairy and agricultural operations, food processing, marinas and waterfront facilities, restaurants, schools, healthcare and senior living, retail, apartments and HOAs, property managers, and municipal buildings across Whatcom County.',
+  },
+];
+
+/* Related guides, resolved from the guides' own relatedTo declarations —
+   one list, queried, rather than a second list maintained here. */
+const guideLinks = await guideLinksFor(path);
+---
+<BaseLayout
+  path={path}
+  title="Commercial Pest Control in Whatcom County, WA"
+  description="Recurring, documented pest control and exclusion programs for Whatcom County businesses — agriculture, food handling, marinas, schools, healthcare, retail and multifamily."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Commercial', path }]}
+>
+  <h1>Commercial Pest Control in Whatcom County</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Documented, discreet, dependable</h2>
+    <p>
+      Commercial work is judged on three things: whether the pressure actually
+      goes down, whether your customers ever notice us, and whether the paperwork
+      holds up when someone asks for it. We build programs around all three.
+    </p>
+
+    <h2>What a commercial program actually includes</h2>
+    <p>
+      A commercial account is not a residential visit performed more often. The
+      differences are structural. Scheduling is built around your operation, which
+      for food service and retail usually means before opening or after close, and
+      for a school means working around occupancy and notification requirements.
+      Device placement is mapped, so anyone auditing the site can see the layout
+      rather than taking our word for it. And every visit produces a record of
+      what was found, what was done, and what needs attention from your side.
+    </p>
+    <p>
+      That last point is the one that separates programs. Plenty of operators will
+      service a building. Fewer will hand you documentation that survives contact
+      with an inspector, and fewer still will tell you in writing that the problem
+      is a door sweep you need to replace rather than something they can spray.
+    </p>
+
+    <h2>Industries we work with</h2>
+    <p>
+      Each of these has its own pressure, its own regulatory surface and its own
+      scheduling constraints. Vertical pages are being built out as part of the
+      current program.
+    </p>
+
+    <h3>Agriculture — the Lynden and Everson corridor</h3>
+    <p>
+      Whatcom County is serious dairy country, and the defining problem is
+      rodents in feed. Grain and supplement in open storage supports a population
+      indefinitely, and for a producer already managing herd health that is a
+      biosecurity issue rather than a nuisance. The work is structural: sealing
+      the feed room, protecting wiring in shops and equipment, and being honest
+      that a pole barn with a gravel floor was never going to be rodent-proof.
+      Fly pressure around livestock runs a close second, and it is won on
+      breeding sites rather than on adults.
+    </p>
+
+    <h3>Marinas and working waterfront</h3>
+    <p>
+      Around Squalicum Harbor and Blaine Harbor the problem is rodents, and they
+      belong to the facility rather than to any one owner. They move along dock
+      lines, through utility runs and between vessels, with gear sheds and
+      storage lockers acting as the reservoir. Treating one boat or one locker
+      while everything around it goes untouched achieves nothing durable, so this
+      is program work on the shore-side structures with mapped placements and a
+      record.
+    </p>
+
+    <h3>Food handling, retail and hospitality</h3>
+    <p>
+      Loading docks, dumpster enclosures, covered entries and back-of-house
+      storage are where the pressure concentrates. For anyone operating under a
+      food safety program, documentation is not an add-on — it is the deliverable
+      alongside the service.
+    </p>
+
+    <h3>Schools, healthcare and public buildings</h3>
+    <p>
+      Washington has specific rules about pesticide application at schools,
+      including notification requirements and posting. We schedule around them
+      rather than around us, and for these accounts we lean harder on exclusion
+      and sanitation than on application wherever the situation allows it.
+    </p>
+
+    <h3>Multifamily, HOAs and property management</h3>
+    <p>
+      With 57.4% of Bellingham households renting, this is a large share of the
+      county's building stock. The recurring issues are bed bugs moving between
+      units, rodents exploiting shared walls and utility chases, and the split
+      responsibility between an owner, a manager and a tenant. Bellingham
+      Municipal Code 6.15 requires rental properties to pass a certified
+      inspection, and the checklist explicitly flags foundation openings larger
+      than a quarter inch as an infestation risk — which makes exclusion work a
+      compliance item, not just good practice.
+    </p>
+
+    <h3>Warehousing and distribution</h3>
+    <p>
+      High ceilings, large openings and dock doors that stay open through the
+      working day. Sealing such a building completely is not achievable and
+      quoting as though it were would be dishonest. What works is a defended
+      perimeter, controlled interior placements, attention to the yard margins
+      that are actually feeding the population, and stored-product monitoring —
+      because those insects arrive inside the product rather than through a door.
+    </p>
+
+    <h2>Getting started on a commercial account</h2>
+    <p>
+      We walk the site first, and for anything larger than a single storefront
+      that walk takes a while, because most of what matters is not where the
+      activity is — it is where the access is. Dock doors that do not seal, gaps
+      at utility penetrations, drainage that keeps a slab damp, vegetation held
+      against an exterior wall, and how waste is stored between collections.
+    </p>
+    <p>
+      What comes back to you is a written program: the scope, the visit frequency,
+      what happens on each visit, the device map where devices are involved, and
+      the things on your side that will make or break the result. Then we run it,
+      and we adjust it when the site tells us to rather than when the calendar
+      does.
+    </p>
+    <p>
+      There is no long-term contract requirement. Commercial programs are
+      recurring because pest pressure is recurring, but the service agreement sets
+      out the cancellation terms in plain language and you are free to use them.
+    </p>
+    <h2>Who signs off on the work</h2>
+    <p>
+      For most commercial accounts there are two audiences for the same service:
+      the person who has to live with the building day to day, and the person who
+      has to answer for it when an inspector, an auditor or an insurer asks. Those
+      two want different things from a pest program, and a program that only
+      serves one of them fails.
+    </p>
+    <p>
+      We write the record for the second audience and run the service for the
+      first. That means a facilities manager gets a technician who knows the
+      building and does not need re-briefing every visit, and an owner or
+      compliance lead gets documentation that stands on its own without a phone
+      call to interpret it.
+    </p>
+
+  </div>
+    <h2>Exclusion is where we are most useful commercially</h2>
+    <p>
+      If there is one thing to take from this page, it is that the exclusion side
+      is where we differ most from what else is available in this county. Plenty
+      of operators will service a site monthly. Far fewer will tell a client that
+      the reason the program is not working is a dock housekeeping problem, a
+      yard margin nobody manages, or a rim joist that has been open since the
+      building went up.
+    </p>
+    <p>
+      That matters commercially because recurring service on an unresolved
+      structural problem is an indefinite cost with no end date attached. We put
+      those findings in the report — including the ones we could quietly service
+      around instead — because a client who fixes them gets a better result than
+      one who simply buys more visits.
+    </p>
+    <p>
+      It is also seasonal. The right window for structural work is late summer,
+      when the ground and the crawlspaces are dry and the autumn rodent movement
+      has not started. Planning it then is cheaper than reacting in November.
+    </p>
+
+
+  <ul class="rail">
+    {verticals.map(([slug, label]) => <li><span>{label}</span></li>)}
+  </ul>
+
+  <LinkRail
+    heading="Services behind our commercial programs"
+    links={[
+      { href: '/services/commercial-pest-control/', label: 'Commercial pest control' },
+      { href: '/services/rodent-control/', label: 'Rodent & mouse control' },
+      { href: '/services/exclusion-and-repairs/', label: 'Pest exclusion & repairs' },
+    ]}
+  />
+
+  <Faq items={faqs} />
+  <LinkRail heading="Guides" links={guideLinks} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

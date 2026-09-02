@@ -1,0 +1,94 @@
+---
+import { business, isReady, people } from '../data/business';
+import { liveServices, categories } from '../data/services';
+import { builtTowns } from '../lib/geo';
+
+const a = business.address;
+const cities = builtTowns().slice(0, 10);
+const top = liveServices().slice(0, 10);
+/* WSDA license numbers only. `credential` also carries Jorge Bedoya's 'ACE',
+   which is an Entomological Society certification and not a WSDA license at
+   all — counting it gave "6 WSDA-licensed applicators" for five. Match the
+   LI- prefix rather than merely testing that the field is filled. */
+const ratingRead = new Date(business.rating.read).toLocaleDateString('en-US', {
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+const licensedCount = people.filter(
+  (p) => p.publishable === true && isReady(p.credential) && /^LI-/.test(p.credential),
+).length;
+---
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>{business.name}</h3>
+        <p>
+          {a.street}<br />
+          {a.locality}, {a.region} {a.postalCode}<br />
+          <a href={`tel:${business.phoneE164}`}>{business.phone}</a><br />
+          <a href={`mailto:${business.email}`}>{business.email}</a>
+        </p>
+        {/* This used to read "WSDA License #<number>" from a company-level
+            field that does not exist in this company's structure, and that
+            field held the publish gate shut for three days. See the retirement
+            note in business.ts.
+
+            What is true, and checkable: the licenses are held per person. So
+            the footer counts the licensed staff and points at /about/, where
+            each one is named with a number a reader can put into the WSDA
+            public search. A number somebody can verify beats a number that
+            merely looks official. */}
+        {/* Visible and attributed, never structured data — see the note on
+            business.rating. Naming Google and carrying the date is what makes
+            this checkable rather than decorative, and a rating a reader can
+            verify in ten seconds is the only kind worth printing. */}
+        {isReady(business.rating.value) && isReady(business.rating.count) && (
+          <p class="rating">
+            Rated {business.rating.value} out of 5 from {business.rating.count}{' '}
+            Google reviews, as of {ratingRead}.
+          </p>
+        )}
+        {licensedCount > 0 && (
+          <p>
+            WSDA-licensed applicators on staff:{' '}
+            <a href="/about/">{licensedCount} — see their license numbers</a>
+          </p>
+        )}
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <ul>
+          <li>Mon–Fri: 8:00 AM – 6:00 PM</li>
+          <li>Sat–Sun: 8:00 AM – 4:00 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul>
+          {top.map((s) => <li><a href={`/services/${s.slug}/`}>{s.short}</a></li>)}
+          <li><a href="/services/">All services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Service areas</h3>
+        <ul>
+          {cities.map((t) => <li><a href={`/locations/${t.slug}/`}>{t.name}</a></li>)}
+          <li><a href="/locations/">All areas</a></li>
+        </ul>
+      </div>
+    </div>
+    {/* Was an inline style="margin-top:2rem;opacity:.7". Two problems with
+        it: it was a rule the token block could not reach, and opacity on a
+        block dims the links inside it along with the text, which is how a
+        colophon quietly stops meeting contrast. Styled in §15 now, with an
+        ink of its own and the links left at full strength. */}
+    <p class="colophon">
+      © {new Date().getFullYear()} {business.name}. ·
+      <a href="/guides/">Guides</a> ·
+      <a href="/our-guarantee/">Guarantee &amp; terms</a> ·
+      <a href="/network/">Our network</a>
+    </p>
+  </div>
+</footer>

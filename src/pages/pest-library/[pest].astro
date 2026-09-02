@@ -1,0 +1,122 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import SourceList from '../../components/SourceList.astro';
+import { PESTS, PEST_GROUPS, pestBySlug, pestsInGroup } from '../../data/pests';
+
+/* File-driven, like guides and the blog, and for the same reason: a species
+   profile with no content is not a page that needs a stub, it is a page that
+   should not exist yet. Services and towns work the other way because those
+   routes have to stand up before their content lands. */
+export async function getStaticPaths() {
+  const profiles = await getCollection('pests');
+  return profiles.map((p) => {
+    const species = pestBySlug(p.data.species);
+    if (!species) {
+      /* The enumeration in pests.ts is the single source of truth for what
+         this site claims lives in this county. A profile naming something
+         that is not in it is either a typo or an inclusion decision nobody
+         made — either way it fails here rather than publishing. */
+      throw new Error(
+        `src/content/pests/${p.slug}.md declares species "${p.data.species}", which is not in src/data/pests.ts. ` +
+          `Add it there first if it genuinely occurs in Whatcom County.`,
+      );
+    }
+    for (const c of p.data.confusedWith) {
+      if (!pestBySlug(c)) {
+        throw new Error(`${p.slug}.md lists confusedWith "${c}", which is not a species in src/data/pests.ts.`);
+      }
+    }
+    return { params: { pest: species.slug }, props: { p, species } };
+  });
+}
+
+const { p, species } = Astro.props;
+const path = `/pest-library/${species.slug}/`;
+const { Content } = await p.render();
+
+const group = PEST_GROUPS.find((g) => g.key === species.group)!;
+
+/* Only link to profiles that exist. A rail of dead names is worse than a
+   shorter rail, and the dead-link crawler would catch it anyway. */
+const written = new Set((await getCollection('pests')).map((x) => x.data.species));
+
+const siblings = pestsInGroup(species.group)
+  .filter((x) => x.slug !== species.slug && written.has(x.slug))
+  .map((x) => ({ href: `/pest-library/${x.slug}/`, label: x.name }));
+
+const confusable = p.data.confusedWith
+  .filter((c) => written.has(c))
+  .map((c) => {
+    const x = pestBySlug(c)!;
+    return { href: `/pest-library/${x.slug}/`, label: x.name };
+  });
+
+const VERDICT: Record<string, string> = {
+  treat: 'We treat this, and finding it usually warrants treating.',
+  depends: 'Sometimes worth treating, sometimes not — it depends on what is below.',
+  'rarely-warranted': 'Rarely worth treating. Usually this is a sealing or cleaning job.',
+  'we-do-not': 'We do not treat this. Where to go instead is below.',
+};
+---
+<BaseLayout
+  path={path}
+  title={p.data.title}
+  description={p.data.description}
+  kind="article"
+  noindex={p.data.ready !== true}
+  faqs={p.data.faqs}
+  image={p.data.hero}
+  {/* Same contract as the guides: the `sources` block the collection makes
+      mandatory becomes Article `citation`, so the extension and federal
+      references behind a species profile are readable by machine as well as
+      by eye. */}
+  citations={p.data.sources}
+  dateModified={p.data.updated}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Pest library', path: '/pest-library/' },
+    { name: species.name, path },
+  ]}
+>
+  <h1>{p.data.h1}</h1>
+
+  <p class="ident">
+    {species.scientific && <em>{species.scientific}</em>}
+    {species.scientific && ' · '}
+    <span>{group.name}</span>
+  </p>
+
+  <AnswerBox text={p.data.answer} />
+
+  {/* data-boilerplate: the verdict is one of four fixed strings chosen by an
+     enum, so it is identical on every profile sharing a verdict by design —
+     the same case as the CTA and the source-list review note. Without the
+     attribute the third profile to pick any given verdict trips the
+     duplicate-sentence scanner on a sentence no author wrote. */}
+  <p class="verdict" data-boilerplate><strong>{VERDICT[p.data.treatment]}</strong></p>
+
+  <div class="prose"><Content /></div>
+
+  <Faq items={p.data.faqs} />
+
+  <SourceList sources={p.data.sources} reviewBy={p.data.reviewBy} />
+
+  {confusable.length > 0 && (
+    <LinkRail heading={`Routinely confused with`} links={confusable} />
+  )}
+
+  {siblings.length > 0 && <LinkRail heading={`More ${group.name.toLowerCase()}`} links={siblings} />}
+
+  <Cta market="Whatcom County" />
+</BaseLayout>
+
+{/* No scoped <style> here, on purpose. The identification line and the verdict chip used to be styled locally,
+    out of hard-coded hex fallbacks and opacity — including var(--tint),
+    a token that never existed, so every one of those rules silently
+    resolved to its fallback and could not follow a brand change. It is
+    styled from the token system in src/styles/global.css instead. */}

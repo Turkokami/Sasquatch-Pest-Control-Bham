@@ -1,0 +1,17 @@
+---
+/** Visible trail matching the URL path exactly, mirrored by the
+ *  BreadcrumbList node. The live site has zero breadcrumbs on a
+ *  three-level hierarchy with ~101 location pages. */
+interface Props { items: { name: string; path: string }[] }
+const { items } = Astro.props;
+---
+<nav class="crumbs" aria-label="Breadcrumb">
+  {items.map((c, i) => (
+    <>
+      {i > 0 && <span aria-hidden="true">/</span>}
+      {i === items.length - 1
+        ? <span aria-current="page">{c.name}</span>
+        : <a href={c.path}>{c.name}</a>}
+    </>
+  ))}
+</nav>

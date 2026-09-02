@@ -1,0 +1,178 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Cta from '../../components/Cta.astro';
+import Faq from '../../components/Faq.astro';
+import { liveServices, categories } from '../../data/services';
+
+const path = '/services/';
+const svc = liveServices();
+const grouped = Object.entries(categories).map(([key, label]) => ({
+  key, label, items: svc.filter((s) => s.category === key),
+})).filter((g) => g.items.length);
+
+const answer =
+  'Sasquatch Pest Control handles rodents, ants, spiders, wasps, bed bugs, termites and exclusion work for homes and businesses across Whatcom and Skagit County. Every service is family-owned and locally run, with no long-term contracts and a 100% Service Guarantee behind each treatment we perform.';
+
+const faqs = [
+  {
+    q: 'What pest control services does Sasquatch offer?',
+    a: 'Rodent and mouse control, exclusion and structural repairs, ants and carpenter ants, spiders, wasps and hornets, bed bugs, cockroaches, fleas, termites and wood-destroying pests, nuisance wildlife, plus exclusion, crawlspace restoration and attic insulation work.',
+  },
+  {
+    q: 'Do you require a long-term contract?',
+    a: 'No. We do not lock customers into long-term contracts. Recurring plans are available for people who want scheduled visits, and they can be canceled under the terms on our guarantee page.',
+  },
+  {
+    q: 'What areas do you serve?',
+    a: 'Bellingham and the surrounding Whatcom County communities, including Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas and Sudden Valley. Coverage detail for each community is on our service areas page.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  title="Pest Control Services in Bellingham, WA"
+  description="Rodents, ants, spiders, wasps, bed bugs, termites and exclusion work across Whatcom and Skagit County. No long-term contracts and a 100% Service Guarantee."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Services', path }]}
+>
+  <h1>Pest Control Services in Bellingham &amp; Whatcom County</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Why pest pressure works differently here</h2>
+    <p>
+      Most pest advice you will read online was written for a climate that has a
+      hard winter. Ours does not. The marine air coming off Bellingham Bay keeps
+      us mild and wet through most of the year, and the absence of a sustained
+      deep freeze means populations are never reset the way they are east of the
+      Cascades or across the Midwest. A rodent population that would be knocked
+      back by a January cold snap in Spokane simply carries on here.
+    </p>
+    <p>
+      The second factor is moisture. Roughly thirty-five inches of rain a year,
+      spread across a long gray season rather than delivered in summer
+      thunderstorms, means wood stays damp. That single fact drives more of our
+      call volume than anything else. Dampwood termites need wet wood. Moisture
+      ants need wet wood. Carpenter ants prefer to excavate wood that has already
+      begun to soften. Silverfish, sowbugs and millipedes all want humidity. When
+      we get called to a Whatcom County house for any of those, the honest first
+      question is not which product to use — it is where the water is coming from.
+    </p>
+    <p>
+      That is why our service list is organized the way it is below, and why
+      exclusion and crawlspace work sit alongside treatment rather than as an
+      upsell. Treating an ant trail without finding the leak that softened the
+      sill plate means treating the same trail again next spring.
+    </p>
+
+    <h2>How we work</h2>
+    <p>
+      Every job starts with someone looking at the actual structure. We are
+      trying to establish three things: what the species actually is, how it is
+      getting in, and what is making the site attractive in the first place.
+      Identification matters more than most people expect. Moisture ants and
+      carpenter ants call for genuinely different responses, and the treatment
+      that works for one is close to wasted on the other.
+    </p>
+    <p>
+      From there you get a written scope before anything begins, so you know what
+      is being done and what it costs rather than finding out afterwards. There
+      is no charge for the estimate, and there is no long-term contract. If a
+      recurring program is the right answer we will say so; if a single visit
+      solves it, we will say that too.
+    </p>
+    <p>
+      Work is done by our own technicians, who live here and run these routes
+      themselves. We are not a franchise dispatching from another region, and the
+      person who sets our standards works in the field rather than at a corporate
+      office in another state.
+    </p>
+
+    <h2>What we will tell you honestly</h2>
+    <p>
+      There are jobs we turn down. We do not sell mole trapping, because the
+      scissor-jaw and harpoon traps sold for that purpose are prohibited
+      body-gripping traps under Washington law, and we would rather explain that
+      than take the money. We do not do bird work or nuisance wildlife removal —
+      that includes bats and squirrels — so if that is what you need we will say
+      so on the phone and point you somewhere useful rather than taking the
+      booking.
+    </p>
+    <p>
+      We also will not tell you a pest is dangerous when it is not. Hobo spiders
+      are the clearest local example — Washington's Department of Health states
+      that they are not considered dangerous as previously thought, and most of
+      the large spiders people find indoors here in autumn are actually giant
+      house spiders going about their business.
+    </p>
+
+    <h2>Seasonal timing in Whatcom County</h2>
+    <p>
+      Some work is worth booking ahead of the season rather than during it.
+      Structural exclusion belongs in late summer, when crawlspaces and ground
+      are dry and the autumn rodent movement has not started. Wasp and hornet
+      colonies are largest and most
+      aggressive in late August and September, but the cheapest time to deal with
+      a site that had a nest last year is early summer. Rodent pressure climbs
+      sharply as the rain sets in through September and October, and overwintering
+      insects — cluster flies, boxelder bugs, conifer seed bugs — arrive on
+      south-facing walls in October. Bed bug calls spike in January, after holiday
+      travel.
+    </p>
+
+    <h2>What treatment actually costs, and why we won't publish a price list</h2>
+    <p>
+      A one-bedroom condo with a single ant trail and a 1920s farmhouse with rats
+      in the crawlspace are not the same job, and any company publishing one price
+      for "pest control" is either quoting the easiest possible version of the
+      work or planning to revise the number once they arrive. We quote from a site
+      visit, in writing, before anything starts, and the estimate is free.
+    </p>
+    <p>
+      The exception is bed bug work, where we do publish figures because the scope
+      is genuinely predictable: a verification inspection, then a flat rate per
+      room with common areas included. Where we can be specific we are.
+    </p>
+    <p>
+      What drives cost on most other jobs is access and structure rather than the
+      pest itself. A crawlspace you can stand up in is cheaper to work than one
+      with eighteen inches of clearance. A two-story soffit needs equipment a
+      single-story one does not. Exclusion on a house with intact siding is
+      straightforward; exclusion on a house where the siding has been soft for a
+      decade turns into repair work, and we would rather tell you that at the
+      estimate than halfway through.
+    </p>
+
+    <h2>Treatment, exclusion and repair are one conversation</h2>
+    <p>
+      A large share of what gets sold as pest control in this county is really
+      building maintenance that has been deferred long enough for something to
+      move in. An unscreened foundation vent, an open soffit return, a gap where
+      a roofline meets a wall, a gutter that has been overflowing against a sill
+      for three winters. Treating around those makes the problem quiet for a
+      season. Closing them ends it.
+    </p>
+    <p>
+      That is why exclusion, crawlspace restoration and attic insulation sit in
+      the list below alongside treatment services rather than being sold
+      separately afterwards. On most Whatcom County houses the exclusion hour is
+      the highest-value hour we spend on the property.
+    </p>
+  </div>
+
+  {grouped.map((g) => (
+    <section>
+      <h2>{g.label}</h2>
+      <ul class="rail">
+        {g.items.map((s) => (
+          <li><a href={`/services/${s.slug}/`}>{s.name}</a></li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <Faq items={faqs} />
+  <Cta market="Whatcom County" />
+</BaseLayout>

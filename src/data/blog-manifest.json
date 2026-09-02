@@ -1,0 +1,346 @@
+{
+  "_comment": [
+    "The import plan for the legacy WordPress blog. Owner asked on 31 Aug 2026",
+    "for the posts to be brought across. This file is the decision record for",
+    "each one, written before any fetching, so that what got imported and what",
+    "did not is auditable rather than remembered.",
+    "",
+    "status:",
+    "  import   — bring the text across into src/content/blog/<slug>.md",
+    "  exclude  — do not republish. 'why' says on what grounds.",
+    "",
+    "supersededBy: the new-site page that owns this topic. Set => the imported",
+    "post ships noindex with its canonical pointing there. null => nothing on",
+    "the new site covers it, so the post stands on its own and is indexable.",
+    "",
+    "The location landing URLs (*-wa-pest-control, pest-control-bellingham-wa",
+    "and friends) are NOT in this file. They were never blog posts; they are",
+    "the old site's geo pages and they are already handled by the 301 map in",
+    "legacy-urls.json. Only article-shaped URLs are here.",
+    "",
+    "AMENDED 31 Aug 2026 after the import ran. Seven posts planned as standing came back under the 900-word floor at source. None was padded; each was given the supersededBy that fits it, which is the handling section 5 of the import brief calls for. Those entries carry a \"note\"."
+  ],
+  "excluded": [
+    {
+      "slug": "seagull-swallow-exclusion-washington",
+      "why": "bird work — removed from scope by the owner on 30 Aug 2026"
+    },
+    {
+      "slug": "bird-exclusion",
+      "why": "bird work — removed from scope by the owner on 30 Aug 2026"
+    },
+    {
+      "slug": "bird-exclusion-bellingham-wa",
+      "why": "bird work — removed from scope by the owner on 30 Aug 2026"
+    },
+    {
+      "slug": "bird-nesting-solar-panels-washington",
+      "why": "bird work — removed from scope by the owner on 30 Aug 2026"
+    },
+    {
+      "slug": "rodents-birds-bellingham",
+      "why": "half the post advertises bird exclusion; the rodent half duplicates /services/rodent-control/ anyway, so there is nothing left worth importing"
+    },
+    {
+      "slug": "battling-mosquitoes",
+      "why": "mosquito control is not an offered service — it is in RETIRED_TO_LIBRARY"
+    },
+    {
+      "slug": "mosquito-control-bellingham-wa",
+      "why": "mosquito control is not an offered service — it is in RETIRED_TO_LIBRARY"
+    },
+    {
+      "slug": "free-pest-inspection-bellingham",
+      "why": "CLOSED 2 Sep 2026 — excluded, not held. It was parked pending a fetch of the legacy page so the owner could see what the claim rules flagged. The owner has since said the old site is outdated and not worth treating as a reference, which settles it: the post was written before src/lib/seo.ts existed, its subject is a 'free inspection' offer the site now words as a free visit, and nothing in it is worth the compliance review it would need. No further action."
+    }
+  ],
+  "posts": [
+    {
+      "slug": "what-is-integrated-pest-management",
+      "supersededBy": null
+    },
+    {
+      "slug": "eco-friendly-pest-control-bellingham",
+      "supersededBy": null
+    },
+    {
+      "slug": "eco-friendly-pest-control-in-bellingham",
+      "supersededBy": "/blog/eco-friendly-pest-control-bellingham/"
+    },
+    {
+      "slug": "how-to-choose-pest-control-whatcom",
+      "supersededBy": null
+    },
+    {
+      "slug": "pest-control-cost-bellingham",
+      "supersededBy": null
+    },
+    {
+      "slug": "apartment-pest-control-bellingham",
+      "supersededBy": null
+    },
+    {
+      "slug": "landlord-pest-control-washington",
+      "supersededBy": "/guides/who-pays-for-pest-control-in-a-rental/"
+    },
+    {
+      "slug": "commercial-summer-pest-control-whatcom",
+      "supersededBy": null
+    },
+    {
+      "slug": "commercial-winter-pest-checklist-whatcom",
+      "supersededBy": null
+    },
+    {
+      "slug": "government-industrial-winter-pest-prep-whatcom",
+      "supersededBy": null
+    },
+    {
+      "slug": "spring-pest-prevention-checklist-whatcom",
+      "supersededBy": null
+    },
+    {
+      "slug": "pest-prevention-guide-pacific-northwest",
+      "supersededBy": null
+    },
+    {
+      "slug": "pest-trends-whatcom-county-year-in-review",
+      "supersededBy": "/guides/the-whatcom-county-pest-year/"
+    },
+    {
+      "slug": "identifying-pest-activity",
+      "supersededBy": "/pest-library/",
+      "note": "planned as standing; the source came back under the 900-word blog floor, so it was superseded rather than padded"
+    },
+    {
+      "slug": "household-bugs-bellingham",
+      "supersededBy": "/pest-library/",
+      "note": "planned as standing; the source came back under the 900-word blog floor, so it was superseded rather than padded"
+    },
+    {
+      "slug": "common-pests-bellingham-wa",
+      "supersededBy": "/locations/bellingham/"
+    },
+    {
+      "slug": "preventative-pest-control",
+      "supersededBy": "/services/home-protection-plan/"
+    },
+    {
+      "slug": "the-sasquatch-advantage-in-preventative-pest-control",
+      "supersededBy": "/services/home-protection-plan/"
+    },
+    {
+      "slug": "bees-vs-wasps-vs-hornets-identification",
+      "supersededBy": null
+    },
+    {
+      "slug": "know-your-bees",
+      "supersededBy": "/services/carpenter-bee-control/",
+      "note": "planned as standing; the source came back under the 900-word blog floor, so it was superseded rather than padded"
+    },
+    {
+      "slug": "bumble-bees-in-washington-state",
+      "supersededBy": "/services/bee-removal/",
+      "note": "planned as standing; the source came back under the 900-word blog floor, so it was superseded rather than padded"
+    },
+    {
+      "slug": "mud-dauber-wasps-in-washington-state-natures-non-aggressive-pollinators",
+      "supersededBy": "/services/wasp-control/",
+      "note": "planned as standing; the source came back under the 900-word blog floor, so it was superseded rather than padded"
+    },
+    {
+      "slug": "understanding-wasps-vs-yellowjackets",
+      "supersededBy": "/services/wasp-control/"
+    },
+    {
+      "slug": "yellow-jackets",
+      "supersededBy": "/services/wasp-control/yellowjackets-in-the-lawn/"
+    },
+    {
+      "slug": "when-do-wasps-build-nests-bellingham",
+      "supersededBy": "/services/wasp-control/"
+    },
+    {
+      "slug": "dont-remove-wasp-nest-yourself-bellingham",
+      "supersededBy": "/services/wasp-control/wasp-nest-in-a-wall-void/"
+    },
+    {
+      "slug": "stinging-flying-insects-bellingham",
+      "supersededBy": "/services/wasp-control/"
+    },
+    {
+      "slug": "wasp-sting",
+      "supersededBy": "/services/wasp-control/"
+    },
+    {
+      "slug": "unwanted-buzzing-how-to-locate-the-best-beehive-exterminator-near-you",
+      "supersededBy": "/services/bee-removal/"
+    },
+    {
+      "slug": "carpenter-ants-vs-sugar-ants-bellingham",
+      "supersededBy": "/services/ant-control/"
+    },
+    {
+      "slug": "why-ants-invade-homes-spring-bellingham",
+      "supersededBy": "/services/ant-control/ant-trails-across-the-kitchen-counter/"
+    },
+    {
+      "slug": "more-spiders-fall-bellingham",
+      "supersededBy": "/services/spider-control/spiders-appearing-every-fall/"
+    },
+    {
+      "slug": "black-spiders-washington-state",
+      "supersededBy": "/services/spider-control/is-this-a-hobo-spider/"
+    },
+    {
+      "slug": "tiny-black-spiders-in-washington",
+      "supersededBy": "/services/spider-control/is-this-a-hobo-spider/"
+    },
+    {
+      "slug": "brown-recluse-spiders",
+      "supersededBy": "/services/spider-control/is-this-a-hobo-spider/"
+    },
+    {
+      "slug": "spider-control-bellingham-wa",
+      "supersededBy": "/services/spider-control/"
+    },
+    {
+      "slug": "bed-bug-infestations",
+      "supersededBy": "/services/bed-bug-control/"
+    },
+    {
+      "slug": "bed-bugs-holiday-travel-whatcom",
+      "supersededBy": "/services/bed-bug-control/bed-bugs-after-a-trip/"
+    },
+    {
+      "slug": "how-to-know-if-you-have-bed-bugs-bellingham",
+      "supersededBy": "/services/bed-bug-control/"
+    },
+    {
+      "slug": "understanding-bed-bugs-bites-identification",
+      "supersededBy": "/services/bed-bug-control/bites-but-no-bugs-found/"
+    },
+    {
+      "slug": "combatting-rodent-invaders",
+      "supersededBy": "/services/rodent-control/"
+    },
+    {
+      "slug": "the-ultimate-guide-to-rodent-control-how-to-find-the-best-pest-control-services-near-you",
+      "supersededBy": "/services/rodent-control/"
+    },
+    {
+      "slug": "rats-vs-mice-bellingham",
+      "supersededBy": "/services/rodent-control/"
+    },
+    {
+      "slug": "rodent-entry-points-bellingham",
+      "supersededBy": "/services/exclusion-and-repairs/sealing-a-quarter-inch-foundation-gap/"
+    },
+    {
+      "slug": "what-is-rodent-exclusion",
+      "supersededBy": "/services/exclusion-and-repairs/"
+    },
+    {
+      "slug": "rodent-proofing-home-winter-bellingham",
+      "supersededBy": "/services/exclusion-and-repairs/"
+    },
+    {
+      "slug": "fall-rodent-prevention-bellingham",
+      "supersededBy": "/services/rodent-control/"
+    },
+    {
+      "slug": "how-to-identify-termites",
+      "supersededBy": "/services/termite-control/"
+    },
+    {
+      "slug": "termites-bellingham-wa",
+      "supersededBy": "/services/termite-control/"
+    },
+    {
+      "slug": "termites-structural-bellingham",
+      "supersededBy": "/services/wdo-treatment/"
+    },
+    {
+      "slug": "why-powder-post-beetle-treatment-is-critical-after-flooding",
+      "supersededBy": "/services/wdo-treatment/",
+      "note": "planned as standing; the source came back under the 900-word blog floor, so it was superseded rather than padded"
+    },
+    {
+      "slug": "wood-boring-beetles-a-silent-threat-to-your-home",
+      "supersededBy": null
+    },
+    {
+      "slug": "how-cockroaches-get-in-bellingham",
+      "supersededBy": "/services/cockroach-control/"
+    },
+    {
+      "slug": "combating-fleas",
+      "supersededBy": "/services/flea-control/"
+    },
+    {
+      "slug": "flea-season-pacific-northwest",
+      "supersededBy": "/services/flea-control/"
+    },
+    {
+      "slug": "weevils-in-your-pantry",
+      "supersededBy": "/services/beetle-control/",
+      "note": "planned as standing; the source came back under the 900-word blog floor, so it was superseded rather than padded"
+    },
+    {
+      "slug": "clover-mites-invading-your-home",
+      "supersededBy": null
+    },
+    {
+      "slug": "ladybugs-vs-asian-lady-beetles-bellingham",
+      "supersededBy": null
+    },
+    {
+      "slug": "earwigs-millipedes-clover-mites-bellingham",
+      "supersededBy": "/services/earwig-control/"
+    },
+    {
+      "slug": "why-earwigs-are-invading-your-home",
+      "supersededBy": "/services/earwig-control/"
+    },
+    {
+      "slug": "why-do-i-have-millipedes-in-my-home",
+      "supersededBy": "/services/centipede-control/"
+    },
+    {
+      "slug": "stink-bugs-fall-bellingham",
+      "supersededBy": "/services/stink-bug-control/bugs-on-the-south-wall-every-october/"
+    },
+    {
+      "slug": "sasquatch-pest-control-defending-against-stink-bugs",
+      "supersededBy": "/services/stink-bug-control/"
+    },
+    {
+      "slug": "defending-lynden-homes-pest-control",
+      "supersededBy": "/locations/lynden/"
+    },
+    {
+      "slug": "keeping-your-home-pest-free-in-ferndale-wa",
+      "supersededBy": "/locations/ferndale/"
+    },
+    {
+      "slug": "pest-control-in-ferndale-wa",
+      "supersededBy": "/locations/ferndale/"
+    },
+    {
+      "slug": "fortifying-homes-in-blaine-wa-the-essence-of-effective-pest-control",
+      "supersededBy": "/locations/blaine/"
+    },
+    {
+      "slug": "pest-control-in-blaine-wa",
+      "supersededBy": "/locations/blaine/"
+    },
+    {
+      "slug": "the-blaine-peace-arch-a-symbol-of-unity",
+      "supersededBy": "/locations/blaine/"
+    },
+    {
+      "slug": "the-vital-role-of-proper-pest-control-in-bow-wa",
+      "supersededBy": "/locations/bow/"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+---
+/** ONE FAQ block per page. The same array feeds the FAQPage node, so the
+ *  visible questions and the marked-up questions can never diverge.
+ *  The live site ships two competing blocks on 8 of 12 service pages. */
+interface Props { items: { q: string; a: string }[]; heading?: string }
+const { items, heading = 'Frequently asked questions' } = Astro.props;
+---
+{items.length > 0 && (
+  <section class="faq">
+    <h2>{heading}</h2>
+    {items.map((f) => (
+      <details>
+        <summary>{f.q}</summary>
+        <div><p>{f.a}</p></div>
+      </details>
+    ))}
+  </section>
+)}

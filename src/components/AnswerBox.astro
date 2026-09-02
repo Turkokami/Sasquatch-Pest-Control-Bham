@@ -1,0 +1,7 @@
+---
+/** The AEO Quick Answer. 40–60 words, first thing on the page.
+ *  SpeakableSpecification in the graph points at .answer-box. */
+interface Props { text: string }
+const { text } = Astro.props;
+---
+<div class="answer-box"><p>{text}</p></div>

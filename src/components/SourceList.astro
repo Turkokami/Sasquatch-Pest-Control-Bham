@@ -1,0 +1,64 @@
+---
+/**
+ * The citation block on a guide.
+ *
+ * CONTENT_BRIEF: "Every factual, legal or regulatory claim carries a source and
+ * a review date." This component is how that shows up for the reader rather
+ * than only in a repo file — the sources are visible, linked and dated, and the
+ * review date is stated rather than implied.
+ *
+ * It is deliberately plain. A citation block that looks like a design element
+ * reads as decoration; one that looks like a citation block reads as evidence.
+ */
+interface Source {
+  label: string;
+  url: string;
+  read: Date;
+}
+interface Props {
+  sources: Source[];
+  reviewBy: Date;
+  legalDisclaimer?: boolean;
+}
+const { sources, reviewBy, legalDisclaimer = false } = Astro.props;
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<section class="sources">
+  <h2>Sources</h2>
+
+  {legalDisclaimer && (
+    <p class="disclaimer" data-boilerplate>
+      <strong>This is information, not legal advice.</strong> We are a pest
+      control company, not attorneys. What follows is our reading of published
+      rules, with links so you can check them yourself. For advice on your own
+      situation, talk to a lawyer, to
+      <a href="https://www.washingtonlawhelp.org/" rel="nofollow noopener">WashingtonLawHelp</a>,
+      or to your city or county code enforcement office.
+    </p>
+  )}
+
+  <ul>
+    {sources.map((s) => (
+      <li>
+        <a href={s.url} rel="nofollow noopener">{s.label}</a>
+        <span class="read"> — read {fmt(s.read)}</span>
+      </li>
+    ))}
+  </ul>
+
+  <p class="review" data-boilerplate>
+    Rules change. This page is scheduled for review against its sources by
+    <strong>{fmt(reviewBy)}</strong>. If you are reading it after that date and
+    something looks out of step with the current rule, the rule is right and we
+    are wrong — please tell us.
+  </p>
+</section>
+
+{/* No scoped <style> here, on purpose. This block used to carry its own rules
+    built out of currentColor and opacity — the one piece of the page the
+    design tokens could not reach, and it drifted. It is styled in §17 of
+    src/styles/global.css with the same inks, rules and advisory treatment as
+    every other callout, so the citation block, the legal disclaimer and the
+    archived-post banner read as one system instead of three. */}

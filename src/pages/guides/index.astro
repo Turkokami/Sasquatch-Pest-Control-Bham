@@ -1,0 +1,205 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import { GUIDE_CLUSTERS } from '../../data/guide-clusters';
+
+const path = '/guides/';
+
+/* The guides hub. These are the pages that exist because nobody else in this
+   market publishes them accurately — the obligations, the rules and the
+   building science that decide who pays and what has to happen, rather than
+   another page about how much we hate rodents.
+
+   Every guide beneath this hub carries its sources and a review date in the
+   frontmatter, enforced by the collection schema rather than by memory. */
+const guides = await getCollection('guides');
+const ready = guides.filter((g) => g.data.ready === true);
+
+/* Rendered from src/data/guide-clusters.ts. The literal that used to live
+   here was the second copy of the enum in the collection schema. */
+const clusters = GUIDE_CLUSTERS;
+
+const answer =
+  'These guides cover the rules, obligations and building conditions behind pest problems in Whatcom County — what the law requires of a landlord, what a school must notify, what a report can and cannot say, and why the buildings here fail where they do.';
+
+const faqs = [
+  {
+    q: 'Why does a pest control company publish legal information?',
+    a: 'Because a large share of the calls we take are really questions about who is responsible and what has to happen. Answering those honestly, with the statute linked, is more useful than another page about how unpleasant rats are.',
+  },
+  {
+    q: 'Is any of this legal advice?',
+    a: 'No, and every guide that touches the law says so on the page. We are a pest control company. What we can do is quote published rules accurately, link them, and date when we read them so you can check whether anything has changed.',
+  },
+  {
+    q: 'How do you keep these current?',
+    a: 'Each guide carries a review date in its own frontmatter, enforced by the build rather than by anyone remembering. The page states that date, and it names its sources with the day each was read.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  title="Guides | Sasquatch Pest Control"
+  description="Rules, obligations and building science behind pest problems in Whatcom County — landlord duties, school notification, moisture and the pest year, with sources."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guides', path }]}
+>
+  <h1>Guides</h1>
+
+  <AnswerBox text={answer} />
+
+  <p>
+    Most of what a pest control company publishes is written to be found rather
+    than to be read. These are the other kind. Each one exists because it
+    answers a question we get asked on the phone and cannot answer in a
+    sentence, and because the accurate answer is not published anywhere else in
+    this county.
+  </p>
+
+  <p>
+    Every guide names the sources it was written from, links them, and states
+    the date each was read and the date the page is due for review. Where a
+    guide touches the law it says plainly that we are not attorneys.
+  </p>
+
+  <h2>Why these exist</h2>
+
+  <p>
+    A pest control company's website is usually written to be found. Pages get
+    built around whatever people type into a search box, and the content behind
+    the heading is thin because the heading was the point. That approach works
+    well enough for someone who already knows they want a wasp nest removed. It
+    is useless to the much larger group of people whose actual question is
+    procedural — who is responsible, what has to happen first, what a document
+    can and cannot say, whether the thing they are worried about is even a
+    problem.
+  </p>
+
+  <p>
+    Those questions have real answers. They are usually written down somewhere
+    public, in a statute or a municipal code or an agency rule, and they are
+    usually written in a register that makes them hard to read. Very few of
+    them are explained anywhere in this county, and the explanations that do
+    exist are frequently wrong in a self-serving direction — a company implying
+    that a rule requires the service it happens to sell.
+  </p>
+
+  <p>
+    So these pages quote the source, link it, and say when we read it. Where a
+    rule does not say what people assume it says, we note that too. The
+    Bellingham rental inspection checklist, for instance, does not mention
+    pests at all, and it would be easy and profitable to imply otherwise.
+  </p>
+
+  <h2>How to use them</h2>
+
+  <p>
+    Read the source, not only our summary. Every citation is a live link and
+    the primary text is generally shorter than the explanation of it. If your
+    situation is contested or expensive, the guide will tell you where the
+    proper advice lives — a tenant service, code enforcement, an attorney, the
+    state agency — rather than pretending we are it.
+  </p>
+
+  <p>
+    And check the review date at the foot of each page. Rules change, and a
+    regulatory page with no expiry is a liability dressed as a resource. If you
+    are reading something here after its review date and it no longer matches
+    the rule, the rule is right and we are wrong. We would like to know.
+  </p>
+
+  <h2>What is not here</h2>
+
+  <p>
+    No case studies, no customer stories, no before-and-after photographs of
+    jobs. Those are worth publishing when they are true accounts of real work
+    with permission attached, and not before. Nothing on this site is invented
+    for the sake of having something in the slot.
+  </p>
+
+  <p>
+    No pricing tables beyond the figures we actually charge, which appear on
+    the service pages they belong to. No ratings until a verified source
+    supplies them. No claims about credentials we do not hold, which for a
+    company in this trade is a narrower line than it sounds and one worth
+    holding.
+  </p>
+
+  <h2>Why Whatcom County specifically</h2>
+
+  <p>
+    Almost all pest advice online is written for somewhere else. It comes from
+    national chains, from content agencies, or from companies operating in
+    climates where the problems and the timing are genuinely different. Advice
+    calibrated to a hot dry summer and a hard freeze does not describe a place
+    where the wet season runs from October to April and the ground under a
+    house never fully dries.
+  </p>
+
+  <p>
+    The differences are not cosmetic. Wood that gets wet here stays wet, because
+    there is no hot dry season to drive the moisture back out, which is why so
+    many of the structural pest problems in this county are really decay
+    problems with an insect living in them. Crawlspace construction is close to
+    universal in the older housing stock, which puts the most important part of
+    the building in the dampest part of the site. Subterranean termites drive
+    the whole industry in other regions and are a minor concern here, while the
+    dampwood species nobody outside the Northwest talks about is the one we
+    actually find.
+  </p>
+
+  <p>
+    The rules are local too. The landlord duty is a Washington statute with a
+    carve-out that decides most disputes. The rental inspection program is a
+    Bellingham ordinance with its own cycle and its own checklist. The school
+    notification requirements are state law with specific timelines and sign
+    dimensions. None of that is in a national guide, and getting it approximately
+    right is worse than not addressing it.
+  </p>
+
+  <p>
+    So everything here is written for this county, with the local rule cited and
+    the local building stock in mind. Where something applies more broadly we
+    say so; where it is specific to a city or a county line, we say that too.
+  </p>
+
+  {clusters.map((c) => {
+    const items = ready.filter((g) => g.data.cluster === c.key);
+    return (
+      <section>
+        <h2>{c.name}</h2>
+        <p>{c.blurb}</p>
+        {items.length > 0 ? (
+          <ul>
+            {items.map((g) => (
+              <li>
+                <a href={`/guides/${g.slug}/`}>{g.data.h1}</a>
+                {' — '}{g.data.description}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p><em>In progress.</em></p>
+        )}
+      </section>
+    );
+  })}
+
+  <h2>Suggest one</h2>
+
+  <p>
+    If there is a question you have had to work out for yourself — about a rule,
+    an obligation, a building condition, or what a contractor should have told
+    you — and the answer was not published anywhere sensible, tell us. Several
+    of these pages exist because somebody asked the same thing three times in a
+    month and we got tired of explaining it on the phone.
+  </p>
+
+  <Faq items={faqs} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

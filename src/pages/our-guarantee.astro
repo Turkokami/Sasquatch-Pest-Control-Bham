@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import Cta from '../components/Cta.astro';
+
+const path = '/our-guarantee/';
+
+/* Keystone doctrine #6: the guarantee is a DEFINED TERM linked from every
+   use of the word, never an open-ended promise. The old /guarantee/ page had
+   the right content but marked its T&C subsections as H2s rather than H3s
+   under a terms parent — fixed here. */
+const answer =
+  'Our 100% Service Guarantee means that if covered pests return between scheduled visits on an active program, we come back and re-service at no additional charge. It is a defined re-service commitment, not an open-ended promise, and the conditions that apply are listed in full on this page.';
+
+const terms = [
+  ['Satisfaction', 'If pests covered by your program return between scheduled visits, we return and re-service at no additional charge for the balance of the program period.'],
+  ['Customer cooperation', 'Re-service depends on reasonable access to the treated areas and on the preparation steps we provide before a visit. Where preparation has not been completed, we will reschedule rather than treat.'],
+  ['Materials', 'We use materials registered for the site and the target pest and apply them according to the label. Label directions govern where a label and a request conflict.'],
+  ['Insurance', 'We carry general liability insurance. Certificates are available on request for commercial accounts and property managers.'],
+  ['A change in law', 'If a change in law or label restricts a material or method we relied on, we will substitute an equivalent approach and tell you what changed.'],
+  ['Pest damage', 'This is a service guarantee covering re-treatment. It is not a warranty against structural or property damage caused by pests.'],
+  ['Rodent control placement', 'Rodent devices are placed where they are effective and where they can be serviced safely. Placement is our decision, and we will explain it.'],
+  ['Non-payment and default', 'Guarantee coverage pauses on an account that is past due and resumes when the balance is cleared.'],
+  ['Cancellation', 'Recurring programs can be canceled. There is no long-term contract, and the notice period and any remaining balance are set out in your service agreement.'],
+];
+---
+<BaseLayout
+  path={path}
+  title="Our 100% Service Guarantee"
+  description="What the Sasquatch Pest Control 100% Service Guarantee covers, what it does not, and the full terms and conditions that apply to every treatment we perform."
+  kind="page"
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Guarantee', path }]}
+>
+  <h1>Our 100% Service Guarantee</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>What the guarantee means for you</h2>
+    <p>
+      A guarantee is only worth what its terms say. Ours is a re-service
+      commitment with defined conditions, published in full below, so you can
+      read exactly what you are getting before you buy rather than after.
+    </p>
+
+    <h2>What it does not mean</h2>
+    <p>
+      This is the part most guarantee pages leave out, and leaving it out is what
+      makes a guarantee worthless. Ours is a commitment to come back and
+      re-service. It is not a promise that you will never see another insect, it
+      is not a warranty against structural or property damage caused by pests, and
+      it does not cover a new problem that is different from the one you hired us
+      for.
+    </p>
+    <p>
+      You will sometimes see competitors advertise an unlimited return-visit
+      promise with no terms attached anywhere on the site. A promise with no
+      stated conditions cannot be enforced as written, which means in practice it
+      is granted at the company's discretion rather than owed to you. We would
+      rather publish conditions you can hold us to.
+    </p>
+
+    <h2>What it covers in practice</h2>
+    <p>
+      On an active recurring program, if a pest covered by that program returns
+      between scheduled visits, you call us and we come back at no additional
+      charge. There is no cap on the number of return visits within the program
+      period and no argument about whether it has been too soon.
+    </p>
+    <p>
+      On a one-time treatment, the guarantee runs for the period stated on your
+      service agreement for that specific job, because a single visit for a
+      specific problem is a different commitment from an ongoing program. That
+      period is written on the agreement before you sign it rather than being
+      referenced vaguely somewhere else.
+    </p>
+    <p>
+      Exclusion and repair work is covered on its own terms. A well-installed
+      exclusion does not wear out the way a treatment does, so what we stand
+      behind there is the workmanship — fastenings, edges and seals — rather than
+      a re-treatment cycle.
+    </p>
+
+    <h2>What we need from you</h2>
+    <p>
+      Two things, and they are the reason the "customer cooperation" clause below
+      exists. The first is access: we cannot re-service a crawlspace we cannot
+      get into, or an area that is blocked on the day. The second is preparation,
+      which matters enormously on bed bug work in particular, where a treatment
+      performed against an unprepared room is close to wasted and we would rather
+      reschedule than pretend otherwise.
+    </p>
+    <p>
+      There is also a third thing that is not a condition but is worth saying: if
+      we tell you that a gutter, a vent screen or a door sweep is the actual cause
+      of the problem, the guarantee does not substitute for fixing it. We will
+      keep coming back, and the pests will keep coming back with us.
+    </p>
+
+    <h2>General terms and conditions</h2>
+    {terms.map(([h, body]) => (
+      <>
+        <h3>{h}</h3>
+        <p>{body}</p>
+      </>
+    ))}
+
+    <h3>Why we publish all of this</h3>
+    <p>
+      Most guarantee pages in this industry are a paragraph of reassurance and a
+      phone number. That is a marketing asset, not a commitment, and it works
+      precisely because nobody expects to be able to check it.
+    </p>
+    <p>
+      We publish the conditions because a guarantee with no published conditions
+      cannot be enforced by the customer, only granted by the company. If you can
+      read what we owe you, you can hold us to it — and if we ever fail to honor
+      what is on this page, you have the page.
+    </p>
+
+    <h3>How to make a claim</h3>
+    <p>
+      Call or text us and say what came back and when. There is no form, no
+      claim number and no waiting period. We will schedule the return visit the
+      same way we scheduled the original one, and there is no charge for it on a
+      covered program.
+    </p>
+    <p>
+      If we disagree about whether something is covered — usually because a new
+      and different pest has appeared, or because the original problem was tied to
+      a repair that has not been made — we will tell you why in plain language and
+      quote the work separately rather than quietly declining.
+    </p>
+
+    <h3>Recurring programs and cancellation</h3>
+    <p>
+      Recurring programs exist because pest pressure is recurring, not because we
+      want you locked in. There is no multi-year term, no early termination
+      penalty buried in a schedule, and no requirement to justify a cancellation.
+      The notice period is stated on your service agreement, and it is short.
+    </p>
+    <p>
+      If you cancel mid-program, guarantee coverage runs to the end of the period
+      you have already paid for rather than stopping on the day you call. We are
+      not going to argue about a re-service in the last three weeks of a program
+      you have decided not to renew.
+    </p>
+
+    <h3>If something goes wrong on our side</h3>
+    <p>
+      Occasionally a treatment does not perform, a technician misses something, or
+      a scheduled visit does not happen when it should have. The guarantee covers
+      the first of those; the other two are just us getting it wrong, and the
+      answer is the same — tell us and we will make it right without requiring you
+      to argue the point.
+    </p>
+
+    <h3>Why no contract</h3>
+    <p>
+      The long-term contract is standard in this industry, and its real function
+      is retention rather than service quality. A company confident in its work
+      does not need a termination penalty to keep customers, and a company that
+      needs one has told you something about its work.
+    </p>
+    <p>
+      We would rather earn the next visit each time. It means we lose customers
+      who could have been held in place by paperwork, and it means the ones who
+      stay are there because the service is worth staying for.
+    </p>
+
+    <h3>Disclaimer</h3>
+    <p>
+      These terms summarize the guarantee attached to our service programs. Where
+      this page and your signed service agreement differ, the service agreement
+      governs.
+    </p>
+  </div>
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

@@ -1,0 +1,153 @@
+---
+/**
+ * BaseLayout — head, meta/OG/Twitter, schema injection, description trim.
+ * The ONE place the JSON-LD graph is injected. Keystone Part 9: exactly one
+ * emitter per page, always.
+ */
+import '../styles/global.css';
+import { getCollection } from 'astro:content';
+import { business, SITE, isReady } from '../data/business';
+import { graphScript, type PageSchemaInput } from '../lib/schema';
+import { buildTitle, buildDescription } from '../lib/seo';
+import PhoneBar from '../components/PhoneBar.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+/* `guideTopics` is Omitted as well as title/description: it is not a page's
+   business what the guides collection contains. It is the Organization's
+   topical footprint, it is identical on all 207 pages, and it is resolved here
+   once from the collection itself rather than being passed up from routes that
+   would each have to remember to do it. Pages cannot set it. */
+interface Props extends Omit<PageSchemaInput, 'title' | 'description' | 'guideTopics'> {
+  title: string;
+  description: string;
+  /** Pass false only on the homepage, where the brand is the subject. */
+  brandSuffix?: boolean;
+  /**
+   * Routes stand up before their content exists. A page without a body that
+   * clears the 3,000-word floor is NOT indexable — shipping it open would be
+   * exactly the thin-content pattern the rebuild exists to remove. The
+   * markdown body landing flips ready:true, which clears this automatically.
+   */
+  noindex?: boolean;
+  /**
+   * Point the canonical at a DIFFERENT page than this one.
+   *
+   * Exists for exactly one case: an imported legacy blog post whose topic is
+   * already owned by a page written to the M1 standard. The post stays live
+   * and readable; the ranking signal is assigned to the page that earned it.
+   *
+   * Deliberately narrow. A self-referencing canonical is correct on every
+   * other page on this site, and a cross-canonical anywhere else is almost
+   * always a mistake — so it is a prop somebody has to pass on purpose, never
+   * a value derived from something else. Passing it without `noindex` is
+   * self-contradictory: it asks Google to index a page while telling Google
+   * the page is a duplicate. That combination throws at build time rather
+   * than shipping and being discovered in a crawl report months later.
+   */
+  canonicalTo?: string;
+}
+
+const {
+  title,
+  description,
+  brandSuffix = true,
+  noindex = false,
+  canonicalTo,
+  ...schemaProps
+} = Astro.props;
+
+if (canonicalTo && !noindex) {
+  throw new Error(
+    `${schemaProps.path}: canonicalTo is set to ${canonicalTo} but noindex is false. ` +
+      `A page declaring itself a duplicate must not also ask to be indexed.`,
+  );
+}
+if (canonicalTo && canonicalTo === schemaProps.path) {
+  throw new Error(`${schemaProps.path}: canonicalTo points at itself — drop the prop instead.`);
+}
+
+const finalTitle = buildTitle(title, { brand: brandSuffix });
+const finalDesc = buildDescription(description);
+const canonical = `${SITE}${canonicalTo ?? schemaProps.path}`;
+/* The page's own hero if it has one, else the brand social image, else
+   NOTHING. The fallback used to be a hard-coded path to a file that was
+   never supplied, so all 201 pages advertised a share image that 404'd — a
+   blank card with the brand name under it, which is worse than no card at
+   all, because a platform with no og:image falls back to its own layout.
+   Guarded like every other owed field; harness check 1b fails on any
+   referenced asset that was not built. */
+const ogImage = schemaProps.image?.src
+  ? `${SITE}${schemaProps.image.src}`
+  : isReady(business.socialImage)
+    ? `${SITE}${business.socialImage}`
+    : null;
+
+/* The guides corpus, for the Organization's knowsAbout. Read from the
+   collection rather than from a parallel list in a data file, so it cannot
+   drift: a guide exists if and only if its file exists, and its route is
+   generated from the same query, which is what makes every `url` emitted here
+   guaranteed to resolve to a built page.
+
+   NOT filtered on `ready`. A guide awaiting its word count still has a route
+   and is still a subject this company has written about — filtering here would
+   emit a reference to a page in one build and drop it in the next, for a
+   reason that has nothing to do with the topic. */
+const guideTopics = (await getCollection('guides'))
+  .map((g) => ({ slug: g.slug, title: g.data.h1 }))
+  .sort((a, b) => a.slug.localeCompare(b.slug));
+
+const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDesc, guideTopics });
+---
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{finalTitle}</title>
+    <meta name="description" content={finalDesc} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={business.name} />
+    <meta property="og:title" content={finalTitle} />
+    <meta property="og:description" content={finalDesc} />
+    <meta property="og:url" content={canonical} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={finalTitle} />
+    <meta name="twitter:description" content={finalDesc} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:wght@600;700&display=swap"
+    />
+
+    {/* The single JSON-LD emitter. No plugin, no second block, ever. */}
+    <script type="application/ld+json" set:html={ld} is:inline />
+  </head>
+  <body>
+    {/* Three words, first in the tab order, and the only way a keyboard user
+        gets past a masthead of eight links on every one of 200-odd pages.
+        Off-canvas until it takes focus — never display:none, which would
+        take it out of the tab order and defeat the point. */}
+    <a class="skip" href="#main">Skip to content</a>
+    <PhoneBar />
+    <Header />
+    <main id="main">
+      <div class="wrap">
+        {schemaProps.breadcrumbs?.length ? <Breadcrumbs items={schemaProps.breadcrumbs} /> : null}
+        <slot />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

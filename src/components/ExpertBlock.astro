@@ -1,0 +1,36 @@
+---
+/** Named-expert E-E-A-T block. Renders NOTHING when the person is not
+ *  publishable or their credential is still PENDING — the credential is a
+ *  hard boundary, not a design element. */
+import { people, isReady, WSDA_CATEGORIES } from '../data/business';
+
+interface Props { slug?: string }
+const { slug } = Astro.props;
+const person = people.find((p) => p.slug === slug);
+const show = person && person.publishable === true;
+const cred = person && isReady(person.credential as string | '__PENDING__')
+  ? (person.credential as string)
+  : null;
+/* License CATEGORIES, rendered only alongside a real number. A category list
+   with no license behind it would be an unverifiable claim, which is exactly
+   what this component exists to prevent. */
+const cats = cred && person?.categories?.length
+  ? person.categories.map((c) => WSDA_CATEGORIES[c].label).join(' and ')
+  : null;
+/* A PENDING job title renders as nothing rather than as the sentinel. The
+   credential line still stands on its own, because the license number is the
+   part that carries weight here. */
+const title = person && isReady(person.jobTitle as string | '__PENDING__')
+  ? (person.jobTitle as string)
+  : null;
+---
+{show && person && (
+  <aside class="expert" data-boilerplate>
+    <div>
+      <b>{person.name}</b>
+      <span>{[title, cred ? `${person.credentialName} (${cred})` : null].filter(Boolean).join(' · ')}</span>
+      {cats && <span class="cats">WSDA categories: {cats}.</span>}
+      <p>{person.bio}</p>
+    </div>
+  </aside>
+)}

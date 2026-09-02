@@ -1,0 +1,1429 @@
+/* ============================================================================
+   Sasquatch Pest Control — the design system.
+
+   ONE token block, and it is the whole brand. Every colour, measure, type step
+   and rhythm value used anywhere on this site resolves through a custom
+   property declared in §1. Nothing below §1, and nothing in any component or
+   page, may hard-code a colour: swapping a value here has to move the entire
+   site, because that is the only property that keeps 200-odd pages consistent
+   without anyone auditing them one at a time.
+
+   The palette is sampled from the real identity in public/img — the logo
+   wordmark, the vehicle wraps and the printed banner — not invented here:
+
+     near-black   #0a0806   the logo ground, and the brand's actual surface
+     lime         #78ff31   the wordmark
+     acid         #c2ff16   the wordmark's highlight
+     wrap green   #79b809   the vehicle wraps and the banner rules
+     amber        #ffbc00   the logo outline
+
+   The warm browns in the figure (#d6ad6b, #291507) are the illustration's,
+   not the interface's, and are deliberately absent below — they belong to the
+   mascot and would only muddy an ink scale that has to stay neutral under
+   3,000 words of body copy.
+
+   Two of those cannot be used as printed. #78ff31 on white is 1.30:1 and
+   #ffbc00 on white is 1.69:1 — both illegible as text and weak as a rule. So
+   the accent has two forms, and which one applies is decided by the ground it
+   sits on rather than by whoever is writing the rule:
+
+     on a light ground   --link / --marker  darkened into the same hue family,
+                                            4.5:1 and 3:1 respectively
+     on a dark ground    --inv-link / --inv-marker  the true lime, 15:1+
+
+   Every inverted region (§9) re-points the semantic tokens rather than
+   restyling its children, so a link, a button or a focus ring inside a black
+   panel is the same rule it is everywhere else and simply resolves darker.
+
+   The green is an accent: a rule, a marker, a list bullet, an active state, a
+   small solid on black. It is never a large field. The black is the surface.
+   ========================================================================== */
+
+/* ------------------------------------------------------------- §1  tokens */
+
+:root {
+  color-scheme: light;
+
+  /* -- brand primitives ---------------------------------------------------
+     Raw, unmodified, straight off the artwork. Nothing in the stylesheet
+     reaches for one of these directly — they are referenced by the semantic
+     tokens below, so the question "what colour is this?" always has a
+     role-shaped answer and re-sampling the artwork is a five-line edit. */
+  --brand-black: #0a0806;
+  --brand-lime: #78ff31;
+  --brand-acid: #c2ff16;
+  --brand-green: #79b809;
+  --brand-amber: #ffbc00;
+
+  /* -- surfaces ---------------------------------------------------------- */
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --well: #edece6;
+  /* Award artwork arrives on white, on black and on photographs. Every badge
+     is set on one neutral plate so the wall reads as a set. */
+  --badge-well: #ffffff;
+
+  /* -- ink ---------------------------------------------------------------- */
+  --ink: #16140e;
+  --ink-2: #46433a;
+  --ink-3: #6d6960;
+
+  /* -- rules -------------------------------------------------------------- */
+  --rule: #e2e0d8;
+  --rule-2: #cbc8bd;
+  --rule-strong: #16140e;
+
+  /* -- brand roles on a light ground -------------------------------------- */
+  --link: #3f6a05; /* 5.93:1 on --bg   */
+  --link-hover: #2f5208; /* 9.01:1 on --surface */
+  --marker: #4e7a04; /* 4.73:1 on --bg — meaningful markers */
+  --accent-line: var(--brand-green); /* decorative rules only, never a sole cue */
+  --notice: #7a5600; /* the amber, made readable — advisories */
+
+  /* -- inverted panels: the brand's real surface -------------------------- */
+  --inv-bg: var(--brand-black);
+  --inv-surface: #14120b;
+  --inv-well: #1c1a12;
+  --inv-ink: #f4f3ee;
+  --inv-ink-2: #c9c6ba;
+  --inv-ink-3: #9a978c;
+  --inv-rule: #2c2920;
+  --inv-rule-2: #423d30;
+  --inv-link: #9dff5c;
+  --inv-link-hover: var(--brand-acid);
+  --inv-marker: var(--brand-lime);
+  --inv-notice: var(--brand-amber);
+
+  /* -- interactive -------------------------------------------------------- */
+  --btn-bg: var(--brand-lime);
+  --btn-bg-hover: var(--brand-acid);
+  --btn-ink: var(--brand-black);
+  --focus: #16140e;
+  --focus-inverse: var(--brand-amber);
+
+  /* -- elevation ---------------------------------------------------------- */
+  --shadow-1: 0 1px 2px rgba(10, 8, 6, 0.06);
+
+  /* -- type --------------------------------------------------------------- */
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Fluid, but bounded at both ends: 17.0px on a phone, 18.4px from a tablet
+     up. Pages here run past 3,000 words and the base size is doing more work
+     for that reader than any other value in this file. */
+  --fs-body: clamp(1.0625rem, 1rem + 0.3vw, 1.15rem);
+  --fs-lead: 1.06em;
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.8125rem;
+  --fs-eyebrow: 0.7rem;
+  --fs-h1: clamp(2rem, 1.52rem + 2.1vw, 3.05rem);
+  --fs-h2: clamp(1.4rem, 1.26rem + 0.62vw, 1.8rem);
+  --fs-h3: clamp(1.11rem, 1.06rem + 0.22vw, 1.26rem);
+
+  --lh-body: 1.68;
+  --lh-tight: 1.12;
+  --lh-snug: 1.28;
+  --track-eyebrow: 0.13em;
+  --track-display: -0.018em;
+
+  /* -- measure & rhythm ---------------------------------------------------
+     --measure is the reading column and the reason for every other width on
+     the page. 40rem at the 18.4px cap is ~69 characters, which is inside the
+     65–75 band where long-form stops being tiring. The old value was 68ch,
+     which in Inter resolves to ~81 characters — a fifth too wide, and the
+     single biggest readability defect in the previous stylesheet. */
+  --measure: 40rem;
+  --maxw: var(--measure);
+  --gutter: clamp(1.15rem, 4vw, 2.25rem);
+
+  --space-1: 0.35rem;
+  --space-2: 0.7rem;
+  --space-3: 1.15rem;
+  --space-4: 1.8rem;
+  --space-5: 2.75rem;
+  --space-6: 4.25rem;
+
+  --radius: 6px;
+  --radius-sm: 3px;
+
+  /* Paper is not a theme. Declared here anyway so §23 stays a rule about
+     layout and the file keeps its one property: no colour value is written
+     anywhere outside this block. */
+  --print-bg: #ffffff;
+  --print-ink: #000000;
+}
+
+/* -------------------------------------------------------------- §2  dark
+   Overrides ONLY. Every token here already has a definition on bare :root
+   above, so a browser that never evaluates this block still gets a complete
+   palette. Inverted panels stop inverting and start lifting instead: on a
+   black page a blacker panel is invisible, so --inv-* becomes the raised
+   surface and keeps its lime rule to mark the edge. */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --bg: #0c0b07;
+    --surface: #14120c;
+    --well: #1b1913;
+    --badge-well: #e9e8e3;
+
+    --ink: #f2f1eb;
+    --ink-2: #c4c1b6;
+    --ink-3: #97948a;
+
+    --rule: #2a2820;
+    --rule-2: #3d3a30;
+    --rule-strong: #6d6960;
+
+    --link: #a4ff6e;
+    --link-hover: var(--brand-acid);
+    --marker: var(--brand-lime);
+    --accent-line: var(--brand-lime);
+    --notice: var(--brand-amber);
+
+    --inv-bg: #14120c;
+    --inv-surface: #1c1a12;
+    --inv-well: #24211a;
+    --inv-ink: #f2f1eb;
+    --inv-ink-2: #c4c1b6;
+    --inv-ink-3: #97948a;
+    --inv-rule: #333026;
+    --inv-rule-2: #46422f;
+    --inv-link: #a4ff6e;
+    --inv-link-hover: var(--brand-acid);
+    --inv-marker: var(--brand-lime);
+    --inv-notice: var(--brand-amber);
+
+    --focus: var(--brand-lime);
+    --focus-inverse: var(--brand-lime);
+
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* ------------------------------------------------------------- §3  reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-synthesis-weight: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Anything with an id can be a scroll target, and the phone bar is sticky.
+   Without this the heading a reader jumped to lands underneath it. */
+[id] {
+  scroll-margin-top: 4.5rem;
+}
+
+/* --------------------------------------------------- §4  motion & focus */
+
+/* One place, applied to everything. Removing a focus outline is not an option
+   anywhere in this file — where a component needs a different ring it
+   re-points --focus, it does not switch the outline off. */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+details:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Keyboard users get the ring; the same ring for a mouse click on a details
+   summary is noise, hence :focus-visible throughout. Browsers without it fall
+   back to the UA default, which is also visible. */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------------------------------------------------ §5  layout */
+
+.wrap {
+  max-width: calc(var(--maxw) + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* The article frame, and it is deliberately the same width as the chrome.
+   An earlier pass had the masthead and footer running wider than the reading
+   column, which put three different left edges on one screen — the kind of
+   near-miss that reads as sloppy without a reader ever working out why. One
+   column, one edge, top to bottom. */
+main > .wrap {
+  max-width: calc(var(--measure) + 2 * var(--gutter));
+  /* The article's own top space, held here rather than on whatever happens to
+     come first. It used to sit on .crumbs, so the two pages with no
+     breadcrumb trail — the homepage and the 404 — opened with their H1 or
+     their hero jammed against the masthead rule. */
+  padding-top: var(--space-4);
+}
+
+main {
+  padding-bottom: var(--space-2);
+}
+
+.prose {
+  max-width: var(--measure);
+}
+
+/* Skip link — visually out of the way, fully visible the moment it has
+   focus. */
+.skip {
+  position: fixed;
+  left: var(--gutter);
+  top: 0;
+  z-index: 60;
+  transform: translateY(-120%);
+  background: var(--inv-bg);
+  color: var(--inv-ink);
+  border: 1px solid var(--inv-marker);
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 0.6rem 1rem;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+/* :focus, not :focus-visible — the link has to appear for anyone who reaches
+   it by any means, and the ring is drawn on top of that. */
+.skip:focus {
+  transform: translateY(0);
+}
+/* The ring is drawn INSIDE the chip. Outside, it lands on the page ground,
+   where amber is 1.56:1 — the indicator meant to prove you have focus becomes
+   the one thing you cannot see. Against the chip's own black it is 11.9:1.
+   This is the only inset ring on the site, and that is why. */
+.skip:focus-visible {
+  outline: 2px solid var(--focus-inverse);
+  outline-offset: -4px;
+}
+
+/* -------------------------------------------------------- §6  typography */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--track-display);
+  margin: 0 0 var(--space-3);
+  max-width: 24ch;
+}
+
+/* A hairline above every H2 is what turns 3,000 words into sections a reader
+   can navigate by eye. It is also the whole ornament budget for body copy —
+   the accent stays out of the reading column. */
+h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.012em;
+  margin: var(--space-5) 0 var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-snug);
+  margin: var(--space-4) 0 var(--space-1);
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: var(--lh-snug);
+  margin: var(--space-4) 0 var(--space-1);
+}
+
+/* First heading in a block has the section break above it already. */
+.prose > h2:first-child,
+h1 + h2 {
+  padding-top: 0;
+  border-top: 0;
+  margin-top: var(--space-4);
+}
+
+h2 + h3,
+h3 + h4 {
+  margin-top: var(--space-3);
+}
+
+p {
+  margin: 0 0 1.15em;
+  text-wrap: pretty;
+}
+
+ul,
+ol {
+  margin: 0 0 1.15em;
+  padding-left: 1.35em;
+}
+li {
+  margin-bottom: 0.45em;
+}
+li::marker {
+  color: var(--marker);
+}
+li > ul,
+li > ol {
+  margin-top: 0.45em;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--rule);
+  margin: var(--space-5) 0;
+}
+
+blockquote {
+  margin: var(--space-4) 0;
+  padding: 0.1rem 0 0.1rem 1.25rem;
+  border-left: 3px solid var(--accent-line);
+  font-family: var(--serif);
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+code,
+kbd,
+samp {
+  font-family: var(--mono);
+  font-size: 0.86em;
+  background: var(--well);
+  border-radius: var(--radius-sm);
+  padding: 0.1em 0.35em;
+  overflow-wrap: anywhere;
+}
+
+/* Links read as body text with a rule under them — a magazine sets a link
+   this way and it keeps the accent from strobing through a long page. Colour
+   is never the only cue: the underline carries it for anyone who cannot see
+   the hue difference. */
+a {
+  color: var(--link);
+  text-decoration-thickness: 0.07em;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 0.16em;
+  transition: color 0.14s ease, text-decoration-color 0.14s ease;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration-thickness: 0.12em;
+}
+
+/* An eyebrow: the small uppercase label that names a block without competing
+   with the heading above it. Used by the quick answer, the rail headings, the
+   source list and the verdict. */
+.answer-box::before,
+.verdict::before,
+.sources > h2,
+section[data-boilerplate]:not(.cta) > h2 {
+  font-family: var(--sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--track-eyebrow);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  line-height: 1.3;
+}
+
+/* ------------------------------------------------------- §7  quick answer */
+
+/* The AEO surface. SpeakableSpecification in the JSON-LD graph points here,
+   so it is the first thing on the page and it has to look like the answer
+   rather than like a pull quote. Raised card, one accent marker, set a step
+   larger than body copy and a little tighter. */
+.answer-box {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--marker);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-1);
+  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-3);
+  margin: 0 0 var(--space-5);
+  max-width: var(--measure);
+}
+.answer-box::before {
+  content: "Quick answer";
+  display: block;
+  margin-bottom: 0.45rem;
+}
+.answer-box p {
+  margin: 0;
+  font-size: var(--fs-lead);
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+/* --------------------------------------------------------------- §8  FAQ */
+
+.faq {
+  margin: var(--space-5) 0;
+  max-width: var(--measure);
+}
+.faq > h2 {
+  margin-bottom: var(--space-2);
+}
+.faq details {
+  border-bottom: 1px solid var(--rule);
+}
+.faq details:first-of-type {
+  border-top: 1px solid var(--rule);
+}
+.faq summary {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--serif);
+  font-size: 1.06rem;
+  font-weight: 600;
+  line-height: var(--lh-snug);
+  padding: 0.95rem 0;
+  color: var(--ink);
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+.faq summary:hover {
+  color: var(--link-hover);
+}
+/* The disclosure control: a plus that loses its upright when the row opens.
+   Drawn rather than typed, so it inherits the accent and never falls back to
+   a font that does not have the glyph. */
+.faq summary::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 0.72rem;
+  height: 0.72rem;
+  align-self: center;
+  background-image:
+    linear-gradient(var(--marker), var(--marker)),
+    linear-gradient(var(--marker), var(--marker));
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: 100% 2px, 2px 100%;
+  transition: background-size 0.18s ease;
+}
+/* The upright stroke retracts rather than the whole mark spinning: it is the
+   same gesture at a tenth of the visual cost, and it is a background-size
+   transition, so prefers-reduced-motion switches it off with everything
+   else. */
+.faq details[open] summary::after {
+  background-size: 100% 2px, 2px 0;
+}
+.faq details > div {
+  padding: 0 0 1.05rem;
+  color: var(--ink-2);
+  max-width: 62ch;
+}
+.faq details > div p:last-child {
+  margin-bottom: 0;
+}
+
+/* -------------------------------------------------- §9  inverted regions */
+
+/* A panel on the brand's own surface. It re-points the semantic tokens
+   instead of restyling its children: everything inside — links, buttons,
+   rules, focus rings, list markers — is the same rule it is on a light
+   ground and simply resolves against black. */
+.cta,
+.phonebar,
+footer.site {
+  --surface: var(--inv-surface);
+  --well: var(--inv-well);
+  --ink: var(--inv-ink);
+  --ink-2: var(--inv-ink-2);
+  --ink-3: var(--inv-ink-3);
+  --rule: var(--inv-rule);
+  --rule-2: var(--inv-rule-2);
+  --rule-strong: var(--inv-rule-2);
+  --link: var(--inv-link);
+  --link-hover: var(--inv-link-hover);
+  --marker: var(--inv-marker);
+  --accent-line: var(--inv-marker);
+  --notice: var(--inv-notice);
+  --focus: var(--focus-inverse);
+  background: var(--inv-bg);
+  color: var(--inv-ink);
+}
+
+/* ---------------------------------------------------- §10  call to action */
+
+.cta {
+  border-radius: var(--radius);
+  border-top: 3px solid var(--inv-marker);
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  margin: var(--space-6) 0 var(--space-3);
+  max-width: var(--measure);
+}
+.cta h2 {
+  color: var(--inv-ink);
+  font-size: var(--fs-h2);
+  margin: 0 0 var(--space-2);
+  padding-top: 0;
+  border-top: 0;
+  max-width: 22ch;
+}
+.cta p {
+  color: var(--inv-ink-2);
+  margin: 0 0 var(--space-3);
+  max-width: 46ch;
+}
+.cta p:last-child {
+  margin-bottom: 0;
+}
+
+/* The wordmark's own colours: a small solid of lime carrying near-black
+   text. This is the one place the acid green is used at size, and it is a
+   button — exactly the scale at which it reads as expensive. */
+.btn {
+  display: inline-block;
+  background: var(--btn-bg);
+  color: var(--btn-ink);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-sm);
+  transition: background-color 0.14s ease, transform 0.14s ease;
+}
+.btn:hover {
+  background: var(--btn-bg-hover);
+  color: var(--btn-ink);
+  transform: translateY(-1px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+/* ------------------------------------------------------ §11  link rails */
+
+/* Navigation, not content — so the heading is set as an eyebrow rather than
+   as a display line, and it is excluded from .cta, which is the other
+   data-boilerplate section on the page and is emphatically not a rail. */
+section[data-boilerplate]:not(.cta) > h2 {
+  margin: var(--space-5) 0 var(--space-2);
+  padding-top: var(--space-2);
+  border-top: 2px solid var(--rule-2);
+}
+
+/* A ruled two-column index rather than a grid of cards. Multi-column is
+   deliberate over grid here: an auto-fill grid leaves empty cells on the last
+   row, and any hairline drawn with a gap-coloured background paints those
+   empty cells as grey blocks. Columns cannot do that, they collapse to one
+   below 34rem on their own, and a ruled list is what a contents page looks
+   like anyway. */
+.rail {
+  margin: 0 0 var(--space-4);
+  padding: 0;
+  list-style: none;
+  max-width: var(--measure);
+}
+/* Two columns only once there are four links to put in them. A three-item
+   rail split two-and-one leaves a rule hanging in an empty half-column, and a
+   one-item rail split at all is just a line with nothing under it — both of
+   which the services index had before this guard. Browsers without :has()
+   keep the single column, which is the safe direction to fail in. */
+@media (min-width: 34rem) {
+  .rail:has(> li:nth-child(4)) {
+    columns: 2;
+    column-gap: var(--space-4);
+  }
+}
+.rail li {
+  margin: 0;
+  break-inside: avoid;
+}
+.rail a {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 0.65rem 0.5rem 0.65rem 0.7rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: var(--fs-sm);
+  line-height: 1.4;
+  box-shadow: inset 0 0 0 var(--marker);
+  transition: background-color 0.14s ease, box-shadow 0.14s ease, color 0.14s ease;
+}
+.rail a:hover,
+.rail a:focus-visible {
+  background: var(--well);
+  color: var(--link-hover);
+  box-shadow: inset 3px 0 0 var(--marker);
+}
+.rail a:focus-visible {
+  outline-offset: -2px;
+}
+.rail li span {
+  color: var(--ink-3);
+}
+
+/* ----------------------------------------------------- §12  breadcrumbs */
+
+.crumbs {
+  font-size: var(--fs-xs);
+  color: var(--ink-3);
+  padding: 0 0 var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 0.1rem;
+}
+.crumbs a {
+  color: var(--ink-3);
+  text-decoration-color: var(--rule-2);
+}
+.crumbs a:hover {
+  color: var(--link-hover);
+}
+.crumbs span {
+  padding: 0 0.45rem;
+}
+.crumbs [aria-current="page"] {
+  color: var(--ink-2);
+  padding-left: 0;
+}
+
+/* -------------------------------------------------------- §13  phone bar */
+
+.phonebar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  font-size: var(--fs-xs);
+  border-bottom: 2px solid var(--inv-marker);
+}
+.phonebar .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+  color: var(--inv-ink-2);
+}
+.phonebar a {
+  color: var(--inv-marker);
+  font-weight: 600;
+  text-decoration: none;
+}
+.phonebar a:hover {
+  color: var(--inv-link-hover);
+  text-decoration: underline;
+}
+/* Somebody reading this is standing in a crawlspace doorway holding a phone.
+   The tagline wraps to two lines under ~640px and pushes a sticky bar to
+   double height for a sentence that is repeated verbatim in the footer; the
+   number is what has to survive. */
+@media (max-width: 39.99rem) {
+  .phonebar .wrap > span:first-child {
+    display: none;
+  }
+  .phonebar .wrap {
+    justify-content: flex-end;
+  }
+}
+
+/* ----------------------------------------------------------- §14  header */
+
+header.site {
+  background: var(--surface);
+  border-bottom: 1px solid var(--rule);
+}
+/* A masthead rather than a nav bar: the name on its own line, a hairline, and
+   the sections beneath it. Eight links do not fit beside a wordmark at any
+   width worth designing for, and stacking them is what a publication does
+   anyway. The same shape holds from 320px up — no breakpoint, no menu
+   button, nothing to tap twice. */
+header.site .wrap {
+  display: grid;
+  padding-block: 1.05rem 0;
+}
+.brand {
+  justify-self: start;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+/* The wordmark's marker, at the size the brand actually uses it: a small
+   solid, not a field. */
+.brand::before {
+  content: "";
+  align-self: center;
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: 0 0 auto;
+  background: var(--accent-line);
+  border-radius: 1px;
+}
+.brand:hover {
+  color: var(--link-hover);
+}
+
+header.site nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.15rem;
+  margin-top: 0.75rem;
+  padding-top: 0.1rem;
+  border-top: 1px solid var(--rule);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.005em;
+}
+header.site nav a {
+  color: var(--ink-2);
+  text-decoration: none;
+  /* Comfortably past the 24px WCAG 2.2 target minimum without inflating the
+     masthead — this is the row a thumb hits first on a phone. */
+  padding: 0.62rem 0;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.14s ease, border-color 0.14s ease;
+}
+header.site nav a:hover {
+  color: var(--ink);
+  border-bottom-color: var(--accent-line);
+}
+header.site nav a:focus-visible {
+  outline-offset: -1px;
+}
+
+/* ----------------------------------------------------------- §15  footer */
+
+footer.site {
+  margin-top: var(--space-4);
+  padding: var(--space-5) 0 var(--space-4);
+  font-size: var(--fs-sm);
+  border-top: 3px solid var(--inv-marker);
+  color: var(--inv-ink-2);
+}
+footer.site a {
+  color: var(--inv-link);
+  text-decoration-color: color-mix(in srgb, var(--inv-link) 45%, transparent);
+}
+footer.site a:hover {
+  color: var(--inv-link-hover);
+}
+/* Explicit tracks, not auto-fit. The four columns hold very different things
+   — a postal address, two time ranges and two lists of short names — and an
+   equal split broke "5051 Guide Meridian Rd" across two lines mid-phrase
+   while leaving the town lists half empty. */
+footer.site .cols {
+  display: grid;
+  gap: var(--space-4) var(--space-3);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 26rem) {
+  footer.site .cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 44rem) {
+  footer.site .cols {
+    grid-template-columns: 1.3fr 1.1fr 0.85fr 0.85fr;
+  }
+}
+footer.site h3 {
+  font-family: var(--sans);
+  color: var(--inv-ink);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--track-eyebrow);
+  text-transform: uppercase;
+  margin: 0 0 var(--space-2);
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid var(--inv-rule);
+}
+footer.site p {
+  margin: 0 0 0.8rem;
+}
+footer.site ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+footer.site li {
+  margin: 0;
+}
+footer.site .rating {
+  color: var(--inv-ink-3);
+  font-size: var(--fs-xs);
+}
+footer.site .colophon {
+  margin: var(--space-4) 0 0;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--inv-rule);
+  font-size: var(--fs-xs);
+  color: var(--inv-ink-3);
+}
+
+/* --------------------------------------------------- §16  expert block */
+
+.expert {
+  display: flex;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent-line);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-3);
+  margin: var(--space-4) 0;
+  max-width: var(--measure);
+}
+.expert b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: var(--lh-snug);
+}
+.expert span {
+  display: block;
+  font-size: var(--fs-xs);
+  color: var(--ink-3);
+  margin-top: 0.15rem;
+}
+.expert .cats {
+  color: var(--ink-3);
+}
+.expert p {
+  margin: 0.65rem 0 0;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+  max-width: 60ch;
+}
+
+/* ---------------------------------------------------- §17  source list */
+
+/* Deliberately plain, and it stays that way — a citation block that looks
+   like a design element reads as decoration. What changed is that it now
+   uses the system's rules and inks instead of currentColor. */
+.sources {
+  margin-top: var(--space-6);
+  padding-top: var(--space-3);
+  border-top: 2px solid var(--rule-strong);
+  max-width: var(--measure);
+}
+.sources > h2 {
+  margin: 0 0 var(--space-2);
+  padding-top: 0;
+  border-top: 0;
+}
+.sources ul {
+  padding-left: 1.2em;
+  margin-bottom: 0;
+}
+.sources li {
+  margin-bottom: 0.5em;
+  font-size: var(--fs-sm);
+}
+.sources .read {
+  color: var(--ink-3);
+}
+.sources .review {
+  margin-top: var(--space-3);
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+}
+
+/* Advisories share one shape across the site: a well, an amber marker, small
+   type. The legal disclaimer and the archived-post banner are the same kind
+   of thing and now look like it. */
+.sources .disclaimer,
+.archived,
+.stub {
+  background: var(--well);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--notice);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+  max-width: var(--measure);
+}
+.sources .disclaimer {
+  margin: 0 0 var(--space-3);
+}
+.sources .disclaimer strong {
+  color: var(--ink);
+}
+
+/* ------------------------------------------------- §18  pest library */
+
+/* The scientific name and group, directly under the H1: metadata, so it is
+   set as metadata rather than as a first paragraph. */
+.ident {
+  margin: calc(-1 * var(--space-2)) 0 var(--space-3);
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+  letter-spacing: 0.01em;
+}
+
+/* The verdict on a species. One of four fixed strings picked by an enum, so
+   it is a labelled chip rather than prose — which is also why it carries
+   data-boilerplate. */
+.verdict {
+  margin: 0 0 var(--space-5);
+  padding: var(--space-3);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--marker);
+  border-radius: var(--radius-sm);
+  max-width: var(--measure);
+}
+.verdict::before {
+  content: "Our verdict";
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.verdict strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.blurb {
+  margin: 0.35rem 0 var(--space-2);
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+}
+
+/* ------------------------------------------------------------ §19  blog */
+
+.archived {
+  margin: 0 0 var(--space-5);
+}
+.archived p:last-child {
+  margin-bottom: 0;
+}
+.archived strong {
+  color: var(--ink);
+}
+
+.provenance {
+  margin-top: var(--space-5);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule);
+  font-size: var(--fs-xs);
+  color: var(--ink-3);
+  max-width: var(--measure);
+}
+.provenance code {
+  background: none;
+  padding: 0;
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+
+.listing {
+  margin: var(--space-4) 0 var(--space-5);
+  max-width: var(--measure);
+}
+.listing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--rule);
+}
+.listing li {
+  margin: 0;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--rule);
+}
+.listing li > a {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: var(--lh-snug);
+  color: var(--ink);
+  text-decoration-color: var(--rule-2);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+.listing li > a:hover {
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
+}
+.listing li p {
+  margin: 0.3rem 0 0;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+}
+.listing .current {
+  white-space: nowrap;
+  font-family: var(--sans);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--link);
+}
+.note {
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+}
+
+/* --------------------------------------------------------- §20  imagery */
+
+.hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin: 0 0 var(--space-4);
+  background: var(--inv-bg);
+}
+
+.team {
+  margin: var(--space-4) 0 var(--space-5);
+  max-width: var(--measure);
+}
+.team img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  background: var(--well);
+}
+.team figcaption {
+  margin-top: var(--space-2);
+  padding-left: var(--space-2);
+  border-left: 2px solid var(--accent-line);
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+  max-width: 58ch;
+}
+
+/* ---------------------------------------------------- §21  awards & press */
+
+/* Sixteen badges from sixteen issuers: 225×225 to 900×1926, on white, on
+   black and on photographs. Nothing about the artwork is consistent, so the
+   frame has to be — one plate, one image box, one hairline grid. Uniform
+   geometry is the only thing that makes a mixed set read as a shelf rather
+   than as a link farm. */
+.badges {
+  list-style: none;
+  margin: var(--space-4) 0 var(--space-5);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr));
+  gap: var(--space-2);
+  align-items: stretch;
+}
+.badges li {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+/* The one thing every badge shares: an identical framed plate. Fixed height
+   plus object-fit:contain means a 225x225 square and a 900x1926 portrait
+   occupy the same footprint and sit on the same baseline, and the hairline
+   frame is what makes that box visible when the artwork's own ground happens
+   to be white. No card around the whole cell — the frame is the only box the
+   wall needs, and sixteen nested boxes is what a link farm looks like. The
+   plate colour is a token because it has to dim in dark mode: a grid of pure
+   white at this size is a glare source on a black page. */
+.badges img {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  object-fit: contain;
+  background: var(--badge-well);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+/* One award was found on the publisher's own listing and no artwork for it
+   was ever supplied. The row still renders — an award is not less real for
+   lacking a picture — but without this the caption would ride up level with
+   the other cells' images and break the only alignment the wall has. */
+.badges li:not(:has(img))::before {
+  content: "";
+  display: block;
+  height: 6rem;
+  border: 1px dashed var(--rule-2);
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.7rem;
+}
+.badges b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.badges b a {
+  color: var(--ink);
+  text-decoration-color: var(--rule-2);
+}
+.badges b a:hover {
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
+}
+.badges span,
+.press span {
+  display: block;
+  font-size: var(--fs-xs);
+  line-height: 1.35;
+  color: var(--ink-3);
+  margin-top: 0.2rem;
+}
+
+/* The result label, rendered on every row and never inferred from the heading
+   the row sits under. A finalist reads as a qualification, not as an error —
+   amber rather than red, and left in sentence case because the string carries
+   its own clause. */
+.badges .result,
+.press .result {
+  margin-top: auto;
+  padding-top: 0.6rem;
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--track-eyebrow);
+  text-transform: uppercase;
+  color: var(--marker);
+}
+.badges .result-finalist,
+.press .result-finalist {
+  color: var(--notice);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: var(--fs-xs);
+}
+.badges .result-listed,
+.press .result-listed {
+  color: var(--ink-3);
+}
+
+.press {
+  list-style: none;
+  margin: var(--space-4) 0 var(--space-5);
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+.press li {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent-line);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+.press img {
+  flex: 0 0 auto;
+  width: 5.25rem;
+  height: 5.25rem;
+  object-fit: contain;
+  background: var(--badge-well);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem;
+}
+.press b {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: var(--lh-snug);
+}
+.press b a {
+  color: var(--ink);
+  text-decoration-color: var(--rule-2);
+}
+.press b a:hover {
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
+}
+.press .via {
+  margin-top: 0.4rem;
+  color: var(--ink-3);
+}
+@media (max-width: 29.99rem) {
+  .press li {
+    flex-direction: column;
+  }
+  .press img {
+    width: 100%;
+    height: 6rem;
+  }
+}
+
+/* ---------------------------------------------- §21a  location map embed */
+
+/* The Google map at the foot of every location page — src/components/
+   LocationMap.astro, which carries the privacy and keyless-embed reasoning.
+   This is the styling half of that decision and it has three jobs: reserve
+   the space, frame somebody else's artwork the way §21 frames a badge, and
+   keep a light-only map from reading as an accident on a black page. */
+
+.mapblock {
+  margin: 0 0 var(--space-5);
+  max-width: var(--measure);
+}
+.mapblock figure {
+  margin: 0;
+}
+
+/* THE RESERVED BOX, and it is the whole reason this is a wrapper rather than
+   an iframe with a class. The ratio is declared on the container, so the
+   space is laid out from the stylesheet before the network is touched; the
+   frame then fills it absolutely and can arrive whenever it likes without
+   moving a word. A lazily-loaded third-party frame with an auto height is the
+   textbook way to fail the no-layout-shift rule, and this site has already
+   had to fix that class of bug once. 4:3 on a phone because a wide letterbox
+   at 320px shows a strip of nothing; wider once there is width to spend. */
+.mapblock .mapframe {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  /* Same plate as the award badges, and for the same reason: this is a piece
+     of third-party artwork that is light in both themes, so it sits on the
+     one neutral ground rather than on the page surface. It is also what the
+     reader sees in the moment before the frame paints, which is why it is a
+     real color and not transparent. */
+  background: var(--badge-well);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+@media (min-width: 34rem) {
+  .mapblock .mapframe {
+    aspect-ratio: 16 / 10;
+  }
+}
+.mapblock iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Google serves the same light tiles whatever the reader's theme, and there
+   is no keyless way to ask for a dark one — styled maps need the JS API and
+   an API key. So the frame gets the same treatment §21 gives white badge
+   artwork: dimmed a step, not inverted. 0.9 is deliberately the ratio between
+   --badge-well's two values (#ffffff → #e9e8e3), so the map and the badges
+   lose exactly the same amount of glare on a black page. Any harder and the
+   road labels stop being readable, which would trade one problem for a worse
+   one. */
+@media (prefers-color-scheme: dark) {
+  .mapblock iframe {
+    filter: brightness(0.9);
+  }
+}
+
+/* Matches .team figcaption in §20 — a caption is a caption, wherever it is. */
+.mapblock figcaption {
+  margin-top: var(--space-2);
+  padding-left: var(--space-2);
+  border-left: 2px solid var(--accent-line);
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+  max-width: 58ch;
+}
+
+/* ------------------------------------------------------------ §22  misc */
+
+.stub {
+  margin: var(--space-4) 0;
+}
+.stub b {
+  color: var(--ink);
+}
+
+/* ----------------------------------------------------------- §23  print */
+
+@media print {
+  .phonebar,
+  .skip,
+  header.site nav,
+  .rail,
+  .cta,
+  /* An iframe that was never scrolled into view was never loaded, so on paper
+     the map is at best a hairline box and at worst a blank half-page. */
+  .mapblock {
+    display: none;
+  }
+  body {
+    background: var(--print-bg);
+    color: var(--print-ink);
+    font-size: 11pt;
+  }
+  main > .wrap,
+  .prose {
+    max-width: none;
+  }
+  a {
+    text-decoration: underline;
+  }
+}

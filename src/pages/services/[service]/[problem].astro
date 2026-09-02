@@ -1,0 +1,89 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import Faq from '../../../components/Faq.astro';
+import Cta from '../../../components/Cta.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import { guideLinksFor } from '../../../lib/guides';
+import { liveServices } from '../../../data/services';
+
+export async function getStaticPaths() {
+  const out = [];
+  for (const s of liveServices()) {
+    for (const p of s.problems ?? []) {
+      out.push({ params: { service: s.slug, problem: p.slug }, props: { s, p } });
+    }
+  }
+  return out;
+}
+
+const { s, p } = Astro.props;
+const path = `/services/${s.slug}/${p.slug}/`;
+
+const entries = await getCollection('problems', (e) => e.data.problem === p.slug);
+const entry = entries[0];
+const Body = entry ? (await entry.render()).Content : null;
+const ready = entry?.data.ready === true;
+
+/* Problem pages are written for the problem-aware query, not the species
+   query — "scratching in the walls at night", not "rodent control". */
+const title = entry?.data.title ?? p.title;
+const description =
+  entry?.data.description ??
+  `${p.title} in a Whatcom County home — what it usually turns out to be, and what we do about it. Family-owned, no contracts, 100% Service Guarantee.`;
+const faqs = entry?.data.faqs ?? [];
+
+const siblings = (s.problems ?? [])
+  .filter((x) => x.slug !== p.slug)
+  .map((x) => ({ href: `/services/${s.slug}/${x.slug}/`, label: x.title }));
+
+/* Related guides, resolved from the guides' own relatedTo declarations —
+   one list, queried, rather than a second list maintained here. */
+const guideLinks = await guideLinksFor(path);
+---
+<BaseLayout
+  path={path}
+  title={title}
+  description={description}
+  kind="service"
+  serviceName={s.name}
+  noindex={!ready}
+  {/* Conditional AnswerBox — see the speakable note in src/lib/schema.ts. */}
+  hasAnswer={Boolean(entry?.data.answer)}
+  faqs={faqs}
+  image={entry?.data.hero}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services/' },
+    { name: s.short, path: `/services/${s.slug}/` },
+    { name: p.title, path },
+  ]}
+>
+  <h1>{entry?.data.h1 ?? p.title}</h1>
+
+  {entry?.data.answer && <AnswerBox text={entry.data.answer} />}
+
+  {Body ? (
+    <div class="prose"><Body /></div>
+  ) : (
+    <div class="stub">
+      <b>Route live, content pending.</b> Problem page beneath
+      <a href={`/services/${s.slug}/`}>{s.name}</a>. Marked <code>noindex</code>
+      until <code>src/content/problems/{p.slug}.md</code> is filed.
+    </div>
+  )}
+
+  <Faq items={faqs} />
+
+  {siblings.length > 0 && <LinkRail heading="Related problems" links={siblings} />}
+
+  <LinkRail
+    heading="The service behind this"
+    links={[{ href: `/services/${s.slug}/`, label: s.name }]}
+  />
+
+  <LinkRail heading="Guides" links={guideLinks} />
+
+  <Cta market="Whatcom County" service={s.name} serviceSlug={s.slug} />
+</BaseLayout>

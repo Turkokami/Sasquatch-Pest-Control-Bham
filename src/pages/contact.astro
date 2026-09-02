@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import { business, isReady } from '../data/business';
+
+const path = '/contact/';
+const a = business.address;
+
+/* The old /contact/ page rendered the contact block twice, duplicating every
+   H2 and producing three H1s. One block, one H1. */
+const answer =
+  `You can reach Sasquatch Pest Control by phone or text at ${business.phone}, by email at ${business.email}, or through the form on this page. We are at ${a.street} in ${a.locality}, and we answer during business hours seven days a week.`;
+---
+<BaseLayout
+  path={path}
+  title="Contact Sasquatch Pest Control"
+  description="Call or text 360-410-2199, email us, or send a message. Sasquatch Pest Control is based in Bellingham and serves Whatcom County seven days a week."
+  kind="page"
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Contact', path }]}
+>
+  <h1>Contact Sasquatch Pest Control</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Call or email</h2>
+    <p>
+      Phone or text: <a href={`tel:${business.phoneE164}`}>{business.phone}</a><br />
+      Email: <a href={`mailto:${business.email}`}>{business.email}</a>
+    </p>
+
+    <h2>Our address</h2>
+    <p>{a.street}<br />{a.locality}, {a.region} {a.postalCode}</p>
+
+    <h2>Business hours</h2>
+    <p>Monday–Friday: 8:00 AM – 6:00 PM<br />Saturday–Sunday: 8:00 AM – 4:00 PM</p>
+
+    {/* The existing LeadConnector CRM form embeds here. Keystone Part 7A:
+        embed the client's existing CRM form — static sites can't email, and
+        this preserves their lead tracking. */}
+    <h2>Send a message</h2>
+    <div class="stub">
+      <b>CRM form slot.</b> The existing LeadConnector widget embeds here so lead
+      tracking and attribution carry over from the current site unchanged.
+    </div>
+  </div>
+</BaseLayout>

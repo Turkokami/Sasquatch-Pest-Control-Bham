@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  path="/404/"
+  title="Page not found"
+  description="That page does not exist. Browse our pest control services or find your city on the service areas page to get where you were headed."
+  kind="page"
+  noindex={true}
+  {/* No AnswerBox on a 404 — and therefore no speakable selector naming one.
+      See the speakable note in src/lib/schema.ts. */}
+  hasAnswer={false}
+>
+  <h1>That page doesn't exist</h1>
+  <p class="prose">
+    The page you were looking for isn't here. Try
+    <a href="/services/">our services</a>, find your city on the
+    <a href="/locations/">service areas page</a>, or
+    <a href="/contact/">get in touch</a>.
+  </p>
+</BaseLayout>

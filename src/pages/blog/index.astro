@@ -1,0 +1,173 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+
+const path = '/blog/';
+
+/* The blog hub.
+
+   Everything under it was written for the previous Sasquatch website and
+   imported when this one was built. That is stated on the page rather than
+   hidden, because the alternative — presenting a 2019 post as current advice
+   — is the kind of small dishonesty that a customer notices eventually and
+   never forgets.
+
+   Two lists, and the split is the whole design. Posts covering a subject the
+   new site now handles properly are archived: readable, linked, but noindex
+   and canonicalled to the page that supersedes them. Posts covering something
+   the new site does not have yet stand on their own. */
+const posts = await getCollection('blog');
+const bySlug = (a: { slug: string }, b: { slug: string }) => a.slug.localeCompare(b.slug);
+
+const standing = posts.filter((p) => !p.data.supersededBy).sort(bySlug);
+const archived = posts.filter((p) => p.data.supersededBy).sort(bySlug);
+
+const answer =
+  'This is the archive of articles written for the previous Sasquatch Pest Control website, brought across when the site was rebuilt. Posts covering a subject the new site now handles in more depth link through to the current page on that topic.';
+
+const faqs = [
+  {
+    q: 'Why are some of these posts marked as archived?',
+    a: 'Because we have since written a fuller page on the same subject. Rather than delete the older article or leave two competing versions of the same advice online, we keep the original readable and point it at the current page. The newer page is longer, better sourced and kept up to date; the archived post is a record of what we said at the time.',
+  },
+  {
+    q: 'Is the advice in these older posts still accurate?',
+    a: 'Mostly, but not automatically. Pest behavior in Whatcom County has not changed, so the seasonal and identification material holds up well. Anything touching prices, rules or what we offer as a service may have moved on. Where an older post said something we no longer consider correct, we corrected it rather than reprinting it, and the current page linked from the top of each archived post is always the more reliable source.',
+  },
+  {
+    q: 'Why did you keep the old posts at all?',
+    a: 'Two reasons. People link to them and search for them, and a link that dies is a small betrayal of whoever made it. And several of them are simply good writing about pests in this county that would take real effort to replace. Keeping them costs nothing as long as they are not competing with the newer pages, which is what the archive marking prevents.',
+  },
+  {
+    q: 'Do you still write new posts?',
+    a: 'New writing on this site goes into the guides and the service pages rather than here, because that is where it is most useful — a guide to what a landlord owes a tenant under Washington law is worth more to somebody than a seasonal post about spiders. The blog is maintained as an archive rather than grown.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  title="Blog"
+  description="Articles on pests, buildings and seasons in Whatcom County, written for our previous website and kept here as an archive alongside the current guides."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Blog', path },
+  ]}
+>
+  <h1>The blog</h1>
+
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <p>
+      Everything on this page was written for the previous Sasquatch Pest
+      Control website. When the site was rebuilt we brought the articles across
+      rather than letting them disappear, because people link to them, people
+      search for them, and a fair number of them are useful writing about how
+      pests actually behave in this corner of Washington.
+    </p>
+    <p>
+      What we did not do is republish them as though they were new. That
+      distinction matters more than it might sound. An article written several
+      years ago about what to do when spiders start appearing in October is
+      still broadly right, because the spiders have not changed their habits.
+      An article that mentions a price, a service we no longer offer, or a rule
+      that has since been amended is not still right, and presenting it as
+      current advice would be misleading regardless of intent. So each post
+      here carries the date it was brought across and a note saying plainly
+      where it came from.
+    </p>
+
+    <h2>Two kinds of post, and the difference between them</h2>
+    <p>
+      The rebuild produced detailed pages on most of the subjects the blog
+      covered — pages that run several thousand words, cite their sources, and
+      are reviewed on a schedule. Where such a page exists, the older blog post
+      on the same subject is marked as archived. It stays readable, it stays at
+      the same address, and a note at the top links to the current page.
+    </p>
+    <p>
+      This is not a cosmetic decision. When two pages on the same website
+      answer the same question, they compete with each other in search results
+      and both do worse than either would alone. The previous site had that
+      problem badly, with dozens of near-duplicate pages splitting their own
+      audience. Marking the older post as archived and pointing it at the newer
+      page tells search engines which one to show, which means somebody looking
+      for an answer gets the better version rather than whichever one happened
+      to rank.
+    </p>
+    <p>
+      The rest of the posts cover subjects the new site does not yet have a
+      full page on. Those stand on their own and are listed first.
+    </p>
+
+    <h2>What is worth reading here, and what is worth reading elsewhere</h2>
+    <p>
+      If you are trying to identify something, the pest library and the service
+      pages are more thorough. If you want to know who is responsible for pest
+      control in a rental, or what a school has to tell parents before a
+      pesticide application, or why crawlspaces in this county stay wet, the
+      guides cover those properly and cite the statute or the code so you can
+      check us. If you want to know whether the ants on the counter are
+      carpenter ants or sugar ants, an older post here may well tell you as
+      well as anything we have written since.
+    </p>
+    <p>
+      New writing goes into the guides and the service pages now rather than
+      into the blog. That is a deliberate choice about where effort is best
+      spent. A seasonal post about wasps is pleasant enough; a properly sourced
+      guide to what Washington law requires of a landlord is the thing somebody
+      actually needs at eleven at night when they are arguing with a property
+      manager. The blog is maintained as an archive, not grown.
+    </p>
+  </div>
+
+  {standing.length > 0 && (
+    <section class="listing">
+      <h2>Articles</h2>
+      <ul>
+        {standing.map((p) => (
+          <li>
+            <a href={`/blog/${p.slug}/`}>{p.data.h1}</a>
+            <p>{p.data.description}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {archived.length > 0 && (
+    <section class="listing">
+      <h2>Archived — a current page covers these</h2>
+      <p class="note">
+        Each of these links to the page that replaced it. The original text is
+        kept intact underneath.
+      </p>
+      <ul>
+        {archived.map((p) => (
+          <li>
+            <a href={`/blog/${p.slug}/`}>{p.data.h1}</a>
+            <p>
+              {p.data.description}{' '}
+              <a class="current" href={p.data.supersededBy}>Current page →</a>
+            </p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <Faq items={faqs} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>
+
+{/* No scoped <style> here, on purpose. The post listing used to be styled locally,
+    out of hard-coded hex fallbacks and opacity — including var(--tint),
+    a token that never existed, so every one of those rules silently
+    resolved to its fallback and could not follow a brand change. It is
+    styled from the token system in src/styles/global.css instead. */}

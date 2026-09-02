@@ -1,0 +1,429 @@
+---
+/**
+ * County tier. A static route rather than a dynamic one, because there are at
+ * most two of these and the second is gated on owner decision #4 (Skagit).
+ *
+ * Static routes take precedence over the [city] dynamic route, and [city]
+ * only enumerates real town slugs, so there is no collision.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import LocationMap from '../../components/LocationMap.astro';
+import { builtTowns } from '../../lib/geo';
+import { liveServices } from '../../data/services';
+
+const path = '/locations/whatcom-county/';
+const towns = builtTowns().filter((t) => t.county === 'Whatcom County');
+const townLinks = towns.map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
+const svc = liveServices().slice(0, 12).map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+
+const answer =
+  'Sasquatch Pest Control covers Whatcom County from Bellingham — the city and its neighborhoods, the farm country north to the border, the waterfront communities west, and the forest edge around Lake Whatcom. Four distinct geographies, four different sets of pest pressure, and one crew that knows which is which.';
+
+const faqs = [
+  {
+    q: 'Do you cover the whole of Whatcom County?',
+    a: 'We run routes across the populated parts of the county — Bellingham and its neighborhoods, Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas and Sudden Valley, plus Custer to the northwest and Deming and Acme out along the eastern valleys. We do not run Point Roberts. For an address in the far eastern county, call and we will tell you honestly whether we run that route.',
+  },
+  {
+    q: 'What is the most common pest problem in Whatcom County?',
+    a: 'Rodents, and the reason is rain rather than cold. As the ground saturates through late September and October, burrows flood and rats and mice move into crawlspaces. Carpenter and moisture ants come second, concentrated in the older housing stock where water has been getting into the structure.',
+  },
+  {
+    q: 'Why does pest advice from other regions not apply here?',
+    a: 'Because we have no sustained hard freeze and about thirty-five inches of rain a year. Populations are never reset by winter, and wood stays damp — which is why moisture-driven pests dominate here and why aggressive subterranean termites, fire ants and brown recluse simply are not part of the picture.',
+  },
+  {
+    q: 'How quickly can you get to an address outside Bellingham?',
+    a: 'Bellingham and the immediate ring are usually same-week. Lynden, Everson, Nooksack, Sumas, Blaine and Birch Bay sit on scheduled route days, so timing depends where in the week that address falls.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  title="Pest Control in Whatcom County, WA"
+  description="Pest control and exclusion across Whatcom County — Bellingham, Ferndale, Lynden, Blaine, Birch Bay and the communities between. Call or text 360-410-2199."
+  kind="location"
+  areaServed={['Whatcom County']}
+  faqs={faqs}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Service areas', path: '/locations/' },
+    { name: 'Whatcom County', path },
+  ]}
+>
+  <h1>Pest Control Across Whatcom County</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Four counties inside one county</h2>
+    <p>
+      Whatcom County is small enough to cross in under an hour and varied enough
+      that the work changes completely depending on where you are standing. We
+      run four distinctly different kinds of job here, and the address decides
+      which one you get.
+    </p>
+
+    <h3>The city and its two housing stocks</h3>
+    <p>
+      Bellingham is really two building stocks sharing a map. The prewar
+      neighborhoods — the Lettered Streets, Columbia, Sunnyland, York, parts of
+      Fairhaven and South Hill — sit largely on post-and-pier foundations, with
+      crawlspaces that were never properly sealed and framing from an era when
+      nobody considered air-sealing a penetration. Those houses get rodents,
+      carpenter ants and moisture ants, and the entry points are structural.
+    </p>
+    <p>
+      The newer hillside and edge neighborhoods — Alabama Hill, Barkley, Cordata,
+      King Mountain — are a different problem. Cedar siding, vented crawlspaces,
+      soffit venting a rat treats as a front door, and mature landscaping held
+      tight against the foundation. Here the answer is usually exclusion and
+      perimeter work rather than interior treatment.
+    </p>
+    <p>
+      Then there is the student rental belt around Sehome, Happy Valley and the
+      Western campus, where high tenant turnover every June and September drives
+      a bed bug and cockroach pattern you do not see elsewhere in the county.
+    </p>
+
+    <h3>The agricultural north</h3>
+    <p>
+      North and east of the city — Lynden, Everson, Nooksack, Sumas and the farm
+      country between them — the work is agricultural. Rodents in feed rooms,
+      outbuildings and equipment sheds, fly pressure around livestock, and
+      cluster flies overwintering in south-facing walls by the thousand.
+    </p>
+    <p>
+      This is exclusion and sanitation work more than treatment, and it runs on
+      the farm's calendar rather than ours. Whatcom County is serious dairy and
+      berry country, and for a producer the pest conversation is a biosecurity
+      and product-protection conversation rather than a nuisance one.
+    </p>
+
+    <h3>The waterfront</h3>
+    <p>
+      Blaine, Birch Bay, Semiahmoo and the Bellingham waterfront
+      share a marina rodent problem, hard salt exposure, and a large stock of
+      seasonal and second homes standing empty for months at a time. An
+      unoccupied house through a wet Whatcom winter is an invitation, and a good
+      share of the spring calls out there are for something that moved in during
+      December.
+    </p>
+
+    <h3>The lake and forest edge</h3>
+    <p>
+      Sudden Valley, Silver Beach, Edgemoor and the Lake Whatcom shoreline bring
+      1970s cedar construction against a working forest edge. Carpenter ants in
+      the cedar, rodents pushing in from the treeline, damp crawlspaces at the
+      low end of every sloped lot, and the heaviest spider and centipede
+      pressure in the county.
+    </p>
+
+    <h2>What the climate actually does</h2>
+    <p>
+      Almost every pest article you will find online was written for a climate
+      with a real winter. Ours does not have one, and two local facts explain
+      most of what we get called about.
+    </p>
+    <p>
+      <strong>No sustained hard freeze.</strong> Populations are never reset the
+      way they are east of the Cascades or across the Midwest. A rodent
+      population knocked back by a January cold snap in Spokane simply carries on
+      here.
+    </p>
+    <p>
+      <strong>Around thirty-five inches of rain a year</strong>, spread across a
+      long gray season rather than delivered in summer storms. Wood stays damp,
+      and that single fact drives more of our call volume than anything else.
+      Dampwood termites need wet wood. Moisture ants need wet wood. Carpenter
+      ants prefer wood that has begun to soften. Silverfish, sowbugs, millipedes
+      and Oriental cockroaches are all humidity-driven.
+    </p>
+    <p>
+      That figure is Bellingham's, not the county's. Rainfall climbs eastward
+      toward the foothills, so the Mount Baker Highway communities around Deming
+      and Acme take noticeably more of it, and the north county lowlands somewhat
+      less. A crawlspace out east dries more slowly, and the timber shows it.
+    </p>
+    <p>
+      It also means the rodent calendar runs on water rather than temperature.
+      Through summer, Norway rats live outdoors perfectly well — in blackberry,
+      under decking, along creek corridors, in the field margins out toward
+      Lynden. Then the rain sets in around late September, burrows flood, and
+      every one of those animals starts looking for somewhere dry. Your
+      crawlspace is dry. That is the whole story, and it is why the useful window
+      for exclusion work is August rather than November.
+    </p>
+
+    <h2>The pest year, month by month</h2>
+    <p>
+      Because the seasons here are wet and mild rather than hot and cold, the
+      calendar we work to looks nothing like the one in a national pest guide.
+      This is the shape of a typical year in this county, and it is the reason
+      we push so hard on timing when somebody calls.
+    </p>
+    <p>
+      <strong>January and February.</strong> Quiet on the surface, busy
+      underneath. Rodent activity is at its peak indoors because everything that
+      was living outdoors in September is now living in a wall or a crawlspace.
+      Calls in these two months are overwhelmingly noise complaints — scratching
+      overhead at night, something running along a joist. Cluster flies wake up
+      on the first mild sunny afternoon and appear at south-facing windows, which
+      confuses people who assume flies mean summer.
+    </p>
+    <p>
+      <strong>March and April.</strong> The single busiest stretch of our year for
+      ants. Moisture ants and carpenter ants begin foraging as soon as soil
+      temperatures lift, and because they have spent the winter inside damp
+      framing, the first sighting is usually indoors rather than out. Swarmers
+      show up on windowsills. Overwintered queen wasps start looking for nest
+      sites, which is the cheapest possible moment to deal with a wasp problem
+      and the moment almost nobody thinks about it.
+    </p>
+    <p>
+      <strong>May and June.</strong> Wasp and hornet nests become visible and
+      start growing fast. Spider egg sacs hatch. Student turnover around the
+      Western campus in June moves furniture between buildings and moves bed bugs
+      with it. Ant activity peaks, and the moisture ants that appear indoors are
+      reporting a water problem rather than an ant problem.
+    </p>
+    <p>
+      <strong>July and August.</strong> Peak wasp season, and the month when
+      yellowjackets shift from protein to sugar and start turning up at
+      barbecues. This is also the correct window for exclusion work — soil is dry
+      enough to dig and crawlspaces are dry enough to work in. Everything we would rather do
+      preventively gets done in these eight weeks, which is why we spend the
+      whole of spring telling people to book it.
+    </p>
+    <p>
+      <strong>September and October.</strong> The rain returns and the year turns
+      over. Rodent pressure climbs steeply through October as burrows flood.
+      Cluster flies and stink bugs find their overwintering sites in south and
+      west walls. Spiders come indoors. If a house has an unsealed gap, this is
+      the six-week stretch when something finds it, and a job that would have
+      taken an afternoon in August turns into an interior problem by November.
+    </p>
+    <p>
+      <strong>November and December.</strong> Rodent complaints peak. Attic and
+      crawlspace damage from the autumn move-in becomes obvious — soiled
+      insulation, chewed ducting, a wet spot in a ceiling. Holiday firewood and
+      Christmas trees bring in the occasional spider or beetle, which is almost
+      always harmless and almost always alarming.
+    </p>
+
+    <h2>How the county was built, and why it matters</h2>
+    <p>
+      More than climate, more than species, the thing that decides what happens
+      in a Whatcom County building is how and when it was put together. There are
+      four broad construction eras here and each fails in its own way.
+    </p>
+    <p>
+      <strong>Pre-1940.</strong> Post-and-pier foundations, shallow crawlspaces
+      with bare soil floors, board sheathing, and framing cavities that run
+      uninterrupted from the crawl to the attic. Nothing was air-sealed because
+      air-sealing was not a concept. A mouse that gets under the house has an
+      unobstructed route to the top floor. These houses are concentrated in the
+      Lettered Streets, Columbia, York, Sunnyland and old Fairhaven, and the work
+      in them is nearly always structural rather than chemical.
+    </p>
+    <p>
+      <strong>1950s to 1970s.</strong> Concrete stem walls, vented crawlspaces,
+      cedar and T1-11 siding, and the first generation of soffit venting. This is
+      the Lake Whatcom and Sudden Valley stock, and a good share of Ferndale and
+      Lynden. Cedar that has weathered for fifty years is soft enough for
+      carpenter ants, and the vent screens have almost universally rusted through
+      at one corner.
+    </p>
+    <p>
+      <strong>1980s to early 2000s.</strong> Vinyl siding over housewrap, vented
+      attics with baffles, and utility penetrations that were drilled generously
+      and foamed carelessly. The classic failure here is the gap where the dryer
+      vent, the hose bib or the AC line set passes through the rim joist. It is a
+      three-quarter-inch hole that a mouse treats as a door, and there are usually
+      six of them on a house.
+    </p>
+    <p>
+      <strong>Post-2005.</strong> Sealed and conditioned crawlspaces, continuous
+      exterior insulation, tighter envelopes. Genuinely better, and the
+      newer subdivisions in Cordata, Barkley and north Ferndale get materially
+      fewer rodent calls than their neighbors. What they get instead is
+      landscape-driven — ants nesting in the bark mulch pushed up against the
+      foundation, and wasps in the vented ridge.
+    </p>
+
+    <h2>Farm country is a different trade</h2>
+    <p>
+      Whatcom County is one of the most productive agricultural counties in the
+      state, and the northern half of our map is dairy, raspberries, blueberries
+      and seed potatoes. Pest work on a working farm is not the same job as pest
+      work at a house, and pretending otherwise is how operators lose
+      agricultural accounts.
+    </p>
+    <p>
+      On a dairy, the pest conversation is a milk-quality and biosecurity
+      conversation. Rodents in a calf barn or a feed room are a disease vector
+      before they are a nuisance, and flies around livestock cost intake and
+      production rather than merely being unpleasant. Anything we place has
+      to be compatible with the inspections the operation is already subject to,
+      and it has to be placed where livestock and working dogs cannot reach it.
+    </p>
+    <p>
+      On a berry operation, the constraints are harvest windows and residue.
+      There are weeks in the season when we simply cannot be in the field, and
+      the planning has to happen months earlier. Around the packing and cooling
+      structures the work is conventional — rodent exclusion and fly pressure
+      near culls and waste handling — and the documentation matters as much as
+      the result, because somebody other than the grower will read it.
+    </p>
+    <p>
+      In outbuildings and equipment sheds across the north county, the recurring
+      issue is that these structures were never meant to be sealed. The realistic
+      goal is to keep the population outside the building envelope and away from
+      wiring, rather than to achieve a rodent-free shed that has never existed.
+    </p>
+
+    <h2>Rules that apply in this county specifically</h2>
+    <p>
+      Some of what governs our work is state law, some is federal, and some is
+      simply a seasonal window that closes whether anyone likes it or not.
+      Knowing these is most of what separates a local operator from a franchise
+      running a national script.
+    </p>
+    <p>
+      <strong>Applicator licensing.</strong> Anyone applying pesticides
+      commercially in Washington is licensed and regulated by the Washington
+      State Department of Agriculture, and license numbers are public. Ours are
+      published on this site next to the names of the people who hold them,
+      because a number you cannot check is not a credential.
+    </p>
+    <p>
+      <strong>What we do not take on.</strong> We are a pest control and
+      exclusion company. Bird work and nuisance wildlife removal — including bats
+      and squirrels — are outside what we do, and protected species carry legal
+      timing constraints that a specialist should be handling rather than us. If
+      that is what you have, we will say so on the phone and point you somewhere
+      useful rather than taking the booking.
+    </p>
+    <p>
+      <strong>Rodent control products.</strong> Washington has tightened the rules
+      on where and how rodenticides may be used, and we work within them. Where
+      we do use rodenticide, we use programs and active ingredients chosen to
+      limit secondary poisoning risk to owls, eagles, raptors and pets, which
+      matters more here than in most places given how much of this county is
+      farmland, wetland and forest edge.
+    </p>
+
+    <h2>Getting to you</h2>
+    <p>
+      The county is compact but not uniformly easy to move around. Interstate 5
+      runs north to south through Bellingham, Ferndale and Blaine and makes that
+      corridor quick. Everything east of it — Lynden, Everson, Nooksack, Sumas,
+      the Mount Baker Highway communities — is two-lane road and farm traffic, so
+      those addresses sit on scheduled route days rather than being fitted in
+      between city jobs.
+    </p>
+    <p>
+      Point Roberts is the one part of the county we do not run. It is Whatcom County — it votes here and its children go to school here — but reaching it by road means crossing into Canada and back out again, two border crossings each way. We are not set up to hold a sensible response time against that, so we say no rather than book it and disappoint somebody.
+    </p>
+    <p>
+      The practical upshot: a Bellingham address is usually same-week, the I-5
+      corridor is close behind, and the eastern and northern county depends on
+      where in the route week you fall. We will tell you which of those you are
+      when you call, rather than promising a window we cannot hold.
+    </p>
+
+    <h2>What a first visit actually looks like</h2>
+    <p>
+      We do not start with a product. We start by working out how the thing got
+      in, because in a climate like this one the entry point is almost always
+      still there after the treatment wears off.
+    </p>
+    <p>
+      That means walking the perimeter, looking at grade and drainage, checking
+      where the siding meets the foundation, opening the crawlspace hatch and
+      going in, and putting a head into the attic. On an older Bellingham house
+      that walk takes the better part of an hour, and it is where the useful
+      information is. You get told what we found, what is causing it, what needs
+      doing now and what can wait — including the parts that are a
+      building-repair job rather than a pest job.
+    </p>
+    <p>
+      Inspections are free for every pest we handle in this county with one
+      exception: bed bugs carry a verification fee, and that fee is credited
+      against treatment if you go ahead. We charge it because bed bug
+      verification is slow, detailed work and because free bed bug calls attract
+      a volume of speculative visits that would push out real appointments.
+    </p>
+
+    <h2>What we do not have here</h2>
+    <p>
+      Worth stating, because a great deal of national pest content lists species
+      that have never been recorded in this county and it makes a local site less
+      trustworthy every time.
+    </p>
+    <p>
+      No brown recluse. No fire ants. No Formosan termites, and none of the
+      aggressive subterranean termite pressure that drives treatment across the
+      South — our termite is the Pacific dampwood, which follows water rather
+      than attacking sound lumber. Black widows exist in Washington but are
+      associated with the drier country east and south of the Cascades and are
+      uncommon here. And the northern giant hornet, which was genuinely detected
+      in this county between 2019 and 2021, was declared eradicated from the
+      United States in December 2024 — nearly every report we now receive is a
+      bald-faced hornet or an elm sawfly.
+    </p>
+
+    <h2>The watershed on our doorstep</h2>
+    <p>
+      Lake Whatcom is the drinking water reservoir for Bellingham and a large
+      part of the surrounding area, and a substantial share of the county's
+      lakeside housing sits directly in its catchment. That is a constraint we
+      take seriously and it changes how we work on those properties.
+    </p>
+    <p>
+      In practice it means we favor exclusion, habitat modification and
+      contained placements over broadcast applications anywhere the runoff ends
+      up in the lake, we pay attention to weather before we schedule exterior
+      work in that basin, and we are candid when the right answer is a drainage
+      or landscaping correction rather than anything applied. Salmon-bearing
+      creeks run through much of the rest of the county with the same logic
+      attached, and Puget Sound is at the bottom of every storm drain west of the
+      freeway.
+    </p>
+    <p>
+      None of this is a marketing position. It is what living here means, and it
+      is one of the reasons a locally run crew tends to make different calls than
+      a route driver working from a national playbook.
+    </p>
+
+    <h2>Where we do and do not go</h2>
+    <p>
+      We build our routes around Whatcom County and we say so plainly. If an
+      address sits outside the areas listed on this page we will tell you before
+      scheduling rather than adding a travel surcharge afterwards, and where
+      another operator covers that ground better we will say that too.
+    </p>
+    <p>
+      Not every community here has its own page. Where we do not have enough
+      that is genuinely specific to say about a place, we would rather list it
+      honestly than publish a page that is the same words with the town name
+      swapped.
+    </p>
+  </div>
+
+  <LinkRail heading="Communities we serve in Whatcom County" links={townLinks} />
+  <LinkRail heading="Services across the county" links={svc} />
+
+  <Faq items={faqs} />
+
+  {/* Orientation, below the copy — the county tier says in its own words that
+      it does not run Point Roberts, and the caption says the map is
+      orientation rather than a coverage claim. Both matter: a shape on a page
+      reads as a promise unless the page says otherwise. */}
+  <LocationMap place="Whatcom County" />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

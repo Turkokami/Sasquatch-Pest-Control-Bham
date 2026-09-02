@@ -1,0 +1,1440 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/rodent-control/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/rat-control/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/mouse-control/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/rodent-exclusion/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/wasp-control/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/hornet-control/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/yellowjacket-control/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/wasp-nest-removal/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/bee-removal/",
+      "destination": "/services/bee-removal/",
+      "permanent": true
+    },
+    {
+      "source": "/bee-control/",
+      "destination": "/services/bee-removal/",
+      "permanent": true
+    },
+    {
+      "source": "/fly-control/",
+      "destination": "/services/fly-control/",
+      "permanent": true
+    },
+    {
+      "source": "/gnat-control/",
+      "destination": "/services/fly-control/",
+      "permanent": true
+    },
+    {
+      "source": "/fruit-fly-control/",
+      "destination": "/services/fly-control/",
+      "permanent": true
+    },
+    {
+      "source": "/cluster-fly-control/",
+      "destination": "/services/fly-control/",
+      "permanent": true
+    },
+    {
+      "source": "/drain-fly-control/",
+      "destination": "/services/fly-control/",
+      "permanent": true
+    },
+    {
+      "source": "/house-fly-control/",
+      "destination": "/services/fly-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ant-control/",
+      "destination": "/services/ant-control/",
+      "permanent": true
+    },
+    {
+      "source": "/carpenter-ant-control/",
+      "destination": "/services/ant-control/",
+      "permanent": true
+    },
+    {
+      "source": "/moisture-ant-control/",
+      "destination": "/services/ant-control/",
+      "permanent": true
+    },
+    {
+      "source": "/odorous-house-ant-control/",
+      "destination": "/services/ant-control/",
+      "permanent": true
+    },
+    {
+      "source": "/spider-control/",
+      "destination": "/services/spider-control/",
+      "permanent": true
+    },
+    {
+      "source": "/hobo-spider-control/",
+      "destination": "/services/spider-control/",
+      "permanent": true
+    },
+    {
+      "source": "/giant-house-spider-control/",
+      "destination": "/services/spider-control/",
+      "permanent": true
+    },
+    {
+      "source": "/bed-bug-control/",
+      "destination": "/services/bed-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/bed-bug-treatment/",
+      "destination": "/services/bed-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/bed-bug-heat-treatment/",
+      "destination": "/services/bed-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/cockroach-control/",
+      "destination": "/services/cockroach-control/",
+      "permanent": true
+    },
+    {
+      "source": "/roach-control/",
+      "destination": "/services/cockroach-control/",
+      "permanent": true
+    },
+    {
+      "source": "/german-cockroach-control/",
+      "destination": "/services/cockroach-control/",
+      "permanent": true
+    },
+    {
+      "source": "/american-cockroach-control/",
+      "destination": "/services/cockroach-control/",
+      "permanent": true
+    },
+    {
+      "source": "/flea-control/",
+      "destination": "/services/flea-control/",
+      "permanent": true
+    },
+    {
+      "source": "/flea-exterminator/",
+      "destination": "/services/flea-control/",
+      "permanent": true
+    },
+    {
+      "source": "/silverfish-control/",
+      "destination": "/services/silverfish-control/",
+      "permanent": true
+    },
+    {
+      "source": "/earwig-control/",
+      "destination": "/services/earwig-control/",
+      "permanent": true
+    },
+    {
+      "source": "/pillbug-control/",
+      "destination": "/services/earwig-control/",
+      "permanent": true
+    },
+    {
+      "source": "/sowbug-control/",
+      "destination": "/services/earwig-control/",
+      "permanent": true
+    },
+    {
+      "source": "/stink-bug-control/",
+      "destination": "/services/stink-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/boxelder-bug-control/",
+      "destination": "/services/stink-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/overwintering-pest-control/",
+      "destination": "/services/stink-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/stink-bug-control-services/",
+      "destination": "/services/stink-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/lady-bug-asian-lady-beetle-control/",
+      "destination": "/services/stink-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/beetle-control/",
+      "destination": "/services/beetle-control/",
+      "permanent": true
+    },
+    {
+      "source": "/carpet-beetle-control/",
+      "destination": "/services/beetle-control/",
+      "permanent": true
+    },
+    {
+      "source": "/pantry-pest-control/",
+      "destination": "/services/beetle-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ground-beetle-control/",
+      "destination": "/services/beetle-control/",
+      "permanent": true
+    },
+    {
+      "source": "/carpet-beetle-clothes-moth-control/",
+      "destination": "/services/beetle-control/",
+      "permanent": true
+    },
+    {
+      "source": "/moth-control/",
+      "destination": "/services/moth-control/",
+      "permanent": true
+    },
+    {
+      "source": "/clothes-moth-control/",
+      "destination": "/services/moth-control/",
+      "permanent": true
+    },
+    {
+      "source": "/centipede-control/",
+      "destination": "/services/centipede-control/",
+      "permanent": true
+    },
+    {
+      "source": "/millipede-control/",
+      "destination": "/services/centipede-control/",
+      "permanent": true
+    },
+    {
+      "source": "/termite-control/",
+      "destination": "/services/termite-control/",
+      "permanent": true
+    },
+    {
+      "source": "/dampwood-termite-control/",
+      "destination": "/services/termite-control/",
+      "permanent": true
+    },
+    {
+      "source": "/wood-destroying-pest-control/",
+      "destination": "/services/termite-control/",
+      "permanent": true
+    },
+    {
+      "source": "/carpenter-bee-control/",
+      "destination": "/services/carpenter-bee-control/",
+      "permanent": true
+    },
+    {
+      "source": "/wood-boring-beetle-control/",
+      "destination": "/services/carpenter-bee-control/",
+      "permanent": true
+    },
+    {
+      "source": "/powderpost-beetle-control/",
+      "destination": "/services/carpenter-bee-control/",
+      "permanent": true
+    },
+    {
+      "source": "/repairs/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-exclusion/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/crawlspace-repair/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/exclusion-services/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/crawlspace-cleanout/",
+      "destination": "/services/crawlspace-restoration/",
+      "permanent": true
+    },
+    {
+      "source": "/insulation-removal/",
+      "destination": "/services/crawlspace-restoration/",
+      "permanent": true
+    },
+    {
+      "source": "/attic-restoration/",
+      "destination": "/services/crawlspace-restoration/",
+      "permanent": true
+    },
+    {
+      "source": "/attic-insulation/",
+      "destination": "/services/attic-insulation/",
+      "permanent": true
+    },
+    {
+      "source": "/insulation-replacement/",
+      "destination": "/services/attic-insulation/",
+      "permanent": true
+    },
+    {
+      "source": "/home-protection-plan/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/quarterly-pest-control/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-plans/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-pest-control/",
+      "destination": "/services/commercial-pest-control/",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-services/",
+      "destination": "/services/commercial-pest-control/",
+      "permanent": true
+    },
+    {
+      "source": "/bat-exclusion/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/bat-removal/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/bird-control/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/bird-exclusion/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/bird-netting/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/bird-spikes/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/nuisance-wildlife/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/opossum-removal/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/pigeon-control/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/raccoon-removal/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/squirrel-control/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/squirrel-removal/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/wildlife-control/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/cricket-control/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/springtail-control/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/tick-control/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/mosquito-control/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/mosquito-control-services/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/rodents-birds-bellingham/",
+      "destination": "/services/?category=rodents-birds",
+      "permanent": true
+    },
+    {
+      "source": "/stinging-flying-insects-bellingham/",
+      "destination": "/services/?category=stinging-flying",
+      "permanent": true
+    },
+    {
+      "source": "/household-bugs-bellingham/",
+      "destination": "/services/?category=household",
+      "permanent": true
+    },
+    {
+      "source": "/termites-structural-bellingham/",
+      "destination": "/services/?category=structural",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-services/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/whatcom-county-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/skagit-county-pest-control/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-bellingham-wa/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/lynden-wa/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/blaine-wa/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/blaine-wa-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/guarantee/",
+      "destination": "/our-guarantee/",
+      "permanent": true
+    },
+    {
+      "source": "/meridian-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/puget-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/lettered-streets-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/lettered-streets/",
+      "permanent": true
+    },
+    {
+      "source": "/sunnyland-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/cornwall-park-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/welcome-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/birchwood-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/kendall-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/cordata-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/cordata/",
+      "permanent": true
+    },
+    {
+      "source": "/fairhaven-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/fairhaven/",
+      "permanent": true
+    },
+    {
+      "source": "/peace-portal-blaine-wa-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/bell-road-blaine-wa-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/california-creek-blaine-wa-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/blaine-harbor-blaine-wa-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/downtown-blaine-blaine-wa-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/drayton-harbor-blaine-wa-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/birch-bay-blaine-wa-pest-control/",
+      "destination": "/locations/birch-bay/",
+      "permanent": true
+    },
+    {
+      "source": "/semiahmoo-blaine-wa-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/bingham-sedro-woolley-wa-pest-control/",
+      "destination": "/locations/sedro-woolley/",
+      "permanent": true
+    },
+    {
+      "source": "/riverfront-sedro-woolley-wa-pest-control/",
+      "destination": "/locations/sedro-woolley/",
+      "permanent": true
+    },
+    {
+      "source": "/northern-state-sedro-woolley-wa-pest-control/",
+      "destination": "/locations/sedro-woolley/",
+      "permanent": true
+    },
+    {
+      "source": "/jameson-sedro-woolley-wa-pest-control/",
+      "destination": "/locations/sedro-woolley/",
+      "permanent": true
+    },
+    {
+      "source": "/central-sedro-woolley-wa-pest-control/",
+      "destination": "/locations/sedro-woolley/",
+      "permanent": true
+    },
+    {
+      "source": "/cascade-sedro-woolley-wa-pest-control/",
+      "destination": "/locations/sedro-woolley/",
+      "permanent": true
+    },
+    {
+      "source": "/downtown-sedro-woolley-sedro-woolley-wa-pest-control/",
+      "destination": "/locations/sedro-woolley/",
+      "permanent": true
+    },
+    {
+      "source": "/fairhaven-avenue-burlington-wa-pest-control/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/cascade-burlington-wa-pest-control/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/george-hopper-burlington-wa-pest-control/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/pulver-burlington-wa-pest-control/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/skagit-burlington-wa-pest-control/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/gardner-burlington-wa-pest-control/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/west-burlington-burlington-wa-pest-control/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/downtown-burlington-burlington-wa-pest-control/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/eaglemont-mount-vernon-wa-pest-control/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/kulshan-mount-vernon-wa-pest-control/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/riverside-mount-vernon-wa-pest-control/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/college-way-mount-vernon-wa-pest-control/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/skagit-highlands-mount-vernon-wa-pest-control/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/little-mountain-mount-vernon-wa-pest-control/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/west-mount-vernon-mount-vernon-wa-pest-control/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/downtown-mount-vernon-mount-vernon-wa-pest-control/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/river-road-lynden-wa-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/pole-road-lynden-wa-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/berthusen-lynden-wa-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/depot-lynden-wa-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/guide-meridian-lynden-wa-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/bender-lynden-wa-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/fishtrap-lynden-wa-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/downtown-lynden-lynden-wa-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/woodland-ferndale-wa-pest-control/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/star-ferndale-wa-pest-control/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/pheasant-run-ferndale-wa-pest-control/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/sunset-ferndale-wa-pest-control/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/malloy-ferndale-wa-pest-control/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/church-road-ferndale-wa-pest-control/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/vista-ferndale-wa-pest-control/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/downtown-ferndale-ferndale-wa-pest-control/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/fairhaven-wa-pest-control/",
+      "destination": "/locations/bellingham/fairhaven/",
+      "permanent": true
+    },
+    {
+      "source": "/columbia-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/roosevelt-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/york-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/whatcom-falls-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/whatcom-falls/",
+      "permanent": true
+    },
+    {
+      "source": "/silver-beach-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/silver-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/barkley-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/barkley/",
+      "permanent": true
+    },
+    {
+      "source": "/alabama-hill-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/alabama-hill/",
+      "permanent": true
+    },
+    {
+      "source": "/samish-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/sehome-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/sehome/",
+      "permanent": true
+    },
+    {
+      "source": "/chuckanut-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/edgemoor/",
+      "permanent": true
+    },
+    {
+      "source": "/south-hill-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/edgemoor-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/edgemoor/",
+      "permanent": true
+    },
+    {
+      "source": "/happy-valley-bellingham-wa-pest-control/",
+      "destination": "/locations/bellingham/happy-valley/",
+      "permanent": true
+    },
+    {
+      "source": "/van-zandt-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/wickersham-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/geneva-wa-pest-control/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/bay-view-wa-pest-control/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/clear-lake-wa-pest-control/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/edison-wa-pest-control/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/la-conner-wa-pest-control/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/custer-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/sumas-wa-pest-control/",
+      "destination": "/locations/sumas/",
+      "permanent": true
+    },
+    {
+      "source": "/samish-island-wa-pest-control/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/lummi-island-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/sedro-woolley-wa-pest-control/",
+      "destination": "/locations/sedro-woolley/",
+      "permanent": true
+    },
+    {
+      "source": "/sudden-valley-pest-control/",
+      "destination": "/locations/sudden-valley/",
+      "permanent": true
+    },
+    {
+      "source": "/sandy-point-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/everson-wa-pest-control/",
+      "destination": "/locations/everson/",
+      "permanent": true
+    },
+    {
+      "source": "/mt-vernon-wa-pest-control/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/maple-falls-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/glacier-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/deming-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/burlington-wa-pest-control/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/acme-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/nooksack-wa-pest-control/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/bow-wa-pest-control/",
+      "destination": "/locations/bow/",
+      "permanent": true
+    },
+    {
+      "source": "/alger-wa-pest-control/",
+      "destination": "/locations/alger/",
+      "permanent": true
+    },
+    {
+      "source": "/lynden-wa-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/ferndale-wa-pest-control/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/termites-bellingham-wa/",
+      "destination": "/services/termite-control/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-integrated-pest-management/",
+      "destination": "/blog/what-is-integrated-pest-management/",
+      "permanent": true
+    },
+    {
+      "source": "/eco-friendly-pest-control-bellingham/",
+      "destination": "/blog/eco-friendly-pest-control-bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/rodent-proofing-home-winter-bellingham/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/bed-bugs-holiday-travel-whatcom/",
+      "destination": "/services/bed-bug-control/bed-bugs-after-a-trip/",
+      "permanent": true
+    },
+    {
+      "source": "/more-spiders-fall-bellingham/",
+      "destination": "/services/spider-control/spiders-appearing-every-fall/",
+      "permanent": true
+    },
+    {
+      "source": "/government-industrial-winter-pest-prep-whatcom/",
+      "destination": "/blog/government-industrial-winter-pest-prep-whatcom/",
+      "permanent": true
+    },
+    {
+      "source": "/seagull-swallow-exclusion-washington/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-trends-whatcom-county-year-in-review/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/fall-rodent-prevention-bellingham/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/ladybugs-vs-asian-lady-beetles-bellingham/",
+      "destination": "/blog/ladybugs-vs-asian-lady-beetles-bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/bird-exclusion-bellingham-wa/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/landlord-pest-control-washington/",
+      "destination": "/commercial/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-know-if-you-have-bed-bugs-bellingham/",
+      "destination": "/services/bed-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/bees-vs-wasps-vs-hornets-identification/",
+      "destination": "/blog/bees-vs-wasps-vs-hornets-identification/",
+      "permanent": true
+    },
+    {
+      "source": "/stink-bugs-fall-bellingham/",
+      "destination": "/services/stink-bug-control/bugs-on-the-south-wall-every-october/",
+      "permanent": true
+    },
+    {
+      "source": "/bird-nesting-solar-panels-washington/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/how-cockroaches-get-in-bellingham/",
+      "destination": "/services/cockroach-control/",
+      "permanent": true
+    },
+    {
+      "source": "/when-do-wasps-build-nests-bellingham/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/mosquito-control-bellingham-wa/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/earwigs-millipedes-clover-mites-bellingham/",
+      "destination": "/services/earwig-control/",
+      "permanent": true
+    },
+    {
+      "source": "/flea-season-pacific-northwest/",
+      "destination": "/services/flea-control/",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-summer-pest-control-whatcom/",
+      "destination": "/blog/commercial-summer-pest-control-whatcom/",
+      "permanent": true
+    },
+    {
+      "source": "/apartment-pest-control-bellingham/",
+      "destination": "/blog/apartment-pest-control-bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/dont-remove-wasp-nest-yourself-bellingham/",
+      "destination": "/services/wasp-control/yellowjackets-in-the-lawn/",
+      "permanent": true
+    },
+    {
+      "source": "/spring-pest-prevention-checklist-whatcom/",
+      "destination": "/blog/spring-pest-prevention-checklist-whatcom/",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-winter-pest-checklist-whatcom/",
+      "destination": "/blog/commercial-winter-pest-checklist-whatcom/",
+      "permanent": true
+    },
+    {
+      "source": "/black-spiders-washington-state/",
+      "destination": "/services/spider-control/is-this-a-hobo-spider/",
+      "permanent": true
+    },
+    {
+      "source": "/why-ants-invade-homes-spring-bellingham/",
+      "destination": "/services/ant-control/ant-trails-across-the-kitchen-counter/",
+      "permanent": true
+    },
+    {
+      "source": "/carpenter-ants-vs-sugar-ants-bellingham/",
+      "destination": "/services/ant-control/",
+      "permanent": true
+    },
+    {
+      "source": "/rats-vs-mice-bellingham/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/spider-control-bellingham-wa/",
+      "destination": "/services/spider-control/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-rodent-exclusion/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/rodent-entry-points-bellingham/",
+      "destination": "/services/exclusion-and-repairs/sealing-a-quarter-inch-foundation-gap/",
+      "permanent": true
+    },
+    {
+      "source": "/free-pest-inspection-bellingham/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-prevention-guide-pacific-northwest/",
+      "destination": "/blog/pest-prevention-guide-pacific-northwest/",
+      "permanent": true
+    },
+    {
+      "source": "/common-pests-bellingham-wa/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-choose-pest-control-whatcom/",
+      "destination": "/blog/how-to-choose-pest-control-whatcom/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-cost-bellingham/",
+      "destination": "/blog/pest-control-cost-bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/why-powder-post-beetle-treatment-is-critical-after-flooding/",
+      "destination": "/services/beetle-control/",
+      "permanent": true
+    },
+    {
+      "source": "/why-earwigs-are-invading-your-home/",
+      "destination": "/services/earwig-control/",
+      "permanent": true
+    },
+    {
+      "source": "/eco-friendly-pest-control-in-bellingham/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/clover-mites-invading-your-home/",
+      "destination": "/blog/clover-mites-invading-your-home/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-bed-bugs-bites-identification/",
+      "destination": "/services/bed-bug-control/bites-but-no-bugs-found/",
+      "permanent": true
+    },
+    {
+      "source": "/carpet-beetles-control/",
+      "destination": "/services/beetle-control/",
+      "permanent": true
+    },
+    {
+      "source": "/weevils-in-your-pantry/",
+      "destination": "/services/beetle-control/",
+      "permanent": true
+    },
+    {
+      "source": "/brown-recluse-spiders/",
+      "destination": "/services/spider-control/is-this-a-hobo-spider/",
+      "permanent": true
+    },
+    {
+      "source": "/yellow-jackets/",
+      "destination": "/services/wasp-control/yellowjackets-in-the-lawn/",
+      "permanent": true
+    },
+    {
+      "source": "/wood-boring-beetles-a-silent-threat-to-your-home/",
+      "destination": "/blog/wood-boring-beetles-a-silent-threat-to-your-home/",
+      "permanent": true
+    },
+    {
+      "source": "/mud-dauber-wasps-in-washington-state-natures-non-aggressive-pollinators/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/identifying-pest-activity/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/protect-your-home-with-sasquatch-pest-control/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/preventative-pest-control/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/bumble-bees-in-washington-state/",
+      "destination": "/services/bee-removal/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-identify-termites/",
+      "destination": "/services/termite-control/",
+      "permanent": true
+    },
+    {
+      "source": "/combating-fleas/",
+      "destination": "/services/flea-control/",
+      "permanent": true
+    },
+    {
+      "source": "/bed-bug-infestations/",
+      "destination": "/services/bed-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/combatting-rodent-invaders/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/battling-mosquitoes/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/know-your-bees/",
+      "destination": "/services/bee-removal/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-wasps-vs-yellowjackets/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/why-do-i-have-millipedes-in-my-home/",
+      "destination": "/services/centipede-control/",
+      "permanent": true
+    },
+    {
+      "source": "/wasp-sting/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/tiny-black-spiders-in-washington/",
+      "destination": "/services/spider-control/",
+      "permanent": true
+    },
+    {
+      "source": "/sasquatch-pest-control-defending-against-stink-bugs/",
+      "destination": "/services/stink-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-in-ferndale-wa/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/locally-owned-and-family-operated/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-in-blaine-wa/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/the-sasquatch-advantage-in-preventative-pest-control/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/the-blaine-peace-arch-a-symbol-of-unity/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/fortifying-homes-in-blaine-wa-the-essence-of-effective-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/defending-lynden-homes-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/the-vital-role-of-proper-pest-control-in-bow-wa/",
+      "destination": "/locations/bow/",
+      "permanent": true
+    },
+    {
+      "source": "/keeping-your-home-pest-free-in-ferndale-wa/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/unwanted-buzzing-how-to-locate-the-best-beehive-exterminator-near-you/",
+      "destination": "/services/bee-removal/",
+      "permanent": true
+    },
+    {
+      "source": "/the-ultimate-guide-to-rodent-control-how-to-find-the-best-pest-control-services-near-you/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/trusted-partners/",
+      "destination": "/network/",
+      "permanent": true
+    },
+    {
+      "source": "/food-processing-pest-control/",
+      "destination": "/commercial/",
+      "permanent": true
+    },
+    {
+      "source": "/leave-a-review/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/insulation-service/",
+      "destination": "/services/attic-insulation/",
+      "permanent": true
+    },
+    {
+      "source": "/sasquatch-pest-control-awards-and-recognition/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-videos/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/gallery/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/the-squatch-blog/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/ty-inspection/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/ty-instant-price/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/thank-you/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-coupons/",
+      "destination": "/contact/",
+      "permanent": true
+    }
+  ]
+}

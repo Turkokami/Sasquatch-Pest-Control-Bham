@@ -1,0 +1,128 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import Faq from '../../../components/Faq.astro';
+import Cta from '../../../components/Cta.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import LocationMap from '../../../components/LocationMap.astro';
+import { guideLinksFor } from '../../../lib/guides';
+import { towns } from '../../../data/towns';
+import { liveServices } from '../../../data/services';
+import { localParagraph, tierFor, builtTowns, pagedNeighborhoods, mentionNeighborhoods } from '../../../lib/geo';
+import { business, isReady } from '../../../data/business';
+
+export async function getStaticPaths() {
+  /* Capacity gate: a town scoring 'area' has too little real data to clear
+     the uniqueness floor, so NO page is built — it gets an areaServed
+     mention only. A thin geo page is worse than no geo page.
+     Skagit towns are additionally gated on owner decision #4. */
+  return builtTowns().map((t) => ({ params: { city: t.slug }, props: { t } }));
+}
+
+const { t } = Astro.props;
+const path = `/locations/${t.slug}/`;
+
+const entries = await getCollection('locations', (e) => e.data.town === t.slug && !e.data.neighborhood);
+const entry = entries[0];
+const Body = entry ? (await entry.render()).Content : null;
+const ready = entry?.data.ready === true;
+
+const title = entry?.data.title ?? `Pest Control in ${t.name}, WA`;
+const description =
+  entry?.data.description ??
+  `Pest control and exclusion for ${t.name} homes and businesses in ${t.county}. Family-owned, no long-term contracts, and a 100% Service Guarantee on every visit.`;
+const faqs = entry?.data.faqs ?? [];
+
+const neighborhoods = pagedNeighborhoods(t).map((n) => ({
+  href: `${path}${n.slug}/`,
+  label: n.name,
+}));
+/* Covered by the grouped section on this page rather than a URL of their own. */
+const alsoNeighborhoods = mentionNeighborhoods(t).map((n) => n.name);
+
+const svc = liveServices()
+  .slice(0, 12)
+  .map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+
+const countySlug = t.county === 'Whatcom County' ? 'whatcom-county' : 'skagit-county';
+const siblings = builtTowns()
+  .filter((x) => x.county === t.county && x.slug !== t.slug)
+  .map((x) => ({ href: `/locations/${x.slug}/`, label: x.name }));
+
+/* Related guides, resolved from the guides' own relatedTo declarations —
+   one list, queried, rather than a second list maintained here. */
+const guideLinks = await guideLinksFor(path);
+---
+<BaseLayout
+  path={path}
+  title={title}
+  description={description}
+  kind="location"
+  noindex={!ready}
+  {/* Conditional AnswerBox — see the speakable note in src/lib/schema.ts. */}
+  hasAnswer={Boolean(entry?.data.answer)}
+  faqs={faqs}
+  image={entry?.data.hero}
+  {/* Containment chain, outermost LAST. This was already here and was read by
+      nothing; it is now what the page's Place node is built from. */}
+  areaServed={[t.name, t.county]}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Service areas', path: '/locations/' },
+    { name: t.county, path: `/locations/${countySlug}/` },
+    { name: t.name, path },
+  ]}
+>
+  <h1>{entry?.data.h1 ?? `Pest Control in ${t.name}, ${t.county.replace(' County', ' County')}`}</h1>
+
+  {entry?.data.answer && <AnswerBox text={entry.data.answer} />}
+
+  {Body ? (
+    <div class="prose"><Body /></div>
+  ) : (
+    <>
+      {/* Generated from real differentiator fields — never a token-swapped
+          copy of another city. Still noindex until a writer clears the floor. */}
+      <p class="prose">{localParagraph(t)}</p>
+      <div class="stub">
+        <b>Route live, content pending.</b> Tier: <code>{tierFor(t)}</code>.
+        Marked <code>noindex</code> until
+        <code>src/content/locations/{t.slug}.md</code> clears 3,000 unique words.
+      </div>
+    </>
+  )}
+
+  {neighborhoods.length > 0 && (
+    <LinkRail heading={`Neighborhoods we serve in ${t.name}`} links={neighborhoods} />
+  )}
+
+  {alsoNeighborhoods.length > 0 && (
+    <p class="prose" data-boilerplate>
+      <b>Also across {t.name}:</b> {alsoNeighborhoods.join(', ')}. These share a
+      housing stock with the neighborhoods above and are covered in the grouped
+      section on this page rather than having a separate one.
+    </p>
+  )}
+
+  <LinkRail heading={`Pest control services in ${t.name}`} links={svc} />
+
+  <Faq items={faqs} />
+
+  <LinkRail
+    heading={`Nearby communities in ${t.county}`}
+    links={[{ href: `/locations/${countySlug}/`, label: `All of ${t.county}` }, ...siblings.slice(0, 12)]}
+  />
+
+  <LinkRail heading="Guides" links={guideLinks} />
+
+  {/* Last block before the CTA, and the position is the point. Somebody who
+      lands here wants the answer to a pest question, not a map — the map is
+      orientation, so it sits after the copy and the rails, where "how far is
+      this company from me" is the question actually left over. Above the
+      fold it would push 3,000 words of the thing they came for below a
+      third-party rectangle. */}
+  <LocationMap place={t.name} />
+
+  <Cta market={t.name} />
+</BaseLayout>

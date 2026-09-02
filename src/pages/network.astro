@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import { business } from '../data/business';
+
+const path = '/network/';
+
+/* This is the legacy /locations/ brand-network content. The new taxonomy
+   claims /locations/ for the geo hub, so this content moved here.
+   Keystone Part 14 — site separation is absolute: we link to the Texas
+   franchise, we do not reproduce its NAP, photos or license here. */
+const answer =
+  'Sasquatch Pest Control is headquartered in Bellingham, Washington, serving Whatcom County, and there is a separately operated Sasquatch franchise serving the greater Houston, Texas area. Each location is licensed, staffed and scheduled independently in its own market.';
+---
+<BaseLayout
+  path={path}
+  title="Our Locations & Network"
+  description="Sasquatch Pest Control is headquartered in Bellingham, Washington, with a separately operated franchise serving the greater Houston, Texas area."
+  kind="page"
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Our network', path }]}
+>
+  <h1>Our Locations &amp; Network</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Bellingham, Washington — headquarters</h2>
+    <p>
+      {business.address.street}, {business.address.locality}, {business.address.region}{' '}
+      {business.address.postalCode}. Serving Whatcom County.
+      <br /><a href="/locations/">See our Washington service areas</a>
+    </p>
+
+    <h2>Greater Houston, Texas</h2>
+    <p>
+      A separately operated Sasquatch franchise serves the greater Houston area.
+      It is licensed and scheduled independently — for service in Texas, contact
+      that location directly through its own site.
+    </p>
+
+    <h2>One brand, one standard</h2>
+    <p>
+      Each location runs on the same service standard and the same guarantee
+      structure, and each is accountable in its own market.
+    </p>
+  </div>
+</BaseLayout>

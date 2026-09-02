@@ -1,0 +1,447 @@
+---
+/**
+ * County tier, Skagit. Built only because the owner confirmed the territory
+ * on 30 Aug 2026 (business.territory.skagitConfirmed). Static route, same
+ * reasoning as whatcom-county.astro — [city] only enumerates town slugs.
+ *
+ * HONESTY NOTE FOR WRITERS: Whatcom is home ground and that page carries
+ * neighborhood-level detail earned over years. This one deliberately does not
+ * pretend to the same depth. It is accurate about geography, climate and
+ * building stock — all of which genuinely transfer — and it says plainly where
+ * our routes are newer. Do not pad it with invented local specifics.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import LocationMap from '../../components/LocationMap.astro';
+import { builtTowns } from '../../lib/geo';
+import { liveServices } from '../../data/services';
+
+const path = '/locations/skagit-county/';
+const towns = builtTowns().filter((t) => t.county === 'Skagit County');
+const townLinks = towns.map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
+const svc = liveServices().slice(0, 12).map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+
+const answer =
+  'We run the I-5 corridor south from Bellingham into Skagit County — Alger, Bow, Sedro-Woolley, Burlington and Mount Vernon. Same wet climate and much the same building stock as Whatcom, with a bigger valley farm economy behind it. We do not run the western waterfront or the islands.';
+
+const faqs = [
+  {
+    q: 'Do you actually service Skagit County, or only claim to?',
+    a: 'We service it. Skagit sits on scheduled route days rather than same-day work, because it is a longer drive from Bellingham than anything in our home county. When you call we will tell you which day that puts you on instead of promising a window we cannot hold.',
+  },
+  {
+    q: 'Is pest pressure in Skagit different from Whatcom?',
+    a: 'The climate and the building stock are close enough that the fundamentals carry over. What differs is scale and emphasis: far more open farmland driving rodent movement, and a much bigger retail and commercial corridor around Burlington than anything in our home county.',
+  },
+  {
+    q: 'How does the Skagit River affect what you deal with?',
+    a: 'It concentrates everything. The river corridor and the dike system are continuous cover and habitat running the length of the valley, and the low ground saturates early. Properties near it typically see their autumn rodent movement well before the higher ground does.',
+  },
+  {
+    q: 'Do you work with Skagit Valley farms?',
+    a: 'Yes. Farm work runs on the operation calendar rather than ours, and the constraints around livestock, feed storage and harvest windows shape what can be placed and when. We plan agricultural accounts months ahead rather than treating them as call-outs.',
+  },
+  {
+    q: 'Are your rates different because Skagit is further away?',
+    a: 'We do not add a distance surcharge inside the areas listed on this page. What distance changes is scheduling rather than price. If an address sits outside where we genuinely run, we will say so before booking instead of adding travel to the bill afterwards.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  title="Pest Control in Skagit County, WA"
+  description="Pest control and exclusion in Skagit County — Alger, Bow, Sedro-Woolley, Burlington and Mount Vernon along the I-5 corridor. Call or text 360-410-2199."
+  kind="location"
+  areaServed={['Skagit County']}
+  faqs={faqs}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Service areas', path: '/locations/' },
+    { name: 'Skagit County', path },
+  ]}
+>
+  <h1>Pest Control Across Skagit County</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Straight about where we stand</h2>
+    <p>
+      Bellingham is home and Whatcom County is where most of our work is. Skagit
+      is territory we run into deliberately rather than territory we grew up in,
+      and we would rather say that plainly than imply a depth of local knowledge
+      we have not earned yet.
+    </p>
+    <p>
+      What does transfer is everything structural. The climate is the same
+      maritime pattern, the housing stock was built in the same eras by many of
+      the same methods, and the species are the same species. A crawlspace in
+      Sedro-Woolley fails the way a crawlspace in Ferndale fails. What is
+      genuinely different is the scale of the farm ground and the size of the
+      retail and commercial corridor around Burlington.
+    </p>
+
+    <h2>The valley, which is the defining feature</h2>
+    <p>
+      The Skagit Valley is some of the most productive farmland in the state and
+      it dominates the middle of the county. Potatoes, seed crops, berries,
+      dairy, and the flower bulb ground the rest of the country knows the county
+      for.
+    </p>
+    <p>
+      Open agricultural ground on this scale supports a large and permanent
+      rodent population, and that population is on the move twice a year for
+      reasons that have nothing to do with cold. Harvest removes cover overnight:
+      a field that was habitat in the morning is bare dirt by evening, and
+      everything living in it goes looking for the nearest structure. Then the
+      autumn rain floods the low ground and does the same thing again, harder.
+    </p>
+    <p>
+      For anyone with a house, a shop or an outbuilding backing onto valley
+      ground, that is the single most useful thing to understand. The population
+      outside your fence is permanent and it is not going to be reduced. The work
+      that pays off is making your buildings genuinely unattractive and genuinely
+      sealed, and doing it in August rather than in November.
+    </p>
+    <p>
+      Farm work itself runs on the operation's calendar. There are weeks in the
+      season when we cannot be in a field, livestock and working dogs constrain
+      what may be placed and where, and food safety auditing means the
+      documentation matters as much as the outcome. We plan agricultural accounts
+      months ahead rather than treating them as call-outs.
+    </p>
+
+    <h2>The river and the dikes</h2>
+    <p>
+      The Skagit is a serious river with a long flood history, and the dike and
+      drainage system that manages it runs through much of the county's populated
+      ground.
+    </p>
+    <p>
+      From our side of the work, a dike is a linear habitat corridor with
+      excellent cover, running for miles, immediately adjacent to buildings.
+      Sloughs, drainage ditches and the vegetated banks between fields do the
+      same thing on a smaller scale. The result is continuous connectivity —
+      rodents move the length of the valley without ever crossing open ground.
+    </p>
+    <p>
+      You cannot treat a corridor, and it would be wrong to try. What you can do
+      is defend the specific building, and accept that the pressure against it is
+      constant rather than seasonal.
+    </p>
+    <p>
+      Flooding leaves its own aftermath. A crawlspace that has taken water needs
+      the insulation assessed and usually replaced, the vapor barrier redone and
+      the space properly dried before anything else is worth doing. Wet
+      fiberglass is both nesting material and a decay accelerator, and treating
+      a wet crawl without addressing it is money spent on the wrong half of the
+      problem.
+    </p>
+
+    <h2>Mount Vernon and Burlington</h2>
+    <p>
+      The two are close together and quite different from each other.
+    </p>
+    <p>
+      Mount Vernon is the county seat and it has a real historic downtown: older
+      commercial buildings on shared walls, common basements and utility chases
+      connecting structures whose owners do not know they are connected. Downtown
+      rodent populations are shared by definition, and treating a single tenant
+      while the building next door does nothing is a temporary result. Where a
+      building owner or several tenants will work to one plan, the outcome is
+      different in kind. The surrounding residential stock runs from prewar
+      housing near the core out to newer subdivisions on the edges, with the
+      familiar split between old unsealed crawlspaces and tight new houses with
+      a handful of unsealed penetrations.
+    </p>
+    <p>
+      Burlington is the county's retail and commercial corridor, and that makes
+      it a different job again. Large-format buildings, extensive flat roof, big
+      loading and dock areas, food handling at scale, and a great deal of
+      landscaping and parking. Commercial rodent programs here live on
+      documentation, sensible placement around dock doors that are open half the
+      day, and honesty about the sanitation points that actually feed the
+      population.
+    </p>
+
+    <h2>Sedro-Woolley and the eastern county</h2>
+    <p>
+      Sedro-Woolley is an old mill town and the building stock shows it. A good
+      deal of prewar and early postwar housing, much of it on post-and-pier
+      foundations with shallow crawlspaces, board sheathing and framing that has
+      taken water somewhere over the last century.
+    </p>
+    <p>
+      That combination produces the classic Pacific Northwest list: carpenter
+      ants and moisture ants in softened framing, rodents with an unobstructed
+      route from the crawl to the attic, and the damp-crawl cast of sowbugs,
+      millipedes and Oriental cockroaches underneath. As everywhere, the useful
+      work is structural — sealing the envelope, screening the vents, closing the
+      penetrations — rather than repeated interior treatment.
+    </p>
+    <p>
+      East of town the county climbs toward the Cascades and the character
+      changes to forest edge: cedar construction, wildlife pressure from the
+      treeline, carpenter ants in the softened timber, and damp crawlspaces at
+      the low end of every sloped lot. Our
+      routes thin out as you go east, and for an address well up the valley we
+      will tell you honestly whether we run there rather than book it and work
+      out the logistics afterwards.
+    </p>
+
+    <h2>Alger and Bow</h2>
+    <p>
+      These two are the top of our Skagit run and the reason the rest of it
+      works. Both sit on or beside the I-5 corridor between Bellingham and
+      Mount Vernon, which makes them a natural extension of routes we are
+      already driving rather than a detour.
+    </p>
+    <p>
+      <strong>Alger</strong> sits in the foothills where the freeway climbs away
+      from the Samish valley, and it is forest-edge country. The housing is
+      rural and scattered, frequently cedar, often on acreage with outbuildings,
+      and placed against standing timber. That produces a predictable list:
+      carpenter ants in softened cedar with the parent colony out in a stump or
+      a dead limb, rodents pushing in off the treeline through crawl vents and
+      skirting, wasps in
+      the eaves of shops and barns that nobody visits often enough to notice a
+      nest early.
+    </p>
+    <p>
+      Forest-edge property does not get solved by treatment. The work is at the
+      interface — trimming the branch bridging to the roof, screening the vent
+      with material that will last, closing the gap where a deck meets the
+      house, and correcting where woodpiles and landscaping run up against the
+      foundation. Trapping alone against a treeline is a recurring cost rather
+      than a result, and we would rather say so at the first visit.
+    </p>
+    <p>
+      <strong>Bow</strong> is the opposite exposure: open agricultural country
+      running down to Samish Bay, with the Bow and Edison farmland, the
+      shellfish ground on the bay and Chuckanut Drive along the western edge.
+      The work here is farm work. Rodents moving off field ground, heavily and
+      on schedule, twice a year — once when a field is cut and cover disappears
+      overnight, and again when the autumn rain floods the low ground. Barn
+      fly pressure around livestock, which is won on breeding sites rather than
+      on adults. And cluster flies in quantity, because
+      they breed in earthworms out in the fields and the more pasture and
+      cropland around a building the worse they are.
+    </p>
+    <p>
+      Properties on the bay side pick up the coastal factors as well. Salt and
+      wind corrode vent screens, fasteners and any previous exclusion work
+      faster than they do inland, so anything we install out there is specified
+      for the exposure rather than for a sheltered site. An exclusion that fails
+      in three winters was not worth paying for.
+    </p>
+
+    <h2>What the climate does, here as everywhere on this side</h2>
+    <p>
+      The mechanics are the same as our home county and they are worth repeating
+      because so much national pest content assumes a climate we do not have.
+    </p>
+    <p>
+      There is no sustained hard freeze, so populations are never reset by
+      winter the way they are east of the Cascades. And there is a great deal of
+      rain spread across a long gray season rather than delivered in summer
+      storms, so wood stays damp. That second fact drives most of what we get
+      called about: dampwood termites need wet wood, moisture ants need wet wood,
+      carpenter ants prefer wood that has begun to soften, and silverfish,
+      sowbugs, millipedes and Oriental cockroaches are all humidity-driven.
+    </p>
+    <p>
+      It also means the rodent calendar runs on water rather than temperature.
+      Rats do perfectly well outdoors through the summer, and then the rain
+      arrives, burrows flood, and everything needs somewhere dry within a few
+      weeks. That is why the useful window for exclusion work is August, and why
+      we spend the whole of spring saying so.
+    </p>
+
+    <h2>The building stock, by how it fails</h2>
+    <p>
+      Skagit housing sorts into a handful of types, and the type predicts the
+      problem more reliably than the town does.
+    </p>
+    <p>
+      <strong>Valley farmhouses.</strong> Often a century old, frequently
+      extended two or three times, and sitting in the middle of open ground with
+      outbuildings around them. The additions are where the trouble is: each one
+      created a junction between old and new framing, and those junctions are
+      rarely sealed. A farmhouse typically has more penetrations, more roof
+      transitions and more crawl access points than a house of the same size in
+      town.
+    </p>
+    <p>
+      <strong>Mill and railroad town stock.</strong> The older housing in
+      Sedro-Woolley, Mount Vernon and Burlington. Post-and-pier foundations,
+      bare-earth crawlspaces, board sheathing that has shrunk, and stud cavities
+      running from sill to top plate without a firestop. Something entering at
+      grade can reach the attic without crossing a room.
+    </p>
+    <p>
+      <strong>Outbuildings and shops.</strong> Pole construction, gravel or slab
+      floors, roll-up doors. These were never going to be sealed and it is
+      dishonest to quote as though they could be. The realistic goal is
+      protecting what matters inside them — the feed, the wiring, the equipment
+      — and keeping the population outside the buildings that can be closed.
+    </p>
+    <p>
+      <strong>Rural acreage and outbuilding clusters.</strong> Common through
+      Alger, Bow and the ground around Sedro-Woolley. A house, a shop, a barn
+      and whatever has been added over the years, each structure with its own
+      standard of construction and its own way in.
+    </p>
+    <p>
+      <strong>Newer subdivisions.</strong> Tight envelopes, good sheathing, and
+      then half a dozen service penetrations closed with expanding foam. Foam
+      stops drafts and does not stop a rodent. The dryer vent, the hose bib,
+      the line set, the electrical entry and the garage door seal are the
+      recurring five, and they are on nearly every house of this era we look at.
+    </p>
+
+    <h2>The year in the valley</h2>
+    <p>
+      The agricultural cycle drives our Skagit calendar more than the weather
+      alone does.
+    </p>
+    <p>
+      <strong>Late winter.</strong> Overwintering insects wake on the first mild
+      afternoon and appear at south-facing windows — cluster flies especially,
+      which breed in earthworms out in the fields and are therefore a rural
+      problem by nature. Rodent activity indoors is at its height, because
+      everything that came in during October is still there.
+    </p>
+    <p>
+      <strong>Spring.</strong> Ants become active as the ground warms, and in
+      irrigated ground they turn up indoors before anyone has seen them outside.
+      Moisture ants appear indoors and are reporting a water problem rather than
+      an ant problem.
+    </p>
+    <p>
+      <strong>Early summer.</strong> Wasp colonies are founded and are trivial to
+      deal with at this stage. On farm property this is a safety issue rather
+      than a nuisance one, because a ground nest found later by a tractor tire or
+      a bale mover puts somebody in hospital.
+    </p>
+    <p>
+      <strong>High summer.</strong> Exclusion season, and the most useful eight
+      weeks of the year. Dry ground, dry crawlspaces, and easy access to the
+      exterior. Everything preventive should happen now.
+    </p>
+    <p>
+      <strong>Harvest and autumn.</strong> The reckoning, and it is sharper here
+      than anywhere in Whatcom because of the sheer acreage. Fields are cut, the
+      rain returns, the low ground saturates, and a very large displaced
+      population moves toward buildings within a few weeks of each other.
+    </p>
+    <p>
+      <strong>Winter.</strong> Interior work and damage assessment: soiled
+      insulation, chewed ducting, and the smell in a room that turns out to be
+      something dead in a wall.
+    </p>
+
+    <h2>What Skagit does not have</h2>
+    <p>
+      Worth stating for the same reason we state it for Whatcom, because
+      national content lists species that have never been recorded here and it
+      makes a local site less trustworthy every time.
+    </p>
+    <p>
+      No brown recluse. No fire ants. No Formosan termites, and none of the
+      aggressive subterranean termite pressure that drives treatment across the
+      South — the termite that matters here is the Pacific dampwood, which
+      follows water rather than attacking sound lumber. Black widows exist in
+      Washington but are associated with the drier country east and south of the
+      Cascades and are uncommon on this side.
+    </p>
+
+    <h2>How a Skagit visit works</h2>
+    <p>
+      Because Skagit sits on route days rather than same-day availability, the
+      first phone call matters more here than it does in Bellingham. Tell us the
+      address, what you are seeing, and whether anything is driving a deadline —
+      a closing date, a harvest window, an audit, a tenant complaint. That
+      determines which day we can realistically offer.
+    </p>
+    <p>
+      Route days also change how the work itself gets scoped. In Bellingham a
+      second trip for one missing vent screen costs an hour; from Sedro-Woolley
+      it costs most of a week. So we would rather arrive carrying the exclusion
+      materials a job of that description usually needs and finish it while we
+      are standing there than book a tidy first look and a separate appointment
+      to do the sealing. It is also why the questions on the phone run longer
+      than you might expect — the better we can picture the building beforehand,
+      the fewer trips the whole thing takes.
+    </p>
+    <p>
+      The visit itself starts outside, because in this county the answer is
+      usually out there. We look at grade and drainage, the siding-to-foundation
+      transition, vents and penetrations, vegetation contact, the state of any
+      previous exclusion work, and what the surrounding ground is doing. On a
+      farm or a commercial site we start instead with the operation's own rules,
+      because those shape everything that follows.
+    </p>
+    <p>
+      Then the crawlspace and the attic, properly, with a light. Then the
+      interior. Then a plain account: what we found, what is causing it, what
+      needs doing now, what can wait, and which items are a building repair
+      rather than a pest treatment. If the biggest available improvement is a
+      lid on a feed bin or a downspout moved three feet, that is what we will
+      lead with, before anything we would be paid for.
+    </p>
+    <p>
+      Inspections are free for every pest we handle, with bed bugs the single
+      exception — those carry a verification fee, credited against the treatment
+      if you decide to proceed. There is no long-term contract, on a house, a
+      commercial building or a farm.
+    </p>
+
+    <h2>Where we do and do not go</h2>
+    <p>
+      We would rather be specific about this than let a map imply something
+      untrue, because a company that claims a whole county and then declines
+      your address has wasted your afternoon.
+    </p>
+    <p>
+      <strong>We run:</strong> Alger, Bow, Sedro-Woolley, Burlington and Mount
+      Vernon, and the ground between them. That is the I-5 corridor south from
+      Bellingham plus the run east to Sedro-Woolley, and it is a natural
+      extension of routes we are already driving.
+    </p>
+    <p>
+      <strong>We do not run:</strong> La Conner, Anacortes and Fidalgo Island,
+      or the islands generally — Whidbey and Oak Harbor included. That is not a
+      comment on those places. It is simply the far side of the county from us,
+      it would mean promising response times we could not hold, and you are
+      better served by somebody whose routes actually go there.
+    </p>
+    <p>
+      If your address is not on the list above, call and ask rather than
+      assuming. Sometimes the answer is yes because you are between two places
+      we already go. When it is no, we will say so before booking and point you
+      somewhere sensible, rather than taking the job and adding travel to the
+      bill afterwards.
+    </p>
+    <p>
+      Not every community we serve has its own page yet either. Where we do not
+      have enough that is genuinely specific to say about a place, we would
+      rather list it honestly than publish a page that is the same words with
+      the town name swapped in.
+    </p>
+  </div>
+
+  <LinkRail heading="Communities we serve in Skagit County" links={townLinks} />
+  <LinkRail heading="Services across Skagit County" links={svc} />
+
+  <Faq items={faqs} />
+
+  {/* Below the copy, and on this page below the "where we do and do not go"
+      section in particular — the page names the half of the county we decline
+      before the county outline appears, which is the order that keeps the map
+      from reading as a claim. */}
+  <LocationMap place="Skagit County" />
+
+  <Cta market="Skagit County" />
+</BaseLayout>

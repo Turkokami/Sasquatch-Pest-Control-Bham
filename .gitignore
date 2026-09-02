@@ -1,0 +1,13 @@
+# Keystone Part 7A: ship a .gitignore from day one. The first deploy on a
+# prior build produced 0 pages because src/ and public/ were never pushed —
+# only the six root config files had been committed.
+node_modules/
+dist/
+.astro/
+.vercel/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+redirects.json

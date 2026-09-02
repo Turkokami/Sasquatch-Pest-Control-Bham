@@ -1,0 +1,35 @@
+---
+/** Spoke-and-wheel wiring (M3): links up to parent, in to hub, and laterally
+ *  to siblings. A page cut off from the cluster won't pull local rankings —
+ *  the live site's 68-page neighborhood tier is orphaned entirely. */
+interface Props {
+  heading: string;
+  links: { href: string; label: string }[];
+}
+const { heading, links } = Astro.props;
+---
+{/* data-boilerplate: a link rail is navigation, not content. The harness
+    strips it from both the uniqueness floor and the duplicate-sentence
+    scanner, and both exclusions are right. A list of page titles is not
+    words a page earned, and two pages in the same cluster necessarily share
+    most of their rail — flagging that as duplicate content would mean
+    flagging the cluster wiring itself, which is the one thing here we most
+    want to keep.
+
+    Added when the blog tier landed: 67 imported posts sharing a six-link
+    rail tripped the scanner on three separate sequences. The narrow fix
+    would have been to mark the rail only inside the blog template — but
+    then the same component counts as content on a service page and does not
+    on a blog page, which is exactly the single-source-of-truth split that
+    has been the recurring defect in this codebase. So it is marked once,
+    here, and every word floor was re-checked against the lower counts. */}
+{links.length > 0 && (
+  <section data-boilerplate>
+    <h2>{heading}</h2>
+    <ul class="rail">
+      {links.map((l) => (
+        <li><a href={l.href}>{l.label}</a></li>
+      ))}
+    </ul>
+  </section>
+)}

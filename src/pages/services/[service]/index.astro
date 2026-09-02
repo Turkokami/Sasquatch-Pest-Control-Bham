@@ -1,0 +1,96 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import Faq from '../../../components/Faq.astro';
+import Cta from '../../../components/Cta.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import { guideLinksFor } from '../../../lib/guides';
+import ExpertBlock from '../../../components/ExpertBlock.astro';
+import { liveServices, categories } from '../../../data/services';
+import { business } from '../../../data/business';
+
+export async function getStaticPaths() {
+  /* Programmatic routing off the data file. Anything off-list 404s cleanly —
+     no accidental thin pages. Unconfirmed services never enumerate. */
+  return liveServices().map((s) => ({ params: { service: s.slug }, props: { s } }));
+}
+
+const { s } = Astro.props;
+const path = `/services/${s.slug}/`;
+
+/* Render the markdown body when it exists, fall back to a generated stub.
+   All routes stand up first; content pours in waves without a broken site. */
+const entries = await getCollection('services', (e) => e.data.service === s.slug);
+const entry = entries[0];
+const Body = entry ? (await entry.render()).Content : null;
+const ready = entry?.data.ready === true;
+
+const title = entry?.data.title ?? `${s.name} in Bellingham, WA`;
+const description =
+  entry?.data.description ??
+  `${s.name} for homes and businesses across Whatcom and Skagit County. No long-term contracts and a 100% Service Guarantee on every treatment.`;
+const h1 = entry?.data.h1 ?? `${s.name} in Bellingham & Whatcom County`;
+const answer = entry?.data.answer ?? null;
+const faqs = entry?.data.faqs ?? [];
+
+const siblings = liveServices()
+  .filter((x) => x.category === s.category && x.slug !== s.slug)
+  .map((x) => ({ href: `/services/${x.slug}/`, label: x.name }));
+
+const problems = (s.problems ?? []).map((p) => ({
+  href: `${path}${p.slug}/`,
+  label: p.title,
+}));
+
+/* Related guides, resolved from the guides' own relatedTo declarations —
+   one list, queried, rather than a second list maintained here. */
+const guideLinks = await guideLinksFor(path);
+---
+<BaseLayout
+  path={path}
+  title={title}
+  description={description}
+  kind="service"
+  serviceName={s.name}
+  noindex={!ready}
+  {/* The AnswerBox only renders once the markdown body lands, so the speakable
+      selector naming it must be conditional too — see src/lib/schema.ts. */}
+  hasAnswer={Boolean(answer)}
+  faqs={faqs}
+  image={entry?.data.hero}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Services', path: '/services/' },
+    { name: s.short, path },
+  ]}
+>
+  <h1>{h1}</h1>
+
+  {answer && <AnswerBox text={answer} />}
+
+  {Body ? (
+    <div class="prose"><Body /></div>
+  ) : (
+    <div class="stub">
+      <b>Route live, content pending.</b> This page is generated from
+      <code>src/data/services.ts</code> and is marked <code>noindex</code> until a
+      writer files <code>src/content/services/{s.slug}.md</code> clearing the
+      3,000-word floor. Category: {categories[s.category]}.
+    </div>
+  )}
+
+  <ExpertBlock slug={entry?.data.expert} />
+
+  {problems.length > 0 && (
+    <LinkRail heading={`Common ${s.short.toLowerCase()} problems we get called for`} links={problems} />
+  )}
+
+  <Faq items={faqs} />
+
+  <LinkRail heading={`Related ${categories[s.category].toLowerCase()} services`} links={siblings} />
+
+  <LinkRail heading="Guides" links={guideLinks} />
+
+  <Cta market="Whatcom County" service={s.name} serviceSlug={s.slug} />
+</BaseLayout>

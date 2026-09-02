@@ -1,0 +1,114 @@
+---
+/**
+ * LocationMap — the orientation map at the foot of a place page.
+ *
+ * ONE COMPONENT, twenty-odd pages. Every location tier renders this: the city
+ * route, the neighborhood route and both county routes. An iframe pasted into
+ * each template is the duplication this codebase has already had to undo in
+ * the footer, in the geo filters and in the citation block, so the markup, the
+ * URL shape, the accessible name and the reserved box are all decided here.
+ *
+ * WHAT IT SHOWS, and this is a content decision rather than a technical one.
+ * The map is queried by PLACE NAME — "Ferndale, WA" — and never by the
+ * company's street address. A town page is about the town, so the town is what
+ * a reader needs oriented; dropping our office pin onto two dozen pages would
+ * be both wrong for the reader and the same rectangle repeated. The business
+ * address has exactly two homes: /contact/ and the LocalBusiness node in the
+ * schema graph.
+ *
+ * WHY THE KEYLESS EMBED. `maps.google.com/maps?q=…&output=embed` needs no API
+ * key, no billing account and no per-page quota. The Maps Embed API would give
+ * finer control over zoom and map type; it would also make every location page
+ * depend on a secret this project does not have and on a key that can be
+ * revoked or rate-limited without anyone noticing until the maps go blank. The
+ * keyless form is the weaker embed and the stronger dependency, and that trade
+ * is the right way round for a static site.
+ *
+ * PRIVACY — A DELIBERATE TRADE, NOT AN OVERSIGHT. This is a third-party frame.
+ * Loading it hands Google the reader's IP address and lets it set its own
+ * cookies, which is a real cost and the reason a lot of sites do not embed
+ * maps at all. We are accepting it because a service-area page is one of the
+ * few places where a map earns its keep — "is this company anywhere near me"
+ * is the question the page exists to answer, and a static screenshot cannot be
+ * panned out to answer it. Two things keep the cost bounded: `loading="lazy"`,
+ * so the frame is never fetched for a reader who does not scroll to the foot
+ * of a 3,000-word page, and `referrerpolicy`, below. If the trade is ever
+ * revisited, this is the single file to change — delete the iframe here and
+ * the maps come off every location page at once. A future reader should treat
+ * this paragraph as the decision, not as an accident.
+ *
+ * `referrerpolicy="no-referrer-when-downgrade"` sends the full referring URL
+ * over HTTPS and nothing at all on a downgrade to HTTP. Google needs an origin
+ * to serve the embed; it does not need to be told, in the clear, which of our
+ * pages the reader was on.
+ *
+ * NO LAYOUT SHIFT. The frame sits in an aspect-ratio box that is laid out
+ * before the network is touched, so the map arriving changes nothing above or
+ * below it. The width/height attributes on the iframe carry the same ratio for
+ * anything that has not applied the stylesheet yet. This site has a
+ * no-layout-shift rule and a lazily-loaded third-party frame is the classic
+ * way to break it.
+ *
+ * NOT CHECKED BY THE HARNESS. Check 1b crawls img, script, link and meta
+ * references; it does not look at iframes, so a typo in the URL built below
+ * fails silently and in production rather than in the gate. Verify by eye
+ * after a build, especially for two-word and hyphenated towns — Mount Vernon
+ * and Sedro-Woolley are the two that would go wrong first.
+ */
+interface Props {
+  /**
+   * The place to show and to announce, written as a reader would say it:
+   * "Ferndale", "Whatcom County", "Fairhaven, Bellingham". It is used for the
+   * map query, the visible heading and the iframe's accessible name, so there
+   * is one string to get right rather than three that can drift.
+   */
+  place: string;
+  /** Appended to the query so the town resolves in the right state. */
+  region?: string;
+}
+const { place, region = 'WA' } = Astro.props;
+
+/* encodeURIComponent, not a hand-rolled replace. It is what makes "Mount
+   Vernon, WA" come out as Mount%20Vernon%2C%20WA and leaves the hyphen in
+   Sedro-Woolley alone — a raw space in a src attribute is the exact typo the
+   harness will not catch for us. */
+const src = `https://maps.google.com/maps?q=${encodeURIComponent(`${place}, ${region}`)}&output=embed`;
+
+/* A real accessible name. An iframe with no title is announced as "iframe",
+   which tells a screen reader user nothing about whether to enter it. */
+const title = `Map of ${place}, Washington`;
+---
+{/* data-boilerplate: a map is a widget, not words the page earned. The
+    uniqueness floor is measured on prose and the duplicate-sentence scanner
+    flags any 10+ word sentence on three or more pages — this caption is on
+    every location page by design, and it is furniture rather than content in
+    both senses. Marking it here is the same call the link rails and the CTA
+    already make. It also picks up the shared eyebrow heading treatment in §6,
+    so the block reads as part of the same set as the rails below it. */}
+<section class="mapblock" data-boilerplate>
+  {/* Phrased so it stays grammatical for every value `place` takes, including
+      the two-part neighborhood form — "Fairhaven, Bellingham on the map"
+      reads; "Where Fairhaven, Bellingham is" does not. */}
+  <h2>{place} on the map</h2>
+  <figure>
+    <div class="mapframe">
+      <iframe
+        src={src}
+        title={title}
+        width="640"
+        height="480"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <figcaption>
+      Orientation only — the map centers on {place}, not on us. Our office
+      address and hours are on the <a href="/contact/">contact page</a>.
+    </figcaption>
+  </figure>
+</section>
+
+{/* No scoped <style> here, deliberately, and for the reason SourceList gives:
+    a component that carries its own colors is the one piece of the page the
+    tokens cannot reach, and it drifts. Styled in §21a of
+    src/styles/global.css. */}
