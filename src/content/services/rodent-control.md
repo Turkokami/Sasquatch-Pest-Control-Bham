@@ -23,24 +23,29 @@ faqs:
 
 ## The Whatcom County rodent year
 
-Ask most people why rats come indoors and they will say cold. Here that answer
-is wrong, and getting it wrong leads to the wrong prevention.
+Ask most people why rats come indoors and they will say cold. That is half the
+answer, and the missing half is the one that decides when the work should be
+done.
 
-We do not get a sustained hard freeze. What we get is roughly thirty-five inches
-of rain, and the rodent calendar in this county runs on water rather than
-temperature. Through the dry part of summer, Norway rats live outdoors
-perfectly well — in blackberry, under decking, in woodpiles, along creek
-corridors and greenbelts, in the field margins out toward Lynden and Everson.
-Then the rain sets in around late September, the ground saturates, burrows
-flood, and every one of those animals starts looking for somewhere dry.
+Two things happen here, in order. **The rain moves them.** We do not get a
+sustained hard freeze, but we do get roughly thirty-five inches of rain, and
+through the dry part of summer Norway rats live outdoors perfectly well — in
+blackberry, under decking, in woodpiles, along creek corridors and greenbelts,
+in the field margins out toward Lynden and Everson. Then the rain sets in around
+late September, the ground saturates, burrows flood, and every one of those
+animals is displaced and looking.
 
-Your crawlspace is dry. That is the whole story.
+**Then the cold decides where they end up.** A genuinely cold snap on top of a
+displaced population is what turns looking into entering, and it is the sharpest
+predictor of the calls we take. Your crawlspace is dry and it is warm, and by
+that point it is the best address available.
 
-The consequence is that the useful window for rodent work is August and early
-September, before the push. By November we are working a structure that already
-has a population inside it, which is a longer and more expensive job than
-closing the same gaps eight weeks earlier. It is the single piece of timing
-advice worth acting on in this county.
+The consequence is the same either way, and it is the single piece of timing
+advice worth acting on in this county: the useful window for rodent work is
+August and early September, before the rain has moved anything and well before
+the first cold snap concentrates it. By November we are working a structure that
+already has a population inside it, which is a longer and more expensive job than
+closing the same gaps eight weeks earlier.
 
 ## What you actually have
 
