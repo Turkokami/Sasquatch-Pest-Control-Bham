@@ -130,6 +130,14 @@ door bottoms, anywhere a rodent gets purchase.
 **Copper mesh** as a packing material behind a sealant, because it does not rust
 out the way steel wool does in this climate.
 
+**Purpose-made vent covers**, for the openings where mesh is the wrong answer.
+A dryer vent is the clearest case: it has to shed lint and let a flap swing, and
+hardware cloth over one packs solid within a season, so screening it trades a
+rodent problem for a dryer that does not vent. We install manufactured
+rodent- and wildlife-proof covers made for that job instead — dryer terminals
+first, and the other utility penetrations where a fabricated patch would foul
+something that has to move.
+
 Mesh size is a real trade-off rather than a detail. Quarter-inch hardware cloth
 stops rodents and passes airflow, but it is an open door to a wasp queen or a
 cluster fly, so on a vent that has to do both jobs we back the rodent mesh with a

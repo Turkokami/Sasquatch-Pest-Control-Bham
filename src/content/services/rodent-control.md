@@ -276,6 +276,24 @@ water and of most relevance where standing water and rodent activity overlap.
 If any of that sounds like more than you want to take on, that is exactly why
 cleanup is part of the job rather than something we hand back to you.
 
+## Which rodent, and where
+
+Two numbers worth having before the geography, both from our own call volume.
+
+**Between the rats it runs about sixty-forty in favor of roof rats.** That is
+not the split most people expect, and it changes where a job starts: roof rats
+work the upper half of a building, so a roof rat house is a roofline, soffit and
+overhanging-branch problem, while a Norway rat house is a foundation, crawlspace
+and drain problem. Guessing wrong means sealing the wrong half.
+
+**Mice are the county's animal rather than the city's.** Inside Bellingham the
+calls are mostly rats. Mice take over wherever a property backs onto standing
+timber or open field — Yew Street Hill, Edgemoor and the north end of the city
+where the developed edge runs out, and then most of the rural county: Deming and
+Maple Falls up the valley, Everson out on the farm ground, and south through Bow
+and Alger. The rule that predicts it is not the town, it is what the back fence
+faces.
+
 ## Around the county
 
 **Prewar Bellingham** — Lettered Streets, Columbia, Sunnyland, York, South Hill.
