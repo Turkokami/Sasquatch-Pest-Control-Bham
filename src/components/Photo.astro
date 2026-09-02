@@ -1,0 +1,42 @@
+---
+/**
+ * Photo — one job photograph with a caption.
+ *
+ * Reuses the `.team` figure treatment from §20 rather than inventing a fourth
+ * way to put a picture on this site. There were already three — the homepage
+ * hero, the about-page team figure and the award badge grid — and a fourth
+ * that looked almost like the second is how a design system stops being one.
+ *
+ * WIDTH AND HEIGHT ARE READ FROM THE FILE, never passed in. src/lib/images.ts
+ * carries the reasoning; the short version is that a hand-typed dimension goes
+ * stale the day the image is re-cropped, and a missing file fails the build
+ * here rather than shipping a broken <img> for harness check 1b to find.
+ *
+ * NOT data-boilerplate, deliberately. A caption written for one service page
+ * is that page's content and should count toward its word floor; the map and
+ * the lead form are furniture repeated on two hundred pages and should not.
+ * The distinction is the whole point of the attribute — see the note in
+ * LocationMap.astro, which is on the other side of it.
+ */
+import type { Photo } from '../data/photos';
+import { intrinsicSize } from '../lib/images';
+
+interface Props {
+  photo: Photo;
+  /** First contentful image on the page? Then it must not be lazy. */
+  priority?: boolean;
+}
+const { photo, priority = false } = Astro.props;
+const { width, height } = intrinsicSize(photo.file);
+---
+<figure class="team">
+  <img
+    src={photo.file}
+    alt={photo.alt}
+    width={width}
+    height={height}
+    loading={priority ? 'eager' : 'lazy'}
+    decoding="async"
+  />
+  <figcaption>{photo.caption}</figcaption>
+</figure>

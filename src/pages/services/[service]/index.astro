@@ -3,6 +3,8 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import LeadForm from '../../../components/LeadForm.astro';
+import Photo from '../../../components/Photo.astro';
+import { servicePhotos } from '../../../data/photos';
 import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
@@ -81,6 +83,14 @@ const guideLinks = await guideLinksFor(path);
       copy would break both; the CTA at the foot no longer carries one and
       keeps its phone button. The sticky mobile bar jumps to this. */}
   <LeadForm />
+
+  {/* THE JOB PHOTO, where the page turns from the offer to the work. Not every
+      service has one: the photo library reflects what this company actually
+      gets called out for, so crawlspaces, rodents, wasps and exclusion are
+      well covered and silverfish and centipedes have nothing at all. A page
+      without a photograph renders without one rather than borrowing a stock
+      image of somebody else's job. */}
+  {servicePhotos[s.slug] && <Photo photo={servicePhotos[s.slug]} />}
 
   {Body ? (
     <div class="prose"><Body /></div>
