@@ -107,10 +107,19 @@ const guideLinks = await guideLinksFor(path);
     <Training only={['floor', 'belly', 'air sealing', 'fiber glass']} />
   )}
   {s.slug === 'exclusion-and-repairs' && (
-    <Training
-      only={['air sealing']}
-      heading="Air sealing is the same skill as exclusion"
-    />
+    <>
+      <Training
+        only={['air sealing']}
+        heading="Air sealing is the same skill as exclusion"
+      />
+      <Training installers heading="Product certifications we hold" />
+    </>
+  )}
+
+  {/* RidgeGuard is an exclusion product, so it belongs on the rodent page too
+      — that is the service most readers arrive at it through. */}
+  {s.slug === 'rodent-control' && (
+    <Training installers heading="Product certifications we hold" />
   )}
 
   {Body ? (

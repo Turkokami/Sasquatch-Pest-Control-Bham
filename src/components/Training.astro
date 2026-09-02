@@ -26,8 +26,10 @@ interface Props {
   /** Narrow the list to the courses that bear on this page. */
   only?: string[];
   heading?: string;
+  /** Show the product installer certifications instead of the courses. */
+  installers?: boolean;
 }
-const { only, heading = 'Training we have actually done' } = Astro.props;
+const { only, heading = 'Training we have actually done', installers = false } = Astro.props;
 
 const t = business.training;
 const courses = only
@@ -38,12 +40,35 @@ const courses = only
    as prose rather than as the same sentence seven times. */
 const issuers = [...new Set(courses.map((c) => c.issuerFull))];
 
+const certs = installers ? t.installerCertifications : [];
+
 const usDate = (iso: string) =>
   new Date(iso).toLocaleDateString('en-US', {
     month: 'long', year: 'numeric', timeZone: 'UTC',
   });
 ---
-{courses.length > 0 && (
+{certs.length > 0 && (
+  <section class="training" data-boilerplate>
+    <h2>{heading}</h2>
+    <ul>
+      {certs.map((c) => (
+        <li>
+          {/* Issuer in the same breath as the word, always. A certification
+              with no issuer named is the one thing this file forbids. */}
+          <b>{c.product} certified installer</b> — issued by {c.issuer}, for{' '}
+          {c.appliesTo}.
+        </li>
+      ))}
+    </ul>
+    <p class="training-note">
+      Stated by the owner; we have not published the certificate here yet.
+      These are product installer certifications, not licenses — our WSDA
+      pesticide licenses are listed on the <a href="/about/">about page</a>.
+    </p>
+  </section>
+)}
+
+{!installers && courses.length > 0 && (
   <section class="training" data-boilerplate>
     <h2>{heading}</h2>
     <p>

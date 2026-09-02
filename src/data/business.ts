@@ -825,6 +825,34 @@ export const business = {
         ceu: 1,
       },
     ],
+
+    /* PRODUCT INSTALLER CERTIFICATIONS — a different kind of credential from
+       the courses above, and closer to the middle of what this company does.
+
+       "Certified" is the correct word here and it is allowed, because the
+       issuer is named. The rule this file keeps is not that "certified" is
+       forbidden; it is that "certified" with NO issuer is the failure mode —
+       see the note above the credential block. Anything rendering this must
+       carry "by AAC" in the same breath.
+
+       NOT EVIDENCED YET. Owner-stated on 2 Sep 2026; no certificate is on
+       file, unlike the seven insulation courses. It renders as an attributed
+       claim rather than as a document, and `via` flips when the paperwork
+       arrives. The issuer is also recorded only as the initials the owner
+       used — the full legal name of AAC needs confirming before this can say
+       an issuer a reader could go and check, which is the whole point of
+       naming one. That question is on the owner questionnaire. */
+    installerCertifications: [
+      {
+        product: 'RidgeGuard',
+        issuer: 'AAC',
+        /** PENDING: the full name behind the initials. Do not guess it. */
+        issuerFull: PENDING as Owed<string>,
+        appliesTo: 'rodent and wildlife exclusion, including preventative work',
+        via: 'owner-stated' as const,
+        stated: '2026-09-02',
+      },
+    ],
   },
 
   /* THE CRM LEAD FORM — the live GoHighLevel widget, copied from the site it
