@@ -1,0 +1,74 @@
+---
+/**
+ * Training — the insulation and air-sealing course completions.
+ *
+ * WHAT THIS MAY AND MAY NOT SAY. Course completions, named issuer, the word
+ * "completed". Not "certified", not "licensed", not "qualified" — this file is
+ * one of the places the credential discipline in business.ts has to hold, and
+ * "certified" with no issuer named is the exact failure mode src/lib/seo.ts
+ * spends a page on. The issuer is printed in full on first mention for the
+ * same reason: a reader can go and check Bonneville Power Administration.
+ *
+ * TWO KINDS OF CLAIM, RENDERED DIFFERENTLY. The certificates on file are one
+ * person's. The owner says the whole crew holds the same ones, which is
+ * probably true and is not evidenced, so it renders as a plainly attributed
+ * sentence rather than being folded into the list as though a document backed
+ * it. When the crew's certificates arrive, business.training.crewVia changes
+ * and this paragraph changes with it.
+ *
+ * data-boilerplate, because this block repeats verbatim across the service
+ * pages that carry it and the duplicate-sentence scanner would otherwise flag
+ * it on three or more pages — which is exactly what it is.
+ */
+import { business } from '../data/business';
+
+interface Props {
+  /** Narrow the list to the courses that bear on this page. */
+  only?: string[];
+  heading?: string;
+}
+const { only, heading = 'Training we have actually done' } = Astro.props;
+
+const t = business.training;
+const courses = only
+  ? t.courses.filter((c) => only.some((k) => c.title.toLowerCase().includes(k)))
+  : t.courses;
+
+/* Issuers named once each, in the order they first appear, so the block reads
+   as prose rather than as the same sentence seven times. */
+const issuers = [...new Set(courses.map((c) => c.issuerFull))];
+
+const usDate = (iso: string) =>
+  new Date(iso).toLocaleDateString('en-US', {
+    month: 'long', year: 'numeric', timeZone: 'UTC',
+  });
+---
+{courses.length > 0 && (
+  <section class="training" data-boilerplate>
+    <h2>{heading}</h2>
+    <p>
+      Course completions held by {t.holder}, issued by{' '}
+      {issuers.map((i, n) => (
+        <>{n > 0 ? (n === issuers.length - 1 ? ' and ' : ', ') : ''}{i}</>
+      ))}.
+    </p>
+    <ul>
+      {courses.map((c) => (
+        <li>
+          <b>{c.title}</b> — {c.issuer}, completed {usDate(c.completed)}
+          {c.ceu ? `, ${c.ceu} CEU` : ''}
+        </li>
+      ))}
+    </ul>
+    {t.crewCompleted && (
+      <p class="training-note">
+        The owner states the rest of the crew has completed the same courses.
+        The certificates on file here are {t.holder}'s.
+      </p>
+    )}
+    <p class="training-note">
+      These are training completions, not licenses. Our WSDA pesticide licenses
+      are listed on the <a href="/about/">about page</a>.
+    </p>
+  </section>
+)}

@@ -4,6 +4,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import LeadForm from '../../../components/LeadForm.astro';
 import Photo from '../../../components/Photo.astro';
+import Training from '../../../components/Training.astro';
 import { servicePhotos } from '../../../data/photos';
 import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
@@ -91,6 +92,26 @@ const guideLinks = await guideLinksFor(path);
       without a photograph renders without one rather than borrowing a stock
       image of somebody else's job. */}
   {servicePhotos[s.slug] && <Photo photo={servicePhotos[s.slug]} />}
+
+  {/* TRAINING, ON THE THREE PAGES IT ACTUALLY BEARS ON. Insulation courses
+      belong on the insulation and crawlspace pages; the air-sealing course
+      belongs on exclusion, because air sealing and rodent exclusion are the
+      same skill pointed at two outcomes. Putting the block on all 23 service
+      pages would make it furniture and would be claiming relevance it does
+      not have on, say, the spider page. Each page is filtered to the courses
+      that are about its own subject. */}
+  {s.slug === 'attic-insulation' && (
+    <Training only={['attic', 'air sealing', 'wall', 'roof/ceiling']} />
+  )}
+  {s.slug === 'crawlspace-restoration' && (
+    <Training only={['floor', 'belly', 'air sealing', 'fiber glass']} />
+  )}
+  {s.slug === 'exclusion-and-repairs' && (
+    <Training
+      only={['air sealing']}
+      heading="Air sealing is the same skill as exclusion"
+    />
+  )}
 
   {Body ? (
     <div class="prose"><Body /></div>

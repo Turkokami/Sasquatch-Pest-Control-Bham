@@ -1586,6 +1586,40 @@ footer.site .colophon {
   border-top: 1px solid var(--rule);
 }
 
+/* ------------------------------------------------- §21c  training block */
+
+/* Course completions, rendered on the service pages they bear on. Set as a
+   plain ruled list rather than as badges: these are documents, and a row of
+   logos would read as decoration and invite exactly the "certified" reading
+   the component's comment rules out. */
+.training {
+  margin: var(--space-5) 0;
+  max-width: var(--measure);
+  padding: var(--space-4);
+  background: var(--well);
+  border-left: 3px solid var(--accent-line);
+  border-radius: var(--radius-sm);
+}
+.training h2 {
+  font-size: var(--fs-h3);
+  margin: 0 0 var(--space-2);
+  padding-top: 0;
+  border-top: 0;
+}
+.training ul {
+  margin: var(--space-3) 0;
+  padding-left: 1.1rem;
+}
+.training li {
+  margin-bottom: 0.45rem;
+  font-size: var(--fs-sm);
+}
+.training-note {
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+  margin: var(--space-2) 0 0;
+}
+
 /* ------------------------------------------------------------ §22  misc */
 
 .stub {

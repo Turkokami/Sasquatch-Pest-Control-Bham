@@ -733,6 +733,100 @@ export const business = {
    *  check the 4.9 for themselves. */
   gbpUrl: PENDING as Owed<string>,
 
+  /* INSULATION AND AIR-SEALING TRAINING. Certificates supplied by the owner,
+     2 Sep 2026, and read off the certificates themselves rather than from a
+     description of them — issuer, exact course title, date and CEU value are
+     all on the artwork.
+
+     WHY THIS IS WORTH PUBLISHING. The site sells attic insulation and
+     crawlspace restoration and, until now, answered "do you actually know how
+     to install insulation" with nothing at all. It is also the rare credential
+     a competitor cannot copy off a supplier's website: Comfort Ready Home is a
+     BONNEVILLE POWER ADMINISTRATION program, which is a federal power agency
+     and regionally meaningful in a way a trade-magazine badge is not, and
+     NAIMA and ICAA are the insulation industry's own manufacturer and
+     contractor associations.
+
+     "Effective Air Sealing Made Simple" is the one to notice. Air sealing and
+     rodent exclusion are the same skill pointed at two different outcomes, so
+     that course backs the core service rather than the sideline.
+
+     TRAINING, NOT A LICENSE, AND THE WORDING MUST KEEP SAYING SO. These are
+     course completions. They confer no regulatory authority, they are not a
+     WSDA credential, and they are not a certification anybody may be described
+     as "certified" under — see the note above the credential block on why
+     "certified" with no issuer named is the failure mode this file exists to
+     prevent. Every rendering names the issuer and the word is "completed".
+
+     WHOSE TRAINING. The certificates on file are Kristofer Elling's. The owner
+     states on the same date that the whole crew has completed the same
+     courses, which is very likely true and is not evidenced here, so it is
+     recorded as a separate owner-stated claim and rendered differently. Get
+     the staff certificates and `crewCompleted` can be upgraded the way the
+     WSDA licenses will be. */
+  training: {
+    /** Documents held for this person. */
+    holder: 'Kristofer R. Elling',
+    via: 'certificate-held' as const,
+    supplied: '2026-09-02',
+    /** Owner states the rest of the crew hold the same completions. Not evidenced. */
+    crewCompleted: true,
+    crewVia: 'owner-stated' as const,
+    courses: [
+      {
+        issuer: 'NAIMA & ICAA',
+        issuerFull:
+          'North American Insulation Manufacturers Association and Insulation Contractors Association of America',
+        title:
+          'Introduction to Proper Installation of Fiber Glass and Mineral Wool Insulation',
+        completed: '2024-03-28',
+        ceu: null as number | null,
+      },
+      {
+        issuer: 'Comfort Ready Home',
+        issuerFull: 'Comfort Ready Home, a Bonneville Power Administration program',
+        title: 'Simple and Effective Attic Insulation',
+        completed: '2024-04-07',
+        ceu: 1,
+      },
+      {
+        issuer: 'Comfort Ready Home',
+        issuerFull: 'Comfort Ready Home, a Bonneville Power Administration program',
+        title: 'Simple and Effective Floor Insulation',
+        completed: '2024-04-07',
+        ceu: 1,
+      },
+      {
+        issuer: 'Comfort Ready Home',
+        issuerFull: 'Comfort Ready Home, a Bonneville Power Administration program',
+        title: 'Effective Air Sealing Made Simple',
+        completed: '2024-04-07',
+        ceu: 1,
+      },
+      {
+        issuer: 'Comfort Ready Home',
+        issuerFull: 'Comfort Ready Home, a Bonneville Power Administration program',
+        title: 'Site Built Wall Insulation',
+        completed: '2024-04-08',
+        ceu: 1,
+      },
+      {
+        issuer: 'Comfort Ready Home',
+        issuerFull: 'Comfort Ready Home, a Bonneville Power Administration program',
+        title: 'Manufactured Home Roof/Ceiling Insulation',
+        completed: '2024-04-08',
+        ceu: 1,
+      },
+      {
+        issuer: 'Comfort Ready Home',
+        issuerFull: 'Comfort Ready Home, a Bonneville Power Administration program',
+        title: 'Filling the Belly — Manufactured Home Floor Insulation',
+        completed: '2024-04-08',
+        ceu: 1,
+      },
+    ],
+  },
+
   /* THE CRM LEAD FORM — the live GoHighLevel widget, copied from the site it
      is replacing rather than rebuilt.
 
