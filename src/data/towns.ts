@@ -140,7 +140,11 @@ export const towns: Town[] = [
     population: 6000,
     housing: 'mixed',
     kind: 'city',
-    pestPressures: ['rodents in marina and gear storage', 'salt corrosion opening the building envelope', 'carpenter ants in cedar'],
+    pestPressures: [
+      'rodents in marina and gear storage', 'salt corrosion opening the building envelope', 'carpenter ants in cedar',
+      /* Owner-supplied, 2 Sep 2026. */
+      'carpenter ants out of beach driftwood',
+    ],
     landmarks: ['Blaine Harbor', 'Semiahmoo Spit', 'the Peace Arch crossing'],
   },
   {
@@ -164,7 +168,11 @@ export const towns: Town[] = [
     population: 2800,
     housing: 'rural',
     kind: 'city',
-    pestPressures: ['feed-room rodents in outbuildings', 'flies around livestock operations'],
+    pestPressures: [
+      'feed-room rodents in outbuildings', 'flies around livestock operations',
+      /* Owner-supplied, 2 Sep 2026. */
+      'rodents around chicken coops',
+    ],
     landmarks: ['the Nooksack River', 'the Everson–Goshen agricultural corridor'],
   },
   {
@@ -176,7 +184,11 @@ export const towns: Town[] = [
     population: 1600,
     housing: 'rural',
     kind: 'city',
-    pestPressures: ['rodents from surrounding berry acreage', 'overwintering cluster flies'],
+    pestPressures: [
+      'rodents from surrounding berry acreage', 'overwintering cluster flies',
+      /* Owner-supplied, 2 Sep 2026. */
+      'stink bugs and Asian lady beetles',
+    ],
   },
   {
     slug: 'sumas',
@@ -187,7 +199,11 @@ export const towns: Town[] = [
     population: 1500,
     housing: 'rural',
     kind: 'city',
-    pestPressures: ['border-crossing freight rodent pressure', 'stored-product insects in warehousing'],
+    pestPressures: [
+      'border-crossing freight rodent pressure', 'stored-product insects in warehousing',
+      /* Owner-supplied, 2 Sep 2026. */
+      'stink bugs and Asian lady beetles',
+    ],
     landmarks: ['the Sumas border crossing'],
   },
   {
@@ -200,9 +216,12 @@ export const towns: Town[] = [
     housing: 'seventies',
     kind: 'cdp',
     pestPressures: [
+      
       'carpenter ants in 1970s cedar',
       'rodents from the surrounding forest edge',
       'damp crawlspaces at the low end of sloped lots',
+      /* Owner-supplied, 2 Sep 2026. */
+      'heavy mouse pressure off the surrounding woodland',
     ],
     landmarks: ['Lake Whatcom', 'the Sudden Valley golf course'],
   },
@@ -230,7 +249,11 @@ export const towns: Town[] = [
     direction: 'northwest',
     housing: 'rural',
     kind: 'community',
-    pestPressures: ['farm and field rodents', 'cluster flies in open country'],
+    pestPressures: [
+      'farm and field rodents', 'cluster flies in open country',
+      /* Owner-supplied, 2 Sep 2026. */
+      'spiders and wasps',
+    ],
   },
   {
     /* Owner confirmed 30 Aug 2026, along with Custer and Deming. Acme sits in
@@ -244,7 +267,11 @@ export const towns: Town[] = [
     direction: 'southeast',
     housing: 'rural',
     kind: 'community',
-    pestPressures: ['forest-edge rodents', 'carpenter ants in cedar'],
+    pestPressures: [
+      'forest-edge rodents', 'carpenter ants in cedar',
+      /* Owner-supplied, 2 Sep 2026. */
+      'wasps and spiders',
+    ],
   },
   {
     slug: 'deming',
@@ -254,7 +281,11 @@ export const towns: Town[] = [
     direction: 'east',
     housing: 'rural',
     kind: 'community',
-    pestPressures: ['forest-edge rodents', 'carpenter ants in cedar'],
+    pestPressures: [
+      'forest-edge rodents', 'carpenter ants in cedar',
+      /* Owner-supplied, 2 Sep 2026. */
+      'wasps and spiders',
+    ],
   },
   /* --- Skagit County. Gated on business.territory.skagitConfirmed
      (owner decision #4) — these build only if the territory is confirmed. --- */

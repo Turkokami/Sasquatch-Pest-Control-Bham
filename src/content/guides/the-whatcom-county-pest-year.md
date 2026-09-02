@@ -22,7 +22,7 @@ faqs:
   - q: "Why does everything happen in October?"
     a: "Cooling nights and declining outdoor resources. Rodents look for a warm building, spiders reach maturity and start walking, and several insect species look for somewhere to spend the winter. None of it is caused by anything you did."
   - q: "Is there a quiet season?"
-    a: "January through March is genuinely quiet for arrivals, though it is when people notice what got in during the autumn. It is also the best window for interior sealing work and for planning the summer exterior work."
+    a: "Quiet for new arrivals, and not quiet for us. January through March is heavy rodent and exclusion work — it is when people notice what got in during the autumn, and when the sealing that stops it happening again actually gets done. If you want the exterior work booked without competing with the August rush, this is the window."
   - q: "Do pests really die off in winter?"
     a: "Some do. Wasp and hornet colonies collapse with hard frosts, leaving only mated queens. Overwintering insects go dormant rather than dying, and rodents do not slow down at all — they are in a heated building by then."
   - q: "What single month should I put in the calendar?"

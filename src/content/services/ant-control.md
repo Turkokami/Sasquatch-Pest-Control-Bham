@@ -1,9 +1,9 @@
 ---
 service: ant-control
 title: "Ant & Carpenter Ant Control in Bellingham, WA"
-description: "Carpenter ant and moisture ant control for Bellingham and Whatcom County homes. We find the nest and the water source, not just the trail. Call 360-410-2199."
+description: "Odorous house ant, carpenter ant and moisture ant control in Bellingham and Whatcom County. We identify the species first. Call 360-410-2199."
 h1: "Ant & Carpenter Ant Control in Bellingham & Whatcom County"
-answer: "Ant control here starts with identification, because the two species we see most call for opposite responses. Carpenter ants excavate structural wood and need the nest found. Moisture ants are telling you there is water in the building. Treating the trail without answering that question means treating it again next spring."
+answer: "Odorous house ants are the ant most homes here actually have, and the one a hardware-store spray makes worse — repellents split the colony rather than killing it. Carpenter ants are about three calls in ten and are what damages the building. Moisture ants mean water. Identification decides the treatment, because the three want different work."
 expert: kristofer-elling
 ready: true
 faqs:
@@ -21,27 +21,47 @@ faqs:
     a: "Weeks rather than days, and we will not attach a firmer number than that to carpenter ants, because the extension literature does not give one. Expect activity to rise briefly first as bait circulates. Odorous house ants are the species with a well-attested figure, at two to three weeks. Moisture ants go once the water is corrected, and return if it is not."
 ---
 
-## Two ants, two completely different problems
+## Three ants, and only one of them eats your house
 
 More money is wasted on ant treatment in this county than on any other pest,
 and almost all of it comes down to one mistake: treating the ant you can see
 instead of identifying which ant it is.
 
-The two species that account for most of our residential calls are the western
-black carpenter ant and the moisture ants, and they call for close to opposite
-responses. Carpenter ants are a structural issue — they excavate galleries, they
-maintain satellite colonies inside buildings, and the job is finding the nest.
-Moisture ants are not really a pest problem at all. They are an indicator. They
-only nest in wood that is already wet, so finding them inside a wall means water
-has been getting into that wall long enough to soften it.
+Roughly, and from our own call volume rather than from a textbook:
 
-Treat a moisture ant infestation as an ant problem and you will get a quiet
-month and a repeat call next spring. Correct the water and the ants leave on
-their own, because the thing that made the site habitable is gone.
+**Odorous house ants lead, and it is not close.** This is the ant most homes
+here actually have. It does no structural damage at all, which is exactly why
+people treat it themselves — and it is the one species where doing that makes
+things worse rather than merely failing. Repellent sprays cause the colony to
+**bud**: it fragments and relocates instead of dying, and one nest becomes three
+or four. A great many of the ant jobs we are called to are jobs somebody has
+already made harder.
 
-This is the distinction that decides whether a treatment works, and it is why
-we will not quote ant work over the phone from a description of "big black
-ants."
+**Carpenter ants are about three calls in ten**, and they are the species that
+matters structurally. They excavate galleries, maintain satellite colonies
+inside buildings, and the work is finding the nest rather than killing the
+trail.
+
+**Moisture ants are fewer again** — a small share of the year — and they are not
+really a pest problem at all. They are an indicator. They only nest in wood that
+is already wet, so finding them inside a wall means water has been getting into
+that wall long enough to soften it. Correct the water and they leave on their
+own, because the thing that made the site habitable is gone.
+
+Those three want different work, and one of them wants the opposite of what the
+bottle under the sink does. That is why we will not quote ant work over the
+phone from a description of "small black ants."
+
+## Odorous house ants
+
+**Odorous house ant** (*Tapinoma sessile*). Small, dark brown, and unmistakable
+once you know it — crushed workers smell strongly of coconut or blue cheese.
+Nests indoors and out, often in wall voids, under floors, or beneath objects on
+the ground. The important thing about this species is the budding described
+above: it is the ant that most often gets worse after somebody treats it from a
+hardware-store bottle. It requires baiting and patience, and patience is the
+part people are not warned about — a bait working properly still looks like
+nothing is happening for the first week.
 
 ## Carpenter ants
 
@@ -125,15 +145,6 @@ We will tell you when the person you actually need is a contractor. That
 sometimes costs us the treatment, and it is the right call.
 
 ## The others you will meet here
-
-**Odorous house ant** (*Tapinoma sessile*). Small, dark brown, and unmistakable
-once you know it — crushed workers smell strongly of coconut or blue cheese.
-Nests indoors and out, often in wall voids, under floors, or beneath objects on
-the ground. The important thing about this species is that repellent sprays
-cause **budding**: the colony fragments and relocates rather than dying, and you
-convert one nest into three or four. This is the ant that most often gets
-worse after somebody treats it from a hardware-store bottle. It requires baiting
-and patience.
 
 **Pavement ant.** Small, dark, characteristically nesting under slabs, driveways,
 walkways and against foundations, throwing up small soil craters at cracks and

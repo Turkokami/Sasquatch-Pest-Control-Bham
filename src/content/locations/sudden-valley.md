@@ -20,7 +20,7 @@ faqs:
   - q: "Are the steep lots and narrow roads a problem for scheduling?"
     a: "Not usually, but they change the work. Daylight basements, sloped crawlspaces and decks over grade mean more of the building envelope is below or against earth, and access for equipment can be limited. It is worth mentioning your driveway when you call if it is a difficult one."
   - q: "How far are you from Sudden Valley?"
-    a: "About eight miles from our shop, which makes it one of the quicker addresses in the county for us, though the last stretch is slower than the map suggests. Reckon on a day or two, and nearer three when the autumn rush arrives."
+    a: "About eight miles from our shop, which makes it one of the quicker addresses in the county for us, though the last stretch is slower than the map suggests. Reckon on a day or two, and nearer three at the August and September peak."
 ---
 
 ## Cedar, slope and forest
@@ -70,6 +70,16 @@ Frass is the useful diagnostic. Carpenter ants push out shavings, so the debris
 below a gallery is fibrous and often contains insect body parts. That is
 different from termite pellets and different from the fine powder a wood-boring
 beetle leaves, and the distinction changes the treatment entirely.
+
+## Mice, and why there are so many
+
+Carpenter ants are the signature problem here, and mice are the volume one.
+Sudden Valley is houses set into standing woodland, and mouse pressure off
+woodland is a different order of magnitude from mouse pressure in a town — there
+is no edge to push back, because the forest starts at the deck. Deer mice come
+in off the trees and the ground cover, and they arrive in numbers rather than
+singly. The consequence for the work is that trapping alone is a treadmill here.
+The building has to be closed, or the woods simply send more.
 
 ## The watershed, which constrains everything
 

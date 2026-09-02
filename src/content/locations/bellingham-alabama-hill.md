@@ -21,7 +21,7 @@ faqs:
   - q: "Is the forest edge behind us the cause?"
     a: "It is the supply, not the cause. Wooded ground delivers animals to the building, but what decides whether they get in is the envelope. That part is finite work with an end point, unlike the treeline, which is permanent and should be."
   - q: "How quickly can you get up here?"
-    a: "One to two days is typical anywhere in Whatcom County, stretching to about three once the autumn rush starts. Mention your driveway if it is steep or narrow, because on this hill that occasionally changes what we can bring and how long a job takes."
+    a: "One to two days is typical anywhere in Whatcom County, stretching to about three through August and September, which are our heaviest weeks. Mention your driveway if it is steep or narrow, because on this hill that occasionally changes what we can bring and how long a job takes."
 ---
 
 ## A neighborhood that aged all at once

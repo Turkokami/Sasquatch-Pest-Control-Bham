@@ -369,11 +369,12 @@ faster, and finishing the roofline last means the ladder comes out once.
 
 ## The honest position on the timing
 
-This page argues against our own October.
+This page argues against our own autumn.
 
-October is the busiest month in this trade, and a good share of it is buildings
-that would not have needed us if somebody had spent an afternoon on them in
-August. Publishing that is not generosity; it is the position we would rather
+August and September are our heaviest weeks and October is barely quieter,
+because as the wasp work falls away the rodent work picks straight up. A good
+share of that rodent autumn is buildings that would not have needed us if
+somebody had spent an afternoon on them in August. Publishing that is not generosity; it is the position we would rather
 compete on. A building sealed in late summer is a customer who calls us about
 the next house, and a customer paying a subscription to manage a problem that a
 day of work would have addressed is a customer with a reason to leave.

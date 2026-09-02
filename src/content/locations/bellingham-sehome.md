@@ -19,7 +19,7 @@ faqs:
   - q: "What is the arboretum actually bringing down?"
     a: "Deer mice and rats using cover to reach the buildings, and the heaviest spider and centipede pressure in the city outside the lake shore. Insect production in damp wooded ground feeds everything above it, and the spiders follow the food."
   - q: "How quickly can you get here?"
-    a: "Normally a day or two from the call, and nearer three at the busiest point of the autumn. Sehome is a short run from our shop, and for an apartment building we will schedule around access rather than turning up and hoping somebody is home."
+    a: "Normally a day or two from the call, and nearer three in late summer, when August and September run hardest. Sehome is a short run from our shop, and for an apartment building we will schedule around access rather than turning up and hoping somebody is home."
   - q: "Do I pay for the visit?"
     a: "Not for any pest except bed bugs, where there is a verification fee that comes off the treatment price if you go ahead. Everything else — rodents, ants, spiders, crawlspace concerns — costs nothing to have looked at."
 ---

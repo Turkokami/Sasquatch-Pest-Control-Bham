@@ -100,6 +100,16 @@ rodent control products we choose programs and active ingredients selected to
 limit secondary poisoning risk, which matters a great deal in country where
 owls, hawks and eagles are hunting the same population.
 
+## Chicken coops
+
+Backyard poultry is common here and it is a rodent magnet, which is worth saying
+plainly because people are attached to the birds and assume the problem is the
+birds. It is not. It is the feed, the spillage under the feeder, and the coop
+floor — a heated, dry, covered structure with food in it, standing in open
+ground. We deal with rodents around coops in Everson constantly, and the work is
+almost always the same: get the feed into hard containers, clear the spill, and
+close the coop itself rather than treating the yard around it.
+
 ## Flies, where there is livestock
 
 Where there are animals there are flies, and it is a production issue rather

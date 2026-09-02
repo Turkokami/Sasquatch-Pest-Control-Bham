@@ -137,17 +137,23 @@ more about the size of the problem than a week of listening at the floor. It is
 also the part of a property a homeowner can survey without going anywhere
 unpleasant.
 
-## The year, which runs on rain rather than cold
+## The year, which runs on rain first and then cold
 
-The received explanation for autumn rats is cold. In Whatcom County that is the
-wrong mechanism, and believing it puts the prevention work in the wrong month.
+Two mechanisms, in that order, and most accounts of autumn rats only carry the
+second one.
 
-We do not get a sustained freeze. What we get is a long saturating wet season,
-and a burrow eighteen inches into soil that has taken on thirty-odd inches of
-annual rainfall stops being habitable. The animal that dug it is not fleeing
-temperature; it is fleeing groundwater. The dry, heated underside of a house is
-the nearest available replacement, and it is available because of a vent screen
-that rusted through some years ago.
+The rain moves them. We do not get a sustained freeze, but we do get a long
+saturating wet season, and a burrow eighteen inches into soil that has taken on
+thirty-odd inches of annual rainfall stops being habitable. The animal that dug
+it is displaced by groundwater before the temperature has done anything at all.
+That is why the prevention work belongs in late summer rather than in the cold.
+
+The cold is what then drives the activity. Once they are already displaced and
+looking, a genuinely cold snap is what pushes them from under the deck and the
+blackberry into the building itself, and it is the sharpest predictor of the
+calls we take. Rain relocates them; cold decides where they end up. The dry,
+heated underside of a house is the nearest available replacement, and it is
+available because of a vent screen that rusted through some years ago.
 
 That gives a real and unusually specific piece of timing advice. The work that
 prevents a winter of rats is done in the second half of August, on a dry

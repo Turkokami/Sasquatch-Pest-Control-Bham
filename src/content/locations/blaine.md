@@ -74,6 +74,17 @@ version of the job worth doing here. We would rather quote the durable version
 and explain why than win the work with a cheaper specification that will not
 survive.
 
+## Driftwood on the beaches
+
+One local source worth naming, because it does not apply anywhere else we work.
+The beaches here accumulate driftwood, and driftwood that has sat wet on a shore
+for years is carpenter ant habitat by the time it is picked up. A load carried
+home for a firepit, a border, a bit of landscaping or a woodshed brings the
+colony with it and sets it down against a building. We find carpenter ants
+started this way in Blaine more than anywhere else in the county, and the tell
+is that the nest is outdoors, recent, and nowhere near the water damage that
+usually explains one.
+
 ## Houses that stand empty
 
 A large share of Blaine and Semiahmoo property is seasonal, second homes, or

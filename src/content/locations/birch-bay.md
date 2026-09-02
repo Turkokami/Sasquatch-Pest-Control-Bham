@@ -18,7 +18,7 @@ faqs:
   - q: "Does the bay itself affect what you deal with?"
     a: "It does. Shallow tidal flats produce insects in quantity, which feeds the spiders, and salt and wind work on every metal component of a building envelope. Vent screens and previous exclusion work corrode faster here than they do a few miles inland."
   - q: "How quickly can you get to Birch Bay?"
-    a: "It sits on scheduled route days rather than same-day work, being about eighteen miles from our shop, though in practice that is usually a wait of only a day or two — closer to three when autumn is at its heaviest. For an active wasp nest by a door, or a rodent in living space at an occupied rental, tell us and we will do what we can to move it up the week."
+    a: "It sits on scheduled route days rather than same-day work, being about eighteen miles from our shop, though in practice that is usually a wait of only a day or two — closer to three across August and September, the heaviest part of our year. For an active wasp nest by a door, or a rodent in living space at an occupied rental, tell us and we will do what we can to move it up the week."
   - q: "Do you charge for the inspection?"
     a: "No, for every pest except bed bugs, which carry a verification fee that is credited against treatment if you proceed. For rental owners we will also tell you plainly which items are worth doing before the season and which can wait until it is over."
 ---

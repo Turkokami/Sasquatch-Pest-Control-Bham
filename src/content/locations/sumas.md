@@ -134,6 +134,16 @@ of a manure pack, a leaking waterer, feed fermenting at the end of a bunk,
 bedding that has not been turned, the drainage low point that never dries — a
 short and predictable list, and correcting it beats any spray schedule.
 
+## Stink bugs and Asian lady beetles
+
+Both are overwintering insects rather than a structural problem, and both are a
+real and recurring Sumas call. They gather on sunlit walls in autumn — south and
+west faces, warm afternoons — and then work into the building through the same
+small gaps everything else uses. The important thing to know is that once they
+are inside a wall void, treating them there is the wrong move: they die in the
+cavity, and what is left behind draws carpet beetles the following spring. The
+work is exterior, and it belongs before they gather rather than after.
+
 ## The residential town
 
 The housing in Sumas is a small-town mix, with the added complication that much

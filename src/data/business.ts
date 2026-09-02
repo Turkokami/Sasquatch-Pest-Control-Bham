@@ -43,7 +43,8 @@ export const business = {
      it — periods and all. `name` above stays the trading name; this is what
      goes in the schema `legalName` and on anything contractual. */
   legalName: 'Sasquatch Pest Control L.L.C.' as Owed<string>,
-  foundingYear: PENDING as Owed<number>,
+  /** Owner, 2 Sep 2026: June 2021. The month is on file; schema takes the year. */
+  foundingYear: 2021 as Owed<number>,
 
   /* The company's own line about itself, for schema `slogan` and nothing else.
      PENDING rather than written here, and the distinction matters: a slogan is
@@ -52,7 +53,12 @@ export const business = {
      blocking — see the lecture at the top of scripts/pending.mjs about guards
      that protect no claim. Nothing on the site says anything about a slogan
      while this is unset. */
-  slogan: PENDING as Owed<string>,
+  /* The owner's own words, 2 Sep 2026, and left in them. The only edit is the
+     stray capital on "Matter" — nothing else is anybody else's business to
+     tidy, because a slogan somebody else wrote is copy rather than the
+     company's slogan. The lower-case "squatch" is his and stays: it is the
+     verb doing the work in the joke. */
+  slogan: 'No matter your pest problems, we squatch your back!' as Owed<string>,
 
   /* BRAND ASSETS — paths under public/, or PENDING.
      -----------------------------------------------------------------------
@@ -299,10 +305,13 @@ export const business = {
      on a Skagit page is a promise nobody made. `scope` exists so the wording
      cannot quietly drop it.
 
-     PEAK IS AUTUMN, and the site already says so in its own voice: the sealing
-     guide calls October "the busiest month in this trade" and the fall rodent
-     post calls autumn the busiest rodent season. `peakDays` agrees with those
-     rather than introducing a third account of the year. */
+     PEAK IS LATE SUMMER, and this was wrong until the owner corrected it on
+     2 Sep 2026. An earlier pass took "October is the busiest month in this
+     trade" from the sealing guide and built the whole response-time line on it.
+     The owner's account: August and September are the highest, October dips
+     slightly, and rodents pick up as it does. So the busy season is a late
+     summer wasp peak that hands straight over to a rodent autumn, not one
+     October crest — which is also why the dip is not a lull for the crew. */
   responseTime: {
     /** Typical days from call to visit. Inclusive range. */
     typicalDaysMin: 1,
@@ -312,7 +321,7 @@ export const business = {
     /** Must appear in any sentence built from these numbers. */
     scope: 'Whatcom County',
     /** Matches the guides: October is the heaviest month in this trade. */
-    peakLabel: 'the autumn rush',
+    peakLabel: 'the late-summer peak',
     via: 'owner-supplied' as const,
     stated: '2026-09-02',
   },
@@ -770,7 +779,12 @@ export const business = {
     via: 'certificate-held' as const,
     supplied: '2026-09-02',
     /** Owner states the rest of the crew hold the same completions. Not evidenced. */
+    /* Owner, 2 Sep 2026: every member of staff has completed these except one
+       recent hire. Recorded with the exception rather than rounded up to
+       "everyone", because "all our technicians are trained" is the kind of
+       sentence that is true in September and quietly false in November. */
     crewCompleted: true,
+    crewExceptionNote: 'all staff except one recent hire',
     crewVia: 'owner-stated' as const,
     courses: [
       {
@@ -847,7 +861,12 @@ export const business = {
         product: 'RidgeGuard',
         issuer: 'AAC',
         /** PENDING: the full name behind the initials. Do not guess it. */
-        issuerFull: PENDING as Owed<string>,
+        /* Owner supplied the issuer's site on 2 Sep 2026, which titles itself
+           "Premium Wildlife Exclusion Products for Your Entire Home". That is
+           enough to name an issuer a reader can go and check, which was the
+           whole reason this was left blank. */
+        issuerFull: 'AAC Distributing' as Owed<string>,
+        issuerUrl: 'https://aacdistributing.com/' as Owed<string>,
         appliesTo: 'rodent and wildlife exclusion, including preventative work',
         via: 'owner-stated' as const,
         stated: '2026-09-02',
@@ -983,7 +1002,9 @@ export const business = {
      still says it does. Schema `paymentAccepted` renders nothing until the
      owner states the list. ADVISORY, not blocking: it gates no claim the site
      makes anywhere. */
-  paymentAccepted: PENDING as Owed<readonly string[]>,
+  /** Owner, 2 Sep 2026. Card is not broken down by network — he did not, so
+   *  neither does this. */
+  paymentAccepted: ['Cash', 'Check', 'Credit Card', 'ACH'] as Owed<readonly string[]>,
 
   pricing: {
     /* Confirms presence before anyone pays for a treatment. This is a service
