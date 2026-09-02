@@ -655,6 +655,16 @@ footer.site {
   transform: translateY(0);
 }
 
+/* The response-time line. Set slightly smaller than the paragraph above it
+   and in the marker colour, so it reads as a fact about the service rather
+   than as another sentence of positioning — it is the one line in this block
+   a reader might act on today. */
+.cta-speed {
+  color: var(--inv-marker);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
 /* ------------------------------------------------------ §11  link rails */
 
 /* Navigation, not content — so the heading is set as an eyebrow rather than

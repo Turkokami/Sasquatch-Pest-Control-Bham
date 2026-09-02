@@ -288,7 +288,8 @@ roof-level work.
 
 **Student rental belt** — Sehome, Happy Valley, near campus. High turnover, food
 handling that varies by tenant, and split responsibility between owner, manager
-and occupant. Mice more than rats.
+and occupant. Rats rather than mice, the same as the rest of the city — Norway
+rats at ground level, roof rats wherever a tree or a wire reaches the roofline.
 
 **Up around the lake.** Sudden Valley, Silver Beach and Edgemoor bring deer mice and
 forest pressure, seasonal spikes, and often a long-empty second home.

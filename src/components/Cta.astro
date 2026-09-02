@@ -25,6 +25,17 @@ const { market = 'Whatcom County', service, serviceSlug } = Astro.props;
    note above INSPECTION_CLAIMS in src/lib/seo.ts, which excludes a general
    free inspection offer from the regulated terms on purpose. */
 const offer = offerLabel(freeInspectionForSlug(serviceSlug));
+
+/* THE RESPONSE TIME, BUILT FROM business.ts RATHER THAN TYPED.
+   The scope is inside the sentence on purpose — the company works Skagit as
+   well as Whatcom, and the one-to-two-day figure is a Whatcom figure. Written
+   as "in Whatcom County" it stays true on a Mount Vernon page instead of
+   quietly promising that town something nobody committed to. See the long note
+   on business.responseTime. */
+const rt = business.responseTime;
+const responseLine =
+  `Most calls in ${rt.scope} are out within ${rt.typicalDaysMin}–${rt.typicalDaysMax} days, ` +
+  `about ${rt.peakDays} during ${rt.peakLabel}.`;
 ---
 <section class="cta" data-boilerplate>
   <h2>{service ? `${service} in ${market}?` : `Pest problem in ${market}?`}</h2>
@@ -32,6 +43,14 @@ const offer = offerLabel(freeInspectionForSlug(serviceSlug));
     Family-owned, no long-term contracts, and every treatment is backed by our
     <a href="/our-guarantee/">100% Service Guarantee</a>.
   </p>
+  {/* Its own paragraph rather than a clause on the end of the one above,
+      because "how soon can you come out" is the question a reader is actually
+      holding when they reach the foot of the page, and it should not have to
+      be found inside a sentence about contracts. Inside .cta, which is
+      data-boilerplate, so this repeating on 207 pages is invisible to the
+      duplicate-sentence scanner — which is exactly the case that attribute
+      exists for. */}
+  <p class="cta-speed">{responseLine}</p>
   <p>
     <a class="btn" href={`tel:${business.phoneE164}`}>{offer} — {business.phone}</a>
   </p>

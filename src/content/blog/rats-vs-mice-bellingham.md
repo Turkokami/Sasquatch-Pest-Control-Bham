@@ -34,9 +34,9 @@ Two rat species are common in Bellingham and across the Pacific Northwest. **Nor
 
 Whatcom County has resident populations of all three, but your risk depends on where you live and what your property looks like.
 
-- **House mice** are extremely common, especially in older construction with gaps around pipes, sill plates, and foundation penetrations. A mouse can squeeze through a gap about a quarter of an inch across — roughly the width of a pencil.
-- **Norway rats** cluster near waterways, drainage, and food sources: commercial districts, areas near Bellingham Bay, and properties with compost bins, chicken coops, or unsecured garbage.
-- **Roof rats** have expanded across the region over the past two decades and are now well established here, especially near mature fruit trees and dense landscaping. If you're losing fruit before harvest with none on the ground, roof rats are a likely culprit.
+- **Norway rats** are the ground-level rat and the one we see most in the built-up parts of the city. They cluster near waterways, drainage and food: commercial districts, areas near Bellingham Bay, and properties with compost bins, chicken coops, or unsecured garbage.
+- **Roof rats** have expanded across the region over the past two decades and are well established here, working the upper half of a building wherever mature fruit trees, fences or utility lines touch it. If you're losing fruit before harvest with none on the ground, roof rats are a likely culprit.
+- **House mice** are heaviest along the greenbelts and out in the county, where woodland edge, field margins and outbuildings sit against the structure. They turn up in the city too, particularly in older construction with gaps around pipes, sill plates and foundation penetrations — a mouse needs a gap about a quarter of an inch across, roughly the width of a pencil.
 
 ## What signs of mice vs. rats should you look for?
 
@@ -99,7 +99,7 @@ Mouse droppings are small — about 1/8 to 1/4 inch, smooth, and pointed at both
 
 ### Are rats or mice more common in Bellingham homes?
 
-House mice are the most common rodent inside Bellingham homes, particularly in older construction with gaps around pipes and foundations. Both Norway rats and roof rats are also well established in Whatcom County, especially near waterways, food sources, mature fruit trees, and dense landscaping.
+Rats, inside the city. Norway rats work at ground level — foundations, drains, decks and crawlspaces — while roof rats come in higher, wherever mature trees, fences or utility lines reach a roofline. Both are well established across Bellingham. House mice are the rodent you meet most along the greenbelts and out in the county, where field margins, woodland edge and outbuildings back onto the structure.
 
 ### Can the same treatment get rid of both rats and mice?
 

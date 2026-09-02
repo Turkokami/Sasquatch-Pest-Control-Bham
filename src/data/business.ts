@@ -281,6 +281,42 @@ export const business = {
    * a WSDA structural pest / wood-destroying-organism inspection, which is a
    * separately licensed activity still gated behind canClaimInspection.
    */
+  /* HOW LONG FROM THE CALL TO SOMEBODY TURNING UP. Owner-supplied, 2 Sep 2026.
+     One to two days anywhere in Whatcom County; about three at the busiest
+     point of the year.
+
+     THIS IS A PROMISE, WHICH IS WHY IT IS HERE RATHER THAN TYPED INTO COPY.
+     A response time is the one claim on a service site a reader can catch you
+     failing, on the day, with a phone in their hand. Keeping it in business.ts
+     means there is one number to change when the crew size or the season
+     changes, rather than nine paragraphs that will not all get found.
+
+     SCOPE IS PART OF THE FACT, NOT A FOOTNOTE. The owner said "anywhere in
+     Whatcom", and the company also works Skagit — Mount Vernon, Burlington,
+     Sedro-Woolley, Bow and Alger, which those pages describe as scheduled
+     route days rather than fill-in work. So every rendering of this must carry
+     "in Whatcom County" inside the sentence. A bare "usually one to two days"
+     on a Skagit page is a promise nobody made. `scope` exists so the wording
+     cannot quietly drop it.
+
+     PEAK IS AUTUMN, and the site already says so in its own voice: the sealing
+     guide calls October "the busiest month in this trade" and the fall rodent
+     post calls autumn the busiest rodent season. `peakDays` agrees with those
+     rather than introducing a third account of the year. */
+  responseTime: {
+    /** Typical days from call to visit. Inclusive range. */
+    typicalDaysMin: 1,
+    typicalDaysMax: 2,
+    /** At the autumn peak, when everyone phones at once. */
+    peakDays: 3,
+    /** Must appear in any sentence built from these numbers. */
+    scope: 'Whatcom County',
+    /** Matches the guides: October is the heaviest month in this trade. */
+    peakLabel: 'the autumn rush',
+    via: 'owner-supplied' as const,
+    stated: '2026-09-02',
+  },
+
   freeInspection: {
     default: true,
     /** Service slugs that do NOT get a free inspection. */
