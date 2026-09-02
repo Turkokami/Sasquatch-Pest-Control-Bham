@@ -7,6 +7,8 @@ import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import LocationMap from '../../../components/LocationMap.astro';
+import Photo from '../../../components/Photo.astro';
+import { locationPhotos } from '../../../data/photos';
 import { guideLinksFor } from '../../../lib/guides';
 import { towns } from '../../../data/towns';
 import { liveServices } from '../../../data/services';
@@ -97,6 +99,16 @@ const guideLinks = await guideLinksFor(path);
       prose. On a place page that question is the reason the reader came,
       so it is answered next to the form rather than after everything.
       The component still carries the privacy and keyless-embed reasoning. */}
+  {/* THE TOWN'S OWN PHOTOGRAPH, above the map and below the form. It is here
+      rather than further down because it is doing the same job the map is —
+      answering "do you work where I live" — and a photograph taken in the
+      reader's town answers it in a way a map pin cannot.
+
+      Not every town has one. Alger and Birch Bay have no photographs carrying
+      their name, so those pages render without one rather than borrowing a
+      picture of a different town's house. src/data/photos.ts has the list. */}
+  {locationPhotos[t.slug] && <Photo photo={locationPhotos[t.slug]} />}
+
   <LocationMap place={t.name} />
 
   {Body ? (

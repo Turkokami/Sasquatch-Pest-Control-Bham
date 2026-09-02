@@ -2,6 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import LeadForm from '../../components/LeadForm.astro';
+import Photo from '../../components/Photo.astro';
+import { locationsHubPhoto } from '../../data/photos';
 import Cta from '../../components/Cta.astro';
 import Faq from '../../components/Faq.astro';
 import { towns } from '../../data/towns';
@@ -63,6 +65,9 @@ const faqs = [
       copy would break both; the CTA at the foot no longer carries one and
       keeps its phone button. The sticky mobile bar jumps to this. */}
   <LeadForm />
+
+  {/* The hub is not a place, so it gets the vehicle rather than a town. */}
+  <Photo photo={locationsHubPhoto} />
 
   <div class="prose">
     <h2>One county, several different pest problems</h2>

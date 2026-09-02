@@ -77,3 +77,123 @@ export const servicePhotos: Record<string, Photo> = {
       'A bumblebee, photographed in Whatcom County. Bumblebees are pollinators and are not treated as a pest — telling one from a yellowjacket is most of what decides whether a nest needs anything done at all.',
   },
 };
+
+/* --------------------------------------------------------------------------
+ * LOCATION PHOTOS — one per town, and the town is not decoration.
+ *
+ * The filenames in the old media library encode where the work happened —
+ * `Pest-Control-Mt-Vernon-WA-7`, `Exterminator-Sudden-Valley-WA-18`. 530 of
+ * the 863 page-grade photographs carry a town that way, across sixteen towns.
+ * That is the piece of local context nobody could have supplied from memory,
+ * and it is what makes these photographs worth more on a place page than any
+ * stock image: the photograph on the Lynden page was taken in Lynden.
+ *
+ * WHAT GETS PICKED. A place page is answering "do you work where I live", so
+ * these lean towards the work in its setting — a technician at a house, a
+ * wrapped truck in a driveway, a vent in a wall — rather than the macro shots
+ * of insulation and foundation gaps that belong on the service pages. The
+ * detail shots are better evidence; these are better answers to the question
+ * the reader arrived with.
+ *
+ * WHAT IS DELIBERATELY MISSING, and it should stay missing until there are
+ * photographs to fix it:
+ *   - Alger and Birch Bay have no photographs carrying their name. No entry.
+ *   - The eleven Bellingham NEIGHBORHOOD pages resolve only to "Bellingham" in
+ *     the filenames, so there is no way to tell an Edgemoor photograph from a
+ *     Cordata one. Putting the same city photograph on eleven neighborhood
+ *     pages would be worse than putting none there: it is the duplication this
+ *     codebase keeps having to undo, and a reader who visits two of them sees
+ *     the trick immediately. They render without a photograph.
+ *   - Skagit County covers too much ground for one photograph to be honest
+ *     about, and nothing in the library is specifically of it. Whatcom County
+ *     is the exception below: Mount Baker is IN Whatcom County, so a truck in
+ *     the snow beneath it is a picture of the county rather than a stand-in
+ *     for it. That photograph was already in the repository and had never been
+ *     referenced by any page.
+ * ------------------------------------------------------------------------ */
+
+/** Keyed by the town's route segment under /locations/. */
+export const locationPhotos: Record<string, Photo> = {
+  bellingham: {
+    file: '/img/work/pest-control-technician-working-at-a-home-bellingham-wa.jpg',
+    alt: 'A pest control technician kneeling to work at the base of a house wall beside a deck, low sun coming through the trees behind',
+    caption:
+      'Working the exterior of a home in Bellingham. Most of a residential visit is spent along this line — where the siding meets the foundation, and where a deck or a porch makes it hard to see.',
+  },
+  ferndale: {
+    file: '/img/work/sasquatch-pest-control-van-at-a-home-ferndale-wa.jpg',
+    alt: 'A wrapped Sasquatch Pest Control van parked on a gravel driveway beside a blue house at sunset',
+    caption:
+      'On a driveway in Ferndale at the end of the day. Ferndale runs from town lots to acreage and outbuildings, and the two need different conversations.',
+  },
+  lynden: {
+    file: '/img/work/pest-control-technician-with-sprayer-lynden-wa.jpg',
+    alt: 'A pest control technician in a hard hat standing beside wheeled sprayer equipment at the side of a red house',
+    caption:
+      'Equipment staged at a house in Lynden. Farm country changes what turns up and when — grain, feed and outbuildings keep rodent pressure higher through the year than a town lot does.',
+  },
+  blaine: {
+    file: '/img/work/attic-gable-vent-on-a-home-blaine-wa.jpg',
+    alt: 'A round louvered attic vent set into the green shingled gable end of a house against a gray sky',
+    caption:
+      'A gable vent on a home in Blaine. A louvered vent with no screen behind it is an open door to an attic, and it is the first thing worth looking at on a house where something is heard overhead.',
+  },
+  everson: {
+    file: '/img/work/sasquatch-pest-control-truck-driveway-everson-wa.jpg',
+    alt: 'A wrapped Sasquatch Pest Control pickup truck parked on a driveway beside a garage during a service visit',
+    caption:
+      'On a service visit in Everson. Everson and the Nooksack valley around it are farm and river country, which keeps rodent and wildlife work steadier here than in town.',
+  },
+  sumas: {
+    file: '/img/work/paper-wasp-nest-in-soffit-sumas-wa.jpg',
+    alt: 'A paper wasp nest tucked into the corner of a soffit under the eave of a house',
+    caption:
+      'A paper wasp nest under an eave in Sumas. Nests in a soffit corner are usually found late, because nothing is visible from the ground until the colony is large enough to be heard.',
+  },
+  'sudden-valley': {
+    file: '/img/work/pest-control-technicians-crawlspace-job-sudden-valley-wa.jpg',
+    alt: 'Two pest control technicians in white protective suits standing beside their vans at a job site among trees',
+    caption:
+      'Suited up for a crawlspace job in Sudden Valley. Houses here are built into a wooded hillside, which means steep lots, deep crawlspaces and more contact with the trees than a flat lot has.',
+  },
+  'mount-vernon': {
+    file: '/img/work/sasquatch-pest-control-van-in-a-driveway-mount-vernon-wa.jpg',
+    alt: 'A wrapped Sasquatch Pest Control van parked on a wet driveway lined with tall evergreens',
+    caption:
+      'On a driveway in Mount Vernon. Skagit County work runs from valley farmland to town streets, and the two ends of that produce different problems in the same month.',
+  },
+  burlington: {
+    file: '/img/work/technician-working-on-crawlspace-ductwork-burlington-wa.jpg',
+    alt: 'A technician working by headlamp on flexible ductwork in a crawlspace beneath a house',
+    caption:
+      'Ductwork in a crawlspace in Burlington. Flexible duct is one of the first things rodents damage under a house, and torn duct is how a crawlspace problem becomes a heating bill.',
+  },
+  'sedro-woolley': {
+    file: '/img/work/damaged-foundation-vent-screen-rodent-entry-sedro-woolley-wa.jpg',
+    alt: 'A foundation vent set low in a wall with its screen bent and damaged, weeds growing across the opening',
+    caption:
+      'A damaged foundation vent in Sedro-Woolley. Vent screens rust and bend outward long before anybody notices, and weeds growing across them are why they go unchecked for years.',
+  },
+  bow: {
+    file: '/img/work/sasquatch-pest-control-truck-on-a-forest-road-bow-wa.jpg',
+    alt: 'A wrapped Sasquatch Pest Control pickup truck parked on a narrow forest road in dense green woodland',
+    caption:
+      'On a forest road near Bow. Properties out here sit against standing timber, and a building at the edge of the woods is treated as an edge rather than as a lot.',
+  },
+};
+
+/** Whatcom County. See the note above on why this one county gets a photograph. */
+export const whatcomCountyPhoto: Photo = {
+  file: '/img/work/service-truck-mount-baker-snow.jpg',
+  alt: 'A wrapped Sasquatch Pest Control pickup truck parked in deep snow among evergreens during heavy snowfall at Mount Baker',
+  caption:
+    'Above the snow line at Mount Baker, in the east of the county. Whatcom County runs from saltwater at Blaine to the mountains here, and the pest year at one end of that has little to do with the other.',
+};
+
+/** The /locations/ hub. Not a town, so it gets the vehicle rather than a place. */
+export const locationsHubPhoto: Photo = {
+  file: '/img/work/sasquatch-pest-control-van-custer-wa.jpg',
+  alt: 'The side of a wrapped Sasquatch Pest Control van showing the company name, phone number and free estimates graphic',
+  caption:
+    'One of the vans that covers this service area. Everywhere listed below is worked out of Bellingham by the same crew — there is no franchise office in between.',
+};

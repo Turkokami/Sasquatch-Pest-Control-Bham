@@ -13,6 +13,8 @@ import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
 import LocationMap from '../../components/LocationMap.astro';
+import Photo from '../../components/Photo.astro';
+import { whatcomCountyPhoto } from '../../data/photos';
 import { builtTowns } from '../../lib/geo';
 import { liveServices } from '../../data/services';
 
@@ -77,6 +79,10 @@ const faqs = [
       prose. On a place page that question is the reason the reader came,
       so it is answered next to the form rather than after everything.
       The component still carries the privacy and keyless-embed reasoning. */}
+  {/* Mount Baker is in this county, so this is a photograph OF the page's
+      subject rather than a generic truck shot standing in for it. */}
+  <Photo photo={whatcomCountyPhoto} />
+
   <LocationMap place="Whatcom County" />
 
   <div class="prose">
