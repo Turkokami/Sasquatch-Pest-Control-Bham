@@ -1,10 +1,10 @@
 /* ============================================================================
    Sasquatch Pest Control — the design system.
 
-   ONE token block, and it is the whole brand. Every colour, measure, type step
+   ONE token block, and it is the whole brand. Every color, measure, type step
    and rhythm value used anywhere on this site resolves through a custom
    property declared in §1. Nothing below §1, and nothing in any component or
-   page, may hard-code a colour: swapping a value here has to move the entire
+   page, may hard-code a color: swapping a value here has to move the entire
    site, because that is the only property that keeps 200-odd pages consistent
    without anyone auditing them one at a time.
 
@@ -47,7 +47,7 @@
   /* -- brand primitives ---------------------------------------------------
      Raw, unmodified, straight off the artwork. Nothing in the stylesheet
      reaches for one of these directly — they are referenced by the semantic
-     tokens below, so the question "what colour is this?" always has a
+     tokens below, so the question "what color is this?" always has a
      role-shaped answer and re-sampling the artwork is a five-line edit. */
   --brand-black: #0a0806;
   --brand-lime: #78ff31;
@@ -148,7 +148,7 @@
   --radius-sm: 3px;
 
   /* Paper is not a theme. Declared here anyway so §23 stays a rule about
-     layout and the file keeps its one property: no colour value is written
+     layout and the file keeps its one property: no color value is written
      anywhere outside this block. */
   --print-bg: #ffffff;
   --print-ink: #000000;
@@ -631,7 +631,7 @@ footer.site {
   margin-bottom: 0;
 }
 
-/* The wordmark's own colours: a small solid of lime carrying near-black
+/* The wordmark's own colors: a small solid of lime carrying near-black
    text. This is the one place the acid green is used at size, and it is a
    button — exactly the scale at which it reads as expensive. */
 .btn {
@@ -656,7 +656,7 @@ footer.site {
 }
 
 /* The response-time line. Set slightly smaller than the paragraph above it
-   and in the marker colour, so it reads as a fact about the service rather
+   and in the marker color, so it reads as a fact about the service rather
    than as another sentence of positioning — it is the one line in this block
    a reader might act on today. */
 .cta-speed {
@@ -678,7 +678,7 @@ section[data-boilerplate]:not(.cta) > h2 {
 
 /* A ruled two-column index rather than a grid of cards. Multi-column is
    deliberate over grid here: an auto-fill grid leaves empty cells on the last
-   row, and any hairline drawn with a gap-coloured background paints those
+   row, and any hairline drawn with a gap-colored background paints those
    empty cells as grey blocks. Columns cannot do that, they collapse to one
    below 34rem on their own, and a ruled list is what a contents page looks
    like anyway. */
@@ -1289,7 +1289,7 @@ footer.site .colophon {
    frame is what makes that box visible when the artwork's own ground happens
    to be white. No card around the whole cell — the frame is the only box the
    wall needs, and sixteen nested boxes is what a link farm looks like. The
-   plate colour is a token because it has to dim in dark mode: a grid of pure
+   plate color is a token because it has to dim in dark mode: a grid of pure
    white at this size is a glare source on a black page. */
 .badges img {
   display: block;
@@ -1618,6 +1618,154 @@ footer.site .colophon {
   font-size: var(--fs-sm);
   color: var(--ink-3);
   margin: var(--space-2) 0 0;
+}
+
+/* ------------------------------------------- §21d  entry-point diagram */
+
+/* The rodent entry diagram in src/components/EntryPoints.astro. Every fill and
+   stroke on that SVG is painted here rather than in the component, which is the
+   same rule the rest of the site keeps: a component carrying its own colors is
+   the one piece of the page the tokens cannot reach, and it drifts.
+
+   It also means the drawing re-colors itself in dark mode for free, which is
+   the argument that decided SVG over an exported PNG in the first place. */
+
+.entrypoints {
+  margin: var(--space-5) 0;
+  max-width: var(--measure);
+}
+.entrypoints h2 {
+  font-size: var(--fs-h3);
+}
+
+/* The plate. --badge-well for the reason §21a and §21b give: artwork sits on
+   the one neutral ground rather than on the page surface. Unlike those two,
+   this artwork is ours and is drawn in tokens, so it does not need the plate to
+   survive a dark page — it gets it so the three blocks read as a set. */
+.ep-frame {
+  background: var(--badge-well);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-1);
+}
+.ep-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---- the drawing ---- */
+
+.ep-wall,
+.ep-roof {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+.ep-roof {
+  fill: var(--well);
+}
+.ep-foundation {
+  fill: var(--well);
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+.ep-detail {
+  fill: var(--bg);
+  stroke: var(--ink-2);
+  stroke-width: 1.6;
+}
+/* Hairlines: siding courses and the like. Light enough to read as texture
+   rather than as another thing to look at. */
+.ep-siding line,
+.ep-line {
+  stroke: var(--rule-2);
+  stroke-width: 1.2;
+}
+.ep-line-strong {
+  stroke: var(--ink);
+  stroke-width: 2.4;
+}
+.ep-ground {
+  stroke: var(--ink-2);
+  stroke-width: 2;
+}
+.ep-pipe {
+  stroke: var(--ink-2);
+  stroke-width: 3;
+  stroke-linecap: round;
+  fill: none;
+}
+.ep-tree-fill {
+  fill: var(--well);
+  stroke: var(--ink-2);
+  stroke-width: 1.8;
+  stroke-linejoin: round;
+}
+/* The branch on the roof is a route, not scenery, so it is drawn in the marker
+   color — it is the one part of the tree the diagram is arguing about. */
+.ep-branch {
+  fill: none;
+  stroke: var(--marker);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+/* ---- numbered callouts ---- */
+
+.ep-marks circle {
+  fill: var(--marker);
+  stroke: var(--badge-well);
+  stroke-width: 2;
+}
+.ep-marks text {
+  fill: var(--btn-ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+.ep-leader {
+  stroke: var(--marker);
+  stroke-width: 1.8;
+}
+
+/* ---- the list, which is where the words live ---- */
+
+.ep-list {
+  margin: var(--space-4) 0 0;
+  padding-left: 1.4rem;
+  max-width: var(--measure);
+}
+.ep-list li {
+  margin-bottom: var(--space-2);
+  padding-left: 0.2rem;
+}
+.ep-list b {
+  color: var(--ink);
+}
+.ep-note {
+  margin-top: var(--space-3);
+  padding-left: var(--space-2);
+  border-left: 2px solid var(--accent-line);
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+}
+
+/* On a phone the drawing is the width of a hand. Numbers have to survive that,
+   so they scale up rather than staying proportional to a 900px viewBox. */
+@media (max-width: 34rem) {
+  .ep-marks text {
+    font-size: 22px;
+  }
+  .ep-marks circle {
+    r: 19;
+  }
+  .ep-frame {
+    padding: var(--space-2);
+  }
 }
 
 /* ------------------------------------------------------------ §22  misc */

@@ -5,6 +5,7 @@ import AnswerBox from '../../../components/AnswerBox.astro';
 import LeadForm from '../../../components/LeadForm.astro';
 import Photo from '../../../components/Photo.astro';
 import Training from '../../../components/Training.astro';
+import EntryPoints from '../../../components/EntryPoints.astro';
 import { servicePhotos } from '../../../data/photos';
 import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
@@ -126,6 +127,17 @@ const guideLinks = await guideLinksFor(path);
       — that is the service most readers arrive at it through. */}
   {s.slug === 'rodent-control' && (
     <Training installers heading="Product certifications we hold" />
+  )}
+
+  {/* THE ENTRY DIAGRAM, on the two pages it is an argument for. Rodent control
+      is where a reader asks "how did they get in"; exclusion is where they ask
+      "what would you actually seal". Same drawing, different question, so the
+      heading changes and the drawing does not. It is deliberately NOT on the
+      other 21 service pages — a spider page does not need a rodent diagram,
+      and furniture is what this becomes if it goes everywhere. */}
+  {s.slug === 'rodent-control' && <EntryPoints heading="Where they actually get in" />}
+  {s.slug === 'exclusion-and-repairs' && (
+    <EntryPoints heading="What we seal, and where it is" />
   )}
 
   {Body ? (
