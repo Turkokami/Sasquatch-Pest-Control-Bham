@@ -19,7 +19,7 @@ faqs:
   - q: "Do the brick buildings have different problems than the wooden ones?"
     a: "Somewhat. Masonry gives you mortar joints that have weathered, old ventilation openings, and floor and roof structures that are still timber. The wall may be brick but the framing inside it is wood, and that is what carpenter ants and moisture care about."
   - q: "How fast can you get to Fairhaven?"
-    a: "Same-week for most calls and often faster for something urgent. It is a short run from our shop on the Guide Meridian, and for a business we will work around service hours rather than turning up mid-rush."
+    a: "A day or two for most calls, and often faster for something urgent. It is a short run from our shop on the Guide Meridian, and for a business we will work around service hours rather than turning up mid-rush."
   - q: "Is there a charge for the assessment?"
     a: "No, for every pest except bed bugs, which carry a verification fee credited against treatment if you proceed. That applies to commercial buildings as well — we will walk it properly and put a scope in writing."
 ---

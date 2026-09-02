@@ -245,7 +245,7 @@ there.
 
 ## How we work here
 
-Happy Valley is minutes from our shop and most calls are same-week, with urgent
+Happy Valley is minutes from our shop and most calls are handled inside a couple of days, with urgent
 ones faster.
 
 For a single household we start outside — grade, vents, penetrations, refuse,

@@ -19,7 +19,7 @@ faqs:
   - q: "Can you even get under these houses when the crawlspace is tiny?"
     a: "Usually, and we go in properly rather than looking from the hatch. Clearance here is often low and the access is frequently in an awkward corner of a porch addition, but the evidence is under there and a report written from the doorway is not worth much."
   - q: "Are you quick to the Lettered Streets?"
-    a: "Yes. This is our home city and we are on the Guide Meridian, so no part of this neighborhood is more than about fifteen minutes away. Most calls here are same-week and urgent ones are often faster."
+    a: "Yes. This is our home city and we are on the Guide Meridian, so no part of this neighborhood is more than about fifteen minutes away. One to two days covers most calls here, and urgent ones are often faster."
   - q: "Is the inspection free?"
     a: "Free for every pest we handle, with bed bugs the one exception — those carry a verification fee credited against treatment if you proceed. Going into the crawlspace is part of the free visit, and it is where the useful information is."
 ---

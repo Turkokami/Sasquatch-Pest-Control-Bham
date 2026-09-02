@@ -20,7 +20,7 @@ faqs:
   - q: "Are the steep lots and narrow roads a problem for scheduling?"
     a: "Not usually, but they change the work. Daylight basements, sloped crawlspaces and decks over grade mean more of the building envelope is below or against earth, and access for equipment can be limited. It is worth mentioning your driveway when you call if it is a difficult one."
   - q: "How far are you from Sudden Valley?"
-    a: "About eight miles from our shop, which makes it one of the quicker addresses in the county for us, though the last stretch is slower than the map suggests. Most calls here are handled within the same week."
+    a: "About eight miles from our shop, which makes it one of the quicker addresses in the county for us, though the last stretch is slower than the map suggests. Reckon on a day or two, and nearer three when the autumn rush arrives."
 ---
 
 ## Cedar, slope and forest
@@ -284,7 +284,7 @@ Service laid on top of an unresolved moisture problem is an indefinite cost.
 ## How we work here
 
 Sudden Valley is about eight miles from our shop, though the last stretch is
-slower than the map suggests. Most calls are handled within the same week.
+slower than the map suggests. Most calls are handled inside a day or two.
 
 A visit starts outside and works the specific things this community produces: the
 cedar and its condition, the deck and its ledger, the stumps and standing dead

@@ -10,7 +10,7 @@ faqs:
   - q: "Why do brand-new Ferndale houses get rodents?"
     a: "Because the subdivision was built on farmland and the rodent population that lived in that field is still there. A new house is tighter than an old one, but it still has a dryer vent, a hose bib and a service penetration, and those are usually foamed rather than properly sealed."
   - q: "How far is Ferndale from your shop?"
-    a: "About nine miles up the freeway from our base on the Guide Meridian, which makes Ferndale one of the quickest addresses in the county for us to reach. Most Ferndale calls get handled in the same week, and urgent wasp or rodent work is often sooner."
+    a: "About nine miles up the freeway from our base on the Guide Meridian, which makes Ferndale one of the quickest addresses in the county for us to reach. The usual wait is a day or two, stretching to about three in the autumn, and urgent wasp or rodent work is often sooner."
   - q: "Do you work with Cherry Point industrial sites?"
     a: "We handle commercial and industrial accounts across the corridor, which is documented work run to a plan rather than a single visit. Industrial sites need placements that survive a contractor audit and a service record that holds up, and we build the program around the site's own safety requirements."
   - q: "Does the Nooksack River affect pest pressure in Ferndale?"

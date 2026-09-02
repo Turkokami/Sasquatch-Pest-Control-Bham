@@ -8,7 +8,7 @@ ready: true
 expert: kristofer-elling
 faqs:
   - q: "How fast can you get to a Bellingham address?"
-    a: "Bellingham is our home city and we are usually able to get out within the same week, often sooner for an active wasp nest or a rodent in living space. We are on the Guide Meridian, so no part of the city is more than about fifteen minutes from the shop."
+    a: "Bellingham is our home city, so a day or two is the normal wait and it is often sooner for an active wasp nest or a rodent in living space. Around three days is realistic at the height of the autumn. We are on the Guide Meridian, so no part of the city is more than about fifteen minutes from the shop."
   - q: "Why do so many older Bellingham houses have rodent problems?"
     a: "Because the prewar stock sits on post-and-pier foundations with crawlspaces that were never sealed, and the framing cavities run uninterrupted from the crawl to the attic. Once something is under the house it has a route to every floor, which is why the fix is structural rather than chemical."
   - q: "When is the worst time of year for rats in Bellingham?"
@@ -284,7 +284,7 @@ The treatments are genuinely different, so identification comes first.
 ## How we actually work here
 
 We are based on the Guide Meridian, which puts every Bellingham neighborhood
-inside a short drive, and it is why city addresses are usually same-week and
+inside a short drive, and it is why city addresses are usually a day or two and
 why an active wasp nest or a rodent in living space can often be handled faster
 than that.
 
