@@ -49,11 +49,19 @@
  * no-layout-shift rule and a lazily-loaded third-party frame is the classic
  * way to break it.
  *
- * NOT CHECKED BY THE HARNESS. Check 1b crawls img, script, link and meta
- * references; it does not look at iframes, so a typo in the URL built below
- * fails silently and in production rather than in the gate. Verify by eye
- * after a build, especially for two-word and hyphenated towns — Mount Vernon
- * and Sedro-Woolley are the two that would go wrong first.
+ * NOT CHECKED BY THE HARNESS, AND NOT VERIFIABLE FROM THE BUILD ENVIRONMENT.
+ * Check 1b crawls img, script, link and meta references; it does not look at
+ * iframes, so a typo in the URL built below fails silently and in production
+ * rather than in the gate. Worse, the container this site was built in blocks
+ * google.com outright, so the embed could never be loaded even once during
+ * development — every one of the 27 URLs was verified by reading it, not by
+ * seeing a map. Two-word and hyphenated towns are where that would go wrong
+ * first; Mount Vernon and Sedro-Woolley were checked character by character.
+ * Look at one town page on the live site before calling the launch done.
+ *
+ * And see `mapsLink` below: because the endpoint is undocumented and could
+ * be withdrawn, the caption carries a plain link to the same place, so the
+ * block still works if the frame ever stops loading.
  */
 interface Props {
   /**
@@ -72,7 +80,21 @@ const { place, region = 'WA' } = Astro.props;
    Vernon, WA" come out as Mount%20Vernon%2C%20WA and leaves the hyphen in
    Sedro-Woolley alone — a raw space in a src attribute is the exact typo the
    harness will not catch for us. */
-const src = `https://maps.google.com/maps?q=${encodeURIComponent(`${place}, ${region}`)}&output=embed`;
+const query = encodeURIComponent(`${place}, ${region}`);
+const src = `https://maps.google.com/maps?q=${query}&output=embed`;
+
+/* A PLAIN LINK TO THE SAME PLACE, and it is not decoration.
+   `output=embed` is a long-standing but UNDOCUMENTED Google endpoint. It has
+   worked for over a decade and it powers embeds on a very large number of
+   sites, but Google has never published or committed to it — the supported
+   route is the Maps Embed API, which needs a key. So there is a real, if
+   small, chance this frame goes blank one day with no warning and no error we
+   would see.
+   This link is the floor under that. It works whether or not the iframe
+   loads, whether or not a reader has third-party frames blocked, and whether
+   or not Google keeps the endpoint. If the embed ever does break, the block
+   degrades to a heading and a working link rather than to a gray rectangle. */
+const mapsLink = `https://www.google.com/maps/search/?api=1&query=${query}`;
 
 /* A real accessible name. An iframe with no title is announced as "iframe",
    which tells a screen reader user nothing about whether to enter it. */
@@ -102,8 +124,9 @@ const title = `Map of ${place}, Washington`;
       ></iframe>
     </div>
     <figcaption>
-      Orientation only — the map centers on {place}, not on us. Our office
-      address and hours are on the <a href="/contact/">contact page</a>.
+      Orientation only — the map centers on {place}, not on us.{' '}
+      <a href={mapsLink} rel="noopener">Open {place} in Google Maps</a>. Our
+      office address and hours are on the <a href="/contact/">contact page</a>.
     </figcaption>
   </figure>
 </section>
