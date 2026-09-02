@@ -6,6 +6,7 @@
  *
  *  `market` names the page's own market so the CTA is not generic. */
 import { business, isReady } from '../data/business';
+import LeadForm from './LeadForm.astro';
 
 interface Props { market?: string; service?: string; serviceSlug?: string }
 const { market = 'Whatcom County', service, serviceSlug } = Astro.props;
@@ -49,4 +50,17 @@ const offer = freeInspection ? 'Book a free visit' : 'Get a free estimate';
   <p>
     <a class="btn" href={`tel:${business.phoneE164}`}>{offer} — {business.phone}</a>
   </p>
+
+  {/* THE LEAD FORM, ON EVERY PAGE, and this component is why it is one edit.
+      The CTA was already the sitewide vehicle — 18 route files include it and
+      that covers all 207 pages — so hanging the form here spreads it without
+      touching a single page body. The phone link above stays the first thing
+      offered: this trade is a pest problem, people call, and the form is for
+      the reader who is browsing at 11pm and will not.
+
+      LeadForm's root is an <aside>, deliberately. This is a <section
+      data-boilerplate> and the harness's strip is non-greedy — a nested
+      <section> here would leak the tail of this CTA into the word count on
+      every page. See the note in LeadForm.astro. */}
+  <LeadForm />
 </section>

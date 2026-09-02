@@ -1,0 +1,112 @@
+---
+/**
+ * LeadForm — the company's live GoHighLevel lead form, embedded.
+ *
+ * ONE COMPONENT, EVERY PAGE. This renders inside Cta.astro, which all 18
+ * route files already include, so the form reaches all 207 pages from a
+ * single edit. That is deliberate and it is the same call LocationMap makes:
+ * an iframe pasted into each template is the duplication this codebase has
+ * had to undo three times already. If the form id ever changes it changes in
+ * src/data/business.ts and nowhere else.
+ *
+ * COPIED, NOT REBUILT. Every attribute below is transcribed from the embed on
+ * the live WordPress site. The reasoning for embedding rather than building a
+ * native form lives on `business.crmForm` and is not repeated here.
+ *
+ * WHY THE ROOT IS AN <aside> AND MUST STAY ONE. The harness strips
+ * data-boilerplate blocks with
+ *     /<([a-z]+)[^>]*\sdata-boilerplate\b[^>]*>[\s\S]*?<\/\1>/gi
+ * which backreferences the tag name but is still NON-GREEDY — it stops at the
+ * first closing tag of that name. Cta.astro's root is <section
+ * data-boilerplate>; if this component's root were a <section>, the strip on
+ * the CTA would end at OUR closing tag and leak the rest of the CTA into both
+ * the word count and the duplicate-sentence scanner, on 207 pages at once.
+ * <aside> is a tag neither wrapper uses, so both blocks strip whole. For the
+ * same reason: never nest an <aside> inside this one.
+ *
+ * NOT CHECKED BY THE HARNESS. Check 1b crawls img/script/link/meta and skips
+ * external URLs outright — "someone else's" — so a typo in the host or the
+ * form id fails silently in production rather than in the gate. Both were
+ * verified by fetching them: the widget returns 200 text/html and
+ * form_embed.js returns 200 and 34KB. Re-verify by hand if either is edited.
+ */
+import { business } from '../data/business';
+
+interface Props {
+  /** The visible heading. Kept a prop so the contact page can lead with it. */
+  heading?: string;
+  /** Contact page renders the form as the point of the page, not as a footnote. */
+  primary?: boolean;
+}
+const { heading = 'Request a free estimate', primary = false } = Astro.props;
+
+const f = business.crmForm;
+const src = `${f.host}/widget/form/${f.id}`;
+const frameId = `inline-${f.id}`;
+
+/* WORDING. "Estimate", never "inspection" — the same rule Cta.astro spends a
+   paragraph on, and it applies harder here because this heading renders on
+   every page. GHL's own name for the form is "GET A FREE ESTIMATE", so the
+   heading and the form agree, and harness check 2c stays quiet. */
+---
+<aside class:list={['leadform', primary && 'is-primary']} data-boilerplate>
+  <h2>{heading}</h2>
+
+  {/* THE RESERVED BOX. min-height rather than the aspect-ratio box the map
+      uses, because a form is not a fixed rectangle: GHL's form_embed.js
+      measures the real content and sets an inline height, which would fight
+      an absolutely-positioned frame. Reserving GHL's own declared height
+      means the common case lands with no shift, and the frame is free to grow
+      for validation messages without being clipped.
+
+      NO loading="lazy" HERE, AND THAT IS THE DECISION RATHER THAN AN
+      OVERSIGHT. LocationMap lazy-loads its map and the same argument applies
+      on paper — this frame is at the foot of a 3,000-word page and most
+      readers never reach it. It was tried and taken back out. The brief was
+      to carry the working form across unchanged, and form_embed.js is a
+      third-party loader that looks the frame up by id and wires a resize
+      postMessage; whether it tolerates a frame that has not fetched yet is
+      not something this project can test, and the failure mode is a form that
+      silently does not render on 206 pages. An eager third-party frame is a
+      known cost. A lead form that might not appear is not a cost anyone would
+      accept to save it. Revisit only with a real browser in front of you. */}
+  <div class="leadform-frame">
+    <iframe
+      src={src}
+      style="width:100%;height:100%;border:none;border-radius:4px"
+      id={frameId}
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name={f.name}
+      data-height={String(f.height)}
+      data-layout-iframe-id={frameId}
+      data-form-id={f.id}
+      title={f.name}
+    ></iframe>
+  </div>
+
+  {/* THE FLOOR UNDER THE EMBED, and the same argument LocationMap makes for
+      its plain Google Maps link. A third-party frame can be blocked by an
+      extension, a strict privacy mode or a CRM outage, and when it is, the
+      block degrades to a heading and an empty rectangle — on a page whose job
+      is to collect a lead. The phone number is the real fallback here: it is
+      how most of this company's work arrives anyway, and it needs nothing to
+      load. The direct form link is there for anyone who would rather type. */}
+  <p class="leadform-fallback">
+    Form not loading? Call or text{' '}
+    <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, or{' '}
+    <a href={src} rel="noopener">open the form on its own page</a>.
+  </p>
+</aside>
+
+{/* is:inline, and it matters. Astro would otherwise try to process, bundle and
+    fingerprint this as a local module; it is a third-party loader that has to
+    reach the page byte-for-byte as GHL serves it. defer so it runs after the
+    iframe above exists — it looks the frame up by id to wire the resize
+    postMessage. One form per page means one copy of this script per page. */}
+<script is:inline defer src={`${business.crmForm.host}/js/form_embed.js`}></script>

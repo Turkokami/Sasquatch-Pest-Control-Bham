@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import LeadForm from '../components/LeadForm.astro';
 ---
 <BaseLayout
   path="/404/"
@@ -18,4 +19,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <a href="/locations/">service areas page</a>, or
     <a href="/contact/">get in touch</a>.
   </p>
+
+  {/* A 404 IS A LEAD, and this is the one page where that is easy to forget.
+      240 legacy URLs redirect, but a mistyped address, a stale business-card
+      link or an old directory listing still lands here — and the reader who
+      lands here came looking for a pest company. Sending them away to find a
+      form is how that lead is lost. This page does not render <Cta>, so the
+      form is placed explicitly rather than inherited.
+
+      /network/ is the other page without a form and it stays that way
+      deliberately: it routes Texas enquiries to the separately operated
+      Houston franchise, and a Bellingham form there would take leads that
+      belong to another market. */}
+  <LeadForm heading="Or tell us what you need" primary />
 </BaseLayout>

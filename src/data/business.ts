@@ -697,6 +697,46 @@ export const business = {
    *  check the 4.9 for themselves. */
   gbpUrl: PENDING as Owed<string>,
 
+  /* THE CRM LEAD FORM — the live GoHighLevel widget, copied from the site it
+     is replacing rather than rebuilt.
+
+     WHY AN EMBED AND NOT A REAL FORM. This is a static site: there is no
+     server, so there is nothing here that could receive a POST, send an email
+     or write a row. Every lead the company has ever taken online has landed in
+     their GoHighLevel account, and the routing, autoresponders, pipeline
+     stages and attribution all hang off that one form id. Rebuilding the
+     fields natively would produce a prettier form that dropped leads on the
+     floor, which is the worst possible trade for a business whose phone is
+     its revenue.
+
+     WHERE IT CAME FROM. Read off the live https://www.sasquatchpestcontrol.com
+     /contact/ on 2 Sep 2026. On the old WordPress site this iframe sits inside
+     an empty Contact Form 7 wrapper (`wpcf7-f26456`) — the CF7 shell collects
+     nothing and exists only because someone pasted the GHL embed into a CF7
+     block. Only the iframe was carried over; the CF7 husk was not.
+
+     WHY THE HOST LOOKS WRONG. `link.sasquatchpestcontrol.com` is the company's
+     white-labeled GoHighLevel domain, not a server of ours — it is a CNAME to
+     LeadConnector. Anyone grepping this codebase for `leadconnectorhq.com` or
+     `msgsndr.com`, which is what GHL embeds normally point at, will find
+     nothing and conclude there is no CRM form. There is; it is this.
+
+     ONE FORM, SITEWIDE. The old site used this same id on every page that had
+     a form, so there is one number to watch in GHL rather than a per-page
+     split that nobody would reconcile. If the owner ever wants a distinct form
+     for, say, commercial enquiries, add a SECOND entry here and pass it as a
+     prop — do not paste an iframe into a page. */
+  crmForm: {
+    /** GoHighLevel form id. The whole embed is derived from this. */
+    id: '5bi4Tly1pApcAiXjkV5Z',
+    /** The company's white-labeled GHL domain. Not ours; a CNAME to LeadConnector. */
+    host: 'https://link.sasquatchpestcontrol.com',
+    /** GHL's own name for the form. Kept verbatim so it matches the GHL dashboard. */
+    name: 'GET A FREE ESTIMATE',
+    /** GHL's stored height, used to reserve space before the frame paints. */
+    height: 321,
+  },
+
   socials: [
     'https://www.facebook.com/sasquatchpestcontrol',
     'https://www.instagram.com/sasquatchpestcontrol',

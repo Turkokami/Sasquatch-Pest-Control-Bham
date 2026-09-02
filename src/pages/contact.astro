@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
+import LeadForm from '../components/LeadForm.astro';
 import { business, isReady } from '../data/business';
 
 const path = '/contact/';
@@ -34,13 +35,16 @@ const answer =
     <h2>Business hours</h2>
     <p>Monday–Friday: 8:00 AM – 6:00 PM<br />Saturday–Sunday: 8:00 AM – 4:00 PM</p>
 
-    {/* The existing LeadConnector CRM form embeds here. Keystone Part 7A:
-        embed the client's existing CRM form — static sites can't email, and
-        this preserves their lead tracking. */}
-    <h2>Send a message</h2>
-    <div class="stub">
-      <b>CRM form slot.</b> The existing LeadConnector widget embeds here so lead
-      tracking and attribution carry over from the current site unchanged.
-    </div>
   </div>
+
+  {/* THE SLOT, FILLED. This is what the stub that stood here was reserving:
+      the company's live GoHighLevel form, carried over from the old site with
+      its id intact so lead tracking and attribution continue uninterrupted.
+
+      It sits OUTSIDE .prose and after the address block because on this page
+      the form is the point rather than a footnote — `primary` gives it the
+      full-width treatment. Note that contact.astro does not render <Cta>, so
+      there is exactly one copy of the form, and therefore one element with
+      the iframe's id, on this page. */}
+  <LeadForm heading="Send a message" primary />
 </BaseLayout>

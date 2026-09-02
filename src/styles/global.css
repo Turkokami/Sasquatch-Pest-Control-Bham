@@ -1392,6 +1392,96 @@ footer.site .colophon {
   max-width: 58ch;
 }
 
+/* ------------------------------------------------- §21b  CRM lead form */
+
+/* The GoHighLevel form embedded by src/components/LeadForm.astro, which
+   carries the reasoning for embedding somebody else's widget at all. This is
+   the styling half, and it has the same three jobs §21a has: reserve the
+   space, frame artwork we do not control, and stop a light-only third-party
+   surface reading as an accident on a black panel.
+
+   The hard part is that this block renders INSIDE .cta — an inverted region
+   (§9) — on 207 pages, and standalone on a light page at /contact/. So
+   nothing here may assume a ground. It styles the frame and the caption and
+   lets §9's re-pointed tokens resolve the rest, exactly as the inverted
+   regions comment says its children should. */
+
+.leadform {
+  margin: var(--space-4) 0 0;
+  max-width: var(--measure);
+}
+
+/* No section break above this H2. Inside the CTA it is a sub-head under the
+   CTA's own H2, not a new section, so it takes the .cta h2 treatment rather
+   than §6's ruled one. */
+.leadform h2 {
+  color: var(--ink);
+  font-size: var(--fs-h3);
+  margin: 0 0 var(--space-3);
+  padding-top: 0;
+  border-top: 0;
+  max-width: 30ch;
+}
+
+/* THE RESERVED BOX. min-height, not the aspect-ratio box §21a uses, and the
+   difference is the point: GHL's form_embed.js measures its own content and
+   writes an inline height onto the iframe, so a box that pins the frame to a
+   ratio would either fight that or clip a validation message. Reserving GHL's
+   declared 321px means the usual case lands with no shift and the frame can
+   still grow. It is min-height on the WRAPPER so the plate is painted at full
+   size in the moment before the frame arrives.
+
+   The plate is --badge-well for the reason §21a gives: this is third-party
+   artwork that is light in both themes, so it sits on the one neutral ground
+   rather than on the page surface, and a reader on a black page sees a
+   deliberate card rather than a white flash. */
+.leadform-frame {
+  min-height: 321px;
+  overflow: hidden;
+  background: var(--badge-well);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+
+/* A form is taller than its desktop self once the fields stack. Reserving the
+   larger box on narrow screens is what keeps the shift off the phone, which
+   is where most of this traffic is and where a jump costs the most. */
+@media (max-width: 34rem) {
+  .leadform-frame {
+    min-height: 520px;
+  }
+}
+
+.leadform-frame iframe {
+  display: block;
+  width: 100%;
+  min-height: 321px;
+  border: 0;
+}
+
+/* Matches .mapblock figcaption in §21a — a caption is a caption, wherever it
+   is, and this one is load-bearing rather than decorative. */
+.leadform-fallback {
+  margin-top: var(--space-2);
+  padding-left: var(--space-2);
+  border-left: 2px solid var(--accent-line);
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+  max-width: 58ch;
+}
+
+/* /contact/, where the form is the errand rather than a closing offer: it
+   gets its own section break above and the full measure. */
+.leadform.is-primary {
+  margin-top: var(--space-6);
+}
+.leadform.is-primary h2 {
+  font-size: var(--fs-h2);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--rule);
+}
+
 /* ------------------------------------------------------------ §22  misc */
 
 .stub {
