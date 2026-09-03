@@ -76,6 +76,24 @@ export const servicePhotos: Record<string, Photo> = {
     caption:
       'Bird exclusion on a commercial building, worked from a scissor lift. Commercial jobs are usually decided by access and documentation rather than by the treatment itself.',
   },
+  'attic-insulation': {
+    file: '/img/work/screened-gable-attic-vent-whatcom-county-wa.jpg',
+    alt: 'A gable attic vent fitted with dark mesh screening, with a ladder leaning against the shingled gable below it',
+    caption:
+      'A gable vent screened from the outside. This is the cheap half of an attic job and the half most often skipped — new insulation blown in under an unscreened vent is material bought for whatever moves in next.',
+  },
+  'spider-control': {
+    file: '/img/work/spider-cluster-on-glass-whatcom-county-wa.jpg',
+    alt: 'Dozens of small spiders spread across a reflective glass surface with trees mirrored behind them',
+    caption:
+      'Not a trick of the light — that is one surface on one property. Autumn is when spiders become visible rather than when they arrive, and the ones people find alarming are almost always the harmless ones.',
+  },
+  'ant-control': {
+    file: '/img/work/carpenter-ant-close-up-whatcom-county-wa.jpg',
+    alt: 'A close-up of a large dark ant on a pale painted surface, its head and thorax clearly visible',
+    caption:
+      'A carpenter ant, close enough to see why size alone is a poor guide. Carpenter ants are the ones that damage the building, but odorous house ants are what most homes here actually have, and the treatments are opposite.',
+  },
   'bee-removal': {
     file: '/img/work/bumblebee-close-up-whatcom-county-wa.jpg',
     alt: 'A close-up photograph of a bumblebee on a pale surface, its yellow and black banding clearly visible',
