@@ -8,7 +8,7 @@ import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import LocationMap from '../../../components/LocationMap.astro';
 import Photo from '../../../components/Photo.astro';
-import { locationPhotos } from '../../../data/photos';
+import { locationPhotos, crewPhoto } from '../../../data/photos';
 import { guideLinksFor } from '../../../lib/guides';
 import { blogPostsFor } from '../../../lib/blog';
 import { towns } from '../../../data/towns';
@@ -57,6 +57,14 @@ const siblings = builtTowns()
 /* Related guides, resolved from the guides' own relatedTo declarations —
    one list, queried, rather than a second list maintained here. */
 const guideLinks = await guideLinksFor(path);
+/* See the note beside the element. The caption is assembled here so it names
+   the town — the same sentence on twenty-two pages would trip the harness's
+   duplicate-sentence scanner, which fails any ten-word sentence appearing on
+   three or more indexable pages. */
+const townPhoto = locationPhotos[t.slug] ?? {
+  ...crewPhoto,
+  caption: `The crew and the trucks that run the ${t.name} route. Not a stock photograph.`,
+};
 /* Posts whose topic this page owns. Fifty-six imported posts declared a
    supersededBy target and no target had ever linked back, which left most of
    the blog with one inbound link in the whole site. */
@@ -96,6 +104,19 @@ const blogLinks = await blogPostsFor(path);
       ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
       copy would break both; the CTA at the foot no longer carries one and
       keeps its phone button. The sticky mobile bar jumps to this. */}
+  {/* THE PHOTOGRAPH, ABOVE THE FORM RATHER THAN BELOW IT. Owner's call, and
+      it is the right one: this is the only picture on a town page and it was
+      sitting under a tall third-party iframe, which on a phone is most of a
+      screen of scrolling before anything of ours appears.
+
+      The town's own photograph where one exists, the crew otherwise. Three of
+      twenty-five towns have a picture taken in them; the other twenty-two
+      were rendering nothing at all here rather than borrow a photograph of a
+      different town's house — which was the right call about houses and the
+      wrong one about leaving the slot empty. The crew and the trucks are true
+      everywhere and belong to no one town. */}
+  <Photo photo={townPhoto} priority />
+
   <LeadForm />
 
   {/* THE MAP, MOVED UP FROM THE FOOT OF THE PAGE. It used to sit below
@@ -104,15 +125,7 @@ const blogLinks = await blogPostsFor(path);
       prose. On a place page that question is the reason the reader came,
       so it is answered next to the form rather than after everything.
       The component still carries the privacy and keyless-embed reasoning. */}
-  {/* THE TOWN'S OWN PHOTOGRAPH, above the map and below the form. It is here
-      rather than further down because it is doing the same job the map is —
-      answering "do you work where I live" — and a photograph taken in the
-      reader's town answers it in a way a map pin cannot.
 
-      Not every town has one. Alger and Birch Bay have no photographs carrying
-      their name, so those pages render without one rather than borrowing a
-      picture of a different town's house. src/data/photos.ts has the list. */}
-  {locationPhotos[t.slug] && <Photo photo={locationPhotos[t.slug]} />}
 
   <LocationMap place={t.name} />
 

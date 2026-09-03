@@ -320,3 +320,24 @@ export const industryPhotos: Record<string, Photo> = {
       'Working a store entrance canopy from a lift. The entrance is the hardest part of a grocery building to keep birds out of — it is warm, it is sheltered from weather on three sides, and the doors stand open all day — and it is also the one part of the building every customer walks under.',
   },
 };
+
+/**
+ * THE CREW AND THE TRUCKS — the fallback for a town with no photograph of its
+ * own, and the owner's call to stop it being buried on the About page.
+ *
+ * Only three of twenty-five town pages have a picture taken in that town, so
+ * the other twenty-two were rendering the slot empty. A photograph of the
+ * actual crew is the right thing to put there: it answers a version of the
+ * same question the town photograph answers — who turns up — and it is the one
+ * image on this site that a competitor cannot copy.
+ *
+ * THE CAPTION IS BUILT PER TOWN, in the route, and that is not decoration. A
+ * fixed caption here would put the same sentence on twenty-two indexable
+ * pages, and the harness fails any ten-word sentence appearing on three or
+ * more. Naming the town makes each one both unique and truer.
+ */
+export const crewPhoto = {
+  file: '/img/sasquatch-team-and-trucks.jpg',
+  alt: 'The Sasquatch Pest Control crew standing in front of their wrapped truck and van at sunset, with the company name above them',
+  caption: '',
+} satisfies Photo;
