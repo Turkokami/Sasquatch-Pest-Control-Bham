@@ -40,6 +40,9 @@ sources:
   - label: "Journal of Insect Science (2024) — Worldwide revision of synanthropic silverfish"
     url: "https://academic.oup.com/jinsectscience/article/24/3/1/7664562"
     read: 2026-09-02
+  - label: "WSU Snohomish County Extension, Community Horticulture Fact Sheet 87 — Silverfish and Firebrats"
+    url: "https://s3.wp.wsu.edu/uploads/sites/2053/2015/09/87SilverfishFirebrats.pdf"
+    read: 2026-09-03
 reviewBy: 2027-09-01
 ready: true
 ---

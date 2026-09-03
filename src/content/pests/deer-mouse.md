@@ -39,6 +39,9 @@ sources:
   - label: "Whatcom County Health and Community Services — Rodents"
     url: "https://www.whatcomcounty.us/3258/Rodents"
     read: 2026-09-02
+  - label: "Washington State Department of Health 333-161 — Plague Surveillance in Washington State, Summary Report 1975-2008"
+    url: "https://doh.wa.gov/sites/default/files/legacy/Documents/Pubs/333-161.pdf"
+    read: 2026-09-03
 reviewBy: 2027-09-01
 ready: true
 ---

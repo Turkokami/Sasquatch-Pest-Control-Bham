@@ -48,6 +48,9 @@ sources:
   - label: "United States Mint — Coin specifications"
     url: "https://www.usmint.gov/learn/coins-and-medals/circulating-coins/coin-specifications"
     read: 2026-09-01
+  - label: "Washington State Department of Health 333-161 — Plague Surveillance in Washington State, Summary Report 1975-2008"
+    url: "https://doh.wa.gov/sites/default/files/legacy/Documents/Pubs/333-161.pdf"
+    read: 2026-09-03
 reviewBy: 2027-09-01
 ---
 
