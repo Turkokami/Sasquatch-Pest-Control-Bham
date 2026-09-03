@@ -42,8 +42,24 @@ export interface Video {
   poster: string;
   /** Alt for the poster — describes the frame, not the keyword. */
   alt: string;
-  /** One line under the player, in the site's voice rather than YouTube's. */
-  caption: string;
+  /**
+   * One line under the player, in the site's voice rather than YouTube's.
+   * OPTIONAL, because not every video needs explaining and a caption written
+   * only to fill the slot is worse than none — the owner removed the one that
+   * had been written for the advert on those grounds.
+   */
+  caption?: string;
+  /**
+   * For the VideoObject description, which is required for a rich result and
+   * is never shown on the page.
+   *
+   * This used to be the caption, which is what forced the caption to exist at
+   * all and to read like metadata. They are different jobs: a caption is
+   * written for a reader who can see the player, a schema description for a
+   * machine that cannot. Separating them lets a caption be dropped without
+   * emptying the structured data.
+   */
+  description: string;
   /** Runtime, shown so nobody has to guess before clicking. */
   duration: string;
   /** ISO 8601 for schema. */
@@ -59,6 +75,8 @@ export const videos: Record<string, Video> = {
     alt: 'Opening frame of a Sasquatch Pest Control video about carpenter ants in Bellingham',
     caption:
       'Carpenter ants, and what actually tells you there is a nest in the structure rather than a trail across the counter.',
+    description:
+      'How to tell a carpenter ant nest inside a structure from ants foraging across a counter, filmed in Bellingham, Washington.',
     duration: '2 min 50 sec',
     durationIso: 'PT2M50S',
     uploaded: '2022-08-15',
@@ -70,6 +88,8 @@ export const videos: Record<string, Video> = {
     alt: 'Opening frame of a Sasquatch Pest Control video about sugar ants in Bellingham',
     caption:
       '"Sugar ants" is what almost everyone here calls the odorous house ant, which is the ant most homes in this county actually have.',
+    description:
+      'The ant most Whatcom County homes actually have is the odorous house ant, known locally as the sugar ant. Filmed in Bellingham, Washington.',
     duration: '1 min 57 sec',
     durationIso: 'PT1M57S',
     uploaded: '2022-08-15',
@@ -81,6 +101,8 @@ export const videos: Record<string, Video> = {
     alt: 'Opening frame of a Sasquatch Pest Control video about fly control in Bellingham',
     caption:
       'Flies, and why the ones indoors are almost always breeding somewhere you have not looked rather than flying in.',
+    description:
+      'Why flies found indoors are usually breeding in the building rather than coming in from outside. Filmed in Bellingham, Washington.',
     duration: '1 min 6 sec',
     durationIso: 'PT1M6S',
     uploaded: '2022-08-15',
@@ -106,8 +128,12 @@ export const videos: Record<string, Video> = {
     title: 'Pest Control Bellingham Washington',
     poster: '/img/video/sasquatch-pest-control-autumn-film.jpg',
     alt: 'Opening frame of a Sasquatch Pest Control film, a family silhouetted against a sunset',
-    caption:
-      'Our own advert, made for an autumn campaign and left here because we like it. A minute and a half, no pest control in it, and nothing loads from YouTube until you press play.',
+    /* NO CAPTION, on the owner's instruction. It had one describing the film
+       as an advert with "no pest control in it", which is accurate and reads
+       as an apology for the thing it sits under. A brand film does not need a
+       line explaining it. */
+    description:
+      'A short film by Sasquatch Pest Control, a family-owned pest control company serving Bellingham and Whatcom County, Washington.',
     duration: '1 min 30 sec',
     durationIso: 'PT1M30S',
     uploaded: '2022-11-08',
@@ -132,6 +158,8 @@ export const videos: Record<string, Video> = {
     alt: 'Opening frame of a Sasquatch Pest Control video about fall and winter pest activity',
     caption:
       'Forty-two seconds on the autumn move indoors, filmed in October. Rodents are not reacting to the cold so much as to what the cold takes away — cover, food and dry ground all go at once, and a building is the nearest replacement.',
+    description:
+      'Autumn rodent activity in Whatcom County and why rodents move into buildings as the weather turns. Filmed in October in Bellingham, Washington.',
     duration: '42 sec',
     durationIso: 'PT42S',
     uploaded: '2022-10-10',

@@ -902,7 +902,7 @@ export function buildGraph(input: PageSchemaInput) {
       '@type': 'VideoObject',
       '@id': ID.video(path),
       name: v.title,
-      description: v.caption,
+      description: v.description,
       thumbnailUrl: abs(v.poster),
       uploadDate: v.uploaded,
       duration: v.durationIso,

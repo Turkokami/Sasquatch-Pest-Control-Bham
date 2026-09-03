@@ -60,10 +60,12 @@ const watch = `https://www.youtube.com/watch?v=${v.id}`;
         </span>
       </a>
     </div>
-    <figcaption>
-      {v.caption} <span class="videometa">Our own video, {v.duration}. Nothing
-      loads from YouTube until you press play.</span>
-    </figcaption>
+    {/* Only when there is something to say. The line that used to sit here on
+        every video — "Our own video, N. Nothing loads from YouTube until you
+        press play" — was removed at the owner's request: the runtime is
+        already on the play button, and how the embed loads is a thing this
+        site does rather than a thing a customer needs told. */}
+    {v.caption && <figcaption>{v.caption}</figcaption>}
   </figure>
 </section>
 

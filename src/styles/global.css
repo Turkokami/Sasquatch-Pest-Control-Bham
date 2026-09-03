@@ -2204,9 +2204,6 @@ footer.site .colophon {
   color: var(--inv-ink-3);
   font-weight: 400;
 }
-.videometa {
-  color: var(--ink-3);
-}
 .videoblock figcaption {
   margin-top: var(--space-2);
   padding-left: var(--space-2);
