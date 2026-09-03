@@ -71,15 +71,33 @@ high-intent searches and both are structural work, which is your differentiator.
 
 ## Tier 2 — the pest library
 
-All 41 species pages currently render without a photograph. **Nine have
-nothing usable in the archive at all:**
+**Five of the 41 species pages now carry a photograph. The other 36 need one
+taken, and that number is much worse than it first looked.**
+
+Matching the archive loosely — "spider" for giant house spider, "ant" for
+odorous house ant — found something for 32 of the 41. Every one of those would
+have been a claim the photograph could not support, and on an identification
+page that is worse than no photograph: the page teaches a reader how to tell
+two species apart and then illustrates itself with the wrong one.
+
+Requiring the archive's own description to name the species cut 32 to 11.
+Looking at those 11 cut it to 5 — three were marketing graphics and two were
+nests that cannot be separated from a close relative in a photograph. The
+bald-faced hornet is the clearest case: a large gray enclosed aerial nest is
+built by bald-faced hornets *and* by aerial yellowjackets.
+
+Placed: `bumble-bee`, `earwig`, `wood-boring-weevil`, and evidence shots for
+`anobiid-powderpost-beetle` and `carpenter-ant`.
+
+**Nine species have nothing usable in the archive at all:**
 
 `boxelder-bug` · `carpet-beetle` · `cluster-fly` · `honey-bee` ·
 `millipede` · `pillbug` · `sawtoothed-grain-beetle` · `silverfish` ·
 `western-conifer-seed-bug`
 
-**Fifteen more have only one or two candidates**, which is enough to place but
-not enough to choose from:
+**The remaining 27 have nothing that names them.** These are the ones where a
+loose match would have been tempting and wrong, and they include most of the
+high-traffic species:
 
 `aerial-yellowjacket` · `bed-bug` · `brown-marmorated-stink-bug` ·
 `bumble-bee` · `carpenter-bee` · `cat-flea` · `deer-mouse` ·

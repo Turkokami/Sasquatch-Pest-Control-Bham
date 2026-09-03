@@ -9,6 +9,8 @@ import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
 import { blogPostsFor } from '../../lib/blog';
+import Photo from '../../components/Photo.astro';
+import { speciesPhotos } from '../../data/photos';
 import SourceList from '../../components/SourceList.astro';
 import { PESTS, PEST_GROUPS, pestBySlug, pestsInGroup } from '../../data/pests';
 
@@ -100,6 +102,12 @@ const blogLinks = await blogPostsFor(path);
   </p>
 
   <AnswerBox text={p.data.answer} />
+
+  {/* Five of forty-one species have one. src/data/photos.ts carries why, and
+      the short version is that a generic photograph on an identification page
+      is worse than none: the page teaches how to tell two species apart and
+      then illustrates itself with the wrong one. */}
+  {speciesPhotos[species.slug] && <Photo photo={speciesPhotos[species.slug]} priority />}
 
   {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
       It used to hang off the foot of Cta.astro, which put it under three

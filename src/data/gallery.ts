@@ -252,3 +252,37 @@ export const gallery: GallerySection[] = [
 ];
 
 export const galleryCount = gallery.reduce((n, s) => n + s.images.length, 0);
+
+/**
+ * SECTIONS ATTACHED TO THE SERVICE PAGES THEY BELONG TO.
+ *
+ * The owner asked for the gallery broken into smaller galleries, categorized
+ * by service, each carrying enough writing to clear a word floor. The obvious
+ * reading is nine new pages at /gallery/<section>/, and it is the wrong one:
+ * each would need 1,200 words written to justify existing, and the page that
+ * already owns that subject — with three thousand words on it — would still
+ * have no photographs.
+ *
+ * So the sections attach to the service spokes instead. A reader on the
+ * crawlspace page sees sixteen crawlspaces without leaving it, the words are
+ * already there and already earned, and no thin page is created to hold an
+ * image grid. /gallery/ stays as the one place to see all of it at once.
+ *
+ * FOUR OF THE NINE HAVE NO SERVICE PAGE TO ATTACH TO. The insect section
+ * spreads across a dozen spokes rather than belonging to one; the crew and
+ * the county belong to the company rather than to a service. Those stay on
+ * the gallery alone rather than being forced onto a page they do not fit.
+ */
+export const SERVICE_GALLERY: Record<string, string> = {
+  'crawlspace-restoration': 'crawlspaces',
+  'exclusion-and-repairs': 'exclusion',
+  'attic-insulation': 'insulation',
+  'rodent-control': 'rodents',
+  'wasp-control': 'stinging',
+  'commercial-pest-control': 'commercial',
+};
+
+export const galleryFor = (serviceSlug: string) => {
+  const key = SERVICE_GALLERY[serviceSlug];
+  return key ? gallery.find((s) => s.key === key) : undefined;
+};

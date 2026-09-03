@@ -341,3 +341,64 @@ export const crewPhoto = {
   alt: 'The Sasquatch Pest Control crew standing in front of their wrapped truck and van at sunset, with the company name above them',
   caption: '',
 } satisfies Photo;
+
+/* --------------------------------------------------------------------------
+ * SPECIES PHOTOGRAPHS, and there are five of them for forty-one pages.
+ *
+ * That ratio is the finding, not a shortfall in the search. Matching the
+ * archive loosely — "spider" for giant house spider, "ant" for odorous house
+ * ant — produced a match for thirty-two of the forty-one species, and every
+ * one of those matches would have been a claim the photograph could not
+ * support. A generic spider on a page whose whole job is telling a reader how
+ * to tell one spider from another is worse than no photograph: the page
+ * teaches identification and then illustrates itself with a counter-example.
+ *
+ * Matching strictly — the archive's own alt text must name the species — cut
+ * thirty-two to eleven. Looking at those eleven cut it to five: three were
+ * marketing graphics the strict pass forgot to filter, and two were nests
+ * that cannot be told from a close relative in a photograph. The bald-faced
+ * hornet candidate is the clearest case: a large gray enclosed aerial nest is
+ * built by bald-faced hornets AND by aerial yellowjackets, and this site
+ * already softened that exact identification once on the wasp page.
+ *
+ * TWO OF THE FIVE SHOW EVIDENCE RATHER THAN THE ANIMAL. Frass on a beam and
+ * boring damage in a joist are legitimate on a species page — they are what a
+ * reader will actually find — and both alts describe what is in the frame
+ * without naming the insect, so the page supplies the species and the
+ * photograph does not pretend to prove it.
+ *
+ * The other thirty-six need photographing. docs/IMAGE-WISHLIST.md carries the
+ * list and what each shot needs to show.
+ * ------------------------------------------------------------------------ */
+export const speciesPhotos: Record<string, Photo> = {
+  'bumble-bee': {
+    file: '/img/pests/bumble-bee.jpg',
+    alt: 'A bumble bee photographed close up on a pale concrete surface, its banded thorax and pollen-dusted legs clearly visible',
+    caption:
+      'A bumble bee at a Whatcom County property. Size and the dense coat are the two things that separate one of these from a honey bee at a glance, and neither is a reason to treat it — a bumble nest is small, annual, and gone by the first hard frost.',
+  },
+  earwig: {
+    file: '/img/pests/earwig.jpg',
+    alt: 'An earwig photographed close up on a dark surface, its rear forceps and long antennae clearly visible',
+    caption:
+      'The forceps are what everyone recognizes and they are also the least important thing about an earwig. What matters indoors is that it is a moisture animal: find the damp it came from and the population goes with it.',
+  },
+  'wood-boring-weevil': {
+    file: '/img/pests/wood-boring-weevil.jpg',
+    alt: 'A weevil on gravel photographed close up, its long snout and clubbed antennae clearly visible',
+    caption:
+      'The snout is diagnostic — no other beetle in a Whatcom County house has one like it. Weevils found indoors have almost always come in with something rather than emerged from the structure.',
+  },
+  'anobiid-powderpost-beetle': {
+    file: '/img/pests/anobiid-powderpost-beetle.jpg',
+    alt: 'A crawlspace beam with boring damage along its lower edge and pale frass fallen on the surface beneath it',
+    caption:
+      'What a reader is far more likely to find than the beetle: damage in a crawlspace member with frass beneath it. The frass is the useful part — its texture separates the beetle families, and the families want different treatments.',
+  },
+  'carpenter-ant': {
+    file: '/img/pests/carpenter-ant.jpg',
+    alt: 'Pale frass piled on a crawlspace beam beneath a joist, photographed by torchlight',
+    caption:
+      'Carpenter ant frass under a joist in a crawlspace. Ants do not eat wood — they excavate it and push the shavings out — so a pile like this sits directly below the gallery that produced it, which is what makes it worth following.',
+  },
+};

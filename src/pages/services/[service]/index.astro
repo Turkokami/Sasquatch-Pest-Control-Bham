@@ -14,6 +14,7 @@ import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { guideLinksFor } from '../../../lib/guides';
 import { blogPostsFor } from '../../../lib/blog';
+import { galleryFor } from '../../../data/gallery';
 import ExpertBlock from '../../../components/ExpertBlock.astro';
 import { liveServices, categories } from '../../../data/services';
 import { business } from '../../../data/business';
@@ -58,6 +59,10 @@ const guideLinks = await guideLinksFor(path);
    supersededBy target and no target had ever linked back, which left most of
    the blog with one inbound link in the whole site. */
 const blogLinks = await blogPostsFor(path);
+
+/* Six of the nine gallery sections belong to a service spoke. See the note in
+   src/data/gallery.ts on why they attach here rather than becoming pages. */
+const photos = galleryFor(s.slug);
 ---
 <BaseLayout
   videoKey={videoForService[s.slug]}
@@ -183,6 +188,44 @@ const blogLinks = await blogPostsFor(path);
   <LinkRail heading={`Related ${categories[s.category].toLowerCase()} services`} links={siblings} />
 
   <LinkRail heading="Guides" links={guideLinks} />
+
+  {/* data-boilerplate, and it has to be. The paragraph below is identical on
+      all six pages that carry a gallery, which is exactly what the
+      duplicate-sentence scanner exists to catch — it failed on it, correctly,
+      the first time this shipped. The right answer is not six reworded
+      variants of one claim, which is padding; it is to classify the block as
+      what it is. Furniture repeated across pages does not count toward a word
+      floor, the same rule the lead form and the map already sit under.
+
+      No nested <section> inside this one: the harness strips boilerplate with
+      a non-greedy tag-backreferenced regex, so a section within a section
+      would truncate the strip at the wrong closing tag. */}
+  {photos && (
+    <section data-boilerplate>
+      <h2>{photos.title}: {photos.images.length} photographs from real jobs</h2>
+      <div class="prose">
+        <p>
+          Every one of these was taken on a job in Whatcom or Skagit County by
+          whoever was doing the work. Stock photography is close to universal
+          in this trade and a reader has no way to tell by looking, which is
+          the only reason it is worth saying out loud. The rest of the archive
+          is on the <a href="/gallery/">gallery</a>.
+        </p>
+      </div>
+      <div class="gallery">
+        {photos.images.map((img) => (
+          <img
+            src={img.file}
+            alt={img.alt}
+            width={img.width}
+            height={img.height}
+            loading="lazy"
+            decoding="async"
+          />
+        ))}
+      </div>
+    </section>
+  )}
 
   {blogLinks.length > 0 && <LinkRail heading="From the blog" links={blogLinks} />}
 
