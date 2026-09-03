@@ -2095,6 +2095,96 @@ footer.site .colophon {
   }
 }
 
+/* ------------------------------------------- §21h  page background */
+
+/* The forest behind the page, so the gutters beside the reading column show
+   trees instead of empty ground. Owner's call, and it is the right use of the
+   photograph — the reading column is 40rem, so on a wide screen there is
+   something like 1,200px of margin on either side doing nothing at all.
+
+   FOUR THINGS MAKE THIS SAFE RATHER THAN THE USUAL DISASTER.
+
+   1. THE COLUMN BECOMES A SHEET. Text never sits on the photograph. The
+      reading column takes an opaque page ground and a shadow, so it reads as
+      paper laid over the scene. Every contrast ratio in §1 still holds
+      because every word is still on the same ground it was designed against.
+
+   2. IT IS DESKTOP ONLY. Below 62rem there are no gutters — the column fills
+      the screen and the background would be invisible behind it. Declaring it
+      inside the media query means a phone never downloads the file at all,
+      which is the difference between a decorative background and a tax on
+      the readers who are most bandwidth-constrained.
+
+   3. A FIXED PSEUDO-ELEMENT, not background-attachment: fixed. The shorthand
+      is the obvious way and it forces a full-viewport repaint on every scroll
+      frame. A position: fixed layer can be promoted by the compositor and
+      scrolled over for free.
+
+   4. THE SCRIM. The photograph is bright and busy, and at full strength it
+      competes with the page for attention and makes the sheet edge hard to
+      find. Laid under a wash of the page ground it drops back to being
+      scenery, which is the job. */
+
+@media (min-width: 62rem) {
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: image-set(
+      url("/img/scene/forest-page-1280.jpg") 1x,
+      url("/img/scene/forest-page-1920.jpg") 1.5x
+    );
+    background-size: cover;
+    background-position: center 42%;
+    background-repeat: no-repeat;
+  }
+
+  /* The wash. Separate layer rather than a gradient inside the shorthand
+     above, so the strength can be tuned per theme without restating the URL. */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: color-mix(in srgb, var(--bg) 62%, transparent);
+  }
+
+  /* The sheet. An opaque column over the scene, with a shadow deep enough to
+     lift it off a photograph rather than off flat paper. */
+  main > .wrap {
+    background: var(--bg);
+    padding-bottom: var(--space-5);
+    box-shadow: 0 0 0 1px var(--rule), 0 10px 30px rgba(10, 8, 6, 0.16),
+      0 30px 60px rgba(10, 8, 6, 0.1);
+  }
+
+  /* The masthead is a full-width band and would cut the scene off at the top.
+     Letting the scene run behind it, with the band as a translucent sheet of
+     the same paper, keeps the trees continuous from the top of the window. */
+  header.site {
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    backdrop-filter: blur(6px);
+  }
+}
+
+/* Dark mode wants more wash, not less. The photograph is a bright morning and
+   at 62% over a dark ground it glares; the sheet is dark and the scene has to
+   sit further back for the column to stay the brightest thing on screen. */
+@media (min-width: 62rem) {
+  :root:not([data-theme="light"]) body::after {
+    background: color-mix(in srgb, var(--bg) 80%, transparent);
+  }
+}
+
+/* Paper has no background image and a fixed layer breaks pagination. */
+@media print {
+  body::before,
+  body::after {
+    display: none;
+  }
+}
+
 /* ------------------------------------------------------------ §22  misc */
 
 .stub {
