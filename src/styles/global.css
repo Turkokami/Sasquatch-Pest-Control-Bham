@@ -1147,15 +1147,15 @@ footer.site {
   color: var(--inv-ink-2);
 }
 
-/* TREES IN THE FOOTER, AT EVERY WIDTH. The page background is desktop-only
-   for a good reason — below 62rem the reading column fills the screen, so
-   there are no gutters for a backdrop to show through and a phone should not
-   pay to download one. The side effect was that a phone's only forest was the
-   band above the footer, and the footer itself stayed the slab of black the
+/* TREES IN THE FOOTER, AT EVERY WIDTH. The page background in §21h is gated
+   to 48rem and up for a good reason — narrower than that the reading column
+   fills the screen, so there are no gutters for a backdrop to show through
+   and a phone should not pay to download one. The side effect was that a
+   phone got no forest at all, and the footer stayed the slab of black the
    whole exercise was meant to break up.
 
-   This costs no layout height and, on a phone, no download either: it is the
-   same file the band above it has already fetched.
+   This is the one that runs everywhere, and it costs no layout height. It is
+   also the only forest below 48rem, which is why it is not gated with §21h.
 
    IT IS TWO BACKGROUND LAYERS ON THE ELEMENT, not a pseudo-element. A
    ::before would need a stacking context and a z-index on every child to stay
@@ -2187,11 +2187,20 @@ footer.site .colophon {
       paper laid over the scene. Every contrast ratio in §1 still holds
       because every word is still on the same ground it was designed against.
 
-   2. IT IS DESKTOP ONLY. Below 62rem there are no gutters — the column fills
-      the screen and the background would be invisible behind it. Declaring it
-      inside the media query means a phone never downloads the file at all,
-      which is the difference between a decorative background and a tax on
-      the readers who are most bandwidth-constrained.
+   2. IT IS GATED TO WIDTHS THAT HAVE GUTTERS. Declaring it inside a media
+      query means a phone never downloads the file at all, which is the
+      difference between a decorative background and a tax on the readers who
+      are most bandwidth-constrained.
+
+      THE THRESHOLD IS 48rem, AND IT WAS 62rem, WHICH WAS A BUG. Two numbers
+      it has to clear. The lower one is the sheet's own width: main > .wrap is
+      --measure plus two gutters, 44.5rem once the gutter clamp tops out, so
+      below that there is no page margin for a background to show in and
+      nothing to see. The upper one is 980px — the layout viewport Chrome on
+      Android uses for "Desktop site". At 62rem = 992px, a phone in desktop
+      mode missed the background by twelve pixels and got a bare page, which
+      is exactly how this was found. 48rem clears the sheet with a real margin
+      either side and sits well under 980 with room to spare.
 
    3. A FIXED PSEUDO-ELEMENT, not background-attachment: fixed. The shorthand
       is the obvious way and it forces a full-viewport repaint on every scroll
@@ -2203,7 +2212,7 @@ footer.site .colophon {
       find. Laid under a wash of the page ground it drops back to being
       scenery, which is the job. */
 
-@media (min-width: 62rem) {
+@media (min-width: 48rem) {
   body::before {
     content: "";
     position: fixed;
@@ -2225,7 +2234,7 @@ footer.site .colophon {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: color-mix(in srgb, var(--bg) 62%, transparent);
+    background: color-mix(in srgb, var(--bg) 44%, transparent);
   }
 
   /* The sheet. An opaque column over the scene, with a shadow deep enough to
@@ -2249,9 +2258,9 @@ footer.site .colophon {
 /* Dark mode wants more wash, not less. The photograph is a bright morning and
    at 62% over a dark ground it glares; the sheet is dark and the scene has to
    sit further back for the column to stay the brightest thing on screen. */
-@media (min-width: 62rem) {
+@media (min-width: 48rem) {
   :root:not([data-theme="light"]) body::after {
-    background: color-mix(in srgb, var(--bg) 80%, transparent);
+    background: color-mix(in srgb, var(--bg) 66%, transparent);
   }
 }
 
