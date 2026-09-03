@@ -1122,24 +1122,77 @@ header.site .wrap {
    to aim at; the brand color is spent only on hover, on focus, and — the part
    that was missing entirely — permanently on the section you are in. */
 header.site nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem 0.3rem;
+  /* A GRID, NOT A WRAPPING ROW. Nine chips of nine different widths flowing
+     six-and-three is what read as cluttered, and it was never going to read
+     any other way: flex-wrap gives you a ragged right edge and a different
+     rhythm at every viewport, which is fine for prose and wrong for a control
+     panel. A grid puts them on a shared column edge and keeps them there.
+
+     THREE COLUMNS, AT EVERY WIDTH, BECAUSE NINE DIVIDES BY THREE. That is the
+     whole reason for the number and it is worth stating, because it is the
+     thing that breaks first: add a tenth section and this becomes 3-3-3-1
+     with a single chip stranded on its own row. auto-fit was the obvious
+     alternative and it is worse — it picks a different column count per
+     viewport, so the block is 4-4-1 on a laptop and 2-2-2-2-1 on a phone, and
+     the stranded chip comes back at most sizes. If a section is ever added or
+     removed, this number moves with it. */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
   margin-top: 0.7rem;
-  padding-block: 0.55rem 0.7rem;
+  padding-block: 0.6rem 0.8rem;
   border-top: 1px solid var(--rule);
   font-size: var(--fs-xs);
 }
+/* Three rows is right on a phone and too much masthead on a laptop, where it
+   pushed 160px of navigation above the headline. Five columns puts the same
+   nine in two rows. It leaves one empty cell at the end, which is the price
+   of nine not dividing by five and is barely legible as a gap once every
+   chip has a border — a stranded chip on a row of its own would be obvious,
+   an absent one is not. */
+/* Narrow phones get the space back from the gaps and the side padding rather
+   than from the type, which is already at --fs-xs and should not go smaller
+   on the smallest screens. This is what keeps the longest label on one line
+   down to about 350px. */
+@media (max-width: 33.99rem) {
+  header.site nav {
+    gap: 0.3rem;
+  }
+  header.site nav a {
+    padding-inline: 0.45rem;
+  }
+}
+@media (min-width: 34rem) {
+  header.site nav {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 header.site nav a {
+  /* Flex inside the cell rather than line-height padding, so a label that
+     wraps to two lines stays centered instead of sitting high in a box the
+     grid has already sized for its tallest sibling. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 2.6rem;
+  padding: 0.4rem 0.6rem;
+  /* TIGHT ENOUGH THAT TWO LINES STILL FIT THE BOX. "Service areas" is the
+     longest label and needs about 107px of the 103px a three-column grid
+     gives it on a 360px phone, so it wraps — and in a grid a taller cell
+     takes its whole row with it, which is the one thing that would undo the
+     alignment this layout exists for. At the inherited 1.68 a wrapped chip is
+     57px against 42px for its neighbors. At 1.15 it is 43px, so the row grows
+     by a pixel instead of by a third and stays level with the rows below. */
+  line-height: 1.15;
   color: var(--ink-2);
   text-decoration: none;
   font-weight: 600;
-  /* Keeps the row past the 24px WCAG 2.2 target minimum — this is the first
-     thing a thumb meets on a phone — and the horizontal padding is what turns
-     a word into something with an edge you can aim at. */
-  padding: 0.5rem 0.78rem;
+  /* Rectangles, at the site's own small radius rather than a new value. The
+     pill shape was doing nothing the border was not already doing, and on a
+     grid it fought the alignment it was meant to sit inside. */
   border: 1px solid var(--rule-2);
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
 }
 header.site nav a:hover,
