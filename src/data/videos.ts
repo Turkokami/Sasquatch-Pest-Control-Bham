@@ -14,6 +14,13 @@
  *     The owner asked to avoid the drain footage and nothing in the metadata
  *     distinguishes these, so they are held back rather than guessed at.
  *
+ *     THAT RULE WAS BROKEN ONCE AND THE OWNER CAUGHT IT. dcjH8QHxIsw, another
+ *     clip with the same undistinguishable title, was used on the rodent page
+ *     with a caption about the autumn move indoors written over it. It is a
+ *     promotional advert. Writing a confident caption over an unidentified
+ *     file is exactly what the paragraph above exists to prevent, and the
+ *     caption is what made it look verified.
+ *
  * PRIVACY AND WEIGHT, WHICH DECIDED THE COMPONENT. A YouTube iframe pulls
  * roughly a megabyte and sets third-party cookies before a reader has decided
  * they want the video. LocationMap accepts a comparable trade for the map and
@@ -78,16 +85,28 @@ export const videos: Record<string, Video> = {
     durationIso: 'PT1M6S',
     uploaded: '2022-08-15',
   },
+  /* REPLACED 3 Sep 2026. This slot held dcjH8QHxIsw, one of the four generic
+     "Pest Control Bellingham WA" clips whose metadata does not distinguish
+     them from each other. The note above said they were held back rather than
+     guessed at — and then one of them was used here anyway, which is the
+     inconsistency the owner caught: it is a promotional advert, not rodent
+     footage, and it had a caption describing autumn rodent movement written
+     over the top of it.
+
+     The replacement is the owner's own choice and its metadata was read off
+     YouTube rather than assumed: title, 42-second runtime and October 2022
+     upload date all verified, and its description is about fall rodent
+     activity and overwintering. */
   'fall-rodents': {
-    id: 'dcjH8QHxIsw',
-    title: 'Pest Control Bellingham Washington',
+    id: 'SY03J_xVxP0',
+    title: 'Stay Protected this Fall and Winter!',
     poster: '/img/video/fall-rodent-activity-bellingham-wa.jpg',
-    alt: 'Opening frame of a Sasquatch Pest Control video about fall rodent activity in Bellingham',
+    alt: 'Opening frame of a Sasquatch Pest Control video about fall and winter pest activity',
     caption:
-      'Filmed in the autumn, on the annual move indoors — the rain displaces them and the first cold decides where they end up.',
-    duration: '1 min 30 sec',
-    durationIso: 'PT1M30S',
-    uploaded: '2022-11-08',
+      'Forty-two seconds on the autumn move indoors, filmed in October. Rodents are not reacting to the cold so much as to what the cold takes away — cover, food and dry ground all go at once, and a building is the nearest replacement.',
+    duration: '42 sec',
+    durationIso: 'PT42S',
+    uploaded: '2022-10-10',
   },
 };
 
