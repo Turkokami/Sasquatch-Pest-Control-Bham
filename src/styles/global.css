@@ -2295,6 +2295,63 @@ footer.site .colophon {
   }
 }
 
+/* ------------------------------------------- §21j  product register */
+
+/* A list, not a table. Twenty-eight products with five fields each is a table
+   on a desktop and a disaster on a phone, where every column either wraps into
+   nonsense or forces horizontal scrolling. Each product is one block instead:
+   name, then the identifying detail, then its documents. That reads the same
+   at 320px as it does at 1920 and needs no overflow container. */
+.regblock {
+  margin: 0 0 var(--space-4);
+  max-width: var(--measure);
+}
+.regblock h3 {
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--track-eyebrow);
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--space-1);
+  margin: 0 0 var(--space-2);
+}
+.register {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.register li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: var(--fs-sm);
+}
+.register li:last-child {
+  border-bottom: 0;
+}
+.register b {
+  display: block;
+  color: var(--ink);
+}
+.reg-meta {
+  display: block;
+  color: var(--ink-2);
+  margin-top: 0.15rem;
+}
+/* The documents are the point of the page, so they get the brand color and a
+   gap wide enough that two adjacent links are never one tap target. */
+.reg-docs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  margin-top: 0.4rem;
+}
+.reg-docs a {
+  font-weight: 600;
+}
+.reg-docs span {
+  color: var(--ink-3);
+}
+
 /* ------------------------------------------- §21h  page background */
 
 /* The forest behind the page, so the gutters beside the reading column show

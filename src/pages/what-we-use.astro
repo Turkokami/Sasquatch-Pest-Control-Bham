@@ -1,0 +1,272 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import LinkRail from '../components/LinkRail.astro';
+import {
+  activeProducts,
+  retiredProducts,
+  activeIngredientList,
+  productsReceived,
+} from '../data/products';
+
+const path = '/what-we-use/';
+
+/* THE PRODUCT REGISTER PAGE. See src/data/products.ts for how the data was
+   built and, more importantly, for the two rules this page lives under: no
+   efficacy claims and no safety claims. Under FIFRA it is unlawful to describe
+   a pesticide in terms that differ from its accepted labeling, and the words
+   that draw enforcement are exactly the ones a marketer reaches for — "safe",
+   "harmless", "non-toxic", "EPA approved". Nothing on this page describes a
+   product as anything. It identifies it and links its documents. */
+const live = activeProducts();
+const retired = retiredProducts();
+const actives = activeIngredientList();
+
+const byKind = [...new Set(live.map((p) => p.kind))].map((k) => ({
+  kind: k,
+  items: live.filter((p) => p.kind === k),
+}));
+
+const answer =
+  'Every pesticide product we apply is listed here with its EPA registration number, its active ingredients, and its full label and safety data sheet as downloadable PDFs. Washington requires us to give you this on request. We would rather you did not have to ask.';
+
+const faqs = [
+  {
+    q: 'Why publish this when nobody else does?',
+    a: 'Because the information is yours by law and asking for it is a barrier. A licensed applicator in Washington has to supply label and safety data on request, which means the customer has to know to ask, and ask, and wait. Putting it up in advance removes all three steps and costs us nothing except the work of doing it.',
+  },
+  {
+    q: 'What is the difference between a label and a safety data sheet?',
+    a: 'The label is the law. It states what the product may be applied to, at what rate, with what precautions, and it is a federal offense to use the product in a way that contradicts it. The safety data sheet is a workplace document about the chemical itself — hazards, first aid, spill handling, physical properties. Both are linked for every product.',
+  },
+  {
+    q: 'Can you tell me whether a product is safe around my children or pets?',
+    a: 'Not in those words, and you should be wary of any company that will. Federal law makes it unlawful to describe a pesticide in terms that differ from its accepted labeling, and "safe" is not a term any of these labels use. What we can do is show you the label, walk you through its precautionary statements and re-entry directions before we treat, and choose an approach that suits your household.',
+  },
+  {
+    q: 'Are these documents current?',
+    a: 'They are the versions we hold, received on the date stated at the top of the register. Labels are revised and products are reformulated, so a page like this goes stale unless it is maintained. If you are relying on one of these for something that matters, ask us to confirm it is still the current version.',
+  },
+  {
+    q: 'Do you have to use any of this?',
+    a: 'Often not. A large share of what we do is exclusion, sanitation advice and physical work with no product involved at all. Where a product is the right answer, this register is what it will come from.',
+  },
+];
+
+const rails = [
+  { href: '/guides/low-impact-treatment-and-what-it-can-and-cannot-do/', label: 'Low-impact treatment: what it can and cannot do' },
+  { href: '/services/exclusion-and-repairs/', label: 'Pest exclusion & repairs' },
+  { href: '/about/', label: 'Our licenses and credentials' },
+  { href: '/our-guarantee/', label: 'Our guarantee' },
+  { href: '/contact/', label: 'Ask us about a specific product' },
+];
+---
+
+<BaseLayout
+  path={path}
+  title="What We Apply: Labels & Safety Data | Sasquatch Pest"
+  description="Every product we use, with EPA registration numbers, active ingredients, and full labels and safety data sheets as downloadable PDFs. No login, no request needed."
+  kind="page"
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'What we apply', path },
+  ]}
+>
+  <h1>What we apply, and the paperwork that comes with it</h1>
+  <AnswerBox text={answer} />
+
+  <LeadForm />
+
+  <div class="prose">
+    <p>
+      This is every pesticide product currently in use by this company. For each
+      one you get the EPA registration number, the active ingredients, the full
+      label and the safety data sheet — as PDFs, on this site, with nothing to
+      fill in first.
+    </p>
+    <p>
+      <b>Document set received {productsReceived}.</b> Labels get revised and
+      products get reformulated. These are the versions we hold as of that date,
+      and if you are relying on one for something that matters, ask us to
+      confirm it is still current before you do.
+    </p>
+  </div>
+
+  <section>
+    <h2>The register</h2>
+    <div class="prose">
+      <p>
+        {live.length} products in use, drawing on {actives.length} distinct
+        active ingredients. Grouped by what they are rather than alphabetically,
+        because the category tells you more about how something gets used than
+        the brand name does.
+      </p>
+    </div>
+
+    {byKind.map((g) => (
+      <div class="regblock">
+        <h3>{g.kind}</h3>
+        <ul class="register">
+          {g.items.map((p) => (
+            <li>
+              <b>{p.name}</b>
+              <span class="reg-meta">
+                {p.actives.join(' + ')}
+                {p.epaReg ? <> · EPA Reg. {p.epaReg}</> : null}
+                {' · '}{p.target}
+              </span>
+              <span class="reg-docs">
+                {p.label ? <a href={p.label}>Label (PDF)</a> : <span>Label on request</span>}
+                {p.sds ? <a href={p.sds}>Safety data sheet (PDF)</a> : null}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <div class="prose">
+    <h2>How to read a label, in about a minute</h2>
+    <p>
+      A pesticide label is not packaging copy. It is a legal document, approved
+      by the EPA, and it is an offense under federal law to use the product in a
+      manner inconsistent with it. That is the sentence printed on every one of
+      the PDFs above, and it is the reason a label is worth more than anything a
+      salesperson tells you.
+    </p>
+    <p>
+      Four things are worth finding on any of them. <b>The active ingredient
+      statement</b> is usually top left and tells you what the chemistry
+      actually is — several products with very different brand names on this
+      page share an active. <b>The signal word</b> is the one-word hazard rating:
+      CAUTION, WARNING or DANGER, in ascending order, and most of what is used
+      in and around a house is the first of those. <b>The precautionary
+      statements</b> cover protective equipment and what to keep away from
+      treated areas and for how long. And <b>the use directions</b> state where
+      the product may be applied at all — a product cleared for a foundation
+      perimeter is frequently not cleared for a kitchen.
+    </p>
+
+    <h2>The safety data sheet is a different document</h2>
+    <p>
+      People use the two words interchangeably and they are not the same thing.
+      The label governs <i>use</i>: what it may be applied to, at what rate,
+      with what precautions. The safety data sheet describes the
+      <i>substance</i>: its hazards, its physical properties, first aid
+      measures, what to do about a spill, how it behaves in a fire. An SDS is
+      written for the person handling the concentrate, which is us, rather than
+      for the person whose house it ends up in.
+    </p>
+    <p>
+      Both are linked for every product because they answer different questions.
+      If you want to know how long to keep a dog off a treated strip, that is
+      the label. If you want to know what a substance would do if a container
+      broke in a garage, that is the safety data sheet.
+    </p>
+
+    <h2>What we will not tell you</h2>
+    <p>
+      We will not tell you a product is safe. Not because we are being evasive,
+      but because it is unlawful: federal law makes it an offense to describe a
+      pesticide in terms that differ from its accepted labeling, and no label on
+      this page uses the word. Any company that offers you "safe for kids and
+      pets" as a selling line is either unaware of that or hoping you are.
+    </p>
+    <p>
+      What we can do is more useful anyway. We can show you the label before we
+      treat, walk you through its precautionary statements and its re-entry
+      directions, tell you which rooms and surfaces are involved and which are
+      not, and where it matters, choose an approach that fits your household —
+      baits in place of sprays, a physical repair in place of a treatment, or
+      nothing at all if nothing is warranted.
+    </p>
+
+    <h2>Baits, residuals, growth regulators and borates</h2>
+    <p>
+      The categories in the register are not marketing. They describe genuinely
+      different ways of solving a problem, and the differences matter to anyone
+      deciding what they want in their building.
+    </p>
+    <p>
+      <b>Baits</b> are placed, not sprayed. The insect has to find and eat them,
+      which means they go in cracks, voids and stations rather than across
+      surfaces, and the treated area is measured in inches. <b>Residuals</b> are
+      the sprays most people picture — applied to a surface, active for a period
+      afterwards, and used mostly outdoors on this site. <b>Insect growth
+      regulators</b> do not kill anything; they interfere with development so a
+      population cannot replace itself, which makes them slow and very useful
+      alongside something else. <b>Borates</b> are mineral salts applied to bare
+      wood, and they stay in the timber rather than on a surface.
+    </p>
+
+    <h2>Rodenticides, and how we handle them</h2>
+    <p>
+      Three of the products above are rodenticides and all three share one
+      active. They are worth calling out separately because they carry a risk
+      the insect products do not: an animal that has eaten bait can be eaten by
+      something else, and that is how a barn owl, a hawk or somebody's cat ends
+      up poisoned by a product nobody applied anywhere near them.
+    </p>
+    <p>
+      That risk is managed by where the bait goes, not by the choice of bait.
+      Exterior placements go in tamper-resistant stations, secured, on a
+      documented map of the property. Interior work in an occupied building
+      leans on traps rather than bait wherever traps will do the job, because a
+      rodent that dies in a wall void is a problem in its own right. And the
+      whole reason exclusion is the larger half of this business is that sealing
+      a building is the only rodent work that does not have to be repeated.
+    </p>
+
+    <h2>What you are entitled to ask anyone</h2>
+    <p>
+      Whether or not you ever call us, these are reasonable questions to put to
+      any company that proposes to apply something at your address, and a
+      licensed applicator should be able to answer all of them without
+      hesitating.
+    </p>
+    <p>
+      What is the product name and its EPA registration number. What is the
+      active ingredient. May I see the label. What is the re-entry interval for
+      the areas you are treating. Where exactly are you applying it, and where
+      are you not. And is there a version of this job that uses less, or none.
+    </p>
+    <p>
+      An honest answer to the last one is sometimes yes. A fair amount of what
+      gets sold as a treatment problem in this county is really a moisture
+      problem or a quarter-inch gap, and no amount of anything on this page
+      fixes either.
+    </p>
+
+    {retired.length > 0 && (
+      <>
+        <h2>No longer in use</h2>
+        <p>
+          Listed because a register that only ever grows is not being
+          maintained. These are products the company has carried and has since
+          stopped using; their documents stay up because work done with them is
+          still on record somewhere.
+        </p>
+        <ul>
+          {retired.map((p) => (
+            <li>
+              <b>{p.name}</b> — {p.actives.join(' + ')}
+              {p.epaReg ? <> · EPA Reg. {p.epaReg}</> : null}
+              {p.label ? <> · <a href={p.label}>Label (PDF)</a></> : null}
+              {p.sds ? <> · <a href={p.sds}>SDS (PDF)</a></> : null}
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+  </div>
+
+  <Faq items={faqs} />
+
+  <LinkRail heading="Related" links={rails} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

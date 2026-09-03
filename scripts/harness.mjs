@@ -66,7 +66,7 @@ const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank
    AEO answer, and the substance a reader came for is the images. It still
    carries the 1,200-word floor and clears it on written section copy — it is
    not exempted from anything, only classified. */
-const HUBS = new Set(['/', '/services/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/', '/guides/', '/blog/', '/gallery/']);
+const HUBS = new Set(['/', '/services/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/', '/guides/', '/blog/', '/gallery/', '/what-we-use/']);
 const isBlogPost = (url) => url.startsWith('/blog/') && url !== '/blog/';
 const TITLE_MAX = 62, DESC_MIN = 110, DESC_MAX = 165;
 
