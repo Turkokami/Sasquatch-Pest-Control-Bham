@@ -1250,9 +1250,14 @@ footer.site {
       color-mix(in srgb, var(--inv-bg) 88%, transparent),
       color-mix(in srgb, var(--inv-bg) 88%, transparent)
     ),
+    url("/img/scene/forest-band-900.jpg");
+  background-image: linear-gradient(
+      color-mix(in srgb, var(--inv-bg) 88%, transparent),
+      color-mix(in srgb, var(--inv-bg) 88%, transparent)
+    ),
     image-set(
-      url("/img/scene/forest-band-900.jpg") 1x,
-      url("/img/scene/forest-band-1600.jpg") 2x
+      url("/img/scene/forest-band-900.webp") 1x,
+      url("/img/scene/forest-band-1600.webp") 2x
     );
   background-size: cover;
   /* The photograph is 2.34:1 and the footer is far wider than it is tall, so
@@ -2294,12 +2299,28 @@ footer.site .colophon {
     position: fixed;
     inset: 0;
     z-index: -1;
+    /* JPEG first as the fallback declaration, WebP in the image-set that
+       overrides it. A browser too old for image-set() takes the line it
+       understands; everything else takes the smaller file. The fallback is
+       the 1280 rather than the 1920 because it is only ever served to a
+       browser that has already told us it is old. */
+    background-image: url("/img/scene/forest-page-1280.jpg");
+    /* 1920 AT 1x, NOT 1280. image-set switches on device pixel ratio, not on
+       how wide the window is, so the 1x entry is what an ordinary 1x desktop
+       monitor gets however wide it is — and a 1280 image stretched across a
+       2560 monitor is visibly soft. Starting at 1920 costs a desktop-only
+       80KB and removes the case where the background looks smeared. */
     background-image: image-set(
-      url("/img/scene/forest-page-1280.jpg") 1x,
-      url("/img/scene/forest-page-1920.jpg") 1.5x
+      url("/img/scene/forest-page-1920.webp") 1x,
+      url("/img/scene/forest-page-2560.webp") 2x
     );
     background-size: cover;
-    background-position: center 42%;
+    /* Centered, not offset. The previous artwork was an ordinary landscape
+       and had to be pushed to 42% to get anything interesting into the
+       gutters. This one is composed for the job — dense canopy, fern and rock
+       down both edges, and a near-empty sky through the middle where the
+       reading column sits — so the honest position is the middle of it. */
+    background-position: center;
     background-repeat: no-repeat;
   }
 
