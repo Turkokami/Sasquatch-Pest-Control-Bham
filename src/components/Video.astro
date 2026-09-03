@@ -1,0 +1,91 @@
+---
+/**
+ * Video — one of the company's own YouTube videos, loaded only on click.
+ *
+ * NOTHING FROM GOOGLE UNTIL SOMEBODY ASKS. A plain YouTube embed pulls about a
+ * megabyte of player and sets third-party cookies on page load, whether or not
+ * the reader ever wanted the video. That is a real cost paid by everybody to
+ * benefit the few who press play. So this paints a local poster and a button;
+ * the iframe is created in JavaScript on the first click, from
+ * youtube-nocookie.com, and autoplays because by then the reader has asked for
+ * it.
+ *
+ * It is worth comparing with LocationMap, which does load a third-party frame
+ * eagerly. That component spends a paragraph justifying the trade because a
+ * map cannot be faked with a picture — panning is the point. A video CAN be
+ * faked with a picture, because the first frame is all a reader needs to decide.
+ * Same principle, opposite conclusion, and the difference is whether the
+ * interaction is the content.
+ *
+ * NO SCRIPT FRAMEWORK. One inline listener per instance, added with
+ * is:inline so Astro leaves it alone. If JavaScript never runs, the poster is
+ * still a link to the video on YouTube — which is why the markup is an <a>
+ * wrapping the image rather than a <button>. It degrades to a working link
+ * rather than to a dead rectangle.
+ *
+ * No colors here; §21f of global.css paints it.
+ */
+import { videos } from '../data/videos';
+import { intrinsicSize } from '../lib/images';
+
+interface Props {
+  /** Key into src/data/videos.ts. */
+  name: keyof typeof videos;
+  heading?: string;
+}
+const { name, heading } = Astro.props;
+const v = videos[name];
+const { width, height } = intrinsicSize(v.poster);
+const domId = `vid-${v.id}`;
+const watch = `https://www.youtube.com/watch?v=${v.id}`;
+---
+<section class="videoblock" data-boilerplate>
+  {heading && <h2>{heading}</h2>}
+  <figure>
+    <div class="videoframe" id={domId} data-yt={v.id}>
+      {/* An anchor, not a button: with no JavaScript this is still a working
+          link to the video rather than a control that does nothing. */}
+      <a class="videoposter" href={watch} rel="noopener">
+        <img
+          src={v.poster}
+          alt={v.alt}
+          width={width}
+          height={height}
+          loading="lazy"
+          decoding="async"
+        />
+        <span class="videoplay" aria-hidden="true"></span>
+        <span class="videolabel">
+          Play<span class="videodur"> · {v.duration}</span>
+        </span>
+      </a>
+    </div>
+    <figcaption>
+      {v.caption} <span class="videometa">Our own video, {v.duration}. Nothing
+      loads from YouTube until you press play.</span>
+    </figcaption>
+  </figure>
+</section>
+
+<script is:inline define:vars={{ domId }}>
+  (function () {
+    var box = document.getElementById(domId);
+    if (!box) return;
+    var link = box.querySelector('a');
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      var f = document.createElement('iframe');
+      /* nocookie, and autoplay because the click WAS the consent. */
+      f.src =
+        'https://www.youtube-nocookie.com/embed/' +
+        box.dataset.yt +
+        '?autoplay=1&rel=0';
+      f.title = link.querySelector('img').alt;
+      f.allow =
+        'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      f.allowFullscreen = true;
+      f.setAttribute('frameborder', '0');
+      box.replaceChildren(f);
+    });
+  })();
+</script>

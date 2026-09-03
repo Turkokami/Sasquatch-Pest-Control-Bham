@@ -6,6 +6,7 @@ import LeadForm from '../../../components/LeadForm.astro';
 import Photo from '../../../components/Photo.astro';
 import Training from '../../../components/Training.astro';
 import EntryPoints from '../../../components/EntryPoints.astro';
+import Video from '../../../components/Video.astro';
 import { servicePhotos } from '../../../data/photos';
 import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
@@ -129,6 +130,10 @@ const guideLinks = await guideLinksFor(path);
     <Training installers heading="Product certifications we hold" />
   )}
 
+  {s.slug === 'rodent-control' && (
+    <Video name="fall-rodents" heading="The autumn move indoors, on video" />
+  )}
+
   {/* THE ENTRY DIAGRAM, on the two pages it is an argument for. Rodent control
       is where a reader asks "how did they get in"; exclusion is where they ask
       "what would you actually seal". Same drawing, different question, so the
@@ -136,6 +141,18 @@ const guideLinks = await guideLinksFor(path);
       other 21 service pages — a spider page does not need a rodent diagram,
       and furniture is what this becomes if it goes everywhere. */}
   {s.slug === 'rodent-control' && <EntryPoints heading="Where they actually get in" />}
+
+  {/* THE COMPANY'S OWN VIDEOS, on the four pages they are about. Nothing
+      loads from YouTube until a reader presses play — see Video.astro. They
+      go on the service pages rather than a "videos" page nobody visits,
+      because a video about carpenter ants is worth something to the person
+      reading about carpenter ants and nothing to anybody else. */}
+  {s.slug === 'ant-control' && (
+    <Video name="carpenter-ants" heading="Carpenter ants, on video" />
+  )}
+  {s.slug === 'fly-control' && (
+    <Video name="flies" heading="Flies, on video" />
+  )}
   {s.slug === 'exclusion-and-repairs' && (
     <EntryPoints heading="What we seal, and where it is" />
   )}
