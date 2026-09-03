@@ -77,6 +77,15 @@ export const collections = {
     type: 'content',
     schema: z.object({ ...base, town: z.string(), neighborhood: z.string().optional() }),
   }),
+  /* Commercial verticals beneath /commercial/. Same contract as everything
+     else — a page exists only once a body clears the floor, which is why the
+     route generates from THIS collection rather than from the industry list.
+     A vertical named on the hub with nothing written behind it stays a
+     paragraph on the hub, not a thin page of its own. */
+  industries: defineCollection({
+    type: 'content',
+    schema: z.object({ ...base, industry: z.string() }),
+  }),
   pages: defineCollection({
     type: 'content',
     schema: z.object({ ...base, path: z.string() }),

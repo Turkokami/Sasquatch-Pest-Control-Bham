@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import LeadForm from '../../components/LeadForm.astro';
+import { getCollection } from 'astro:content';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
@@ -55,6 +56,14 @@ const faqs = [
 /* Related guides, resolved from the guides' own relatedTo declarations —
    one list, queried, rather than a second list maintained here. */
 const guideLinks = await guideLinksFor(path);
+
+/* Verticals that have a written page. Named on the hub either way; linked only
+   when there is something behind the link. */
+const industryEntries = await getCollection('industries');
+const writtenVerticals = industryEntries.map((e) => ({
+  href: `/commercial/${e.data.industry}/`,
+  label: e.data.h1,
+}));
 ---
 <BaseLayout
   path={path}
@@ -107,9 +116,18 @@ const guideLinks = await guideLinksFor(path);
     <h2>Industries we work with</h2>
     <p>
       Each of these has its own pressure, its own regulatory surface and its own
-      scheduling constraints. Vertical pages are being built out as part of the
-      current program.
+      scheduling constraints. Where a vertical has its own page it is linked
+      below; the rest are described here until there is enough that is
+      genuinely specific to say about them to justify a page of their own.
     </p>
+
+    {/* Built from the collection rather than from the twelve-item list, so a
+        link only appears once there is a page behind it. The alternative — a
+        grid of twelve links, ten of which go to a stub — is the thin-page
+        problem the geo routes already solved this way. */}
+    {writtenVerticals.length > 0 && (
+      <LinkRail heading="Commercial programs with their own page" links={writtenVerticals} />
+    )}
 
     <h3>Agriculture — the Lynden and Everson corridor</h3>
     <p>
@@ -170,6 +188,86 @@ const guideLinks = await guideLinksFor(path);
       perimeter, controlled interior placements, attention to the yard margins
       that are actually feeding the population, and stored-product monitoring —
       because those insects arrive inside the product rather than through a door.
+    </p>
+
+    <h2>How a commercial program actually runs</h2>
+    <p>
+      Six stages, and the order is the point. Most of what goes wrong on a
+      commercial account goes wrong because somebody started at stage three.
+    </p>
+
+    <ol class="ipm-steps">
+      <li>
+        <b>Assess.</b> Walk the building before quoting it. Where the access is,
+        where the harborage is, how waste moves, what the yard margins are doing,
+        and which of those a program can change and which a manager has to.
+      </li>
+      <li>
+        <b>Exclude.</b> Close what can be closed. On a commercial building that
+        is never everything — a dock door open all day is not a sealing problem —
+        so the honest scope is a defended perimeter rather than a sealed one.
+      </li>
+      <li>
+        <b>Treat.</b> Targeted, and material-appropriate to the setting. A food
+        plant, a school and a boatyard are three different sets of constraints
+        on the same active ingredient.
+      </li>
+      <li>
+        <b>Monitor.</b> Devices where devices earn their place, mapped so an
+        auditor can follow the layout without taking anybody's word for it.
+      </li>
+      <li>
+        <b>Document.</b> Every visit produces a record of what was found and what
+        was done. This is half the service on a regulated site and it is the half
+        that gets skipped.
+      </li>
+      <li>
+        <b>Verify.</b> Go back and check the thing you did worked, and change the
+        program when the site says so rather than when the calendar does.
+      </li>
+    </ol>
+
+    <h2>A program against a spray contract</h2>
+    <p>
+      Both arrive monthly. They are not the same purchase, and the difference
+      only becomes visible when something is wrong.
+    </p>
+
+    <div class="tablewrap">
+      <table class="cmp">
+        <thead>
+          <tr><th>&nbsp;</th><th>Generic spray contract</th><th>An actual program</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><b>What is bought</b></td><td>A visit</td><td>An outcome, with the visit as the means</td></tr>
+          <tr><td><b>Scope</b></td><td>Perimeter spray, same route every time</td><td>Written scope built from the walk, revised when the site changes</td></tr>
+          <tr><td><b>Exclusion</b></td><td>Rarely included, usually quoted separately</td><td>Central, because access is what sustains the population</td></tr>
+          <tr><td><b>Record</b></td><td>A service slip</td><td>Findings, actions, device map, and the items on your side</td></tr>
+          <tr><td><b>When an auditor asks</b></td><td>You assemble it afterwards</td><td>It already exists, in order</td></tr>
+          <tr><td><b>When pressure changes</b></td><td>Same visit, more often</td><td>The program changes</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>The compliance surface we keep you ready for</h2>
+    <p>
+      We are a pest control company and not your auditor, so this is what we can
+      actually do rather than a promise about your certification. What a pest
+      program contributes to an audit is a documented history: a device map, a
+      dated record of findings and corrective actions, and evidence that the
+      recommendations on your side were made in writing and not just mentioned.
+    </p>
+    <p>
+      In this county that most often means the Washington State Department of
+      Health food code for anything serving food, WSDA licensing for the
+      application itself, third-party audit schemes on the processing and packing
+      side, and — for rental housing — the Bellingham rental registration and
+      inspection program, which is a different animal from the rest and is
+      covered on the <a href="/services/rodent-control/">rodent control</a> page.
+    </p>
+    <p>
+      What we will not do is tell you a program guarantees an audit result. It
+      does not. It removes one of the common reasons for failing one.
     </p>
 
     <h2>Getting started on a commercial account</h2>

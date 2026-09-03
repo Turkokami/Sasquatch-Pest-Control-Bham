@@ -1,0 +1,86 @@
+---
+/**
+ * Commercial vertical pages, beneath /commercial/.
+ *
+ * ONE PAGE PER WRITTEN VERTICAL, AND NOT ONE PER NAMED VERTICAL. The route
+ * generates from the `industries` content collection rather than from the
+ * twelve-item list on the hub, so a vertical that is named on the hub with
+ * nothing written behind it stays a paragraph on the hub instead of becoming a
+ * thin page of its own. That is the same rule the geo pages keep — Keystone
+ * Part 6.3, "if the data to write 3,000 unique local words doesn't exist,
+ * don't publish the page" — and it is the reason this site has 24 location
+ * pages rather than 60.
+ *
+ * The Texas franchise runs nine of these and it is the layout the owner asked
+ * to match. Matching the layout is the point; matching the copy would be the
+ * opposite of the point, because two sites in one brand publishing the same
+ * words about different markets is a duplicate-content problem that costs both
+ * of them. Everything here is written for Whatcom and Skagit.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import Cta from '../../components/Cta.astro';
+import { business } from '../../data/business';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('industries');
+  return entries.map((entry) => ({
+    params: { industry: entry.data.industry },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const d = entry.data;
+const path = `/commercial/${d.industry}/`;
+
+/* Siblings for the rail: every other written vertical. The hub carries the
+   full twelve; this rail only offers pages that exist. */
+const all = await getCollection('industries');
+const siblings = all
+  .filter((e) => e.data.industry !== d.industry)
+  .map((e) => ({ href: `/commercial/${e.data.industry}/`, label: e.data.h1 }));
+---
+<BaseLayout
+  path={path}
+  title={d.title}
+  description={d.description}
+  kind="page"
+  noindex={!d.ready}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Commercial', path: '/commercial/' },
+    { name: d.h1, path },
+  ]}
+>
+  <h1>{d.h1}</h1>
+  <AnswerBox text={d.answer} />
+
+  <LeadForm />
+
+  <div class="prose"><Content /></div>
+
+  <Faq items={d.faqs} />
+
+  {siblings.length > 0 && (
+    <LinkRail heading="Other commercial programs" links={siblings} />
+  )}
+
+  {/* Back to the hub, always. A vertical page is a branch of the commercial
+      argument rather than a standalone service, and a reader who lands here
+      from search should be able to see the rest of it. */}
+  <p class="prose">
+    This is one of the programs described on our{' '}
+    <a href="/commercial/">commercial pest control</a> page, which covers how a
+    program is built, what the record looks like, and the compliance surface it
+    contributes to. For a site walk, call or text{' '}
+    <a href={`tel:${business.phoneE164}`}>{business.phone}</a>.
+  </p>
+
+  <Cta market="Whatcom County" service="Commercial pest control" />
+</BaseLayout>

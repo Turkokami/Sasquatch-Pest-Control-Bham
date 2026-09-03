@@ -3,16 +3,16 @@ service: wdo-treatment
 title: "WDO Treatment for Home Sales | Whatcom County"
 description: "Your inspector found wood-destroying organisms. We are licensed to treat them — termites, carpenter ants, beetles and decay fungus. Call or text 360-410-2199."
 h1: "WDO Treatment for Real Estate Transactions"
-answer: "We are not structural pest inspectors, so we do not issue the report. What we do is the other half. Our WSDA license carries the PCO Structural category, which covers treatment of the termites, carpenter ants, wood-boring beetles and decay fungus that an inspector finds."
+answer: "Your inspector found wood-destroying organisms and you have a closing date. That is the half we do: our WSDA license carries the PCO Structural category, which covers treating the termites, carpenter ants, wood-boring beetles and decay fungus a report lists. We do not issue the report itself, which is a separate credential."
 ready: true
 expert: kristofer-elling
 faqs:
-  - q: "Can you do the inspection for my home sale?"
-    a: "No. We are not licensed structural pest inspectors and we do not issue that report. It is a separate credential from the one we hold. You need an independent inspector for that part, and we would rather tell you plainly than take the booking and disappoint you."
   - q: "So what exactly do you do in a real estate transaction?"
     a: "The treatment. Once an inspector has documented what is in the structure, our PCO Structural category is what allows us to treat it — dampwood or subterranean termites, carpenter ants, wood-boring beetles, moisture ants and decay fungus conditions. We work to the closing date."
+  - q: "Can you do the inspection for my home sale?"
+    a: "No. We are not licensed structural pest inspectors and we do not issue that report. It is a separate credential from the one we hold. You need an independent inspector for that part, and we would rather tell you plainly than take the booking and disappoint you."
   - q: "How quickly can treatment happen before closing?"
-    a: "Usually within the same week, and often faster when a closing date is driving it. Tell us the date at the first phone call rather than at the end. The variable is rarely our schedule, it is whether the work needs a contractor to correct water intrusion first."
+    a: "We schedule it as soon as the closing date needs it, and the honest answer is that the date is rarely the constraint — the prep is. Some of this work cannot start until a contractor has corrected water intrusion, or until access is opened up. Tell us the closing date on the first phone call rather than at the end, and we will tell you straight away whether it is our schedule or the preparation that decides it."
   - q: "Why should the inspection and the treatment be separate companies?"
     a: "Because it removes the conflict. When the party identifying the problem is also selling the remedy, they have a financial interest in how big that remedy is. Keeping the two in different hands is better for a buyer, a seller and a lender, and it is how we prefer to work."
   - q: "What licenses do you hold for this work?"

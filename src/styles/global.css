@@ -1778,6 +1778,63 @@ footer.site .colophon {
   }
 }
 
+/* ------------------------------- §21e  commercial hub: steps & table */
+
+/* The numbered IPM stages on /commercial/. An ordered list rather than a row of
+   cards, because the order is the argument — most of what goes wrong on a
+   commercial account goes wrong because somebody started at stage three, and a
+   grid of equal boxes says the opposite of that. */
+.ipm-steps {
+  margin: var(--space-4) 0;
+  padding-left: 1.4rem;
+  max-width: var(--measure);
+}
+.ipm-steps li {
+  margin-bottom: var(--space-3);
+  padding-left: 0.2rem;
+}
+.ipm-steps b {
+  color: var(--ink);
+}
+
+/* A comparison table, and on a phone it scrolls sideways inside its own box
+   rather than squeezing three columns into 360px or breaking the page's own
+   horizontal scroll. The wrapper is what scrolls; the page never does. */
+.tablewrap {
+  overflow-x: auto;
+  margin: var(--space-4) 0;
+  max-width: var(--measure);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+}
+.cmp {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 34rem;
+  font-size: var(--fs-sm);
+}
+.cmp th,
+.cmp td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--rule);
+}
+.cmp thead th {
+  background: var(--well);
+  color: var(--ink);
+  font-weight: 600;
+  border-bottom: 2px solid var(--rule-2);
+}
+/* The first column is a label, not data — set like one. */
+.cmp tbody td:first-child {
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.cmp tbody tr:last-child td {
+  border-bottom: 0;
+}
+
 /* ------------------------------------------------------------ §22  misc */
 
 .stub {
