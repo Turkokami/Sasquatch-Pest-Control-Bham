@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import LinkRail from '../components/LinkRail.astro';
+import { gallery, galleryCount } from '../data/gallery';
+
+const path = '/gallery/';
+
+/* THE GALLERY. Owner's call: the media library holds thirteen hundred images
+   and the rebuild had been using twenty-four of them.
+
+   THE SECTIONS ARE ORDERED AS AN ARGUMENT, not as the generator emitted them.
+   It runs from the part of a building nobody looks at outward — crawlspace,
+   then the repair, then the insulation above it, then what was living in all
+   three. A reader who scrolls this in order should come away understanding
+   that most of this job happens under and behind a house rather than with a
+   spray can in a kitchen. */
+const ORDER = [
+  'crawlspaces',
+  'exclusion',
+  'insulation',
+  'rodents',
+  'stinging',
+  'pests',
+  'commercial',
+  'crew',
+  'country',
+];
+const sections = ORDER.map((k) => gallery.find((s) => s.key === k)).filter(
+  (s): s is (typeof gallery)[number] => s !== undefined,
+);
+
+/* Copy keyed to the section rather than written into the data file. That file
+   is generated and gets overwritten; prose does not belong in a build
+   artifact. */
+const COPY: Record<string, string[]> = {
+  crawlspaces: [
+    'Most of what we do happens in the three feet between a floor and the ground. A crawlspace here is a cold, humid box with a dirt floor, and the vapor barrier over that dirt is the only thing between the soil and the underside of the house. When it is torn, displaced or missing, the space above it stays wet, the joists take on moisture, and the conditions that draw rodents, sowbugs and decay fungus are all present at once.',
+    'These are access doors, vent openings, standing moisture, ductwork and barrier work. They are unglamorous pictures of the most diagnostic place on a property: almost every question worth asking about a house can be answered from underneath it.',
+  ],
+  exclusion: [
+    'Exclusion is the part of this trade closest to construction, and it is where we differ most from an operator who only sprays. Sealing a building means finding every opening a rodent can use and then closing it with something that will still be there in ten years — steel mesh, sheet metal, mortar, and covers cut to fit the opening rather than an off-the-shelf plate held on with foam.',
+    'Several of these show metal cut and folded in the shop for one specific vent or access well. That is the work a treatment cannot replace: a building that is closed stays closed, and a building that is only treated needs treating again.',
+  ],
+  insulation: [
+    'Insulation and pest control meet more often than people expect. Blown-in insulation in an attic is bedding, cover and somewhere to raise young, and once rodents have been through it the material is contaminated and no longer doing the job it was installed for. Below, in the crawlspace, batts that have fallen or been pulled down stop insulating the moment they lose contact with the subfloor.',
+    'Everyone on staff has completed installer training and the certificates are listed on the About page. These photographs are removal, replacement, and the state of what came out.',
+  ],
+  rodents: [
+    'Rodent work is mostly a search for the way in. The treatment side is straightforward; what decides whether the problem returns is whether the entry point was found, and entry points are rarely where people expect. A quarter of an inch is enough for a mouse, and the gaps that matter are usually around a plumbing penetration, at a foundation corner, behind a downspout, or where a vent screen rusted through years ago.',
+    'What is shown here is the evidence rather than the animal: tunneling through insulation, chewed pipe wrap, droppings at a threshold, nesting material dragged into a crawlspace, and the openings all of it came through.',
+  ],
+  stinging: [
+    'Wasp and hornet work is seasonal, and it is the one category where the calendar decides everything. A nest that could have been taken down in June is a colony of several hundred by late August, and the nests here are what a season of unattended growth looks like — built into a soffit corner, under a gable peak, inside a wall cavity, or hanging in a shrub at head height beside a door.',
+    'Bees are in this section too, and they are a different job. A honey bee swarm and a bumble bee nest are not pests, and the right outcome for both is usually relocation rather than treatment.',
+  ],
+  pests: [
+    'The insects that bring most households to a pest control company are, individually, less dramatic than the ones people fear. Carpenter ant frass on a beam. Cockroach spotting in a cabinet corner. Wood-boring beetle exit holes in a joist. A stink bug on a window frame in October.',
+    'What these have in common is that the insect is easier to identify from the evidence it leaves than from a glimpse of the insect itself, and identifying it correctly is what decides the treatment. The pest library on this site exists for the same reason.',
+  ],
+  commercial: [
+    'Commercial work differs from residential work mainly in scale and access. A warehouse roofline, a store entrance canopy and a concrete ledge on a municipal building are all bird problems, and reaching them means a lift, a harness and a crew rather than a ladder and one technician.',
+    'Bird exclusion is the clearest example. Spikes are the most commonly specified deterrent and the most commonly defeated one; netting closed across an opening and tensioned properly on a perimeter cable is what actually holds. Both are shown here.',
+  ],
+  crew: [
+    'Five people on staff hold WSDA applicator licenses, and the numbers are published on the About page so any claim made on this site can be checked against the state record. These are the vehicles that run the routes and the people who arrive in them.',
+    'The protective equipment in several of these is not staged. A crawlspace in February is a confined space with poor air and standing water, and a respirator and a headlamp are the ordinary uniform for it.',
+  ],
+  country: [
+    'This county runs from saltwater at Blaine to the snow line at Mount Baker in under fifty miles, and the pest year at one end has little to do with the other. Marine air at the coast, farmland through the middle, standing timber along the eastern edge — three sets of pressures on three kinds of building.',
+    'These were taken between jobs. They are here because the ecology in them is the reason the rest of this page looks the way it does.',
+  ],
+};
+
+const answer =
+  'This is the work itself: crawlspaces, exclusion and metalwork, insulation, rodent evidence, wasp nests, commercial bird jobs and the crew who do them. Every photograph was taken on a Whatcom or Skagit County job by the people doing it.';
+
+const faqs = [
+  {
+    q: 'Are these stock photographs?',
+    a: 'No. Every image here came off a job in Whatcom or Skagit County and was taken by whoever was doing the work. That is worth stating plainly, because stock imagery is close to universal in this industry and a reader has no way to tell by looking.',
+  },
+  {
+    q: 'Will my property appear here?',
+    a: 'Not identifiably. Nothing showing an address, a house number, a plate or a customer is published, and these are photographs of building conditions rather than of homes. If you would rather no photograph of your job appeared at all, say so and none will.',
+  },
+  {
+    q: 'Why are so many of these empty crawlspaces?',
+    a: 'Because that is where the job is. The part of pest control people picture is a technician with a sprayer. The part that decides whether a problem comes back is a gap under a house that somebody had to crawl through mud to find.',
+  },
+];
+
+const rails = [
+  { href: '/services/exclusion-and-repairs/', label: 'Pest exclusion & repairs' },
+  { href: '/services/crawlspace-restoration/', label: 'Crawlspace cleanout & restoration' },
+  { href: '/services/attic-insulation/', label: 'Attic insulation removal & replacement' },
+  { href: '/services/rodent-control/', label: 'Rodent & mouse control' },
+  { href: '/commercial/', label: 'Commercial pest control' },
+  { href: '/about/', label: 'About the company & licenses' },
+];
+---
+
+<BaseLayout
+  path={path}
+  title="Photo Gallery of Our Work | Sasquatch Pest Control"
+  description="One hundred and forty-four photographs from real Whatcom and Skagit County jobs: crawlspaces, exclusion metalwork, insulation, rodent evidence and the crew."
+  kind="page"
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Gallery', path },
+  ]}
+>
+  <h1>What the work actually looks like</h1>
+  <AnswerBox text={answer} />
+
+  <LeadForm />
+
+  <div class="prose">
+    <p>
+      Pest control websites are illustrated almost entirely with stock
+      photography, and the reason is straightforward: the real work is dirty,
+      badly lit, and happens in places nobody wants to photograph. The {galleryCount}
+      images below come from this company&rsquo;s own archive, taken on jobs across
+      Whatcom and Skagit County by the people doing them. They are grouped so the
+      page reads from the least visible part of a building outward.
+    </p>
+  </div>
+
+  {
+    sections.map((s) => (
+      <section>
+        <h2>{s.title}</h2>
+        <div class="prose">{COPY[s.key]?.map((para) => <p>{para}</p>)}</div>
+        <div class="gallery">
+          {s.images.map((img) => (
+            <img
+              src={img.file}
+              alt={img.alt}
+              width={img.width}
+              height={img.height}
+              loading="lazy"
+              decoding="async"
+            />
+          ))}
+        </div>
+      </section>
+    ))
+  }
+
+  <Faq items={faqs} />
+
+  <LinkRail heading="The services behind these photographs" links={rails} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

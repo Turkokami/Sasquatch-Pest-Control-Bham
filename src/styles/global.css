@@ -2239,6 +2239,46 @@ footer.site .colophon {
   }
 }
 
+/* ------------------------------------------------------ §21i  gallery */
+
+/* A grid of job photographs, 144 of them on one page. Three things matter
+   here and none of them is decoration.
+
+   EVERY IMAGE IS LAZY AND CARRIES ITS OWN DIMENSIONS, written into the data
+   file by the generator from the file on disk rather than typed. 144 images
+   without width and height is 144 layout shifts; with them the grid is laid
+   out before a single byte of image arrives, and the browser fetches only
+   what is near the viewport.
+
+   THE ASPECT IS FORCED AND THE FIT IS COVER. The library is a mix of phone
+   portrait and camera landscape, and a grid of mixed aspects reads as a mess
+   however tidy the CSS is. Squares crop some subjects awkwardly; 4:3 keeps
+   enough of a portrait crawlspace shot to be legible.
+
+   NO LIGHTBOX. That would be a script, a focus trap and a keyboard contract
+   for a page whose job is to be scrolled past. */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 0.5rem;
+  margin: 0 0 var(--space-5);
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--rule);
+  background: var(--well);
+}
+@media (min-width: 34rem) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  }
+}
+
 /* ------------------------------------------- §21h  page background */
 
 /* The forest behind the page, so the gutters beside the reading column show

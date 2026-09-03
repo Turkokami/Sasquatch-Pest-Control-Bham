@@ -62,7 +62,11 @@ const run = (n) => !ONLY?.length || ONLY.includes(n);
             precisely the set where thin content would actually cost us. */
 const FLOORS = { content: 3000, hub: 1200, blog: 900 };
 const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank-you/']);
-const HUBS = new Set(['/', '/services/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/', '/guides/', '/blog/']);
+/* '/gallery/' is a hub in the sense this set means: its job is routing and an
+   AEO answer, and the substance a reader came for is the images. It still
+   carries the 1,200-word floor and clears it on written section copy — it is
+   not exempted from anything, only classified. */
+const HUBS = new Set(['/', '/services/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/', '/guides/', '/blog/', '/gallery/']);
 const isBlogPost = (url) => url.startsWith('/blog/') && url !== '/blog/';
 const TITLE_MAX = 62, DESC_MIN = 110, DESC_MAX = 165;
 
