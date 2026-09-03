@@ -25,6 +25,8 @@ import Faq from '../../components/Faq.astro';
 import LinkRail from '../../components/LinkRail.astro';
 import Cta from '../../components/Cta.astro';
 import { business } from '../../data/business';
+import Photo from '../../components/Photo.astro';
+import { industryPhotos } from '../../data/photos';
 
 export async function getStaticPaths() {
   const entries = await getCollection('industries');
@@ -62,6 +64,11 @@ const siblings = all
   <AnswerBox text={d.answer} />
 
   <LeadForm />
+
+  {/* Only the verticals we have a genuine photograph of. Eight of the nine
+      render without one rather than repeat the same scissor lift nine times
+      and imply nine different jobs. */}
+  {industryPhotos[d.industry] && <Photo photo={industryPhotos[d.industry]} priority />}
 
   <div class="prose"><Content /></div>
 

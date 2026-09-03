@@ -7,6 +7,8 @@ import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
 import { guideLinksFor } from '../../lib/guides';
+import Photo from '../../components/Photo.astro';
+import { commercialHubPhoto, commercialExclusionPhoto } from '../../data/photos';
 
 const path = '/commercial/';
 
@@ -86,6 +88,11 @@ const writtenVerticals = industryEntries.map((e) => ({
       copy would break both; the CTA at the foot no longer carries one and
       keeps its phone button. The sticky mobile bar jumps to this. */}
   <LeadForm />
+
+  {/* Leads the hub, so it is eager: it is the first contentful image on the
+      page and lazy-loading the thing above the fold is how a page ends up
+      reporting a slow largest-contentful-paint against itself. */}
+  <Photo photo={commercialHubPhoto} priority />
 
   <div class="prose">
     <h2>Documented, discreet, dependable</h2>
@@ -305,7 +312,6 @@ const writtenVerticals = industryEntries.map((e) => ({
       call to interpret it.
     </p>
 
-  </div>
     <h2>Exclusion is where we are most useful commercially</h2>
     <p>
       If there is one thing to take from this page, it is that the exclusion side
@@ -328,6 +334,8 @@ const writtenVerticals = industryEntries.map((e) => ({
       has not started. Planning it then is cheaper than reacting in November.
     </p>
 
+    <Photo photo={commercialExclusionPhoto} />
+  </div>
 
   <ul class="rail">
     {verticals.map(([slug, label]) => <li><span>{label}</span></li>)}

@@ -100,6 +100,43 @@ export const servicePhotos: Record<string, Photo> = {
     caption:
       'A bumblebee, photographed in Whatcom County. Bumblebees are pollinators and are not treated as a pest — telling one from a yellowjacket is most of what decides whether a nest needs anything done at all.',
   },
+
+  /* ADDED 2 Sep 2026. The four below close the gap between the nine service
+     pages that had a photograph and the twenty-three that exist. They are NOT
+     the fourteen that were missing — ten of those stay empty on purpose. The
+     library is a working record of jobs, so it is deep in crawlspaces,
+     exclusion and rodents and has nothing at all for silverfish, centipedes,
+     earwigs, moths, fleas or flies. A page with no photograph renders without
+     one; it does not borrow a stock insect. */
+
+  'wdo-treatment': {
+    file: '/img/work/wood-boring-beetle-exit-holes-and-frass-whatcom-county-wa.jpg',
+    alt: 'A length of milled wood lying on plastic sheeting, its face covered in small round exit holes, with piles of powdery frass fallen beneath it',
+    /* NOT named to species. The holes and the frass are consistent with
+       powderpost beetle and the owner has described one such job, but lyctids,
+       anobiids and old house borer are not separable from a photograph, and
+       this page is read by people who are about to close on a house. */
+    caption:
+      'Wood-boring beetle exit holes in a member pulled from a Whatcom County home. Every hole is one adult that has already chewed its way out, so what you can count on the surface describes a previous generation rather than what is still working inside the wood.',
+  },
+  'cockroach-control': {
+    file: '/img/work/cockroach-fecal-spotting-in-a-cabinet-corner-whatcom-county-wa.jpg',
+    alt: 'The inside corner of a white cabinet, its base and lower walls covered in dense brown speckling, with a few dead insects along the joint',
+    caption:
+      'Spotting built up in the corner of a cabinet. The staining is the useful evidence on a cockroach job, because it accumulates where the insects rest rather than where they travel — a corner like this tells you where they are living when nothing is moving.',
+  },
+  'stink-bug-control': {
+    file: '/img/work/stink-bug-on-a-window-frame-whatcom-county-wa.jpg',
+    alt: 'A brown shield-shaped stink bug clinging to the underside of a wooden window frame rail, with glass and a blurred interior below it',
+    caption:
+      'A stink bug on the frame of a window at a Whatcom County home. The window is where most households first notice them, because the frame is the warm gap they were already working along when the wall got cold.',
+  },
+  'home-protection-plan': {
+    file: '/img/work/technician-treating-a-home-exterior-in-autumn-whatcom-county-wa.jpg',
+    alt: 'A technician kneeling with equipment beside the deck of a house in low autumn sunlight, with fallen leaves across the boards',
+    caption:
+      'A visit in late autumn. What a visit is for changes with the month, and this one is about the perimeter and the gaps before the cold starts pushing rodents toward the building — which is a different job from the one that matters in July.',
+  },
 };
 
 /* --------------------------------------------------------------------------
@@ -240,4 +277,38 @@ export const locationsHubPhoto: Photo = {
   alt: 'The side of a wrapped Sasquatch Pest Control van showing the company name, phone number and free estimates graphic',
   caption:
     'One of the vans that covers this service area. Everywhere listed below is worked out of Bellingham by the same crew — there is no franchise office in between.',
+};
+
+/* --------------------------------------------------------------------------
+ * COMMERCIAL. Bird work is the strongest thing in the photo library and the
+ * commercial pages had none of it. It is also the part of the offer that is
+ * hardest to convey in prose: "we do bird exclusion" reads as a line item
+ * until you see a scissor lift under a canopy, at which point it reads as a
+ * capability a one-van operator does not have.
+ * ------------------------------------------------------------------------ */
+
+/** Near the top of /commercial/. Leads the hub, so it is not lazy-loaded. */
+export const commercialHubPhoto: Photo = {
+  file: '/img/work/bird-nest-built-on-installed-bird-spikes-whatcom-county-wa.jpg',
+  alt: 'A bird nest built directly on top of a row of installed bird spikes on a concrete beam, with droppings streaking the ledge beneath it',
+  caption:
+    'Spikes on a commercial building with a nest built straight on top of them. Spikes are the most commonly specified bird deterrent here and the most commonly defeated one: once enough debris packs in between the points, the thing that was meant to deny the ledge becomes the platform that holds the nest.',
+};
+
+/** Lower on /commercial/, in the exclusion section, where it argues the point. */
+export const commercialExclusionPhoto: Photo = {
+  file: '/img/work/bird-exclusion-netting-over-a-concrete-opening-whatcom-county-wa.jpg',
+  alt: 'Black bird netting tensioned on a steel perimeter cable and anchored into a concrete wall across a large opening',
+  caption:
+    'Netting closed across an opening on a commercial structure. Netting holds where spikes fail because it denies the volume rather than the surface, but it is only as good as its perimeter — a cable that is slack, or a corner anchored short, is an opening with a net near it.',
+};
+
+/** Keyed by industry slug — the slugs src/content/industries owns. */
+export const industryPhotos: Record<string, Photo> = {
+  'retail-and-grocery': {
+    file: '/img/work/technician-on-a-scissor-lift-at-a-store-entrance-whatcom-county-wa.jpg',
+    alt: 'A technician working from a raised scissor lift beneath the entrance canopy of a large store, with a colleague in a high-visibility vest and rows of shopping carts below',
+    caption:
+      'Working a store entrance canopy from a lift. The entrance is the hardest part of a grocery building to keep birds out of — it is warm, it is sheltered from weather on three sides, and the doors stand open all day — and it is also the one part of the building every customer walks under.',
+  },
 };
