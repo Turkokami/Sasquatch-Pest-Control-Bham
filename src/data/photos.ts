@@ -41,10 +41,16 @@ export interface Photo {
 /** Keyed by service slug — the same slugs src/data/services.ts owns. */
 export const servicePhotos: Record<string, Photo> = {
   'wasp-control': {
-    file: '/img/work/bald-faced-hornet-nest-removed-bellingham-wa.jpg',
-    alt: 'A large gray paper hornet nest, roughly the size of a basketball, resting in the bed of a pickup truck after removal',
+    file: '/img/work/hornet-nest-removed-bellingham-wa.jpg',
+    alt: 'A large gray papery hornet nest, roughly the size of a basketball, resting in the bed of a pickup truck after removal',
+    /* SOFTENED 2 Sep 2026, on the same principle as the Sumas correction. This
+       said "bald-faced hornet" — a species. The library's own alt says only "a
+       large paper hornet nest", so the species was this build's addition, not
+       the source's. Having already resolved one vague nest the wrong way, the
+       honest move is to describe what is visibly true — a large enclosed
+       aerial nest — and let the owner name the species if he wants it named. */
     caption:
-      'A bald-faced hornet nest taken down intact in Bellingham. A nest this size is a season’s work by a colony that started from one queen in spring, which is why the same eave can look clear in May and carry this by August.',
+      'A hornet nest taken down intact in Bellingham, and about as big as they get here. A nest this size is a season’s work by a colony that started from a single queen in spring, which is why the same eave can look clear in May and carry this by August.',
   },
   'rodent-control': {
     file: '/img/work/rodent-tunneling-blown-in-attic-insulation-sumas-wa.jpg',
@@ -140,10 +146,14 @@ export const locationPhotos: Record<string, Photo> = {
       'Mixing up for a powderpost beetle treatment at a house in Lynden, ahead of a wood-destroying organism job. Somebody else identifies what is in the wood; the treatment is the half our WSDA Structural category covers.',
   },
   blaine: {
-    file: '/img/work/attic-gable-vent-on-a-home-blaine-wa.jpg',
-    alt: 'A round louvered attic vent set into the green shingled gable end of a house against a gray sky',
+    /* SWAPPED 2 Sep 2026, owner: the previous photograph was a gable vent shot
+       from the ground and it did not carry — technically on point and visually
+       nothing. A picture on a page has to earn its space before it can teach
+       anybody anything. */
+    file: '/img/work/deer-sheltering-under-a-deck-blaine-wa.jpg',
+    alt: 'A doe and a resting fawn sheltering in the shaded open space beneath a raised deck at a wooded property',
     caption:
-      'A gable vent on a home in Blaine. A louvered vent with no screen behind it is an open door to an attic, and it is the first thing worth looking at on a house where something is heard overhead.',
+      'A doe and fawn under a deck in Blaine. It is a nicer photograph than most of ours and it is also a pest finding: an under-deck void open enough for deer is open to everything smaller, and the space beneath a deck against a wall is the best harborage on most properties.',
   },
   everson: {
     file: '/img/work/sasquatch-pest-control-truck-driveway-everson-wa.jpg',
@@ -152,10 +162,19 @@ export const locationPhotos: Record<string, Photo> = {
       'On a service visit in Everson. Everson and the Nooksack valley around it are farm and river country, which keeps rodent and wildlife work steadier here than in town.',
   },
   sumas: {
-    file: '/img/work/paper-wasp-nest-in-soffit-sumas-wa.jpg',
-    alt: 'A paper wasp nest tucked into the corner of a soffit under the eave of a house',
+    file: '/img/work/yellowjacket-nest-in-soffit-sumas-wa.jpg',
+    alt: 'An enclosed papery yellowjacket nest tucked into the corner of a soffit under the eave of a house',
+    /* CORRECTED 2 Sep 2026, owner: this is a yellowjacket nest and it was
+       captioned as a paper wasp. Worth recording HOW that happened, because it
+       is a different mistake from the Lynden one. The old media library's alt
+       text hedged — "a wasp or yellow jacket nest" — and this build resolved
+       the hedge rather than keeping it, and resolved it the wrong way. A
+       source that declines to identify something is telling you it could not,
+       and the honest options are to ask or to stay vague, not to pick.
+
+       The file was renamed with it, since the species was in the filename. */
     caption:
-      'A paper wasp nest under an eave in Sumas. Nests in a soffit corner are usually found late, because nothing is visible from the ground until the colony is large enough to be heard.',
+      'A yellowjacket nest in a soffit corner in Sumas. The giveaway is that it is enclosed — yellowjackets and hornets wrap a nest in a papery envelope, while a paper wasp builds an open umbrella of visible cells. Enclosed nests are found late, because nothing shows from the ground until the colony is loud enough to hear.',
   },
   'sudden-valley': {
     file: '/img/work/pest-control-technicians-crawlspace-job-sudden-valley-wa.jpg',
