@@ -103,6 +103,12 @@
 
   /* -- elevation ---------------------------------------------------------- */
   --shadow-1: 0 1px 2px rgba(10, 8, 6, 0.06);
+  /* The lit top edge of anything raised off the page that is NOT the lime
+     button — which has its own --btn-edge, tuned against lime rather than
+     against paper. On white a strong white edge is what makes a surface read
+     as convex; on a dark ground the same value reads as a scratch, so the
+     dark theme drops it almost to nothing and lets the border do the work. */
+  --raise-edge: rgba(255, 255, 255, 0.72);
 
   /* DEPTH, added 2 Sep 2026. The site was deliberately flat — an editorial
      decision, and the owner's call to soften it. These are the only new
@@ -217,6 +223,7 @@
     --focus-inverse: var(--brand-lime);
 
     --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.5);
+    --raise-edge: rgba(255, 255, 255, 0.05);
   }
 }
 
@@ -683,6 +690,7 @@ footer.site {
   --accent-line: var(--inv-marker);
   --notice: var(--inv-notice);
   --focus: var(--focus-inverse);
+  --raise-edge: rgba(255, 255, 255, 0.05);
   background: var(--inv-bg);
   color: var(--inv-ink);
 }
@@ -832,26 +840,62 @@ section[data-boilerplate]:not(.cta) > h2 {
     column-gap: var(--space-4);
   }
 }
+/* THESE READ AS BUTTONS, NOT AS A CONTENTS PAGE. They were ruled rows — a
+   label with a hairline under it — which is correct for a table of contents
+   and wrong for what these actually are: the main way somebody moves between
+   200 pages on a phone. Owner's call, and the tell was that on a dark screen
+   a hairline row gives a thumb nothing to aim at. A bordered surface does.
+
+   Same construction as .btn in §10 so the site has one idea of what a raised
+   thing looks like: a top-lit vertical gradient, a hairline border, a bright
+   inside edge and a contact shadow. What differs is only the palette — these
+   are on paper rather than lime, because a page of twelve lime buttons has no
+   primary action left.
+
+   The gradient runs surface -> well, which is a two-token move: it stays
+   correct on the inverted footer and in dark mode without restating a color,
+   because those blocks re-point both tokens. */
 .rail li {
-  margin: 0;
+  margin: 0 0 0.45rem;
   break-inside: avoid;
 }
 .rail a {
   display: block;
   color: var(--ink);
   text-decoration: none;
-  padding: 0.65rem 0.5rem 0.65rem 0.7rem;
-  border-bottom: 1px solid var(--rule);
+  padding: 0.7rem 0.85rem;
   font-size: var(--fs-sm);
   line-height: 1.4;
-  box-shadow: inset 0 0 0 var(--marker);
-  transition: background-color 0.14s ease, box-shadow 0.14s ease, color 0.14s ease;
+  font-weight: 500;
+  background: linear-gradient(180deg, var(--surface) 0%, var(--well) 100%);
+  border: 1px solid var(--rule-2);
+  border-radius: var(--radius);
+  box-shadow: inset 0 1px 0 var(--raise-edge), var(--shadow-1);
+  transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease,
+    color 0.14s ease;
 }
 .rail a:hover,
 .rail a:focus-visible {
-  background: var(--well);
   color: var(--link-hover);
-  box-shadow: inset 3px 0 0 var(--marker);
+  border-color: var(--marker);
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 var(--raise-edge), 0 3px 7px rgba(10, 8, 6, 0.14);
+}
+/* Pressed goes back down to the page. Without this the button lifts on hover
+   and then stays lifted through the tap, which reads as unresponsive on a
+   touch screen — where :hover sticks after the finger leaves. */
+.rail a:active {
+  transform: translateY(0);
+  box-shadow: inset 0 1px 2px rgba(10, 8, 6, 0.16);
+}
+/* Motion is decoration here; the color and shadow changes carry the state. */
+@media (prefers-reduced-motion: reduce) {
+  .rail a,
+  .rail a:hover,
+  .rail a:focus-visible,
+  .rail a:active {
+    transform: none;
+  }
 }
 .rail a:focus-visible {
   outline-offset: -2px;
@@ -1059,7 +1103,7 @@ header.site .wrap {
 .brand-mark {
   flex: 0 0 auto;
   width: auto;
-  height: 2.35rem;
+  height: 3.4rem;
 }
 .brand:hover {
   color: var(--link-hover);
@@ -2106,96 +2150,24 @@ footer.site .colophon {
   max-width: 58ch;
 }
 
-/* -------------------------------------------------- §21g  forest band */
+/* ------------------------------------- §21g  forest, above the footer */
 
-/* The Pacific Northwest photograph that closes every page, above the footer.
-   src/components/ForestBand.astro carries the reasoning, including why it is
-   an <img> rather than a background-image and why it replaced a drawn
-   treeline.
+/* THE BAND THAT USED TO SIT HERE IS GONE. It was the owner's photograph
+   full-bleed between the last section and the footer, and once the footer
+   itself took the same photograph as a background (§15) the page carried it
+   twice within a couple of hundred pixels. Owner's call, and the right one:
+   two crops of one forest stacked on each other read as a mistake rather
+   than as a motif.
 
-   THE SCRIM IS THE WHOLE TRICK. Without it the photograph stops at a hard
-   horizontal edge and reads as a sticker. With a gradient from transparent to
-   the footer's exact black laid over its lower half, the image resolves into
-   the footer and the page ends rather than stopping. */
+   What replaced it is not nothing. The footer keeps the scene, so the bottom
+   of the page still lands on trees at every width — it just lands on them
+   once. The image files stay where they are; §15 loads them.
 
-.forestband {
-  position: relative;
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  /* Band, not frame. The photograph is cropped to a strip in the component's
-     build step; this height keeps it a horizon rather than a hero on a page
-     whose subject is not scenery. */
-  height: clamp(140px, 20vw, 300px);
-  background: var(--inv-bg);
-}
-.forestband-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Anchored just below centre. The composition is symmetrical — trees
-     framing a valley — so the horizontal centre is right, and dropping the
-     vertical keeps the horizon and the mountain in frame when the band is cut
-     to 140px on a phone rather than showing only sky. */
-  object-position: 50% 62%;
-}
-
-/* Fades into the footer. Two stops rather than a linear ramp so the top of
-   the band stays fully legible as a photograph and only the last third goes
-   to black. */
-.forestband::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    transparent 42%,
-    color-mix(in srgb, var(--inv-bg) 55%, transparent) 72%,
-    var(--inv-bg) 100%
-  );
-  pointer-events: none;
-}
-
-/* The footer carries a top margin so it is not jammed against body copy. That
-   margin was right for every page this site had until now and is wrong
-   directly beneath the band, where it shows as a strip of page ground between
-   a photograph that fades to black and a footer that is black. Removed only
-   in that adjacency. */
-.forestband + footer.site {
-  margin-top: 0;
-}
-
-/* THE BAND AND THE PAGE BACKGROUND ARE THE SAME PHOTOGRAPH, and showing both
-   at once puts it on one page twice. They are not redundant, though — they
-   cover opposite cases, so each is shown exactly where the other is not.
-
-   Above 62rem the page background is on and the gutters already carry the
-   scene, so the band comes off and the footer takes its margin back. Below
-   62rem there is no page background at all — the column fills the screen and
-   the file is never even downloaded — so the band is the only forest a phone
-   ever sees, and it stays.
-
-   The breakpoint is deliberately the same 62rem as §21h. Two numbers that
-   have to agree are a bug waiting for somebody to change one of them; if this
-   ever moves, both move. */
-@media (min-width: 62rem) {
-  .forestband {
-    display: none;
-  }
-  .forestband + footer.site {
-    margin-top: var(--space-4);
-  }
-}
+   Deleted rather than commented out. A stylesheet is not a filing cabinet. */
 
 /* A photograph of a forest is not information, and on paper it is a solid
    block of ink. §23 is the rule; this is it applied. */
 @media print {
-  .forestband {
-    display: none;
-  }
-  /* Same reasoning for the footer's copy of it: §23. */
   footer.site {
     background-image: none;
   }
