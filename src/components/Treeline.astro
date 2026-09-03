@@ -1,0 +1,70 @@
+---
+/**
+ * Treeline — a drawn conifer horizon, used to close a long page.
+ *
+ * WHY DRAWN AND NOT A PHOTOGRAPH. The owner asked for a forest scene to break
+ * up the open space, and a photograph was the obvious answer and the wrong
+ * one. A full-width forest photo is 200-400KB on every page, has to be art
+ * directed at four widths, is a rectangle of someone else's woodland, and —
+ * the part that decided it — it cannot follow the theme. On the black ground
+ * this site uses at the foot of every page, a photograph is a bright hole.
+ *
+ * This is about two kilobytes of path data drawn in the site's own tokens, so
+ * it silhouettes correctly on light and inverts correctly on dark, and it
+ * costs nothing to load.
+ *
+ * WHAT IT IS OF. Douglas fir and western red cedar, which is the horizon in
+ * this county — not the generic pointed-triangle conifer, which reads as
+ * Christmas. Real firs are asymmetric, they thin toward the top, and the
+ * skyline of a stand is ragged because the trees are different ages. The path
+ * below is built from four repeating groups at different heights and spacings
+ * so the eye does not find the repeat.
+ *
+ * PURELY DECORATIVE, so aria-hidden and no title. There is nothing here a
+ * reader needs described; announcing "decorative treeline" to a screen reader
+ * would be noise, and it carries no information the words do not.
+ *
+ * NO LAYOUT SHIFT. Fixed aspect via viewBox and a block display with a set
+ * height, so it occupies its space before it paints.
+ */
+interface Props {
+  /** Sits above an inverted block, so the silhouette flips. */
+  onDark?: boolean;
+}
+const { onDark = false } = Astro.props;
+---
+<div class:list={['treeline', onDark && 'is-dark']} aria-hidden="true">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="treeline-svg">
+    {/* Back rank — lower, paler, slightly overlapped by the front rank. */}
+    <path
+      class="treeline-back"
+      d="M0 120 L0 78 L18 52 L26 66 L40 34 L54 66 L62 50 L80 120 Z
+         M96 120 L100 60 L116 30 L130 58 L138 44 L156 120 Z
+         M180 120 L184 70 L200 44 L212 64 L222 40 L236 68 L244 56 L262 120 Z
+         M300 120 L306 56 L322 26 L338 56 L346 42 L364 120 Z
+         M396 120 L402 74 L418 46 L430 68 L440 38 L456 70 L464 58 L482 120 Z
+         M520 120 L526 62 L542 32 L558 62 L566 48 L584 120 Z
+         M620 120 L624 72 L640 40 L652 62 L662 36 L678 66 L686 54 L704 120 Z
+         M740 120 L746 58 L762 28 L778 58 L786 44 L804 120 Z
+         M840 120 L846 76 L862 48 L874 68 L884 40 L900 70 L908 56 L926 120 Z
+         M962 120 L968 60 L984 30 L1000 60 L1008 46 L1026 120 Z
+         M1060 120 L1066 74 L1082 44 L1094 66 L1104 38 L1120 68 L1128 54 L1146 120 Z
+         M1170 120 L1176 62 L1192 34 L1200 52 L1200 120 Z"
+    />
+    {/* Front rank — taller, solid, the horizon the eye reads. */}
+    <path
+      class="treeline-front"
+      d="M0 120 L0 96 L14 70 L24 88 L36 54 L48 86 L58 72 L74 120 Z
+         M118 120 L124 80 L138 48 L150 76 L160 44 L174 78 L182 66 L198 120 Z
+         M232 120 L238 88 L252 58 L264 84 L274 50 L288 82 L296 70 L312 120 Z
+         M352 120 L358 76 L372 44 L384 72 L394 40 L408 74 L416 62 L432 120 Z
+         M470 120 L476 90 L490 60 L502 86 L512 52 L526 84 L534 72 L550 120 Z
+         M590 120 L596 78 L610 46 L622 74 L632 42 L646 76 L654 64 L670 120 Z
+         M706 120 L712 88 L726 56 L738 82 L748 48 L762 80 L770 68 L786 120 Z
+         M826 120 L832 74 L846 42 L858 70 L868 38 L882 72 L890 60 L906 120 Z
+         M944 120 L950 90 L964 58 L976 84 L986 50 L1000 82 L1008 70 L1024 120 Z
+         M1062 120 L1068 78 L1082 46 L1094 74 L1104 42 L1118 76 L1126 64 L1142 120 Z
+         M1166 120 L1172 86 L1186 54 L1198 78 L1200 70 L1200 120 Z"
+    />
+  </svg>
+</div>
