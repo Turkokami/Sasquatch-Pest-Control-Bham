@@ -1102,6 +1102,45 @@ footer.site {
   border-top: 3px solid var(--inv-marker);
   color: var(--inv-ink-2);
 }
+
+/* TREES IN THE FOOTER, AT EVERY WIDTH. The page background is desktop-only
+   for a good reason — below 62rem the reading column fills the screen, so
+   there are no gutters for a backdrop to show through and a phone should not
+   pay to download one. The side effect was that a phone's only forest was the
+   band above the footer, and the footer itself stayed the slab of black the
+   whole exercise was meant to break up.
+
+   This costs no layout height and, on a phone, no download either: it is the
+   same file the band above it has already fetched.
+
+   IT IS TWO BACKGROUND LAYERS ON THE ELEMENT, not a pseudo-element. A
+   ::before would need a stacking context and a z-index on every child to stay
+   behind the text; a gradient laid over the photograph in the same shorthand
+   needs neither, and background-color from the shared rule above still sits
+   underneath both as the fallback if the image never arrives.
+
+   THE SCRIM IS THE CONTRAST GUARANTEE. At 88% the photograph contributes at
+   most about a tenth of the rendered ground, so the lightest pixel in the
+   scene cannot lift the footer far enough to threaten the text on it — every
+   ratio in §1 still holds. Trees any more visible than this stop being
+   scenery and start being a legibility argument. */
+footer.site {
+  background-image: linear-gradient(
+      color-mix(in srgb, var(--inv-bg) 88%, transparent),
+      color-mix(in srgb, var(--inv-bg) 88%, transparent)
+    ),
+    image-set(
+      url("/img/scene/forest-band-900.jpg") 1x,
+      url("/img/scene/forest-band-1600.jpg") 2x
+    );
+  background-size: cover;
+  /* The photograph is 2.34:1 and the footer is far wider than it is tall, so
+     cover crops hard to the vertical middle. Biased up, where the canopy and
+     the light are — the bottom of the frame is trunk and undergrowth and
+     crops to mud. */
+  background-position: center 34%;
+  background-repeat: no-repeat;
+}
 footer.site a {
   color: var(--inv-link);
   text-decoration-color: color-mix(in srgb, var(--inv-link) 45%, transparent);
@@ -2155,6 +2194,10 @@ footer.site .colophon {
 @media print {
   .forestband {
     display: none;
+  }
+  /* Same reasoning for the footer's copy of it: §23. */
+  footer.site {
+    background-image: none;
   }
 }
 
