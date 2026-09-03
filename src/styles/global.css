@@ -2054,6 +2054,16 @@ footer.site .colophon {
   pointer-events: none;
 }
 
+/* The footer carries a top margin so it is not jammed against body copy. That
+   margin was right for every page this site had until now and is wrong
+   directly beneath the band, where it shows as a strip of page ground between
+   a photograph that fades to black and a footer that is black. Removed only
+   in that adjacency — the footer keeps its margin everywhere else, including
+   if the band is ever taken out. */
+.forestband + footer.site {
+  margin-top: 0;
+}
+
 /* A photograph of a forest is not information, and on paper it is a solid
    block of ink. §23 is the rule; this is it applied. */
 @media print {
