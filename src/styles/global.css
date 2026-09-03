@@ -103,12 +103,6 @@
 
   /* -- elevation ---------------------------------------------------------- */
   --shadow-1: 0 1px 2px rgba(10, 8, 6, 0.06);
-  /* The lit top edge of anything raised off the page that is NOT the lime
-     button — which has its own --btn-edge, tuned against lime rather than
-     against paper. On white a strong white edge is what makes a surface read
-     as convex; on a dark ground the same value reads as a scratch, so the
-     dark theme drops it almost to nothing and lets the border do the work. */
-  --raise-edge: rgba(255, 255, 255, 0.72);
 
   /* DEPTH, added 2 Sep 2026. The site was deliberately flat — an editorial
      decision, and the owner's call to soften it. These are the only new
@@ -183,48 +177,57 @@
    black page a blacker panel is invisible, so --inv-* becomes the raised
    surface and keeps its lime rule to mark the edge. */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
+/* DARK IS THE SITE, NOT A PREFERENCE. This block used to sit behind
+   @media (prefers-color-scheme: dark), so which site you got depended on a
+   setting in your operating system — and most people have never touched that
+   setting, which meant most people got the light one. The brand is neon on
+   black. The logo is neon on black, the vehicle wraps are neon on black, and
+   the CTA panels on this site were already black in both themes. Making the
+   page match that is not a theme, it is the design.
 
-    --bg: #0c0b07;
-    --surface: #14120c;
-    --well: #1b1913;
-    --badge-well: #e9e8e3;
+   The light values are still on bare :root above and are still correct and
+   still contrast-checked. They are the fallback if this block is ever put
+   back behind a query or behind a toggle, and leaving them costs nothing —
+   the browser resolves one cascade either way. */
+:root {
+  color-scheme: dark;
 
-    --ink: #f2f1eb;
-    --ink-2: #c4c1b6;
-    --ink-3: #97948a;
+  --bg: #0c0b07;
+  --surface: #14120c;
+  --well: #1b1913;
+  --badge-well: #e9e8e3;
 
-    --rule: #2a2820;
-    --rule-2: #3d3a30;
-    --rule-strong: #6d6960;
+  --ink: #f2f1eb;
+  --ink-2: #c4c1b6;
+  --ink-3: #97948a;
 
-    --link: #a4ff6e;
-    --link-hover: var(--brand-acid);
-    --marker: var(--brand-lime);
-    --accent-line: var(--brand-lime);
-    --notice: var(--brand-amber);
+  --rule: #2a2820;
+  --rule-2: #3d3a30;
+  --rule-strong: #6d6960;
 
-    --inv-bg: #14120c;
-    --inv-surface: #1c1a12;
-    --inv-well: #24211a;
-    --inv-ink: #f2f1eb;
-    --inv-ink-2: #c4c1b6;
-    --inv-ink-3: #97948a;
-    --inv-rule: #333026;
-    --inv-rule-2: #46422f;
-    --inv-link: #a4ff6e;
-    --inv-link-hover: var(--brand-acid);
-    --inv-marker: var(--brand-lime);
-    --inv-notice: var(--brand-amber);
+  --link: #a4ff6e;
+  --link-hover: var(--brand-acid);
+  --marker: var(--brand-lime);
+  --accent-line: var(--brand-lime);
+  --notice: var(--brand-amber);
 
-    --focus: var(--brand-lime);
-    --focus-inverse: var(--brand-lime);
+  --inv-bg: #14120c;
+  --inv-surface: #1c1a12;
+  --inv-well: #24211a;
+  --inv-ink: #f2f1eb;
+  --inv-ink-2: #c4c1b6;
+  --inv-ink-3: #97948a;
+  --inv-rule: #333026;
+  --inv-rule-2: #46422f;
+  --inv-link: #a4ff6e;
+  --inv-link-hover: var(--brand-acid);
+  --inv-marker: var(--brand-lime);
+  --inv-notice: var(--brand-amber);
 
-    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.5);
-    --raise-edge: rgba(255, 255, 255, 0.05);
-  }
+  --focus: var(--brand-lime);
+  --focus-inverse: var(--brand-lime);
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* ------------------------------------------------------------- §3  reset */
@@ -690,7 +693,6 @@ footer.site {
   --accent-line: var(--inv-marker);
   --notice: var(--inv-notice);
   --focus: var(--focus-inverse);
-  --raise-edge: rgba(255, 255, 255, 0.05);
   background: var(--inv-bg);
   color: var(--inv-ink);
 }
@@ -840,65 +842,59 @@ section[data-boilerplate]:not(.cta) > h2 {
     column-gap: var(--space-4);
   }
 }
-/* THESE READ AS BUTTONS, NOT AS A CONTENTS PAGE. They were ruled rows — a
-   label with a hairline under it — which is correct for a table of contents
-   and wrong for what these actually are: the main way somebody moves between
-   200 pages on a phone. Owner's call, and the tell was that on a dark screen
-   a hairline row gives a thumb nothing to aim at. A bordered surface does.
+/* OUTLINE BUTTONS IN THE BRAND COLOR. These were ruled rows first, then grey
+   raised slabs, and the slabs were the wrong answer: a vertical grey gradient
+   with a white inside edge is skeuomorphic, it reads as older than the rest of
+   the site, and on a black page it is just a lighter grey box. Owner's call to
+   change it again and he is right.
 
-   Same construction as .btn in §10 so the site has one idea of what a raised
-   thing looks like: a top-lit vertical gradient, a hairline border, a bright
-   inside edge and a contact shadow. What differs is only the palette — these
-   are on paper rather than lime, because a page of twelve lime buttons has no
-   primary action left.
+   A FLAT FACE, A LIME HAIRLINE, LIME LABEL. That is the whole thing, and it
+   is what a modern secondary control looks like — no gradient, no bevel, no
+   drop shadow, the color doing the work the depth was doing badly.
 
-   The gradient runs surface -> well, which is a two-token move: it stays
-   correct on the inverted footer and in dark mode without restating a color,
-   because those blocks re-point both tokens. */
+   WHY OUTLINED RATHER THAN FILLED, when the ask was for bright buttons: there
+   are twelve of these in a block and one lime CTA on the page. Fill twelve
+   with lime and the page has no primary action left — the eye has nowhere to
+   land, and the one button that is supposed to start a phone call becomes the
+   thirteenth of a set. Filled outranks outlined; that is the convention doing
+   the ranking, and it lets these be unmistakably brand-colored without
+   competing with the thing they sit above.
+
+   Every value is a token mixed against another token, so this stays right on
+   the page, on the inverted footer panel and in either palette without a
+   single restated color. */
 .rail li {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.5rem;
   break-inside: avoid;
 }
 .rail a {
   display: block;
-  color: var(--ink);
-  text-decoration: none;
-  padding: 0.7rem 0.85rem;
+  padding: 0.75rem 0.95rem;
   font-size: var(--fs-sm);
   line-height: 1.4;
-  font-weight: 500;
-  background: linear-gradient(180deg, var(--surface) 0%, var(--well) 100%);
-  border: 1px solid var(--rule-2);
+  font-weight: 600;
+  letter-spacing: -0.006em;
+  color: var(--link);
+  text-decoration: none;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--marker) 42%, transparent);
   border-radius: var(--radius);
-  box-shadow: inset 0 1px 0 var(--raise-edge), var(--shadow-1);
-  transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease,
-    color 0.14s ease;
+  transition: background-color 0.14s ease, border-color 0.14s ease, color 0.14s ease;
 }
+/* Hover fills a little rather than lifting. A translate on hover sticks after
+   the finger leaves on a touch screen, which leaves a row of buttons looking
+   half-pressed — and these are used more on a phone than anywhere else. */
 .rail a:hover,
 .rail a:focus-visible {
   color: var(--link-hover);
   border-color: var(--marker);
-  transform: translateY(-1px);
-  box-shadow: inset 0 1px 0 var(--raise-edge), 0 3px 7px rgba(10, 8, 6, 0.14);
+  background: color-mix(in srgb, var(--marker) 12%, var(--surface));
 }
-/* Pressed goes back down to the page. Without this the button lifts on hover
-   and then stays lifted through the tap, which reads as unresponsive on a
-   touch screen — where :hover sticks after the finger leaves. */
 .rail a:active {
-  transform: translateY(0);
-  box-shadow: inset 0 1px 2px rgba(10, 8, 6, 0.16);
-}
-/* Motion is decoration here; the color and shadow changes carry the state. */
-@media (prefers-reduced-motion: reduce) {
-  .rail a,
-  .rail a:hover,
-  .rail a:focus-visible,
-  .rail a:active {
-    transform: none;
-  }
+  background: color-mix(in srgb, var(--marker) 22%, var(--surface));
 }
 .rail a:focus-visible {
-  outline-offset: -2px;
+  outline-offset: 2px;
 }
 .rail li span {
   color: var(--ink-3);
@@ -1698,10 +1694,9 @@ footer.site .colophon {
    lose exactly the same amount of glare on a black page. Any harder and the
    road labels stop being readable, which would trade one problem for a worse
    one. */
-@media (prefers-color-scheme: dark) {
-  .mapblock iframe {
-    filter: brightness(0.9);
-  }
+/* Unconditional now that the page itself is dark — see §2. */
+.mapblock iframe {
+  filter: brightness(0.9);
 }
 
 /* Matches .team figcaption in §20 — a caption is a caption, wherever it is. */
@@ -2234,7 +2229,7 @@ footer.site .colophon {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: color-mix(in srgb, var(--bg) 44%, transparent);
+    background: color-mix(in srgb, var(--bg) 66%, transparent);
   }
 
   /* The sheet. An opaque column over the scene, with a shadow deep enough to
@@ -2252,15 +2247,6 @@ footer.site .colophon {
   header.site {
     background: color-mix(in srgb, var(--surface) 88%, transparent);
     backdrop-filter: blur(6px);
-  }
-}
-
-/* Dark mode wants more wash, not less. The photograph is a bright morning and
-   at 62% over a dark ground it glares; the sheet is dark and the scene has to
-   sit further back for the column to stay the brightest thing on screen. */
-@media (min-width: 48rem) {
-  :root:not([data-theme="light"]) body::after {
-    background: color-mix(in srgb, var(--bg) 66%, transparent);
   }
 }
 

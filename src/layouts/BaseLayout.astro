@@ -106,6 +106,13 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* The phone's own browser chrome, matched to the page. Without this
+        Chrome picks its toolbar color from its own light default and the
+        address bar sits as a white band above a black page — which is the
+        one part of the frame the stylesheet cannot reach. Hard-coded rather
+        than tokenised because a meta tag cannot read a custom property; it
+        is --bg from §1 and the two have to be changed together. */}
+    <meta name="theme-color" content="#0c0b07" />
     <title>{finalTitle}</title>
     <meta name="description" content={finalDesc} />
     <link rel="canonical" href={canonical} />
