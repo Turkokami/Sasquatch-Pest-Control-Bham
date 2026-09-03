@@ -2121,10 +2121,31 @@ footer.site .colophon {
    margin was right for every page this site had until now and is wrong
    directly beneath the band, where it shows as a strip of page ground between
    a photograph that fades to black and a footer that is black. Removed only
-   in that adjacency — the footer keeps its margin everywhere else, including
-   if the band is ever taken out. */
+   in that adjacency. */
 .forestband + footer.site {
   margin-top: 0;
+}
+
+/* THE BAND AND THE PAGE BACKGROUND ARE THE SAME PHOTOGRAPH, and showing both
+   at once puts it on one page twice. They are not redundant, though — they
+   cover opposite cases, so each is shown exactly where the other is not.
+
+   Above 62rem the page background is on and the gutters already carry the
+   scene, so the band comes off and the footer takes its margin back. Below
+   62rem there is no page background at all — the column fills the screen and
+   the file is never even downloaded — so the band is the only forest a phone
+   ever sees, and it stays.
+
+   The breakpoint is deliberately the same 62rem as §21h. Two numbers that
+   have to agree are a bug waiting for somebody to change one of them; if this
+   ever moves, both move. */
+@media (min-width: 62rem) {
+  .forestband {
+    display: none;
+  }
+  .forestband + footer.site {
+    margin-top: var(--space-4);
+  }
 }
 
 /* A photograph of a forest is not information, and on paper it is a solid
