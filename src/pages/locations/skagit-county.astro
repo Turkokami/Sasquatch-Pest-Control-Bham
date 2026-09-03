@@ -23,7 +23,8 @@ import { liveServices } from '../../data/services';
 const path = '/locations/skagit-county/';
 const towns = builtTowns().filter((t) => t.county === 'Skagit County');
 const townLinks = towns.map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
-const svc = liveServices().slice(0, 12).map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+/* All of them — see the note in src/pages/index.astro. */
+const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
 
 const answer =
   'We run the I-5 corridor south from Bellingham into Skagit County — Alger, Bow, Sedro-Woolley, Burlington and Mount Vernon. Same wet climate and much the same building stock as Whatcom, with a bigger valley farm economy behind it. We do not run the western waterfront or the islands.';

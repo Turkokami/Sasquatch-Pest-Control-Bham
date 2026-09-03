@@ -8,6 +8,7 @@ import LeadForm from '../../components/LeadForm.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
+import { blogPostsFor } from '../../lib/blog';
 import SourceList from '../../components/SourceList.astro';
 import { PESTS, PEST_GROUPS, pestBySlug, pestsInGroup } from '../../data/pests';
 
@@ -65,6 +66,9 @@ const VERDICT: Record<string, string> = {
   'rarely-warranted': 'Rarely worth treating. Usually this is a sealing or cleaning job.',
   'we-do-not': 'We do not treat this. Where to go instead is below.',
 };
+
+/* Posts whose topic this page owns — see src/lib/blog.ts. */
+const blogLinks = await blogPostsFor(path);
 ---
 <BaseLayout
   videoKey={videoForPest[species.slug]}
@@ -132,6 +136,8 @@ const VERDICT: Record<string, string> = {
   )}
 
   {siblings.length > 0 && <LinkRail heading={`More ${group.name.toLowerCase()}`} links={siblings} />}
+
+  {blogLinks.length > 0 && <LinkRail heading="From the blog" links={blogLinks} />}
 
   <Cta market="Whatcom County" />
 </BaseLayout>

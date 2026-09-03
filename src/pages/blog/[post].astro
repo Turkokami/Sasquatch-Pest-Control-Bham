@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
+import { blogSiblings } from '../../lib/blog';
 
 /* Imported legacy posts. Like guides, these are generated FROM the collection
    rather than from a data row — there is no such thing as a blog route that
@@ -26,10 +27,11 @@ const superseded = p.data.supersededBy;
    toward the posts that still stand on their own rather than circulating them
    around a set of archived duplicates. */
 const all = await getCollection('blog');
-const siblings = all
-  .filter((x) => x.slug !== p.slug && !x.data.supersededBy)
-  .slice(0, 6)
-  .map((x) => ({ href: `/blog/${x.slug}/`, label: x.data.h1 }));
+/* Topical first, then rotated — src/lib/blog.ts carries the reasoning. The
+   list this replaced excluded every post with a supersededBy, which is
+   fifty-six of the seventy, and then took the same six of the remaining
+   fourteen on every page. */
+const siblings = await blogSiblings(p.slug);
 
 const imported = p.data.imported.toLocaleDateString('en-US', {
   year: 'numeric',
@@ -102,7 +104,7 @@ const imported = p.data.imported.toLocaleDateString('en-US', {
     accurate.
   </p>
 
-  {siblings.length > 0 && <LinkRail heading="More from the blog" links={siblings} />}
+  {siblings.length > 0 && <LinkRail heading="Related posts" links={siblings} />}
 
   <Cta market="Whatcom County" />
 </BaseLayout>

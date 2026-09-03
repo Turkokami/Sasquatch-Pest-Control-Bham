@@ -10,6 +10,7 @@ import LocationMap from '../../../components/LocationMap.astro';
 import Photo from '../../../components/Photo.astro';
 import { locationPhotos } from '../../../data/photos';
 import { guideLinksFor } from '../../../lib/guides';
+import { blogPostsFor } from '../../../lib/blog';
 import { towns } from '../../../data/towns';
 import { liveServices } from '../../../data/services';
 import { localParagraph, tierFor, builtTowns, pagedNeighborhoods, mentionNeighborhoods } from '../../../lib/geo';
@@ -44,9 +45,9 @@ const neighborhoods = pagedNeighborhoods(t).map((n) => ({
 /* Covered by the grouped section on this page rather than a URL of their own. */
 const alsoNeighborhoods = mentionNeighborhoods(t).map((n) => n.name);
 
-const svc = liveServices()
-  .slice(0, 12)
-  .map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+/* All of them — see the note in src/pages/index.astro. Twenty-five town
+   pages cutting the same eleven services was most of why they were starved. */
+const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
 
 const countySlug = t.county === 'Whatcom County' ? 'whatcom-county' : 'skagit-county';
 const siblings = builtTowns()
@@ -56,6 +57,10 @@ const siblings = builtTowns()
 /* Related guides, resolved from the guides' own relatedTo declarations —
    one list, queried, rather than a second list maintained here. */
 const guideLinks = await guideLinksFor(path);
+/* Posts whose topic this page owns. Fifty-six imported posts declared a
+   supersededBy target and no target had ever linked back, which left most of
+   the blog with one inbound link in the whole site. */
+const blogLinks = await blogPostsFor(path);
 ---
 <BaseLayout
   path={path}
@@ -144,10 +149,15 @@ const guideLinks = await guideLinksFor(path);
 
   <LinkRail
     heading={`Nearby communities in ${t.county}`}
-    links={[{ href: `/locations/${countySlug}/`, label: `All of ${t.county}` }, ...siblings.slice(0, 12)]}
+    {/* All same-county siblings. There are at most twelve of them, so the
+        slice(0, 12) this replaced never did anything except look like a
+        limit that had been considered. */}
+    links={[{ href: `/locations/${countySlug}/`, label: `All of ${t.county}` }, ...siblings]}
   />
 
   <LinkRail heading="Guides" links={guideLinks} />
+
+  {blogLinks.length > 0 && <LinkRail heading="From the blog" links={blogLinks} />}
 
   {/* Last block before the CTA, and the position is the point. Somebody who
       lands here wants the answer to a pest question, not a map — the map is

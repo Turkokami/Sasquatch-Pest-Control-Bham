@@ -17,7 +17,15 @@ const path = '/';
 const answer =
   'Sasquatch Pest Control is a family-owned pest control and exclusion company based in Bellingham, Washington. We handle rodents, ants, spiders, wasps, bed bugs and exclusion work for homes and businesses across Whatcom County, with no long-term contracts and a 100% Service Guarantee behind every treatment.';
 
-const svc = liveServices().slice(0, 12).map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+/* EVERY SERVICE, NOT THE FIRST TWELVE. This read liveServices().slice(0, 12),
+   which is not a shortlist — it is whatever happens to sit at the top of the
+   array in src/data/services.ts. Measured across the built site, the eleven it
+   cut off were starved: commercial pest control had three inbound links in the
+   whole site, WDO treatment six, attic insulation eight, against sixty-six for
+   rodent control. Those are among the highest-value pages here and the ones a
+   competitor is least likely to have. A rail is cheap; leaving them out is
+   not. */
+const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
 const cities = builtTowns()
   .filter((t) => t.county === 'Whatcom County')
   .map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));

@@ -21,7 +21,8 @@ import { liveServices } from '../../data/services';
 const path = '/locations/whatcom-county/';
 const towns = builtTowns().filter((t) => t.county === 'Whatcom County');
 const townLinks = towns.map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
-const svc = liveServices().slice(0, 12).map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+/* All of them — see the note in src/pages/index.astro. */
+const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
 
 const answer =
   'Sasquatch Pest Control covers Whatcom County from Bellingham — the city and its neighborhoods, the farm country north to the border, the waterfront communities west, and the forest edge around Lake Whatcom. Four distinct geographies, four different sets of pest pressure, and one crew that knows which is which.';

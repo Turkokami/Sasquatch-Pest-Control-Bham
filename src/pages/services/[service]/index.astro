@@ -13,6 +13,7 @@ import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { guideLinksFor } from '../../../lib/guides';
+import { blogPostsFor } from '../../../lib/blog';
 import ExpertBlock from '../../../components/ExpertBlock.astro';
 import { liveServices, categories } from '../../../data/services';
 import { business } from '../../../data/business';
@@ -53,6 +54,10 @@ const problems = (s.problems ?? []).map((p) => ({
 /* Related guides, resolved from the guides' own relatedTo declarations —
    one list, queried, rather than a second list maintained here. */
 const guideLinks = await guideLinksFor(path);
+/* Posts whose topic this page owns. Fifty-six imported posts declared a
+   supersededBy target and no target had ever linked back, which left most of
+   the blog with one inbound link in the whole site. */
+const blogLinks = await blogPostsFor(path);
 ---
 <BaseLayout
   videoKey={videoForService[s.slug]}
@@ -178,6 +183,8 @@ const guideLinks = await guideLinksFor(path);
   <LinkRail heading={`Related ${categories[s.category].toLowerCase()} services`} links={siblings} />
 
   <LinkRail heading="Guides" links={guideLinks} />
+
+  {blogLinks.length > 0 && <LinkRail heading="From the blog" links={blogLinks} />}
 
   <Cta market="Whatcom County" service={s.name} serviceSlug={s.slug} />
 </BaseLayout>

@@ -1,11 +1,17 @@
 ---
 import { business, isReady, people } from '../data/business';
-import { liveServices, categories } from '../data/services';
+import { footerServices, categories } from '../data/services';
 import { builtTowns } from '../lib/geo';
 
 const a = business.address;
-const cities = builtTowns().slice(0, 10);
-const top = liveServices().slice(0, 10);
+/* Every built town, not the first ten. builtTowns() returns thirteen, and the
+   three the slice removed were all in Skagit County — which is how Alger,
+   Mount Vernon and Sedro-Woolley ended up with six inbound links each and no
+   site-chrome links at all, while every Whatcom town had 219. Three more rows
+   in a footer column is not a design problem; a county with no chrome links
+   is a ranking one. */
+const cities = builtTowns();
+const top = footerServices();
 /* WSDA license numbers only. `credential` also carries Jorge Bedoya's 'ACE',
    which is an Entomological Society certification and not a WSDA license at
    all — counting it gave "6 WSDA-licensed applicators" for five. Match the

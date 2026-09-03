@@ -6,6 +6,7 @@ import LeadForm from '../../components/LeadForm.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
+import { blogPostsFor } from '../../lib/blog';
 import SourceList from '../../components/SourceList.astro';
 
 /* Guides differ from every other page type here in one respect: they are
@@ -26,6 +27,9 @@ const { Content } = await g.render();
 const siblings = (await getCollection('guides'))
   .filter((x) => x.slug !== g.slug && x.data.cluster === g.data.cluster)
   .map((x) => ({ href: `/guides/${x.slug}/`, label: x.data.h1 }));
+
+/* Posts whose topic this page owns — see src/lib/blog.ts. */
+const blogLinks = await blogPostsFor(path);
 ---
 <BaseLayout
   path={path}
@@ -76,6 +80,8 @@ const siblings = (await getCollection('guides'))
   />
 
   <LinkRail heading="Related guides" links={siblings} />
+
+  {blogLinks.length > 0 && <LinkRail heading="From the blog" links={blogLinks} />}
 
   <Cta market="Whatcom County" />
 </BaseLayout>

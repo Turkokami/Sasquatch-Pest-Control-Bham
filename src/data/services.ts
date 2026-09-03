@@ -281,4 +281,46 @@ export const categories = {
 } as const;
 
 export const liveServices = () => services.filter((s) => s.confirmed);
+
+/**
+ * THE FOOTER SET. The footer appears on all 220 pages, so whatever is listed
+ * here gets roughly 219 inbound links and whatever is not gets none from site
+ * chrome at all. That made the previous `liveServices().slice(0, 10)` one of
+ * the most consequential lines in the codebase, and nothing about it was a
+ * decision — it was the first ten entries of an array ordered by category.
+ *
+ * Measured before this changed: the ten it happened to include had 219 links
+ * each; commercial pest control had three in the entire site, WDO treatment
+ * six, attic insulation eight. The four structural and exclusion pages — the
+ * work this company is actually differentiated on, and the reason the
+ * RidgeGuard and insulation credentials are on the site at all — were the
+ * ones being starved.
+ *
+ * So it is a list now, not a slice, and it is a business decision rather than
+ * an array index: every category represented, the four structural spokes in
+ * by name, and the household pests that carry the most search demand. Change
+ * it deliberately; do not sort the services array and expect this to follow.
+ */
+const FOOTER_SLUGS = [
+  'rodent-control',
+  'exclusion-and-repairs',
+  'crawlspace-restoration',
+  'attic-insulation',
+  'wasp-control',
+  'ant-control',
+  'spider-control',
+  'bed-bug-control',
+  'cockroach-control',
+  'commercial-pest-control',
+  'home-protection-plan',
+  'wdo-treatment',
+] as const;
+
+export const footerServices = () =>
+  FOOTER_SLUGS.map((slug) => {
+    const s = services.find((x) => x.slug === slug && x.confirmed);
+    /* A typo here would silently drop a link from 220 pages. */
+    if (!s) throw new Error(`FOOTER_SLUGS names an unknown or unconfirmed service: ${slug}`);
+    return s;
+  });
 export const serviceBySlug = (slug: string) => services.find((s) => s.slug === slug);

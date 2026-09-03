@@ -42,7 +42,8 @@ const siblings = pagedNeighborhoods(t)
   .filter((x) => x.slug !== n.slug)
   .map((x) => ({ href: `/locations/${t.slug}/${x.slug}/`, label: x.name }));
 
-const svc = liveServices().slice(0, 8).map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
+/* All of them — see the note in src/pages/index.astro. */
+const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
 
 /* Related guides, resolved from the guides' own relatedTo declarations —
    one list, queried, rather than a second list maintained here. */
