@@ -1,0 +1,57 @@
+---
+/**
+ * The rodent entry-point infographic, on the exclusion page.
+ *
+ * WHY THIS EXISTS ALONGSIDE EntryPoints.astro RATHER THAN REPLACING IT. They
+ * are the same subject drawn twice, and until now the same SVG ran on both the
+ * rodent page and this one — one drawing answering two different questions,
+ * which the comment there is honest about but which left the two pages looking
+ * identical below the fold.
+ *
+ * They are not interchangeable, and the split is deliberate. EntryPoints is a
+ * line drawing whose twelve labels are a real HTML ordered list: a screen
+ * reader reads them, a search engine indexes them, and correcting one is a
+ * text edit. It stays on /services/rodent-control/, which is the page that has
+ * to rank. This is a raster infographic with its text baked into the pixels —
+ * better to look at, worth nothing to a machine — so it goes on the page where
+ * the argument is already carried in prose above it.
+ *
+ * WHAT THE ALT TEXT HAS TO DO HERE. On an ordinary photograph the alt
+ * describes the frame. On an infographic the alt is the only route to the
+ * content, so it carries the substance: the two size figures and the four
+ * groups. It cannot carry all fourteen labels without becoming unreadable,
+ * which is precisely the argument for keeping the SVG version on the page that
+ * matters most.
+ *
+ * THE SIZE FIGURES ON IT ARE THE CORRECT ONES, and that is not incidental. The
+ * first version of this graphic said mice enter through holes "as small as a
+ * nickel or dime" — 0.835 and 0.705 inches against a real figure of a quarter
+ * inch, wrong by about three times, and the exact comparison this site's own
+ * blog post tells readers to drop. It was regenerated to a pencil and a penny.
+ * docs/INFOGRAPHIC-PROMPT.md keeps the numbers with the prompt so the next
+ * person to regenerate it does not reintroduce the error.
+ */
+interface Props {
+  heading?: string;
+}
+const { heading = 'Every way in, on one drawing' } = Astro.props;
+---
+
+<section>
+  <h2>{heading}</h2>
+  <figure class="team infographic">
+    <img
+      src="/img/rodent-entry-points-infographic.jpg"
+      alt="Infographic titled Rodent-Proof Your Home: Where They Actually Get In. A cutaway drawing of a two-story house with fourteen numbered entry points grouped into roof and upper levels, ground level and foundation, doors and windows and garages, and yard and harborage. A panel states that a mouse needs about a quarter of an inch, the width of a pencil, and a rat slightly more than half an inch, with an adult Norway rat nearer three quarters of an inch, the width of a penny, and that both should be sealed to a quarter inch."
+      width="1536"
+      height="1024"
+      loading="lazy"
+      decoding="async"
+    />
+    <figcaption>
+      Fourteen points, and the two numbers that decide all of them. Seal to a
+      quarter of an inch for both species — a rat needs only that much of an
+      edge to get its teeth on and chew the opening to fit.
+    </figcaption>
+  </figure>
+</section>

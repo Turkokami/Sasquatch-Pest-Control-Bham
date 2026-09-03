@@ -6,6 +6,7 @@ import LeadForm from '../../../components/LeadForm.astro';
 import Photo from '../../../components/Photo.astro';
 import Training from '../../../components/Training.astro';
 import EntryPoints from '../../../components/EntryPoints.astro';
+import RodentInfographic from '../../../components/RodentInfographic.astro';
 import Video from '../../../components/Video.astro';
 import { videoForService } from '../../../data/videos';
 import { servicePhotos } from '../../../data/photos';
@@ -163,8 +164,12 @@ const photos = galleryFor(s.slug);
   {videoForService[s.slug] && s.slug !== 'rodent-control' && (
     <Video name={videoForService[s.slug]} heading={`${s.short}, on video`} />
   )}
+  {/* The exclusion page used to render the same SVG as the rodent page, which
+      left two pages looking identical below the fold. It gets the owner's
+      infographic instead — see RodentInfographic.astro for why the two are not
+      interchangeable and why the SVG keeps the page that has to rank. */}
   {s.slug === 'exclusion-and-repairs' && (
-    <EntryPoints heading="What we seal, and where it is" />
+    <RodentInfographic heading="What we seal, and where it is" />
   )}
 
   {Body ? (

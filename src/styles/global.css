@@ -2352,6 +2352,22 @@ footer.site .colophon {
   color: var(--ink-3);
 }
 
+/* The infographic is wider than the reading column and is unreadable if it is
+   scaled to fit it, so it breaks out to the full sheet width where there is
+   width to break out into. Below that it is already at full width and the rule
+   does nothing. Its own dark ground matches the page, so no plate is needed
+   behind it. */
+.infographic img {
+  border-radius: var(--radius-sm);
+}
+@media (min-width: 60rem) {
+  figure.infographic {
+    width: calc(var(--measure) + 8rem);
+    max-width: calc(100vw - 2 * var(--gutter));
+    margin-inline: -4rem;
+  }
+}
+
 /* ------------------------------------------- §21h  page background */
 
 /* The forest behind the page, so the gutters beside the reading column show
