@@ -8,8 +8,16 @@
  * to the ones large enough to print at page width, then picked by eye.
  *
  * WHY THE FILENAMES LOOK LIKE THIS. The originals were named by a migration —
- * `Pest-Control-Mt-Vernon-WA-7-scaled.jpg`, `Exterminator-Bellingham-22`. The
- * town in those names is real and worth keeping; the rest is not. Each file is
+ * `Pest-Control-Mt-Vernon-WA-7-scaled.jpg`, `Exterminator-Bellingham-22`.
+ *
+ * DO NOT TRUST THE TOWN IN THOSE NAMES. An earlier version of this note said
+ * it was real and worth keeping. It is not: the `Lynden` set includes open
+ * saltwater with islands, and Lynden is inland farmland. The names were
+ * generated for search, not recorded on site, so the town is a keyword rather
+ * than a fact. The library's own alt text says "in Whatcom County" and never
+ * names a town, which is the giveaway. Anything added since 2 Sep 2026 is
+ * captioned to the county unless the photograph itself corroborates the town.
+ * Each file is
  * renamed to describe what the photograph actually shows, in the order a
  * reader would say it, ending in the town where the work happened. A filename
  * is a weak ranking signal on its own and a strong one in combination with an
