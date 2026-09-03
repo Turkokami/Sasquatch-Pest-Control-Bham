@@ -1105,32 +1105,58 @@ header.site .wrap {
   color: var(--link-hover);
 }
 
+/* THE SECTIONS, AS CHIPS. They were eight lengths of grey text separated by
+   air, with a lime underline that appeared on hover — which meant the row
+   said nothing at all until a mouse touched it, and said nothing ever on a
+   phone, where there is no hover. Owner's call to give it the theme.
+
+   Same outline construction as the link rails in §11, on purpose. A site
+   should have one idea of what a secondary control looks like, and a reader
+   who learns "lime hairline means you can tap this" in the masthead should
+   not have to learn it again halfway down the page.
+
+   The chips are transparent at rest so eight of them do not turn the masthead
+   into a control panel. The border and the fill arrive on hover, on focus,
+   and — the part that was missing — permanently on whichever section you are
+   actually in. */
 header.site nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 1.15rem;
-  margin-top: 0.75rem;
-  padding-top: 0.1rem;
+  gap: 0.35rem 0.3rem;
+  margin-top: 0.7rem;
+  padding-block: 0.55rem 0.7rem;
   border-top: 1px solid var(--rule);
   font-size: var(--fs-xs);
-  letter-spacing: 0.005em;
 }
 header.site nav a {
   color: var(--ink-2);
   text-decoration: none;
-  /* Comfortably past the 24px WCAG 2.2 target minimum without inflating the
-     masthead — this is the row a thumb hits first on a phone. */
-  padding: 0.62rem 0;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
-  transition: color 0.14s ease, border-color 0.14s ease;
+  font-weight: 600;
+  /* Keeps the row past the 24px WCAG 2.2 target minimum — this is the first
+     thing a thumb meets on a phone — and the horizontal padding is what turns
+     a word into something with an edge you can aim at. */
+  padding: 0.5rem 0.78rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
 }
-header.site nav a:hover {
-  color: var(--ink);
-  border-bottom-color: var(--accent-line);
+header.site nav a:hover,
+header.site nav a:focus-visible {
+  color: var(--link-hover);
+  background: color-mix(in srgb, var(--marker) 12%, transparent);
+  border-color: color-mix(in srgb, var(--marker) 38%, transparent);
+}
+/* Both values the component emits: "page" for the page you are on, "true" for
+   the section above it. They look the same deliberately — the distinction is
+   for a screen reader, and drawing two different highlights would be telling
+   a sighted reader about a difference that does not affect them. */
+header.site nav a[aria-current] {
+  color: var(--link);
+  background: color-mix(in srgb, var(--marker) 15%, transparent);
+  border-color: color-mix(in srgb, var(--marker) 58%, transparent);
 }
 header.site nav a:focus-visible {
-  outline-offset: -1px;
+  outline-offset: 2px;
 }
 
 /* ----------------------------------------------------------- §15  footer */

@@ -22,6 +22,33 @@ import { intrinsicSize } from '../lib/images';
    the glint in the eyes, the strokes on the letters — survives. */
 const mark = '/img/sasquatch-logo.png';
 const { width, height } = intrinsicSize(mark);
+
+/* The sections, as data rather than as eight hand-written anchors, so the
+   current one can be marked without repeating the test eight times. */
+const NAV = [
+  { href: '/services/', label: 'Services' },
+  { href: '/locations/', label: 'Service areas' },
+  { href: '/commercial/', label: 'Commercial' },
+  { href: '/pest-library/', label: 'Pest library' },
+  { href: '/guides/', label: 'Guides' },
+  { href: '/our-guarantee/', label: 'Guarantee' },
+  { href: '/about/', label: 'About' },
+  { href: '/contact/', label: 'Contact' },
+];
+
+/* WHICH SECTION AM I IN. The masthead had no answer to that on any of 220
+   pages — every link looked identical whether you were on it, under it or
+   nowhere near it. That is a wayfinding gap before it is a styling one, and
+   on a site this size it is the difference between a masthead and a list.
+
+   Two values, not one, because they mean different things to a screen reader:
+   "page" is only correct when this link IS the page you are on, and every
+   other match is an ancestor section, which is aria-current="true". Home is
+   deliberately not in the list — it is the wordmark — which is also why a
+   bare startsWith is safe here; "/" would prefix-match all eight. */
+const path = Astro.url.pathname;
+const currentFor = (href: string) =>
+  path === href ? 'page' : path.startsWith(href) ? 'true' : undefined;
 ---
 <header class="site">
   <div class="wrap">
@@ -46,14 +73,9 @@ const { width, height } = intrinsicSize(mark);
       <span>{business.name}</span>
     </a>
     <nav aria-label="Primary">
-      <a href="/services/">Services</a>
-      <a href="/locations/">Service areas</a>
-      <a href="/commercial/">Commercial</a>
-      <a href="/pest-library/">Pest library</a>
-      <a href="/guides/">Guides</a>
-      <a href="/our-guarantee/">Guarantee</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
+      {NAV.map((n) => (
+        <a href={n.href} aria-current={currentFor(n.href)}>{n.label}</a>
+      ))}
     </nav>
   </div>
 </header>
