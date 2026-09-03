@@ -31,6 +31,19 @@
  * "EPA approved" are the specific words that draw enforcement. This file
  * carries identifiers and links. It does not carry adjectives.
  *
+ * CORRECTED 3 Sep 2026, and the correction is instructive. The zip put three
+ * products in folders ending "Discontinued" and this file trusted that. The
+ * owner corrected two of them: PT Wasp Freeze is in use, and so is CB-80 —
+ * but not the CB-80 in the discontinued folder. That folder holds CB-80
+ * EXTRA, EPA Reg. 9444-175, on a 2002 label. The CB-80 actually in use is a
+ * different registration, 279-3393, whose label and 2025 safety data sheet
+ * were sitting loose in the root of the zip rather than in a product folder,
+ * and which this file had missed entirely. A folder name is not a fact, and
+ * two products sharing most of a brand name are not the same product.
+ *
+ * Bifen LP Insecticide Granules was missed the same way — its label was loose
+ * in the root. It is listed with no SDS because the set does not contain one.
+ *
  * LABELS CHANGE, and a stale label is the real hazard in publishing one. The
  * page states the date this set was received rather than implying the
  * documents are current forever. When a product is reformulated or its label
@@ -87,9 +100,11 @@ export const products: PesticideProduct[] = [
   { slug: 'contrac-all-weather-blox', name: 'Contrac All-Weather Blox', epaReg: null, actives: ['Bromadiolone'], kind: 'Rodenticide', target: 'Rats and mice', label: '/docs/products/contrac-all-weather-blox-label.pdf', sds: '/docs/products/contrac-all-weather-blox-sds.pdf', retired: false },
   { slug: 'maki-mini-bait-blocks', name: 'Maki Mini Bait Blocks', epaReg: null, actives: ['Bromadiolone'], kind: 'Rodenticide', target: 'Rats and mice', label: '/docs/products/maki-mini-bait-blocks-label.pdf', sds: '/docs/products/maki-mini-bait-blocks-sds.pdf', retired: false },
   { slug: 'victor-mole-gopher-repellent', name: 'Victor Mole & Gopher Repellent', epaReg: null, actives: ['Castor oil'], kind: 'Repellent', target: 'Moles and gophers', label: null, sds: '/docs/products/victor-mole-gopher-repellent-sds.pdf', retired: false },
+  { slug: 'cb-80', name: 'CB-80 Insecticide', epaReg: '279-3393', actives: ['Pyrethrins', 'Piperonyl butoxide'], kind: 'Aerosol', target: 'Flushing and contact', label: '/docs/products/cb-80-label.pdf', sds: '/docs/products/cb-80-sds.pdf', retired: false },
+  { slug: 'bifen-lp-granules', name: 'Bifen LP Insecticide Granules', epaReg: '53883-124', actives: ['Bifenthrin'], kind: 'Granule', target: 'Lawn and landscape insects', label: '/docs/products/bifen-lp-granules-label.pdf', sds: null, retired: false },
   { slug: 'cb-80-extra', name: 'CB-80 Extra', epaReg: '9444-175', actives: ['Pyrethrins', 'Piperonyl butoxide'], kind: 'Aerosol', target: 'Flushing and contact', label: '/docs/products/cb-80-extra-label.pdf', sds: '/docs/products/cb-80-extra-sds.pdf', retired: true },
   { slug: 'cb-40', name: 'CB-40', epaReg: '279-3397', actives: ['Pyrethrins', 'Piperonyl butoxide', 'N-octyl bicycloheptene dicarboximide'], kind: 'Aerosol', target: 'Flushing and contact', label: '/docs/products/cb-40-label.pdf', sds: '/docs/products/cb-40-sds.pdf', retired: true },
-  { slug: 'pt-wasp-freeze', name: 'PT Wasp Freeze', epaReg: '499-362', actives: ['d-trans Allethrin', 'Phenothrin'], kind: 'Aerosol', target: 'Wasps and hornets', label: '/docs/products/pt-wasp-freeze-label.pdf', sds: '/docs/products/pt-wasp-freeze-sds.pdf', retired: true },
+  { slug: 'pt-wasp-freeze', name: 'PT Wasp Freeze', epaReg: '499-362', actives: ['d-trans Allethrin', 'Phenothrin'], kind: 'Aerosol', target: 'Wasps and hornets', label: '/docs/products/pt-wasp-freeze-label.pdf', sds: '/docs/products/pt-wasp-freeze-sds.pdf', retired: false },
 ];
 
 export const activeProducts = () => products.filter((p) => !p.retired);
