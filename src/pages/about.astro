@@ -49,7 +49,6 @@ const directory = awards.filter((a) => a.tier === 'directory');
 const finalists = localVote.filter((a) => a.result !== 'winner');
 const voteWins = localVote.filter((a) => a.result === 'winner');
 const votePublishers = Array.from(new Set(voteWins.map((a) => a.publisher)));
-const dirPublishers = Array.from(new Set(directory.map((a) => a.publisher)));
 /* Every row currently sits at `owner-badge`: we hold the artwork, not the
    publisher's own winners listing. Guarded rather than asserted, so the
    sentence disappears by itself the day one row is upgraded. */
@@ -261,19 +260,15 @@ const canClaim = business.hasLicensedStaff;
           ))}
         </ul>
 
-        <h3>Directory and aggregator badges</h3>
-        <p>
-          The other {spell(directory.length)} came from listing sites and
-          ratings aggregators rather than from a vote:
-          {' '}{listOf(dirPublishers)}. Badges of this kind are a weaker thing
-          than the group above, and it is worth knowing why rather than being
-          left to guess: some are generated automatically from whatever public
-          review data the site has scraped, and some are simply sold to the
-          business that wants to display one. They are shown here because the
-          artwork is real and quietly dropping the less flattering half of a
-          list is its own kind of edit. They are shown separately because they
-          are not the same claim.
-        </p>
+        {/* Owner, 2 Sep 2026: the paragraph that used to sit here explained
+            at length why directory badges are a weaker signal than a local
+            vote — auto-generated from scraped review data, or sold outright.
+            All of that was true and none of it was the reader's problem; it
+            argued against the company's own badges on the company's own page.
+            The grouping stays, because the two lists genuinely are different
+            things, but the heading now just names the group and the badges
+            speak for themselves. */}
+        <h3>Listing awards</h3>
         <ul class="badges">
           {directory.map((a) => (
             <li>
