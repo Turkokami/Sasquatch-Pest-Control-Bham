@@ -402,3 +402,53 @@ export const speciesPhotos: Record<string, Photo> = {
       'Carpenter ant frass under a joist in a crawlspace. Ants do not eat wood — they excavate it and push the shavings out — so a pile like this sits directly below the gallery that produced it, which is what makes it worth following.',
   },
 };
+
+/* --------------------------------------------------------------------------
+ * PROBLEM PAGES. Keyed by the problem slug, which is unique across the site —
+ * no service prefix needed, and the route asserts that if it ever stops being
+ * true.
+ *
+ * Twenty-three problem pages, four photographs. Six had a plausible match in
+ * the archive and two were rejected on looking at them, which is the whole
+ * reason for looking:
+ *
+ *   The candidate for "rats in the crawlspace" is described by the library as
+ *   droppings on a BLACK vapor barrier. The barrier in the photograph is
+ *   blue, and no droppings are legible at page size. When a description and
+ *   an image disagree, the image wins and the photograph is not used.
+ *
+ *   The candidate for "droppings in the kitchen" is exterior debris blown up
+ *   against a garage door. On a page teaching somebody to recognize rodent
+ *   droppings on a kitchen floor, that is not a near miss, it is a different
+ *   subject.
+ *
+ * The rest of the problem tier is in docs/IMAGE-WISHLIST.md, and it is the
+ * easiest photography on the list — each page describes one specific
+ * situation, which means it already says what to shoot.
+ * ------------------------------------------------------------------------ */
+export const problemPhotos: Record<string, Photo> = {
+  'sawdust-piles-below-the-trim': {
+    file: '/img/work/carpenter-ant-frass-on-a-crawlspace-sill-whatcom-county-wa.jpg',
+    alt: 'Pale fibrous debris banked along a wooden sill plate above a concrete foundation wall in a crawlspace, with more caught in the joint below it',
+    caption:
+      'Frass banked on a crawlspace sill rather than under interior trim, and it shows the thing this page turns on better than trim would: the material is fibrous and shredded rather than granular. That texture is what separates ants from beetles before anybody opens anything up.',
+  },
+  'crawlspace-vent-screening': {
+    file: '/img/work/fabricated-metal-foundation-vent-screen-whatcom-county-wa.jpg',
+    alt: 'A perforated metal screen in a folded steel frame fitted over a foundation vent opening, seen from outside at ground level',
+    caption:
+      'A vent cover cut and folded for one opening. The perforation is small enough to stop a mouse and open enough not to choke the ventilation the crawlspace needs, which is the whole difficulty — hardware cloth stapled over the outside solves the first problem and eventually rusts through.',
+  },
+  'sealing-a-quarter-inch-foundation-gap': {
+    file: '/img/work/gap-around-a-plumbing-penetration-whatcom-county-wa.jpg',
+    alt: 'A white plastic pipe passing through a concrete foundation wall with an open gap around it where the hole was cut oversize',
+    caption:
+      'A plumbing penetration cut oversize and never closed. This is the most common quarter-inch gap in a Whatcom County house, and it is usually found within a few feet of the water heater or the kitchen wall.',
+  },
+  'wasp-nest-in-a-wall-void': {
+    file: '/img/work/paper-wasp-comb-removed-from-a-wall-void-whatcom-county-wa.jpg',
+    alt: 'A layered paper wasp comb after removal, held in a plastic bag, its open cells visible from below',
+    caption:
+      'The comb out of the wall, photographed after removal rather than in place — a nest in a void is worked in a confined space and photographing it there is rarely the priority. The layering is what makes a void nest worth removing rather than only treating: the paper and the larvae left behind draw beetles and, later, rodents.',
+  },
+};

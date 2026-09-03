@@ -7,6 +7,8 @@ import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { blogPostsFor } from '../../../lib/blog';
+import Photo from '../../../components/Photo.astro';
+import { problemPhotos } from '../../../data/photos';
 import { guideLinksFor } from '../../../lib/guides';
 import { liveServices } from '../../../data/services';
 
@@ -79,6 +81,12 @@ const blogLinks = await blogPostsFor(path);
       ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
       copy would break both; the CTA at the foot no longer carries one and
       keeps its phone button. The sticky mobile bar jumps to this. */}
+  {/* Above the form, same reasoning as the town pages: the form is a tall
+      third-party iframe and a photograph below it is most of a screen away on
+      a phone. Four of twenty-three problem pages have one — src/data/photos.ts
+      records which candidates were rejected on looking at them and why. */}
+  {problemPhotos[p.slug] && <Photo photo={problemPhotos[p.slug]} priority />}
+
   <LeadForm />
 
   {Body ? (
