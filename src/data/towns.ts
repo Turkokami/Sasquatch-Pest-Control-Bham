@@ -114,6 +114,34 @@ export const towns: Town[] = [
     kind: 'city',
     pestPressures: ['rodents moving in off adjacent farmland', 'wasps in new-construction soffits', 'ants along irrigated foundations'],
     landmarks: ['Pioneer Park', 'the Nooksack River corridor', 'the Cherry Point industrial area'],
+    /* OWNER-SUPPLIED, 3 Sep 2026, and mention-level only — no page: true on any
+       of them. Two reasons for the caution.
+
+       THE SOURCE WAS A GOOGLE AI OVERVIEW, and it demonstrably bled between
+       queries. The Blaine list and the Lynden list came back sharing six
+       identical entries — Bay Crest, Salish Breeze, Malibu Estates, The
+       Greens, Loomis Trail and Lettered Streets — and Lettered Streets is one
+       of Bellingham's twenty-five official neighborhoods with a page of its
+       own on this site. Those six are dropped. What is kept is the set that
+       is either independently well known (Semiahmoo, Sandy Point, Front
+       Street) or named after real local geography (Pepin Creek, Fishtrap
+       Creek, North Prairie).
+
+       MENTION-LEVEL IS THE HONEST TIER FOR THEM ANYWAY. Bellingham's are the
+       City's official designations; these are a mix of subdivision names,
+       downtown districts and marketing labels, which is a different kind of
+       thing. They belong in the "also across" line and in areaServed, not on
+       twelve more pages. Owner to confirm which — if any — are recognized
+       locally enough to earn one. */
+    neighborhoods: [
+      { slug: 'sandy-point', name: 'Sandy Point', note: 'waterfront and canal lots, marine air and moisture' },
+      { slug: 'downtown-ferndale', name: 'Downtown Ferndale', note: 'older stock along the Nooksack, walkable core' },
+      { slug: 'malloy-village', name: 'Malloy Village', note: 'townhomes and family streets near the freeway' },
+      { slug: 'vista-ridge', name: 'Vista Ridge', note: 'newer construction on elevated ground' },
+      { slug: 'pacific-highlands', name: 'Pacific Highlands', note: 'modern subdivision with sidewalks and parks' },
+      { slug: 'woods-point', name: 'Woods Point', note: 'gated 55+ community, single-level homes' },
+      { slug: 'the-meadows', name: 'The Meadows', note: 'established larger-lot single-family' },
+    ],
   },
   {
     slug: 'lynden',
@@ -130,6 +158,35 @@ export const towns: Town[] = [
       'cluster flies overwintering in south-facing walls',
     ],
     landmarks: ['the Guide Meridian', 'Berthusen Park', 'the dairy corridor toward Everson'],
+    /* OWNER-SUPPLIED, 3 Sep 2026, and mention-level only — no page: true on any
+       of them. Two reasons for the caution.
+
+       THE SOURCE WAS A GOOGLE AI OVERVIEW, and it demonstrably bled between
+       queries. The Blaine list and the Lynden list came back sharing six
+       identical entries — Bay Crest, Salish Breeze, Malibu Estates, The
+       Greens, Loomis Trail and Lettered Streets — and Lettered Streets is one
+       of Bellingham's twenty-five official neighborhoods with a page of its
+       own on this site. Those six are dropped. What is kept is the set that
+       is either independently well known (Semiahmoo, Sandy Point, Front
+       Street) or named after real local geography (Pepin Creek, Fishtrap
+       Creek, North Prairie).
+
+       MENTION-LEVEL IS THE HONEST TIER FOR THEM ANYWAY. Bellingham's are the
+       City's official designations; these are a mix of subdivision names,
+       downtown districts and marketing labels, which is a different kind of
+       thing. They belong in the "also across" line and in areaServed, not on
+       twelve more pages. Owner to confirm which — if any — are recognized
+       locally enough to earn one. */
+    neighborhoods: [
+      { slug: 'downtown-lynden', name: 'Downtown Lynden', note: 'Front Street commercial core and the older stock behind it' },
+      { slug: 'homestead', name: 'Homestead', note: 'golf-course community on the north edge' },
+      { slug: 'meadowview', name: 'Meadowview', note: 'postwar and later single-family' },
+      { slug: 'sterling-meadows', name: 'Sterling Meadows', note: 'newer subdivision' },
+      { slug: 'north-prairie', name: 'North Prairie', note: 'farmland edge along North Prairie Road' },
+      { slug: 'fairway-estates', name: 'Fairway Estates', note: 'golf-adjacent single-family' },
+      { slug: 'pepin-creek', name: 'Pepin Creek', note: 'creek corridor on the west side, newer development' },
+      { slug: 'fishtrap-creek', name: 'Fishtrap Creek', note: 'creek corridor through town, greenbelt margins' },
+    ],
   },
   {
     slug: 'blaine',
@@ -146,6 +203,31 @@ export const towns: Town[] = [
       'carpenter ants out of beach driftwood',
     ],
     landmarks: ['Blaine Harbor', 'Semiahmoo Spit', 'the Peace Arch crossing'],
+    /* OWNER-SUPPLIED, 3 Sep 2026, and mention-level only — no page: true on any
+       of them. Two reasons for the caution.
+
+       THE SOURCE WAS A GOOGLE AI OVERVIEW, and it demonstrably bled between
+       queries. The Blaine list and the Lynden list came back sharing six
+       identical entries — Bay Crest, Salish Breeze, Malibu Estates, The
+       Greens, Loomis Trail and Lettered Streets — and Lettered Streets is one
+       of Bellingham's twenty-five official neighborhoods with a page of its
+       own on this site. Those six are dropped. What is kept is the set that
+       is either independently well known (Semiahmoo, Sandy Point, Front
+       Street) or named after real local geography (Pepin Creek, Fishtrap
+       Creek, North Prairie).
+
+       MENTION-LEVEL IS THE HONEST TIER FOR THEM ANYWAY. Bellingham's are the
+       City's official designations; these are a mix of subdivision names,
+       downtown districts and marketing labels, which is a different kind of
+       thing. They belong in the "also across" line and in areaServed, not on
+       twelve more pages. Owner to confirm which — if any — are recognized
+       locally enough to earn one. */
+    neighborhoods: [
+      { slug: 'semiahmoo', name: 'Semiahmoo', note: 'resort and marina community on the spit, much of it seasonally empty' },
+      { slug: 'birch-bay-village', name: 'Birch Bay Village', note: 'gated community with its own marina and golf course' },
+      { slug: 'downtown-blaine', name: 'Downtown Blaine', note: 'older commercial core and condos above Drayton Harbor' },
+      { slug: 'east-blaine', name: 'East Blaine', note: 'established residential up H Street toward rural county' },
+    ],
   },
   {
     slug: 'birch-bay',

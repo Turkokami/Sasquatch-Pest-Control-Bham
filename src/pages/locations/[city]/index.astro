@@ -148,11 +148,20 @@ const blogLinks = await blogPostsFor(path);
     <LinkRail heading={`Neighborhoods we serve in ${t.name}`} links={neighborhoods} />
   )}
 
+  {/* TWO SENTENCES, BECAUSE THERE ARE NOW TWO CASES. This read "these share a
+      housing stock with the neighborhoods above and are covered in the grouped
+      section on this page" — written for Bellingham, where twelve
+      neighborhoods do have pages above it and the sentence is true. Blaine,
+      Ferndale and Lynden have named areas and no pages at all, so on those
+      three it referred to neighborhoods above that do not exist and a grouped
+      section that is not there. Correct on one page and false on three is
+      worse than generic on four. */}
   {alsoNeighborhoods.length > 0 && (
     <p class="prose" data-boilerplate>
-      <b>Also across {t.name}:</b> {alsoNeighborhoods.join(', ')}. These share a
-      housing stock with the neighborhoods above and are covered in the grouped
-      section on this page rather than having a separate one.
+      <b>Also across {t.name}:</b> {alsoNeighborhoods.join(', ')}.{' '}
+      {neighborhoods.length > 0
+        ? 'These share a housing stock with the neighborhoods above and are covered here rather than on a page of their own.'
+        : `We work all of these. They are named here rather than given separate pages, because the job in them is the ${t.name} job — same housing stock, same pressures, same crew.`}
     </p>
   )}
 
