@@ -117,6 +117,36 @@ export const servicePhotos: Record<string, Photo> = {
      earwigs, moths, fleas or flies. A page with no photograph renders without
      one; it does not borrow a stock insect. */
 
+  /* ADDED 3 Sep 2026 from the owner's own photographs, delivered named. Four
+     of the ten service pages that had nothing. The archive could not supply
+     any of these — there is no bed bug, no fly, no carpet beetle and no
+     pre-construction shot anywhere in 1,293 images — so this is new material
+     rather than a better search. */
+
+  'bed-bug-control': {
+    file: '/img/work/bed-bugs-and-spotting-on-a-mattress-seam-whatcom-county-wa.jpg',
+    alt: 'A folded mattress seam with several bed bugs along it and dark fecal spotting worked into the fabric',
+    caption:
+      'The seam is where to look first, and the spotting matters more than the insects. Live bugs move and hide; the dark marks worked into the fabric stay, which is why a seam like this can confirm an infestation on a night when nothing is out.',
+  },
+  'fly-control': {
+    file: '/img/work/small-flies-gathered-on-a-sink-whatcom-county-wa.jpg',
+    alt: 'Several small flies resting on the white porcelain of a sink basin near the drain',
+    caption:
+      'Small flies gathered at a sink. When they concentrate on one fixture the breeding site is almost always in the drain rather than in the room — a film of organic material inside the pipe, which is why cleaning the counter changes nothing and cleaning the drain ends it.',
+  },
+  'beetle-control': {
+    file: '/img/work/varied-carpet-beetles-clustered-on-a-wall-whatcom-county-wa.jpg',
+    alt: 'Dozens of small mottled brown and cream beetles gathered along a painted wall corner',
+    caption:
+      'Varied carpet beetles massed on a wall. Adults head for light and windows, which is where people find them, but they do no damage at all — the feeding is done by larvae somewhere darker, on wool, hair, feathers or a dead insect in a wall void. Find that and the job is over.',
+  },
+  'termite-control': {
+    file: '/img/work/pre-construction-soil-treatment-at-a-commercial-site-whatcom-county-wa.jpg',
+    alt: 'A technician with a backpack sprayer treating soil inside timber foundation forms on a commercial building site under a clear sky',
+    caption:
+      'Treating the soil inside the forms before a slab goes down on a commercial building. This is the cheapest wood-destroying-organism work that will ever be done on that structure, and the only chance to put a barrier where the building will sit rather than around it afterwards.',
+  },
   'wdo-treatment': {
     file: '/img/work/wood-boring-beetle-exit-holes-and-frass-whatcom-county-wa.jpg',
     alt: 'A length of milled wood lying on plastic sheeting, its face covered in small round exit holes, with piles of powdery frass fallen beneath it',
@@ -183,6 +213,48 @@ export const servicePhotos: Record<string, Photo> = {
 
 /** Keyed by the town's route segment under /locations/. */
 export const locationPhotos: Record<string, Photo> = {
+  /* SEVEN MORE, 3 Sep 2026, owner-supplied and named to the town in the
+     filename by the person who took them. That is the difference between
+     these and the archive: the towns in the WordPress filenames were
+     generated for search and are demonstrably wrong, and these are not. Every
+     town below now shows a photograph taken in it rather than the crew
+     fallback. */
+  deming: {
+    file: '/img/work/service-truck-on-a-forest-road-deming-wa.jpg',
+    alt: 'A wrapped service truck parked on a gravel road under tall moss-hung conifers',
+    caption:
+      'On a forest road at Deming. This is the ground that makes the carpenter ant season here what it is — every one of those trees is a possible parent colony, and the buildings are in among them.',
+  },
+  custer: {
+    file: '/img/work/service-truck-at-a-property-custer-wa.jpg',
+    alt: 'A wrapped service truck parked on a driveway beside a large detached garage with tall firs behind it',
+    caption:
+      'At a property outside Custer. The outbuilding is the point: on acreage here the shop or the barn takes the rodent pressure first and the house second, so the whole site is the job.',
+  },
+  alger: {
+    file: '/img/work/service-truck-by-the-water-alger-wa.jpg',
+    alt: 'A wrapped service truck parked at the edge of a lake with forested hills across the water',
+    caption:
+      'Above the water at Alger, at the north end of Skagit County. Everything down here is worked out of Bellingham on the same routes as the Whatcom towns.',
+  },
+  lynden: {
+    file: '/img/work/service-van-at-a-home-lynden-wa.jpg',
+    alt: 'A wrapped service van parked on the gravel drive of a blue single-story home under an autumn sky',
+    caption:
+      'At a house in Lynden. Most of the residential work in this town is ordinary and seasonal — ants in spring, wasps by August, and rodents once the farm ground either side of the city is cut.',
+  },
+  bow: {
+    file: '/img/work/service-van-at-sunrise-bow-wa.jpg',
+    alt: 'A wrapped service van parked on a farm track at sunrise beside a red barn and outbuildings',
+    caption:
+      'First call of the day at a farm near Bow. Agricultural accounts run on the grower’s calendar rather than ours, which in practice means early and planned around whatever else is happening that week.',
+  },
+  bellingham: {
+    file: '/img/work/service-truck-at-lake-padden-bellingham-wa.jpg',
+    alt: 'A wrapped service truck parked at a lakeside lot with forest and low cloud across the water',
+    caption:
+      'At Lake Padden, on the south side of the city. Bellingham is not one job — the greenbelt edges like this one produce rodent and spider pressure that the flat, older streets in the center do not.',
+  },
   bellingham: {
     file: '/img/work/pest-control-technician-working-at-a-home-bellingham-wa.jpg',
     alt: 'A pest control technician kneeling to work at the base of a house wall beside a deck, low sun coming through the trees behind',
@@ -371,6 +443,44 @@ export const crewPhoto = {
  * list and what each shot needs to show.
  * ------------------------------------------------------------------------ */
 export const speciesPhotos: Record<string, Photo> = {
+  /* SIX MORE, 3 Sep 2026, all from the owner's own delivery and all named by
+     him. That matters for two of them in particular. The bald-faced hornet is
+     the identification this build softened twice, because a large gray
+     enclosed aerial nest is also built by aerial yellowjackets and cannot be
+     separated in a photograph — the owner naming the file settles it, which a
+     migration's alt text never could. The odorous house ant is the same: OHA
+     is his abbreviation, on his photograph, of a trail on his customer's
+     siding. */
+  'bald-faced-hornet': {
+    file: '/img/pests/bald-faced-hornet.jpg',
+    alt: 'A large gray papery enclosed hornet nest held up after removal, its layered outer envelope torn open on one side',
+    caption:
+      'A nest taken down whole. The enclosed gray envelope and the single entrance near the bottom are what separate this from the open comb a paper wasp builds — and it is why these are worth leaving to somebody in a suit, because there is no way to work on one without the whole colony knowing.',
+  },
+  'european-paper-wasp': {
+    file: '/img/pests/european-paper-wasp.jpg',
+    alt: 'A yellow and black wasp photographed close up on rough concrete, its long rear legs trailing behind it',
+    caption:
+      'The legs are the tell. A paper wasp lets its long rear legs hang and trail in flight, where a yellowjacket tucks them up tight against the body. At a distance the two look identical, and they need different handling.',
+  },
+  'odorous-house-ant': {
+    file: '/img/pests/odorous-house-ant.jpg',
+    alt: 'A line of very small dark ants running along the edge of a leaf that is touching painted lap siding',
+    caption:
+      'A trail crossing from a leaf onto the siding, which is exactly how most of them get in. Vegetation touching a wall is a bridge, and cutting that contact does more against this species than anything sprayed on the foundation.',
+  },
+  'carpet-beetle': {
+    file: '/img/work/varied-carpet-beetles-clustered-on-a-wall-whatcom-county-wa.jpg',
+    alt: 'Dozens of small mottled brown and cream beetles gathered along a painted wall corner',
+    caption:
+      'Varied carpet beetle adults, which are the harmless half of the species. The mottled cream and brown pattern is diagnostic, and finding this many together usually means a larval source within a few feet — often in a wall void rather than in anything on show.',
+  },
+  'bed-bug': {
+    file: '/img/work/bed-bugs-and-spotting-on-a-mattress-seam-whatcom-county-wa.jpg',
+    alt: 'A folded mattress seam with several bed bugs along it and dark fecal spotting worked into the fabric',
+    caption:
+      'What an actual find looks like, rather than an illustration of one. Flat, oval, reddish-brown and about the size of an apple pip, tucked into a seam, with the staining that gives them away when they are not visible.',
+  },
   'bumble-bee': {
     file: '/img/pests/bumble-bee.jpg',
     alt: 'A bumble bee photographed close up on a pale concrete surface, its banded thorax and pollen-dusted legs clearly visible',
@@ -391,9 +501,9 @@ export const speciesPhotos: Record<string, Photo> = {
   },
   'anobiid-powderpost-beetle': {
     file: '/img/pests/anobiid-powderpost-beetle.jpg',
-    alt: 'A crawlspace beam with boring damage along its lower edge and pale frass fallen on the surface beneath it',
+    alt: 'Several cones of pale powdery frass fallen on a crawlspace floor around the base of a concrete pier',
     caption:
-      'What a reader is far more likely to find than the beetle: damage in a crawlspace member with frass beneath it. The frass is the useful part — its texture separates the beetle families, and the families want different treatments.',
+      'Frass cones on a crawlspace floor, dropped from the timber above. The cones are the useful part: powderpost frass is fine and flour-like and runs into a heap like this, where carpenter ant frass is fibrous and holds its shape. The two want different work.',
   },
   /* SWAPPED 3 Sep 2026 for the macro, owner-supplied. The frass shot is better
      evidence and a worse identification photograph, and this page's job is
@@ -449,6 +559,30 @@ export const problemPhotos: Record<string, Photo> = {
     alt: 'A white plastic pipe passing through a concrete foundation wall with an open gap around it where the hole was cut oversize',
     caption:
       'A plumbing penetration cut oversize and never closed. This is the most common quarter-inch gap in a Whatcom County house, and it is usually found within a few feet of the water heater or the kitchen wall.',
+  },
+  'bald-faced-hornet-nest-in-a-tree': {
+    file: '/img/work/bald-faced-hornet-nest-in-a-tree-whatcom-county-wa.jpg',
+    alt: 'A gray papery enclosed hornet nest about the size of a football hanging among green leaves in a tree',
+    caption:
+      'A nest in a tree, where it is doing no harm to anybody. That is worth saying on this page, because a nest well away from a door or a path can often be left until the first hard frost kills the colony — the question is not whether it is there but whether anyone has to walk under it.',
+  },
+  'rats-in-the-crawlspace': {
+    file: '/img/work/rodent-tracks-across-a-crawlspace-vapor-barrier-whatcom-county-wa.jpg',
+    alt: 'Clear four-toed footprints and tail drag marks pressed into the dust on a plastic crawlspace vapor barrier',
+    caption:
+      'Tracks across the dust on a vapor barrier. This is the most useful thing in a crawlspace and the most often walked past: prints and a tail drag show the route, the direction and roughly the size, which is what decides where anything gets placed.',
+  },
+  'carpenter-ants-in-a-window-frame': {
+    file: '/img/work/carpenter-ants-trailing-on-a-shed-wall-whatcom-county-wa.jpg',
+    alt: 'A column of large dark ants running up the painted corner where two shed walls meet',
+    caption:
+      'A working trail on an outbuilding wall. A line this consistent is traffic between a nest and food, and it can be followed in both directions — which is far quicker than searching a building at random for the timber they are in.',
+  },
+  'spiders-appearing-every-fall': {
+    file: '/img/work/house-spider-on-a-window-frame-whatcom-county-wa.jpg',
+    alt: 'A large brown house spider resting on the painted frame of an old window at night, with a lit room visible through the glass',
+    caption:
+      'The autumn arrival everyone photographs. Almost always a male, almost always wandering for a mate rather than moving in, and harmless — nothing with a medically significant bite is established this far north.',
   },
   'bugs-on-the-south-wall-every-october': {
     file: '/img/work/lady-beetles-clustered-on-a-wall-corner-whatcom-county-wa.jpg',
