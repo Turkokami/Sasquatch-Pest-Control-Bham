@@ -26,6 +26,7 @@ const { width, height } = intrinsicSize(mark);
 /* The sections, as data rather than as eight hand-written anchors, so the
    current one can be marked without repeating the test eight times. */
 const NAV = [
+  { href: '/', label: 'Home' },
   { href: '/services/', label: 'Services' },
   { href: '/locations/', label: 'Service areas' },
   { href: '/commercial/', label: 'Commercial' },
@@ -43,19 +44,29 @@ const NAV = [
 
    Two values, not one, because they mean different things to a screen reader:
    "page" is only correct when this link IS the page you are on, and every
-   other match is an ancestor section, which is aria-current="true". Home is
-   deliberately not in the list — it is the wordmark — which is also why a
-   bare startsWith is safe here; "/" would prefix-match all eight. */
+   other match is an ancestor section, which is aria-current="true".
+
+   HOME IS IN THE LIST, and it is the reason for the href !== '/' guard. The
+   wordmark has always been the home link and always will be, but a logo being
+   clickable is a convention rather than a signal — plenty of people have never
+   tried it. Owner's call, and the right one: the cost is one chip.
+
+   The guard is not cosmetic. "/" is a prefix of every path on this site, so
+   without it a bare startsWith marks Home as the current section on all 220
+   pages and the highlight stops meaning anything at all. Home matches on
+   equality only. */
 const path = Astro.url.pathname;
 const currentFor = (href: string) =>
-  path === href ? 'page' : path.startsWith(href) ? 'true' : undefined;
+  path === href ? 'page' : href !== '/' && path.startsWith(href) ? 'true' : undefined;
 ---
 <header class="site">
   <div class="wrap">
-    {/* Already the home link, and has been. It gains the mark, not a second
-        anchor: two links to the same page sitting next to each other is a
-        duplicate stop for anyone tabbing through, and it is the thing that
-        makes a masthead read as two brands. */}
+    {/* Already the home link, and has been. It gains the mark rather than a
+        second anchor beside it: two links to the same page immediately
+        adjacent are one duplicate stop for anyone tabbing through, and they
+        make a masthead read as two brands. The Home chip in the nav below is
+        a different thing — it is a row away, it is labeled, and it exists
+        precisely because this one is not labeled. */}
     <a class="brand" href="/">
       {/* aria-hidden because the link's accessible name is the wordmark
           beside it. Without it a screen reader announces the company twice.
