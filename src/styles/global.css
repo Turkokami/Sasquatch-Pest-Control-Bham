@@ -1045,19 +1045,21 @@ header.site .wrap {
   color: var(--ink);
   text-decoration: none;
   display: inline-flex;
-  align-items: baseline;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.55rem;
 }
-/* The wordmark's marker, at the size the brand actually uses it: a small
-   solid, not a field. */
-.brand::before {
-  content: "";
-  align-self: center;
-  width: 0.55rem;
-  height: 0.55rem;
+/* The mark replaces the small lime solid that stood in for it. That square
+   was a placeholder for exactly this and has no reason to survive alongside
+   it — two marks on one wordmark is one mark too many.
+
+   Sized in rem so it tracks the wordmark if the type scale ever moves, and
+   given an explicit width:auto so the width/height attributes on the element
+   reserve the right box before the PNG arrives without then locking the
+   rendered width to the intrinsic 154px. */
+.brand-mark {
   flex: 0 0 auto;
-  background: var(--accent-line);
-  border-radius: 1px;
+  width: auto;
+  height: 2.35rem;
 }
 .brand:hover {
   color: var(--link-hover);

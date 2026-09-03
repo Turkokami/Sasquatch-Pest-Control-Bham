@@ -1,9 +1,46 @@
 ---
 import { business } from '../data/business';
+import { intrinsicSize } from '../lib/images';
+
+/* THE MARK IS A CROP OF THE FULL LOGO, not the logo itself. The supplied
+   artwork is a square lockup: the mascot above a banner reading SASQUATCH
+   PEST CONTROL. At the size a masthead can spend — call it 40px — that
+   banner's lettering renders about seven pixels tall, which is not small
+   type, it is texture. Worse, it would be the second copy of the company
+   name inside a link that already says it in the serif beside it.
+   So the head is cropped out and used as a mark, and the name stays type.
+   The full lockup is still at /img/sasquatch-pest-control-logo.png.
+
+   The original was also flat RGB on white, which would have shown as a white
+   card on both the cream and the dark masthead. The background was knocked
+   out by flooding from the four corners rather than keying every white pixel,
+   so the white inside the artwork — the highlights on the mane, the glint in
+   the eyes — survived. */
+const mark = '/img/sasquatch-mark.png';
+const { width, height } = intrinsicSize(mark);
 ---
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="/">{business.name}</a>
+    {/* Already the home link, and has been. It gains the mark, not a second
+        anchor: two links to the same page sitting next to each other is a
+        duplicate stop for anyone tabbing through, and it is the thing that
+        makes a masthead read as two brands. */}
+    <a class="brand" href="/">
+      {/* aria-hidden because the link's accessible name is the wordmark
+          beside it. Without it a screen reader announces the company twice.
+          The alt is written anyway rather than left empty: harness check 2
+          fails any <img> with an empty alt, and that rule is worth more than
+          this exception is. */}
+      <img
+        class="brand-mark"
+        src={mark}
+        width={width}
+        height={height}
+        alt="The Sasquatch Pest Control sasquatch mascot"
+        aria-hidden="true"
+      />
+      <span>{business.name}</span>
+    </a>
     <nav aria-label="Primary">
       <a href="/services/">Services</a>
       <a href="/locations/">Service areas</a>
