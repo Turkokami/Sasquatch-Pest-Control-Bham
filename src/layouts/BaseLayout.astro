@@ -14,7 +14,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import MobileActionBar from '../components/MobileActionBar.astro';
-import Treeline from '../components/Treeline.astro';
+import ForestBand from '../components/ForestBand.astro';
 
 /* `guideTopics` is Omitted as well as title/description: it is not a page's
    business what the guides collection contains. It is the Organization's
@@ -150,11 +150,11 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
         <slot />
       </div>
     </main>
-    {/* The horizon, immediately above the footer — the one place every page
-        on this site ends, and the open space the owner wanted broken. is-dark
-        because the footer is an inverted region, so the trees have to read as
-        the light shape against it rather than as ink on ink. */}
-    <Treeline onDark />
+    {/* The forest band, immediately above the footer — the one place every
+        page on this site ends, and the open space the owner wanted broken.
+        Owner-supplied photograph; it replaced a drawn treeline that never
+        read correctly at page width. See ForestBand.astro. */}
+    <ForestBand />
     <Footer />
     {/* LAST IN THE DOCUMENT, and deliberately after the footer. It is
         position:fixed so source order does not decide where it paints, and

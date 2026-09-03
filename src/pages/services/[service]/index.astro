@@ -7,6 +7,7 @@ import Photo from '../../../components/Photo.astro';
 import Training from '../../../components/Training.astro';
 import EntryPoints from '../../../components/EntryPoints.astro';
 import Video from '../../../components/Video.astro';
+import { videoForService } from '../../../data/videos';
 import { servicePhotos } from '../../../data/photos';
 import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
@@ -54,6 +55,7 @@ const problems = (s.problems ?? []).map((p) => ({
 const guideLinks = await guideLinksFor(path);
 ---
 <BaseLayout
+  videoKey={videoForService[s.slug]}
   path={path}
   title={title}
   description={description}
@@ -131,7 +133,7 @@ const guideLinks = await guideLinksFor(path);
   )}
 
   {s.slug === 'rodent-control' && (
-    <Video name="fall-rodents" heading="The autumn move indoors, on video" />
+    <Video name={videoForService[s.slug]} heading="The autumn move indoors, on video" />
   )}
 
   {/* THE ENTRY DIAGRAM, on the two pages it is an argument for. Rodent control
@@ -147,11 +149,8 @@ const guideLinks = await guideLinksFor(path);
       go on the service pages rather than a "videos" page nobody visits,
       because a video about carpenter ants is worth something to the person
       reading about carpenter ants and nothing to anybody else. */}
-  {s.slug === 'ant-control' && (
-    <Video name="carpenter-ants" heading="Carpenter ants, on video" />
-  )}
-  {s.slug === 'fly-control' && (
-    <Video name="flies" heading="Flies, on video" />
+  {videoForService[s.slug] && s.slug !== 'rodent-control' && (
+    <Video name={videoForService[s.slug]} heading={`${s.short}, on video`} />
   )}
   {s.slug === 'exclusion-and-repairs' && (
     <EntryPoints heading="What we seal, and where it is" />

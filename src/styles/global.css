@@ -2002,73 +2002,62 @@ footer.site .colophon {
   max-width: 58ch;
 }
 
-/* ------------------------------------------------------ §21g  treeline */
+/* -------------------------------------------------- §21g  forest band */
 
-/* The drawn conifer horizon in src/components/Treeline.astro, used to close a
-   long page and to break the open space above the footer. The component
-   carries the argument for drawing it rather than photographing it; this is
-   the paint.
+/* The Pacific Northwest photograph that closes every page, above the footer.
+   src/components/ForestBand.astro carries the reasoning, including why it is
+   an <img> rather than a background-image and why it replaced a drawn
+   treeline.
 
-   Two ranks at different opacities is the whole trick. Depth in a silhouette
-   comes from atmospheric perspective — the further rank is paler and lower —
-   and doing it with two flat fills costs nothing and reads correctly at any
-   width. */
+   THE SCRIM IS THE WHOLE TRICK. Without it the photograph stops at a hard
+   horizontal edge and reads as a sticker. With a gradient from transparent to
+   the footer's exact black laid over its lower half, the image resolves into
+   the footer and the page ends rather than stopping. */
 
-.treeline {
+.forestband {
+  position: relative;
   display: block;
   width: 100%;
-  height: clamp(72px, 9vw, 132px);
   overflow: hidden;
-  /* NO 100vw FULL-BLEED HACK, and the reason is worth keeping. The first
-     version used `width: 100vw` with negative margins to break out of a
-     measure. It shipped an 8px horizontal scrollbar on every page, because
-     100vw is the viewport INCLUDING the vertical scrollbar while the document
-     is only as wide as the content area. Eight pixels of sideways scroll on a
-     3,000-word page is the kind of defect nobody reports and everybody feels.
-
-     It was never needed: this component is placed in BaseLayout outside the
-     content wrap, immediately above the footer, so it is already full width.
-     If it is ever moved inside a measure, do not reach for 100vw — wrap it in
-     a full-width parent instead. */
+  /* Band, not frame. The photograph is cropped to a strip in the component's
+     build step; this height keeps it a horizon rather than a hero on a page
+     whose subject is not scenery. */
+  height: clamp(140px, 20vw, 300px);
+  background: var(--inv-bg);
 }
-.treeline-svg {
+.forestband-img {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  /* Anchored just below centre. The composition is symmetrical — trees
+     framing a valley — so the horizontal centre is right, and dropping the
+     vertical keeps the horizon and the mountain in frame when the band is cut
+     to 140px on a phone rather than showing only sky. */
+  object-position: 50% 62%;
 }
 
-/* THE COLOR RELATIONSHIP, corrected after looking at it. The first version
-   gave the far rank a brown token, which on a cream sky read as mountains
-   rather than distance. Real atmospheric perspective on a light sky is the
-   same ink at lower opacity — haze, not a different pigment.
-
-   Both ranks are therefore the footer's own black. The front rank is fully
-   opaque so the trees grow out of the footer as one shape; the back rank is
-   the same black at low opacity, which the cream ground turns into exactly
-   the gray a distant stand actually is. */
-.treeline-front {
-  fill: var(--ink);
-}
-.treeline-back {
-  fill: var(--ink);
-  opacity: 0.38;
-}
-
-/* Above the footer the front rank takes the footer's exact black, so the
-   silhouette and the block below it are continuous — the trees read as the
-   top edge of the footer rather than as a band sitting on it. */
-.treeline.is-dark .treeline-front {
-  fill: var(--inv-bg);
-}
-.treeline.is-dark .treeline-back {
-  fill: var(--inv-bg);
-  opacity: 0.34;
+/* Fades into the footer. Two stops rather than a linear ramp so the top of
+   the band stays fully legible as a photograph and only the last third goes
+   to black. */
+.forestband::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 42%,
+    color-mix(in srgb, var(--inv-bg) 55%, transparent) 72%,
+    var(--inv-bg) 100%
+  );
+  pointer-events: none;
 }
 
-/* Paper does not need a horizon and a solid band of ink is exactly the kind
-   of thing that empties a cartridge. §23 is the rule; this is it applied. */
+/* A photograph of a forest is not information, and on paper it is a solid
+   block of ink. §23 is the rule; this is it applied. */
 @media print {
-  .treeline {
+  .forestband {
     display: none;
   }
 }

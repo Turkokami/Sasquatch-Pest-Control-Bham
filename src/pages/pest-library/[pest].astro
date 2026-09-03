@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import Video from '../../components/Video.astro';
+import { videoForPest } from '../../data/videos';
 import LeadForm from '../../components/LeadForm.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
@@ -66,6 +67,7 @@ const VERDICT: Record<string, string> = {
 };
 ---
 <BaseLayout
+  videoKey={videoForPest[species.slug]}
   path={path}
   title={p.data.title}
   description={p.data.description}
@@ -118,8 +120,8 @@ const VERDICT: Record<string, string> = {
 
 
   {/* Filed under the name people actually use for this ant. */}
-  {species.slug === 'odorous-house-ant' && (
-    <Video name="sugar-ants" heading="Sugar ants, on video" />
+  {videoForPest[species.slug] && (
+    <Video name={videoForPest[species.slug]} heading={`${species.common}, on video`} />
   )}
   <Faq items={p.data.faqs} />
 

@@ -90,3 +90,29 @@ export const videos: Record<string, Video> = {
     uploaded: '2022-11-08',
   },
 };
+
+/* --------------------------------------------------------------------------
+ * WHICH PAGE CARRIES WHICH VIDEO.
+ *
+ * One map, read twice: the page reads it to decide whether to render a player,
+ * and the schema emitter reads it to decide whether to emit a VideoObject.
+ *
+ * That is the entire point of putting it here rather than writing the slug
+ * into a condition in the template and the key into a prop. Those are two
+ * statements of the same fact, they drift, and the specific way they drift is
+ * a VideoObject describing a film that is not on the page — which is the video
+ * equivalent of the second FAQ block this codebase already refuses to ship,
+ * and which Google treats as a misrepresentation rather than a mistake.
+ * ------------------------------------------------------------------------ */
+
+/** Keyed by service slug. */
+export const videoForService: Record<string, keyof typeof videos> = {
+  'ant-control': 'carpenter-ants',
+  'fly-control': 'flies',
+  'rodent-control': 'fall-rodents',
+};
+
+/** Keyed by species slug in the pest library. */
+export const videoForPest: Record<string, keyof typeof videos> = {
+  'odorous-house-ant': 'sugar-ants',
+};

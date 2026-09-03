@@ -1,0 +1,53 @@
+---
+/**
+ * ForestBand — the Pacific Northwest forest photograph that closes every page.
+ *
+ * REPLACES THE DRAWN TREELINE, and the reason is worth keeping because it was
+ * two failed attempts. A generated conifer silhouette was tried first: version
+ * one stretched, because preserveAspectRatio="none" across a 1900px page made
+ * every tree 1.6 times wider than drawn and a fat conifer is a mountain.
+ * Version two used "slice", which scales uniformly and then crops — and
+ * because the band is far wider than the viewBox is tall, what it cropped was
+ * the tapered tops. Black trapezoids. The lesson is that a horizon band wants
+ * a tiled or intrinsically wide image, not a viewBox fitted to a page width,
+ * and by then the owner had supplied a photograph that is better than any
+ * drawing would have been.
+ *
+ * WHY AN <img> RATHER THAN A CSS BACKGROUND. A background-image on an element
+ * near the footer downloads on page load for every reader, whether or not
+ * they scroll that far. An <img loading="lazy"> does not — the browser fetches
+ * it when the reader approaches it, which on a 3,000-word page is most of the
+ * time never. It also lets the browser pick between the two widths below
+ * rather than serving a 1536px file to a phone.
+ *
+ * DECORATIVE, AND IT STILL CARRIES A REAL ALT. An empty alt is the textbook
+ * answer for an ornamental image and harness check 2c rejects it — the rule
+ * fails any <img> whose alt does not contain text, because the failure it
+ * exists to catch is a meaningful image shipped without one, and it does not
+ * model the decorative case.
+ *
+ * The options were to loosen that rule or to write an alt. Loosening a check
+ * to get past it is the thing HANDOFF.md explicitly tells the next person not
+ * to do, and the rule is right far more often than it is wrong. So the wrapper
+ * carries aria-hidden — which is what actually keeps this out of a screen
+ * reader — and the image carries a true description underneath it. If the
+ * aria-hidden is ever removed, the alt is already correct.
+ *
+ * The scrim at the foot of it is what makes this work rather than look pasted
+ * on: the photograph fades into the footer's own black, so the page resolves
+ * into the footer instead of stopping at a hard edge.
+ */
+---
+<div class="forestband" aria-hidden="true">
+  <img
+    class="forestband-img"
+    src="/img/scene/forest-band-1600.jpg"
+    srcset="/img/scene/forest-band-900.jpg 900w, /img/scene/forest-band-1600.jpg 1600w"
+    sizes="100vw"
+    alt="Sunrise over a forested Cascade valley, conifers and ferns framing a mist-filled basin below a snow-capped peak"
+    width="1600"
+    height="683"
+    loading="lazy"
+    decoding="async"
+  />
+</div>

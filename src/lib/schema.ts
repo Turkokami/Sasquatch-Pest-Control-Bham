@@ -27,6 +27,7 @@ import {
 import { servedPlaceNames, serviceRadiusMiles } from './geo';
 import { PESTS } from '../data/pests';
 import { liveServices, categories } from '../data/services';
+import { videos } from '../data/videos';
 
 /* Canonical @id anchors. Every cross-reference in the graph uses these
    constants — never a re-typed string, which is how duplicate nodes appear. */
@@ -41,6 +42,9 @@ export const ID = {
   service: (path: string) => `${SITE}${path}#service`,
   faq: (path: string) => `${SITE}${path}#faq`,
   crumb: (path: string) => `${SITE}${path}#breadcrumb`,
+  /** A video embedded on a page. Anchored to the page it plays on, because
+      the same film could appear on two pages and each needs its own node. */
+  video: (path: string) => `${SITE}${path}#video`,
   person: (slug: string) => `${SITE}/${slug}/#person`,
   credential: (slug: string) => `${SITE}/${slug}/#credential`,
   /** The subject of a location page — the town or neighborhood itself. */
@@ -107,6 +111,13 @@ export interface PageSchemaInput {
   image?: { src: string; alt: string; width?: number; height?: number };
   /** Exactly the questions rendered visibly on the page. Never a superset. */
   faqs?: FaqItem[];
+  /**
+   * A video actually embedded on this page, keyed into src/data/videos.ts.
+   * Same contract as faqs: this describes what a reader can really play here,
+   * not a catalog of everything on the channel. A VideoObject for a film that
+   * is not on the page is the video equivalent of a second FAQ block.
+   */
+  videoKey?: keyof typeof videos;
   breadcrumbs?: Crumb[];
   /**
    * The service this page is about. Retained after the Service nodes moved
@@ -720,7 +731,7 @@ export function buildGraph(input: PageSchemaInput) {
   const {
     path, title, description, kind, image, faqs, breadcrumbs,
     serviceName, areaServed, datePublished, dateModified, personSlug,
-    citations, hasAnswer = true, guideTopics = [],
+    citations, hasAnswer = true, guideTopics = [], videoKey,
   } = input;
 
   const nodes: Record<string, unknown>[] = [
@@ -870,6 +881,34 @@ export function buildGraph(input: PageSchemaInput) {
         name: f.q,
         acceptedAnswer: { '@type': 'Answer', text: f.a },
       })),
+    });
+  }
+
+  /* VIDEO. Emitted only when the page actually embeds one, for the same
+     reason the FAQ node is built from the rendered array: structured data
+     that describes something a reader cannot find on the page is a
+     misrepresentation, and Google treats a VideoObject with no matching
+     player as exactly that.
+
+     contentUrl is deliberately absent. We do not host these files and cannot
+     hand over a media URL; embedUrl on the nocookie domain is the honest
+     description of what is here. thumbnailUrl points at the local poster the
+     page really paints rather than at i.ytimg.com, so the URL in the markup
+     and the pixels on the page are the same file — see Video.astro on why the
+     poster is local in the first place. */
+  if (videoKey) {
+    const v = videos[videoKey];
+    nodes.push({
+      '@type': 'VideoObject',
+      '@id': ID.video(path),
+      name: v.title,
+      description: v.caption,
+      thumbnailUrl: abs(v.poster),
+      uploadDate: v.uploaded,
+      duration: v.durationIso,
+      embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`,
+      publisher: { '@id': ID.org },
+      isPartOf: { '@id': ID.page(path) },
     });
   }
 
