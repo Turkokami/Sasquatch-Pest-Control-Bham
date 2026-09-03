@@ -275,6 +275,42 @@ if (fs.existsSync(dist)) {
   } else {
     console.log(`\x1b[32mall ${redirects.length} targets resolve to a built page\x1b[0m`);
   }
+
+  /* ---- and no rule may shadow a page we actually built -------------------
+     The mirror of the check above, and it was missing.
+
+     A rule gets written when a legacy URL has no equivalent on the new site.
+     If the new site later grows that page, the rule does not become harmless
+     — it becomes a trap. The platform matches the redirect before it ever
+     looks for a file, so the page 308s away from itself, and no amount of
+     rebuilding fixes it.
+
+     This is not hypothetical. /gallery/ existed on the old site, was mapped
+     to /about/, and the day a real /gallery/ shipped it redirected to /about/
+     and stayed invisible. Nothing failed along the way: the build was clean,
+     the target resolved, the page was in the sitemap, the harness passed.
+     Only fetching the URL showed it, and only because someone thought to.
+
+     Every page added from here is checked against the map at build time. When
+     this fires, the fix is to move the slug out of `map` and into `unchanged`
+     in src/data/legacy-urls.json — not to delete the check. */
+  const shadowed = redirects.filter((r) => {
+    const clean = r.from.split('?')[0];
+    const rel = clean.replace(/^\/+|\/+$/g, '');
+    const file = rel === '' ? path.join(dist, 'index.html') : path.join(dist, rel, 'index.html');
+    return fs.existsSync(file);
+  });
+  if (shadowed.length) {
+    problems.push(
+      ...shadowed.map(
+        (r) =>
+          `rule shadows a real page: ${r.from} is built, but a rule sends it to ${r.to} ` +
+          `— move it from "map" to "unchanged" in src/data/legacy-urls.json`,
+      ),
+    );
+  } else {
+    console.log(`\x1b[32mno rule shadows a built page\x1b[0m`);
+  }
 } else {
   console.log('\x1b[2mdist/ not built — target existence not checked this run\x1b[0m');
 }

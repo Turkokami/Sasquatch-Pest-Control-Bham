@@ -1407,11 +1407,6 @@
       "permanent": true
     },
     {
-      "source": "/gallery/",
-      "destination": "/about/",
-      "permanent": true
-    },
-    {
       "source": "/the-squatch-blog/",
       "destination": "/pest-library/",
       "permanent": true

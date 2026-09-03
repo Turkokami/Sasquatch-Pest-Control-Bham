@@ -37,7 +37,13 @@
     "TOWNS WE DO NOT SERVICE (La Conner, Anacortes, the islands, Point Roberts)",
     "go to their county page, which names them and says plainly that we do not",
     "run them. Sending that traffic to a booking page would waste the visitor's",
-    "time and ours."
+    "time and ours.",
+    "",
+    "2 Sep 2026: `gallery` moved from `map` to `unchanged`. The old site had a",
+    "/gallery/ page and this map sent it to /about/, which was right until the",
+    "new site grew a real /gallery/ — at which point the rule shadowed it and",
+    "the page 308-redirected away from itself. redirects.mjs now fails on any",
+    "rule whose source collides with a built page, so this cannot recur silently."
   ],
   "map": {
     "meridian-bellingham-wa-pest-control": "/locations/bellingham/",
@@ -219,7 +225,6 @@
     "insulation-service": "/services/attic-insulation/",
     "sasquatch-pest-control-awards-and-recognition": "/about/",
     "pest-control-videos": "/about/",
-    "gallery": "/about/",
     "the-squatch-blog": "/pest-library/",
     "ty-inspection": "/contact/",
     "ty-instant-price": "/contact/",
@@ -230,6 +235,7 @@
     "",
     "about",
     "contact",
+    "gallery",
     "locations",
     "pest-library"
   ],
