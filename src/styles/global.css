@@ -2019,12 +2019,17 @@ footer.site .colophon {
   width: 100%;
   height: clamp(52px, 7vw, 96px);
   overflow: hidden;
-  /* Full-bleed: this is a horizon, and a horizon inside a text measure looks
-     like a graph. It breaks out of the wrap to touch both edges. */
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  width: 100vw;
-  max-width: 100vw;
+  /* NO 100vw FULL-BLEED HACK, and the reason is worth keeping. The first
+     version used `width: 100vw` with negative margins to break out of a
+     measure. It shipped an 8px horizontal scrollbar on every page, because
+     100vw is the viewport INCLUDING the vertical scrollbar while the document
+     is only as wide as the content area. Eight pixels of sideways scroll on a
+     3,000-word page is the kind of defect nobody reports and everybody feels.
+
+     It was never needed: this component is placed in BaseLayout outside the
+     content wrap, immediately above the footer, so it is already full width.
+     If it is ever moved inside a measure, do not reach for 100vw — wrap it in
+     a full-width parent instead. */
 }
 .treeline-svg {
   display: block;
