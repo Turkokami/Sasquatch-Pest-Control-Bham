@@ -1115,10 +1115,12 @@ header.site .wrap {
    who learns "lime hairline means you can tap this" in the masthead should
    not have to learn it again halfway down the page.
 
-   The chips are transparent at rest so eight of them do not turn the masthead
-   into a control panel. The border and the fill arrive on hover, on focus,
-   and — the part that was missing — permanently on whichever section you are
-   actually in. */
+   At rest they carry a dim neutral hairline, not a lime one. That is the
+   compromise between two failure modes: no border at all and the row is eight
+   pieces of grey text again, one lime border each and the masthead becomes a
+   control panel that outshouts the CTA. A dim edge gives every chip a shape
+   to aim at; the brand color is spent only on hover, on focus, and — the part
+   that was missing entirely — permanently on the section you are in. */
 header.site nav {
   display: flex;
   flex-wrap: wrap;
@@ -1136,7 +1138,7 @@ header.site nav a {
      thing a thumb meets on a phone — and the horizontal padding is what turns
      a word into something with an edge you can aim at. */
   padding: 0.5rem 0.78rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--rule-2);
   border-radius: 999px;
   transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
 }
