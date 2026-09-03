@@ -395,11 +395,16 @@ export const speciesPhotos: Record<string, Photo> = {
     caption:
       'What a reader is far more likely to find than the beetle: damage in a crawlspace member with frass beneath it. The frass is the useful part — its texture separates the beetle families, and the families want different treatments.',
   },
+  /* SWAPPED 3 Sep 2026 for the macro, owner-supplied. The frass shot is better
+     evidence and a worse identification photograph, and this page's job is
+     identification — a reader here is trying to work out what the insect on
+     their windowsill is, not what a pile on a beam means. The frass is still
+     doing that job on the problem page it belongs to. */
   'carpenter-ant': {
-    file: '/img/pests/carpenter-ant.jpg',
-    alt: 'Pale frass piled on a crawlspace beam beneath a joist, photographed by torchlight',
+    file: '/img/pests/carpenter-ant-macro.jpg',
+    alt: 'A large dark ant photographed head-on close up on a painted rail, its long elbowed antennae and single waist segment visible',
     caption:
-      'Carpenter ant frass under a joist in a crawlspace. Ants do not eat wood — they excavate it and push the shavings out — so a pile like this sits directly below the gallery that produced it, which is what makes it worth following.',
+      'The two things to look at are the waist and the back. A carpenter ant has one segment at the waist and an evenly curved upper body; the ants people confuse them with have two segments and an uneven back. Size alone does not settle it — a small carpenter ant worker is smaller than a large ant of another species.',
   },
 };
 
@@ -444,6 +449,18 @@ export const problemPhotos: Record<string, Photo> = {
     alt: 'A white plastic pipe passing through a concrete foundation wall with an open gap around it where the hole was cut oversize',
     caption:
       'A plumbing penetration cut oversize and never closed. This is the most common quarter-inch gap in a Whatcom County house, and it is usually found within a few feet of the water heater or the kitchen wall.',
+  },
+  'bugs-on-the-south-wall-every-october': {
+    file: '/img/work/lady-beetles-clustered-on-a-wall-corner-whatcom-county-wa.jpg',
+    alt: 'Dozens of small orange and black spotted beetles massed along the top corner of an exterior wall where the trim meets the siding',
+    caption:
+      'What the complaint actually looks like. This is a corner of exterior trim in autumn, and every one of those insects is looking for a way behind it. The number on the wall is the useful signal: it is the last point at which sealing and a correctly timed exterior treatment can still do anything.',
+  },
+  'rodents-in-the-attic-insulation': {
+    file: '/img/work/insulation-shredded-and-nested-by-rodents-whatcom-county-wa.jpg',
+    alt: 'A mass of shredded insulation pulled into a rough nest inside a building cavity',
+    caption:
+      'Insulation shredded and worked into a nest inside a cavity. Once material is in this condition it has stopped insulating, and it is why removal and replacement is part of the repair on a bad job rather than an extra — everyone on staff has completed installer training for that reason.',
   },
   'wasp-nest-in-a-wall-void': {
     file: '/img/work/paper-wasp-comb-removed-from-a-wall-void-whatcom-county-wa.jpg',
