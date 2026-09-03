@@ -381,7 +381,8 @@ h2 {
   letter-spacing: -0.012em;
   margin: var(--space-5) 0 var(--space-2);
   padding-top: var(--space-3);
-  border-top: 1px solid var(--rule);
+  /* No cream hairline. The rule is now the accent — see h2::before. */
+  border-top: 0;
   position: relative;
 }
 
@@ -401,15 +402,37 @@ h2 {
    Sits on the border rather than beside it: top is -1px so it covers the
    hairline exactly, which is why it reads as part of the rule rather than as
    a floating tick. */
+/* ONE ELEMENT DOING BOTH JOBS. This started as a short lime tick sitting on a
+   cream hairline; the owner asked for the neon rather than the cream, which is
+   the better call — two devices were doing the work of one, and the cream line
+   was the duller half.
+
+   Now the rule IS the accent: solid brand lime for the first stretch, then
+   fading out across the measure. It still does what the hairline did, which is
+   turn three thousand words into sections a reader can navigate by eye, and it
+   carries the brand on every section break instead of a neutral gray.
+
+   The fade matters. A full-width neon rule above every H2 on a 3,000-word page
+   would be shouting; a rule that is bright where the eye lands and gone by the
+   time it reaches the right margin reads as emphasis rather than as decoration.
+
+   For gold instead, swap --brand-lime for --brand-amber in the two stops
+   below. Nothing else changes. */
 h2::before {
   content: "";
   position: absolute;
-  top: -1px;
+  top: 0;
   left: 0;
-  width: 2.75rem;
+  width: 100%;
   height: 2px;
-  background: var(--accent-line);
   border-radius: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--brand-lime) 0,
+    var(--brand-lime) 2.75rem,
+    color-mix(in srgb, var(--brand-lime) 30%, transparent) 40%,
+    transparent 78%
+  );
 }
 
 /* Wherever the hairline is switched off, the mark goes with it — a tick
