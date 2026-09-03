@@ -15,6 +15,7 @@ import LinkRail from '../../../components/LinkRail.astro';
 import { guideLinksFor } from '../../../lib/guides';
 import { blogPostsFor } from '../../../lib/blog';
 import { galleryFor } from '../../../data/gallery';
+import { garageDoorSeal } from '../../../data/photos';
 import ExpertBlock from '../../../components/ExpertBlock.astro';
 import { liveServices, categories } from '../../../data/services';
 import { business } from '../../../data/business';
@@ -200,6 +201,20 @@ const photos = galleryFor(s.slug);
       No nested <section> inside this one: the harness strips boilerplate with
       a non-greedy tag-backreferenced regex, so a section within a section
       would truncate the strip at the wrong closing tag. */}
+  {/* The before-and-after, on the one page where it is the argument. Not
+      data-boilerplate: it appears on a single page, and its caption is that
+      page's content. */}
+  {s.slug === 'exclusion-and-repairs' && (
+    <section>
+      <h2>The same door, before and after</h2>
+      <div class="gallery pair">
+        <img src={garageDoorSeal.before.file} alt={garageDoorSeal.before.alt} width={1300} height={975} loading="lazy" decoding="async" />
+        <img src={garageDoorSeal.after.file} alt={garageDoorSeal.after.alt} width={1300} height={975} loading="lazy" decoding="async" />
+      </div>
+      <p class="prose">{garageDoorSeal.caption}</p>
+    </section>
+  )}
+
   {photos && (
     <section data-boilerplate>
       <h2>{photos.title}: {photos.images.length} photographs from real jobs</h2>

@@ -603,3 +603,33 @@ export const problemPhotos: Record<string, Photo> = {
       'The comb out of the wall, photographed after removal rather than in place — a nest in a void is worked in a confined space and photographing it there is rarely the priority. The layering is what makes a void nest worth removing rather than only treating: the paper and the larvae left behind draw beetles and, later, rodents.',
   },
 };
+
+/* --------------------------------------------------------------------------
+ * BEFORE AND AFTER. The first pair on this site, and the format the wish list
+ * named as the most persuasive one in this trade — same door, same angle, same
+ * day, which is what makes it evidence rather than two photographs.
+ *
+ * Kept as a pair rather than pushed through Photo.astro, because the whole
+ * argument is the comparison. Shown side by side above 34rem and stacked
+ * below it, in that order, with one caption underneath covering both: two
+ * captions would invite a reader to read them separately, which is the one
+ * thing a before-and-after must not allow.
+ * ------------------------------------------------------------------------ */
+export interface PhotoPair {
+  before: { file: string; alt: string };
+  after: { file: string; alt: string };
+  caption: string;
+}
+
+export const garageDoorSeal: PhotoPair = {
+  before: {
+    file: '/img/work/failed-garage-door-seal-before-whatcom-county-wa.jpg',
+    alt: 'The bottom edge of a raised garage door with bare metal where the seal has gone, and daylight showing along the gap beneath it',
+  },
+  after: {
+    file: '/img/work/garage-door-seal-replaced-after-whatcom-county-wa.jpg',
+    alt: 'The same garage door with a dense brush seal fitted along its bottom edge, closing the gap',
+  },
+  caption:
+    'The same door, the same morning. A garage door seal is the single most common way a rodent walks into a house in this county, and it is invisible from inside because the door still closes and still looks shut. Brush rather than rubber on a door this age: rubber needs a straight, undamaged edge to seal against, and a brush strip keeps working on an edge that has already been chewed.',
+};

@@ -2279,6 +2279,22 @@ footer.site .colophon {
   }
 }
 
+/* A two-up comparison, and the only grid on the site that must never reflow
+   to one column above the breakpoint. A before-and-after read as two separate
+   pictures is not a before-and-after, so the pair is forced side by side once
+   there is width for it and stacked in order below that — never wrapped to
+   two rows of one. The 4:3 crop is shared so neither frame is taller than the
+   other, because a size difference reads as significance. */
+.gallery.pair {
+  grid-template-columns: 1fr;
+  gap: 0.4rem;
+}
+@media (min-width: 34rem) {
+  .gallery.pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* ------------------------------------------- §21h  page background */
 
 /* The forest behind the page, so the gutters beside the reading column show
