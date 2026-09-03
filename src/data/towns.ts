@@ -350,9 +350,14 @@ export const towns: Town[] = [
     housing: 'rural',
     kind: 'community',
     pestPressures: [
-      'forest-edge rodents', 'carpenter ants in cedar',
-      /* Owner-supplied, 2 Sep 2026. */
-      'wasps and spiders',
+      /* Owner-supplied, 3 Sep 2026, and sharpened from the earlier entry. He
+         calls Deming a big area for the business and describes it as a mix of
+         farmland and forest: rats AND mice off the farm ground rather than
+         mice alone, a heavy carpenter ant season through spring and summer,
+         and lady beetles and stink bugs as the autumn wave alongside
+         spiders. */
+      'rats and mice off surrounding farm ground', 'carpenter ants through spring and summer',
+      'autumn lady beetles and stink bugs', 'wasps and spiders',
     ],
   },
   {
