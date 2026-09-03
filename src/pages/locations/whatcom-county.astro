@@ -15,11 +15,11 @@ import LinkRail from '../../components/LinkRail.astro';
 import LocationMap from '../../components/LocationMap.astro';
 import Photo from '../../components/Photo.astro';
 import { whatcomCountyPhoto } from '../../data/photos';
-import { builtTowns } from '../../lib/geo';
+import { writtenTowns } from '../../lib/geo-content';
 import { liveServices } from '../../data/services';
 
 const path = '/locations/whatcom-county/';
-const towns = builtTowns().filter((t) => t.county === 'Whatcom County');
+const towns = (await writtenTowns()).filter((t) => t.county === 'Whatcom County');
 const townLinks = towns.map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
 /* All of them — see the note in src/pages/index.astro. */
 const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));

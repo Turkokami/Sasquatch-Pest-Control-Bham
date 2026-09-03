@@ -7,7 +7,8 @@ import { locationsHubPhoto } from '../../data/photos';
 import Cta from '../../components/Cta.astro';
 import Faq from '../../components/Faq.astro';
 import { towns } from '../../data/towns';
-import { inTerritory, areaServedOnly, builtTowns, pagedNeighborhoods } from '../../lib/geo';
+import { pagedNeighborhoods } from '../../lib/geo';
+import { writtenTowns, mentionOnlyTowns } from '../../lib/geo-content';
 import { business, isReady } from '../../data/business';
 
 const path = '/locations/';
@@ -15,10 +16,12 @@ const skagitOk = isReady(business.territory.skagitConfirmed)
   ? business.territory.skagitConfirmed === true
   : false;
 
-const built = builtTowns();
+const built = await writtenTowns();
 const whatcom = built.filter((t) => t.county === 'Whatcom County');
 const skagit = built.filter((t) => t.county === 'Skagit County');
-const mentionOnly = areaServedOnly(towns.filter(inTerritory));
+/* Now includes towns that earn a page and have not had one written yet, so
+   dropping them from the rails does not quietly shrink the service area. */
+const mentionOnly = await mentionOnlyTowns();
 
 /* Every neighborhood that HAS a page links from here — via pagedNeighborhoods,
    never a local filter. The old /service-areas/ page linked only the 31 city

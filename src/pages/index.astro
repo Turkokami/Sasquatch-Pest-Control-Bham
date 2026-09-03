@@ -6,7 +6,7 @@ import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import LinkRail from '../components/LinkRail.astro';
 import { liveServices } from '../data/services';
-import { builtTowns } from '../lib/geo';
+import { writtenTowns } from '../lib/geo-content';
 import { business } from '../data/business';
 
 const path = '/';
@@ -26,7 +26,7 @@ const answer =
    competitor is least likely to have. A rail is cheap; leaving them out is
    not. */
 const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
-const cities = builtTowns()
+const cities = (await writtenTowns())
   .filter((t) => t.county === 'Whatcom County')
   .map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
 
