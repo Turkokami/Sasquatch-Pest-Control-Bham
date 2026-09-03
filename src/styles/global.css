@@ -877,7 +877,7 @@ section[data-boilerplate]:not(.cta) > h2 {
   color: var(--link);
   text-decoration: none;
   background: var(--surface);
-  border: 1px solid color-mix(in srgb, var(--marker) 42%, transparent);
+  border: 1px solid color-mix(in srgb, var(--marker) 55%, transparent);
   border-radius: var(--radius);
   transition: background-color 0.14s ease, border-color 0.14s ease, color 0.14s ease;
 }
@@ -1122,93 +1122,85 @@ header.site .wrap {
    to aim at; the brand color is spent only on hover, on focus, and — the part
    that was missing entirely — permanently on the section you are in. */
 header.site nav {
-  /* A GRID, NOT A WRAPPING ROW. Nine chips of nine different widths flowing
-     six-and-three is what read as cluttered, and it was never going to read
-     any other way: flex-wrap gives you a ragged right edge and a different
-     rhythm at every viewport, which is fine for prose and wrong for a control
-     panel. A grid puts them on a shared column edge and keeps them there.
+  /* EQUAL-WIDTH ITEMS IN CENTERED ROWS. This was a five-column grid, which
+     aligned the columns but left the last row hanging to the left with an
+     empty cell beside it — nine items do not divide by five, and a grid has no
+     way to centre the remainder. Flex with a computed basis keeps every chip
+     exactly the width the five-column grid gave it, so the columns still line
+     up, and justify-content centres the short row instead of stranding it.
+     Same nine chips, symmetrical either side.
 
-     THREE COLUMNS, AT EVERY WIDTH, BECAUSE NINE DIVIDES BY THREE. That is the
-     whole reason for the number and it is worth stating, because it is the
-     thing that breaks first: add a tenth section and this becomes 3-3-3-1
-     with a single chip stranded on its own row. auto-fit was the obvious
-     alternative and it is worse — it picks a different column count per
-     viewport, so the block is 4-4-1 on a laptop and 2-2-2-2-1 on a phone, and
-     the stranded chip comes back at most sizes. If a section is ever added or
-     removed, this number moves with it. */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+     The basis is written against the row it belongs to: five per row above
+     34rem, three below, each solving n * basis + (n - 1) * gap = 100%. If a
+     section is ever added or removed, both divisors move with it. */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.4rem;
   margin-top: 0.7rem;
   padding-block: 0.6rem 0.8rem;
   border-top: 1px solid var(--rule);
   font-size: var(--fs-xs);
 }
-/* Three rows is right on a phone and too much masthead on a laptop, where it
-   pushed 160px of navigation above the headline. Five columns puts the same
-   nine in two rows. It leaves one empty cell at the end, which is the price
-   of nine not dividing by five and is barely legible as a gap once every
-   chip has a border — a stranded chip on a row of its own would be obvious,
-   an absent one is not. */
-/* Narrow phones get the space back from the gaps and the side padding rather
-   than from the type, which is already at --fs-xs and should not go smaller
-   on the smallest screens. This is what keeps the longest label on one line
-   down to about 350px. */
-@media (max-width: 33.99rem) {
-  header.site nav {
-    gap: 0.3rem;
-  }
-  header.site nav a {
-    padding-inline: 0.45rem;
-  }
-}
-@media (min-width: 34rem) {
-  header.site nav {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
 header.site nav a {
-  /* Flex inside the cell rather than line-height padding, so a label that
-     wraps to two lines stays centered instead of sitting high in a box the
-     grid has already sized for its tallest sibling. */
+  flex: 0 0 calc((100% - 2 * 0.3rem) / 3);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   min-height: 2.6rem;
-  padding: 0.4rem 0.6rem;
-  /* TIGHT ENOUGH THAT TWO LINES STILL FIT THE BOX. "Service areas" is the
-     longest label and needs about 107px of the 103px a three-column grid
-     gives it on a 360px phone, so it wraps — and in a grid a taller cell
-     takes its whole row with it, which is the one thing that would undo the
-     alignment this layout exists for. At the inherited 1.68 a wrapped chip is
-     57px against 42px for its neighbors. At 1.15 it is 43px, so the row grows
-     by a pixel instead of by a third and stays level with the rows below. */
+  padding: 0.4rem 0.45rem;
+  /* Tight enough that two lines still fit the box. "Service areas" is the
+     longest label and wraps below about 350px; at the inherited 1.68 a wrapped
+     chip is 57px against its neighbours' 42px, and at 1.15 it is 43px. */
   line-height: 1.15;
-  color: var(--ink-2);
   text-decoration: none;
   font-weight: 600;
-  /* Rectangles, at the site's own small radius rather than a new value. The
-     pill shape was doing nothing the border was not already doing, and on a
-     grid it fought the alignment it was meant to sit inside. */
-  border: 1px solid var(--rule-2);
   border-radius: var(--radius-sm);
+  /* BRIGHTER THAN THEY WERE, ON THE OWNER'S CALL. These sat at --ink-2 on a
+     bare neutral hairline — the palette's quietest possible reading, and it
+     looked switched off beside everything around it. They now carry the brand
+     at rest: full --ink for the label, a lime-tinted edge, a faintly
+     lime-tinted face.
+
+     The restraint that is left is in the fill, and it is what keeps the page
+     from flattening. Nine chips outlined in full-strength lime would tie with
+     the CTA below them. Tinted at rest, brighter on hover, filled on the
+     current section: four distinct levels, and the solid lime button is still
+     the loudest thing on the screen. */
+  color: var(--ink);
+  background: color-mix(in srgb, var(--marker) 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--marker) 34%, transparent);
   transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
+}
+/* Narrow phones take the space back from the gap rather than from the type,
+   which is already at --fs-xs and should not go smaller on small screens. */
+@media (max-width: 33.99rem) {
+  header.site nav {
+    gap: 0.3rem;
+  }
+}
+@media (min-width: 34rem) {
+  header.site nav a {
+    flex-basis: calc((100% - 4 * 0.4rem) / 5);
+    padding-inline: 0.6rem;
+  }
 }
 header.site nav a:hover,
 header.site nav a:focus-visible {
   color: var(--link-hover);
-  background: color-mix(in srgb, var(--marker) 12%, transparent);
-  border-color: color-mix(in srgb, var(--marker) 38%, transparent);
+  background: color-mix(in srgb, var(--marker) 20%, var(--surface));
+  border-color: color-mix(in srgb, var(--marker) 70%, transparent);
 }
 /* Both values the component emits: "page" for the page you are on, "true" for
    the section above it. They look the same deliberately — the distinction is
    for a screen reader, and drawing two different highlights would be telling
    a sighted reader about a difference that does not affect them. */
 header.site nav a[aria-current] {
-  color: var(--link);
-  background: color-mix(in srgb, var(--marker) 15%, transparent);
-  border-color: color-mix(in srgb, var(--marker) 58%, transparent);
+  color: var(--link-hover);
+  font-weight: 700;
+  background: color-mix(in srgb, var(--marker) 28%, var(--surface));
+  border-color: var(--marker);
 }
 header.site nav a:focus-visible {
   outline-offset: 2px;
@@ -1240,31 +1232,24 @@ footer.site {
    needs neither, and background-color from the shared rule above still sits
    underneath both as the fallback if the image never arrives.
 
-   THE SCRIM IS THE CONTRAST GUARANTEE. At 88% the photograph contributes at
-   most about a tenth of the rendered ground, so the lightest pixel in the
-   scene cannot lift the footer far enough to threaten the text on it — every
-   ratio in §1 still holds. Trees any more visible than this stop being
-   scenery and start being a legibility argument. */
+   THE SCRIM IS THE CONTRAST GUARANTEE, AND IT IS TUNED TO THE ARTWORK. It sat
+   at 88% against a bright sunlit photograph. The artwork now is a dark forest
+   whose own darkest quarter is already near the footer's ground, so the same
+   88% rendered it as an even black. At 70% the trees read and the ceiling is
+   still low: the lightest pixel in this scene is the mist, and a third of it
+   over near-black cannot lift the footer far enough to threaten the text —
+   every ratio in §1 still holds. Re-check this number if the image changes
+   again; it is a property of the pair, not of the element. */
 footer.site {
   background-image: linear-gradient(
-      color-mix(in srgb, var(--inv-bg) 88%, transparent),
-      color-mix(in srgb, var(--inv-bg) 88%, transparent)
+      color-mix(in srgb, var(--inv-bg) 70%, transparent),
+      color-mix(in srgb, var(--inv-bg) 70%, transparent)
     ),
-    url("/img/scene/forest-band-900.jpg");
-  background-image: linear-gradient(
-      color-mix(in srgb, var(--inv-bg) 88%, transparent),
-      color-mix(in srgb, var(--inv-bg) 88%, transparent)
-    ),
-    image-set(
-      url("/img/scene/forest-band-900.webp") 1x,
-      url("/img/scene/forest-band-1600.webp") 2x
-    );
+    url("/img/scene/forest-band-1600.jpg");
   background-size: cover;
-  /* The photograph is 2.34:1 and the footer is far wider than it is tall, so
-     cover crops hard to the vertical middle. Biased up, where the canopy and
-     the light are — the bottom of the frame is trunk and undergrowth and
-     crops to mud. */
-  background-position: center 34%;
+  /* Cut from the same artwork and the same horizontal window as the page
+     background, lower in the frame where the moss and the fern are. */
+  background-position: center;
   background-repeat: no-repeat;
 }
 footer.site a {
@@ -2299,27 +2284,31 @@ footer.site .colophon {
     position: fixed;
     inset: 0;
     z-index: -1;
-    /* JPEG first as the fallback declaration, WebP in the image-set that
-       overrides it. A browser too old for image-set() takes the line it
-       understands; everything else takes the smaller file. The fallback is
-       the 1280 rather than the 1920 because it is only ever served to a
-       browser that has already told us it is old. */
-    background-image: url("/img/scene/forest-page-1280.jpg");
-    /* 1920 AT 1x, NOT 1280. image-set switches on device pixel ratio, not on
-       how wide the window is, so the 1x entry is what an ordinary 1x desktop
-       monitor gets however wide it is — and a 1280 image stretched across a
-       2560 monitor is visibly soft. Starting at 1920 costs a desktop-only
-       80KB and removes the case where the background looks smeared. */
-    background-image: image-set(
-      url("/img/scene/forest-page-1920.webp") 1x,
-      url("/img/scene/forest-page-2560.webp") 2x
-    );
+    /* ONE FILE, ONE URL, NO SELECTION LOGIC. This used image-set() with 1x
+       and 2x entries, and image-set switches on DEVICE PIXEL RATIO — which is
+       the wrong axis for a cover background (what matters is how wide the
+       window is, not how dense the screen is) and which put a whole class of
+       failure between the stylesheet and the reader on devices none of us can
+       reproduce: a phone in Chrome's desktop mode reports an unusual ratio,
+       and if nothing matches, nothing paints. A single JPEG that every engine
+       since 1996 can decode has no such failure mode. 159KB, desktop only.
+
+       WebP twins and the other sizes are still in the folder and are NOT
+       referenced here. That is deliberate: Astro fingerprints its CSS but not
+       these paths, so a reader holding a stylesheet from an earlier deploy is
+       still asking for the filenames that stylesheet named. Deleting one 404s
+       their background until their cache turns over — which is exactly what
+       happened once already. They stay until the old stylesheets have aged
+       out. */
+    background-image: url("/img/scene/forest-page-1920.jpg");
     background-size: cover;
-    /* Centered, not offset. The previous artwork was an ordinary landscape
-       and had to be pushed to 42% to get anything interesting into the
-       gutters. This one is composed for the job — dense canopy, fern and rock
-       down both edges, and a near-empty sky through the middle where the
-       reading column sits — so the honest position is the middle of it. */
+    /* Centered, and the crop is doing the real work. The supplied artwork is a
+       vignetted hero: measured across its columns, the outer fifth at each
+       side averages a luminance of 8 out of 255, which is black. Used whole it
+       would put that black border precisely where the gutters are and
+       reproduce the complaint it was meant to fix. The file here is cut from
+       x 20.5% to 79.5% of the original, inside the vignette, which lifts the
+       edges to 35-37 and puts lit trees where they can actually be seen. */
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -2331,7 +2320,7 @@ footer.site .colophon {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background: color-mix(in srgb, var(--bg) 66%, transparent);
+    background: color-mix(in srgb, var(--bg) 34%, transparent);
   }
 
   /* The sheet. An opaque column over the scene, with a shadow deep enough to
