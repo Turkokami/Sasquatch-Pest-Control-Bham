@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Video from '../components/Video.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import LeadForm from '../components/LeadForm.astro';
 import Faq from '../components/Faq.astro';
@@ -54,6 +55,7 @@ const faqs = [
   title="Pest Control & Exclusion | Bellingham, WA"
   description="Family-owned pest control and exclusion for Bellingham and Whatcom County. No long-term contracts and a 100% Service Guarantee. Call or text 360-410-2199."
   kind="home"
+  videoKey="autumn-film"
   brandSuffix={true}
   faqs={faqs}
   image={{
@@ -232,6 +234,11 @@ const faqs = [
       whether you need a visit at all.
     </p>
 
+
+  {/* The advert, at the foot of the article rather than the top. It is brand
+      film, not an answer to anything, so it sits after the page has done its
+      job — and the facade means it costs nothing until somebody wants it. */}
+  <Video name="autumn-film" heading="Us, in ninety seconds" />
 
   <LinkRail heading="What we handle" links={svc} />
   <LinkRail heading="Where we work" links={cities} />

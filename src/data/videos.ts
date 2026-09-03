@@ -85,6 +85,34 @@ export const videos: Record<string, Video> = {
     durationIso: 'PT1M6S',
     uploaded: '2022-08-15',
   },
+  /* THE ADVERT, ON THE HOMEPAGE WHERE IT BELONGS. This is dcjH8QHxIsw, the
+     clip taken off the rodent page for not being rodent footage. The owner's
+     call to keep it, and it is the right one — it is a good piece of brand
+     film and the homepage is the one page whose job is the company rather
+     than a pest.
+
+     ITS METADATA IS WHY IT FOOLED THIS BUILD ONCE. The YouTube description
+     opens "Fall is here! You can expect Rodent and other pest activity to
+     raise", so anything reading metadata concludes it is rodent footage. It
+     is not: it is a family-and-sunset brand piece. The lesson is narrow and
+     worth keeping — a description is what somebody typed, not what is in the
+     frame, and the two disagree more often on a marketing channel than
+     anywhere else.
+
+     The caption below says it is an advert rather than dressing it as job
+     footage, which is the only honest way to run it. */
+  'autumn-film': {
+    id: 'dcjH8QHxIsw',
+    title: 'Pest Control Bellingham Washington',
+    poster: '/img/video/sasquatch-pest-control-autumn-film.jpg',
+    alt: 'Opening frame of a Sasquatch Pest Control film, a family silhouetted against a sunset',
+    caption:
+      'Our own advert, made for an autumn campaign and left here because we like it. A minute and a half, no pest control in it, and nothing loads from YouTube until you press play.',
+    duration: '1 min 30 sec',
+    durationIso: 'PT1M30S',
+    uploaded: '2022-11-08',
+  },
+
   /* REPLACED 3 Sep 2026. This slot held dcjH8QHxIsw, one of the four generic
      "Pest Control Bellingham WA" clips whose metadata does not distinguish
      them from each other. The note above said they were held back rather than
