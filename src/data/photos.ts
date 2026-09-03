@@ -128,9 +128,16 @@ export const locationPhotos: Record<string, Photo> = {
   },
   lynden: {
     file: '/img/work/pest-control-technician-with-sprayer-lynden-wa.jpg',
-    alt: 'A pest control technician in a hard hat standing beside wheeled sprayer equipment at the side of a red house',
+    alt: 'A pest control technician in a hard hat and headlamp standing beside wheeled sprayer equipment at the side of a red house',
+    /* CORRECTED 2 Sep 2026. The caption here previously said this was rodent
+       work and talked about grain and outbuildings, which was written from the
+       town rather than from the photograph — Lynden is farm country, so farm
+       work was assumed. The owner identified it: this is staging for a
+       powderpost beetle treatment ahead of a wood-destroying organism job.
+       Worth leaving the note, because inventing plausible context from a
+       location is exactly the failure this site keeps having to correct. */
     caption:
-      'Equipment staged at a house in Lynden. Farm country changes what turns up and when — grain, feed and outbuildings keep rodent pressure higher through the year than a town lot does.',
+      'Mixing up for a powderpost beetle treatment at a house in Lynden, ahead of a wood-destroying organism job. Somebody else identifies what is in the wood; the treatment is the half our WSDA Structural category covers.',
   },
   blaine: {
     file: '/img/work/attic-gable-vent-on-a-home-blaine-wa.jpg',
