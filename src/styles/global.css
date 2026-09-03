@@ -727,15 +727,55 @@ footer.site {
   display: inline-block;
   background: linear-gradient(180deg, var(--btn-top) 0%, var(--btn-bg) 55%, var(--btn-bottom) 100%);
   color: var(--btn-ink);
-  font-weight: 600;
-  font-size: var(--fs-sm);
-  letter-spacing: 0.01em;
+  /* HEAVIER AND LARGER, 2 Sep 2026. It was 600 at the small size, which on a
+     lime field read as a label rather than as the thing to press. 800 is the
+     weight the wordmark is set in and it was already being downloaded for
+     nothing else — no extra request, one more weight on the same Inter call.
+
+     Negative tracking rather than positive: at 800 the letterforms are close
+     to touching anyway, and opening them up is what makes a heavy sans look
+     like a warning sign instead of a brand. */
+  font-weight: 800;
+  font-size: var(--fs-body);
+  letter-spacing: -0.011em;
   text-decoration: none;
-  padding: 0.85rem 1.5rem;
+  /* Flex so the label and the number are laid out as two items rather than as
+     one run of text — that is what lets the line break happen between them
+     and nowhere else. Wraps to two centered lines when the button is narrower
+     than the phrase, which on a 360px screen it always is. */
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0 0.5ch;
+  text-align: center;
+  padding: 0.9rem 1.6rem;
   border-radius: var(--radius);
   box-shadow: inset 0 1px 0 var(--btn-edge), var(--shadow-btn);
   transition: box-shadow 0.16s ease, transform 0.16s ease, filter 0.16s ease;
 }
+/* THE NUMBER MUST NEVER BREAK. It wrapped mid-number on a phone before this —
+   "360-" ending one line and "410-2199" starting the next. nowrap pins it, and
+   tabular figures keep the digit widths even so it reads as a number rather
+   than as words that happen to be numerals. */
+.btn-num {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.005em;
+}
+
+/* The em dash lived inside the old single string. It belongs to the join
+   between the two spans, so it is drawn here and disappears when they stack —
+   a dangling dash at the end of a wrapped line is worse than no dash. */
+.btn-label::after {
+  content: " —";
+}
+@media (max-width: 26rem) {
+  .btn-label::after {
+    content: "";
+  }
+}
+
 .btn:hover {
   color: var(--btn-ink);
   transform: translateY(-2px);

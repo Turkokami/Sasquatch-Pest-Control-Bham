@@ -52,7 +52,15 @@ const responseLine =
       exists for. */}
   <p class="cta-speed">{responseLine}</p>
   <p>
-    <a class="btn" href={`tel:${business.phoneE164}`}>{offer} — {business.phone}</a>
+    {/* TWO SPANS, NOT ONE STRING, and the reason is the phone number. As a
+        single run of text it wrapped mid-number on a phone — "360-" on one
+        line and "410-2199" on the next, which is the one piece of text on
+        this site that must never break. The number is now its own element
+        with nowrap on it, so the button stacks at the em dash instead. */}
+    <a class="btn" href={`tel:${business.phoneE164}`}>
+      <span class="btn-label">{offer}</span>
+      <span class="btn-num">{business.phone}</span>
+    </a>
   </p>
 
 </section>
