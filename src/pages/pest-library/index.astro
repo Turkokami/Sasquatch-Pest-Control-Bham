@@ -61,6 +61,30 @@ const faqs = [
       keeps its phone button. The sticky mobile bar jumps to this. */}
   <LeadForm />
 
+  {/* THE SPECIES RAILS, MOVED ABOVE THE ARTICLE. Owner's call and the same
+      move the map, the lead form and the town photograph have all already
+      had on this site: the thing a reader came for goes near the top.
+
+      They were below five sections and about a hundred and sixty lines of
+      prose. Somebody arriving on this page has almost always arrived with a
+      specific insect in mind, and asking them to read an essay on the four
+      things worth knowing about pests in Whatcom County before they can find
+      the word "earwig" is the wrong order. The essay is still here and still
+      worth reading; it is just no longer in the way. */}
+  {PEST_GROUPS.map((g) => (
+    <section>
+      <h2>{g.name}</h2>
+      <p class="blurb">{g.blurb}</p>
+      <ul class="rail">
+        {pestsInGroup(g.key).map((s) =>
+          written.has(s.slug)
+            ? <li><a href={`/pest-library/${s.slug}/`}>{s.name}</a></li>
+            : <li><span>{s.name}</span></li>,
+        )}
+      </ul>
+    </section>
+  ))}
+
   <div class="prose">
     <p>
       Most pest libraries are national copy pasted onto a local site, which is
@@ -169,7 +193,6 @@ const faqs = [
       the queue for it fills up.
     </p>
 
-  </div>
     <h2>A note on sources</h2>
     <p>
       Where a profile makes a claim about risk, law or biology, it says where that
@@ -226,19 +249,7 @@ const faqs = [
     </p>
 
 
-  {PEST_GROUPS.map((g) => (
-    <section>
-      <h2>{g.name}</h2>
-      <p class="blurb">{g.blurb}</p>
-      <ul class="rail">
-        {pestsInGroup(g.key).map((s) =>
-          written.has(s.slug)
-            ? <li><a href={`/pest-library/${s.slug}/`}>{s.name}</a></li>
-            : <li><span>{s.name}</span></li>,
-        )}
-      </ul>
-    </section>
-  ))}
+  </div>
 
   <Faq items={faqs} />
 
