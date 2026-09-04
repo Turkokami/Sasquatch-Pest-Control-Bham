@@ -121,7 +121,20 @@
     0 12px 22px rgba(10, 8, 6, 0.2);
 
   /* -- type --------------------------------------------------------------- */
-  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* DM SANS, replacing Inter on the owner's call — he wanted the site to read
+     softer. Inter is a UI typeface: tight apertures, narrow bowls, drawn to
+     survive at 12px in an interface. It is superb at that and it is why the
+     site read a little clinical for a family-owned company whose photographs
+     are of people in crawlspaces.
+
+     DM Sans is wider, rounder in the bowls and lower in contrast, which is
+     the whole of the difference — soft without being cute. Nunito Sans was
+     the other candidate and was rejected as too casual for a site that
+     publishes pesticide labels and license numbers.
+
+     The fallback stack is unchanged and still leads with the platform UI
+     font, so a reader who never gets the webfont sees something sane. */
+  --sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
@@ -145,10 +158,15 @@
 
   /* -- measure & rhythm ---------------------------------------------------
      --measure is the reading column and the reason for every other width on
-     the page. 40rem at the 18.4px cap is ~69 characters, which is inside the
+     the page. 40rem at the 18.4px cap measures 68 characters, inside the
      65–75 band where long-form stops being tiring. The old value was 68ch,
-     which in Inter resolves to ~81 characters — a fifth too wide, and the
-     single biggest readability defect in the previous stylesheet. */
+     which resolved to ~81 characters — a fifth too wide, and the single
+     biggest readability defect in the previous stylesheet.
+
+     RE-MEASURED after the move from Inter to DM Sans, because a wider face
+     at the same column width means fewer characters on the line and the
+     number in this comment would otherwise have quietly become a lie. 640px
+     of column at 18.4px comes to 68 characters, so the value stands. */
   --measure: 40rem;
   --maxw: var(--measure);
   --gutter: clamp(1.15rem, 4vw, 2.25rem);
@@ -770,7 +788,7 @@ footer.site {
   /* HEAVIER AND LARGER, 2 Sep 2026. It was 600 at the small size, which on a
      lime field read as a label rather than as the thing to press. 800 is the
      weight the wordmark is set in and it was already being downloaded for
-     nothing else — no extra request, one more weight on the same Inter call.
+     nothing else — no extra request, one more weight on the same font call.
 
      Negative tracking rather than positive: at 800 the letterforms are close
      to touching anyway, and opening them up is what makes a heavy sans look
