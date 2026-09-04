@@ -374,12 +374,31 @@ h4 {
   text-wrap: balance;
 }
 
+/* A SHORT LIME BAR ABOVE THE HEADLINE, borrowed from the dark-and-acid
+   layouts the owner sent through. It is the one move those designs all share
+   and the only one that survives translation to a 3,000-word article: a small
+   accent that establishes where the page begins without asking for a hero
+   image, a glow, or a frame of scrolling before the first word.
+
+   It is not decoration for its own sake. Every page here opens h1 then quick
+   answer then form, three blocks of similar visual weight; the bar gives the
+   sequence a start mark. Two-and-a-half rem, because at any longer it reads as
+   a rule and starts competing with the hairlines above the H2s. */
 h1 {
   font-size: var(--fs-h1);
   line-height: var(--lh-tight);
   letter-spacing: var(--track-display);
   margin: 0 0 var(--space-3);
   max-width: 24ch;
+}
+h1::before {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin-bottom: var(--space-3);
+  border-radius: 2px;
+  background: var(--marker);
 }
 
 /* A hairline above every H2 is what turns 3,000 words into sections a reader
@@ -580,12 +599,23 @@ section[data-boilerplate]:not(.cta) > h2 {
    so it is the first thing on the page and it has to look like the answer
    rather than like a pull quote. Raised card, one accent marker, set a step
    larger than body copy and a little tighter. */
+/* THE HIGHLIGHTED CARD, and the reference layouts all have one: a row of
+   cards where exactly one is lit and the others are not. Here there is only
+   ever one card, and it is the answer to the question the reader arrived
+   with, so it takes that treatment.
+
+   A lime-tinted face and a lime ring rather than a lime fill. A filled card
+   would put a second solid block of brand colour above the CTA button and
+   leave the page with two things shouting; tinting the ground and lighting
+   the edge reads as lit without taking the button's job. The left edge stays
+   heavier than the rest, which is what tells you it is a pull-out rather than
+   a panel. */
 .answer-box {
-  background: var(--surface);
-  border: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--marker) 7%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--marker) 30%, transparent);
   border-left: 3px solid var(--marker);
   border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow-1), 0 0 0 4px color-mix(in srgb, var(--marker) 7%, transparent);
   padding: var(--space-3) var(--space-4) var(--space-3) var(--space-3);
   margin: 0 0 var(--space-5);
   max-width: var(--measure);
