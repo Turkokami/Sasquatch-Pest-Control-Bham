@@ -1170,27 +1170,37 @@ header.site .wrap {
    to aim at; the brand color is spent only on hover, on focus, and — the part
    that was missing entirely — permanently on the section you are in. */
 header.site nav {
-  /* EQUAL-WIDTH ITEMS IN CENTERED ROWS. This was a five-column grid, which
-     aligned the columns but left the last row hanging to the left with an
-     empty cell beside it — nine items do not divide by five, and a grid has no
-     way to centre the remainder. Flex with a computed basis keeps every chip
-     exactly the width the five-column grid gave it, so the columns still line
-     up, and justify-content centres the short row instead of stranding it.
-     Same nine chips, symmetrical either side.
-
-     The basis is written against the row it belongs to: five per row above
-     34rem, three below, each solving n * basis + (n - 1) * gap = 100%. If a
-     section is ever added or removed, both divisors move with it. */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.4rem;
   margin-top: 0.7rem;
   padding-block: 0.6rem 0.8rem;
   border-top: 1px solid var(--rule);
   font-size: var(--fs-xs);
 }
-header.site nav a {
+header.site .nav-main {
+  /* EQUAL-WIDTH ITEMS IN CENTERED ROWS. This was a five-column grid, which
+     aligned the columns but left the last row hanging to the left with an
+     empty cell beside it — a grid has no way to center a remainder. Flex with
+     a computed basis keeps every chip exactly the width a fixed grid would
+     give it, so the columns still line up, and justify-content centers a
+     short row instead of stranding it.
+
+     THE COUNT AND THE DIVISORS HAVE TO AGREE. The basis solves
+     n * basis + (n - 1) * gap = 100% for the row it belongs to: four per row
+     above 34rem, three below. Twelve chips is the smallest number that
+     divides evenly by both, which is why NAV in Header.astro holds exactly
+     twelve and says so. It went from nine to twelve on 4 Sep 2026 when the
+     link audit found blog, gallery and the product register unreachable from
+     the masthead; nine over five columns had been leaving a four-chip
+     remainder centered under a gap.
+
+     If the count changes, change both divisors here to match, or the last row
+     goes ragged at one width and not the other — which is the failure that is
+     easy to miss, because it looks correct on whichever screen you tested. */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+header.site .nav-main a {
   flex: 0 0 calc((100% - 2 * 0.3rem) / 3);
   display: flex;
   align-items: center;
@@ -1224,27 +1234,78 @@ header.site nav a {
 /* Narrow phones take the space back from the gap rather than from the type,
    which is already at --fs-xs and should not go smaller on small screens. */
 @media (max-width: 33.99rem) {
-  header.site nav {
+  header.site .nav-main {
     gap: 0.3rem;
   }
 }
 @media (min-width: 34rem) {
-  header.site nav a {
-    flex-basis: calc((100% - 4 * 0.4rem) / 5);
+  header.site .nav-main a {
+    flex-basis: calc((100% - 3 * 0.4rem) / 4);
     padding-inline: 0.6rem;
   }
 }
-header.site nav a:hover,
-header.site nav a:focus-visible {
+header.site .nav-main a:hover,
+header.site .nav-main a:focus-visible {
   color: var(--link-hover);
   background: color-mix(in srgb, var(--marker) 20%, var(--surface));
   border-color: color-mix(in srgb, var(--marker) 70%, transparent);
+}
+
+/* THE SECOND TIER. Not a smaller version of the chips — a different kind of
+   thing, drawn differently on purpose.
+
+   Three pages sit here: the guarantee, the referral list and the brand
+   network. They are read by somebody who has already decided to look
+   properly, which is a different moment from scanning a masthead to find out
+   what a company does, and giving them chips of their own would have put
+   fifteen boxes in the masthead and undone the tidying the chips were for.
+
+   So: separated by a hairline, set in the same --fs-xs, and drawn as text
+   with dot separators rather than as boxes. That is the footer colophon's
+   construction, deliberately — a reader who has seen the pattern at the
+   bottom of the page reads it the same way at the top.
+
+   The current-section treatment is the one thing they keep from the chips.
+   Wayfinding is not a matter of rank. */
+header.site .nav-utility {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem 1.5rem;
+  margin-top: 0.7rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--rule);
+}
+header.site .nav-utility a {
+  color: var(--ink-2);
+  text-decoration: none;
+  font-weight: 600;
+  /* Big enough to hit on a phone without the row growing a chip's height. */
+  padding: 0.25rem 0.1rem;
+  border-bottom: 1px solid transparent;
+}
+/* SEPARATED BY SPACE, NOT BY DOTS, and the first attempt is worth recording
+   because it looked right until it wrapped. A middot drawn with
+   `a + a::before` puts a separator before every link except the first in the
+   MARKUP — not the first on each LINE. The moment the row wraps on a narrow
+   phone, the second line opens with a dot hanging in the margin with nothing
+   before it. CSS cannot ask which item starts a flex line. A wider gap says
+   the same thing and cannot break. */
+header.site .nav-utility a:hover,
+header.site .nav-utility a:focus-visible {
+  color: var(--link-hover);
+  border-bottom-color: var(--marker);
+}
+header.site .nav-utility a[aria-current] {
+  color: var(--link-hover);
+  border-bottom-color: var(--marker);
 }
 /* Both values the component emits: "page" for the page you are on, "true" for
    the section above it. They look the same deliberately — the distinction is
    for a screen reader, and drawing two different highlights would be telling
    a sighted reader about a difference that does not affect them. */
-header.site nav a[aria-current] {
+header.site .nav-main a[aria-current] {
   color: var(--link-hover);
   font-weight: 700;
   background: color-mix(in srgb, var(--marker) 28%, var(--surface));
@@ -2473,8 +2534,18 @@ footer.site .colophon {
        still asking for the filenames that stylesheet named. Deleting one 404s
        their background until their cache turns over — which is exactly what
        happened once already. They stay until the old stylesheets have aged
-       out. */
-    background-image: url("/img/scene/forest-page-1920.jpg");
+       out.
+
+       BACK TO THE SUNLIT ARTWORK, 4 Sep 2026, on the owner's request to see
+       the previous background again. It is a NEW FILENAME rather than the old
+       bytes written back over forest-page-1920.jpg, and that is the same rule
+       as the paragraph above: forest-page-1920.jpg is the name a deployed
+       stylesheet is still asking for, and quietly changing what lives at a
+       filename somebody else's cache is holding is how one reader gets a page
+       nobody designed. Both files stay. This one is 1717px wide and 199KB at
+       q64 — the bright foliage compresses worse than the dark stand did, which
+       is the honest cost of the swap. */
+    background-image: url("/img/scene/forest-page-sunlit-1920.jpg");
     background-size: cover;
     /* Centered, and the crop is doing the real work. The supplied artwork is a
        vignetted hero: measured across its columns, the outer fifth at each

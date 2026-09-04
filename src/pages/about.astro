@@ -1,5 +1,4 @@
 ---
-import { intrinsicSize } from '../lib/images';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import LeadForm from '../components/LeadForm.astro';
@@ -7,7 +6,6 @@ import ExpertBlock from '../components/ExpertBlock.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import { business, people, isReady, credentialMaintenance } from '../data/business';
-import type { Owed } from '../data/business';
 
 const path = '/about/';
 
@@ -21,26 +19,19 @@ const path = '/about/';
 const licensed = people.filter((p) => p.publishable === true && p.licenseType !== null);
 const advisers = people.filter((p) => p.publishable === true && p.licenseType === null);
 
-/* Awards render from business.awards and assert nothing the badge does not.
-   A PENDING url renders as plain text — never as a link, and never as an
-   invented one. See the evidence note above the array. */
+/* THE BADGES THEMSELVES ARE ON /awards/ NOW, moved there 4 Sep 2026. What is
+   left here is a counted summary and a link, and the counts are still derived
+   rather than typed for the same reason they always were: a hand-typed
+   "fourteen awards" is wrong the first time somebody adds a row and nobody
+   ever notices. */
 const awards = business.awards;
 const press = business.press;
 
-/* isReady() guards the PENDING sentinel and nothing else. Several award
-   fields are legitimately `null` because the badge names no category, no
-   level or no year, and null is not PENDING — so `isReady(a.level)` was true
-   for every badge without a level and the built page rendered "· null"
-   fifteen times. Anything optional has to clear both. */
-const shown = <T,>(v: Owed<T> | null | undefined): v is T =>
-  v !== null && v !== undefined && isReady(v as Owed<T>);
-
-/* THE TIER SPLIT IS THE HONEST PART OF THIS SECTION, not a layout choice.
-   `local-vote` means a named local publication or platform put a category to
-   a vote; `directory` means a listing site or ratings aggregator issued a
-   badge, some of which are generated from public review data and some of
-   which are sold. Rendering the two groups in one list would borrow the
-   credibility of the first for the second. See the tier note in business.ts. */
+/* THE TIER SPLIT SURVIVES THE MOVE, because the summary above the link has to
+   carry it. `local-vote` means a named local publication or platform put a
+   category to a vote; `directory` means a listing site or ratings aggregator
+   issued a badge of its own. Summarizing the two as one number would do, in a
+   single sentence, exactly what /awards/ spends two lists avoiding. */
 const localVote = awards.filter((a) => a.tier === 'local-vote');
 const directory = awards.filter((a) => a.tier === 'directory');
 /* A shortlisting is not a win. Pulled out so the page can say so in prose as
@@ -48,26 +39,7 @@ const directory = awards.filter((a) => a.tier === 'directory');
    list to drift into "award-winning" the next time somebody edits it. */
 const finalists = localVote.filter((a) => a.result !== 'winner');
 const voteWins = localVote.filter((a) => a.result === 'winner');
-const votePublishers = Array.from(new Set(voteWins.map((a) => a.publisher)));
-/* Every row currently sits at `owner-badge`: we hold the artwork, not the
-   publisher's own winners listing. Guarded rather than asserted, so the
-   sentence disappears by itself the day one row is upgraded. */
-const allOwnerBadge = awards.every((a) => a.via === 'owner-badge');
 
-/* The previous version sorted `a.year` numerically across every row and
-   joined it. Two badges print no year, so the data carries null rather than a
-   guess, and a null in a numeric sort produced "in and 2022 and 2023 and
-   2024 and 2025 and 2026" on the live page. Nulls are dropped here rather
-   than coerced, and nothing is ever printed for a field the badge left
-   blank. */
-const yearsOf = (rows: readonly { year: number | null }[]) =>
-  Array.from(new Set(rows.map((r) => r.year)))
-    .filter((y): y is number => typeof y === 'number')
-    .sort((a, b) => a - b);
-const listOf = (items: readonly (string | number)[]) =>
-  items.length < 2
-    ? items.join('')
-    : `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
 const NUMBER_WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
   'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
   'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
@@ -79,38 +51,6 @@ const Spell = (n: number) => {
   const w = spell(n);
   return w.charAt(0).toUpperCase() + w.slice(1);
 };
-const voteYears = listOf(yearsOf(localVote));
-
-/* What the row says under the name. "Winner", "Finalist" and "Listed" are
-   rendered on EVERY row, never inferred from the section it sits in, because
-   a finalist badge in a list of winners is exactly how a shortlisting becomes
-   a claim to have won. */
-const RESULT: Record<string, string> = {
-  winner: 'Winner',
-  finalist: 'Finalist — shortlisted, not a win',
-  listed: 'Listed',
-};
-
-/* Intrinsic dimensions are read from the files at build time rather than
-   transcribed into this page — src/lib/images.ts carries the reasoning and,
-   since service pages started carrying photos too, the only implementation.
-   It used to live here. */
-const artwork = new Map<string, { width: number; height: number }>(
-  [...awards.map((a) => a.badge), ...press.map((p) => p.image)]
-    .filter((p): p is string => typeof p === 'string' && p.length > 0)
-    .map((p) => [p, intrinsicSize(p)]),
-);
-const sizeOf = (p: string) => artwork.get(p) ?? { width: 0, height: 0 };
-
-/* UTC so an ISO date string cannot slip back a day in a local timezone —
-   same reason as the credential source date below. */
-const usDate = (iso: string) =>
-  new Date(iso).toLocaleDateString('en-US', {
-    day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
-  });
-/* The one item on this page read on the publisher's own site rather than
-   taken from artwork. It gets to say so; nothing else does. */
-const pressVerified = press.filter((p) => p.via === 'publisher-verified');
 
 const cm = credentialMaintenance;
 /* UTC so an ISO date string cannot slip back a day in a local timezone. */
@@ -194,185 +134,37 @@ const canClaim = business.hasLicensedStaff;
       place.
     </p>
 
+    {/* THE SHELF MOVED TO /awards/, 4 Sep 2026, on the owner's request, and
+        this is the summary that replaces it rather than a second copy of it.
+        Nothing here restates a sentence from that page — the duplicate-sentence
+        check would catch it, and more to the point a summary that repeats the
+        thing it summarizes is not a summary.
+
+        What survives here is the count and the qualification, both generated
+        from business.awards so that this paragraph cannot drift out of step
+        with the page it points at. */}
     {awards.length > 0 && (
       <>
         <h2>Recognition</h2>
         <p>
-          There are {spell(awards.length)} badges on the shelf and they are not
-          all the same kind of thing, so they are not shown as though they
-          were. {Spell(localVote.length)} of them come from local publications,
-          platforms and organizations in this county.
-          {' '}{Spell(directory.length)} come from directory sites that issue
-          badges of their own. Those two groups have
-          separate headings below, because running them together as one long
-          row of logos would lend the second group credibility the first one
-          earned.
-        </p>
-
-        <h3>Local awards and readers' votes</h3>
-        <p>
-          {Spell(voteWins.length)} of these were awarded after a named local
-          publication or platform ran a vote and readers picked this company:
-          {' '}{listOf(votePublishers)}. The years run {voteYears}. That is the
-          part of this section worth your attention, because whatever else a
-          readers' vote is, the people casting it live here and had to choose
-          somebody.
-        </p>
-        {finalists.length > 0 && (
-          <p>
-            Not everything in that group is a win, and the ones that are not
-            say so on the row rather than being quietly filed with the rest.
-            {finalists.map((f) => (
-              <>
-                {' '}The {shown(f.year) ? `${f.year} ` : ''}{f.publisher} entry
-                {shown(f.category) ? ` for ${f.category}` : ''} is a finalist —
-                shortlisted, which is a genuinely good thing to be and a
-                different thing from winning.
-              </>
-            ))}
-          </p>
-        )}
-        <ul class="badges">
-          {localVote.map((a) => (
-            <li>
-              {/* A row can have a result and no artwork — the 2026 Cascades
-                  Best silver was found on the publisher's listing and no
-                  badge for it was ever supplied. Render the row anyway; an
-                  award is not less real for lacking a picture. */}
-              {shown(a.badge) && shown(a.alt) && (
-                <img
-                  src={a.badge}
-                  alt={a.alt}
-                  width={sizeOf(a.badge).width}
-                  height={sizeOf(a.badge).height}
-                  loading="lazy"
-                  decoding="async"
-                />
-              )}
-              <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
-              <span>
-                {a.publisher}{shown(a.year) ? ` · ${a.year}` : ''}
-              </span>
-              {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
-              {shown(a.level) && <span>{a.level}</span>}
-              <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
-            </li>
-          ))}
-        </ul>
-
-        {/* Owner, 2 Sep 2026: the paragraph that used to sit here explained
-            at length why directory badges are a weaker signal than a local
-            vote — auto-generated from scraped review data, or sold outright.
-            All of that was true and none of it was the reader's problem; it
-            argued against the company's own badges on the company's own page.
-            The grouping stays, because the two lists genuinely are different
-            things, but the heading now just names the group and the badges
-            speak for themselves. */}
-        <h3>Listing awards</h3>
-        <ul class="badges">
-          {directory.map((a) => (
-            <li>
-              {/* A row can have a result and no artwork — the 2026 Cascades
-                  Best silver was found on the publisher's listing and no
-                  badge for it was ever supplied. Render the row anyway; an
-                  award is not less real for lacking a picture. */}
-              {shown(a.badge) && shown(a.alt) && (
-                <img
-                  src={a.badge}
-                  alt={a.alt}
-                  width={sizeOf(a.badge).width}
-                  height={sizeOf(a.badge).height}
-                  loading="lazy"
-                  decoding="async"
-                />
-              )}
-              <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
-              <span>
-                {a.publisher}{shown(a.year) ? ` · ${a.year}` : ''}
-              </span>
-              {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
-              {shown(a.level) && <span>{a.level}</span>}
-              <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
-            </li>
-          ))}
-        </ul>
-
-        <p>
-          It is worth saying what {spell(awards.length)} pieces of artwork
-          deliberately leave out. There is no star rating and no review count
-          beside any of them, because an award from a publisher is not a
-          measurement of anything and dressing one up as a score would be
-          exactly the sleight of hand the rest of this page argues against.
-          There is no superlative either. Each badge is quoted in the terms its
-          issuer used — the award, who gave it, the year where the artwork
-          carries one, and whether it was a win — and a claim to be the best at
-          something in this county would be us adding a word the issuer did
-          not.
+          {Spell(awards.length)} award badges and {spell(press.length)} magazine
+          features, of which {spell(voteWins.length)} badges were decided by a
+          readers' vote in a named local publication or platform and{' '}
+          {spell(directory.length)} were issued by directory sites.
+          {finalists.length > 0 && (
+            <>
+              {' '}{Spell(finalists.length)} of the entries is a finalist rather
+              than a winner, and it is labeled as one.
+            </>
+          )}
         </p>
         <p>
-          {allOwnerBadge
-            ? 'What we hold for every one of them is the artwork itself. We have not been able to open each publisher’s own winners listing and read the company name on it, so none of these entries links anywhere yet.'
-            : 'Where a publisher puts its winners listing somewhere a reader can reach, the entry links to it.'}
-          {' '}An entry stays plain text rather than pointing at a page we have
-          not read ourselves, and you should weigh it accordingly. Something you
-          can click through and check yourself is worth several you cannot,
-          which is the whole argument for the section that follows.
+          They are listed in full — issuer, year, category and result on every
+          row — on our{' '}
+          <a href="/awards/">awards, recognition and press page</a>, alongside
+          the two free Washington State lookups that let you verify a pest
+          control company without taking anybody's word for it.
         </p>
-      </>
-    )}
-
-    {press.length > 0 && (
-      <>
-        <h2>Press</h2>
-        <p>
-          An award is somebody handing you a badge. Press is somebody deciding
-          to write about you without being asked, which is a different signal
-          and belongs in a different list.
-        </p>
-        {pressVerified.map((p) => (
-          <p>
-            {p.publication} is a trade magazine for people who do this work
-            rather than a consumer title, so the piece below was written for an
-            audience of other operators. It is also the only item anywhere on
-            this page that has been checked against the publisher's own site
-            rather than taken from artwork somebody sent us — the article, the
-            byline and the date are all where they should be, and the entry
-            links straight to them. We are not going to summarize it here.
-            Read it there if you want it.
-          </p>
-        ))}
-        <ul class="press">
-          {press.map((p) => (
-            <li>
-              {/* Both, not either: an <img> with an empty alt is an
-                  accessibility failure and a harness failure, so a press image
-                  without alt text does not render at all. */}
-              {shown(p.image) && shown(p.alt) && (
-                <img
-                  src={p.image}
-                  alt={p.alt}
-                  width={sizeOf(p.image).width}
-                  height={sizeOf(p.image).height}
-                  loading="lazy"
-                  decoding="async"
-                />
-              )}
-              <div>
-                <b>{shown(p.url) ? <a href={p.url} rel="nofollow noopener">{p.title}</a> : p.title}</b>
-                <span>
-                  {p.publication}
-                  {shown(p.published) ? ` · ${usDate(p.published)}` : ''}
-                  {shown(p.author) ? ` · ${p.author}` : ''}
-                </span>
-                <span class="via">
-                  {p.via === 'publisher-verified'
-                    ? "Checked against the publisher's own page"
-                    : 'Supplied by the owner as artwork; not checked against the publisher, so it does not link'}
-                </span>
-              </div>
-            </li>
-          ))}
-        </ul>
       </>
     )}
 

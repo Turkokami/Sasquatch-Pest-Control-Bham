@@ -61,7 +61,23 @@ const run = (n) => !ONLY?.length || ONLY.includes(n);
             30-odd posts covering topics the new site does not have, which is
             precisely the set where thin content would actually cost us. */
 const FLOORS = { content: 3000, hub: 1200, blog: 900 };
-const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank-you/']);
+/* '/trusted-partners/' joined this set on 4 Sep 2026 and the reasoning is
+   worth stating, because a new page arriving straight into an exemption is
+   exactly the move this comment block exists to make people justify.
+
+   It is a referral page. Its entire job is to hand a reader somebody else's
+   phone number and get out of the way, and it currently lists one company.
+   Three thousand words about one window cleaner would not be a better page,
+   it would be a worse one — the padding would sit between the reader and the
+   number. Same class as /contact/ and /network/: transactional, acted on
+   rather than read. It is NOT exempt from anything else, and every other
+   check still runs against it.
+
+   NOTE WHAT WOULD CHANGE THIS. If the list ever grows to several partners
+   with real description behind each, it stops being a phone number and starts
+   being content, and it should come out of this set rather than quietly keep
+   the exemption it was granted while it was one line long. */
+const UTILITY = new Set(['/contact/', '/network/', '/trusted-partners/', '/404.html', '/404/', '/thank-you/']);
 /* '/gallery/' is a hub in the sense this set means: its job is routing and an
    AEO answer, and the substance a reader came for is the images. It still
    carries the 1,200-word floor and clears it on written section copy — it is

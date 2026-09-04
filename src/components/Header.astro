@@ -23,18 +23,69 @@ import { intrinsicSize } from '../lib/images';
 const mark = '/img/sasquatch-logo.png';
 const { width, height } = intrinsicSize(mark);
 
-/* The sections, as data rather than as eight hand-written anchors, so the
-   current one can be marked without repeating the test eight times. */
+/* The sections, as data rather than as hand-written anchors, so the current
+   one can be marked without repeating the test once per link.
+
+   WHAT THE AUDIT ON 4 SEP 2026 FOUND, because the fix is only half the story.
+   Counting inbound links across all 222 built pages turned up four sections
+   that the site chrome reached badly or not at all:
+
+     /blog/          70 inbound links, every single one a breadcrumb from a
+                     post inside it. Nothing in the masthead, nothing in the
+                     footer. Sixty-four posts, and the only way to the index
+                     was to already be in it.
+     /what-we-use/   0 links from any page body. Footer colophon only — and it
+                     is the strongest trust asset on the site.
+     /network/       0 links from any page body. Footer colophon only.
+     /gallery/       6 links from page bodies, footer colophon otherwise.
+     /about/         6 links from page bodies. Chrome only, otherwise.
+
+   Plus two pages the owner expected to exist and which did not: the awards
+   and recognition page (the badges were buried inside /about/) and the
+   trusted partners page (a legacy referral page the redirect map had quietly
+   pointed at /network/ on a guess). Both are now real pages.
+
+   TWO TIERS, NOT ONE LONGER ROW. Fourteen destinations in one chip row is the
+   clutter the owner already objected to once. So the row that answers "what
+   do you do and where" stays a grid of chips, and the three pages that are
+   read after somebody has decided to look properly sit on a quieter line
+   beneath it. Both are plain anchors in the HTML — no menu, no JavaScript, no
+   hover state hiding a link from a phone.
+
+   TWELVE IS DELIBERATE. The chips lay out four across above 34rem and three
+   across below it, and twelve is the smallest count that divides evenly by
+   both. Nine used to give 5 + 4, which left the last row centered under a gap.
+   Add or remove a chip here and one of those two grids gets a ragged last row
+   — count before you edit, and adjust the basis in §14 if the count moves.
+
+   The three rows are themed rather than alphabetical: what we do, what you
+   can read, and how to check us out and get hold of us. */
 const NAV = [
   { href: '/', label: 'Home' },
   { href: '/services/', label: 'Services' },
-  { href: '/locations/', label: 'Service areas' },
   { href: '/commercial/', label: 'Commercial' },
+  { href: '/locations/', label: 'Service areas' },
+
   { href: '/pest-library/', label: 'Pest library' },
   { href: '/guides/', label: 'Guides' },
-  { href: '/our-guarantee/', label: 'Guarantee' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/gallery/', label: 'Gallery' },
+
+  { href: '/awards/', label: 'Awards' },
+  { href: '/what-we-use/', label: 'What we apply' },
   { href: '/about/', label: 'About' },
   { href: '/contact/', label: 'Contact' },
+];
+
+/* The quieter line. These are not lesser pages — the guarantee is the single
+   most linked page on this site after the homepage — they are pages somebody
+   goes to on purpose rather than while working out what we do. Promoting any
+   of them is a one-line move: cut it from here, add it to NAV, and change the
+   two divisors in §14 so twelve becomes whatever the new count is. */
+const UTILITY_NAV = [
+  { href: '/our-guarantee/', label: 'Our guarantee' },
+  { href: '/trusted-partners/', label: 'Trusted partners' },
+  { href: '/network/', label: 'Our network' },
 ];
 
 /* WHICH SECTION AM I IN. The masthead had no answer to that on any of 220
@@ -83,10 +134,24 @@ const currentFor = (href: string) =>
       />
       <span>{business.name}</span>
     </a>
+    {/* ONE LANDMARK, TWO ROWS. Two <nav> elements would mean two landmarks to
+        skip past and two labels to invent, and a screen reader user gains
+        nothing from being told the masthead is in two pieces. It is also the
+        shape the word-count auditor expects: harness textOf() strips
+        <nav>…</nav> with a lazy match, so a second nav nested or adjacent
+        risks it stopping at the first closing tag and counting masthead
+        labels as body copy on 224 pages. */}
     <nav aria-label="Primary">
-      {NAV.map((n) => (
-        <a href={n.href} aria-current={currentFor(n.href)}>{n.label}</a>
-      ))}
+      <div class="nav-main">
+        {NAV.map((n) => (
+          <a href={n.href} aria-current={currentFor(n.href)}>{n.label}</a>
+        ))}
+      </div>
+      <div class="nav-utility">
+        {UTILITY_NAV.map((n) => (
+          <a href={n.href} aria-current={currentFor(n.href)}>{n.label}</a>
+        ))}
+      </div>
     </nav>
   </div>
 </header>

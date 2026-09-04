@@ -92,10 +92,19 @@ const licensedCount = people.filter(
         block dims the links inside it along with the text, which is how a
         colophon quietly stops meeting contrast. Styled in §15 now, with an
         ink of its own and the links left at full strength. */}
+    {/* THE BLOG WAS NOT HERE AND WAS NOT IN THE MASTHEAD EITHER. A link audit
+        across all 222 built pages on 4 Sep 2026 found /blog/ with seventy
+        inbound links, every one of them a breadcrumb from a post inside it:
+        sixty-four posts whose index no page outside the blog pointed at. It is
+        in the masthead now, and here as well, because a section reachable from
+        one place is one edit away from being reachable from none. */}
     <p class="colophon">
       © {new Date().getFullYear()} {business.name}. ·
       <a href="/gallery/">Gallery</a> ·
+      <a href="/blog/">Blog</a> ·
       <a href="/what-we-use/">What we apply</a> ·
+      <a href="/awards/">Awards &amp; press</a> ·
+      <a href="/trusted-partners/">Trusted partners</a> ·
       <a href="/guides/">Guides</a> ·
       <a href="/our-guarantee/">Guarantee &amp; terms</a> ·
       <a href="/network/">Our network</a>

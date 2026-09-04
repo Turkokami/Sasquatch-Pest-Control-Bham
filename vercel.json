@@ -1377,11 +1377,6 @@
       "permanent": true
     },
     {
-      "source": "/trusted-partners/",
-      "destination": "/network/",
-      "permanent": true
-    },
-    {
       "source": "/food-processing-pest-control/",
       "destination": "/commercial/",
       "permanent": true
@@ -1398,7 +1393,7 @@
     },
     {
       "source": "/sasquatch-pest-control-awards-and-recognition/",
-      "destination": "/about/",
+      "destination": "/awards/",
       "permanent": true
     },
     {

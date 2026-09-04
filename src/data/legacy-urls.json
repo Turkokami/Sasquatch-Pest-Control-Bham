@@ -219,11 +219,10 @@
     "keeping-your-home-pest-free-in-ferndale-wa": "/locations/ferndale/",
     "unwanted-buzzing-how-to-locate-the-best-beehive-exterminator-near-you": "/services/bee-removal/",
     "the-ultimate-guide-to-rodent-control-how-to-find-the-best-pest-control-services-near-you": "/services/rodent-control/",
-    "trusted-partners": "/network/",
     "food-processing-pest-control": "/commercial/",
     "leave-a-review": "/contact/",
     "insulation-service": "/services/attic-insulation/",
-    "sasquatch-pest-control-awards-and-recognition": "/about/",
+    "sasquatch-pest-control-awards-and-recognition": "/awards/",
     "pest-control-videos": "/about/",
     "the-squatch-blog": "/pest-library/",
     "ty-inspection": "/contact/",
@@ -237,7 +236,8 @@
     "contact",
     "gallery",
     "locations",
-    "pest-library"
+    "pest-library",
+    "trusted-partners"
   ],
   "live": [
     "",

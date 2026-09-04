@@ -1,0 +1,230 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import LinkRail from '../components/LinkRail.astro';
+
+const path = '/trusted-partners/';
+
+/* LOCAL REFERRALS — REBUILT FROM THE LEGACY SITE, 4 Sep 2026.
+ *
+ * WHERE THIS CAME BACK FROM, because it matters. The rebuild's redirect map
+ * pointed /trusted-partners/ at /network/ on the assumption that it was
+ * brand-network content. It was not. The legacy WordPress site is still live
+ * at the production domain while this rebuild sits on a preview URL, so the
+ * page could simply be fetched and read, and what it actually carried was a
+ * referral list: one vetted local company, the services we do not offer, and
+ * a stated bar for being listed. That is a genuinely useful page and it was
+ * about to be thrown away on a guess. Read the old page before redirecting
+ * it.
+ *
+ * THE REDIRECT IS GONE, NOT REPOINTED. `trusted-partners` was removed from
+ * the legacy map in src/data/legacy-urls.json because this URL is now a real
+ * page, and scripts/redirects.mjs fails the build if a redirect source
+ * shadows a built page. Same URL as the legacy site, so nothing that links to
+ * it from outside breaks.
+ *
+ * WHAT IS VERIFIED HERE AND WHAT IS NOT. Every detail about King of Kings
+ * below was read off their own website on 4 Sep 2026 — the owner's name and
+ * title, the phone number, and each service named — rather than copied from
+ * our old page. Two of those had drifted in the legacy copy's phrasing. The
+ * one claim that is ours rather than theirs is the recommendation itself, and
+ * it is stated as ours.
+ *
+ * WHAT MUST NEVER BE ADDED HERE. A paid listing. The page states that nobody
+ * pays to be on it, which turns every future addition into a promise being
+ * kept or broken. If that ever changes, the sentence comes out first.
+ *
+ * WHY IT IS FILED AS A UTILITY PAGE in scripts/harness.mjs. The M1 content
+ * floor is 3,000 words and this page cannot honestly reach it: it exists to
+ * hand a reader somebody else's phone number and get out of the way, and
+ * padding a referral to three thousand words would make it worse at the only
+ * job it has. Same class as /contact/ and /network/, and declared in the open
+ * in the harness rather than applied quietly.
+ */
+
+/* 40–60 words on the answer (src/lib/seo.ts checkAnswer) — recount on edit.
+   This is 52. */
+const answer =
+  'There are jobs we do not do. Rather than shrug when a customer asks, we send them to a local company we would use ourselves. Nobody pays to be listed here. Right now that is one business, King of Kings Window Cleaning of Bellingham, for exterior cleaning work.';
+
+const faqs = [
+  {
+    q: 'Do companies pay to be listed on this page?',
+    a: 'No. There is no fee, no commission and no referral arrangement. The list is short for exactly that reason — it is made up of businesses we already call when a job falls outside pest control, not businesses that asked to be here.',
+  },
+  {
+    q: 'Does Sasquatch Pest Control do window or gutter cleaning?',
+    a: 'No. We handle the pests that turn up in gutters, on glass and under eaves — rodents using a debris-packed gutter as a route to the roofline, wasp nests in soffits, spider webbing across window frames — but the cleaning itself is a different trade with different equipment and different insurance. We refer that work out.',
+  },
+  {
+    q: 'How do I check a company you refer me to?',
+    a: 'The same way you should check us. Washington State publishes a free contractor and business verification tool through the Department of Labor & Industries that shows registration status, workers\' compensation coverage and any citations. It takes a couple of minutes and it is worth doing before anybody works on your property.',
+  },
+  {
+    q: 'How do I get my business listed here?',
+    a: 'Get in touch, but read the bar first. A company has to be licensed and insured for the work it does in Washington, actually based in and serving Whatcom or Skagit County, offering something we do not offer rather than competing with us, and a business we would hire at our own homes. Most inquiries fail the last one.',
+  },
+  {
+    q: 'What happens if a listed company stops meeting that standard?',
+    a: 'They come off the page. That is the whole reason this list is short and the reason it is worth anything — a referral we would not stand behind is worse for us than no referral at all, because the customer heard the recommendation from us.',
+  },
+];
+
+const rails = [
+  { href: '/services/', label: 'Everything we do handle' },
+  { href: '/services/exclusion-and-repairs/', label: 'Pest exclusion & repairs' },
+  { href: '/awards/', label: 'Awards, press and how to verify a company' },
+  { href: '/about/', label: 'Our licenses and our crew' },
+  { href: '/contact/', label: 'Get in touch' },
+];
+---
+
+<BaseLayout
+  path={path}
+  title="Trusted Partners & Local Referrals | Sasquatch Pest"
+  description="The local companies we send customers to for work Sasquatch Pest Control does not do. Nobody pays to be listed, and the bar for getting on the page is set out here."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Trusted partners', path },
+  ]}
+>
+  <h1>Local referrals: who we send people to</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <p>
+      There are jobs we do not do. When a customer asks about one, we would
+      rather send them to somebody good than shrug.
+    </p>
+    <p>
+      The companies on this page are local, licensed and insured, and they do
+      work we would be comfortable having done at our own homes.{' '}
+      <b>Nobody pays to be listed here.</b> There is no fee, no commission and
+      no arrangement of any kind — these are simply the businesses we call when
+      a job falls outside what Sasquatch Pest Control does. If a company on
+      this page ever stops meeting that standard, it comes off.
+    </p>
+    <p>
+      That is why the list is one name long rather than twenty. A page of
+      twenty referrals is a directory, and a directory nobody vetted is worth
+      nothing to the person reading it.
+    </p>
+
+    <h2>King of Kings Window Cleaning</h2>
+    <p>
+      <b>Exterior cleaning and window care · Bellingham, WA · serving Whatcom
+      and Skagit County</b>
+    </p>
+    <p>
+      King of Kings Window Cleaning is a locally owned exterior cleaning
+      company based in Bellingham, founded and run by Randy Fee. Like us, it is
+      run from here rather than dispatched from a franchise desk in another
+      state.
+    </p>
+    <p>
+      <b>What they handle:</b> residential and commercial window cleaning,
+      gutter cleaning and downspout clearing, roof cleaning, moss removal,
+      pressure washing, house washing and solar panel cleaning.
+    </p>
+    <p>
+      <b>Why we send people to them.</b> Pest work and exterior cleaning run
+      into each other constantly, and the overlap is not incidental. Spider
+      webbing and droppings across glass and window frames. Wasp nests tucked
+      up under eaves and soffits. Gutters packed with needles and leaf litter,
+      which hold moisture against the fascia and give rodents a covered highway
+      to the roofline — one of the most common contributing conditions we find
+      on a rodent job in this county, and one we can point at but not fix.
+    </p>
+    <p>
+      We handle the pests. The cleanup, and the conditions that keep inviting
+      them back, are a different trade. King of Kings does that work properly.
+    </p>
+    <p>
+      <a href="https://www.kingofkingswindowcleaning.com/" rel="nofollow noopener">
+        kingofkingswindowcleaning.com
+      </a>{' '}
+      · <a href="tel:+13603036806">(360) 303-6806</a>
+    </p>
+
+    <h2>Services we do not provide</h2>
+    <p>
+      So there is no confusion about where our work stops, here is what
+      Sasquatch Pest Control does not do — and who we would point you to
+      instead.
+    </p>
+    <ul>
+      <li>
+        Window cleaning, gutter cleaning, roof cleaning and moss removal —
+        King of Kings Window Cleaning
+      </li>
+      <li>
+        Pressure washing, house washing and solar panel cleaning — King of
+        Kings Window Cleaning
+      </li>
+      <li>
+        Wood-destroying organism reports for a real estate transaction — that
+        requires a Washington structural pest inspector license, which is a
+        separate credential from the pesticide applicator licenses we hold. Ask
+        your lender or agent for an inspector; we can treat what one finds.
+      </li>
+      <li>
+        Structural repair beyond exclusion work — we seal, screen, flash and
+        replace the materials rodents and insects come through, but framing,
+        roofing and siding replacement are a contractor's job.
+      </li>
+    </ul>
+    <p>
+      For everything we do handle, see our{' '}
+      <a href="/services/">pest control services</a>.
+    </p>
+
+    <h2>Check anybody before you hire them, including us</h2>
+    <p>
+      A referral from us is a starting point, not a substitute for looking
+      something up. Washington State publishes a free verification tool through
+      the Department of Labor &amp; Industries covering business registration,
+      workers' compensation coverage and citation history — it needs no account
+      and takes about two minutes.
+    </p>
+    <p>
+      Our <a href="/awards/">awards and recognition page</a> sets out how to
+      use that tool and the Department of Agriculture's license search, with
+      our own numbers to try them on. Run them on us first if you like. That is
+      rather the point of publishing them.
+    </p>
+
+    <h2>Want to be listed here?</h2>
+    <p>
+      We are open to adding partners, and the bar is deliberately high. To be
+      listed, a company needs to be:
+    </p>
+    <ul>
+      <li>Licensed and insured for the work they do in Washington State</li>
+      <li>
+        Local — actually based in and serving Whatcom or Skagit County, not a
+        national call center routing leads
+      </li>
+      <li>
+        Complementary, not competing — a service Sasquatch Pest Control does
+        not offer
+      </li>
+      <li>
+        Somebody we would hire ourselves, with work and customer care we are
+        willing to put our name behind
+      </li>
+    </ul>
+    <p>
+      Think your business fits? <a href="/contact/">Get in touch</a>.
+    </p>
+  </div>
+
+  <Faq items={faqs} />
+
+  <LinkRail heading="Related" links={rails} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

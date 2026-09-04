@@ -711,7 +711,32 @@ export const business = {
      is the ONLY item in either list that has been verified against the
      publisher's own page rather than from artwork: mypmp.net was fetched on
      2 Sep 2026 and returned the article, its author and its date. That makes
-     it `publisher-verified` — a class no award row has yet earned. */
+     it `publisher-verified` — a class no award row has yet earned.
+
+     A SECOND ONE JOINED IT ON 4 SEP 2026, and where it came from is the
+     lesson. The legacy WordPress site — still live at the production domain
+     while this rebuild sits on a preview URL — has an Awards & Recognition
+     page listing three Pest Management Professional features. This file
+     carried one. The other two were not missing because they did not exist;
+     they were missing because nobody had gone and looked at the old site.
+     "Brothers rely on their strengths to succeed" was then fetched from
+     mypmp.net directly and its title, byline and date read off the
+     publisher's own page, which is what earns it the same `via` as the first
+     row rather than the legacy site's say-so.
+
+     TWO MORE ARE STILL OWED and are deliberately absent rather than entered
+     on the strength of a line on the old site: a December 2023 PMP piece the
+     legacy page calls "First Five share Lessons Learned", which no search of
+     mypmp.net has surfaced, and a 2023 Business Pulse Magazine feature with
+     no title, date or URL recorded anywhere. A press row without a document
+     behind it is the exact thing the tier split on the awards list exists to
+     prevent, so they wait.
+
+     The legacy page also carries a letter claiming the company won "Best Pest
+     Control Business and Start-Up Business of the Year in 2023 and 2022". The
+     Whatcom Business Awards row below is a FINALIST. That claim was NOT
+     imported, and it is a useful demonstration of why this file reads badges
+     rather than the marketing copy printed beside them. */
   press: [
     {
       title: 'Sasquatch stands out',
@@ -719,6 +744,16 @@ export const business = {
       author: 'Pete Schopen' as Owed<string>,
       published: '2023-08-18',
       url: 'https://www.mypmp.net/sasquatch-stands-out/' as Owed<string>,
+      via: 'publisher-verified' as const,
+      image: null as string | null,
+      alt: null as string | null,
+    },
+    {
+      title: 'Brothers rely on their strengths to succeed',
+      publication: 'Pest Management Professional',
+      author: 'Pete Schopen' as Owed<string>,
+      published: '2023-03-28',
+      url: 'https://www.mypmp.net/brothers-rely-on-their-strengths-to-succeed/' as Owed<string>,
       via: 'publisher-verified' as const,
       image: null as string | null,
       alt: null as string | null,

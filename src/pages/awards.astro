@@ -1,0 +1,661 @@
+---
+import { intrinsicSize } from '../lib/images';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import LinkRail from '../components/LinkRail.astro';
+import { business, people, isReady } from '../data/business';
+import type { Owed } from '../data/business';
+
+const path = '/awards/';
+
+/* AWARDS AND RECOGNITION, ON ITS OWN PAGE.
+ *
+ * WHY IT MOVED OFF /about/. Two reasons, and the owner's request was only the
+ * first. The legacy WordPress site published this at
+ * /sasquatch-pest-control-awards-and-recognition/ and the rebuild's redirect
+ * map pointed that URL at /about/, which meant every badge, every magazine
+ * feature and every word explaining what they are worth were buried two
+ * thirds of the way down a three and a half thousand word page about the
+ * company's history. (No count in this comment, deliberately. The first draft
+ * of this file said fourteen and two here and in the answer box, both typed
+ * from memory, while the lists underneath rendered seventeen and three.) Nobody arriving from that URL was going to find them.
+ * The redirect now lands here, where the subject is the page.
+ *
+ * WHAT CAME WITH IT, VERBATIM. The badge lists, the tier split and the
+ * paragraphs that qualify them all moved across unchanged rather than being
+ * rewritten. They were the carefully argued part of the old section and
+ * rewriting prose during a move is how carefully argued things quietly lose
+ * their qualifications.
+ *
+ * THE RULE THIS PAGE LIVES UNDER, which is the same rule business.awards
+ * lives under: nothing here claims more than the artwork claims. No
+ * superlative the issuer did not print, no star rating beside a badge, no
+ * link to a winners listing nobody here has opened. The phrase
+ * "award-winning" appears nowhere on this site and must not start here — a
+ * finalist row sits in these lists, and that phrase is precisely how a
+ * shortlisting turns into a win.
+ *
+ * AND THE SECTION THAT JUSTIFIES THE REST. "How to check any of this
+ * yourself" is not filler and it is not modesty. A page of badges is worth
+ * very little on its own, because badges are the one credential a company
+ * chooses for itself. The two state lookups named there are not — they are
+ * public, free, and they will contradict us if we are wrong. A reader who
+ * uses them has verified something; a reader who counts our logos has not.
+ */
+
+const awards = business.awards;
+const press = business.press;
+
+/* isReady() guards the PENDING sentinel and nothing else. Several award
+   fields are legitimately `null` because the badge names no category, no
+   level or no year, and null is not PENDING. Anything optional clears both. */
+const shown = <T,>(v: Owed<T> | null | undefined): v is T =>
+  v !== null && v !== undefined && isReady(v as Owed<T>);
+
+/* THE TIER SPLIT IS THE HONEST PART OF THIS PAGE, not a layout choice.
+   `local-vote` means a named local publication or platform put a category to
+   a vote; `directory` means a listing site or ratings aggregator issued a
+   badge, some of which are generated from public review data and some of
+   which are sold. Rendering the two groups in one list would borrow the
+   credibility of the first for the second. See the tier note in business.ts. */
+const localVote = awards.filter((a) => a.tier === 'local-vote');
+const directory = awards.filter((a) => a.tier === 'directory');
+/* A shortlisting is not a win. Pulled out so the page can say so in prose as
+   well as label it on the row — this is the single most likely thing in the
+   list to drift into "award-winning" the next time somebody edits it. */
+const finalists = localVote.filter((a) => a.result !== 'winner');
+const voteWins = localVote.filter((a) => a.result === 'winner');
+const votePublishers = Array.from(new Set(voteWins.map((a) => a.publisher)));
+/* Every row currently sits at `owner-badge`: we hold the artwork, not the
+   publisher's own winners listing. Guarded rather than asserted, so the
+   sentence disappears by itself the day one row is upgraded. */
+const allOwnerBadge = awards.every((a) => a.via === 'owner-badge');
+
+const yearsOf = (rows: readonly { year: number | null }[]) =>
+  Array.from(new Set(rows.map((r) => r.year)))
+    .filter((y): y is number => typeof y === 'number')
+    .sort((a, b) => a - b);
+const listOf = (items: readonly (string | number)[]) =>
+  items.length < 2
+    ? items.join('')
+    : `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+const NUMBER_WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
+  'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
+  'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
+const spell = (n: number) => NUMBER_WORDS[n] ?? String(n);
+const Spell = (n: number) => {
+  const w = spell(n);
+  return w.charAt(0).toUpperCase() + w.slice(1);
+};
+const voteYears = listOf(yearsOf(localVote));
+
+/* What the row says under the name. "Winner", "Finalist" and "Listed" are
+   rendered on EVERY row, never inferred from the section it sits in, because
+   a finalist badge in a list of winners is exactly how a shortlisting becomes
+   a claim to have won. */
+const RESULT: Record<string, string> = {
+  winner: 'Winner',
+  finalist: 'Finalist — shortlisted, not a win',
+  listed: 'Listed',
+};
+
+const artwork = new Map<string, { width: number; height: number }>(
+  [...awards.map((a) => a.badge), ...press.map((p) => p.image)]
+    .filter((p): p is string => typeof p === 'string' && p.length > 0)
+    .map((p) => [p, intrinsicSize(p)]),
+);
+const sizeOf = (p: string) => artwork.get(p) ?? { width: 0, height: 0 };
+
+/* UTC so an ISO date string cannot slip back a day in a local timezone. */
+const usDate = (iso: string) =>
+  new Date(iso).toLocaleDateString('en-US', {
+    day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+  });
+
+/* Items read on the publisher's own site rather than taken from artwork. They
+   get to say so; nothing else does. This was written as `pressVerified[0]`
+   with prose calling it "the only item on this page" — true when there was
+   one, and quietly false the moment a second was verified. It is a count now
+   and the prose is written against the count. */
+const pressVerified = press.filter((p) => p.via === 'publisher-verified');
+const pressUnverified = press.filter((p) => p.via !== 'publisher-verified');
+const pressPublications = Array.from(new Set(pressVerified.map((p) => p.publication)));
+
+/* The licensed headcount, for the verification section. Same LI- test the
+   footer uses, and for the same reason: `credential` also carries an
+   Entomological Society certification, which is not a WSDA license and must
+   not be counted as one. */
+const licensed = people.filter(
+  (p) => p.publishable === true && isReady(p.credential) && /^LI-/.test(p.credential),
+);
+
+/* 40–60 words on the answer (src/lib/seo.ts checkAnswer) — recount on edit.
+   This is 55, and it stays 55 as rows are added because both counts are
+   spelled by spell(), which returns one word for anything up to twenty.
+
+   IT IS GENERATED RATHER THAN TYPED, and the first draft was typed. That
+   draft said "fourteen award badges and two verified magazine features" — a
+   number carried over from a summary sentence rather than counted — while the
+   list rendered directly underneath it said seventeen and three. It shipped to
+   a local build and was caught by looking at the page. Every count on this
+   page now comes off business.awards and business.press, because a page whose
+   whole argument is that it does not round anything up cannot afford to be
+   wrong about how many things it has. */
+const answer =
+  `Sasquatch Pest Control holds ${spell(awards.length)} award badges and ${spell(press.length)} magazine features, listed here in full with the issuer, the year and whether each was a win or a shortlisting. Badges are the one credential a company picks for itself, so this page also shows you the two free state lookups that will check us independently.`;
+
+const faqs = [
+  {
+    q: 'Is Sasquatch Pest Control award-winning?',
+    a: 'Some of these are wins and one is a shortlisting, and the row says which. We do not use the phrase "award-winning" anywhere on this site, because it flattens that difference and because it is a claim that gets attached to directory badges a company was simply listed in. Read the rows instead — each one names the issuer, the year and the result.',
+  },
+  {
+    q: 'What is the difference between the two lists of badges?',
+    a: 'The first group came from a named local publication, platform or organization running a vote that readers took part in. The second came from directory and listing sites that issue badges of their own, some generated automatically from public review data. Both are shown, and they are shown apart so that the second group does not borrow the standing of the first.',
+  },
+  {
+    q: 'Why do most of these badges not link anywhere?',
+    a: 'Because we hold the artwork rather than the publisher\'s own winners listing. An entry that linked to a page nobody here had opened would be asking you to trust a click. Where a publisher puts its results somewhere a reader can reach and we have read it, the row links. The magazine features do link, and they are the strongest items here for exactly that reason.',
+  },
+  {
+    q: 'How do I check a pest control company is actually licensed in Washington?',
+    a: 'Two free public lookups, both run by the state and neither requiring an account. The Washington State Department of Agriculture publishes a license search for pesticide applicators, and the Department of Labor & Industries publishes a verification tool covering business registration and workers\' compensation coverage. Our license numbers are on the About page so you can put them straight in.',
+  },
+  {
+    q: 'Do you pay for any of these awards?',
+    a: 'Not for the local votes, which are decided by readers. Some directory sites do sell badge and placement packages generally, which is one of the reasons those are kept in a separate list on this page rather than mixed in with the votes.',
+  },
+  {
+    q: 'Does an award mean the work will be good at my house?',
+    a: 'No, and it would be a strange thing to claim. An award reflects a period of work already done, usually as judged by people who did not see the inside of your crawlspace. What we would rather be judged on is the written scope, the guarantee, and whether the technician who arrives can explain what they found.',
+  },
+];
+
+const rails = [
+  { href: '/about/', label: 'Our licenses, our crew and our credentials' },
+  { href: '/what-we-use/', label: 'Every product we apply, with labels and safety data' },
+  { href: '/our-guarantee/', label: 'The 100% Service Guarantee, in full' },
+  { href: '/trusted-partners/', label: 'Who we refer to for work we do not do' },
+  { href: '/gallery/', label: 'Photographs from actual jobs' },
+  { href: '/contact/', label: 'Ask us anything on this page' },
+];
+---
+
+<BaseLayout
+  path={path}
+  title="Awards, Recognition & Press | Sasquatch Pest Control"
+  description="Every award badge and magazine feature Sasquatch Pest Control holds, listed with issuer, year and result — plus the free state lookups that let you verify us independently."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Awards & recognition', path }]}
+>
+  <h1>Awards, recognition and how to check any of it</h1>
+  <AnswerBox text={answer} />
+
+  <LeadForm />
+
+  <div class="prose">
+    <p>
+      This is the whole shelf. {Spell(awards.length)} badges and {spell(press.length)} magazine features, with nothing held back and
+      nothing rounded up, and — because a page of logos is the easiest thing in
+      this industry to fake — the public records that will check us whether we
+      like it or not.
+    </p>
+    <p>
+      It is worth being blunt about what a page like this is. Awards are the
+      one credential a company selects for itself. We chose which to display,
+      we chose the order, and we wrote the captions. That is true of every
+      awards page you will ever read, ours included, and it is why the last
+      section here hands you two state databases instead of another badge.
+    </p>
+
+    <h2>The four things a pest control badge can be</h2>
+    <p>
+      They arrive looking alike — a ribbon, a year, a category, a color that
+      suggests gold — and they are not alike at all. Sorting them takes about a
+      minute once you know what you are looking at, and it is worth doing on
+      any company's site rather than only on this one.
+    </p>
+    <p>
+      <b>A readers' vote</b> is a named publication or platform opening a
+      category and counting what comes back. It measures local recognition
+      rather than technical quality, and the people casting it live here and
+      had to name somebody. It cannot be bought, although it can certainly be
+      campaigned for, and any business that wins one has asked its customers to
+      go and vote.
+    </p>
+    <p>
+      <b>An editorial feature</b> is a publication deciding to write about a
+      company without being asked. There is no badge at the end of it, which is
+      why it tends to get buried under the ones with ribbons, and it is the
+      strongest of the four: somebody with a byline and an editor put their
+      name to it.
+    </p>
+    <p>
+      <b>A directory or listing badge</b> is issued by a site whose business is
+      listings. Some are generated automatically from public review data, which
+      makes them a restatement of a rating rather than an award. Others are
+      sold as part of a placement package. From the outside the two are almost
+      impossible to tell apart, which is the problem with the whole category.
+    </p>
+    <p>
+      <b>An industry certification</b> is not an award at all, and it is the
+      one worth the most. It means a body with a standard tested somebody
+      against it. Those are on our <a href="/about/">about page</a> with the
+      license numbers attached, because they belong beside the people who hold
+      them rather than in a row of ribbons.
+    </p>
+
+    {allOwnerBadge && (
+      <p>
+        One more distinction, and it applies to every badge below rather than
+        to any particular one. There is a difference between holding a piece of
+        award artwork and being able to point at the publisher's own list of
+        winners. We hold the artwork. Where that changes, the row will link.
+      </p>
+    )}
+  </div>
+
+  {awards.length > 0 && (
+    <section>
+      <h2>Recognition</h2>
+      <div class="prose">
+        <p>
+          There are {spell(awards.length)} badges on the shelf and they are not
+          all the same kind of thing, so they are not shown as though they
+          were. {Spell(localVote.length)} of them come from local publications,
+          platforms and organizations in this county.
+          {' '}{Spell(directory.length)} come from directory sites that issue
+          badges of their own. Those two groups have
+          separate headings below, because running them together as one long
+          row of logos would lend the second group credibility the first one
+          earned.
+        </p>
+      </div>
+
+      <h3>Local awards and readers' votes</h3>
+      <div class="prose">
+        <p>
+          {Spell(voteWins.length)} of these were awarded after a named local
+          publication or platform ran a vote and readers picked this company:
+          {' '}{listOf(votePublishers)}. The years run {voteYears}. That is the
+          part of this section worth your attention, because whatever else a
+          readers' vote is, the people casting it live here and had to choose
+          somebody.
+        </p>
+        {finalists.length > 0 && (
+          <p>
+            Not everything in that group is a win, and the ones that are not
+            say so on the row rather than being quietly filed with the rest.
+            {finalists.map((f) => (
+              <>
+                {' '}The {shown(f.year) ? `${f.year} ` : ''}{f.publisher} entry
+                {shown(f.category) ? ` for ${f.category}` : ''} is a finalist —
+                shortlisted, which is a genuinely good thing to be and a
+                different thing from winning.
+              </>
+            ))}
+          </p>
+        )}
+      </div>
+      <ul class="badges">
+        {localVote.map((a) => (
+          <li>
+            {/* A row can have a result and no artwork — the 2026 Cascades
+                Best silver was found on the publisher's listing and no
+                badge for it was ever supplied. Render the row anyway; an
+                award is not less real for lacking a picture. */}
+            {shown(a.badge) && shown(a.alt) && (
+              <img
+                src={a.badge}
+                alt={a.alt}
+                width={sizeOf(a.badge).width}
+                height={sizeOf(a.badge).height}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+            <span>
+              {a.publisher}{shown(a.year) ? ` · ${a.year}` : ''}
+            </span>
+            {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
+            {shown(a.level) && <span>{a.level}</span>}
+            <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+          </li>
+        ))}
+      </ul>
+
+      {/* Owner, 2 Sep 2026: the paragraph that used to sit here explained
+          at length why directory badges are a weaker signal than a local
+          vote — auto-generated from scraped review data, or sold outright.
+          All of that was true and none of it was the reader's problem; it
+          argued against the company's own badges on the company's own page.
+          The grouping stays, because the two lists genuinely are different
+          things, but the heading now just names the group and the badges
+          speak for themselves.
+
+          The taxonomy section near the top of this page is where that
+          argument now lives, and the difference matters: there it is written
+          about the category in general, for a reader judging any company.
+          Here it would have been an argument against our own rows. */}
+      <h3>Listing awards</h3>
+      <ul class="badges">
+        {directory.map((a) => (
+          <li>
+            {shown(a.badge) && shown(a.alt) && (
+              <img
+                src={a.badge}
+                alt={a.alt}
+                width={sizeOf(a.badge).width}
+                height={sizeOf(a.badge).height}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+            <span>
+              {a.publisher}{shown(a.year) ? ` · ${a.year}` : ''}
+            </span>
+            {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
+            {shown(a.level) && <span>{a.level}</span>}
+            <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div class="prose">
+        <p>
+          It is worth saying what {spell(awards.length)} pieces of artwork
+          deliberately leave out. There is no star rating and no review count
+          beside any of them, because an award from a publisher is not a
+          measurement of anything and dressing one up as a score would be
+          exactly the sleight of hand the rest of this page argues against.
+          There is no superlative either. Each badge is quoted in the terms its
+          issuer used — the award, who gave it, the year where the artwork
+          carries one, and whether it was a win — and a claim to be the best at
+          something in this county would be us adding a word the issuer did
+          not.
+        </p>
+        <p>
+          {allOwnerBadge
+            ? 'What we hold for every one of them is the artwork itself. We have not been able to open each publisher’s own winners listing and read the company name on it, so none of these entries links anywhere yet.'
+            : 'Where a publisher puts its winners listing somewhere a reader can reach, the entry links to it.'}
+          {' '}An entry stays plain text rather than pointing at a page we have
+          not read ourselves, and you should weigh it accordingly. Something you
+          can click through and check yourself is worth several you cannot,
+          which is the whole argument for the section that follows.
+        </p>
+      </div>
+    </section>
+  )}
+
+  {press.length > 0 && (
+    <section>
+      <h2>Press</h2>
+      <div class="prose">
+        <p>
+          An award is somebody handing you a badge. Press is somebody deciding
+          to write about you without being asked, which is a different signal
+          and belongs in a different list.
+        </p>
+        {pressVerified.length > 0 && (
+          <p>
+            {listOf(pressPublications)} is a trade magazine for people who do
+            this work rather than a consumer title, so the pieces below were
+            written for an audience of other operators — which is a harder room
+            than a customer-facing one, and a reason to point at them.
+            {' '}{Spell(pressVerified.length)} of the {spell(press.length)}{' '}
+            entries here have been checked against the publisher's own site
+            rather than taken from artwork somebody sent us: the article, the
+            byline and the date are all where they should be, and those entries
+            link straight to them. We are not going to summarize them here.
+            Read them there if you want them.
+          </p>
+        )}
+        {pressUnverified.length > 0 && (
+          <p>
+            The rest came to us as artwork. Those rows say so underneath and do
+            not link, and they stay that way until somebody has opened the
+            publisher's own page and read the company name on it.
+          </p>
+        )}
+      </div>
+      <ul class="press">
+        {press.map((p) => (
+          <li>
+            {/* Both, not either: an <img> with an empty alt is an
+                accessibility failure and a harness failure, so a press image
+                without alt text does not render at all. */}
+            {shown(p.image) && shown(p.alt) && (
+              <img
+                src={p.image}
+                alt={p.alt}
+                width={sizeOf(p.image).width}
+                height={sizeOf(p.image).height}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <div>
+              <b>{shown(p.url) ? <a href={p.url} rel="nofollow noopener">{p.title}</a> : p.title}</b>
+              <span>
+                {p.publication}
+                {shown(p.published) ? ` · ${usDate(p.published)}` : ''}
+                {shown(p.author) ? ` · ${p.author}` : ''}
+              </span>
+              <span class="via">
+                {p.via === 'publisher-verified'
+                  ? "Checked against the publisher's own page"
+                  : 'Supplied by the owner as artwork; not checked against the publisher, so it does not link'}
+              </span>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <div class="prose">
+        <p>
+          One thing those articles will tell you that this page has to
+          acknowledge: they describe the company as it was when they were
+          written, and the 2023 pieces name two brothers as owners. That was
+          accurate in 2023. Kristofer Elling has since taken full ownership and
+          Tyson Elling is Office Manager, which is what the{' '}
+          <a href="/about/">about page</a> says. An old article is a record of
+          its date rather than a contradiction of today, and we would rather
+          explain the discrepancy than quietly leave the articles off.
+        </p>
+      </div>
+    </section>
+  )}
+
+  <div class="prose">
+    <h2>How to check any of this yourself, in about ten minutes</h2>
+    <p>
+      Everything above this heading is something we chose to show you.
+      Everything below it is not. These are public records maintained by
+      Washington State, they are free, they need no account, and they will
+      contradict any company that has told you something untrue — including
+      this one.
+    </p>
+    <p>
+      Run them on us. Then run them on whoever else you are considering,
+      because the comparison is where they actually earn their keep.
+    </p>
+
+    <h3>1. The pesticide license, at the Department of Agriculture</h3>
+    <p>
+      Applying pesticides for hire in Washington requires a license from the
+      Washington State Department of Agriculture, and WSDA publishes a{' '}
+      <a
+        href="https://agr.wa.gov/pestfert/licensinged/search"
+        rel="nofollow noopener"
+      >license search</a>{' '}
+      you can query by license number, by person or by company. It will tell
+      you the license type, whether it is current, and which categories it
+      covers — and the categories matter, because a license to treat a
+      structure is not the same license as one to treat a field.
+    </p>
+    {licensed.length > 0 && (
+      <p>
+        We publish {spell(licensed.length)} license numbers on the{' '}
+        <a href="/about/">about page</a>, each one attached to a named person
+        rather than pooled into a company figure, precisely so they can be
+        typed into that search. A company that will not give you a number is
+        telling you something.
+      </p>
+    )}
+    <p>
+      Two things are worth knowing before you search. A licensed
+      <i> operator</i> is an employee working under a company's applicator
+      license, which is the normal arrangement for a technician and is not a
+      lesser credential. And a <i>structural pest inspector</i> license is a
+      separate thing again — it is what a wood-destroying organism report for a
+      real estate transaction requires, and holding a pesticide license does
+      not confer it.
+    </p>
+
+    <h3>2. The business itself, at Labor &amp; Industries</h3>
+    <p>
+      The Washington State Department of Labor &amp; Industries runs{' '}
+      <a href="https://secure.lni.wa.gov/verify/" rel="nofollow noopener">
+        Verify a Contractor, Tradesperson or Business
+      </a>, and it answers the questions a license search does not. Whether the
+      business is registered. Whether its workers' compensation account is
+      active and paid up, which is what stands between you and a claim if
+      somebody is hurt in your crawlspace. Whether there are citations against
+      it.
+    </p>
+    <p>
+      That last one is the reason to bother. A badge tells you what went right
+      in somebody's best year. A citation history tells you what went wrong,
+      and it is published by an agency with no interest in how anybody's
+      marketing reads.
+    </p>
+
+    <h3>3. The reviews, read properly</h3>
+    <p>
+      Star ratings are worth something and worth less than they are made to
+      carry. The number itself is nearly useless below about fifty reviews and
+      compresses everything above four and a half into a range you cannot
+      distinguish. What is genuinely informative is underneath it.
+    </p>
+    <p>
+      Read the one and two star reviews first — not to count them, but to see
+      what the complaints are about and whether the company answered. Look at
+      the dates: fifty reviews across three years is a business, and fifty in
+      one week is a campaign. And look for reviews that describe the actual
+      job, because a review naming a crawlspace, a species and a technician was
+      written by somebody who was there.
+    </p>
+
+    <h3>4. The things nobody has to look up</h3>
+    <p>
+      Ask for the product label before anything is applied. Every product we
+      carry is published with its EPA registration number and its full label on
+      our <a href="/what-we-use/">what we apply</a> page, which is unusual and
+      is meant to be — any licensed applicator in this state has to supply that
+      on request, and a company that treats the request as an imposition has
+      answered your question.
+    </p>
+    <p>
+      Ask what happens if it does not work. Our{' '}
+      <a href="/our-guarantee/">guarantee</a> is written down with its limits
+      on the same page as its promise, which is the only form a guarantee is
+      worth reading. Ask whether you are signing a term, and read what it takes
+      to leave. And ask who is actually coming — the answer should be a person
+      who works here, not a subcontractor.
+    </p>
+
+    <h2>The row that says finalist, and why it stays</h2>
+    <p>
+      One entry in the lists above is a shortlisting rather than a win, and it
+      would be the easiest thing in the world to leave off. It stays for two
+      reasons, and the second is the honest one.
+    </p>
+    <p>
+      The first is that being shortlisted for a county business award is a good
+      thing to have happened. A panel looked at a set of local businesses and
+      put this one on a short list. That is worth showing.
+    </p>
+    <p>
+      The second is that the company's own older website did not describe it
+      that way. A letter published there thanked customers for awards
+      "including Best Pest Control Business and Start-Up Business of the Year",
+      which reads as two wins. One of those was a shortlisting. Nobody set out
+      to mislead anybody — that is simply what happens to a nomination after it
+      has been retold a few times, in a letter written in gratitude rather than
+      in a data file. It is the ordinary way a claim inflates, and it is why
+      the result on every row here is stored as a field beside the badge rather
+      than written into a sentence somebody can smooth over later.
+    </p>
+    <p>
+      Correcting our own old copy on our own new page is a strange thing to
+      publish. It is also the only version of this page worth putting up: if we
+      will quietly round a shortlist up to a win, there is no reason for you to
+      believe the rest of it.
+    </p>
+
+    <h2>What we would rather be judged on</h2>
+    <p>
+      None of the above tells you whether the work at your address will be any
+      good, so here is what we think does — all of it checkable before you
+      commit to anything.
+    </p>
+    <p>
+      Whether the person who comes out can tell you what species it is and how
+      they know. Whether the scope you are quoted names the specific work rather
+      than a package. Whether the guarantee is written where you can read its
+      limits. Whether the products are disclosed before they are applied rather
+      than after. And whether anybody has told you that part of what you are
+      asking for is not a pest problem at all — a moisture problem, a gap, a
+      gutter — which costs us the sale and is the single most reliable sign
+      that you are being told the truth.
+    </p>
+
+    <h2>What this page will never say</h2>
+    <p>
+      Some of these are commitments rather than observations, so it is fair to
+      write them down where they can be held against us.
+    </p>
+    <p>
+      It will not say <b>"award-winning"</b>. The phrase is doing two jobs at
+      once — it turns a shortlisting into a win, and it lets a directory
+      listing borrow the word "award" — and both of those apply to rows on this
+      very page. The rows say winner, finalist or listed instead, and they say
+      it individually.
+    </p>
+    <p>
+      It will not put <b>a star rating beside a badge</b>. They measure
+      unrelated things and printing them together implies one supports the
+      other. Our Google rating appears in the footer of every page with the
+      date it was read, which is the form a reader can check.
+    </p>
+    <p>
+      It will not <b>link a badge to a page nobody here has read</b>. An
+      unlinked entry is an admission, and we would rather make it than send you
+      somewhere on the assumption that it says what we hope.
+    </p>
+    <p>
+      It will not <b>claim to be the best in the county</b>, or the top-rated,
+      or the number one anything. Not from modesty — because none of the
+      issuers said it, and adding a superlative the issuer did not print is the
+      exact move this page exists to avoid.
+    </p>
+    <p>
+      And it will not <b>grow quietly</b>. When something comes off — a badge
+      whose issuer we can no longer identify, a listing that turns out to have
+      been sold to us — it comes off with the rest of the page still saying how
+      many there are, because the count is generated from the list rather than
+      typed.
+    </p>
+  </div>
+
+  <Faq items={faqs} />
+
+  <LinkRail heading="Related" links={rails} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>
