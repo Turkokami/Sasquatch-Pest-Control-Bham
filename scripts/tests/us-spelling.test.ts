@@ -35,6 +35,17 @@ import path from 'node:path';
 const BRITISH: [RegExp, string][] = [
   /* The ones that have actually appeared on this site. */
   [/\bneighbour(s|hood|hoods|ing|ly)?\b/gi, 'neighbor…'],
+  /* Added 4 Sep 2026 after 'harbour' appeared eleven times across two new
+     Blaine pages and this test passed every one of them. It caught 'neighbour'
+     in the same file and stopped there, which is how a British spelling reached
+     a page description and an H2 on a coastal town's page. The list only ever
+     held words that had already gone wrong once, and writing about a working
+     waterfront was always going to add one.
+
+     'harborage' matters as much as 'harbor' here: it is the term the trade uses
+     for the shelter an insect lives in, this site uses it everywhere else, and
+     it is the spelling most likely to slip past someone reading quickly. */
+  [/\bharbour(s|ed|ing|age|front|side)?\b/gi, 'harbor…'],
   [/\brecognis(e|ed|es|ing|able)\b/gi, 'recogniz…'],
   [/\bgrey(ish|er|est)?\b/gi, 'gray…'],
   [/\bdefence\b/gi, 'defense'],

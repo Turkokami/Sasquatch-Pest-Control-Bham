@@ -583,7 +583,7 @@
     },
     {
       "source": "/downtown-blaine-blaine-wa-pest-control/",
-      "destination": "/locations/blaine/",
+      "destination": "/locations/blaine/downtown-blaine/",
       "permanent": true
     },
     {
@@ -598,7 +598,7 @@
     },
     {
       "source": "/semiahmoo-blaine-wa-pest-control/",
-      "destination": "/locations/blaine/",
+      "destination": "/locations/blaine/semiahmoo/",
       "permanent": true
     },
     {

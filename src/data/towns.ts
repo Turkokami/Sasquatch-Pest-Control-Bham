@@ -221,12 +221,24 @@ export const towns: Town[] = [
        downtown districts and marketing labels, which is a different kind of
        thing. They belong in the "also across" line and in areaServed, not on
        twelve more pages. Owner to confirm which — if any — are recognized
-       locally enough to earn one. */
+       locally enough to earn one.
+
+       OWNER CONFIRMED 4 SEP 2026: all four, and the Ferndale and Lynden sets
+       with them. That answers the question this comment was holding open, and
+       the caution above still stands as the record of WHY it was held open —
+       the six bled entries stay dropped, and nothing has been added back.
+
+       What earns each page is not the name, it is that the four are genuinely
+       four different jobs: a spit where buildings stand empty for months, a
+       gated development with its own marina and golf course, a shared-wall
+       downtown above the harbor, and the last residential streets before open
+       county. If a name on one of these lists ever turns out to describe
+       nothing distinct, the page comes off rather than getting padded. */
     neighborhoods: [
-      { slug: 'semiahmoo', name: 'Semiahmoo', note: 'resort and marina community on the spit, much of it seasonally empty' },
-      { slug: 'birch-bay-village', name: 'Birch Bay Village', note: 'gated community with its own marina and golf course' },
-      { slug: 'downtown-blaine', name: 'Downtown Blaine', note: 'older commercial core and condos above Drayton Harbor' },
-      { slug: 'east-blaine', name: 'East Blaine', note: 'established residential up H Street toward rural county' },
+      { slug: 'semiahmoo', name: 'Semiahmoo', page: true, note: 'resort and marina community on the spit, much of it seasonally empty' },
+      { slug: 'birch-bay-village', name: 'Birch Bay Village', page: true, note: 'gated community with its own marina and golf course' },
+      { slug: 'downtown-blaine', name: 'Downtown Blaine', page: true, note: 'older commercial core and condos above Drayton Harbor' },
+      { slug: 'east-blaine', name: 'East Blaine', page: true, note: 'established residential up H Street toward rural county' },
     ],
   },
   {
