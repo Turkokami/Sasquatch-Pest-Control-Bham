@@ -130,9 +130,10 @@ nothing about the supply. Sealing the openings, and treating the exterior in
 the narrow window before the wave arrives, addresses the supply.
 
 Timing is the part that goes wrong. Too early and the exterior work has faded
-before they arrive; too late and they are already on the wall. It moves with
-the weather each year, which is why it is worth booking rather than reacting
-to.
+before they arrive; too late and they are already on the wall. The date shifts by a fortnight or more from one
+year to the next depending on how the first cold afternoons fall, so it is a
+thing to have arranged in advance rather than to chase once the beetles are
+already on the siding.
 
 ## Rodents from open ground
 

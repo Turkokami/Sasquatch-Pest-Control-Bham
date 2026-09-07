@@ -748,12 +748,12 @@
     },
     {
       "source": "/fishtrap-lynden-wa-pest-control/",
-      "destination": "/locations/lynden/",
+      "destination": "/locations/lynden/fishtrap-creek/",
       "permanent": true
     },
     {
       "source": "/downtown-lynden-lynden-wa-pest-control/",
-      "destination": "/locations/lynden/",
+      "destination": "/locations/lynden/downtown-lynden/",
       "permanent": true
     },
     {

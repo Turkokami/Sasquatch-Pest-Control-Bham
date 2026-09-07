@@ -332,7 +332,28 @@ if (run('seo')) {
       titles.set(title, p.url);
     }
 
-    const d = decode((p.html.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i) || [])[1] ?? '') || null;
+    /* THIRD PLACE, SAME BUG, 4 Sep 2026. The comment above attr() explains at
+       length why `content=["']([^"']*)["']` is wrong — it opens on either
+       quote and then consumes anything that is not EITHER quote, so it
+       truncates at the first apostrophe inside a double-quoted attribute. That
+       comment ends "Same lesson, second place."
+
+       This line was the third place, and it was never fixed. attr() got the
+       backreference; check 2 kept its own private copy of the broken regex and
+       has been mis-measuring every description containing an apostrophe ever
+       since — reading "Homestead — golf-course lots on Lynden" out of a
+       perfectly good 152-character sentence and then failing the page twice,
+       once for length and once for ending mid-word.
+
+       Nobody noticed because no description on the site had an apostrophe in
+       it. That is not a coincidence: writers hit this, could not see why a
+       good sentence failed, and quietly rewrote around it. A broken check does
+       not announce itself — it just bends the work.
+
+       Use attr() rather than a fourth copy of the pattern. If a fifth place
+       ever needs an attribute out of a tag, use attr() too. */
+    const metaDesc = tagsOf(p.html, 'meta').find((t) => attr(t, 'name') === 'description');
+    const d = (metaDesc && attr(metaDesc, 'content')?.trim()) || null;
     if (!d) { fail(`${p.url} has no meta description`); clean = false; }
     else {
       if (d.length < DESC_MIN || d.length > DESC_MAX) { fail(`${p.url} description ${d.length} chars (${DESC_MIN}–${DESC_MAX})`); clean = false; }

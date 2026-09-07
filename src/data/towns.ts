@@ -188,16 +188,46 @@ export const towns: Town[] = [
        downtown districts and marketing labels, which is a different kind of
        thing. They belong in the "also across" line and in areaServed, not on
        twelve more pages. Owner to confirm which — if any — are recognized
-       locally enough to earn one. */
+       locally enough to earn one.
+
+       OWNER CONFIRMED 4 SEP 2026 — and the caution above earned its keep on
+       the way to writing these, which is the whole reason it was recorded.
+
+       BEFORE WRITING, EACH NAME WAS CHECKED against sources outside the
+       overview that produced this list. Three things came back.
+
+       'Fairway Estates' is DROPPED. It could not be found in Lynden at all.
+       Searches return Fairway Estates developments in Everett and Seattle and
+       nothing here, and it does not appear on a local agent's Lynden
+       neighborhood guide that names five of the others. It is a generic
+       subdivision name with no local geography behind it, which is precisely
+       the profile of the six entries already dropped for bleeding between
+       queries. Writing three thousand words about a neighborhood that may not
+       exist would be a worse failure than any of the ones this file guards
+       against, so it goes. If the owner knows it as a real local name, it
+       comes back with a page — but on his say-so, recorded as such.
+
+       'Homestead' was noted here as being on the NORTH edge. Two independent
+       sources put it on the WEST side, beside Fishtrap Creek and Homestead
+       Park, around a semi-private course that opened in 1993. Corrected.
+
+       'Meadowview' was noted as postwar and later single-family. The local
+       guide describes it as large lots on the outskirts surrounded by
+       farmland — a rural-feel neighborhood rather than a postwar one, which
+       is a materially different page. Corrected.
+
+       Both of those errors came from the same overview and neither was
+       caught by the earlier review, because a plausible-sounding housing note
+       does not look wrong the way a duplicated town name does. Check the
+       notes, not just the names. */
     neighborhoods: [
-      { slug: 'downtown-lynden', name: 'Downtown Lynden', note: 'Front Street commercial core and the older stock behind it' },
-      { slug: 'homestead', name: 'Homestead', note: 'golf-course community on the north edge' },
-      { slug: 'meadowview', name: 'Meadowview', note: 'postwar and later single-family' },
-      { slug: 'sterling-meadows', name: 'Sterling Meadows', note: 'newer subdivision' },
-      { slug: 'north-prairie', name: 'North Prairie', note: 'farmland edge along North Prairie Road' },
-      { slug: 'fairway-estates', name: 'Fairway Estates', note: 'golf-adjacent single-family' },
-      { slug: 'pepin-creek', name: 'Pepin Creek', note: 'creek corridor on the west side, newer development' },
-      { slug: 'fishtrap-creek', name: 'Fishtrap Creek', note: 'creek corridor through town, greenbelt margins' },
+      { slug: 'downtown-lynden', name: 'Downtown Lynden', page: true, note: 'Front Street commercial core, turn-of-the-century and mid-century homes behind it' },
+      { slug: 'homestead', name: 'Homestead', page: true, note: 'west side, around the golf course opened 1993, beside Fishtrap Creek and Homestead Park' },
+      { slug: 'meadowview', name: 'Meadowview', page: true, note: 'large lots on the outskirts, surrounded by farmland' },
+      { slug: 'sterling-meadows', name: 'Sterling Meadows', page: true, note: 'newer subdivision on the south side' },
+      { slug: 'north-prairie', name: 'North Prairie', page: true, note: 'working farmland edge along North Prairie Road' },
+      { slug: 'pepin-creek', name: 'Pepin Creek', page: true, note: 'west-side creek corridor under active development and realignment' },
+      { slug: 'fishtrap-creek', name: 'Fishtrap Creek', page: true, note: 'east side, mature trees, creek greenbelt and trail through established streets' },
     ],
   },
   {
