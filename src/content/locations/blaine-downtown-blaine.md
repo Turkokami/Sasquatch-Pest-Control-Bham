@@ -318,6 +318,4 @@ problem.
 You get a plain account of what is active, where it is based, what is a route
 and what is a source, what is yours to fix and what belongs to the landlord,
 the association or the neighbor — the last of those in a form you can hand
-over. Assessment is free for everything we handle except bed bug verification,
-which is charged and credited against treatment, and we do not require a term
-agreement to do the work.
+over. There is no charge for the survey itself. Only bed bug verification is billed, and it is credited back if you go ahead, with no contract either way.

@@ -305,6 +305,4 @@ the hatch.
 
 You get a plain account of what is active, what is old, what is driving it,
 what should be done before the ground behind you is next cut, and which items
-are building work rather than pest work. Assessment is free for everything we
-handle other than bed bug verification, which is charged and credited against
-treatment, and there is no term agreement.
+are building work rather than pest work. Coming out and quoting is free. Bed bug verification is the only exception, its fee is taken off the treatment, and nothing here locks you into a term.

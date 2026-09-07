@@ -132,15 +132,27 @@ export const towns: Town[] = [
        downtown districts and marketing labels, which is a different kind of
        thing. They belong in the "also across" line and in areaServed, not on
        twelve more pages. Owner to confirm which — if any — are recognized
-       locally enough to earn one. */
+       locally enough to earn one.
+
+       OWNER CONFIRMED 4 SEP 2026: all seven. See the fuller note on the Blaine
+       block above — the caution stands as the record of why these were held,
+       the six bled entries stay dropped, and nothing was added back.
+
+       ONE THING TO SETTLE ON SANDY POINT, and it is not a content question.
+       Sandy Point sits on the Sandy Point Arm within the Lummi Reservation.
+       Its page is written about canals, salt and boats and makes no claim
+       about jurisdiction, because pesticide regulation on tribal land is not
+       something to assert from a web search. If the company works there
+       regularly, confirm whose licensing regime applies before anything on
+       this site implies an answer. */
     neighborhoods: [
-      { slug: 'sandy-point', name: 'Sandy Point', note: 'waterfront and canal lots, marine air and moisture' },
-      { slug: 'downtown-ferndale', name: 'Downtown Ferndale', note: 'older stock along the Nooksack, walkable core' },
-      { slug: 'malloy-village', name: 'Malloy Village', note: 'townhomes and family streets near the freeway' },
-      { slug: 'vista-ridge', name: 'Vista Ridge', note: 'newer construction on elevated ground' },
-      { slug: 'pacific-highlands', name: 'Pacific Highlands', note: 'modern subdivision with sidewalks and parks' },
-      { slug: 'woods-point', name: 'Woods Point', note: 'gated 55+ community, single-level homes' },
-      { slug: 'the-meadows', name: 'The Meadows', note: 'established larger-lot single-family' },
+      { slug: 'sandy-point', name: 'Sandy Point', page: true, note: 'waterfront and canal lots, marine air and moisture' },
+      { slug: 'downtown-ferndale', name: 'Downtown Ferndale', page: true, note: 'older stock along the Nooksack, walkable core' },
+      { slug: 'malloy-village', name: 'Malloy Village', page: true, note: 'townhomes and family streets near the freeway' },
+      { slug: 'vista-ridge', name: 'Vista Ridge', page: true, note: 'newer construction on elevated ground' },
+      { slug: 'pacific-highlands', name: 'Pacific Highlands', page: true, note: 'modern subdivision with sidewalks and parks' },
+      { slug: 'woods-point', name: 'Woods Point', page: true, note: 'gated 55+ community, single-level homes' },
+      { slug: 'the-meadows', name: 'The Meadows', page: true, note: 'established larger-lot single-family' },
     ],
   },
   {

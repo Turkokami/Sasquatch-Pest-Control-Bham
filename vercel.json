@@ -778,7 +778,7 @@
     },
     {
       "source": "/malloy-ferndale-wa-pest-control/",
-      "destination": "/locations/ferndale/",
+      "destination": "/locations/ferndale/malloy-village/",
       "permanent": true
     },
     {
@@ -788,12 +788,12 @@
     },
     {
       "source": "/vista-ferndale-wa-pest-control/",
-      "destination": "/locations/ferndale/",
+      "destination": "/locations/ferndale/vista-ridge/",
       "permanent": true
     },
     {
       "source": "/downtown-ferndale-ferndale-wa-pest-control/",
-      "destination": "/locations/ferndale/",
+      "destination": "/locations/ferndale/downtown-ferndale/",
       "permanent": true
     },
     {
@@ -933,7 +933,7 @@
     },
     {
       "source": "/sandy-point-wa-pest-control/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/ferndale/sandy-point/",
       "permanent": true
     },
     {

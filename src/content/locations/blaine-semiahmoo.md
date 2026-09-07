@@ -296,6 +296,4 @@ with attention to where your unit stops and the structure carries on.
 
 You get a plain account: what is active, what is old, what is driving it, what
 needs doing before the building is closed up, and what belongs to the
-association rather than to you. Assessment is free for everything we handle
-except bed bug verification, which is charged and then deducted from treatment.
-There is no term agreement.
+association rather than to you. We do not charge to come and look at anything except bed bugs, where the verification fee comes off the treatment, and no term agreement is required to have work done.

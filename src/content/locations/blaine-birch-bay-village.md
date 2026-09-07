@@ -311,6 +311,4 @@ than a look from the hatch.
 
 You get a plain account of what is active, what is historic, where it is coming
 from, what we can do on your lot and what needs to go to the association — the
-last of those in a form you can hand over. Assessment is free for everything we
-handle other than bed bug verification, which is charged and then credited
-against the treatment, and nothing requires a term agreement.
+last of those in a form you can hand over. Looking costs nothing, bed bug verification excepted, and that fee is deducted from the treatment price. We do not tie the work to a contract.
