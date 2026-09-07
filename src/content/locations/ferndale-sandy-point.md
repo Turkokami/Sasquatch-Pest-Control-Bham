@@ -256,6 +256,23 @@ plan: one before it is closed up, to close the openings that are about to be
 used, and one before it is reopened, to find what got in while nobody was
 there.
 
+## Working on the Point, and the tax question
+
+Sandy Point sits on the Sandy Point Arm, within the Lummi Reservation, and it
+is worth saying plainly that this is ordinary territory for us rather than
+somewhere we visit occasionally. We run it regularly.
+
+There is one practical difference and it is worth raising before it turns into
+a surprise on an invoice: tax treatment on the reservation is not the same as
+it is off it. We are not the authority on your position and this page is not
+going to pretend otherwise — what it will say is that if you are having work
+done at an address out here, mention it when you book. It gets handled on the
+quote rather than corrected afterward, which is the way round everybody
+prefers.
+
+Beyond that, nothing about the work changes. Same licensing, same products,
+same labels published on this site, same guarantee.
+
 ## Access, and the practical business of getting to a lot
 
 Finger lots on a sand arm are not always straightforward to work on, and it

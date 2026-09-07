@@ -138,13 +138,32 @@ export const towns: Town[] = [
        block above — the caution stands as the record of why these were held,
        the six bled entries stay dropped, and nothing was added back.
 
-       ONE THING TO SETTLE ON SANDY POINT, and it is not a content question.
-       Sandy Point sits on the Sandy Point Arm within the Lummi Reservation.
-       Its page is written about canals, salt and boats and makes no claim
-       about jurisdiction, because pesticide regulation on tribal land is not
-       something to assert from a web search. If the company works there
-       regularly, confirm whose licensing regime applies before anything on
-       this site implies an answer. */
+       SANDY POINT AND THE LUMMI RESERVATION — ANSWERED BY THE OWNER,
+       4 Sep 2026, and the question is closed.
+
+       Sandy Point sits on the Sandy Point Arm within the Lummi Reservation,
+       and the page was written to make no claim about jurisdiction because
+       pesticide regulation on tribal land is not something to assert from a
+       web search. The owner's answer: there is no licensing restriction, the
+       company works out there regularly, and the Lummi Nation has contracted
+       with it directly in the past. What differs is TAX, not authority —
+       work on the reservation is tax exempt.
+
+       TWO THINGS FOLLOW FOR ANYONE EDITING THIS.
+
+       The tax point is on the page, and it is written as "tell us at booking
+       and it is handled on the quote" rather than as a statement of what the
+       exemption is or who qualifies for it. That is deliberate. Exemption
+       depends on facts about the customer and the address that this company
+       is not the authority on, and a web page that tells somebody they do not
+       owe tax is a worse error than one that tells them to raise it.
+
+       The contracting relationship is NOT on the page. Naming a client is
+       the client's decision rather than ours, and permission to tell us
+       something is not permission to publish it — the same rule the
+       credential block applies to Jorge Bedoya. If the owner wants the Lummi
+       Nation named as a past client, that is a separate yes, on the record,
+       and then it can go up. */
     neighborhoods: [
       { slug: 'sandy-point', name: 'Sandy Point', page: true, note: 'waterfront and canal lots, marine air and moisture' },
       { slug: 'downtown-ferndale', name: 'Downtown Ferndale', page: true, note: 'older stock along the Nooksack, walkable core' },
