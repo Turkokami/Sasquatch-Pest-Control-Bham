@@ -104,7 +104,9 @@ The brown marmorated stink bug and the multicolored Asian lady beetle follow the
 same pattern on the same walls at roughly the same time, and the three are
 routinely found together.
 
-None of them breeds indoors. None of them damages the building. None of them bites.
+None of them breeds indoors and none damages the building. The lady beetle will
+bite if it is handled, which the stink bug will not, and it is a nip rather than
+an injury.
 They are a nuisance rather than a threat, and that distinction matters, because it
 changes what a sensible treatment looks like. Nobody should be fogging a house
 repeatedly through winter for insects that are dormant in a wall and cannot

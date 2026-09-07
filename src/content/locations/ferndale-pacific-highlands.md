@@ -248,8 +248,9 @@ around trim, laps and vents. Brown marmorated stink bugs do much the same.
 Cluster flies accumulate in upstairs windows. Spiders come in for their own
 reasons and get noticed at the same time.
 
-None of them bite, breed indoors, or damage the building — which is what
-decides the approach rather than a reason to dismiss them. Because they do not
+Apart from the occasional nip from a lady beetle, none of them bites, and not
+one of them breeds indoors or damages the building — which is what decides the
+approach rather than a reason to dismiss them. Because they do not
 reproduce inside, the number indoors depends entirely on how many got in.
 Sealing, plus correctly timed exterior work in the narrow window before the
 wave, addresses the supply. Repeated interior spraying through the winter

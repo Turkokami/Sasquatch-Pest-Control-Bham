@@ -138,6 +138,12 @@ export const PESTS: Pest[] = [
   /* Occasional invaders */
   { slug: 'cluster-fly', name: 'Cluster fly', scientific: 'Pollenia spp.', group: 'invaders' },
   { slug: 'boxelder-bug', name: 'Boxelder bug', scientific: 'Boisea rubrolineata', group: 'invaders' },
+  /* Added 4 Sep 2026. It was named on thirty built pages — the owner calls it
+     one of the two big fall invaders here — with no library entry for any of
+     them to link to. Writing it also caught a factual error repeated across
+     ten location pages: they all said this group does not bite, and this
+     species does. */
+  { slug: 'multicolored-asian-lady-beetle', name: 'Multicolored Asian lady beetle', scientific: 'Harmonia axyridis', group: 'invaders' },
   { slug: 'western-conifer-seed-bug', name: 'Western conifer seed bug', scientific: 'Leptoglossus occidentalis', group: 'invaders' },
   { slug: 'brown-marmorated-stink-bug', name: 'Brown marmorated stink bug', scientific: 'Halyomorpha halys', group: 'invaders' },
   { slug: 'silverfish', name: 'Silverfish', scientific: 'Lepisma saccharinum', group: 'invaders' },

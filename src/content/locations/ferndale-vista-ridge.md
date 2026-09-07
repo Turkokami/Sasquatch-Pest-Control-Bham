@@ -120,8 +120,8 @@ Cluster flies collect in upstairs rooms and window channels. Western conifer
 seed bugs turn up individually indoors and alarm people considerably more than
 they deserve to.
 
-None of them bite. None of them breed indoors. None of them damage the
-structure.
+A lady beetle will nip if it is picked up. That aside, nothing in the group
+reproduces indoors or does the structure any harm.
 
 That last point decides the whole approach. Because they do not reproduce
 inside, the number in the house is entirely a function of how many got in.

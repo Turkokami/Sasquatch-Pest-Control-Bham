@@ -176,9 +176,10 @@ to any opening anybody can find.
 Multicolored Asian lady beetles and brown marmorated stink bugs do the same
 thing on the same walls at the same time.
 
-Nothing in that group bites anybody, raises a generation indoors, or harms the
-fabric of a building, and it is that fact rather than any wish to make light of
-them that settles how they are dealt with. Because they do not
+Of the three, only the lady beetle bites, and it amounts to a pinch. None of
+them raises a generation indoors or harms the fabric of a building, and it is
+that fact rather than any wish to make light of them that settles how they are
+dealt with. Because they do not
 reproduce inside, the number in the building depends entirely on how many got
 in. Sealing the entry points and treating the exterior in the narrow window
 before the wave addresses the supply; spraying rooms through the winter deals

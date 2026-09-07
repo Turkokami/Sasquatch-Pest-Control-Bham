@@ -235,8 +235,9 @@ the afternoon sun. Multicolored Asian lady beetles on the warm siding, working
 into gaps around trim and vents. Brown marmorated stink bugs alongside them.
 Cluster flies in upstairs window channels.
 
-None of them bite, breed indoors or damage the building, which is what decides
-the approach rather than a reason to shrug at them.
+The lady beetle is the only one that bites, and only if you handle it. None of
+them breeds indoors or damages the building, which is what decides the approach
+rather than a reason to shrug at them.
 
 Because they do not reproduce inside, the number in the house depends entirely
 on how many got in. Sealing the openings and treating the exterior in the

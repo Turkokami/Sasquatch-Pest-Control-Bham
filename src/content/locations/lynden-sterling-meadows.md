@@ -203,7 +203,8 @@ days in numbers that seem impossible relative to any visible opening.
 Multicolored Asian lady beetles and brown marmorated stink bugs do the same on
 the same walls.
 
-None of that group bites, raises young indoors, or harms the structure. Since
+The lady beetle can deliver a small bite; the stink bug cannot. Neither raises
+young indoors or harms the structure. Since
 they cannot reproduce inside, whatever ends up in the house got there by
 walking or flying in, and the count reflects nothing except how many openings
 were available — so the answer is sealing, plus exterior work timed to the

@@ -14,7 +14,7 @@ faqs:
   - q: "Should I cut the trees back from the house?"
     a: "Trimming contact between vegetation and siding is worth doing and helps with several things at once. Removing the forest is neither possible nor the point. Most of the benefit comes from breaking the bridges — branches touching the roof, ivy on a wall, firewood stacked against the house."
   - q: "Do the lady beetles and stink bugs actually damage anything?"
-    a: "No. They do not bite, they do not breed indoors, and they do not harm the building. They are a nuisance, and that changes what a sensible response looks like — the useful work is sealing and correctly timed exterior treatment, not repeated spraying inside all winter."
+    a: "No. Neither breeds indoors and neither harms the building, though a lady beetle will nip if you pick it up and will mark a wall yellow if you squash it. They are a nuisance rather than a hazard, and that changes what a sensible response looks like — the useful work is sealing and correctly timed exterior treatment, not repeated spraying inside all winter."
   - q: "How far out is Deming for you?"
     a: "Sixteen miles east, and it runs on scheduled route days rather than same-day availability. It is a significant area for us and it gets serviced properly. We will name the day rather than promise a window we cannot keep."
   - q: "Is there a charge to come and look?"
@@ -159,8 +159,10 @@ in late September a sunlit wall can carry hundreds at once, and a proportion of
 them will find a way in — under siding, around a window frame, through an
 unscreened attic vent, into a soffit.
 
-Once they are inside a wall void they are dormant. They do not feed, they do not
-breed indoors, they do not bite, and they do no damage to the building. The
+Once they are inside a wall void they are dormant. They do not feed and they do
+not breed there, and they do no damage to the building. The one caution is the
+lady beetle, which will nip if it is handled and leaves a staining yellow fluid
+if it is crushed. The
 problem is entirely that they are there, and that on the first warm days of late
 winter some of them wake up on the wrong side of the wall and end up in a
 bedroom.

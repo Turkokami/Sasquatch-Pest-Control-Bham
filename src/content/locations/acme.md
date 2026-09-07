@@ -16,7 +16,7 @@ faqs:
   - q: "Should the barn and the shop be included?"
     a: "On acreage, yes, and it is worth understanding why. Outbuildings sit closer to cover and are sealed to a lower standard, so they fill first and the house fills from them. Working on the house alone moves the population rather than reducing it. We price the site."
   - q: "What are the beetles covering the south wall every October?"
-    a: "Multicolored Asian lady beetles, usually alongside brown marmorated stink bugs and cluster flies. They gather on sun-warmed siding on the first cold afternoons and then work their way into gaps. They do not bite, breed indoors or damage the building, which is exactly why the answer is sealing and timing rather than spraying inside all winter."
+    a: "Multicolored Asian lady beetles, usually alongside brown marmorated stink bugs and cluster flies. They gather on sun-warmed siding on the first cold afternoons and then work their way into gaps. The lady beetles can give you a small nip and they leave a yellow stain if squashed; the other two do neither. What none of them does is breed indoors or damage the building, which is exactly why the answer is sealing and timing rather than spraying inside all winter."
   - q: "We are on a well and a septic system. Does that limit what you can do?"
     a: "It shapes placement rather than ruling things out. Nothing goes near a wellhead or over a drain field, and we will tell you before we work anywhere close to either. Out here that is routine, not an obstacle — most of the properties we service in this valley are on both."
   - q: "Is there a charge to come and look?"
@@ -206,8 +206,9 @@ numbers that seem out of proportion to any opening anybody can find.
 **Spiders** come indoors for their own reasons, and this is the time of year
 people notice them.
 
-None of them bite. None of them breed indoors. None of them damage the
-building. That is not a reason to shrug at them — a room full of lady beetles
+The lady beetles will nip — a light bite that stings briefly and does nothing
+afterward. Beyond that, none of the three breeds indoors and none of them
+damages the building. That is not a reason to shrug at them — a room full of lady beetles
 is genuinely unpleasant, and the smell of a stink bug that has been trodden on
 lasts — but it does change what a sensible response looks like.
 

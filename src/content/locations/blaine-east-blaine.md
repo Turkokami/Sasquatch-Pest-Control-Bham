@@ -258,8 +258,8 @@ supply. All of these overwinter in numbers determined by the surrounding
 landscape rather than by the building, and a house with fields, rough margins
 and a treeline behind it simply has more of them arriving at it.
 
-None of them bite. None of them breed indoors. None of them damage the
-structure. That is not a reason to dismiss the problem — a bedroom ceiling
+Only the lady beetle bites, and it is a nip rather than an injury. What none of
+them does is raise young inside or harm the structure. That is not a reason to dismiss the problem — a bedroom ceiling
 covered in beetles is genuinely miserable, and a stink bug crushed underfoot
 announces itself for an hour — but it does decide what a sensible response looks
 like.
