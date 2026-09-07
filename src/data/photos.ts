@@ -212,6 +212,39 @@ export const servicePhotos: Record<string, Photo> = {
  * ------------------------------------------------------------------------ */
 
 /** Keyed by the town's route segment under /locations/. */
+/* THREE DEAD ENTRIES REMOVED HERE, 4 Sep 2026, and the bug is worth writing
+   down because nothing failed and nothing looked wrong.
+
+   `bellingham`, `lynden` and `bow` were each declared TWICE in this object. An
+   object literal keeps the last duplicate key, so in every case the second
+   entry was the one the site displayed and the first was dead code. The
+   pattern is obvious in hindsight: a batch of vehicle photographs went in
+   first, a batch of technician-at-work photographs went in later under the
+   same three town keys, and the second batch silently replaced the first.
+
+   Vite had been warning about it on every single build. Nobody read the
+   warnings, because the build succeeded, the harness passed, and the pages
+   looked correct — they were showing the later photograph, which is the better
+   one anyway. A silent overwrite that produces a good result is the hardest
+   kind of defect to notice.
+
+   REMOVED RATHER THAN RE-HOMED, deliberately, and this is the important part.
+   The obvious move is to hang the orphans on towns that have no photograph,
+   and that is exactly what the header of this file forbids: the town in a
+   filename is not evidence of where a photograph was taken. Assigning a shot
+   to Deming or Acme because a forest road 'looks like' one of them would be
+   inventing a location on pages whose entire job is to be locally specific.
+
+   These three files stay in the repository, referenced by nothing:
+     /img/work/service-truck-at-lake-padden-bellingham-wa.jpg
+     /img/work/service-van-at-a-home-lynden-wa.jpg
+     /img/work/service-van-at-sunrise-bow-wa.jpg
+   They are good photographs. They go back in the moment the owner says where
+   each was actually taken — and a town that currently has no photograph of its
+   own is the obvious home for whichever of them belongs there.
+
+   Nothing visible changed when this was fixed. Every town kept the photograph
+   it was already displaying. */
 export const locationPhotos: Record<string, Photo> = {
   /* SEVEN MORE, 3 Sep 2026, owner-supplied and named to the town in the
      filename by the person who took them. That is the difference between
@@ -236,24 +269,6 @@ export const locationPhotos: Record<string, Photo> = {
     alt: 'A wrapped service truck parked at the edge of a lake with forested hills across the water',
     caption:
       'Above the water at Alger, at the north end of Skagit County. Everything down here is worked out of Bellingham on the same routes as the Whatcom towns.',
-  },
-  lynden: {
-    file: '/img/work/service-van-at-a-home-lynden-wa.jpg',
-    alt: 'A wrapped service van parked on the gravel drive of a blue single-story home under an autumn sky',
-    caption:
-      'At a house in Lynden. Most of the residential work in this town is ordinary and seasonal — ants in spring, wasps by August, and rodents once the farm ground either side of the city is cut.',
-  },
-  bow: {
-    file: '/img/work/service-van-at-sunrise-bow-wa.jpg',
-    alt: 'A wrapped service van parked on a farm track at sunrise beside a red barn and outbuildings',
-    caption:
-      'First call of the day at a farm near Bow. Agricultural accounts run on the grower’s calendar rather than ours, which in practice means early and planned around whatever else is happening that week.',
-  },
-  bellingham: {
-    file: '/img/work/service-truck-at-lake-padden-bellingham-wa.jpg',
-    alt: 'A wrapped service truck parked at a lakeside lot with forest and low cloud across the water',
-    caption:
-      'At Lake Padden, on the south side of the city. Bellingham is not one job — the greenbelt edges like this one produce rodent and spider pressure that the flat, older streets in the center do not.',
   },
   bellingham: {
     file: '/img/work/pest-control-technician-working-at-a-home-bellingham-wa.jpg',

@@ -868,12 +868,12 @@
     },
     {
       "source": "/van-zandt-wa-pest-control/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/acme/",
       "permanent": true
     },
     {
       "source": "/wickersham-wa-pest-control/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/acme/",
       "permanent": true
     },
     {
@@ -968,7 +968,7 @@
     },
     {
       "source": "/acme-wa-pest-control/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/acme/",
       "permanent": true
     },
     {

@@ -350,12 +350,26 @@ export const towns: Town[] = [
     housing: 'rural',
     kind: 'community',
     pestPressures: [
-      /* Owner-supplied, 3 Sep 2026, and sharpened from the earlier entry. He
-         calls Deming a big area for the business and describes it as a mix of
-         farmland and forest: rats AND mice off the farm ground rather than
-         mice alone, a heavy carpenter ant season through spring and summer,
-         and lady beetles and stink bugs as the autumn wave alongside
-         spiders. */
+      /* CARRIED ACROSS FROM THE DEMING BRIEF, and labeled that way because the
+         comment that used to sit here did not. It read as owner-supplied for
+         Acme while describing, in his words, Deming — "a big area for us", a
+         mix of farmland and forest, rats AND mice off the farm ground rather
+         than mice alone, a heavy carpenter ant season through spring and
+         summer, and lady beetles and stink bugs as the autumn wave alongside
+         spiders.
+
+         Applying that to Acme is an inference rather than a statement, and it
+         is a defensible one: both are unincorporated communities on a fork of
+         the Nooksack, both have working farms strung along a single highway
+         with standing timber on the valley walls, and the pressures follow the
+         terrain rather than the postcode. It is recorded as an inference so
+         that nobody later cites it as something the owner said about Acme.
+
+         WHAT ACME HAS THAT DEMING DOES NOT is the reason its page reads
+         differently: the South Fork runs the length of the community on a
+         valley floor that does not drain quickly, which drives a high water
+         table, damp crawlspaces, a riparian rodent corridor and displacement
+         when the river comes up. */
       'rats and mice off surrounding farm ground', 'carpenter ants through spring and summer',
       'autumn lady beetles and stink bugs', 'wasps and spiders',
     ],
