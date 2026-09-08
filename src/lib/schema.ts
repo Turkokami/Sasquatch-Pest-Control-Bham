@@ -603,6 +603,12 @@ function personNodes() {
            nothing. */
         jobTitle: isReady(p.jobTitle as Owed<string>) ? (p.jobTitle as string) : undefined,
         worksFor: { '@id': ID.local },
+        /* Absolute, because a schema image URL is consumed away from the page
+           it was served on. Omitted entirely for anyone without a photograph
+           — clean() strips undefined — rather than pointing every unpictured
+           person at the company logo, which would tell a consumer that five
+           different people look identical. */
+        image: 'portrait' in p ? `${SITE}${p.portrait as string}` : undefined,
         description: p.bio,
         /* The credential is now an @id-anchored node of its own rather than an
            anonymous blob, and it carries three things it did not before, each

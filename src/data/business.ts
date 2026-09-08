@@ -1274,6 +1274,18 @@ export const people = [
     slug: 'kristofer-elling',
     name: 'Kristofer R. Elling',
     jobTitle: 'Founder and Owner',
+    /* PORTRAIT. Optional, and only two people have one — a face renders where
+       there is a photograph and nothing renders where there is not, rather
+       than a placeholder silhouette standing in for somebody.
+
+       THE SOURCE WAS A MIRRORED SELFIE. Front cameras flip the image, and
+       nobody had un-flipped this one, so the embroidered logo on the cap and
+       the jacket read backwards. On a page whose argument is that every claim
+       here is checkable, a reversed company logo beside a license number is
+       exactly the wrong detail. The published file is flopped back to what a
+       person standing in front of him would have seen, then cropped square on
+       the face. The original stays at /img/kristofer-elling.jpg. */
+    portrait: '/img/team/kristofer-elling-portrait.jpg',
     /* Supplied 30 Aug 2026. An INDIVIDUAL WSDA license — it backs the
        "licensed" claim and the Person node. It is NOT the structural pest
        inspector credential, which is a separate license and remains unset.
@@ -1374,6 +1386,7 @@ export const people = [
        reading a statute backwards, and this row has been on the wrong side of
        that once already. */
     jobTitle: 'Office Manager',
+    portrait: '/img/team/tyson-elling-portrait.jpg',
     credential: 'LI-94159',
     /* THE DIFFERENCE THAT MATTERS ON THIS ROW. Owner stated 31 Aug 2026 that
        Tyson carries a Commercial Applicator license rather than a Commercial

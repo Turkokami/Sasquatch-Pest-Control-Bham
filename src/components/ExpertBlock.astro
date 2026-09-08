@@ -3,6 +3,7 @@
  *  publishable or their credential is still PENDING — the credential is a
  *  hard boundary, not a design element. */
 import { people, isReady, WSDA_CATEGORIES } from '../data/business';
+import { intrinsicSize } from '../lib/images';
 
 interface Props { slug?: string }
 const { slug } = Astro.props;
@@ -23,9 +24,38 @@ const cats = cred && person?.categories?.length
 const title = person && isReady(person.jobTitle as string | '__PENDING__')
   ? (person.jobTitle as string)
   : null;
+
+/* THE PORTRAIT IS OPTIONAL AND UNGUARDED BY THE CREDENTIAL, deliberately.
+   Everything else in this component is gated on the license being real,
+   because a claim about qualification with nothing behind it is the failure
+   this block exists to prevent. A photograph is not a claim of that kind —
+   it is a face — so it renders for anyone publishable who has one and simply
+   does not render for anyone who does not. No placeholder silhouette: an
+   avatar standing in for a person nobody photographed is decoration
+   pretending to be evidence.
+
+   .expert was already display:flex with a gap and a single child. It was
+   built for this. */
+const portrait = person && 'portrait' in person ? (person.portrait as string) : null;
+const psize = portrait ? intrinsicSize(portrait) : null;
 ---
 {show && person && (
   <aside class="expert" data-boilerplate>
+    {portrait && psize && (
+      /* The alt names the person and their role rather than describing the
+         photograph. A screen reader reaching this hears who it is, which is
+         the only useful thing a portrait conveys, and harness check 2 fails
+         an empty alt on any <img> so leaving it blank was never an option. */
+      <img
+        class="portrait"
+        src={portrait}
+        alt={`${person.name}, ${title ?? 'Sasquatch Pest Control'}`}
+        width={psize.width}
+        height={psize.height}
+        loading="lazy"
+        decoding="async"
+      />
+    )}
     <div>
       <b>{person.name}</b>
       <span>{[title, cred ? `${person.credentialName} (${cred})` : null].filter(Boolean).join(' · ')}</span>

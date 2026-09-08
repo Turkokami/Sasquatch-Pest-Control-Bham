@@ -1436,6 +1436,26 @@ footer.site .colophon {
   margin: var(--space-4) 0;
   max-width: var(--measure);
 }
+/* The portrait, where there is one. Sized in rem so it tracks the type scale,
+   and flex:0 0 auto so a long bio cannot squeeze it into an oval. The
+   width/height attributes on the element reserve the box before the file
+   arrives; object-fit keeps it square whatever the source aspect turns out to
+   be. Circular because a square photograph of a face inside a square card
+   reads as a form field. */
+.expert .portrait {
+  flex: 0 0 auto;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+}
+@media (max-width: 30rem) {
+  .expert .portrait {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+}
 .expert b {
   display: block;
   font-family: var(--serif);
