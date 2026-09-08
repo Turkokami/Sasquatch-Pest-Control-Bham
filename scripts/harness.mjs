@@ -61,40 +61,35 @@ const run = (n) => !ONLY?.length || ONLY.includes(n);
             30-odd posts covering topics the new site does not have, which is
             precisely the set where thin content would actually cost us. */
 const FLOORS = { content: 3000, hub: 1200, blog: 900 };
-/* '/trusted-partners/' joined this set on 4 Sep 2026 and the reasoning is
-   worth stating, because a new page arriving straight into an exemption is
-   exactly the move this comment block exists to make people justify.
+/* '/trusted-partners/' WAS IN THIS SET AND IS NOT ANY MORE, removed 8 Sep
+   2026. The whole episode is left here because it is the cleanest example on
+   this project of an exemption being granted honestly and then having to be
+   given back.
 
-   It is a referral page. Its entire job is to hand a reader somebody else's
-   phone number and get out of the way, and it currently lists one company.
-   Three thousand words about one window cleaner would not be a better page,
-   it would be a worse one — the padding would sit between the reader and the
-   number. Same class as /contact/ and /network/: transactional, acted on
-   rather than read. It is NOT exempt from anything else, and every other
-   check still runs against it.
+   It joined on 4 Sep as a genuine utility page: one local window cleaner, 1,043
+   words, and its entire job was to hand a reader somebody else's phone number
+   and get out of the way. Three thousand words about one window cleaner would
+   have been a worse page, not a better one. That was right at the time.
 
-   NOTE WHAT WOULD CHANGE THIS. If the list ever grows to several partners
-   with real description behind each, it stops being a phone number and starts
-   being content, and it should come out of this set rather than quietly keep
-   the exemption it was granted while it was one line long.
+   The note granting it set a concrete trigger rather than a vague one — "at
+   four or more listed organizations, or the first time the page reads as
+   something somebody would land on from a search rather than reach from a
+   service page". Writing a specific trigger is the only reason this got caught
+   instead of quietly persisting, and it is worth doing every time.
 
-   CHECKED AGAINST THAT ON 8 SEP 2026, because the page had just grown from
-   1,043 words to 1,614 — a canine detection specialist and the consulting
-   entomologist were added. The exemption STAYS, and the reasoning is written
-   down so the next person is not deciding it from scratch.
+   The second limb tripped first, which is not what anybody expected. The
+   organization count is still two. But the owner reclassified Coastal K9 from
+   a referral to a subcontractor, the page grew two standards, an explanation
+   of what a detection dog actually does, how to scope a multifamily sweep, and
+   what a chemical-free request can and cannot deliver. A property manager
+   searching for canine bed bug detection would land on that and read it. That
+   is a content page whatever the URL was originally for.
 
-   It still holds two organizations and one consultant. The reader's job on the
-   page is unchanged: find out who to call for something we do not do, and get
-   the number. Length grew because the Coastal K9 entry has to explain why an
-   out-of-state company is on a page whose stated bar is "local" — that is
-   qualification, not content somebody arrived to read.
-
-   THE LINE, stated concretely so it is not a judgment call next time: at four
-   or more listed organizations, or the first time the page reads as something
-   somebody would land on from a search rather than reach from a service page,
-   it comes out of UTILITY and takes the 3,000-word floor like anything else.
-   It is at two. */
-const UTILITY = new Set(['/contact/', '/network/', '/trusted-partners/', '/404.html', '/404/', '/thank-you/']);
+   So it takes the 3,000-word floor like anything else. The count of listed
+   organizations turned out to be the less useful half of the test — what
+   matters is whether somebody arrives to READ the page or to ACT on it, and
+   that can change without the list growing at all. */
+const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank-you/']);
 /* '/gallery/' is a hub in the sense this set means: its job is routing and an
    AEO answer, and the substance a reader came for is the images. It still
    carries the 1,200-word floor and clears it on written section copy — it is
