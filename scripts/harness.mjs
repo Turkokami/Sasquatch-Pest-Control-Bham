@@ -76,7 +76,24 @@ const FLOORS = { content: 3000, hub: 1200, blog: 900 };
    NOTE WHAT WOULD CHANGE THIS. If the list ever grows to several partners
    with real description behind each, it stops being a phone number and starts
    being content, and it should come out of this set rather than quietly keep
-   the exemption it was granted while it was one line long. */
+   the exemption it was granted while it was one line long.
+
+   CHECKED AGAINST THAT ON 8 SEP 2026, because the page had just grown from
+   1,043 words to 1,614 — a canine detection specialist and the consulting
+   entomologist were added. The exemption STAYS, and the reasoning is written
+   down so the next person is not deciding it from scratch.
+
+   It still holds two organizations and one consultant. The reader's job on the
+   page is unchanged: find out who to call for something we do not do, and get
+   the number. Length grew because the Coastal K9 entry has to explain why an
+   out-of-state company is on a page whose stated bar is "local" — that is
+   qualification, not content somebody arrived to read.
+
+   THE LINE, stated concretely so it is not a judgment call next time: at four
+   or more listed organizations, or the first time the page reads as something
+   somebody would land on from a search rather than reach from a service page,
+   it comes out of UTILITY and takes the 3,000-word floor like anything else.
+   It is at two. */
 const UTILITY = new Set(['/contact/', '/network/', '/trusted-partners/', '/404.html', '/404/', '/thank-you/']);
 /* '/gallery/' is a hub in the sense this set means: its job is routing and an
    AEO answer, and the substance a reader came for is the images. It still
