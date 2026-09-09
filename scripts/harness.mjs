@@ -59,8 +59,28 @@ const run = (n) => !ONLY?.length || ONLY.includes(n);
             that duplicates an existing page ships noindex and the auditor
             only walks indexable pages. What passes through here is the
             30-odd posts covering topics the new site does not have, which is
-            precisely the set where thin content would actually cost us. */
-const FLOORS = { content: 3000, hub: 1200, blog: 900 };
+            precisely the set where thin content would actually cost us.
+
+   SPANISH  the /es/ tier. The M1 floor exists to stop a thin page
+            competing on an English query against pages that took real work.
+            The Spanish set is a deliberately scoped subset — twelve pages
+            covering what a customer needs to decide and to call — and padding
+            them to 3,000 words of Spanish would be the exact padding this
+            rule exists to prevent, on pages nobody asked to be encyclopaedic.
+
+            It is a REAL floor, not an exemption. 400 words fails a stub, and
+            these pages are held to it like anything else. What it is not is
+            the deep-content floor, because these are not deep-content pages
+            and were never meant to be.
+
+            CONCRETE TRIGGER for revisiting, written now rather than left
+            vague — the same discipline that caught /trusted-partners/:
+            revisit the moment any Spanish page starts drawing search traffic
+            of its own, or when the set passes about twenty pages. Either
+            means the tier has stopped being a courtesy subset and has become
+            a Spanish site, and a Spanish site takes the same floor as the
+            English one. */
+const FLOORS = { content: 3000, hub: 1200, blog: 900, spanish: 400 };
 /* '/trusted-partners/' WAS IN THIS SET AND IS NOT ANY MORE, removed 8 Sep
    2026. The whole episode is left here because it is the cleanest example on
    this project of an exemption being granted honestly and then having to be
@@ -89,12 +109,33 @@ const FLOORS = { content: 3000, hub: 1200, blog: 900 };
    organizations turned out to be the less useful half of the test — what
    matters is whether somebody arrives to READ the page or to ACT on it, and
    that can change without the list growing at all. */
-const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank-you/']);
+const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank-you/', '/es/contacto/']);
+/* '/es/contacto/' sits in UTILITY beside '/contact/' rather than taking the
+   Spanish floor, because it is the same page in the other language and the
+   reason for the original exemption is unchanged: it is a page to act on,
+   not to read. Classifying the pair differently would be the single-source
+   split this codebase keeps getting bitten by. */
+const isSpanish = (url) => url === '/es/' || url.startsWith('/es/');
 /* '/gallery/' is a hub in the sense this set means: its job is routing and an
    AEO answer, and the substance a reader came for is the images. It still
    carries the 1,200-word floor and clears it on written section copy — it is
    not exempted from anything, only classified. */
-const HUBS = new Set(['/', '/services/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/', '/guides/', '/blog/', '/gallery/', '/what-we-use/']);
+/* '/awards/' JOINED THIS SET 9 Sep 2026, at the owner's instruction and with
+   his reasoning, which was that the page had grown five sections of
+   commentary that read as rambling rather than help. Those sections came out
+   — the reviews explainer, the finalist essay, what the page will never say —
+   and the page fell from just over 3,000 words to 2,165.
+
+   It is classified rather than exempted. Its job now is to list verifiable
+   recognition and hand the reader the two free state lookups that let them
+   check it, which is routing plus an answer — the definition this set already
+   uses. It keeps the 1,200-word floor and clears it on the badge rows, the
+   press entries and the two lookup walkthroughs.
+
+   Trigger: if the page is ever cut below about 1,500 words, or if the WSDA
+   and L&I walkthroughs come out of it, it has stopped being the thing that
+   earned this classification and takes the content floor again. */
+const HUBS = new Set(['/', '/services/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/', '/guides/', '/blog/', '/gallery/', '/what-we-use/', '/awards/']);
 const isBlogPost = (url) => url.startsWith('/blog/') && url !== '/blog/';
 const TITLE_MAX = 62, DESC_MIN = 110, DESC_MAX = 165;
 
@@ -748,9 +789,11 @@ if (run('words')) {
     if (UTILITY.has(p.url)) { exempt.push(`${p.url} (${words}w)`); continue; }
     const floor = HUBS.has(p.url)
       ? FLOORS.hub
-      : isBlogPost(p.url)
-        ? FLOORS.blog
-        : FLOORS.content;
+      : isSpanish(p.url)
+        ? FLOORS.spanish
+        : isBlogPost(p.url)
+          ? FLOORS.blog
+          : FLOORS.content;
     if (words < floor) short.push({ url: p.url, words, floor });
   }
   if (exempt.length) console.log(`  \x1b[2mexempt (utility pages): ${exempt.join(', ')}\x1b[0m`);

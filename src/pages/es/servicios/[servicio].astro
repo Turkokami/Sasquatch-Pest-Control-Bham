@@ -45,6 +45,7 @@ const rails = esServicios
       </>
     ))}
 
+    <div data-boilerplate>
     <h2>Pida una inspección</h2>
     <p>
       Llame o mande un mensaje de texto al{' '}
@@ -52,11 +53,12 @@ const rails = esServicios
       español. También puede{' '}
       <a href="/es/contacto/">escribirnos desde la página de contacto</a>.
     </p>
+    </div>
   </div>
 
   <Faq items={s.faqs} />
 
   <LinkRail heading="Otros servicios" links={rails} />
 
-  <p class="prose">{S.englishOnwardNote}</p>
+  <p class="prose" data-boilerplate>{S.englishOnwardNote}</p>
 </BaseLayout>

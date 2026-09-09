@@ -44,6 +44,24 @@ const answer =
       Cuando el problema es de entrada, se lo decimos.
     </p>
 
+    <h2>Qué pasa cuando llama</h2>
+    <p>
+      Primero preguntamos qué está viendo, dónde y desde cuándo. Con eso ya se
+      descarta bastante, y muchas veces le pedimos una foto: identificar bien
+      la especie cambia el tratamiento, el precio y a veces la respuesta de si
+      hace falta tratar.
+    </p>
+    <p>
+      Después vamos a ver. La inspección es donde se decide el trabajo — no se
+      cotiza un paquete por teléfono sin haber visto la casa, porque el mismo
+      insecto en dos casas distintas puede ser dos trabajos distintos.
+    </p>
+    <p>
+      Lo que le entreguemos dice qué encontramos, qué hicimos y qué falta por
+      hacer. Si parte de lo que falta es trabajo de otro oficio — un plomero,
+      un techador — también va escrito.
+    </p>
+
     <h2>Cuando no es una plaga</h2>
     <p>
       A veces lo que hay no es una plaga: es humedad, una rendija, una
@@ -52,13 +70,15 @@ const answer =
       de comprobar de todo lo que decimos.
     </p>
 
+    <div data-boilerplate>
     <h2>Pida una inspección</h2>
     <p>
       Llame o mande un mensaje de texto al{' '}
       <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, o{' '}
       <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
     </p>
+    </div>
 
-    <p>{S.englishOnwardNote}</p>
+    <p data-boilerplate>{S.englishOnwardNote}</p>
   </div>
 </BaseLayout>

@@ -59,6 +59,37 @@ const answer =
       {skagit.map((c) => <li>{c}</li>)}
     </ul>
 
+    <h2>La presión de plagas cambia según dónde viva</h2>
+    <p>
+      El condado no es igual de un extremo al otro, y eso decide qué llamadas
+      recibimos de cada zona.
+    </p>
+    <p>
+      <strong>El corredor de Lynden y Everson</strong> es zona lechera y
+      agrícola de verdad. Ahí el problema de plagas casi siempre es un problema
+      de alimento: los roedores viven del grano y del suplemento derramado, y
+      ningún tratamiento le gana a un cuarto de alimento abierto. La presión de
+      moscas se trabaja en los sitios de cría y no sobre las adultas.
+    </p>
+    <p>
+      <strong>Blaine, Birch Bay y la orilla</strong> tienen la presión de agua
+      salada: roedores que se mueven entre estructuras de muelle y edificios, y
+      construcciones que se sellan mal porque el aire salado se come los
+      materiales. Ahí la exclusión hay que revisarla más seguido.
+    </p>
+    <p>
+      <strong>Bellingham y Ferndale</strong> son sobre todo casas, y ahí el
+      calendario manda: la lluvia de septiembre y octubre mete a los roedores
+      debajo del piso, y las avispas llegan a su punto más alto a finales de
+      agosto. En los vecindarios viejos, con cimientos que ya se asentaron, la
+      rendija de un cuarto de pulgada aparece sola con los años.
+    </p>
+    <p>
+      <strong>Mount Vernon, Burlington y el condado de Skagit</strong> los
+      atendemos con las mismas rutas, y la mezcla se parece a la de Bellingham
+      con más presión agrícola en las orillas del valle.
+    </p>
+
     <h2>Dónde estamos</h2>
     <p>
       {business.address.street}<br />
@@ -75,13 +106,15 @@ const answer =
       teléfono.
     </p>
 
+    <div data-boilerplate>
     <h2>Pida una inspección</h2>
     <p>
       Llame o mande un mensaje de texto al{' '}
       <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, o{' '}
       <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
     </p>
+    </div>
 
-    <p>{S.englishOnwardNote}</p>
+    <p data-boilerplate>{S.englishOnwardNote}</p>
   </div>
 </BaseLayout>

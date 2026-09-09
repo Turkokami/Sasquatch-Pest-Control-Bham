@@ -105,6 +105,14 @@ export const esServicios: EsServicio[] = [
         ],
       },
       {
+        h2: 'Qué hacer mientras espera',
+        parrafos: [
+          'No tape la entrada del nido. Si sella el agujero por donde entran y salen, las obreras que quedan adentro buscan otra salida, y en un nido dentro de una pared esa otra salida es muchas veces hacia el interior de la casa.',
+          'No rocíe desde una escalera. La reacción normal de la colonia es defenderse, y la mayoría de las caídas graves en este trabajo son de alguien que se movió rápido estando en alto. Si el nido está a más de la altura del hombro, déjelo.',
+          'Mientras tanto, cierre las ventanas de ese lado, mantenga a los niños y a las mascotas lejos de la línea de vuelo — que es la ruta recta que usan para entrar y salir — y no golpee la pared donde está el nido.',
+        ],
+      },
+      {
         h2: 'Prioridad por dónde está',
         parrafos: [
           'Si el nido está junto a una puerta, sobre una banqueta, cerca de un área de juegos o donde alguien alérgico pasa todos los días, eso cambia la urgencia. Díganos dónde está cuando llame.',
@@ -142,6 +150,20 @@ export const esServicios: EsServicio[] = [
           'Si lo que tiene son hormigas de humedad, se lo vamos a decir, y también le vamos a decir que arreglar el agua es parte del trabajo.',
         ],
       },
+      {
+        h2: 'Qué nos sirve que nos diga',
+        parrafos: [
+          'Dónde las vio y a qué hora. Las hormigas carpinteras se mueven sobre todo de noche, así que un rastro a las diez de la noche dice algo distinto que uno a mediodía.',
+          'Si hay aserrín, no lo barra antes de que lleguemos. Ese montoncito dice dónde está el nido, y una vez barrido hay que esperar a que se vuelva a juntar.',
+          'Si puede, mándenos una foto. Con una foto medio decente se distingue la carpintera de la olorosa, y eso cambia el trabajo y el precio antes de que nadie salga de la oficina.',
+        ],
+      },
+      {
+        h2: 'La humedad primero',
+        parrafos: [
+          'Con hormiga de humedad y muchas veces con carpintera, la madera ya estaba húmeda antes de que llegaran. Si no se arregla la fuga, el techo que gotea o la ventilación del sótano, el tratamiento compra tiempo y nada más. Se lo decimos aunque la reparación no la hagamos nosotros.',
+        ],
+      },
     ],
     faqs: [
       {
@@ -174,9 +196,18 @@ export const esServicios: EsServicio[] = [
         ],
       },
       {
+        h2: 'Lo que sí ayuda en casa',
+        parrafos: [
+          'Las arañas van donde hay insectos, y los insectos van donde hay luz. Cambiar las luces de afuera por focos de tono cálido, o moverlas para que no den directo sobre la puerta, baja la comida disponible más que cualquier aerosol.',
+          'Quitar las telarañas con una escoba, incluidos los sacos de huevos, y sellar rendijas debajo de las puertas y alrededor de los tubos ayuda igual. Es el mismo trabajo de exclusión que hacemos para roedores, en versión pequeña.',
+          'Recoger la hojarasca, la leña y el cartón pegados a la pared de la casa quita el refugio de afuera. Nada de esto es dramático, pero junto hace más que rociar el zócalo cada primavera.',
+        ],
+      },
+      {
         h2: 'Cuando le decimos que no hace falta',
         parrafos: [
           'Si lo que tiene es una araña inofensiva de temporada, se lo decimos aunque eso signifique que no hay venta. Es la respuesta correcta y es la más fácil de comprobar después.',
+          'Vale la pena decirlo claro: la araña doméstica gigante es de las que más asustan por el tamaño y de las que menos importan. Es rápida, es grande, y no le va a hacer nada. Matarlas una por una en septiembre no reduce cuántas entran, porque las que entran vienen de afuera y no del interior de la casa.',
         ],
       },
     ],
@@ -210,6 +241,20 @@ export const esServicios: EsServicio[] = [
           'La mosca de racimo no se cría adentro. Se cría afuera y entra en otoño a pasar el invierno en los huecos de las paredes y en el ático, y sale a las ventanas de arriba en los días tibios. Eso se resuelve sellando por dónde entra, no rociando adentro.',
         ],
       },
+      {
+        h2: 'Dónde buscamos',
+        parrafos: [
+          'En una casa: los drenajes de la cocina y del baño, el bote de basura y lo que se derramó debajo de él, la tierra siempre húmeda de las macetas, la charola del refrigerador y, cuando el olor lo acompaña, un animal muerto en un hueco de pared o debajo del piso.',
+          'En un negocio de comida, casi siempre es un drenaje. La película biológica que se forma dentro del tubo es criadero suficiente, y limpiar el piso alrededor no la toca. Eso se trata dentro del drenaje.',
+          'También revisamos debajo y detrás del equipo fijo, que es donde se acumula lo que se barrió y nunca se recogió.',
+        ],
+      },
+      {
+        h2: 'Qué le vamos a pedir',
+        parrafos: [
+          'Que no fumigue el cuarto antes de que lleguemos. Matar a las adultas no cambia el problema y sí nos quita la mejor pista que hay: dónde se están juntando y a qué hora.',
+        ],
+      },
     ],
     faqs: [
       {
@@ -240,6 +285,19 @@ export const esServicios: EsServicio[] = [
         parrafos: [
           'No las matamos. Según el caso, lo correcto es un apicultor, o dejarlas en paz porque un enjambre de paso se va solo en un día o dos.',
           'Cuando hay una colonia establecida dentro de una pared o un techo, es distinto: hay que abrir, sacar el panal y reparar. Si se mata la colonia y se deja el panal adentro, la miel se fermenta, escurre por la pared y atrae a otras plagas — sale peor que el problema original.',
+        ],
+      },
+      {
+        h2: 'Cómo distinguirlas de lejos',
+        parrafos: [
+          'La abeja melífera se ve peluda, más redonda, de café y ámbar apagado, y anda entre las flores. La chaqueta amarilla se ve lisa y brillante, amarillo y negro marcados, con la cintura muy delgada, y anda en la carne asada y en el bote de basura.',
+          'Si entran y salen de un agujero en el suelo, casi seguro es chaqueta amarilla: la abeja melífera no anida en el suelo aquí.',
+        ],
+      },
+      {
+        h2: 'Por qué importa acertar',
+        parrafos: [
+          'Porque la respuesta correcta es opuesta. A la chaqueta amarilla en un lugar de paso se le retira el nido. A la abeja melífera no se le mata, y muchas veces lo correcto es no hacer nada. Tratar una como la otra es el error más común en estas llamadas.',
         ],
       },
     ],

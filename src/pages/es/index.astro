@@ -77,6 +77,15 @@ const answer =
       que se la expliquemos en español, llámenos y lo hacemos por teléfono.
     </p>
 
+    <h2>Qué pasa cuando llama</h2>
+    <p>
+      Preguntamos qué está viendo, dónde y desde cuándo, y muchas veces le
+      pedimos una foto. Identificar bien la especie cambia el tratamiento y a
+      veces cambia la respuesta de si hace falta tratar. Después vamos a ver la
+      casa, porque el mismo insecto en dos casas distintas puede ser dos
+      trabajos distintos.
+    </p>
+
     <h2>Dónde estamos</h2>
     <p>
       {a.street}<br />{a.locality}, {a.region} {a.postalCode}
@@ -86,13 +95,15 @@ const answer =
       8:00 a. m. a 4:00 p. m.
     </p>
 
+    <div data-boilerplate>
     <h2>Pida una inspección</h2>
     <p>
       Llame o mande un mensaje de texto al{' '}
       <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, o{' '}
       <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
     </p>
+    </div>
 
-    <p>{S.englishOnwardNote}</p>
+    <p data-boilerplate>{S.englishOnwardNote}</p>
   </div>
 </BaseLayout>
