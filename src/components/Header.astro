@@ -1,6 +1,13 @@
 ---
 import { business } from '../data/business';
 import { intrinsicSize } from '../lib/images';
+import { t, altPathFor, type Lang } from '../data/i18n';
+
+interface Props {
+  lang?: Lang;
+}
+const { lang = 'en' }: Props = Astro.props;
+const S = t(lang);
 
 /* THE FULL LOCKUP, at the owner's instruction. The first pass used a crop of
    just the mascot's head, on the reasoning that the artwork is a square
@@ -60,33 +67,14 @@ const { width, height } = intrinsicSize(mark);
 
    The three rows are themed rather than alphabetical: what we do, what you
    can read, and how to check us out and get hold of us. */
-const NAV = [
-  { href: '/', label: 'Home' },
-  { href: '/services/', label: 'Services' },
-  { href: '/commercial/', label: 'Commercial' },
-  { href: '/locations/', label: 'Service areas' },
-
-  { href: '/pest-library/', label: 'Pest library' },
-  { href: '/guides/', label: 'Guides' },
-  { href: '/blog/', label: 'Blog' },
-  { href: '/gallery/', label: 'Gallery' },
-
-  { href: '/awards/', label: 'Awards' },
-  { href: '/what-we-use/', label: 'What we apply' },
-  { href: '/about/', label: 'About' },
-  { href: '/contact/', label: 'Contact' },
-];
+const NAV = S.nav;
 
 /* The quieter line. These are not lesser pages — the guarantee is the single
    most linked page on this site after the homepage — they are pages somebody
    goes to on purpose rather than while working out what we do. Promoting any
    of them is a one-line move: cut it from here, add it to NAV, and change the
    two divisors in §14 so twelve becomes whatever the new count is. */
-const UTILITY_NAV = [
-  { href: '/our-guarantee/', label: 'Our guarantee' },
-  { href: '/trusted-partners/', label: 'Trusted partners' },
-  { href: '/network/', label: 'Our network' },
-];
+const UTILITY_NAV = S.utilityNav;
 
 /* WHICH SECTION AM I IN. The masthead had no answer to that on any of 220
    pages — every link looked identical whether you were on it, under it or
@@ -118,7 +106,7 @@ const currentFor = (href: string) =>
         make a masthead read as two brands. The Home chip in the nav below is
         a different thing — it is a row away, it is labeled, and it exists
         precisely because this one is not labeled. */}
-    <a class="brand" href="/">
+    <a class="brand" href={lang === 'es' ? '/es/' : '/'}>
       {/* aria-hidden because the link's accessible name is the wordmark
           beside it. Without it a screen reader announces the company twice.
           The alt is written anyway rather than left empty: harness check 2
@@ -141,7 +129,7 @@ const currentFor = (href: string) =>
         <nav>…</nav> with a lazy match, so a second nav nested or adjacent
         risks it stopping at the first closing tag and counting masthead
         labels as body copy on 224 pages. */}
-    <nav aria-label="Primary">
+    <nav aria-label={S.navPrimaryLabel}>
       <div class="nav-main">
         {NAV.map((n) => (
           <a href={n.href} aria-current={currentFor(n.href)}>{n.label}</a>
@@ -151,6 +139,13 @@ const currentFor = (href: string) =>
         {UTILITY_NAV.map((n) => (
           <a href={n.href} aria-current={currentFor(n.href)}>{n.label}</a>
         ))}
+        {/* The language switch sits inside the existing landmark rather than
+            in a <nav> of its own — see the one-landmark note above. It only
+            renders where a counterpart page actually exists, because a
+            switcher that lands on a 404 is worse than no switcher. */}
+        {altPathFor(path) && (
+          <a class="lang-switch" href={altPathFor(path)} lang={lang === 'es' ? 'en' : 'es'} hreflang={lang === 'es' ? 'en-US' : 'es-US'} aria-label={S.switchToAria}>{S.switchTo}</a>
+        )}
       </div>
     </nav>
   </div>

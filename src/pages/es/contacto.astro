@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import { business } from '../../data/business';
+import { t } from '../../data/i18n';
+
+const path = '/es/contacto/';
+const a = business.address;
+const S = t('es');
+
+/* El formulario es un embed de GoHighLevel y sus campos están en inglés. No
+   se puede traducir desde aquí, así que el teléfono va primero: llamar o
+   mandar un mensaje de texto funciona en cualquier idioma y contestamos en
+   español. El formulario se queda, con la advertencia encima. */
+const answer =
+  `Puede comunicarse con Sasquatch Pest Control por teléfono o mensaje de texto al ${business.phone}, por correo electrónico a ${business.email}, o con el formulario de esta página. Estamos en ${a.street}, en ${a.locality}, y atendemos en horario de oficina los siete días de la semana. Hablamos español.`;
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Contacte a Sasquatch Pest Control"
+  description="Llame o mande un mensaje al 360-410-2199, escríbanos por correo, o mándenos un mensaje. Sasquatch Pest Control está en Bellingham y atiende el condado de Whatcom los siete días de la semana. Hablamos español."
+  kind="page"
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Contacto', path }]}
+>
+  <h1>Contacte a Sasquatch Pest Control</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Llame o mande un mensaje</h2>
+    <p>
+      Teléfono o mensaje de texto: <a href={`tel:${business.phoneE164}`}>{business.phone}</a><br />
+      Correo electrónico: <a href={`mailto:${business.email}`}>{business.email}</a>
+    </p>
+    <p>
+      Si prefiere que le atiendan en español, dígalo al principio de la llamada
+      o escríbalo en su mensaje y así lo hacemos.
+    </p>
+
+    <h2>Nuestra dirección</h2>
+    <p>{a.street}<br />{a.locality}, {a.region} {a.postalCode}</p>
+
+    <h2>Horario</h2>
+    <p>Lunes a viernes: 8:00 a. m. – 6:00 p. m.<br />Sábado y domingo: 8:00 a. m. – 4:00 p. m.</p>
+
+    <h2>Formulario</h2>
+    <p>
+      El formulario de abajo está en inglés porque lo procesa nuestro sistema
+      de citas. Si prefiere no usarlo, llame o mande un mensaje de texto al
+      número de arriba — es la misma bandeja de entrada y le contestamos igual.
+    </p>
+  </div>
+
+  <LeadForm />
+
+  <p class="prose">{S.englishOnwardNote}</p>
+</BaseLayout>

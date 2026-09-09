@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import { business } from '../../data/business';
+import { t } from '../../data/i18n';
+
+const path = '/es/';
+const a = business.address;
+const S = t('es');
+
+/* Keystone Part 15. Esta no es una traducción línea por línea de la portada
+   en inglés — esa página tiene tres mil palabras y la mitad son para Google.
+   Esta existe para que alguien que busca en español entienda qué hacemos,
+   vea que hablamos su idioma, y llame. Todo lo que se afirma aquí está
+   respaldado por la misma información que la versión en inglés. */
+const answer =
+  `Sasquatch Pest Control es una empresa familiar de control de plagas con sede en ${a.locality}, Washington, que atiende los condados de Whatcom y Skagit. Hablamos español. Llame o mande un mensaje de texto al ${business.phone} para una inspección gratuita.`;
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Control de Plagas en Bellingham, Washington"
+  description="Control de plagas en español en Bellingham y el condado de Whatcom. Empresa familiar, con licencia del estado de Washington. Llame o mande un mensaje al 360-410-2199 para una inspección gratuita."
+  kind="page"
+  breadcrumbs={[{ name: 'Inicio', path }]}
+>
+  <h1>Control de Plagas en Bellingham, Washington</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Hablamos español</h2>
+    <p>
+      Si prefiere que le atiendan en español, dígalo cuando llame y así lo
+      hacemos — desde la primera llamada hasta la inspección en su casa. No
+      hace falta que un familiar traduzca por usted.
+    </p>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>.
+    </p>
+
+    <h2>Qué hacemos</h2>
+    <p>
+      Trabajamos con roedores, avispas y avispones, hormigas — incluida la
+      hormiga carpintera —, arañas, moscas y abejas, en casas y en negocios de
+      los condados de Whatcom y Skagit. También hacemos exclusión, que es
+      sellar por dónde entran los animales para que el problema no vuelva.
+    </p>
+
+    <h2>Por qué la exclusión importa</h2>
+    <p>
+      Un tratamiento mata lo que está adentro hoy. Si la entrada sigue
+      abierta, en unos meses vuelve a haber lo mismo. Por eso, cuando el
+      problema es de entrada, se lo decimos y le explicamos qué hay que
+      sellar. A veces lo que usted tiene no es una plaga: es humedad, una
+      rendija o una canaleta rota. Cuando es así, también se lo decimos,
+      aunque nos cueste la venta.
+    </p>
+
+    <h2>Con licencia, y usted lo puede comprobar</h2>
+    <p>
+      Aplicar pesticidas por contrato en el estado de Washington requiere
+      licencia del Departamento de Agricultura, y el estado publica un
+      buscador gratuito donde cualquier persona puede verificar la nuestra.
+      El Departamento de Labor &amp; Industries publica además si la empresa
+      está registrada y si tiene citaciones. Las dos búsquedas y cómo usarlas
+      están explicadas, en inglés, en{' '}
+      <a href="/awards/">nuestra página de reconocimientos</a>.
+    </p>
+
+    <h2>Nuestra garantía</h2>
+    <p>
+      Tenemos una garantía de servicio del 100 %, y sus límites están escritos
+      en la misma página que la promesa — que es la única forma en que vale la
+      pena leer una garantía. Está{' '}
+      <a href="/our-guarantee/">publicada completa, en inglés</a>. Si quiere
+      que se la expliquemos en español, llámenos y lo hacemos por teléfono.
+    </p>
+
+    <h2>Dónde estamos</h2>
+    <p>
+      {a.street}<br />{a.locality}, {a.region} {a.postalCode}
+    </p>
+    <p>
+      Horario: lunes a viernes de 8:00 a. m. a 6:00 p. m.; sábado y domingo de
+      8:00 a. m. a 4:00 p. m.
+    </p>
+
+    <h2>Pida una inspección</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, o{' '}
+      <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

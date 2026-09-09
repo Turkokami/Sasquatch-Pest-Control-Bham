@@ -7,6 +7,7 @@
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
 import { business, SITE, isReady } from '../data/business';
+import { t, altPathFor } from '../data/i18n';
 import { graphScript, type PageSchemaInput } from '../lib/schema';
 import { buildTitle, buildDescription } from '../lib/seo';
 import PhoneBar from '../components/PhoneBar.astro';
@@ -48,6 +49,18 @@ interface Props extends Omit<PageSchemaInput, 'title' | 'description' | 'guideTo
    * than shipping and being discovered in a crawl report months later.
    */
   canonicalTo?: string;
+
+  /**
+   * Keystone Part 15. Spanish is served as its own indexable route under
+   * /es/, not as a browser-side widget — a machine translation is not
+   * crawlable and would not reach the reader searching in Spanish.
+   *
+   * `lang` sets the document language. `altPath` names this page's
+   * counterpart in the other language, and both pages must name each other:
+   * an hreflang pair that only points one way is ignored.
+   */
+  lang?: 'en' | 'es';
+  altPath?: string;
 }
 
 const {
@@ -56,6 +69,8 @@ const {
   brandSuffix = true,
   noindex = false,
   canonicalTo,
+  lang = 'en',
+  altPath,
   ...schemaProps
 } = Astro.props;
 
@@ -68,6 +83,31 @@ if (canonicalTo && !noindex) {
 if (canonicalTo && canonicalTo === schemaProps.path) {
   throw new Error(`${schemaProps.path}: canonicalTo points at itself — drop the prop instead.`);
 }
+
+/* Derived from the one map in i18n.ts rather than passed by each page: a
+   pair typed by hand on two pages drifts, and a one-way hreflang is ignored
+   by every crawler that reads it. A page may still override. */
+const pairedPath = altPath ?? altPathFor(schemaProps.path);
+
+if (pairedPath && !pairedPath.startsWith('/')) {
+  throw new Error(`${schemaProps.path}: altPath must be a site-root path, got ${altPath}.`);
+}
+if (pairedPath === schemaProps.path) {
+  throw new Error(`${schemaProps.path}: altPath points at itself — the pair must be two pages.`);
+}
+
+/* The English page is the x-default: it is the one to serve a reader whose
+   language we cannot infer, and it is the version that exists for every
+   route. Only emitted when a translation actually exists, because an
+   hreflang pointing at a 404 is worse than none. */
+const htmlLang = lang === 'es' ? 'es-US' : 'en-US';
+const alternates = pairedPath
+  ? [
+      { hreflang: lang === 'es' ? 'es-US' : 'en-US', href: `${SITE}${schemaProps.path}` },
+      { hreflang: lang === 'es' ? 'en-US' : 'es-US', href: `${SITE}${pairedPath}` },
+      { hreflang: 'x-default', href: `${SITE}${lang === 'es' ? pairedPath : schemaProps.path}` },
+    ]
+  : [];
 
 const finalTitle = buildTitle(title, { brand: brandSuffix });
 const finalDesc = buildDescription(description);
@@ -99,10 +139,11 @@ const guideTopics = (await getCollection('guides'))
   .map((g) => ({ slug: g.slug, title: g.data.h1 }))
   .sort((a, b) => a.slug.localeCompare(b.slug));
 
+const S = t(lang);
 const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDesc, guideTopics });
 ---
 <!doctype html>
-<html lang="en-US">
+<html lang={htmlLang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -116,6 +157,9 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
     <title>{finalTitle}</title>
     <meta name="description" content={finalDesc} />
     <link rel="canonical" href={canonical} />
+    {alternates.map((a) => (
+      <link rel="alternate" hreflang={a.hreflang} href={a.href} />
+    ))}
     {noindex && <meta name="robots" content="noindex,follow" />}
 
     <meta property="og:type" content="website" />
@@ -147,9 +191,9 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
         gets past a masthead of eight links on every one of 200-odd pages.
         Off-canvas until it takes focus — never display:none, which would
         take it out of the tab order and defeat the point. */}
-    <a class="skip" href="#main">Skip to content</a>
-    <PhoneBar />
-    <Header />
+    <a class="skip" href="#main">{S.skip}</a>
+    <PhoneBar lang={lang} />
+    <Header lang={lang} />
     <main id="main">
       <div class="wrap">
         {schemaProps.breadcrumbs?.length ? <Breadcrumbs items={schemaProps.breadcrumbs} /> : null}
