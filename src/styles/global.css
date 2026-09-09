@@ -948,6 +948,35 @@ section[data-boilerplate]:not(.cta) > h2 {
   color: var(--ink-3);
 }
 
+/* GRID VARIANT. Same face, same hairline, same hover — the only thing that
+   changes is the layout: an auto-fitting grid instead of the two-column flow
+   the prose rails use. It exists for the commercial hub, where nine industry
+   buttons sit at the top of the page as the first thing a business owner
+   uses, and a two-column list of nine leaves a ragged column with five in
+   one side and four in the other.
+
+   auto-fit rather than a fixed column count so the row reflows on its own
+   between a phone and a desktop, and centered text because these are labels
+   rather than list items — a left-aligned label in a wide tile reads as an
+   unfinished row. */
+.rail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.5rem;
+  columns: auto;
+  max-width: none;
+}
+.rail-grid li {
+  margin: 0;
+}
+.rail-grid a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* ----------------------------------------------------- §12  breadcrumbs */
 
 .crumbs {

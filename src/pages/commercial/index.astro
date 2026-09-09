@@ -61,10 +61,22 @@ const guideLinks = await guideLinksFor(path);
 /* Verticals that have a written page. Named on the hub either way; linked only
    when there is something behind the link. */
 const industryEntries = await getCollection('industries');
-const writtenVerticals = industryEntries.map((e) => ({
-  href: `/commercial/${e.data.industry}/`,
-  label: e.data.h1,
-}));
+
+/* Short labels for the chooser at the top of the page. Every industry h1
+   ends in "Pest Control" — true, and useless as a button label on the
+   commercial page of a pest control company, where it is the one word every
+   button would share. Derived from the h1 rather than kept as a second list
+   here, because a hand-maintained parallel list is the drift this file
+   already avoids everywhere else.
+
+   Sorted so the order is the reader's (alphabetical) rather than the
+   collection's, which is filesystem order and means nothing to anybody. */
+const writtenVerticals = industryEntries
+  .map((e) => ({
+    href: `/commercial/${e.data.industry}/`,
+    label: e.data.h1.replace(/\s*Pest Control.*$/i, '').trim(),
+  }))
+  .sort((a, b) => a.label.localeCompare(b.label));
 ---
 <BaseLayout
   path={path}
@@ -76,6 +88,20 @@ const writtenVerticals = industryEntries.map((e) => ({
 >
   <h1>Commercial Pest Control in Whatcom County</h1>
   <AnswerBox text={answer} />
+
+  {/* THE INDUSTRY CHOOSER SITS AT THE TOP, above the lead form, and that is
+      the point of it. A business owner landing here already knows what they
+      run — the useful first move is to send them to their own vertical, not
+      to make them read six hundred words of general commercial copy and then
+      scroll past a form to find the link. It is nine buttons and costs almost
+      no vertical space.
+
+      Grid rather than the two-column flow the prose rails use: nine items
+      split two-and-one leaves a ragged column, and these are short labels
+      being used as a chooser rather than page titles being listed. */}
+  {writtenVerticals.length > 0 && (
+    <LinkRail heading="Choose your industry" links={writtenVerticals} grid />
+  )}
 
   {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
       It used to hang off the foot of Cta.astro, which put it under three
@@ -127,13 +153,10 @@ const writtenVerticals = industryEntries.map((e) => ({
       genuinely specific to say about them to justify a page of their own.
     </p>
 
-    {/* Built from the collection rather than from the twelve-item list, so a
-        link only appears once there is a page behind it. The alternative — a
-        grid of twelve links, ten of which go to a stub — is the thin-page
-        problem the geo routes already solved this way. */}
-    {writtenVerticals.length > 0 && (
-      <LinkRail heading="Commercial programs with their own page" links={writtenVerticals} />
-    )}
+    {/* The rail that used to sit here moved to the top of the page. It is not
+        repeated: two copies of the same nine links on one page is a second
+        set of duplicate targets for no reader benefit, and the descriptions
+        below already link into each vertical where one is written. */}
 
     <h3>Agriculture — the Lynden and Everson corridor</h3>
     <p>

@@ -5,8 +5,11 @@
 interface Props {
   heading: string;
   links: { href: string; label: string }[];
+  /** Lay the buttons out as an auto-fitting grid rather than a two-column
+   *  flow. For short labels used as a chooser, not for prose-length titles. */
+  grid?: boolean;
 }
-const { heading, links } = Astro.props;
+const { heading, links, grid = false } = Astro.props;
 ---
 {/* data-boilerplate: a link rail is navigation, not content. The harness
     strips it from both the uniqueness floor and the duplicate-sentence
@@ -26,7 +29,7 @@ const { heading, links } = Astro.props;
 {links.length > 0 && (
   <section data-boilerplate>
     <h2>{heading}</h2>
-    <ul class="rail">
+    <ul class={grid ? 'rail rail-grid' : 'rail'}>
       {links.map((l) => (
         <li><a href={l.href}>{l.label}</a></li>
       ))}
