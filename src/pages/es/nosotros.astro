@@ -1,0 +1,92 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import { business } from '../../data/business';
+import { t } from '../../data/i18n';
+
+const path = '/es/nosotros/';
+const S = t('es');
+
+/* No se repiten aquí números de licencia. Se dice qué buscar y dónde
+   buscarlo, que es lo que le sirve al lector y lo que no se desactualiza
+   solo. La página en inglés lleva la lista completa. */
+const answer =
+  `Sasquatch Pest Control es una empresa familiar de control de plagas y exclusión en ${business.address.locality}, Washington, fundada por Kristofer Elling. Trabajamos nuestras propias rutas en el condado de Whatcom en lugar de despachar desde un centro de llamadas regional, y todo tratamiento que hacemos está respaldado por nuestra Garantía de Servicio 100 %.`;
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Quiénes Somos | Sasquatch Pest Control"
+  description="Sasquatch Pest Control es una empresa familiar de control de plagas y exclusión en Bellingham, Washington. Hablamos español. Llame al 360-410-2199."
+  kind="page"
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Quiénes somos', path }]}
+>
+  <h1>Quiénes Somos</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Una empresa familiar, con rutas propias</h2>
+    <p>
+      Somos una empresa familiar de {business.address.locality}. Trabajamos
+      nuestras propias rutas en el condado de Whatcom: el técnico que llega a
+      su casa trabaja aquí, no es un subcontratista, y no lo despacha un
+      centro de llamadas de otro estado.
+    </p>
+
+    <h2>Cómo puede comprobar que tenemos licencia</h2>
+    <p>
+      No le pedimos que nos crea. Aplicar pesticidas por contrato en el estado
+      de Washington requiere licencia del Departamento de Agricultura (WSDA), y
+      el estado publica un buscador gratuito donde cualquiera puede consultar
+      por número de licencia, por persona o por empresa. Le dice el tipo de
+      licencia, si está vigente y en qué categorías.
+    </p>
+    <p>
+      El Departamento de Labor &amp; Industries publica aparte si la empresa
+      está registrada, si su cuenta de compensación al trabajador está al
+      corriente — que es lo que lo protege a usted si alguien se lastima
+      debajo de su casa — y si hay citaciones en su contra.
+    </p>
+    <p>
+      Las dos búsquedas, con los enlaces y cómo leerlas, están explicadas en{' '}
+      <a href="/awards/">nuestra página de reconocimientos</a>, en inglés. Si
+      quiere que le ayudemos a hacer la búsqueda, llámenos y la hacemos juntos
+      por teléfono. Preferimos que la haga.
+    </p>
+
+    <h2>Qué pensamos de este trabajo</h2>
+    <p>
+      El control de plagas tiene mala fama y en buena parte se la ganó. Los
+      peores hábitos del sector son variaciones de lo mismo: vender un
+      contrato que el cliente no necesita, tratar un síntoma y no la causa, y
+      no decir cuándo el problema no es una plaga.
+    </p>
+    <p>
+      Por eso, cuando lo que usted tiene es humedad, una rendija o una
+      canaleta rota, se lo decimos, aunque eso signifique que no hay venta.
+      Que alguien le diga que parte de lo que pide no es un problema de plagas
+      es la señal más confiable de que le están diciendo la verdad.
+    </p>
+
+    <h2>Nuestra área de servicio</h2>
+    <p>
+      Trabajamos en todo el condado de Whatcom — Bellingham y sus vecindarios,
+      más Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas y
+      Sudden Valley — y parte del condado de Skagit. La lista completa está en{' '}
+      <a href="/es/areas-de-servicio/">áreas de servicio</a>.
+    </p>
+
+    <h2>Hablamos español</h2>
+    <p>
+      Si prefiere que lo atiendan en español, dígalo cuando llame. No hace
+      falta que un familiar traduzca por usted, y tampoco hace falta que firme
+      nada que no le hayamos explicado en su idioma primero.
+    </p>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>.
+    </p>
+
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import { business } from '../../data/business';
+import { t } from '../../data/i18n';
+
+const path = '/es/areas-de-servicio/';
+const S = t('es');
+
+/* Los nombres de ciudad no se traducen: Ferndale es Ferndale en el GPS, en
+   el sobre del correo y en la conversación. Traducirlos sería inventar
+   lugares. Lo que se traduce es todo lo demás.
+
+   La lista sale de la misma fuente que /locations/ — no se agregó ninguna
+   comunidad que la versión en inglés no atienda. */
+const whatcom = [
+  'Bellingham',
+  'Ferndale',
+  'Lynden',
+  'Blaine',
+  'Birch Bay',
+  'Everson',
+  'Nooksack',
+  'Sumas',
+  'Sudden Valley',
+  'Custer',
+  'Deming',
+  'Acme',
+];
+const skagit = ['Mount Vernon', 'Burlington', 'Sedro-Woolley', 'Bow', 'Alger'];
+
+const answer =
+  `Sasquatch Pest Control atiende Bellingham y las comunidades del condado de Whatcom a su alrededor — Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas y Sudden Valley — y parte del condado de Skagit. Hablamos español. Llame o mande un mensaje de texto al ${business.phone}.`;
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Áreas de Servicio | Condado de Whatcom, WA"
+  description="Sasquatch Pest Control atiende Bellingham, Ferndale, Lynden, Blaine, Birch Bay y las comunidades cercanas del condado de Whatcom, además de parte del condado de Skagit."
+  kind="page"
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Áreas de servicio', path }]}
+>
+  <h1>Áreas de Servicio</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Condado de Whatcom</h2>
+    <ul>
+      {whatcom.map((c) => <li>{c}</li>)}
+    </ul>
+    <p>
+      También atendemos las comunidades no incorporadas de los alrededores. Si
+      no ve su pueblo en la lista, llámenos de todos modos y le decimos si le
+      quedamos.
+    </p>
+
+    <h2>Condado de Skagit</h2>
+    <ul>
+      {skagit.map((c) => <li>{c}</li>)}
+    </ul>
+
+    <h2>Dónde estamos</h2>
+    <p>
+      {business.address.street}<br />
+      {business.address.locality}, {business.address.region}{' '}
+      {business.address.postalCode}
+    </p>
+
+    <h2>Páginas por ciudad</h2>
+    <p>
+      Cada ciudad y varios vecindarios tienen su propia página con la presión
+      de plagas de esa zona. Esas páginas están en inglés y las encuentra en{' '}
+      <a href="/locations/">nuestra sección de áreas de servicio</a>. Si quiere
+      la información de su zona en español, llámenos y se la damos por
+      teléfono.
+    </p>
+
+    <h2>Pida una inspección</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, o{' '}
+      <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

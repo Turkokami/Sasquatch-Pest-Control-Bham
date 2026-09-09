@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import { business } from '../../../data/business';
+import { esServicios } from '../../../data/es-servicios';
+import { t } from '../../../data/i18n';
+
+const path = '/es/servicios/';
+const S = t('es');
+
+/* Seis servicios, no veintitrés. La lista en inglés tiene veintitrés spokes
+   confirmados; estos seis son los que se tradujeron primero porque son los
+   que más se piden. Los demás siguen existiendo en inglés — lo que no se
+   hace es anunciar en español un servicio cuya página no existe todavía. */
+const answer =
+  `Sasquatch Pest Control atiende roedores, avispas y avispones, hormigas incluida la carpintera, arañas, moscas y abejas en casas y negocios de los condados de Whatcom y Skagit. Hablamos español. Llame o mande un mensaje de texto al ${business.phone}.`;
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Servicios de Control de Plagas en Bellingham"
+  description="Control de plagas en español en Bellingham y el condado de Whatcom: roedores, avispas, hormigas, arañas, moscas y abejas. Llame al 360-410-2199."
+  kind="page"
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Servicios', path }]}
+>
+  <h1>Servicios de Control de Plagas</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Qué atendemos</h2>
+    <ul>
+      {esServicios.map((s) => (
+        <li>
+          <a href={`/es/servicios/${s.slug}/`}>{s.nav}</a> — {s.answer.split('.')[0]}.
+        </li>
+      ))}
+    </ul>
+
+    <h2>Exclusión</h2>
+    <p>
+      Casi todo lo que hacemos bien termina en exclusión: sellar por dónde
+      entran los animales para que el problema no vuelva. Un tratamiento
+      resuelve lo de hoy; una entrada abierta vuelve a llenarse en unos meses.
+      Cuando el problema es de entrada, se lo decimos.
+    </p>
+
+    <h2>Cuando no es una plaga</h2>
+    <p>
+      A veces lo que hay no es una plaga: es humedad, una rendija, una
+      canaleta rota o una araña de temporada que se va sola. Cuando es así
+      también se lo decimos, aunque nos cueste la venta. Es la parte más fácil
+      de comprobar de todo lo que decimos.
+    </p>
+
+    <h2>Pida una inspección</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, o{' '}
+      <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

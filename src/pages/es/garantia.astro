@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import { business } from '../../data/business';
+import { t } from '../../data/i18n';
+
+const path = '/es/garantia/';
+const S = t('es');
+
+/* Keystone Part 15. Esta página describe un compromiso contractual, así que
+   se tradujo con más cuidado que las demás y no se le agregó nada: cada
+   límite que aparece aquí aparece igual en /our-guarantee/, y ninguno de los
+   de allá se quedó fuera. El documento que rige es el acuerdo de servicio en
+   inglés que usted firma, y eso se dice aquí abajo en lugar de dejar que la
+   traducción parezca el contrato. */
+const answer =
+  'Nuestra Garantía de Servicio 100 % es un compromiso de regresar y volver a tratar. En un programa recurrente activo, si vuelve una plaga cubierta por ese programa entre visitas programadas, usted llama y regresamos sin cargo adicional. No es una promesa de que nunca volverá a ver un insecto, y sus límites están escritos aquí mismo, junto a la promesa.';
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Nuestra Garantía de Servicio 100 %"
+  description="La Garantía de Servicio 100 % de Sasquatch Pest Control, con sus límites escritos junto a la promesa. Bellingham y el condado de Whatcom. Llame al 360-410-2199."
+  kind="page"
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Nuestra garantía', path }]}
+>
+  <h1>Nuestra Garantía de Servicio 100 %</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Qué significa la garantía</h2>
+    <p>
+      Una garantía vale lo que dicen sus términos. La nuestra es un compromiso
+      de volver a dar servicio, con condiciones definidas y publicadas
+      completas, para que usted lea exactamente qué está recibiendo antes de
+      comprar y no después.
+    </p>
+
+    <h2>Qué no significa</h2>
+    <p>
+      Esta es la parte que la mayoría de las páginas de garantía deja fuera, y
+      dejarla fuera es lo que vuelve inútil una garantía. La nuestra es un
+      compromiso de regresar y volver a tratar. No es una promesa de que usted
+      nunca volverá a ver un insecto, no es un seguro contra daños
+      estructurales o a la propiedad causados por plagas, y no cubre un
+      problema nuevo distinto de aquel para el que nos contrató.
+    </p>
+    <p>
+      A veces verá competidores que anuncian visitas de regreso ilimitadas sin
+      ninguna condición escrita en ninguna parte del sitio. Una promesa sin
+      condiciones no se puede exigir tal como está escrita, lo que en la
+      práctica significa que se concede a criterio de la empresa en lugar de
+      que se le deba a usted. Preferimos publicar condiciones que usted nos
+      pueda exigir.
+    </p>
+
+    <h2>Qué cubre en la práctica</h2>
+    <p>
+      En un programa recurrente activo: si una plaga cubierta por ese programa
+      regresa entre visitas programadas, usted llama y volvemos sin cargo
+      adicional. No hay límite en el número de visitas de regreso dentro del
+      periodo del programa, y no hay discusión sobre si fue demasiado pronto.
+    </p>
+    <p>
+      En un tratamiento de una sola vez: la garantía corre por el periodo que
+      indique su acuerdo de servicio para ese trabajo específico, porque una
+      visita única para un problema específico es un compromiso distinto de un
+      programa continuo. Ese periodo va escrito en el acuerdo antes de que
+      usted lo firme, no mencionado vagamente en otra parte.
+    </p>
+    <p>
+      El trabajo de exclusión y reparación se cubre con sus propios términos.
+    </p>
+
+    <h2>El documento que rige</h2>
+    <p>
+      Esta página explica la garantía en español. El documento que rige es el
+      acuerdo de servicio que usted firma, que está en inglés, y{' '}
+      <a href="/our-guarantee/">la versión completa de esta página</a> también
+      está en inglés. Si algo no coincide, manda el acuerdo firmado.
+    </p>
+    <p>
+      Antes de firmar cualquier cosa, pídanos que le expliquemos los términos
+      en español por teléfono o en persona. Lo hacemos con gusto y es mejor
+      preguntarlo antes que después.
+    </p>
+
+    <h2>Cómo usar la garantía</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> y díganos que
+      la plaga regresó. No hace falta que argumente nada: si está dentro del
+      programa, programamos la visita.
+    </p>
+
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

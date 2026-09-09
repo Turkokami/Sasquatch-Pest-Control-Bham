@@ -30,6 +30,16 @@ export type Lang = 'en' | 'es';
  */
 export const PAGE_PAIRS: Record<string, string> = {
   '/': '/es/',
+  '/services/': '/es/servicios/',
+  '/services/rodent-control/': '/es/servicios/control-de-roedores/',
+  '/services/wasp-control/': '/es/servicios/control-de-avispas/',
+  '/services/ant-control/': '/es/servicios/control-de-hormigas/',
+  '/services/spider-control/': '/es/servicios/control-de-aranas/',
+  '/services/fly-control/': '/es/servicios/control-de-moscas/',
+  '/services/bee-removal/': '/es/servicios/eliminacion-de-abejas/',
+  '/locations/': '/es/areas-de-servicio/',
+  '/our-guarantee/': '/es/garantia/',
+  '/about/': '/es/nosotros/',
   '/contact/': '/es/contacto/',
 };
 

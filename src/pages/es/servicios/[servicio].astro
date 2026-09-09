@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import Faq from '../../../components/Faq.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import { business } from '../../../data/business';
+import { esServicios } from '../../../data/es-servicios';
+import { t } from '../../../data/i18n';
+
+export function getStaticPaths() {
+  return esServicios.map((s) => ({ params: { servicio: s.slug }, props: { s } }));
+}
+
+const { s } = Astro.props;
+const path = `/es/servicios/${s.slug}/`;
+const S = t('es');
+
+/* El riel de enlaces apunta solo a páginas en español que existen. Mandar a
+   un lector hispanohablante al inglés desde un riel "relacionado" es
+   exactamente la deriva que este alcance se trazó para evitar. */
+const rails = esServicios
+  .filter((o) => o.slug !== s.slug)
+  .map((o) => ({ href: `/es/servicios/${o.slug}/`, label: o.h1.replace(/ en Bellingham.*$/i, '') }));
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title={s.title}
+  description={s.description}
+  kind="page"
+  breadcrumbs={[
+    { name: 'Inicio', path: '/es/' },
+    { name: 'Servicios', path: '/es/servicios/' },
+    { name: s.nav, path },
+  ]}
+>
+  <h1>{s.h1}</h1>
+  <AnswerBox text={s.answer} />
+
+  <div class="prose">
+    {s.secciones.map((sec) => (
+      <>
+        <h2>{sec.h2}</h2>
+        {sec.parrafos.map((p) => <p>{p}</p>)}
+      </>
+    ))}
+
+    <h2>Pida una inspección</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>. Hablamos
+      español. También puede{' '}
+      <a href="/es/contacto/">escribirnos desde la página de contacto</a>.
+    </p>
+  </div>
+
+  <Faq items={s.faqs} />
+
+  <LinkRail heading="Otros servicios" links={rails} />
+
+  <p class="prose">{S.englishOnwardNote}</p>
+</BaseLayout>
