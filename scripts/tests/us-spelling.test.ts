@@ -35,6 +35,19 @@ import path from 'node:path';
 const BRITISH: [RegExp, string][] = [
   /* The ones that have actually appeared on this site. */
   [/\bneighbour(s|hood|hoods|ing|ly)?\b/gi, 'neighbor…'],
+  /* FOURTH TIME, 10 Sep 2026. 'colour' was not in this list at all, and it had
+     reached five places including the body copy of a published species page —
+     "The colouring is distinctive", on great-golden-digger-wasp. A commit two
+     days earlier was titled "Use US spellings in the new wasp pages" and this
+     test passed it, because the test could not see the word.
+
+     That is now harbour, storey, programme and colour, all found the same way:
+     somebody wrote one, and only then did the list learn it. The list is
+     reactive by construction and this comment is the fourth notice of it. If
+     anybody ever wants to fix the cause rather than the instances, the answer
+     is a real en-GB word list rather than a hand-kept array of the words that
+     have already embarrassed us. Until then, add them as they turn up. */
+  [/\bcolour(s|ed|ing|ful|less|ation)?\b/gi, 'color…'],
   /* Added 4 Sep 2026 after 'harbour' appeared eleven times across two new
      Blaine pages and this test passed every one of them. It caught 'neighbour'
      in the same file and stopped there, which is how a British spelling reached

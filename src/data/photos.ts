@@ -500,7 +500,7 @@ export const speciesPhotos: Record<string, Photo> = {
      identification. That matters here for the same reason it did on the
      bald-faced hornet: a small pale spider cannot be taken to species from a
      photograph — Cheiracanthium is separated on the palps and the eye
-     arrangement, not on colour — so the owner naming it is what settles it.
+     arrangement, not on color — so the owner naming it is what settles it.
 
      The frame is worth having because of what the spider is DOING. The
      profile's claim is that this species hunts at night without a web, which

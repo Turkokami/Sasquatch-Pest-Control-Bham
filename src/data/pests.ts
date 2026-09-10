@@ -147,6 +147,7 @@ export const PESTS: Pest[] = [
      for it, and the honest answer is leave it alone. */
   { slug: 'great-golden-digger-wasp', name: 'Great golden digger wasp', scientific: 'Sphex ichneumoneus', group: 'stinging' },
   { slug: 'grass-carrying-wasp', name: 'Grass-carrying wasp', scientific: 'Isodontia spp.', group: 'stinging' },
+  { slug: 'mud-dauber', name: 'Mud dauber', scientific: 'Sceliphron caementarium, Chalybion californicum', group: 'stinging' },
 
   /* Structural */
   { slug: 'pacific-dampwood-termite', name: 'Pacific dampwood termite', scientific: 'Zootermopsis angusticollis', group: 'structural' },
