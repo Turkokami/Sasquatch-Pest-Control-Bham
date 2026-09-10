@@ -1,0 +1,56 @@
+---
+/**
+ * Clip — one of the company's own short videos, served from this origin.
+ *
+ * NOT Video.astro, AND THE DIFFERENCE MATTERS. That component wraps a YouTube
+ * video and spends a paragraph explaining why it will not load a megabyte of
+ * third-party player until somebody presses play. This one has no third party
+ * to keep out: the file is ours, on our own domain, with no cookie and no
+ * request to Google. What it inherits from that component is the principle
+ * rather than the mechanism — nothing downloads until the reader asks.
+ *
+ * `preload="none"` is what enforces that. The browser fetches the poster
+ * frame, which is a JPEG of about 100 kB, and fetches nothing else until the
+ * play control is used. Drop the attribute and Chrome will pull the metadata
+ * and the first segment of every clip on the page whether or not anybody
+ * wanted it, which is the exact cost Video.astro exists to avoid.
+ *
+ * WHY THESE ARE NOT GIFS, which is how they arrived. The two source files were
+ * 5.2 MB and 11.4 MB; as H.264 they are 271 kB and 776 kB — sixteen megabytes
+ * down to one. A GIF also cannot be paused, and a looping animation with no
+ * stop control is a WCAG 2.2.2 failure on any page that carries one. The MP4
+ * has real controls, so the reader decides.
+ *
+ * No autoplay, no loop, no muted-autoplay trick. A short clip of an insect is
+ * content a reader chooses, not decoration.
+ */
+interface Props {
+  /** Path under /public, without extension — .mp4 and .jpg are both expected. */
+  src: string;
+  /** Describes the clip for somebody who cannot watch it. */
+  alt: string;
+  /** Rendered under the video. Adds what the footage cannot show on its own. */
+  caption: string;
+}
+const { src, alt, caption } = Astro.props;
+---
+<figure class="clip">
+  {/* The track element a linter would want here is deliberately absent: there
+      is no speech in either clip, and an empty captions track is worse than
+      none — it advertises captions that carry nothing. The description a
+      non-hearing or non-seeing reader needs is the caption below, which is
+      real prose rather than a stub file. */}
+  <video
+    controls
+    preload="none"
+    playsinline
+    poster={`${src}.jpg`}
+    aria-label={alt}
+    width="654"
+    height="368"
+  >
+    <source src={`${src}.mp4`} type="video/mp4" />
+    <a href={`${src}.mp4`}>Download the clip</a>
+  </video>
+  <figcaption>{caption}</figcaption>
+</figure>

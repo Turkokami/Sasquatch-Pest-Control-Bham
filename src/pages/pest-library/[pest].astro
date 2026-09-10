@@ -10,7 +10,8 @@ import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
 import { blogPostsFor } from '../../lib/blog';
 import Photo from '../../components/Photo.astro';
-import { speciesPhotos } from '../../data/photos';
+import { speciesPhotos, speciesClips } from '../../data/photos';
+import Clip from '../../components/Clip.astro';
 import SourceList from '../../components/SourceList.astro';
 import { PESTS, PEST_GROUPS, pestBySlug, pestsInGroup } from '../../data/pests';
 
@@ -108,6 +109,13 @@ const blogLinks = await blogPostsFor(path);
       is worse than none: the page teaches how to tell two species apart and
       then illustrates itself with the wrong one. */}
   {speciesPhotos[species.slug] && <Photo photo={speciesPhotos[species.slug]} priority />}
+
+  {/* A CLIP ONLY WHERE THE BEHAVIOUR IS THE IDENTIFICATION. Two species have
+      one. Both are solitary wasps that people meet mid-task, and in both cases
+      what she is carrying settles which wasp she is — grass into a cavity, or
+      paralysed prey to a burrow. A still shows the insect; the clip shows the
+      thing the page is actually teaching. See speciesClips in photos.ts. */}
+  {speciesClips[species.slug] && <Clip {...speciesClips[species.slug]} />}
 
   {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
       It used to hang off the foot of Cta.astro, which put it under three

@@ -517,6 +517,24 @@ export const speciesPhotos: Record<string, Photo> = {
     caption:
       'Caught with prey, out in the open, and there is no web in the frame — which is the point. This species does not sit and wait in a snare; it spends the day in a silk pocket where the ceiling meets the wall and hunts on foot at night. That is why you meet one on a wall rather than in a web, and why sealing the corners it retreats into does more than spraying the room.',
   },
+  /* GREAT GOLDEN DIGGER WASP, 9 Sep 2026, the owner's photograph and his
+     identification — and the one image on this site that is doing evidential
+     work rather than illustrative work. The regional literature has this as an
+     eastern-Washington insect, little known west of the Cascades. The profile
+     says we find it here anyway, in pockets of dry sandy soil, and this frame
+     is why that sentence is allowed to exist: a female with a paralysed
+     katydid on exactly the substrate the nesting research describes.
+
+     The alt says 'katydid or cricket' on purpose. Both are favoured prey for
+     this species, the owner called it a cricket, and a photograph of green
+     Orthoptera at this angle does not settle which — so the alt does not
+     pretend to. */
+  'great-golden-digger-wasp': {
+    file: '/img/pests/great-golden-digger-wasp.jpg',
+    alt: 'A large wasp with rust-orange legs and a dark-tipped orange abdomen standing on dry gravelly soil, gripping a bright green katydid or cricket beneath its body',
+    caption:
+      'Rust legs, orange abdomen with a dark rear, and prey bigger than she is. She stings a katydid into paralysis and hauls it to a burrow she dug in dry sandy ground — which is the detail that matters locally, because most of this county is far too wet for her and she is finding the pockets that are not.',
+  },
   'bumble-bee': {
     file: '/img/pests/bumble-bee.jpg',
     alt: 'A bumble bee photographed close up on a pale concrete surface, its banded thorax and pollen-dusted legs clearly visible',
@@ -668,4 +686,36 @@ export const garageDoorSeal: PhotoPair = {
   },
   caption:
     'The same door, the same morning. A garage door seal is the single most common way a rodent walks into a house in this county, and it is invisible from inside because the door still closes and still looks shut. Brush rather than rubber on a door this age: rubber needs a straight, undamaged edge to seal against, and a brush strip keeps working on an edge that has already been chewed.',
+};
+
+/* --------------------------------------------------------------------------
+ * SHORT CLIPS OF OUR OWN, keyed by pest slug.
+ *
+ * Two species, and the test for adding a third is narrow: the clip has to
+ * carry the identification rather than decorate the page. Both of these do.
+ * A grass-carrying wasp is identified by the fact that she is carrying grass
+ * into a hole; a great golden digger wasp by the fact that she is hauling
+ * paralysed prey to a burrow she dug. Neither of those is a still photograph.
+ *
+ * BOTH ARRIVED AS GIFS AND ARE NOT SERVED AS GIFS. 5.2 MB and 11.4 MB became
+ * 271 kB and 776 kB as H.264 — sixteen megabytes down to one, on a site whose
+ * video component refuses to load a megabyte of YouTube player without
+ * consent. A GIF also cannot be paused, which fails WCAG 2.2.2. See Clip.astro.
+ *
+ * `src` is the path with no extension. Clip.astro expects `.mp4` and a `.jpg`
+ * poster beside it, and a missing file fails the build like any other.
+ */
+export const speciesClips: Record<string, { src: string; alt: string; caption: string }> = {
+  'great-golden-digger-wasp': {
+    src: '/video/great-golden-digger-wasp-dragging-a-katydid-to-its-burrow',
+    alt: 'A large orange-legged wasp dragging a limp bright green katydid backwards across dry gravel toward a dark burrow entrance',
+    caption:
+      'Dragging rather than flying, because the prey outweighs her. The burrow mouth is the dark gap at the left of frame. This is the behaviour the page is about — she paralyses a katydid, hauls it home, and seals it in a cell with a single egg.',
+  },
+  'grass-carrying-wasp': {
+    src: '/video/grass-carrying-wasp-carrying-grass-into-siding',
+    alt: 'A slender dark wasp carrying long dry grass blades into a narrow crevice in painted wooden siding, with the grass ends left protruding',
+    caption:
+      'Grass going into a gap in the siding, with the ends left sticking out — which is exactly how people find these, usually in a window track instead. She does not chew the hole; she takes one that is already there, and that is why the fix is sealing rather than spraying.',
+  },
 };

@@ -128,6 +128,25 @@ export const PESTS: Pest[] = [
   { slug: 'aerial-yellowjacket', name: 'Aerial yellowjacket', scientific: 'Dolichovespula arenaria', group: 'stinging' },
   { slug: 'honey-bee', name: 'Honey bee', scientific: 'Apis mellifera', group: 'stinging' },
   { slug: 'bumble-bee', name: 'Bumble bee', scientific: 'Bombus spp.', group: 'stinging' },
+  /* TWO SOLITARY THREAD-WAISTED WASPS, 9 Sep 2026, both on the owner's own
+     photographs and video and both on his identification.
+
+     They are in this array because he confirmed he finds them here, and by the
+     inclusion standard at the top of this file that is what adding a species
+     means. The digger wasp is the one worth recording the reasoning for: the
+     regional literature has it as an eastern-Washington insect and describes
+     it as until recently little known west of the Cascades. The owner's answer
+     to that was specific rather than vague — they are here, in pockets of dry
+     sandy soil, in a county that is otherwise too wet for them. His footage is
+     a female dragging paralysed prey to a burrow in exactly that substrate,
+     which is better evidence of local occurrence than a range map.
+
+     Both are beneficial, solitary and effectively harmless, so both profiles
+     will say so. That is the point of carrying them: somebody who finds a
+     two-inch wasp hauling a katydid across their driveway is going to search
+     for it, and the honest answer is leave it alone. */
+  { slug: 'great-golden-digger-wasp', name: 'Great golden digger wasp', scientific: 'Sphex ichneumoneus', group: 'stinging' },
+  { slug: 'grass-carrying-wasp', name: 'Grass-carrying wasp', scientific: 'Isodontia spp.', group: 'stinging' },
 
   /* Structural */
   { slug: 'pacific-dampwood-termite', name: 'Pacific dampwood termite', scientific: 'Zootermopsis angusticollis', group: 'structural' },
