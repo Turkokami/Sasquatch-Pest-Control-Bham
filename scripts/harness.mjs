@@ -116,6 +116,28 @@ const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank
    not to read. Classifying the pair differently would be the single-source
    split this codebase keeps getting bitten by. */
 const isSpanish = (url) => url === '/es/' || url.startsWith('/es/');
+/* A SPANISH SERVICE PAGE TAKES THE ENGLISH CONTENT FLOOR, from 10 Sep 2026.
+
+   The 400-word Spanish floor was written when the Spanish tier was, on
+   purpose, a short decide-and-call layer over the English site — the header
+   of src/data/i18n.ts still says so. On 10 Sep 2026 the owner asked for a
+   full translation instead, and the six service pages went from roughly 450
+   words each to between 89 and 101 percent of their English twins.
+
+   At that depth a 400-word floor protects nothing: a page could lose five
+   sixths of itself and still pass. So this is a ratchet, not a new rule —
+   the service pages are held to what they now are, the same 3,000 words an
+   English service page answers to, and a regression back toward a stub
+   fails the gate instead of shipping.
+
+   Only the /es/servicios/<slug>/ pages, deliberately. The Spanish home, the
+   services index, service areas, guarantee and about pages are still at
+   roughly a third of their English hubs, and holding them to the hub floor
+   today would fail the build for work that is scheduled rather than
+   forgotten. They move to FLOORS.hub the day they are brought up to it, and
+   not before — the same way this line moved only after the pages it covers
+   had already cleared it. */
+const isSpanishServicePage = (url) => /^\/es\/servicios\/[^/]+\/$/.test(url);
 /* '/gallery/' is a hub in the sense this set means: its job is routing and an
    AEO answer, and the substance a reader came for is the images. It still
    carries the 1,200-word floor and clears it on written section copy — it is
@@ -789,6 +811,8 @@ if (run('words')) {
     if (UTILITY.has(p.url)) { exempt.push(`${p.url} (${words}w)`); continue; }
     const floor = HUBS.has(p.url)
       ? FLOORS.hub
+      : isSpanishServicePage(p.url)
+        ? FLOORS.content
       : isSpanish(p.url)
         ? FLOORS.spanish
         : isBlogPost(p.url)

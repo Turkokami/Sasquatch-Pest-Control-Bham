@@ -6,10 +6,24 @@
  * browser after the page loads, which means Google never sees Spanish and a
  * reader searching in Spanish never finds us — the opposite of the point.
  *
- * The scope is deliberate and it is not the whole site. These are the pages a
- * customer actually needs to decide and to call. Everything else stays in
- * English and says so, because a half-translated page that switches language
- * mid-sentence reads worse than an English one.
+ * THE SCOPE CHANGED ON 10 SEP 2026. It was drawn deliberately small — the
+ * pages a customer needs to decide and to call, everything else left in
+ * English and saying so. The owner then asked for a full translation, and the
+ * six service pages were brought to between 89 and 101 percent of their
+ * English twins the same day. The rest of the tier follows in the same way:
+ * a page joins PAGE_PAIRS when a real Spanish page exists behind it, and not
+ * before, because a half-translated page that switches language mid-sentence
+ * still reads worse than an English one.
+ *
+ * WHAT THIS TIER IS NOT: the Spanish site for a future El Salvador branch.
+ * Everything here is written for Spanish speakers in Whatcom and Skagit — it
+ * cites WSDA licensing, Washington statute, EPA registrations and a Pacific
+ * Northwest climate. Pointed at El Salvador it would advertise a license that
+ * does not apply there and a seasonal argument ("it is the rain, not the
+ * cold") that is false in the tropics. A Salvadoran branch needs its own
+ * property and its own content, kept apart from this one for the same reason
+ * Keystone Part 14 keeps this site apart from the Texas franchise. The
+ * hreflang here is es-US and must stay es-US.
  *
  * What is NOT translated, on purpose:
  *   - /what-we-use/. It publishes EPA registration numbers and links to
