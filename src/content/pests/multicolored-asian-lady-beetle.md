@@ -311,3 +311,12 @@ carpet beetles, which are a worse problem than the beetles were.
 
 What works is sealing the openings, and exterior treatment timed to late
 September or early October, before they arrive.
+
+## One more note on timing
+
+The window for exterior work is genuinely narrow and it moves with the weather
+rather than the date, so it is worth booking on a forecast rather than on a
+calendar. The trigger is the first run of cold nights followed by a warm, still
+afternoon, which is when the beetles gather on sunlit walls in numbers. Treat
+before that and the residual has weathered; treat after it and most of the
+population is already in the building.

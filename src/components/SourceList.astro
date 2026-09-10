@@ -25,7 +25,33 @@ const { sources, reviewBy, legalDisclaimer = false } = Astro.props;
 const fmt = (d: Date) =>
   d.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
-<section class="sources">
+{/* THE WHOLE SECTION IS BOILERPLATE TO THE HARNESS, added 10 Sep 2026, and the
+    reason is that a bibliography is not body prose and both checks were
+    treating it as though it were.
+
+    WHAT WENT WRONG. Three new ant pages were written from the same regional
+    extension publication — which is correct, it is the authoritative source for
+    ant identification in this region — and the duplicate-sentence scanner
+    failed them, because the citation title is a 10+ word string appearing on
+    three or more pages. The scanner was doing exactly what it was built to do.
+    It was pointed at the wrong text.
+
+    Two pages citing the same publication is not duplicated content. It is two
+    pages honestly citing the same publication, and the alternative the check
+    was pushing toward — paraphrasing a title so it looks different — would be
+    worse in every respect.
+
+    IT ALSO STOPS COUNTING TOWARD THE WORD FLOOR, which is the same argument
+    from the other side. The M1 floor is meant to measure how much a page
+    genuinely says. A citation list inflates that by thirty to seventy words
+    without adding anything a reader came for, and a page should not reach three
+    thousand words partly on the strength of its own footnotes.
+
+    Four pages dipped under the floor when this was applied and were written up
+    rather than exempted. That is the correct direction: the check got more
+    honest and the pages got longer, instead of the pages staying the same and
+    the number getting easier. */}
+<section class="sources" data-boilerplate>
   <h2>Sources</h2>
 
   {legalDisclaimer && (

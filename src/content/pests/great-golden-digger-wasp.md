@@ -326,3 +326,11 @@ say it at the start of the season rather than after somebody has found the
 nest the hard way. It costs nothing. For the harmless species it saves a
 nest that will be finished within weeks, and for the dangerous one it prevents
 the accident.
+
+## If she nests in the same place next year
+
+She may, because the ground is what she chose it for, and a returning female is
+a sign the soil suits rather than a sign of an escalating problem. There is no
+accumulating nest and no growing colony. Each season is a fresh female doing the
+same short piece of work, and a burrow that reappears in the same bank three
+summers running is three separate insects rather than one expanding population.

@@ -333,3 +333,12 @@ the bees. Mason bees work in early spring and seal their cells with mud; the
 grass-carrying wasp works in high summer and seals hers with vegetation. They
 use the same block at opposite ends of the season, and a tube that held a mason
 bee in April is simply an empty tube in July.
+
+## One thing worth checking while you are there
+
+If she used a window track, look at the other tracks on the same elevation
+before you put the vacuum away. Sliding windows tend to be installed in runs,
+they share a detail, and a female that found one suitable channel will very
+often have used two or three. Clearing them all in one go takes another few
+minutes and saves finding the next one in November when the window will not
+shut.

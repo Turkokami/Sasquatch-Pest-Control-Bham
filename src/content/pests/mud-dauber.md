@@ -321,3 +321,11 @@ If the building has open rafters that get used every year, that is the moment to
 decide whether it is worth it at all. Some outbuildings are cleaner for the
 clearing. Some will look identical in two summers and the honest answer is to
 leave them to it.
+
+## A last word on the nests you cannot reach
+
+Some mud dauber nests are simply out of reach — high in a barn, on a rafter over
+stored equipment, on the underside of a bridge deck or a dock structure. If they
+are not blocking anything and nobody has to walk under them, the honest answer is
+to leave them there rather than hire access equipment to remove something
+harmless. We would rather say that than quote for a lift.

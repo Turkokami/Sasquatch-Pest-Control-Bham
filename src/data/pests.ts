@@ -108,6 +108,9 @@ export const PESTS: Pest[] = [
   { slug: 'velvety-tree-ant', name: 'Velvety tree ant', scientific: 'Liometopum occidentale', group: 'ants' },
   { slug: 'thatching-ant', name: 'Thatching ant', scientific: 'Formica spp.', group: 'ants' },
   { slug: 'ghost-ant', name: 'Ghost ant', scientific: 'Tapinoma melanocephalum', group: 'ants' },
+  { slug: 'pharaoh-ant', name: 'Pharaoh ant', scientific: 'Monomorium pharaonis', group: 'ants' },
+  { slug: 'thief-ant', name: 'Thief ant', scientific: 'Solenopsis molesta', group: 'ants' },
+  { slug: 'false-honey-ant', name: 'False honey ant', scientific: 'Prenolepis imparis', group: 'ants' },
 
   /* Rodents */
   { slug: 'norway-rat', name: 'Norway rat', scientific: 'Rattus norvegicus', group: 'rodents' },
