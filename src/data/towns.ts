@@ -223,8 +223,11 @@ export const towns: Town[] = [
        the profile of the six entries already dropped for bleeding between
        queries. Writing three thousand words about a neighborhood that may not
        exist would be a worse failure than any of the ones this file guards
-       against, so it goes. If the owner knows it as a real local name, it
-       comes back with a page — but on his say-so, recorded as such.
+       against, so it goes.
+
+       OWNER CONFIRMED 10 SEP 2026: "fairway estates is not a real name forget
+       it." Closed. The search that could not find it was right, and the entry
+       does not come back.
 
        'Homestead' was noted here as being on the NORTH edge. Two independent
        sources put it on the WEST side, beside Fishtrap Creek and Homestead

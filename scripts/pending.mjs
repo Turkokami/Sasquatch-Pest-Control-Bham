@@ -111,9 +111,28 @@ if (pendingAdvisory.length) {
   for (const k of pendingAdvisory) console.log(`  • ${k}\n    ${ADVISORY[k]}\n`);
 }
 
-/* Credentials that publish on the owner's word alone. Not blocking — he holds
-   the licenses — but the numbers are public, so a lookup upgrades an owner
-   statement to a verifiable one. Printed every run so it is never forgotten.
+/* Credentials that publish on the owner's word alone.
+
+   OWNER CLOSED THIS ON 10 SEP 2026 and the block below stopped asking for
+   screenshots. His argument is the correct one and it is worth writing down,
+   because the previous version of this report was solving the wrong problem.
+
+   The site publishes every license number, attached to a named person, beside
+   a link to the WSDA public license search. A reader can therefore verify each
+   one directly, at the source, in about thirty seconds. A screenshot sitting in
+   this company's files would improve nothing for that reader — it would only
+   move the evidence from a state database into our own filing cabinet, which
+   is a downgrade dressed as an upgrade.
+
+   The `via` classes STAY in business.ts, because they are true and they record
+   how each row got there. What has gone is the report treating them as an
+   outstanding task. They are not owed to anybody; the verification path is
+   already published and it is better than a screenshot.
+
+   WHAT IS STILL WORTH CHASING, and the block below still prints it, is a
+   MISSING EXPIRY. That is a different thing entirely. An expired license
+   published as current is a real problem rather than a bookkeeping one, and
+   nothing on the public page tells a reader when a license lapses. 
 
    SPLIT BY PERSON ROW rather than matching across a character window. The
    previous version searched up to 400 characters after a license number for
@@ -173,13 +192,15 @@ if (untitled.length) {
   }
 }
 if (ownerOnly.length) {
-  console.log('\x1b[36mSTATE RECORD NOT HELD HERE — publishes, but worth closing out\x1b[0m\n');
-  for (const r of ownerOnly) {
-    const detail = r.via === 'owner-verified'
-      ? "Owner states he checked the WSDA record. That is stronger than his\n    recollection and weaker than holding the record. A screenshot or copy of\n    the WSDA search result upgrades it to via: 'wsda-record', as LI-87206 has."
-      : "Owner-confirmed only, unchecked against the record. Confirm at the WSDA\n    license search and upgrade the evidence class.";
-    console.log(`  • ${r.num}  (via: '${r.via}')\n    ${detail}\n`);
-  }
+  console.log('\x1b[2mEvidence class, for the record — no action outstanding\x1b[0m\n');
+  console.log(
+    '  ' + ownerOnly.map((r) => r.num).join(', ') + '\n' +
+    "    Published on the owner's confirmation. Every number is on /about/ beside\n" +
+    '    a link to the WSDA license search, so a reader verifies at the source\n' +
+    '    rather than taking our word or looking at our screenshot. Owner closed\n' +
+    '    this 10 Sep 2026; the via classes stay in business.ts as a record of\n' +
+    '    provenance, not as a task.\n'
+  );
 }
 
 console.log('─'.repeat(58));

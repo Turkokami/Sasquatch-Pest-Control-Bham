@@ -271,7 +271,7 @@ quote rather than corrected afterward, which is the way round everybody
 prefers.
 
 Beyond that, nothing about the work changes. Same licensing, same products,
-same labels published on this site, same guarantee.
+same labels [published on this site](/what-we-use/), same guarantee.
 
 ## Access, and the practical business of getting to a lot
 

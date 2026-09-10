@@ -100,8 +100,54 @@ export const business = {
   phoneE164: '+13604102199',
   email: 'sasquatchpest@gmail.com',
 
-  /* Verified from the GBP listing before it ships. Do not hand-enter. */
-  geo: { lat: PENDING as Owed<number>, lng: PENDING as Owed<number> },
+  /* RESOLVED 10 Sep 2026. Owner-supplied, and cross-checked two ways.
+   *
+   * The old note here said "verified from the GBP listing before it ships, do
+   * not hand-enter", and the spirit of that is kept: these were not typed off
+   * a map by eye.
+   *
+   * The owner first supplied the Plus Code RGF7+M9 Bellingham, Washington,
+   * then the exact pair. Both were kept and compared rather than the second
+   * simply overwriting the first, because two independent figures agreeing is
+   * worth more than either on its own.
+   *
+   * A Plus Code is not a coordinate pair — it is a short Open Location Code
+   * recovered against a reference point and then decoded. Recovered against
+   * Bellingham it gives 84WVRGF7+M9, decoding to 48.824187, -122.486563, and
+   * re-encoding that pair returns 84WVRGF7+M9 exactly, which rules out a
+   * transcription slip.
+   *
+   * That sits 3.1 meters from the owner's exact figure — which is precisely
+   * what should happen, because a Plus Code at this length resolves to about a
+   * 14-meter square. Agreement to within the resolution of the coarser source
+   * is the check passing, not a discrepancy.
+   *
+   * PUBLISHED AT SIX DECIMAL PLACES. The owner's figure carried fifteen, which
+   * is sub-micron and is an artifact of however the number was copied rather
+   * than a claim anybody could stand behind. Six decimals is about eleven
+   * centimeters. Nothing that reads this — a map pin, a distance calculation —
+   * can use more, and publishing spurious precision invites a reader to think
+   * the rest of the file is padded the same way.
+   *
+   * THEN CHECKED AGAINST SOMETHING THAT IS NOT US. Reverse geocoding the pair
+   * through OpenStreetMap puts it on Guide Meridian in Whatcom County at
+   * postcode 98226 — the same road and the same postcode as the address field
+   * above. Two independent routes to the same place is the standard this file
+   * asks for everywhere else, and it is met here.
+   *
+   * THE ADDRESS IS 5051 GUIDE MERIDIAN RD AND NOTHING HERE CHANGES THAT.
+   * Reverse geocoding a coordinate returns whatever street number is nearest
+   * in the geocoder's own data, which on a road like this one can be a
+   * neighboring building. That number was used to confirm the road and the
+   * postcode and for nothing else. It is deliberately not written down in this
+   * comment, because a street number sitting in a file next to the real one is
+   * exactly the sort of thing that gets copied into a citation by somebody
+   * skimming. Owner was explicit about this on 10 Sep 2026: the address is
+   * 5051.
+   *
+   * This unlocks the GeoCoordinates node in the LocalBusiness graph, which is
+   * what a map surface reads to place a pin. */
+  geo: { lat: 48.824214 as Owed<number>, lng: -122.486571 as Owed<number> },
 
   hours: [
     { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], open: '08:00', close: '18:00' },

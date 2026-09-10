@@ -266,7 +266,7 @@ planned around the rooms in use.
 
 We will show you the label before we treat, tell you what is being applied and
 where it is not being applied, and give you the re-entry directions without
-being asked. Every product this company carries is published on this site with
+being asked. Every product this company carries is [published on this site](/what-we-use/) with
 its full label and safety data sheet, which is unusual and is deliberate.
 
 Where there is a version of the job that uses less or nothing — a repair

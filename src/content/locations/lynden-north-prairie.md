@@ -145,7 +145,7 @@ proximity to feed, water and milk handling. A product cleared for a shop
 perimeter is frequently not cleared anywhere near a feed bunk or a milk house.
 
 We work from the label, we will show you the label, and every product this
-company carries is published on this site with its EPA registration number, its
+company carries is [published on this site](/what-we-use/) with its EPA registration number, its
 full label and its safety data sheet. If somebody proposes to apply something
 in your feed room, ask them for that document before they open the container.
 

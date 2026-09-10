@@ -132,7 +132,7 @@ used and why.
 
 This is a normal part of the conversation on rural property, and a company that
 does not raise it is not paying attention. Every product this company carries
-is published on this site with its full label and safety data sheet, so
+is [published on this site](/what-we-use/) with its full label and safety data sheet, so
 anything we tell you can be checked against the document rather than taken on
 trust.
 

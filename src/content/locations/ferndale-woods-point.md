@@ -157,7 +157,7 @@ matter more here than in most places.
 We will tell you what we are applying before we apply it — what it is, where it
 goes, where it does not go, and how long to stay off a treated area. Not because
 you asked, but because that is how it should be done. Every product this
-company carries is published on this site with its EPA registration number, its
+company carries is [published on this site](/what-we-use/) with its EPA registration number, its
 full label and its safety data sheet, so anything we say can be checked against
 the document.
 

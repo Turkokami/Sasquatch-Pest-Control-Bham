@@ -288,7 +288,7 @@ two are rarely the same, and we would much rather be told than guess.
 
 We will also walk you through the label before we treat, name what is being
 applied and where it is not being applied, and give the re-entry directions
-unprompted. Every product this company carries is published on this site with
+unprompted. Every product this company carries is [published on this site](/what-we-use/) with
 its full label and safety data sheet.
 
 ## What we would rather you did not pay for

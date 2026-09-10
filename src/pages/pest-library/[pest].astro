@@ -43,6 +43,42 @@ export async function getStaticPaths() {
 }
 
 const { p, species } = Astro.props;
+/* WHAT TO DO ABOUT IT — the rail this template did not have, added 10 Sep 2026
+   after a link audit found that a species page linked to other species pages,
+   the guarantee, and nothing else.
+
+   Fifty-three pages describing pests, and not one of them routed a reader to
+   the service that deals with the pest. Somebody who has just identified a
+   carpenter ant had no way from that page to carpenter ant work except the
+   masthead. That is a wayfinding failure before it is a ranking one, and it is
+   the single largest internal-linking gap the audit turned up.
+
+   MAPPED BY GROUP RATHER THAN BY SPECIES, deliberately. A per-species map would
+   be fifty-three rows to maintain and would drift the first time a species was
+   added — which has happened eleven times in the last week. The group is
+   already a required, validated field on every species, so this map has one row
+   per group and cannot fall out of step with the library.
+
+   The second link is the honest one. On a great many of these pages the answer
+   is a repair rather than a treatment — every moisture-driven ant, every
+   rodent, every overwintering invader coming through a gap — so exclusion sits
+   beside the treatment service rather than behind it.
+
+   The third is the product register. A reader deciding whether to have anything
+   applied should be one click from the label of everything we would apply, and
+   before today that page had exactly one inbound link from any page body on the
+   whole site. */
+const GROUP_SERVICE: Record<string, { href: string; label: string }> = {
+  ants: { href: '/services/ant-control/', label: 'Ant control in Whatcom County' },
+  rodents: { href: '/services/rodent-control/', label: 'Rodent control and exclusion' },
+  spiders: { href: '/services/spider-control/', label: 'Spider control' },
+  stinging: { href: '/services/wasp-control/', label: 'Wasp and hornet control' },
+  structural: { href: '/services/wdo-treatment/', label: 'Wood-destroying organism treatment' },
+  invaders: { href: '/services/stink-bug-control/', label: 'Overwintering invader treatment' },
+  'fabric-pantry': { href: '/services/moth-control/', label: 'Moth and stored-product pest control' },
+  biting: { href: '/services/bed-bug-control/', label: 'Bed bug and biting pest control' },
+};
+
 const path = `/pest-library/${species.slug}/`;
 const { Content } = await p.render();
 
@@ -72,6 +108,16 @@ const VERDICT: Record<string, string> = {
 
 /* Posts whose topic this page owns — see src/lib/blog.ts. */
 const blogLinks = await blogPostsFor(path);
+/* Guarded on the group being in the map rather than indexed blindly: a new
+   group added to PEST_GROUPS without a service here should render one fewer
+   link, not crash the build. */
+const groupService = GROUP_SERVICE[species.group];
+const actionLinks = [
+  ...(groupService ? [groupService] : []),
+  { href: '/services/exclusion-and-repairs/', label: 'Exclusion and repairs — sealing it out instead' },
+  { href: '/what-we-use/', label: 'Every product we apply, with labels and safety data' },
+];
+
 ---
 <BaseLayout
   videoKey={videoForPest[species.slug]}
@@ -143,6 +189,8 @@ const blogLinks = await blogPostsFor(path);
   {videoForPest[species.slug] && (
     <Video name={videoForPest[species.slug]} heading={`${species.common}, on video`} />
   )}
+  <LinkRail heading="What to do about it" links={actionLinks} />
+
   <Faq items={p.data.faqs} />
 
   <SourceList sources={p.data.sources} reviewBy={p.data.reviewBy} />
