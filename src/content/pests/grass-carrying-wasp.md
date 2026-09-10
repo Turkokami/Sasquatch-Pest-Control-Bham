@@ -23,11 +23,11 @@ faqs:
   - q: "There is grass sticking out of my window frame. What put it there?"
     a: "A single female grass-carrying wasp. She cuts long blades of dry grass with her mandibles, flies them in one or two at a time, and packs them into the cavity as a lining and a plug. The strands left protruding from the opening are the giveaway, and they are usually the first thing anybody notices."
   - q: "Will it sting me if I open the window?"
-    a: "Almost certainly not. These are solitary wasps — one female, no colony, no workers to defend a hive. Extension guidance describes them as beneficial solitary wasps that rarely, if ever, sting. The sting exists to paralyse crickets, and she has no reason to spend it on you."
+    a: "Almost certainly not. These are solitary wasps — one female, no colony, no workers to defend a hive. Extension guidance describes them as beneficial solitary wasps that rarely, if ever, sting. The sting exists to paralyze crickets, and she has no reason to spend it on you."
   - q: "Do I need it treated?"
     a: "No. Ohio State's extension guidance is explicit that management is not required and that the contents can simply be cleared if they are unsightly or stop a window closing. Anybody quoting you a treatment for this is selling you something you do not need."
   - q: "What is the grub-looking thing in the track with the grass?"
-    a: "Paralysed prey, or her larva feeding on it. She provisions each grass cell with tree crickets or young katydids that she has stung into paralysis, lays an egg, and seals the chamber with more grass. The 'worms' people find are that, not an infestation of anything."
+    a: "Paralyzed prey, or her larva feeding on it. She provisions each grass cell with tree crickets or young katydids that she has stung into paralysis, lays an egg, and seals the chamber with more grass. The 'worms' people find are that, not an infestation of anything."
   - q: "How do I stop it happening again?"
     a: "Take away the cavity. Clear the track, then close what she was using — a weep hole that can be screened, a gap under siding that can be sealed, a hollow tube that can be capped. She needs a pre-existing hole; she does not chew her own. This is exclusion work, not a spray."
 ---
@@ -63,7 +63,7 @@ thread-waisted wasp near a window sets off the same alarm a yellowjacket does,
 and the two could hardly be less alike in temperament.
 
 A yellowjacket nest is a colony with hundreds of workers whose job includes
-defence. A grass-carrying wasp is one female working alone. She has no
+defense. A grass-carrying wasp is one female working alone. She has no
 daughters to call, nothing to lose by leaving, and a sting whose purpose is
 subduing crickets. Extension sources describe the genus as beneficial solitary
 wasps that rarely, if ever, sting.

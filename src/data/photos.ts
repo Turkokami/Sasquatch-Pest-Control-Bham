@@ -508,12 +508,12 @@ export const speciesPhotos: Record<string, Photo> = {
      turns up on a wall in the open. A photograph of one holding prey with no
      web anywhere in frame is that claim, shown.
 
-     No town in the caption. The photograph is a spider on a smooth grey
+     No town in the caption. The photograph is a spider on a smooth gray
      surface and corroborates nothing about where it was taken, so it gets
      the county or nothing — see the note at the top of this file. */
   'yellow-sac-spider': {
     file: '/img/pests/yellow-sac-spider.jpg',
-    alt: 'A small pale straw-colored spider on a smooth grey surface, gripping a brown moth larger than its own body, with no web around either of them',
+    alt: 'A small pale straw-colored spider on a smooth gray surface, gripping a brown moth larger than its own body, with no web around either of them',
     caption:
       'Caught with prey, out in the open, and there is no web in the frame — which is the point. This species does not sit and wait in a snare; it spends the day in a silk pocket where the ceiling meets the wall and hunts on foot at night. That is why you meet one on a wall rather than in a web, and why sealing the corners it retreats into does more than spraying the room.',
   },
@@ -522,7 +522,7 @@ export const speciesPhotos: Record<string, Photo> = {
      work rather than illustrative work. The regional literature has this as an
      eastern-Washington insect, little known west of the Cascades. The profile
      says we find it here anyway, in pockets of dry sandy soil, and this frame
-     is why that sentence is allowed to exist: a female with a paralysed
+     is why that sentence is allowed to exist: a female with a paralyzed
      katydid on exactly the substrate the nesting research describes.
 
      The alt says 'katydid or cricket' on purpose. Both are favoured prey for
@@ -695,7 +695,7 @@ export const garageDoorSeal: PhotoPair = {
  * carry the identification rather than decorate the page. Both of these do.
  * A grass-carrying wasp is identified by the fact that she is carrying grass
  * into a hole; a great golden digger wasp by the fact that she is hauling
- * paralysed prey to a burrow she dug. Neither of those is a still photograph.
+ * paralyzed prey to a burrow she dug. Neither of those is a still photograph.
  *
  * BOTH ARRIVED AS GIFS AND ARE NOT SERVED AS GIFS. 5.2 MB and 11.4 MB became
  * 271 kB and 776 kB as H.264 — sixteen megabytes down to one, on a site whose
@@ -710,7 +710,7 @@ export const speciesClips: Record<string, { src: string; alt: string; caption: s
     src: '/video/great-golden-digger-wasp-dragging-a-katydid-to-its-burrow',
     alt: 'A large orange-legged wasp dragging a limp bright green katydid backwards across dry gravel toward a dark burrow entrance',
     caption:
-      'Dragging rather than flying, because the prey outweighs her. The burrow mouth is the dark gap at the left of frame. This is the behaviour the page is about — she paralyses a katydid, hauls it home, and seals it in a cell with a single egg.',
+      'Dragging rather than flying, because the prey outweighs her. The burrow mouth is the dark gap at the left of frame. This is the behaviour the page is about — she paralyzes a katydid, hauls it home, and seals it in a cell with a single egg.',
   },
   'grass-carrying-wasp': {
     src: '/video/grass-carrying-wasp-carrying-grass-into-siding',

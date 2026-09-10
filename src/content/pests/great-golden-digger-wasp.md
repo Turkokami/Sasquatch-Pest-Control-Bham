@@ -1,11 +1,11 @@
 ---
 species: great-golden-digger-wasp
 title: "Great Golden Digger Wasp: Big, Orange, and Harmless"
-description: "The big orange-legged wasp dragging a paralysed katydid across your driveway. A solitary ground nester that does not defend its burrow and needs nothing done."
+description: "The big orange-legged wasp dragging a paralyzed katydid across your driveway. A solitary ground nester that does not defend its burrow and needs nothing done."
 h1: "Great Golden Digger Wasp — Sphex ichneumoneus"
 treatment: we-do-not
 confusedWith: ['grass-carrying-wasp', 'western-yellowjacket']
-answer: "A large wasp with rust-orange legs hauling a paralysed katydid across bare ground is a great golden digger wasp. She is solitary, she digs a burrow in dry sandy soil, and she does not defend it. We do not treat these, and we will say so rather than sell you a service."
+answer: "A large wasp with rust-orange legs hauling a paralyzed katydid across bare ground is a great golden digger wasp. She is solitary, she digs a burrow in dry sandy soil, and she does not defend it. We do not treat these, and we will say so rather than sell you a service."
 ready: false
 expert: kristofer-elling
 reviewBy: 2027-09-09
@@ -21,7 +21,7 @@ sources:
     read: 2026-09-09
 faqs:
   - q: "Is it dangerous?"
-    a: "No. She is solitary, which is the whole answer. There is no colony behind her and nothing to defend, so she has no reason to sting a person and generally will not. Observers routinely watch these at close range while they work. Her sting is for paralysing katydids."
+    a: "No. She is solitary, which is the whole answer. There is no colony behind her and nothing to defend, so she has no reason to sting a person and generally will not. Observers routinely watch these at close range while they work. Her sting is for paralyzing katydids."
   - q: "It is dragging a green cricket. What is it doing?"
     a: "Provisioning a burrow. She stings a katydid or cricket into paralysis, hauls it back to a tunnel she has dug, seals it in a cell with an egg, and the larva eats it. Katydids and crickets are the favoured prey. The dragging is the part people see, because she does it in the open and it takes a while."
   - q: "There are holes in my lawn or driveway edge. Should I fill them?"
@@ -47,7 +47,7 @@ looks like it.
 
 Every genuinely dangerous stinging insect on this site is social. A
 yellowjacket or a bald-faced hornet has a colony, workers whose job includes
-defence, and a nest worth dying for. That is what makes an accidental approach
+defense, and a nest worth dying for. That is what makes an accidental approach
 expensive.
 
 A digger wasp has none of that. One female, one burrow, no workers. She gains
@@ -69,7 +69,7 @@ why finding one here is worth recording rather than assuming a
 misidentification. Most of western Whatcom County is too wet for her. Pockets
 of it are not — a dry gravelly bank, a sun-baked driveway edge, the sandy
 shoulder of a track — and that is where ours was photographed, working a
-burrow in exactly that substrate with a paralysed katydid.
+burrow in exactly that substrate with a paralyzed katydid.
 
 ## Why we will not treat it
 

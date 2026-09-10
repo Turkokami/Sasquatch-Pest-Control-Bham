@@ -138,7 +138,7 @@ export const PESTS: Pest[] = [
      it as until recently little known west of the Cascades. The owner's answer
      to that was specific rather than vague — they are here, in pockets of dry
      sandy soil, in a county that is otherwise too wet for them. His footage is
-     a female dragging paralysed prey to a burrow in exactly that substrate,
+     a female dragging paralyzed prey to a burrow in exactly that substrate,
      which is better evidence of local occurrence than a range map.
 
      Both are beneficial, solitary and effectively harmless, so both profiles
