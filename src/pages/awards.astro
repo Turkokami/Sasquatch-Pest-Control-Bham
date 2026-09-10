@@ -402,14 +402,36 @@ const rails = [
           to write about you without being asked, which is a different signal
           and belongs in a different list.
         </p>
+        {/* THIS PARAGRAPH USED TO NAME THE PUBLICATIONS AND DESCRIBE THEM, and
+            it broke the moment a second kind of publication was added. It read
+            "{listOf(pressPublications)} is a trade magazine for people who do
+            this work" — which was true while every verified row was Pest
+            Management Professional, and became both ungrammatical and FALSE on
+            10 Sep 2026 when Business Pulse Magazine went in. Business Pulse is
+            a regional business magazine for this county. It is not a trade
+            magazine for pest control operators, and the page said it was.
+
+            That is the third time on this page a sentence generated from a
+            list has gone stale as the list grew — the others were the award
+            count and the "only item on this page" line. The pattern is always
+            the same: prose that asserts a PROPERTY of the items, generated
+            from a list that only ever held one kind of item.
+
+            The fix is not a better sentence about the publications. It is to
+            stop asserting what kind of publication each one is. What is true of
+            every row here regardless of what gets added next is that none of
+            them is a consumer title and none of them was bought — and those
+            are the two things a reader actually needs. The counts stay
+            generated, because a count of a list cannot go stale the way a
+            description of one can. */}
         {pressVerified.length > 0 && (
           <p>
-            {listOf(pressPublications)} is a trade magazine for people who do
-            this work rather than a consumer title, so the pieces below were
-            written for an audience of other operators — which is a harder room
-            than a customer-facing one, and a reason to point at them.
+            None of these are consumer titles and none of them was paid for.
+            They are written for other operators in this trade and for the
+            business community in this county — harder rooms than a
+            customer-facing one, and the reason they are worth pointing at.
             {' '}{Spell(pressVerified.length)} of the {spell(press.length)}{' '}
-            entries here have been checked against the publisher's own site
+            entries here have been checked against the publisher's own page
             rather than taken from artwork somebody sent us: the article, the
             byline and the date are all where they should be, and those entries
             link straight to them. We are not going to summarize them here.
@@ -460,7 +482,7 @@ const rails = [
         <p>
           One thing those articles will tell you that this page has to
           acknowledge: they describe the company as it was when they were
-          written, and the 2023 pieces name two brothers as owners. That was
+          written, and the earlier pieces name two brothers as owners. That was
           accurate in 2023. Kristofer Elling has since taken full ownership and
           Tyson Elling is Office Manager, which is what the{' '}
           <a href="/about/">about page</a> says. An old article is a record of

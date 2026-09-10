@@ -778,10 +778,12 @@ export const business = {
      the article did not exist. It was missing because searching is not the
      same as asking somebody who knows.
 
-     ONE IS STILL OWED: a 2023 Business Pulse Magazine feature, with no title,
-     date or URL recorded anywhere. A press row without a document behind it
-     is the exact thing the tier split on the awards list exists to prevent,
-     so it waits.
+     AND THE BUSINESS PULSE FEATURE ARRIVED THE SAME DAY, which closes the
+     list. Everything the legacy site named is now here, and every row on it
+     has been read on the publisher's own page rather than taken from the old
+     site's description of it. Two of the four rows had wrong dates on that
+     old site; one had a wrong year. That is a fair summary of why the rule
+     here is to fetch the document.
 
      The legacy page also carries a letter claiming the company won "Best Pest
      Control Business and Start-Up Business of the Year in 2023 and 2022". The
@@ -795,6 +797,29 @@ export const business = {
       author: 'Pete Schopen' as Owed<string>,
       published: '2023-08-18',
       url: 'https://www.mypmp.net/sasquatch-stands-out/' as Owed<string>,
+      via: 'publisher-verified' as const,
+      image: null as string | null,
+      alt: null as string | null,
+    },
+    {
+      /* SUPPLIED BY THE OWNER 10 SEP 2026, and it corrected the record twice.
+         The legacy site listed this as a 2023 item; the pull-out itself is the
+         MAR/APR 2024 issue. `published` carries the first day of that issue
+         because a bimonthly issue has no single publication date, and putting
+         a precise-looking day on it would be inventing precision.
+
+         WHAT MAKES THIS ROW WORTH MORE THAN A PRESS MENTION: the article runs
+         under the standing head "START-UP OF THE YEAR NOMINEE". That is a
+         third party, independently, describing the Whatcom Business Awards
+         entry as a NOMINATION — which is exactly what the award row in this
+         file has said all along, against a letter on the company's own old
+         website that called it a win. The careful version turns out to be the
+         one the publisher printed. */
+      title: 'All in the family',
+      publication: 'Business Pulse Magazine',
+      author: 'Matt Benoit' as Owed<string>,
+      published: '2024-03-01',
+      url: 'https://businesspulse.com/wp-content/uploads/2024/03/Download-the-special-pull-out-here.pdf' as Owed<string>,
       via: 'publisher-verified' as const,
       image: null as string | null,
       alt: null as string | null,
