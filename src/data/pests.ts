@@ -106,6 +106,8 @@ export const PESTS: Pest[] = [
   { slug: 'odorous-house-ant', name: 'Odorous house ant', scientific: 'Tapinoma sessile', group: 'ants' },
   { slug: 'pavement-ant', name: 'Pavement ant', scientific: 'Tetramorium immigrans', group: 'ants' },
   { slug: 'velvety-tree-ant', name: 'Velvety tree ant', scientific: 'Liometopum occidentale', group: 'ants' },
+  { slug: 'thatching-ant', name: 'Thatching ant', scientific: 'Formica spp.', group: 'ants' },
+  { slug: 'ghost-ant', name: 'Ghost ant', scientific: 'Tapinoma melanocephalum', group: 'ants' },
 
   /* Rodents */
   { slug: 'norway-rat', name: 'Norway rat', scientific: 'Rattus norvegicus', group: 'rodents' },
