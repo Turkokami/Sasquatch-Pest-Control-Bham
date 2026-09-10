@@ -496,6 +496,27 @@ export const speciesPhotos: Record<string, Photo> = {
     caption:
       'What an actual find looks like, rather than an illustration of one. Flat, oval, reddish-brown and about the size of an apple pip, tucked into a seam, with the staining that gives them away when they are not visible.',
   },
+  /* YELLOW SAC SPIDER, 9 Sep 2026, the owner's own photograph and his
+     identification. That matters here for the same reason it did on the
+     bald-faced hornet: a small pale spider cannot be taken to species from a
+     photograph — Cheiracanthium is separated on the palps and the eye
+     arrangement, not on colour — so the owner naming it is what settles it.
+
+     The frame is worth having because of what the spider is DOING. The
+     profile's claim is that this species hunts at night without a web, which
+     is the opposite of what people expect a spider to do and the reason it
+     turns up on a wall in the open. A photograph of one holding prey with no
+     web anywhere in frame is that claim, shown.
+
+     No town in the caption. The photograph is a spider on a smooth grey
+     surface and corroborates nothing about where it was taken, so it gets
+     the county or nothing — see the note at the top of this file. */
+  'yellow-sac-spider': {
+    file: '/img/pests/yellow-sac-spider.jpg',
+    alt: 'A small pale straw-colored spider on a smooth grey surface, gripping a brown moth larger than its own body, with no web around either of them',
+    caption:
+      'Caught with prey, out in the open, and there is no web in the frame — which is the point. This species does not sit and wait in a snare; it spends the day in a silk pocket where the ceiling meets the wall and hunts on foot at night. That is why you meet one on a wall rather than in a web, and why sealing the corners it retreats into does more than spraying the room.',
+  },
   'bumble-bee': {
     file: '/img/pests/bumble-bee.jpg',
     alt: 'A bumble bee photographed close up on a pale concrete surface, its banded thorax and pollen-dusted legs clearly visible',
