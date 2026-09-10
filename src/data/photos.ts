@@ -212,39 +212,40 @@ export const servicePhotos: Record<string, Photo> = {
  * ------------------------------------------------------------------------ */
 
 /** Keyed by the town's route segment under /locations/. */
-/* THREE DEAD ENTRIES REMOVED HERE, 4 Sep 2026, and the bug is worth writing
-   down because nothing failed and nothing looked wrong.
+/* THREE DEAD ENTRIES WERE REMOVED HERE, 4 Sep 2026, AND ARE BACK IN USE AS OF
+   10 Sep 2026. The whole round trip is left in place because it is a good
+   record of a check working, then a check being over-applied, then the owner
+   settling it.
 
-   `bellingham`, `lynden` and `bow` were each declared TWICE in this object. An
-   object literal keeps the last duplicate key, so in every case the second
-   entry was the one the site displayed and the first was dead code. The
-   pattern is obvious in hindsight: a batch of vehicle photographs went in
-   first, a batch of technician-at-work photographs went in later under the
-   same three town keys, and the second batch silently replaced the first.
-
-   Vite had been warning about it on every single build. Nobody read the
-   warnings, because the build succeeded, the harness passed, and the pages
-   looked correct — they were showing the later photograph, which is the better
-   one anyway. A silent overwrite that produces a good result is the hardest
+   WHAT HAPPENED FIRST. `bellingham`, `lynden` and `bow` were each declared
+   twice in locationPhotos. An object literal keeps the last duplicate, so three
+   photographs were dead code — and nothing looked wrong, because the surviving
+   entry was the better photograph in all three cases. Vite had been warning on
+   every build. A silent overwrite that produces a good result is the hardest
    kind of defect to notice.
 
-   REMOVED RATHER THAN RE-HOMED, deliberately, and this is the important part.
-   The obvious move is to hang the orphans on towns that have no photograph,
-   and that is exactly what the header of this file forbids: the town in a
-   filename is not evidence of where a photograph was taken. Assigning a shot
-   to Deming or Acme because a forest road 'looks like' one of them would be
-   inventing a location on pages whose entire job is to be locally specific.
+   WHAT WAS DECIDED THEN, and it was the right call on the information
+   available: the orphans were removed rather than re-homed, because this
+   file's own header says the town in a filename is not evidence of where a
+   photograph was taken. That header exists for a reason — a set named for
+   Lynden turned out to contain saltwater, which is nowhere near Lynden.
 
-   These three files stay in the repository, referenced by nothing:
-     /img/work/service-truck-at-lake-padden-bellingham-wa.jpg
-     /img/work/service-van-at-a-home-lynden-wa.jpg
-     /img/work/service-van-at-sunrise-bow-wa.jpg
-   They are good photographs. They go back in the moment the owner says where
-   each was actually taken — and a town that currently has no photograph of its
-   own is the obvious home for whichever of them belongs there.
+   WHAT THE OWNER SETTLED, 10 Sep 2026: "photos are correctly named." These
+   three are what their filenames say they are. That is the only kind of
+   evidence that can settle it, since the question was never one a script could
+   answer, and it is why the removal note asked for exactly this rather than
+   guessing.
 
-   Nothing visible changed when this was fixed. Every town kept the photograph
-   it was already displaying. */
+   SO THEY COME BACK AS A SECOND PHOTOGRAPH rather than displacing the first.
+   Both are genuine, both are of the named town, and a three-thousand-word town
+   page is long enough to carry two images without either one being decoration.
+   The first sits at the top above the form; this one sits after the prose.
+
+   THE HEADER RULE HAS NOT CHANGED and must not be read as relaxed. Filenames
+   are still not evidence. What changed is that somebody who was there confirmed
+   these three, which is the exception the rule was written to invite rather
+   than a hole in it. The next unverified filename gets the same treatment the
+   first time. */
 export const locationPhotos: Record<string, Photo> = {
   /* SEVEN MORE, 3 Sep 2026, owner-supplied and named to the town in the
      filename by the person who took them. That is the difference between
@@ -355,6 +356,31 @@ export const locationPhotos: Record<string, Photo> = {
     alt: 'A wrapped Sasquatch Pest Control pickup truck parked on a narrow forest road in dense green woodland',
     caption:
       'On a forest road near Bow. Properties out here sit against standing timber, and a building at the edge of the woods is treated as an edge rather than as a lot.',
+  },
+};
+
+/* The second photograph on a town page, where one exists. Keyed by town slug,
+   guarded at the call site, and empty for every town that has only one — a
+   missing entry renders nothing rather than borrowing another town's picture,
+   which is the same rule the first slot follows. */
+export const locationPhotosSecond: Record<string, Photo> = {
+  bellingham: {
+    file: '/img/work/service-truck-at-lake-padden-bellingham-wa.jpg',
+    alt: 'A wrapped service truck parked at a lakeside lot with forest and low cloud across the water',
+    caption:
+      'At Lake Padden, on the south side of the city. Bellingham is not one job \u2014 the greenbelt edges like this one produce rodent and spider pressure that the flat, older streets in the center do not.',
+  },
+  lynden: {
+    file: '/img/work/service-van-at-a-home-lynden-wa.jpg',
+    alt: 'A wrapped service van parked on the gravel drive of a blue single-story home under an autumn sky',
+    caption:
+      'At a house in Lynden. Most of the residential work in this town is ordinary and seasonal \u2014 ants in spring, wasps by August, and rodents once the farm ground either side of the city is cut.',
+  },
+  bow: {
+    file: '/img/work/service-van-at-sunrise-bow-wa.jpg',
+    alt: 'A wrapped service van parked on a farm track at sunrise beside a red barn and outbuildings',
+    caption:
+      'First call of the day at a farm near Bow. Agricultural accounts run on the grower\u2019s calendar rather than ours, which in practice means early and planned around whatever else is happening that week.',
   },
 };
 

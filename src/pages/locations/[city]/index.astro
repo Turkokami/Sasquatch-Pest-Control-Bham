@@ -8,7 +8,7 @@ import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import LocationMap from '../../../components/LocationMap.astro';
 import Photo from '../../../components/Photo.astro';
-import { locationPhotos, crewPhoto } from '../../../data/photos';
+import { locationPhotos, locationPhotosSecond, crewPhoto } from '../../../data/photos';
 import { guideLinksFor } from '../../../lib/guides';
 import { blogPostsFor } from '../../../lib/blog';
 import { towns } from '../../../data/towns';
@@ -61,6 +61,7 @@ const guideLinks = await guideLinksFor(path);
    the town — the same sentence on twenty-two pages would trip the harness's
    duplicate-sentence scanner, which fails any ten-word sentence appearing on
    three or more indexable pages. */
+const townPhotoSecond = locationPhotosSecond[t.slug];
 const townPhoto = locationPhotos[t.slug] ?? {
   ...crewPhoto,
   caption: `The crew and the trucks that run the ${t.name} route. Not a stock photograph.`,
@@ -128,6 +129,15 @@ const blogLinks = await blogPostsFor(path);
 
 
   <LocationMap place={t.name} />
+
+  {/* THE SECOND PHOTOGRAPH, where the town has one. It sits here rather than
+      beside the first because a town page runs to three thousand words and a
+      single image at the top does nothing for the two thousand below it.
+
+      Three towns have one. Every other town renders nothing at all here,
+      which is deliberate and is the same rule the slot above follows: an
+      empty slot beats a photograph of somewhere else. */}
+  {townPhotoSecond && <Photo photo={townPhotoSecond} />}
 
   {Body ? (
     <div class="prose"><Body /></div>

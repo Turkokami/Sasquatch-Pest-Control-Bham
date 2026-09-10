@@ -770,13 +770,18 @@ export const business = {
      publisher's own page, which is what earns it the same `via` as the first
      row rather than the legacy site's say-so.
 
-     TWO MORE ARE STILL OWED and are deliberately absent rather than entered
-     on the strength of a line on the old site: a December 2023 PMP piece the
-     legacy page calls "First Five share Lessons Learned", which no search of
-     mypmp.net has surfaced, and a 2023 Business Pulse Magazine feature with
-     no title, date or URL recorded anywhere. A press row without a document
-     behind it is the exact thing the tier split on the awards list exists to
-     prevent, so they wait.
+     THE THIRD PMP PIECE ARRIVED 10 SEP 2026. It had been recorded here as
+     owed — the legacy page named it, no search of mypmp.net surfaced it, and
+     it was deliberately left out rather than entered on the old site's
+     say-so. The owner supplied the URL, it was fetched, and it is in above.
+     Worth noting how that resolved: the missing row was not missing because
+     the article did not exist. It was missing because searching is not the
+     same as asking somebody who knows.
+
+     ONE IS STILL OWED: a 2023 Business Pulse Magazine feature, with no title,
+     date or URL recorded anywhere. A press row without a document behind it
+     is the exact thing the tier split on the awards list exists to prevent,
+     so it waits.
 
      The legacy page also carries a letter claiming the company won "Best Pest
      Control Business and Start-Up Business of the Year in 2023 and 2022". The
@@ -790,6 +795,24 @@ export const business = {
       author: 'Pete Schopen' as Owed<string>,
       published: '2023-08-18',
       url: 'https://www.mypmp.net/sasquatch-stands-out/' as Owed<string>,
+      via: 'publisher-verified' as const,
+      image: null as string | null,
+      alt: null as string | null,
+    },
+    {
+      /* SUPPLIED BY THE OWNER 10 SEP 2026 and verified the same way as the
+         other two: fetched from mypmp.net, with the title, byline and date
+         read off the publisher's own page rather than off the legacy site
+         that listed it. The legacy Awards page had called it "First Five
+         share Lessons Learned" and no search of mypmp.net had surfaced it —
+         the owner had the URL. Which is the useful lesson: a search that
+         comes back empty means the search came back empty, not that the
+         thing does not exist. */
+      title: "'First Five' share lessons learned",
+      publication: 'Pest Management Professional',
+      author: 'Pete Schopen' as Owed<string>,
+      published: '2023-12-22',
+      url: 'https://www.mypmp.net/first-five-share-lessons-learned/' as Owed<string>,
       via: 'publisher-verified' as const,
       image: null as string | null,
       alt: null as string | null,
@@ -832,14 +855,18 @@ export const business = {
    *  form below is built from it and resolves 200 directly, with no
    *  forwarding step, which is what `sameAs` is supposed to contain.
    *
-   *  WHAT IS NOT MACHINE-VERIFIED, and the owner should confirm it once by
-   *  opening the link: that the listing is the Bellingham profile rather than
-   *  the separately operated Houston franchise. Google Maps renders in
-   *  JavaScript, so nothing here could read the address off the page. The
-   *  evidence that it is the right one is that the owner generated the short
-   *  link from his own dashboard and supplied it as his — which is
-   *  owner-supplied, the same class as the award artwork, and worth stating
-   *  rather than dressing up as verified.
+   *  CONFIRMED BY THE OWNER 10 SEP 2026. The one thing no script here could
+   *  establish was whether the CID resolves to the Bellingham profile or to
+   *  the separately operated Houston franchise — Google Maps renders in
+   *  JavaScript, so the address could not be read off the page. The owner
+   *  opened the link and confirmed the Bellingham listing.
+   *
+   *  That distinction was worth chasing rather than assuming. This site keeps
+   *  the two operations rigorously separate — see the Keystone note on site
+   *  separation and the /network/ page — and a sameAs pointing at the wrong
+   *  one would have told every consumer of the graph that the Bellingham
+   *  business and the Texas franchise are the same entity, which is precisely
+   *  the claim the whole structure exists to avoid making.
    *
    *  This unlocks two things: the sameAs list, and a link on the published
    *  rating so a reader can check the 4.9 for themselves. */
