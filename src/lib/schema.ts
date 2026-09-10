@@ -508,7 +508,18 @@ function organizationNode(guideTopics: GuideTopic[]) {
        its own domain. Keystone Part 14: site separation is absolute — no
        photo, phone, license or city from one site lands on another. */
     parentOrganization: { '@id': ID.org },
-    sameAs: business.socials,
+    /* THE PROFILE JOINS sameAs, 10 Sep 2026, now that there is an address
+       rather than a forwarding link to put in it. `sameAs` is the property a
+       consumer uses to reconcile this organization with the same organization
+       elsewhere, and the Google Business Profile is the single most valuable
+       entry it can carry for a local business — it is the record the reviews,
+       the map pin and the opening hours actually live on.
+
+       Guarded on isReady rather than assumed. It was PENDING for eight days
+       and the guard is what let the rest of the graph ship in the meantime. */
+    sameAs: isReady(business.gbpUrl)
+      ? [...business.socials, business.gbpUrl as string]
+      : business.socials,
     /* schema.org `award` takes plain strings, and getting this wrong is easy
        in a way that matters: a consumer reads every entry as a win.
 

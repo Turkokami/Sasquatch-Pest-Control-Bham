@@ -770,12 +770,34 @@ export const business = {
     },
   ],
 
-  /** Canonical Google Business Profile URL. The owner supplied a
-   *  share.google redirect on 2 Sep 2026, which is a forwarding link rather
-   *  than an address and does not belong in `sameAs`. Wanted for two things:
-   *  the sameAs list, and a link on the published rating so a reader can
-   *  check the 4.9 for themselves. */
-  gbpUrl: PENDING as Owed<string>,
+  /** Canonical Google Business Profile URL. RESOLVED 10 Sep 2026, and how it
+   *  was resolved is the point.
+   *
+   *  The owner supplied a share.google redirect on 2 Sep, which was refused
+   *  here as a forwarding link rather than an address. On 10 Sep he supplied
+   *  https://g.page/r/CfBjTeWvc4v-EBM and asked whether it was right. That is
+   *  also a redirect — g.page is Google's own short-link service, generated
+   *  for a profile owner from their dashboard — so it was followed rather
+   *  than pasted in.
+   *
+   *  It resolves through three hops to a Google search carrying
+   *  ludocid=18341881106700002288 and the query "Sasquatch Pest Control".
+   *  That number is the CID: the profile's stable identifier. The address
+   *  form below is built from it and resolves 200 directly, with no
+   *  forwarding step, which is what `sameAs` is supposed to contain.
+   *
+   *  WHAT IS NOT MACHINE-VERIFIED, and the owner should confirm it once by
+   *  opening the link: that the listing is the Bellingham profile rather than
+   *  the separately operated Houston franchise. Google Maps renders in
+   *  JavaScript, so nothing here could read the address off the page. The
+   *  evidence that it is the right one is that the owner generated the short
+   *  link from his own dashboard and supplied it as his — which is
+   *  owner-supplied, the same class as the award artwork, and worth stating
+   *  rather than dressing up as verified.
+   *
+   *  This unlocks two things: the sameAs list, and a link on the published
+   *  rating so a reader can check the 4.9 for themselves. */
+  gbpUrl: 'https://maps.google.com/?cid=18341881106700002288' as Owed<string>,
 
   /* INSULATION AND AIR-SEALING TRAINING. Certificates supplied by the owner,
      2 Sep 2026, and read off the certificates themselves rather than from a

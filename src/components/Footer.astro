@@ -52,10 +52,28 @@ const licensedCount = people.filter(
             business.rating. Naming Google and carrying the date is what makes
             this checkable rather than decorative, and a rating a reader can
             verify in ten seconds is the only kind worth printing. */}
+        {/* THE RATING NOW LINKS TO THE PROFILE IT CAME FROM, 10 Sep 2026.
+            The comment above says a rating a reader can verify in ten seconds
+            is the only kind worth printing — and until today the reader had to
+            go and search for it themselves, which is not ten seconds and which
+            most people will not do. A published figure with a one-click route
+            to its source is a different claim from the same figure printed on
+            its own.
+
+            Still not structured data. The visible-and-attributed rule on
+            business.rating has not changed and the link does not change it —
+            an AggregateRating node would be us asserting our own score in a
+            machine-readable field, which is exactly what that rule refuses. */}
         {isReady(business.rating.value) && isReady(business.rating.count) && (
           <p class="rating">
             Rated {business.rating.value} out of 5 from {business.rating.count}{' '}
-            Google reviews, as of {ratingRead}.
+            {isReady(business.gbpUrl) ? (
+              <a href={business.gbpUrl as string} rel="nofollow noopener">
+                Google reviews
+              </a>
+            ) : (
+              'Google reviews'
+            )}, as of {ratingRead}.
           </p>
         )}
         {licensedCount > 0 && (

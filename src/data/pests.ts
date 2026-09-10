@@ -111,6 +111,9 @@ export const PESTS: Pest[] = [
   { slug: 'pharaoh-ant', name: 'Pharaoh ant', scientific: 'Monomorium pharaonis', group: 'ants' },
   { slug: 'thief-ant', name: 'Thief ant', scientific: 'Solenopsis molesta', group: 'ants' },
   { slug: 'false-honey-ant', name: 'False honey ant', scientific: 'Prenolepis imparis', group: 'ants' },
+  { slug: 'ponerine-ant', name: 'Ponerine ant', scientific: 'Hypoponera punctatissima', group: 'ants' },
+  { slug: 'harvester-ant', name: 'Harvester ant', scientific: 'Pogonomyrmex spp.', group: 'ants' },
+  { slug: 'aphaenogaster-ant', name: 'Aphaenogaster ant', scientific: 'Aphaenogaster spp.', group: 'ants' },
 
   /* Rodents */
   { slug: 'norway-rat', name: 'Norway rat', scientific: 'Rattus norvegicus', group: 'rodents' },
