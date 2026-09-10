@@ -712,6 +712,29 @@ export const speciesClips: Record<string, { src: string; alt: string; caption: s
     caption:
       'Dragging rather than flying, because the prey outweighs her. The burrow mouth is the dark gap at the left of frame. This is the behaviour the page is about — she paralyzes a katydid, hauls it home, and seals it in a cell with a single egg.',
   },
+  /* BALD-FACED HORNET, 9 Sep 2026, the owner's video of his own technician
+     working. The identification carries the same caveat the still on this
+     species does and for the same reason: a large gray enclosed aerial nest
+     is also built by aerial yellowjackets and the two cannot be separated in
+     footage. He named it, and that is what settles it.
+
+     AUDIO IS STRIPPED, deliberately. This was shot on a customer's property
+     and arrived as a phone video with a live soundtrack. Nothing on this site
+     publishes a customer's name against their building — see the two roof
+     clips held back in videos.ts — and unheard speech on a track nobody
+     reviewed frame by frame is the easiest way to break that by accident.
+     There is nothing in the pictures that needs sound to read.
+
+     TRIMMED from 38 seconds to 14, which is the part where the wand is in the
+     entrance. The full file was 23 MB and 5.9 MB even after encoding; the cut
+     is 2 MB. Still the heaviest clip here, and it earns it — this is the one
+     piece of footage on the site of the work actually being done. */
+  'bald-faced-hornet': {
+    src: '/video/bald-faced-hornet-nest-treated-in-a-conifer',
+    alt: 'A large gray papery hornet nest hanging in a conifer, with a yellow application wand held into the single entrance hole near its base',
+    caption:
+      'The entrance is the whole job. A nest like this has one way in near the bottom, and treating it means putting the material through that hole rather than over the outside of the envelope — the outer shell is paper insulation and spraying it accomplishes nothing but announcing you. Note the pole: nobody is standing under it on a ladder.',
+  },
   'grass-carrying-wasp': {
     src: '/video/grass-carrying-wasp-carrying-grass-into-siding',
     alt: 'A slender dark wasp carrying long dry grass blades into a narrow crevice in painted wooden siding, with the grass ends left protruding',
