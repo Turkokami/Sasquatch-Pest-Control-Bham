@@ -12,6 +12,9 @@ import { hormigasCarpinterasEnUnaVentana } from './hormigas-carpinteras-en-una-v
 import { aserrinBajoLaMoldura } from './aserrin-bajo-la-moldura';
 import { termitasDeMaderaHumedaBajoElPiso } from './termitas-de-madera-humeda-bajo-el-piso';
 import { maderaBlandaEnElAlfeizar } from './madera-blanda-en-el-alfeizar';
+import { avispasDentroDeUnaPared } from './avispas-dentro-de-una-pared';
+import { avispasAmarillasEnElPasto } from './avispas-amarillas-en-el-pasto';
+import { nidoDeAvisponEnUnArbol } from './nido-de-avispon-en-un-arbol';
 
 export type { EsProblema } from './tipos';
 
@@ -33,6 +36,9 @@ export const esProblemas: EsProblema[] = [
   aserrinBajoLaMoldura,
   termitasDeMaderaHumedaBajoElPiso,
   maderaBlandaEnElAlfeizar,
+  avispasDentroDeUnaPared,
+  avispasAmarillasEnElPasto,
+  nidoDeAvisponEnUnArbol,
 ];
 
 /** Slug español del servicio padre, leído de src/data/es-servicios/. */
