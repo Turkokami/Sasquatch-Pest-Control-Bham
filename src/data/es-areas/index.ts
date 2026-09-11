@@ -49,6 +49,12 @@ import { ferndaleVistaRidge } from './ferndale-vista-ridge';
 import { ferndalePacificHighlands } from './ferndale-pacific-highlands';
 import { ferndaleWoodsPoint } from './ferndale-woods-point';
 import { ferndaleTheMeadows } from './ferndale-the-meadows';
+import { bellinghamAlabamaHill } from './bellingham-alabama-hill';
+import { bellinghamBarkley } from './bellingham-barkley';
+import { bellinghamCityCenter } from './bellingham-city-center';
+import { bellinghamCordata } from './bellingham-cordata';
+import { bellinghamEdgemoor } from './bellingham-edgemoor';
+import { bellinghamFairhaven } from './bellingham-fairhaven';
 
 export type { EsLugar } from './tipos';
 
@@ -96,6 +102,13 @@ export const esLugares: EsLugar[] = [
   ferndalePacificHighlands,
   ferndaleWoodsPoint,
   ferndaleTheMeadows,
+  /* Barrios: Bellingham */
+  bellinghamAlabamaHill,
+  bellinghamBarkley,
+  bellinghamCityCenter,
+  bellinghamCordata,
+  bellinghamEdgemoor,
+  bellinghamFairhaven,
 ];
 
 export const COUNTY_TOWNS = ['whatcom-county', 'skagit-county'] as const;
