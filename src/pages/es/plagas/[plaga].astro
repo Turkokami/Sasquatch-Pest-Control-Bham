@@ -1,0 +1,129 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+import Faq from '../../../components/Faq.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import SourceList from '../../../components/SourceList.astro';
+import { business } from '../../../data/business';
+import { pestBySlug, pestsInGroup } from '../../../data/pests';
+import { esPlagas, esPlagaPorEspecie, ES_GRUPOS, ES_VEREDICTO, ES_GRUPO_SERVICIO } from '../../../data/es-plagas';
+import { t } from '../../../data/i18n';
+
+/* LA FICHA ESPAÑOLA LEE SUS HECHOS DE LA INGLESA. El veredicto, con qué se
+   confunde, las fuentes, la fecha de revisión y si la página está lista para
+   indexarse vienen de src/content/pests/<species>.md; el nombre científico y
+   el grupo, de src/data/pests.ts. Aquí solo se traduce la prosa. Así una
+   corrección en inglés — un veredicto que cambia, una fuente nueva — llega a
+   las dos páginas en la misma compilación, y las dos no pueden decir cosas
+   distintas sobre si algo se trata. */
+export async function getStaticPaths() {
+  const profiles = await getCollection('pests');
+  return esPlagas.map((e) => {
+    const species = pestBySlug(e.species);
+    const en = profiles.find((p) => p.data.species === e.species);
+    if (!species || !en) {
+      throw new Error(
+        `src/data/es-plagas: "${e.slug}" names species "${e.species}", which has no entry in pests.ts or no English profile. ` +
+          `The Spanish library cannot claim a species the English one does not.`,
+      );
+    }
+    return { params: { plaga: e.slug }, props: { e, species, en } };
+  });
+}
+
+const { e, species, en } = Astro.props;
+const path = `/es/plagas/${e.slug}/`;
+const S = t('es');
+const grupo = ES_GRUPOS[species.group];
+
+/* Los rieles apuntan solo a fichas españolas que existen — la misma regla de
+   la plantilla inglesa ("solo enlazar fichas que existen") y la de todo el
+   nivel español: un riel "relacionado" no manda al lector al inglés. */
+const confundibles = en.data.confusedWith
+  .map((c) => esPlagaPorEspecie(c))
+  .filter((x): x is NonNullable<typeof x> => !!x)
+  .map((x) => ({ href: `/es/plagas/${x.slug}/`, label: x.nombre }));
+
+const hermanas = pestsInGroup(species.group)
+  .filter((x) => x.slug !== species.slug)
+  .map((x) => esPlagaPorEspecie(x.slug))
+  .filter((x): x is NonNullable<typeof x> => !!x)
+  .map((x) => ({ href: `/es/plagas/${x.slug}/`, label: x.nombre }));
+
+/* Mismas tres ligas que el riel "What to do about it" en inglés. La tercera
+   es la única que va al inglés, a propósito y marcada: /what-we-use/ no se
+   traduce (una etiqueta parafraseada no es una etiqueta), y quien está
+   decidiendo si deja que le apliquen algo debe tener cada etiqueta a un clic. */
+const acciones = [
+  ES_GRUPO_SERVICIO[species.group],
+  { href: '/es/servicios/exclusion-y-reparaciones/', label: 'Exclusión y reparaciones — sellarlos afuera en lugar de tratar' },
+  { href: '/what-we-use/', label: 'Todo lo que aplicamos, con etiquetas y hojas de seguridad (en inglés)' },
+];
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title={e.title}
+  description={e.description}
+  kind="article"
+  noindex={en.data.ready !== true}
+  faqs={e.faqs}
+  image={en.data.hero}
+  citations={en.data.sources}
+  dateModified={en.data.updated}
+  breadcrumbs={[
+    { name: 'Inicio', path: '/es/' },
+    { name: 'Biblioteca de plagas', path: '/es/plagas/' },
+    { name: e.nombre, path },
+  ]}
+>
+  <h1>{e.h1}</h1>
+
+  <p class="ident">
+    {species.scientific && <em>{species.scientific}</em>}
+    {species.scientific && ' · '}
+    <span>{grupo.nombre}</span>
+  </p>
+
+  <AnswerBox text={e.answer} />
+
+  <LeadForm />
+
+  {/* data-boilerplate por la misma razón que en inglés: es una de cuatro
+      frases fijas elegidas por un enum, idéntica en cada ficha con el mismo
+      veredicto por diseño. */}
+  <p class="verdict" data-boilerplate><strong>{ES_VEREDICTO[en.data.treatment]}</strong></p>
+
+  <div class="prose">
+    {e.secciones.map((sec) => (
+      <>
+        <h2>{sec.h2}</h2>
+        {sec.parrafos.map((p) => <p>{p}</p>)}
+      </>
+    ))}
+  </div>
+
+  <LinkRail heading="Qué hacer al respecto" links={acciones} />
+
+  <Faq items={e.faqs} />
+
+  <SourceList sources={en.data.sources} reviewBy={en.data.reviewBy} />
+
+  {confundibles.length > 0 && <LinkRail heading="Se confunde seguido con" links={confundibles} />}
+
+  {hermanas.length > 0 && <LinkRail heading={`Más: ${grupo.nombre.toLowerCase()}`} links={hermanas} />}
+
+  <div class="prose" data-boilerplate>
+    <h2>¿No sabe qué tiene?</h2>
+    <p>
+      Tómele una foto junto a una moneda o la punta de un dedo, para la escala,
+      y mándela por mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>. Identificarla
+      no se cobra, y hablamos español. También puede{' '}
+      <a href="/es/contacto/">escribirnos desde la página de contacto</a>.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

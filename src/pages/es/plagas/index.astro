@@ -1,0 +1,140 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+import Faq from '../../../components/Faq.astro';
+import { business } from '../../../data/business';
+import { PEST_GROUPS, pestsInGroup } from '../../../data/pests';
+import { esPlagaPorEspecie, ES_GRUPOS } from '../../../data/es-plagas';
+import { t } from '../../../data/i18n';
+
+const path = '/es/plagas/';
+const S = t('es');
+
+/* La lista de especies sale de src/data/pests.ts, igual que en el índice
+   inglés, y solo de ahí. Cada especie enlaza su ficha española si existe; si
+   todavía no, enlaza la inglesa marcada "(en inglés)" — la misma regla de
+   /es/servicios/ mientras las fichas llegan — y la marca desaparece sola
+   cuando la ficha española se agrega. Una especie sin ficha en ningún idioma
+   queda como texto, como en inglés. */
+const written = new Set(
+  (await getCollection('pests')).filter((x) => x.data.ready === true).map((x) => x.data.species),
+);
+
+const answer =
+  'Nuestra biblioteca de plagas cubre los insectos y roedores que de verdad aparecen en casas y edificios del condado de Whatcom: cómo identificar cada uno, en qué época del año sale aquí, qué le hace a una estructura y qué implica, siendo realistas, tratarlo.';
+
+const faqs = [
+  {
+    q: '¿Cómo identifico una plaga que encontré en mi casa?',
+    a: 'Tómele una foto clara junto a algo que dé la escala y mándenosla. La identificación decide el tratamiento: la hormiga de humedad y la hormiga carpintera piden trabajos de verdad distintos, y equivocarse de especie desperdicia una visita.',
+  },
+  {
+    q: '¿La araña vagabunda es peligrosa?',
+    a: 'El Departamento de Salud del estado de Washington dice que la araña vagabunda no se considera tan peligrosa como se creía, y que la evidencia no respalda una relación entre su veneno y la necrosis de la piel. Casi todas las arañas grandes que se ven adentro en otoño aquí son arañas gigantes de casa.',
+  },
+  {
+    q: '¿Hay termitas en el condado de Whatcom?',
+    a: 'Sí, pero no las subterráneas agresivas que dominan el tratamiento en el sur. Aquí la común es la termita de madera húmeda del Pacífico, que ataca madera que ya está mojada, así que el problema de fondo casi siempre es una fuente de humedad.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Biblioteca de Plagas | Condado de Whatcom, WA"
+  description="Identificación, temporada y notas de tratamiento para los insectos y roedores que de verdad aparecen en casas y edificios del condado de Whatcom."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Biblioteca de plagas', path }]}
+>
+  <h1>Biblioteca de Plagas — Lo que de Verdad Vive Aquí</h1>
+  <AnswerBox text={answer} />
+  <LeadForm />
+
+  {PEST_GROUPS.map((g) => (
+    <section>
+      <h2>{ES_GRUPOS[g.key].nombre}</h2>
+      <p class="blurb">{ES_GRUPOS[g.key].blurb}</p>
+      <ul class="rail">
+        {pestsInGroup(g.key).map((s) => {
+          const es = esPlagaPorEspecie(s.slug);
+          if (es) return <li><a href={`/es/plagas/${es.slug}/`}>{es.nombre}</a></li>;
+          if (written.has(s.slug)) return <li><a href={`/pest-library/${s.slug}/`} hreflang="en" lang="en">{s.name}</a> (en inglés)</li>;
+          return <li><span lang="en">{s.name}</span></li>;
+        })}
+      </ul>
+    </section>
+  ))}
+
+  <div class="prose">
+    <p>
+      Casi todas las bibliotecas de plagas son texto nacional pegado en un sitio
+      local, y por eso enlistan especies que nunca se han registrado en este
+      condado. Esta cubre lo que nuestros técnicos de verdad encuentran aquí,
+      con los tiempos de temporada de aquí.
+    </p>
+
+    <h2>Tres cosas que conviene saber sobre las plagas de aquí</h2>
+    <p>
+      <strong>La humedad importa más que el frío.</strong> No hay un invierno
+      duro que regrese las poblaciones a cero; hay unas treinta y cinco pulgadas
+      de lluvia en una temporada gris larga que mantiene la madera húmeda todo
+      el año. La termita de madera húmeda solo ataca madera mojada, la hormiga
+      de humedad anida en ella y la carpintera prefiere la que ya se ablandó.
+      Cuando una de ellas aparece adentro, la pregunta útil es dónde está el
+      agua, no qué producto rociar.
+    </p>
+    <p>
+      <strong>Casi todo lo que asusta es inofensivo.</strong> La araña gigante
+      de casa es la más grande que casi cualquiera va a ver adentro, y no es
+      peligrosa. Sobre la araña vagabunda, el Departamento de Salud del estado
+      dice claramente que no se considera tan peligrosa como se creía. Lo
+      decimos porque asustar a los clientes es una manera fácil de vender
+      tratamientos, y preferimos no hacerlo.
+    </p>
+    <p>
+      <strong>Nuestras termitas no son las que usted ha leído.</strong> Casi todo
+      lo que hay en internet habla de termitas subterráneas del sur y del este.
+      La común aquí es la termita de madera húmeda del Pacífico, y encontrarla
+      casi siempre quiere decir un problema de agua que lleva tiempo.
+    </p>
+
+    <h2>Lo que esta biblioteca no cubre</h2>
+    <p>
+      No están las aves ni la fauna silvestre — murciélagos, ardillas, mapaches,
+      zarigüeyas —, porque no es lo que hacemos, y varios están protegidos por
+      leyes con temporadas estrictas. Si eso es lo que tiene, llame de todos
+      modos y le decimos a dónde acudir. Tampoco están la hormiga de fuego, la
+      termita de Formosa ni la reclusa café, porque ninguna está establecida en
+      el condado de Whatcom. La viuda negra occidental sí es de Washington, pero
+      el Departamento de Salud la describe como común en el este del estado; de
+      este lado de las Cascadas es poco común.
+    </p>
+
+    <h2>Cuándo llamar y cuándo no</h2>
+    <p>
+      <strong>Por lo general no nos necesita:</strong> una araña grande adentro
+      en otoño, unas cuantas hormigas explorando en primavera, una avispa que
+      entró por la ventana, chinches de la conífera en una pared soleada en
+      octubre. <strong>Vale la pena llamar:</strong> excremento en la cocina,
+      rasguños en una pared de noche, aserrín debajo de una moldura, madera
+      blanda alrededor de una ventana, una fila de hormigas que sigue después de
+      limpiar, un nido de avispas cerca de una puerta, o piquetes que aparecen
+      en la noche. <strong>Pronto:</strong> lo que quiera sellado antes del
+      otoño, porque la ventana para la exclusión es agosto y se llena.
+    </p>
+    <p>
+      Cada ficha dice de dónde viene lo que afirma — el Departamento de Salud
+      del estado, la extensión de WSU — y cuándo se consultó; las fuentes están
+      en inglés, como las publican. Si tiene algo enfrente y no sabe qué es,
+      tómele una foto junto a una moneda y mándela por mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>. Identificarlo
+      no se cobra.
+    </p>
+    <p data-boilerplate>{S.englishOnwardNote}</p>
+  </div>
+
+  <Faq items={faqs} />
+</BaseLayout>

@@ -40,6 +40,8 @@
  *     on. They are reachable, they are just not duplicated.
  */
 
+import { esPlagas } from './es-plagas';
+
 export type Lang = 'en' | 'es';
 
 /**
@@ -74,11 +76,20 @@ export const PAGE_PAIRS: Record<string, string> = {
   '/services/moth-control/': '/es/servicios/control-de-polillas/',
   '/services/silverfish-control/': '/es/servicios/control-de-pececillos-de-plata/',
   '/services/stink-bug-control/': '/es/servicios/control-de-chinches-apestosas/',
+  '/pest-library/': '/es/plagas/',
   '/locations/': '/es/areas-de-servicio/',
   '/our-guarantee/': '/es/garantia/',
   '/about/': '/es/nosotros/',
   '/contact/': '/es/contacto/',
 };
+
+/* THE SPECIES PAIRS ARE DERIVED, NOT TYPED. Fifty-three hand-typed rows here
+   would be a second list of the Spanish library beside src/data/es-plagas/,
+   and the two would drift the first time a slug changed. A species pair
+   exists when, and only when, its Spanish module is registered there — and
+   the route throws if that module names a species with no English profile,
+   so no pair can point at a 404 in either direction. */
+for (const p of esPlagas) PAGE_PAIRS[`/pest-library/${p.species}/`] = `/es/plagas/${p.slug}/`;
 
 /** Spanish path -> English path. Derived, never typed twice. */
 export const ES_TO_EN: Record<string, string> = Object.fromEntries(
@@ -181,8 +192,11 @@ const ES_LABELS: Record<string, string> = {
   '/es/servicios/control-de-avispas/': 'Avispas',
   '/es/servicios/control-de-hormigas/': 'Hormigas',
   '/es/servicios/control-de-aranas/': 'Arañas',
-  '/es/servicios/control-de-moscas/': 'Moscas',
   '/es/servicios/eliminacion-de-abejas/': 'Abejas',
+  /* Took the Moscas chip on 10 Sep 2026, to keep the grid at twelve. The
+     English masthead links its pest library and the Spanish one should too;
+     flies are still one click away on /es/servicios/. */
+  '/es/plagas/': 'Biblioteca de plagas',
   '/es/areas-de-servicio/': 'Áreas de servicio',
   '/es/garantia/': 'Nuestra garantía',
   '/es/nosotros/': 'Quiénes somos',
