@@ -17,6 +17,9 @@ sources:
   - label: "Bellingham Municipal Code ch. 6.15 — Rental Registration and Safety Inspection Program"
     url: "https://bellingham.municipal.codes/BMC/6.15"
     read: 2026-08-31
+  - label: "City of Bellingham — Rental Property Safety Inspection Checklist"
+    url: "https://cob.org/wp-content/uploads/final-checklist.pdf"
+    read: 2026-09-10
 relatedTo:
   - "/services/bed-bug-control/bed-bugs-in-a-student-rental/"
   - "/services/rodent-control/"
@@ -33,7 +36,7 @@ faqs:
   - q: "Can my landlord charge me for the exterminator?"
     a: "They may try, and whether it is lawful depends on the circumstances and the lease. Washington Law Help describes writing a demand letter to dispute a charge. This is the point at which a tenant service or an attorney is worth more than a pest control company."
   - q: "Does Bellingham's rental inspection cover pests?"
-    a: "Not on the published checklist. The city program covers structure, weather exposure, plumbing and sanitation, heating, ventilation, electrical, exits and detectors. Several of those are exactly the defects that let pests in, but pests are not a named item."
+    a: "In part. The municipal code chapter does not mention pests, but the city's published inspection checklist does: foundation openings larger than a quarter inch, exterior walls that are not rodent proof, and visible evidence of rodents or insects such as bed bugs or cockroaches. It is a checklist walk on a sample of units every few years, not a pest inspection."
   - q: "What should I do first as a tenant?"
     a: "Report it in writing and keep a copy, with the date. Photograph what you found. A written, dated record is the single most useful thing you can have, whichever way the responsibility question goes."
   - q: "Will you tell a landlord the problem is structural?"
@@ -183,18 +186,26 @@ weather exposure, plumbing and sanitation, heat and water facilities,
 ventilation, defective or hazardous electrical wiring, safe and functional
 exits, and smoke and carbon monoxide detectors.
 
-**Pests are not a named item on that checklist.** We want to be exact about
-this, because it would be easy and self-serving to imply otherwise. The city's
-published description of the program does not list pests, rodents, vermin or
-infestation.
+**The ordinance does not name pests, but the inspection checklist does.** It
+is worth being exact here, because the two documents are easy to confuse. The
+chapter of the municipal code describes the program without mentioning pests.
+The city's published Rental Property Safety Inspection Checklist — the one the
+city and the private inspectors both work from — names them in four places:
 
-What it does list is a set of conditions that decide whether a building gets
-pests: structural integrity, sanitation, ventilation, weather exposure. A unit
-that fails on structure or on ventilation is very often the same unit with
-something living under the floor.
+- Openings in the foundation larger than a quarter inch, listed as a potential
+  for insect infestation
+- Exterior walls that are not rodent proof
+- Wall, floor or ceiling coverings damaged so that there is access for rodents
+  and insects
+- Under the owner's obligations, pest or rodent harborage or infestation, and
+  visible evidence of rodents or insects such as bed bugs, ants, cockroaches or
+  silverfish
 
-So the accurate framing is that the state duty and the city program are
-separate things doing separate jobs, and neither one is a pest inspection.
+So a city inspection can fail a unit on pests, or on the openings that let them
+in. It is still not a pest inspection in the sense of somebody looking for a
+population under the floor: it is a checklist walk, on a sample of units, every
+few years. The state duty and the city program remain separate things doing
+separate jobs.
 
 ## If you are the tenant
 
