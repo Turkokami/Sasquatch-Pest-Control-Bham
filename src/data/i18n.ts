@@ -39,8 +39,8 @@
  *
  * Everything else is being translated, in the order the owner approved on
  * 10 Sep 2026: main pages and services (done), the pest library (done, 53 of
- * 53), then locations, then commercial, guides, blog, problem pages, awards,
- * partners and the gallery. Until a section lands its pages are simply
+ * 53), locations (done, 49 of 49: counties, towns and neighborhoods), then
+ * commercial, guides, blog, problem pages, awards, partners and the gallery. Until a section lands its pages are simply
  * unpaired — reachable in English, and never linked from a Spanish page
  * without an "(en inglés)" mark.
  */
