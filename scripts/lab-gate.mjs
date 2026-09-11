@@ -52,6 +52,15 @@ const TEMPLATES = [
   ['Spanish spoke', '/es/servicios/control-de-roedores/'],
   ['contact', '/contact/'],
 ];
+/* LAB_ONLY=/,/blog/x/ measures just those URLs — for re-checking a fix
+   without the whole run. A partial run never counts as passing the gate:
+   it writes no report, and says so. */
+const ONLY = (process.env.LAB_ONLY || '').split(',').map((s) => s.trim()).filter(Boolean);
+if (ONLY.length) {
+  const keep = TEMPLATES.filter(([, u]) => ONLY.includes(u));
+  TEMPLATES.length = 0;
+  TEMPLATES.push(...keep);
+}
 const LIMITS = { lcp: 2000, tbt: 200, cls: 0.05, score: 0.9 };
 
 const median = (xs) => { const s = [...xs].sort((a, b) => a - b); return s[s.length >> 1]; };
@@ -132,6 +141,10 @@ try {
   stop();
 }
 
+if (ONLY.length) {
+  console.log(`\npartial run (LAB_ONLY) — ${failed} of ${TEMPLATES.length} over budget; no report written, and this is not a gate result.\n`);
+  process.exit(failed ? 1 : 0);
+}
 const date = new Date().toISOString().slice(0, 10);
 fs.mkdirSync(path.join(root, 'reports'), { recursive: true });
 const file = path.join(root, 'reports', `lab-gate-${date}.json`);

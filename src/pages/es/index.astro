@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
-import { business } from '../../data/business';
+import { business, isReady } from '../../data/business';
 import { t } from '../../data/i18n';
+import { esServicios } from '../../data/es-servicios';
 
 const path = '/es/';
 const a = business.address;
@@ -39,12 +40,23 @@ const answer =
       <a href={`tel:${business.phoneE164}`}>{business.phone}</a>.
     </p>
 
-    <h2>Qué hacemos</h2>
+    <h2>¿Qué hacemos?</h2>
     <p>
-      Trabajamos con roedores, avispas y avispones, hormigas — incluida la
-      hormiga carpintera —, arañas, moscas y abejas, en casas y en negocios de
-      los condados de Whatcom y Skagit. También hacemos exclusión, que es
-      sellar por dónde entran los animales para que el problema no vuelva.
+      Control de plagas y exclusión para casas y negocios de los condados de
+      Whatcom y Skagit: roedores, insectos que pican, hormigas, arañas,
+      termitas de madera húmeda, chinches de cama y los insectos que se meten a
+      pasar el invierno, más el trabajo de sellar por dónde entran para que el
+      problema no vuelva. Estos servicios ya tienen su página completa en
+      español:
+    </p>
+    <ul>
+      {esServicios.map((s) => (
+        <li><a href={`/es/servicios/${s.slug}/`}>{s.nav}</a></li>
+      ))}
+    </ul>
+    <p>
+      La <a href="/es/servicios/">lista completa de servicios</a> incluye los
+      que todavía están explicados solo en inglés.
     </p>
 
     <h2>Por qué la exclusión importa</h2>
@@ -73,8 +85,8 @@ const answer =
       Tenemos una garantía de servicio del 100 %, y sus límites están escritos
       en la misma página que la promesa — que es la única forma en que vale la
       pena leer una garantía. Está{' '}
-      <a href="/our-guarantee/">publicada completa, en inglés</a>. Si quiere
-      que se la expliquemos en español, llámenos y lo hacemos por teléfono.
+      <a href="/es/garantia/">explicada en español</a>, con sus límites, y el
+      acuerdo que usted firma manda si algo no coincide.
     </p>
 
     <h2>Qué pasa cuando llama</h2>
@@ -84,6 +96,54 @@ const answer =
       veces cambia la respuesta de si hace falta tratar. Después vamos a ver la
       casa, porque el mismo insecto en dos casas distintas puede ser dos
       trabajos distintos.
+    </p>
+
+    <h2>¿Por qué el otoño cambia todo aquí?</h2>
+    <p>
+      Porque aquí no hace tanto frío como llueve. En este condado caen unas
+      treinta y cinco pulgadas de agua al año y casi nunca hay una helada
+      larga, así que lo que decide cuándo se meten los roedores es el suelo
+      mojado de finales de septiembre, no el termómetro. Por eso el mejor
+      momento para sellar una casa es agosto: antes de que la lluvia empuje a
+      nadie hacia adentro. Las avispas, en cambio, llegan a su punto más alto a
+      finales de agosto, y las arañas grandes que aparecen en la tina en
+      septiembre son machos buscando pareja, no una invasión.
+    </p>
+
+    <h2>¿Cuándo no hace falta tratar?</h2>
+    <p>
+      Más seguido de lo que la gente cree. Una araña doméstica gigante en
+      otoño se va sola. Un enjambre de abejas colgando de un árbol casi siempre
+      se va en uno o dos días y lo recoge un apicultor. Unas hormigas de
+      humedad en una solera están diciendo dónde entra el agua, y el arreglo es
+      de un contratista. En esos casos le decimos lo que es y lo que no hace
+      falta, porque una empresa que le dice que no a una venta es una empresa
+      a la que le puede creer el resto.
+    </p>
+
+    {/* Solo dónde leerlas. Lo que la empresa hace o no hace para pedir reseñas
+        no se afirma aquí: está pendiente de que el dueño lo confirme
+        (GUARDRAILS.md §5), y una práctica sin confirmar publicada como hecho
+        es exactamente lo que la regla de la FTC castiga. */}
+    {isReady(business.gbpUrl) && (
+      <>
+        <h2>¿Dónde leo las reseñas?</h2>
+        <p>
+          En <a href={business.gbpUrl as string} rel="noopener">nuestro perfil
+          de Google</a>, donde las puede leer completas, tal como las escribieron
+          los clientes.
+        </p>
+      </>
+    )}
+
+    <h2>¿Dónde trabajamos?</h2>
+    <p>
+      En Bellingham y todo el condado de Whatcom — Ferndale, Lynden, Blaine,
+      Birch Bay, Everson, Nooksack, Sumas, Sudden Valley, Custer, Deming y Acme
+      — y en parte del condado de Skagit. En{' '}
+      <a href="/es/areas-de-servicio/">áreas de servicio</a> está lo que cambia
+      de un pueblo a otro, y en{' '}
+      <a href="/es/nosotros/">quiénes somos</a>, cómo trabajamos.
     </p>
 
     <h2>Dónde estamos</h2>

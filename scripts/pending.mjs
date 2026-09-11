@@ -222,6 +222,8 @@ const KEYSTONE_V2 = [
    'v2 gives a town or neighborhood its own page only on two of five signals: search volume, 10+ Search Console impressions a quarter, an Ads conversion there, a page for it on 2+ of the top five local competitors, or documented job history there. The site has 19 town pages and 30 neighborhood pages and none of that evidence recorded yet. Job history (from the CRM or QuickBooks) and the Search Console export above supply most of it. Nothing is hidden or removed in the meantime.'],
   ['Reviews — FTC rule and a monthly target (Part 14)',
    'No incentives, no gating, no staff-written reviews, no suppressing bad ones. Ask every customer at job completion and set a monthly target: v2 finds review cadence matters more than the total. GUARDRAILS.md §5 — the owner acknowledging it in writing is what v2 asks for.'],
+  ['Bird work — offered or retired?',
+   'Retired on 30 Aug 2026 per services.ts and /about/, but the berry-processing, marina and retail pages offer bird exclusion, a commercial photo caption advertises it, and Keystone Part 1.4 calls it the standout edge. GUARDRAILS.md §8.'],
   ['Coastal K9 on /trusted-partners/ — which instruction wins?',
    'Keystone says no K9 content on Sasquatch; the owner asked for Coastal K9 to be listed as a contracted specialist. The page does the second. GUARDRAILS.md §6.'],
 ];

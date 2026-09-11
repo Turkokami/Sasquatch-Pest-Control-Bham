@@ -3,23 +3,34 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import { business } from '../../../data/business';
 import { esServicios } from '../../../data/es-servicios';
-import { t } from '../../../data/i18n';
+import { liveServices } from '../../../data/services';
+import { PAGE_PAIRS, t } from '../../../data/i18n';
 
 const path = '/es/servicios/';
 const S = t('es');
 
-/* Seis servicios, no veintitrés. La lista en inglés tiene veintitrés spokes
-   confirmados; estos seis son los que se tradujeron primero porque son los
-   que más se piden. Los demás siguen existiendo en inglés — lo que no se
-   hace es anunciar en español un servicio cuya página no existe todavía. */
+/* EL ÍNDICE COMPLETO, NO SOLO LO TRADUCIDO. Hasta el 10 Sep 2026 esta página
+   listaba los seis servicios con página en español y callaba el resto, lo que
+   le decía a un lector hispanohablante que no hacemos termitas ni chinches.
+   Ahora lista los veintitrés servicios confirmados en inglés: los que tienen
+   página en español enlazan a ella, y los demás enlazan a la página en inglés
+   y lo dicen. La lista se arma de services.ts y de PAGE_PAIRS, así que cada
+   servicio pasa solo a la lista en español el día que su página existe, y
+   nunca aparece aquí un servicio que la versión en inglés no ofrezca. */
+const enServicesWithEs = new Set(esServicios.map((s) => s.enPath));
+const soloIngles = liveServices().filter((s) => !enServicesWithEs.has(`/services/${s.slug}/`) && !PAGE_PAIRS[`/services/${s.slug}/`]);
+
+/* 40–60 palabras. */
 const answer =
-  `Sasquatch Pest Control atiende roedores, avispas y avispones, hormigas incluida la carpintera, arañas, moscas y abejas en casas y negocios de los condados de Whatcom y Skagit. Hablamos español. Llame o mande un mensaje de texto al ${business.phone}.`;
+  `Sasquatch Pest Control atiende casas y negocios de los condados de Whatcom y Skagit: roedores, avispas, hormigas, arañas, moscas, abejas, termitas, chinches y más, y además sellamos las entradas para que el problema no vuelva. Hablamos español. Llame o mande un mensaje de texto al ${business.phone} para una visita.`;
+
+const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-control');
 ---
 <BaseLayout
   path={path}
   lang="es"
   title="Servicios de Control de Plagas en Bellingham"
-  description="Control de plagas en español en Bellingham y el condado de Whatcom: roedores, avispas, hormigas, arañas, moscas y abejas. Llame al 360-410-2199."
+  description="Todos nuestros servicios de control de plagas en español, en Bellingham y los condados de Whatcom y Skagit: roedores, insectos, termitas y exclusión. Llame al 360-410-2199."
   kind="page"
   breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Servicios', path }]}
 >
@@ -27,7 +38,7 @@ const answer =
   <AnswerBox text={answer} />
 
   <div class="prose">
-    <h2>Qué atendemos</h2>
+    <h2>Servicios con página en español</h2>
     <ul>
       {esServicios.map((s) => (
         <li>
@@ -36,15 +47,79 @@ const answer =
       ))}
     </ul>
 
-    <h2>Exclusión</h2>
+    {soloIngles.length > 0 && (
+      <>
+        <h2>Servicios que por ahora están explicados en inglés</h2>
+        <p>
+          Estos también los hacemos. Su página detallada todavía no está en
+          español; mientras tanto, cualquiera de ellos se lo explicamos por
+          teléfono en su idioma.
+        </p>
+        <ul>
+          {soloIngles.map((s) => (
+            <li><a href={`/services/${s.slug}/`} hreflang="en" lang="en">{s.name}</a> (en inglés)</li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    <h2>¿Cómo decidimos qué hacer en su casa?</h2>
     <p>
-      Casi todo lo que hacemos bien termina en exclusión: sellar por dónde
-      entran los animales para que el problema no vuelva. Un tratamiento
-      resuelve lo de hoy; una entrada abierta vuelve a llenarse en unos meses.
-      Cuando el problema es de entrada, se lo decimos.
+      En el mismo orden siempre, porque saltarse un paso es lo que hace que un
+      problema regrese. Primero, qué es: la especie decide todo lo demás, y
+      muchas veces se resuelve con una foto antes de que alguien salga de la
+      oficina. Segundo, por qué está ahí: casi todo lo que nos llaman en este
+      condado tiene detrás una rendija, una fuente de humedad o algo de comer.
+      Tercero, tratar lo que ya está adentro, con el producto correcto y en el
+      lugar correcto en vez de por todas partes. Y cuarto, cerrar la entrada,
+      que es la parte que hace que el trabajo dure.
     </p>
 
-    <h2>Qué pasa cuando llama</h2>
+    <h2>¿Por qué tanto de esto termina en exclusión?</h2>
+    <p>
+      Porque aquí llueve. Un clima tan húmedo como el nuestro hace que la
+      madera se ablande, que los cimientos viejos se asienten y que las mallas
+      se oxiden, y cada una de esas cosas abre una puerta. Un tratamiento
+      atiende lo que hay hoy; una puerta abierta se vuelve a llenar la
+      temporada siguiente. Sellar cuesta más una vez y menos con los años, y
+      cuando es la mejor compra se lo decimos, aunque signifique menos visitas
+      para nosotros.
+    </p>
+
+    <h2>¿Qué plagas llegan en cada época del año?</h2>
+    <p>
+      En primavera salen las hormigas y las reinas de avispa empiezan sus
+      nidos, que es cuando quitarlos cuesta menos. En verano crecen las
+      colonias de avispa hasta su punto más alto, a finales de agosto. Con las
+      primeras lluvias de otoño los roedores buscan el espacio seco debajo del
+      piso, y en esas mismas semanas aparecen arañas grandes que son machos
+      buscando pareja. En invierno salen a las ventanas de arriba las moscas
+      que se metieron a las paredes en octubre. Saber en qué parte del año
+      está usted dice mucho de lo que está viendo.
+    </p>
+
+    <h2>¿Trabajan con rentas y negocios?</h2>
+    <p>
+      Sí. En una renta, quién paga el control de plagas depende de la ley
+      estatal de propietarios e inquilinos y de si la vivienda es una casa o un
+      edificio de varias unidades; cuando la respuesta depende de eso, se lo
+      decimos en lugar de cobrarle a quien haya llamado. En un negocio, lo que
+      cambia es el registro: dónde está cada dispositivo, qué se encontró en
+      cada visita y qué le toca corregir al negocio, todo por escrito para que
+      un inspector no tenga que creerle a nadie.
+    </p>
+
+    <h2>¿Qué no hacemos?</h2>
+    <p>
+      No retiramos fauna silvestre — mapaches, murciélagos, ardillas — y no
+      ponemos trampas para topos, porque las trampas que se venden para eso son
+      trampas de sujeción corporal que la ley de Washington prohíbe. Si lo que
+      tiene es algo de eso, se lo decimos por teléfono y le damos el nombre de
+      alguien que sí lo hace, en lugar de agendarle una visita que no le va a
+      servir.
+    </p>
+
+    <h2>¿Qué pasa cuando llama?</h2>
     <p>
       Primero preguntamos qué está viendo, dónde y desde cuándo. Con eso ya se
       descarta bastante, y muchas veces le pedimos una foto: identificar bien
@@ -52,14 +127,19 @@ const answer =
       hace falta tratar.
     </p>
     <p>
-      Después vamos a ver. La inspección es donde se decide el trabajo — no se
-      cotiza un paquete por teléfono sin haber visto la casa, porque el mismo
-      insecto en dos casas distintas puede ser dos trabajos distintos.
+      Después vamos a ver. Ahí se decide el trabajo — no se cotiza un paquete
+      por teléfono sin haber visto la casa, porque el mismo insecto en dos
+      casas distintas puede ser dos trabajos distintos.
     </p>
+
+    <h2>¿Cuánto cuesta?</h2>
     <p>
-      Lo que le entreguemos dice qué encontramos, qué hicimos y qué falta por
-      hacer. Si parte de lo que falta es trabajo de otro oficio — un plomero,
-      un techador — también va escrito.
+      Cotizamos después de ver la propiedad, no de una lista de precios, y
+      usted recibe por escrito qué proponemos hacer, dónde y cuánto cuesta
+      antes de que empiece nada, cuando todavía puede decir que no.
+      {esBedBugException
+        ? ' La visita para cotizar no se cobra, con una sola excepción: en chinches de cama hay una visita de verificación con costo, que se descuenta del tratamiento si sigue adelante, porque confirmar una población activa es una hora de revisión cuidadosa y no diez minutos.'
+        : ' La visita para cotizar no se cobra.'}
     </p>
 
     <h2>Cuando no es una plaga</h2>
@@ -71,7 +151,7 @@ const answer =
     </p>
 
     <div data-boilerplate>
-    <h2>Pida una inspección</h2>
+    <h2>Pida una visita</h2>
     <p>
       Llame o mande un mensaje de texto al{' '}
       <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, o{' '}

@@ -119,12 +119,13 @@ const title = `Map of ${place}, Washington`;
   <h2>{place} on the map</h2>
   <figure>
     <div class="mapframe">
+      {/* data-src, not src — the frame is started by the script below. */}
       <iframe
-        src={src}
+        data-src={src}
+        id="location-map"
         title={title}
         width="640"
         height="480"
-        loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
@@ -135,6 +136,48 @@ const title = `Map of ${place}, Washington`;
     </figcaption>
   </figure>
 </section>
+
+{/* THE MAP LOADS ON THE READER'S FIRST INTERACTION — from 10 Sep 2026.
+
+    The paragraph at the top of this file says `loading="lazy"` stopped saving
+    the fetch once the block moved up beside the lead form: the frame is near
+    the top, so the browser loaded it on arrival. Keystone v2's lab gate then
+    measured the cost. Every town and neighborhood template sat at an LCP of
+    about 3.0s while every other text template painted in 1.9s, and the map
+    was the one thing only those two templates carried: Google's embed is
+    megabytes of script competing with the page's own first paint.
+
+    So it starts the way the lead form does — on the reader's first scroll,
+    tap or key, when it enters the viewport, or five seconds after load. A
+    reader who scrolls sees the map arrive; the first paint no longer waits
+    on it. It also narrows the privacy trade described at the top of this
+    file: a reader who never interacts with the page no longer hands Google
+    their IP address just by arriving. Without JavaScript the frame stays
+    empty and the "Open in Google Maps" link beneath it is the map, which is
+    exactly what that link is there for. One map per page, so one id. */}
+<script is:inline>
+  (function () {
+    var frame = document.getElementById('location-map');
+    if (!frame) return;
+    var started = false;
+    function start() {
+      if (started) return;
+      started = true;
+      frame.src = frame.getAttribute('data-src');
+    }
+    ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
+      window.addEventListener(ev, start, { once: true, passive: true });
+    });
+    window.addEventListener('load', function () { setTimeout(start, 5000); });
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) { io.disconnect(); start(); return; }
+      }
+    }, { rootMargin: '0px' });
+    io.observe(frame);
+  })();
+</script>
 
 {/* No scoped <style> here, deliberately, and for the reason SourceList gives:
     a component that carries its own colors is the one piece of the page the

@@ -11,32 +11,41 @@ const S = t('es');
    el sobre del correo y en la conversación. Traducirlos sería inventar
    lugares. Lo que se traduce es todo lo demás.
 
-   La lista sale de la misma fuente que /locations/ — no se agregó ninguna
-   comunidad que la versión en inglés no atienda. */
-const whatcom = [
-  'Bellingham',
-  'Ferndale',
-  'Lynden',
-  'Blaine',
-  'Birch Bay',
-  'Everson',
-  'Nooksack',
-  'Sumas',
-  'Sudden Valley',
-  'Custer',
-  'Deming',
-  'Acme',
+   CADA NOTA SALE DE LA PÁGINA EN INGLÉS DE ESE PUEBLO (10 Sep 2026) — del
+   `answer` de src/content/locations/<pueblo>.md — y enlaza a ella. No se
+   agregó ningún pueblo que la versión en inglés no atienda, ni un dato que su
+   página no diga. Keystone v2, directiva 8: ningún nombre de lugar se inventa. */
+const whatcom: [string, string, string][] = [
+  ['Bellingham', 'bellingham', 'Aquí está nuestra oficina, sobre el Guide Meridian, y aquí el trabajo cambia de calle en calle: espacios bajo el piso de antes de la guerra en la parte plana, cedro y borde de bosque en las laderas, y rentas de mucha rotación cerca de la universidad.'],
+  ['Ferndale', 'ferndale', 'La parte de nuestro territorio que más rápido cambia. Casi toda la vivienda nueva está sobre terreno que hace diez años era campo de cultivo, y los ratones y las ratas de ese campo no se fueron cuando se fueron los sembradíos. Trabajamos desde el centro de Main Street hasta Cherry Point.'],
+  ['Lynden', 'lynden', 'Tierra de granjas, y el trabajo lo refleja: roedores en cuartos de alimento y cobertizos de maquinaria, moscas alrededor del ganado, moscas de racimo por miles en las paredes que dan al sur, y un centro de edificios viejos de ladrillo y madera. Vamos en días de ruta fijos por el Guide Meridian.'],
+  ['Blaine', 'blaine', 'Pueblo fronterizo, puerto de trabajo y comunidad de casas de temporada al mismo tiempo. Roedores por la marina y el corredor de carga, el salitre trabajando sobre cada edificio, y casas que pasan meses vacías.'],
+  ['Birch Bay', 'birch-bay', 'Una comunidad de vacaciones que se volvió de todo el año, con vivienda que no terminó de ponerse al día: cabañas de construcción ligera que ahora se habitan en invierno, mucha renta vacacional con huéspedes que entran y salen, y la exposición de la costa.'],
+  ['Everson', 'everson', 'Está sobre el río Nooksack, y el agua manda aquí más que cualquier otra cosa: edificios que tomaron agua de inundación, espacios bajo el piso reconstruidos después, y roedores que dejan el suelo saturado. Alrededor, granjas chicas con sus cuartos de alimento y sus moscas.'],
+  ['Nooksack', 'nooksack', 'Un pueblo muy chico rodeado de sembradíos de mora, y los campos ponen el calendario. La cosecha y el trabajo de campo empujan a los roedores hacia los edificios, y cada otoño el campo abierto manda moscas de racimo, chinches apestosas y mariquitas a las paredes tibias.'],
+  ['Sumas', 'sumas', 'Un pueblo muy chico con una huella comercial grande: el cruce internacional de camiones con sus bodegas y patios de carga, campo de cultivo por todos lados, y vivienda que pasó por inundaciones serias y se reconstruyó.'],
+  ['Sudden Valley', 'sudden-valley', 'Cedro de los años setenta construido contra un bosque en producción, dentro de la cuenca que le da el agua potable a Bellingham. Hormiga carpintera en cedro ablandado, roedores que bajan de los árboles, espacios bajo el piso húmedos en lotes con pendiente, y mucha mesura con lo que se pone en el suelo.'],
+  ['Custer', 'custer', 'Campo abierto sin incorporar más que un pueblo: terrenos grandes con bodegas, casi todos con pozo y fosa séptica, expuestos al viento que viene de los campos. Roedores de campo, moscas de racimo y avispas son la mayoría de las llamadas.'],
+  ['Deming', 'deming', 'Donde la tierra de cultivo se junta con el bosque, con la presión de los dos: ratas y ratones todo el año, una temporada fuerte de hormiga carpintera en primavera y verano, y en otoño mariquitas, chinches apestosas y arañas llegando juntas.'],
+  ['Acme', 'acme', 'Sobre el brazo sur del río Nooksack, y el río es lo que lo hace distinto: un manto freático alto que mantiene húmedos los espacios bajo el piso, un corredor de ribera por donde se mueven los roedores, y campo y bosque apretando por los dos lados de una sola carretera.'],
 ];
-const skagit = ['Mount Vernon', 'Burlington', 'Sedro-Woolley', 'Bow', 'Alger'];
+const skagit: [string, string, string][] = [
+  ['Mount Vernon', 'mount-vernon', 'El lugar más grande donde trabajamos en Skagit, partido en tres: un centro histórico donde los edificios comparten sus roedores, casas viejas en la parte baja junto al río, y fraccionamientos nuevos pegados a campos que se vacían dos veces al año.'],
+  ['Burlington', 'burlington', 'El corazón comercial del condado, y casi todo nuestro trabajo aquí es comercial: tiendas grandes, distribución y restaurantes con techos planos enormes y andenes con tráfico constante. Alrededor, vivienda nueva sobre antiguo campo de cultivo.'],
+  ['Sedro-Woolley', 'sedro-woolley', 'Un viejo pueblo maderero, y las casas lo dicen: vivienda apretada de antes y justo después de la guerra sobre espacios bajo el piso poco profundos, un centro de edificios comerciales conectados, el corredor del Skagit de un lado y el bosque del otro.'],
+  ['Bow', 'bow', 'Campo abierto que baja hasta la bahía de Samish. Roedores de campo que se mueven dos veces al año, con la cosecha y con la lluvia, moscas de racimo por miles, casas de granja viejas con ampliaciones, y salitre en todo lo que está cerca del agua.'],
+  ['Alger', 'alger', 'Borde de bosque en la punta norte de nuestra ruta de Skagit: casas dispersas en terrenos grandes, mucho cedro construido contra los árboles, hormiga carpintera en madera ablandada y roedores que entran desde la línea del bosque.'],
+];
 
+/* 40–60 palabras. */
 const answer =
-  `Sasquatch Pest Control atiende Bellingham y las comunidades del condado de Whatcom a su alrededor — Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas y Sudden Valley — y parte del condado de Skagit. Hablamos español. Llame o mande un mensaje de texto al ${business.phone}.`;
+  `Sasquatch Pest Control atiende Bellingham y los pueblos del condado de Whatcom a su alrededor — Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas, Sudden Valley, Custer, Deming y Acme — y parte del condado de Skagit. Hablamos español. Llame o mande un mensaje de texto al ${business.phone}.`;
 ---
 <BaseLayout
   path={path}
   lang="es"
   title="Áreas de Servicio | Condado de Whatcom, WA"
-  description="Sasquatch Pest Control atiende Bellingham, Ferndale, Lynden, Blaine, Birch Bay y las comunidades cercanas del condado de Whatcom, además de parte del condado de Skagit."
+  description="Sasquatch Pest Control atiende Bellingham, Ferndale, Lynden, Blaine, Birch Bay y los pueblos del condado de Whatcom, y parte de Skagit. Llame al 360-410-2199."
   kind="page"
   breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Áreas de servicio', path }]}
 >
@@ -44,50 +53,53 @@ const answer =
   <AnswerBox text={answer} />
 
   <div class="prose">
-    <h2>Condado de Whatcom</h2>
-    <ul>
-      {whatcom.map((c) => <li>{c}</li>)}
-    </ul>
+    <h2>¿Por qué importa en qué pueblo vive?</h2>
     <p>
-      También atendemos las comunidades no incorporadas de los alrededores. Si
-      no ve su pueblo en la lista, llámenos de todos modos y le decimos si le
-      quedamos.
+      Porque el condado no es igual de un extremo al otro. Lo que hay debajo de
+      una casa en Everson, que ha tomado agua del río, no se parece a lo que hay
+      en una casa nueva de Ferndale construida sobre un campo que se vació, y
+      las dos se parecen poco a una cabaña de cedro en Sudden Valley. Por eso
+      cada pueblo tiene su propia página con la presión de plagas de esa zona.
+      Esas páginas están en inglés; aquí va lo más importante de cada una, en
+      español.
+    </p>
+
+    <h2>Condado de Whatcom</h2>
+    {whatcom.map(([name, slug, note]) => (
+      <p>
+        <strong>{name}.</strong> {note}{' '}
+        <a href={`/locations/${slug}/`} hreflang="en">Página de {name}, en inglés</a>.
+      </p>
+    ))}
+    <p>
+      También atendemos las comunidades sin incorporar que hay entre estos
+      pueblos. Si no ve el suyo, llámenos de todos modos y le decimos si nos
+      queda de camino.
     </p>
 
     <h2>Condado de Skagit</h2>
-    <ul>
-      {skagit.map((c) => <li>{c}</li>)}
-    </ul>
+    <p>
+      Skagit lo atendemos en días de ruta programados y no el mismo día, porque
+      queda más lejos de Bellingham que cualquier punto de nuestro condado.
+      Cuando llame le decimos qué día le toca en lugar de prometerle una hora
+      que no podemos cumplir.
+    </p>
+    {skagit.map(([name, slug, note]) => (
+      <p>
+        <strong>{name}.</strong> {note}{' '}
+        <a href={`/locations/${slug}/`} hreflang="en">Página de {name}, en inglés</a>.
+      </p>
+    ))}
 
-    <h2>La presión de plagas cambia según dónde viva</h2>
+    <h2>¿Qué tienen en común todos?</h2>
     <p>
-      El condado no es igual de un extremo al otro, y eso decide qué llamadas
-      recibimos de cada zona.
-    </p>
-    <p>
-      <strong>El corredor de Lynden y Everson</strong> es zona lechera y
-      agrícola de verdad. Ahí el problema de plagas casi siempre es un problema
-      de alimento: los roedores viven del grano y del suplemento derramado, y
-      ningún tratamiento le gana a un cuarto de alimento abierto. La presión de
-      moscas se trabaja en los sitios de cría y no sobre las adultas.
-    </p>
-    <p>
-      <strong>Blaine, Birch Bay y la orilla</strong> tienen la presión de agua
-      salada: roedores que se mueven entre estructuras de muelle y edificios, y
-      construcciones que se sellan mal porque el aire salado se come los
-      materiales. Ahí la exclusión hay que revisarla más seguido.
-    </p>
-    <p>
-      <strong>Bellingham y Ferndale</strong> son sobre todo casas, y ahí el
-      calendario manda: la lluvia de septiembre y octubre mete a los roedores
-      debajo del piso, y las avispas llegan a su punto más alto a finales de
-      agosto. En los vecindarios viejos, con cimientos que ya se asentaron, la
-      rendija de un cuarto de pulgada aparece sola con los años.
-    </p>
-    <p>
-      <strong>Mount Vernon, Burlington y el condado de Skagit</strong> los
-      atendemos con las mismas rutas, y la mezcla se parece a la de Bellingham
-      con más presión agrícola en las orillas del valle.
+      La lluvia. En este rincón del estado no hay una helada larga, pero caen
+      unas treinta y cinco pulgadas de agua al año, y eso decide el calendario
+      más que el frío: cuando el suelo se satura en otoño, lo que vivía afuera
+      busca un lugar seco, y ese lugar suele ser el espacio debajo de su piso. Lo
+      mismo ablanda la madera que atrae a la hormiga carpintera y a la termita
+      de madera húmeda. Por eso, en cualquiera de estos pueblos, buena parte del
+      trabajo es encontrar el agua y la rendija, no solo el animal.
     </p>
 
     <h2>Dónde estamos</h2>
@@ -97,17 +109,8 @@ const answer =
       {business.address.postalCode}
     </p>
 
-    <h2>Páginas por ciudad</h2>
-    <p>
-      Cada ciudad y varios vecindarios tienen su propia página con la presión
-      de plagas de esa zona. Esas páginas están en inglés y las encuentra en{' '}
-      <a href="/locations/">nuestra sección de áreas de servicio</a>. Si quiere
-      la información de su zona en español, llámenos y se la damos por
-      teléfono.
-    </p>
-
     <div data-boilerplate>
-    <h2>Pida una inspección</h2>
+    <h2>Pida una visita</h2>
     <p>
       Llame o mande un mensaje de texto al{' '}
       <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, o{' '}

@@ -12,6 +12,9 @@ import { writtenTowns } from '../lib/geo-content';
 import { business } from '../data/business';
 
 const path = '/';
+/* The hero is this page's LCP element (lab gate, 10 Sep 2026). */
+const heroSrcset = srcsetFor('/img/sasquatch-hero-banner.jpg');
+const heroSizes = '(min-width: 76rem) 72rem, 100vw';
 
 /* The old homepage opened with "Tap any category below to see the full
    details" — 15 words, and an instruction rather than an answer. This is a
@@ -75,8 +78,8 @@ const faqs = [
     alt="Sasquatch Pest Control banner: a forested lake and mountain scene with the company logo"
     width="1800"
     height="900"
-    srcset={srcsetFor('/img/sasquatch-hero-banner.jpg')}
-    sizes="(min-width: 76rem) 72rem, 100vw"
+    srcset={heroSrcset}
+    sizes={heroSizes}
     fetchpriority="high"
   />
 

@@ -216,6 +216,18 @@ export const WDO_FINDINGS_LANGUAGE =
 export const WDO_DENIAL =
   /\b(we|sasquatch)\b[^.?!]{0,80}\b(do not|don'?t|does not|doesn'?t|cannot|can'?t|will not|won'?t|never|not something we)\b/i;
 
+/* The WDO findings rule in Spanish — same reasoning as the inspection terms
+   above, added the same day. A sentence offering "un informe de lo que
+   encontramos" about termites is the regulated act in either language. */
+export const WDO_SUBJECT_ES =
+  /(organismos? que destruyen? la madera|organismos? destructores? de (la )?madera|(^|[^\p{L}])wdo(?![\p{L}])|termitas?(?![\p{L}])|hormigas? carpinteras?|escarabajos? (barrenadores?|de la madera|que perforan)|carcoma|pudrición)/iu;
+export const WDO_WRITTEN_OFFER_ES =
+  /((^|[^\p{L}])(le (entregamos|damos|mandamos|enviamos|dejamos)|usted recibe|va a recibir|recibirá|le llega)(?![\p{L}])[^.?!]{0,80}(por escrito|documento|registro|reporte|informe|constancia|carta))|((^|[^\p{L}])(el|un|su|nuestro)\s+(documento|registro|reporte|informe|escrito)(?![\p{L}])[^.?!]{0,60}(dice|explica|muestra|detalla|describe|documenta|identifica)(?![\p{L}]))/iu;
+export const WDO_FINDINGS_ES =
+  /(lo que (encontramos|vimos|observamos|identificamos|hallamos)|nuestros hallazgos|los hallazgos|qué encontramos|el daño que (encontramos|vimos)|qué (tiene|está causando|causó)|la causa(?![\p{L}])|el alcance del daño|la infestación)/iu;
+export const WDO_DENIAL_ES =
+  /(^|[^\p{L}])(no|nunca)(\s+[\p{L}]+){0,3}?\s+(somos|hacemos|emitimos|entregamos|damos|producimos|escribimos|firmamos|es)(?![\p{L}])/iu;
+
 /**
  * Copy offering the customer a written account of WDO FINDINGS.
  * Separate from checkInspectionClaims because it catches a different failure:
@@ -240,13 +252,14 @@ export function checkWdoFindingsReports(body: string, heading = ''): string[] {
      otherwise a WDO term has to appear near the sentence. Near enough that a
      reader would connect the document being offered to the organism. */
   const nearWindow = 600;
-  const headingIsWdo = WDO_SUBJECT.test(heading);
+  const isWdo = (t: string) => WDO_SUBJECT.test(t) || WDO_SUBJECT_ES.test(t);
+  const headingIsWdo = isWdo(heading);
 
   const bad: string[] = [];
   for (const s of sentences(body)) {
-    if (!WDO_WRITTEN_OFFER.test(s)) continue;
-    if (!WDO_FINDINGS_LANGUAGE.test(s)) continue;
-    if (WDO_DENIAL.test(s)) continue;
+    const en = WDO_WRITTEN_OFFER.test(s) && WDO_FINDINGS_LANGUAGE.test(s) && !WDO_DENIAL.test(s);
+    const es = WDO_WRITTEN_OFFER_ES.test(s) && WDO_FINDINGS_ES.test(s) && !WDO_DENIAL_ES.test(s);
+    if (!en && !es) continue;
 
     if (!headingIsWdo) {
       const at = body.indexOf(s);
@@ -254,7 +267,7 @@ export function checkWdoFindingsReports(body: string, heading = ''): string[] {
         Math.max(0, at - nearWindow),
         at + s.length + nearWindow,
       );
-      if (!WDO_SUBJECT.test(around)) continue;
+      if (!isWdo(around)) continue;
     }
 
     bad.push(
@@ -290,16 +303,77 @@ export function checkWdoFindingsReports(body: string, heading = ''): string[] {
 export const CLAIM_DESCRIPTIVE = (s: string): boolean =>
   !CLAIM_FIRST_PERSON.test(s) && !CLAIM_SOLICITATION.test(s);
 
+/* --------------------------------------------------------------------------
+ * THE SAME RULES IN SPANISH — added 10 Sep 2026, before the first Spanish
+ * termite or WDO page was written rather than after one shipped.
+ *
+ * Every pattern above is English, so until today a Spanish page could offer
+ * "una inspección de organismos que destruyen la madera" with every check
+ * green. The Spanish tier was about to grow into exactly the services where
+ * that vocabulary lives, which made this the moment to close it.
+ *
+ * Same three pass conditions and the same hard disqualifier; the grammar is
+ * what changes. Spanish drops the subject, so "we" is usually a verb ending
+ * ("hacemos", "emitimos") rather than a pronoun, and the first-person test
+ * reads endings as well as words. Letters are matched with \p{L} and the u
+ * flag, because JavaScript's \b does not count "á" or "ñ" as part of a word
+ * and would split "podríamos" in the middle.
+ *
+ * Biased toward the false positive, like the English: a writer splitting a
+ * sentence in two costs a minute; a Spanish page offering a regulated
+ * inspection costs a license. scripts/tests/inspection-claims.test.ts pins
+ * both directions.
+ * ------------------------------------------------------------------------ */
+export const INSPECTION_CLAIMS_ES = [
+  'inspección wdo', 'inspecciones wdo',
+  'inspección de organismos que destruyen la madera',
+  'inspecciones de organismos que destruyen la madera',
+  'inspección de organismos destructores de madera',
+  'inspección de organismos destructores de la madera',
+  'inspección estructural de plagas', 'inspecciones estructurales de plagas',
+  'informe de inspección', 'reporte de inspección',
+  'inspección para escrow', 'inspección de escrow',
+  'inspección de bienes raíces', 'inspección para la venta', 'inspección de compraventa',
+];
+
+/** First-person or company denial: "no somos…", "no emitimos…", "no la presentamos como…". */
+export const CLAIM_DISCLAIMER_ES =
+  /(^|[^\p{L}])(no|nunca)(\s+[\p{L}]+){0,3}?\s+(somos|hacemos|realizamos|emitimos|ofrecemos|presentamos|producimos|damos|entregamos|preparamos|escribimos|firmamos|tenemos|es|son|hace|realiza|emite|ofrece|produce)(?![\p{L}])/iu;
+
+/** The inspection placed in somebody else's hands. */
+export const CLAIM_ATTRIBUTION_ES =
+  /(^|[^\p{L}])(su|sus)\s+(inspector|inspectora|inspección|informe|reporte)(?![\p{L}])|(^|[^\p{L}])(inspector|inspectora)\s+(independiente|con licencia|del comprador|del vendedor|del prestamista)(?![\p{L}])|(^|[^\p{L}])(un|una|otro|otra)\s+(inspector|inspectora)(?![\p{L}])|(del comprador|del vendedor|del prestamista|de otra persona|de un tercero)(?![\p{L}])/iu;
+
+/** Soliciting the work in Spanish — imperatives aimed at the reader. */
+export const CLAIM_SOLICITATION_ES =
+  /(^|[^\p{L}])(llame|llámenos|llamenos|mande|escríbanos|escribanos|pida|pídanos|pidanos|agende|programe|solicite|reserve|contrate)(?![\p{L}])/iu;
+
+/** Any first-person reference: pronouns, the company name, or a -amos/-emos/-imos verb. */
+export const CLAIM_FIRST_PERSON_ES =
+  /(^|[^\p{L}])(nosotros|nuestro|nuestra|nuestros|nuestras|nos|sasquatch)(?![\p{L}])|[\p{L}]{2,}(amos|emos|imos)(?![\p{L}])/iu;
+
+/** Us doing the inspecting. Disqualifies even an attributed sentence. */
+export const CLAIM_PERFORMANCE_ES =
+  /(^|[^\p{L}])(hacemos|realizamos|ofrecemos|emitimos|entregamos|preparamos|escribimos|firmamos|completamos|proporcionamos|damos|hicimos|haremos|realizaremos|llevamos a cabo)(?![\p{L}])/iu;
+
 export function checkInspectionClaims(body: string): string[] {
   const bad: string[] = [];
   for (const s of sentences(body)) {
     const low = s.toLowerCase();
     const term = INSPECTION_CLAIMS.find((c) => low.includes(c));
-    if (!term) continue;
-    if (CLAIM_DISCLAIMER.test(s)) continue;
-    if (CLAIM_ATTRIBUTION.test(s) && !CLAIM_PERFORMANCE.test(s) && !CLAIM_SOLICITATION.test(s)) continue;
-    if (CLAIM_DESCRIPTIVE(s)) continue;
-    bad.push(`"${term}" without attribution, disclaimer or descriptive framing — ${s.trim().slice(0, 120)}`);
+    if (term) {
+      if (CLAIM_DISCLAIMER.test(s)) continue;
+      if (CLAIM_ATTRIBUTION.test(s) && !CLAIM_PERFORMANCE.test(s) && !CLAIM_SOLICITATION.test(s)) continue;
+      if (CLAIM_DESCRIPTIVE(s)) continue;
+      bad.push(`"${term}" without attribution, disclaimer or descriptive framing — ${s.trim().slice(0, 120)}`);
+      continue;
+    }
+    const termEs = INSPECTION_CLAIMS_ES.find((c) => low.includes(c));
+    if (!termEs) continue;
+    if (CLAIM_DISCLAIMER_ES.test(s)) continue;
+    if (CLAIM_ATTRIBUTION_ES.test(s) && !CLAIM_PERFORMANCE_ES.test(s) && !CLAIM_SOLICITATION_ES.test(s)) continue;
+    if (!CLAIM_FIRST_PERSON_ES.test(s) && !CLAIM_SOLICITATION_ES.test(s)) continue;
+    bad.push(`"${termEs}" sin atribución, negación ni marco descriptivo — ${s.trim().slice(0, 120)}`);
   }
   return bad;
 }

@@ -92,3 +92,26 @@ There is no word floor. Pages carry a word band per page type as a diagnostic
 (harness check 4). Nothing is to be stripped to fit a band before launch; after
 launch, the consolidation queue is the Search Console "crawled / discovered – not
 indexed" list plus pages with six months of zero clicks.
+
+## 8. Bird work — open, owner decision
+
+Three sources disagree, and the site currently says both things.
+
+- **The owner's decision of 30 Aug 2026** (`RETIRED_TO_EXCLUSION` in
+  `src/data/services.ts`): bird work and nuisance wildlife are out of scope.
+  `/about/`, `/services/home-protection-plan/`, and the Sumas and Whatcom Falls
+  pages say so to the reader.
+- **Keystone v2, Part 1.4** still lists "bird exclusion as the standout local
+  edge" for Sasquatch WA, and Part 1.3 names it as a differentiator to lead with.
+- **Pages that offer it anyway:** the berry & food processing vertical (its FAQ
+  answers "Is bird work available?" with "Exclusion and deterrence, yes —
+  netting…"), the marinas and retail verticals, the photo caption on
+  `/services/commercial-pest-control/` ("Bird exclusion on a commercial
+  building"), and four gallery images of bird netting and ledge work.
+
+A plausible reading is that residential bird work was retired and commercial
+bird exclusion was not — but nothing on file says that, so nothing has been
+changed. Once decided: if commercial bird exclusion is offered, the retirement
+note and `/about/` need to say "residential"; if it is not, the three vertical
+sections, the caption and the gallery captions come out. Either way, update
+Keystone Part 1.4 to match so the standard stops contradicting the site.

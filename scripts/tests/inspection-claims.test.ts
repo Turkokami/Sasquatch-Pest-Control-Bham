@@ -136,3 +136,51 @@ console.log(gateFails === 0
   ? `\x1b[32minspection credential gate: ${GATE_CASES.length}/${GATE_CASES.length} cases correct\x1b[0m`
   : `\x1b[31m${gateFails} of ${GATE_CASES.length} gate cases wrong\x1b[0m`);
 if (gateFails) process.exit(1);
+
+/* ------------------------------------------------------------------ *
+ * THE SAME RULE IN SPANISH — added 10 Sep 2026.
+ *
+ * INSPECTION_CLAIMS_ES and its regexes in src/lib/seo.ts were written before
+ * the first Spanish termite or WDO page, so these cases are the only evidence
+ * they work. Same structure as the English suite: three ways to pass, one
+ * hard disqualifier, and a bias toward the false positive.
+ * ------------------------------------------------------------------ */
+const SHOULD_FAIL_ES = [
+  /* Plain claims — the dropped subject is what makes Spanish harder. */
+  'Hacemos inspecciones de organismos que destruyen la madera para compradores y vendedores.',
+  'Realizamos la inspección estructural de plagas como parte de cada venta.',
+  'Le entregamos el informe de inspección la misma semana.',
+  'Sasquatch prepara la inspección para escrow de su cierre.',
+  /* Attribution present, but we still do it. */
+  'Hacemos la inspección WDO que pidió su prestamista.',
+  /* Solicitation, with or without "su". */
+  'Llame hoy para su inspección de escrow.',
+  'Agende su inspección de organismos que destruyen la madera.',
+];
+const SHOULD_PASS_ES = [
+  /* 1 — disclaimer. */
+  'No somos inspectores estructurales de plagas y no hacemos inspecciones WDO.',
+  'No la presentamos como una inspección de organismos que destruyen la madera, que en Washington es una actividad con su propia licencia.',
+  'Sasquatch no emite un informe de inspección de ese tipo.',
+  /* 2 — attribution without performance. */
+  'Tratamos lo que encontró el informe de inspección de su inspector.',
+  'Cuando el informe de inspección del comprador identifica termitas de madera húmeda, el tratamiento es trabajo nuestro.',
+  /* 3 — descriptive, no first person anywhere. */
+  'Un informe de inspección completo es el documento regulado que exige una venta.',
+  'La inspección de organismos que destruyen la madera requiere una licencia aparte en Washington.',
+  /* No regulated term — must never fire. */
+  'La visita para cotizar no se cobra, salvo en chinches de cama.',
+];
+let esFails = 0;
+for (const s of SHOULD_FAIL_ES) {
+  if (checkInspectionClaims(s).length === 0) { console.log('MISSED (es):', s); esFails++; }
+}
+for (const s of SHOULD_PASS_ES) {
+  const r = checkInspectionClaims(s);
+  if (r.length) { console.log('FALSE POSITIVE (es):', s, '\n   ->', r[0]); esFails++; }
+}
+const nEs = SHOULD_FAIL_ES.length + SHOULD_PASS_ES.length;
+console.log(esFails === 0
+  ? `\x1b[32minspection-claim rules (español): ${nEs}/${nEs} cases correct\x1b[0m`
+  : `\x1b[31m${esFails} of ${nEs} Spanish cases wrong\x1b[0m`);
+if (esFails) process.exit(1);

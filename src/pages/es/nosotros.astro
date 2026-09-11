@@ -9,15 +9,28 @@ const S = t('es');
 
 /* No se repiten aquí números de licencia. Se dice qué buscar y dónde
    buscarlo, que es lo que le sirve al lector y lo que no se desactualiza
-   solo. La página en inglés lleva la lista completa. */
+   solo. La página en inglés lleva la lista completa.
+
+   AMPLIADA EL 10 Sep 2026 a partir de /about/ en inglés — cada sección de
+   abajo tiene su pareja allá y no afirma nada que allá no esté. Dos cosas
+   se dejaron fuera a propósito:
+     · El trabajo con aves. La página en inglés dice que no lo hacemos, pero
+       tres páginas comerciales lo ofrecen; está abierto en GUARDRAILS.md §8 y
+       no se repite en un segundo idioma hasta que el dueño lo resuelva.
+     · "El técnico no es un subcontratista". Lo decía esta página y la inglesa
+       no: allá dice que los técnicos viven aquí y hacen sus propias rutas. Y
+       /trusted-partners/ describe especialistas que sí contratamos en ciertos
+       trabajos comerciales. Se dice lo que es cierto sin esa frase. */
 const answer =
   `Sasquatch Pest Control es una empresa familiar de control de plagas y exclusión en ${business.address.locality}, Washington, fundada por Kristofer Elling. Trabajamos nuestras propias rutas en el condado de Whatcom en lugar de despachar desde un centro de llamadas regional, y todo tratamiento que hacemos está respaldado por nuestra Garantía de Servicio 100 %.`;
+
+const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-control');
 ---
 <BaseLayout
   path={path}
   lang="es"
   title="Quiénes Somos | Sasquatch Pest Control"
-  description="Sasquatch Pest Control es una empresa familiar de control de plagas y exclusión en Bellingham, Washington. Hablamos español. Llame al 360-410-2199."
+  description="Sasquatch Pest Control es una empresa familiar de control de plagas y exclusión en Bellingham, Washington, sin contratos largos. Hablamos español. Llame al 360-410-2199."
   kind="page"
   breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Quiénes somos', path }]}
 >
@@ -25,15 +38,32 @@ const answer =
   <AnswerBox text={answer} />
 
   <div class="prose">
-    <h2>Una empresa familiar, con rutas propias</h2>
+    <h2>¿Cómo empezó?</h2>
     <p>
-      Somos una empresa familiar de {business.address.locality}. Trabajamos
-      nuestras propias rutas en el condado de Whatcom: el técnico que llega a
-      su casa trabaja aquí, no es un subcontratista, y no lo despacha un
-      centro de llamadas de otro estado.
+      Sasquatch Pest Control se fundó en {business.address.locality} para hacer
+      el trabajo de plagas como lo puede hacer una empresa local: llegar cuando
+      dijimos que íbamos a llegar, explicar lo que encontramos, y respaldar el
+      resultado sin un contrato que amarre a nadie.
     </p>
 
-    <h2>Cómo puede comprobar que tenemos licencia</h2>
+    <h2>¿Quién llega a su casa?</h2>
+    <p>
+      Nuestros técnicos viven aquí y hacen estas rutas ellos mismos. No es un
+      eslogan: es la razón por la que alguien le puede decir que las casas de
+      Lettered Streets se portan distinto de las de Barkley, o que el
+      movimiento de roedores a lo largo del río empieza tres semanas antes que
+      en la ciudad.
+    </p>
+    <p>
+      Todo trabajo empieza por identificar, porque eso decide todo lo que
+      sigue. La hormiga carpintera y la hormiga de humedad piden respuestas
+      distintas de verdad. La araña vagabunda y la araña doméstica gigante se
+      confunden todo el tiempo, y solo una de esas confusiones termina en un
+      tratamiento que no hacía falta. Acertar la especie primero es lo más
+      barato que hacemos.
+    </p>
+
+    <h2>¿Cómo puede comprobar que tenemos licencia?</h2>
     <p>
       No le pedimos que nos crea. Aplicar pesticidas por contrato en el estado
       de Washington requiere licencia del Departamento de Agricultura (WSDA), y
@@ -49,17 +79,75 @@ const answer =
     </p>
     <p>
       Las dos búsquedas, con los enlaces y cómo leerlas, están explicadas en{' '}
-      <a href="/awards/">nuestra página de reconocimientos</a>, en inglés. Si
-      quiere que le ayudemos a hacer la búsqueda, llámenos y la hacemos juntos
-      por teléfono. Preferimos que la haga.
+      <a href="/awards/" hreflang="en">nuestra página de reconocimientos</a>, en
+      inglés, junto con los premios y los artículos de prensa. Si quiere que le
+      ayudemos a hacer la búsqueda, llámenos y la hacemos juntos por teléfono.
+      Preferimos que la haga.
     </p>
 
-    <h2>Qué pensamos de este trabajo</h2>
+    <h2>¿Qué es la primera visita?</h2>
+    <p>
+      Casi nada en este oficio se puede cotizar honestamente por teléfono, así
+      que casi todo trabajo empieza con alguien que maneja hasta su casa a ver
+      el edificio de verdad.
+      {esBedBugException
+        ? ' Esa visita no se cobra, porque cobrar por la conversación le da a una empresa una razón para encontrar algo en ella. Hay una sola excepción y preferimos nombrarla aquí: en chinches de cama la visita de verificación tiene costo, y se descuenta del tratamiento si sigue adelante, porque confirmar una población activa es una hora de revisión cuidadosa y un error en cualquier dirección le cuesta mucho más que la visita.'
+        : ' Esa visita no se cobra, porque cobrar por la conversación le da a una empresa una razón para encontrar algo en ella.'}
+    </p>
+    <p>
+      Esa primera visita es una evaluación antes del servicio: alguien que
+      averigua qué tiene usted y qué haría falta para atenderlo. No la
+      presentamos como una inspección de organismos que destruyen la madera,
+      que en Washington es una actividad con su propia licencia.
+    </p>
+
+    <h2>¿Qué recibe por escrito?</h2>
+    <p>
+      Dos documentos distintos. El primero es el alcance, y le llega antes de
+      que alguien trate nada: qué proponemos hacer, dónde y cuánto cuesta,
+      mientras todavía puede decir que no a todo. Nadie debería estar leyendo
+      el plan para su casa después de que se fue la camioneta.
+    </p>
+    <p>
+      El segundo es el registro del tratamiento que se hizo, y le llega
+      después: el producto usado, la plaga objetivo, las áreas tratadas y la
+      dosis aplicada, porque eso es lo que va a necesitar saber una etiqueta,
+      un auditor, un administrador o el siguiente técnico de la cuenta.
+    </p>
+    <p>
+      Ese registro tiene un límite, y es legal, no de preferencia. Un documento
+      que identifica daño o infestación por organismos que destruyen la madera
+      es un instrumento regulado en este estado, con un número de control del
+      estado y el número de licencia de quien lo firma. Nosotros no somos
+      inspectores estructurales de plagas con licencia y no emitimos ese
+      documento. Lo que le podemos entregar es la cuenta del tratamiento que
+      hicimos, que es otra cosa con otro propósito.
+    </p>
+
+    <h2>¿Por qué tanta exclusión?</h2>
+    <p>
+      Muchas empresas rocían un perímetro por calendario. Muchas menos se meten
+      debajo de una casa boca arriba con una lámpara para averiguar por dónde
+      está entrando el animal. Nosotros fuimos por el otro lado y convertimos la
+      exclusión en especialidad, porque en un clima tan húmedo la entrada dura
+      más que cualquier producto de la camioneta.
+    </p>
+    <p>
+      Es trabajo físico y de oficio: saber qué malla de rejilla va a fallar en
+      tres inviernos, qué penetración con espuma abre una rata en una noche,
+      qué rendija debajo del portón importa y cuál no. Mal hecho se ve bien y
+      falla para noviembre. Bien hecho casi no se nota y aguanta años. Y es el
+      trabajo que nos deja dar una respuesta honesta de qué está mal, porque
+      mucho de lo que encontramos es un problema del edificio y no de plagas.
+    </p>
+
+    <h2>¿Qué pensamos de este trabajo?</h2>
     <p>
       El control de plagas tiene mala fama y en buena parte se la ganó. Los
       peores hábitos del sector son variaciones de lo mismo: vender un
-      contrato que el cliente no necesita, tratar un síntoma y no la causa, y
-      no decir cuándo el problema no es una plaga.
+      tratamiento recurrente para algo que una reparación terminaría, describir
+      como peligrosa una especie inofensiva, y escribir una garantía tan vaga
+      que nunca haya que cumplirla.
     </p>
     <p>
       Por eso, cuando lo que usted tiene es humedad, una rendija o una
@@ -67,12 +155,20 @@ const answer =
       Que alguien le diga que parte de lo que pide no es un problema de plagas
       es la señal más confiable de que le están diciendo la verdad.
     </p>
-
-    <h2>Nuestra área de servicio</h2>
     <p>
-      Trabajamos en todo el condado de Whatcom — Bellingham y sus vecindarios,
-      más Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas y
-      Sudden Valley — y parte del condado de Skagit. La lista completa está en{' '}
+      Lo mismo con los trabajos que no aceptamos. No ponemos trampas para
+      topos, porque las que se venden para eso son trampas de sujeción corporal
+      que la ley de Washington prohíbe. No retiramos fauna silvestre. Si es lo
+      que necesita, se lo decimos por teléfono y le damos el nombre de alguien
+      que lo hace bien, en lugar de agendarle una visita.
+    </p>
+
+    <h2>¿Dónde trabajamos?</h2>
+    <p>
+      En todo el condado de Whatcom — Bellingham y sus vecindarios, más
+      Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas, Sudden
+      Valley, Custer, Deming y Acme — y parte del condado de Skagit. Lo que
+      cambia de un pueblo a otro está en{' '}
       <a href="/es/areas-de-servicio/">áreas de servicio</a>.
     </p>
 

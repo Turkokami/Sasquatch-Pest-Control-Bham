@@ -82,4 +82,37 @@ const n = SHOULD_FAIL.length + SHOULD_PASS.length;
 console.log(fails === 0
   ? `\x1b[32mWDO findings-report rule: ${n}/${n} cases correct\x1b[0m`
   : `\x1b[31m${fails} of ${n} cases wrong\x1b[0m`);
-process.exit(fails ? 1 : 0);
+
+/* ------------------------------------------------------------------ *
+ * SPANISH — added 10 Sep 2026 with the Spanish patterns in seo.ts, before
+ * the first Spanish termite page. Same regulated act, other language: a
+ * written account of what we FOUND in a WDO context fails; a record of what
+ * we DID, or a denial, passes.
+ * ------------------------------------------------------------------ */
+const ES_WDO = 'Las termitas de madera húmeda en el espacio bajo el piso son un problema de pudrición. ';
+const SHOULD_FAIL_ES = [
+  ES_WDO + 'Le entregamos por escrito lo que encontramos en la madera.',
+  ES_WDO + 'El informe dice qué está causando el daño y hasta dónde llega.',
+  'Después de tratar las termitas, usted recibe un documento con lo que vimos en las vigas.',
+];
+const SHOULD_PASS_ES = [
+  /* A record of the treatment, not of the findings. */
+  ES_WDO + 'Le entregamos por escrito el producto usado y las áreas tratadas.',
+  /* A denial. */
+  ES_WDO + 'No emitimos un documento de lo que encontramos en la madera; eso lo hace un inspector con licencia.',
+  /* Findings language with no WDO anywhere near it. */
+  'En una casa con chinches de cama, le entregamos por escrito lo que encontramos en cada cuarto.',
+];
+let esFails = 0;
+for (const s of SHOULD_FAIL_ES) {
+  if (checkWdoFindingsReports(s).length === 0) { console.log('MISSED (es):', s); esFails++; }
+}
+for (const s of SHOULD_PASS_ES) {
+  const r = checkWdoFindingsReports(s);
+  if (r.length) { console.log('FALSE POSITIVE (es):', s, '\n   ->', r[0]); esFails++; }
+}
+const nEs = SHOULD_FAIL_ES.length + SHOULD_PASS_ES.length;
+console.log(esFails === 0
+  ? `\x1b[32mWDO findings-report rule (español): ${nEs}/${nEs} cases correct\x1b[0m`
+  : `\x1b[31m${esFails} of ${nEs} Spanish cases wrong\x1b[0m`);
+process.exit(fails || esFails ? 1 : 0);

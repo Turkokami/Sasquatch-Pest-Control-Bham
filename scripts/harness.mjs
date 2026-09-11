@@ -623,6 +623,43 @@ if (run('claims')) {
   const WDO_DENIAL =
     /\b(we|sasquatch)\b[^.?!]{0,80}\b(do not|don'?t|does not|doesn'?t|cannot|can'?t|will not|won'?t|never|not something we)\b/i;
 
+  /* SPANISH MIRRORS of INSPECTION_CLAIMS_ES, CLAIM_*_ES and WDO_*_ES in
+     src/lib/seo.ts — added 10 Sep 2026, before the first Spanish termite or
+     WDO page. The reasoning (dropped subjects, \p{L} because \b splits
+     accented words) is written there. Change both or neither. */
+  const INSPECTION_CLAIMS_ES = [
+    'inspección wdo', 'inspecciones wdo',
+    'inspección de organismos que destruyen la madera',
+    'inspecciones de organismos que destruyen la madera',
+    'inspección de organismos destructores de madera',
+    'inspección de organismos destructores de la madera',
+    'inspección estructural de plagas', 'inspecciones estructurales de plagas',
+    'informe de inspección', 'reporte de inspección',
+    'inspección para escrow', 'inspección de escrow',
+    'inspección de bienes raíces', 'inspección para la venta', 'inspección de compraventa',
+  ];
+  const CLAIM_DISCLAIMER_ES =
+    /(^|[^\p{L}])(no|nunca)(\s+[\p{L}]+){0,3}?\s+(somos|hacemos|realizamos|emitimos|ofrecemos|presentamos|producimos|damos|entregamos|preparamos|escribimos|firmamos|tenemos|es|son|hace|realiza|emite|ofrece|produce)(?![\p{L}])/iu;
+  const CLAIM_ATTRIBUTION_ES =
+    /(^|[^\p{L}])(su|sus)\s+(inspector|inspectora|inspección|informe|reporte)(?![\p{L}])|(^|[^\p{L}])(inspector|inspectora)\s+(independiente|con licencia|del comprador|del vendedor|del prestamista)(?![\p{L}])|(^|[^\p{L}])(un|una|otro|otra)\s+(inspector|inspectora)(?![\p{L}])|(del comprador|del vendedor|del prestamista|de otra persona|de un tercero)(?![\p{L}])/iu;
+  const CLAIM_SOLICITATION_ES =
+    /(^|[^\p{L}])(llame|llámenos|llamenos|mande|escríbanos|escribanos|pida|pídanos|pidanos|agende|programe|solicite|reserve|contrate)(?![\p{L}])/iu;
+  const CLAIM_FIRST_PERSON_ES =
+    /(^|[^\p{L}])(nosotros|nuestro|nuestra|nuestros|nuestras|nos|sasquatch)(?![\p{L}])|[\p{L}]{2,}(amos|emos|imos)(?![\p{L}])/iu;
+  const CLAIM_PERFORMANCE_ES =
+    /(^|[^\p{L}])(hacemos|realizamos|ofrecemos|emitimos|entregamos|preparamos|escribimos|firmamos|completamos|proporcionamos|damos|hicimos|haremos|realizaremos|llevamos a cabo)(?![\p{L}])/iu;
+  const WDO_SUBJECT_ES =
+    /(organismos? que destruyen? la madera|organismos? destructores? de (la )?madera|(^|[^\p{L}])wdo(?![\p{L}])|termitas?(?![\p{L}])|hormigas? carpinteras?|escarabajos? (barrenadores?|de la madera|que perforan)|carcoma|pudrición)/iu;
+  const WDO_WRITTEN_OFFER_ES =
+    /((^|[^\p{L}])(le (entregamos|damos|mandamos|enviamos|dejamos)|usted recibe|va a recibir|recibirá|le llega)(?![\p{L}])[^.?!]{0,80}(por escrito|documento|registro|reporte|informe|constancia|carta))|((^|[^\p{L}])(el|un|su|nuestro)\s+(documento|registro|reporte|informe|escrito)(?![\p{L}])[^.?!]{0,60}(dice|explica|muestra|detalla|describe|documenta|identifica)(?![\p{L}]))/iu;
+  const WDO_FINDINGS_ES =
+    /(lo que (encontramos|vimos|observamos|identificamos|hallamos)|nuestros hallazgos|los hallazgos|qué encontramos|el daño que (encontramos|vimos)|qué (tiene|está causando|causó)|la causa(?![\p{L}])|el alcance del daño|la infestación)/iu;
+  const WDO_DENIAL_ES =
+    /(^|[^\p{L}])(no|nunca)(\s+[\p{L}]+){0,3}?\s+(somos|hacemos|emitimos|entregamos|damos|producimos|escribimos|firmamos|es)(?![\p{L}])/iu;
+  /* PAGE_PAIRS, read as text for the same reason business.ts is: the harness
+     reads built output and does not import the app. Used to find the Spanish
+     twin of a service that is excepted from the free-visit offer. */
+  const i18nText = fs.readFileSync('src/data/i18n.ts', 'utf8');
   const FORBIDDEN_WARRANTY = [
     'if the pests come back, we come back', 'guaranteed forever',
     'lifetime guarantee', '100% guaranteed results', 'we guarantee no pests',
@@ -648,6 +685,19 @@ if (run('claims')) {
         fail(`${p.url} uses "${term}" without attribution, disclaimer or descriptive framing — ${s.trim().slice(0, 110)}`);
         bad++;
       }
+      /* The same rule in Spanish — mirrors INSPECTION_CLAIMS_ES and the
+         CLAIM_*_ES patterns in src/lib/seo.ts, added 10 Sep 2026. Change both
+         or neither; scripts/tests/inspection-claims.test.ts pins seo.ts. */
+      for (const s of sentencesOf(sentenceTextOf(p.html))) {
+        const sl = s.toLowerCase();
+        const term = INSPECTION_CLAIMS_ES.find((c) => sl.includes(c));
+        if (!term) continue;
+        if (CLAIM_DISCLAIMER_ES.test(s)) continue;
+        if (CLAIM_ATTRIBUTION_ES.test(s) && !CLAIM_PERFORMANCE_ES.test(s) && !CLAIM_SOLICITATION_ES.test(s)) continue;
+        if (!CLAIM_FIRST_PERSON_ES.test(s) && !CLAIM_SOLICITATION_ES.test(s)) continue;
+        fail(`${p.url} usa "${term}" sin atribución, negación ni marco descriptivo — ${s.trim().slice(0, 110)}`);
+        bad++;
+      }
     }
     /* SCOPE IS NEITHER SENTENCE NOR WHOLE PAGE — mirrors seo.ts.
 
@@ -665,16 +715,17 @@ if (run('claims')) {
        to the organism. */
     const headingText = ((p.html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [, ''])[1] +
       ' ' + (p.html.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [, ''])[1]).replace(/<[^>]+>/g, ' ');
-    const headingIsWdo = WDO_SUBJECT.test(headingText);
+    const isWdo = (t) => WDO_SUBJECT.test(t) || WDO_SUBJECT_ES.test(t);
+    const headingIsWdo = isWdo(headingText);
     const plain = sentenceTextOf(p.html);
     for (const s of sentencesOf(plain)) {
-      if (!WDO_WRITTEN_OFFER.test(s)) continue;
-      if (!WDO_FINDINGS_LANGUAGE.test(s)) continue;
-      if (WDO_DENIAL.test(s)) continue;
+      const en = WDO_WRITTEN_OFFER.test(s) && WDO_FINDINGS_LANGUAGE.test(s) && !WDO_DENIAL.test(s);
+      const es = WDO_WRITTEN_OFFER_ES.test(s) && WDO_FINDINGS_ES.test(s) && !WDO_DENIAL_ES.test(s);
+      if (!en && !es) continue;
       if (!headingIsWdo) {
         const at = plain.indexOf(s);
         const around = plain.slice(Math.max(0, at - 600), at + s.length + 600);
-        if (!WDO_SUBJECT.test(around)) continue;
+        if (!isWdo(around)) continue;
       }
       fail(`${p.url} offers a written record of findings in a WDO context — that is a regulated report under WAC 16-228-2045 — ${s.trim().slice(0, 110)}`);
       bad++;
@@ -688,6 +739,16 @@ if (run('claims')) {
           && !/not|except|other than|do not offer/.test(low.slice(Math.max(0, low.indexOf('free inspection') - 90), low.indexOf('free inspection')))) {
         fail(`${p.url} offers a free inspection, but ${slug} is an enumerated exception`);
         bad++;
+      }
+      /* …and on its Spanish twin, read from the PAGE_PAIRS text in i18n.ts. */
+      const esPath = (i18nText.match(new RegExp(`'/services/${slug}/':\\s*'([^']+)'`)) || [])[1];
+      const offer = /(inspección|visita|revisión) (gratuita|gratis|sin costo)/;
+      if (esPath && p.url === esPath && offer.test(low)) {
+        const i = low.search(offer);
+        if (!/(no|salvo|excepto|menos|excepción)/.test(low.slice(Math.max(0, i - 90), i))) {
+          fail(`${p.url} ofrece una visita gratuita, pero ${slug} es una excepción enumerada`);
+          bad++;
+        }
       }
     }
   }
