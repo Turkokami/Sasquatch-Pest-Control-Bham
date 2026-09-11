@@ -1,4 +1,4 @@
-# Sasquatch WA — Keystone v1 build
+# Sasquatch WA — Keystone build (v1, aligned to v2 on 10 Sep 2026)
 
 Tier 3.0 Enterprise hub. Build track **7A · static (Astro)**, deployed to
 Vercel. Replaces the WordPress site at sasquatchpestcontrol.com, whose

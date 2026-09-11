@@ -13,12 +13,25 @@
  * Checks:
  *   1  dead-link crawler      every internal <a href> resolves to a built file
  *   1b asset-reference        every img/og:image/script/icon/JSON-LD image too
- *   2  per-page SEO audit     one H1, unique title/desc, alt on every image
+ *   2  per-page SEO audit     one H1, no duplicate H1, unique title (≤60) and
+ *                             description (110–165), alt on every image
  *   2b price-drift            no dollar figure that is not in business.ts
  *   2c credential & claims    no inspection authority, no WDO findings reports
  *   2d JSON-LD graph          every @id resolves, no node declared twice
  *   3  duplicate-sentence     any 10+ word sentence appearing on 3+ pages
- *   4  word-count auditor     M1 floor, measured on the SOURCE not the HTML
+ *   3b sibling duplicates     v2 substance gate: no 10+ word sentence on 2
+ *                             sibling pages in one cluster
+ *   4  word-band auditor      v2 M1: bands by page type, a diagnostic only —
+ *                             thin pages warn, nothing fails on length
+ *   5  structural performance v2: HTML < 2MB, own JS < 300KB, images sized,
+ *                             one high-priority image; the lab gate is separate
+ *   6  conversion contract    v2 Part 4A: phone is a tel: link everywhere, and
+ *                             the schema number is the displayed number
+ *
+ * Aligned to Keystone v2 on 10 Sep 2026. What v2 asks for that this file does
+ * NOT do, so nobody reads the list above as complete: the keyword→URL map
+ * checker (Part 6A) needs a measured keyword map that does not exist yet, and
+ * the lab performance gate needs Lighthouse against a running server.
  *
  * 1b exists because 1 did not cover what its name implied. Twice now a check
  * on this project has been narrower than it sounded — the dead-link crawler
@@ -37,129 +50,111 @@ const DIR = arg('--dir', 'dist');
 const ONLY = arg('--only', '')?.split(',').filter(Boolean);
 const run = (n) => !ONLY?.length || ONLY.includes(n);
 
-/* M1 is 3,000–5,000 unique words on every indexable CONTENT page. Three page
-   classes sit outside that, and each exemption is declared here in the open
-   rather than applied silently — the harness prints them on every run.
+/* M1, KEYSTONE v2 (10 Sep 2026): THERE IS NO WORD FLOOR ANY MORE.
 
-   UTILITY  transactional pages that exist to be acted on, not read. A 3,000
-            word contact page is not a quality signal, it is padding.
-   HUB      navigational pages whose job is routing plus an AEO answer. They
-            still carry a real floor, just not the deep-content one.
-   BLOG     posts imported verbatim from the legacy WordPress site. They run
-            1,400–2,400 words because they were written years before this
-            standard existed, and rewriting them to 3,000 would make them no
-            longer the thing that was imported.
+   Until v2 this block set a 3,000-word floor on every content page, a 1,200
+   hub floor, 900 for imported blog posts and 400 for Spanish, with exemptions
+   argued out one page at a time — /trusted-partners/ joining UTILITY and being
+   thrown back out, /awards/ and /gallery/ being reclassified as hubs. v2
+   retires all of it. The standard carries its own reasons; the one that
+   matters for this file is that Google's helpful-content guidance lists
+   writing to a word count as something to avoid, and a floor pushes geo pages
+   toward the scaled-content profile it was written to defend against.
 
-            This is the exemption most likely to be abused later, so it is
-            fenced two ways. It applies ONLY under /blog/, and it does not
-            apply to pages written here — a new page that wants a lower floor
-            has to argue for it rather than be filed under /blog/ to escape.
-            The floor is still real: 900 words fails a stub. And note that
-            most imported posts never reach this check at all, because a post
-            that duplicates an existing page ships noindex and the auditor
-            only walks indexable pages. What passes through here is the
-            30-odd posts covering topics the new site does not have, which is
-            precisely the set where thin content would actually cost us.
+   What replaced it, and where this harness carries each part:
 
-   SPANISH  the /es/ tier. The M1 floor exists to stop a thin page
-            competing on an English query against pages that took real work.
-            The Spanish set is a deliberately scoped subset — twelve pages
-            covering what a customer needs to decide and to call — and padding
-            them to 3,000 words of Spanish would be the exact padding this
-            rule exists to prevent, on pages nobody asked to be encyclopaedic.
+     1. THE SUBSTANCE GATE — four binary items. Only the fourth can be read
+        out of built HTML, and check 3b does it: zero sentences shared between
+        sibling pages in the same cluster. The other three — three verifiable
+        local specifics, one first-party proof from that geography, one fact
+        the current top five do not carry — need a person or a SERP, and this
+        harness does not pretend it can check them.
 
-            It is a REAL floor, not an exemption. 400 words fails a stub, and
-            these pages are held to it like anything else. What it is not is
-            the deep-content floor, because these are not deep-content pages
-            and were never meant to be.
+     2. WORD BANDS BY PAGE TYPE — check 4. A diagnostic, not a gate. A page
+        under its band is WARNED as thin; nothing fails on length. The numbers
+        are v2's defaults, which the standard itself labels SERP-parity
+        heuristics with no public dataset behind them.
 
-            CONCRETE TRIGGER for revisiting, written now rather than left
-            vague — the same discipline that caught /trusted-partners/:
-            revisit the moment any Spanish page starts drawing search traffic
-            of its own, or when the set passes about twenty pages. Either
-            means the tier has stopped being a courtesy subset and has become
-            a Spanish site, and a Spanish site takes the same floor as the
-            English one. */
-const FLOORS = { content: 3000, hub: 1200, blog: 900, spanish: 400 };
-/* '/trusted-partners/' WAS IN THIS SET AND IS NOT ANY MORE, removed 8 Sep
-   2026. The whole episode is left here because it is the cleanest example on
-   this project of an exemption being granted honestly and then having to be
-   given back.
+     3. PADDING — v2 defines it as more than twice the SERP median for the
+        page's target query. That median is a MEASUREMENT, and prime directive
+        8 says an agent never generates one. So SERP_MEDIAN starts empty and
+        the padding warning fires only for pages somebody has measured. Pages
+        above a default band are counted per type and printed, not warned one
+        by one: sitting above a heuristic band is not the same finding as being
+        padded, and 200 identical warnings would bury the ones that matter.
 
-   It joined on 4 Sep as a genuine utility page: one local window cleaner, 1,043
-   words, and its entire job was to hand a reader somebody else's phone number
-   and get out of the way. Three thousand words about one window cleaner would
-   have been a worse page, not a better one. That was right at the time.
+   WHAT NOT TO DO WITH THIS. v2 says no agent may treat the band numbers as a
+   new floor, and that a site built under v1 is not stripped to fit — for an
+   existing site the consolidation queue is its GSC "crawled / discovered –
+   currently not indexed" list plus six-month zero-click pages, and nothing
+   more. This site is not live yet, so that list does not exist yet. The
+   above-band counts are the input to that conversation, not a to-do list.
 
-   The note granting it set a concrete trigger rather than a vague one — "at
-   four or more listed organizations, or the first time the page reads as
-   something somebody would land on from a search rather than reach from a
-   service page". Writing a specific trigger is the only reason this got caught
-   instead of quietly persisting, and it is worth doing every time.
+   THE SPANISH RATCHET added earlier on 10 Sep 2026 — holding the
+   /es/servicios/<slug>/ pages to 3,000 words once they had reached it — lasted
+   about four hours. It was correct under v1 and is precisely what v2 forbids,
+   so it is removed rather than converted into a band. */
+const BANDS = {
+  home:         { label: 'T1 home / hub',         min: 600,  max: 1200 },
+  servicesHub:  { label: 'services hub',          min: 800,  max: 1500 },
+  service:      { label: 'T2 service spoke',      min: 1200, max: 2500 },
+  problem:      { label: 'T3 problem page',       min: 700,  max: 1400 },
+  city:         { label: 'T4 city page',          min: 800,  max: 1600 },
+  neighborhood: { label: 'T5 neighborhood page',  min: 400,  max: 900 },
+  pest:         { label: 'T6 pest library',       min: 1200, max: 2500 },
+  vertical:     { label: 'T7 industry vertical',  min: 1200, max: 2000 },
+  /* /guides/ carries sources and review dates and several of its pages are
+     compliance pages outright (school notification, rentals, WDO reports), so
+     the set takes the T8 band. It is a classification made here, not one v2
+     makes, and it is the first thing to revisit if a guide is ever measured. */
+  compliance:   { label: 'T8 compliance / guide', min: 900,  max: 1800 },
+  blog:         { label: 'blog post',             min: 700,  max: 1500 },
+};
+/* Measured SERP medians, keyed by page URL:
+     '/services/rodent-control/': { query: '…', median: 0, measuredOn: 'YYYY-MM-DD', source: '…' }
+   EMPTY ON PURPOSE. A row goes in only from a real measurement of the top five
+   organic results for that page's target query, with the date and the tool
+   named — never from an estimate. */
+const SERP_MEDIAN = {};
 
-   The second limb tripped first, which is not what anybody expected. The
-   organization count is still two. But the owner reclassified Coastal K9 from
-   a referral to a subcontractor, the page grew two standards, an explanation
-   of what a detection dog actually does, how to scope a multifamily sweep, and
-   what a chemical-free request can and cannot deliver. A property manager
-   searching for canine bed bug detection would land on that and read it. That
-   is a content page whatever the URL was originally for.
-
-   So it takes the 3,000-word floor like anything else. The count of listed
-   organizations turned out to be the less useful half of the test — what
-   matters is whether somebody arrives to READ the page or to ACT on it, and
-   that can change without the list growing at all. */
-const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank-you/', '/es/contacto/']);
-/* '/es/contacto/' sits in UTILITY beside '/contact/' rather than taking the
-   Spanish floor, because it is the same page in the other language and the
-   reason for the original exemption is unchanged: it is a page to act on,
-   not to read. Classifying the pair differently would be the single-source
+/* Pages that take no band at all: they exist to be acted on, not read.
+   '/es/contacto/' sits here beside '/contact/' because it is the same page in
+   the other language, and classifying a pair differently is the single-source
    split this codebase keeps getting bitten by. */
+const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank-you/', '/es/contacto/']);
 const isSpanish = (url) => url === '/es/' || url.startsWith('/es/');
-/* A SPANISH SERVICE PAGE TAKES THE ENGLISH CONTENT FLOOR, from 10 Sep 2026.
-
-   The 400-word Spanish floor was written when the Spanish tier was, on
-   purpose, a short decide-and-call layer over the English site — the header
-   of src/data/i18n.ts still says so. On 10 Sep 2026 the owner asked for a
-   full translation instead, and the six service pages went from roughly 450
-   words each to between 89 and 101 percent of their English twins.
-
-   At that depth a 400-word floor protects nothing: a page could lose five
-   sixths of itself and still pass. So this is a ratchet, not a new rule —
-   the service pages are held to what they now are, the same 3,000 words an
-   English service page answers to, and a regression back toward a stub
-   fails the gate instead of shipping.
-
-   Only the /es/servicios/<slug>/ pages, deliberately. The Spanish home, the
-   services index, service areas, guarantee and about pages are still at
-   roughly a third of their English hubs, and holding them to the hub floor
-   today would fail the build for work that is scheduled rather than
-   forgotten. They move to FLOORS.hub the day they are brought up to it, and
-   not before — the same way this line moved only after the pages it covers
-   had already cleared it. */
-const isSpanishServicePage = (url) => /^\/es\/servicios\/[^/]+\/$/.test(url);
-/* '/gallery/' is a hub in the sense this set means: its job is routing and an
-   AEO answer, and the substance a reader came for is the images. It still
-   carries the 1,200-word floor and clears it on written section copy — it is
-   not exempted from anything, only classified. */
-/* '/awards/' JOINED THIS SET 9 Sep 2026, at the owner's instruction and with
-   his reasoning, which was that the page had grown five sections of
-   commentary that read as rambling rather than help. Those sections came out
-   — the reviews explainer, the finalist essay, what the page will never say —
-   and the page fell from just over 3,000 words to 2,165.
-
-   It is classified rather than exempted. Its job now is to list verifiable
-   recognition and hand the reader the two free state lookups that let them
-   check it, which is routing plus an answer — the definition this set already
-   uses. It keeps the 1,200-word floor and clears it on the badge rows, the
-   press entries and the two lookup walkthroughs.
-
-   Trigger: if the page is ever cut below about 1,500 words, or if the WSDA
-   and L&I walkthroughs come out of it, it has stopped being the thing that
-   earned this classification and takes the content floor again. */
-const HUBS = new Set(['/', '/services/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/', '/guides/', '/blog/', '/gallery/', '/what-we-use/', '/awards/']);
+/* Hubs take the T1 band. '/gallery/' and '/awards/' are here by
+   classification, not exemption: each one's job is routing plus an answer —
+   the images, the verifiable recognition and the two state lookups — which is
+   what this set means. The Spanish hubs are the same pages in the other
+   language and are classified with their English twins. */
+const HUBS = new Set([
+  '/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/',
+  '/guides/', '/blog/', '/gallery/', '/what-we-use/', '/awards/',
+  '/es/', '/es/areas-de-servicio/', '/es/garantia/', '/es/nosotros/',
+]);
 const isBlogPost = (url) => url.startsWith('/blog/') && url !== '/blog/';
-const TITLE_MAX = 62, DESC_MIN = 110, DESC_MAX = 165;
+/* A page type per URL, from the URL taxonomy in Keystone Part 3.3. null means
+   no v2 page type fits — /trusted-partners/ is the case today — and such pages
+   are listed rather than banded, because inventing a band for them would be
+   generating a threshold nobody measured. */
+const pageType = (url) => {
+  if (url === '/services/' || url === '/es/servicios/') return 'servicesHub';
+  if (HUBS.has(url)) return 'home';
+  if (/^\/services\/[^/]+\/$/.test(url) || /^\/es\/servicios\/[^/]+\/$/.test(url)) return 'service';
+  if (/^\/services\/[^/]+\/[^/]+\/$/.test(url)) return 'problem';
+  if (/^\/locations\/[^/]+\/$/.test(url)) return 'city';
+  if (/^\/locations\/[^/]+\/[^/]+\/$/.test(url)) return 'neighborhood';
+  if (/^\/pest-library\/[^/]+\/$/.test(url)) return 'pest';
+  if (/^\/commercial\/[^/]+\/$/.test(url)) return 'vertical';
+  if (/^\/guides\/[^/]+\/$/.test(url)) return 'compliance';
+  if (isBlogPost(url)) return 'blog';
+  return null;
+};
+/* M5 (v2): title ≤ 60, description 110–165. The harness enforced 62 until v2,
+   which let through titles the client-facing standard would have failed. The
+   site had none between 61 and 62 when this tightened, so nothing moved. */
+const TITLE_MAX = 60, DESC_MIN = 110, DESC_MAX = 165;
 
 let failures = 0, warnings = 0;
 const fail = (m) => { failures++; console.log(`  \x1b[31mFAIL\x1b[0m ${m}`); };
@@ -234,7 +229,22 @@ const textOf = (html) =>
     .replace(/<[^>]+>/g, ' ')
     .replace(/&[a-z#0-9]+;/gi, ' ')
     .replace(/\s+/g, ' ')
+    /* Close the gap the tag strip opens before punctuation. "<a>360-410-2199</a>."
+       becomes "360-410-2199 ." above, and the lone full stop was then counted as
+       a word — which on 10 Sep 2026 pushed a nine-word Spanish sentence over the
+       ten-word duplicate threshold the moment the phone number became a link.
+       A full stop is not a word. This restores the text the reader sees; it
+       does not narrow what either duplicate check looks for. */
+    .replace(/ ([.,;:!?])(?=\s|$)/g, '$1')
     .trim();
+
+/* Words in a sentence, for the ten-word duplicate threshold (checks 3 and 3b).
+   A token that is nothing but full stops is punctuation the block-edge splitter
+   left behind, not a word — "360-410-2199 .." counted as ten words once the
+   number became a link. Only that is excluded: an em dash still counts exactly
+   as it always has, so no sentence moves under the threshold that was over it
+   before 10 Sep 2026 for any other reason. */
+const wordsIn = (s) => s.split(/\s+/).filter((w) => w && !/^[.!?]+$/.test(w)).length;
 
 /* Like textOf, but preserves SENTENCE BOUNDARIES at block-element edges.
    textOf concatenates the title straight onto body copy with no punctuation
@@ -395,9 +405,20 @@ if (run('seo')) {
      exist. */
   const noOgImage = [];
   let clean = true;
+  /* Duplicate H1s, from Keystone Part 9.4's sweep. Two indexable pages with the
+     same H1 are two pages claiming the same query — the cannibalization smoking
+     gun — and until 10 Sep 2026 nothing here looked. It found exactly one: the
+     home page and /locations/bellingham/, both "Pest Control in Bellingham,
+     Washington". Titles were already checked for uniqueness; H1s were not. */
+  const h1Seen = new Map();
   for (const p of pages) {
     const h1s = tagsOf(p.html, 'h1').length;
     if (h1s !== 1) { fail(`${p.url} has ${h1s} H1 tags (must be exactly 1)`); clean = false; }
+    if (!p.noindex && h1s === 1) {
+      const h1 = decode(textOf((p.html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1] ?? '')).trim().toLowerCase();
+      if (h1Seen.has(h1)) { fail(`duplicate H1 "${h1}": ${p.url} and ${h1Seen.get(h1)}`); clean = false; }
+      else h1Seen.set(h1, p.url);
+    }
 
     const title = decode((p.html.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1] ?? '').trim();
     if (!title) { fail(`${p.url} has no <title>`); clean = false; }
@@ -785,7 +806,7 @@ if (run('dupes')) {
     const sentences = textOf(p.html)
       .split(/(?<=[.!?])\s+/)
       .map((s) => s.trim())
-      .filter((s) => s.split(/\s+/).length >= 10);
+      .filter((s) => wordsIn(s) >= 10);
     for (const s of new Set(sentences)) {
       if (!seen.has(s)) seen.set(s, []);
       seen.get(s).push(p.url);
@@ -801,32 +822,216 @@ if (run('dupes')) {
   }
 }
 
-/* ---------- 4 · word-count auditor ---------- */
+/* ---------- 3b · sibling duplicate scanner (v2 substance gate, item 4) ---------- */
+if (run('siblings')) {
+  console.log('\n3b · sibling duplicate scanner (v2 substance gate)');
+  /* v2 tightened the duplicate rule for the substance gate from "a sentence on
+     3+ pages" to "a sentence on 2+ SIBLING pages inside the same cluster".
+     Check 3 still runs the sitewide 3+ rule; this is the stricter one, scoped
+     to where near-duplication actually costs something — two neighborhood
+     pages in one town, two service spokes, two species profiles.
+
+     A cluster is a URL's parent path, so /locations/lynden/<n>/ pages are
+     siblings of each other and /services/<s>/ pages are siblings of each
+     other. Hubs and the home page have no siblings in this sense.
+
+     SENTENCES ARE SPLIT AT BLOCK EDGES, not only at punctuation. textOf runs a
+     heading straight into the paragraph under it with no full stop between,
+     so a four-word H2 plus a seven-word lead-in reads as one eleven-word
+     "sentence" and two pages that share only a heading and a list label look
+     duplicated. That is a measurement fault, not a finding. Boilerplate,
+     nav, header and footer are removed BEFORE block edges are marked, because
+     sentenceTextOf rewrites opening tags first and would otherwise break the
+     data-boilerplate strip — which is why this does not just call it. */
+  const stripChrome = (html) =>
+    html
+      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<nav[\s\S]*?<\/nav>/gi, ' ')
+      .replace(/<footer[\s\S]*?<\/footer>/gi, ' ')
+      .replace(/<header[\s\S]*?<\/header>/gi, ' ')
+      .replace(/<([a-z]+)[^>]*\sdata-boilerplate\b[^>]*>[\s\S]*?<\/\1>/gi, ' ');
+  const parentOf = (url) => {
+    const seg = url.split('/').filter(Boolean);
+    return seg.length >= 1 ? '/' + seg.slice(0, -1).map((x) => x + '/').join('') : null;
+  };
+  const byCluster = new Map();
+  for (const p of indexable) {
+    if (UTILITY.has(p.url)) continue;
+    const cluster = parentOf(p.url);
+    if (!cluster) continue;
+    const sentences = sentenceTextOf(stripChrome(p.html))
+      .split(/(?<=[.!?])\s+/)
+      .map((x) => x.replace(/^[.\s]+/, '').trim())
+      .filter((x) => wordsIn(x) >= 10);
+    for (const sen of new Set(sentences)) {
+      const key = `${cluster}\u0000${sen}`;
+      if (!byCluster.has(key)) byCluster.set(key, []);
+      byCluster.get(key).push(p.url);
+    }
+  }
+  const shared = [...byCluster.entries()].filter(([, u]) => u.length >= 2);
+  if (!shared.length) ok('no 10+ word sentence is shared by two sibling pages');
+  else {
+    for (const [key, urls] of shared.slice(0, 40)) {
+      const sen = key.split('\u0000')[1];
+      fail(`siblings ${urls.join(' + ')}: "${sen.slice(0, 90)}${sen.length > 90 ? '…' : ''}"`);
+    }
+    if (shared.length > 40) fail(`…and ${shared.length - 40} more sentences shared between siblings`);
+  }
+}
+
+/* ---------- 4 · word-band auditor (v2 M1 — diagnostic, never a gate) ---------- */
 if (run('words')) {
-  console.log('\n4 · word-count auditor (M1 uniqueness floor)');
-  const short = [];
+  console.log('\n4 · word-band auditor (v2 M1 — diagnostic only)');
+  const byType = new Map();
+  const unbanded = [];
   const exempt = [];
   for (const p of indexable) {
     const words = textOf(p.html).split(/\s+/).filter(Boolean).length;
     if (UTILITY.has(p.url)) { exempt.push(`${p.url} (${words}w)`); continue; }
-    const floor = HUBS.has(p.url)
-      ? FLOORS.hub
-      : isSpanishServicePage(p.url)
-        ? FLOORS.content
-      : isSpanish(p.url)
-        ? FLOORS.spanish
-        : isBlogPost(p.url)
-          ? FLOORS.blog
-          : FLOORS.content;
-    if (words < floor) short.push({ url: p.url, words, floor });
+    const type = pageType(p.url);
+    if (!type) { unbanded.push(`${p.url} (${words}w)`); continue; }
+    const band = BANDS[type];
+    const row = byType.get(type) ?? { n: 0, below: 0, inside: 0, above: 0, words: [] };
+    row.n++; row.words.push(words);
+    if (words < band.min) {
+      row.below++;
+      warn(`${p.url} — ${words} words, under the ${band.label} band (${band.min}–${band.max}): thin`);
+    } else if (words > band.max) row.above++;
+    else row.inside++;
+    const m = SERP_MEDIAN[p.url];
+    if (m && words > 2 * m.median) {
+      warn(`${p.url} — ${words} words is over twice the measured SERP median (${m.median}, "${m.query}", ${m.measuredOn}): padded`);
+    }
+    byType.set(type, row);
   }
-  if (exempt.length) console.log(`  \x1b[2mexempt (utility pages): ${exempt.join(', ')}\x1b[0m`);
-  if (!short.length) ok(`every page clears its floor`);
+  if (exempt.length) console.log(`  \x1b[2mno band (utility pages): ${exempt.join(', ')}\x1b[0m`);
+  if (unbanded.length) console.log(`  \x1b[2mno v2 page type fits, so no band: ${unbanded.join(', ')}\x1b[0m`);
+  for (const [type, r] of [...byType.entries()].sort((a, b) => b[1].n - a[1].n)) {
+    const b = BANDS[type];
+    const med = r.words.sort((x, y) => x - y)[r.words.length >> 1];
+    console.log(
+      `  \x1b[2m${b.label.padEnd(22)} ${String(r.n).padStart(3)} pages · band ${b.min}–${b.max} · median ${med}` +
+      ` · ${r.inside} inside, ${r.above} above, ${r.below} under\x1b[0m`,
+    );
+  }
+  const measured = Object.keys(SERP_MEDIAN).length;
+  console.log(
+    `  \x1b[2mpadding is only asserted against a measured SERP median; ${measured} page${measured === 1 ? '' : 's'} measured.\x1b[0m`,
+  );
+}
+
+/* ---------- 5 · structural performance (v2 lab-gate preconditions) ---------- */
+if (run('perf')) {
+  console.log('\n5 · structural performance (v2 Part 9.1 preconditions)');
+  /* v2's performance gate is a LAB measurement — LCP ≤ 2.0s, TBT ≤ 200ms,
+     CLS ≤ 0.05, score ≥ 90, median of five mobile Lighthouse runs — and a
+     static file cannot answer it. That is scripts/lab-gate.mjs. What CAN be
+     read from built HTML are the structural conditions v2 attaches to it, and
+     each one here is binary:
+
+       · the HTML document is under 2MB (Googlebot truncates past it);
+       · the page's own JavaScript is under 300KB;
+       · every image in <main> declares width and height, or an aspect-ratio,
+         so nothing shifts when it arrives;
+       · at most one image asks for fetchpriority="high", and that one is not
+         also lazy — two "highest priority" images is none.
+
+     And one warning, because it is a heuristic: a first image that sits in
+     the opening 150 words of <main> is very probably the LCP element, and v2
+     wants the LCP element eager with fetchpriority="high". The lab gate is
+     what settles it. External scripts are listed, not summed — their weight
+     lives on somebody else's server and has to be measured there. */
+  const MAX_HTML = 2 * 1024 * 1024, MAX_JS = 300 * 1024;
+  const external = new Set();
+  let clean = true;
+  for (const p of pages) {
+    if (Buffer.byteLength(p.html) > MAX_HTML) { fail(`${p.url} HTML is ${Buffer.byteLength(p.html)} bytes (max 2MB)`); clean = false; }
+
+    let js = 0;
+    for (const m of p.html.matchAll(/<script\b[^>]*\ssrc=(["'])([^"']+)\1[^>]*>/gi)) {
+      const src = m[2];
+      if (/^(https?:)?\/\//i.test(src)) { external.add(src); continue; }
+      const f = path.join(DIR, src.split(/[?#]/)[0]);
+      if (fs.existsSync(f)) js += fs.statSync(f).size;
+    }
+    for (const m of p.html.matchAll(/<script\b(?![^>]*application\/ld\+json)(?![^>]*\ssrc=)[^>]*>([\s\S]*?)<\/script>/gi)) js += Buffer.byteLength(m[1]);
+    if (js > MAX_JS) { fail(`${p.url} ships ${js} bytes of its own JavaScript (max 300KB)`); clean = false; }
+
+    const main = (p.html.match(/<main\b[\s\S]*<\/main>/i) || [''])[0];
+    const imgs = tagsOf(main, 'img');
+    for (const t of imgs) {
+      if (!((attr(t, 'width') && attr(t, 'height')) || /aspect-ratio/i.test(t))) {
+        fail(`${p.url} <img src="${attr(t, 'src')}"> has no width/height or aspect-ratio`); clean = false;
+      }
+    }
+    const high = tagsOf(p.html, 'img').filter((t) => attr(t, 'fetchpriority') === 'high');
+    if (high.length > 1) { fail(`${p.url} has ${high.length} images at fetchpriority="high" (max 1)`); clean = false; }
+    for (const t of high) if (attr(t, 'loading') === 'lazy') { fail(`${p.url} image is both fetchpriority="high" and lazy`); clean = false; }
+
+    /* Likely-LCP image, by position. The first version of this warned on any
+       lazy image within the first 150 words of <main>. The lab gate showed that
+       was wrong for this site: with an H1 and a 40–60 word Quick Answer ahead
+       of it, the photo below is NOT the LCP element — the answer paragraph is —
+       and giving that photo high priority only slowed the paragraph. So the
+       signal now is structural and narrow: an image that comes before the
+       page's first paragraph is the hero, and a hero must not be lazy. */
+    if (imgs.length) {
+      const i = main.search(/<img\b/i);
+      const firstP = main.search(/<p\b/i);
+      if ((firstP === -1 || i < firstP) && attr(imgs[0], 'loading') === 'lazy') {
+        warn(`${p.url} first image renders before any paragraph and is lazy — it is the hero, and probably the LCP element`);
+      }
+    }
+  }
+  if (external.size) console.log(`  \x1b[2mexternal scripts (weight measured at the source, not here): ${[...external].join(', ')}\x1b[0m`);
+  if (clean) ok('HTML under 2MB, own JS under 300KB, every image sized, at most one high-priority image');
+}
+
+/* ---------- 6 · conversion contract (v2 Part 4A) ---------- */
+if (run('convert')) {
+  console.log('\n6 · conversion contract (v2 Part 4A)');
+  /* Part 4A.2: "The phone number is a real tel: link everywhere it appears,
+     including the footer NAP." Six pages failed this when v2 arrived, all
+     because a sentence stored as data rendered as one text node —
+     src/components/PhoneText.astro is the fix and carries the history.
+
+     The number is read from business.ts rather than typed here, for the same
+     reason 2c reads its credentials from there: a second copy of a fact is a
+     second place for it to be wrong. Every digit grouping the site writes is
+     matched — 360-410-2199, (360) 410-2199, 360.410.2199.
+
+     Part 4A.3 is also checked: the LocalBusiness telephone must BE the
+     number the site displays. A tracking number in the schema node is the
+     NAP break v2 names outright. What cannot be checked here is whether that
+     number is the one on the Google Business Profile — that is recorded as an
+     owner confirmation in GUARDRAILS.md and in `npm run pending`.
+
+     NOT COVERED: the first-touch form's field count (≤ 5). The form is the
+     GoHighLevel embed inside an iframe, so its fields are not in our HTML.
+     It is the owner's form, which is exactly what 4A.2 asks for on a static
+     build; its length is a GHL setting and is noted in GUARDRAILS.md. */
+  const biz = fs.readFileSync('src/data/business.ts', 'utf8');
+  const phone = (biz.match(/\bphone:\s*'([^']+)'/) || [])[1];
+  let clean = true;
+  if (!phone) { fail('could not read business.phone from business.ts'); clean = false; }
   else {
-    short.sort((a, b) => a.words - b.words);
-    for (const s of short.slice(0, 30)) fail(`${s.url} — ${s.words} words (floor ${s.floor})`);
-    if (short.length > 30) fail(`…and ${short.length - 30} more pages under floor`);
+    const d = phone.replace(/\D/g, '');
+    const rx = new RegExp(String.raw`\(?${d.slice(0, 3)}\)?[-. ]?${d.slice(3, 6)}[-. ]?${d.slice(6)}`);
+    for (const p of pages) {
+      const body = p.html
+        .replace(/<head[\s\S]*?<\/head>/i, ' ')
+        .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+        .replace(/<a\b[^>]*href=(["'])tel:[^"']*\1[^>]*>[\s\S]*?<\/a>/gi, ' ');
+      if (rx.test(textOf(body))) { fail(`${p.url} shows ${phone} as plain text — it must be a tel: link`); clean = false; }
+      const tel = (p.html.match(/"telephone"\s*:\s*"([^"]+)"/) || [])[1];
+      if (tel && tel.replace(/\D/g, '').slice(-10) !== d.slice(-10)) {
+        fail(`${p.url} schema telephone ${tel} is not the displayed number ${phone} (Part 4A.3)`); clean = false;
+      }
+    }
   }
+  if (clean) ok(`${phone} is a tel: link everywhere it appears, and the schema telephone matches it`);
 }
 
 /* ---------- summary ---------- */

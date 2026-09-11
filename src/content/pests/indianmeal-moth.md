@@ -242,8 +242,7 @@ properties the barn is the first place to look and the kitchen is the last.
 in a garage is the reservoir we find more often than any other single item, and
 it usually sits within a few feet of a door into the house.
 
-**Older city housing** — the Lettered Streets, Columbia, Sunnyland, York, South
-Hill. Deep original cabinets, shelf-support holes, gaps behind trim, and pantries
+**Bellingham's prewar neighborhoods** — the Lettered Streets, Columbia, Sunnyland, York, South Hill. Deep original cabinets, shelf-support holes, gaps behind trim, and pantries
 with corners a modern kitchen does not have. The source is easy enough to find;
 the spilled material that keeps it going is harder.
 

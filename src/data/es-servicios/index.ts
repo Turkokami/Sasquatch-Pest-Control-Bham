@@ -1,5 +1,5 @@
 /**
- * Keystone Part 15 — la lista de páginas de servicio en español.
+ * Keystone Part 3.3 — la lista de páginas de servicio en español.
  *
  * Un módulo por servicio en este directorio; este archivo solo los arma. El
  * orden de la lista es el orden en que aparecen en /es/servicios/ y en el riel

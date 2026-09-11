@@ -4,6 +4,23 @@
  * The ONE place the JSON-LD graph is injected. Keystone Part 9: exactly one
  * emitter per page, always.
  */
+/* SELF-HOSTED FONTS, from 10 Sep 2026. The Google Fonts stylesheet was the
+   single largest render-blocking request on every page — 833ms on Keystone
+   v2's lab run, before a word could paint — plus two third-party connections
+   to open first. Fontsource ships the same two OFL families as files that
+   Vite fingerprints and serves from this origin. Only the weights the CSS
+   actually uses (sans 400/500/600/800, serif 600/700) and only the Latin
+   subset, which covers every character the Spanish pages use. */
+import '@fontsource/dm-sans/latin-400.css';
+import '@fontsource/dm-sans/latin-500.css';
+import '@fontsource/dm-sans/latin-600.css';
+import '@fontsource/dm-sans/latin-800.css';
+import '@fontsource/newsreader/latin-600.css';
+import '@fontsource/newsreader/latin-700.css';
+/* The two faces that paint first — body copy and every heading — are
+   preloaded so the swap happens before the reader has read anything. */
+import sansBody from '@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff2?url';
+import serifHead from '@fontsource/newsreader/files/newsreader-latin-600-normal.woff2?url';
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
 import { business, SITE, isReady } from '../data/business';
@@ -51,7 +68,7 @@ interface Props extends Omit<PageSchemaInput, 'title' | 'description' | 'guideTo
   canonicalTo?: string;
 
   /**
-   * Keystone Part 15. Spanish is served as its own indexable route under
+   * Keystone Part 3.3. Spanish is served as its own indexable route under
    * /es/, not as a browser-side widget — a machine translation is not
    * crawlable and would not reach the reader searching in Spanish.
    *
@@ -176,12 +193,8 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;800&family=Newsreader:wght@600;700&display=swap"
-    />
+    <link rel="preload" href={sansBody} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={serifHead} as="font" type="font/woff2" crossorigin />
 
     {/* The single JSON-LD emitter. No plugin, no second block, ever. */}
     <script type="application/ld+json" set:html={ld} is:inline />

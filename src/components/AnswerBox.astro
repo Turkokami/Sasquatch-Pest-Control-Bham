@@ -1,7 +1,11 @@
 ---
 /** The AEO Quick Answer. 40–60 words, first thing on the page.
- *  SpeakableSpecification in the graph points at .answer-box. */
+ *  SpeakableSpecification in the graph points at .answer-box (M4 is retired
+ *  in Keystone v2; the selector stays because it is harmless — see schema.ts).
+ *  The company number inside the answer renders as a tel: link — PhoneText
+ *  carries the reason. */
+import PhoneText from './PhoneText.astro';
 interface Props { text: string }
 const { text } = Astro.props;
 ---
-<div class="answer-box"><p>{text}</p></div>
+<div class="answer-box"><p><PhoneText text={text} /></p></div>

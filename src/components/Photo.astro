@@ -19,15 +19,37 @@
  * LocationMap.astro, which is on the other side of it.
  */
 import type { Photo } from '../data/photos';
-import { intrinsicSize } from '../lib/images';
+import { intrinsicSize, srcsetFor } from '../lib/images';
 
 interface Props {
   photo: Photo;
-  /** First contentful image on the page? Then it must not be lazy. */
+  /**
+   * The page's likely LCP image? Then it is eager AND fetchpriority="high".
+   *
+   * Until 10 Sep 2026 this only switched off lazy loading. Keystone v2 (Part
+   * 9.1, performance) names the LCP element's requirements outright — an <img>
+   * in the initial HTML, fetchpriority="high", never loading="lazy" — and eager
+   * alone is half of that: the browser still queues an eager image behind the
+   * stylesheet and fonts. One per page. Harness check 5 fails a page that asks
+   * for high priority twice, because two "most important" images is none.
+   *
+   * AND ONLY WHEN THE PHOTO IS THE LCP ELEMENT, which on this site it almost
+   * never is. The same day, the lab gate showed that on every template where
+   * a Photo sits below the Quick Answer — service, problem, town, species,
+   * vertical, the hubs — the LCP element is the answer paragraph, not the
+   * picture. Marking the picture high priority there made it compete with the
+   * thing actually being measured, so every one of those came back out. Use
+   * this for a photo that renders ABOVE the page's first paragraph, and check
+   * the LCP element in `npm run lab-gate` before adding it anywhere else.
+   */
   priority?: boolean;
 }
 const { photo, priority = false } = Astro.props;
 const { width, height } = intrinsicSize(photo.file);
+/* WebP width variants where they exist — see srcsetFor. The figure sits in
+   the reading column (.team max-width is the measure, 40rem), so a phone asks
+   for roughly its own width and a desktop for the column. */
+const srcset = srcsetFor(photo.file);
 ---
 <figure class="team">
   <img
@@ -35,8 +57,11 @@ const { width, height } = intrinsicSize(photo.file);
     alt={photo.alt}
     width={width}
     height={height}
+    srcset={srcset}
+    sizes={srcset ? '(min-width: 44rem) 40rem, calc(100vw - 2.5rem)' : undefined}
     loading={priority ? 'eager' : 'lazy'}
-    decoding="async"
+    fetchpriority={priority ? 'high' : undefined}
+    decoding={priority ? undefined : 'async'}
   />
   <figcaption>{photo.caption}</figcaption>
 </figure>

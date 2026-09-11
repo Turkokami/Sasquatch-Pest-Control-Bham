@@ -122,8 +122,7 @@ whatever traveled in them, and stored-product insects in dry goods come in
 inside the product rather than through a door. Treating a perimeter for those
 accomplishes nothing; the work is finding the source lot.
 
-**Drains and grease** are the fourth. Drain flies breed in the organic film
-lining floor drains, sinks and the underside of covers. Surface treatment does
+**Drains and grease** are the fourth. Drain flies come from the slime layer that coats floor drains, sink traps and the underside of drain covers. Surface treatment does
 nothing to them, and mechanical cleaning ends the problem within a fortnight.
 Grease interceptors and the ground around them are their own reservoir.
 
@@ -193,7 +192,7 @@ Fairhaven has a substantial rental stock, including older houses divided into
 units and apartments above the commercial spaces, and that changes how some work
 has to be scoped.
 
-In a building with shared structure the pests are a building-level population.
+Where units share a structure, the insects belong to the building rather than to any one unit.
 Wall voids, plumbing chases and framing cavities connect units, and insects move
 through them without regard to who pays which lease. Treating one unit while the
 ones either side go untreated relocates the problem — usually next door, often

@@ -170,8 +170,7 @@ usually the highest-value item on a restaurant's pest program.
 around drain grates. It accumulates where nobody cleans because nobody can reach.
 
 **Waste handling.** Dumpster placement, lid condition, how often it is emptied,
-and whether the pad beneath it is ever washed. A dumpster on an unwashed pad
-produces flies indefinitely regardless of what happens indoors.
+and whether the pad beneath it is ever washed. If the pad under a dumpster never gets washed, it will keep breeding flies no matter what is done inside.
 
 **Doors and air movement.** Door sweeps, self-closing doors, air curtains and
 screening on anything that opens to the outside.
@@ -202,7 +201,7 @@ newer stock around Ferndale. Large unshaded south and west elevations are cluste
 fly magnets in October, and the sealing work is straightforward because the
 detailing is better.
 
-**Food service and retail** — downtown, Fairhaven and the commercial corridors.
+**Restaurants and shops** — downtown, Fairhaven and the commercial corridors.
 Drains, waste and deliveries.
 
 **Waterfront and seasonal** — Blaine, Birch Bay and Semiahmoo. Houses closed up

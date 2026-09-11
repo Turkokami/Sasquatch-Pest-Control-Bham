@@ -1,6 +1,6 @@
 ---
 import { business } from '../data/business';
-import { intrinsicSize } from '../lib/images';
+import { intrinsicSize, srcsetFor } from '../lib/images';
 import { t, altPathFor, type Lang } from '../data/i18n';
 
 interface Props {
@@ -117,6 +117,8 @@ const currentFor = (href: string) =>
         src={mark}
         width={width}
         height={height}
+        srcset={srcsetFor(mark)}
+        sizes="3.6rem"
         alt="The Sasquatch Pest Control logo"
         aria-hidden="true"
       />

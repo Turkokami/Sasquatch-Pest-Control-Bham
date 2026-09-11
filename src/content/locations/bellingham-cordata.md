@@ -134,8 +134,7 @@ the water-facing elevation.
 A large share of Cordata is purpose-built rental housing, much of it near the
 college, and multi-unit work follows different rules from a single house.
 
-In a building with shared structure the pests are a **building-level
-population**. Wall voids, plumbing chases, shared attics and common service runs
+Once walls and plumbing are shared, you are dealing with **one population across the whole building**. Wall voids, plumbing chases, shared attics and common service runs
 connect units, and insects use them without regard to who holds which tenancy.
 
 Treat one apartment thoroughly and the population next door is untouched. It
@@ -283,8 +282,7 @@ even though it reduces what we can sell.
 **Single-unit treatment sold as a building solution.** Where the population is
 shared, we say so before taking the work.
 
-**Anything with fur or feathers.** Wildlife and birds are outside our scope. We
-handle insects and rodents and will point you to somebody for the rest.
+**Anything with fur or feathers.** Wildlife and birds are outside our scope. Insects and rodents are ours; for anything else we will give you a name to call.
 
 ## How a visit here works
 

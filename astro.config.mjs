@@ -11,7 +11,12 @@ export default defineConfig({
   site: 'https://www.sasquatchpestcontrol.com',
   output: 'static',
   trailingSlash: 'always',
-  build: { format: 'directory' },
+  /* inlineStylesheets: 'always', from 10 Sep 2026. The one stylesheet was
+     the second render-blocking request on every page (479ms on Keystone v2's
+     lab run): a full round trip before first paint, on a slow phone
+     connection, for ~30KB that compresses to a few. Inline it and the first
+     response carries everything needed to paint. */
+  build: { format: 'directory', inlineStylesheets: 'always' },
   compressHTML: true,
   devToolbar: { enabled: false },
 });

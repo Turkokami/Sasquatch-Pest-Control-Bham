@@ -1,5 +1,5 @@
 /**
- * Keystone Part 15 — la forma de una página de servicio en español.
+ * Keystone Part 3.3 — la forma de una página de servicio en español.
  *
  * Este tipo vivía dentro de src/data/es-servicios.ts, junto con las seis
  * páginas, cuando cada una eran cuatrocientas palabras. Al llevarlas a su

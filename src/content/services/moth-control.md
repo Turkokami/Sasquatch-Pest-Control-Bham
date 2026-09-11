@@ -197,8 +197,7 @@ though it will is overselling.
 
 ## Around the county
 
-**Older city housing** — the Lettered Streets, Columbia, Sunnyland, York and
-South Hill. Wool rugs, cedar closets that stopped working decades ago, and stored
+**Bellingham's older housing** — the Lettered Streets, Columbia, Sunnyland, York and South Hill. Wool rugs, cedar closets that stopped working decades ago, and stored
 textiles in attics and basements. Clothes moth country.
 
 **Around Lake Whatcom** — Sudden Valley, Silver Beach, Edgemoor. Second homes and

@@ -54,9 +54,7 @@ through.
 The failures are consistent enough that we can predict most of them before
 arriving.
 
-**Service penetrations closed with foam.** Every house has a dozen or more —
-water, waste, gas, electrical, data, the heat pump line set, the dryer vent —
-and on new construction they are typically sealed with expanding foam. That is
+**Service penetrations closed with foam.** A new house here has at least a dozen — water, waste, gas, power, data, the heat pump lines, the dryer vent — and the builder almost always closed them with expanding foam. That is
 exactly right for air and water, and a mouse chews through it without slowing
 down. This is the single most common route we find on newer houses anywhere.
 
@@ -64,8 +62,7 @@ down. This is the single most common route we find on newer houses anywhere.
 an opening instead of mechanically fixed into it lifts at a corner within a few
 years. After that the vent is simply an opening.
 
-**Garage door corners.** Stand inside with the door closed and look at the
-bottom corners. Daylight means a gap at floor level, in a space that connects
+**Garage door corners.** Close the door, stand in the garage and check the two bottom corners. Daylight means a gap at floor level, in a space that connects
 directly to the house.
 
 **Behind siding trim and at transitions.** Where two materials meet, at corner
@@ -164,9 +161,7 @@ cover touching the wall, over damp organic matter — is the single most
 productive thing to fix on an older lot, and it takes years of growth to
 create.
 
-Keeping a genuine gap between planting and siding now costs nothing. Reclaiming
-one in fifteen years means removing established shrubs somebody has grown
-attached to.
+Keeping a genuine gap between planting and siding now costs nothing. Fifteen years from now, getting it back means pulling out mature shrubs that someone has come to love.
 
 Irrigation matters as much. New landscaping gets watered heavily to establish,
 and water applied against a foundation starts the moisture problem this ground
@@ -185,8 +180,7 @@ a mouse.
 The outdoor unit sits on a pad against the wall, generally with a gap
 underneath. Dry, sheltered, undisturbed, directly against the building.
 
-Condensate lines and their drains hold standing water in a warm sheltered spot,
-which is what small flies breed in.
+A condensate line and its drain keep a little standing water somewhere warm and out of the weather, which is all small flies need to breed.
 
 None of this is difficult. It is simply newer than most of what gets checked,
 and somebody working from habit on older housing can walk past all three.
@@ -238,14 +232,11 @@ The useful move is looking in June rather than reacting in August.
 This is family housing with children and dogs in the yards, and that shapes
 placement rather than possibility.
 
-Anything placed goes in enclosed, secured stations where children and animals
-cannot reach it, and interior work is planned around the rooms in use.
+Every placement sits in a locked, enclosed station out of reach of children and pets, and we plan inside work around whichever rooms the family is using.
 
 We will show you the label before we treat, tell you what is being applied and
 where it is not being applied, and give the re-entry directions without being
-asked. Every product this company carries is [published on this site](/what-we-use/) with its
-EPA registration number, its full label and its safety data sheet, which is
-unusual and is deliberate.
+asked. You can read every product we carry [on this site](/what-we-use/) — EPA registration number, full label, safety data sheet — which few companies do, and we do on purpose.
 
 Where a repair does the job instead of a product we will recommend the repair,
 even though it is the smaller invoice. On a house this new that is frequently
@@ -255,7 +246,7 @@ the entire answer.
 
 Close the builder gaps first: penetrations done mechanically rather than with
 foam alone, vent screening fixed into the opening, and the garage door seal.
-That is a morning and it is most of the battle.
+It takes a morning, and it does most of the work.
 
 Keep the landscaping off the walls and the irrigation off the foundation while
 that is still easy.

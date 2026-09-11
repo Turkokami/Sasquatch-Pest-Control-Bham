@@ -298,7 +298,7 @@ stays. We would rather quote the repair.
 in a void and cannot reproduce there. Spraying the room they emerged into does
 nothing about the rest of them.
 
-**A recurring plan for a property that does not need one.** A good deal of
+**Ongoing service where one visit would do.** A good deal of
 acreage out here genuinely does, because the pressure never stops. Some
 properties do not, and if sealing and a single treatment will hold, that is what
 we will say.

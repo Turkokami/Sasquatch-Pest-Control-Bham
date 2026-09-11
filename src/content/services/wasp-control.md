@@ -251,7 +251,7 @@ second visit, and that is covered under our
 Roosevelt. A century of siding, trim and utility penetrations means more cavity
 entrances than newer stock, and German yellowjackets in wall voids are common.
 
-**Newer hillside and edge** — Alabama Hill, Barkley, Cordata, King Mountain.
+**The newer hillside developments** — Alabama Hill, Barkley, Cordata, King Mountain.
 Soffits, deck framing and open eaves. More aerial and paper wasp work.
 
 **Rural and agricultural** — Lynden, Everson, Nooksack, Sumas. Outbuildings,

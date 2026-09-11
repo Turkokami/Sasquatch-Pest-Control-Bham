@@ -87,20 +87,37 @@ const frameId = `inline-${f.id}`;
       means the common case lands with no shift, and the frame is free to grow
       for validation messages without being clipped.
 
-      NO loading="lazy" HERE, AND THAT IS THE DECISION RATHER THAN AN
-      OVERSIGHT. LocationMap lazy-loads its map and the same argument applies
-      on paper — this frame is at the foot of a 3,000-word page and most
-      readers never reach it. It was tried and taken back out. The brief was
-      to carry the working form across unchanged, and form_embed.js is a
-      third-party loader that looks the frame up by id and wires a resize
-      postMessage; whether it tolerates a frame that has not fetched yet is
-      not something this project can test, and the failure mode is a form that
-      silently does not render on 206 pages. An eager third-party frame is a
-      known cost. A lead form that might not appear is not a cost anyone would
-      accept to save it. Revisit only with a real browser in front of you. */}
+      THE FRAME LOADS WHEN THE READER NEARS IT — changed 10 Sep 2026, and the
+      note that stood here until then is worth keeping because it was right to
+      refuse this without evidence:
+
+        "NO loading="lazy" HERE… form_embed.js is a third-party loader that
+        looks the frame up by id and wires a resize postMessage; whether it
+        tolerates a frame that has not fetched yet is not something this
+        project can test… Revisit only with a real browser in front of you."
+
+      Keystone v2 put a real browser in front of it. Its lab gate (median of
+      five mobile Lighthouse runs) measured every template at an LCP of 8–11
+      seconds against a 2.0s budget, and the eager embed was the bulk of it:
+      each page pulled about 2.5MB it never showed — four Cloudflare Turnstile
+      challenge payloads of ~420KB each, GHL's own 261KB bundle and Facebook's
+      tracking pixel — for a form most readers never scroll to.
+
+      What changed is WHEN, not HOW. The loader's order of operations is kept
+      exactly: the frame gets its src first, then form_embed.js is added, so
+      the script still finds a frame that is already fetching — the same
+      sequence it met when both were in the HTML. Both now start on the
+      reader's first interaction, when the form enters the viewport, or five
+      seconds after load — the script below has the reasons and
+      the two versions that came before it. On the contact pages the form is
+      on the first screen and loads straight away. Verified in headless Chrome
+      by scripts/check-leadform.mjs on the day: nothing from the form host
+      loads during the first paint, GHL's form renders inside the frame once
+      the reader scrolls, and the resize handshake sets its height. Re-run it
+      after touching this. */}
   <div class="leadform-frame">
     <iframe
-      src={src}
+      data-src={src}
       style="width:100%;height:100%;border:none;border-radius:4px"
       id={frameId}
       data-layout="{'id':'INLINE'}"
@@ -132,9 +149,57 @@ const frameId = `inline-${f.id}`;
   </p>
 </aside>
 
-{/* is:inline, and it matters. Astro would otherwise try to process, bundle and
-    fingerprint this as a local module; it is a third-party loader that has to
-    reach the page byte-for-byte as GHL serves it. defer so it runs after the
-    iframe above exists — it looks the frame up by id to wire the resize
-    postMessage. One form per page means one copy of this script per page. */}
-<script is:inline defer src={`${business.crmForm.host}/js/form_embed.js`}></script>
+{/* The loader. Inline and tiny, so it costs nothing on the pages where the
+    reader never reaches the form. It sets the frame's src and only then adds
+    GHL's form_embed.js — byte-for-byte as GHL serves it, never bundled — which
+    is the order the two had when both sat in the HTML. One form per page, so
+    one frame id and one copy of this. Without IntersectionObserver (very old
+    browsers) it starts at once, which is the old behavior. Without JavaScript
+    the frame stays empty and the fallback line under it — phone number and a
+    direct link to the form — is what the reader gets, as it always was when
+    the embed failed. */}
+<script is:inline define:vars={{ frameId, embed: `${business.crmForm.host}/js/form_embed.js` }}>
+  (function () {
+    var frame = document.getElementById(frameId);
+    if (!frame) return;
+    var started = false;
+    function start() {
+      if (started) return;
+      started = true;
+      frame.src = frame.getAttribute('data-src');
+      var s = document.createElement('script');
+      s.src = embed;
+      s.defer = true;
+      document.body.appendChild(s);
+    }
+    /* Whichever comes first:
+         · the form enters the viewport (a jump to #lead-form from the sticky
+           bar, or a page where it is on the first screen). No margin: the
+           form sits about 1,035px down on a phone, and a 200px margin on an
+           844px screen reached it on arrival, which loaded it at once;
+         · the reader does anything at all — scrolls, taps, presses a key —
+           which on a page with the form one screen down is nearly always the
+           start of the journey to it, and gives the frame a head start;
+         · five seconds after the page's load event, so a reader who simply
+           waits still finds it ready.
+       The second version of this started on load + idle. The lab showed why
+       that was not enough: on a fast connection "idle" arrives about 400ms in,
+       inside the window where the page itself is still painting, and GHL's
+       2MB then competed with the first paint on every English template — they
+       sat at 3.1s while the Spanish pages, which carry no form, painted in
+       1.4s. Waiting for the reader moves those bytes out of that window on a
+       real slow phone as well as in the lab. */
+    var kick = function () { start(); };
+    ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
+      window.addEventListener(ev, kick, { once: true, passive: true });
+    });
+    window.addEventListener('load', function () { setTimeout(start, 5000); });
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) { io.disconnect(); start(); return; }
+      }
+    }, { rootMargin: '0px' });
+    io.observe(frame);
+  })();
+</script>

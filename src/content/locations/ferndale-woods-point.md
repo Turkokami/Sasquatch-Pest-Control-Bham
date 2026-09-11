@@ -21,7 +21,7 @@ faqs:
   - q: "There are visiting grandchildren and a dog. Does that change placement?"
     a: "Yes. Anything placed goes where children and animals cannot reach it, in enclosed and secured stations, and we would rather you tell us about a visiting dog than assume we will guess. Where a repair does the job instead of a product, we will recommend the repair."
   - q: "Does an assessment cost anything?"
-    a: "No, other than bed bug verification, which is charged and credited against treatment. Here the assessment covers the crawlspace, the garage and the boundary, because those are the three places a resident cannot reasonably check themselves."
+    a: "No. The only exception is bed bug verification, which is charged and then taken off the treatment price. Here the assessment covers the crawlspace, the garage and the boundary, because those are the three places a resident cannot reasonably check themselves."
 ---
 
 ## A gated community of single-level homes

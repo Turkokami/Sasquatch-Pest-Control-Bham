@@ -262,8 +262,7 @@ There is one field character in WSU's key that does some work, and it needs the
 spider on its back. The sternum is the plate on the underside of the
 cephalothorax, between the leg bases. Hobo spiders carry a light stripe running
 down the middle of it. Giant house spiders and barn funnel weavers carry three or
-four pairs of light spots along the sides instead. WSU's own shorthand is that if
-you see spots, then a hobo it is not. On a live spider moving at the speed these
+four pairs of light spots along the sides instead. WSU's rule of thumb comes down to this: spots mean it is not a hobo spider. On a live spider moving at the speed these
 animals move, in a jar, this is harder than it sounds — but it is the one thing
 short of a microscope that is actually diagnostic in the useful direction.
 

@@ -12,7 +12,7 @@ faqs:
   - q: "Does being in the Lake Whatcom watershed change what you use?"
     a: "Yes, and we treat that as a genuine constraint rather than a talking point. We favor exclusion, habitat correction and contained placements over anything broadcast, we watch the weather before exterior work, and we are candid when the right answer is a drainage fix rather than an application."
   - q: "Why do carpenter ant treatments here keep coming back?"
-    a: "Because the parent colony was never found. A mature population here keeps its parent nest outdoors in a stump, a dead limb or a landscape timber, with satellites inside the structure. Treating the satellite while the parent sits twenty feet away buys a couple of quiet months."
+    a: "Because the parent colony was never found. A mature population here keeps its parent nest outdoors in a stump, a dead limb or a landscape timber, with satellites inside the structure. Knock out the satellite and leave the parent twenty feet away, and what you have bought is a quiet month or two."
   - q: "Do I need approval from the association for exclusion work?"
     a: "Often, for anything that changes the exterior appearance — vent covers, screening, netting, chimney caps. We are used to working within that. Tell us early if approval is needed so we can specify the work in a way that is likely to be approved rather than having to redo the paperwork."
   - q: "What comes in off the forest edge?"
@@ -283,7 +283,7 @@ that drains straight back at the foundation.
 
 ## What we will not sell you
 
-**Wildlife of any kind.** On a wooded lot the question comes up constantly — something in the attic, something under the deck, something on the roof at night. Our answer is the same every time: insects and rodents are ours, everything else belongs to a wildlife operator, and we will tell you which you have.
+**Wildlife of any kind.** Up here the call comes in all the time: a noise in the attic, something living under the deck, footsteps on the roof after dark. Our answer is the same every time: insects and rodents are ours, everything else belongs to a wildlife operator, and we will tell you which you have.
 
 **Repeated trapping against an open treeline.** If the building is not sealed,
 trapping is a subscription rather than a result.

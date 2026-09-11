@@ -140,8 +140,7 @@ below — but the scale is larger.
 A good share of our Sehome work is multi-unit, and it is the situation where
 scope decides the outcome more than technique does.
 
-In a building with shared structure the pests are a **building-level
-population**. Wall voids, plumbing chases, shared attics and common service runs
+Shared walls make it the **building's infestation**, not one tenant's. Wall voids, plumbing chases, shared attics and common service runs
 connect units, and insects move through them regardless of who pays which lease.
 
 Treat one unit thoroughly and the population next door is untouched. It moves
@@ -158,8 +157,7 @@ has one owner or one manager, which means one decision-maker and one schedule.
 When that person will authorize a building-level plan, the result is different
 in kind rather than incrementally better.
 
-**Bed bugs** and **German cockroaches** are the two that most reward this and
-punish the alternative hardest. Both travel readily between units. Both are far
+**Bed bugs** and **German cockroaches** are where a coordinated approach matters most, and where a piecemeal one costs the most. Both travel readily between units. Both are far
 cheaper to resolve early and thoroughly than late and piecemeal. And with
 student turnover moving furniture through these buildings twice a year, both
 have a reliable route in that has nothing to do with how the building is kept.
@@ -236,8 +234,7 @@ volume is high and the alarm is genuine.
 
 They are giant house spiders. Harmless, long established across western
 Washington, and the large fast ones people find are wandering males looking for
-mates rather than an invasion coming inside for warmth. The ones stranded in a
-bath are males that got in and could not climb out.
+mates rather than an invasion coming inside for warmth. A spider in the bathtub is a male that fell in and could not get back up the sides.
 
 No brown recluse has ever been recorded here, and the species has never established anywhere in Washington. Nobody should be selling a treatment on that
 basis.
@@ -272,8 +269,7 @@ where it discharges, the retaining walls and terracing, the deck and its ledger,
 the vents and penetrations, the branches reaching the roof, and the forest
 boundary if there is one.
 
-Then underneath — properly, with a light, working to the low end of a stepped
-crawl rather than reporting from the hatch. Then the attic, then the interior.
+Then we go under the house with a light, all the way to the far end of the crawl instead of looking in from the hatch. Then the attic, then the interior.
 
 For an apartment building we start with the manager instead: how many units,
 which are affected, what connects them, where refuse goes, and what the turnover

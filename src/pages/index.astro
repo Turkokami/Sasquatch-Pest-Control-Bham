@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { srcsetFor } from '../lib/images';
 import Video from '../components/Video.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import LeadForm from '../components/LeadForm.astro';
@@ -74,10 +75,24 @@ const faqs = [
     alt="Sasquatch Pest Control banner: a forested lake and mountain scene with the company logo"
     width="1800"
     height="900"
+    srcset={srcsetFor('/img/sasquatch-hero-banner.jpg')}
+    sizes="(min-width: 76rem) 72rem, 100vw"
     fetchpriority="high"
   />
 
-  <h1>Pest Control in Bellingham, Washington</h1>
+  {/* H1 CHANGED 10 Sep 2026, when Keystone v2 arrived. It read "Pest Control
+      in Bellingham, Washington" — word for word the H1 of /locations/bellingham/,
+      the only duplicate H1 on the site, and two pages competing for one
+      (service, geo) pair is the failure Part 12.1 calls the most common
+      killer. It also broke Part 1.3, which says never to lead with "pest
+      control in [city]" and to lead with what competitors do not own.
+
+      So the town page keeps the plain city query, and the home page — the
+      brand hub for the whole service area — leads with the differentiator
+      this site is built on. The title tag already said "Pest Control &
+      Exclusion"; the H1 now agrees with it. Harness check 2 fails any
+      duplicate H1 from here on. */}
+  <h1>Exclusion-First Pest Control in Bellingham and Whatcom County</h1>
   <AnswerBox text={answer} />
 
   {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.

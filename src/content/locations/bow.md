@@ -12,7 +12,7 @@ faqs:
   - q: "Why do rodents arrive all at once in autumn?"
     a: "Two things happen close together. Cutting a field removes cover overnight, so everything living in it goes looking for the nearest structure. Then the rain floods the low ground and does it again, harder. Those few weeks decide what your winter looks like."
   - q: "Is Bow actually on your routes?"
-    a: "Yes. It sits on the corridor between Bellingham and Mount Vernon, which makes it part of a run we already drive rather than a detour. It is on scheduled route days rather than same-day availability."
+    a: "Yes. It sits on the corridor between Bellingham and Mount Vernon, which makes it part of a run we already drive rather than a detour. We cover it on set route days, not same-day."
   - q: "Does being near the bay change anything?"
     a: "It changes the materials. Salt and wind corrode vent screens, fasteners and any previous exclusion work far faster than they do a few miles inland, so anything we install out there is specified for the exposure. An exclusion that fails in three winters was never worth paying for."
   - q: "Do you work on farms and outbuildings here?"

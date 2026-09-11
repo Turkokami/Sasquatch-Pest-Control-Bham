@@ -40,6 +40,7 @@ const faqs = [
     a: 'Each guide carries a review date in its own frontmatter, enforced by the build rather than by anyone remembering. The page states that date, and it names its sources with the day each was read.',
   },
 ];
+import PhoneText from '../../components/PhoneText.astro';
 ---
 <BaseLayout
   path={path}
@@ -191,7 +192,7 @@ const faqs = [
             {items.map((g) => (
               <li>
                 <a href={`/guides/${g.slug}/`}>{g.data.h1}</a>
-                {' — '}{g.data.description}
+                {' — '}<PhoneText text={g.data.description} />
               </li>
             ))}
           </ul>

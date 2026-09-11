@@ -215,8 +215,7 @@ being used, closing or modifying ledges and roost lines, and removing the draw,
 which at a retail site is usually spilled food in the yard, an open waste
 enclosure, or people feeding birds at an entrance.
 
-Native species carry legal protections that narrow the options, and those
-protections attach to active nests, so timing changes what is available. Work
+What can be done about native birds depends on the date, because the legal protection they carry attaches to an active nest. Work
 scheduled before a nesting season is straightforward; the same work once a nest
 is active may not be lawful at all. We will tell you where that line falls
 rather than find it mid-job.
@@ -295,8 +294,7 @@ weather, and the highest risk period for produce and prepared food. Stinging
 insects build toward August and September, and around a store they are an
 entrance and waste-area problem, which is customer-facing.
 
-**Autumn.** Rain displaces the outdoor rodent population and the first
-sustained cold decides where it goes. A heated building with a dock is the best
+**Autumn.** The rain floods rodents out of the ground around the lot, and the first proper cold settles which building they move into. A heated building with a dock is the best
 address on the block. This is when the year's exclusion work proves itself, and
 when seasonal stock arriving in volume brings extra cardboard with it.
 
@@ -339,5 +337,4 @@ monitored, device map and numbering, visit frequency and timing against trading,
 the escalation route, the reporting package, and the receiving and housekeeping
 items that decide the result.
 
-There is no long-term contract requirement. For a walk before opening or after
-close, call or text.
+There is no long-term contract requirement. Call or text and we will walk the store outside trading hours.

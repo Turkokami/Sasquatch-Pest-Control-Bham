@@ -155,8 +155,7 @@ August and September on the outside: sealing the gaps, screening the vents, and
 treating the sunny elevations before they move in. Do that and the following
 February is quiet.
 
-Stink bugs and lady beetles follow the same pattern and respond to the same
-work.
+Stink bugs and lady beetles behave the same way, and the same sealing deals with them.
 
 ## The town itself
 
@@ -196,9 +195,7 @@ nest outdoors — a stump, a fence post, a landscape timber, a woodpile — with
 satellites inside the structure. Treating the satellite without locating the
 parent is a reprieve rather than a solution.
 
-Spring is when both become visible, and it is also when people mistake winged
-carpenter ants for termite swarmers. Look at the wings first. A termite's four are all the same length and extend well past the body; an ant's front pair is noticeably longer than the back. Shed termite wings on a sill are often a small pile of identical ones. We would much rather identify it correctly
-on a free visit than sell the wrong treatment.
+Both show themselves in spring, which is also the season winged carpenter ants get taken for termite swarmers. Look at the wings first. A termite's four are all the same length and extend well past the body; an ant's front pair is noticeably longer than the back. Shed termite wings on a sill are often a small pile of identical ones. Getting the identification right on a free visit beats selling you the wrong treatment.
 
 ## The Everson year
 
@@ -276,8 +273,7 @@ moisture. On river-adjacent property that message is usually worth acting on.
 Worth its own section, because they are common out here and routinely
 misdiagnosed as a building problem.
 
-Beetles and moths in grain, seed, flour, pet food and animal feed arrive inside
-the product rather than through a door. Treating a perimeter for an insect that
+The beetles and moths in grain, seed, flour, pet food and livestock feed come in with the product, not through a gap. Treating a perimeter for an insect that
 came in on a pallet achieves nothing, and money gets spent that way regularly.
 
 The work is finding the source: tracing back through what is stored, starting
@@ -301,9 +297,7 @@ defensive in exactly the weeks when the workload is heaviest and nobody is
 looking down.
 
 Paper wasps under eaves and inside idle machinery are milder, though a nest in a
-tractor cab is a genuine hazard. The cheapest intervention by a wide margin is a
-walk of the eaves, outbuildings and ground edges in late spring, when a founding
-nest is the size of a golf ball.
+tractor cab is a genuine hazard. Nothing is cheaper than walking the eaves, the outbuildings and the ground edges in late spring, while a founding nest is still no bigger than a golf ball.
 
 ## How we work in Everson
 

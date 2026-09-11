@@ -152,7 +152,7 @@ export const controlDeRoedores: EsServicio = {
     {
       h2: 'Cómo mantenerlos afuera',
       parrafos: [
-        'Recorte la vegetación y las ramas para que no toquen el techo ni las paredes. Mantenga la corteza de jardín y la tierra por debajo de la línea del revestimiento. Guarde el alimento, la semilla y la comida de mascota en recipientes cerrados y no en bolsas. Levante la fruta caída. Mantenga la leña despegada del suelo y lejos de la casa. Maneje el agua estancada y haga que las bajadas de agua descarguen lejos del cimiento.',
+        'Recorte la vegetación y las ramas para que no toquen el techo ni las paredes. No deje que la corteza de jardín ni la tierra suban hasta el revestimiento. Guarde el alimento, la semilla y la comida de mascota en recipientes cerrados y no en bolsas. Levante la fruta caída. Mantenga la leña despegada del suelo y lejos de la casa. Maneje el agua estancada y haga que las bajadas de agua descarguen lejos del cimiento.',
         'Revise las mallas de ventilación una vez al año — la primavera es buena costumbre — y selle cada penetración nueva en el momento en que un contratista la hace.',
         'Nada de eso sustituye a la exclusión en una casa que ya tiene un hueco. Es lo que mantiene sellada una casa que ya se selló.',
       ],

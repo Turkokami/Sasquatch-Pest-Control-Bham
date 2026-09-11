@@ -111,7 +111,7 @@ rather than a nuisance one.
 
 ## Rats and mice, and why the distinction matters here
 
-Most residential rodent work in this county is house mice. On farm ground it is
+House mice make up most of the residential rodent work across the county. On farm ground it is
 routinely both species, and the difference decides the approach.
 
 **Mice** occupy small spaces, breed quickly and range very little. A mouse
@@ -177,15 +177,13 @@ The most predictable event on this ground is a sudden influx after the cover
 goes.
 
 A field that has supported a large outdoor population all summer is cut,
-worked or harvested over a few days. Several hundred acres of shelter becomes
-bare ground within a week, and every animal living in it has to be somewhere
-else immediately.
+worked or harvested over a few days. Hundreds of acres of cover turn to bare dirt inside a week, and everything that was living there needs a new address at once.
 
 The nearest buildings with a gap are where a good share of it goes. That is why
 a property with no visible problem in July has a genuine one by late August,
 weeks before there is any cold weather to blame.
 
-Because it is event-driven, it is predictable, and that is the useful part. The
+The upside of a push that follows the harvest is that you can see it coming. The
 closing-up work on the feed room, the shop and the house is worth doing before
 the ground goes rather than after the animals are already inside.
 

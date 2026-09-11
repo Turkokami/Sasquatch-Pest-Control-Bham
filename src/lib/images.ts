@@ -46,3 +46,40 @@ export function intrinsicSize(publicPath: string): { width: number; height: numb
   }
   throw new Error(`cannot read image dimensions from ${publicPath} (expected JPEG or PNG)`);
 }
+
+/* --------------------------------------------------------------------------
+ * RESPONSIVE WEBP VARIANTS — the srcset for an image, from what is on disk.
+ *
+ * scripts/responsive-images.mjs writes WebP copies of every photograph at
+ * standard widths into public/img/_r/ before the build (the reasoning is in
+ * that file: Keystone v2's lab gate measured six-second LCPs on phones being
+ * sent 1,800-pixel JPEGs). This returns the srcset for whichever variants
+ * EXIST, read at build time.
+ *
+ * Built from the directory listing rather than from the width list the
+ * script uses, and that is the safety property: if the script did not run, or
+ * failed on one image, there is nothing to list and the caller renders the
+ * plain src — slower, never broken. A srcset naming a file that is not there
+ * would break the image outright in every browser that picks it. Harness
+ * check 1b also resolves every srcset candidate, so a bad one fails the gate.
+ * ------------------------------------------------------------------------ */
+const variantCache = new Map<string, string[]>();
+
+export function srcsetFor(publicPath: string): string | undefined {
+  if (!/^\/img\/.+\.(jpe?g|png)$/i.test(publicPath)) return undefined; // only photos under /img/
+  const rel = publicPath.replace(/^\/img\//, '').replace(/\.(jpe?g|png)$/i, '');
+  const dir = path.join(PUBLIC_DIR, 'img', '_r', path.dirname(rel));
+  const base = path.basename(rel);
+  if (!variantCache.has(dir)) {
+    variantCache.set(dir, fs.existsSync(dir) ? fs.readdirSync(dir) : []);
+  }
+  const escaped = base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const rx = new RegExp('^' + escaped + '-(\\d+)w\\.webp$');
+  const found = variantCache.get(dir)!
+    .map((f) => { const m = f.match(rx); return m ? { f, w: Number(m[1]) } : null; })
+    .filter((x): x is { f: string; w: number } => x !== null)
+    .sort((a, b) => a.w - b.w);
+  if (!found.length) return undefined;
+  const urlDir = path.posix.join('/img/_r', path.posix.dirname(rel.split(path.sep).join('/')));
+  return found.map(({ f, w }) => `${path.posix.join(urlDir, f)} ${w}w`).join(', ');
+}

@@ -177,9 +177,7 @@ A good deal of the community is on septic rather than sewer, and the older
 systems here are exactly as old as the cabins they serve.
 
 Drain flies and fungus gnats around a failing system, a slow drain or a wet spot
-in a yard are a symptom worth reading rather than a pest to be sprayed. Where we
-find them the useful conversation is about the drainage and the system, not
-about an application.
+in a yard are a symptom worth reading rather than a pest to be sprayed. When we find them, we talk about the system and the drainage rather than about spraying anything.
 
 The same logic runs through the whole damp-building list that this climate and
 this housing stock produce together: sowbugs, millipedes, springtails,

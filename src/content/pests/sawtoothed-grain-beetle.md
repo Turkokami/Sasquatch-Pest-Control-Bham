@@ -278,7 +278,7 @@ twice.
 fine, and check the garage and the outbuildings before the kitchen. Look for live
 insects, fine dusty debris, and material that seems slightly powdery or moving.
 
-**Take infested material out of the building**, not into the kitchen bin.
+**Carry infested food straight outside** rather than dropping it in the kitchen trash.
 
 **Empty the cupboard and vacuum the structure.** UC IPM advises a crevice
 attachment in corners and cracks to lift eggs and pupae, then washing shelves

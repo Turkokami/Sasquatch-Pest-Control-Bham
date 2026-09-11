@@ -160,8 +160,7 @@ available because of a vent screen that rusted through some years ago.
 
 That gives a real and unusually specific piece of timing advice. The work that
 prevents a winter of rats is done in the second half of August, on a dry
-crawlspace, with nothing living in it. Nobody books it then, because in August
-nothing is wrong.
+crawlspace, with nothing living in it. Almost nobody books it, because in August the house seems fine.
 
 Breeding runs against the same calendar. WDFW records year-round reproduction
 concentrated in the warmer months, litters of six to ten, three weeks in

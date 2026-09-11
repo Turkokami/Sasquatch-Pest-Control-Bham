@@ -200,8 +200,7 @@ it.
 
 ## The year in Mount Vernon
 
-**Winter.** Rodent activity indoors at its peak, because everything that came in
-during the autumn is still there. Damage becomes visible — soiled insulation,
+**Winter.** Indoor rodent activity peaks, since whatever got in during autumn has not left. Damage becomes visible — soiled insulation,
 chewed ducting, a stain in a ceiling, a smell in a room that turns out to be
 something dead in a cavity.
 
@@ -209,8 +208,7 @@ something dead in a cavity.
 mild afternoon and appear at south-facing windows. More pronounced on the
 properties with open ground around them than in town.
 
-**Spring.** Ants become active, and because they have wintered in damp framing
-the first sighting is usually indoors. Swarmers appear on windowsills. Wasp
+**Spring.** Ants wake up, and having spent the winter in damp framing, they are usually first seen inside. Swarmers appear on windowsills. Wasp
 queens found nests, which is the cheapest possible moment to deal with them and
 the moment almost nobody is looking.
 
@@ -254,9 +252,7 @@ in food service and multi-unit housing. In a building with shared structure they
 need a coordinated, building-level plan — treating one unit while the neighbors
 go untreated moves the population rather than reducing it.
 
-Oriental cockroaches are a damp-crawlspace insect. They live outdoors and under
-buildings, come up through drains and crawl vents, and are reporting a moisture
-condition rather than a hygiene one. In the older low-lying housing here they
+Oriental cockroaches are a damp-crawlspace insect. They spend their lives outdoors and under floors, arrive through drains and crawl vents, and are telling you about damp rather than about housekeeping. In the older low-lying housing here they
 are common for exactly that reason, and the durable answer is drainage and a
 sound vapor barrier rather than repeated interior treatment.
 
@@ -266,8 +262,7 @@ Getting the identification right first is the cheapest thing we do on the visit.
 
 **Anything that is not an insect or a rodent.** Birds on a downtown parapet, an animal in a ceiling void, a bat in an attic — none of that is ours. Sasquatch does pest control and exclusion, and we would rather send you to the right operator on the first call than take a booking we cannot serve.
 
-**Mole trapping.** The methods that actually work are restrictively regulated in
-Washington, and most of what is sold to homeowners is theatre.
+**Mole trapping.** Washington tightly restricts the methods that genuinely work, and most of what a homeowner can buy does nothing.
 
 **A recurring program over an unresolved water problem.** On low-lying and
 flood-affected property this is the most common way to be overcharged. Drying,
@@ -314,9 +309,7 @@ exclusion work. On a commercial building it starts with your operating
 constraints instead, because those shape everything after them. Then the
 crawlspace, properly and with a light. Then the attic and the interior.
 
-You get a plain account of what we found, what is driving it, what needs doing
-now, what can wait, and which items are a building repair rather than a pest
-treatment. On older Mount Vernon property a real share of the answer is drainage
+Afterwards you hear, in plain terms, what we found and why, what has to happen now and what can wait, and which items are repairs to the building rather than pest work. On older Mount Vernon property a real share of the answer is drainage
 and carpentry, and saying so costs us the recurring service.
 
 Inspections are free for every pest we handle, bed bugs excepted — those carry a

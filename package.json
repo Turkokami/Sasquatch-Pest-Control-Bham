@@ -6,7 +6,7 @@
   "description": "Sasquatch Pest Control WA — Keystone v1 Tier 3.0 static build (Astro).",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/sitemap.mjs",
+    "build": "node scripts/responsive-images.mjs && astro build && node scripts/sitemap.mjs",
     "preview": "astro preview",
     "check": "astro check",
     "harness": "node scripts/harness.mjs",
@@ -17,12 +17,16 @@
     "typecheck": "tsc --noEmit -p tsconfig.check.json",
     "slugs": "node scripts/slugs.mjs",
     "redirects:emit": "node scripts/redirects.mjs --emit",
-    "redirects:check": "node scripts/redirects.mjs --check"
+    "redirects:check": "node scripts/redirects.mjs --check",
+    "lab-gate": "node scripts/lab-gate.mjs"
   },
   "dependencies": {
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/newsreader": "^5.3.0",
     "astro": "^4.16.18"
   },
   "devDependencies": {
+    "lighthouse": "^12.8.2",
     "tsx": "^4.23.13",
     "typescript": "^5.6.3"
   }

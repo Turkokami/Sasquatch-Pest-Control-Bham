@@ -182,13 +182,12 @@ old rodent burrow gives no warning until a machine goes over it. If there is
 regular mowing on the property, it is worth knowing where the activity is before
 August rather than discovering it at speed.
 
-We do not treat honey bees, and we will say so plainly. A swarm is a beekeeper's
-job and there are people locally who will collect one.
+We do not treat honey bees, and we will say so plainly. A swarm belongs with a beekeeper, and there are local ones who will come and take it.
 
 ## Spiders and the rest of the domestic list
 
 Spiders are the most common thing people ask about and among the least dangerous.
-There are no medically significant spiders established in Whatcom County. Giant
+No spider of medical concern has an established population in Whatcom County. Giant
 house spiders and cross orbweavers account for most of what turns up, and the
 autumn surge indoors is males wandering to find females rather than an invasion.
 

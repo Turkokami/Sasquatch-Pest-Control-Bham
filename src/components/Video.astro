@@ -26,7 +26,7 @@
  * No colors here; §21f of global.css paints it.
  */
 import { videos } from '../data/videos';
-import { intrinsicSize } from '../lib/images';
+import { intrinsicSize, srcsetFor } from '../lib/images';
 
 interface Props {
   /** Key into src/data/videos.ts. */
@@ -51,6 +51,8 @@ const watch = `https://www.youtube.com/watch?v=${v.id}`;
           alt={v.alt}
           width={width}
           height={height}
+          srcset={srcsetFor(v.poster)}
+          sizes={srcsetFor(v.poster) ? '(min-width: 44rem) 40rem, calc(100vw - 2.5rem)' : undefined}
           loading="lazy"
           decoding="async"
         />

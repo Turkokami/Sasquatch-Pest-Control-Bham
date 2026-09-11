@@ -1,0 +1,30 @@
+---
+/**
+ * PhoneText — renders a plain string with the company number turned into a
+ * real tel: link wherever it appears.
+ *
+ * Keystone v2, Part 4A.2: "The phone number is a real tel: link everywhere it
+ * appears." Six built pages broke that on 10 Sep 2026, all the same way: a
+ * sentence written as data — a Quick Answer, a guide's description reused as
+ * a card blurb — rendered as one text node, so the number inside it could not
+ * be tapped. On a phone that is the one thing the reader came to do.
+ *
+ * The sentence stays data. Quick Answers are reused verbatim as the meta
+ * description and the FAQPage text, where a link would be wrong, so the fix
+ * belongs where the string is RENDERED, not in the string. Only the company's
+ * own number is matched, in the formats the site writes it; it is read from
+ * business.ts so a number change cannot leave this matching the old one.
+ */
+import { business } from '../data/business';
+
+interface Props { text: string }
+const { text } = Astro.props;
+
+const digits = business.phone.replace(/\D/g, '');            // 3604102199
+const [a, b, c] = [digits.slice(0, 3), digits.slice(3, 6), digits.slice(6)];
+const rx = new RegExp(String.raw`(\(?${a}\)?[-. ]?${b}[-. ]?${c})`);
+const parts = text.split(rx);
+---
+{parts.map((part, i) =>
+  i % 2 === 1 ? <a href={`tel:${business.phoneE164}`}>{part}</a> : part,
+)}

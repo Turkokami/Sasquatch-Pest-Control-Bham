@@ -12,7 +12,7 @@ faqs:
   - q: "My house has a dirt crawlspace. Does that matter?"
     a: "It matters a great deal. Bare earth puts ground moisture straight into the space and into the framing above it, which is what supports moisture ants, decay fungus and the whole damp-crawl group. A sound vapor barrier over clean ground is one of the highest-value things you can do."
   - q: "How often do you get out to Sedro-Woolley?"
-    a: "It sits on scheduled route days rather than same-day availability, because it is a real drive from Bellingham and the last stretch is not freeway. Tell us when you call and we will say honestly which day that puts you on."
+    a: "It sits on scheduled route days rather than same-day availability, because it is a real drive from Bellingham and the last stretch is not freeway. Ask when you call and you will get a straight answer about which day that is."
   - q: "Why does my downtown building keep getting rodents after treatment?"
     a: "Because in an old commercial block the buildings are connected — shared walls, common basements and utility runs — so the population belongs to the block rather than to your address. Treating one unit while the neighbors do nothing moves the problem rather than ending it."
   - q: "Does the river affect pest pressure here?"
@@ -20,7 +20,7 @@ faqs:
   - q: "Do you cover the acreage east of town?"
     a: "Up to a point. Our routes thin out as the valley climbs toward the Cascades, so for an address well east of town call and ask rather than assuming. We would rather tell you honestly than book it and work out the logistics afterwards."
   - q: "Is there a charge for the visit?"
-    a: "Not for any pest except bed bugs, which carry a verification fee credited against treatment if you proceed. That includes going into the crawlspace, which on this housing stock is nearly always where the useful information turns out to be."
+    a: "No charge for any pest except bed bugs, where there is a verification fee that comes off the treatment if you go ahead. That includes going into the crawlspace, which on this housing stock is nearly always where the useful information turns out to be."
 ---
 
 ## A mill town, and what that left behind
@@ -69,8 +69,7 @@ generations of telephone and cable, a redundant oil line, an abandoned chimney
 thimble. Each drilled generously by whoever was doing that job on that day, and
 essentially none of them sealed.
 
-The pests follow from that list without much mystery. Norway rats and house mice
-in the crawl and the walls. Carpenter and moisture ants in framing that has
+The pests follow from that list without much mystery. Norway rats and house mice under the floor and inside the walls. Carpenter and moisture ants in framing that has
 taken water. Sowbugs, millipedes, springtails, silverfish and Oriental
 cockroaches in the damp space underneath, every one of which is reporting a
 moisture condition rather than being a problem in its own right.
@@ -180,9 +179,7 @@ conversation than selling one contract, and it is the honest one.
 
 Old commercial buildings also carry old openings — an abandoned pipe run, a
 filled coal chute, a service entry from a utility that no longer exists, a void
-above a suspended ceiling nobody has looked into in decades. Finding those is
-most of the work, and it is why a proper first visit downtown takes longer than
-people expect.
+above a suspended ceiling nobody has looked into in decades. Tracking those down is the bulk of the job, which is why a first downtown visit done properly runs longer than owners expect.
 
 ## The river corridor
 
@@ -195,7 +192,7 @@ ditches and the vegetated margins between fields do the same on a smaller scale.
 The result is continuous connectivity: rodents move the length of the valley
 without ever crossing open ground.
 
-You cannot treat a corridor and it would be wrong to try. What you can do is
+Nobody can treat a corridor like that, and nobody should try. What you can do is
 defend the specific building, and accept that the pressure against it is
 constant rather than seasonal.
 
@@ -276,8 +273,7 @@ remediation.
 wildlife are outside what we do. We handle insects and rodents, and we will tell
 you which you have and who to call for the rest.
 
-**Mole trapping.** The methods that actually work are restrictively regulated in
-Washington and most of what is sold to homeowners does not work.
+**Mole trapping.** What actually works on moles is heavily restricted in this state, and the products on the hardware-store shelf mostly are not it.
 
 **A recurring program over a wet crawlspace.** On this housing stock that is the
 easiest way to be overcharged. Drying, removal and drainage come first.
@@ -296,7 +292,7 @@ throughout western Washington, and the large ones people find are wandering
 males looking for mates rather than an infestation responding to cold. The ones
 stranded in a bathtub are males that got in and could not climb back out.
 
-There is no brown recluse in this corner of the state and there never has been.
+The brown recluse does not live in this part of Washington and never has.
 Black widows exist in Washington but belong to the drier country east and south
 of the Cascades. Anyone telling you otherwise while holding a quote is selling
 fear rather than a service, and on old housing there is usually plenty of real

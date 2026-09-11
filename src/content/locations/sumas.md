@@ -178,13 +178,12 @@ useful information: the water is the problem and the ants are the symptom.
 Treating without correcting the source produces a new colony in the same wood,
 which on flood-affected property is a particularly common outcome.
 
-Carpenter ants excavate galleries to nest and prefer wood that has begun to
-soften. The parent colony is nearly always outdoors — a stump, a fence post, a
+Carpenter ants carve their nests out of wood, and they favor wood that has already started to soften. The parent colony is nearly always outdoors — a stump, a fence post, a
 landscape timber, a woodpile — with satellites inside the structure. The
 satellites are what people see, and treating them without locating the parent is
 why these jobs develop a reputation for coming back.
 
-In spring, winged carpenter ants get mistaken for termite swarmers constantly.
+Every spring somebody brings us a winged carpenter ant convinced it is a termite.
 Ants have an elbowed antenna, a pinched waist and wings of unequal length;
 termites have a straight antenna, a uniform body and four wings of equal size.
 Correct identification changes the whole approach, and we would rather establish

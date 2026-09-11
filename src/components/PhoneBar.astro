@@ -8,7 +8,14 @@ interface Props {
 const { lang = 'en' }: Props = Astro.props;
 const S = t(lang);
 ---
-<div class="phonebar">
+{/* data-boilerplate: this bar is page chrome, the same as the nav and the
+    footer, and it sits outside <header> so the harness's chrome strip never
+    saw it. Invisible to the old duplicate scanner only by accident — textOf
+    ran its tagline into the first sentence of the page, so no two pages ever
+    matched. The v2 sibling scanner splits at block edges, found it on every
+    page on the site, and was right to: it is the same line everywhere
+    because it is layout, not copy. */}
+<div class="phonebar" data-boilerplate>
   <div class="wrap">
     <span>{S.phoneBarTagline}</span>
     <span>

@@ -183,8 +183,7 @@ reasonably conclude the treatment failed; it did not fail, it was scoped wrong.
 
 What works is a building plan — map the affected units, identify the source,
 treat in a coordinated pass, and follow up on an interval that matches the life
-cycle rather than the billing cycle. Landlords who resist that generally pay for
-the same problem three times.
+cycle rather than the billing cycle. A landlord who skips it tends to end up paying for the same infestation again and again.
 
 Bed bugs are the one service where our assessment carries a fee, credited
 against treatment if you proceed. Everything else costs nothing to have us look

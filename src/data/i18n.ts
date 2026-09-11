@@ -1,5 +1,11 @@
 /**
- * Keystone Part 15 — Spanish.
+ * Keystone Part 3.3 — Spanish.
+ *
+ * (Every Spanish file on this site cited "Keystone Part 15" until 10 Sep 2026.
+ * In Keystone v2, Part 15 is the reusable starter repo; the multilingual tree
+ * is the /es/servicios/{service}/ row of the URL taxonomy in Part 3.3, and
+ * Phase 5 of Part 13 is where it falls in the build order. The citations were
+ * renumbered rather than left pointing at a part that says something else.)
  *
  * Spanish is served as its own indexable route under /es/, not as a
  * browser-side translation widget. A widget translates in the reader's

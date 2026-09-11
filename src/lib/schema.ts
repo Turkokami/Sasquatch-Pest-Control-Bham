@@ -8,9 +8,16 @@
  *   - NAP in schema matches visible NAP character for character
  *   - aggregateRating ONLY from a verified GBP pull — never hand-entered
  *
- * The seven core nodes: WebSite, WebPage, ImageObject, LocalBusiness,
- * Service/Article, FAQPage, BreadcrumbList. Person, Place, DefinedTerm,
- * DefinedTermSet and OfferCatalog are added where the data earns them.
+ * Keystone v2 (Part 5.1) — six required nodes and two conditional ones.
+ * Required on every indexable page: WebSite, WebPage, ImageObject,
+ * LocalBusiness, Service/Article/BlogPosting, BreadcrumbList. Conditional:
+ * FAQPage, only where a visible FAQ block exists (below — it always was), and
+ * Person, where a named expert exists. v1 called this "the seven-node graph";
+ * the count changed because Google removed FAQ rich results on 7 May 2026, so
+ * the node is still emitted — it costs nothing and non-Google parsers read it
+ * — but it is not a gate item and is never presented to the owner as a
+ * rich-result play. Place, DefinedTerm, DefinedTermSet and OfferCatalog are
+ * added where the data earns them.
  *
  * ONE RULE ABOVE ALL THE OTHERS, and every addition below was measured
  * against it: the graph may not say anything the site cannot back. Where a
@@ -800,6 +807,15 @@ export function buildGraph(input: PageSchemaInput) {
 
   /* Keystone M4: SpeakableSpecification pointing at the Quick Answer and the
      FAQ region — the AEO surface.
+
+     M4 IS RETIRED AS OF KEYSTONE v2 (10 Sep 2026), and this block stays
+     anyway, on v2's own terms: "existing implementations may stay — they are
+     harmless — but nothing new is built to it and no audit claims
+     voice-search integration as a deliverable." Google's documentation still
+     describes Speakable as a beta for English-language news publishers on
+     Google Home, which never included a local business page. So: do not
+     extend this, do not gate on it, and do not describe it to the owner as a
+     feature. If it ever costs anything to maintain, delete it.
 
      VERIFIED AGAINST BUILT HTML, 2 Sep 2026, not against the components. Both
      class names survive the CSS rewrite: AnswerBox still emits

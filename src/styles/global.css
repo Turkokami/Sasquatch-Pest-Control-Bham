@@ -1384,11 +1384,32 @@ footer.site {
       color-mix(in srgb, var(--inv-bg) 70%, transparent)
     ),
     url("/img/scene/forest-band-1600.jpg");
+  /* WebP, sized to the screen, where the browser takes it — 19KB on a phone
+     against the 76KB JPEG above, which stays as the fallback line for
+     anything that cannot read image-set(). The footer is at the foot of the
+     page but its background is fetched with the stylesheet, so on Keystone
+     v2's throttled lab run these bytes competed with the first paint. The
+     variants come from scripts/responsive-images.mjs. */
+  background-image: linear-gradient(
+      color-mix(in srgb, var(--inv-bg) 70%, transparent),
+      color-mix(in srgb, var(--inv-bg) 70%, transparent)
+    ),
+    image-set(url("/img/_r/scene/forest-band-1600-800w.webp") type("image/webp"), url("/img/scene/forest-band-1600.jpg") type("image/jpeg"));
   background-size: cover;
   /* Cut from the same artwork and the same horizontal window as the page
      background, lower in the frame where the moss and the fern are. */
   background-position: center;
   background-repeat: no-repeat;
+}
+/* Wider screens get the 1600-pixel WebP of the footer band (41KB). */
+@media (min-width: 50rem) {
+  footer.site {
+    background-image: linear-gradient(
+        color-mix(in srgb, var(--inv-bg) 70%, transparent),
+        color-mix(in srgb, var(--inv-bg) 70%, transparent)
+      ),
+      image-set(url("/img/_r/scene/forest-band-1600-1600w.webp") type("image/webp"), url("/img/scene/forest-band-1600.jpg") type("image/jpeg"));
+  }
 }
 footer.site a {
   color: var(--inv-link);

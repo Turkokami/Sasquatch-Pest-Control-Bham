@@ -203,6 +203,31 @@ if (ownerOnly.length) {
   );
 }
 
+/* KEYSTONE v2 (10 Sep 2026) — what the new standard needs from the OWNER.
+   None of it blocks the build, and none of it can be done from the repo: each
+   item is data only the owner's accounts hold, or a decision only the owner
+   can make. Listed on every run so it stays in front of whoever reads this.
+   Close an item by deleting its row here in the same commit that settles it,
+   and update GUARDRAILS.md where the row points there. */
+const KEYSTONE_V2 = [
+  ['Search Console export — before the domain moves (Phase 0)',
+   'Export 16 months of Performance data (query × page) from the CURRENT live property, plus GBP Insights, and keep the files. v2 makes this the first step of any replacement build: it is the "before" the new site gets measured against, and it is the demand data Part 6A decides geo pages from. Search Console keeps 16 months and no more — data not pulled is data gone.'],
+  ['Legacy URL inventory joined to clicks (Part 13.1)',
+   'The same export tells us which old URLs carry clicks. Every one of those has a redirect obligation. npm run redirects:check already maps 51 legacy paths; the export is what proves nothing with traffic was missed.'],
+  ['Analytics — GA4 (Part 4A.4)',
+   'The site has no analytics today. v2 requires GA4 with calls and form submissions as conversions, a custom dimension capturing the #:~:text= fragment (how AI Overview clicks show up), and referrer segments for chatgpt.com, perplexity.ai, copilot.microsoft.com and gemini.google.com. Needs a GA4 property and its measurement ID from the owner.'],
+  ['Is 360-410-2199 the Google Business Profile number? (Part 4A.3)',
+   'The site uses that one number everywhere and harness check 6 holds it there. Confirm it is also the GBP number; if a tracking number is in use anywhere, say which. GUARDRAILS.md §3.'],
+  ['Geo pages need demand evidence (Part 6A)',
+   'v2 gives a town or neighborhood its own page only on two of five signals: search volume, 10+ Search Console impressions a quarter, an Ads conversion there, a page for it on 2+ of the top five local competitors, or documented job history there. The site has 19 town pages and 30 neighborhood pages and none of that evidence recorded yet. Job history (from the CRM or QuickBooks) and the Search Console export above supply most of it. Nothing is hidden or removed in the meantime.'],
+  ['Reviews — FTC rule and a monthly target (Part 14)',
+   'No incentives, no gating, no staff-written reviews, no suppressing bad ones. Ask every customer at job completion and set a monthly target: v2 finds review cadence matters more than the total. GUARDRAILS.md §5 — the owner acknowledging it in writing is what v2 asks for.'],
+  ['Coastal K9 on /trusted-partners/ — which instruction wins?',
+   'Keystone says no K9 content on Sasquatch; the owner asked for Coastal K9 to be listed as a contracted specialist. The page does the second. GUARDRAILS.md §6.'],
+];
+console.log('\x1b[36mKEYSTONE v2 — needed from the owner, none of it blocking\x1b[0m\n');
+for (const [k, v] of KEYSTONE_V2) console.log(`  • ${k}\n    ${v}\n`);
+
 console.log('─'.repeat(58));
 console.log(
   'Guarded fields render nothing and are omitted from schema entirely.\n' +

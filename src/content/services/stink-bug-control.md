@@ -218,8 +218,7 @@ landing, more of them getting in.
 household version and the production version, and boxelder bugs in quantity where
 maples are present.
 
-**Around Lake Whatcom and the forest edge** — Sudden Valley, Silver Beach,
-Edgemoor. Western conifer seed bugs dominate here for the obvious reason, and they
+**Lake Whatcom's wooded shoreline** — Sudden Valley, Silver Beach, Edgemoor. Western conifer seed bugs dominate here for the obvious reason, and they
 are the species most often reported as something more alarming than they are.
 
 **Waterfront and seasonal** — Blaine, Birch Bay and Semiahmoo. Houses closed up

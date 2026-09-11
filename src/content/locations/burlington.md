@@ -139,13 +139,11 @@ than the invoice.
 The interchange supports a cluster of lodging, and that means bed bugs.
 
 A bed bug problem in lodging is not a hygiene failure and it is not a reflection
-on housekeeping. It is a transport problem, and any property with regular guest
-turnover is exposed regardless of how well it is kept. The operators who handle
+on housekeeping. It is a matter of what arrives in luggage, and any property that turns rooms over regularly is exposed however well it is kept. The operators who handle
 it best accept that and build detection into the routine; the ones who assume it
 cannot happen to them find out late.
 
-Early detection is everything. A problem caught in one room while it is still
-one room is a contained job. The same problem discovered three months later,
+Early detection is everything. Found while it is still confined to one room, it stays a one-room job. The same problem discovered three months later,
 after housekeeping carts and guests have moved between floors, is a
 property-wide treatment at several times the cost.
 

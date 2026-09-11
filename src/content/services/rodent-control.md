@@ -332,8 +332,7 @@ in Bellingham that argument has a legal shape worth knowing before you have it.
 
 Washington's landlord-tenant law, RCW 59.18.060, puts responsibility for pest
 control on the landlord — with a specific carve-out where the dwelling is a
-single-family residence, or where the infestation was caused by the tenant. In a
-multi-unit building the obligation generally sits with the owner. In a rented
+single-family residence, or where the infestation was caused by the tenant. In an apartment building the duty usually falls on the owner. In a rented
 house it frequently does not, which surprises tenants regularly.
 
 Bellingham adds a second layer. Municipal code chapter 6.15 requires rental

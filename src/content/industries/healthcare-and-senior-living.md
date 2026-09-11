@@ -313,7 +313,7 @@ itself.
 - Access to kitchen, laundry, sluice, storage and mechanical areas on visit days
 - Receiving and admissions standards for incoming goods, furniture and
   belongings
-- Waste on a schedule that holds through summer, with enclosures that close
+- Waste pickup frequent enough for the warm months, and enclosures whose gates and lids shut
 - Drains on a documented cleaning program
 - A reporting route for residents and staff that does not feel like blame
 - Notice of building works, because a contractor opening a wall reopens the

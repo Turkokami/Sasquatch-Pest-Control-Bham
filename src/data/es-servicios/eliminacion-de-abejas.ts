@@ -132,9 +132,9 @@ export const eliminacionDeAbejas: EsServicio = {
       h2: 'Por el condado',
       parrafos: [
         'El corredor agrícola — Lynden, Everson, Nooksack, Sumas. Las colmenas manejadas son parte del paisaje de trabajo y la polinización de la mora depende de ellas. Aquí la identificación importa más que en ningún otro lado, porque destruir la colonia de producción de alguien es un problema real y no una abstracción.',
-        'Los barrios viejos de la ciudad — Lettered Streets, Columbia, Sunnyland, York. Chimeneas sin tapa, sofitos abiertos y huecos de pared en construcción vieja les dan a las exploradoras exactamente el volumen que buscan, y es donde aparecen las colonias establecidas.',
+        'Las casas antiguas de Bellingham, en Lettered Streets, Columbia, Sunnyland y York. Chimeneas sin tapa, sofitos abiertos y huecos de pared en construcción vieja les dan a las exploradoras exactamente el volumen que buscan, y es donde aparecen las colonias establecidas.',
         'Alrededor del lago Whatcom y el borde del bosque — Sudden Valley, Silver Beach, Edgemoor. Abejorros en huecos del suelo y debajo de las terrazas, abejas albañiles en el cedro y en agujeros de escarabajo, y muchas colonias silvestres de abeja melífera en árboles que no son problema de nadie.',
-        'La costa y las casas de temporada — Blaine, Birch Bay y Semiahmoo. Propiedades cerradas durante meses, donde una colonia se puede establecer a lo largo de un verano y estar bien desarrollada antes de que alguien lo note.',
+        'Frente al mar, en Blaine, Birch Bay y Semiahmoo. Propiedades cerradas durante meses, donde una colonia se puede establecer a lo largo de un verano y estar bien desarrollada antes de que alguien lo note.',
       ],
     },
     {
