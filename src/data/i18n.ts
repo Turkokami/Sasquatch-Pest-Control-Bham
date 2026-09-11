@@ -90,6 +90,7 @@ export const PAGE_PAIRS: Record<string, string> = {
   '/pest-library/': '/es/plagas/',
   '/locations/': '/es/areas-de-servicio/',
   '/guides/': '/es/guias/',
+  '/awards/': '/es/premios/',
   '/our-guarantee/': '/es/garantia/',
   '/about/': '/es/nosotros/',
   '/contact/': '/es/contacto/',
@@ -194,7 +195,7 @@ export const UI: Record<Lang, Strings> = {
     switchTo: 'English',
     switchToAria: 'View this page in English',
     englishOnwardNote:
-      'Algunas páginas están en inglés: las etiquetas de los productos que aplicamos, que son documentos legales y se quedan como las publica el fabricante, y por ahora los premios, el blog y la galería. Si necesita cualquiera de esas en español, llámenos y se lo explicamos por teléfono.',
+      'Algunas páginas están en inglés: las etiquetas de los productos que aplicamos, que son documentos legales y se quedan como las publica el fabricante, y por ahora el blog y la galería. Si necesita cualquiera de esas en español, llámenos y se lo explicamos por teléfono.',
     callNow: 'Llame ahora',
     breadcrumbHome: 'Inicio',
   },
@@ -205,7 +206,6 @@ const ES_LABELS: Record<string, string> = {
   '/es/': 'Inicio',
   '/es/servicios/': 'Servicios',
   '/es/servicios/control-de-roedores/': 'Roedores',
-  '/es/servicios/control-de-avispas/': 'Avispas',
   '/es/servicios/control-de-hormigas/': 'Hormigas',
   /* Comercial took the Abejas chip on 10 Sep 2026, again to keep the grid at
      twelve. The English masthead links /commercial/ third, and the Spanish one
@@ -220,6 +220,10 @@ const ES_LABELS: Record<string, string> = {
      give way so the grid stays at twelve. Spiders are one click away on
      /es/servicios/. */
   '/es/guias/': 'Guías',
+  /* Premios took the Avispas chip on 11 Sep 2026, the fourth service chip to
+     give way so the grid stays at twelve. The English masthead links /awards/;
+     wasps are one click away on /es/servicios/. */
+  '/es/premios/': 'Premios',
   '/es/garantia/': 'Nuestra garantía',
   '/es/nosotros/': 'Quiénes somos',
   '/es/contacto/': 'Contacto',

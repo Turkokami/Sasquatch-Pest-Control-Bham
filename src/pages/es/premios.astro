@@ -1,0 +1,376 @@
+---
+import { intrinsicSize } from '../../lib/images';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import { business, people, isReady } from '../../data/business';
+import type { Owed } from '../../data/business';
+import { t } from '../../data/i18n';
+
+const path = '/es/premios/';
+const S = t('es');
+
+/* PREMIOS EN ESPAÑOL — la pareja de /awards/, 11 Sep 2026.
+ *
+ * Las filas, los conteos y los resultados salen de business.awards y
+ * business.press, igual que en inglés; aquí no se escribe ningún número a
+ * mano, por la misma razón que allá (el primer borrador en inglés decía
+ * catorce y dos mientras la lista decía diecisiete y tres).
+ *
+ * LO QUE SE QUEDA EN INGLÉS, A PROPÓSITO: el nombre de cada premio, su
+ * categoría y el título de cada artículo. Son palabras del emisor, se citan
+ * como él las imprimió y van marcadas lang="en". Traducir "Best Pest Control
+ * Service" sería poner en boca del periódico algo que el periódico no dijo.
+ *
+ * LA REGLA ES LA DE LA PÁGINA EN INGLÉS: nada aquí afirma más de lo que dice
+ * la insignia. Ningún superlativo que el emisor no imprimió, y ninguna forma
+ * de "galardonada" o "premiada" — salvo en la pregunta frecuente que
+ * explica por qué no —: en la lista hay una preselección, y esa palabra es
+ * justo como una preselección se vuelve un premio.
+ *
+ * Es más corta que la inglesa (que está por encima de la banda T1) y conserva
+ * cada salvedad: la división en dos grupos, el finalista marcado en su fila,
+ * lo que se tiene de cada insignia y las dos consultas estatales. */
+
+const awards = business.awards;
+const press = business.press;
+
+const shown = <T,>(v: Owed<T> | null | undefined): v is T =>
+  v !== null && v !== undefined && isReady(v as Owed<T>);
+
+const localVote = awards.filter((a) => a.tier === 'local-vote');
+const directory = awards.filter((a) => a.tier === 'directory');
+const finalists = localVote.filter((a) => a.result !== 'winner');
+const voteWins = localVote.filter((a) => a.result === 'winner');
+const votePublishers = Array.from(new Set(voteWins.map((a) => a.publisher)));
+const allOwnerBadge = awards.every((a) => a.via === 'owner-badge');
+
+const yearsOf = (rows: readonly { year: number | null }[]) =>
+  Array.from(new Set(rows.map((r) => r.year)))
+    .filter((y): y is number => typeof y === 'number')
+    .sort((a, b) => a - b);
+const listOf = (items: readonly (string | number)[]) =>
+  items.length < 2
+    ? items.join('')
+    : `${items.slice(0, -1).join(', ')} y ${items[items.length - 1]}`;
+const voteYears = yearsOf(localVote);
+
+/* Números en letra. Femenino para insignias; masculino para artículos. */
+const NUM = ['ningún', 'un', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete',
+  'ocho', 'nueve', 'diez', 'once', 'doce', 'trece', 'catorce', 'quince',
+  'dieciséis', 'diecisiete', 'dieciocho', 'diecinueve', 'veinte'];
+const f = (n: number) => (n === 0 ? 'ninguna' : n === 1 ? 'una' : NUM[n] ?? String(n));
+const m = (n: number) => NUM[n] ?? String(n);
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const pl = (n: number, one: string, many: string) => (n === 1 ? one : many);
+
+/* Se pinta en CADA fila, nunca se deduce de la sección. */
+const RESULT: Record<string, string> = {
+  winner: 'Ganador',
+  finalist: 'Finalista — preseleccionado, no es un premio ganado',
+  listed: 'En la lista',
+};
+const LEVEL: Record<string, string> = { Gold: 'Oro', Silver: 'Plata', Bronze: 'Bronce' };
+
+/* El texto alternativo se arma en español con los mismos campos que la fila,
+   en vez de dejar en una página en español el alt en inglés de business.ts. */
+const altOf = (a: (typeof awards)[number]) =>
+  `Insignia ${a.name}${shown(a.year) ? ` ${a.year}` : ''} de ${a.publisher}` +
+  (shown(a.category) ? `, categoría ${a.category}` : '') +
+  (a.result === 'finalist' ? ', como finalista' : '');
+const PRESS_ALT: Record<string, string> = {
+  '/img/press/markel-national-small-business-week.jpg':
+    'Tarjeta de Markel sobre Sasquatch Pest Control de Bellingham en la Semana Nacional de la Pequeña Empresa',
+};
+
+const artwork = new Map<string, { width: number; height: number }>(
+  [...awards.map((a) => a.badge), ...press.map((p) => p.image)]
+    .filter((p): p is string => typeof p === 'string' && p.length > 0)
+    .map((p) => [p, intrinsicSize(p)]),
+);
+const sizeOf = (p: string) => artwork.get(p) ?? { width: 0, height: 0 };
+
+const esDate = (iso: string) =>
+  new Date(iso).toLocaleDateString('es-US', {
+    day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+  });
+
+const pressVerified = press.filter((p) => p.via === 'publisher-verified');
+const pressUnverified = press.filter((p) => p.via !== 'publisher-verified');
+
+const licensed = people.filter(
+  (p) => p.publishable === true && isReady(p.credential) && /^LI-/.test(p.credential),
+);
+
+/* 40–60 palabras (M2). Son 58 y se quedan en 58 al crecer la lista, porque
+   f() y m() devuelven una sola palabra hasta veinte. */
+const answer =
+  `Sasquatch Pest Control tiene ${f(awards.length)} insignias de premios y ${m(press.length)} artículos de revistas, todos listados aquí con quién los otorgó, el año y si fue un premio ganado o una preselección. Como las insignias son la credencial que una empresa escoge para sí misma, aquí están también las dos consultas estatales gratuitas que nos revisan por su cuenta.`;
+
+const faqs = [
+  {
+    q: '¿Sasquatch Pest Control es una empresa premiada?',
+    a: 'Algunas insignias son premios ganados y una es una preselección, y la fila dice cuál. No usamos esa palabra en el sitio, porque borra esa diferencia. Lea las filas: cada una dice quién la dio, el año y el resultado.',
+  },
+  {
+    q: '¿Pagan por alguno de estos premios?',
+    a: 'No por las votaciones locales, que las deciden los lectores. Algunos directorios sí venden paquetes de insignias y posiciones en general, y esa es una de las razones por las que están en una lista aparte.',
+  },
+  {
+    q: '¿Un premio quiere decir que el trabajo en mi casa va a salir bien?',
+    a: 'No, y sería raro afirmarlo. Un premio refleja un periodo de trabajo ya hecho, juzgado por gente que no vio su espacio bajo el piso. Preferimos que nos juzgue por el alcance por escrito, la garantía y si el técnico que llega le sabe explicar lo que encontró.',
+  },
+];
+
+const rails = [
+  { href: '/es/nosotros/', label: 'Quiénes somos y cómo comprobar nuestra licencia' },
+  { href: '/es/garantia/', label: 'La Garantía de Servicio 100 %, completa' },
+  { href: '/es/servicios/', label: 'Todos nuestros servicios' },
+  { href: '/es/contacto/', label: 'Pregúntenos lo que sea de esta página' },
+];
+---
+
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Premios, Reconocimientos y Prensa | Sasquatch Pest Control"
+  description="Cada insignia de premio y cada artículo de revista de Sasquatch Pest Control, con quién lo otorgó, el año y el resultado, y cómo verificarnos usted mismo."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Premios y reconocimientos', path }]}
+>
+  <h1>Premios, reconocimientos y cómo comprobarlos</h1>
+  <AnswerBox text={answer} />
+
+  <LeadForm />
+
+  <div class="prose">
+    <p>
+      Esto es todo el estante, sin guardar ni redondear nada. Conviene decir de
+      frente qué es una página así: nosotros escogimos qué mostrar, en qué orden
+      y con qué texto, como en cualquier página de premios. Por eso la última
+      sección le entrega dos bases de datos del estado en vez de otra insignia.
+    </p>
+
+    <h2>Las cuatro cosas que puede ser una insignia</h2>
+    <p>
+      Todas llegan con listón, año y un color que sugiere oro, y no son iguales.
+      <b>Una votación de lectores</b> la abre una publicación con nombre y la
+      deciden votos de gente de aquí: mide reconocimiento local, no calidad
+      técnica. <b>Un artículo editorial</b> es una revista que decide escribir
+      sobre una empresa sin que se lo pidan, y es la señal más fuerte de las
+      cuatro. <b>Una insignia de directorio</b> la emite un sitio de listados;
+      algunas salen solas de las reseñas públicas y otras se venden, y desde
+      afuera casi no se distinguen. <b>Una certificación del oficio</b> no es un
+      premio y es la que más vale: alguien fue examinado contra un estándar.
+    </p>
+    {allOwnerBadge && (
+      <p>
+        De cada insignia de abajo tenemos la imagen, no la lista de ganadores
+        del emisor. Cuando eso cambie, la fila tendrá enlace.
+      </p>
+    )}
+  </div>
+
+  {awards.length > 0 && (
+    <section>
+      <h2>Reconocimientos</h2>
+      <div class="prose">
+        <p>
+          {cap(f(localVote.length))} de las {f(awards.length)} insignias vienen de
+          este condado y {f(directory.length)} de sitios de directorio. Van por
+          separado, para que el segundo grupo no se preste la credibilidad que se
+          ganó el primero.
+        </p>
+      </div>
+
+      <h3>Premios locales y votaciones de lectores</h3>
+      <div class="prose">
+        <p>
+          {cap(f(voteWins.length))} {pl(voteWins.length, 'se otorgó', 'se otorgaron')} después
+          de una votación de lectores de <span lang="en">{listOf(votePublishers)}</span>,
+          entre {voteYears[0]} y {voteYears[voteYears.length - 1]}. Quienes votan
+          viven aquí y tuvieron que escoger a alguien.
+          {finalists.map((x) => (
+            <>
+              {' '}La entrada de <span lang="en">{x.publisher}</span>{shown(x.year) ? ` de ${x.year}` : ''} es
+              de finalista: preseleccionado, que es bueno y es distinto de ganar,
+              y su fila lo dice.
+            </>
+          ))}
+        </p>
+      </div>
+      <ul class="badges">
+        {localVote.map((a) => (
+          <li>
+            {shown(a.badge) && (
+              <img
+                src={a.badge}
+                alt={altOf(a)}
+                width={sizeOf(a.badge).width}
+                height={sizeOf(a.badge).height}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <b lang="en">{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+            <span>
+              <span lang="en">{a.publisher}</span>{shown(a.year) ? ` · ${a.year}` : ''}
+            </span>
+            {shown(a.category) && !a.name.includes(a.category) && <span lang="en">{a.category}</span>}
+            {shown(a.level) && <span>{LEVEL[a.level] ?? a.level}</span>}
+            <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+          </li>
+        ))}
+      </ul>
+
+      <h3>Premios de directorios</h3>
+      <ul class="badges">
+        {directory.map((a) => (
+          <li>
+            {shown(a.badge) && (
+              <img
+                src={a.badge}
+                alt={altOf(a)}
+                width={sizeOf(a.badge).width}
+                height={sizeOf(a.badge).height}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <b lang="en">{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+            <span>
+              <span lang="en">{a.publisher}</span>{shown(a.year) ? ` · ${a.year}` : ''}
+            </span>
+            {shown(a.category) && !a.name.includes(a.category) && <span lang="en">{a.category}</span>}
+            {shown(a.level) && <span>{LEVEL[a.level] ?? a.level}</span>}
+            <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div class="prose">
+        <p>
+          Junto a ninguna hay estrellas ni número de reseñas, porque un premio no
+          mide nada, y ninguna lleva un superlativo que su emisor no imprimió.
+          Una entrada sin enlace se queda como texto en vez de apuntar a una
+          página que no leímos; pésela así.
+        </p>
+      </div>
+    </section>
+  )}
+
+  {press.length > 0 && (
+    <section>
+      <h2>Prensa</h2>
+      <div class="prose">
+        <p>
+          La prensa es alguien que decide escribir sobre usted sin que se lo
+          pidan. Los títulos van como los publicó cada revista, en inglés.
+          {pressVerified.length > 0 && (
+            <>
+              {' '}Ninguna es para el consumidor y ninguna se pagó.{' '}
+              {cap(m(pressVerified.length))} de los {m(press.length)} artículos se
+              revisaron en la página del propio editor, con firma y fecha, y
+              enlazan ahí.
+            </>
+          )}
+          {pressUnverified.length > 0 && ' Lo demás llegó como imagen y no tiene enlace hasta que alguien lo revise con el editor.'}
+        </p>
+      </div>
+      <ul class="press">
+        {press.map((p) => (
+          <li>
+            {shown(p.image) && PRESS_ALT[p.image] && (
+              <img
+                src={p.image}
+                alt={PRESS_ALT[p.image]}
+                width={sizeOf(p.image).width}
+                height={sizeOf(p.image).height}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <div>
+              <b>
+                {shown(p.url)
+                  ? <><a href={p.url} rel="nofollow noopener" lang="en">{p.title}</a> (en inglés)</>
+                  : <span lang="en">{p.title}</span>}
+              </b>
+              <span>
+                <span lang="en">{p.publication}</span>
+                {shown(p.published) ? ` · ${esDate(p.published)}` : ''}
+                {shown(p.author) ? ` · ${p.author}` : ''}
+              </span>
+              <span class="via">
+                {p.via === 'publisher-verified'
+                  ? 'Revisado en la página del editor'
+                  : 'Imagen enviada por el dueño; sin revisar con el editor'}
+              </span>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <div class="prose">
+        <p>
+          Los primeros artículos nombran a dos hermanos como dueños, y eso era
+          cierto en 2023. Hoy Kristofer Elling es el único dueño y Tyson Elling es
+          gerente de oficina. Un artículo viejo registra su fecha; no contradice
+          el presente.
+        </p>
+      </div>
+    </section>
+  )}
+
+  <div class="prose">
+    <h2>Cómo comprobar todo esto usted mismo</h2>
+    <p>
+      Lo de arriba lo escogimos nosotros; lo de abajo no. Son registros públicos
+      de Washington, gratuitos y sin cuenta. Consúltelos con nosotros y con
+      cualquier otra empresa que esté considerando.
+    </p>
+
+    <h3>1. La licencia de pesticidas, en el Departamento de Agricultura</h3>
+    <p>
+      Aplicar pesticidas por contrato requiere licencia del WSDA, que publica un{' '}
+      <a href="https://agr.wa.gov/pestfert/licensinged/search" rel="nofollow noopener">buscador
+      de licencias</a> (en inglés): el tipo, si está vigente y qué categorías
+      cubre, porque tratar una estructura no es lo mismo que tratar un campo.
+      {licensed.length > 0 && (
+        <>
+          {' '}Nuestros {m(licensed.length)} números, cada uno con el nombre de su
+          titular, están en la <a href="/about/">página de quiénes somos</a> (en
+          inglés).
+        </>
+      )}
+      {' '}Un <i>operador</i> con licencia trabaja bajo la licencia de aplicador
+      de la empresa, lo normal para un técnico. La licencia de inspector
+      estructural de plagas es aparte, y la de pesticidas no la incluye.
+    </p>
+
+    <h3>2. La empresa, en Labor &amp; Industries</h3>
+    <p>
+      <a href="https://secure.lni.wa.gov/verify/" rel="nofollow noopener" lang="en">Verify a
+      Contractor, Tradesperson or Business</a> (en inglés) dice si la empresa
+      está registrada, si su compensación al trabajador está pagada — lo que lo
+      protege si alguien se lastima en su casa — y si tiene citaciones. Una
+      insignia cuenta el mejor año de alguien; las citaciones, lo que salió mal.
+    </p>
+  </div>
+
+  <Faq items={faqs} />
+
+  <LinkRail heading="Relacionado" links={rails} />
+
+  <div class="prose" data-boilerplate>
+    <h2>¿Quiere preguntarnos algo de esta página?</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> — hablamos
+      español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>
