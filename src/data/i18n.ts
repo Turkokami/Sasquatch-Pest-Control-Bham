@@ -41,7 +41,9 @@
  * 10 Sep 2026: main pages and services (done), the pest library (done, 53 of
  * 53), locations (done, 49 of 49: counties, towns and neighborhoods),
  * commercial (done, the hub and 9 of 9 verticals), guides (done, 11 of 11),
- * problem pages (done, 23 of 23), then blog, awards, partners and the gallery. Until a section lands its pages are simply
+ * problem pages (done, 23 of 23), awards, partners and the gallery (done, 11 Sep 2026; the
+ * K9 section and the bird-work photographs are left out pending GUARDRAILS §6 and §8),
+ * and the blog, which waits on an owner decision. Until a section lands its pages are simply
  * unpaired — reachable in English, and never linked from a Spanish page
  * without an "(en inglés)" mark.
  */
@@ -90,6 +92,7 @@ export const PAGE_PAIRS: Record<string, string> = {
   '/pest-library/': '/es/plagas/',
   '/locations/': '/es/areas-de-servicio/',
   '/guides/': '/es/guias/',
+  '/gallery/': '/es/galeria/',
   '/awards/': '/es/premios/',
   '/trusted-partners/': '/es/socios-de-confianza/',
   '/our-guarantee/': '/es/garantia/',
@@ -198,7 +201,7 @@ export const UI: Record<Lang, Strings> = {
     switchTo: 'English',
     switchToAria: 'View this page in English',
     englishOnwardNote:
-      'Algunas páginas están en inglés: las etiquetas de los productos que aplicamos, que son documentos legales y se quedan como las publica el fabricante, y por ahora el blog y la galería. Si necesita cualquiera de esas en español, llámenos y se lo explicamos por teléfono.',
+      'Algunas páginas están en inglés: las etiquetas de los productos que aplicamos, que son documentos legales y se quedan como las publica el fabricante, y por ahora el blog. Si necesita cualquiera de esas en español, llámenos y se lo explicamos por teléfono.',
     callNow: 'Llame ahora',
     breadcrumbHome: 'Inicio',
   },
@@ -209,7 +212,6 @@ const ES_LABELS: Record<string, string> = {
   '/es/': 'Inicio',
   '/es/servicios/': 'Servicios',
   '/es/servicios/control-de-roedores/': 'Roedores',
-  '/es/servicios/control-de-hormigas/': 'Hormigas',
   /* Comercial took the Abejas chip on 10 Sep 2026, again to keep the grid at
      twelve. The English masthead links /commercial/ third, and the Spanish one
      now does too; bees are one click away on /es/servicios/. */
@@ -223,6 +225,11 @@ const ES_LABELS: Record<string, string> = {
      give way so the grid stays at twelve. Spiders are one click away on
      /es/servicios/. */
   '/es/guias/': 'Guías',
+  /* Galería took the Hormigas chip on 11 Sep 2026, the fifth service chip to
+     give way. The Spanish masthead now carries the same sections as the
+     English one, less the blog and /what-we-use/ (which stays English), with
+     Roedores kept as the one service chip. */
+  '/es/galeria/': 'Galería',
   /* Premios took the Avispas chip on 11 Sep 2026, the fourth service chip to
      give way so the grid stays at twelve. The English masthead links /awards/;
      wasps are one click away on /es/servicios/. */

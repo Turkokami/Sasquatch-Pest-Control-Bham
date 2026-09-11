@@ -1,0 +1,180 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import { gallery } from '../../data/gallery';
+import { SIN_AVES, TITULOS, ALT_ES } from '../../data/es-galeria';
+import { business, people, isReady } from '../../data/business';
+import { t } from '../../data/i18n';
+
+const path = '/es/galeria/';
+const S = t('es');
+
+/* LA GALERÍA EN ESPAÑOL — la pareja de /gallery/, 11 Sep 2026.
+ *
+ * Mismo orden de secciones que en inglés, que es un argumento: del lugar del
+ * edificio que nadie mira hacia afuera. Las imágenes salen de gallery.ts;
+ * los títulos y el alt en español, de es-galeria.ts, que también dice por
+ * qué dieciséis imágenes de trabajo con aves no están aquí (GUARDRAILS §8).
+ *
+ * LA SECCIÓN COMERCIAL SE ESCRIBIÓ DE NUEVO. En inglés su texto trata todo
+ * de exclusión de aves; sin esas fotos, describe lo que queda: el taller,
+ * el tratamiento previo en una obra, el material por tarima y la camioneta
+ * frente a un local. */
+const ORDER = [
+  'crawlspaces', 'exclusion', 'insulation', 'rodents', 'stinging',
+  'pests', 'commercial', 'crew', 'country',
+];
+const secciones = ORDER.map((k) => gallery.find((s) => s.key === k))
+  .filter((s): s is (typeof gallery)[number] => s !== undefined)
+  .map((s) => {
+    const images = s.images.filter((img) => !SIN_AVES.has(img.file));
+    for (const img of images) {
+      if (!ALT_ES[img.file]) {
+        throw new Error(`/es/galeria/: ${img.file} no tiene alt en español en src/data/es-galeria.ts`);
+      }
+    }
+    return { key: s.key, title: TITULOS[s.key] ?? s.title, images };
+  })
+  .filter((s) => s.images.length > 0);
+const total = secciones.reduce((n, s) => n + s.images.length, 0);
+
+const licensed = people.filter(
+  (p) => p.publishable === true && isReady(p.credential) && /^LI-/.test(p.credential),
+);
+const NUM = ['ninguna', 'una', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez'];
+const n = licensed.length;
+const licencias = n === 1
+  ? 'Hoy una persona del equipo tiene licencia'
+  : `Hoy ${NUM[n] ?? String(n)} personas del equipo tienen licencia`;
+
+const COPIA: Record<string, string[]> = {
+  crawlspaces: [
+    'Casi todo lo que hacemos pasa en el metro entre el piso y la tierra. Un espacio bajo el piso aquí es una caja fría y húmeda con piso de tierra, y la barrera de vapor sobre esa tierra es lo único entre el suelo y la parte de abajo de la casa. Si está rota o no existe, todo se queda mojado y se juntan las condiciones que atraen roedores, cochinillas y hongos de pudrición.',
+    'Aquí hay puertas de acceso, ventilas, agua estancada, ductos y trabajo de barrera. Casi cualquier pregunta que valga la pena sobre una casa se contesta desde abajo.',
+  ],
+  exclusion: [
+    'La exclusión es la parte de este oficio más cercana a la construcción, y donde más nos distinguimos de quien solo rocía. Sellar un edificio es encontrar cada abertura que un roedor puede usar y cerrarla con algo que siga ahí en diez años: malla de acero, lámina, mortero y tapas cortadas a la medida de la abertura, no una placa de tienda pegada con espuma.',
+    'Un edificio cerrado se queda cerrado; uno que solo se trata hay que volver a tratarlo. Ese es el trabajo que un tratamiento no reemplaza.',
+  ],
+  insulation: [
+    'El aislamiento y el control de plagas se cruzan más de lo que la gente espera. El aislamiento suelto de un ático es cama, refugio y lugar de crianza, y cuando los roedores ya pasaron por él queda contaminado y deja de hacer su trabajo. Abajo, en el espacio bajo el piso, el que se cayó o lo jalaron deja de aislar en cuanto se separa del piso.',
+    'Todo el personal completó la capacitación de instalador. Estas fotos son de retiro, reemplazo y del estado de lo que salió.',
+  ],
+  rodents: [
+    'El trabajo de roedores es sobre todo buscar por dónde entran. El tratamiento es lo sencillo; lo que decide si el problema vuelve es encontrar la entrada, que casi nunca está donde uno espera. A un ratón le basta un cuarto de pulgada, y los huecos que importan suelen estar alrededor de un tubo, en una esquina del cimiento, detrás de un bajante o donde una malla de ventila se oxidó hace años.',
+    'Lo que se ve aquí es la evidencia más que el animal: túneles en el aislamiento, forro de tubería mordido, excremento en un umbral, material de nido arrastrado bajo el piso, y las aberturas por donde entró todo.',
+  ],
+  stinging: [
+    'El trabajo de avispas y avispones es de temporada, y es la categoría donde el calendario lo decide todo. Un nido que se podía quitar en junio es una colonia de varios cientos a finales de agosto, y estos nidos son lo que deja una temporada sin atender: en la esquina de un alero, bajo el pico de un hastial, dentro de una pared o colgando de un arbusto a la altura de la cabeza junto a una puerta.',
+    'Las abejas también están en esta sección, y son otro trabajo. Un enjambre de abeja melífera o un nido de abejorro no son plaga, y lo correcto casi siempre es reubicarlos, no tratarlos.',
+  ],
+  pests: [
+    'Los insectos que traen a casi todas las familias con una empresa de control de plagas son, uno por uno, menos dramáticos que los que dan miedo: el aserrín de hormiga carpintera en una viga, las manchas de cucaracha en la esquina de un gabinete, una chinche apestosa en un marco en octubre.',
+    'Lo que tienen en común es que el insecto se identifica más fácil por lo que deja que por verlo de pasada, e identificarlo bien es lo que decide el tratamiento. La biblioteca de plagas de este sitio existe por lo mismo.',
+  ],
+  commercial: [
+    'El trabajo comercial se distingue del residencial sobre todo por la escala y el acceso. Una obra en construcción se puede tratar antes de que el edificio exista, cuando el terreno y la cimbra todavía están a la vista. El material se compra por tarima y no por caja, y la tapa o la pieza de metal para una abertura rara se hace en el taller en vez de buscarla en una tienda.',
+  ],
+  crew: [
+    `${licencias} de aplicador del WSDA, y los números están publicados para que cualquier cosa que diga este sitio se pueda comparar con el registro del estado. Estos son los vehículos que hacen las rutas y la gente que llega en ellos.`,
+    'El equipo de protección de varias fotos no es pose. Un espacio bajo el piso en febrero es un lugar cerrado con mal aire y agua estancada, y el respirador y la lámpara de cabeza son el uniforme de todos los días.',
+  ],
+  country: [
+    'Este condado va del agua salada de Blaine a la línea de nieve del monte Baker en menos de cincuenta millas, y el año de plagas de un extremo tiene poco que ver con el del otro: aire del mar en la costa, campos en el centro y bosque en la orilla este. Tres presiones sobre tres tipos de edificio.',
+    'Estas se tomaron entre trabajos, y lo que muestran explica el resto de la página.',
+  ],
+};
+
+/* 40–60 palabras (M2). Son 50. */
+const answer =
+  'Esto es el trabajo mismo: espacios bajo el piso, exclusión y trabajo en metal, aislamiento, evidencia de roedores, nidos de avispa, trabajo comercial y el equipo que lo hace. Cada fotografía se tomó en un trabajo de los condados de Whatcom o Skagit, por la persona que lo estaba haciendo.';
+
+const faqs = [
+  {
+    q: '¿Son fotos de archivo?',
+    a: 'No. Cada imagen salió de un trabajo en los condados de Whatcom o Skagit y la tomó quien estaba haciendo el trabajo. Vale la pena decirlo claro, porque las fotos de archivo son casi universales en este oficio y nadie lo puede notar con solo verlas.',
+  },
+  {
+    q: '¿Mi propiedad va a aparecer aquí?',
+    a: 'No de forma que se reconozca. No se publica nada que muestre una dirección, un número de casa, una placa o un cliente, y son fotos de condiciones del edificio, no de casas. Si prefiere que no aparezca ninguna foto de su trabajo, dígalo y no aparecerá.',
+  },
+  {
+    q: '¿Por qué hay tantos espacios bajo el piso vacíos?',
+    a: 'Porque ahí está el trabajo. La parte del control de plagas que la gente se imagina es un técnico con una aspersora. La parte que decide si el problema vuelve es un hueco bajo una casa que alguien tuvo que encontrar arrastrándose por el lodo.',
+  },
+];
+
+const rails = [
+  { href: '/es/servicios/exclusion-y-reparaciones/', label: 'Exclusión de plagas y reparaciones' },
+  { href: '/es/servicios/restauracion-de-espacio-bajo-el-piso/', label: 'Limpieza y restauración del espacio bajo el piso' },
+  { href: '/es/servicios/aislamiento-de-atico/', label: 'Retiro y reemplazo de aislamiento del ático' },
+  { href: '/es/servicios/control-de-roedores/', label: 'Control de ratas y ratones' },
+  { href: '/es/comercial/', label: 'Control de plagas comercial' },
+  { href: '/es/nosotros/', label: 'Quiénes somos' },
+];
+---
+
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Galería de Fotos de Nuestro Trabajo | Sasquatch Pest Control"
+  description={`${total} fotografías de trabajos reales en los condados de Whatcom y Skagit: espacios bajo el piso, exclusión, aislamiento, evidencia de roedores y el equipo.`}
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Galería', path }]}
+>
+  <h1>Así se ve el trabajo de verdad</h1>
+  <AnswerBox text={answer} />
+
+  <LeadForm />
+
+  <div class="prose">
+    <p>
+      Los sitios de control de plagas se ilustran casi por completo con fotos de
+      archivo, y la razón es sencilla: el trabajo real es sucio, está mal
+      iluminado y pasa en lugares que nadie quiere fotografiar. Las {total}{' '}
+      imágenes de abajo son del archivo de esta empresa, tomadas en trabajos de
+      los condados de Whatcom y Skagit por quienes los hicieron, y están
+      ordenadas para que la página vaya de la parte menos visible de un edificio
+      hacia afuera.
+    </p>
+  </div>
+
+  {
+    secciones.map((s) => (
+      <section>
+        <h2>{s.title}</h2>
+        <div class="prose">{COPIA[s.key]?.map((para) => <p>{para}</p>)}</div>
+        <div class="gallery">
+          {s.images.map((img) => (
+            <img
+              src={img.file}
+              alt={ALT_ES[img.file]}
+              width={img.width}
+              height={img.height}
+              loading="lazy"
+              decoding="async"
+            />
+          ))}
+        </div>
+      </section>
+    ))
+  }
+
+  <Faq items={faqs} />
+
+  <LinkRail heading="Los servicios detrás de estas fotos" links={rails} />
+
+  <div class="prose" data-boilerplate>
+    <h2>¿Quiere que veamos su caso?</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> — hablamos
+      español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

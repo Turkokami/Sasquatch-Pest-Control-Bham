@@ -134,7 +134,7 @@ const isSpanish = (url) => url === '/es/' || url.startsWith('/es/');
 const HUBS = new Set([
   '/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/',
   '/guides/', '/blog/', '/gallery/', '/what-we-use/', '/awards/',
-  '/es/', '/es/areas-de-servicio/', '/es/comercial/', '/es/guias/', '/es/garantia/', '/es/nosotros/', '/es/plagas/', '/es/premios/',
+  '/es/', '/es/areas-de-servicio/', '/es/comercial/', '/es/guias/', '/es/garantia/', '/es/nosotros/', '/es/plagas/', '/es/premios/', '/es/galeria/',
 ]);
 const isBlogPost = (url) => url.startsWith('/blog/') && url !== '/blog/';
 /* A page type per URL, from the URL taxonomy in Keystone Part 3.3. null means
