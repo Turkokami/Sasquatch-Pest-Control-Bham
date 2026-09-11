@@ -1,9 +1,10 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import AnswerBox from '../../components/AnswerBox.astro';
-import LeadForm from '../../components/LeadForm.astro';
-import { business } from '../../data/business';
-import { t } from '../../data/i18n';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+import { business } from '../../../data/business';
+import { t } from '../../../data/i18n';
+import { esPueblo, esPathOf } from '../../../data/es-areas';
 
 const path = '/es/areas-de-servicio/';
 const S = t('es');
@@ -62,15 +63,18 @@ const answer =
       en una casa nueva de Ferndale construida sobre un campo que se vació, y
       las dos se parecen poco a una cabaña de cedro en Sudden Valley. Por eso
       cada pueblo tiene su propia página con la presión de plagas de esa zona.
-      Esas páginas están en inglés; aquí va lo más importante de cada una, en
-      español.
+      Aquí va lo más importante de cada una; donde la página del pueblo ya está
+      en español, el enlace lleva a ella, y donde todavía no, a la versión en
+      inglés, marcada así.
     </p>
 
     <h2>Condado de Whatcom</h2>
     {whatcom.map(([name, slug, note]) => (
       <p>
         <strong>{name}.</strong> {note}{' '}
-        <a href={`/locations/${slug}/`} hreflang="en">Página de {name}, en inglés</a>.
+        {esPueblo(slug)
+          ? <a href={esPathOf(esPueblo(slug)!)}>Más sobre {name}</a>
+          : <a href={`/locations/${slug}/`} hreflang="en" lang="en">Página de {name}, en inglés</a>}.
       </p>
     ))}
     <p>
@@ -89,7 +93,9 @@ const answer =
     {skagit.map(([name, slug, note]) => (
       <p>
         <strong>{name}.</strong> {note}{' '}
-        <a href={`/locations/${slug}/`} hreflang="en">Página de {name}, en inglés</a>.
+        {esPueblo(slug)
+          ? <a href={esPathOf(esPueblo(slug)!)}>Más sobre {name}</a>
+          : <a href={`/locations/${slug}/`} hreflang="en" lang="en">Página de {name}, en inglés</a>}.
       </p>
     ))}
 

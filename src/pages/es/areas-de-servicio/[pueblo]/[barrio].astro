@@ -1,0 +1,113 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../../components/AnswerBox.astro';
+import LeadForm from '../../../../components/LeadForm.astro';
+import Faq from '../../../../components/Faq.astro';
+import LinkRail from '../../../../components/LinkRail.astro';
+import LocationMap from '../../../../components/LocationMap.astro';
+import { business } from '../../../../data/business';
+import { liveServices } from '../../../../data/services';
+import { esServicios } from '../../../../data/es-servicios';
+import { builtTowns, pagedNeighborhoods } from '../../../../lib/geo';
+import { esLugares, esPathOf, esPueblo, esBarrio } from '../../../../data/es-areas';
+import { PAGE_PAIRS, t as ui } from '../../../../data/i18n';
+
+/* Igual que la página de pueblo: los hechos — si el barrio tiene página, si
+   está lista, a qué pueblo pertenece — vienen del lado inglés. Un barrio
+   español sin barrio inglés con página es un error de compilación. */
+export async function getStaticPaths() {
+  const entries = await getCollection('locations');
+  const out = [];
+  for (const l of esLugares.filter((x) => x.barrio)) {
+    const town = builtTowns().find((x) => x.slug === l.town);
+    const n = town && pagedNeighborhoods(town).find((x) => x.slug === l.barrio);
+    if (!town || !n) {
+      throw new Error(
+        `src/data/es-areas: "${l.town}/${l.barrio}" has no English neighborhood page. ` +
+          `The Spanish tier cannot serve a place the English one does not.`,
+      );
+    }
+    const en = entries.find((e) => e.data.town === l.town && e.data.neighborhood === l.barrio);
+    out.push({ params: { pueblo: l.town, barrio: l.barrio! }, props: { l, town, n, ready: en?.data.ready === true } });
+  }
+  return out;
+}
+
+const { l, town, n, ready } = Astro.props;
+const path = esPathOf(l);
+const S = ui('es');
+const pueblo = esPueblo(town.slug);
+const countyLabel = town.county === 'Whatcom County' ? 'condado de Whatcom' : 'condado de Skagit';
+
+const hermanos = pagedNeighborhoods(town)
+  .filter((x) => x.slug !== n.slug)
+  .map((x) => esBarrio(town.slug, x.slug))
+  .filter((x): x is NonNullable<typeof x> => !!x)
+  .map((x) => ({ href: esPathOf(x), label: x.nombre }));
+
+const svc = liveServices()
+  .map((s) => {
+    const en = `/services/${s.slug}/`;
+    const es = PAGE_PAIRS[en];
+    const label = esServicios.find((x) => x.enPath === en)?.nav;
+    return es && label ? { href: es, label } : null;
+  })
+  .filter((x): x is { href: string; label: string } => !!x);
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title={l.title}
+  description={l.description}
+  kind="location"
+  noindex={!ready}
+  hasAnswer={true}
+  faqs={l.faqs}
+  areaServed={[n.name, town.name, town.county]}
+  breadcrumbs={[
+    { name: 'Inicio', path: '/es/' },
+    { name: 'Áreas de servicio', path: '/es/areas-de-servicio/' },
+    ...(pueblo ? [{ name: pueblo.nombre, path: esPathOf(pueblo) }] : []),
+    { name: l.nombre, path },
+  ]}
+>
+  <h1>{l.h1}</h1>
+
+  <AnswerBox text={l.answer} />
+
+  <LeadForm />
+
+  <LocationMap place={`${n.name}, ${town.name}`} label={`${l.nombre}, ${town.name}`} />
+
+  <div class="prose">
+    {l.secciones.map((sec) => (
+      <>
+        <h2>{sec.h2}</h2>
+        {sec.parrafos.map((p) => <p>{p}</p>)}
+      </>
+    ))}
+  </div>
+
+  <LinkRail heading={`Servicios de control de plagas en ${l.nombre}`} links={svc} />
+
+  <Faq items={l.faqs} />
+
+  {(hermanos.length > 0 || pueblo) && (
+    <LinkRail
+      heading={`Más de ${town.name}`}
+      links={[...(pueblo ? [{ href: esPathOf(pueblo), label: `Todo ${town.name}` }] : []), ...hermanos]}
+    />
+  )}
+
+  <div class="prose" data-boilerplate>
+    <h2>Pida una visita</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> — hablamos
+      español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+      Atendemos todo el {countyLabel}.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

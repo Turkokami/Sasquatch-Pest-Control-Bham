@@ -146,8 +146,8 @@ const pageType = (url) => {
   if (HUBS.has(url)) return 'home';
   if (/^\/services\/[^/]+\/$/.test(url) || /^\/es\/servicios\/[^/]+\/$/.test(url)) return 'service';
   if (/^\/services\/[^/]+\/[^/]+\/$/.test(url)) return 'problem';
-  if (/^\/locations\/[^/]+\/$/.test(url)) return 'city';
-  if (/^\/locations\/[^/]+\/[^/]+\/$/.test(url)) return 'neighborhood';
+  if (/^\/locations\/[^/]+\/$/.test(url) || /^\/es\/areas-de-servicio\/[^/]+\/$/.test(url)) return 'city';
+  if (/^\/locations\/[^/]+\/[^/]+\/$/.test(url) || /^\/es\/areas-de-servicio\/[^/]+\/[^/]+\/$/.test(url)) return 'neighborhood';
   if (/^\/pest-library\/[^/]+\/$/.test(url) || /^\/es\/plagas\/[^/]+\/$/.test(url)) return 'pest';
   if (/^\/commercial\/[^/]+\/$/.test(url)) return 'vertical';
   if (/^\/guides\/[^/]+\/$/.test(url)) return 'compliance';

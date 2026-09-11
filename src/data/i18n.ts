@@ -46,6 +46,7 @@
  */
 
 import { esPlagas } from './es-plagas';
+import { esLugares, esPathOf, enPathOf } from './es-areas';
 
 export type Lang = 'en' | 'es';
 
@@ -95,6 +96,7 @@ export const PAGE_PAIRS: Record<string, string> = {
    the route throws if that module names a species with no English profile,
    so no pair can point at a 404 in either direction. */
 for (const p of esPlagas) PAGE_PAIRS[`/pest-library/${p.species}/`] = `/es/plagas/${p.slug}/`;
+for (const l of esLugares) PAGE_PAIRS[enPathOf(l)] = esPathOf(l);
 
 /** Spanish path -> English path. Derived, never typed twice. */
 export const ES_TO_EN: Record<string, string> = Object.fromEntries(

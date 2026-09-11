@@ -1,4 +1,5 @@
 ---
+import { langForPath } from '../lib/offer';
 /**
  * LocationMap — the orientation map near the top of a place page.
  *
@@ -78,8 +79,18 @@ interface Props {
   place: string;
   /** Appended to the query so the town resolves in the right state. */
   region?: string;
+  /**
+   * The name as the page's own language says it, where that differs from the
+   * query — a Spanish county page says "condado de Whatcom" while the map is
+   * still asked for "Whatcom County". Defaults to `place`; a town name is the
+   * same in both languages and never needs it.
+   */
+  label?: string;
 }
-const { place, region = 'WA' } = Astro.props;
+const { place, region = 'WA', label = place } = Astro.props;
+/* Spanish place pages (from 10 Sep 2026) get the same block in Spanish. The
+   place name is never translated — Ferndale is Ferndale on a Spanish page too. */
+const lang = langForPath(Astro.url.pathname);
 
 /* encodeURIComponent, not a hand-rolled replace. It is what makes "Mount
    Vernon, WA" come out as Mount%20Vernon%2C%20WA and leaves the hyphen in
@@ -103,7 +114,7 @@ const mapsLink = `https://www.google.com/maps/search/?api=1&query=${query}`;
 
 /* A real accessible name. An iframe with no title is announced as "iframe",
    which tells a screen reader user nothing about whether to enter it. */
-const title = `Map of ${place}, Washington`;
+const title = lang === 'es' ? `Mapa de ${label}, Washington` : `Map of ${label}, Washington`;
 ---
 {/* data-boilerplate: a map is a widget, not words the page earned. The
     uniqueness floor is measured on prose and the duplicate-sentence scanner
@@ -116,7 +127,7 @@ const title = `Map of ${place}, Washington`;
   {/* Phrased so it stays grammatical for every value `place` takes, including
       the two-part neighborhood form — "Fairhaven, Bellingham on the map"
       reads; "Where Fairhaven, Bellingham is" does not. */}
-  <h2>{place} on the map</h2>
+  <h2>{lang === 'es' ? `${label[0].toUpperCase()}${label.slice(1)} en el mapa` : `${label} on the map`}</h2>
   <figure>
     <div class="mapframe">
       {/* data-src, not src — the frame is started by the script below. */}
@@ -129,11 +140,20 @@ const title = `Map of ${place}, Washington`;
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
-    <figcaption>
-      Orientation only — the map centers on {place}, not on us.{' '}
-      <a href={mapsLink} rel="noopener">Open {place} in Google Maps</a>. Our
-      office address and hours are on the <a href="/contact/">contact page</a>.
-    </figcaption>
+    {lang === 'es' ? (
+      <figcaption>
+        Solo para orientarse: el mapa se centra en {label}, no en nosotros.{' '}
+        <a href={mapsLink} rel="noopener">Abrir {label} en Google Maps</a>. La
+        dirección y el horario de la oficina están en la{' '}
+        <a href="/es/contacto/">página de contacto</a>.
+      </figcaption>
+    ) : (
+      <figcaption>
+        Orientation only — the map centers on {place}, not on us.{' '}
+        <a href={mapsLink} rel="noopener">Open {place} in Google Maps</a>. Our
+        office address and hours are on the <a href="/contact/">contact page</a>.
+      </figcaption>
+    )}
   </figure>
 </section>
 

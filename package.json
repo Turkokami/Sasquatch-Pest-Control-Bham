@@ -12,7 +12,7 @@
     "harness": "node scripts/harness.mjs",
     "redirects": "node scripts/redirects.mjs",
     "pending": "node scripts/pending.mjs",
-    "test": "tsx scripts/tests/schema-graph.test.ts && tsx scripts/tests/inspection-claims.test.ts && tsx scripts/tests/wdo-findings.test.ts && tsx scripts/tests/guide-matching.test.ts && tsx scripts/tests/us-spelling.test.ts && tsx scripts/tests/es-servicios.test.ts && tsx scripts/tests/es-plagas.test.ts",
+    "test": "tsx scripts/tests/schema-graph.test.ts && tsx scripts/tests/inspection-claims.test.ts && tsx scripts/tests/wdo-findings.test.ts && tsx scripts/tests/guide-matching.test.ts && tsx scripts/tests/us-spelling.test.ts && tsx scripts/tests/es-servicios.test.ts && tsx scripts/tests/es-plagas.test.ts && tsx scripts/tests/es-areas.test.ts",
     "gate": "npm run test && npm run build && npm run harness && npm run redirects:check && node scripts/pending.mjs --gate",
     "typecheck": "tsc --noEmit -p tsconfig.check.json",
     "slugs": "node scripts/slugs.mjs",

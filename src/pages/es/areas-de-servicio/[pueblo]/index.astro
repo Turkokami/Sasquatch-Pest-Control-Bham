@@ -1,0 +1,147 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../../components/AnswerBox.astro';
+import LeadForm from '../../../../components/LeadForm.astro';
+import Faq from '../../../../components/Faq.astro';
+import LinkRail from '../../../../components/LinkRail.astro';
+import LocationMap from '../../../../components/LocationMap.astro';
+import { business } from '../../../../data/business';
+import { liveServices } from '../../../../data/services';
+import { esServicios } from '../../../../data/es-servicios';
+import { builtTowns, pagedNeighborhoods } from '../../../../lib/geo';
+import { esLugares, esPathOf, esPueblo, esBarrio, isCounty } from '../../../../data/es-areas';
+import { PAGE_PAIRS, t as ui } from '../../../../data/i18n';
+
+/* LA PÁGINA ESPAÑOLA DE UN LUGAR LEE SUS HECHOS DE LA INGLESA. Si el pueblo
+   tiene página (builtTowns), si está lista para indexarse (el `ready` de
+   src/content/locations/<pueblo>.md) y a qué condado pertenece vienen de allá;
+   aquí solo se traduce la prosa. Un módulo español para un pueblo que no tiene
+   página inglesa es un error de compilación, no una página: el nivel español
+   no atiende un lugar que el inglés no atiende. */
+export async function getStaticPaths() {
+  const entries = await getCollection('locations');
+  const built = builtTowns();
+  return esLugares
+    .filter((l) => !l.barrio)
+    .map((l) => {
+      const county = isCounty(l);
+      const town = county ? undefined : built.find((x) => x.slug === l.town);
+      if (!county && !town) {
+        throw new Error(
+          `src/data/es-areas: "${l.town}" has no English town page (not in builtTowns). ` +
+            `The Spanish tier cannot serve a place the English one does not.`,
+        );
+      }
+      const en = county ? undefined : entries.find((e) => e.data.town === l.town && !e.data.neighborhood);
+      return { params: { pueblo: l.slugEs ?? l.town }, props: { l, town, ready: county ? true : en?.data.ready === true } };
+    });
+}
+
+const { l, town, ready } = Astro.props;
+const path = esPathOf(l);
+const S = ui('es');
+const isC = isCounty(l);
+
+const countyName = l.town === 'whatcom-county' ? 'Whatcom County' : 'Skagit County';
+const countyOf = town?.county ?? countyName;
+const countyTown = countyOf === 'Whatcom County' ? 'whatcom-county' : 'skagit-county';
+const countyEs = esPueblo(countyTown);
+const countyLabel = countyOf === 'Whatcom County' ? 'condado de Whatcom' : 'condado de Skagit';
+
+/* Rieles: solo páginas españolas que existen. Un barrio o un pueblo sin
+   página española todavía no se enlaza desde aquí — la regla de todo el nivel
+   español: un riel "relacionado" no manda al lector al inglés. */
+const barrios = town
+  ? pagedNeighborhoods(town)
+      .map((n) => esBarrio(town.slug, n.slug))
+      .filter((x): x is NonNullable<typeof x> => !!x)
+      .map((x) => ({ href: esPathOf(x), label: x.nombre }))
+  : [];
+
+const pueblosDelCondado = builtTowns()
+  .filter((x) => x.county === countyOf && x.slug !== town?.slug)
+  .map((x) => esPueblo(x.slug))
+  .filter((x): x is NonNullable<typeof x> => !!x)
+  .map((x) => ({ href: esPathOf(x), label: x.nombre }));
+
+const cercanos = [
+  ...(countyEs && !isC ? [{ href: esPathOf(countyEs), label: `Todo el ${countyLabel}` }] : []),
+  ...pueblosDelCondado,
+];
+
+/* Todos los servicios con página española, con su nombre corto en español —
+   la misma lista que el riel inglés, cruzada con PAGE_PAIRS. */
+const svc = liveServices()
+  .map((s) => {
+    const en = `/services/${s.slug}/`;
+    const es = PAGE_PAIRS[en];
+    const label = esServicios.find((x) => x.enPath === en)?.nav;
+    return es && label ? { href: es, label } : null;
+  })
+  .filter((x): x is { href: string; label: string } => !!x);
+
+const breadcrumbs = isC
+  ? [
+      { name: 'Inicio', path: '/es/' },
+      { name: 'Áreas de servicio', path: '/es/areas-de-servicio/' },
+      { name: l.nombre, path },
+    ]
+  : [
+      { name: 'Inicio', path: '/es/' },
+      { name: 'Áreas de servicio', path: '/es/areas-de-servicio/' },
+      ...(countyEs ? [{ name: countyEs.nombre, path: esPathOf(countyEs) }] : []),
+      { name: l.nombre, path },
+    ];
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title={l.title}
+  description={l.description}
+  kind="location"
+  noindex={!ready}
+  hasAnswer={true}
+  faqs={l.faqs}
+  areaServed={isC ? [countyName] : [town!.name, countyOf]}
+  breadcrumbs={breadcrumbs}
+>
+  <h1>{l.h1}</h1>
+
+  <AnswerBox text={l.answer} />
+
+  <LeadForm />
+
+  {isC
+    ? <LocationMap place={countyName} label={countyLabel} />
+    : <LocationMap place={town!.name} />}
+
+  <div class="prose">
+    {l.secciones.map((sec) => (
+      <>
+        <h2>{sec.h2}</h2>
+        {sec.parrafos.map((p) => <p>{p}</p>)}
+      </>
+    ))}
+  </div>
+
+  {barrios.length > 0 && <LinkRail heading={`Barrios que atendemos en ${l.nombre}`} links={barrios} />}
+
+  <LinkRail heading={isC ? `Servicios en el ${countyLabel}` : `Servicios de control de plagas en ${l.nombre}`} links={svc} />
+
+  <Faq items={l.faqs} />
+
+  {isC
+    ? pueblosDelCondado.length > 0 && <LinkRail heading={`Pueblos del ${countyLabel}`} links={pueblosDelCondado} />
+    : cercanos.length > 0 && <LinkRail heading={`Comunidades cercanas en el ${countyLabel}`} links={cercanos} />}
+
+  <div class="prose" data-boilerplate>
+    <h2>Pida una visita</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> — hablamos
+      español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>
