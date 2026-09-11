@@ -7,6 +7,10 @@ import { porQueLosEspaciosBajoElPisoSiguenMojados } from './por-que-los-espacios
 import { sellarUnEdificioAntesDelOtono } from './sellar-un-edificio-antes-del-otono';
 import { elAnoDeLasPlagasEnWhatcom } from './el-ano-de-las-plagas-en-whatcom';
 import { elAnoComercialDeLasPlagasEnWhatcom } from './el-ano-comercial-de-las-plagas-en-whatcom';
+import { comoEscogerUnaEmpresaDeControlDePlagas } from './como-escoger-una-empresa-de-control-de-plagas';
+import { tratamientoDeBajoImpacto } from './tratamiento-de-bajo-impacto';
+import { queMueveElPrecioDelControlDePlagas } from './que-mueve-el-precio-del-control-de-plagas';
+import { queEsDeVerdadElManejoIntegradoDePlagas } from './que-es-de-verdad-el-manejo-integrado-de-plagas';
 
 export type { EsGuia } from './tipos';
 
@@ -24,6 +28,10 @@ export const esGuias: EsGuia[] = [
   sellarUnEdificioAntesDelOtono,
   elAnoDeLasPlagasEnWhatcom,
   elAnoComercialDeLasPlagasEnWhatcom,
+  comoEscogerUnaEmpresaDeControlDePlagas,
+  tratamientoDeBajoImpacto,
+  queMueveElPrecioDelControlDePlagas,
+  queEsDeVerdadElManejoIntegradoDePlagas,
 ];
 
 export const esGuiaPath = (g: EsGuia) => `/es/guias/${g.slug}/`;

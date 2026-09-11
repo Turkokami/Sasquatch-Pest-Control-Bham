@@ -40,7 +40,7 @@
  * Everything else is being translated, in the order the owner approved on
  * 10 Sep 2026: main pages and services (done), the pest library (done, 53 of
  * 53), locations (done, 49 of 49: counties, towns and neighborhoods),
- * commercial (done, the hub and 9 of 9 verticals), guides (in progress), then
+ * commercial (done, the hub and 9 of 9 verticals), guides (done, 11 of 11), then
  * blog, problem pages, awards, partners and the gallery. Until a section lands its pages are simply
  * unpaired — reachable in English, and never linked from a Spanish page
  * without an "(en inglés)" mark.
@@ -192,7 +192,7 @@ export const UI: Record<Lang, Strings> = {
     switchTo: 'English',
     switchToAria: 'View this page in English',
     englishOnwardNote:
-      'Algunas páginas de referencia — las etiquetas de los productos que aplicamos, los premios y la guía técnica — están solo en inglés. Si necesita cualquiera de esas en español, llámenos y se lo explicamos por teléfono.',
+      'Algunas páginas están en inglés: las etiquetas de los productos que aplicamos, que son documentos legales y se quedan como las publica el fabricante, y por ahora los premios, el blog y la galería. Si necesita cualquiera de esas en español, llámenos y se lo explicamos por teléfono.',
     callNow: 'Llame ahora',
     breadcrumbHome: 'Inicio',
   },
