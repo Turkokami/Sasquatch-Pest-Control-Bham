@@ -36,6 +36,15 @@ import { aranaVagabunda } from './arana-vagabunda';
 import { aranaDeCruz } from './arana-de-cruz';
 import { aranaDeSotano } from './arana-de-sotano';
 import { aranaSacoAmarilla } from './arana-saco-amarilla';
+import { avisponCaraBlanca } from './avispon-cara-blanca';
+import { avispaPapeleraEuropea } from './avispa-papelera-europea';
+import { avispaAmarillaOccidental } from './avispa-amarilla-occidental';
+import { avispaAmarillaAerea } from './avispa-amarilla-aerea';
+import { abejaDeMiel } from './abeja-de-miel';
+import { abejorro } from './abejorro';
+import { avispaExcavadoraDorada } from './avispa-excavadora-dorada';
+import { avispaQueCargaPasto } from './avispa-que-carga-pasto';
+import { avispaDeLodo } from './avispa-de-lodo';
 
 export type { EsPlaga } from './tipos';
 export { ES_GRUPOS, ES_VEREDICTO, ES_GRUPO_SERVICIO } from './grupos';
@@ -67,6 +76,16 @@ export const esPlagas: EsPlaga[] = [
   aranaDeCruz,
   aranaDeSotano,
   aranaSacoAmarilla,
+  /* Insectos con aguijón */
+  avisponCaraBlanca,
+  avispaPapeleraEuropea,
+  avispaAmarillaOccidental,
+  avispaAmarillaAerea,
+  abejaDeMiel,
+  abejorro,
+  avispaExcavadoraDorada,
+  avispaQueCargaPasto,
+  avispaDeLodo,
 ];
 
 export const esPlagaPorEspecie = (species: string) => esPlagas.find((p) => p.species === species);
