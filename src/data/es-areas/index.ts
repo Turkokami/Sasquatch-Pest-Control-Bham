@@ -16,6 +16,10 @@ import { everson } from './everson';
 import { sumas } from './sumas';
 import { nooksack } from './nooksack';
 import { acme } from './acme';
+import { deming } from './deming';
+import { custer } from './custer';
+import { suddenValley } from './sudden-valley';
+import { birchBay } from './birch-bay';
 
 export type { EsLugar } from './tipos';
 
@@ -25,6 +29,10 @@ export const esLugares: EsLugar[] = [
   sumas,
   nooksack,
   acme,
+  deming,
+  custer,
+  suddenValley,
+  birchBay,
 ];
 
 export const COUNTY_TOWNS = ['whatcom-county', 'skagit-county'] as const;
