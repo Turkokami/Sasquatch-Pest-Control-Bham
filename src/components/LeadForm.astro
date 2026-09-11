@@ -44,9 +44,17 @@ interface Props {
   primary?: boolean;
   /**
    * Start the form as soon as the page has loaded, without waiting for the
-   * reader. For the contact pages only, where the form IS the page and a
-   * reader who arrived there came to fill it in. Everywhere else it waits —
-   * see the loader at the foot of this file.
+   * reader.
+   *
+   * UNUSED BY DEFAULT, and kept as the owner's switch. It was written for the
+   * contact pages, where the form IS the page. Keystone v2's lab gate then
+   * measured the choice both ways on 10 Sep 2026: with `eager`, /contact/ sat
+   * at an LCP of 3.08s (median of five) and failed; with the ordinary rule —
+   * the form starts on the reader's first tap or scroll, or 2.5s after load —
+   * it passed at 1.86s. v2 says a page that fails the lab gate is not
+   * published, so the contact pages use the ordinary rule. Adding `eager`
+   * back to <LeadForm /> on contact.astro is a one-word change if the owner
+   * decides the instant form is worth the failed gate.
    */
   eager?: boolean;
 }

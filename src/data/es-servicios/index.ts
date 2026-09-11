@@ -17,6 +17,14 @@ import { controlDeHormigas } from './control-de-hormigas';
 import { controlDeAranas } from './control-de-aranas';
 import { controlDeMoscas } from './control-de-moscas';
 import { eliminacionDeAbejas } from './eliminacion-de-abejas';
+import { exclusionYReparaciones } from './exclusion-y-reparaciones';
+import { controlDeTermitas } from './control-de-termitas';
+import { controlDeChinches } from './control-de-chinches';
+import { controlDeCucarachas } from './control-de-cucarachas';
+import { restauracionDeEspacioBajoElPiso } from './restauracion-de-espacio-bajo-el-piso';
+import { aislamientoDeAtico } from './aislamiento-de-atico';
+import { tratamientoParaVentaDeCasa } from './tratamiento-para-venta-de-casa';
+import { controlDePlagasComercial } from './control-de-plagas-comercial';
 
 export type { EsServicio } from './tipos';
 
@@ -27,6 +35,14 @@ export const esServicios: EsServicio[] = [
   controlDeAranas,
   controlDeMoscas,
   eliminacionDeAbejas,
+  exclusionYReparaciones,
+  controlDeTermitas,
+  controlDeChinches,
+  controlDeCucarachas,
+  restauracionDeEspacioBajoElPiso,
+  aislamientoDeAtico,
+  tratamientoParaVentaDeCasa,
+  controlDePlagasComercial,
 ];
 
 export const esServicioBySlug = (slug: string) => esServicios.find((s) => s.slug === slug);

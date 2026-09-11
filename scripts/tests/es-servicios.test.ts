@@ -49,6 +49,22 @@ for (const s of esServicios) {
   seen.add(s.slug);
 }
 
+/* Keystone M2 and M5 on the Spanish data, added 10 Sep 2026. English pages
+   get these from the content-collection schema; these modules are plain
+   TypeScript and got nothing, which is how three Quick Answers ran to 68–73
+   words and a description to 170 characters without anything noticing. The
+   rendered-page harness trims a long description rather than failing it, so
+   the source has to be held here. */
+for (const s of esServicios) {
+  const words = s.answer.trim().split(/\s+/).length;
+  if (words < 40 || words > 60) problems.push(`${s.slug}: Quick Answer is ${words} words (M2: 40–60)`);
+  if (s.title.length > 60) problems.push(`${s.slug}: title is ${s.title.length} characters (M5: ≤ 60)`);
+  const d = s.description.trim();
+  if (d.length < 110 || d.length > 165) problems.push(`${s.slug}: description is ${d.length} characters (M5: 110–165)`);
+  if (!/[.!?]$/.test(d)) problems.push(`${s.slug}: description does not end on punctuation`);
+  if (s.faqs.length === 0) problems.push(`${s.slug}: no FAQ block (M2)`);
+}
+
 for (const p of problems) console.log(`WRONG: ${p}`);
 console.log(problems.length === 0
   ? `\x1b[32mSpanish services: ${esServicios.length} pages, every one paired both ways\x1b[0m`

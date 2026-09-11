@@ -18,7 +18,7 @@ export const eliminacionDeAbejas: EsServicio = {
   description:
     'No matamos abejas melíferas. Identificación primero: casi todas las llamadas por abejas son avispas chaqueta amarilla. Bellingham y Whatcom. Llame al 360-410-2199.',
   answer:
-    'No matamos abejas melíferas. La mayoría de las llamadas por abejas resultan ser avispas chaqueta amarilla, y la mayoría de las llamadas que sí son de abejas necesitan un apicultor o no necesitan nada. Cuando hay una colonia de abejas melíferas establecida dentro de una estructura, eso es un trabajo de retiro y reparación: el panal tiene que salir, porque si se queda causa problemas peores que las abejas.',
+    'No matamos abejas melíferas. Casi todas las llamadas por abejas resultan ser avispas chaqueta amarilla, y las que sí son abejas necesitan un apicultor o nada. Una colonia establecida dentro de una pared es un trabajo de retiro y reparación: el panal tiene que salir, porque si se queda causa problemas peores que las abejas.',
   secciones: [
     {
       h2: 'Empiece aquí: probablemente no son abejas',

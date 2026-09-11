@@ -19,7 +19,7 @@ export const controlDeHormigas: EsServicio = {
   description:
     'Control de hormigas en español en Bellingham y el condado de Whatcom. Hormiga olorosa, hormiga carpintera y hormiga de humedad. Llame al 360-410-2199.',
   answer:
-    'La hormiga olorosa es la que de verdad tienen la mayoría de las casas de aquí, y es la que un aerosol de ferretería empeora: los repelentes parten la colonia en lugar de matarla. La hormiga carpintera es como tres de cada diez llamadas y es la que daña la construcción. La hormiga de humedad significa agua. La identificación decide el tratamiento, porque las tres necesitan trabajo distinto.',
+    'La hormiga olorosa es la que tienen casi todas las casas de aquí, y un aerosol de ferretería la empeora: el repelente parte la colonia en lugar de matarla. La carpintera es como tres de cada diez llamadas y es la que daña la construcción. La de humedad significa agua. Las tres piden trabajo distinto.',
   secciones: [
     {
       h2: 'Tres hormigas, y solo una se mete con su casa',

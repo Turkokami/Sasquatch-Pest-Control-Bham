@@ -21,7 +21,7 @@ export const controlDeAvispas: EsServicio = {
   description:
     'Retiro de nidos de avispa y avispón en español, en Bellingham y el condado de Whatcom. Nidos en el suelo, aéreos y dentro de paredes. Llame al 360-410-2199.',
   answer:
-    'Aquí las colonias llegan a su punto más alto a finales de agosto y en septiembre, que es cuando ocurren casi todas las picaduras. Retiramos nidos en el suelo, nidos aéreos y los nidos dentro de paredes, que son los que de verdad no conviene intentar por su cuenta. Si tiene un nido cerca de una puerta, de un pasillo o de donde juegan los niños, eso pasa al frente de nuestra agenda.',
+    'Aquí las colonias llegan a su punto más alto a finales de agosto y en septiembre, cuando ocurren casi todas las picaduras. Retiramos nidos en el suelo, aéreos y dentro de paredes, que son los que no conviene intentar por su cuenta. Un nido junto a una puerta o donde juegan los niños pasa al frente de nuestra agenda.',
   secciones: [
     {
       h2: 'El problema de fin de verano',

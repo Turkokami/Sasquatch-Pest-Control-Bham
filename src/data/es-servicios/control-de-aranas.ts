@@ -22,7 +22,7 @@ export const controlDeAranas: EsServicio = {
   h1: 'Control de Arañas en Bellingham y el Condado de Whatcom',
   title: 'Control de Arañas en Bellingham, WA',
   description:
-    'Control de arañas en español en Bellingham y el condado de Whatcom. Identificación primero: casi todas las arañas grandes de otoño son inofensivas. Llame al 360-410-2199.',
+    'Control de arañas en Bellingham y el condado de Whatcom. Casi todas las arañas grandes de otoño son inofensivas; identificamos antes de tratar. Llame: 360-410-2199.',
   answer:
     'Casi todas las arañas grandes que se encuentran adentro en otoño aquí son la araña doméstica gigante, y es inofensiva. Tratamos el exterior, quitamos las telarañas y reducimos los insectos que le sirven de comida, y le vamos a decir cuando lo que tiene no necesita tratamiento. La identificación va antes de que alguien le recomiende un servicio.',
   secciones: [
