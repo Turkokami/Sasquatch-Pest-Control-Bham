@@ -6,6 +6,10 @@ import { excrementoEnLaCocina } from './excremento-en-la-cocina';
 import { roedoresEnElAislamientoDelAtico } from './roedores-en-el-aislamiento-del-atico';
 import { sellarUnaRendijaDeUnCuartoDePulgada } from './sellar-una-rendija-de-un-cuarto-de-pulgada';
 import { mallaParaLasVentilasBajoElPiso } from './malla-para-las-ventilas-bajo-el-piso';
+import { hormigasEnLaCocina } from './hormigas-en-la-cocina';
+import { hormigasDeHumedadYAgua } from './hormigas-de-humedad-y-agua';
+import { hormigasCarpinterasEnUnaVentana } from './hormigas-carpinteras-en-una-ventana';
+import { aserrinBajoLaMoldura } from './aserrin-bajo-la-moldura';
 
 export type { EsProblema } from './tipos';
 
@@ -21,6 +25,10 @@ export const esProblemas: EsProblema[] = [
   roedoresEnElAislamientoDelAtico,
   sellarUnaRendijaDeUnCuartoDePulgada,
   mallaParaLasVentilasBajoElPiso,
+  hormigasEnLaCocina,
+  hormigasDeHumedadYAgua,
+  hormigasCarpinterasEnUnaVentana,
+  aserrinBajoLaMoldura,
 ];
 
 /** Slug español del servicio padre, leído de src/data/es-servicios/. */
