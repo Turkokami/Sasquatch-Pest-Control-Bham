@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
-import LeadForm from '../../components/LeadForm.astro';
+import QuickNav from '../../components/QuickNav.astro';
 import Faq from '../../components/Faq.astro';
 import LinkRail from '../../components/LinkRail.astro';
 import { business } from '../../data/business';
@@ -75,7 +75,8 @@ const rails = [
 >
   <h1>Referencias locales: a quién mandamos a la gente</h1>
   <AnswerBox text={answer} />
-  <LeadForm />
+
+  <QuickNav rails={[{ heading: 'Relacionado', links: rails }]} />
 
   <div class="prose">
     <p>
@@ -225,8 +226,6 @@ const rails = [
   </div>
 
   <Faq items={faqs} />
-
-  <LinkRail heading="Relacionado" links={rails} />
 
   <div class="prose" data-boilerplate>
     <h2>¿Tiene una pregunta sobre esta página?</h2>

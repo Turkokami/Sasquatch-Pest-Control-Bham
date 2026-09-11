@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
@@ -95,16 +95,15 @@ const blogLinks = await blogPostsFor(path);
 
   {entry?.data.answer && <AnswerBox text={entry.data.answer} />}
 
-  {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
-      It used to hang off the foot of Cta.astro, which put it under three
-      thousand words: a reader who had already decided to act had to scroll
-      an entire article to find anything to act on. The quick answer still
-      leads — it is one short paragraph and the schema's speakable selector
-      points at it — and the form comes straight after.
-  
-      ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
-      copy would break both; the CTA at the foot no longer carries one and
-      keeps its phone button. The sticky mobile bar jumps to this. */}
+  <QuickNav rails={[
+    { heading: `Pest control services in ${t.name}`, links: svc },
+    { heading: `Neighborhoods we serve in ${t.name}`, links: neighborhoods },
+    /* All same-county siblings. There are at most twelve of them, so the
+       slice(0, 12) this replaced never did anything except look like a
+       limit that had been considered. */
+    { heading: `Nearby communities in ${t.county}`, links: [{ href: `/locations/${countySlug}/`, label: `All of ${t.county}` }, ...siblings] },
+  ]} />
+
   {/* THE PHOTOGRAPH, ABOVE THE FORM RATHER THAN BELOW IT. Owner's call, and
       it is the right one: this is the only picture on a town page and it was
       sitting under a tall third-party iframe, which on a phone is most of a
@@ -118,15 +117,12 @@ const blogLinks = await blogPostsFor(path);
       everywhere and belong to no one town. */}
   <Photo photo={townPhoto} />
 
-  <LeadForm />
-
   {/* THE MAP, MOVED UP FROM THE FOOT OF THE PAGE. It used to sit below
       the FAQ and the link rails, which put the one element that answers
       "do you actually cover where I live" behind three thousand words of
       prose. On a place page that question is the reason the reader came,
       so it is answered next to the form rather than after everything.
       The component still carries the privacy and keyless-embed reasoning. */}
-
 
   <LocationMap place={t.name} />
 
@@ -154,10 +150,6 @@ const blogLinks = await blogPostsFor(path);
     </>
   )}
 
-  {neighborhoods.length > 0 && (
-    <LinkRail heading={`Neighborhoods we serve in ${t.name}`} links={neighborhoods} />
-  )}
-
   {/* TWO SENTENCES, BECAUSE THERE ARE NOW TWO CASES. This read "these share a
       housing stock with the neighborhoods above and are covered in the grouped
       section on this page" — written for Bellingham, where twelve
@@ -170,22 +162,12 @@ const blogLinks = await blogPostsFor(path);
     <p class="prose" data-boilerplate>
       <b>Also across {t.name}:</b> {alsoNeighborhoods.join(', ')}.{' '}
       {neighborhoods.length > 0
-        ? 'These share a housing stock with the neighborhoods above and are covered here rather than on a page of their own.'
+        ? 'These share a housing stock with the neighborhoods listed at the top of this page and are covered here rather than on a page of their own.'
         : `We work all of these. They are named here rather than given separate pages, because the job in them is the ${t.name} job — same housing stock, same pressures, same crew.`}
     </p>
   )}
 
-  <LinkRail heading={`Pest control services in ${t.name}`} links={svc} />
-
   <Faq items={faqs} />
-
-  <LinkRail
-    heading={`Nearby communities in ${t.county}`}
-    {/* All same-county siblings. There are at most twelve of them, so the
-        slice(0, 12) this replaced never did anything except look like a
-        limit that had been considered. */}
-    links={[{ href: `/locations/${countySlug}/`, label: `All of ${t.county}` }, ...siblings]}
-  />
 
   <LinkRail heading="Guides" links={guideLinks} />
 

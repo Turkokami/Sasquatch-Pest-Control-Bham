@@ -2,11 +2,13 @@
 /**
  * LeadForm — the company's live GoHighLevel lead form, embedded.
  *
- * ONE COMPONENT, EVERY PAGE. This renders inside Cta.astro, which all 18
- * route files already include, so the form reaches all 207 pages from a
- * single edit. That is deliberate and it is the same call LocationMap makes:
- * an iframe pasted into each template is the duplication this codebase has
- * had to undo three times already. If the form id ever changes it changes in
+ * ONE COMPONENT, EVERY PAGE. BaseLayout renders it at the foot of <main> on
+ * every page (owner's call, 11 Sep 2026 — see the leadForm prop there and
+ * QuickNav.astro, whose button at the top of the page jumps here), so the form
+ * reaches every page from a single edit. That is deliberate and it is the
+ * same call LocationMap makes: an iframe pasted into each template is the
+ * duplication this codebase has had to undo three times already. If the
+ * form id ever changes it changes in
  * src/data/business.ts and nowhere else.
  *
  * COPIED, NOT REBUILT. Every attribute below is transcribed from the embed on

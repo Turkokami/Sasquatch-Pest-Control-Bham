@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import { business } from '../../../data/business';
 import { t } from '../../../data/i18n';
 import { esPueblo, esPathOf } from '../../../data/es-areas';
@@ -33,6 +33,13 @@ const whatcom: [string, string, string][] = [
   ['Deming', 'deming', 'Donde la tierra de cultivo se junta con el bosque, con la presión de los dos: ratas y ratones todo el año, una temporada fuerte de hormiga carpintera en primavera y verano, y en otoño mariquitas, chinches apestosas y arañas llegando juntas.'],
   ['Acme', 'acme', 'Sobre el brazo sur del río Nooksack, y el río es lo que lo hace distinto: un manto freático alto que mantiene húmedos los espacios bajo el piso, un corredor de ribera por donde se mueven los roedores, y campo y bosque apretando por los dos lados de una sola carretera.'],
 ];
+/* Para los menús de arriba (QuickNav): cada pueblo, a su página en español
+   o, si todavía no tiene, a la inglesa marcada. */
+const menuDe = (rows: [string, string, string][]) =>
+  rows.map(([name, slug]) => {
+    const es = esPueblo(slug);
+    return es ? { href: esPathOf(es), label: name } : { href: `/locations/${slug}/`, label: `${name} (en inglés)` };
+  });
 const skagit: [string, string, string][] = [
   ['Mount Vernon', 'mount-vernon', 'El lugar más grande donde trabajamos en Skagit, partido en tres: un centro histórico donde los edificios comparten sus roedores, casas viejas en la parte baja junto al río, y fraccionamientos nuevos pegados a campos que se vacían dos veces al año.'],
   ['Burlington', 'burlington', 'El corazón comercial del condado, y casi todo nuestro trabajo aquí es comercial: tiendas grandes, distribución y restaurantes con techos planos enormes y andenes con tráfico constante. Alrededor, vivienda nueva sobre antiguo campo de cultivo.'],
@@ -55,7 +62,11 @@ const answer =
 >
   <h1>Áreas de Servicio</h1>
   <AnswerBox text={answer} />
-  <LeadForm />
+
+  <QuickNav rails={[
+    { heading: 'Condado de Whatcom', links: [{ href: '/es/areas-de-servicio/condado-de-whatcom/', label: 'Todo el condado' }, ...menuDe(whatcom)] },
+    { heading: 'Condado de Skagit', links: [{ href: '/es/areas-de-servicio/condado-de-skagit/', label: 'Todo el condado' }, ...menuDe(skagit)] },
+  ]} />
 
   <div class="prose">
     <h2>¿Por qué importa en qué pueblo vive?</h2>

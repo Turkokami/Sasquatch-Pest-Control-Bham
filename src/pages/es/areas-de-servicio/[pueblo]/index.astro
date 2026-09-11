@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../../components/AnswerBox.astro';
-import LeadForm from '../../../../components/LeadForm.astro';
+import QuickNav from '../../../../components/QuickNav.astro';
 import Faq from '../../../../components/Faq.astro';
 import LinkRail from '../../../../components/LinkRail.astro';
 import LocationMap from '../../../../components/LocationMap.astro';
@@ -110,7 +110,13 @@ const breadcrumbs = isC
 
   <AnswerBox text={l.answer} />
 
-  <LeadForm />
+  <QuickNav rails={[
+    { heading: isC ? `Servicios en el ${countyLabel}` : `Servicios de control de plagas en ${l.nombre}`, links: svc },
+    { heading: `Barrios que atendemos en ${l.nombre}`, links: barrios },
+    isC
+      ? { heading: `Pueblos del ${countyLabel}`, links: pueblosDelCondado }
+      : { heading: `Comunidades cercanas en el ${countyLabel}`, links: cercanos },
+  ]} />
 
   {isC
     ? <LocationMap place={countyName} label={countyLabel} />
@@ -125,15 +131,7 @@ const breadcrumbs = isC
     ))}
   </div>
 
-  {barrios.length > 0 && <LinkRail heading={`Barrios que atendemos en ${l.nombre}`} links={barrios} />}
-
-  <LinkRail heading={isC ? `Servicios en el ${countyLabel}` : `Servicios de control de plagas en ${l.nombre}`} links={svc} />
-
   <Faq items={l.faqs} />
-
-  {isC
-    ? pueblosDelCondado.length > 0 && <LinkRail heading={`Pueblos del ${countyLabel}`} links={pueblosDelCondado} />
-    : cercanos.length > 0 && <LinkRail heading={`Comunidades cercanas en el ${countyLabel}`} links={cercanos} />}
 
   <div class="prose" data-boilerplate>
     <h2>Pida una visita</h2>

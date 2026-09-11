@@ -2,7 +2,7 @@
 import { intrinsicSize } from '../lib/images';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
-import LeadForm from '../components/LeadForm.astro';
+import QuickNav from '../components/QuickNav.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import LinkRail from '../components/LinkRail.astro';
@@ -195,7 +195,7 @@ const rails = [
   <h1>Awards, recognition and how to check any of it</h1>
   <AnswerBox text={answer} />
 
-  <LeadForm />
+  <QuickNav rails={[{ heading: 'Related', links: rails }]} />
 
   <div class="prose">
     <p>
@@ -560,8 +560,6 @@ const rails = [
   </div>
 
   <Faq items={faqs} />
-
-  <LinkRail heading="Related" links={rails} />
 
   <Cta market="Whatcom County" />
 </BaseLayout>

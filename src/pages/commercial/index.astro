@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
-import LeadForm from '../../components/LeadForm.astro';
+import QuickNav from '../../components/QuickNav.astro';
 import { getCollection } from 'astro:content';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
@@ -89,31 +89,27 @@ const writtenVerticals = industryEntries
   <h1>Commercial Pest Control in Whatcom County</h1>
   <AnswerBox text={answer} />
 
-  {/* THE INDUSTRY CHOOSER SITS AT THE TOP, above the lead form, and that is
-      the point of it. A business owner landing here already knows what they
+  {/* THE INDUSTRY CHOOSER SITS AT THE TOP, in QuickNav under the call and
+      estimate buttons, and that is the point of it. A business owner landing here already knows what they
       run — the useful first move is to send them to their own vertical, not
-      to make them read six hundred words of general commercial copy and then
-      scroll past a form to find the link. It is nine buttons and costs almost
+      to make them read six hundred words of general commercial copy to find
+      the link. It is nine buttons and costs almost
       no vertical space.
 
       Grid rather than the two-column flow the prose rails use: nine items
       split two-and-one leaves a ragged column, and these are short labels
       being used as a chooser rather than page titles being listed. */}
-  {writtenVerticals.length > 0 && (
-    <LinkRail heading="Choose your industry" links={writtenVerticals} grid />
-  )}
-
-  {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
-      It used to hang off the foot of Cta.astro, which put it under three
-      thousand words: a reader who had already decided to act had to scroll
-      an entire article to find anything to act on. The quick answer still
-      leads — it is one short paragraph and the schema's speakable selector
-      points at it — and the form comes straight after.
-  
-      ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
-      copy would break both; the CTA at the foot no longer carries one and
-      keeps its phone button. The sticky mobile bar jumps to this. */}
-  <LeadForm />
+  <QuickNav rails={[
+    writtenVerticals.length > 0 && { heading: 'Choose your industry', links: writtenVerticals, grid: true },
+    {
+      heading: 'Services behind our commercial programs',
+      links: [
+        { href: '/services/commercial-pest-control/', label: 'Commercial pest control' },
+        { href: '/services/rodent-control/', label: 'Rodent & mouse control' },
+        { href: '/services/exclusion-and-repairs/', label: 'Pest exclusion & repairs' },
+      ],
+    },
+  ]} />
 
   {/* Leads the hub, so it is eager: it is the first contentful image on the
       page and lazy-loading the thing above the fold is how a page ends up
@@ -363,15 +359,6 @@ const writtenVerticals = industryEntries
   <ul class="rail">
     {verticals.map(([slug, label]) => <li><span>{label}</span></li>)}
   </ul>
-
-  <LinkRail
-    heading="Services behind our commercial programs"
-    links={[
-      { href: '/services/commercial-pest-control/', label: 'Commercial pest control' },
-      { href: '/services/rodent-control/', label: 'Rodent & mouse control' },
-      { href: '/services/exclusion-and-repairs/', label: 'Pest exclusion & repairs' },
-    ]}
-  />
 
   <Faq items={faqs} />
   <LinkRail heading="Guides" links={guideLinks} />

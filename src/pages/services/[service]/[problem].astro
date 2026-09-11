@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
@@ -71,23 +71,16 @@ const blogLinks = await blogPostsFor(path);
 
   {entry?.data.answer && <AnswerBox text={entry.data.answer} />}
 
-  {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
-      It used to hang off the foot of Cta.astro, which put it under three
-      thousand words: a reader who had already decided to act had to scroll
-      an entire article to find anything to act on. The quick answer still
-      leads — it is one short paragraph and the schema's speakable selector
-      points at it — and the form comes straight after.
-  
-      ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
-      copy would break both; the CTA at the foot no longer carries one and
-      keeps its phone button. The sticky mobile bar jumps to this. */}
+  <QuickNav rails={[
+    { heading: 'The service behind this', links: [{ href: `/services/${s.slug}/`, label: s.name }] },
+    { heading: 'Related problems', links: siblings },
+  ]} />
+
   {/* Above the form, same reasoning as the town pages: the form is a tall
       third-party iframe and a photograph below it is most of a screen away on
       a phone. Four of twenty-three problem pages have one — src/data/photos.ts
       records which candidates were rejected on looking at them and why. */}
   {problemPhotos[p.slug] && <Photo photo={problemPhotos[p.slug]} />}
-
-  <LeadForm />
 
   {Body ? (
     <div class="prose"><Body /></div>
@@ -100,13 +93,6 @@ const blogLinks = await blogPostsFor(path);
   )}
 
   <Faq items={faqs} />
-
-  {siblings.length > 0 && <LinkRail heading="Related problems" links={siblings} />}
-
-  <LinkRail
-    heading="The service behind this"
-    links={[{ href: `/services/${s.slug}/`, label: s.name }]}
-  />
 
   <LinkRail heading="Guides" links={guideLinks} />
 

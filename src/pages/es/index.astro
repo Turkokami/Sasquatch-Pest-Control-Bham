@@ -1,10 +1,22 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
-import LeadForm from '../../components/LeadForm.astro';
+import QuickNav from '../../components/QuickNav.astro';
 import { business, isReady } from '../../data/business';
 import { t } from '../../data/i18n';
 import { esServicios } from '../../data/es-servicios';
+import { esLugares, esPathOf } from '../../data/es-areas';
+
+/* Los menús de arriba (QuickNav): los servicios con página en español y los
+   pueblos con página en español, sin los barrios. */
+const menuServicios = [
+  ...esServicios.map((s) => ({ href: `/es/servicios/${s.slug}/`, label: s.nav })),
+  { href: '/es/servicios/', label: 'Todos los servicios' },
+];
+const menuPueblos = [
+  ...esLugares.filter((l) => !l.barrio).map((l) => ({ href: esPathOf(l), label: l.nombre })),
+  { href: '/es/areas-de-servicio/', label: 'Todas las áreas' },
+];
 
 const path = '/es/';
 const a = business.address;
@@ -28,7 +40,11 @@ const answer =
 >
   <h1>Control de Plagas en Bellingham, Washington</h1>
   <AnswerBox text={answer} />
-  <LeadForm />
+
+  <QuickNav rails={[
+    { heading: 'Servicios', links: menuServicios },
+    { heading: 'Dónde trabajamos', links: menuPueblos },
+  ]} />
 
   <div class="prose">
     <h2>Hablamos español</h2>
@@ -48,17 +64,10 @@ const answer =
       Whatcom y Skagit: roedores, insectos que pican, hormigas, arañas,
       termitas de madera húmeda, chinches de cama y los insectos que se meten a
       pasar el invierno, más el trabajo de sellar por dónde entran para que el
-      problema no vuelva. Estos servicios ya tienen su página completa en
-      español:
-    </p>
-    <ul>
-      {esServicios.map((s) => (
-        <li><a href={`/es/servicios/${s.slug}/`}>{s.nav}</a></li>
-      ))}
-    </ul>
-    <p>
-      La <a href="/es/servicios/">lista completa de servicios</a> incluye los
-      que todavía están explicados solo en inglés.
+      problema no vuelva. Los servicios que ya tienen su página completa en
+      español están en los botones al principio de esta página, y la{' '}
+      <a href="/es/servicios/">lista completa de servicios</a> incluye los que
+      todavía están explicados solo en inglés.
     </p>
 
     <h2>Por qué la exclusión importa</h2>

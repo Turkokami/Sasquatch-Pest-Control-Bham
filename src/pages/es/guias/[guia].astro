@@ -10,7 +10,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import SourceList from '../../../components/SourceList.astro';
@@ -63,7 +63,7 @@ const hermanos = esGuias
   <h1>{e.h1}</h1>
   <AnswerBox text={e.answer} />
 
-  <LeadForm />
+  <QuickNav />
 
   <div class="prose">
     {e.secciones.map((sec) => (

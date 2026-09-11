@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
-import LeadForm from '../components/LeadForm.astro';
+import QuickNav from '../components/QuickNav.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import LinkRail from '../components/LinkRail.astro';
@@ -116,7 +116,7 @@ const rails = [
   <h1>What the work actually looks like</h1>
   <AnswerBox text={answer} />
 
-  <LeadForm />
+  <QuickNav rails={[{ heading: 'The services behind these photographs', links: rails }]} />
 
   <div class="prose">
     <p>
@@ -151,8 +151,6 @@ const rails = [
   }
 
   <Faq items={faqs} />
-
-  <LinkRail heading="The services behind these photographs" links={rails} />
 
   <Cta market="Whatcom County" />
 </BaseLayout>

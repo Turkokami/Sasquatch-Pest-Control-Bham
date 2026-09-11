@@ -4,6 +4,7 @@ import AnswerBox from '../components/AnswerBox.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import LinkRail from '../components/LinkRail.astro';
+import QuickNav from '../components/QuickNav.astro';
 
 const path = '/trusted-partners/';
 
@@ -137,6 +138,8 @@ const rails = [
 >
   <h1>Local referrals: who we send people to</h1>
   <AnswerBox text={answer} />
+
+  <QuickNav rails={[{ heading: 'Related', links: rails }]} />
 
   <div class="prose">
     <p>
@@ -556,8 +559,6 @@ const rails = [
   </div>
 
   <Faq items={faqs} />
-
-  <LinkRail heading="Related" links={rails} />
 
   <Cta market="Whatcom County" />
 </BaseLayout>

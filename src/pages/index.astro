@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { srcsetFor } from '../lib/images';
 import Video from '../components/Video.astro';
 import AnswerBox from '../components/AnswerBox.astro';
-import LeadForm from '../components/LeadForm.astro';
+import QuickNav from '../components/QuickNav.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import LinkRail from '../components/LinkRail.astro';
@@ -98,17 +98,10 @@ const faqs = [
   <h1>Exclusion-First Pest Control in Bellingham and Whatcom County</h1>
   <AnswerBox text={answer} />
 
-  {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
-      It used to hang off the foot of Cta.astro, which put it under three
-      thousand words: a reader who had already decided to act had to scroll
-      an entire article to find anything to act on. The quick answer still
-      leads — it is one short paragraph and the schema's speakable selector
-      points at it — and the form comes straight after.
-  
-      ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
-      copy would break both; the CTA at the foot no longer carries one and
-      keeps its phone button. The sticky mobile bar jumps to this. */}
-  <LeadForm />
+  <QuickNav rails={[
+    { heading: 'What we handle', links: svc },
+    { heading: 'Where we work', links: cities },
+  ]} />
 
   <div class="prose">
     <h2>Bellingham's family-owned pest control company</h2>
@@ -252,14 +245,10 @@ const faqs = [
       whether you need a visit at all.
     </p>
 
-
   {/* The advert, at the foot of the article rather than the top. It is brand
       film, not an answer to anything, so it sits after the page has done its
       job — and the facade means it costs nothing until somebody wants it. */}
   <Video name="autumn-film" heading="Us, in ninety seconds" />
-
-  <LinkRail heading="What we handle" links={svc} />
-  <LinkRail heading="Where we work" links={cities} />
 
   <Faq items={faqs} />
   </div>

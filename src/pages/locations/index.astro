@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
-import LeadForm from '../../components/LeadForm.astro';
+import QuickNav from '../../components/QuickNav.astro';
 import Photo from '../../components/Photo.astro';
 import { locationsHubPhoto } from '../../data/photos';
 import Cta from '../../components/Cta.astro';
@@ -57,17 +57,42 @@ const faqs = [
   <h1>Pest Control Service Areas</h1>
   <AnswerBox text={answer} />
 
-  {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
-      It used to hang off the foot of Cta.astro, which put it under three
-      thousand words: a reader who had already decided to act had to scroll
-      an entire article to find anything to act on. The quick answer still
-      leads — it is one short paragraph and the schema's speakable selector
-      points at it — and the form comes straight after.
-  
-      ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
-      copy would break both; the CTA at the foot no longer carries one and
-      keeps its phone button. The sticky mobile bar jumps to this. */}
-  <LeadForm />
+  <QuickNav />
+
+  <section>
+    <h2>Whatcom County</h2>
+    {whatcom.map((t) => (
+      <>
+        <h3><a href={`/locations/${t.slug}/`}>{t.name}</a></h3>
+        {pagedNeighborhoods(t).length ? (
+          <ul class="rail">
+            {pagedNeighborhoods(t).map((n) => (
+              <li><a href={`/locations/${t.slug}/${n.slug}/`}>{n.name}</a></li>
+            ))}
+          </ul>
+        ) : null}
+      </>
+    ))}
+  </section>
+
+  {skagitOk && skagit.length > 0 && (
+    <section>
+      <h2>Skagit County</h2>
+      <ul class="rail">
+        {skagit.map((t) => <li><a href={`/locations/${t.slug}/`}>{t.name}</a></li>)}
+      </ul>
+    </section>
+  )}
+
+  {mentionOnly.length > 0 && (
+    <section>
+      <h2>Also serving</h2>
+      <p class="prose">
+        We also run routes through {mentionOnly.join(', ')}. These communities do
+        not have their own page — call or text us and we will confirm coverage.
+      </p>
+    </section>
+  )}
 
   {/* The hub is not a place, so it gets the vehicle rather than a town. */}
   <Photo photo={locationsHubPhoto} />
@@ -220,42 +245,7 @@ const faqs = [
       reaction. Catching a rodent entry in November is a different job from
       cleaning up an attic in April.
     </p>
-
-
-  <section>
-    <h2>Whatcom County</h2>
-    {whatcom.map((t) => (
-      <>
-        <h3><a href={`/locations/${t.slug}/`}>{t.name}</a></h3>
-        {pagedNeighborhoods(t).length ? (
-          <ul class="rail">
-            {pagedNeighborhoods(t).map((n) => (
-              <li><a href={`/locations/${t.slug}/${n.slug}/`}>{n.name}</a></li>
-            ))}
-          </ul>
-        ) : null}
-      </>
-    ))}
-  </section>
-
-  {skagitOk && skagit.length > 0 && (
-    <section>
-      <h2>Skagit County</h2>
-      <ul class="rail">
-        {skagit.map((t) => <li><a href={`/locations/${t.slug}/`}>{t.name}</a></li>)}
-      </ul>
-    </section>
-  )}
-
-  {mentionOnly.length > 0 && (
-    <section>
-      <h2>Also serving</h2>
-      <p class="prose">
-        We also run routes through {mentionOnly.join(', ')}. These communities do
-        not have their own page — call or text us and we will confirm coverage.
-      </p>
-    </section>
-  )}
+  </div>
 
   <Faq items={faqs} />
   <Cta market="Whatcom County" />

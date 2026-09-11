@@ -13,7 +13,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../../components/AnswerBox.astro';
-import LeadForm from '../../../../components/LeadForm.astro';
+import QuickNav from '../../../../components/QuickNav.astro';
 import Faq from '../../../../components/Faq.astro';
 import LinkRail from '../../../../components/LinkRail.astro';
 import { business } from '../../../../data/business';
@@ -66,7 +66,10 @@ const hermanos = esProblemas
   <h1>{e.h1}</h1>
   <AnswerBox text={e.answer} />
 
-  <LeadForm />
+  <QuickNav rails={[
+    { heading: 'El servicio detrás de esto', links: [{ href: `/es/servicios/${es.slug}/`, label: es.h1 }] },
+    { heading: 'Problemas relacionados', links: hermanos },
+  ]} />
 
   <div class="prose">
     {e.secciones.map((sec) => (
@@ -79,9 +82,6 @@ const hermanos = esProblemas
   </div>
 
   <Faq items={e.faqs} />
-
-  {hermanos.length > 0 && <LinkRail heading="Problemas relacionados" links={hermanos} />}
-  <LinkRail heading="El servicio detrás de esto" links={[{ href: `/es/servicios/${es.slug}/`, label: es.h1 }]} />
 
   <div class="prose" data-boilerplate>
     <h2>Pida una visita</h2>

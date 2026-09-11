@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import Photo from '../../../components/Photo.astro';
 import Training from '../../../components/Training.astro';
 import EntryPoints from '../../../components/EntryPoints.astro';
@@ -89,17 +89,10 @@ const photos = galleryFor(s.slug);
 
   {answer && <AnswerBox text={answer} />}
 
-  {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
-      It used to hang off the foot of Cta.astro, which put it under three
-      thousand words: a reader who had already decided to act had to scroll
-      an entire article to find anything to act on. The quick answer still
-      leads — it is one short paragraph and the schema's speakable selector
-      points at it — and the form comes straight after.
-  
-      ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
-      copy would break both; the CTA at the foot no longer carries one and
-      keeps its phone button. The sticky mobile bar jumps to this. */}
-  <LeadForm />
+    <QuickNav rails={[
+    { heading: `Common ${s.short.toLowerCase()} problems we get called for`, links: problems },
+    { heading: `Related ${categories[s.category].toLowerCase()} services`, links: siblings },
+  ]} />
 
   {/* THE JOB PHOTO, where the page turns from the offer to the work. Not every
       service has one: the photo library reflects what this company actually
@@ -185,13 +178,7 @@ const photos = galleryFor(s.slug);
 
   <ExpertBlock slug={entry?.data.expert} />
 
-  {problems.length > 0 && (
-    <LinkRail heading={`Common ${s.short.toLowerCase()} problems we get called for`} links={problems} />
-  )}
-
   <Faq items={faqs} />
-
-  <LinkRail heading={`Related ${categories[s.category].toLowerCase()} services`} links={siblings} />
 
   <LinkRail heading="Guides" links={guideLinks} />
 

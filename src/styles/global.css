@@ -643,6 +643,12 @@ section[data-boilerplate]:not(.cta) > h2 {
   display: block;
   margin-bottom: 0.45rem;
 }
+/* The label is CSS content, so harness check 6c (English chrome on /es/
+   pages) cannot see it — and it read "Quick answer" on every Spanish page
+   until 11 Sep 2026. BaseLayout sets <html lang>, which is what this keys on. */
+:lang(es) .answer-box::before {
+  content: "Respuesta rápida";
+}
 .answer-box p {
   margin: 0;
   font-size: var(--fs-lead);
@@ -975,6 +981,86 @@ section[data-boilerplate]:not(.cta) > h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+/* ------------------------------------------- §11b  the top of the page */
+
+/* QUICKNAV, 11 Sep 2026 — see src/components/QuickNav.astro for the owner's
+   request and the reasoning. The action row sits straight under the Quick
+   Answer: call in the brand solid, the offer as an outlined button beside it
+   that jumps to the form at the foot of the page. Filled outranks outlined,
+   the same ranking §11 uses, so there is still one primary action. */
+.top-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.6rem;
+  margin: var(--space-3) 0 var(--space-2);
+}
+.top-actions .btn {
+  font-size: var(--fs-sm);
+  padding: 0.8rem 1.2rem;
+}
+.top-form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--link);
+  text-decoration: none;
+  background: var(--surface);
+  border: 1.5px solid var(--marker);
+  border-radius: var(--radius);
+  transition: background-color 0.14s ease, color 0.14s ease;
+}
+.top-form:hover,
+.top-form:focus-visible {
+  color: var(--link-hover);
+  background: color-mix(in srgb, var(--marker) 12%, var(--surface));
+}
+/* On a phone the two buttons share the row equally rather than one wrapping
+   under the other at whatever width its label happens to need. */
+@media (max-width: 34rem) {
+  .top-actions > a {
+    flex: 1 1 10rem;
+  }
+}
+
+/* The menus under it. Headings tighter than a rail at the foot of a page —
+   three rails with the full §11 top margin would spend a screen on spacing. */
+section.rail-top[data-boilerplate] > h2 {
+  margin: var(--space-3) 0 var(--space-1);
+}
+/* PILLS, NOT ROWS. A flex container, so the two-column rule in §11 (which is
+   multi-column) does not apply to it. Twenty-three services wrap into a few
+   lines instead of twenty-three full-width rows. Same face, hairline and
+   hover as every other rail button; only the size and the layout change. */
+.rail-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  max-width: none;
+  margin-bottom: var(--space-2);
+}
+/* column-gap restated at the specificity of the two-column rule in §11
+   (.rail:has(> li:nth-child(4)), inside its media query). column-gap is
+   shared by multi-column and flex layouts, so without this the pills pick up
+   the 1.8rem gutter meant for two columns of rows. */
+ul.rail.rail-chips {
+  column-gap: 0.4rem;
+}
+.rail-chips li {
+  margin: 0;
+}
+.rail-chips a {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  font-size: var(--fs-xs);
+  line-height: 1.3;
 }
 
 /* ----------------------------------------------------- §12  breadcrumbs */
@@ -1610,6 +1696,9 @@ footer.site .colophon {
   content: "Our verdict";
   display: block;
   margin-bottom: 0.4rem;
+}
+:lang(es) .verdict::before {
+  content: "Nuestro veredicto";
 }
 .verdict strong {
   font-weight: 600;

@@ -2,7 +2,7 @@
 import { intrinsicSize } from '../../lib/images';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
-import LeadForm from '../../components/LeadForm.astro';
+import QuickNav from '../../components/QuickNav.astro';
 import Faq from '../../components/Faq.astro';
 import LinkRail from '../../components/LinkRail.astro';
 import { business, people, isReady } from '../../data/business';
@@ -144,7 +144,7 @@ const rails = [
   <h1>Premios, reconocimientos y cómo comprobarlos</h1>
   <AnswerBox text={answer} />
 
-  <LeadForm />
+  <QuickNav rails={[{ heading: 'Relacionado', links: rails }]} />
 
   <div class="prose">
     <p>
@@ -361,8 +361,6 @@ const rails = [
   </div>
 
   <Faq items={faqs} />
-
-  <LinkRail heading="Relacionado" links={rails} />
 
   <div class="prose" data-boilerplate>
     <h2>¿Quiere preguntarnos algo de esta página?</h2>

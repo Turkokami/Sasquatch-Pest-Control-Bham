@@ -20,7 +20,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
-import LeadForm from '../../components/LeadForm.astro';
+import QuickNav from '../../components/QuickNav.astro';
 import Faq from '../../components/Faq.astro';
 import LinkRail from '../../components/LinkRail.astro';
 import Cta from '../../components/Cta.astro';
@@ -63,7 +63,7 @@ const siblings = all
   <h1>{d.h1}</h1>
   <AnswerBox text={d.answer} />
 
-  <LeadForm />
+  <QuickNav rails={[{ heading: 'Other commercial programs', links: siblings }]} />
 
   {/* Only the verticals we have a genuine photograph of. Eight of the nine
       render without one rather than repeat the same scissor lift nine times
@@ -73,10 +73,6 @@ const siblings = all
   <div class="prose"><Content /></div>
 
   <Faq items={d.faqs} />
-
-  {siblings.length > 0 && (
-    <LinkRail heading="Other commercial programs" links={siblings} />
-  )}
 
   {/* Back to the hub, always. A vertical page is a branch of the commercial
       argument rather than a standalone service, and a reader who lands here

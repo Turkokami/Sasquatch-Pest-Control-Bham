@@ -13,7 +13,7 @@
  */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { business } from '../../../data/business';
@@ -76,9 +76,10 @@ const faqs = [
   <h1>Control de Plagas Comercial en el Condado de Whatcom</h1>
   <AnswerBox text={answer} />
 
-  {giros.length > 0 && <LinkRail heading="Escoja su industria" links={giros} grid />}
-
-  <LeadForm />
+  <QuickNav rails={[
+    giros.length > 0 && { heading: 'Escoja su industria', links: giros, grid: true },
+    { heading: 'Servicios detrás de nuestros programas comerciales', links: servicios },
+  ]} />
 
   <div class="prose">
     <h2>Documentado, discreto y confiable</h2>
@@ -145,8 +146,6 @@ const faqs = [
       otoño. Planearlo entonces sale más barato que reaccionar en noviembre.
     </p>
   </div>
-
-  <LinkRail heading="Servicios detrás de nuestros programas comerciales" links={servicios} />
 
   <Faq items={faqs} />
 

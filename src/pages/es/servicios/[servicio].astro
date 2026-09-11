@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { business } from '../../../data/business';
@@ -39,7 +39,22 @@ const rails = esServicios
 >
   <h1>{s.h1}</h1>
   <AnswerBox text={s.answer} />
-  <LeadForm />
+
+  <QuickNav rails={[
+    /* Los problemas de este servicio que ya tienen página en español. */
+    {
+      heading: 'Problemas que atendemos',
+      links: esProblemas
+        .filter((p) => `/services/${p.service}/` === s.enPath)
+        .map((p) => ({ href: esProblemaPath(p), label: p.nav })),
+    },
+    /* Solo en el servicio comercial: sus industrias, en español. */
+    s.slug === 'control-de-plagas-comercial' && {
+      heading: 'Programas por industria',
+      links: [{ href: '/es/comercial/', label: 'Todo el control de plagas comercial' }, ...esGiros.map((g) => ({ href: esGiroPath(g), label: g.nav }))],
+    },
+    { heading: 'Otros servicios', links: rails },
+  ]} />
 
   <div class="prose">
     {s.secciones.map((sec) => (
@@ -61,22 +76,6 @@ const rails = esServicios
   </div>
 
   <Faq items={s.faqs} />
-
-  {/* Los problemas de este servicio que ya tienen página en español. */}
-  {(() => {
-    const probs = esProblemas
-      .filter((p) => `/services/${p.service}/` === s.enPath)
-      .map((p) => ({ href: esProblemaPath(p), label: p.nav }));
-    return probs.length > 0 && <LinkRail heading="Problemas que atendemos" links={probs} />;
-  })()}
-  {/* Solo en el servicio comercial: sus industrias, en español. */}
-  {s.slug === 'control-de-plagas-comercial' && (
-    <LinkRail
-      heading="Programas por industria"
-      links={[{ href: '/es/comercial/', label: 'Todo el control de plagas comercial' }, ...esGiros.map((g) => ({ href: esGiroPath(g), label: g.nav }))]}
-    />
-  )}
-  <LinkRail heading="Otros servicios" links={rails} />
 
   <p class="prose" data-boilerplate>{S.englishOnwardNote}</p>
 </BaseLayout>

@@ -107,7 +107,10 @@ Three sources disagree, and the site currently says both things.
   answers "Is bird work available?" with "Exclusion and deterrence, yes —
   netting…"), the marinas and retail verticals, the photo caption on
   `/services/commercial-pest-control/` ("Bird exclusion on a commercial
-  building"), and four gallery images of bird netting and ledge work.
+  building"), and sixteen gallery images of bird netting and ledge work —
+  thirteen whose alt text says so, and three (g27714, g27716, g27731) whose alt
+  says only "exclusion" or "commercial work" but which show the same netting job
+  when looked at. The Spanish gallery leaves all sixteen out.
 
 A plausible reading is that residential bird work was retired and commercial
 bird exclusion was not — but nothing on file says that, so nothing has been
@@ -115,3 +118,23 @@ changed. Once decided: if commercial bird exclusion is offered, the retirement
 note and `/about/` need to say "residential"; if it is not, the three vertical
 sections, the caption and the gallery captions come out. Either way, update
 Keystone Part 1.4 to match so the standard stops contradicting the site.
+
+## 9. Menus at the top, the form at the foot — settled, owner's call
+
+On 11 Sep 2026 the owner asked for the selection menus (services, service areas
+and the like) near the top of every page, "not buried under 3k worth of words",
+and for the contact form to move down or become a button.
+
+What the site does now, on every page from one component (`QuickNav.astro`):
+the Quick Answer, then a call button and an estimate button, then the page's
+menus as compact buttons. The one lead form is rendered by `BaseLayout` at the
+foot of `<main>`; the estimate button and the sticky mobile bar both jump to
+it. Contact, 404 and `/network/` opt out with `leadForm={false}`. Reading
+lists ("Guides", "From the blog", "Related guides", "Related posts") stay at
+the foot of each page.
+
+This departs from Keystone v2 Part 4.2, whose template orders place link blocks
+mid-page or late. It was changed the way Part 4 says a contract changes — once,
+for every page, from one place — and Part 4A's "primary CTA above the fold at
+390px" is met by the action row. Do not move the rails back down to match the
+Keystone order without asking the owner; update Part 4.2 instead.

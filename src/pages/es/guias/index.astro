@@ -10,7 +10,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { business } from '../../../data/business';
@@ -63,7 +63,15 @@ const faqs = [
   <h1>Guías</h1>
   <AnswerBox text={answer} />
 
-  <LeadForm />
+  <QuickNav />
+
+  {grupos.map((g) => (
+    <div class="prose">
+      <h2>{g.name}</h2>
+      <p>{g.blurb}</p>
+    </div>
+    <LinkRail heading={`Guías: ${g.name.toLowerCase()}`} links={g.links} />
+  ))}
 
   <div class="prose">
     <p>
@@ -122,14 +130,6 @@ const faqs = [
       decirlo más o menos bien es peor que no decirlo.
     </p>
   </div>
-
-  {grupos.map((g) => (
-    <div class="prose">
-      <h2>{g.name}</h2>
-      <p>{g.blurb}</p>
-    </div>
-    <LinkRail heading={`Guías: ${g.name.toLowerCase()}`} links={g.links} />
-  ))}
 
   <Faq items={faqs} />
 

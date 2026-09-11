@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import Video from '../../components/Video.astro';
 import { videoForPest } from '../../data/videos';
-import LeadForm from '../../components/LeadForm.astro';
+import QuickNav from '../../components/QuickNav.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
@@ -150,6 +150,12 @@ const actionLinks = [
 
   <AnswerBox text={p.data.answer} />
 
+  <QuickNav rails={[
+    { heading: 'What to do about it', links: actionLinks },
+    { heading: 'Routinely confused with', links: confusable },
+    { heading: `More ${group.name.toLowerCase()}`, links: siblings },
+  ]} />
+
   {/* Five of forty-one species have one. src/data/photos.ts carries why, and
       the short version is that a generic photograph on an identification page
       is worse than none: the page teaches how to tell two species apart and
@@ -163,18 +169,6 @@ const actionLinks = [
       thing the page is actually teaching. See speciesClips in photos.ts. */}
   {speciesClips[species.slug] && <Clip {...speciesClips[species.slug]} />}
 
-  {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
-      It used to hang off the foot of Cta.astro, which put it under three
-      thousand words: a reader who had already decided to act had to scroll
-      an entire article to find anything to act on. The quick answer still
-      leads — it is one short paragraph and the schema's speakable selector
-      points at it — and the form comes straight after.
-  
-      ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
-      copy would break both; the CTA at the foot no longer carries one and
-      keeps its phone button. The sticky mobile bar jumps to this. */}
-  <LeadForm />
-
   {/* data-boilerplate: the verdict is one of four fixed strings chosen by an
      enum, so it is identical on every profile sharing a verdict by design —
      the same case as the CTA and the source-list review note. Without the
@@ -184,22 +178,14 @@ const actionLinks = [
 
   <div class="prose"><Content /></div>
 
-
   {/* Filed under the name people actually use for this ant. */}
   {videoForPest[species.slug] && (
     <Video name={videoForPest[species.slug]} heading={`${species.common}, on video`} />
   )}
-  <LinkRail heading="What to do about it" links={actionLinks} />
 
   <Faq items={p.data.faqs} />
 
   <SourceList sources={p.data.sources} reviewBy={p.data.reviewBy} />
-
-  {confusable.length > 0 && (
-    <LinkRail heading={`Routinely confused with`} links={confusable} />
-  )}
-
-  {siblings.length > 0 && <LinkRail heading={`More ${group.name.toLowerCase()}`} links={siblings} />}
 
   {blogLinks.length > 0 && <LinkRail heading="From the blog" links={blogLinks} />}
 

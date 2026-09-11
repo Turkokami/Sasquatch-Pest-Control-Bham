@@ -13,7 +13,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { business } from '../../../data/business';
@@ -62,7 +62,7 @@ const hermanos = esGiros
   <h1>{g.h1}</h1>
   <AnswerBox text={g.answer} />
 
-  <LeadForm />
+  <QuickNav rails={[{ heading: 'Otros programas comerciales', links: hermanos }]} />
 
   <div class="prose">
     {g.secciones.map((sec) => (
@@ -75,8 +75,6 @@ const hermanos = esGiros
   </div>
 
   <Faq items={g.faqs} />
-
-  {hermanos.length > 0 && <LinkRail heading="Otros programas comerciales" links={hermanos} />}
 
   <div class="prose" data-boilerplate>
     <p>

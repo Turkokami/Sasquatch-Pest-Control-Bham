@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import SourceList from '../../../components/SourceList.astro';
@@ -89,7 +89,11 @@ const acciones = [
 
   <AnswerBox text={e.answer} />
 
-  <LeadForm />
+  <QuickNav rails={[
+    { heading: 'Qué hacer al respecto', links: acciones },
+    { heading: 'Se confunde seguido con', links: confundibles },
+    { heading: `Más: ${grupo.nombre.toLowerCase()}`, links: hermanas },
+  ]} />
 
   {/* data-boilerplate por la misma razón que en inglés: es una de cuatro
       frases fijas elegidas por un enum, idéntica en cada ficha con el mismo
@@ -105,15 +109,9 @@ const acciones = [
     ))}
   </div>
 
-  <LinkRail heading="Qué hacer al respecto" links={acciones} />
-
   <Faq items={e.faqs} />
 
   <SourceList sources={en.data.sources} reviewBy={en.data.reviewBy} />
-
-  {confundibles.length > 0 && <LinkRail heading="Se confunde seguido con" links={confundibles} />}
-
-  {hermanas.length > 0 && <LinkRail heading={`Más: ${grupo.nombre.toLowerCase()}`} links={hermanas} />}
 
   <div class="prose" data-boilerplate>
     <h2>¿No sabe qué tiene?</h2>

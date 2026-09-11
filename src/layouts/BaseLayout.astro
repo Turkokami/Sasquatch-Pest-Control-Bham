@@ -32,6 +32,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import MobileActionBar from '../components/MobileActionBar.astro';
+import LeadForm from '../components/LeadForm.astro';
 
 /* `guideTopics` is Omitted as well as title/description: it is not a page's
    business what the guides collection contains. It is the Organization's
@@ -78,6 +79,21 @@ interface Props extends Omit<PageSchemaInput, 'title' | 'description' | 'guideTo
    */
   lang?: 'en' | 'es';
   altPath?: string;
+
+  /**
+   * THE LEAD FORM IS RENDERED HERE, AT THE FOOT OF <main>, on every page —
+   * owner's call, 11 Sep 2026. It had sat directly under the Quick Answer on
+   * every template, which put a 320px form between the reader and the menus
+   * they came to use. Now the top of the page carries a button that jumps
+   * here (QuickNav), the sticky mobile bar jumps here, and the form itself
+   * sits after the closing CTA: three controls, one form, one place.
+   *
+   * One copy per page, always: the GHL loader binds to its frame by id. Pass
+   * false only where the page renders its own form as its subject (the
+   * contact pages and the 404) or must carry none (/network/, which routes
+   * Texas enquiries to the separately run franchise).
+   */
+  leadForm?: boolean;
 }
 
 const {
@@ -88,6 +104,7 @@ const {
   canonicalTo,
   lang = 'en',
   altPath,
+  leadForm = true,
   ...schemaProps
 } = Astro.props;
 
@@ -211,6 +228,7 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
       <div class="wrap">
         {schemaProps.breadcrumbs?.length ? <Breadcrumbs items={schemaProps.breadcrumbs} /> : null}
         <slot />
+        {leadForm && <LeadForm />}
       </div>
     </main>
     <Footer lang={lang} />

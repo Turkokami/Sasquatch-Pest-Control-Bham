@@ -8,8 +8,12 @@ interface Props {
   /** Lay the buttons out as an auto-fitting grid rather than a two-column
    *  flow. For short labels used as a chooser, not for prose-length titles. */
   grid?: boolean;
+  /** Wrapping pill buttons, for a rail shown at the top of a page by QuickNav:
+   *  twenty-three services as full-width rows would push the page's content a
+   *  screen and a half down on a phone. */
+  compact?: boolean;
 }
-const { heading, links, grid = false } = Astro.props;
+const { heading, links, grid = false, compact = false } = Astro.props;
 ---
 {/* data-boilerplate: a link rail is navigation, not content. The harness
     strips it from both the uniqueness floor and the duplicate-sentence
@@ -27,9 +31,9 @@ const { heading, links, grid = false } = Astro.props;
     has been the recurring defect in this codebase. So it is marked once,
     here, and every word floor was re-checked against the lower counts. */}
 {links.length > 0 && (
-  <section data-boilerplate>
+  <section class:list={[compact && 'rail-top']} data-boilerplate>
     <h2>{heading}</h2>
-    <ul class={grid ? 'rail rail-grid' : 'rail'}>
+    <ul class:list={['rail', grid && 'rail-grid', compact && 'rail-chips']}>
       {links.map((l) => (
         <li><a href={l.href}>{l.label}</a></li>
       ))}

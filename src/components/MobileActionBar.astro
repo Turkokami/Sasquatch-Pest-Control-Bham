@@ -55,8 +55,12 @@ const label = offerLabelShort(freeInspectionForPath(path), lang);
    was written and found its button jumping to a form that page has never
    had — along with every Spanish page, which had no form either until the
    same day. The check now fails any same-page anchor with no target, so the
-   next page built without a form cannot ship with this bug. */
-const NO_FORM = new Set(['/network/', '/trusted-partners/']);
+   next page built without a form cannot ship with this bug.
+
+   /trusted-partners/ left the set on 11 Sep 2026, when BaseLayout began
+   rendering the form at the foot of every page: it has one now. /network/
+   stays out, and passes leadForm={false} to the layout on purpose. */
+const NO_FORM = new Set(['/network/']);
 const hasFormOnPage = !NO_FORM.has(path);
 const contactPath = lang === 'es' ? '/es/contacto/' : '/contact/';
 const formHref = hasFormOnPage ? `#${LEAD_FORM_ID}` : `${contactPath}#${LEAD_FORM_ID}`;

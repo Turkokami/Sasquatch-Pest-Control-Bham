@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
-import LeadForm from '../../components/LeadForm.astro';
+import QuickNav from '../../components/QuickNav.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import { GUIDE_CLUSTERS } from '../../data/guide-clusters';
@@ -54,17 +54,29 @@ import PhoneText from '../../components/PhoneText.astro';
 
   <AnswerBox text={answer} />
 
-  {/* THE LEAD FORM SITS HERE, HIGH, and the position is the point.
-      It used to hang off the foot of Cta.astro, which put it under three
-      thousand words: a reader who had already decided to act had to scroll
-      an entire article to find anything to act on. The quick answer still
-      leads — it is one short paragraph and the schema's speakable selector
-      points at it — and the form comes straight after.
-  
-      ONE PER PAGE. The GHL loader binds to its iframe by id, so a second
-      copy would break both; the CTA at the foot no longer carries one and
-      keeps its phone button. The sticky mobile bar jumps to this. */}
-  <LeadForm />
+  <QuickNav />
+
+  {clusters.map((c) => {
+    const items = ready.filter((g) => g.data.cluster === c.key);
+    return (
+      <section>
+        <h2>{c.name}</h2>
+        <p>{c.blurb}</p>
+        {items.length > 0 ? (
+          <ul>
+            {items.map((g) => (
+              <li>
+                <a href={`/guides/${g.slug}/`}>{g.data.h1}</a>
+                {' — '}<PhoneText text={g.data.description} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p><em>In progress.</em></p>
+        )}
+      </section>
+    );
+  })}
 
   <p>
     Most of what a pest control company publishes is written to be found rather
@@ -182,28 +194,6 @@ import PhoneText from '../../components/PhoneText.astro';
     the local building stock in mind. Where something applies more broadly we
     say so; where it is specific to a city or a county line, we say that too.
   </p>
-
-  {clusters.map((c) => {
-    const items = ready.filter((g) => g.data.cluster === c.key);
-    return (
-      <section>
-        <h2>{c.name}</h2>
-        <p>{c.blurb}</p>
-        {items.length > 0 ? (
-          <ul>
-            {items.map((g) => (
-              <li>
-                <a href={`/guides/${g.slug}/`}>{g.data.h1}</a>
-                {' — '}<PhoneText text={g.data.description} />
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p><em>In progress.</em></p>
-        )}
-      </section>
-    );
-  })}
 
   <h2>Suggest one</h2>
 

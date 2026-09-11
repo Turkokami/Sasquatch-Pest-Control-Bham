@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../../components/AnswerBox.astro';
-import LeadForm from '../../../../components/LeadForm.astro';
+import QuickNav from '../../../../components/QuickNav.astro';
 import Faq from '../../../../components/Faq.astro';
 import LinkRail from '../../../../components/LinkRail.astro';
 import LocationMap from '../../../../components/LocationMap.astro';
@@ -76,7 +76,10 @@ const svc = liveServices()
 
   <AnswerBox text={l.answer} />
 
-  <LeadForm />
+  <QuickNav rails={[
+    { heading: `Servicios de control de plagas en ${l.nombre}`, links: svc },
+    { heading: `Más de ${town.name}`, links: [...(pueblo ? [{ href: esPathOf(pueblo), label: `Todo ${town.name}` }] : []), ...hermanos] },
+  ]} />
 
   <LocationMap place={`${n.name}, ${town.name}`} label={`${l.nombre}, ${town.name}`} />
 
@@ -89,16 +92,7 @@ const svc = liveServices()
     ))}
   </div>
 
-  <LinkRail heading={`Servicios de control de plagas en ${l.nombre}`} links={svc} />
-
   <Faq items={l.faqs} />
-
-  {(hermanos.length > 0 || pueblo) && (
-    <LinkRail
-      heading={`Más de ${town.name}`}
-      links={[...(pueblo ? [{ href: esPathOf(pueblo), label: `Todo ${town.name}` }] : []), ...hermanos]}
-    />
-  )}
 
   <div class="prose" data-boilerplate>
     <h2>Pida una visita</h2>
