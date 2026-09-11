@@ -5,9 +5,10 @@ import type { EsServicio } from './tipos';
  * src/content/services/commercial-pest-control.md. Escrita dentro de la banda
  * de Keystone v2 para un servicio.
  *
- * No hay todavía un /es/comercial/ con las páginas por industria, así que esta
- * es la única entrada en español para un dueño de negocio. Las industrias se
- * nombran y se enlazan a la página en inglés de cada una.
+ * Las páginas por industria viven en /es/comercial/ desde el 10 Sep 2026, y la
+ * plantilla de servicios le pone a esta un riel hacia ellas. Antes esta era la
+ * única entrada en español para un dueño de negocio y las industrias se
+ * nombraban sin enlace.
  */
 export const controlDePlagasComercial: EsServicio = {
   slug: 'control-de-plagas-comercial',
@@ -61,7 +62,7 @@ export const controlDePlagasComercial: EsServicio = {
     {
       h2: '¿Con qué negocios trabajamos?',
       parrafos: [
-        'El detalle por industria está en nuestras páginas comerciales, por ahora en inglés: lecherías y ganado, procesamiento de mora y alimentos, marinas y la costa de trabajo, restaurantes, escuelas y guarderías, salud y residencias, tiendas y supermercados, edificios multifamiliares, y edificios de gobierno. Lo que tienen en común todas es que el registro importa tanto como el resultado, y que el trabajo que más vale casi siempre es estructural y no aplicado.',
+        'El detalle por industria está en nuestra sección comercial, con una página para cada una: lecherías y ganado, procesadoras de fruta y alimentos, marinas y muelles, restaurantes, escuelas y guarderías, salud y residencias, tiendas y supermercados, edificios de departamentos, y gobierno y edificios públicos. Lo que tienen en común todas es que el registro importa tanto como el resultado, y que el trabajo que más vale casi siempre es estructural y no aplicado.',
       ],
     },
     {

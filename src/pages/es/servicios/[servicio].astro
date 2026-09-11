@@ -6,6 +6,7 @@ import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { business } from '../../../data/business';
 import { esServicios } from '../../../data/es-servicios';
+import { esGiros, esGiroPath } from '../../../data/es-comercial';
 import { t } from '../../../data/i18n';
 
 export function getStaticPaths() {
@@ -60,6 +61,13 @@ const rails = esServicios
 
   <Faq items={s.faqs} />
 
+  {/* Solo en el servicio comercial: sus industrias, en español. */}
+  {s.slug === 'control-de-plagas-comercial' && (
+    <LinkRail
+      heading="Programas por industria"
+      links={[{ href: '/es/comercial/', label: 'Todo el control de plagas comercial' }, ...esGiros.map((g) => ({ href: esGiroPath(g), label: g.nav }))]}
+    />
+  )}
   <LinkRail heading="Otros servicios" links={rails} />
 
   <p class="prose" data-boilerplate>{S.englishOnwardNote}</p>
