@@ -20,6 +20,9 @@ import { aranasCadaOtono } from './aranas-cada-otono';
 import { moscasEnLasVentanasDeArriba } from './moscas-en-las-ventanas-de-arriba';
 import { mosquitosEnLasPlantas } from './mosquitos-en-las-plantas';
 import { bichosEnLaParedSurCadaOctubre } from './bichos-en-la-pared-sur-cada-octubre';
+import { piquetesSinChinches } from './piquetes-sin-chinches';
+import { chinchesEnUnaRentaDeEstudiantes } from './chinches-en-una-renta-de-estudiantes';
+import { chinchesDespuesDeUnViaje } from './chinches-despues-de-un-viaje';
 
 export type { EsProblema } from './tipos';
 
@@ -49,6 +52,9 @@ export const esProblemas: EsProblema[] = [
   moscasEnLasVentanasDeArriba,
   mosquitosEnLasPlantas,
   bichosEnLaParedSurCadaOctubre,
+  piquetesSinChinches,
+  chinchesEnUnaRentaDeEstudiantes,
+  chinchesDespuesDeUnViaje,
 ];
 
 /** Slug español del servicio padre, leído de src/data/es-servicios/. */

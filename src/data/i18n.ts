@@ -41,7 +41,7 @@
  * 10 Sep 2026: main pages and services (done), the pest library (done, 53 of
  * 53), locations (done, 49 of 49: counties, towns and neighborhoods),
  * commercial (done, the hub and 9 of 9 verticals), guides (done, 11 of 11),
- * problem pages (in progress), then blog, awards, partners and the gallery. Until a section lands its pages are simply
+ * problem pages (done, 23 of 23), then blog, awards, partners and the gallery. Until a section lands its pages are simply
  * unpaired — reachable in English, and never linked from a Spanish page
  * without an "(en inglés)" mark.
  */
