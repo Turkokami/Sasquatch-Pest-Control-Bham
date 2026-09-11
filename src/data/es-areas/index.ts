@@ -35,6 +35,13 @@ import { blaineSemiahmoo } from './blaine-semiahmoo';
 import { blaineBirchBayVillage } from './blaine-birch-bay-village';
 import { blaineDowntownBlaine } from './blaine-downtown-blaine';
 import { blaineEastBlaine } from './blaine-east-blaine';
+import { lyndenDowntownLynden } from './lynden-downtown-lynden';
+import { lyndenHomestead } from './lynden-homestead';
+import { lyndenMeadowview } from './lynden-meadowview';
+import { lyndenSterlingMeadows } from './lynden-sterling-meadows';
+import { lyndenNorthPrairie } from './lynden-north-prairie';
+import { lyndenPepinCreek } from './lynden-pepin-creek';
+import { lyndenFishtrapCreek } from './lynden-fishtrap-creek';
 
 export type { EsLugar } from './tipos';
 
@@ -66,6 +73,14 @@ export const esLugares: EsLugar[] = [
   blaineBirchBayVillage,
   blaineDowntownBlaine,
   blaineEastBlaine,
+  /* Barrios: Lynden */
+  lyndenDowntownLynden,
+  lyndenHomestead,
+  lyndenMeadowview,
+  lyndenSterlingMeadows,
+  lyndenNorthPrairie,
+  lyndenPepinCreek,
+  lyndenFishtrapCreek,
 ];
 
 export const COUNTY_TOWNS = ['whatcom-county', 'skagit-county'] as const;
