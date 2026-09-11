@@ -14,10 +14,15 @@
  *   3. PAGE_PAIRS sends each English profile to exactly its Spanish page;
  *   4. Keystone M2 and M5 on the data — the same limits es-servicios.test.ts
  *      holds, for the same reason: these modules are plain TypeScript and
- *      the content-collection schema never sees them.
+ *      the content-collection schema never sees them;
+ *   5. the offer on a profile agrees with its service: the bed bug profile, in
+ *      both languages, offers the paid visit's wording and not a free
+ *      inspection, and a sibling in the same group (cat flea) keeps the free
+ *      one. Both halves broke once, on 10 Sep 2026.
  */
 import { existsSync } from 'node:fs';
 import { esPlagas } from '../../src/data/es-plagas';
+import { freeInspectionForPath } from '../../src/lib/offer';
 import { pestBySlug } from '../../src/data/pests';
 import { PAGE_PAIRS } from '../../src/data/i18n';
 
@@ -48,6 +53,19 @@ for (const p of esPlagas) {
   if (!/[.!?]$/.test(d)) problems.push(`${p.slug}: description does not end on punctuation`);
   if (p.faqs.length === 0) problems.push(`${p.slug}: no FAQ block (M2)`);
   if (p.secciones.length === 0) problems.push(`${p.slug}: no sections`);
+}
+
+const OFFER_CASES: [string, boolean][] = [
+  ['/pest-library/bed-bug/', false],
+  ['/es/plagas/chinche-de-cama/', false],
+  ['/services/bed-bug-control/', false],
+  ['/pest-library/cat-flea/', true],
+  ['/es/plagas/pulga-del-gato/', true],
+  ['/pest-library/carpet-beetle/', true],
+];
+for (const [path, want] of OFFER_CASES) {
+  const got = freeInspectionForPath(path);
+  if (got !== want) problems.push(`${path}: free inspection = ${got}, expected ${want}`);
 }
 
 for (const p of problems) console.log(`WRONG: ${p}`);

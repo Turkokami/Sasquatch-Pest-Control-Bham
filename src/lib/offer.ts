@@ -41,11 +41,11 @@ export function freeInspectionForSlug(serviceSlug?: string): boolean {
 /**
  * Same question, asked by a component that knows only the URL.
  *
- * The exception list holds SERVICE slugs, so only a service route can carry an
+ * The exception list holds SERVICE slugs, so a service route carries an
  * exception: `/services/bed-bug-control/` and the problem pages beneath it.
- * Anything else — a location, a guide, a pest profile — gets the default. That
- * is deliberately the same scope Cta.astro has always applied via its
- * serviceSlug prop, so moving the rule here changes no page's wording.
+ * A pest profile whose species IS an exception service carries it too — see
+ * PROFILE_SERVICE. Anything else — a location, a guide, any other profile —
+ * gets the default.
  */
 export function freeInspectionForPath(path: string): boolean {
   /* A SPANISH PAGE IS ASKED ABOUT AS ITS ENGLISH TWIN, fixed 10 Sep 2026.
@@ -57,8 +57,24 @@ export function freeInspectionForPath(path: string): boolean {
      than a second exception list being typed in Spanish. */
   const en = ES_TO_EN[path] ?? path;
   const m = en.match(/^\/services\/([^/]+)\//);
-  return freeInspectionForSlug(m?.[1]);
+  if (m) return freeInspectionForSlug(m[1]);
+  const p = en.match(/^\/pest-library\/([^/]+)\/$/);
+  return freeInspectionForSlug(p ? PROFILE_SERVICE[p[1]] : undefined);
 }
+
+/**
+ * PEST PROFILES THAT ARE ONE SERVICE, fixed 10 Sep 2026. /pest-library/bed-bug/
+ * says in its own body that bed bugs are "the one service here that begins with
+ * a paid visit rather than a free one" — and until this map existed its form
+ * heading and sticky bar said "Request a free inspection" beneath that sentence,
+ * because a profile path matched no service. Only a species whose profile is,
+ * in effect, the service's own subject belongs here; a group rail that merely
+ * links a service (cat flea -> bed bug and biting pest control) does not make
+ * that profile's visit paid.
+ */
+const PROFILE_SERVICE: Record<string, string> = {
+  'bed-bug': 'bed-bug-control',
+};
 
 /**
  * THE WORDING, and it is the owner's call rather than a style preference.

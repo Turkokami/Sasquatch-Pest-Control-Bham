@@ -6,7 +6,7 @@
  *
  *  `market` names the page's own market so the CTA is not generic. */
 import { business, isReady } from '../data/business';
-import { freeInspectionForSlug, offerLabel } from '../lib/offer';
+import { freeInspectionForPath, freeInspectionForSlug, offerLabel } from '../lib/offer';
 
 interface Props { market?: string; service?: string; serviceSlug?: string }
 const { market = 'Whatcom County', service, serviceSlug } = Astro.props;
@@ -24,7 +24,13 @@ const { market = 'Whatcom County', service, serviceSlug } = Astro.props;
    for inspection wording and this is that line. It is permitted copy: see the
    note above INSPECTION_CLAIMS in src/lib/seo.ts, which excludes a general
    free inspection offer from the regulated terms on purpose. */
-const offer = offerLabel(freeInspectionForSlug(serviceSlug));
+/* A page that names no service is asked about by its URL, 10 Sep 2026 — the
+   same question LeadForm and the sticky bar ask. Before, the bed bug profile
+   passed no serviceSlug, so this box offered a free inspection two sections
+   below the profile's own sentence saying bed bugs start with a paid visit. */
+const offer = offerLabel(
+  serviceSlug ? freeInspectionForSlug(serviceSlug) : freeInspectionForPath(Astro.url.pathname),
+);
 
 /* THE RESPONSE TIME, BUILT FROM business.ts RATHER THAN TYPED.
    The scope is inside the sentence on purpose — the company works Skagit as
