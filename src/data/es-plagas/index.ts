@@ -49,6 +49,15 @@ import { termitaDeMaderaHumeda } from './termita-de-madera-humeda';
 import { escarabajoAnobido } from './escarabajo-anobido';
 import { abejaCarpintera } from './abeja-carpintera';
 import { gorgojoDeLaMadera } from './gorgojo-de-la-madera';
+import { moscaDeRacimo } from './mosca-de-racimo';
+import { chincheDelArce } from './chinche-del-arce';
+import { mariquitaAsiatica } from './mariquita-asiatica';
+import { chincheDeLaConifera } from './chinche-de-la-conifera';
+import { chincheApestosaMarmoleada } from './chinche-apestosa-marmoleada';
+import { pececilloDePlata } from './pececillo-de-plata';
+import { tijerilla } from './tijerilla';
+import { cochinilla } from './cochinilla';
+import { milpies } from './milpies';
 
 export type { EsPlaga } from './tipos';
 export { ES_GRUPOS, ES_VEREDICTO, ES_GRUPO_SERVICIO } from './grupos';
@@ -95,6 +104,16 @@ export const esPlagas: EsPlaga[] = [
   escarabajoAnobido,
   abejaCarpintera,
   gorgojoDeLaMadera,
+  /* Invasores ocasionales */
+  moscaDeRacimo,
+  chincheDelArce,
+  mariquitaAsiatica,
+  chincheDeLaConifera,
+  chincheApestosaMarmoleada,
+  pececilloDePlata,
+  tijerilla,
+  cochinilla,
+  milpies,
 ];
 
 export const esPlagaPorEspecie = (species: string) => esPlagas.find((p) => p.species === species);
