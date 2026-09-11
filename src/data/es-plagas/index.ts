@@ -31,6 +31,11 @@ import { rataDeTecho } from './rata-de-techo';
 import { ratonCasero } from './raton-casero';
 import { ratonCiervo } from './raton-ciervo';
 import { topillo } from './topillo';
+import { aranaGiganteDeCasa } from './arana-gigante-de-casa';
+import { aranaVagabunda } from './arana-vagabunda';
+import { aranaDeCruz } from './arana-de-cruz';
+import { aranaDeSotano } from './arana-de-sotano';
+import { aranaSacoAmarilla } from './arana-saco-amarilla';
 
 export type { EsPlaga } from './tipos';
 export { ES_GRUPOS, ES_VEREDICTO, ES_GRUPO_SERVICIO } from './grupos';
@@ -56,6 +61,12 @@ export const esPlagas: EsPlaga[] = [
   ratonCasero,
   ratonCiervo,
   topillo,
+  /* Arañas */
+  aranaGiganteDeCasa,
+  aranaVagabunda,
+  aranaDeCruz,
+  aranaDeSotano,
+  aranaSacoAmarilla,
 ];
 
 export const esPlagaPorEspecie = (species: string) => esPlagas.find((p) => p.species === species);
