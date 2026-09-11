@@ -3,6 +3,10 @@ import type { GuideClusterKey } from '../guide-clusters';
 import { quienPagaElControlDePlagasEnUnaRenta } from './quien-paga-el-control-de-plagas-en-una-renta';
 import { controlDePlagasEnEscuelasDeWashington } from './control-de-plagas-en-escuelas-de-washington';
 import { organismosQueDestruyenLaMaderaEnUnaVenta } from './organismos-que-destruyen-la-madera-en-una-venta';
+import { porQueLosEspaciosBajoElPisoSiguenMojados } from './por-que-los-espacios-bajo-el-piso-siguen-mojados';
+import { sellarUnEdificioAntesDelOtono } from './sellar-un-edificio-antes-del-otono';
+import { elAnoDeLasPlagasEnWhatcom } from './el-ano-de-las-plagas-en-whatcom';
+import { elAnoComercialDeLasPlagasEnWhatcom } from './el-ano-comercial-de-las-plagas-en-whatcom';
 
 export type { EsGuia } from './tipos';
 
@@ -16,6 +20,10 @@ export const esGuias: EsGuia[] = [
   quienPagaElControlDePlagasEnUnaRenta,
   controlDePlagasEnEscuelasDeWashington,
   organismosQueDestruyenLaMaderaEnUnaVenta,
+  porQueLosEspaciosBajoElPisoSiguenMojados,
+  sellarUnEdificioAntesDelOtono,
+  elAnoDeLasPlagasEnWhatcom,
+  elAnoComercialDeLasPlagasEnWhatcom,
 ];
 
 export const esGuiaPath = (g: EsGuia) => `/es/guias/${g.slug}/`;
