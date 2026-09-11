@@ -17,6 +17,9 @@ import { avispasAmarillasEnElPasto } from './avispas-amarillas-en-el-pasto';
 import { nidoDeAvisponEnUnArbol } from './nido-de-avispon-en-un-arbol';
 import { esUnaAranaVagabunda } from './es-una-arana-vagabunda';
 import { aranasCadaOtono } from './aranas-cada-otono';
+import { moscasEnLasVentanasDeArriba } from './moscas-en-las-ventanas-de-arriba';
+import { mosquitosEnLasPlantas } from './mosquitos-en-las-plantas';
+import { bichosEnLaParedSurCadaOctubre } from './bichos-en-la-pared-sur-cada-octubre';
 
 export type { EsProblema } from './tipos';
 
@@ -43,6 +46,9 @@ export const esProblemas: EsProblema[] = [
   nidoDeAvisponEnUnArbol,
   esUnaAranaVagabunda,
   aranasCadaOtono,
+  moscasEnLasVentanasDeArriba,
+  mosquitosEnLasPlantas,
+  bichosEnLaParedSurCadaOctubre,
 ];
 
 /** Slug español del servicio padre, leído de src/data/es-servicios/. */
