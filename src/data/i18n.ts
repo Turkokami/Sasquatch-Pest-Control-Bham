@@ -40,8 +40,8 @@
  * Everything else is being translated, in the order the owner approved on
  * 10 Sep 2026: main pages and services (done), the pest library (done, 53 of
  * 53), locations (done, 49 of 49: counties, towns and neighborhoods),
- * commercial (done, the hub and 9 of 9 verticals), guides (done, 11 of 11), then
- * blog, problem pages, awards, partners and the gallery. Until a section lands its pages are simply
+ * commercial (done, the hub and 9 of 9 verticals), guides (done, 11 of 11),
+ * problem pages (in progress), then blog, awards, partners and the gallery. Until a section lands its pages are simply
  * unpaired — reachable in English, and never linked from a Spanish page
  * without an "(en inglés)" mark.
  */
@@ -50,6 +50,7 @@ import { esPlagas } from './es-plagas';
 import { esLugares, esPathOf, enPathOf } from './es-areas';
 import { esGiros, esGiroPath, enGiroPath } from './es-comercial';
 import { esGuias, esGuiaPath, enGuiaPath } from './es-guias';
+import { esProblemas, esProblemaPath, enProblemaPath } from './es-problemas';
 
 export type Lang = 'en' | 'es';
 
@@ -104,6 +105,7 @@ for (const p of esPlagas) PAGE_PAIRS[`/pest-library/${p.species}/`] = `/es/plaga
 for (const l of esLugares) PAGE_PAIRS[enPathOf(l)] = esPathOf(l);
 for (const g of esGiros) PAGE_PAIRS[enGiroPath(g)] = esGiroPath(g);
 for (const g of esGuias) PAGE_PAIRS[enGuiaPath(g)] = esGuiaPath(g);
+for (const p of esProblemas) PAGE_PAIRS[enProblemaPath(p)] = esProblemaPath(p);
 
 /** Spanish path -> English path. Derived, never typed twice. */
 export const ES_TO_EN: Record<string, string> = Object.fromEntries(

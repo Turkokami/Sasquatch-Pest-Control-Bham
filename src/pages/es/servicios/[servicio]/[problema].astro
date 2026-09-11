@@ -1,0 +1,97 @@
+---
+/**
+ * Páginas de problema en español, debajo de su servicio.
+ *
+ * Los hechos vienen del lado inglés: que el problema exista bajo ese servicio
+ * en src/data/services.ts, y si su página está lista. El slug del servicio en
+ * español sale de src/data/es-servicios/. Un módulo que nombra un problema
+ * que el inglés no publica, o un servicio sin página en español, es un error
+ * de compilación.
+ *
+ * Sin fotografía, por la razón de siempre: los pies de foto están en inglés.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../../components/AnswerBox.astro';
+import LeadForm from '../../../../components/LeadForm.astro';
+import Faq from '../../../../components/Faq.astro';
+import LinkRail from '../../../../components/LinkRail.astro';
+import { business } from '../../../../data/business';
+import { liveServices } from '../../../../data/services';
+import { esServicios } from '../../../../data/es-servicios';
+import { esProblemas, esProblemaPath } from '../../../../data/es-problemas';
+import { t } from '../../../../data/i18n';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('problems');
+  return esProblemas.map((e) => {
+    const s = liveServices().find((x) => x.slug === e.service);
+    const p = s?.problems?.find((x) => x.slug === e.problem);
+    const es = esServicios.find((x) => x.enPath === `/services/${e.service}/`);
+    if (!s || !p || !es) {
+      throw new Error(
+        `src/data/es-problemas: "${e.service}/${e.problem}" has no English problem page or no Spanish service. ` +
+          `The Spanish tier cannot serve a page the English one does not.`,
+      );
+    }
+    const en = entries.find((x) => x.data.problem === e.problem);
+    return { params: { servicio: es.slug, problema: e.slug }, props: { e, es, ready: en?.data.ready === true } };
+  });
+}
+
+const { e, es, ready } = Astro.props;
+const path = esProblemaPath(e);
+const S = t('es');
+
+const hermanos = esProblemas
+  .filter((o) => o.service === e.service && o.slug !== e.slug)
+  .map((o) => ({ href: esProblemaPath(o), label: o.nav }));
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title={e.title}
+  description={e.description}
+  kind="page"
+  noindex={!ready}
+  hasAnswer={true}
+  faqs={e.faqs}
+  breadcrumbs={[
+    { name: 'Inicio', path: '/es/' },
+    { name: 'Servicios', path: '/es/servicios/' },
+    { name: es.nav, path: `/es/servicios/${es.slug}/` },
+    { name: e.nav, path },
+  ]}
+>
+  <h1>{e.h1}</h1>
+  <AnswerBox text={e.answer} />
+
+  <LeadForm />
+
+  <div class="prose">
+    {e.secciones.map((sec) => (
+      <>
+        <h2>{sec.h2}</h2>
+        {sec.parrafos.map((p) => <p>{p}</p>)}
+        {sec.lista && <ul>{sec.lista.map((i) => <li>{i}</li>)}</ul>}
+      </>
+    ))}
+  </div>
+
+  <Faq items={e.faqs} />
+
+  {hermanos.length > 0 && <LinkRail heading="Problemas relacionados" links={hermanos} />}
+  <LinkRail heading="El servicio detrás de esto" links={[{ href: `/es/servicios/${es.slug}/`, label: es.h1 }]} />
+
+  <div class="prose" data-boilerplate>
+    <h2>Pida una visita</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> — hablamos
+      español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+      Díganos qué ha notado y dónde, y le decimos por teléfono qué esperamos
+      encontrar.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>
