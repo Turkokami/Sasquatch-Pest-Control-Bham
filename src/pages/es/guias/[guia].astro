@@ -1,0 +1,100 @@
+---
+/**
+ * Guías en español, bajo /es/guias/.
+ *
+ * Una por cada guía inglesa, y los hechos vienen de allá: si está lista, sus
+ * fuentes con la fecha en que se leyeron, la fecha de revisión, el aviso legal
+ * y el grupo al que pertenece. Aquí solo vive el texto. Un módulo español que
+ * nombra una guía que el inglés no publica es un error de compilación.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+import Faq from '../../../components/Faq.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import SourceList from '../../../components/SourceList.astro';
+import { business } from '../../../data/business';
+import { esGuias, esGuiaPath } from '../../../data/es-guias';
+import { t } from '../../../data/i18n';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('guides');
+  return esGuias.map((e) => {
+    const en = entries.find((g) => g.slug === e.guide);
+    if (!en) {
+      throw new Error(
+        `src/data/es-guias: "${e.guide}" has no English guide. ` +
+          `The Spanish tier cannot serve a guide the English one does not.`,
+      );
+    }
+    return { params: { guia: e.slug }, props: { e, en } };
+  });
+}
+
+const { e, en } = Astro.props;
+const d = en.data;
+const path = esGuiaPath(e);
+const S = t('es');
+const entries = await getCollection('guides');
+
+/* Hermanos del mismo grupo, y solo los que ya tienen página en español. */
+const hermanos = esGuias
+  .filter((o) => o.slug !== e.slug && entries.find((g) => g.slug === o.guide)?.data.cluster === d.cluster)
+  .map((o) => ({ href: esGuiaPath(o), label: o.nav }));
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title={e.title}
+  description={e.description}
+  kind="article"
+  noindex={d.ready !== true}
+  hasAnswer={true}
+  faqs={e.faqs}
+  citations={d.sources}
+  dateModified={d.updated}
+  breadcrumbs={[
+    { name: 'Inicio', path: '/es/' },
+    { name: 'Guías', path: '/es/guias/' },
+    { name: e.nav, path },
+  ]}
+>
+  <h1>{e.h1}</h1>
+  <AnswerBox text={e.answer} />
+
+  <LeadForm />
+
+  <div class="prose">
+    {e.secciones.map((sec) => (
+      <>
+        <h2>{sec.h2}</h2>
+        {sec.parrafos.map((p) => <p>{p}</p>)}
+        {sec.cita && (
+          <>
+            <blockquote lang="en"><p>{sec.cita.en}</p></blockquote>
+            <p>{sec.cita.es}</p>
+          </>
+        )}
+        {sec.lista && <ul>{sec.lista.map((i) => <li>{i}</li>)}</ul>}
+        {sec.despues && sec.despues.map((p) => <p>{p}</p>)}
+      </>
+    ))}
+  </div>
+
+  <Faq items={e.faqs} />
+
+  <SourceList sources={d.sources} reviewBy={d.reviewBy} legalDisclaimer={d.legalDisclaimer} />
+
+  {hermanos.length > 0 && <LinkRail heading="Guías relacionadas" links={hermanos} />}
+
+  <div class="prose" data-boilerplate>
+    <p>
+      ¿Tiene una pregunta que esta guía no contesta? Llame o mande un mensaje
+      de texto al <a href={`tel:${business.phoneE164}`}>{business.phone}</a> —
+      hablamos español — o <a href="/es/contacto/">escríbanos desde la página de
+      contacto</a>. Todas nuestras guías están en <a href="/es/guias/">la página de guías</a>.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

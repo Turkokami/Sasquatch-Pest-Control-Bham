@@ -1,0 +1,145 @@
+---
+/**
+ * El hub de guías en español — la pareja de /guides/.
+ *
+ * Los grupos se pintan en el orden de src/data/guide-clusters.ts con sus
+ * nombres de ES_CLUSTERS, y cada grupo lista solo las guías que ya tienen
+ * página en español. Un grupo sin ninguna todavía no aparece: un encabezado
+ * vacío no le sirve a nadie.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+import Faq from '../../../components/Faq.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import { business } from '../../../data/business';
+import { GUIDE_CLUSTERS } from '../../../data/guide-clusters';
+import { esGuias, esGuiaPath, ES_CLUSTERS } from '../../../data/es-guias';
+import { t } from '../../../data/i18n';
+
+const path = '/es/guias/';
+const S = t('es');
+const entries = await getCollection('guides');
+
+const grupos = GUIDE_CLUSTERS.map((c) => ({
+  ...ES_CLUSTERS[c.key],
+  links: esGuias
+    .filter((g) => entries.find((e) => e.slug === g.guide)?.data.cluster === c.key)
+    .map((g) => ({ href: esGuiaPath(g), label: g.nav })),
+})).filter((c) => c.links.length > 0);
+
+const answer =
+  'Estas guías explican las reglas, las obligaciones y las condiciones de los edificios que están detrás de los problemas de plagas en el condado de Whatcom: qué le exige la ley a un arrendador, qué tiene que avisar una escuela, qué puede y qué no puede decir un informe, y por qué los edificios de aquí fallan donde fallan.';
+
+const faqs = [
+  {
+    q: '¿Por qué una empresa de control de plagas publica información legal?',
+    a: 'Porque muchas de las llamadas que recibimos son en realidad preguntas sobre quién es responsable y qué tiene que pasar. Contestarlas con honestidad y con la ley enlazada sirve más que otra página sobre lo desagradables que son las ratas.',
+  },
+  {
+    q: '¿Algo de esto es asesoría legal?',
+    a: 'No, y cada guía que toca la ley lo dice en la página. Somos una empresa de control de plagas. Lo que sí podemos es citar con exactitud las reglas publicadas, enlazarlas y fechar cuándo las leímos, para que usted revise si algo cambió.',
+  },
+  {
+    q: '¿Cómo las mantienen al día?',
+    a: 'Cada guía lleva una fecha de revisión que la compilación exige, no la memoria de alguien. La página dice esa fecha y nombra sus fuentes con el día en que se leyó cada una.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Guías de Control de Plagas en Whatcom"
+  description="Las reglas, obligaciones y condiciones de los edificios detrás de las plagas en Whatcom: deberes del arrendador, avisos en escuelas, humedad y el año. Con fuentes."
+  kind="page"
+  hasAnswer={true}
+  faqs={faqs}
+  breadcrumbs={[
+    { name: 'Inicio', path: '/es/' },
+    { name: 'Guías', path },
+  ]}
+>
+  <h1>Guías</h1>
+  <AnswerBox text={answer} />
+
+  <LeadForm />
+
+  <div class="prose">
+    <p>
+      Casi todo lo que publica una empresa de control de plagas está escrito para
+      que lo encuentren, no para que lo lean. Estas son de la otra clase: cada una
+      existe porque contesta una pregunta que nos hacen por teléfono y que no se
+      contesta en una frase, y porque la respuesta exacta no está publicada en
+      ningún otro lugar de este condado.
+    </p>
+    <p>
+      Esas preguntas tienen respuesta. Casi siempre está escrita en algún lugar
+      público — una ley, un código municipal, una regla de una agencia —, y casi
+      siempre en un lenguaje difícil de leer. Pocas se explican en este condado, y
+      las explicaciones que hay muchas veces se equivocan hacia el lado que
+      conviene: una empresa que da a entender que una regla exige justo el
+      servicio que vende. Por eso estas páginas citan la fuente, la enlazan y
+      dicen cuándo la leímos, y donde una regla no dice lo que la gente supone,
+      también lo decimos.
+    </p>
+    <h2>Cómo usarlas</h2>
+    <p>
+      Lea la fuente y no solo nuestro resumen: cada cita es un enlace vivo, y el
+      texto original suele ser más corto que su explicación. Las fuentes están en
+      inglés, publicadas por las instituciones que las escribieron; nosotros
+      traducimos las citas legales como traducción, no como ley. Si su situación
+      es disputada o cara, la guía le dice dónde está el consejo que corresponde —
+      un servicio de inquilinos, cumplimiento de códigos, un abogado, la agencia
+      del estado — en lugar de hacerse pasar por eso.
+    </p>
+    <p>
+      Y fíjese en la fecha de revisión al pie de cada página. Las reglas cambian,
+      y una página regulatoria sin fecha de vencimiento es un riesgo disfrazado
+      de recurso. Si lee algo aquí después de esa fecha y ya no coincide con la
+      regla, la regla tiene la razón.
+    </p>
+    <h2>Por qué el condado de Whatcom en particular</h2>
+    <p>
+      Casi todo el consejo sobre plagas en internet está escrito para otro lugar:
+      cadenas nacionales, agencias de contenido, empresas de climas donde los
+      problemas y los tiempos son otros. Un consejo pensado para un verano
+      caliente y seco y una helada dura no describe un lugar donde la temporada
+      de lluvias va de octubre a abril y la tierra bajo una casa nunca se seca del
+      todo. Aquí la madera que se moja se queda mojada, por eso tantos problemas
+      de plagas en la estructura son en realidad pudrición con un insecto viviendo
+      adentro; el espacio bajo el piso es casi universal en las casas viejas; y la
+      termita subterránea que mueve la industria en otras regiones importa poco,
+      mientras la de madera húmeda, de la que nadie habla fuera del noroeste, es la
+      que encontramos.
+    </p>
+    <p>
+      Las reglas también son locales. La obligación del arrendador es una ley de
+      Washington con una excepción que decide casi todos los pleitos; el programa
+      de inspección de rentas es una ordenanza de Bellingham con su propio ciclo y
+      su propia lista; los avisos en las escuelas son ley estatal con plazos y
+      tamaños de letrero concretos. Nada de eso está en una guía nacional, y
+      decirlo más o menos bien es peor que no decirlo.
+    </p>
+  </div>
+
+  {grupos.map((g) => (
+    <div class="prose">
+      <h2>{g.name}</h2>
+      <p>{g.blurb}</p>
+    </div>
+    <LinkRail heading={`Guías: ${g.name.toLowerCase()}`} links={g.links} />
+  ))}
+
+  <Faq items={faqs} />
+
+  <div class="prose" data-boilerplate>
+    <h2>¿Tiene una pregunta que no está aquí?</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> — hablamos
+      español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

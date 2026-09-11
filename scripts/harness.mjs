@@ -134,7 +134,7 @@ const isSpanish = (url) => url === '/es/' || url.startsWith('/es/');
 const HUBS = new Set([
   '/', '/locations/', '/commercial/', '/pest-library/', '/about/', '/our-guarantee/',
   '/guides/', '/blog/', '/gallery/', '/what-we-use/', '/awards/',
-  '/es/', '/es/areas-de-servicio/', '/es/comercial/', '/es/garantia/', '/es/nosotros/', '/es/plagas/',
+  '/es/', '/es/areas-de-servicio/', '/es/comercial/', '/es/guias/', '/es/garantia/', '/es/nosotros/', '/es/plagas/',
 ]);
 const isBlogPost = (url) => url.startsWith('/blog/') && url !== '/blog/';
 /* A page type per URL, from the URL taxonomy in Keystone Part 3.3. null means
@@ -150,7 +150,7 @@ const pageType = (url) => {
   if (/^\/locations\/[^/]+\/[^/]+\/$/.test(url) || /^\/es\/areas-de-servicio\/[^/]+\/[^/]+\/$/.test(url)) return 'neighborhood';
   if (/^\/pest-library\/[^/]+\/$/.test(url) || /^\/es\/plagas\/[^/]+\/$/.test(url)) return 'pest';
   if (/^\/commercial\/[^/]+\/$/.test(url) || /^\/es\/comercial\/[^/]+\/$/.test(url)) return 'vertical';
-  if (/^\/guides\/[^/]+\/$/.test(url)) return 'compliance';
+  if (/^\/guides\/[^/]+\/$/.test(url) || /^\/es\/guias\/[^/]+\/$/.test(url)) return 'compliance';
   if (isBlogPost(url)) return 'blog';
   return null;
 };
