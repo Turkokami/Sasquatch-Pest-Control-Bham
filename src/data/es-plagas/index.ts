@@ -58,6 +58,10 @@ import { pececilloDePlata } from './pececillo-de-plata';
 import { tijerilla } from './tijerilla';
 import { cochinilla } from './cochinilla';
 import { milpies } from './milpies';
+import { polillaDeLaRopa } from './polilla-de-la-ropa';
+import { escarabajoDeAlfombra } from './escarabajo-de-alfombra';
+import { palomillaDeLaHarina } from './palomilla-de-la-harina';
+import { escarabajoDentadoDeLosGranos } from './escarabajo-dentado-de-los-granos';
 
 export type { EsPlaga } from './tipos';
 export { ES_GRUPOS, ES_VEREDICTO, ES_GRUPO_SERVICIO } from './grupos';
@@ -114,6 +118,11 @@ export const esPlagas: EsPlaga[] = [
   tijerilla,
   cochinilla,
   milpies,
+  /* Plagas de telas y despensa */
+  polillaDeLaRopa,
+  escarabajoDeAlfombra,
+  palomillaDeLaHarina,
+  escarabajoDentadoDeLosGranos,
 ];
 
 export const esPlagaPorEspecie = (species: string) => esPlagas.find((p) => p.species === species);
