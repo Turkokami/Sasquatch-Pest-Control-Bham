@@ -4,6 +4,8 @@ import { ratasBajoElPiso } from './ratas-bajo-el-piso';
 import { rasgunosEnLasParedesDeNoche } from './rasgunos-en-las-paredes-de-noche';
 import { excrementoEnLaCocina } from './excremento-en-la-cocina';
 import { roedoresEnElAislamientoDelAtico } from './roedores-en-el-aislamiento-del-atico';
+import { sellarUnaRendijaDeUnCuartoDePulgada } from './sellar-una-rendija-de-un-cuarto-de-pulgada';
+import { mallaParaLasVentilasBajoElPiso } from './malla-para-las-ventilas-bajo-el-piso';
 
 export type { EsProblema } from './tipos';
 
@@ -17,6 +19,8 @@ export const esProblemas: EsProblema[] = [
   rasgunosEnLasParedesDeNoche,
   excrementoEnLaCocina,
   roedoresEnElAislamientoDelAtico,
+  sellarUnaRendijaDeUnCuartoDePulgada,
+  mallaParaLasVentilasBajoElPiso,
 ];
 
 /** Slug español del servicio padre, leído de src/data/es-servicios/. */
