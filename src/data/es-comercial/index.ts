@@ -2,6 +2,9 @@ import type { EsGiro } from './tipos';
 import { lecheriasYGanado } from './lecherias-y-ganado';
 import { procesadorasDeFrutaYAlimentos } from './procesadoras-de-fruta-y-alimentos';
 import { marinasYMuelles } from './marinas-y-muelles';
+import { restaurantesYServicioDeComida } from './restaurantes-y-servicio-de-comida';
+import { escuelasYGuarderias } from './escuelas-y-guarderias';
+import { saludYResidenciasDeMayores } from './salud-y-residencias-de-mayores';
 
 export type { EsGiro } from './tipos';
 
@@ -11,7 +14,14 @@ export type { EsGiro } from './tipos';
  * vienen del lado inglés, y la ruta falla si un módulo nombra una industria
  * que el inglés no publica.
  */
-export const esGiros: EsGiro[] = [lecheriasYGanado, procesadorasDeFrutaYAlimentos, marinasYMuelles];
+export const esGiros: EsGiro[] = [
+  lecheriasYGanado,
+  procesadorasDeFrutaYAlimentos,
+  marinasYMuelles,
+  restaurantesYServicioDeComida,
+  escuelasYGuarderias,
+  saludYResidenciasDeMayores,
+];
 
 export const esGiroPath = (g: EsGiro) => `/es/comercial/${g.slug}/`;
 export const enGiroPath = (g: EsGiro) => `/commercial/${g.industry}/`;
