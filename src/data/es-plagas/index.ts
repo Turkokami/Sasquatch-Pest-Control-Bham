@@ -26,6 +26,11 @@ import { hormigaDeInvierno } from './hormiga-de-invierno';
 import { hormigaPonerina } from './hormiga-ponerina';
 import { hormigaCosechadora } from './hormiga-cosechadora';
 import { hormigaAphaenogaster } from './hormiga-aphaenogaster';
+import { rataNoruega } from './rata-noruega';
+import { rataDeTecho } from './rata-de-techo';
+import { ratonCasero } from './raton-casero';
+import { ratonCiervo } from './raton-ciervo';
+import { topillo } from './topillo';
 
 export type { EsPlaga } from './tipos';
 export { ES_GRUPOS, ES_VEREDICTO, ES_GRUPO_SERVICIO } from './grupos';
@@ -45,6 +50,12 @@ export const esPlagas: EsPlaga[] = [
   hormigaPonerina,
   hormigaCosechadora,
   hormigaAphaenogaster,
+  /* Roedores */
+  rataNoruega,
+  rataDeTecho,
+  ratonCasero,
+  ratonCiervo,
+  topillo,
 ];
 
 export const esPlagaPorEspecie = (species: string) => esPlagas.find((p) => p.species === species);
