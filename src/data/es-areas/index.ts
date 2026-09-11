@@ -20,6 +20,11 @@ import { deming } from './deming';
 import { custer } from './custer';
 import { suddenValley } from './sudden-valley';
 import { birchBay } from './birch-bay';
+import { mountVernon } from './mount-vernon';
+import { burlington } from './burlington';
+import { sedroWoolley } from './sedro-woolley';
+import { bow } from './bow';
+import { alger } from './alger';
 
 export type { EsLugar } from './tipos';
 
@@ -33,6 +38,12 @@ export const esLugares: EsLugar[] = [
   custer,
   suddenValley,
   birchBay,
+  /* Condado de Skagit */
+  mountVernon,
+  burlington,
+  sedroWoolley,
+  bow,
+  alger,
 ];
 
 export const COUNTY_TOWNS = ['whatcom-county', 'skagit-county'] as const;
