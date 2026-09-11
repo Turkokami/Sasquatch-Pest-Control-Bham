@@ -45,6 +45,10 @@ import { abejorro } from './abejorro';
 import { avispaExcavadoraDorada } from './avispa-excavadora-dorada';
 import { avispaQueCargaPasto } from './avispa-que-carga-pasto';
 import { avispaDeLodo } from './avispa-de-lodo';
+import { termitaDeMaderaHumeda } from './termita-de-madera-humeda';
+import { escarabajoAnobido } from './escarabajo-anobido';
+import { abejaCarpintera } from './abeja-carpintera';
+import { gorgojoDeLaMadera } from './gorgojo-de-la-madera';
 
 export type { EsPlaga } from './tipos';
 export { ES_GRUPOS, ES_VEREDICTO, ES_GRUPO_SERVICIO } from './grupos';
@@ -86,6 +90,11 @@ export const esPlagas: EsPlaga[] = [
   avispaExcavadoraDorada,
   avispaQueCargaPasto,
   avispaDeLodo,
+  /* Plagas de la estructura */
+  termitaDeMaderaHumeda,
+  escarabajoAnobido,
+  abejaCarpintera,
+  gorgojoDeLaMadera,
 ];
 
 export const esPlagaPorEspecie = (species: string) => esPlagas.find((p) => p.species === species);
