@@ -42,6 +42,13 @@ import { lyndenSterlingMeadows } from './lynden-sterling-meadows';
 import { lyndenNorthPrairie } from './lynden-north-prairie';
 import { lyndenPepinCreek } from './lynden-pepin-creek';
 import { lyndenFishtrapCreek } from './lynden-fishtrap-creek';
+import { ferndaleSandyPoint } from './ferndale-sandy-point';
+import { ferndaleDowntownFerndale } from './ferndale-downtown-ferndale';
+import { ferndaleMalloyVillage } from './ferndale-malloy-village';
+import { ferndaleVistaRidge } from './ferndale-vista-ridge';
+import { ferndalePacificHighlands } from './ferndale-pacific-highlands';
+import { ferndaleWoodsPoint } from './ferndale-woods-point';
+import { ferndaleTheMeadows } from './ferndale-the-meadows';
 
 export type { EsLugar } from './tipos';
 
@@ -81,6 +88,14 @@ export const esLugares: EsLugar[] = [
   lyndenNorthPrairie,
   lyndenPepinCreek,
   lyndenFishtrapCreek,
+  /* Barrios: Ferndale */
+  ferndaleSandyPoint,
+  ferndaleDowntownFerndale,
+  ferndaleMalloyVillage,
+  ferndaleVistaRidge,
+  ferndalePacificHighlands,
+  ferndaleWoodsPoint,
+  ferndaleTheMeadows,
 ];
 
 export const COUNTY_TOWNS = ['whatcom-county', 'skagit-county'] as const;
