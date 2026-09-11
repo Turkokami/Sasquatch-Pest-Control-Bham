@@ -12,6 +12,8 @@
  */
 import type { EsLugar } from './tipos';
 
+import { condadoDeWhatcom } from './condado-de-whatcom';
+import { condadoDeSkagit } from './condado-de-skagit';
 import { bellingham } from './bellingham';
 import { ferndale } from './ferndale';
 import { lynden } from './lynden';
@@ -33,6 +35,9 @@ import { alger } from './alger';
 export type { EsLugar } from './tipos';
 
 export const esLugares: EsLugar[] = [
+  /* Los dos condados */
+  condadoDeWhatcom,
+  condadoDeSkagit,
   /* Condado de Whatcom */
   bellingham,
   ferndale,
