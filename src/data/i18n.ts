@@ -40,13 +40,14 @@
  * Everything else is being translated, in the order the owner approved on
  * 10 Sep 2026: main pages and services (done), the pest library (done, 53 of
  * 53), locations (done, 49 of 49: counties, towns and neighborhoods), then
- * commercial, guides, blog, problem pages, awards, partners and the gallery. Until a section lands its pages are simply
+ * commercial (in progress), guides, blog, problem pages, awards, partners and the gallery. Until a section lands its pages are simply
  * unpaired — reachable in English, and never linked from a Spanish page
  * without an "(en inglés)" mark.
  */
 
 import { esPlagas } from './es-plagas';
 import { esLugares, esPathOf, enPathOf } from './es-areas';
+import { esGiros, esGiroPath, enGiroPath } from './es-comercial';
 
 export type Lang = 'en' | 'es';
 
@@ -59,6 +60,7 @@ export type Lang = 'en' | 'es';
 export const PAGE_PAIRS: Record<string, string> = {
   '/': '/es/',
   '/services/': '/es/servicios/',
+  '/commercial/': '/es/comercial/',
   '/services/rodent-control/': '/es/servicios/control-de-roedores/',
   '/services/wasp-control/': '/es/servicios/control-de-avispas/',
   '/services/ant-control/': '/es/servicios/control-de-hormigas/',
@@ -97,6 +99,7 @@ export const PAGE_PAIRS: Record<string, string> = {
    so no pair can point at a 404 in either direction. */
 for (const p of esPlagas) PAGE_PAIRS[`/pest-library/${p.species}/`] = `/es/plagas/${p.slug}/`;
 for (const l of esLugares) PAGE_PAIRS[enPathOf(l)] = esPathOf(l);
+for (const g of esGiros) PAGE_PAIRS[enGiroPath(g)] = esGiroPath(g);
 
 /** Spanish path -> English path. Derived, never typed twice. */
 export const ES_TO_EN: Record<string, string> = Object.fromEntries(
@@ -199,7 +202,10 @@ const ES_LABELS: Record<string, string> = {
   '/es/servicios/control-de-avispas/': 'Avispas',
   '/es/servicios/control-de-hormigas/': 'Hormigas',
   '/es/servicios/control-de-aranas/': 'Arañas',
-  '/es/servicios/eliminacion-de-abejas/': 'Abejas',
+  /* Comercial took the Abejas chip on 10 Sep 2026, again to keep the grid at
+     twelve. The English masthead links /commercial/ third, and the Spanish one
+     now does too; bees are one click away on /es/servicios/. */
+  '/es/comercial/': 'Comercial',
   /* Took the Moscas chip on 10 Sep 2026, to keep the grid at twelve. The
      English masthead links its pest library and the Spanish one should too;
      flies are still one click away on /es/servicios/. */

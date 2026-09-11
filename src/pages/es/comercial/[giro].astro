@@ -1,0 +1,92 @@
+---
+/**
+ * Páginas comerciales por industria, en español, bajo /es/comercial/.
+ *
+ * Una por cada página inglesa de /commercial/<industria>/, y los hechos vienen
+ * de allá: si la industria tiene página y si está lista para indexarse. Un
+ * módulo español que nombra una industria sin página inglesa es un error de
+ * compilación, igual que en los lugares y en la biblioteca de plagas.
+ *
+ * Sin fotografía: los pies de foto están en inglés, y una página española con
+ * un pie de foto en inglés es la mezcla que la revisión 6c del arnés reprueba.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+import Faq from '../../../components/Faq.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import { business } from '../../../data/business';
+import { esGiros, esGiroPath } from '../../../data/es-comercial';
+import { t } from '../../../data/i18n';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('industries');
+  return esGiros.map((g) => {
+    const en = entries.find((e) => e.data.industry === g.industry);
+    if (!en) {
+      throw new Error(
+        `src/data/es-comercial: "${g.industry}" has no English industry page. ` +
+          `The Spanish tier cannot serve an industry the English one does not.`,
+      );
+    }
+    return { params: { giro: g.slug }, props: { g, ready: en.data.ready === true } };
+  });
+}
+
+const { g, ready } = Astro.props;
+const path = esGiroPath(g);
+const S = t('es');
+
+/* Solo hermanos en español que existen, en el orden del lector. */
+const hermanos = esGiros
+  .filter((o) => o.slug !== g.slug)
+  .map((o) => ({ href: esGiroPath(o), label: o.nav }))
+  .sort((a, b) => a.label.localeCompare(b.label, 'es'));
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title={g.title}
+  description={g.description}
+  kind="page"
+  noindex={!ready}
+  hasAnswer={true}
+  faqs={g.faqs}
+  breadcrumbs={[
+    { name: 'Inicio', path: '/es/' },
+    { name: 'Comercial', path: '/es/comercial/' },
+    { name: g.nav, path },
+  ]}
+>
+  <h1>{g.h1}</h1>
+  <AnswerBox text={g.answer} />
+
+  <LeadForm />
+
+  <div class="prose">
+    {g.secciones.map((sec) => (
+      <>
+        <h2>{sec.h2}</h2>
+        {sec.parrafos.map((p) => <p>{p}</p>)}
+        {sec.lista && <ul>{sec.lista.map((i) => <li>{i}</li>)}</ul>}
+      </>
+    ))}
+  </div>
+
+  <Faq items={g.faqs} />
+
+  {hermanos.length > 0 && <LinkRail heading="Otros programas comerciales" links={hermanos} />}
+
+  <div class="prose" data-boilerplate>
+    <p>
+      Este es uno de los programas que describe nuestra página de{' '}
+      <a href="/es/comercial/">control de plagas comercial</a>: cómo se arma un
+      programa, qué lleva el registro y para qué sirve ante una inspección. Para
+      un recorrido del sitio, llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> — hablamos
+      español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

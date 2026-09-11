@@ -1,0 +1,162 @@
+---
+/**
+ * El hub comercial en español — la pareja de /commercial/.
+ *
+ * El selector de industrias lista solo las páginas españolas que existen
+ * (src/data/es-comercial/), en el orden del lector. La versión inglesa además
+ * nombra industrias sin página propia; aquí no se nombran, porque un nombre
+ * sin enlace en español no le sirve a nadie y un enlace al inglés desde el
+ * selector es la deriva que este alcance se trazó para evitar.
+ *
+ * Sin fotografías, por la misma razón que las páginas por industria: sus pies
+ * de foto están en inglés.
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import AnswerBox from '../../../components/AnswerBox.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+import Faq from '../../../components/Faq.astro';
+import LinkRail from '../../../components/LinkRail.astro';
+import { business } from '../../../data/business';
+import { esGiros, esGiroPath } from '../../../data/es-comercial';
+import { PAGE_PAIRS, t } from '../../../data/i18n';
+
+const path = '/es/comercial/';
+const S = t('es');
+
+const answer =
+  'Sasquatch Pest Control lleva programas comerciales recurrentes y documentados de control de plagas y exclusión para negocios en todo el condado de Whatcom. Armamos el programa según su instalación, llevamos registros que aguantan una inspección o una auditoría, y trabajamos con un horario que se acomoda a su operación y no a la nuestra.';
+
+const giros = esGiros
+  .map((g) => ({ href: esGiroPath(g), label: g.nav }))
+  .sort((a, b) => a.label.localeCompare(b.label, 'es'));
+
+/* Los servicios en los que se apoya un programa comercial, solo si tienen
+   página en español — y la tienen, pero se lee del mapa de parejas para que
+   un cambio de slug no deje un enlace colgando. */
+const servicios = [
+  ['/services/commercial-pest-control/', 'Control de plagas comercial'],
+  ['/services/rodent-control/', 'Control de roedores'],
+  ['/services/exclusion-and-repairs/', 'Exclusión y reparaciones'],
+]
+  .filter(([en]) => PAGE_PAIRS[en])
+  .map(([en, label]) => ({ href: PAGE_PAIRS[en], label }));
+
+const faqs = [
+  {
+    q: '¿Dan documentación para auditorías e inspecciones?',
+    a: 'Sí. Cada visita comercial queda anotada con lo que se revisó, lo que se hizo y lo que se recomendó, y el historial está disponible cuando un inspector o un auditor lo pide. En las cuentas que manejan alimentos ese registro es parte de lo que se entrega, no un extra.',
+  },
+  {
+    q: '¿Pueden venir fuera de nuestro horario?',
+    a: 'Casi siempre. A las tiendas, los restaurantes y los lugares de salud se les atiende antes de abrir o después de cerrar, y la ruta se arma alrededor de su operación. Díganos qué ventana le funciona.',
+  },
+  {
+    q: '¿Una cuenta comercial exige contrato de largo plazo?',
+    a: 'No. Los programas son recurrentes porque la presión de plagas lo es, pero no lo amarramos a varios años. El acuerdo pone por escrito el calendario, el alcance y cómo cancelar.',
+  },
+  {
+    q: '¿Con qué negocios trabajan?',
+    a: 'Lecherías y ranchos, procesadoras de alimentos, marinas, restaurantes, escuelas, salud y residencias de adultos mayores, tiendas, edificios de departamentos y asociaciones, administradores de propiedades y edificios públicos en todo el condado de Whatcom.',
+  },
+];
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Control de Plagas Comercial en el Condado de Whatcom"
+  description="Programas recurrentes y documentados de control de plagas y exclusión para negocios de Whatcom: campo, alimentos, marinas, escuelas, salud, tiendas y departamentos."
+  kind="page"
+  hasAnswer={true}
+  faqs={faqs}
+  breadcrumbs={[
+    { name: 'Inicio', path: '/es/' },
+    { name: 'Comercial', path },
+  ]}
+>
+  <h1>Control de Plagas Comercial en el Condado de Whatcom</h1>
+  <AnswerBox text={answer} />
+
+  {giros.length > 0 && <LinkRail heading="Escoja su industria" links={giros} grid />}
+
+  <LeadForm />
+
+  <div class="prose">
+    <h2>Documentado, discreto y confiable</h2>
+    <p>
+      Un trabajo comercial se juzga por tres cosas: si la presión de verdad baja,
+      si sus clientes nunca nos notan, y si los papeles aguantan cuando alguien
+      los pide. Armamos cada programa pensando en las tres.
+    </p>
+
+    <h2>Lo que de verdad incluye un programa comercial</h2>
+    <p>
+      Una cuenta comercial no es una visita de casa hecha más seguido, y la
+      diferencia es de estructura. El horario se arma alrededor de su operación:
+      antes de abrir o después de cerrar en una tienda o una cocina, y alrededor
+      de la ocupación y los avisos obligatorios en una escuela. Los dispositivos
+      van en un plano, para que quien revise el sitio vea el arreglo sin tener que
+      creernos. Y cada visita deja constancia de lo revisado, lo hecho y lo que
+      necesita atención de su lado — incluido, cuando es el caso, decirle que el
+      problema es una barredora de puerta que usted tiene que cambiar y no algo
+      que se pueda rociar.
+    </p>
+
+    <h2>Cómo corre un programa</h2>
+    <p>
+      Son seis pasos y el orden es lo que importa; casi todo lo que sale mal en
+      una cuenta comercial sale mal porque alguien empezó por el tercero.
+      Evaluar: recorrer el edificio antes de cotizarlo — por dónde entran, dónde
+      se esconden, cómo se mueve la basura, qué pasa en las orillas del terreno.
+      Excluir: cerrar lo que se puede cerrar, sabiendo que en un edificio
+      comercial nunca es todo, así que el alcance honesto es un perímetro
+      defendido y no uno sellado. Tratar: de forma dirigida y según el lugar,
+      porque una planta de alimentos, una escuela y un astillero son tres juegos
+      de límites distintos para el mismo ingrediente. Monitorear: dispositivos
+      donde se ganan su lugar, en un plano. Documentar: cada visita, que en un
+      sitio regulado es la mitad del servicio y la mitad que más se salta.
+      Verificar: volver a revisar que lo hecho funcionó, y cambiar el programa
+      cuando el sitio lo pide y no cuando lo pide el calendario.
+    </p>
+
+    <h2>Lo que un programa aporta a una auditoría</h2>
+    <p>
+      Somos una empresa de control de plagas, no su auditor. Lo que un programa
+      aporta es un historial: el plano de dispositivos, un registro con fecha de
+      cada visita y sus acciones correctivas, y la prueba de que las
+      recomendaciones de su lado se hicieron por escrito y no nada más de
+      palabra. En este condado eso suele querer decir el código de alimentos del
+      Departamento de Salud del estado para quien sirve comida, la licencia del
+      WSDA para la aplicación misma, los esquemas de auditoría de terceros en
+      procesamiento y empaque, y el programa de registro e inspección de rentas
+      de Bellingham. Ningún programa garantiza el resultado de una auditoría; quita
+      una de las razones comunes para reprobarla.
+    </p>
+
+    <h2>La exclusión es donde más servimos</h2>
+    <p>
+      Muchas empresas atienden un sitio cada mes. Muchas menos le dicen a un
+      cliente que el programa no funciona por un problema de orden en el andén,
+      una orilla del terreno que nadie cuida, o una viga de borde abierta desde
+      que se construyó el edificio. Esos puntos van en el reporte, incluso los
+      que podríamos rodear callados, porque un servicio recurrente sobre un
+      problema estructural sin resolver es un costo sin fecha de término. Y tiene
+      temporada: la ventana para el trabajo estructural es el final del verano,
+      con el suelo seco y antes de que empiece el movimiento de roedores del
+      otoño. Planearlo entonces sale más barato que reaccionar en noviembre.
+    </p>
+  </div>
+
+  <LinkRail heading="Servicios detrás de nuestros programas comerciales" links={servicios} />
+
+  <Faq items={faqs} />
+
+  <div class="prose" data-boilerplate>
+    <h2>Pida un recorrido del sitio</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> — hablamos
+      español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>
