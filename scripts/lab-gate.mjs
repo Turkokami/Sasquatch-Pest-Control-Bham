@@ -35,7 +35,14 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const PORT = 4329;
-const ORIGIN = `http://localhost:${PORT}`;
+/* LAB_ORIGIN=https://… measures a DEPLOYED site instead of the local build.
+   That is the measurement that counts: Keystone's directive 7 makes the live
+   site the source of truth, and the local `astro preview` is HTTP/1.1 with no
+   CDN, so it runs pessimistic — on 10 Sep 2026 the home page measured 2.38s
+   locally and 1.8s (median of three) on the Vercel deployment. Use the local
+   run to iterate and the deployed run to decide. */
+const REMOTE = (process.env.LAB_ORIGIN || '').replace(/\/$/, '');
+const ORIGIN = REMOTE || `http://localhost:${PORT}`;
 const RUNS = Number(process.env.LAB_RUNS || 5);
 
 const TEMPLATES = [
@@ -74,15 +81,17 @@ async function waitFor(url, ms = 30000) {
   throw new Error(`server at ${url} did not come up`);
 }
 
-for (const [, u] of TEMPLATES) {
-  const f = path.join(root, 'dist', u, 'index.html');
-  if (!fs.existsSync(f)) { console.error(`no built page for ${u} — run npm run build first`); process.exit(1); }
+if (!REMOTE) {
+  for (const [, u] of TEMPLATES) {
+    const f = path.join(root, 'dist', u, 'index.html');
+    if (!fs.existsSync(f)) { console.error(`no built page for ${u} — run npm run build first`); process.exit(1); }
+  }
 }
 
-const server = spawn(process.platform === 'win32' ? 'npx.cmd' : 'npx',
+const server = REMOTE ? null : spawn(process.platform === 'win32' ? 'npx.cmd' : 'npx',
   ['astro', 'preview', '--port', String(PORT), '--host', '127.0.0.1'],
   { cwd: root, stdio: 'ignore', shell: process.platform === 'win32' });
-const stop = () => { try { process.platform === 'win32' ? execFileSync('taskkill', ['/pid', String(server.pid), '/t', '/f'], { stdio: 'ignore' }) : server.kill(); } catch {} };
+const stop = () => { if (!server) return; try { process.platform === 'win32' ? execFileSync('taskkill', ['/pid', String(server.pid), '/t', '/f'], { stdio: 'ignore' }) : server.kill(); } catch {} };
 process.on('exit', stop);
 
 const results = [];
@@ -147,8 +156,8 @@ if (ONLY.length) {
 }
 const date = new Date().toISOString().slice(0, 10);
 fs.mkdirSync(path.join(root, 'reports'), { recursive: true });
-const file = path.join(root, 'reports', `lab-gate-${date}.json`);
-fs.writeFileSync(file, JSON.stringify({ date, limits: LIMITS, runsPerTemplate: RUNS, lighthouse: 'mobile, simulated throttling', results }, null, 2));
+const file = path.join(root, 'reports', `lab-gate-${date}${REMOTE ? '-deployed' : '-local'}.json`);
+fs.writeFileSync(file, JSON.stringify({ date, origin: ORIGIN, limits: LIMITS, runsPerTemplate: RUNS, lighthouse: 'mobile, simulated throttling', results }, null, 2));
 console.log(`\n${failed} of ${TEMPLATES.length} templates over budget · written to ${path.relative(root, file)}`);
 console.log(failed ? '\x1b[31mLAB GATE: FAILED\x1b[0m — v2: a page that fails the lab gate is not published.\n' : '\x1b[32mLAB GATE: PASSED\x1b[0m\n');
 process.exit(failed ? 1 : 0);
