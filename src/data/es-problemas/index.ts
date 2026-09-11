@@ -10,6 +10,8 @@ import { hormigasEnLaCocina } from './hormigas-en-la-cocina';
 import { hormigasDeHumedadYAgua } from './hormigas-de-humedad-y-agua';
 import { hormigasCarpinterasEnUnaVentana } from './hormigas-carpinteras-en-una-ventana';
 import { aserrinBajoLaMoldura } from './aserrin-bajo-la-moldura';
+import { termitasDeMaderaHumedaBajoElPiso } from './termitas-de-madera-humeda-bajo-el-piso';
+import { maderaBlandaEnElAlfeizar } from './madera-blanda-en-el-alfeizar';
 
 export type { EsProblema } from './tipos';
 
@@ -29,6 +31,8 @@ export const esProblemas: EsProblema[] = [
   hormigasDeHumedadYAgua,
   hormigasCarpinterasEnUnaVentana,
   aserrinBajoLaMoldura,
+  termitasDeMaderaHumedaBajoElPiso,
+  maderaBlandaEnElAlfeizar,
 ];
 
 /** Slug español del servicio padre, leído de src/data/es-servicios/. */
