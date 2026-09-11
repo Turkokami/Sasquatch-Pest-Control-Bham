@@ -1,0 +1,240 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import { business } from '../../data/business';
+import { t } from '../../data/i18n';
+
+const path = '/es/socios-de-confianza/';
+const S = t('es');
+
+/* SOCIOS DE CONFIANZA — la pareja de /trusted-partners/, 11 Sep 2026.
+ *
+ * LO QUE NO SE TRADUJO, A PROPÓSITO: la sección de Coastal K9 y el segundo
+ * estándar ("especialistas que traemos"), que existe solo por ella. Poner
+ * contenido de detección con perros en una página de Sasquatch está abierto
+ * en GUARDRAILS.md §6 — el dueño lo pidió y el Keystone lo prohíbe — y no se
+ * repite en un segundo idioma hasta que el dueño decida. Es la misma regla
+ * que dejó fuera la línea de perros en /es/areas-de-servicio/ferndale/. Si
+ * §6 se resuelve a favor de la sección, vuelve con su estándar aparte, como
+ * en inglés: los dos estándares no se mezclan.
+ *
+ * LO QUE NUNCA SE AGREGA: un lugar pagado. La página dice que nadie paga por
+ * aparecer, y cada nombre nuevo es una promesa que se cumple o se rompe.
+ *
+ * Lo de King of Kings viene de la página en inglés, que lo leyó en el sitio
+ * de ellos el 4 Sep 2026: el dueño, el teléfono y cada servicio. Lo único
+ * nuestro es la recomendación, y va dicha como nuestra.
+ *
+ * Como en inglés, no hay tipo de página v2 que le quede (el harness la
+ * lista sin banda). Se escribió corta porque su trabajo es darle a alguien el
+ * teléfono de otra empresa y quitarse del camino. */
+
+/* 40–60 palabras (M2). Son 50. */
+const answer =
+  'Aquí están las empresas locales a las que mandamos a la gente cuando un trabajo no es de control de plagas, y el entomólogo al que consultamos nosotros. Nadie paga por aparecer en esta página, y el estándar para estar en ella está escrito abajo, completo.';
+
+const faqs = [
+  {
+    q: '¿Las empresas pagan por aparecer en esta página?',
+    a: 'No. No hay cuota, ni comisión, ni acuerdo de referidos. Por eso la lista es corta: son negocios a los que ya llamamos cuando un trabajo no es de control de plagas, no negocios que pidieron estar aquí.',
+  },
+  {
+    q: '¿Sasquatch Pest Control limpia ventanas o canaletas?',
+    a: 'No. Atendemos las plagas que aparecen en las canaletas, los vidrios y los aleros — roedores que usan una canaleta tapada como camino al techo, nidos de avispa en el alero, telarañas en los marcos —, pero la limpieza es otro oficio, con otro equipo y otro seguro. Ese trabajo lo referimos.',
+  },
+  {
+    q: '¿Cómo reviso a una empresa que ustedes me recomiendan?',
+    a: 'Igual que debería revisarnos a nosotros. El Departamento de Labor & Industries de Washington tiene una herramienta gratuita que muestra el registro, la compensación al trabajador y cualquier citación. Toma un par de minutos y vale la pena antes de que alguien trabaje en su propiedad.',
+  },
+  {
+    q: '¿Qué pasa si una empresa de la lista deja de cumplir el estándar?',
+    a: 'Sale de la página. Esa es toda la razón de que la lista sea corta y de que valga algo: una recomendación que no respaldaríamos es peor que ninguna, porque el cliente la oyó de nosotros.',
+  },
+];
+
+const rails = [
+  { href: '/es/servicios/', label: 'Todo lo que sí atendemos' },
+  { href: '/es/servicios/exclusion-y-reparaciones/', label: 'Exclusión de plagas y reparaciones' },
+  { href: '/es/premios/', label: 'Premios, prensa y cómo verificar una empresa' },
+  { href: '/es/nosotros/', label: 'Quiénes somos' },
+  { href: '/es/contacto/', label: 'Contacto' },
+];
+---
+
+<BaseLayout
+  path={path}
+  lang="es"
+  title="Socios de Confianza y Referencias Locales | Sasquatch"
+  description="Las empresas locales a las que mandamos clientes para trabajos que Sasquatch Pest Control no hace. Nadie paga por aparecer, y aquí está el estándar para estar."
+  kind="page"
+  faqs={faqs}
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Socios de confianza', path }]}
+>
+  <h1>Referencias locales: a quién mandamos a la gente</h1>
+  <AnswerBox text={answer} />
+  <LeadForm />
+
+  <div class="prose">
+    <p>
+      Hay trabajos que no hacemos. Cuando un cliente nos pregunta por uno,
+      preferimos mandarlo con alguien bueno que encogernos de hombros.
+    </p>
+    <p>
+      Las empresas de esta página son locales, tienen licencia y seguro, y
+      hacen un trabajo que dejaríamos hacer en nuestras propias casas.{' '}
+      <b>Nadie paga por aparecer aquí.</b> No hay cuota, ni comisión, ni acuerdo
+      de ningún tipo: son los negocios a los que llamamos cuando un trabajo se
+      sale de lo que hace Sasquatch Pest Control. Por eso la lista local tiene
+      un nombre y no veinte. Una página de veinte referencias es un directorio,
+      y un directorio que nadie revisó no le sirve de nada a quien lo lee.
+    </p>
+
+    <h2 lang="en">King of Kings Window Cleaning</h2>
+    <p>
+      <b>Limpieza exterior y de ventanas · Bellingham, WA · da servicio en los
+      condados de Whatcom y Skagit</b>
+    </p>
+    <p>
+      King of Kings Window Cleaning es una empresa local de limpieza exterior
+      con sede en Bellingham, fundada y dirigida por Randy Fee. Como nosotros,
+      se maneja desde aquí y no desde el escritorio de una franquicia en otro
+      estado. Hacen limpieza de ventanas residencial y comercial, limpieza de
+      canaletas y bajantes, limpieza de techos, retiro de musgo, lavado a
+      presión, lavado de casas y limpieza de paneles solares.
+    </p>
+    <p>
+      <b>Por qué les mandamos gente.</b> El trabajo de plagas y la limpieza
+      exterior se cruzan todo el tiempo: telarañas y excremento en los vidrios
+      y los marcos, nidos de avispa bajo el alero, canaletas llenas de agujas y
+      hojas que guardan humedad contra la fascia y les dan a los roedores un
+      camino techado hasta el techo. Esa canaleta es de las condiciones que más
+      encontramos en un trabajo de roedores en este condado, y la podemos
+      señalar pero no arreglar. Nosotros atendemos las plagas; la limpieza y
+      las condiciones que las siguen invitando son otro oficio, y King of Kings
+      lo hace bien.
+    </p>
+    <p>
+      <a href="https://www.kingofkingswindowcleaning.com/" rel="nofollow noopener">kingofkingswindowcleaning.com</a>{' '}
+      (en inglés) · <a href="tel:+13603036806">(360) 303-6806</a>
+    </p>
+
+    <h2>El entomólogo al que consultamos</h2>
+    <p>
+      <b>Jorge Bedoya, Entomólogo Certificado Asociado</b>
+    </p>
+    <p>
+      Este va al revés que todo lo demás de la página: Jorge no es alguien con
+      quien lo mandamos a usted, sino alguien a quien vamos nosotros. Tiene la
+      certificación de Entomólogo Certificado Asociado (ACE) de la Sociedad
+      Entomológica de América, y revisa para esta empresa la identificación de
+      especies y los protocolos de tratamiento. Es consultor, no parte del
+      personal: no hace rutas, no va a los trabajos ni supervisa técnicos. Y la
+      ACE es una certificación profesional que otorga una sociedad científica,
+      no una licencia de pesticidas de Washington; es otra credencial, con otro
+      propósito, que las licencias del WSDA de nuestros técnicos.
+    </p>
+    <p>
+      Lo nombramos porque saber a quién le pregunta una empresa cuando no está
+      segura vale tanto como saber quién toca a su puerta.
+    </p>
+
+    <h2>Lo que no hacemos</h2>
+    <p>
+      Para que no haya confusión sobre dónde termina nuestro trabajo, esto es
+      lo que Sasquatch Pest Control no hace, y a quién lo mandaríamos.
+    </p>
+    <ul>
+      <li>
+        Limpieza de ventanas, canaletas y techos, y retiro de musgo:{' '}
+        <span lang="en">King of Kings Window Cleaning</span>.
+      </li>
+      <li>
+        Lavado a presión, lavado de casas y limpieza de paneles solares:{' '}
+        <span lang="en">King of Kings Window Cleaning</span>.
+      </li>
+      <li>
+        Informes de organismos que destruyen la madera para una compraventa:
+        requieren una licencia de inspector estructural de plagas de Washington,
+        que es aparte de nuestras licencias de aplicador. Esa licencia no la
+        tenemos, y esos informes no los hacemos. Pídale un inspector
+        a su prestamista o a su agente; nosotros podemos tratar lo que encuentre.
+      </li>
+      <li>
+        Reparaciones de estructura más allá de la exclusión: sellamos, ponemos
+        malla y tapajuntas y reemplazamos los materiales por donde entran
+        roedores e insectos, pero la estructura, el techo y el revestimiento son
+        trabajo de un contratista.
+      </li>
+    </ul>
+
+    <h2>Por qué existe esta página</h2>
+    <p>
+      Casi ninguna empresa de control de plagas publica algo así, y la razón es
+      sencilla: cada línea es sobre un trabajo que no nos quedamos. Nombrar a
+      un limpiador de ventanas manda un trabajo a otro lado, y poner un estándar
+      en público quiere decir que se nos puede reclamar la primera vez que
+      aparezca aquí alguien que no lo cumpla.
+    </p>
+    <p>
+      Está aquí por lo que pasa del otro lado. El cliente que pregunta por las
+      canaletas y recibe una respuesta directa y un buen número se acuerda, y
+      nos llama por las avispas en agosto. Y escribir dónde termina nuestro
+      trabajo nos obliga a tenerlo claro por dentro: una empresa vaga sobre sus
+      propios límites acaba aceptando trabajos que no debería, y así es como se
+      le queda mal a la gente.
+    </p>
+
+    <h2>Revise a cualquiera antes de contratarlo, incluidos nosotros</h2>
+    <p>
+      Una recomendación nuestra es un punto de partida, no un sustituto de
+      buscar. El Departamento de Labor &amp; Industries de Washington publica
+      una herramienta gratuita, sin cuenta, que muestra el registro de la
+      empresa, la compensación al trabajador y el historial de citaciones. En
+      nuestra <a href="/es/premios/">página de premios</a> explicamos cómo usarla
+      junto con el buscador de licencias del Departamento de Agricultura.
+      Pruébelos primero con nosotros si quiere; para eso los publicamos.
+    </p>
+
+    <h2>El estándar para aparecer como referencia local</h2>
+    <p>
+      Es trabajo que no hacemos para nada, y se entrega completo. Hecha la
+      presentación, salimos del asunto, y todo lo que el cliente puede reclamar
+      pasa a esa empresa; por eso el estándar es este. Un negocio tiene que:
+    </p>
+    <ul>
+      <li>Tener licencia y seguro para su trabajo en el estado de Washington.</li>
+      <li>
+        Ser local de verdad: con sede en los condados de Whatcom o Skagit y
+        trabajando aquí, no un centro de llamadas nacional repartiendo clientes.
+      </li>
+      <li>Complementarnos, no competir: un servicio que Sasquatch Pest Control no ofrece.</li>
+      <li>
+        Ser alguien a quien contrataríamos nosotros, con un trabajo y un trato
+        al cliente que respaldamos con nuestro nombre.
+      </li>
+    </ul>
+    <p>
+      Ese estándar no se ha movido para que quepa nadie, y no se va a mover. Un
+      estándar que se ensancha cada vez que alguien no lo alcanza es adorno.
+      ¿Cree que su negocio lo cumple? <a href="/es/contacto/">Escríbanos</a>.
+      Nadie paga por estar en esta página, y nadie va a pagar nunca.
+    </p>
+  </div>
+
+  <Faq items={faqs} />
+
+  <LinkRail heading="Relacionado" links={rails} />
+
+  <div class="prose" data-boilerplate>
+    <h2>¿Tiene una pregunta sobre esta página?</h2>
+    <p>
+      Llame o mande un mensaje de texto al{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a> — hablamos
+      español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
+    </p>
+    <p>{S.englishOnwardNote}</p>
+  </div>
+</BaseLayout>

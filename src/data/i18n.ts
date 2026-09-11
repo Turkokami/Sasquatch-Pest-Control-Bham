@@ -91,6 +91,7 @@ export const PAGE_PAIRS: Record<string, string> = {
   '/locations/': '/es/areas-de-servicio/',
   '/guides/': '/es/guias/',
   '/awards/': '/es/premios/',
+  '/trusted-partners/': '/es/socios-de-confianza/',
   '/our-guarantee/': '/es/garantia/',
   '/about/': '/es/nosotros/',
   '/contact/': '/es/contacto/',
@@ -188,10 +189,12 @@ export const UI: Record<Lang, Strings> = {
        wants twelve (see Header.astro) and reaches it when the set is
        complete — a short row while pages land beats a dead link. */
     nav: [],
-    /* Deliberately empty. The English utility row points at three pages that
-       are not translated; linking a Spanish reader into English from the
+    /* The English utility row holds three pages. Two have Spanish twins: the
+       guarantee, which the Spanish masthead already carries as a chip, and
+       trusted partners (11 Sep 2026), which goes here as in English. /network/
+       has no twin, and linking a Spanish reader into English from the
        masthead is the drift this scope was drawn to avoid. */
-    utilityNav: [],
+    utilityNav: [{ href: '/es/socios-de-confianza/', label: 'Socios de confianza' }],
     switchTo: 'English',
     switchToAria: 'View this page in English',
     englishOnwardNote:
