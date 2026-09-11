@@ -55,6 +55,12 @@ import { bellinghamCityCenter } from './bellingham-city-center';
 import { bellinghamCordata } from './bellingham-cordata';
 import { bellinghamEdgemoor } from './bellingham-edgemoor';
 import { bellinghamFairhaven } from './bellingham-fairhaven';
+import { bellinghamHappyValley } from './bellingham-happy-valley';
+import { bellinghamIrongate } from './bellingham-irongate';
+import { bellinghamLetteredStreets } from './bellingham-lettered-streets';
+import { bellinghamSehome } from './bellingham-sehome';
+import { bellinghamSilverBeach } from './bellingham-silver-beach';
+import { bellinghamWhatcomFalls } from './bellingham-whatcom-falls';
 
 export type { EsLugar } from './tipos';
 
@@ -109,6 +115,12 @@ export const esLugares: EsLugar[] = [
   bellinghamCordata,
   bellinghamEdgemoor,
   bellinghamFairhaven,
+  bellinghamHappyValley,
+  bellinghamIrongate,
+  bellinghamLetteredStreets,
+  bellinghamSehome,
+  bellinghamSilverBeach,
+  bellinghamWhatcomFalls,
 ];
 
 export const COUNTY_TOWNS = ['whatcom-county', 'skagit-county'] as const;
