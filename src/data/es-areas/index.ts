@@ -31,6 +31,10 @@ import { burlington } from './burlington';
 import { sedroWoolley } from './sedro-woolley';
 import { bow } from './bow';
 import { alger } from './alger';
+import { blaineSemiahmoo } from './blaine-semiahmoo';
+import { blaineBirchBayVillage } from './blaine-birch-bay-village';
+import { blaineDowntownBlaine } from './blaine-downtown-blaine';
+import { blaineEastBlaine } from './blaine-east-blaine';
 
 export type { EsLugar } from './tipos';
 
@@ -57,6 +61,11 @@ export const esLugares: EsLugar[] = [
   sedroWoolley,
   bow,
   alger,
+  /* Barrios: Blaine */
+  blaineSemiahmoo,
+  blaineBirchBayVillage,
+  blaineDowntownBlaine,
+  blaineEastBlaine,
 ];
 
 export const COUNTY_TOWNS = ['whatcom-county', 'skagit-county'] as const;
