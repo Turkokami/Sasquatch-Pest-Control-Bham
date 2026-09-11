@@ -32,7 +32,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import sharp from 'sharp';
+
+/* sharp is a devDependency, but it ships native binaries, and a platform it
+   cannot install on must not be able to take the whole site down. Without it
+   there are no variants, srcsetFor() lists nothing, and every page renders
+   its original image — slower, and loudly reported here, but never broken. */
+let sharp;
+try {
+  sharp = (await import('sharp')).default;
+} catch (e) {
+  console.warn(`\n  responsive images: SKIPPED — sharp would not load (${e.message.split('\n')[0]}).\n  Pages will serve original images; the lab gate will show the cost.\n`);
+  process.exit(0);
+}
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.join(root, 'public', 'img');
