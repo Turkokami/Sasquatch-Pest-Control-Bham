@@ -15,6 +15,8 @@ import { maderaBlandaEnElAlfeizar } from './madera-blanda-en-el-alfeizar';
 import { avispasDentroDeUnaPared } from './avispas-dentro-de-una-pared';
 import { avispasAmarillasEnElPasto } from './avispas-amarillas-en-el-pasto';
 import { nidoDeAvisponEnUnArbol } from './nido-de-avispon-en-un-arbol';
+import { esUnaAranaVagabunda } from './es-una-arana-vagabunda';
+import { aranasCadaOtono } from './aranas-cada-otono';
 
 export type { EsProblema } from './tipos';
 
@@ -39,6 +41,8 @@ export const esProblemas: EsProblema[] = [
   avispasDentroDeUnaPared,
   avispasAmarillasEnElPasto,
   nidoDeAvisponEnUnArbol,
+  esUnaAranaVagabunda,
+  aranasCadaOtono,
 ];
 
 /** Slug español del servicio padre, leído de src/data/es-servicios/. */
