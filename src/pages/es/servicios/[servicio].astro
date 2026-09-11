@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
+import LeadForm from '../../../components/LeadForm.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { business } from '../../../data/business';
@@ -36,6 +37,7 @@ const rails = esServicios
 >
   <h1>{s.h1}</h1>
   <AnswerBox text={s.answer} />
+  <LeadForm />
 
   <div class="prose">
     {s.secciones.map((sec) => (

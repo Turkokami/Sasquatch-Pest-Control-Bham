@@ -224,6 +224,8 @@ const KEYSTONE_V2 = [
    'No incentives, no gating, no staff-written reviews, no suppressing bad ones. Ask every customer at job completion and set a monthly target: v2 finds review cadence matters more than the total. GUARDRAILS.md §5 — the owner acknowledging it in writing is what v2 asks for.'],
   ['Bird work — offered or retired?',
    'Retired on 30 Aug 2026 per services.ts and /about/, but the berry-processing, marina and retail pages offer bird exclusion, a commercial photo caption advertises it, and Keystone Part 1.4 calls it the standout edge. GUARDRAILS.md §8.'],
+  ['Spanish on the phone, and a Spanish lead form',
+   'Every Spanish page says "Hablamos español". Confirm someone who speaks Spanish answers 360-410-2199 (or say how a Spanish caller is handled); once confirmed the schema lists Spanish as a language the line is answered in. Separately, the lead form lives inside the CRM and is in English — the Spanish pages say so beside the phone number. A Spanish copy of the form built in the CRM would replace that line; send its form ID.'],
   ['Coastal K9 on /trusted-partners/ — which instruction wins?',
    'Keystone says no K9 content on Sasquatch; the owner asked for Coastal K9 to be listed as a contracted specialist. The page does the second. GUARDRAILS.md §6.'],
 ];

@@ -157,7 +157,7 @@ const guideTopics = (await getCollection('guides'))
   .sort((a, b) => a.slug.localeCompare(b.slug));
 
 const S = t(lang);
-const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDesc, guideTopics });
+const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDesc, guideTopics, inLanguage: htmlLang });
 ---
 <!doctype html>
 <html lang={htmlLang}>
@@ -213,7 +213,7 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
         <slot />
       </div>
     </main>
-    <Footer />
+    <Footer lang={lang} />
     {/* LAST IN THE DOCUMENT, and deliberately after the footer. It is
         position:fixed so source order does not decide where it paints, and
         putting it here keeps it out of the tab order until a keyboard user has

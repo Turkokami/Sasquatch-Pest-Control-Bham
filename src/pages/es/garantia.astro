@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
+import LeadForm from '../../components/LeadForm.astro';
 import { business } from '../../data/business';
 import { t } from '../../data/i18n';
 
@@ -26,6 +27,7 @@ const answer =
 >
   <h1>Nuestra Garantía de Servicio 100 %</h1>
   <AnswerBox text={answer} />
+  <LeadForm />
 
   <div class="prose">
     <h2>Qué significa la garantía</h2>

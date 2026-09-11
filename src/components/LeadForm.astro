@@ -35,6 +35,7 @@ import {
   LEAD_FORM_ID,
   freeInspectionForPath,
   offerLabel,
+  langForPath,
 } from '../lib/offer';
 
 interface Props {
@@ -69,8 +70,9 @@ interface Props {
    is how the wording drifted in the first place. Paths carry a trailing slash
    (vercel.json sets trailingSlash), which is the shape freeInspectionForPath
    expects. */
+const lang = langForPath(Astro.url.pathname);
 const {
-  heading = offerLabel(freeInspectionForPath(Astro.url.pathname)),
+  heading = offerLabel(freeInspectionForPath(Astro.url.pathname), lang),
   primary = false,
   eager = false,
 } = Astro.props;
@@ -147,7 +149,7 @@ const frameId = `inline-${f.id}`;
       data-height={String(f.height)}
       data-layout-iframe-id={frameId}
       data-form-id={f.id}
-      title={f.name}
+      title={lang === 'es' ? `${f.name} (formulario en inglés)` : f.name}
     ></iframe>
   </div>
 
@@ -158,11 +160,25 @@ const frameId = `inline-${f.id}`;
       is to collect a lead. The phone number is the real fallback here: it is
       how most of this company's work arrives anyway, and it needs nothing to
       load. The direct form link is there for anyone who would rather type. */}
-  <p class="leadform-fallback">
-    Form not loading? Call or text{' '}
-    <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, or{' '}
-    <a href={src} rel="noopener">open the form on its own page</a>.
-  </p>
+  {/* THE SPANISH LINE SAYS THE FORM IS IN ENGLISH, because it is: the fields
+      live inside the CRM's own frame and this site cannot translate them.
+      Saying so beside the phone number — and that we speak Spanish on it —
+      is the honest version until the owner has a Spanish form built in the
+      CRM (recorded in scripts/pending.mjs). */}
+  {lang === 'es' ? (
+    <p class="leadform-fallback">
+      El formulario está en inglés. Si prefiere, llame o mande un mensaje de
+      texto al <a href={`tel:${business.phoneE164}`}>{business.phone}</a> —
+      hablamos español — o{' '}
+      <a href={src} rel="noopener">abra el formulario en su propia página</a>.
+    </p>
+  ) : (
+    <p class="leadform-fallback">
+      Form not loading? Call or text{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, or{' '}
+      <a href={src} rel="noopener">open the form on its own page</a>.
+    </p>
+  )}
 </aside>
 
 {/* The loader. Inline and tiny, so it costs nothing on the pages where the

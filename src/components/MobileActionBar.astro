@@ -28,6 +28,7 @@ import { business } from '../data/business';
 import {
   freeInspectionForPath,
   offerLabelShort,
+  langForPath,
   LEAD_FORM_ID,
 } from '../lib/offer';
 
@@ -37,7 +38,10 @@ interface Props {
 }
 const { path } = Astro.props;
 
-const label = offerLabelShort(freeInspectionForPath(path));
+/* Language from the path, like the offer: "Call now" sat on all twenty-nine
+   Spanish pages until 10 Sep 2026 because this bar never knew it had one. */
+const lang = langForPath(path);
+const label = offerLabelShort(freeInspectionForPath(path), lang);
 
 /* WHERE THE SECOND BUTTON GOES, and it is not always this page.
    Every page carries the lead form except /network/, which routes Texas
@@ -47,19 +51,26 @@ const label = offerLabelShort(freeInspectionForPath(path));
    one page sends the reader to /contact/ instead. Deriving it from the path
    keeps the exception in the same file as the bar rather than in a prop that
    200 pages would have to remember to pass. */
-const hasFormOnPage = path !== '/network/';
-const formHref = hasFormOnPage ? `#${LEAD_FORM_ID}` : `/contact/#${LEAD_FORM_ID}`;
+/* /trusted-partners/ joined /network/ on 10 Sep 2026, when harness check 6b
+   was written and found its button jumping to a form that page has never
+   had — along with every Spanish page, which had no form either until the
+   same day. The check now fails any same-page anchor with no target, so the
+   next page built without a form cannot ship with this bug. */
+const NO_FORM = new Set(['/network/', '/trusted-partners/']);
+const hasFormOnPage = !NO_FORM.has(path);
+const contactPath = lang === 'es' ? '/es/contacto/' : '/contact/';
+const formHref = hasFormOnPage ? `#${LEAD_FORM_ID}` : `${contactPath}#${LEAD_FORM_ID}`;
 ---
 {/* aria-label because this is a second navigation landmark and "navigation"
     on its own tells a screen reader user nothing about which one they are in.
     data-boilerplate for the reason every other chrome component carries it:
     it is furniture on 206 pages and neither the word count nor the duplicate
     sentence scanner should ever see it. */}
-<nav class="actionbar" aria-label="Contact actions" data-boilerplate>
+<nav class="actionbar" aria-label={lang === 'es' ? 'Acciones de contacto' : 'Contact actions'} data-boilerplate>
   <a class="actionbar-call" href={`tel:${business.phoneE164}`}>
     {/* aria-hidden on the glyph: the link already says "Call now", and a
         screen reader announcing "telephone receiver Call now" is noise. */}
-    <span aria-hidden="true">📞</span> Call now
+    <span aria-hidden="true">📞</span> {lang === 'es' ? 'Llame ahora' : 'Call now'}
   </a>
   <a class="actionbar-form" href={formHref}>{label}</a>
 </nav>

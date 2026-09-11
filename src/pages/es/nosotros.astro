@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
+import LeadForm from '../../components/LeadForm.astro';
 import { business } from '../../data/business';
 import { t } from '../../data/i18n';
 
@@ -36,6 +37,7 @@ const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-c
 >
   <h1>Quiénes Somos</h1>
   <AnswerBox text={answer} />
+  <LeadForm />
 
   <div class="prose">
     <h2>¿Cómo empezó?</h2>

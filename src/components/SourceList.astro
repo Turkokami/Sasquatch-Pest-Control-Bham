@@ -20,10 +20,16 @@ interface Props {
   reviewBy: Date;
   legalDisclaimer?: boolean;
 }
+import { langForPath } from '../lib/offer';
 const { sources, reviewBy, legalDisclaimer = false } = Astro.props;
 
+/* Spanish from the path, like the FAQ heading. The source TITLES are never
+   translated — a citation names a publication as its publisher named it, and
+   a translated title is one a reader cannot search for — so the Spanish block
+   says in one line that the sources are in English. */
+const es = langForPath(Astro.url.pathname) === 'es';
 const fmt = (d: Date) =>
-  d.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+  d.toLocaleDateString(es ? 'es-US' : 'en-US', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 ---
 {/* THE WHOLE SECTION IS BOILERPLATE TO THE HARNESS, added 10 Sep 2026, and the
     reason is that a bibliography is not body prose and both checks were
@@ -52,9 +58,20 @@ const fmt = (d: Date) =>
     honest and the pages got longer, instead of the pages staying the same and
     the number getting easier. */}
 <section class="sources" data-boilerplate>
-  <h2>Sources</h2>
+  <h2>{es ? 'Fuentes' : 'Sources'}</h2>
+  {es && <p>Las fuentes están publicadas en inglés por las instituciones que las escribieron.</p>}
 
-  {legalDisclaimer && (
+  {legalDisclaimer && es && (
+    <p class="disclaimer" data-boilerplate>
+      <strong>Esto es información, no asesoría legal.</strong> Somos una
+      empresa de control de plagas, no abogados. Lo que sigue es nuestra
+      lectura de reglas publicadas, con enlaces para que usted mismo las
+      revise. Para asesoría sobre su situación, hable con un abogado, con
+      <a href="https://www.washingtonlawhelp.org/" rel="nofollow noopener">WashingtonLawHelp</a>,
+      o con la oficina de cumplimiento de códigos de su ciudad o condado.
+    </p>
+  )}
+  {legalDisclaimer && !es && (
     <p class="disclaimer" data-boilerplate>
       <strong>This is information, not legal advice.</strong> We are a pest
       control company, not attorneys. What follows is our reading of published
@@ -68,18 +85,27 @@ const fmt = (d: Date) =>
   <ul>
     {sources.map((s) => (
       <li>
-        <a href={s.url} rel="nofollow noopener">{s.label}</a>
-        <span class="read"> — read {fmt(s.read)}</span>
+        <a href={s.url} rel="nofollow noopener" lang={es ? 'en' : undefined}>{s.label}</a>
+        <span class="read">{es ? ` — consultada el ${fmt(s.read)}` : ` — read ${fmt(s.read)}`}</span>
       </li>
     ))}
   </ul>
 
-  <p class="review" data-boilerplate>
-    Rules change. This page is scheduled for review against its sources by
-    <strong>{fmt(reviewBy)}</strong>. If you are reading it after that date and
-    something looks out of step with the current rule, the rule is right and we
-    are wrong — please tell us.
-  </p>
+  {es ? (
+    <p class="review" data-boilerplate>
+      La información cambia. Esta página tiene programada una revisión contra
+      sus fuentes a más tardar el <strong>{fmt(reviewBy)}</strong>. Si la está
+      leyendo después de esa fecha y algo no coincide con lo que dice la fuente
+      actual, la fuente tiene la razón y nosotros no — por favor díganoslo.
+    </p>
+  ) : (
+    <p class="review" data-boilerplate>
+      Rules change. This page is scheduled for review against its sources by
+      <strong>{fmt(reviewBy)}</strong>. If you are reading it after that date and
+      something looks out of step with the current rule, the rule is right and we
+      are wrong — please tell us.
+    </p>
+  )}
 </section>
 
 {/* No scoped <style> here, on purpose. This block used to carry its own rules

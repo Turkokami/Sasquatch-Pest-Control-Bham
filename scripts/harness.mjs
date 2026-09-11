@@ -27,6 +27,9 @@
  *                             one high-priority image; the lab gate is separate
  *   6  conversion contract    v2 Part 4A: phone is a tel: link everywhere, and
  *                             the schema number is the displayed number
+ *   6b same-page anchors      every href="#id" lands on an element that exists
+ *   6c Spanish chrome         no English interface strings on /es/ pages, and
+ *                             no Spanish WebPage declaring itself en-US
  *
  * Aligned to Keystone v2 on 10 Sep 2026. What v2 asks for that this file does
  * NOT do, so nobody reads the list above as complete: the keyword→URL map
@@ -1093,6 +1096,62 @@ if (run('convert')) {
     }
   }
   if (clean) ok(`${phone} is a tel: link everywhere it appears, and the schema telephone matches it`);
+
+  /* 6b · EVERY SAME-PAGE ANCHOR LANDS, added 10 Sep 2026. The sticky mobile
+     bar's second button is href="#lead-form" on every page, and twenty-eight
+     pages had no element with that id: all twenty-seven Spanish pages without
+     a form, and /trusted-partners/. On a phone that is the primary action
+     doing nothing at all — the worst kind of dead control, because it looks
+     like it worked. The dead-link crawler (check 1) resolves paths and never
+     looked at fragments. This does, for every href="#…" on every page. */
+  let anchorsOk = true;
+  for (const p of pages) {
+    const ids = new Set([...p.html.matchAll(/\sid=(["'])([^"']+)\1/g)].map((m) => m[2]));
+    for (const m of p.html.matchAll(/\shref=(["'])#([^"']+)\1/g)) {
+      if (!ids.has(decodeURIComponent(m[2]))) {
+        fail(`${p.url} links to #${m[2]}, which is not an id on that page`); anchorsOk = false;
+      }
+    }
+  }
+  if (anchorsOk) ok('every same-page #anchor lands on an element that exists');
+
+  /* 6c · A SPANISH PAGE IS SPANISH ALL THE WAY DOWN, added 10 Sep 2026.
+     Twenty-nine Spanish pages shipped with an English footer, an English
+     "Call now" bar, an English FAQ heading and WebPage.inLanguage "en-US" —
+     every one of them chrome, rendered by a component that had never been
+     told a Spanish page existed. The body copy was checked; the furniture
+     around it was not.
+
+     What this catches: the English UI strings those components render,
+     appearing in the visible text of any /es/ page, and a Spanish page whose
+     graph declares itself English. Text inside an element marked lang="en"
+     is skipped — a cited English publication title is correctly English.
+     What it does NOT catch: an English sentence nobody put on this list. It
+     is a regression test for the chrome, not a language detector. */
+  const EN_CHROME = [
+    'Frequently asked questions', 'Call now', 'Free inspection', 'Free estimate',
+    'Request a free', 'Form not loading', 'Google reviews', 'WSDA-licensed applicators',
+    'All services', 'All areas', 'What we apply', 'Our network', 'Trusted partners',
+    'Guarantee & terms', 'Awards & press', 'Service areas', 'Skip to content',
+    'as of ', 'Rated ', 'Sources', 'Hours', 'Contact actions', 'Breadcrumb',
+  ];
+  let esOk = true;
+  for (const p of pages.filter((x) => isSpanish(x.url))) {
+    const visible = textOf(
+      p.html
+        .replace(/<head[\s\S]*?<\/head>/i, ' ')
+        .replace(/<(\w+)\b[^>]*\slang=(["'])en[^"']*\2[^>]*>[\s\S]*?<\/\1>/gi, ' '),
+    );
+    const attrs = [...p.html.matchAll(/\s(?:aria-label|alt|title)=(["'])([^"']*)\1/g)].map((m) => m[2]).join(' | ');
+    const hay = `${visible} | ${attrs}`.replace(/&amp;/g, '&');
+    for (const s of EN_CHROME) {
+      if (hay.includes(s)) { fail(`${p.url} shows English interface text "${s.trim()}"`); esOk = false; }
+    }
+    if (/"@type":"WebPage"[^{}]*"inLanguage":"en-US"|"inLanguage":"en-US"[^{}]*"@type":"WebPage"/.test(p.html)) {
+      fail(`${p.url} declares WebPage inLanguage en-US`); esOk = false;
+    }
+  }
+  if (esOk) ok('no English interface text on any Spanish page, and every Spanish WebPage declares es-US');
 }
 
 /* ---------- summary ---------- */

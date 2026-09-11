@@ -111,6 +111,14 @@ export interface GuideTopic {
 export interface PageSchemaInput {
   /** Path with leading and trailing slash, e.g. "/services/rodent-control/" */
   path: string;
+  /**
+   * The page's language as a BCP 47 tag. Set by BaseLayout from its own `lang`
+   * — the same value written to <html lang> — so the two cannot disagree.
+   * Until 10 Sep 2026 WebPage.inLanguage was the literal 'en-US', which every
+   * Spanish page therefore declared about itself in the graph while its own
+   * <html> element said es-US.
+   */
+  inLanguage?: 'en-US' | 'es-US';
   title: string;
   description: string;
   /** Page type drives which node is emitted alongside WebPage. */
@@ -321,9 +329,12 @@ function contactPointNode() {
     telephone: business.phone,
     email: business.email,
     areaServed: territoryAreas(),
-    /* Every page of this site is en-US and the business is run out of
-       Bellingham in English. Stated as capability, which is what the property
-       means — it does not assert that no other language is spoken. */
+    /* Stated as capability, which is what the property means — it does not
+       assert that no other language is spoken. STILL ENGLISH ONLY, and that is
+       now a question rather than a fact: the Spanish pages have said "Hablamos
+       español" since the tier was built, and if the owner confirms a Spanish
+       speaker answers this line this becomes two Language nodes. Asked in
+       scripts/pending.mjs rather than asserted here on the pages' say-so. */
     availableLanguage: { '@type': 'Language', name: 'English', alternateName: 'en' },
     hoursAvailable: openingHours(),
   };
@@ -602,7 +613,9 @@ function websiteNode() {
     url: `${SITE}/`,
     name: business.name,
     publisher: { '@id': ID.local },
-    inLanguage: 'en-US',
+    /* Both, because the site is both: the WebSite node is one node shared by
+       every page, so it states the set and each WebPage states its own. */
+    inLanguage: ['en-US', 'es-US'],
   };
 }
 
@@ -756,6 +769,7 @@ export function buildGraph(input: PageSchemaInput) {
     path, title, description, kind, image, faqs, breadcrumbs,
     serviceName, areaServed, datePublished, dateModified, personSlug,
     citations, hasAnswer = true, guideTopics = [], videoKey,
+    inLanguage = 'en-US',
   } = input;
 
   const nodes: Record<string, unknown>[] = [
@@ -861,7 +875,7 @@ export function buildGraph(input: PageSchemaInput) {
       breadcrumb: breadcrumbs?.length ? { '@id': ID.crumb(path) } : undefined,
       datePublished: isoDate(datePublished),
       dateModified: isoDate(dateModified),
-      inLanguage: 'en-US',
+      inLanguage,
       speakable: speakableSelectors.length
         ? { '@type': 'SpeakableSpecification', cssSelector: speakableSelectors }
         : undefined,

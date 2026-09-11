@@ -119,7 +119,7 @@ const currentFor = (href: string) =>
         height={height}
         srcset={srcsetFor(mark)}
         sizes="3.6rem"
-        alt="The Sasquatch Pest Control logo"
+        alt={lang === 'es' ? 'El logotipo de Sasquatch Pest Control' : 'The Sasquatch Pest Control logo'}
         aria-hidden="true"
       />
       <span>{business.name}</span>

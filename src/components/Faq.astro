@@ -2,8 +2,12 @@
 /** ONE FAQ block per page. The same array feeds the FAQPage node, so the
  *  visible questions and the marked-up questions can never diverge.
  *  The live site ships two competing blocks on 8 of 12 service pages. */
+import { langForPath } from '../lib/offer';
 interface Props { items: { q: string; a: string }[]; heading?: string }
-const { items, heading = 'Frequently asked questions' } = Astro.props;
+/* The default follows the page's language. Every Spanish service page carried
+   an English "Frequently asked questions" over Spanish questions until 10 Sep
+   2026, because the heading was a literal and no Spanish route passed one. */
+const { items, heading = langForPath(Astro.url.pathname) === 'es' ? 'Preguntas frecuentes' : 'Frequently asked questions' } = Astro.props;
 ---
 {items.length > 0 && (
   <section class="faq">

@@ -2,6 +2,14 @@
 import { business, isReady, people } from '../data/business';
 import { footerServices, categories } from '../data/services';
 import { writtenTowns } from '../lib/geo-content';
+import { PAGE_PAIRS } from '../data/i18n';
+import { esServicios } from '../data/es-servicios';
+
+interface Props {
+  lang?: 'en' | 'es';
+}
+const { lang = 'en' } = Astro.props;
+const es = lang === 'es';
 
 const a = business.address;
 /* Every built town, not the first ten. builtTowns() returns thirteen, and the
@@ -18,7 +26,7 @@ const top = footerServices();
    which is an Entomological Society certification and not a WSDA license at
    all — counting it gave "6 WSDA-licensed applicators" for five. Match the
    LI- prefix rather than merely testing that the field is filled. */
-const ratingRead = new Date(business.rating.read).toLocaleDateString('en-US', {
+const ratingRead = new Date(business.rating.read).toLocaleDateString(es ? 'es-US' : 'en-US', {
   month: 'long',
   year: 'numeric',
   timeZone: 'UTC',
@@ -26,6 +34,49 @@ const ratingRead = new Date(business.rating.read).toLocaleDateString('en-US', {
 const licensedCount = people.filter(
   (p) => p.publishable === true && isReady(p.credential) && /^LI-/.test(p.credential),
 ).length;
+
+/* THE SPANISH FOOTER, 10 Sep 2026. Until then all twenty-nine Spanish pages
+   ended in this footer in English — its headings, its hours, its rating line
+   and a column of links into English service pages — beneath a masthead that
+   had been careful to link only Spanish ones. Every link here now goes through
+   PAGE_PAIRS, so a Spanish reader is sent to a Spanish page where one exists
+   and a column fills in by itself as pages land. A town with no Spanish page
+   yet is named as plain text rather than linked into English: where we work
+   is worth saying, and saying it costs no detour. */
+const services = top.map((s) => {
+  const en = `/services/${s.slug}/`;
+  const esPath = PAGE_PAIRS[en];
+  const esLabel = esServicios.find((x) => x.enPath === en)?.nav;
+  return es && esPath && esLabel
+    ? { href: esPath, label: esLabel }
+    : es ? null : { href: en, label: s.short };
+}).filter((x): x is { href: string; label: string } => x !== null);
+
+const towns = cities.map((t) => {
+  const en = `/locations/${t.slug}/`;
+  return { name: t.name, href: es ? PAGE_PAIRS[en] : en };
+});
+
+/* The colophon, as data so both languages read one list. /what-we-use/ keeps
+   its English link on Spanish pages, marked as English: it is the one page
+   deliberately never translated (see i18n.ts — a paraphrased label is not a
+   label), and a reader deciding whether to let us apply something should
+   still be one click from every label. */
+const COLOPHON: { en: string; label: string; es: string }[] = [
+  { en: '/gallery/', label: 'Gallery', es: 'Galería' },
+  { en: '/blog/', label: 'Blog', es: 'Blog' },
+  { en: '/what-we-use/', label: 'What we apply', es: 'Lo que aplicamos (en inglés)' },
+  { en: '/awards/', label: 'Awards & press', es: 'Premios y prensa' },
+  { en: '/trusted-partners/', label: 'Trusted partners', es: 'Socios de confianza' },
+  { en: '/guides/', label: 'Guides', es: 'Guías' },
+  { en: '/our-guarantee/', label: 'Guarantee & terms', es: 'Garantía y condiciones' },
+  { en: '/network/', label: 'Our network', es: 'Nuestra red' },
+];
+const colophon = COLOPHON.flatMap((c) => {
+  if (!es) return [{ href: c.en, label: c.label }];
+  if (PAGE_PAIRS[c.en]) return [{ href: PAGE_PAIRS[c.en], label: c.es }];
+  return c.en === '/what-we-use/' ? [{ href: c.en, label: c.es }] : [];
+});
 ---
 <footer class="site">
   <div class="wrap">
@@ -66,42 +117,51 @@ const licensedCount = people.filter(
             machine-readable field, which is exactly what that rule refuses. */}
         {isReady(business.rating.value) && isReady(business.rating.count) && (
           <p class="rating">
-            Rated {business.rating.value} out of 5 from {business.rating.count}{' '}
+            {es
+              ? `Calificación de ${business.rating.value} de 5 en ${business.rating.count} `
+              : `Rated ${business.rating.value} out of 5 from ${business.rating.count} `}
             {isReady(business.gbpUrl) ? (
               <a href={business.gbpUrl as string} rel="nofollow noopener">
-                Google reviews
+                {es ? 'reseñas de Google' : 'Google reviews'}
               </a>
             ) : (
-              'Google reviews'
-            )}, as of {ratingRead}.
+              es ? 'reseñas de Google' : 'Google reviews'
+            )}{es ? `, a ${ratingRead}.` : `, as of ${ratingRead}.`}
           </p>
         )}
         {licensedCount > 0 && (
-          <p>
-            WSDA-licensed applicators on staff:{' '}
-            <a href="/about/">{licensedCount} — see their license numbers</a>
-          </p>
+          es ? (
+            <p>
+              Aplicadores con licencia del WSDA en el equipo:{' '}
+              <a href="/es/nosotros/">{licensedCount} — vea sus números de licencia</a>
+            </p>
+          ) : (
+            <p>
+              WSDA-licensed applicators on staff:{' '}
+              <a href="/about/">{licensedCount} — see their license numbers</a>
+            </p>
+          )
         )}
       </div>
       <div>
-        <h3>Hours</h3>
+        <h3>{es ? 'Horario' : 'Hours'}</h3>
         <ul>
-          <li>Mon–Fri: 8:00 AM – 6:00 PM</li>
-          <li>Sat–Sun: 8:00 AM – 4:00 PM</li>
+          <li>{es ? 'Lun–Vie: 8:00 a. m. – 6:00 p. m.' : 'Mon–Fri: 8:00 AM – 6:00 PM'}</li>
+          <li>{es ? 'Sáb–Dom: 8:00 a. m. – 4:00 p. m.' : 'Sat–Sun: 8:00 AM – 4:00 PM'}</li>
         </ul>
       </div>
       <div>
-        <h3>Services</h3>
+        <h3>{es ? 'Servicios' : 'Services'}</h3>
         <ul>
-          {top.map((s) => <li><a href={`/services/${s.slug}/`}>{s.short}</a></li>)}
-          <li><a href="/services/">All services</a></li>
+          {services.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
+          <li><a href={es ? '/es/servicios/' : '/services/'}>{es ? 'Todos los servicios' : 'All services'}</a></li>
         </ul>
       </div>
       <div>
-        <h3>Service areas</h3>
+        <h3>{es ? 'Áreas de servicio' : 'Service areas'}</h3>
         <ul>
-          {cities.map((t) => <li><a href={`/locations/${t.slug}/`}>{t.name}</a></li>)}
-          <li><a href="/locations/">All areas</a></li>
+          {towns.map((t) => <li>{t.href ? <a href={t.href}>{t.name}</a> : t.name}</li>)}
+          <li><a href={es ? '/es/areas-de-servicio/' : '/locations/'}>{es ? 'Todas las áreas' : 'All areas'}</a></li>
         </ul>
       </div>
     </div>
@@ -117,15 +177,8 @@ const licensedCount = people.filter(
         in the masthead now, and here as well, because a section reachable from
         one place is one edit away from being reachable from none. */}
     <p class="colophon">
-      © {new Date().getFullYear()} {business.name}. ·
-      <a href="/gallery/">Gallery</a> ·
-      <a href="/blog/">Blog</a> ·
-      <a href="/what-we-use/">What we apply</a> ·
-      <a href="/awards/">Awards &amp; press</a> ·
-      <a href="/trusted-partners/">Trusted partners</a> ·
-      <a href="/guides/">Guides</a> ·
-      <a href="/our-guarantee/">Guarantee &amp; terms</a> ·
-      <a href="/network/">Our network</a>
+      © {new Date().getFullYear()} {business.name}.
+      {colophon.map((c) => <> · <a href={c.href}>{c.label}</a></>)}
     </p>
   </div>
 </footer>
