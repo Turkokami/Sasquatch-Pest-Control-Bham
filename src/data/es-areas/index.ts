@@ -12,6 +12,10 @@
  */
 import type { EsLugar } from './tipos';
 
+import { bellingham } from './bellingham';
+import { ferndale } from './ferndale';
+import { lynden } from './lynden';
+import { blaine } from './blaine';
 import { everson } from './everson';
 import { sumas } from './sumas';
 import { nooksack } from './nooksack';
@@ -30,6 +34,10 @@ export type { EsLugar } from './tipos';
 
 export const esLugares: EsLugar[] = [
   /* Condado de Whatcom */
+  bellingham,
+  ferndale,
+  lynden,
+  blaine,
   everson,
   sumas,
   nooksack,
