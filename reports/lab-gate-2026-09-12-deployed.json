@@ -1,0 +1,410 @@
+{
+  "date": "2026-09-12",
+  "origin": "https://sasquatch-pest-control-bham.vercel.app",
+  "limits": {
+    "lcp": 2000,
+    "tbt": 200,
+    "cls": 0.05,
+    "score": 0.9
+  },
+  "runsPerTemplate": 3,
+  "lighthouse": "mobile, simulated throttling",
+  "results": [
+    {
+      "template": "T1 home",
+      "url": "/",
+      "median": {
+        "lcp": 1978.6889999999999,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 0.99
+      },
+      "runs": [
+        {
+          "lcp": 1496.4425,
+          "tbt": 0,
+          "cls": 0.0005545301660848386,
+          "score": 1,
+          "lcpElement": "Sasquatch Pest Control banner: a forested lake and mountain scene with the comp… <img class=\"hero\" src=\"https://sasquatch-pest-control-bham.vercel.app/img/_r/sa"
+        },
+        {
+          "lcp": 1978.6889999999999,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 0.99,
+          "lcpElement": "Sasquatch Pest Control banner: a forested lake and mountain scene with the comp… <img class=\"hero\" src=\"https://sasquatch-pest-control-bham.vercel.app/img/_r/sa"
+        },
+        {
+          "lcp": 1981.917,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 0.99,
+          "lcpElement": "Sasquatch Pest Control banner: a forested lake and mountain scene with the comp… <img class=\"hero\" src=\"https://sasquatch-pest-control-bham.vercel.app/img/_r/sa"
+        }
+      ]
+    },
+    {
+      "template": "services hub",
+      "url": "/services/",
+      "median": {
+        "lcp": 1519.667,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1516.266,
+          "tbt": 0,
+          "cls": 0,
+          "score": 1,
+          "lcpElement": "Sasquatch Pest Control handles rodents, ants, spiders, wasps, bed bugs, termite… <p>"
+        },
+        {
+          "lcp": 1519.667,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Sasquatch Pest Control handles rodents, ants, spiders, wasps, bed bugs, termite… <p>"
+        },
+        {
+          "lcp": 1536.801,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Sasquatch Pest Control handles rodents, ants, spiders, wasps, bed bugs, termite… <p>"
+        }
+      ]
+    },
+    {
+      "template": "T2 service spoke",
+      "url": "/services/rodent-control/",
+      "median": {
+        "lcp": 1544.479,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1544.479,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Rodent control here is exclusion first and trapping second. We find how they ar… <p>"
+        },
+        {
+          "lcp": 1592.056,
+          "tbt": 0,
+          "cls": 0,
+          "score": 0.99,
+          "lcpElement": "Rodent control here is exclusion first and trapping second. We find how they ar… <p>"
+        },
+        {
+          "lcp": 1531.8110000000001,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Rodent control here is exclusion first and trapping second. We find how they ar… <p>"
+        }
+      ]
+    },
+    {
+      "template": "T3 problem page",
+      "url": "/services/ant-control/carpenter-ants-in-a-window-frame/",
+      "median": {
+        "lcp": 1534.492,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1534.954,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "A window frame is where carpenter ants show up because it is where wood gets we… <p>"
+        },
+        {
+          "lcp": 1518.658,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "A window frame is where carpenter ants show up because it is where wood gets we… <p>"
+        },
+        {
+          "lcp": 1534.492,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "A window frame is where carpenter ants show up because it is where wood gets we… <p>"
+        }
+      ]
+    },
+    {
+      "template": "T4 city page",
+      "url": "/locations/bellingham/",
+      "median": {
+        "lcp": 1674.481,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 0.99
+      },
+      "runs": [
+        {
+          "lcp": 5153.58,
+          "tbt": 0,
+          "cls": 0.01158385019673292,
+          "score": 0.66,
+          "lcpElement": "Sasquatch Pest Control is based on the Guide Meridian and works every Bellingha… <p>"
+        },
+        {
+          "lcp": 1674.481,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 0.99,
+          "lcpElement": "Sasquatch Pest Control is based on the Guide Meridian and works every Bellingha… <p>"
+        },
+        {
+          "lcp": 1523.6889999999999,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Sasquatch Pest Control is based on the Guide Meridian and works every Bellingha… <p>"
+        }
+      ]
+    },
+    {
+      "template": "T5 neighborhood",
+      "url": "/locations/bellingham/fairhaven/",
+      "median": {
+        "lcp": 1525.08,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1525.08,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Fairhaven is two jobs sharing a district. A historic commercial core of connect… <p>"
+        },
+        {
+          "lcp": 1583.9859999999999,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Fairhaven is two jobs sharing a district. A historic commercial core of connect… <p>"
+        },
+        {
+          "lcp": 1519.0430000000001,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Fairhaven is two jobs sharing a district. A historic commercial core of connect… <p>"
+        }
+      ]
+    },
+    {
+      "template": "T6 pest library",
+      "url": "/pest-library/norway-rat/",
+      "median": {
+        "lcp": 1518.326,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1518.326,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "The Norway rat is the common rat in Whatcom County and it works at ground level… <p>"
+        },
+        {
+          "lcp": 1514.7849999999999,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "The Norway rat is the common rat in Whatcom County and it works at ground level… <p>"
+        },
+        {
+          "lcp": 1519.993,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "The Norway rat is the common rat in Whatcom County and it works at ground level… <p>"
+        }
+      ]
+    },
+    {
+      "template": "T7 vertical",
+      "url": "/commercial/restaurants-and-food-service/",
+      "median": {
+        "lcp": 1519.458,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1609.884,
+          "tbt": 0,
+          "cls": 0,
+          "score": 0.99,
+          "lcpElement": "A restaurant is judged on a walkthrough that happens without warning, so the pr… <p>"
+        },
+        {
+          "lcp": 1512.1599999999999,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "A restaurant is judged on a walkthrough that happens without warning, so the pr… <p>"
+        },
+        {
+          "lcp": 1519.458,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "A restaurant is judged on a walkthrough that happens without warning, so the pr… <p>"
+        }
+      ]
+    },
+    {
+      "template": "T8 guide",
+      "url": "/guides/the-whatcom-county-pest-year/",
+      "median": {
+        "lcp": 1522.251,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1522.251,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Pest problems here run on a calendar, and the useful thing about a calendar is … <p>"
+        },
+        {
+          "lcp": 1516.252,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Pest problems here run on a calendar, and the useful thing about a calendar is … <p>"
+        },
+        {
+          "lcp": 1526.0610000000001,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "Pest problems here run on a calendar, and the useful thing about a calendar is … <p>"
+        }
+      ]
+    },
+    {
+      "template": "blog post",
+      "url": "/blog/apartment-pest-control-bellingham/",
+      "median": {
+        "lcp": 1520.953,
+        "tbt": 0,
+        "cls": 0.0005410186009833284,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1520.953,
+          "tbt": 0,
+          "cls": 0.0005410186009833284,
+          "score": 1,
+          "lcpElement": "How Apartments and Rentals Should Handle Spring Pest Outbreaks in Bellingham <h1>"
+        },
+        {
+          "lcp": 1522.471,
+          "tbt": 0,
+          "cls": 0.0005410186009833284,
+          "score": 1,
+          "lcpElement": "How Apartments and Rentals Should Handle Spring Pest Outbreaks in Bellingham <h1>"
+        },
+        {
+          "lcp": 1520.44,
+          "tbt": 0,
+          "cls": 0.0005410186009833284,
+          "score": 1,
+          "lcpElement": "How Apartments and Rentals Should Handle Spring Pest Outbreaks in Bellingham <h1>"
+        }
+      ]
+    },
+    {
+      "template": "Spanish spoke",
+      "url": "/es/servicios/control-de-roedores/",
+      "median": {
+        "lcp": 1530.325,
+        "tbt": 0,
+        "cls": 0.0003972645047249915,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1545.613,
+          "tbt": 0,
+          "cls": 0.0003972645047249915,
+          "score": 1,
+          "lcpElement": "Aquí el control de roedores es primero exclusión y después trampas. Buscamos po… <p>"
+        },
+        {
+          "lcp": 1524.58,
+          "tbt": 0,
+          "cls": 0.0003972645047249915,
+          "score": 1,
+          "lcpElement": "Aquí el control de roedores es primero exclusión y después trampas. Buscamos po… <p>"
+        },
+        {
+          "lcp": 1530.325,
+          "tbt": 0,
+          "cls": 0.0003972645047249915,
+          "score": 1,
+          "lcpElement": "Aquí el control de roedores es primero exclusión y después trampas. Buscamos po… <p>"
+        }
+      ]
+    },
+    {
+      "template": "contact",
+      "url": "/contact/",
+      "median": {
+        "lcp": 1522.643,
+        "tbt": 0,
+        "cls": 0.0005145051066305031,
+        "score": 1
+      },
+      "runs": [
+        {
+          "lcp": 1527.183,
+          "tbt": 0,
+          "cls": 0,
+          "score": 1,
+          "lcpElement": "You can reach Sasquatch Pest Control by phone or text at 360-410-2199, by email… <p>"
+        },
+        {
+          "lcp": 1522.643,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "You can reach Sasquatch Pest Control by phone or text at 360-410-2199, by email… <p>"
+        },
+        {
+          "lcp": 1517.587,
+          "tbt": 0,
+          "cls": 0.0005145051066305031,
+          "score": 1,
+          "lcpElement": "You can reach Sasquatch Pest Control by phone or text at 360-410-2199, by email… <p>"
+        }
+      ]
+    }
+  ]
+}
