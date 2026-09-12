@@ -216,18 +216,10 @@ const KEYSTONE_V2 = [
    'The same export tells us which old URLs carry clicks. Every one of those has a redirect obligation. npm run redirects:check already maps 51 legacy paths; the export is what proves nothing with traffic was missed.'],
   ['Analytics — GA4 (Part 4A.4)',
    'The site has no analytics today. v2 requires GA4 with calls and form submissions as conversions, a custom dimension capturing the #:~:text= fragment (how AI Overview clicks show up), and referrer segments for chatgpt.com, perplexity.ai, copilot.microsoft.com and gemini.google.com. Needs a GA4 property and its measurement ID from the owner.'],
-  ['Is 360-410-2199 the Google Business Profile number? (Part 4A.3)',
-   'The site uses that one number everywhere and harness check 6 holds it there. Confirm it is also the GBP number; if a tracking number is in use anywhere, say which. GUARDRAILS.md §3.'],
   ['Geo pages need demand evidence (Part 6A)',
    'v2 gives a town or neighborhood its own page only on two of five signals: search volume, 10+ Search Console impressions a quarter, an Ads conversion there, a page for it on 2+ of the top five local competitors, or documented job history there. The site has 19 town pages and 30 neighborhood pages and none of that evidence recorded yet. Job history (from the CRM or QuickBooks) and the Search Console export above supply most of it. Nothing is hidden or removed in the meantime.'],
   ['Reviews — FTC rule and a monthly target (Part 14)',
    'No incentives, no gating, no staff-written reviews, no suppressing bad ones. Ask every customer at job completion and set a monthly target: v2 finds review cadence matters more than the total. GUARDRAILS.md §5 — the owner acknowledging it in writing is what v2 asks for.'],
-  ['Bird work — offered or retired?',
-   'Retired on 30 Aug 2026 per services.ts and /about/, but the berry-processing, marina and retail pages offer bird exclusion, a commercial photo caption advertises it, and Keystone Part 1.4 calls it the standout edge. GUARDRAILS.md §8.'],
-  ['Spanish on the phone, and a Spanish lead form',
-   'Every Spanish page says "Hablamos español". Confirm someone who speaks Spanish answers 360-410-2199 (or say how a Spanish caller is handled); once confirmed the schema lists Spanish as a language the line is answered in. Separately, the lead form lives inside the CRM and is in English — the Spanish pages say so beside the phone number. A Spanish copy of the form built in the CRM would replace that line; send its form ID.'],
-  ['Coastal K9 on /trusted-partners/ — which instruction wins?',
-   'Keystone says no K9 content on Sasquatch; the owner asked for Coastal K9 to be listed as a contracted specialist. The page does the second. GUARDRAILS.md §6.'],
 ];
 console.log('\x1b[36mKEYSTONE v2 — needed from the owner, none of it blocking\x1b[0m\n');
 for (const [k, v] of KEYSTONE_V2) console.log(`  • ${k}\n    ${v}\n`);

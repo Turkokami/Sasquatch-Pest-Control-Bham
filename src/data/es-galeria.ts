@@ -7,9 +7,8 @@
  * nueva en la galería inglesa no puede aparecer en la española con el alt
  * en inglés ni sin alt.
  *
- * LO QUE NO PASA A ESPAÑOL: el trabajo con aves. Está abierto en
- * GUARDRAILS.md §8 y no se repite en un segundo idioma hasta que el dueño
- * decida. Son dieciséis imágenes: trece cuyo propio alt dice que son
+ * LO QUE NO ESTÁ: el trabajo con aves, que el dueño retiró el 12 Sep 2026
+ * (GUARDRAILS.md §8) en los dos idiomas. Son dieciséis imágenes: trece cuyo propio alt dice que son
  * exclusión de aves, y tres (g27714, g27716, g27731) que el alt llama
  * "exclusión" o "trabajo comercial" pero que, vistas, son el mismo trabajo
  * de red en la entrada de la misma tienda, con la misma plataforma. El
@@ -19,24 +18,9 @@
  * agregar nada que la foto no muestre.
  * ------------------------------------------------------------------------ */
 
-export const SIN_AVES = new Set<string>([
-  '/img/gallery/g27717.jpg',
-  '/img/gallery/g27715.jpg',
-  '/img/gallery/g27714.jpg',
-  '/img/gallery/g27713.jpg',
-  '/img/gallery/g27716.jpg',
-  '/img/gallery/g27731.jpg',
-  '/img/gallery/g27730.jpg',
-  '/img/gallery/g27729.jpg',
-  '/img/gallery/g27728.jpg',
-  '/img/gallery/g27727.jpg',
-  '/img/gallery/g27726.jpg',
-  '/img/gallery/g27724.jpg',
-  '/img/gallery/g27723.jpg',
-  '/img/gallery/g27722.jpg',
-  '/img/gallery/g27721.jpg',
-  '/img/gallery/g27719.jpg',
-]);
+/* La lista vive en src/data/retired-photos.ts y gallery.ts ya la aplica; se
+   reexporta con su nombre de siempre para no cambiar la página. */
+export { BIRD_WORK_IMAGES as SIN_AVES } from './retired-photos';
 
 export const TITULOS: Record<string, string> = {
   crawlspaces: 'Espacios bajo el piso',

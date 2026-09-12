@@ -60,7 +60,7 @@ for (const g of esGuias) {
     ...g.secciones.flatMap((s) => [s.h2, ...s.parrafos, ...(s.lista ?? []), ...(s.despues ?? []), s.cita?.es ?? '']),
     ...g.faqs.flatMap((f) => [f.q, f.a])].join('\n');
   const bird = text.match(BIRDS);
-  if (bird) problems.push(`${id}: mentions "${bird[2]}" — bird work is an open owner decision`);
+  if (bird) problems.push(`${id}: mentions "${bird[2]}" — bird work is retired (owner, 12 Sep 2026)`);
 }
 
 for (const p of problems) console.log(`WRONG: ${p}`);

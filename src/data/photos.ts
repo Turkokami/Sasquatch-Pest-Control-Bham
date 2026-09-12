@@ -78,12 +78,6 @@ export const servicePhotos: Record<string, Photo> = {
     caption:
       'An open gap at the foundation line of a home in Mount Vernon. A quarter of an inch is enough for a mouse, and sealing openings like this is what stops the problem coming back after the trapping is done.',
   },
-  'commercial-pest-control': {
-    file: '/img/work/scissor-lift-bird-exclusion-commercial-building.jpg',
-    alt: 'A JCB scissor lift raised against the exterior of a commercial building, positioned for bird exclusion work at height',
-    caption:
-      'Bird exclusion on a commercial building, worked from a scissor lift. Commercial jobs are usually decided by access and documentation rather than by the treatment itself.',
-  },
   'attic-insulation': {
     file: '/img/work/screened-gable-attic-vent-whatcom-county-wa.jpg',
     alt: 'A gable attic vent fitted with dark mesh screening, with a ladder leaning against the shingled gable below it',
@@ -401,38 +395,32 @@ export const locationsHubPhoto: Photo = {
 };
 
 /* --------------------------------------------------------------------------
- * COMMERCIAL. Bird work is the strongest thing in the photo library and the
- * commercial pages had none of it. It is also the part of the offer that is
- * hardest to convey in prose: "we do bird exclusion" reads as a line item
- * until you see a scissor lift under a canopy, at which point it reads as a
- * capability a one-van operator does not have.
+ * COMMERCIAL. These were bird photographs until 12 Sep 2026, when the owner
+ * retired bird work outright ("no bird work, drop it" — GUARDRAILS.md §8).
+ * The commercial service page's scissor-lift photo and the retail vertical's
+ * store-entrance photo went with them and were not replaced: both were the
+ * same netting job, and a page with no photograph beats a page advertising
+ * work the company does not do. The two below are commercial work that is.
  * ------------------------------------------------------------------------ */
 
 /** Near the top of /commercial/. Leads the hub, so it is not lazy-loaded. */
 export const commercialHubPhoto: Photo = {
-  file: '/img/work/bird-nest-built-on-installed-bird-spikes-whatcom-county-wa.jpg',
-  alt: 'A bird nest built directly on top of a row of installed bird spikes on a concrete beam, with droppings streaking the ledge beneath it',
+  file: '/img/work/pre-construction-soil-treatment-at-a-commercial-site-whatcom-county-wa.jpg',
+  alt: 'A technician with a backpack sprayer treating soil inside timber foundation forms on a commercial building site under a clear sky',
   caption:
-    'Spikes on a commercial building with a nest built straight on top of them. Spikes are the most commonly specified bird deterrent here and the most commonly defeated one: once enough debris packs in between the points, the thing that was meant to deny the ledge becomes the platform that holds the nest.',
+    'A commercial site treated inside the forms, before there is a building. Commercial pest work often starts long before opening day, and the program that follows is easier to run on a structure that was protected while it was still a hole in the ground.',
 };
 
 /** Lower on /commercial/, in the exclusion section, where it argues the point. */
 export const commercialExclusionPhoto: Photo = {
-  file: '/img/work/bird-exclusion-netting-over-a-concrete-opening-whatcom-county-wa.jpg',
-  alt: 'Black bird netting tensioned on a steel perimeter cable and anchored into a concrete wall across a large opening',
+  file: '/img/work/fabricated-metal-foundation-vent-screen-whatcom-county-wa.jpg',
+  alt: 'A perforated metal screen in a folded steel frame fitted over a foundation vent opening, seen from outside at ground level',
   caption:
-    'Netting closed across an opening on a commercial structure. Netting holds where spikes fail because it denies the volume rather than the surface, but it is only as good as its perimeter — a cable that is slack, or a corner anchored short, is an opening with a net near it.',
+    'A cover folded in the shop for one opening. Commercial buildings have more openings than houses and stranger ones, and a cover made to the measurement outlasts every off-the-shelf plate that almost fits.',
 };
 
 /** Keyed by industry slug — the slugs src/content/industries owns. */
-export const industryPhotos: Record<string, Photo> = {
-  'retail-and-grocery': {
-    file: '/img/work/technician-on-a-scissor-lift-at-a-store-entrance-whatcom-county-wa.jpg',
-    alt: 'A technician working from a raised scissor lift beneath the entrance canopy of a large store, with a colleague in a high-visibility vest and rows of shopping carts below',
-    caption:
-      'Working a store entrance canopy from a lift. The entrance is the hardest part of a grocery building to keep birds out of — it is warm, it is sheltered from weather on three sides, and the doors stand open all day — and it is also the one part of the building every customer walks under.',
-  },
-};
+export const industryPhotos: Record<string, Photo> = {};
 
 /**
  * THE CREW AND THE TRUCKS — the fallback for a town with no photograph of its

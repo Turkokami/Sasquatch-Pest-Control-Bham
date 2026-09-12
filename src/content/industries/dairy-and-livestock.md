@@ -227,10 +227,9 @@ nests in equipment sheds, in the eaves over a working door, inside a piece of
 machinery that has stood still for a month. August and September are the weeks
 for it.
 
-**Birds** in open buildings, which is a real problem on some sites and one where
-what is legally and practically available is narrower than people assume. We
-handle it as exclusion — netting, and closing the perches and ledges that make a
-building attractive — rather than as control.
+**Birds** in open buildings are a real problem on some sites, but bird work is not
+something we take on; we will say so and point you to a specialist. The feed
+spillage that draws them draws rodents as well, and that part is ours.
 
 ## The record, which is part of the job here
 

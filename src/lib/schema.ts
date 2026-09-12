@@ -329,13 +329,15 @@ function contactPointNode() {
     telephone: business.phone,
     email: business.email,
     areaServed: territoryAreas(),
-    /* Stated as capability, which is what the property means — it does not
-       assert that no other language is spoken. STILL ENGLISH ONLY, and that is
-       now a question rather than a fact: the Spanish pages have said "Hablamos
-       español" since the tier was built, and if the owner confirms a Spanish
-       speaker answers this line this becomes two Language nodes. Asked in
-       scripts/pending.mjs rather than asserted here on the pages' say-so. */
-    availableLanguage: { '@type': 'Language', name: 'English', alternateName: 'en' },
+    /* Stated as capability, which is what the property means. SPANISH SINCE
+       12 SEP 2026, on the owner's confirmation that Tyson Elling handles
+       Spanish-speaking callers on this line (GUARDRAILS.md §10) — until then
+       the pages said "Hablamos español" and this stayed English on purpose,
+       rather than being asserted on the pages' say-so. */
+    availableLanguage: [
+      { '@type': 'Language', name: 'English', alternateName: 'en' },
+      { '@type': 'Language', name: 'Spanish', alternateName: 'es' },
+    ],
     hoursAvailable: openingHours(),
   };
 }
@@ -412,7 +414,7 @@ function organizationNode(guideTopics: GuideTopic[]) {
     contactPoint: contactPointNode(),
     /* Organization-level language. ContactPoint carries availableLanguage;
        this is the Organization equivalent and the two agree by construction. */
-    knowsLanguage: 'en-US',
+    knowsLanguage: ['en-US', 'es-US'],
     /* Counties, then every community we actually serve — the towns with pages
        AND the mention-only tier. The tier function is called areaServedOnly
        precisely because those towns are meant to land HERE rather than only in

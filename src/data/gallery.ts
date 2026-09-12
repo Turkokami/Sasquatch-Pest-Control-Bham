@@ -37,6 +37,8 @@
  * generator asserts none survive rather than trusting the regex.
  * ------------------------------------------------------------------------ */
 
+import { BIRD_WORK_IMAGES } from './retired-photos';
+
 export interface GalleryImage {
   file: string;
   alt: string;
@@ -50,7 +52,7 @@ export interface GallerySection {
   images: GalleryImage[];
 }
 
-export const gallery: GallerySection[] = [
+const allSections: GallerySection[] = [
   {
     key: 'stinging',
     title: 'Wasps, hornets and bees',
@@ -250,6 +252,15 @@ export const gallery: GallerySection[] = [
     ],
   },
 ];
+
+/* Bird work is retired (owner, 12 Sep 2026). The images are removed here rather
+   than from the list above, so every reader of `gallery` — /gallery/, the
+   service pages that attach a section, /es/galeria/ — gets the same set. See
+   src/data/retired-photos.ts for why this is a list of files, not a pattern. */
+export const gallery: GallerySection[] = allSections.map((s) => ({
+  ...s,
+  images: s.images.filter((img) => !BIRD_WORK_IMAGES.has(img.file)),
+}));
 
 export const galleryCount = gallery.reduce((n, s) => n + s.images.length, 0);
 

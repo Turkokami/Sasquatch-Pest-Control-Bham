@@ -11,9 +11,9 @@
  *   3. PAGE_PAIRS sends the hub and each English vertical to exactly its
  *      Spanish page;
  *   4. Keystone M2 and M5 on the data, as es-areas.test.ts holds them;
- *   5. no bird-work offer. The English verticals still carry one and the
- *      owner has not decided whether bird work is offered or retired; the
- *      Spanish tier does not repeat an offer nobody has confirmed.
+ *   5. no bird-work wording. The owner retired bird work on 12 Sep 2026
+ *      (GUARDRAILS.md §8); a Spanish page that names birds is where an offer
+ *      would creep back in.
  */
 import fs from 'node:fs';
 import { esGiros, esGiroPath, enGiroPath } from '../../src/data/es-comercial';
@@ -54,7 +54,7 @@ for (const g of esGiros) {
     ...g.secciones.flatMap((s) => [s.h2, ...s.parrafos, ...(s.lista ?? [])]),
     ...g.faqs.flatMap((f) => [f.q, f.a])].join('\n');
   const bird = text.match(BIRDS);
-  if (bird) problems.push(`${id}: mentions "${bird[2]}" — bird work is an open owner decision`);
+  if (bird) problems.push(`${id}: mentions "${bird[2]}" — bird work is retired (owner, 12 Sep 2026)`);
 }
 
 for (const p of problems) console.log(`WRONG: ${p}`);

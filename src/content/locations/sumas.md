@@ -122,11 +122,10 @@ control products are used at all we choose programs and active ingredients
 selected to limit secondary poisoning risk to the raptors and pets that share
 this country.
 
-**Stored feed** is the reservoir. Grain and pellets in open storage are an
-introduced species without the same federal protection, so netting, roost
-exclusion and closing gable openings are all available. Scaring them is not a
-durable answer — they habituate within a fortnight and return to a food source
-that has not changed.
+**Stored feed** is the reservoir. Grain and pellets in open storage feed rodents
+and draw pigeons and starlings too. Bird work is not something we do, as the
+section on what we will not sell says, but closed bins and cleaned-up spillage
+take away what brings both, and that lasts in a way that scaring birds never does.
 
 **Flies around livestock** are a production problem rather than a nuisance one,
 and they are won or lost on breeding sites rather than on adults. The wet margin

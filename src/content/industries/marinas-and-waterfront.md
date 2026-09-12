@@ -1,7 +1,7 @@
 ---
 industry: marinas-and-waterfront
 title: "Marina & Waterfront Pest Control | Whatcom County"
-description: "Pest control for marinas, boatyards and gear storage in Blaine, Bellingham and Birch Bay. Salt-rated exclusion, rodents in layup, gulls and wasps. Call 360-410-2199."
+description: "Pest control for marinas, boatyards and gear storage in Blaine, Bellingham and Birch Bay. Salt-rated exclusion, rodents in layup and wasps. Call 360-410-2199."
 h1: "Marina & Waterfront Pest Control"
 answer: "A marina is not one building. It is a yard, a row of sheds, and several hundred private spaces the operator does not control, sitting in salt air that destroys ordinary exclusion material. The work is the shared structures, the gear storage, and an honest split of what is yours and what belongs to a slip holder."
 expert: kristofer-elling
@@ -12,7 +12,7 @@ faqs:
   - q: "Why does exclusion work fail faster at the waterfront?"
     a: "Salt. Standard galvanized hardware cloth and plain steel fasteners corrode in marine air far faster than they do a few miles inland, so a patch that would last a decade at a house in Lynden can fail in a few seasons on the water. We specify stainless or heavier-gauge material at the waterfront and price it accordingly, and we would rather explain the difference than install the cheap version twice."
   - q: "Can you do anything about the gulls?"
-    a: "Less than most people hope, and it is worth knowing why before money is spent. Native birds carry legal protections that narrow what is available, so the work is exclusion and deterrence — netting, closing ledges and perches, and removing what makes a structure attractive — rather than control. Where a species is protected we will tell you and stay inside it."
+    a: "Not directly. Bird work is not something we take on, and keeping gulls off a structure is netting and nest work that native-bird protections make specialist territory anyway. We will point you to somebody who does it. What we handle is what the gulls leave behind: rats drawn to a fish-cleaning station, and mites and beetles moving inward from an abandoned nest."
   - q: "When is the best time to work a boatyard?"
     a: "Between haul-out and spring commissioning. The yard is at its fullest and its quietest, the vessels are covered and static, and the sheds can be opened up without interrupting anybody. It is also when a rodent population that moved in with the layup is most findable, before it has had a whole winter undisturbed."
   - q: "Do you work around the tenants and the public?"
@@ -106,29 +106,17 @@ handling and along a rip-rap edge is exactly that. Mice are the broader
 background pressure, especially where the site backs onto vegetation or open
 ground rather than water on all sides.
 
-## Gulls and other birds
+## Gulls, and where our work stops
 
-Bird work at a waterfront is the area where expectations and reality are
-furthest apart, so it is worth being direct.
+Gulls are the complaint an operator hears most and the one we can do least about
+directly, because bird work is not a service we offer. Keeping them off a
+structure means netting and nest work, native birds carry legal protections that
+make that specialist territory, and we would rather name somebody set up for it
+than take the booking.
 
-What people want is for the gulls to go. What is available is exclusion and
-deterrence: netting over the openings and voids they are nesting in, closing or
-modifying the ledges and perches that make a structure attractive, and removing
-what is drawing them — which at a marina is very often a fish-cleaning station,
-a waste area or people feeding them.
-
-Native birds carry legal protections that narrow the options considerably, and
-the protections attach to nests and eggs as well as to the birds. That means
-timing matters: work done before a nesting season is straightforward, and the
-same work once a nest is active may not be available to you at all. We will tell
-you where a species or a situation is protected and we will stay inside that,
-which occasionally means saying that the window for this year has closed.
-
-The other half of bird work at a marina is the mess rather than the birds.
-Droppings on a walkway are a slip hazard and a cleaning cost, droppings on a
-vessel are a customer complaint, and both are what actually drives the
-complaints an operator receives. Netting a nesting void and modifying a perch
-line addresses that directly and permanently in a way that no repellent does.
+The overlap is real, though. A fish-cleaning station or an open waste area that
+feeds gulls feeds rats too, and an abandoned nest on a shed roof sends mites and
+carpet beetles inward into whatever is below it. Both of those are ours.
 
 ## Wasps, spiders and the seasonal nuisance
 

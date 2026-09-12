@@ -17,6 +17,9 @@ phone number, city or license number from Sasquatch TX, Coastal K9 or Guardian
 Canine lands here, and nothing from here lands there. `/network/` links to the
 Texas site as a separate business; it does not describe or borrow from it.
 
+One exception, the owner's: Coastal K9 is listed on `/trusted-partners/` and
+`/es/socios-de-confianza/` as a separate company Sasquatch contracts in. See §6.
+
 The Spanish tier under `/es/` is for Spanish speakers in Whatcom and Skagit. It is
 **not** the site for a future El Salvador branch: it cites WSDA licensing,
 Washington statute and a Pacific Northwest climate, and its hreflang is `es-US`.
@@ -32,7 +35,7 @@ regulated terms are not. Enforced by harness check 2c and `src/lib/seo.ts`.
 **Open item:** check 2c only knows the regulated terms in English. It has to learn
 the Spanish ones before any Spanish termite or WDO page is published.
 
-## 3. Call tracking versus NAP (Part 4A.3) — waiting on the owner
+## 3. Call tracking versus NAP (Part 4A.3) — settled
 
 **Current state, measured 10 Sep 2026:** one number everywhere. 360-410-2199 is the
 LocalBusiness `telephone`, the footer NAP, the contact page and every `tel:`
@@ -40,12 +43,11 @@ link. There is no dynamic number insertion and no tracking number on the site.
 Harness check 6 fails any page where the displayed number and the schema number
 differ, or where the number appears as plain text instead of a link.
 
-**What the owner needs to confirm:** that 360-410-2199 is the number on the
-Google Business Profile. If it is, this is v2's recommended arrangement (one
-number, everywhere) and nothing changes. If the GBP carries a different number,
-or a call-tracking number is wanted for ads, v2's rule is: the GBP number stays
-in the schema node, the footer and the contact page; a tracking number may only
-be swapped in client-side for paid and referral traffic.
+**Owner confirmed, 12 Sep 2026:** 360-410-2199 is the number on the Google
+Business Profile. That is v2's recommended arrangement — one number, everywhere —
+so nothing changes. If a call-tracking number is ever wanted for ads, v2's rule
+is: the GBP number stays in the schema node, the footer and the contact page; a
+tracking number may only be swapped in client-side for paid and referral traffic.
 
 ## 4. AI crawler policy (Part 14) — settled
 
@@ -71,7 +73,7 @@ On the site: the rating is shown as attributed copy linked to the Google profile
 It is not emitted as review or AggregateRating markup, because a business's own
 reviews on its own site are not eligible for review rich results.
 
-## 6. Coastal K9 on /trusted-partners/ — open, owner decision
+## 6. Coastal K9 on /trusted-partners/ — settled, owner's call
 
 Keystone Parts 1.3 and 1.4 say K9 detection is "exclusive to Coastal K9 and
 Guardian — never on Sasquatch", list "any K9 service" as out of scope for
@@ -81,10 +83,14 @@ Sasquatch WA, and bar cross-linking Coastal K9 "as the same operator".
 On 8 Sep 2026 the owner asked for Coastal K9 & Pest Solutions (ck9ps.com) to be
 listed on `/trusted-partners/` as a specialist Sasquatch contracts in for K9 bed
 bug and rodent detection. The page does that. It presents them as a separate
-company, not as the same operator, and the link is `rel="nofollow"`. But it does
-put K9 detection content on a Sasquatch page, and the two instructions cannot
-both be followed in full. Nothing has been changed; the owner decides which one
-gives way.
+company, not as the same operator, and the link is `rel="nofollow"`. That puts K9
+detection content on a Sasquatch page, which Keystone forbids.
+
+**Owner's decision, 12 Sep 2026: Coastal K9 stays.** The listing remains a
+separate company contracted in — never the same operator, linked nofollow — and
+`/es/socios-de-confianza/` now carries it too, with its own standard. Sasquatch
+still sells no K9 service of its own; the retired `k9-bed-bug-detection` slug
+stays retired. Keystone Parts 1.3 and 1.4 should be updated to match.
 
 ## 7. Word counts (M1) — settled by v2
 
@@ -93,9 +99,19 @@ There is no word floor. Pages carry a word band per page type as a diagnostic
 launch, the consolidation queue is the Search Console "crawled / discovered – not
 indexed" list plus pages with six months of zero clicks.
 
-## 8. Bird work — open, owner decision
+## 8. Bird work — settled: retired
 
-Three sources disagree, and the site currently says both things.
+**Owner's decision, 12 Sep 2026: "No bird work, drop it."** Retired outright,
+residential and commercial. Every offer came out the same day: the berry and food
+processing, marina, retail and dairy verticals; the Sumas, Lynden North Prairie and
+Semiahmoo pages; the beetle-control page's nest removal; the commercial service
+and hub photographs and captions; and all sixteen gallery images
+(`src/data/retired-photos.ts`). Sentences saying we do not do bird work stay. The
+Spanish tests keep failing any Spanish page that names birds. Keystone Part 1.4
+still calls bird exclusion the standout local edge and should be updated.
+
+The history, for the record — three sources disagreed, and the site said both
+things:
 
 - **The owner's decision of 30 Aug 2026** (`RETIRED_TO_EXCLUSION` in
   `src/data/services.ts`): bird work and nuisance wildlife are out of scope.
@@ -138,3 +154,14 @@ mid-page or late. It was changed the way Part 4 says a contract changes — once
 for every page, from one place — and Part 4A's "primary CTA above the fold at
 390px" is met by the action row. Do not move the rails back down to match the
 Keystone order without asking the owner; update Part 4.2 instead.
+
+## 10. The Spanish tier — settled, owner's answers of 12 Sep 2026
+
+- **Spanish calls:** Tyson Elling, Office Manager, handles Spanish-speaking
+  callers on 360-410-2199. The schema's ContactPoint lists English and Spanish,
+  and the Organization's `knowsLanguage` carries both.
+- **No Spanish lead form yet.** The CRM form stays English; the Spanish pages say
+  so beside the phone number. When a Spanish copy exists in the CRM, its form ID
+  replaces that line.
+- **The blog is not translated.** Its posts are archived or already covered by
+  Spanish pages; the Spanish onward note lists it as English.

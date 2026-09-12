@@ -54,7 +54,7 @@ for (const p of esProblemas) {
     ...p.secciones.flatMap((x) => [x.h2, ...x.parrafos, ...(x.lista ?? [])]),
     ...p.faqs.flatMap((f) => [f.q, f.a])].join('\n');
   const bird = text.match(BIRDS);
-  if (bird) problems.push(`${id}: mentions "${bird[2]}" — bird work is an open owner decision`);
+  if (bird) problems.push(`${id}: mentions "${bird[2]}" — bird work is retired (owner, 12 Sep 2026)`);
   if (!freeInspectionForSlug(p.service)) {
     const m = text.match(FREE);
     if (m) {

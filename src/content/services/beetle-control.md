@@ -248,10 +248,10 @@ Emptied outside afterwards.
 **Treat harborage.** Carpet edges, under fixed furniture, baseboard voids, closet
 structure. Not on textiles, and not broadcast across floors people live on.
 
-**Deal with the structural source.** Nest removal and
-[exclusion](/services/exclusion-and-repairs/) where a bird or rodent nest is
-involved, because closing the entry without removing the nest leaves the food in
-place.
+**Deal with the structural source.** Where a rodent nest is involved, nest removal
+and [exclusion](/services/exclusion-and-repairs/), because closing the entry
+without removing the nest leaves the food in place. A bird nest is bird work,
+which we do not take on; we will say so and treat the beetles once it is out.
 
 **Follow up.** Dermestid life cycles are long — larvae can develop over many months
 depending on conditions — so a single clean visit is not proof. We check rather

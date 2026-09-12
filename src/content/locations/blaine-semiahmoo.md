@@ -199,9 +199,9 @@ live in old nests and then move inward when the nest is abandoned. Bird mites
 and carpet beetles both do this, and both are frequently diagnosed as something
 else entirely because the connection to a nest twenty feet up is not obvious.
 
-Much of this is protected, and the timing and the method matter. Where there is
-a nest we will say what can lawfully be done and when, and where the answer is
-"not until it is finished" we will say that too.
+Keeping gulls off a roof is bird work, which we do not take on. Where a nest is
+driving a problem indoors we will say so, point you to somebody who handles the
+birds, and deal with the mites and beetles it has sent inward.
 
 ## The under-floor space and the ground it sits on
 

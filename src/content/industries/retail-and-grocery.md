@@ -198,27 +198,16 @@ Once the source is out, the population goes. Until it is out, no amount of
 treatment or visit frequency will settle it, and a program that keeps treating
 without finding the source is charging you for the symptom.
 
-## Birds at the entrance and over the dock
+## Birds at the entrance
 
-Retail bird work is driven by two things, and neither is the bird.
+Droppings on an entrance canopy are a slip hazard where customers walk, and over
+a dock they are a finding on any site handling food. Bird exclusion is not work
+we do, so if that is the problem we will tell you plainly and recommend a
+specialist.
 
-**Droppings where customers walk.** On an entrance canopy, a walkway or a trolley
-bay this is a slip hazard, a cleaning cost and a first impression, and it is
-what generates the complaints a manager actually receives.
-
-**Droppings where goods move.** Roosting over a dock, a delivery door or an
-intake canopy puts contamination where product and packaging are handled, which
-on a food site is a finding regardless of whether anything was contaminated.
-
-What is available is exclusion and deterrence — netting the voids and canopies
-being used, closing or modifying ledges and roost lines, and removing the draw,
-which at a retail site is usually spilled food in the yard, an open waste
-enclosure, or people feeding birds at an entrance.
-
-What can be done about native birds depends on the date, because the legal protection they carry attaches to an active nest. Work
-scheduled before a nesting season is straightforward; the same work once a nest
-is active may not be lawful at all. We will tell you where that line falls
-rather than find it mid-job.
+The part that is ours is the draw. Spilled food in the yard, an open waste
+enclosure and a loading area nobody sweeps feed rodents and stored-product
+insects as well as birds, and closing them belongs in the program either way.
 
 ## Working around trading
 

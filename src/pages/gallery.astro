@@ -62,8 +62,7 @@ const COPY: Record<string, string[]> = {
     'What these have in common is that the insect is easier to identify from the evidence it leaves than from a glimpse of the insect itself, and identifying it correctly is what decides the treatment. The pest library on this site exists for the same reason.',
   ],
   commercial: [
-    'Commercial work differs from residential work mainly in scale and access. A warehouse roofline, a store entrance canopy and a concrete ledge on a municipal building are all bird problems, and reaching them means a lift, a harness and a crew rather than a ladder and one technician.',
-    'Bird exclusion is the clearest example. Spikes are the most commonly specified deterrent and the most commonly defeated one; netting closed across an opening and tensioned properly on a perimeter cable is what actually holds. Both are shown here.',
+    'Commercial work differs from residential work mainly in scale and access. A slab can be treated before the building over it exists, bait and supplies arrive by the pallet rather than the case, and the cover for an awkward opening is cut in the shop rather than bought.',
   ],
   crew: [
     'Five people on staff hold WSDA applicator licenses, and the numbers are published on the About page so any claim made on this site can be checked against the state record. These are the vehicles that run the routes and the people who arrive in them.',
@@ -76,7 +75,7 @@ const COPY: Record<string, string[]> = {
 };
 
 const answer =
-  'This is the work itself: crawlspaces, exclusion and metalwork, insulation, rodent evidence, wasp nests, commercial bird jobs and the crew who do them. Every photograph was taken on a Whatcom or Skagit County job by the people doing it.';
+  'This is the work itself: crawlspaces, exclusion and metalwork, insulation, rodent evidence, wasp nests, commercial work and the crew who do them. Every photograph was taken on a Whatcom or Skagit County job by the people doing it.';
 
 const faqs = [
   {
@@ -106,7 +105,7 @@ const rails = [
 <BaseLayout
   path={path}
   title="Photo Gallery of Our Work | Sasquatch Pest Control"
-  description="One hundred and forty-four photographs from real Whatcom and Skagit County jobs: crawlspaces, exclusion metalwork, insulation, rodent evidence and the crew."
+  description={`${galleryCount} photographs from real Whatcom and Skagit County jobs: crawlspaces, exclusion metalwork, insulation, rodent evidence and the crew.`}
   kind="page"
   breadcrumbs={[
     { name: 'Home', path: '/' },

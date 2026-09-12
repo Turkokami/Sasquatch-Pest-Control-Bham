@@ -15,8 +15,6 @@ faqs:
     a: "Because the building changes. Doors that are normally shut stand open, fruit arrives on trailers with whatever is living in it, waste volume multiplies, and the site runs longer hours with more people and more traffic. A program tuned to February will be under-scoped in July, so harvest is planned for as a different operating state rather than as a busy patch."
   - q: "Do you handle stored product insects in packaging and dry goods?"
     a: "Yes, and it is treated as a supply chain issue rather than a building one. Beetles and moths in dry ingredients, packaging or finished goods generally arrive inside the product, so the work is incoming inspection, stock rotation, pheromone monitoring to locate the source, and finding the forgotten pallet that has been feeding the population."
-  - q: "Is bird work available on a processing site?"
-    a: "Exclusion and deterrence, yes — netting, closing ledges and roost points, and dealing with what makes the structure attractive. Native species carry legal protections that narrow the options, and nesting timing changes what is available, so we will tell you where a situation is restricted. On a food site the driver is usually contamination risk over dock doors and around intake rather than the birds themselves."
   - q: "How is this priced?"
     a: "From the walk, and processing sites vary more than their square footage suggests. The variables are the number of separate operating areas, how much of the envelope can genuinely be sealed, device count, visit frequency, whether harvest requires a second scope, and how much documentation the audit scheme you answer to demands."
 ---
@@ -208,23 +206,16 @@ plant we walk. Exterior management to reduce the pressure arriving. And a
 standing rule that any interior finding is escalated the same day rather than
 appearing in a monthly summary.
 
-## Birds, and the intake canopy
+## Birds over the intake, and who handles them
 
-On a food site the driver for bird work is contamination risk rather than mess.
-Roosting over an intake, a dock or a waste area puts droppings where product and
-packaging move, which is an audit finding regardless of whether anything is
-contaminated.
+Roosting over an intake, a dock or a waste area is an audit finding on a food
+site, but bird work is not something we take on: no netting, no spikes, no nest
+removal. If it is on your list we will say so at the walk and name a specialist
+rather than quote it.
 
-The available work is exclusion and deterrence: netting the voids and canopies
-they are using, closing or modifying ledges and roost points, and dealing with
-what makes the structure attractive — which on a processing site is usually
-spilled product in the yard, standing water, or waste that stays open.
-
-Native species carry legal protections that narrow the options, and those
-protections attach to active nests, so timing changes what is available. Work
-scheduled before a nesting season is straightforward; the same work once a nest
-is active may not be lawful. We will tell you where that line falls rather than
-discovering it mid-job.
+What overlaps with our work is the draw. Spilled product in the yard, standing
+water and waste that stays open feed rodents and flies as well as birds, and
+closing those is part of a processing program whoever deals with the roost.
 
 ## What the site has to do
 

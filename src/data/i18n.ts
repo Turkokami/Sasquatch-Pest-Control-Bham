@@ -42,8 +42,9 @@
  * 53), locations (done, 49 of 49: counties, towns and neighborhoods),
  * commercial (done, the hub and 9 of 9 verticals), guides (done, 11 of 11),
  * problem pages (done, 23 of 23), awards, partners and the gallery (done, 11 Sep 2026; the
- * K9 section and the bird-work photographs are left out pending GUARDRAILS §6 and §8),
- * and the blog, which waits on an owner decision. Until a section lands its pages are simply
+ * K9 section joined on 12 Sep 2026, and bird work is retired on both tiers),
+ * and not the blog (owner, 12 Sep 2026: its posts are archived or already
+ * covered by Spanish pages). Until a section lands its pages are simply
  * unpaired — reachable in English, and never linked from a Spanish page
  * without an "(en inglés)" mark.
  */
@@ -201,7 +202,7 @@ export const UI: Record<Lang, Strings> = {
     switchTo: 'English',
     switchToAria: 'View this page in English',
     englishOnwardNote:
-      'Algunas páginas están en inglés: las etiquetas de los productos que aplicamos, que son documentos legales y se quedan como las publica el fabricante, y por ahora el blog. Si necesita cualquiera de esas en español, llámenos y se lo explicamos por teléfono.',
+      'Algunas páginas están en inglés: las etiquetas de los productos que aplicamos, que son documentos legales y se quedan como las publica el fabricante, y el blog, que no se traduce. Si necesita cualquiera de esas en español, llámenos y se lo explicamos por teléfono.',
     callNow: 'Llame ahora',
     breadcrumbHome: 'Inicio',
   },

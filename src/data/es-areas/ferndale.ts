@@ -1,7 +1,7 @@
 import type { EsLugar } from './tipos';
 
-/** Fuente: src/content/locations/ferndale.md. La línea inglesa sobre perros de detección
- *  no se traduce: el contenido K9 es una decisión pendiente del dueño (GUARDRAILS §6). */
+/** Fuente: src/content/locations/ferndale.md. La línea sobre perros de detección entró el
+ *  12 Sep 2026, cuando el dueño decidió que Coastal K9 se queda (GUARDRAILS §6). */
 export const ferndale: EsLugar = {
   town: 'ferndale',
   nombre: 'Ferndale',
@@ -42,7 +42,7 @@ export const ferndale: EsLugar = {
       h2: 'El año en Ferndale, y cómo atendemos',
       parrafos: [
         'A finales del invierno salen las moscas de racimo y las chinches apestosas en las ventanas del sur; en primavera, las hormigas olorosas y de pavimento en los fraccionamientos regados, donde el aspersor mantiene húmedo el arriate contra la casa; a principios del verano se fundan los nidos de avispa, y la construcción nueva, con cumbreras ventiladas y aleros generosos, da muchos; el pleno verano es de exclusión; el otoño, con la llanura saturada y los campos cosechados, es el ajuste de cuentas; y el invierno es de trabajo adentro y de evaluar el daño.',
-        'No trampeamos topos, que salen seguido en los terrenos y los lotes abiertos. Nueve millas de autopista desde la oficina hacen de Ferndale una de las direcciones más rápidas del condado para nosotros: casi todo se atiende en la semana, y el trabajo urgente de avispas o roedores muchas veces antes. La visita empieza afuera, recorriendo todo el perímetro — cada paso, el terreno, las ventilas, el sello de la cochera y lo que toca la vegetación —, porque en una casa de Ferndale esa caminata casi siempre encuentra todo el problema; luego el espacio bajo el piso o el ático, y luego adentro. Si una casa de fraccionamiento necesita seis pasos sellados y nada más, eso le decimos, sin pegarle un plan de tratamiento para que el ticket crezca.',
+        'No trampeamos topos, que salen seguido en los terrenos y los lotes abiertos, y tampoco tenemos perro detector de chinches: cuando un edificio de verdad lo necesita traemos a un equipo certificado, y en una casa casi nunca hace falta. Nueve millas de autopista desde la oficina hacen de Ferndale una de las direcciones más rápidas del condado para nosotros: casi todo se atiende en la semana, y el trabajo urgente de avispas o roedores muchas veces antes. La visita empieza afuera, recorriendo todo el perímetro — cada paso, el terreno, las ventilas, el sello de la cochera y lo que toca la vegetación —, porque en una casa de Ferndale esa caminata casi siempre encuentra todo el problema; luego el espacio bajo el piso o el ático, y luego adentro. Si una casa de fraccionamiento necesita seis pasos sellados y nada más, eso le decimos, sin pegarle un plan de tratamiento para que el ticket crezca.',
       ],
     },
   ],

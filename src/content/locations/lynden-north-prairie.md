@@ -265,9 +265,10 @@ outside the nesting season rather than anything else. Starlings in numbers are
 a different matter — they consume and foul stored feed, and fouling in a feed
 area is a contamination issue rather than an aesthetic one.
 
-What we can usefully address is the harborage and the openings: netting or
-screening on the parts of a building that can be closed, and attention to where
-nesting material accumulates in gutters, ledges and equipment.
+Bird exclusion itself is not work we take on, and we will point you to somebody
+who does it. What we can usefully address is what follows the nests: the feed
+spillage they share with rodents, and the material that builds up in gutters,
+on ledges and in equipment.
 
 The indirect consequence is the one that surprises people. Old nests hold mites
 and beetles, and when a nest is abandoned those move outward and inward — into
