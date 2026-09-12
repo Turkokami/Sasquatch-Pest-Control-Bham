@@ -39,7 +39,13 @@ export interface Town {
    * the grouped neighborhood section on the Bellingham city page and listed by
    * name. Owner approved this split 30 Aug 2026.
    */
-  neighborhoods?: { slug: string; name: string; note?: string; page?: boolean }[];
+  /**
+   * `area` groups a town's neighborhoods in the QuickNav menu (src/lib/menus.ts).
+   * Compass orientation for a menu, not boundaries and not a coverage claim —
+   * added 12 Sep 2026 for Bellingham only, where the list is long enough to need
+   * it. ZIP codes were considered and rejected: they cut across neighborhoods.
+   */
+  neighborhoods?: { slug: string; name: string; note?: string; page?: boolean; area?: 'north' | 'central' | 'south' | 'east' }[];
   /** Incorporated city vs CDP vs unincorporated community. */
   kind?: 'city' | 'town' | 'cdp' | 'community';
   /**
@@ -76,31 +82,31 @@ export const towns: Town[] = [
        official 25. Fairhaven exists twice today — as a "city" page and a
        neighborhood page. It is a neighborhood. */
     neighborhoods: [
-      { slug: 'alabama-hill', name: 'Alabama Hill', page: true, note: '1960s–70s hillside stock, heavy cedar, sloped crawlspaces' },
-      { slug: 'barkley', name: 'Barkley', page: true, note: 'newer mixed-use and townhome density, perimeter pressure' },
-      { slug: 'birchwood', name: 'Birchwood', note: 'postwar single-family, mature landscaping against foundations' },
-      { slug: 'city-center', name: 'City Center', page: true, note: 'MISSING TODAY — commercial cores, shared walls, rodent runs' },
-      { slug: 'columbia', name: 'Columbia', note: 'prewar cottages, post-and-pier, knob-and-tube era' },
-      { slug: 'cordata', name: 'Cordata', page: true, note: 'newer construction and apartments near the college' },
-      { slug: 'cornwall-park', name: 'Cornwall Park', note: 'park-adjacent greenbelt, heavy rodent pressure' },
-      { slug: 'edgemoor', name: 'Edgemoor', page: true, note: 'large lots, wooded, heavy carpenter ant pressure' },
-      { slug: 'fairhaven', name: 'Fairhaven', page: true, note: 'historic district, old foundations, creekside greenbelt' },
-      { slug: 'happy-valley', name: 'Happy Valley', page: true, note: 'student rentals, bed bug and roach turnover' },
-      { slug: 'irongate', name: 'Irongate', page: true, note: 'MISSING TODAY — light industrial, commercial rodent work' },
-      { slug: 'king-mountain', name: 'King Mountain', note: 'MISSING TODAY — newer hillside, forest edge' },
-      { slug: 'lettered-streets', name: 'Lettered Streets', page: true, note: 'oldest stock in the city, unsealed crawlspaces' },
-      { slug: 'meridian', name: 'Meridian', note: 'commercial corridor plus adjacent single-family' },
-      { slug: 'puget', name: 'Puget', note: 'midcentury, vented crawlspaces' },
-      { slug: 'roosevelt', name: 'Roosevelt', note: 'prewar and postwar mix, alley access' },
-      { slug: 'samish', name: 'Samish', note: 'lake-adjacent, moisture pressure' },
-      { slug: 'sehome', name: 'Sehome', page: true, note: 'campus-adjacent rentals, arboretum edge' },
-      { slug: 'silver-beach', name: 'Silver Beach', page: true, note: 'Lake Whatcom shoreline, carpenter ants and rodents' },
-      { slug: 'south', name: 'South', note: 'MISSING TODAY — bay-adjacent, older stock' },
-      { slug: 'south-hill', name: 'South Hill', note: 'historic homes above Fairhaven, steep lots' },
-      { slug: 'sunnyland', name: 'Sunnyland', note: 'prewar bungalows, dense infill' },
-      { slug: 'wwu', name: 'Western Washington University', note: 'MISSING TODAY — institutional and adjacent housing' },
-      { slug: 'whatcom-falls', name: 'Whatcom Falls', page: true, note: 'creek corridor, greenbelt rodent pressure' },
-      { slug: 'york', name: 'York', note: 'prewar, alley-served, tight lots' },
+      { slug: 'alabama-hill', name: 'Alabama Hill', area: 'east', page: true, note: '1960s–70s hillside stock, heavy cedar, sloped crawlspaces' },
+      { slug: 'barkley', name: 'Barkley', area: 'north', page: true, note: 'newer mixed-use and townhome density, perimeter pressure' },
+      { slug: 'birchwood', name: 'Birchwood', area: 'north', note: 'postwar single-family, mature landscaping against foundations' },
+      { slug: 'city-center', name: 'City Center', area: 'central', page: true, note: 'MISSING TODAY — commercial cores, shared walls, rodent runs' },
+      { slug: 'columbia', name: 'Columbia', area: 'central', note: 'prewar cottages, post-and-pier, knob-and-tube era' },
+      { slug: 'cordata', name: 'Cordata', area: 'north', page: true, note: 'newer construction and apartments near the college' },
+      { slug: 'cornwall-park', name: 'Cornwall Park', area: 'north', note: 'park-adjacent greenbelt, heavy rodent pressure' },
+      { slug: 'edgemoor', name: 'Edgemoor', area: 'south', page: true, note: 'large lots, wooded, heavy carpenter ant pressure' },
+      { slug: 'fairhaven', name: 'Fairhaven', area: 'south', page: true, note: 'historic district, old foundations, creekside greenbelt' },
+      { slug: 'happy-valley', name: 'Happy Valley', area: 'south', page: true, note: 'student rentals, bed bug and roach turnover' },
+      { slug: 'irongate', name: 'Irongate', area: 'north', page: true, note: 'MISSING TODAY — light industrial, commercial rodent work' },
+      { slug: 'king-mountain', name: 'King Mountain', area: 'north', note: 'MISSING TODAY — newer hillside, forest edge' },
+      { slug: 'lettered-streets', name: 'Lettered Streets', area: 'central', page: true, note: 'oldest stock in the city, unsealed crawlspaces' },
+      { slug: 'meridian', name: 'Meridian', area: 'north', note: 'commercial corridor plus adjacent single-family' },
+      { slug: 'puget', name: 'Puget', area: 'east', note: 'midcentury, vented crawlspaces' },
+      { slug: 'roosevelt', name: 'Roosevelt', area: 'central', note: 'prewar and postwar mix, alley access' },
+      { slug: 'samish', name: 'Samish', area: 'south', note: 'lake-adjacent, moisture pressure' },
+      { slug: 'sehome', name: 'Sehome', area: 'central', page: true, note: 'campus-adjacent rentals, arboretum edge' },
+      { slug: 'silver-beach', name: 'Silver Beach', area: 'east', page: true, note: 'Lake Whatcom shoreline, carpenter ants and rodents' },
+      { slug: 'south', name: 'South', area: 'south', note: 'MISSING TODAY — bay-adjacent, older stock' },
+      { slug: 'south-hill', name: 'South Hill', area: 'south', note: 'historic homes above Fairhaven, steep lots' },
+      { slug: 'sunnyland', name: 'Sunnyland', area: 'central', note: 'prewar bungalows, dense infill' },
+      { slug: 'wwu', name: 'Western Washington University', area: 'central', note: 'MISSING TODAY — institutional and adjacent housing' },
+      { slug: 'whatcom-falls', name: 'Whatcom Falls', area: 'east', page: true, note: 'creek corridor, greenbelt rodent pressure' },
+      { slug: 'york', name: 'York', area: 'central', note: 'prewar, alley-served, tight lots' },
     ],
   },
   {

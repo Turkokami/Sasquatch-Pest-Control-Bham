@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { serviceGroups, neighborhoodGroups } from '../../../../lib/menus';
 import AnswerBox from '../../../../components/AnswerBox.astro';
 import QuickNav from '../../../../components/QuickNav.astro';
 import Faq from '../../../../components/Faq.astro';
@@ -77,8 +78,23 @@ const svc = liveServices()
   <AnswerBox text={l.answer} />
 
   <QuickNav rails={[
-    { heading: `Servicios de control de plagas en ${l.nombre}`, links: svc },
-    { heading: `Más de ${town.name}`, links: [...(pueblo ? [{ href: esPathOf(pueblo), label: `Todo ${town.name}` }] : []), ...hermanos] },
+    { heading: `Servicios de control de plagas en ${l.nombre}`, groups: serviceGroups('es') },
+    {
+      heading: `Más de ${town.name}`,
+      links: [...(pueblo ? [{ href: esPathOf(pueblo), label: `Todo ${town.name}` }] : []), ...hermanos],
+      groups: (() => {
+        const g = neighborhoodGroups(
+          town,
+          pagedNeighborhoods(town)
+            .filter((x) => x.slug !== n.slug)
+            .map((x) => ({ slug: x.slug, b: esBarrio(town.slug, x.slug) }))
+            .filter((x) => x.b)
+            .map((x) => ({ slug: x.slug, href: esPathOf(x.b!), label: x.b!.nombre })),
+          'es',
+        );
+        return g && pueblo ? [{ heading: town.name, links: [{ href: esPathOf(pueblo), label: `Todo ${town.name}` }] }, ...g] : g;
+      })(),
+    },
   ]} />
 
   <LocationMap place={`${n.name}, ${town.name}`} label={`${l.nombre}, ${town.name}`} />

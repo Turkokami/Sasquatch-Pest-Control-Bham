@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { serviceGroups, neighborhoodGroups } from '../../../lib/menus';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
@@ -74,8 +75,12 @@ const guideLinks = await guideLinksFor(path);
   {entry?.data.answer && <AnswerBox text={entry.data.answer} />}
 
   <QuickNav rails={[
-    { heading: `Services we run in ${n.name}`, links: svc },
-    { heading: `Other ${t.name} neighborhoods`, links: siblings },
+    { heading: `Services we run in ${n.name}`, groups: serviceGroups() },
+    {
+      heading: `Other ${t.name} neighborhoods`,
+      links: siblings,
+      groups: neighborhoodGroups(t, pagedNeighborhoods(t).filter((x) => x.slug !== n.slug).map((x) => ({ slug: x.slug, href: `/locations/${t.slug}/${x.slug}/`, label: x.name }))),
+    },
     { heading: 'Up a level', links: [{ href: `/locations/${t.slug}/`, label: `All of ${t.name}` }] },
   ]} />
 

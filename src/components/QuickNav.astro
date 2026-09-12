@@ -8,41 +8,46 @@
  * rail sat at the foot of its page, 80–90% of the way down, and the lead form
  * sat where they are now.
  *
+ * AND COLLAPSIBLE, 12 Sep 2026: "can we use collapsible menus or sub menus to
+ * lessen the visual load." A Bellingham page opened with about forty-five
+ * buttons on a phone. Each menu is now a <details> bar with its link count;
+ * a short one (OPEN_MAX links or fewer) starts open, a long one starts closed,
+ * and a long one can carry sub-menus — services by category, Bellingham
+ * neighborhoods by area (src/lib/menus.ts). Native <details> needs no script,
+ * works with a keyboard and a screen reader, and the links stay in the HTML
+ * for crawlers whether a bar is open or not.
+ *
  * TWO THINGS, IN THIS ORDER.
  *
  *   1. The action row. Call, in the brand solid, and the offer as the second
  *      button, jumping to the form BaseLayout renders at the foot of <main>.
  *      Call leads for the reason the sticky mobile bar puts it first: this
- *      trade runs on the phone. The form button is the owner's "button link
- *      to the contact form", and it goes to the form on this page rather than
- *      to /contact/ — one tap, no page load, and nothing lost of where the
- *      reader was. Keystone 4A's "primary CTA above the fold at 390px" is this
- *      row now; the hero CTA, the sticky bar and the closing CTA all point at
- *      the same two actions.
+ *      trade runs on the phone. Keystone 4A's "primary CTA above the fold at
+ *      390px" is this row.
  *
  *   2. The page's menus — services, areas, neighborhoods, problems,
- *      industries — as compact buttons. Reading lists ("Guides", "From the
- *      blog", "Related guides") stay at the foot of each page on purpose:
- *      they are for after the page has been read, and they are not what the
- *      owner meant by actionable.
+ *      industries. Reading lists ("Guides", "From the blog", "Related guides")
+ *      stay at the foot of each page on purpose.
  *
  * THIS DEPARTS FROM KEYSTONE 4.2, which puts link blocks mid-page or late in
- * each template's order, and it does so the way Part 4 says a contract
- * changes: once, for every page, from one component. See GUARDRAILS.md §9.
+ * each template's order. See GUARDRAILS.md §9.
  *
- * data-boilerplate on the action row, and its root is a <p> holding only
- * links, because the harness strip is non-greedy on the tag name — a nested
- * <p> would leak the rest of the block into the word count. The rails are
- * LinkRail, which marks itself.
+ * data-boilerplate on the action row (a <p> holding only links) and on each
+ * <details>, and neither nests its own tag, because the harness strip is
+ * non-greedy on the tag name. A `grid` rail (the commercial industry chooser,
+ * nine short tiles) stays an always-open LinkRail.
  */
 import LinkRail from './LinkRail.astro';
 import { business } from '../data/business';
 import { freeInspectionForPath, offerLabel, langForPath, LEAD_FORM_ID } from '../lib/offer';
+import type { MenuLink, MenuGroup } from '../lib/menus';
 
 interface Rail {
   heading: string;
-  links: { href: string; label: string }[];
-  /** The auto-fitting tile grid, for a short set of labels used as a chooser. */
+  links?: MenuLink[];
+  /** Sub-menus. When present they replace `links` inside the bar. */
+  groups?: MenuGroup[];
+  /** The auto-fitting tile grid, always open, for a short chooser. */
   grid?: boolean;
 }
 interface Props {
@@ -51,13 +56,19 @@ interface Props {
 }
 const { rails = [] } = Astro.props;
 
+/* A menu this short is quicker to read than to open. */
+const OPEN_MAX = 6;
+
 const path = Astro.url.pathname;
 const lang = langForPath(path);
 /* The offer wording comes from offer.ts, like the form heading and the
    sticky bar: bed bug pages carry a paid visit and must not say "free
    inspection" here either. */
 const offer = offerLabel(freeInspectionForPath(path), lang);
-const shown = rails.filter((r): r is Rail => Boolean(r) && (r as Rail).links.length > 0);
+
+const countOf = (r: Rail) =>
+  r.groups && r.groups.length ? r.groups.reduce((n, g) => n + g.links.length, 0) : (r.links ?? []).length;
+const shown = rails.filter((r): r is Rail => Boolean(r) && countOf(r as Rail) > 0);
 ---
 <p class="top-actions" data-boilerplate>
   <a class="btn top-call" href={`tel:${business.phoneE164}`}>
@@ -66,4 +77,31 @@ const shown = rails.filter((r): r is Rail => Boolean(r) && (r as Rail).links.len
   </a>
   <a class="top-form" href={`#${LEAD_FORM_ID}`}>{offer}</a>
 </p>
-{shown.map((r) => <LinkRail heading={r.heading} links={r.links} grid={r.grid} compact={!r.grid} />)}
+{shown.map((r) =>
+  r.grid ? (
+    <LinkRail heading={r.heading} links={r.links ?? []} grid />
+  ) : (
+    <details class="quick-menu" open={countOf(r) <= OPEN_MAX} data-boilerplate>
+      <summary>
+        <span class="quick-menu-title">{r.heading}</span>
+        <span class="quick-menu-count">{countOf(r)}</span>
+      </summary>
+      <div class="quick-menu-body">
+        {r.groups && r.groups.length ? (
+          r.groups.map((g) => (
+            <Fragment>
+              <p class="quick-menu-group">{g.heading}</p>
+              <ul class="rail rail-chips">
+                {g.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+              </ul>
+            </Fragment>
+          ))
+        ) : (
+          <ul class="rail rail-chips">
+            {(r.links ?? []).map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+          </ul>
+        )}
+      </div>
+    </details>
+  ),
+)}

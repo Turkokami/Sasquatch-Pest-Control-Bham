@@ -7,6 +7,7 @@
  * only enumerates real town slugs, so there is no collision.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { serviceGroups } from '../../lib/menus';
 import AnswerBox from '../../components/AnswerBox.astro';
 import QuickNav from '../../components/QuickNav.astro';
 import Faq from '../../components/Faq.astro';
@@ -64,7 +65,7 @@ const faqs = [
 
   <QuickNav rails={[
     { heading: 'Communities we serve in Whatcom County', links: townLinks },
-    { heading: 'Services across the county', links: svc },
+    { heading: 'Services across the county', groups: serviceGroups() },
   ]} />
 
   {/* THE MAP, MOVED UP FROM THE FOOT OF THE PAGE. It used to sit below

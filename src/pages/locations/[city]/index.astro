@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { serviceGroups, neighborhoodGroups } from '../../../lib/menus';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
@@ -96,8 +97,12 @@ const blogLinks = await blogPostsFor(path);
   {entry?.data.answer && <AnswerBox text={entry.data.answer} />}
 
   <QuickNav rails={[
-    { heading: `Pest control services in ${t.name}`, links: svc },
-    { heading: `Neighborhoods we serve in ${t.name}`, links: neighborhoods },
+    { heading: `Pest control services in ${t.name}`, groups: serviceGroups() },
+    {
+      heading: `Neighborhoods we serve in ${t.name}`,
+      links: neighborhoods,
+      groups: neighborhoodGroups(t, pagedNeighborhoods(t).map((n) => ({ slug: n.slug, href: `${path}${n.slug}/`, label: n.name }))),
+    },
     /* All same-county siblings. There are at most twelve of them, so the
        slice(0, 12) this replaced never did anything except look like a
        limit that had been considered. */

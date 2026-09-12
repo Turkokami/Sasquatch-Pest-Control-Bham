@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { serviceGroups } from '../lib/menus';
 import { srcsetFor } from '../lib/images';
 import Video from '../components/Video.astro';
 import AnswerBox from '../components/AnswerBox.astro';
@@ -99,7 +100,7 @@ const faqs = [
   <AnswerBox text={answer} />
 
   <QuickNav rails={[
-    { heading: 'What we handle', links: svc },
+    { heading: 'What we handle', groups: serviceGroups() },
     { heading: 'Where we work', links: cities },
   ]} />
 

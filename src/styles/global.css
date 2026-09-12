@@ -1063,6 +1063,80 @@ ul.rail.rail-chips {
   line-height: 1.3;
 }
 
+/* ---------------------------------------- §11c  collapsible menu bars */
+
+/* 12 Sep 2026, owner's request to lessen the visual load at the top of the
+   page. Each QuickNav menu is a native <details>: a bar with the menu's name
+   and its link count, a chevron that turns when it opens, and the pills from
+   §11b inside. Sub-menu labels are set as eyebrows, like rail headings. */
+.quick-menu {
+  margin: 0.5rem 0 0;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--marker) 40%, transparent);
+  border-radius: var(--radius);
+}
+.top-actions + .quick-menu {
+  margin-top: var(--space-2);
+}
+.quick-menu > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 0.95rem;
+  cursor: pointer;
+  list-style: none;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--link);
+  border-radius: var(--radius);
+}
+.quick-menu > summary::-webkit-details-marker {
+  display: none;
+}
+.quick-menu > summary::after {
+  content: "";
+  flex: none;
+  margin-left: auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.15s ease;
+}
+.quick-menu[open] > summary::after {
+  transform: translateY(2px) rotate(-135deg);
+}
+.quick-menu > summary:hover,
+.quick-menu > summary:focus-visible {
+  color: var(--link-hover);
+  background: color-mix(in srgb, var(--marker) 10%, var(--surface));
+}
+.quick-menu-count {
+  flex: none;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--ink-3);
+  padding: 0 0.5rem;
+  border: 1px solid var(--rule-2);
+  border-radius: 999px;
+}
+.quick-menu-body {
+  padding: 0 0.95rem 0.85rem;
+}
+.quick-menu-group {
+  margin: 0.55rem 0 0.35rem;
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.quick-menu .rail-chips {
+  margin-bottom: 0;
+}
+
 /* ----------------------------------------------------- §12  breadcrumbs */
 
 .crumbs {

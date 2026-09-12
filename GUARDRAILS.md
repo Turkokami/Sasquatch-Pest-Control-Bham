@@ -143,7 +143,15 @@ and for the contact form to move down or become a button.
 
 What the site does now, on every page from one component (`QuickNav.astro`):
 the Quick Answer, then a call button and an estimate button, then the page's
-menus as compact buttons. The one lead form is rendered by `BaseLayout` at the
+menus as compact buttons.
+
+On 12 Sep 2026 the owner asked to lessen the visual load, so each menu is a
+collapsible bar (native `<details>`) with its link count: menus of six links or
+fewer start open, longer ones start closed. Services are grouped by category and
+Bellingham neighborhoods by area (North, Central, South, East & Lake Whatcom —
+the `area` field in `src/data/towns.ts`, built in `src/lib/menus.ts`). ZIP
+codes were considered and rejected: Bellingham's three residential ZIPs cut
+across neighborhoods, and no verifiable source maps one to the other. The one lead form is rendered by `BaseLayout` at the
 foot of `<main>`; the estimate button and the sticky mobile bar both jump to
 it. Contact, 404 and `/network/` opt out with `leadForm={false}`. Reading
 lists ("Guides", "From the blog", "Related guides", "Related posts") stay at

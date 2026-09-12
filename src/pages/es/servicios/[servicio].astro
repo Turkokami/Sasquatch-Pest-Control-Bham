@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { serviceGroups } from '../../../lib/menus';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
@@ -53,7 +54,7 @@ const rails = esServicios
       heading: 'Programas por industria',
       links: [{ href: '/es/comercial/', label: 'Todo el control de plagas comercial' }, ...esGiros.map((g) => ({ href: esGiroPath(g), label: g.nav }))],
     },
-    { heading: 'Otros servicios', links: rails },
+    { heading: 'Otros servicios', groups: serviceGroups('es', path) },
   ]} />
 
   <div class="prose">

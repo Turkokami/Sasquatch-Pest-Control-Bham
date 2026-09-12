@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { serviceGroups, neighborhoodGroups } from '../../../../lib/menus';
 import AnswerBox from '../../../../components/AnswerBox.astro';
 import QuickNav from '../../../../components/QuickNav.astro';
 import Faq from '../../../../components/Faq.astro';
@@ -111,8 +112,21 @@ const breadcrumbs = isC
   <AnswerBox text={l.answer} />
 
   <QuickNav rails={[
-    { heading: isC ? `Servicios en el ${countyLabel}` : `Servicios de control de plagas en ${l.nombre}`, links: svc },
-    { heading: `Barrios que atendemos en ${l.nombre}`, links: barrios },
+    { heading: isC ? `Servicios en el ${countyLabel}` : `Servicios de control de plagas en ${l.nombre}`, groups: serviceGroups('es') },
+    {
+      heading: `Barrios que atendemos en ${l.nombre}`,
+      links: barrios,
+      groups: town
+        ? neighborhoodGroups(
+            town,
+            pagedNeighborhoods(town)
+              .map((x) => ({ slug: x.slug, b: esBarrio(town.slug, x.slug) }))
+              .filter((x) => x.b)
+              .map((x) => ({ slug: x.slug, href: esPathOf(x.b!), label: x.b!.nombre })),
+            'es',
+          )
+        : undefined,
+    },
     isC
       ? { heading: `Pueblos del ${countyLabel}`, links: pueblosDelCondado }
       : { heading: `Comunidades cercanas en el ${countyLabel}`, links: cercanos },

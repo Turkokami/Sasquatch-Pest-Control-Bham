@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { serviceGroups } from '../../lib/menus';
 import AnswerBox from '../../components/AnswerBox.astro';
 import QuickNav from '../../components/QuickNav.astro';
 import { business, isReady } from '../../data/business';
@@ -42,7 +43,7 @@ const answer =
   <AnswerBox text={answer} />
 
   <QuickNav rails={[
-    { heading: 'Servicios', links: menuServicios },
+    { heading: 'Servicios', groups: [...serviceGroups('es'), { heading: 'Todo', links: [{ href: '/es/servicios/', label: 'Todos los servicios' }] }] },
     { heading: 'Dónde trabajamos', links: menuPueblos },
   ]} />
 
