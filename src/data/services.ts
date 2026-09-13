@@ -229,7 +229,11 @@ export const services: Service[] = [
  * equivalent — instead of 404ing. Keep this list; it is the only record of
  * what those URLs used to be.
  */
-export const RETIRED_TO_EXCLUSION = ['bat-exclusion', 'bat-removal', 'bird-control', 'bird-exclusion', 'bird-netting', 'bird-spikes', 'nuisance-wildlife', 'opossum-removal', 'pigeon-control', 'raccoon-removal', 'squirrel-control', 'squirrel-removal', 'wildlife-control'] as const;
+export const RETIRED_TO_EXCLUSION = ['bat-exclusion', 'bat-removal', 'bird-control', 'bird-exclusion', 'bird-netting', 'bird-spikes', 'nuisance-wildlife', 'opossum-removal', 'pigeon-control', 'raccoon-removal', 'squirrel-control', 'squirrel-removal', 'wildlife-control',
+  /* Found in the Search Console export on 13 Sep 2026 — indexed, never in the
+     sitemap, and 404ing on cutover without a rule. bat-management-services
+     alone carried 112 clicks. */
+  'bat-management-services', 'racoon-removal-services', 'skunk-management-services', 'opossum-management-services', 'squirrel-management-services'] as const;
 
 /**
  * PESTS WITH NO SPOKE OF THEIR OWN — legacy service URLs discovered in the

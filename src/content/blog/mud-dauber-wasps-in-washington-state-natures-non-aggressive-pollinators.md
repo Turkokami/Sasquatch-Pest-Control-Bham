@@ -4,7 +4,7 @@ description: 'Mud daubers are solitary wasps that build mud tubes under eaves, h
 h1: 'Mud Dauber Wasps in Washington State'
 legacyUrl: '/mud-dauber-wasps-in-washington-state-natures-non-aggressive-pollinators/'
 imported: 2026-08-31
-supersededBy: '/services/wasp-control/'
+supersededBy: '/pest-library/mud-dauber/'
 ---
 
 Mud daubers undergo complete metamorphosis, transitioning through four stages: egg, larva, pupa, and adult. In the spring, adult females emerge to construct their signature nests, which consist of mud tubes built in sheltered locations like under eaves, porches, garages, and sheds.

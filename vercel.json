@@ -422,6 +422,31 @@
       "permanent": true
     },
     {
+      "source": "/bat-management-services/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/racoon-removal-services/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/skunk-management-services/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/opossum-management-services/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/squirrel-management-services/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
       "source": "/cricket-control/",
       "destination": "/pest-library/",
       "permanent": true
@@ -903,7 +928,7 @@
     },
     {
       "source": "/custer-wa-pest-control/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/custer/",
       "permanent": true
     },
     {
@@ -958,7 +983,7 @@
     },
     {
       "source": "/deming-wa-pest-control/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/deming/",
       "permanent": true
     },
     {
@@ -973,7 +998,7 @@
     },
     {
       "source": "/nooksack-wa-pest-control/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/nooksack/",
       "permanent": true
     },
     {
@@ -1243,7 +1268,7 @@
     },
     {
       "source": "/mud-dauber-wasps-in-washington-state-natures-non-aggressive-pollinators/",
-      "destination": "/services/wasp-control/",
+      "destination": "/pest-library/mud-dauber/",
       "permanent": true
     },
     {
@@ -1403,7 +1428,7 @@
     },
     {
       "source": "/the-squatch-blog/",
-      "destination": "/pest-library/",
+      "destination": "/blog/",
       "permanent": true
     },
     {
@@ -1424,6 +1449,186 @@
     {
       "source": "/pest-control-coupons/",
       "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/🕷️-tiny-black-spiders-in-washington-state-what-you-need-to-know-🕸️/",
+      "destination": "/services/spider-control/",
+      "permanent": true
+    },
+    {
+      "source": "/%F0%9F%95%B7%EF%B8%8F-tiny-black-spiders-in-washington-state-what-you-need-to-know-%F0%9F%95%B8%EF%B8%8F/",
+      "destination": "/services/spider-control/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-blaine-wa/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-blaine-wa-2/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/safeguarding-your-home-pest-control-services-in-blaine-wa/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/safeguarding-your-home/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/nooksack-pest-control/",
+      "destination": "/locations/nooksack/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-nooksack-wa/",
+      "destination": "/locations/nooksack/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-lynden-wa/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/bow-wa/",
+      "destination": "/locations/bow/",
+      "permanent": true
+    },
+    {
+      "source": "/alger-wa/",
+      "destination": "/locations/alger/",
+      "permanent": true
+    },
+    {
+      "source": "/ferndale-wa/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-deming-wa/",
+      "destination": "/locations/deming/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-custer-wa/",
+      "destination": "/locations/custer/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-sumas-wa/",
+      "destination": "/locations/sumas/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-glacier-wa/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/bellingham-wa/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-bellingham-wa/bellingham-wa/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/the-squatch-blog/page/2/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/the-squatch-blog/page/3/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/the-squatch-blog/page/4/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/the-squatch-blog/page/5/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/the-squatch-blog/page/6/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/the-squatch-blog/page/7/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/the-squatch-blog/page/8/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/first-blog-post/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/know-your-bees-distinguishing-carpenter-bees-from-bumblebees/",
+      "destination": "/services/bee-removal/",
+      "permanent": true
+    },
+    {
+      "source": "/why-professional-pest-control-is-essential/",
+      "destination": "/guides/how-to-choose-a-pest-control-company-in-whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/the-importance-of-preventative-pest-control/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/wood-boring-beetles/",
+      "destination": "/blog/wood-boring-beetles-a-silent-threat-to-your-home/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-wasps-vs-yellow-jackets/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/understanding-and-combating-fleas/",
+      "destination": "/services/flea-control/",
+      "permanent": true
+    },
+    {
+      "source": "/profile/kristofer-elling/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/profile/tyson-elling/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/success/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/mole-control/",
+      "destination": "/services/",
       "permanent": true
     }
   ]
