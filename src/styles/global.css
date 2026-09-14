@@ -1365,32 +1365,38 @@ header.site nav {
   font-size: var(--fs-xs);
 }
 header.site .nav-main {
-  /* EQUAL-WIDTH ITEMS IN CENTERED ROWS. This was a five-column grid, which
-     aligned the columns but left the last row hanging to the left with an
-     empty cell beside it — a grid has no way to center a remainder. Flex with
-     a computed basis keeps every chip exactly the width a fixed grid would
-     give it, so the columns still line up, and justify-content centers a
-     short row instead of stranding it.
+  /* TWO FULL ROWS ON A PHONE, ONE ROW ABOVE 44rem. Seven is Keystone v3.2
+     Part 3.5's ceiling for primary items (14 Sep 2026); before that NAV held
+     twelve, and before 4 Sep 2026 nine.
 
-     THE COUNT AND THE DIVISORS HAVE TO AGREE. The basis solves
-     n * basis + (n - 1) * gap = 100% for the row it belongs to: seven per row
-     above 34rem, four below (a row of four and a centered row of three).
-     Seven is Keystone v3.2 Part 3.5's ceiling for primary items (14 Sep 2026);
-     before that NAV held twelve, four and three per row. It went from nine to twelve on 4 Sep 2026 when the
-     link audit found blog, gallery and the product register unreachable from
-     the masthead; nine over five columns had been leaving a four-chip
-     remainder centered under a gap.
+     This was flex with an equal computed basis and a centered remainder. That
+     broke once the labels got longer than the basis: "Commercial" needs 93px
+     at 390px and 98px above 34rem, and a flex item never shrinks below its
+     longest word, so the row overflowed. On a 640px desktop masthead Contact
+     dropped to a row of its own, and at 360px the menu fell into 3 + 3 + 1
+     (measured in headless Chrome, 14 Sep 2026).
 
-     If the count changes, change both divisors here to match, or the last row
-     goes ragged at one width and not the other — which is the failure that is
-     easy to miss, because it looks correct on whichever screen you tested. */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+     A twelve-track grid fixes both. The first four chips span three tracks
+     and the last three span four, so a phone gets a full row of four over a
+     full row of three with nothing hanging. The tracks are 1fr with an
+     automatic minimum, so a long label widens its own track and the others
+     give way, instead of overflowing. From 44rem, where the masthead is
+     640px and the sum of the seven narrowest widths is 534px in English and
+     593px in Spanish, all seven sit in one row.
+
+     THE COUNT AND THE SPANS HAVE TO AGREE. 4 x 3 + 3 x 4 = 12, and 7 columns
+     above. If NAV changes length, change both here. */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   gap: 0.4rem;
 }
+header.site .nav-main a:nth-child(-n + 4) {
+  grid-column: span 3;
+}
+header.site .nav-main a:nth-child(n + 5) {
+  grid-column: span 4;
+}
 header.site .nav-main a {
-  flex: 0 0 calc((100% - 3 * 0.3rem) / 4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1427,10 +1433,21 @@ header.site .nav-main a {
     gap: 0.3rem;
   }
 }
-@media (min-width: 34rem) {
-  header.site .nav-main a {
-    flex-basis: calc((100% - 6 * 0.4rem) / 7);
-    padding-inline: 0.6rem;
+/* The 320px phone: four English chips need more than the 283px there is, even
+   at tighter padding (measured overflowing). Two, two and three instead —
+   still full rows, still nothing hanging. */
+@media (max-width: 22rem) {
+  header.site .nav-main a:nth-child(-n + 4) {
+    grid-column: span 6;
+  }
+}
+@media (min-width: 44rem) {
+  header.site .nav-main {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  header.site .nav-main a:nth-child(n) {
+    grid-column: auto;
+    padding-inline: 0.5rem;
   }
 }
 header.site .nav-main a:hover,
@@ -2908,13 +2925,18 @@ footer.site .colophon a {
   display: inline-flex;
 }
 /* A column of 44px rows would make the service and area lists in the footer
-   run to a screen each on a phone. The link lists wrap into rows instead,
-   like the menu pills at the top of the page; the hours list has no links and
-   keeps its column. */
+   run to a screen each on a phone. The link lists flow into as many aligned
+   columns as fit — three on a 390px phone, one in the narrow desktop
+   columns. The first version wrapped them as flex rows, which went ragged:
+   short names like "Bow" and "Ants" sat centered in their 44px boxes and read
+   as indented. They are left-aligned in the box now. The hours list has no
+   links and keeps its column. */
 footer.site ul:has(a) {
-  display: flex;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
   gap: 0 1rem;
+}
+footer.site li a {
+  justify-content: flex-start;
 }
 footer.site ul:has(a) li {
   margin: 0;
