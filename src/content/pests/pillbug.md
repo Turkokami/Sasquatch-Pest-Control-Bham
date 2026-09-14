@@ -58,8 +58,8 @@ animal does.
 
 A crustacean breathes with gills. The pillbug's are modified into gill-like
 structures on the underside of its abdomen, and the University of Idaho's
-homeowner guide states the constraint exactly: the gills must be kept wet in
-order to extract oxygen, which restricts these creatures to moist habitats.
+homeowner guide states the constraint exactly: the gills must be kept wet
+to extract oxygen, which restricts these creatures to moist habitats.
 
 An animal that has moved onto land while keeping a breathing apparatus that only
 works wet has one non-negotiable requirement, and everything follows from it. It

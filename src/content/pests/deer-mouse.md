@@ -213,7 +213,7 @@ crawlspace hatch nobody has lifted in three years.
 **Open it and walk away.** Doors, windows, vents, hatch — everything that opens.
 Then leave it for the full thirty minutes rather than the two it takes to carry
 the cooler in. This single step is the one the state guidance leads with and the
-one that gets skipped, because nobody drives to a cabin in order to stand
+one that gets skipped, because nobody drives to a cabin to stand
 outside it.
 
 **Look before you touch anything.** Droppings along a shelf edge, a chewed

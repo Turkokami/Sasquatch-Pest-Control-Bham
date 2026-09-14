@@ -196,7 +196,7 @@ of re-entry, and what you should do differently for a day.
 ## What we actually use, said plainly
 
 We use conventional registered products where they are the right tool for the
-job, and we are not going to pretend otherwise in order to sound better.
+job, and we are not going to pretend otherwise to sound better.
 
 There are situations where a botanical or a minimum-risk material is a
 reasonable choice, and we will use one when it is. There are more situations

@@ -5,7 +5,7 @@ future session would otherwise "fix" back. This is that file. Each entry says
 what the decision is, where the code enforces it, and whether it is settled or
 still waiting on the owner.
 
-Written 10 Sep 2026, when Keystone v2 arrived. If you change one of these, change
+Written 10 Sep 2026, when Keystone v2 arrived; brought to Keystone v3.2 on 14 Sep 2026 (§11). If you change one of these, change
 the entry here in the same commit.
 
 ---
@@ -32,8 +32,17 @@ Structural Pest Inspector or SPI company license. So no page offers a WDO
 inspection or a written record of findings in timber. A general free visit or
 free inspection offer is the owner's confirmed policy and is permitted; the
 regulated terms are not. Enforced by harness check 2c and `src/lib/seo.ts`.
-**Open item:** check 2c only knows the regulated terms in English. It has to learn
-the Spanish ones before any Spanish termite or WDO page is published.
+Check 2c carries the Spanish regulated terms as well (INSPECTION_CLAIMS_ES and the
+WDO rules), added before the Spanish termite and WDO pages were published.
+
+**Client-attested, per Keystone v3.2 prime directive 9 and Part 14.** Every licence
+number, credential, award and business fact on this site is written as the owner
+supplied it, attributed to the business: the four WSDA licence numbers (owner, 10
+Sep 2026), the Associate Certified Entomologist credential and the award rows
+(owner, early Sep 2026), 360-410-2199 as the GBP number and Tyson Elling handling
+Spanish calls (owner, 12 Sep 2026). None of it waits on independent verification,
+and nothing the owner did not state is written. The `via` fields in
+`src/data/business.ts` keep who supplied what.
 
 ## 3. Call tracking versus NAP (Part 4A.3) — settled
 
@@ -90,7 +99,9 @@ detection content on a Sasquatch page, which Keystone forbids.
 separate company contracted in — never the same operator, linked nofollow — and
 `/es/socios-de-confianza/` now carries it too, with its own standard. Sasquatch
 still sells no K9 service of its own; the retired `k9-bed-bug-detection` slug
-stays retired. Keystone Parts 1.3 and 1.4 should be updated to match.
+stays retired. Keystone Parts 1.3 and 1.4 should be updated to match — v3.2
+(14 Sep 2026) still says K9 detection is "never on Sasquatch". The owner's decision
+here stands until the master is amended.
 
 ## 7. Word counts (M1) — settled by v2
 
@@ -108,7 +119,8 @@ Semiahmoo pages; the beetle-control page's nest removal; the commercial service
 and hub photographs and captions; and all sixteen gallery images
 (`src/data/retired-photos.ts`). Sentences saying we do not do bird work stay. The
 Spanish tests keep failing any Spanish page that names birds. Keystone Part 1.4
-still calls bird exclusion the standout local edge and should be updated.
+still calls bird exclusion the standout local edge — v3.2 (14 Sep 2026) did not change
+that line — and should be updated. The owner's decision here stands.
 
 The history, for the record — three sources disagreed, and the site said both
 things:
@@ -163,6 +175,12 @@ for every page, from one place — and Part 4A's "primary CTA above the fold at
 390px" is met by the action row. Do not move the rails back down to match the
 Keystone order without asking the owner; update Part 4.2 instead.
 
+Keystone v3.2 Part 3.5 (14 Sep 2026) also caps the masthead at four to seven
+primary items. It held twelve; it now holds seven (Home, Services, Commercial,
+Service areas, Pest library, About, Contact, and the Spanish equivalents). Guides
+and the guarantee sit in the utility row beneath; Blog, Gallery, Awards and What we
+apply are in the footer colophon on every page.
+
 ## 10. The Spanish tier — settled, owner's answers of 12 Sep 2026
 
 - **Spanish calls:** Tyson Elling, Office Manager, handles Spanish-speaking
@@ -173,3 +191,50 @@ Keystone order without asking the owner; update Part 4.2 instead.
   replaces that line.
 - **The blog is not translated.** Its posts are archived or already covered by
   Spanish pages; the Spanish onward note lists it as English.
+
+## 11. Keystone v3.2 intake — 14 Sep 2026
+
+v3.2 consolidates v3.0–v3.2 and the v2.1 amendment. What it changed for this site,
+and where each change now lives:
+
+**Done at intake.**
+- Social tags checked by value, not presence: og:url equals the canonical,
+  twitter:card is summary_large_image (M5; harness check 2).
+- Segmented XML sitemaps: `/sitemap.xml` is an index of one sitemap per page type,
+  so Search Console reports indexation per tier (9.4, 16.4).
+- Accessibility per template (Dimension 14): harness check 7 decides the mechanical
+  subset from HTML and CSS; `scripts/check-tap-targets.mjs` measures 44px tap
+  targets at 390px. Tap targets were fixed site-wide (global.css §24).
+- Writer-register scanner (9.2 #6): harness check 8, flag for review, never a failure.
+- Machine-readable prices (5.3): the bed bug Offer carries both published figures.
+  priceValidUntil is omitted until the owner states a validity date.
+- Masthead capped at seven primary items (3.5); see §9.
+- Transport and AI-crawler access (9.1) checked on the deployed site: HSTS set,
+  HTTP 308s to HTTPS, no mixed content, and GPTBot, OAI-SearchBot, ChatGPT-User,
+  PerplexityBot, ClaudeBot and Bingbot all get a 200. Re-check on the real domain at
+  cutover, because a WAF or host rule there can differ from Vercel's.
+
+**The content backlog v3.2 created.** Three per-page gate items were added after
+every page here was written. They gate new pages; for the live inventory they are a
+backlog worked in batches of about ten (Part 13), reported per page type by harness
+check 9 so the numbers fall as batches land. Baseline at intake:
+- Snippet shape (4.3): the page type's real markup — an ordered list of three to
+  seven steps on problem pages (0 of 46 had one), a cost-or-scope table on service
+  spokes (0 of 46), an identification table plus a signs list on pest profiles (0 of
+  106), an auditor table on verticals (0 of 18), a rule table on compliance guides.
+- Citability (6.5): one primary authority named in a visible sentence and linked at
+  the point of the claim. Almost every page cites sources in a block at the foot,
+  which v3.2 no longer counts.
+- A visible last-updated date tied to a substantive edit (6.6), never bumped to
+  fake freshness. Almost no page shows one.
+- Offer structure (4A.5): a two-column included / not-included scope block on each
+  money service, and FAQs derived from the owner's real objections.
+
+**Not applicable here, on the record.** Dataset and ClaimReview nodes (5.1 — a
+service site does not get them); the React/Next rules (16.5 — Astro); the WordPress
+tracks; popups and lead magnets (none exist, and 4A.5 keeps it that way).
+
+**Limits worth stating.** The lead form is the CRM's iframe, so field-level form
+instrumentation (4A.6) and an agent-actionable booking path (14) are not ours to
+build inside it; the tel: link is the path an assistant can complete. The
+measurement basis is search data, not call tracking (16.6), which matches §3.

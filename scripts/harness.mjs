@@ -470,6 +470,23 @@ if (run('seo')) {
     }
 
     if (!/rel=["']canonical["']/i.test(p.html)) { fail(`${p.url} missing canonical`); clean = false; }
+
+    /* SOCIAL TAGS BY VALUE, Keystone v3.2 M5 and Part 9.2 #2 (14 Sep 2026).
+       v3.2 names the set explicitly after two audits found it sitewide-missing
+       elsewhere: og:title, og:description, og:image, og:url equal to the
+       canonical, og:type, and twitter:card = summary_large_image. Presence was
+       never checked here; og:image keeps its own collected warning below. */
+    {
+      const metas = tagsOf(p.html, 'meta');
+      const og = (k) => { const t = metas.find((m) => attr(m, 'property') === k || attr(m, 'name') === k); return t ? attr(t, 'content') : undefined; };
+      const canonTag = tagsOf(p.html, 'link').find((l) => attr(l, 'rel') === 'canonical');
+      const canonHref = canonTag ? attr(canonTag, 'href') : undefined;
+      for (const k of ['og:title', 'og:description', 'og:type']) {
+        if (!og(k)?.trim()) { fail(`${p.url} missing ${k}`); clean = false; }
+      }
+      if (og('og:url') !== canonHref) { fail(`${p.url} og:url "${og('og:url')}" is not the canonical "${canonHref}"`); clean = false; }
+      if (og('twitter:card') !== 'summary_large_image') { fail(`${p.url} twitter:card is "${og('twitter:card')}", not summary_large_image`); clean = false; }
+    }
     if (!/property=["']og:image["']/i.test(p.html)) noOgImage.push(p.url);
     if (/\.jpg["'][^>]*>\s*<\/picture>/i.test(p.html)) warn(`${p.url} leftover .jpg reference`);
 
@@ -494,7 +511,7 @@ if (run('seo')) {
     }
   }
 
-  if (clean) ok('titles, descriptions, H1s, alt text, canonicals and JSON-LD all pass');
+  if (clean) ok('titles, descriptions, H1s, alt text, canonicals, social tags and JSON-LD all pass');
 }
 
 /* ---------- 2b · price-drift check ---------- */
@@ -1152,6 +1169,139 @@ if (run('convert')) {
     }
   }
   if (esOk) ok('no English interface text on any Spanish page, and every Spanish WebPage declares es-US');
+}
+
+/* ---------- 7 · accessibility template check (Keystone v3.2 Dimension 14) ---------- */
+if (run('a11y')) {
+  console.log('\n7 · accessibility template check (v3.2 Dimension 14 — mechanical subset)');
+  /* Part 9.2 #7: assert what a script can decide, once per template rather
+     than once per page — a finding is reported with the first page that shows
+     it and a count, because 140 pages off one template share one verdict. A
+     template finding blocks that template's first publish (P0), so these fail.
+
+     What this does NOT decide, and is never reported as passing because it was
+     silent: tab-order sense, link text out of context, colour as the only
+     carrier of meaning, computed contrast, and tap-target size. Those are the
+     headless/human pass against the Web Interface Guidelines (Part 16.5). */
+  const findings = new Map();
+  const note = (msg, url) => { const e = findings.get(msg) ?? { url, n: 0 }; e.n++; findings.set(msg, e); };
+  const nameOf = (inner, tag) => {
+    const aria = attr(tag, 'aria-label') || attr(tag, 'title');
+    if (aria && aria.trim()) return aria.trim();
+    const alts = (inner.match(/<img\b[^>]*>/gi) || []).map((i) => attr(i, 'alt') || '').join(' ');
+    return (decode(inner.replace(/<[^>]+>/g, ' ')) + ' ' + alts).replace(/\s+/g, ' ').trim();
+  };
+  for (const p of pages) {
+    const html = p.html.replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' ');
+    for (const m of html.matchAll(/(<(a|button)\b[^>]*>)([\s\S]*?)<\/\2>/gi)) {
+      if (m[2].toLowerCase() === 'a' && attr(m[1], 'href') === undefined) continue;
+      if (!nameOf(m[3], m[1])) note(`<${m[2].toLowerCase()}> with no accessible name (${(attr(m[1], 'href') || attr(m[1], 'class') || '').slice(0, 40)})`, p.url);
+    }
+    for (const tag of html.match(/<(input|select|textarea)\b[^>]*>/gi) || []) {
+      const type = (attr(tag, 'type') || '').toLowerCase();
+      if (['hidden', 'submit', 'button', 'reset', 'image'].includes(type)) continue;
+      const id = attr(tag, 'id');
+      const labelled = attr(tag, 'aria-label') || attr(tag, 'aria-labelledby') || (id && new RegExp(`<label[^>]*for=["']${id}["']`, 'i').test(html));
+      if (!labelled) note(`form control with no <label for> or aria-label (${tag.slice(0, 50)})`, p.url);
+    }
+    for (const tag of html.match(/<(div|span)\b[^>]*\sonclick=[^>]*>/gi) || []) {
+      if (!attr(tag, 'role') || attr(tag, 'tabindex') === undefined) note('<div>/<span> with a click handler and no role + tabindex', p.url);
+    }
+    for (const img of tagsOf(html, 'img')) if (attr(img, 'alt') === undefined) note('<img> with no alt attribute', p.url);
+  }
+  /* The stylesheet rules. Astro inlines this site's CSS into a <style> block in
+     each page rather than emitting .css files, so both are read — the first
+     version of this check read only .css files, found none, and reported the
+     reduced-motion rule missing when it is on every page. Each distinct sheet
+     is checked once. */
+  const sheets = new Map();
+  for (const cf of walk(DIR).filter((x) => x.endsWith('.css'))) sheets.set(path.basename(cf), fs.readFileSync(cf, 'utf8'));
+  const seenCss = new Set(sheets.values());
+  for (const p of pages) {
+    for (const m of p.html.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/gi)) {
+      if (m[1].length > 200 && !seenCss.has(m[1])) { seenCss.add(m[1]); sheets.set(`inline <style> first on ${p.url}`, m[1]); }
+    }
+  }
+  for (const [name, css] of sheets) {
+    if (/transition\s*:\s*all\b/i.test(css)) note(`transition: all in ${name}`, '(stylesheet)');
+    if (/outline\s*:\s*(none|0)\b/i.test(css) && !/:focus-visible/.test(css)) note(`outline removed with no :focus-visible replacement in ${name}`, '(stylesheet)');
+  }
+  if (!sheets.size) note('no stylesheet found to check', '(stylesheet)');
+  else if (![...sheets.values()].some((css) => /prefers-reduced-motion/.test(css))) note('no prefers-reduced-motion rule in any stylesheet', '(stylesheet)');
+  for (const [msg, e] of findings) fail(`${msg} — first on ${e.url}${e.n > 1 ? `, ${e.n} occurrences` : ''}`);
+  if (!findings.size) ok('accessible names, form labels, img alt attributes, no div click handlers, focus replacement, no transition:all, reduced motion');
+  console.log('  \x1b[2mnot decided here (headless/human pass, Part 16.5): tab order, link text out of context, colour-only meaning, contrast, tap targets\x1b[0m');
+}
+
+/* ---------- 8 · writer-register scanner (Keystone v3.2 Part 9.2 #6) ---------- */
+if (run('register')) {
+  console.log('\n8 · writer-register scanner (v3.2 — flag for review, never a failure)');
+  /* The two lists from Part 9.2 #6, English only — the Spanish tier was
+     written in Spanish, and a translated list of English tells would be a
+     guess. Calibration, as v3.2 states it: practitioner heuristics, not
+     detection evidence. Em dashes are not on the list. Output is a count per
+     page and the phrases, for a person to read the sentence. */
+  const REGISTER = /\b(delve|delving|leverag(e|es|ing)|robust|seamless(ly)?|comprehensive|in today's (fast-paced world|digital landscape)|that being said|it's worth noting that|at its core|let's delve into|in conclusion|utiliz(e|es|ed|ing)|prior to|in order to|facilitat(e|es|ed|ing))\b/gi;
+  const flagged = [];
+  for (const p of indexable) {
+    if (p.url.startsWith('/es/')) continue;
+    const hits = textOf(p.html).match(REGISTER);
+    if (hits) flagged.push([p.url, hits.length, [...new Set(hits.map((h) => h.toLowerCase()))].join(', ')]);
+  }
+  if (!flagged.length) ok('no register phrases on any indexable English page');
+  else {
+    console.log(`  \x1b[2m${flagged.length} page${flagged.length === 1 ? '' : 's'} to read:\x1b[0m`);
+    for (const [u, n, list] of flagged.sort((a, b) => b[1] - a[1])) console.log(`  \x1b[2m  ${n}  ${u}  (${list})\x1b[0m`);
+  }
+}
+
+/* ---------- 9 · Keystone v3.2 content backlog (diagnostic) ---------- */
+if (run('backlog')) {
+  console.log('\n9 · v3.2 content backlog (4.3 snippet shape · 6.5 cited authority · 6.6 visible date — diagnostic)');
+  /* Three per-page gate items that v3.2 added on 14 Sep 2026, after every page
+     on this site was written. They are gate items for NEW pages. For the
+     inventory already live they are a backlog, worked in batches under Part 13
+     batch discipline and tracked in GUARDRAILS.md §11 — reported here per page
+     type, exactly as the word-band auditor reports its bands, so the number
+     falls as batches land instead of being argued about.
+
+       snippet shape — the markup the page type must carry (4.3): an <ol> for a
+         problem page, a <table> for a service spoke, vertical or compliance
+         page, a <table> and a list for a pest profile, a list for a blog post.
+       cited authority — a link to a primary authority (.gov, .edu, an extension
+         service) inside body copy, not a sources block (6.5).
+       visible date — a last-updated or reviewed date shown on the page (6.6). */
+  const SHAPE = {
+    service: { need: ['table'], label: 'paragraph + table' },
+    problem: { need: ['ol'], label: 'paragraph + ordered list' },
+    pest: { need: ['table', 'list'], label: 'definition + table + list' },
+    vertical: { need: ['table'], label: 'paragraph + table' },
+    compliance: { need: ['table'], label: 'definition + table' },
+    blog: { need: ['list'], label: 'paragraph + list' },
+  };
+  const AUTH = /href=["']https?:\/\/[^"']*(\.gov\b|\.gov\/|\.edu\b|\.edu\/|extension\.|\.extension|wsu\.edu|oregonstate\.edu|ipm\.ucanr)/i;
+  const DATED = /(last updated|updated on|reviewed on|last reviewed|review(ed)? by|actualizad[oa]|revisad[oa])/i;
+  const rows = new Map();
+  for (const p of indexable) {
+    const type = pageType(p.url) ?? 'other';
+    const main = p.html.slice(p.html.indexOf('<main'), p.html.indexOf('</main>'));
+    const body = main.replace(/<([a-z]+)[^>]*\sdata-boilerplate\b[^>]*>[\s\S]*?<\/\1>/gi, ' ');
+    const r = rows.get(type) ?? { n: 0, shape: 0, auth: 0, dated: 0 };
+    r.n++;
+    const spec = SHAPE[type];
+    if (spec) {
+      const has = { table: /<table\b[\s\S]*?<th\b/i.test(body), ol: /<ol\b/i.test(body), list: /<(ol|ul)\b/i.test(body) };
+      if (spec.need.every((k) => has[k])) r.shape++;
+    }
+    if (AUTH.test(body)) r.auth++;
+    if (DATED.test(main)) r.dated++;
+    rows.set(type, r);
+  }
+  console.log('  \x1b[2mpage type        pages  shape            with shape  cited authority  visible date\x1b[0m');
+  for (const [type, r] of [...rows.entries()].sort((a, b) => b[1].n - a[1].n)) {
+    const spec = SHAPE[type];
+    console.log(`  \x1b[2m${type.padEnd(16)} ${String(r.n).padStart(5)}  ${(spec ? spec.label : 'paragraph').padEnd(26)} ${spec ? String(r.shape).padStart(4) : '   —'}  ${String(r.auth).padStart(15)}  ${String(r.dated).padStart(12)}\x1b[0m`);
+  }
 }
 
 /* ---------- summary ---------- */

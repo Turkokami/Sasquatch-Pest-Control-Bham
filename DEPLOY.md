@@ -37,7 +37,16 @@ npm run lab-gate
 node scripts/check-leadform.mjs
 ```
 
-Both need a running server and Chrome, so they are not in `npm run gate`.
+Both need a running server and Chrome, so they are not in `npm run gate`. So does
+a third, added for Keystone v3.2:
+
+```
+node scripts/check-tap-targets.mjs
+```
+
+- **check-tap-targets** measures every standalone tap target at 390px, one page
+  per template, against Dimension 14's 44 x 44px. Inline links inside running text
+  are exempt. Run it after any change to the masthead, menus, footer or CSS.
 
 - **lab-gate** is Keystone v2's performance launch gate: the median of five
   mobile Lighthouse runs per template, against LCP ≤ 2.0s, TBT ≤ 200ms,
@@ -50,8 +59,11 @@ Both need a running server and Chrome, so they are not in `npm run gate`.
   leads on every page, so run it after any change to `LeadForm.astro` or
   `business.crmForm`.
 
-The field check v2 asks for comes 28 days after launch: Core Web Vitals from
-real users (CrUX, where the origin is eligible), not from the lab.
+The field check comes 28 days after launch, and under Keystone v3.2 the number
+to read is INP (≤ 200ms) — TBT is the lab proxy only, and a passing TBT does not
+imply a passing INP. Use the CrUX API where the origin is eligible, otherwise
+first-party web-vitals RUM; Vercel Optimize is named in v3.2 but its Astro support
+is limited, so treat its output as indicative.
 
 ## Deploying to Vercel
 
@@ -81,9 +93,10 @@ fails if you forget.
    (`/more-spiders-fall-bellingham/`), and a retired slug
    (`/mosquito-control/`).
 2. **Submit `https://www.sasquatchpestcontrol.com/sitemap.xml`** in Google
-   Search Console. It lists 147 indexable URLs and deliberately excludes the
-   60 that are noindex or canonicalled elsewhere.
-3. **Check the maps render.** The 27 location pages embed Google Maps. The URLs
+   Search Console. Since Keystone v3.2 it is a sitemap index of one sitemap per
+   page type (services, problems, cities, neighborhoods, library, commercial,
+   guides, blog, pages), so the Pages report splits indexation by tier. Noindex and
+   cross-canonicalled pages are deliberately excluded.
    were verified by hand but could not be loaded in the build environment,
    which blocks `maps.google.com`.
 4. **Test a share.** Paste the homepage URL into Facebook or Slack and confirm
@@ -94,3 +107,18 @@ fails if you forget.
 There is no CI. For a site this size, `npm run gate` on the machine doing the
 deploy is the honest amount of process — a pipeline nobody maintains is worse
 than a command somebody actually runs.
+
+## Cutover additions from Keystone v3.2
+
+- **Before cutover, draw the map (13.1 step 5).** Render old → new as one
+  colour-coded diagram — keep, new, redirect, restructure — from
+  `src/data/legacy-urls.json` joined to the Search Console export in `private/gsc/`,
+  and walk the owner through it. It is where "that page gets me the commercial
+  calls" is cheap to hear.
+- **Re-check transport and AI-crawler access on the real domain.** HSTS, HTTP →
+  HTTPS, no mixed content, and a 200 with body content for OAI-SearchBot and
+  PerplexityBot user-agents on the home page and one money page. A WAF or host
+  rule on the production domain can block these while Vercel's preview does not.
+- **Submit to Bing Webmaster Tools and enable IndexNow for Bing (Part 14).** The
+  Bing index gates Microsoft Copilot. It does nothing for Google and is never
+  described as a Google step. Needs the owner's login.

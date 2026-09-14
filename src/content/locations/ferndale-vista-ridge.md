@@ -302,7 +302,7 @@ That is a genuinely short list of problems, and it is why the honest job on
 most of these houses is small. A morning of hardware, a conversation about
 landscaping before it matures, and a look at the roof line every few years.
 
-Anybody quoting a new house in this development for a comprehensive ongoing
+Anybody quoting a new house in this development for a full ongoing
 program should be asked which of the items above they are actually addressing,
 and what the plan is expected to finish rather than merely to suppress. A fair
 answer to that question is easy to give when there is one.

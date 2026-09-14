@@ -211,7 +211,13 @@ if (ownerOnly.length) {
    and update GUARDRAILS.md where the row points there. */
 const KEYSTONE_V2 = [
   ['Analytics — GA4 (Part 4A.4)',
-   'The site has no analytics today. v2 requires GA4 with calls and form submissions as conversions, a custom dimension capturing the #:~:text= fragment (how AI Overview clicks show up), and referrer segments for chatgpt.com, perplexity.ai, copilot.microsoft.com and gemini.google.com. Needs a GA4 property and its measurement ID from the owner.'],
+   'The site has no analytics today. v2 requires GA4 with calls and form submissions as conversions, a custom dimension capturing the #:~:text= fragment (how AI Overview clicks show up), and referrer segments for chatgpt.com, perplexity.ai, copilot.microsoft.com and gemini.google.com. Needs a GA4 property and its measurement ID from the owner. Before exporting a baseline, the four Keystone v3.2 §16.6 settings: data retention set to 14 months (the default is two), internal traffic defined and excluded so owner, staff and our own form tests are not counted, a referral-exclusion list that includes go.sasquatchpestcontrol.com and the CRM form host, and one named system of record so conversions claimed by two platforms are never summed.'],
+  ['Bed bug price validity date (Keystone v3.2 Part 5.3)',
+   'The bed bug Offer now carries the published $150 verification and $395 per room as machine-readable prices. v3.2 also asks for priceValidUntil. No validity date has been stated, and one will not be invented; say until when these prices hold, or that they have no fixed end date.'],
+  ['Three to six real customer objections (Part 4A.5)',
+   'v3.2 derives each service FAQ from what callers actually ask and from what almost made someone not book — each objection gets an FAQ entry, a scope line, a guarantee clause or a photo. Only the owner and the office have that list.'],
+  ['Bing Webmaster Tools and IndexNow at launch (Part 14)',
+   'Ten minutes with the owner\'s login. The Bing index gates Microsoft Copilot. Not a Google step. See DEPLOY.md.'],
   ['Geo pages need demand evidence (Part 6A)',
    'v2 gives a town or neighborhood its own page only on two of five signals: search volume, 10+ Search Console impressions a quarter, an Ads conversion there, a page for it on 2+ of the top five local competitors, or documented job history there. The site has 19 town pages and 30 neighborhood pages and none of that evidence recorded yet. The Search Console half is in: the 16-month export (13 Sep 2026, kept in private/gsc/, gitignored) shows query demand for Bellingham, Mount Vernon, Burlington, Blaine, Ferndale, Lynden, Everson and Bow, and none for any neighborhood within the top 1,000 queries. Job history from the CRM or QuickBooks is the other half. Nothing is hidden or removed in the meantime.'],
   ['Reviews — FTC rule and a monthly target (Part 14)',

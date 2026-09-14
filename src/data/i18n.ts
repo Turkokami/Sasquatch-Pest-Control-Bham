@@ -155,23 +155,23 @@ export const UI: Record<Lang, Strings> = {
     skip: 'Skip to content',
     phoneBarTagline: 'Family-owned pest control & exclusion · Whatcom & Skagit County',
     navPrimaryLabel: 'Primary',
+    /* SEVEN PRIMARY ITEMS, Keystone v3.2 Part 3.5 (14 Sep 2026): "Four to seven
+       primary items. Below four and the tree is hidden; above seven and nothing
+       is findable." It held twelve. Home stays — the owner's call, recorded in
+       Header.astro. Guides moved to the utility row beneath; Blog, Gallery,
+       Awards and What we apply are in the footer colophon on every page, so
+       nothing lost its site-chrome link. */
     nav: [
       { href: '/', label: 'Home' },
       { href: '/services/', label: 'Services' },
       { href: '/commercial/', label: 'Commercial' },
       { href: '/locations/', label: 'Service areas' },
-
       { href: '/pest-library/', label: 'Pest library' },
-      { href: '/guides/', label: 'Guides' },
-      { href: '/blog/', label: 'Blog' },
-      { href: '/gallery/', label: 'Gallery' },
-
-      { href: '/awards/', label: 'Awards' },
-      { href: '/what-we-use/', label: 'What we apply' },
       { href: '/about/', label: 'About' },
       { href: '/contact/', label: 'Contact' },
     ],
     utilityNav: [
+      { href: '/guides/', label: 'Guides' },
       { href: '/our-guarantee/', label: 'Our guarantee' },
       { href: '/trusted-partners/', label: 'Trusted partners' },
       { href: '/network/', label: 'Our network' },
@@ -198,7 +198,11 @@ export const UI: Record<Lang, Strings> = {
        trusted partners (11 Sep 2026), which goes here as in English. /network/
        has no twin, and linking a Spanish reader into English from the
        masthead is the drift this scope was drawn to avoid. */
-    utilityNav: [{ href: '/es/socios-de-confianza/', label: 'Socios de confianza' }],
+    utilityNav: [
+      { href: '/es/guias/', label: 'Guías' },
+      { href: '/es/garantia/', label: 'Nuestra garantía' },
+      { href: '/es/socios-de-confianza/', label: 'Socios de confianza' },
+    ],
     switchTo: 'English',
     switchToAria: 'View this page in English',
     englishOnwardNote:
@@ -210,9 +214,14 @@ export const UI: Record<Lang, Strings> = {
 
 /** Spanish nav labels, keyed by Spanish path. */
 const ES_LABELS: Record<string, string> = {
+  /* SEVEN PRIMARY ITEMS since 14 Sep 2026 (Keystone v3.2 Part 3.5), the same
+     seven as the English masthead: Inicio, Servicios, Comercial, Biblioteca de
+     plagas, Áreas de servicio, Quiénes somos, Contacto. Guías and Nuestra
+     garantía are in the utility row; Galería and Premios in the footer
+     colophon. The chip-swap notes below are history from when the grid held
+     twelve. */
   '/es/': 'Inicio',
   '/es/servicios/': 'Servicios',
-  '/es/servicios/control-de-roedores/': 'Roedores',
   /* Comercial took the Abejas chip on 10 Sep 2026, again to keep the grid at
      twelve. The English masthead links /commercial/ third, and the Spanish one
      now does too; bees are one click away on /es/servicios/. */
@@ -222,20 +231,6 @@ const ES_LABELS: Record<string, string> = {
      flies are still one click away on /es/servicios/. */
   '/es/plagas/': 'Biblioteca de plagas',
   '/es/areas-de-servicio/': 'Áreas de servicio',
-  /* Guías took the Arañas chip on 10 Sep 2026, the third service chip to
-     give way so the grid stays at twelve. Spiders are one click away on
-     /es/servicios/. */
-  '/es/guias/': 'Guías',
-  /* Galería took the Hormigas chip on 11 Sep 2026, the fifth service chip to
-     give way. The Spanish masthead now carries the same sections as the
-     English one, less the blog and /what-we-use/ (which stays English), with
-     Roedores kept as the one service chip. */
-  '/es/galeria/': 'Galería',
-  /* Premios took the Avispas chip on 11 Sep 2026, the fourth service chip to
-     give way so the grid stays at twelve. The English masthead links /awards/;
-     wasps are one click away on /es/servicios/. */
-  '/es/premios/': 'Premios',
-  '/es/garantia/': 'Nuestra garantía',
   '/es/nosotros/': 'Quiénes somos',
   '/es/contacto/': 'Contacto',
 };

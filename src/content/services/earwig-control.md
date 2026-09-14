@@ -176,7 +176,7 @@ Because the insects indoors are already dying.
 
 An earwig in your bathroom has left the conditions it needs and has a very short
 future regardless of what anyone applies. Treating interior baseboards puts
-product where people live in order to kill insects that were not going to survive
+product where people live to kill insects that were not going to survive
 the week, and it does nothing to the population outside that keeps supplying more.
 
 A vacuum handles the ones you find. The perimeter work handles the reason they

@@ -111,12 +111,45 @@ for (const forbidden of ['aggregateRating', 'AggregateRating', '"Review"', 'rati
   if (everything.includes(forbidden)) bad(`graph contains ${forbidden} — see the rating note in src/data/business.ts`);
 }
 
-/* 2. NO PRICE ANYWHERE. business.pricing is the single source of published
-      figures and harness check 2b fails the build on any dollar figure in the
-      HTML that is not in it. The catalog describes what is sold and says
-      nothing about cost. */
-for (const forbidden of ['"price"', 'priceSpecification', 'priceRange', 'lowPrice', 'highPrice']) {
-  if (everything.includes(forbidden)) bad(`graph contains ${forbidden} — no Offer on this site carries a price`);
+/* 2. PRICES ONLY WHERE THE SITE PUBLISHES THEM — restated 14 Sep 2026.
+      Until then this rule read "no price anywhere": the catalog described what
+      is sold and said nothing about cost. Keystone v3.2 Part 5.3 changed the
+      policy — a price published on the page must be machine-readable, with an
+      Offer carrying it — so the rule is now exactly that, and no looser:
+        · priceRange, lowPrice and highPrice appear nowhere (no ranges were
+          ever published);
+        · the bed bug Offer is the only Offer that carries any price;
+        · every price it carries is a figure in business.pricing, the single
+          source harness check 2b also holds the HTML to. */
+for (const forbidden of ['priceRange', 'lowPrice', 'highPrice']) {
+  if (everything.includes(forbidden)) bad(`graph contains ${forbidden} — no price range is published on this site`);
+}
+{
+  const published = new Set(
+    [business.pricing.bedBugVerification, business.pricing.bedBugPerRoom].filter((v): v is number => typeof v === 'number'),
+  );
+  const bedBugOffer = ID.offer('bed-bug-control');
+  const walkOffers = (node: unknown, out: Record<string, unknown>[] = []) => {
+    if (Array.isArray(node)) node.forEach((n) => walkOffers(n, out));
+    else if (node && typeof node === 'object') {
+      const o = node as Record<string, unknown>;
+      if (o['@type'] === 'Offer') out.push(o);
+      Object.values(o).forEach((v) => walkOffers(v, out));
+    }
+    return out;
+  };
+  let pricedBedBug = false;
+  for (const [label, input] of CASES) {
+    for (const offer of walkOffers(buildGraph(input))) {
+      const specs = (offer.priceSpecification as Record<string, unknown>[] | undefined) ?? [];
+      const prices = [offer.price, ...specs.map((x) => x.price)].filter((v) => v !== undefined);
+      if (!prices.length) continue;
+      if (offer['@id'] !== bedBugOffer) { bad(`${label}: Offer ${String(offer['@id'])} carries a price — only bed bug work has published figures`); continue; }
+      pricedBedBug = true;
+      for (const p of prices) if (!published.has(p as number)) bad(`${label}: bed bug Offer carries ${String(p)}, which is not in business.pricing`);
+    }
+  }
+  if (published.size && !pricedBedBug) bad('bed bug figures are published but no Offer carries them — Keystone v3.2 Part 5.3');
 }
 
 /* 3. NO INSPECTION AUTHORITY. canClaimInspection is false and must gate

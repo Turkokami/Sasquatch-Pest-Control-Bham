@@ -266,15 +266,24 @@ function termSetNodes(guideTopics: GuideTopic[]) {
  * Service. Built from liveServices(), so an unconfirmed service can never
  * appear and a retired one disappears with its route.
  *
- * NO PRICES, AND THAT IS NOT AN OVERSIGHT. business.pricing is the only place
+ * PRICES ONLY WHERE THE SITE PUBLISHES ONE. business.pricing is the only place
  * a dollar figure may originate on this site and harness check 2b fails the
  * build on any figure in the HTML that is not in it. Bed bug work is the sole
- * service with published figures; the other 22 are quoted from a visit. An
+ * service with published figures; the other 22 are quoted from a visit, and an
  * Offer carrying a price for any of them would be a commitment the business
- * has not made, and an Offer carrying the bed bug figures alone would put a
- * price on one row of a catalog where every neighboring row is quoted — the
- * least useful possible arrangement. So the catalog describes WHAT is sold and
- * says nothing about what it costs, which is exactly what the site says.
+ * has not made.
+ *
+ * Until 14 Sep 2026 the bed bug row carried no price either, on the reasoning
+ * that one priced row in an unpriced catalog was the least useful arrangement.
+ * Keystone v3.2 Part 5.3 overrules that: a price published on the page must be
+ * machine-readable, with an Offer carrying price and priceCurrency, because an
+ * answer engine that cannot read the price leaves the business out of "how
+ * much does bed bug treatment cost in Bellingham". So the bed bug Offer carries
+ * both published figures as UnitPriceSpecifications, read from business.pricing
+ * so they cannot drift from the page. priceValidUntil is omitted: v3.2 asks for
+ * it "where a real number exists", and no validity date has been stated by the
+ * owner — inventing one would be exactly the fabrication 1.1 #6 bans. It is
+ * asked for in scripts/pending.mjs.
  *
  * NO `description` EITHER, and this one is worth stating plainly because it
  * looks like a gap. There is no owner-written summary of any service in any
@@ -289,6 +298,36 @@ function termSetNodes(guideTopics: GuideTopic[]) {
  * of one node is the duplicate-@id failure the validator exists to catch, so
  * the page now REFERENCES this one via WebPage.mainEntity instead.
  */
+/** The published bed bug figures as machine-readable price specifications
+ *  (Keystone v3.2 Part 5.3). Empty for every other service. */
+function bedBugPricing(slug: string) {
+  if (slug !== 'bed-bug-control') return {};
+  const p = business.pricing;
+  const specs = [];
+  if (typeof p.bedBugVerification === 'number') {
+    specs.push({
+      '@type': 'UnitPriceSpecification',
+      name: p.bedBugVerificationCredited
+        ? 'Bed bug verification visit (credited toward treatment)'
+        : 'Bed bug verification visit',
+      price: p.bedBugVerification,
+      priceCurrency: 'USD',
+      unitText: 'visit',
+    });
+  }
+  if (typeof p.bedBugPerRoom === 'number') {
+    specs.push({
+      '@type': 'UnitPriceSpecification',
+      name: 'Bed bug treatment, per room, common areas included',
+      price: p.bedBugPerRoom,
+      priceCurrency: 'USD',
+      unitText: 'room',
+    });
+  }
+  if (!specs.length) return {};
+  return { priceCurrency: 'USD', priceSpecification: specs };
+}
+
 function offerCatalogNode() {
   return {
     '@type': 'OfferCatalog',
@@ -299,6 +338,7 @@ function offerCatalogNode() {
       '@type': 'Offer',
       '@id': ID.offer(s.slug),
       position: i + 1,
+      ...bedBugPricing(s.slug),
       itemOffered: {
         '@type': 'Service',
         '@id': ID.service(`/services/${s.slug}/`),

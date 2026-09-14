@@ -162,7 +162,7 @@ occasional damage to clothing, and even that is not something we are often
 called about.
 
 That is why interior treatment is the wrong instrument. Applying product along
-baseboards puts it where people live in order to kill insects that were not
+baseboards puts it where people live to kill insects that were not
 going to last the week, and it does not touch the population that keeps supplying
 replacements from a mulch bed eight feet away.
 

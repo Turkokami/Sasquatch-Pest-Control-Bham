@@ -1373,10 +1373,10 @@ header.site .nav-main {
      short row instead of stranding it.
 
      THE COUNT AND THE DIVISORS HAVE TO AGREE. The basis solves
-     n * basis + (n - 1) * gap = 100% for the row it belongs to: four per row
-     above 34rem, three below. Twelve chips is the smallest number that
-     divides evenly by both, which is why NAV in Header.astro holds exactly
-     twelve and says so. It went from nine to twelve on 4 Sep 2026 when the
+     n * basis + (n - 1) * gap = 100% for the row it belongs to: seven per row
+     above 34rem, four below (a row of four and a centered row of three).
+     Seven is Keystone v3.2 Part 3.5's ceiling for primary items (14 Sep 2026);
+     before that NAV held twelve, four and three per row. It went from nine to twelve on 4 Sep 2026 when the
      link audit found blog, gallery and the product register unreachable from
      the masthead; nine over five columns had been leaving a four-chip
      remainder centered under a gap.
@@ -1390,7 +1390,7 @@ header.site .nav-main {
   gap: 0.4rem;
 }
 header.site .nav-main a {
-  flex: 0 0 calc((100% - 2 * 0.3rem) / 3);
+  flex: 0 0 calc((100% - 3 * 0.3rem) / 4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1429,7 +1429,7 @@ header.site .nav-main a {
 }
 @media (min-width: 34rem) {
   header.site .nav-main a {
-    flex-basis: calc((100% - 3 * 0.4rem) / 4);
+    flex-basis: calc((100% - 6 * 0.4rem) / 7);
     padding-inline: 0.6rem;
   }
 }
@@ -2861,4 +2861,61 @@ footer.site .colophon {
   a {
     text-decoration: underline;
   }
+}
+
+/* ------------------------------------------- §24  tap targets (Dimension 14) */
+
+/* KEYSTONE v3.2, DIMENSION 14 (14 Sep 2026): tap targets at least 44 x 44px with
+   touch-action: manipulation. Measured with scripts/check-tap-targets.mjs at
+   390px on one page per template before this block existed: footer links at
+   18px, masthead chips and the utility row at 31–42px, menu pills at 33px,
+   breadcrumbs at 22px, the phone bar link at 17px, the menu bars at 43px.
+   Inline links inside running prose are exempt (WCAG 2.5.8's inline
+   exception) and the script skips them. Collected here rather than scattered,
+   so the rule can be read in one place and removed in one place. */
+a,
+button,
+summary,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+header.site .nav-main a,
+.quick-menu > summary {
+  min-height: 2.75rem;
+}
+header.site .nav-utility a,
+header.site nav a.lang-switch,
+.crumbs a,
+.phonebar a,
+footer.site li a,
+footer.site .colophon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  /* Width too: "Bow", "Acme" and a breadcrumb's "Home" are narrower than 44px
+     as text, and Dimension 14 measures both dimensions. */
+  min-width: 2.75rem;
+}
+.rail a {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+.rail-chips a {
+  display: inline-flex;
+}
+/* A column of 44px rows would make the service and area lists in the footer
+   run to a screen each on a phone. The link lists wrap into rows instead,
+   like the menu pills at the top of the page; the hours list has no links and
+   keeps its column. */
+footer.site ul:has(a) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+}
+footer.site ul:has(a) li {
+  margin: 0;
 }
