@@ -19,6 +19,8 @@ import { galleryFor } from '../../../data/gallery';
 import { garageDoorSeal } from '../../../data/photos';
 import ExpertBlock from '../../../components/ExpertBlock.astro';
 import { liveServices, categories } from '../../../data/services';
+import { townGroups } from '../../../lib/menus';
+import { writtenTowns } from '../../../lib/geo-content';
 import { business } from '../../../data/business';
 
 export async function getStaticPaths() {
@@ -92,6 +94,12 @@ const photos = galleryFor(s.slug);
     <QuickNav rails={[
     { heading: `Common ${s.short.toLowerCase()} problems we get called for`, links: problems },
     { heading: `Related ${categories[s.category].toLowerCase()} services`, links: siblings },
+    /* The towns, grouped by county, added 17 Sep 2026. Every town is in the
+       footer already; what this adds is the same link in the content, under a
+       heading that names the service — the shape the demand actually has
+       ("burlington rodent control", "mount vernon ant control", Search Console,
+       16 months to 13 Sep 2026). */
+    { heading: `Where we handle ${s.short.toLowerCase()}`, groups: townGroups(await writtenTowns()) },
   ]} />
 
   {/* THE JOB PHOTO, where the page turns from the offer to the work. Not every

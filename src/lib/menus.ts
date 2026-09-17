@@ -57,6 +57,43 @@ export function serviceGroups(lang: Lang = 'en', exclude?: string): MenuGroup[] 
     .filter((g) => g.links.length > 0);
 }
 
+/**
+ * Every town with a page, grouped by county.
+ *
+ * WHY THIS EXISTS, 17 Sep 2026. Owner: "we want to grow those areas", naming
+ * Mount Vernon, Burlington, Sedro-Woolley and Bow. Search Console says the
+ * demand there is real and it is service-shaped — "burlington rodent control",
+ * "mount vernon ant control", "rodent exterminator sedro woolley", each sitting
+ * around position 6 to 11 with almost no clicks.
+ *
+ * Every town was already linked from the footer of all 254 pages, so this is
+ * not a reachability fix and should not be described as one. What was missing
+ * was the link a reader and a crawler read as a statement: the service spokes
+ * carried rails for problems and sibling services and named no place at all,
+ * and the homepage's own "where we work" rail filtered to Whatcom County, so
+ * the strongest page on the site listed one county in its content and both in
+ * its footer.
+ *
+ * Two counties is also why this groups rather than lists. A flat rail of
+ * twenty-odd towns hides the second county at the bottom; a county heading
+ * says plainly that the company works in both.
+ */
+export function townGroups(
+  towns: readonly { slug: string; name: string; county: string }[],
+): MenuGroup[] {
+  const order = ['Whatcom County', 'Skagit County'];
+  const counties = [
+    ...order.filter((c) => towns.some((t) => t.county === c)),
+    ...Array.from(new Set(towns.map((t) => t.county))).filter((c) => !order.includes(c)).sort(),
+  ];
+  return counties.map((county) => ({
+    heading: county,
+    links: towns
+      .filter((t) => t.county === county)
+      .map((t) => ({ href: `/locations/${t.slug}/`, label: t.name })),
+  }));
+}
+
 export type Area = 'north' | 'central' | 'south' | 'east';
 const AREA_ORDER: Area[] = ['north', 'central', 'south', 'east'];
 const AREA_LABEL: Record<Lang, Record<Area, string>> = {

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { serviceGroups } from '../lib/menus';
+import { serviceGroups, townGroups } from '../lib/menus';
 import { srcsetFor } from '../lib/images';
 import Video from '../components/Video.astro';
 import AnswerBox from '../components/AnswerBox.astro';
@@ -43,9 +43,12 @@ const answer =
    competitor is least likely to have. A rail is cheap; leaving them out is
    not. */
 const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
-const cities = (await writtenTowns())
-  .filter((t) => t.county === 'Whatcom County')
-  .map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
+/* BOTH COUNTIES, 17 Sep 2026. This filtered to Whatcom County, so the five
+   Skagit towns — Mount Vernon, Burlington, Sedro-Woolley, Bow and Alger — were
+   named in this page's footer and not in its content, on the page with the most
+   authority to lend them. Grouped by county so the rail says which is which
+   rather than running two counties into one alphabetical list. */
+const cities = townGroups(await writtenTowns());
 
 const faqs = [
   {
@@ -113,7 +116,7 @@ const faqs = [
 
   <QuickNav rails={[
     { heading: 'What we handle', groups: serviceGroups() },
-    { heading: 'Where we work', links: cities },
+    { heading: 'Where we work', groups: cities },
   ]} />
 
   <div class="prose">
