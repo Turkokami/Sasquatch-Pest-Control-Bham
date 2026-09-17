@@ -7,6 +7,17 @@ import AnswerBox from '../components/AnswerBox.astro';
 import QuickNav from '../components/QuickNav.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
+import LeadForm from '../components/LeadForm.astro';
+/* THE FORM MOVES UP, AND ON THIS PAGE ONLY. Owner, 17 Sep 2026: "I want the
+   contact form on the homepage near the top or at least half way through."
+   BaseLayout renders it at the foot of every page, which on the longest page
+   on the site leaves it about three thousand words down. So this page passes
+   leadForm={false} and renders it by hand below, after the reasons-to-call
+   section and roughly a quarter of the way in — above the fold on a desktop
+   second screenful, one flick on a phone. Every other page keeps the default.
+   The id is the component's, unchanged, so the sticky bar's #lead-form button
+   and QuickNav's form link still land on it, and harness check 6b still
+   passes. */
 import LinkRail from '../components/LinkRail.astro';
 import { liveServices } from '../data/services';
 import { writtenTowns } from '../lib/geo-content';
@@ -63,6 +74,7 @@ const faqs = [
   videoKey="autumn-film"
   brandSuffix={true}
   faqs={faqs}
+  leadForm={false}
   image={{
     src: '/img/sasquatch-hero-banner.jpg',
     /* Alt describes what is in the picture, not what we want to rank for —
@@ -143,7 +155,11 @@ const faqs = [
       re-service commitment with published conditions, not an open-ended promise
       designed to sound good in an advert.
     </p>
+  </div>
 
+  <LeadForm />
+
+  <div class="prose">
     <h2>What we get called for most</h2>
     <p>
       Rodents lead, and the pattern is seasonal — as the rain sets in through

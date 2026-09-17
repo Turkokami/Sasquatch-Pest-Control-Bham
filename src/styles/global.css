@@ -2716,11 +2716,20 @@ footer.site .colophon {
 .infographic img {
   border-radius: var(--radius-sm);
 }
+/* WIDER THAN THE TEXT, NEVER WIDER THAN THE PANEL. The infographic is a
+   raster with baked-in text, so a few extra rem of width is the difference
+   between reading the fourteen labels and squinting at them. It used to take
+   4rem a side, which was written before the reading column sat on a panel:
+   .wrap is --measure plus one --gutter of padding a side, so a 4rem breakout
+   left the image hanging about 28px past the panel edge into the forest
+   background on both sides (measured at 960, 1280 and 1920px, 17 Sep 2026).
+   The breakout is now half a gutter, and the cap is stated in the panel's own
+   terms, so it cannot drift past the edge again if the gutter changes. */
 @media (min-width: 60rem) {
   figure.infographic {
-    width: calc(var(--measure) + 8rem);
-    max-width: calc(100vw - 2 * var(--gutter));
-    margin-inline: -4rem;
+    width: calc(var(--measure) + var(--gutter));
+    max-width: calc(var(--measure) + 2 * var(--gutter));
+    margin-inline: calc(-0.5 * var(--gutter));
   }
 }
 
