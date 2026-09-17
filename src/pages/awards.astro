@@ -74,6 +74,26 @@ const votePublishers = Array.from(new Set(voteWins.map((a) => a.publisher)));
    sentence disappears by itself the day one row is upgraded. */
 const allOwnerBadge = awards.every((a) => a.via === 'owner-badge');
 
+/* ARRANGED BY YEAR, owner's call 17 Sep 2026. business.ts already keeps the
+   rows newest-first, but a wall of badges does not show that — the year was a
+   small line inside each cell, so the shelf read as one undifferentiated grid.
+   Each group is now broken into a run of years, newest first, and the year
+   moves out of the cell and onto the heading above it. Rows whose badge names
+   no year (two listing badges) fall into a final group rather than being given
+   a year nobody stated. Sorting here rather than in the data keeps business.ts
+   the record of what was won and this page the decision about how to show it. */
+const UNDATED = 'No year on the badge';
+type Award = (typeof awards)[number];
+const byYear = (rows: readonly Award[]): [number | null, Award[]][] => {
+  const groups = new Map<number | null, Award[]>();
+  for (const a of rows) {
+    const y = typeof a.year === 'number' ? a.year : null;
+    groups.set(y, [...(groups.get(y) ?? []), a]);
+  }
+  return [...groups.entries()].sort(([a], [b]) =>
+    a === null ? 1 : b === null ? -1 : b - a);
+};
+
 const yearsOf = (rows: readonly { year: number | null }[]) =>
   Array.from(new Set(rows.map((r) => r.year)))
     .filter((y): y is number => typeof y === 'number')
@@ -301,33 +321,36 @@ const rails = [
           </p>
         )}
       </div>
-      <ul class="badges">
-        {localVote.map((a) => (
-          <li>
-            {/* A row can have a result and no artwork — the 2026 Cascades
-                Best silver was found on the publisher's listing and no
-                badge for it was ever supplied. Render the row anyway; an
-                award is not less real for lacking a picture. */}
-            {shown(a.badge) && shown(a.alt) && (
-              <img
-                src={a.badge}
-                alt={a.alt}
-                width={sizeOf(a.badge).width}
-                height={sizeOf(a.badge).height}
-                loading="lazy"
-                decoding="async"
-              />
-            )}
-            <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
-            <span>
-              {a.publisher}{shown(a.year) ? ` · ${a.year}` : ''}
-            </span>
-            {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
-            {shown(a.level) && <span>{a.level}</span>}
-            <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
-          </li>
-        ))}
-      </ul>
+      {byYear(localVote).map(([year, rows]) => (
+        <>
+          <h4 class="badge-year">{year ?? UNDATED}</h4>
+          <ul class="badges">
+            {rows.map((a) => (
+              <li>
+                {/* A row can have a result and no artwork — the 2026 Cascades
+                    Best silver was found on the publisher's listing and no
+                    badge for it was ever supplied. Render the row anyway; an
+                    award is not less real for lacking a picture. */}
+                {shown(a.badge) && shown(a.alt) && (
+                  <img
+                    src={a.badge}
+                    alt={a.alt}
+                    width={sizeOf(a.badge).width}
+                    height={sizeOf(a.badge).height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
+                <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+                <span>{a.publisher}</span>
+                {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
+                {shown(a.level) && <span>{a.level}</span>}
+                <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ))}
 
       {/* Owner, 2 Sep 2026: the paragraph that used to sit here explained
           at length why directory badges are a weaker signal than a local
@@ -343,29 +366,32 @@ const rails = [
           about the category in general, for a reader judging any company.
           Here it would have been an argument against our own rows. */}
       <h3>Listing awards</h3>
-      <ul class="badges">
-        {directory.map((a) => (
-          <li>
-            {shown(a.badge) && shown(a.alt) && (
-              <img
-                src={a.badge}
-                alt={a.alt}
-                width={sizeOf(a.badge).width}
-                height={sizeOf(a.badge).height}
-                loading="lazy"
-                decoding="async"
-              />
-            )}
-            <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
-            <span>
-              {a.publisher}{shown(a.year) ? ` · ${a.year}` : ''}
-            </span>
-            {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
-            {shown(a.level) && <span>{a.level}</span>}
-            <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
-          </li>
-        ))}
-      </ul>
+      {byYear(directory).map(([year, rows]) => (
+        <>
+          <h4 class="badge-year">{year ?? UNDATED}</h4>
+          <ul class="badges">
+            {rows.map((a) => (
+              <li>
+                {shown(a.badge) && shown(a.alt) && (
+                  <img
+                    src={a.badge}
+                    alt={a.alt}
+                    width={sizeOf(a.badge).width}
+                    height={sizeOf(a.badge).height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
+                <b>{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+                <span>{a.publisher}</span>
+                {shown(a.category) && !a.name.includes(a.category) && <span>{a.category}</span>}
+                {shown(a.level) && <span>{a.level}</span>}
+                <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ))}
 
       <div class="prose">
         <p>

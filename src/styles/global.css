@@ -1913,6 +1913,25 @@ footer.site .colophon {
    frame has to be — one plate, one image box, one hairline grid. Uniform
    geometry is the only thing that makes a mixed set read as a shelf rather
    than as a link farm. */
+/* THE YEAR HEADINGS ON THE SHELF, owner's call 17 Sep 2026. The year used to
+   be a line inside each cell, which made the wall read as one undated grid.
+   It is a heading above its run of badges now — small and quiet, because the
+   artwork is what the reader is here to look at, and an eyebrow-sized rule is
+   enough to separate one year from the next. */
+.badge-year {
+  margin: var(--space-4) 0 0;
+  padding-bottom: var(--space-1);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--track-eyebrow);
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.badge-year + .badges {
+  margin-top: var(--space-2);
+}
 .badges {
   list-style: none;
   margin: var(--space-4) 0 var(--space-5);

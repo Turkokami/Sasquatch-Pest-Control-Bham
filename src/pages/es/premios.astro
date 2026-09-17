@@ -47,6 +47,21 @@ const voteWins = localVote.filter((a) => a.result === 'winner');
 const votePublishers = Array.from(new Set(voteWins.map((a) => a.publisher)));
 const allOwnerBadge = awards.every((a) => a.via === 'owner-badge');
 
+/* Agrupadas por año, igual que /awards/ (decisión del dueño, 17 sep 2026).
+   El orden y el criterio están explicados allí; aquí solo cambia el rótulo de
+   las insignias cuya artwork no trae año. */
+const UNDATED = 'Sin año en la insignia';
+type Award = (typeof awards)[number];
+const byYear = (rows: readonly Award[]): [number | null, Award[]][] => {
+  const groups = new Map<number | null, Award[]>();
+  for (const a of rows) {
+    const y = typeof a.year === 'number' ? a.year : null;
+    groups.set(y, [...(groups.get(y) ?? []), a]);
+  }
+  return [...groups.entries()].sort(([a], [b]) =>
+    a === null ? 1 : b === null ? -1 : b - a);
+};
+
 const yearsOf = (rows: readonly { year: number | null }[]) =>
   Array.from(new Set(rows.map((r) => r.year)))
     .filter((y): y is number => typeof y === 'number')
@@ -202,54 +217,60 @@ const rails = [
           ))}
         </p>
       </div>
-      <ul class="badges">
-        {localVote.map((a) => (
-          <li>
-            {shown(a.badge) && (
-              <img
-                src={a.badge}
-                alt={altOf(a)}
-                width={sizeOf(a.badge).width}
-                height={sizeOf(a.badge).height}
-                loading="lazy"
-                decoding="async"
-              />
-            )}
-            <b lang="en">{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
-            <span>
-              <span lang="en">{a.publisher}</span>{shown(a.year) ? ` · ${a.year}` : ''}
-            </span>
-            {shown(a.category) && !a.name.includes(a.category) && <span lang="en">{a.category}</span>}
-            {shown(a.level) && <span>{LEVEL[a.level] ?? a.level}</span>}
-            <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
-          </li>
-        ))}
-      </ul>
+      {byYear(localVote).map(([year, rows]) => (
+        <>
+          <h4 class="badge-year">{year ?? UNDATED}</h4>
+          <ul class="badges">
+            {rows.map((a) => (
+              <li>
+                {shown(a.badge) && (
+                  <img
+                    src={a.badge}
+                    alt={altOf(a)}
+                    width={sizeOf(a.badge).width}
+                    height={sizeOf(a.badge).height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
+                <b lang="en">{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+                <span lang="en">{a.publisher}</span>
+                {shown(a.category) && !a.name.includes(a.category) && <span lang="en">{a.category}</span>}
+                {shown(a.level) && <span>{LEVEL[a.level] ?? a.level}</span>}
+                <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ))}
 
       <h3>Premios de directorios</h3>
-      <ul class="badges">
-        {directory.map((a) => (
-          <li>
-            {shown(a.badge) && (
-              <img
-                src={a.badge}
-                alt={altOf(a)}
-                width={sizeOf(a.badge).width}
-                height={sizeOf(a.badge).height}
-                loading="lazy"
-                decoding="async"
-              />
-            )}
-            <b lang="en">{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
-            <span>
-              <span lang="en">{a.publisher}</span>{shown(a.year) ? ` · ${a.year}` : ''}
-            </span>
-            {shown(a.category) && !a.name.includes(a.category) && <span lang="en">{a.category}</span>}
-            {shown(a.level) && <span>{LEVEL[a.level] ?? a.level}</span>}
-            <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
-          </li>
-        ))}
-      </ul>
+      {byYear(directory).map(([year, rows]) => (
+        <>
+          <h4 class="badge-year">{year ?? UNDATED}</h4>
+          <ul class="badges">
+            {rows.map((a) => (
+              <li>
+                {shown(a.badge) && (
+                  <img
+                    src={a.badge}
+                    alt={altOf(a)}
+                    width={sizeOf(a.badge).width}
+                    height={sizeOf(a.badge).height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
+                <b lang="en">{shown(a.url) ? <a href={a.url} rel="nofollow noopener">{a.name}</a> : a.name}</b>
+                <span lang="en">{a.publisher}</span>
+                {shown(a.category) && !a.name.includes(a.category) && <span lang="en">{a.category}</span>}
+                {shown(a.level) && <span>{LEVEL[a.level] ?? a.level}</span>}
+                <span class={`result result-${a.result}`}>{RESULT[a.result] ?? a.result}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ))}
 
       <div class="prose">
         <p>
