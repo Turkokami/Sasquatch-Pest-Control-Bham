@@ -487,6 +487,26 @@ export const business = {
      program and nothing else), `category` is null rather than guessed. */
   awards: [
     {
+      name: 'CommunityVotes Bellingham',
+      publisher: 'CommunityVotes',
+      year: 2026,
+      /* PLATINUM, the top of the four places, in the Services group. From the
+         owner, 17 Sep 2026, with a screenshot of the publisher's own results page:
+         Platinum Sasquatch Pest Control, Gold Eagle Tree & Spray, Silver Complete
+         Tree Care, Bronze The Pest Control Company. The category is the
+         publisher's wording, "Pest Exterminator", not ours. */
+      category: 'Pest Exterminator' as string | null,
+      level: 'Platinum' as string | null,
+      presented: PENDING as Owed<string>,
+      /* The winners badge was shown in chat but not delivered as a file. */
+      badge: null as string | null,
+      alt: null as string | null,
+      tier: 'local-vote' as const,
+      result: 'winner' as const,
+      url: 'https://bellingham.communityvotes.com/2026/04/services/pest-exterminator' as Owed<string>,
+      via: 'publisher-listing' as const,
+    },
+    {
       name: 'Cascades Best',
       publisher: 'The Bellingham Herald',
       year: 2026,
