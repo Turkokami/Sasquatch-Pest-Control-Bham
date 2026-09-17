@@ -498,9 +498,11 @@ export const business = {
       category: 'Pest Exterminator' as string | null,
       level: 'Platinum' as string | null,
       presented: PENDING as Owed<string>,
-      /* The winners badge was shown in chat but not delivered as a file. */
-      badge: null as string | null,
-      alt: null as string | null,
+      /* The winners sticker, delivered by the owner 17 Sep 2026 as supplied by
+         CommunityVotes; a plaque is on order. The badge names the program and
+         year only; the category and level above come from the results page. */
+      badge: '/img/awards/communityvotes-bellingham-2026.png' as string | null,
+      alt: 'CommunityVotes Bellingham 2026 winners badge' as string | null,
       tier: 'local-vote' as const,
       result: 'winner' as const,
       url: 'https://bellingham.communityvotes.com/2026/04/services/pest-exterminator' as Owed<string>,
