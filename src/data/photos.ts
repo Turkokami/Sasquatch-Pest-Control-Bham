@@ -345,11 +345,15 @@ export const locationPhotos: Record<string, Photo> = {
     caption:
       'A damaged foundation vent in Sedro-Woolley. Vent screens rust and bend outward long before anybody notices, and weeds growing across them are why they go unchecked for years.',
   },
+  /* REPLACED 18 Sep 2026 with the owner's own photograph, taken in Bow and
+     named as Bow by him. The forest-road truck it replaces was the only
+     picture on this page that was not farm country, on a page whose opening
+     section is about open ground. */
   bow: {
-    file: '/img/work/sasquatch-pest-control-truck-on-a-forest-road-bow-wa.jpg',
-    alt: 'A wrapped Sasquatch Pest Control pickup truck parked on a narrow forest road in dense green woodland',
+    file: '/img/work/service-van-on-farm-ground-bow-wa.jpg',
+    alt: 'A wrapped Sasquatch Pest Control van parked on a gravel shoulder beside open green and golden fields, with a gate, power poles and a line of hills under a wide cloudy sky',
     caption:
-      'On a forest road near Bow. Properties out here sit against standing timber, and a building at the edge of the woods is treated as an edge rather than as a lot.',
+      'On the farm ground outside Bow. Open fields like these are where the autumn rodent movement starts: when a field is cut, whatever was living in it heads for the nearest building.',
   },
 };
 
@@ -370,11 +374,44 @@ export const locationPhotosSecond: Record<string, Photo> = {
     caption:
       'At a house in Lynden. Most of the residential work in this town is ordinary and seasonal \u2014 ants in spring, wasps by August, and rodents once the farm ground either side of the city is cut.',
   },
+  /* THE SKAGIT SET, 18 Sep 2026 \u2014 the owner's own job photographs from the
+     four towns he asked to grow, each named by him with the town and the job.
+     Evidence of the work beats a second vehicle shot, so Bow's sunrise-van
+     picture gives way to the mouse nest.
+
+     WHAT WAS DONE TO THEM. Rotated upright, cut to 1500px, and every file
+     re-encoded with no metadata at all \u2014 phone photographs carry the GPS
+     position of the customer's house in EXIF. The Bow drawer photograph also
+     had two hanging-file labels and a scrap of paper legible in frame, a
+     customer's own filing; those three spots are blurred, nothing else is.
+
+     WHAT THE CAPTIONS LEAVE OUT, on purpose. The owner placed the Mount Vernon
+     bait-station job near Eaglemont. The house is recognizable in the frame,
+     and a recognizable house plus a named neighborhood is close to an address,
+     so the caption says Mount Vernon and stops there. */
   bow: {
-    file: '/img/work/service-van-at-sunrise-bow-wa.jpg',
-    alt: 'A wrapped service van parked on a farm track at sunrise beside a red barn and outbuildings',
+    file: '/img/work/mouse-nest-in-a-garage-file-drawer-bow-wa.jpg',
+    alt: 'An open metal filing-cabinet drawer packed with a mouse nest of shredded fabric, fiber and paper mixed with sunflower seed shells, the hanging folders pushed to one side',
     caption:
-      'First call of the day at a farm near Bow. Agricultural accounts run on the grower\u2019s calendar rather than ours, which in practice means early and planned around whatever else is happening that week.',
+      'A mouse nest in a filing drawer in a Bow garage \u2014 shredded fabric and paper, and a store of sunflower seed husks. A garage is the first warm, dry room a field mouse finds in the autumn, and a drawer nobody opens is as good as a wall void.',
+  },
+  'mount-vernon': {
+    file: '/img/work/technician-servicing-rodent-bait-station-mount-vernon-wa.jpg',
+    alt: 'Kristofer Elling kneeling on a wet wooden deck beside a house to service a black rodent bait station, with autumn trees and low sun behind',
+    caption:
+      'Kristofer Elling changing bait stations at a house in Mount Vernon on an autumn morning. The stations are the monitoring half of rodent work: what they show decides where the exclusion goes.',
+  },
+  burlington: {
+    file: '/img/work/technician-in-respirator-for-bed-bug-inspection-burlington-wa.jpg',
+    alt: 'Kristofer Elling in a Sasquatch Pest Control cap with two headlamps, a half-face respirator and black nitrile gloves',
+    caption:
+      'Kristofer Elling kitted up for a bed bug inspection in Burlington. Bed bugs are the one visit we charge for, and the fee comes off the treatment if you go ahead.',
+  },
+  'sedro-woolley': {
+    file: '/img/work/service-van-at-a-general-pest-inspection-sedro-woolley-wa.jpg',
+    alt: 'A wrapped Sasquatch Pest Control van on a gravel drive beside a blue single-story house with planted beds, under trees lit by a setting sun',
+    caption:
+      'At a general pest inspection in Sedro-Woolley. An inspection here nearly always ends up in the crawlspace, because on this town\u2019s housing that is where the useful information is.',
   },
 };
 

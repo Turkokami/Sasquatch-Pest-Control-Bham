@@ -114,12 +114,14 @@ const blogLinks = await blogPostsFor(path);
       sitting under a tall third-party iframe, which on a phone is most of a
       screen of scrolling before anything of ours appears.
 
-      The town's own photograph where one exists, the crew otherwise. Three of
-      twenty-five towns have a picture taken in them; the other twenty-two
-      were rendering nothing at all here rather than borrow a photograph of a
-      different town's house — which was the right call about houses and the
-      wrong one about leaving the slot empty. The crew and the trucks are true
-      everywhere and belong to no one town. */}
+      The town's own photograph where one exists, the crew otherwise. When
+      this was written only three towns had a picture taken in them, and the
+      rest rendered nothing rather than borrow a photograph of a different
+      town's house — which was the right call about houses and the wrong one
+      about leaving the slot empty. The crew and the trucks are true
+      everywhere and belong to no one town. Which towns have their own is
+      whatever locationPhotos in src/data/photos.ts says; no count is kept
+      here, because every count written here has gone stale. */}
   <Photo photo={townPhoto} />
 
   {/* THE MAP, MOVED UP FROM THE FOOT OF THE PAGE. It used to sit below
@@ -135,9 +137,11 @@ const blogLinks = await blogPostsFor(path);
       beside the first because a town page runs to three thousand words and a
       single image at the top does nothing for the two thousand below it.
 
-      Three towns have one. Every other town renders nothing at all here,
-      which is deliberate and is the same rule the slot above follows: an
-      empty slot beats a photograph of somewhere else. */}
+      Only towns in locationPhotosSecond have one (the four Skagit towns the
+      owner asked to grow were added on 18 Sep 2026). Every other town
+      renders nothing at all here, which is deliberate and is the same rule
+      the slot above follows: an empty slot beats a photograph of somewhere
+      else. */}
   {townPhotoSecond && <Photo photo={townPhotoSecond} />}
 
   {Body ? (

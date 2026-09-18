@@ -57,6 +57,8 @@ const allSections: GallerySection[] = [
     key: 'stinging',
     title: 'Wasps, hornets and bees',
     images: [
+      /* Owner's own, 18 Sep 2026: a bald-faced hornet nest taken down in Bow, named by him. */
+      { file: '/img/gallery/bald-faced-hornet-nest-removed-bow-wa.jpg', alt: 'A large gray paper hornet nest, removed with the branches it was built around still through it, resting in a bucket on a brick patio in Bow', width: 560, height: 747 },
       { file: '/img/gallery/g27532.jpg', alt: 'A hornet nest built in a backyard bush', width: 560, height: 747 },
       { file: '/img/gallery/g27439.jpg', alt: 'Macro photo of a bumblebee, a beneficial pollinator commonly seen around homes and gardens', width: 560, height: 420 },
       { file: '/img/gallery/g27239.jpg', alt: 'A large hornet nest attached to a tank on a gravel pad at a property, found on a call', width: 560, height: 420 },
@@ -101,6 +103,9 @@ const allSections: GallerySection[] = [
     key: 'rodents',
     title: 'Rodent work',
     images: [
+      /* Owner's own, 18 Sep 2026. The drawer photograph has a customer's folder labels blurred. */
+      { file: '/img/gallery/mouse-nest-in-a-garage-file-drawer-bow-wa.jpg', alt: 'A filing-cabinet drawer in a Bow garage packed with a mouse nest of shredded fabric and paper and sunflower seed husks', width: 560, height: 747 },
+      { file: '/img/gallery/technician-servicing-rodent-bait-station-mount-vernon-wa.jpg', alt: 'A technician servicing a rodent bait station on a wet deck at a house in Mount Vernon, autumn trees behind', width: 560, height: 747 },
       { file: '/img/gallery/g27234.jpg', alt: 'A dark gap among foundation rocks providing a rodent access point at a home', width: 560, height: 747 },
       { file: '/img/gallery/g27233.jpg', alt: 'An open gap around a white PVC plumbing line where it passes through a wall, a common rodent entry point found', width: 560, height: 747 },
       { file: '/img/gallery/g27229.jpg', alt: 'Rodent tunneling and disturbance through blown-in attic insulation at a home', width: 560, height: 747 },
@@ -211,6 +216,14 @@ const allSections: GallerySection[] = [
     key: 'crew',
     title: 'The crew and the trucks',
     images: [
+      /* Owner's own, 18 Sep 2026: the trucks in winter. A neighbor's mailbox number is blurred in the roadside shot. */
+      { file: '/img/gallery/service-truck-in-snow-by-a-shed.jpg', alt: 'A wrapped Sasquatch Pest Control pickup with a ladder rack, snow on the roof and ladders, parked beside a gray shed', width: 560, height: 315 },
+      { file: '/img/gallery/service-truck-in-snow-at-a-road-corner.jpg', alt: 'A wrapped pickup parked in deep snow at a road corner under tall evergreens on a blue winter morning', width: 560, height: 315 },
+      { file: '/img/gallery/service-truck-in-snow-roadside.jpg', alt: 'A black wrapped Chevrolet Colorado on a snowy roadside under gray winter sky and bare trees', width: 560, height: 306 },
+      /* Owner's own, 18 Sep 2026. */
+      { file: '/img/gallery/technician-in-respirator-for-bed-bug-inspection-burlington-wa.jpg', alt: 'Kristofer Elling in a branded cap with headlamps and a half-face respirator, ready for a bed bug inspection in Burlington', width: 560, height: 747 },
+      { file: '/img/gallery/service-van-on-a-farm-road-bow-wa.jpg', alt: 'A wrapped service van parked on a farm road shoulder beside green fields and a gate outside Bow, hills on the horizon', width: 560, height: 340 },
+      { file: '/img/gallery/sasquatch-pest-control-service-van-side-view.jpg', alt: 'Side view of the wrapped Sasquatch Pest Control van showing the phone number, free estimates and web address', width: 560, height: 420 },
       { file: '/img/gallery/g27169.jpg', alt: 'A wrapped SUV parked in a driveway lined with trees', width: 560, height: 560 },
       { file: '/img/gallery/g27540.jpg', alt: 'Technician wearing a respirator while treating a home exterior', width: 560, height: 746 },
       { file: '/img/gallery/g27539.jpg', alt: 'Technician in a respirator holding treatment spray at a home exterior', width: 560, height: 746 },
@@ -233,6 +246,13 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      { file: '/img/gallery/salamander-on-a-gloved-hand.jpg', alt: 'A small orange-brown salamander resting on a black gloved hand, found on a job', width: 560, height: 996 },
+      /* Owner's own, 18 Sep 2026, named by him. Wildlife met on the job and NOT
+         pests we treat: the alligator lizard is harmless and eats insects, and the
+         woodpecker is here as a photograph, not a service — bird work was dropped
+         on 12 Sep 2026 and nothing on this site offers it. */
+      { file: '/img/gallery/northern-alligator-lizard.jpg', alt: 'A northern alligator lizard, brown with dark flecks and a long curled tail, on a black plastic surface scattered with seed', width: 560, height: 995 },
+      { file: '/img/gallery/pileated-woodpecker-at-a-rotting-stump.jpg', alt: 'A pileated woodpecker with a red crest and black-and-white face working a moss-covered rotting stump in tall grass', width: 560, height: 995 },
       { file: '/img/gallery/g26617.jpg', alt: 'A home beneath power lines at sunset', width: 560, height: 420 },
       { file: '/img/gallery/g27166.jpg', alt: 'A waterfront view of a bay framed by trees under a cloudy sky in the Pacific Northwest', width: 560, height: 560 },
       { file: '/img/gallery/g27165.jpg', alt: 'A cloudy view over a calm bay from a shoreline in the Pacific Northwest', width: 560, height: 560 },

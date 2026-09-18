@@ -35,6 +35,19 @@ export const TITULOS: Record<string, string> = {
 };
 
 export const ALT_ES: Record<string, string> = {
+  /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/bald-faced-hornet-nest-removed-bow-wa.jpg': 'Un nido grande de avispón de cara blanca, de papel gris, retirado con las ramas que lo atravesaban, sobre un balde en un patio de ladrillo en Bow',
+  '/img/gallery/mouse-nest-in-a-garage-file-drawer-bow-wa.jpg': 'Un cajón de archivador en un garaje de Bow lleno con un nido de ratón hecho de tela y papel triturados y cáscaras de semillas de girasol',
+  '/img/gallery/technician-servicing-rodent-bait-station-mount-vernon-wa.jpg': 'Un técnico revisando una estación de cebo para roedores en una terraza mojada de una casa en Mount Vernon, con árboles de otoño detrás',
+  '/img/gallery/technician-in-respirator-for-bed-bug-inspection-burlington-wa.jpg': 'Kristofer Elling con gorra de la empresa, linternas frontales y respirador de media cara, listo para una inspección de chinches en Burlington',
+  '/img/gallery/service-van-on-a-farm-road-bow-wa.jpg': 'Una van rotulada estacionada en el borde de un camino rural junto a campos verdes y una tranquera en las afueras de Bow, con colinas al fondo',
+  '/img/gallery/sasquatch-pest-control-service-van-side-view.jpg': 'Vista lateral de la van rotulada de Sasquatch Pest Control con el número de teléfono, los presupuestos gratis y la dirección web',
+  '/img/gallery/service-truck-in-snow-by-a-shed.jpg': 'Una camioneta rotulada de Sasquatch Pest Control con portaescaleras, nieve en el techo y en las escaleras, junto a un cobertizo gris',
+  '/img/gallery/service-truck-in-snow-at-a-road-corner.jpg': 'Una camioneta rotulada estacionada en nieve profunda en una esquina, bajo abetos altos en una mañana azul de invierno',
+  '/img/gallery/service-truck-in-snow-roadside.jpg': 'Una Chevrolet Colorado negra rotulada al borde de un camino nevado, bajo un cielo gris de invierno y árboles sin hojas',
+  '/img/gallery/northern-alligator-lizard.jpg': 'Una lagartija caimán del norte, café con motas oscuras y la cola larga enroscada, sobre una superficie de plástico negro con semillas',
+  '/img/gallery/pileated-woodpecker-at-a-rotting-stump.jpg': 'Un pájaro carpintero crestado, de cresta roja y cara blanca y negra, picando un tocón podrido cubierto de musgo entre pasto alto',
+  '/img/gallery/salamander-on-a-gloved-hand.jpg': 'Una salamandra pequeña de color café anaranjado sobre una mano con guante negro, encontrada en un trabajo',
   // Avispas, avispones y abejas
   '/img/gallery/g27532.jpg': 'Un nido de avispón construido en un arbusto del patio',
   '/img/gallery/g27439.jpg': 'Foto de cerca de un abejorro, un polinizador útil que se ve seguido en casas y jardines',
