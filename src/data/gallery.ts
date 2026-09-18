@@ -57,10 +57,10 @@ const allSections: GallerySection[] = [
     key: 'stinging',
     title: 'Wasps, hornets and bees',
     images: [
-      /* Owner's own, 18 Sep 2026, each named by him. The garage gable nest he called
-         European hornets; that identification is NOT written here, because the
-         bald-faced hornet page says, from Penn State Extension, that no true hornet
-         is established on this coast. It stays generic until that is settled. */
+      /* Owner's own, 18 Sep 2026, each named by him. The garage gable nest was first
+         labeled European hornets; the owner withdrew that the same day ("bad label"),
+         so it is described as a paper nest and nothing more. The bald-faced hornet
+         page's statement that no true hornet is established on this coast stands. */
       { file: '/img/gallery/active-bald-faced-hornet-nest-in-a-tree.jpg', alt: 'An active bald-faced hornet nest with hornets at the entrance, hanging among green leaves in a tree beside a porch', width: 560, height: 747 },
       { file: '/img/gallery/yellowjacket-nest-inside-a-propane-tank-dome.jpg', alt: 'A propane tank dome lifted open to show a yellowjacket nest built inside it, layered comb with white capped cells and workers on the paper', width: 560, height: 420 },
       { file: '/img/gallery/yellowjacket-nest-paper-on-a-propane-tank.jpg', alt: 'Close-up of gray yellowjacket nest paper spread over the valve and hose fitting of a white propane tank, with the entrance hole visible', width: 560, height: 420 },
