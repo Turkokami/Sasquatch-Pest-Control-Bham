@@ -90,6 +90,8 @@ const allSections: GallerySection[] = [
     key: 'pests',
     title: 'The insects we treat',
     images: [
+      /* Owner's own, 18 Sep 2026. */
+      { file: '/img/gallery/carpenter-ant-swarmers-on-a-painted-sill.jpg', alt: 'A cluster of winged carpenter ant swarmers, black bodies and amber wings, on a white painted sill with a shed wing lying beside them', width: 560, height: 315 },
       { file: '/img/gallery/g27140.jpg', alt: 'A cockroach on a wall surrounded by droppings and staining, evidence of an infestation treated', width: 560, height: 747 },
       { file: '/img/gallery/g27139.jpg', alt: 'A cockroach next to a door hinge and frame, evidence of a roach infestation found', width: 560, height: 747 },
       { file: '/img/gallery/g27138.jpg', alt: 'Dead cockroaches on the floor in a corner following a treatment', width: 560, height: 747 },
@@ -186,6 +188,9 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      /* Owner's own, 18 Sep 2026. */
+      { file: '/img/gallery/screened-crawlspace-vents-on-a-foundation.jpg', alt: 'Two black heavy-mesh screens fitted over crawlspace vents along a gray-sided house foundation', width: 560, height: 315 },
+      { file: '/img/gallery/heavy-mesh-crawlspace-vent-screen-close-up.jpg', alt: 'Close-up of a black heavy-gauge mesh screen framed over a crawlspace vent in a concrete foundation', width: 560, height: 315 },
       { file: '/img/gallery/g27172.jpg', alt: 'The roofline and gutter of a home', width: 560, height: 560 },
       { file: '/img/gallery/g27171.jpg', alt: 'A dark gap between boards of a home\'s lap siding, a potential pest entry point identified during an inspection', width: 560, height: 560 },
       { file: '/img/gallery/g27712.jpg', alt: 'Exclusion mesh installed over a gap in a stucco wall to block pest entry', width: 560, height: 747 },
@@ -233,6 +238,10 @@ const allSections: GallerySection[] = [
     key: 'crew',
     title: 'The crew and the trucks',
     images: [
+      /* Owner's own, 18 Sep 2026. Street and road names he gave are left out. */
+      { file: '/img/gallery/service-truck-by-a-landscaped-yard-bellingham-wa.jpg', alt: 'The wrapped service truck parked beside a landscaped front yard with red shrubs and blue spruce in Bellingham', width: 560, height: 315 },
+      { file: '/img/gallery/service-truck-at-a-farm-near-bow-wa.jpg', alt: 'The wrapped service truck on a gravel farm drive near Bow, open fields and mountains behind under a low bright sun', width: 560, height: 315 },
+      { file: '/img/gallery/service-truck-at-a-home-sudden-valley-wa.jpg', alt: 'The wrapped service truck on a paver driveway below a stone-clad house in Sudden Valley, low sun flaring across the frame', width: 560, height: 315 },
       /* Owner's own, 18 Sep 2026. The house number on the porch is blurred, and the neighborhood the owner named is left out of the alt for the same reason as the Mount Vernon photograph. */
       { file: '/img/gallery/service-van-at-a-home-bellingham-wa.jpg', alt: 'The wrapped service van on a brick driveway in front of a shingled house with dark shutters in Bellingham', width: 560, height: 420 },
       /* Owner's own, 18 Sep 2026: the trucks in winter. A neighbor's mailbox number is blurred in the roadside shot. */
@@ -265,6 +274,7 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      { file: '/img/gallery/service-truck-above-lake-whatcom.jpg', alt: 'The wrapped service truck parked on a hilltop overlooking Lake Whatcom, forested hills and distant snowy peaks under a clear blue sky', width: 560, height: 315 },
       /* Owner's own, 18 Sep 2026. */
       { file: '/img/gallery/service-van-on-lummi-shore-road.jpg', alt: 'The wrapped service van parked on a gravel shoulder beside the water on Lummi Shore Road, a forested island across the bay under a bright broken sky', width: 560, height: 329 },
       { file: '/img/gallery/garter-snake-at-a-foundation.jpg', alt: 'A striped garter snake, black with yellow-green stripes and orange flecks, sliding along a concrete foundation beside a drain pipe', width: 560, height: 747 },

@@ -435,6 +435,13 @@ export const locationPhotosSecond: Record<string, Photo> = {
     caption:
       'At a general pest inspection in Sedro-Woolley. An inspection here nearly always ends up in the crawlspace, because on this town\u2019s housing that is where the useful information is.',
   },
+  /* Owner's own, 18 Sep 2026, named by him as Sudden Valley. Captioned to the community only: the house is recognizable. */
+  'sudden-valley': {
+    file: '/img/work/service-truck-at-a-home-sudden-valley-wa.jpg',
+    alt: 'The wrapped service truck on a paver driveway below a stone-clad house and terraced garden walls, tall evergreens behind, low sun flaring across the frame',
+    caption:
+      'At a house in Sudden Valley. Homes here are built into the forested slope above the lake, so the timber and the damp begin at the edge of the driveway rather than at the edge of town.',
+  },
 };
 
 /** Whatcom County. See the note above on why this one county gets a photograph. */
