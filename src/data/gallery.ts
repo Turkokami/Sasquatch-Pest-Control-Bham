@@ -57,6 +57,15 @@ const allSections: GallerySection[] = [
     key: 'stinging',
     title: 'Wasps, hornets and bees',
     images: [
+      /* Owner's own, 18 Sep 2026, each named by him. The garage gable nest he called
+         European hornets; that identification is NOT written here, because the
+         bald-faced hornet page says, from Penn State Extension, that no true hornet
+         is established on this coast. It stays generic until that is settled. */
+      { file: '/img/gallery/active-bald-faced-hornet-nest-in-a-tree.jpg', alt: 'An active bald-faced hornet nest with hornets at the entrance, hanging among green leaves in a tree beside a porch', width: 560, height: 747 },
+      { file: '/img/gallery/yellowjacket-nest-inside-a-propane-tank-dome.jpg', alt: 'A propane tank dome lifted open to show a yellowjacket nest built inside it, layered comb with white capped cells and workers on the paper', width: 560, height: 420 },
+      { file: '/img/gallery/yellowjacket-nest-paper-on-a-propane-tank.jpg', alt: 'Close-up of gray yellowjacket nest paper spread over the valve and hose fitting of a white propane tank, with the entrance hole visible', width: 560, height: 420 },
+      { file: '/img/gallery/yellowjacket-nest-in-a-gutter-and-fascia-void.jpg', alt: 'Gray yellowjacket nest paper filling the gap between a gutter and the fascia board along a roof edge', width: 560, height: 420 },
+      { file: '/img/gallery/paper-nest-in-a-garage-gable-peak.jpg', alt: 'A tan paper nest built into the peak of a garage gable, above a diamond-paned window', width: 560, height: 420 },
       /* Owner's own, 18 Sep 2026: a bald-faced hornet nest taken down in Bow, named by him. */
       { file: '/img/gallery/bald-faced-hornet-nest-removed-bow-wa.jpg', alt: 'A large gray paper hornet nest, removed with the branches it was built around still through it, resting in a bucket on a brick patio in Bow', width: 560, height: 747 },
       { file: '/img/gallery/g27532.jpg', alt: 'A hornet nest built in a backyard bush', width: 560, height: 747 },

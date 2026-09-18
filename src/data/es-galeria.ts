@@ -36,6 +36,11 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/active-bald-faced-hornet-nest-in-a-tree.jpg': 'Un nido activo de avispón de cara blanca con avispones en la entrada, colgando entre hojas verdes en un árbol junto a un porche',
+  '/img/gallery/yellowjacket-nest-inside-a-propane-tank-dome.jpg': 'La tapa de un tanque de propano abierta con un nido de avispas chaqueta amarilla adentro, panales en capas con celdas blancas selladas y obreras sobre el papel',
+  '/img/gallery/yellowjacket-nest-paper-on-a-propane-tank.jpg': 'Primer plano del papel gris de un nido de avispas chaqueta amarilla sobre la válvula y la manguera de un tanque de propano blanco, con el agujero de entrada a la vista',
+  '/img/gallery/yellowjacket-nest-in-a-gutter-and-fascia-void.jpg': 'Papel gris de un nido de avispas chaqueta amarilla llenando el hueco entre la canaleta y la tabla de fascia a lo largo del borde del techo',
+  '/img/gallery/paper-nest-in-a-garage-gable-peak.jpg': 'Un nido de papel color canela construido en el vértice del frontón de un garaje, sobre una ventana de vidrios en rombo',
   '/img/gallery/bald-faced-hornet-nest-removed-bow-wa.jpg': 'Un nido grande de avispón de cara blanca, de papel gris, retirado con las ramas que lo atravesaban, sobre un balde en un patio de ladrillo en Bow',
   '/img/gallery/mouse-nest-in-a-garage-file-drawer-bow-wa.jpg': 'Un cajón de archivador en un garaje de Bow lleno con un nido de ratón hecho de tela y papel triturados y cáscaras de semillas de girasol',
   '/img/gallery/technician-servicing-rodent-bait-station-mount-vernon-wa.jpg': 'Un técnico revisando una estación de cebo para roedores en una terraza mojada de una casa en Mount Vernon, con árboles de otoño detrás',

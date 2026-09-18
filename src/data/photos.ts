@@ -665,11 +665,17 @@ export const problemPhotos: Record<string, Photo> = {
     caption:
       'A plumbing penetration cut oversize and never closed. This is the most common quarter-inch gap in a Whatcom County house, and it is usually found within a few feet of the water heater or the kitchen wall.',
   },
+  /* REPLACED 18 Sep 2026 with the owner's own photograph, which he named as
+     bald-faced — the species this build had declined to assert from the
+     archive photo it replaces. It is also the better picture for this page:
+     the colony is active, workers are on the envelope at the entrance, and
+     the porch post in frame puts the "how close is it" question in the
+     picture rather than only in the text. */
   'bald-faced-hornet-nest-in-a-tree': {
-    file: '/img/work/bald-faced-hornet-nest-in-a-tree-whatcom-county-wa.jpg',
-    alt: 'A gray papery enclosed hornet nest about the size of a football hanging among green leaves in a tree',
+    file: '/img/work/active-bald-faced-hornet-nest-in-a-tree-by-a-porch.jpg',
+    alt: 'An active bald-faced hornet nest, gray paper with a round entrance hole and several black-and-white hornets on it, among green leaves in a tree, a porch post at the right edge of the frame',
     caption:
-      'A nest in a tree, where it is doing no harm to anybody. That is worth saying on this page, because a nest well away from a door or a path can often be left until the first hard frost kills the colony — the question is not whether it is there but whether anyone has to walk under it.',
+      'An active bald-faced hornet nest in a tree, photographed from the porch beside it. Distance is what decides a nest like this: well away from a door or a path it can often be left until the first hard frost ends the colony, and this close to where people sit it usually cannot.',
   },
   'rats-in-the-crawlspace': {
     file: '/img/work/rodent-tracks-across-a-crawlspace-vapor-barrier-whatcom-county-wa.jpg',
