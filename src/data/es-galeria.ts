@@ -36,6 +36,14 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/technician-treating-crawlspace-framing-for-powderpost-beetles.jpg': 'Un técnico acostado sobre la barrera de vapor de un sótano bajo, con overol y respirador, rociando las vigas de arriba contra escarabajos anóbidos (carcoma)',
+  '/img/gallery/technician-under-ductwork-in-a-crawlspace-powderpost-treatment.jpg': 'Un técnico con linterna frontal trabajando bajo ductos metálicos y vigas viejas en un sótano bajo durante un tratamiento contra escarabajos anóbidos (carcoma)',
+  '/img/gallery/rodent-chewed-shifter-boot-in-a-truck.jpg': 'La funda de goma de la palanca de cambios de una camioneta con un agujero irregular roído por un roedor, con el mecanismo a la vista',
+  '/img/gallery/service-van-at-a-home-bellingham-wa.jpg': 'La van rotulada en una entrada de ladrillo frente a una casa con tejas de madera y persianas oscuras en Bellingham',
+  '/img/gallery/service-van-on-lummi-shore-road.jpg': 'La van rotulada en el borde de grava junto al agua en Lummi Shore Road, con una isla boscosa al otro lado de la bahía bajo un cielo brillante',
+  '/img/gallery/garter-snake-at-a-foundation.jpg': 'Una culebra rayada, negra con franjas verde amarillo y motas naranjas, deslizándose junto a unos cimientos de concreto al lado de un tubo de drenaje',
+  '/img/gallery/carpenter-ant-frass-in-a-commercial-storage-room.jpg': 'Un montón de aserrín de hormigas carpinteras en el piso de una bodega comercial, junto a cajas apiladas y una escalera',
+  '/img/gallery/carpenter-ant-frass-along-a-storage-room-wall.jpg': 'Aserrín de hormigas carpinteras acumulado al pie de una pared azul en una bodega comercial, contra rollos y tubos guardados',
   '/img/gallery/active-bald-faced-hornet-nest-in-a-tree.jpg': 'Un nido activo de avispón de cara blanca con avispones en la entrada, colgando entre hojas verdes en un árbol junto a un porche',
   '/img/gallery/yellowjacket-nest-inside-a-propane-tank-dome.jpg': 'La tapa de un tanque de propano abierta con un nido de avispas chaqueta amarilla adentro, panales en capas con celdas blancas selladas y obreras sobre el papel',
   '/img/gallery/yellowjacket-nest-paper-on-a-propane-tank.jpg': 'Primer plano del papel gris de un nido de avispas chaqueta amarilla sobre la válvula y la manguera de un tanque de propano blanco, con el agujero de entrada a la vista',

@@ -112,6 +112,8 @@ const allSections: GallerySection[] = [
     key: 'rodents',
     title: 'Rodent work',
     images: [
+      /* Owner's own, 18 Sep 2026. */
+      { file: '/img/gallery/rodent-chewed-shifter-boot-in-a-truck.jpg', alt: 'The rubber shifter boot in a truck with a ragged hole chewed through it by a rodent, the shift linkage visible inside', width: 560, height: 996 },
       /* Owner's own, 18 Sep 2026. The drawer photograph has a customer's folder labels blurred. */
       { file: '/img/gallery/mouse-nest-in-a-garage-file-drawer-bow-wa.jpg', alt: 'A filing-cabinet drawer in a Bow garage packed with a mouse nest of shredded fabric and paper and sunflower seed husks', width: 560, height: 747 },
       { file: '/img/gallery/technician-servicing-rodent-bait-station-mount-vernon-wa.jpg', alt: 'A technician servicing a rodent bait station on a wet deck at a house in Mount Vernon, autumn trees behind', width: 560, height: 747 },
@@ -159,6 +161,9 @@ const allSections: GallerySection[] = [
     key: 'crawlspaces',
     title: 'Crawlspaces',
     images: [
+      /* Owner's own, 18 Sep 2026: the crew treating crawlspace framing for powderpost beetles. */
+      { file: '/img/gallery/technician-treating-crawlspace-framing-for-powderpost-beetles.jpg', alt: 'A technician lying on a crawlspace vapor barrier in coveralls and a respirator, spraying the joists overhead for powderpost beetles', width: 560, height: 420 },
+      { file: '/img/gallery/technician-under-ductwork-in-a-crawlspace-powderpost-treatment.jpg', alt: 'A technician with a headlamp working under metal ductwork and old timber framing in a crawlspace during a powderpost beetle treatment', width: 560, height: 420 },
       { file: '/img/gallery/g27170.jpg', alt: 'A wooden crawlspace access door on a home\'s foundation inspected', width: 560, height: 560 },
       { file: '/img/gallery/g27090.jpg', alt: 'A damaged crawlspace door and dark access opening at a home', width: 560, height: 560 },
       { file: '/img/gallery/g27099.jpg', alt: 'A technician wearing a respirator and headlamp for crawlspace work', width: 560, height: 746 },
@@ -203,6 +208,9 @@ const allSections: GallerySection[] = [
     key: 'commercial',
     title: 'Commercial work',
     images: [
+      /* Owner's own, 18 Sep 2026: carpenter ant frass in a commercial facility. A supplier's label is blurred. */
+      { file: '/img/gallery/carpenter-ant-frass-in-a-commercial-storage-room.jpg', alt: 'A heap of carpenter ant frass on the floor of a commercial storage room beside stacked cartons and a stepladder', width: 560, height: 415 },
+      { file: '/img/gallery/carpenter-ant-frass-along-a-storage-room-wall.jpg', alt: 'Carpenter ant frass drifted along the base of a blue wall in a commercial storage room, piled against stored rolls and tubes', width: 560, height: 747 },
       { file: '/img/gallery/g27716.jpg', alt: 'Technician on a JCB scissor lift performing commercial pest control work', width: 560, height: 747 },
       { file: '/img/gallery/g27203.jpg', alt: 'The interior of a steel-frame commercial warehouse', width: 560, height: 995 },
       { file: '/img/gallery/g25779.jpg', alt: 'Technician Kris Elling pre-treating a commercial construction site WA', width: 560, height: 315 },
@@ -225,6 +233,8 @@ const allSections: GallerySection[] = [
     key: 'crew',
     title: 'The crew and the trucks',
     images: [
+      /* Owner's own, 18 Sep 2026. The house number on the porch is blurred, and the neighborhood the owner named is left out of the alt for the same reason as the Mount Vernon photograph. */
+      { file: '/img/gallery/service-van-at-a-home-bellingham-wa.jpg', alt: 'The wrapped service van on a brick driveway in front of a shingled house with dark shutters in Bellingham', width: 560, height: 420 },
       /* Owner's own, 18 Sep 2026: the trucks in winter. A neighbor's mailbox number is blurred in the roadside shot. */
       { file: '/img/gallery/service-truck-in-snow-by-a-shed.jpg', alt: 'A wrapped Sasquatch Pest Control pickup with a ladder rack, snow on the roof and ladders, parked beside a gray shed', width: 560, height: 315 },
       { file: '/img/gallery/service-truck-in-snow-at-a-road-corner.jpg', alt: 'A wrapped pickup parked in deep snow at a road corner under tall evergreens on a blue winter morning', width: 560, height: 315 },
@@ -255,6 +265,9 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      /* Owner's own, 18 Sep 2026. */
+      { file: '/img/gallery/service-van-on-lummi-shore-road.jpg', alt: 'The wrapped service van parked on a gravel shoulder beside the water on Lummi Shore Road, a forested island across the bay under a bright broken sky', width: 560, height: 329 },
+      { file: '/img/gallery/garter-snake-at-a-foundation.jpg', alt: 'A striped garter snake, black with yellow-green stripes and orange flecks, sliding along a concrete foundation beside a drain pipe', width: 560, height: 747 },
       { file: '/img/gallery/salamander-on-a-gloved-hand.jpg', alt: 'A small orange-brown salamander resting on a black gloved hand, found on a job', width: 560, height: 996 },
       /* Owner's own, 18 Sep 2026, named by him. Wildlife met on the job and NOT
          pests we treat: the alligator lizard is harmless and eats insects, and the

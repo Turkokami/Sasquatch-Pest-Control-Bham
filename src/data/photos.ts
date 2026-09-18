@@ -117,6 +117,28 @@ export const servicePhotos: Record<string, Photo> = {
      pre-construction shot anywhere in 1,293 images — so this is new material
      rather than a better search. */
 
+  /* ADDED 18 Sep 2026, the owner's own photograph, named by him as carpenter
+     ant frass in a commercial facility. This page had carried no photograph
+     since the bird-netting shot was retired on 12 Sep. A supplier's shipping
+     label and carton print in the back of the frame are blurred: order
+     numbers and a company name on a customer's stock would identify the
+     business. */
+  /* ADDED 18 Sep 2026, the owner's own photograph of the crew treating
+     crawlspace framing for powderpost beetles. This page had none. The
+     caption does not name which crew member is in frame, because the owner
+     named two people for two photographs and did not say which is which. */
+  'carpenter-bee-control': {
+    file: '/img/work/technician-treating-crawlspace-framing-for-powderpost-beetles.jpg',
+    alt: 'A technician in coveralls, a respirator and a headlamp lying on his back on a crawlspace vapor barrier, spraying the joists overhead, with a blue hose running to the sprayer',
+    caption:
+      'Treating crawlspace framing for powderpost beetles. The spray is half the job and the smaller half: anobiids keep re-infesting timber for as long as it stays damp, so what ends it is getting the wood dry.',
+  },
+  'commercial-pest-control': {
+    file: '/img/work/carpenter-ant-frass-in-a-commercial-storage-room.jpg',
+    alt: 'A heap of pale sawdust-like carpenter ant frass on the painted floor of a commercial storage room, with stacked cartons, a stepladder and more debris along the wall behind it',
+    caption:
+      'Carpenter ant frass on the floor of a commercial storage room. The ants push the wood they excavate out of their galleries and it lands wherever it falls, so a heap like this marks where the debris is coming out, and the colony is in the structure above or beside it. In a building nobody walks through daily, this is often the first sign anyone sees.',
+  },
   'bed-bug-control': {
     file: '/img/work/bed-bugs-and-spotting-on-a-mattress-seam-whatcom-county-wa.jpg',
     alt: 'A folded mattress seam with several bed bugs along it and dark fecal spotting worked into the fabric',
