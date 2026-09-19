@@ -1452,6 +1452,10 @@ export const people = [
   {
     slug: 'travis-hansen',
     name: 'Travis Hansen',
+    /* Owner, 19 Sep 2026: "Travis is TJ". The photograph was delivered in a
+       batch labeled tyson/evan/tj, which is where the team cards went wrong
+       once already — this one he named directly. */
+    portrait: '/img/team/travis-hansen-portrait.jpg',
     jobTitle: 'Pest Management Technician',
     credential: 'LI-99899',
     licenseType: 'commercialOperator' as WsdaLicenseType,

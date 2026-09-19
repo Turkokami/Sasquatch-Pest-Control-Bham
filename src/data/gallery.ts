@@ -203,7 +203,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/new-crawlspace-insulation-and-wrapped-duct.jpg', alt: 'A finished crawlspace with new insulation between the joists and in the framed wall, and a newly wrapped black duct crossing overhead', width: 560, height: 315 },
       { file: '/img/gallery/finished-crawlspace-with-new-vapor-barrier.jpg', alt: 'A full-height crawlspace after the job: insulation held up with wire across the joists, new duct, and a black vapor barrier over the floor', width: 560, height: 315 },
       /* Owner's own, 19 Sep 2026. */
-      { file: '/img/gallery/tj-spraying-for-powderpost-beetles-in-a-tight-crawlspace.jpg', alt: 'TJ in a white suit and headlamp squeezed under a beam in a very low crawlspace, running a blue spray hose for a powderpost beetle treatment', width: 560, height: 259 },
+      { file: '/img/gallery/tj-spraying-for-powderpost-beetles-in-a-tight-crawlspace.jpg', alt: 'Travis (TJ) Hansen in a white suit and headlamp squeezed under a beam in a very low crawlspace, running a blue spray hose for a powderpost beetle treatment', width: 560, height: 259 },
       { file: '/img/gallery/crawlspace-after-a-powderpost-beetle-treatment.jpg', alt: 'A crawlspace after a powderpost beetle treatment, new posts on concrete blocks and a fresh black vapor barrier under the ductwork', width: 560, height: 315 },
       { file: '/img/gallery/crawlspace-sprayer-cart-and-hose-reel.jpg', alt: 'The orange sprayer cart with its white tank and blue hose on a reel, set up beside a house for a crawlspace treatment', width: 560, height: 996 },
       /* Owner's own, 19 Sep 2026. */
@@ -330,7 +330,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/service-truck-on-a-foggy-morning-on-north-shore.jpg', alt: 'The wrapped Chevrolet Colorado parked on a street on a foggy morning, tall poplars and a red maple behind', width: 560, height: 315 },
       { file: '/img/gallery/heat-pressed-sasquatch-logo-transfers.jpg', alt: 'A sheet of freshly printed Sasquatch Pest Control logo transfers and mascot stickers laid out on a counter', width: 560, height: 1152 },
       /* Owner's own, 19 Sep 2026. */
-      { file: '/img/gallery/tj-in-protective-gear-after-a-crawlspace.jpg', alt: 'TJ standing beside a house in a mud-covered white protective suit, respirator and gloves after coming out of a crawlspace', width: 560, height: 1212 },
+      { file: '/img/gallery/tj-in-protective-gear-after-a-crawlspace.jpg', alt: 'Travis (TJ) Hansen standing beside a house in a mud-covered white protective suit, respirator and gloves after coming out of a crawlspace', width: 560, height: 1212 },
       { file: '/img/gallery/kris-elling-in-respirator-and-protective-suit.jpg', alt: 'Kristofer Elling in a branded cap light, half-face respirator with pink filters and a white protective suit, giving a thumbs up', width: 560, height: 745 },
       { file: '/img/gallery/sasquatch-statue-with-a-branded-bait-shaker.jpg', alt: 'A Sasquatch statue crouched in tall grass and red-hot poker flowers beside a Niban bait shaker wearing the company label', width: 560, height: 757 },
       /* Owner's own, 19 Sep 2026. */
@@ -354,7 +354,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/tyson-elling-and-a-technician-above-the-water.jpg', alt: 'Tyson Elling and a technician working a hillside garden above the water, islands and forest behind them', width: 560, height: 1152 },
       { file: '/img/gallery/kris-elling-above-the-islands.jpg', alt: 'Kristofer Elling in a harness on a roof above Chuckanut Bay, the San Juan Islands behind him', width: 560, height: 747 },
       /* Named by the owner, 19 Sep 2026, when he corrected the team cards: TJ. */
-      { file: '/img/gallery/tj-portrait-by-the-van.jpg', alt: 'TJ in a branded cap and safety glasses, standing by the wrapped van', width: 560, height: 560 },
+      { file: '/img/gallery/travis-hansen-portrait-by-the-van.jpg', alt: 'Travis (TJ) Hansen in a branded cap and safety glasses, standing by the wrapped van', width: 560, height: 560 },
       { file: '/img/gallery/technician-at-sunset-beside-the-truck-on-lummi-shore.jpg', alt: 'Evan Friese leaning on the wrapped Chevrolet pickup after a long day, the sun setting over the bay on Lummi Shore Road', width: 560, height: 315 },
       { file: '/img/gallery/service-trucks-on-lummi-shore-road.jpg', alt: 'Two wrapped pickups and a wrapped van lined up on gravel on Lummi Shore Road in golden evening light', width: 560, height: 249 },
       { file: '/img/gallery/service-van-at-sunrise-on-lummi-shore.jpg', alt: 'The wrapped van at sunrise on the gravel beside the water on Lummi Shore Road, a boat and timber shelters behind', width: 560, height: 286 },
