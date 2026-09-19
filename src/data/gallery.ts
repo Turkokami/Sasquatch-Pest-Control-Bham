@@ -92,6 +92,10 @@ const allSections: GallerySection[] = [
     key: 'pests',
     title: 'The insects we treat',
     images: [
+      /* Owner's own, 19 Sep 2026. Not identified by the owner, so described, not named. */
+      { file: '/img/gallery/long-horned-beetle-close-up.jpg', alt: 'A mottled brown beetle with long segmented antennae, photographed close up from the side on a pale surface', width: 560, height: 420 },
+      { file: '/img/gallery/large-brown-spider-on-a-wall.jpg', alt: 'A large brown spider with banded legs on a pale interior wall, its shadow cast beside it', width: 560, height: 747 },
+      { file: '/img/gallery/orb-weaving-spider-close-up.jpg', alt: 'A macro photograph of a tan, bristly orb-weaving spider, its eyes, fangs and spined banded legs in sharp focus', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026. He called it some sort of beetle, so no species is named. */
       { file: '/img/gallery/snouted-beetle-on-a-white-surface.jpg', alt: 'A small dark, scaly beetle with a short snout and elbowed antennae on a white surface', width: 560, height: 758 },
       /* Owner's own, 18 Sep 2026. */
@@ -192,6 +196,7 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      { file: '/img/gallery/rodent-shield-behind-lifted-siding-close-up.jpg', alt: 'The bottom edge of the siding lifted by hand to show a black toothed rodent shield fastened beneath it against the concrete foundation', width: 560, height: 747 },
       /* Owner's own, 19 Sep 2026: a rodent shield installed under the siding. */
       { file: '/img/gallery/rodent-shield-installed-along-a-foundation.jpg', alt: 'A black metal rodent shield fastened along the bottom of the siding on a house, where it meets a rough concrete foundation, seen low along the wall', width: 560, height: 420 },
       { file: '/img/gallery/rodent-shield-toothed-edge-close-up.jpg', alt: 'Close-up of the toothed lower edge of a black rodent shield pressed against a rough concrete foundation under the siding', width: 560, height: 420 },
@@ -281,6 +286,7 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      { file: '/img/gallery/service-truck-on-the-mount-baker-highway.jpg', alt: 'A wrapped service truck parked at a high viewpoint on the Mount Baker Highway, a glaciered peak and forested ridges behind it under a bright sun', width: 560, height: 310 },
       /* Owner's own, 19 Sep 2026: mantises and a salamander met on jobs. */
       { file: '/img/gallery/praying-mantis-on-a-textured-post.jpg', alt: 'A tan praying mantis clinging to a black-and-white textured post, its folded forelegs and long antenna in sharp focus', width: 560, height: 1164 },
       { file: '/img/gallery/brown-praying-mantis-on-siding.jpg', alt: 'A brown praying mantis with long striped wings climbing white textured siding', width: 560, height: 747 },

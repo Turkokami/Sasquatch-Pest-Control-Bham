@@ -36,6 +36,11 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/rodent-shield-behind-lifted-siding-close-up.jpg': 'El borde inferior del revestimiento levantado con la mano para mostrar un protector negro dentado contra roedores fijado debajo, contra el cimiento de concreto',
+  '/img/gallery/long-horned-beetle-close-up.jpg': 'Un escarabajo café moteado con antenas largas y segmentadas, fotografiado de cerca y de lado sobre una superficie clara',
+  '/img/gallery/large-brown-spider-on-a-wall.jpg': 'Una araña grande y café con patas anilladas sobre una pared interior clara, con su sombra al lado',
+  '/img/gallery/orb-weaving-spider-close-up.jpg': 'Una fotografía macro de una araña tejedora color canela y cerdosa, con los ojos, los quelíceros y las patas anilladas con espinas bien enfocados',
+  '/img/gallery/service-truck-on-the-mount-baker-highway.jpg': 'Una camioneta rotulada estacionada en un mirador alto de la carretera Mount Baker, con un pico glaciar y crestas boscosas detrás bajo un sol brillante',
   '/img/gallery/rodent-shield-installed-along-a-foundation.jpg': 'Un protector metálico negro contra roedores fijado en la parte baja del revestimiento de una casa, donde se une con un cimiento de concreto rugoso',
   '/img/gallery/rodent-shield-toothed-edge-close-up.jpg': 'Primer plano del borde dentado de un protector negro contra roedores apoyado contra un cimiento de concreto bajo el revestimiento',
   '/img/gallery/yellowjacket-nest-in-an-oak-tree.jpg': 'Un nido grande de papel gris de avispas chaqueta amarilla colgando entre las hojas de un roble contra un cielo pálido',
