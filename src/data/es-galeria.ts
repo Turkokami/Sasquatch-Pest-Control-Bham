@@ -36,6 +36,9 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/snap-trap-with-a-wireless-trigger-sensor.jpg': 'Una trampa de resorte de madera con un pequeño sensor de vibración Skyhawk Trapmate en un extremo, que avisa cuando la trampa se dispara',
+  '/img/gallery/bait-station-with-a-wireless-motion-sensor.jpg': 'Una estación de cebo negra a prueba de manipulación, con la etiqueta de la empresa y un sensor de movimiento Skyhawk Trapmate en la tapa',
+  '/img/gallery/screened-roof-vents-on-a-hip-roof.jpg': 'Ventilas en un techo de tejas oscuras entre dos chimeneas de ladrillo, cada una con una rejilla negra de malla',
   '/img/gallery/crew-on-a-roof-sealing-vents-at-a-waterfront-house.jpg': 'Dos técnicos con arnés en el techo de una casa gris grande sobre el agua, uno en la cumbrera y otro en una escalera, con un tercero mirando desde la entrada',
   '/img/gallery/screened-roof-vents-along-a-ridge.jpg': 'Una fila de ventilas en un techo de tejas, cada una cubierta con una rejilla negra de malla gruesa fijada a las tejas',
   '/img/gallery/technician-sealing-a-gap-at-the-siding-on-a-ladder.jpg': 'Un técnico con gorra y lentes de seguridad en una escalera verde, trabajando con ambas manos un hueco de tubería bajo el borde del revestimiento',

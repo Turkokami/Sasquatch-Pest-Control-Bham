@@ -122,6 +122,9 @@ const allSections: GallerySection[] = [
     key: 'rodents',
     title: 'Rodent work',
     images: [
+      /* Owner's own, 19 Sep 2026: Skyhawk Trapmate sensors, which he described as 24/7 digital monitoring. Named in the alt only as what the device label reads. */
+      { file: '/img/gallery/snap-trap-with-a-wireless-trigger-sensor.jpg', alt: 'A wooden snap trap fitted with a small black Skyhawk Trapmate vibration sensor at its end, which reports when the trap fires', width: 560, height: 315 },
+      { file: '/img/gallery/bait-station-with-a-wireless-motion-sensor.jpg', alt: 'A black tamper-resistant rodent bait station with the company label, fitted with a Skyhawk Trapmate motion sensor on its lid', width: 560, height: 995 },
       /* Owner's own, 18 Sep 2026. */
       { file: '/img/gallery/rodent-chewed-shifter-boot-in-a-truck.jpg', alt: 'The rubber shifter boot in a truck with a ragged hole chewed through it by a rodent, the shift linkage visible inside', width: 560, height: 996 },
       /* Owner's own, 18 Sep 2026. The drawer photograph has a customer's folder labels blurred. */
@@ -196,6 +199,7 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      { file: '/img/gallery/screened-roof-vents-on-a-hip-roof.jpg', alt: 'Roof vents across a dark shingled hip roof between two brick chimneys, each fitted with a black mesh guard', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/crew-on-a-roof-sealing-vents-at-a-waterfront-house.jpg', alt: 'Two technicians in harnesses on the roof of a large gray house above the water, one on the ridge and one on a ladder at the gable, with a third watching from the driveway', width: 560, height: 747 },
       { file: '/img/gallery/screened-roof-vents-along-a-ridge.jpg', alt: 'A row of roof vents along a shingled roof, each covered with a black heavy-mesh guard fastened to the shingles', width: 560, height: 747 },
