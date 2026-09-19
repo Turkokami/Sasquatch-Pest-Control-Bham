@@ -58,6 +58,8 @@ const allSections: GallerySection[] = [
     title: 'Wasps, hornets and bees',
     images: [
       /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/black-and-yellow-wasp-close-up.jpg', alt: 'A close-up of a black wasp with thin yellow bands and yellow legs standing on white painted trim', width: 560, height: 1212 },
+      /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/yellowjacket-nest-in-a-shed-among-garden-tools.jpg', alt: 'A huge swirled yellowjacket nest built along the floor of a shed wall, grown up around a stored pipe and pressed against garden tools', width: 560, height: 315 },
       { file: '/img/gallery/yellowjacket-nest-around-stored-lawn-equipment.jpg', alt: 'Close view of the same yellowjacket nest, its swirled tan paper grown around a gray pipe and spreading across the concrete floor of a shed', width: 560, height: 315 },
       { file: '/img/gallery/yellowjacket-nest-taken-apart-after-removal.jpg', alt: 'The yellowjacket nest taken apart on a shed floor after removal, its layered paper envelope and stacked combs broken open', width: 560, height: 315 },
@@ -97,6 +99,8 @@ const allSections: GallerySection[] = [
     key: 'pests',
     title: 'The insects we treat',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/odorous-house-ants-feeding-on-bait.jpg', alt: 'A cluster of small dark odorous house ants feeding on a drop of gel bait on white painted siding', width: 560, height: 1212 },
       { file: '/img/gallery/thatching-ants-tending-aphids-on-a-thistle.jpg', alt: 'Thatching ants tending black aphids on the stems of a pink-flowered thistle at the edge of a field', width: 560, height: 747 },
       /* Owner's own, 19 Sep 2026. Not identified by the owner, so described, not named. */
       { file: '/img/gallery/long-horned-beetle-close-up.jpg', alt: 'A mottled brown beetle with long segmented antennae, photographed close up from the side on a pale surface', width: 560, height: 420 },
@@ -128,6 +132,10 @@ const allSections: GallerySection[] = [
     key: 'rodents',
     title: 'Rodent work',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/rodent-tunnel-through-a-broken-slab.jpg', alt: 'A rodent tunnel opening through broken concrete at the edge of a slab, lit by flashlight, with fresh soil pushed out below', width: 560, height: 1212 },
+      { file: '/img/gallery/rodent-burrow-under-a-slab-edge.jpg', alt: 'A rodent burrow dug under the cracked edge of a concrete slab beside a large rock, loose soil at the entrance', width: 560, height: 259 },
+      { file: '/img/gallery/branded-niban-bait-shakers.jpg', alt: 'A row of Niban granular bait shakers wearing the company label with the Sasquatch artwork, the Bellingham address and the phone number', width: 560, height: 995 },
       { file: '/img/gallery/rats-feeding-in-horse-stall-bedding.jpg', alt: 'Two gray rats feeding on manure in the bedding of a horse stall against a concrete wall', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026: Skyhawk Trapmate sensors, which he described as 24/7 digital monitoring. Named in the alt only as what the device label reads. */
       { file: '/img/gallery/snap-trap-with-a-wireless-trigger-sensor.jpg', alt: 'A wooden snap trap fitted with a small black Skyhawk Trapmate vibration sensor at its end, which reports when the trap fires', width: 560, height: 315 },
@@ -182,6 +190,15 @@ const allSections: GallerySection[] = [
     title: 'Crawlspaces',
     images: [
       /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/technician-finishing-a-crawlspace-insulation-install.jpg', alt: 'A technician with a headlamp bagging offcuts in a crawlspace after new insulation was installed in the floor joists and the framed walls', width: 560, height: 315 },
+      { file: '/img/gallery/new-insulation-in-crawlspace-walls-and-floor.jpg', alt: 'New pink batt insulation filling the framed walls and floor joists of a crawlspace above the concrete foundation, black vapor barrier below', width: 560, height: 315 },
+      { file: '/img/gallery/new-crawlspace-insulation-and-wrapped-duct.jpg', alt: 'A finished crawlspace with new insulation between the joists and in the framed wall, and a newly wrapped black duct crossing overhead', width: 560, height: 315 },
+      { file: '/img/gallery/finished-crawlspace-with-new-vapor-barrier.jpg', alt: 'A full-height crawlspace after the job: insulation held up with wire across the joists, new duct, and a black vapor barrier over the floor', width: 560, height: 315 },
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/tj-spraying-for-powderpost-beetles-in-a-tight-crawlspace.jpg', alt: 'TJ in a white suit and headlamp squeezed under a beam in a very low crawlspace, running a blue spray hose for a powderpost beetle treatment', width: 560, height: 259 },
+      { file: '/img/gallery/crawlspace-after-a-powderpost-beetle-treatment.jpg', alt: 'A crawlspace after a powderpost beetle treatment, new posts on concrete blocks and a fresh black vapor barrier under the ductwork', width: 560, height: 315 },
+      { file: '/img/gallery/crawlspace-sprayer-cart-and-hose-reel.jpg', alt: 'The orange sprayer cart with its white tank and blue hose on a reel, set up beside a house for a crawlspace treatment', width: 560, height: 996 },
+      /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/leak-staining-running-down-siding.jpg', alt: 'Brown streaks of water staining running down several courses of gray lap siding above a dryer vent', width: 560, height: 420 },
       { file: '/img/gallery/staining-and-decay-at-the-bottom-of-siding.jpg', alt: 'Water staining running down gray siding to a darkened, decaying bottom edge where it meets the foundation, mulch and a hose below', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026. */
@@ -212,6 +229,13 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/open-cinder-block-foundation-vents.jpg', alt: 'Two cinder block foundation vent openings with no screens at all, half hidden by hydrangea leaves and bindweed', width: 560, height: 315 },
+      { file: '/img/gallery/cracked-foundation-gap-under-siding.jpg', alt: 'A flashlight on a cracked foundation where a chunk has broken away under the siding, leaving an open gap into the crawlspace', width: 560, height: 995 },
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/rodent-gap-at-a-corner-cap.jpg', alt: 'Looking up into an open gap behind the corner trim of a house, where the siding and wrap have pulled away, a rodent entry point', width: 560, height: 1215 },
+      { file: '/img/gallery/broken-crawlspace-vent-screen.jpg', alt: 'A foundation vent with its wire mesh screen torn away from the frame at the bottom corner, cobwebs and leaves caught in it', width: 560, height: 259 },
+      { file: '/img/gallery/gap-under-a-vent-screen-at-the-foundation.jpg', alt: 'A gloved hand pushing a flashlight into the gap under a foundation vent screen, showing how far the opening runs', width: 560, height: 1212 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/evan-friese-fitting-an-exhaust-vent-cover.jpg', alt: 'Evan Friese on a stepladder fitting a guarded exhaust vent cover to vinyl siding on a two-story house', width: 560, height: 747 },
       { file: '/img/gallery/guarded-exhaust-vent-cover-on-siding.jpg', alt: 'A finished exhaust vent cover with a perforated metal guard, bolted over the vent on beige siding', width: 560, height: 420 },
@@ -284,6 +308,10 @@ const allSections: GallerySection[] = [
     title: 'The crew and the trucks',
     images: [
       /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/tj-in-protective-gear-after-a-crawlspace.jpg', alt: 'TJ standing beside a house in a mud-covered white protective suit, respirator and gloves after coming out of a crawlspace', width: 560, height: 1212 },
+      { file: '/img/gallery/kris-elling-in-respirator-and-protective-suit.jpg', alt: 'Kristofer Elling in a branded cap light, half-face respirator with pink filters and a white protective suit, giving a thumbs up', width: 560, height: 745 },
+      { file: '/img/gallery/sasquatch-statue-with-a-branded-bait-shaker.jpg', alt: 'A Sasquatch statue crouched in tall grass and red-hot poker flowers beside a Niban bait shaker wearing the company label', width: 560, height: 757 },
+      /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/service-truck-at-a-community-building-alger-wa.jpg', alt: 'The wrapped Chevrolet Colorado parked on gravel beside a low community building and lawn in Alger under a gray sky', width: 560, height: 294 },
       { file: '/img/gallery/service-truck-on-a-sunlit-road-alger-wa.jpg', alt: 'The wrapped Chevrolet Colorado with its ladder rack on a road near Alger, sunlit alders and firs behind', width: 560, height: 271 },
       { file: '/img/gallery/three-service-trucks-in-front-of-cedars.jpg', alt: 'Three wrapped service trucks parked nose to tail in front of tall cedars under a clear blue sky', width: 560, height: 269 },
@@ -339,6 +367,8 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/service-van-in-a-field-of-buttercups.jpg', alt: 'The wrapped service van parked in a summer field of yellow buttercups and tall grass, a green hedge behind', width: 560, height: 259 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/service-truck-above-bellingham-looking-to-the-islands.jpg', alt: 'The wrapped Chevrolet Colorado on a hillside street above Bellingham, the bay and the San Juan Islands behind under a stormy sky', width: 560, height: 245 },
       { file: '/img/gallery/service-truck-at-lake-padden.jpg', alt: 'The wrapped Chevrolet Colorado in the Lake Padden parking lot, mist lifting off the lake and the forest behind', width: 560, height: 328 },
