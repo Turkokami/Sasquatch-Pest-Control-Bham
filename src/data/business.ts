@@ -1568,6 +1568,8 @@ export const people = [
     slug: 'jorge-bedoya',
     name: 'Jorge Bedoya',
     jobTitle: 'Consulting Entomologist',
+    /* Owner's photograph, 19 Sep 2026: "This is our ACE jeorge". */
+    portrait: '/img/team/jorge-bedoya-portrait.jpg',
     credential: 'ACE',
     /* Not a WSDA license, so no license type applies. */
     licenseType: null as WsdaLicenseType | null,
