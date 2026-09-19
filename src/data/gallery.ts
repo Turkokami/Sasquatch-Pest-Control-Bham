@@ -133,6 +133,8 @@ const allSections: GallerySection[] = [
     title: 'Rodent work',
     images: [
       /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/pallet-of-rodent-bait-stations.jpg', alt: 'A pallet stacked high with new black tamper-resistant rodent bait stations, delivered to the shop', width: 560, height: 1152 },
+      /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/rodent-tunnel-through-a-broken-slab.jpg', alt: 'A rodent tunnel opening through broken concrete at the edge of a slab, lit by flashlight, with fresh soil pushed out below', width: 560, height: 1212 },
       { file: '/img/gallery/rodent-burrow-under-a-slab-edge.jpg', alt: 'A rodent burrow dug under the cracked edge of a concrete slab beside a large rock, loose soil at the entrance', width: 560, height: 259 },
       { file: '/img/gallery/branded-niban-bait-shakers.jpg', alt: 'A row of Niban granular bait shakers wearing the company label with the Sasquatch artwork, the Bellingham address and the phone number', width: 560, height: 995 },
@@ -190,6 +192,12 @@ const allSections: GallerySection[] = [
     title: 'Crawlspaces',
     images: [
       /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/soaked-and-soiled-insulation-on-a-crawlspace-floor.jpg', alt: 'Pink insulation that has fallen onto a crawlspace floor, soaked and soiled, below a stained concrete wall and a vent', width: 560, height: 747 },
+      { file: '/img/gallery/insulation-fallen-from-crawlspace-joists.jpg', alt: 'Pink insulation hanging loose and fallen from the joists of a crawlspace, pieces scattered across a dirty paper barrier', width: 560, height: 747 },
+      { file: '/img/gallery/sagging-and-pulled-down-crawlspace-insulation.jpg', alt: 'Crawlspace insulation sagging and pulled down between the joists, loose pieces on the ground below', width: 560, height: 747 },
+      { file: '/img/gallery/torn-kraft-faced-insulation-in-a-crawlspace.jpg', alt: 'Kraft-faced yellow insulation torn open and hanging from a crawlspace joist, the paper facing ripped', width: 560, height: 747 },
+      { file: '/img/gallery/insulation-torn-down-throughout-a-crawlspace.jpg', alt: 'Yellow insulation torn and hanging throughout a crawlspace above piers and a black vapor barrier littered with debris', width: 560, height: 747 },
+      /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/technician-finishing-a-crawlspace-insulation-install.jpg', alt: 'A technician with a headlamp bagging offcuts in a crawlspace after new insulation was installed in the floor joists and the framed walls', width: 560, height: 315 },
       { file: '/img/gallery/new-insulation-in-crawlspace-walls-and-floor.jpg', alt: 'New pink batt insulation filling the framed walls and floor joists of a crawlspace above the concrete foundation, black vapor barrier below', width: 560, height: 315 },
       { file: '/img/gallery/new-crawlspace-insulation-and-wrapped-duct.jpg', alt: 'A finished crawlspace with new insulation between the joists and in the framed wall, and a newly wrapped black duct crossing overhead', width: 560, height: 315 },
@@ -229,6 +237,13 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/evan-friese-starting-a-foundation-vent-guard-job.jpg', alt: 'Evan Friese crouched at a foundation vent with the guard box beside him, a bay and two forested islands below the garden', width: 560, height: 420 },
+      { file: '/img/gallery/evan-friese-drilling-a-foundation-for-a-vent-guard.jpg', alt: 'Evan Friese drilling anchor holes in a concrete foundation around a crawlspace vent with a hammer drill', width: 560, height: 272 },
+      { file: '/img/gallery/evan-friese-fastening-a-foundation-vent-guard.jpg', alt: 'Evan Friese fastening the frame of a steel vent guard over a crawlspace vent with an impact driver', width: 560, height: 272 },
+      { file: '/img/gallery/evan-friese-with-a-finished-vent-guard.jpg', alt: 'Evan Friese kneeling beside a finished vent guard at the base of a porch, giving a thumbs up, the work truck behind', width: 560, height: 1152 },
+      { file: '/img/gallery/finished-steel-foundation-vent-guard.jpg', alt: 'A finished black steel-mesh guard fastened over a crawlspace vent in a concrete foundation, the drill still lying beside it', width: 560, height: 272 },
+      { file: '/img/gallery/crawlspace-vent-screen-torn-open-from-inside.jpg', alt: 'A crawlspace vent seen from inside, its wire mesh torn open and bent, with nesting material packed behind it', width: 560, height: 747 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/open-cinder-block-foundation-vents.jpg', alt: 'Two cinder block foundation vent openings with no screens at all, half hidden by hydrangea leaves and bindweed', width: 560, height: 315 },
       { file: '/img/gallery/cracked-foundation-gap-under-siding.jpg', alt: 'A flashlight on a cracked foundation where a chunk has broken away under the siding, leaving an open gap into the crawlspace', width: 560, height: 995 },
@@ -308,6 +323,9 @@ const allSections: GallerySection[] = [
     title: 'The crew and the trucks',
     images: [
       /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/service-truck-on-a-foggy-morning-on-north-shore.jpg', alt: 'The wrapped Chevrolet Colorado parked on a street on a foggy morning, tall poplars and a red maple behind', width: 560, height: 315 },
+      { file: '/img/gallery/heat-pressed-sasquatch-logo-transfers.jpg', alt: 'A sheet of freshly printed Sasquatch Pest Control logo transfers and mascot stickers laid out on a counter', width: 560, height: 1152 },
+      /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/tj-in-protective-gear-after-a-crawlspace.jpg', alt: 'TJ standing beside a house in a mud-covered white protective suit, respirator and gloves after coming out of a crawlspace', width: 560, height: 1212 },
       { file: '/img/gallery/kris-elling-in-respirator-and-protective-suit.jpg', alt: 'Kristofer Elling in a branded cap light, half-face respirator with pink filters and a white protective suit, giving a thumbs up', width: 560, height: 745 },
       { file: '/img/gallery/sasquatch-statue-with-a-branded-bait-shaker.jpg', alt: 'A Sasquatch statue crouched in tall grass and red-hot poker flowers beside a Niban bait shaker wearing the company label', width: 560, height: 757 },
@@ -367,6 +385,8 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/tree-frog-on-a-sedum.jpg', alt: 'A small green-and-brown tree frog sitting among the flower buds of a sedum in bright sun', width: 560, height: 315 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/service-van-in-a-field-of-buttercups.jpg', alt: 'The wrapped service van parked in a summer field of yellow buttercups and tall grass, a green hedge behind', width: 560, height: 259 },
       /* Owner's own, 19 Sep 2026. */

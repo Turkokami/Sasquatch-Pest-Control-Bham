@@ -36,6 +36,21 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/evan-friese-starting-a-foundation-vent-guard-job.jpg': 'Evan Friese agachado junto a una ventila de cimiento con la caja de la rejilla al lado, con una bahía y dos islas boscosas abajo del jardín',
+  '/img/gallery/evan-friese-drilling-a-foundation-for-a-vent-guard.jpg': 'Evan Friese perforando el cimiento de concreto alrededor de una ventila del sótano bajo con un taladro percutor',
+  '/img/gallery/evan-friese-fastening-a-foundation-vent-guard.jpg': 'Evan Friese fijando el marco de una rejilla de acero sobre una ventila del sótano bajo con un atornillador de impacto',
+  '/img/gallery/evan-friese-with-a-finished-vent-guard.jpg': 'Evan Friese arrodillado junto a una rejilla terminada al pie de un porche, con el pulgar arriba y la camioneta de trabajo detrás',
+  '/img/gallery/finished-steel-foundation-vent-guard.jpg': 'Una rejilla negra de malla de acero terminada, fijada sobre una ventila del sótano bajo en un cimiento de concreto, con el taladro todavía al lado',
+  '/img/gallery/soaked-and-soiled-insulation-on-a-crawlspace-floor.jpg': 'Aislante rosa caído al piso de un sótano bajo, empapado y sucio, bajo una pared de concreto manchada y una ventila',
+  '/img/gallery/insulation-fallen-from-crawlspace-joists.jpg': 'Aislante rosa colgando suelto y caído de las vigas de un sótano bajo, con trozos esparcidos sobre una barrera de papel sucia',
+  '/img/gallery/sagging-and-pulled-down-crawlspace-insulation.jpg': 'Aislante del sótano bajo hundido y arrancado entre las vigas, con trozos sueltos en el suelo abajo',
+  '/img/gallery/crawlspace-vent-screen-torn-open-from-inside.jpg': 'Una ventila del sótano bajo vista desde adentro, con la malla de alambre rota y doblada, y material de nido acumulado detrás',
+  '/img/gallery/torn-kraft-faced-insulation-in-a-crawlspace.jpg': 'Aislante amarillo con cara de papel kraft rasgado y colgando de una viga del sótano bajo, con el papel roto',
+  '/img/gallery/insulation-torn-down-throughout-a-crawlspace.jpg': 'Aislante amarillo rasgado y colgando en todo un sótano bajo, sobre pilares y una barrera de vapor negra llena de escombros',
+  '/img/gallery/pallet-of-rodent-bait-stations.jpg': 'Una tarima con muchas estaciones nuevas de cebo para roedores, negras y a prueba de manipulación, entregadas en el taller',
+  '/img/gallery/service-truck-on-a-foggy-morning-on-north-shore.jpg': 'La Chevrolet Colorado rotulada estacionada en una calle en una mañana con neblina, con álamos altos y un arce rojo detrás',
+  '/img/gallery/tree-frog-on-a-sedum.jpg': 'Una rana arbórea pequeña, verde y café, entre los botones de un sedum bajo el sol',
+  '/img/gallery/heat-pressed-sasquatch-logo-transfers.jpg': 'Una hoja de calcomanías recién impresas con el logo de Sasquatch Pest Control y la mascota, extendida sobre una mesa',
   '/img/gallery/open-cinder-block-foundation-vents.jpg': 'Dos aberturas de ventila en un cimiento de bloques de concreto sin ninguna malla, medio ocultas por hojas de hortensia y enredadera',
   '/img/gallery/cracked-foundation-gap-under-siding.jpg': 'Una linterna sobre un cimiento agrietado donde se desprendió un trozo bajo el revestimiento, dejando un hueco abierto hacia el sótano bajo',
   '/img/gallery/technician-finishing-a-crawlspace-insulation-install.jpg': 'Un técnico con linterna frontal recogiendo recortes en un sótano bajo después de instalar aislante nuevo en las vigas del piso y las paredes',
