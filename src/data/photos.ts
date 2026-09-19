@@ -849,6 +849,16 @@ export const garageDoorSeal: PhotoPair = {
  * poster beside it, and a missing file fails the build like any other.
  */
 export const speciesClips: Record<string, { src: string; alt: string; caption: string }> = {
+  /* THATCHING ANTS, 19 Sep 2026, the owner's video and his identification, the
+     same job as the still above it. Audio stripped like the others, and the
+     source arrived slightly truncated, so the clip ends half a second early.
+     Re-encoded from 6.1 MB to 2.0 MB. */
+  'thatching-ant': {
+    src: '/video/thatching-ants-tending-aphids-on-a-thistle',
+    alt: 'Dark ants moving up and down the stems of a thistle crowded with black aphids, working over them and passing one another as they go',
+    caption:
+      'The trail in motion, which a still cannot show: the ants work the stem in both directions at once, stopping over the aphids on the way. What they are collecting is honeydew, and that is why a mound is usually within a few yards of plants carrying aphids — the herd is the food supply, and the ants defend it.',
+  },
   'great-golden-digger-wasp': {
     src: '/video/great-golden-digger-wasp-dragging-a-katydid-to-its-burrow',
     alt: 'A large orange-legged wasp dragging a limp bright green katydid backwards across dry gravel toward a dark burrow entrance',
