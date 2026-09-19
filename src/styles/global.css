@@ -1928,6 +1928,19 @@ footer.site .colophon {
   border-radius: var(--radius-sm);
   background: var(--well);
 }
+/* The description box under each one (owner, 19 Sep 2026: "leave small
+   description boxes for each photo"). Matches the caption treatment the job
+   photographs and the map already use — small, quiet, a rule down the left —
+   so a photograph placed in the text reads the same as one placed by hand. */
+.inline-photo figcaption {
+  margin-top: var(--space-2);
+  padding-left: var(--space-2);
+  border-left: 2px solid var(--accent-line);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-snug);
+  color: var(--ink-3);
+}
+
 /* A portrait photograph at full phone width is a whole screen of picture —
    measured at 390px, one of them ran 780px tall and pushed every word off the
    display. Capped by height and centered instead, which crops nothing. */

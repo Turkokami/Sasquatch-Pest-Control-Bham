@@ -38,13 +38,26 @@ function pathOf(file: string, fm: Record<string, unknown>): string | null {
 const figure = (p: { file: string; alt: string; width: number; height: number }): Node => ({
   type: 'element',
   tagName: 'figure',
-  properties: { className: ['inline-photo'] },
-  children: [{
-    type: 'element',
-    tagName: 'img',
-    properties: { src: p.file, alt: p.alt, width: p.width, height: p.height, loading: 'lazy', decoding: 'async' },
-    children: [],
-  }],
+  /* data-boilerplate: the caption is the photograph's description, and the same
+     photograph appears on a handful of pages, so the caption would read as a
+     sentence repeated across the site. The harness strips these blocks before
+     the duplicate-sentence scanner and the word count, which is exactly right —
+     it is a label on a picture, not the page's own prose. */
+  properties: { className: ['inline-photo'], 'data-boilerplate': true },
+  children: [
+    {
+      type: 'element',
+      tagName: 'img',
+      properties: { src: p.file, alt: p.alt, width: p.width, height: p.height, loading: 'lazy', decoding: 'async' },
+      children: [],
+    },
+    {
+      type: 'element',
+      tagName: 'figcaption',
+      properties: {},
+      children: [{ type: 'text', value: p.alt }],
+    },
+  ],
 });
 
 export default function rehypeInlinePhotos() {

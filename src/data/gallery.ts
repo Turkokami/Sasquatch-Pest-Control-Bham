@@ -344,7 +344,17 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/service-truck-at-a-forest-cabin-in-the-foothills.jpg', alt: 'The wrapped pickup parked on gravel below two forest cabins in the Mount Baker foothills, a technician at the tailgate', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026, named by him. The photographer's mark on the portraits is left in place. */
       { file: '/img/gallery/the-crew-with-the-trucks-at-sunset.jpg', alt: 'Five members of the crew standing between a wrapped pickup and a wrapped van at sunset beside the water', width: 560, height: 285 },
-      { file: '/img/gallery/tj-portrait.jpg', alt: 'TJ, a technician, in a branded cap with sunglasses and work shirt in front of the ladder-racked van', width: 560, height: 560 },
+      /* NAMED BY THE OWNER, 19 Sep 2026, after he corrected the team cards. The
+         page had shown TJ under Evan and Evan under Tyson, and a fourth photograph
+         filed as TJ turned out to be Tyson — the fingerprint puts it 9 bits from
+         the portrait the owner sent captioned "This is Tyson". Nobody is named in
+         a caption here now unless the owner named that person in that photograph. */
+      { file: '/img/gallery/tyson-elling-portrait-by-the-van.jpg', alt: 'Tyson Elling in a branded cap and jacket in front of the ladder-racked van', width: 560, height: 560 },
+      { file: '/img/gallery/tyson-elling-with-the-service-van.jpg', alt: 'Tyson Elling standing beside the wrapped van at golden hour', width: 560, height: 373 },
+      { file: '/img/gallery/tyson-elling-and-a-technician-above-the-water.jpg', alt: 'Tyson Elling and a technician working a hillside garden above the water, islands and forest behind them', width: 560, height: 1152 },
+      { file: '/img/gallery/kris-elling-above-the-islands.jpg', alt: 'Kristofer Elling in a harness on a roof above Chuckanut Bay, the San Juan Islands behind him', width: 560, height: 747 },
+      /* Named by the owner, 19 Sep 2026, when he corrected the team cards: TJ. */
+      { file: '/img/gallery/tj-portrait-by-the-van.jpg', alt: 'TJ in a branded cap and safety glasses, standing by the wrapped van', width: 560, height: 560 },
       { file: '/img/gallery/technician-at-sunset-beside-the-truck-on-lummi-shore.jpg', alt: 'Evan Friese leaning on the wrapped Chevrolet pickup after a long day, the sun setting over the bay on Lummi Shore Road', width: 560, height: 315 },
       { file: '/img/gallery/service-trucks-on-lummi-shore-road.jpg', alt: 'Two wrapped pickups and a wrapped van lined up on gravel on Lummi Shore Road in golden evening light', width: 560, height: 249 },
       { file: '/img/gallery/service-van-at-sunrise-on-lummi-shore.jpg', alt: 'The wrapped van at sunrise on the gravel beside the water on Lummi Shore Road, a boat and timber shelters behind', width: 560, height: 286 },

@@ -1,36 +1,41 @@
 /**
  * Photographs placed through the body of long pages — owner, 19 Sep 2026:
- * "lets add images throughout the entire site ... add more of the photos on
- * the pages with them throughout the page not just on the top and gallery at
- * the bottom. We want to keep people interested and break up the long runs of
- * just text."
+ * "lets add images throughout the entire site ... break up the long runs of
+ * just text", then, once they were in: "You also have a tendency to use same
+ * photos alot throughout website. Let's break it up more and leave small
+ * description boxes for each photo, and try to keep in mind the text around
+ * them ... if not opt for a generic truck or animal photo. We like sharing
+ * the beauty of whatcom county."
  *
- * ONE PICKER, BOTH LANGUAGES. English pages are Markdown, and
- * src/lib/rehype-inline-photos.ts calls this while the Markdown compiles.
- * Spanish pages are rendered from data, and their templates call it with the
- * English twin's path. The same path always returns the same photographs in
- * the same order, which is also how the service template knows which ones to
- * leave out of its gallery strip at the foot of the page.
+ * So this file answers three questions, in this order:
  *
- * THE POOL is the gallery (src/data/gallery.ts) — every photograph there is the
- * owner's own or from his archive, already privacy-checked, already carrying
- * alt text in both languages (es-galeria.ts). Nothing new is sourced here.
+ *   WHICH PHOTOGRAPH GOES HERE? Every slot is scored against the section it
+ *   will sit in — the words of that heading and its first paragraph against
+ *   the words of the photograph's alt text. A section about rodents in a
+ *   crawlspace gets the rodent photograph. When nothing in the pool has
+ *   anything to do with the text, the slot falls back to the trucks and the
+ *   county: those are honest anywhere, and the owner would rather show
+ *   Whatcom County than force a match.
  *
- * THE RULES THAT KEEP THIS HONEST, which matter more than the layout:
+ *   HOW OFTEN HAS IT BEEN USED? Every page used to choose on its own, so the
+ *   strongest photographs turned up everywhere. The whole site is assigned in
+ *   ONE pass here instead, in a fixed order, counting uses as it goes, and a
+ *   photograph already shown several times loses to one that has not been
+ *   shown at all. Same inputs, same output, every build.
  *
- *   1. AN ANIMAL ONLY WHERE THE PAGE IS ABOUT IT. A photograph whose alt names
- *      an animal is used only on a page that names the same animal. The
- *      silverfish page does not get a cockroach, and the Norway rat page does
- *      not get "a mouse nest", because on an identification page a picture of
- *      the wrong animal is a counter-example, not decoration. Pest library
- *      pages are strictest: only their own species' words count.
+ *   IS IT HONEST HERE? The rules that came first and still overrule the rest:
+ *     1. AN ANIMAL ONLY WHERE THE PAGE IS ABOUT IT. On an identification page
+ *        a picture of the wrong animal is a counter-example, not decoration.
+ *        Pest library pages are strictest: the alt must name the species.
+ *     2. A TOWN ONLY ON ITS OWN PAGE. A service page can show "a van in Bow";
+ *        the Lynden page cannot.
+ *     3. NOTHING TWICE ON ONE PAGE — not the same frame under another name
+ *        (photo-hashes.json), and not the same subject shot twice (alt text).
  *
- *   2. A TOWN ONLY ON ITS OWN PAGE. On a town or neighborhood page, a
- *      photograph whose alt names a different town is left out. A service page
- *      can show "a van in Bow" truthfully; the Lynden page cannot.
- *
- *   3. NO REPEATS ON A PAGE. The page's own lead photographs (photos.ts) are
- *      excluded by file name, so the same job never appears twice in a scroll.
+ * THE POOL is the gallery: the owner's own photographs and his archive,
+ * already privacy-checked, already captioned in both languages. The caption
+ * under each one on the page is that alt text, which is why the alts read as
+ * descriptions of what is in the frame and nothing else.
  */
 import { gallery, type GalleryImage } from '../data/gallery';
 import {
@@ -40,6 +45,7 @@ import {
 } from '../data/photos';
 import { towns } from '../data/towns';
 import HASHES from '../data/photo-hashes.json';
+import SECTIONS from '../data/page-sections.json';
 
 export type InlinePhoto = GalleryImage;
 
@@ -82,9 +88,14 @@ const TOPICS: Topic[] = [
   { page: /cockroach|roach/i, sections: ['pests'], prefer: /cockroach/i, animals: ['cockroach', 'cockroaches', 'roach'] },
 ];
 
-/* What every page may fall back on once its topic pool runs out: the work,
-   the crew and the country, animal-free under rule 1. */
+/* The work any page may show. */
 const NEUTRAL = ['exclusion', 'crawlspaces', 'insulation', 'crew', 'country'];
+/* A dead animal is honest work and it stays in the gallery, but it is not what
+   a reader wants next to a paragraph, so it needs a much better reason here. */
+const GRIM = /(dead|carcass|decomposed)/i;
+
+/* The fallback the owner asked for: the trucks, and the county itself. */
+const SCENERY = ['crew', 'country'];
 
 const TOWN_WORDS = towns.map((t) => ({ slug: t.slug, rx: new RegExp(`\\b${t.name.replace(/[-]/g, '[- ]')}\\b`, 'i') }));
 
@@ -95,30 +106,31 @@ const base = (file: string) => file.replace(/^.*\//, '').replace(/\.(jpe?g|png)$
    the lead photograph and the gallery's g26940 are the same frame under two
    names, and g26939 is the same cluster of spiders a step to the left.
 
-   So a photograph is refused if either test says it repeats something the page
-   already shows. The fingerprint (scripts/photo-hashes.mjs) catches the same
-   frame re-encoded or re-cropped; the alt text catches the same subject shot
-   twice, which no pixel comparison can. Measured on this library: the two
-   names for one spider frame are 23 bits apart and every unrelated pair is 80
-   or more, so 40 bits is a wide margin; the second spider frame shares 4 of its
-   9 describing words with the first, which is why the word threshold is low. It is measured on the English alt,
-   so the Spanish pages inherit the same decisions. */
+   The fingerprint (scripts/photo-hashes.mjs) catches the same frame re-encoded
+   or re-cropped; the alt text catches the same subject shot twice, which no
+   pixel comparison can. Measured on this library: the two names for one spider
+   frame are 23 bits apart and every unrelated pair is 80 or more, so 40 bits is
+   a wide margin, and those two spider alts share 4 of their 9 words. */
 const DUP_BITS = 40;
 const DUP_WORDS = 0.4;
 const STOP = new Set(['a', 'an', 'the', 'of', 'in', 'on', 'at', 'to', 'into', 'with', 'and', 'or', 'its',
   'it', 'is', 'for', 'from', 'by', 'across', 'under', 'over', 'beside', 'behind', 'through', 'up', 'down',
-  'been', 'has', 'have', 'where', 'that', 'this', 'as', 'out', 'above', 'below', 'against', 'along', 'still']);
-const words = (alt: string) =>
-  new Set(alt.toLowerCase().replace(/[^a-z\s]/g, ' ').split(/\s+/).filter((w) => w.length > 2 && !STOP.has(w)));
+  'been', 'has', 'have', 'where', 'that', 'this', 'as', 'out', 'above', 'below', 'against', 'along', 'still',
+  'are', 'was', 'were', 'not', 'but', 'them', 'they', 'you', 'your', 'our', 'what', 'which', 'when',
+  'how', 'why', 'can', 'will', 'one', 'two', 'their', 'there', 'than', 'then', 'about', 'more', 'most',
+  'some', 'any', 'every', 'each', 'other', 'because', 'after', 'before', 'while', 'only', 'just', 'here']);
+const words = (text: string) =>
+  new Set(text.toLowerCase().replace(/[^a-z\s]/g, ' ').split(/\s+/).filter((w) => w.length > 2 && !STOP.has(w)));
 const bits = (a: string, b: string) => {
   let x = BigInt('0x' + a) ^ BigInt('0x' + b);
   let n = 0;
   while (x) { n += Number(x & 1n); x >>= 1n; }
   return n;
 };
+const hashOf = (file: string) => (HASHES as Record<string, { hash: string }>)[file]?.hash;
 const sameShot = (aFile: string, aAlt: string, bFile: string, bAlt: string) => {
-  const ha = (HASHES as Record<string, { hash: string }>)[aFile]?.hash;
-  const hb = (HASHES as Record<string, { hash: string }>)[bFile]?.hash;
+  const ha = hashOf(aFile);
+  const hb = hashOf(bFile);
   if (ha && hb && bits(ha, hb) <= DUP_BITS) return true;
   const wa = words(aAlt);
   const wb = words(bAlt);
@@ -127,110 +139,151 @@ const sameShot = (aFile: string, aAlt: string, bFile: string, bAlt: string) => {
   return shared / Math.min(wa.size, wb.size) >= DUP_WORDS;
 };
 
-/* Deterministic shuffle. Seeded by the page path, so every page is different
-   and every build is the same. */
-function seeded<T>(items: T[], seed: string): T[] {
-  let h = 2166136261;
-  for (const c of seed) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
-  const out = items.slice();
-  for (let i = out.length - 1; i > 0; i--) {
-    h = Math.imul(h ^ (h >>> 13), 1274126177) >>> 0;
-    const j = h % (i + 1);
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
-}
-
-/** The lead photographs a page already shows, as file-name stems. */
-function leadPhotos(path: string): Photo[] {
-  const seg = path.split('/').filter(Boolean);
+/** The lead photographs a page already shows. */
+function leadPhotos(page: string): Photo[] {
+  const seg = page.split('/').filter(Boolean);
   const got: (Photo | undefined)[] = [];
   if (seg[0] === 'services') got.push(seg[2] ? problemPhotos[seg[2]] : servicePhotos[seg[1]]);
   if (seg[0] === 'pest-library') got.push(speciesPhotos[seg[1]]);
   if (seg[0] === 'commercial') got.push(industryPhotos[seg[1]]);
   if (seg[0] === 'locations' && !seg[2]) got.push(locationPhotos[seg[1]], locationPhotosSecond[seg[1]]);
   /* The hubs carry theirs in named exports rather than a map. */
-  if (path === '/commercial/') got.push(commercialHubPhoto, commercialExclusionPhoto);
-  if (path === '/locations/') got.push(locationsHubPhoto);
-  if (path === '/locations/whatcom-county/') got.push(whatcomCountyPhoto);
+  if (page === '/commercial/') got.push(commercialHubPhoto, commercialExclusionPhoto);
+  if (page === '/locations/') got.push(locationsHubPhoto);
+  if (page === '/locations/whatcom-county/') got.push(whatcomCountyPhoto);
   return got.filter((p): p is Photo => !!p);
 }
 
-/**
- * The photographs to place through one page, best first, at most MAX_INLINE.
- * `path` is the English page path; `title` is whatever names the page (its
- * title or H1) and is only used to recognize the topic.
- */
-export function inlinePhotosFor(path: string, title = ''): InlinePhoto[] {
-  const seg = path.split('/').filter(Boolean);
-  const text = `${path} ${title}`;
-  const isPest = seg[0] === 'pest-library';
-  const town = seg[0] === 'locations' ? seg[1] : undefined;
+/* ---------------------------------------------------------------- the pages
 
-  const topics = TOPICS.filter((t) => t.page.test(text));
-  /* Rule 1. On a pest page an animal photograph must name the species itself
-     ("bald-faced hornet", "thatching ants") — word by word would let "deer"
-     from deer-mouse admit the deer, and "beetle" from anobiid-powderpost-beetle
-     admit any beetle at all. Elsewhere, the animals of every topic the page is
-     about. */
-  const species = (seg[1] ?? '').replace(/-/g, ' ');
-  const allowed = new Set<string>(topics.flatMap((t) => t.animals));
-  const animalOk = (img: GalleryImage) => {
-    const hits = [...img.alt.matchAll(ANIMAL)];
-    if (!hits.length) return true;
-    if (isPest) return img.alt.toLowerCase().replace(/-/g, ' ').includes(species);
-    return hits.every((m) => allowed.has(m[1].toLowerCase()));
-  };
-  /* Rule 2. */
-  const townOk = (img: GalleryImage) =>
-    !town || TOWN_WORDS.every((w) => w.slug === town || !w.rx.test(img.alt));
-  /* Rule 3. */
-  const lead = leadPhotos(path);
-  const ok = (img: GalleryImage) =>
-    animalOk(img) && townOk(img)
-    && !lead.some((p) => base(p.file) === base(img.file) || sameShot(p.file, p.alt, img.file, img.alt));
+   From src/data/page-sections.json, written by scripts/page-sections.mjs.
+   NOT read from src/content here: this module is imported both by
+   astro.config.mjs (plain Node, for the Markdown plugin) and by the page
+   templates (through Vite), and node:fs finds nothing in the second. That cost
+   the Spanish pages every one of their photographs once already. */
+interface PageInfo { page: string; title: string; sections: string[] }
 
-  const bySection = (keys: string[]) =>
-    gallery.filter((s) => keys.includes(s.key)).flatMap((s) => s.images).filter(ok);
+/* The hubs and standalone pages are .astro templates with no Markdown body to
+   read, so they are assigned from their path alone — which sends most of them
+   to the trucks and the county. Six empty sections is the way of asking for
+   two photographs; the hub templates place them by hand. */
+const HUBS = [
+  '/', '/about/', '/blog/', '/commercial/', '/contact/', '/guides/', '/locations/',
+  '/locations/skagit-county/', '/locations/whatcom-county/', '/network/', '/our-guarantee/',
+  '/pest-library/', '/services/', '/trusted-partners/', '/what-we-use/',
+];
 
-  const ownTown = town ? TOWN_WORDS.find((w) => w.slug === town) : undefined;
-  const tiers: GalleryImage[][] = [
-    ownTown ? bySection(NEUTRAL.concat('rodents', 'stinging', 'pests', 'commercial')).filter((i) => ownTown.rx.test(i.alt)) : [],
-    bySection(topics.flatMap((t) => t.sections)).filter((i) => topics.some((t) => t.prefer.test(i.alt))),
-    bySection(topics.flatMap((t) => t.sections)),
-    bySection(isPest ? NEUTRAL.concat('rodents') : NEUTRAL),
-  ];
+const readPages = (): PageInfo[] => [
+  ...(SECTIONS as PageInfo[]),
+  ...HUBS.map((page) => ({ page, title: '', sections: ['', '', '', '', '', ''] })),
+].sort((x, y) => x.page.localeCompare(y.page));
 
-  const seen = new Set<string>();
-  const out: GalleryImage[] = [];
-  for (const tier of tiers) {
-    for (const img of seeded(tier, path)) {
-      if (out.length >= MAX_INLINE) return out;
-      if (seen.has(img.file)) continue;
-      if (out.some((o) => sameShot(o.file, o.alt, img.file, img.alt))) continue;
-      seen.add(img.file);
-      out.push(img);
-    }
-  }
+/** Where a photograph goes: after section `i` (0-based), every third from the
+    third, so the lead photograph and the first inline one are never adjacent. */
+export const photoAfterSection = (i: number) => i >= 2 && (i - 2) % 3 === 0;
+function slotsFor(sections: number): number[] {
+  const out: number[] = [];
+  for (let i = 0; i < sections && out.length < MAX_INLINE; i++) if (photoAfterSection(i)) out.push(i);
   return out;
+}
+
+/* ------------------------------------------------------------ the assignment */
+
+let ASSIGNED: Map<string, InlinePhoto[]> | null = null;
+
+function assignAll(): Map<string, InlinePhoto[]> {
+  const used = new Map<string, number>();
+  const result = new Map<string, InlinePhoto[]>();
+  const all = gallery.flatMap((s) => s.images.map((img) => ({ img, section: s.key })));
+
+  for (const info of readPages()) {
+    const seg = info.page.split('/').filter(Boolean);
+    const text = `${info.page} ${info.title}`;
+    const isPest = seg[0] === 'pest-library';
+    const town = seg[0] === 'locations' ? seg[1] : undefined;
+    const topics = TOPICS.filter((t) => t.page.test(text));
+    const species = (seg[1] ?? '').replace(/-/g, ' ');
+    const allowedAnimals = new Set<string>(topics.flatMap((t) => t.animals));
+    const lead = leadPhotos(info.page);
+
+    const allowed = ({ img }: { img: GalleryImage }) => {
+      const hits = [...img.alt.matchAll(ANIMAL)];
+      if (hits.length) {
+        if (isPest) { if (!img.alt.toLowerCase().replace(/-/g, ' ').includes(species)) return false; }
+        else if (!hits.every((m) => allowedAnimals.has(m[1].toLowerCase()))) return false;
+      }
+      if (town && !TOWN_WORDS.every((w) => w.slug === town || !w.rx.test(img.alt))) return false;
+      return !lead.some((p) => base(p.file) === base(img.file) || sameShot(p.file, p.alt, img.file, img.alt));
+    };
+
+    const topicSections = new Set(topics.flatMap((t) => t.sections));
+    const ownTown = town ? TOWN_WORDS.find((w) => w.slug === town) : undefined;
+    const pool = all.filter(allowed);
+    const chosen: InlinePhoto[] = [];
+    const taken = (img: GalleryImage) =>
+      chosen.some((c) => c.file === img.file || sameShot(c.file, c.alt, img.file, img.alt));
+
+    /* A page with fewer than three sections still gets two photographs: the
+       rehype plugin places those every sixth block instead. Two of the blog
+       posts are written as one long run of numbered lists. */
+    const slots = info.sections.length >= 3 ? slotsFor(info.sections.length) : [0, 1];
+    for (const slot of slots) {
+      const near = words(info.sections[slot] ?? info.title);
+      let best: { img: GalleryImage; score: number } | null = null;
+      for (const cand of pool) {
+        if (taken(cand.img)) continue;
+        const overlap = [...words(cand.img.alt)].filter((w) => near.has(w)).length;
+        let score = overlap * 3;
+        if (topics.some((t) => t.prefer.test(cand.img.alt))) score += 4;
+        if (topicSections.has(cand.section)) score += 3;
+        else if (NEUTRAL.includes(cand.section)) score += 1;
+        else score -= 4;                                  // a section this page is not about
+        if (ownTown?.rx.test(cand.img.alt)) score += 6;   // taken in this very town
+        if (isPest && cand.section === 'pests') score += 2;
+        score -= (used.get(cand.img.file) ?? 0) * 2.5;    // spread them across the site
+        if (GRIM.test(cand.img.alt)) score -= 6;        // fine in the gallery, not beside the text
+        if (!best || score > best.score) best = { img: cand.img, score };
+      }
+      /* Nothing in the pool is about this text: show the county instead. */
+      if (!best || best.score <= 0) {
+        const scenery = pool
+          .filter((c) => SCENERY.includes(c.section) && !taken(c.img))
+          .sort((a, b) => (used.get(a.img.file) ?? 0) - (used.get(b.img.file) ?? 0)
+            || a.img.file.localeCompare(b.img.file));
+        if (scenery.length) best = { img: scenery[0].img, score: 0 };
+      }
+      if (!best) break;
+      chosen.push(best.img);
+      used.set(best.img.file, (used.get(best.img.file) ?? 0) + 1);
+    }
+    result.set(info.page, chosen);
+  }
+  return result;
+}
+
+/**
+ * The photographs for one English page path, in the order they are placed.
+ * The whole site is assigned the first time this is called, so a photograph
+ * already used several times loses to one that has not been used.
+ */
+export function inlinePhotosFor(page: string, _title = ''): InlinePhoto[] {
+  ASSIGNED ??= assignAll();
+  return ASSIGNED.get(page) ?? [];
 }
 
 /** Which photograph goes after section `i`, if any. */
 export const photoForSection = (photos: InlinePhoto[], i: number) =>
   photoAfterSection(i) ? photos[(i - 2) / 3] : undefined;
 
-/** Where to put them: after section `i` (0-based) when this returns true.
-    Every third section from the third, so the lead photograph above the
-    first section and the first inline one are never back to back. */
-export const photoAfterSection = (i: number) => i >= 2 && (i - 2) % 3 === 0;
-
 /**
- * The same tests applied to a strip of photographs: drop any that repeats one
- * already shown on the page, or an earlier one in the strip. The service
- * pages' gallery sections come straight from the archive and hold several
+ * The same duplicate tests applied to a strip of photographs: drop any that
+ * repeats one already shown on the page, or an earlier one in the strip. The
+ * service pages' gallery sections come from the archive and hold several
  * frames of one job.
  */
-export function dedupePhotos<T extends { file: string; alt: string }>(images: T[], already: { file: string; alt: string }[] = []): T[] {
+export function dedupePhotos<T extends { file: string; alt: string }>(
+  images: T[], already: { file: string; alt: string }[] = [],
+): T[] {
   const out: T[] = [];
   for (const img of images) {
     if ([...already, ...out].some((o) => o.file === img.file || sameShot(o.file, o.alt, img.file, img.alt))) continue;

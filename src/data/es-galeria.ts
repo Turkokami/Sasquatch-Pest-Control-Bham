@@ -36,6 +36,11 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/tyson-elling-portrait-by-the-van.jpg': 'Tyson Elling con gorra y chamarra de la empresa frente a la van con portaescaleras',
+  '/img/gallery/tyson-elling-with-the-service-van.jpg': 'Tyson Elling de pie junto a la van rotulada a la hora dorada',
+  '/img/gallery/tyson-elling-and-a-technician-above-the-water.jpg': 'Tyson Elling y un técnico trabajando en un jardín en ladera sobre el agua, con islas y bosque detrás',
+  '/img/gallery/kris-elling-above-the-islands.jpg': 'Kristofer Elling con arnés en un techo sobre la bahía de Chuckanut, con las islas San Juan detrás',
+  '/img/gallery/tj-portrait-by-the-van.jpg': 'TJ con gorra de la empresa y lentes de seguridad, junto a la van rotulada',
   '/img/gallery/ladder-secured-at-the-gutter-with-a-technician-on-the-roof.jpg': 'Una escalera extensible apoyada en una casa con un estabilizador en la canaleta y un nivelador en la base, con un técnico con arnés trabajando en el techo',
   '/img/gallery/technician-roped-in-with-a-safety-harness-on-a-roof.jpg': 'Un técnico en un techo con arnés de seguridad completo, soltando una línea de cuerda anclada, con botas para techo Cougar Paws, contra un cielo despejado',
   '/img/gallery/ladder-lock-and-gutter-guard-at-the-roof-edge.jpg': 'Vista desde lo alto de una escalera: un soporte antideslizante apoyado en la canaleta para protegerla y un seguro que fija la escalera en su lugar',
@@ -111,7 +116,6 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/rodent-guard-roof-vent-cover.jpg': 'Una tapa metálica negra con ranuras sobre una ventila en un techo de tejas, vista desde el alero contra un cielo gris',
   '/img/gallery/service-van-and-lift-sealing-a-stone-chimney.jpg': 'La van rotulada estacionada bajo una plataforma elevadora que llega a lo alto de una chimenea de piedra de río, donde un técnico sella alrededor, cerca del lago Whatcom',
   '/img/gallery/the-crew-with-the-trucks-at-sunset.jpg': 'Cinco integrantes del equipo de pie entre una camioneta rotulada y una van rotulada al atardecer junto al agua',
-  '/img/gallery/tj-portrait.jpg': 'TJ, técnico, con gorra de la empresa, lentes de sol y camisa de trabajo frente a la van con portaescaleras',
   '/img/gallery/technician-at-sunset-beside-the-truck-on-lummi-shore.jpg': 'Evan Friese apoyado en la camioneta rotulada después de un día largo, con el sol poniéndose sobre la bahía en Lummi Shore Road',
   '/img/gallery/service-trucks-on-lummi-shore-road.jpg': 'Dos camionetas y una van rotuladas en fila sobre grava en Lummi Shore Road con la luz dorada de la tarde',
   '/img/gallery/service-van-at-sunrise-on-lummi-shore.jpg': 'La van rotulada al amanecer sobre la grava junto al agua en Lummi Shore Road, con un bote y refugios de madera detrás',
