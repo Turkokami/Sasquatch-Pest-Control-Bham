@@ -237,6 +237,10 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      /* Owner's own, 19 Sep 2026: a vent guard on a commercial restaurant. */
+      { file: '/img/gallery/failed-louvered-foundation-vent-at-a-restaurant.jpg', alt: 'A galvanized louvered foundation vent with bent blades and open corners at the base of a restaurant wall', width: 560, height: 560 },
+      { file: '/img/gallery/vent-guard-frame-fitted-over-an-open-foundation-vent.jpg', alt: 'The steel frame of a vent guard screwed to the foundation around an open crawlspace vent, the timber lintel visible inside', width: 560, height: 560 },
+      { file: '/img/gallery/vent-guard-installed-on-a-restaurant-foundation.jpg', alt: 'The finished vent guard, heavy black mesh in a welded steel frame, fitted over the foundation vent of a restaurant', width: 560, height: 560 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/evan-friese-starting-a-foundation-vent-guard-job.jpg', alt: 'Evan Friese crouched at a foundation vent with the guard box beside him, a bay and two forested islands below the garden', width: 560, height: 420 },
       { file: '/img/gallery/evan-friese-drilling-a-foundation-for-a-vent-guard.jpg', alt: 'Evan Friese drilling anchor holes in a concrete foundation around a crawlspace vent with a hammer drill', width: 560, height: 272 },

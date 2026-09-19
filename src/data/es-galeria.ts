@@ -36,6 +36,9 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/failed-louvered-foundation-vent-at-a-restaurant.jpg': 'Una ventila de cimiento galvanizada con persianas dobladas y esquinas abiertas, al pie de la pared de un restaurante',
+  '/img/gallery/vent-guard-frame-fitted-over-an-open-foundation-vent.jpg': 'El marco de acero de una rejilla protectora atornillado al cimiento alrededor de una ventila abierta, con el dintel de madera a la vista',
+  '/img/gallery/vent-guard-installed-on-a-restaurant-foundation.jpg': 'La rejilla protectora terminada, de malla negra gruesa en un marco de acero soldado, sobre la ventila del cimiento de un restaurante',
   '/img/gallery/tyson-elling-portrait-by-the-van.jpg': 'Tyson Elling con gorra y chamarra de la empresa frente a la van con portaescaleras',
   '/img/gallery/tyson-elling-with-the-service-van.jpg': 'Tyson Elling de pie junto a la van rotulada a la hora dorada',
   '/img/gallery/tyson-elling-and-a-technician-above-the-water.jpg': 'Tyson Elling y un técnico trabajando en un jardín en ladera sobre el agua, con islas y bosque detrás',

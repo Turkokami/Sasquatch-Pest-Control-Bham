@@ -799,6 +799,25 @@ export interface PhotoPair {
   caption: string;
 }
 
+/* THE SECOND PAIR, 19 Sep 2026, the owner's own: a foundation vent at a
+   commercial restaurant. Before is the vent it replaced — a galvanized louver
+   with the blades bent and the corners open; after is the guard. The middle
+   photograph, the frame on an open vent, is in the gallery: it shows that the
+   opening itself is untouched, which is the point of a guard rather than a
+   blocked vent. */
+export const ventGuard: PhotoPair = {
+  before: {
+    file: '/img/work/failed-foundation-vent-before-commercial-whatcom-county-wa.jpg',
+    alt: 'A galvanized louvered foundation vent at a restaurant, blades bent and corners pulled open, sitting proud of the concrete',
+  },
+  after: {
+    file: '/img/work/vent-guard-installed-after-commercial-whatcom-county-wa.jpg',
+    alt: 'The same opening fitted with a black steel vent guard, heavy mesh in a welded frame screwed to the foundation',
+  },
+  caption:
+    'The same vent at a restaurant, before and after. A louvered vent is a weather part, not a rodent part: the blades bend, the corners open, and the gap that lets a mouse in is the one nobody looks at because the vent still appears to be there. The guard is a steel frame and heavy mesh screwed to the concrete, and it leaves the opening doing its job — a crawlspace needs the airflow, so the answer is never to block the vent.',
+};
+
 export const garageDoorSeal: PhotoPair = {
   before: {
     file: '/img/work/failed-garage-door-seal-before-whatcom-county-wa.jpg',

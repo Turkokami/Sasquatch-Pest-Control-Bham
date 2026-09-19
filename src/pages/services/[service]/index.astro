@@ -17,7 +17,7 @@ import { guideLinksFor } from '../../../lib/guides';
 import { blogPostsFor } from '../../../lib/blog';
 import { galleryFor } from '../../../data/gallery';
 import { inlinePhotosFor, dedupePhotos } from '../../../lib/page-photos';
-import { garageDoorSeal } from '../../../data/photos';
+import { garageDoorSeal, ventGuard } from '../../../data/photos';
 import ExpertBlock from '../../../components/ExpertBlock.astro';
 import { liveServices, categories } from '../../../data/services';
 import { townGroups } from '../../../lib/menus';
@@ -225,6 +225,20 @@ const photos = section && {
         <img src={garageDoorSeal.after.file} alt={garageDoorSeal.after.alt} width={1300} height={975} loading="lazy" decoding="async" />
       </div>
       <p class="prose">{garageDoorSeal.caption}</p>
+    </section>
+  )}
+
+  {/* The commercial page gets its own pair: a restaurant's foundation vent,
+      which is the commonest thing we replace on a food-service account. Same
+      reasoning as the one above — one page, so the caption is content. */}
+  {s.slug === 'commercial-pest-control' && (
+    <section>
+      <h2>A restaurant vent, before and after</h2>
+      <div class="gallery pair">
+        <img src={ventGuard.before.file} alt={ventGuard.before.alt} width={1300} height={975} loading="lazy" decoding="async" />
+        <img src={ventGuard.after.file} alt={ventGuard.after.alt} width={1300} height={975} loading="lazy" decoding="async" />
+      </div>
+      <p class="prose">{ventGuard.caption}</p>
     </section>
   )}
 
