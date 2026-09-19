@@ -36,6 +36,13 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/crew-on-a-roof-sealing-vents-at-a-waterfront-house.jpg': 'Dos técnicos con arnés en el techo de una casa gris grande sobre el agua, uno en la cumbrera y otro en una escalera, con un tercero mirando desde la entrada',
+  '/img/gallery/screened-roof-vents-along-a-ridge.jpg': 'Una fila de ventilas en un techo de tejas, cada una cubierta con una rejilla negra de malla gruesa fijada a las tejas',
+  '/img/gallery/technician-sealing-a-gap-at-the-siding-on-a-ladder.jpg': 'Un técnico con gorra y lentes de seguridad en una escalera verde, trabajando con ambas manos un hueco de tubería bajo el borde del revestimiento',
+  '/img/gallery/branded-safety-helmets-and-ear-protection.jpg': 'Tres cascos de seguridad amarillo fluorescente de Sasquatch Pest Control con protectores auditivos rojos y negros, sobre bolsas verdes de equipo',
+  '/img/gallery/service-truck-by-tall-grass-bellingham-wa.jpg': 'La camioneta rotulada estacionada detrás de pasto alto de verano, bajo abetos y un arce rojo en Bellingham',
+  '/img/gallery/service-truck-at-a-home-ferndale-wa.jpg': 'La camioneta rotulada verde y negra frente a una casa nueva de dos pisos gris en Ferndale, bajo un cielo con nubes',
+  '/img/gallery/deer-walking-past-the-service-van.jpg': 'Un venado de cola negra cruzando un estacionamiento sombreado junto a la van de servicio, bajo cedros altos',
   '/img/gallery/rodent-shield-behind-lifted-siding-close-up.jpg': 'El borde inferior del revestimiento levantado con la mano para mostrar un protector negro dentado contra roedores fijado debajo, contra el cimiento de concreto',
   '/img/gallery/long-horned-beetle-close-up.jpg': 'Un escarabajo café moteado con antenas largas y segmentadas, fotografiado de cerca y de lado sobre una superficie clara',
   '/img/gallery/large-brown-spider-on-a-wall.jpg': 'Una araña grande y café con patas anilladas sobre una pared interior clara, con su sombra al lado',

@@ -196,6 +196,10 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/crew-on-a-roof-sealing-vents-at-a-waterfront-house.jpg', alt: 'Two technicians in harnesses on the roof of a large gray house above the water, one on the ridge and one on a ladder at the gable, with a third watching from the driveway', width: 560, height: 747 },
+      { file: '/img/gallery/screened-roof-vents-along-a-ridge.jpg', alt: 'A row of roof vents along a shingled roof, each covered with a black heavy-mesh guard fastened to the shingles', width: 560, height: 747 },
+      { file: '/img/gallery/technician-sealing-a-gap-at-the-siding-on-a-ladder.jpg', alt: 'A technician in a cap and safety glasses on a green ladder, working a line-set gap under the edge of the siding with both hands', width: 560, height: 420 },
       { file: '/img/gallery/rodent-shield-behind-lifted-siding-close-up.jpg', alt: 'The bottom edge of the siding lifted by hand to show a black toothed rodent shield fastened beneath it against the concrete foundation', width: 560, height: 747 },
       /* Owner's own, 19 Sep 2026: a rodent shield installed under the siding. */
       { file: '/img/gallery/rodent-shield-installed-along-a-foundation.jpg', alt: 'A black metal rodent shield fastened along the bottom of the siding on a house, where it meets a rough concrete foundation, seen low along the wall', width: 560, height: 420 },
@@ -250,6 +254,10 @@ const allSections: GallerySection[] = [
     key: 'crew',
     title: 'The crew and the trucks',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/branded-safety-helmets-and-ear-protection.jpg', alt: 'Three hi-vis yellow Sasquatch Pest Control safety helmets with red-and-black ear defenders, resting on green gear bags', width: 560, height: 420 },
+      { file: '/img/gallery/service-truck-by-tall-grass-bellingham-wa.jpg', alt: 'The wrapped service truck parked behind tall summer grass under evergreens and a red maple in Bellingham', width: 560, height: 381 },
+      { file: '/img/gallery/service-truck-at-a-home-ferndale-wa.jpg', alt: 'The green-and-black wrapped pickup parked in front of a new two-story gray house in Ferndale under a bright cloudy sky', width: 560, height: 616 },
       /* Owner's own, 18 Sep 2026. Street and road names he gave are left out. */
       { file: '/img/gallery/service-truck-by-a-landscaped-yard-bellingham-wa.jpg', alt: 'The wrapped service truck parked beside a landscaped front yard with red shrubs and blue spruce in Bellingham', width: 560, height: 315 },
       { file: '/img/gallery/service-truck-at-a-farm-near-bow-wa.jpg', alt: 'The wrapped service truck on a gravel farm drive near Bow, open fields and mountains behind under a low bright sun', width: 560, height: 315 },
@@ -286,6 +294,7 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      { file: '/img/gallery/deer-walking-past-the-service-van.jpg', alt: 'A black-tailed deer walking across a shaded lot past the parked service van, under tall cedars', width: 560, height: 747 },
       { file: '/img/gallery/service-truck-on-the-mount-baker-highway.jpg', alt: 'A wrapped service truck parked at a high viewpoint on the Mount Baker Highway, a glaciered peak and forested ridges behind it under a bright sun', width: 560, height: 310 },
       /* Owner's own, 19 Sep 2026: mantises and a salamander met on jobs. */
       { file: '/img/gallery/praying-mantis-on-a-textured-post.jpg', alt: 'A tan praying mantis clinging to a black-and-white textured post, its folded forelegs and long antenna in sharp focus', width: 560, height: 1164 },
