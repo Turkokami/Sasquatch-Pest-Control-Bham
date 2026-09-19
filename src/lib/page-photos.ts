@@ -39,6 +39,7 @@ import {
   locationsHubPhoto, whatcomCountyPhoto, type Photo,
 } from '../data/photos';
 import { towns } from '../data/towns';
+import HASHES from '../data/photo-hashes.json';
 
 export type InlinePhoto = GalleryImage;
 
@@ -89,6 +90,43 @@ const TOWN_WORDS = towns.map((t) => ({ slug: t.slug, rx: new RegExp(`\\b${t.name
 
 const base = (file: string) => file.replace(/^.*\//, '').replace(/\.(jpe?g|png)$/i, '');
 
+/* TWO PHOTOGRAPHS OF ONE THING. Owner, 19 Sep 2026: "Spider control page has
+   same image three times." It did, and a file name could not have caught it:
+   the lead photograph and the gallery's g26940 are the same frame under two
+   names, and g26939 is the same cluster of spiders a step to the left.
+
+   So a photograph is refused if either test says it repeats something the page
+   already shows. The fingerprint (scripts/photo-hashes.mjs) catches the same
+   frame re-encoded or re-cropped; the alt text catches the same subject shot
+   twice, which no pixel comparison can. Measured on this library: the two
+   names for one spider frame are 23 bits apart and every unrelated pair is 80
+   or more, so 40 bits is a wide margin; the second spider frame shares 4 of its
+   9 describing words with the first, which is why the word threshold is low. It is measured on the English alt,
+   so the Spanish pages inherit the same decisions. */
+const DUP_BITS = 40;
+const DUP_WORDS = 0.4;
+const STOP = new Set(['a', 'an', 'the', 'of', 'in', 'on', 'at', 'to', 'into', 'with', 'and', 'or', 'its',
+  'it', 'is', 'for', 'from', 'by', 'across', 'under', 'over', 'beside', 'behind', 'through', 'up', 'down',
+  'been', 'has', 'have', 'where', 'that', 'this', 'as', 'out', 'above', 'below', 'against', 'along', 'still']);
+const words = (alt: string) =>
+  new Set(alt.toLowerCase().replace(/[^a-z\s]/g, ' ').split(/\s+/).filter((w) => w.length > 2 && !STOP.has(w)));
+const bits = (a: string, b: string) => {
+  let x = BigInt('0x' + a) ^ BigInt('0x' + b);
+  let n = 0;
+  while (x) { n += Number(x & 1n); x >>= 1n; }
+  return n;
+};
+const sameShot = (aFile: string, aAlt: string, bFile: string, bAlt: string) => {
+  const ha = (HASHES as Record<string, { hash: string }>)[aFile]?.hash;
+  const hb = (HASHES as Record<string, { hash: string }>)[bFile]?.hash;
+  if (ha && hb && bits(ha, hb) <= DUP_BITS) return true;
+  const wa = words(aAlt);
+  const wb = words(bAlt);
+  if (!wa.size || !wb.size) return false;
+  const shared = [...wa].filter((w) => wb.has(w)).length;
+  return shared / Math.min(wa.size, wb.size) >= DUP_WORDS;
+};
+
 /* Deterministic shuffle. Seeded by the page path, so every page is different
    and every build is the same. */
 function seeded<T>(items: T[], seed: string): T[] {
@@ -104,7 +142,7 @@ function seeded<T>(items: T[], seed: string): T[] {
 }
 
 /** The lead photographs a page already shows, as file-name stems. */
-function leadStems(path: string): Set<string> {
+function leadPhotos(path: string): Photo[] {
   const seg = path.split('/').filter(Boolean);
   const got: (Photo | undefined)[] = [];
   if (seg[0] === 'services') got.push(seg[2] ? problemPhotos[seg[2]] : servicePhotos[seg[1]]);
@@ -115,7 +153,7 @@ function leadStems(path: string): Set<string> {
   if (path === '/commercial/') got.push(commercialHubPhoto, commercialExclusionPhoto);
   if (path === '/locations/') got.push(locationsHubPhoto);
   if (path === '/locations/whatcom-county/') got.push(whatcomCountyPhoto);
-  return new Set(got.filter((p): p is Photo => !!p).map((p) => base(p.file)));
+  return got.filter((p): p is Photo => !!p);
 }
 
 /**
@@ -147,8 +185,10 @@ export function inlinePhotosFor(path: string, title = ''): InlinePhoto[] {
   const townOk = (img: GalleryImage) =>
     !town || TOWN_WORDS.every((w) => w.slug === town || !w.rx.test(img.alt));
   /* Rule 3. */
-  const lead = leadStems(path);
-  const ok = (img: GalleryImage) => animalOk(img) && townOk(img) && !lead.has(base(img.file));
+  const lead = leadPhotos(path);
+  const ok = (img: GalleryImage) =>
+    animalOk(img) && townOk(img)
+    && !lead.some((p) => base(p.file) === base(img.file) || sameShot(p.file, p.alt, img.file, img.alt));
 
   const bySection = (keys: string[]) =>
     gallery.filter((s) => keys.includes(s.key)).flatMap((s) => s.images).filter(ok);
@@ -167,6 +207,7 @@ export function inlinePhotosFor(path: string, title = ''): InlinePhoto[] {
     for (const img of seeded(tier, path)) {
       if (out.length >= MAX_INLINE) return out;
       if (seen.has(img.file)) continue;
+      if (out.some((o) => sameShot(o.file, o.alt, img.file, img.alt))) continue;
       seen.add(img.file);
       out.push(img);
     }
@@ -182,3 +223,18 @@ export const photoForSection = (photos: InlinePhoto[], i: number) =>
     Every third section from the third, so the lead photograph above the
     first section and the first inline one are never back to back. */
 export const photoAfterSection = (i: number) => i >= 2 && (i - 2) % 3 === 0;
+
+/**
+ * The same tests applied to a strip of photographs: drop any that repeats one
+ * already shown on the page, or an earlier one in the strip. The service
+ * pages' gallery sections come straight from the archive and hold several
+ * frames of one job.
+ */
+export function dedupePhotos<T extends { file: string; alt: string }>(images: T[], already: { file: string; alt: string }[] = []): T[] {
+  const out: T[] = [];
+  for (const img of images) {
+    if ([...already, ...out].some((o) => o.file === img.file || sameShot(o.file, o.alt, img.file, img.alt))) continue;
+    out.push(img);
+  }
+  return out;
+}

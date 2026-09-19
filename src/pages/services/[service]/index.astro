@@ -16,7 +16,7 @@ import LinkRail from '../../../components/LinkRail.astro';
 import { guideLinksFor } from '../../../lib/guides';
 import { blogPostsFor } from '../../../lib/blog';
 import { galleryFor } from '../../../data/gallery';
-import { inlinePhotosFor } from '../../../lib/page-photos';
+import { inlinePhotosFor, dedupePhotos } from '../../../lib/page-photos';
 import { garageDoorSeal } from '../../../data/photos';
 import ExpertBlock from '../../../components/ExpertBlock.astro';
 import { liveServices, categories } from '../../../data/services';
@@ -72,7 +72,14 @@ const blogLinks = await blogPostsFor(path);
    returns the same list, so this is exactly what the rehype plugin placed. */
 const inlineUsed = new Set(inlinePhotosFor(path, String(entry?.data.title ?? '')).map((p) => p.file));
 const section = galleryFor(s.slug);
-const photos = section && { ...section, images: section.images.filter((img) => !inlineUsed.has(img.file)) };
+const inline = inlinePhotosFor(path, String(entry?.data.title ?? ''));
+const photoLead = servicePhotos[s.slug];
+const photos = section && {
+  ...section,
+  /* The strip drops what the text above already shows, and its own repeats:
+     the archive holds several frames of one job. */
+  images: dedupePhotos(section.images.filter((img) => !inlineUsed.has(img.file)), [...inline, ...(photoLead ? [photoLead] : [])]),
+};
 ---
 <BaseLayout
   videoKey={videoForService[s.slug]}
