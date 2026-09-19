@@ -831,6 +831,20 @@ export const garageDoorSeal: PhotoPair = {
     'The same door, the same morning. A garage door seal is the single most common way a rodent walks into a house in this county, and it is invisible from inside because the door still closes and still looks shut. Brush rather than rubber on a door this age: rubber needs a straight, undamaged edge to seal against, and a brush strip keeps working on an edge that has already been chewed.',
 };
 
+/* A clip that belongs to a SERVICE rather than to a species. The nest in this
+   one is an enclosed gray paper nest under an eave, and this site does not
+   separate those from footage — bald-faced hornets and aerial yellowjackets
+   both build them, a point the wasp page makes in prose. The owner called it a
+   yellowjacket nest and that is as far as the caption goes. */
+export const serviceClips: Record<string, { src: string; alt: string; caption: string }> = {
+  'wasp-control': {
+    src: '/video/yellowjacket-nest-under-a-barn-eave',
+    alt: 'A gray paper nest the size of a football built tight under the eave of a red metal barn, with wasps flying in and out around it against a blue sky',
+    caption:
+      'A yellowjacket nest under a barn eave, filmed before anything was done to it. Two things worth seeing here: the traffic, which is how a nest is found when the paper itself is hidden by the roofline, and the position — tucked under the overhang, out of the weather, on the sunny side. That is where they go on an outbuilding, and it is why checking eaves from a distance in August beats walking under them in September.',
+  },
+};
+
 /* --------------------------------------------------------------------------
  * SHORT CLIPS OF OUR OWN, keyed by pest slug.
  *
@@ -849,6 +863,18 @@ export const garageDoorSeal: PhotoPair = {
  * poster beside it, and a missing file fails the build like any other.
  */
 export const speciesClips: Record<string, { src: string; alt: string; caption: string }> = {
+  /* CARPENTER ANTS AND THEIR BROOD, 19 Sep 2026, the owner's video and his
+     reading of it: a satellite colony moving eggs and pupae after the wood was
+     opened. What is visible in the frame is the brood pile and the workers
+     carrying it, which is what the alt describes; "satellite colony" is his,
+     and it is the whole argument of this page — the pile is inside the
+     structure and the parent nest is usually outdoors. */
+  'carpenter-ant': {
+    src: '/video/carpenter-ants-moving-brood-in-opened-wood',
+    alt: 'Black carpenter ants swarming over a heap of white brood on opened wood, workers picking pieces up and carrying them away along the grain',
+    caption:
+      'Opened wood, and the colony moving its brood out of the light — the owner\'s footage of a satellite colony being disturbed. The white pile is the young, not eggs a homeowner would ever see intact, and it is the clearest sign that ants are living IN the wood rather than walking across it. Carpenter ants excavate galleries and move brood between them; a satellite colony indoors usually means a parent nest outdoors, which is why the work goes to the stump, the fence post or the wet framing rather than to the counter the trail crosses.',
+  },
   /* THATCHING ANTS, 19 Sep 2026, the owner's video and his identification, the
      same job as the still above it. Audio stripped like the others, and the
      source arrived slightly truncated, so the clip ends half a second early.

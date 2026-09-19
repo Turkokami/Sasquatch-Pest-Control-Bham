@@ -17,7 +17,8 @@ import { guideLinksFor } from '../../../lib/guides';
 import { blogPostsFor } from '../../../lib/blog';
 import { galleryFor } from '../../../data/gallery';
 import { inlinePhotosFor, dedupePhotos } from '../../../lib/page-photos';
-import { garageDoorSeal, ventGuard } from '../../../data/photos';
+import { garageDoorSeal, ventGuard, serviceClips } from '../../../data/photos';
+import Clip from '../../../components/Clip.astro';
 import ExpertBlock from '../../../components/ExpertBlock.astro';
 import { liveServices, categories } from '../../../data/services';
 import { townGroups } from '../../../lib/menus';
@@ -241,6 +242,8 @@ const photos = section && {
       <p class="prose">{ventGuard.caption}</p>
     </section>
   )}
+
+  {serviceClips[s.slug] && <Clip {...serviceClips[s.slug]} />}
 
   {photos && (
     <section data-boilerplate>
