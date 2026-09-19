@@ -57,6 +57,11 @@ const allSections: GallerySection[] = [
     key: 'stinging',
     title: 'Wasps, hornets and bees',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/yellowjacket-nest-in-a-shed-among-garden-tools.jpg', alt: 'A huge swirled yellowjacket nest built along the floor of a shed wall, grown up around a stored pipe and pressed against garden tools', width: 560, height: 315 },
+      { file: '/img/gallery/yellowjacket-nest-around-stored-lawn-equipment.jpg', alt: 'Close view of the same yellowjacket nest, its swirled tan paper grown around a gray pipe and spreading across the concrete floor of a shed', width: 560, height: 315 },
+      { file: '/img/gallery/yellowjacket-nest-taken-apart-after-removal.jpg', alt: 'The yellowjacket nest taken apart on a shed floor after removal, its layered paper envelope and stacked combs broken open', width: 560, height: 315 },
+      { file: '/img/gallery/yellowjacket-nest-debris-on-a-shed-floor.jpg', alt: 'Broken pieces of a large yellowjacket nest heaped on a concrete shed floor beside a lawn mower wheel after removal', width: 560, height: 315 },
       /* Owner's own, 19 Sep 2026, named by him as a yellowjacket nest. */
       { file: '/img/gallery/yellowjacket-nest-in-an-oak-tree.jpg', alt: 'A large gray paper yellowjacket nest hanging among the leaves of an oak tree against a pale sky', width: 560, height: 420 },
       /* Owner's own, 18 Sep 2026, each named by him. The garage gable nest was first
@@ -177,6 +182,9 @@ const allSections: GallerySection[] = [
     title: 'Crawlspaces',
     images: [
       /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/leak-staining-running-down-siding.jpg', alt: 'Brown streaks of water staining running down several courses of gray lap siding above a dryer vent', width: 560, height: 420 },
+      { file: '/img/gallery/staining-and-decay-at-the-bottom-of-siding.jpg', alt: 'Water staining running down gray siding to a darkened, decaying bottom edge where it meets the foundation, mulch and a hose below', width: 560, height: 420 },
+      /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/new-crawlspace-insulation-and-vapor-barrier.jpg', alt: 'New pink batt insulation held up between the floor joists with wire, over a fresh black vapor barrier, lit by headlamp', width: 560, height: 420 },
       { file: '/img/gallery/crawlspace-insulation-and-vapor-barrier-with-ductwork.jpg', alt: 'A long crawlspace with insulation between the joists, wrapped ductwork, posts on concrete piers and a black vapor barrier across the ground', width: 560, height: 420 },
       /* Owner's own, 18 Sep 2026: the crew treating crawlspace framing for powderpost beetles. */
@@ -204,6 +212,9 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/evan-friese-fitting-an-exhaust-vent-cover.jpg', alt: 'Evan Friese on a stepladder fitting a guarded exhaust vent cover to vinyl siding on a two-story house', width: 560, height: 747 },
+      { file: '/img/gallery/guarded-exhaust-vent-cover-on-siding.jpg', alt: 'A finished exhaust vent cover with a perforated metal guard, bolted over the vent on beige siding', width: 560, height: 420 },
       { file: '/img/gallery/bat-behind-an-attic-vent-screen.jpg', alt: 'A bat roosting behind the mesh screen of an attic vent on weathered gray siding', width: 560, height: 747 },
       /* Owner's own, 19 Sep 2026. House numbers on the gable-vent job are blurred. */
       { file: '/img/gallery/technician-on-a-ladder-screening-a-gable-vent.jpg', alt: 'A technician at the top of a tall green extension ladder screening the gable vent of a two-story green townhouse under a clear blue sky', width: 560, height: 995 },
@@ -273,6 +284,11 @@ const allSections: GallerySection[] = [
     title: 'The crew and the trucks',
     images: [
       /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/service-truck-at-a-community-building-alger-wa.jpg', alt: 'The wrapped Chevrolet Colorado parked on gravel beside a low community building and lawn in Alger under a gray sky', width: 560, height: 294 },
+      { file: '/img/gallery/service-truck-on-a-sunlit-road-alger-wa.jpg', alt: 'The wrapped Chevrolet Colorado with its ladder rack on a road near Alger, sunlit alders and firs behind', width: 560, height: 271 },
+      { file: '/img/gallery/three-service-trucks-in-front-of-cedars.jpg', alt: 'Three wrapped service trucks parked nose to tail in front of tall cedars under a clear blue sky', width: 560, height: 269 },
+      { file: '/img/gallery/kris-elling-ready-for-a-crawlspace-inspection.jpg', alt: 'Kristofer Elling in a cap with twin headlamps and a face mask, ready to go into a crawlspace, beside the wrapped truck', width: 560, height: 747 },
+      /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/bryce-carter-with-the-service-van.jpg', alt: 'Bryce Carter standing beside the wrapped van on the shore, the water and a forested headland behind him', width: 560, height: 420 },
       { file: '/img/gallery/service-truck-at-a-cabin-deming-wa.jpg', alt: 'The wrapped pickup parked below the wooden steps of a cabin among tall firs near Deming', width: 560, height: 420 },
       { file: '/img/gallery/service-truck-at-a-forest-cabin-in-the-foothills.jpg', alt: 'The wrapped pickup parked on gravel below two forest cabins in the Mount Baker foothills, a technician at the tailgate', width: 560, height: 420 },
@@ -323,6 +339,11 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/service-truck-above-bellingham-looking-to-the-islands.jpg', alt: 'The wrapped Chevrolet Colorado on a hillside street above Bellingham, the bay and the San Juan Islands behind under a stormy sky', width: 560, height: 245 },
+      { file: '/img/gallery/service-truck-at-lake-padden.jpg', alt: 'The wrapped Chevrolet Colorado in the Lake Padden parking lot, mist lifting off the lake and the forest behind', width: 560, height: 328 },
+      { file: '/img/gallery/service-truck-on-chuckanut-drive.jpg', alt: 'The wrapped Chevrolet Colorado at a pullout on Chuckanut Drive, Samish Bay and distant islands under a wide cloudy sky', width: 560, height: 286 },
+      { file: '/img/gallery/service-truck-above-lake-whatcom.jpg', alt: 'The wrapped Chevrolet Colorado on a wet driveway above Lake Whatcom, docks and lakeside houses along the shore below', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/service-truck-at-the-mt-baker-ski-area-sign.jpg', alt: 'The wrapped pickup parked in front of the Mt. Baker Ski Area stone sign and raven sculpture, tall firs behind', width: 560, height: 338 },
       { file: '/img/gallery/service-van-below-mount-shuksan.jpg', alt: 'The wrapped van at a high pullout on the Mount Baker Highway, a glaciered peak and forested ridges behind in summer haze', width: 560, height: 357 },

@@ -36,6 +36,22 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/yellowjacket-nest-in-a-shed-among-garden-tools.jpg': 'Un enorme nido de avispas chaqueta amarilla, de papel en espiral, construido al pie de la pared de un cobertizo, envolviendo un tubo guardado junto a herramientas de jardín',
+  '/img/gallery/yellowjacket-nest-around-stored-lawn-equipment.jpg': 'Vista cercana del mismo nido de avispas chaqueta amarilla, con su papel canela en espiral creciendo alrededor de un tubo gris y extendiéndose por el piso de concreto',
+  '/img/gallery/yellowjacket-nest-taken-apart-after-removal.jpg': 'El nido de avispas chaqueta amarilla desarmado en el piso de un cobertizo después de retirarlo, con la envoltura de papel en capas y los panales apilados abiertos',
+  '/img/gallery/yellowjacket-nest-debris-on-a-shed-floor.jpg': 'Trozos de un nido grande de avispas chaqueta amarilla amontonados en el piso de concreto de un cobertizo, junto a la rueda de una podadora, después de retirarlo',
+  '/img/gallery/service-truck-at-a-community-building-alger-wa.jpg': 'La Chevrolet Colorado rotulada estacionada en la grava junto a un edificio comunitario bajo y un pasto en Alger, bajo un cielo gris',
+  '/img/gallery/service-truck-on-a-sunlit-road-alger-wa.jpg': 'La Chevrolet Colorado rotulada con su portaescaleras en un camino cerca de Alger, con alisos y abetos iluminados por el sol detrás',
+  '/img/gallery/three-service-trucks-in-front-of-cedars.jpg': 'Tres camionetas de servicio rotuladas estacionadas en fila frente a cedros altos bajo un cielo azul despejado',
+  '/img/gallery/kris-elling-ready-for-a-crawlspace-inspection.jpg': 'Kristofer Elling con gorra de dos linternas frontales y mascarilla, listo para entrar a un sótano bajo, junto a la camioneta rotulada',
+  '/img/gallery/evan-friese-fitting-an-exhaust-vent-cover.jpg': 'Evan Friese en una escalera colocando una tapa protegida en la salida de un extractor, en el revestimiento de vinilo de una casa de dos pisos',
+  '/img/gallery/guarded-exhaust-vent-cover-on-siding.jpg': 'Una tapa de salida de extractor terminada, con rejilla de metal perforado, atornillada sobre la ventila en un revestimiento beige',
+  '/img/gallery/leak-staining-running-down-siding.jpg': 'Rayas cafés de manchas de agua bajando por varias hileras de revestimiento gris, sobre la salida de una secadora',
+  '/img/gallery/staining-and-decay-at-the-bottom-of-siding.jpg': 'Manchas de agua que bajan por un revestimiento gris hasta un borde inferior oscurecido y en descomposición donde se une con el cimiento, con mantillo y una manguera abajo',
+  '/img/gallery/service-truck-above-bellingham-looking-to-the-islands.jpg': 'La Chevrolet Colorado rotulada en una calle de ladera sobre Bellingham, con la bahía y las islas San Juan detrás bajo un cielo tormentoso',
+  '/img/gallery/service-truck-at-lake-padden.jpg': 'La Chevrolet Colorado rotulada en el estacionamiento del lago Padden, con la neblina levantándose del lago y el bosque detrás',
+  '/img/gallery/service-truck-on-chuckanut-drive.jpg': 'La Chevrolet Colorado rotulada en un mirador de Chuckanut Drive, con la bahía Samish y las islas a lo lejos bajo un cielo nublado',
+  '/img/gallery/service-truck-above-lake-whatcom.jpg': 'La Chevrolet Colorado rotulada en una entrada mojada sobre el lago Whatcom, con muelles y casas junto a la orilla abajo',
   '/img/gallery/new-crawlspace-insulation-and-vapor-barrier.jpg': 'Aislante rosa nuevo sujeto con alambre entre las vigas del piso, sobre una barrera de vapor negra nueva, iluminado con linterna frontal',
   '/img/gallery/crawlspace-insulation-and-vapor-barrier-with-ductwork.jpg': 'Un sótano bajo largo con aislante entre las vigas, ductos forrados, postes sobre bases de concreto y barrera de vapor negra en el suelo',
   '/img/gallery/rats-feeding-in-horse-stall-bedding.jpg': 'Dos ratas grises comiendo estiércol entre la viruta de la cama de una caballeriza, contra una pared de concreto',

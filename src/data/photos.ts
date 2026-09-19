@@ -449,6 +449,13 @@ export const locationPhotosSecond: Record<string, Photo> = {
     caption:
       'At a cabin near Deming. Out here the forest runs right up to the steps, so the edge of the woods is the edge of the house, and that is where the pressure comes from.',
   },
+  /* Owner's own, 19 Sep 2026, named by him as Alger. */
+  alger: {
+    file: '/img/work/service-truck-on-a-sunlit-road-alger-wa.jpg',
+    alt: 'The wrapped Chevrolet Colorado with its ladder rack parked on a road edge, sunlit alders and firs rising behind it under a clear sky',
+    caption:
+      'On the road near Alger. Houses out here back straight onto second-growth alder and fir, and that edge is where the mice, the carpenter ants and the wasps all come from.',
+  },
 };
 
 /** Whatcom County. See the note above on why this one county gets a photograph. */
