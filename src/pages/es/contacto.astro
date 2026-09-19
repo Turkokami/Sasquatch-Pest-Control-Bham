@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../lib/page-photos-es';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import LeadForm from '../../components/LeadForm.astro';
@@ -15,6 +17,8 @@ const S = t('es');
    español. El formulario se queda, con la advertencia encima. */
 const answer =
   `Puede comunicarse con Sasquatch Pest Control por teléfono o mensaje de texto al ${business.phone}, por correo electrónico a ${business.email}, o con el formulario de esta página. Estamos en ${a.street}, en ${a.locality}, y atendemos en horario de oficina los siete días de la semana. Hablamos español.`;
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/contacto/');
 ---
 <BaseLayout
   path={path}
@@ -38,6 +42,7 @@ const answer =
       Si prefiere que le atiendan en español, dígalo al principio de la llamada
       o escríbalo en su mensaje y así lo hacemos.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
 
     <h2>Nuestra dirección</h2>
     <p>{a.street}<br />{a.locality}, {a.region} {a.postalCode}</p>

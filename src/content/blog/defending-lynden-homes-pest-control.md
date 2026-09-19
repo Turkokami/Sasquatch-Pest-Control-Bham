@@ -30,8 +30,8 @@ rather than after it.
 
 ## Promoting health and hygiene
 
-Pests compromise health and hygiene in a house, particularly rodents and
-cockroaches in kitchens, pantries and crawlspaces. Professional pest control
+Pests compromise health and hygiene in a house, particularly cockroaches in
+kitchens and pantries and rodents in crawlspaces. Professional pest control
 helps maintain a clean and healthy environment and reduces the exposure that
 comes with an established infestation.
 

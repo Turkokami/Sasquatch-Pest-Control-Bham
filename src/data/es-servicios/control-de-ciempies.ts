@@ -19,7 +19,7 @@ export const controlDeCiempies: EsServicio = {
       h2: '¿Qué los distingue?',
       parrafos: [
         'Son animales muy distintos con el mismo mensaje. El ciempiés es depredador: un par de patas por segmento, cuerpo aplanado, rápido, y con las patas de adelante modificadas para inyectar veneno a su presa. Caza insectos y otros invertebrados. El milpiés come materia vegetal que se pudre: dos pares de patas por segmento, cuerpo redondo, lento, y se enrolla en espiral cuando lo molestan. Es completamente inofensivo.',
-        'Ninguno de los dos daña la estructura, la comida, la ropa ni los muebles. Ninguno se reproduce bien en una casa seca y con calefacción. Y los dos necesitan humedad constante, por eso encontrarlos quiere decir que algo en el edificio o en el terreno está guardando agua. En este condado eso los pone en la misma lista que el pececillo de plata, la tijerilla, la cucaracha oriental y la hormiga de humedad: plagas cuyo mensaje real es de humedad.',
+        'Ninguno de los dos daña la estructura, la comida, la ropa ni los muebles. Ninguno se reproduce bien en una casa seca y con calefacción. Y los dos necesitan humedad constante, por eso encontrarlos quiere decir que algo en el edificio o en el terreno está guardando agua. En este condado eso los pone en la misma lista que el pececillo de plata, la tijerilla y la hormiga de humedad: plagas cuyo mensaje real es de humedad.',
       ],
     },
     {

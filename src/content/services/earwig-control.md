@@ -272,8 +272,7 @@ because the advice runs against standard landscaping practice.
 Bark mulch does exactly what it is meant to: it holds moisture in the soil and
 moderates temperature. Held against a building it also creates a permanently damp,
 dark, insulated strip at ground level directly against the siding — which is
-precisely the habitat earwigs, sowbugs, pillbugs, millipedes and Oriental
-cockroaches all require.
+precisely the habitat earwigs, sowbugs, pillbugs and millipedes all require.
 
 Landscapers install it to the wall because it looks finished. Nobody is doing
 anything wrong; the consequence is simply not part of the design conversation.
@@ -368,10 +367,9 @@ than as a control method for a house.
 ## Related work
 
 Because this is a moisture and perimeter problem, it overlaps with
-[silverfish](/services/silverfish-control/),
-[centipedes and millipedes](/services/centipede-control/) and Oriental
-[cockroaches](/services/cockroach-control/) — all of which live in the same damp
-band around a building. The durable fixes are
+[silverfish](/services/silverfish-control/) and
+[centipedes and millipedes](/services/centipede-control/) — both of which live
+in the same damp band around a building. The durable fixes are
 [exclusion and repairs](/services/exclusion-and-repairs/) and, where the
 crawlspace is the reservoir,
 [crawlspace cleanout and restoration](/services/crawlspace-restoration/).

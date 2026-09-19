@@ -51,9 +51,9 @@ across a long gray season. The framing above never fully dries.
 
 Everything moisture-driven follows. Moisture ants colonize wood that has
 softened. Decay fungus runs where it stays wet, and decay rather than insects is
-what actually costs structural capacity here. Sowbugs, millipedes, springtails,
-silverfish and Oriental cockroaches live in the damp and occasionally come up
-into the house through a gap around a pipe.
+what actually costs structural capacity here. Sowbugs, millipedes, springtails
+and silverfish live in the damp and occasionally come up into the house through
+a gap around a pipe.
 
 The correction is not a treatment. It is a sound vapor barrier over clean
 ground, drainage that takes roof water away from the foundation rather than into

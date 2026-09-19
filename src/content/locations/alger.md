@@ -194,8 +194,7 @@ find them the useful conversation is about the drainage and the system, not
 about an application.
 
 The wider damp-building list follows the same logic. Sowbugs, millipedes,
-springtails, silverfish and Oriental cockroaches in a crawlspace are all
-reporting moisture. Moisture ants in framing mean the wood is already wet and
+springtails and silverfish in a crawlspace are all reporting moisture. Moisture ants in framing mean the wood is already wet and
 already decaying, and treating them without correcting the water produces a new
 colony in the same timber.
 
@@ -251,8 +250,8 @@ continuously, in a climate that supplies plenty.
 That single condition drives most of what people call us about. Moisture ants
 colonize framing that has softened. Decay fungus runs where the wood stays wet,
 and decay rather than insects is what actually costs structural capacity here.
-Sowbugs, millipedes, springtails and Oriental cockroaches live in the damp and
-occasionally come up into the house. Rodents nest in insulation that is hanging
+Sowbugs, millipedes and springtails live in the damp and occasionally come up
+into the house. Rodents nest in insulation that is hanging
 loose because it absorbed moisture and lost its grip.
 
 So a proper visit means going under with a light — on our back if that is what

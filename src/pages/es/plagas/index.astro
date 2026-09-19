@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../lib/page-photos-es';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
@@ -39,6 +41,8 @@ const faqs = [
     a: 'Sí, pero no las subterráneas agresivas que dominan el tratamiento en el sur. Aquí la común es la termita de madera húmeda del Pacífico, que ataca madera que ya está mojada, así que el problema de fondo casi siempre es una fuente de humedad.',
   },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/plagas/');
 ---
 <BaseLayout
   path={path}
@@ -76,6 +80,7 @@ const faqs = [
       condado. Esta cubre lo que nuestros técnicos de verdad encuentran aquí,
       con los tiempos de temporada de aquí.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
 
     <h2>Tres cosas que conviene saber sobre las plagas de aquí</h2>
     <p>
@@ -126,6 +131,7 @@ const faqs = [
       en la noche. <strong>Pronto:</strong> lo que quiera sellado antes del
       otoño, porque la ventana para la exclusión es agosto y se llena.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} lang="es" />}
     <p>
       Cada ficha dice de dónde viene lo que afirma — el Departamento de Salud
       del estado, la extensión de WSU — y cuándo se consultó; las fuentes están

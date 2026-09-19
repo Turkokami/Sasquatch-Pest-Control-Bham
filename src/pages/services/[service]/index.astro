@@ -16,6 +16,7 @@ import LinkRail from '../../../components/LinkRail.astro';
 import { guideLinksFor } from '../../../lib/guides';
 import { blogPostsFor } from '../../../lib/blog';
 import { galleryFor } from '../../../data/gallery';
+import { inlinePhotosFor } from '../../../lib/page-photos';
 import { garageDoorSeal } from '../../../data/photos';
 import ExpertBlock from '../../../components/ExpertBlock.astro';
 import { liveServices, categories } from '../../../data/services';
@@ -66,7 +67,12 @@ const blogLinks = await blogPostsFor(path);
 
 /* Six of the nine gallery sections belong to a service spoke. See the note in
    src/data/gallery.ts on why they attach here rather than becoming pages. */
-const photos = galleryFor(s.slug);
+/* The strip leaves out whatever the text above already shows (the inline
+   photographs, src/lib/page-photos.ts) — the same picker with the same inputs
+   returns the same list, so this is exactly what the rehype plugin placed. */
+const inlineUsed = new Set(inlinePhotosFor(path, String(entry?.data.title ?? '')).map((p) => p.file));
+const section = galleryFor(s.slug);
+const photos = section && { ...section, images: section.images.filter((img) => !inlineUsed.has(img.file)) };
 ---
 <BaseLayout
   videoKey={videoForService[s.slug]}

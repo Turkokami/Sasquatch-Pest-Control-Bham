@@ -1,4 +1,7 @@
 ---
+import InlinePhoto from '../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../lib/page-photos-es';
+import { photoForSection } from '../../../lib/page-photos';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { serviceGroups } from '../../../lib/menus';
 import AnswerBox from '../../../components/AnswerBox.astro';
@@ -25,6 +28,8 @@ const S = t('es');
 const rails = esServicios
   .filter((o) => o.slug !== s.slug)
   .map((o) => ({ href: `/es/servicios/${o.slug}/`, label: o.h1.replace(/ en Bellingham.*$/i, '') }));
+/* Photographs through the text, the English twin's (owner, 19 Sep 2026). */
+const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
   path={path}
@@ -58,10 +63,15 @@ const rails = esServicios
   ]} />
 
   <div class="prose">
-    {s.secciones.map((sec) => (
+    {s.secciones.map((sec, i) => (
       <>
         <h2>{sec.h2}</h2>
-        {sec.parrafos.map((p) => <p>{p}</p>)}
+        {sec.parrafos.map((p, j) => (
+          <>
+            <p>{p}</p>
+            {j === 0 && photoForSection(fotos, i) && <InlinePhoto photo={photoForSection(fotos, i)!} lang="es" />}
+          </>
+        ))}
       </>
     ))}
 

@@ -38,9 +38,8 @@ the evidence.
 
 In Whatcom County that puts silverfish alongside
 [moisture ants](/services/ant-control/),
-[dampwood termites](/services/termite-control/), anobiid beetles and Oriental
-cockroaches on the same list — a group of pests that are really telling you about
-water. Roughly thirty-five inches of rain a year across a long gray season, and
+[dampwood termites](/services/termite-control/) and anobiid beetles on the same
+list — a group of pests that are really telling you about water. Roughly thirty-five inches of rain a year across a long gray season, and
 crawlspaces that are frequently unsealed, is the whole explanation.
 
 ## What you are looking at
@@ -398,8 +397,7 @@ the water heater rather than under the floor.
 The real work is usually
 [crawlspace cleanout and restoration](/services/crawlspace-restoration/) and
 [exclusion and repairs](/services/exclusion-and-repairs/). The same moisture
-supports [moisture ants](/services/ant-control/),
-[dampwood termites and wood-boring beetles](/services/termite-control/) and
-Oriental [cockroaches](/services/cockroach-control/), so a silverfish finding
-frequently comes with company. If your damage is to wool, fur or feathers rather
+supports [moisture ants](/services/ant-control/) and
+[dampwood termites and wood-boring beetles](/services/termite-control/), so a
+silverfish finding frequently comes with company. If your damage is to wool, fur or feathers rather
 than paper, that is [moth control](/services/moth-control/) instead.

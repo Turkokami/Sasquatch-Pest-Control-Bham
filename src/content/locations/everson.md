@@ -264,9 +264,8 @@ than anything responding to cold. There is no brown recluse here and never has
 been. Exterior lighting does more to create a spider problem than most people
 realize, because it concentrates the insects the spiders are eating.
 
-Silverfish, sowbugs, millipedes and Oriental cockroaches all belong to the damp
-crawlspace rather than to the house, and every one of them is telling you about
-moisture. On river-adjacent property that message is usually worth acting on.
+Silverfish, sowbugs and millipedes all belong to the damp crawlspace rather
+than to the house, and every one of them is telling you about moisture. On river-adjacent property that message is usually worth acting on.
 
 ## Stored-product insects on a farm property
 

@@ -249,8 +249,8 @@ moisture for years.
 Everything moisture-driven follows from that. Moisture ants colonize framing
 that has softened. Decay fungus runs where the wood stays wet, and decay rather
 than insects is what actually costs structural capacity in this climate.
-Sowbugs, millipedes, springtails and Oriental cockroaches live in the damp end
-and occasionally come up into the house. Dampwood termites need exactly these
+Sowbugs, millipedes and springtails live in the damp end and occasionally come
+up into the house. Dampwood termites need exactly these
 conditions and nothing else.
 
 The corrections are drainage and grading work more than pest work: getting roof

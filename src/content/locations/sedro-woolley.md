@@ -70,8 +70,8 @@ thimble. Each drilled generously by whoever was doing that job on that day, and
 essentially none of them sealed.
 
 The pests follow from that list without much mystery. Norway rats and house mice under the floor and inside the walls. Carpenter and moisture ants in framing that has
-taken water. Sowbugs, millipedes, springtails, silverfish and Oriental
-cockroaches in the damp space underneath, every one of which is reporting a
+taken water. Sowbugs, millipedes, springtails and silverfish
+in the damp space underneath, every one of which is reporting a
 moisture condition rather than being a problem in its own right.
 
 The correct work is structural. Seal the envelope, screen the vents with

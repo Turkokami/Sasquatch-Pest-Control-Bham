@@ -41,8 +41,7 @@ water.
 
 In this county that puts them on the same list as
 [silverfish](/services/silverfish-control/),
-[earwigs](/services/earwig-control/), Oriental
-[cockroaches](/services/cockroach-control/) and
+[earwigs](/services/earwig-control/) and
 [moisture ants](/services/ant-control/) — a group of pests whose real message is
 about damp.
 

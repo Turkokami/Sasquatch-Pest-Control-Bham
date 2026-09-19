@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
@@ -47,6 +49,8 @@ const faqs = [
     a: 'New writing on this site goes into the guides and the service pages rather than here, because that is where it is most useful — a guide to what a landlord owes a tenant under Washington law is worth more to somebody than a seasonal post about spiders. The blog is maintained as an archive rather than grown.',
   },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/blog/');
 ---
 <BaseLayout
   path={path}
@@ -87,6 +91,7 @@ const faqs = [
       search for them, and a fair number of them are useful writing about how
       pests actually behave in this corner of Washington.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
     <p>
       What we did not do is republish them as though they were new. That
       distinction matters more than it might sound. An article written several
@@ -133,6 +138,7 @@ const faqs = [
       carpenter ants or sugar ants, an older post here may well tell you as
       well as anything we have written since.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
     <p>
       New writing goes into the guides and the service pages now rather than
       into the blog. That is a deliberate choice about where effort is best

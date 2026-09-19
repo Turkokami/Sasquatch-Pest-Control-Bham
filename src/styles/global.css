@@ -1906,6 +1906,52 @@ footer.site .colophon {
   max-width: 58ch;
 }
 
+/* PHOTOGRAPHS THROUGH THE TEXT (owner, 19 Sep 2026): "break up the long runs
+   of just text." Placed by src/lib/rehype-inline-photos.ts on English pages
+   and by the Spanish templates, after the first paragraph of every third
+   section. Full width on a phone, where a float would leave a column of two
+   words beside it; beside the text from 44rem, where the reading column is
+   wide enough to share. No caption: the alt describes the photograph, and a
+   caption repeated across many pages would read as boilerplate. The prose
+   container contains its floats, so a photograph near the end of the text
+   never slides into the FAQ below it. */
+.prose {
+  display: flow-root;
+}
+.inline-photo {
+  margin: var(--space-3) 0;
+}
+.inline-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  background: var(--well);
+}
+/* A portrait photograph at full phone width is a whole screen of picture —
+   measured at 390px, one of them ran 780px tall and pushed every word off the
+   display. Capped by height and centered instead, which crops nothing. */
+@media (max-width: 43.99rem) {
+  .inline-photo img {
+    max-height: 58vh;
+    width: auto;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+}
+@media (min-width: 44rem) {
+  .inline-photo {
+    float: right;
+    width: 46%;
+    margin: 0.35rem 0 var(--space-2) var(--space-3);
+  }
+}
+@media print {
+  .inline-photo {
+    display: none;
+  }
+}
+
 /* ---------------------------------------------------- §21  awards & press */
 
 /* Sixteen badges from sixteen issuers: 225×225 to 900×1926, on white, on

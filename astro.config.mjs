@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import rehypeInlinePhotos from './src/lib/rehype-inline-photos.ts';
 
 /**
  * Keystone Part 7A. Static output, trailing slashes always, explicit site so
@@ -18,5 +19,8 @@ export default defineConfig({
      response carries everything needed to paint. */
   build: { format: 'directory', inlineStylesheets: 'always' },
   compressHTML: true,
+  /* Photographs through the body of every long English page (owner,
+     19 Sep 2026). See src/lib/page-photos.ts for how they are chosen. */
+  markdown: { rehypePlugins: [rehypeInlinePhotos] },
   devToolbar: { enabled: false },
 });

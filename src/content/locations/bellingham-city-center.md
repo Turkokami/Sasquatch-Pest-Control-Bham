@@ -154,9 +154,9 @@ anybody who goes and looks — and the reason a proper first survey downtown tak
 longer than people expect. A great deal of the useful information is in a space
 nobody has properly examined in years.
 
-Damp basements bring their own list: silverfish, sowbugs, springtails and
-Oriental cockroaches, all of which are reporting a moisture condition rather
-than being problems in their own right. Where a basement is genuinely wet, the
+Damp basements bring their own list: silverfish, sowbugs and springtails, all
+of which are reporting a moisture condition rather than being problems in their
+own right. Where a basement is genuinely wet, the
 durable answer is drainage rather than repeated treatment, and we would rather
 say so.
 

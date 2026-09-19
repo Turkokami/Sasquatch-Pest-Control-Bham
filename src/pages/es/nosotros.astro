@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../lib/page-photos-es';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import QuickNav from '../../components/QuickNav.astro';
@@ -26,6 +28,8 @@ const answer =
   `Sasquatch Pest Control es una empresa familiar de control de plagas y exclusión en ${business.address.locality}, Washington, fundada por Kristofer Elling. Trabajamos nuestras propias rutas en el condado de Whatcom en lugar de despachar desde un centro de llamadas regional, y todo tratamiento que hacemos está respaldado por nuestra Garantía de Servicio 100 %.`;
 
 const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-control');
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/nosotros/');
 ---
 <BaseLayout
   path={path}
@@ -57,6 +61,7 @@ const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-c
       movimiento de roedores a lo largo del río empieza tres semanas antes que
       en la ciudad.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
     <p>
       Todo trabajo empieza por identificar, porque eso decide todo lo que
       sigue. La hormiga carpintera y la hormiga de humedad piden respuestas
@@ -97,6 +102,7 @@ const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-c
         ? ' Esa visita no se cobra, porque cobrar por la conversación le da a una empresa una razón para encontrar algo en ella. Hay una sola excepción y preferimos nombrarla aquí: en chinches de cama la visita de verificación tiene costo, y se descuenta del tratamiento si sigue adelante, porque confirmar una población activa es una hora de revisión cuidadosa y un error en cualquier dirección le cuesta mucho más que la visita.'
         : ' Esa visita no se cobra, porque cobrar por la conversación le da a una empresa una razón para encontrar algo en ella.'}
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} lang="es" />}
     <p>
       Esa primera visita es una evaluación antes del servicio: alguien que
       averigua qué tiene usted y qué haría falta para atenderlo. No la

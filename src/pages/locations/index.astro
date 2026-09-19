@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../../lib/page-photos';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import QuickNav from '../../components/QuickNav.astro';
@@ -45,6 +47,8 @@ const faqs = [
     a: 'Travel is built into our normal pricing across the areas listed on this page. If an address sits outside the routes we run, we will say so before scheduling rather than adding a surcharge later.',
   },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/locations/');
 ---
 <BaseLayout
   path={path}
@@ -105,6 +109,7 @@ const faqs = [
       We run four distinctly different kinds of job here, and which one you get
       depends almost entirely on your address.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
 
     <h3>The city, and its two housing stocks</h3>
     <p>
@@ -148,6 +153,7 @@ const faqs = [
       through a wet Whatcom winter is an invitation, and a good share of our
       spring calls out there are for something that moved in during December.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
 
     <h3>The lake and forest edge</h3>
     <p>

@@ -127,9 +127,9 @@ utility penetrations, each drilled oversize and none of them ever sealed.
 
 The pests follow directly. Norway rats and house mice in the crawl and the
 walls. Carpenter and moisture ants in any framing that has taken water. The
-damp-crawl company underneath — sowbugs, millipedes, springtails, silverfish and
-Oriental cockroaches — all of which are reporting a moisture condition rather
-than being a problem in their own right.
+damp-crawl company underneath — sowbugs, millipedes, springtails and silverfish
+— all of which are reporting a moisture condition rather than being a problem in
+their own right.
 
 The correct work is structural: sealing the envelope, screening the vents
 properly with material that will last, and closing the penetrations. Treatment
@@ -241,10 +241,10 @@ webbing, dealing with the harborage under decks and in crawl vents, correcting
 exterior lighting that concentrates the insects the spiders are eating, and
 sealing the door sweeps and thresholds most of them use to get in.
 
-## Cockroaches, and which one you have
+## Cockroaches, and where they actually live
 
-Two very different insects get the same name, and the treatments are not
-interchangeable.
+Worth being specific about, because the treatment only works where the insects
+actually are.
 
 German cockroaches are indoor and human-associated. They travel in cardboard,
 appliances and kitchen equipment, they breed quickly, and they are concentrated
@@ -252,9 +252,10 @@ in food service and multi-unit housing. In a building with shared structure they
 need a coordinated, building-level plan — treating one unit while the neighbors
 go untreated moves the population rather than reducing it.
 
-Oriental cockroaches are a damp-crawlspace insect. They spend their lives outdoors and under floors, arrive through drains and crawl vents, and are telling you about damp rather than about housekeeping. In the older low-lying housing here they
-are common for exactly that reason, and the durable answer is drainage and a
-sound vapor barrier rather than repeated interior treatment.
+They are a kitchen, bathroom and appliance-void insect rather than something
+that comes up from under the floor, so an insect found only in a damp crawlspace
+is a different job, and in the older low-lying housing here that is worth
+checking before anyone treats a kitchen.
 
 Getting the identification right first is the cheapest thing we do on the visit.
 

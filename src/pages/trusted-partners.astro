@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../lib/page-photos';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import Faq from '../components/Faq.astro';
@@ -123,6 +125,8 @@ const rails = [
   { href: '/about/', label: 'Our licenses and our crew' },
   { href: '/contact/', label: 'Get in touch' },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/trusted-partners/');
 ---
 
 <BaseLayout
@@ -154,6 +158,7 @@ const rails = [
       a job falls outside what Sasquatch Pest Control does. If a company on
       this page ever stops meeting that standard, it comes off.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
     <p>
       That is why the local list is one name long rather than twenty. A page of
       twenty referrals is a directory, and a directory nobody vetted is worth
@@ -184,6 +189,7 @@ const rails = [
       gutter cleaning and downspout clearing, roof cleaning, moss removal,
       pressure washing, house washing and solar panel cleaning.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
     <p>
       <b>Why we send people to them.</b> Pest work and exterior cleaning run
       into each other constantly, and the overlap is not incidental. Spider

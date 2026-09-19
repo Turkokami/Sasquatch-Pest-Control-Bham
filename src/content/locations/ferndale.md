@@ -86,9 +86,9 @@ shared between tenants who each assume it is somebody else's problem.
 Older Ferndale houses also carry the region's other classic issue, which is that
 the ground drains poorly and always has. Marine clay under a shallow crawlspace
 means standing water in winter, and standing water under a house means the whole
-moisture-driven cast: moisture ants, sowbugs, millipedes, Oriental cockroaches,
-springtails and, over time, decay in the joists that turns a pest call into a
-structural conversation.
+moisture-driven cast: moisture ants, sowbugs, millipedes, springtails and, over
+time, decay in the joists that turns a pest call into a structural
+conversation.
 
 ## The river, and why it moves the calendar
 

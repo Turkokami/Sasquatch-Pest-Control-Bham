@@ -10,6 +10,8 @@
  * building stock — all of which genuinely transfer — and it says plainly where
  * our routes are newer. Do not pad it with invented local specifics.
  */
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../../lib/page-photos';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { serviceGroups } from '../../lib/menus';
 import AnswerBox from '../../components/AnswerBox.astro';
@@ -52,6 +54,8 @@ const faqs = [
     a: 'We do not add a distance surcharge inside the areas listed on this page. What distance changes is scheduling rather than price. If an address sits outside where we genuinely run, we will say so before booking instead of adding travel to the bill afterwards.',
   },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/locations/skagit-county/');
 ---
 <BaseLayout
   path={path}
@@ -98,6 +102,7 @@ const faqs = [
       genuinely different is the scale of the farm ground and the size of the
       retail and commercial corridor around Burlington.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
 
     <h2>The valley, which is the defining feature</h2>
     <p>
@@ -133,6 +138,7 @@ const faqs = [
       drainage system that manages it runs through much of the county's populated
       ground.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
     <p>
       From our side of the work, a dike is a linear habitat corridor with
       excellent cover, running for miles, immediately adjacent to buildings.
@@ -187,8 +193,8 @@ const faqs = [
     <p>
       That combination produces the classic Pacific Northwest list: carpenter
       ants and moisture ants in softened framing, rodents with an unobstructed
-      route from the crawl to the attic, and the damp-crawl cast of sowbugs,
-      millipedes and Oriental cockroaches underneath. As everywhere, the useful
+      route from the crawl to the attic, and the damp-crawl cast of sowbugs and
+      millipedes underneath. As everywhere, the useful
       work is structural — sealing the envelope, screening the vents, closing the
       penetrations — rather than repeated interior treatment.
     </p>
@@ -260,7 +266,7 @@ const faqs = [
       storms, so wood stays damp. That second fact drives most of what we get
       called about: dampwood termites need wet wood, moisture ants need wet wood,
       carpenter ants prefer wood that has begun to soften, and silverfish,
-      sowbugs, millipedes and Oriental cockroaches are all humidity-driven.
+      sowbugs and millipedes are all humidity-driven.
     </p>
     <p>
       It also means the rodent calendar runs on water rather than temperature.

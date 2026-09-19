@@ -7,6 +7,9 @@
  * y el grupo al que pertenece. Aquí solo vive el texto. Un módulo español que
  * nombra una guía que el inglés no publica es un error de compilación.
  */
+import InlinePhoto from '../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../lib/page-photos-es';
+import { photoForSection } from '../../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
@@ -42,6 +45,8 @@ const entries = await getCollection('guides');
 const hermanos = esGuias
   .filter((o) => o.slug !== e.slug && entries.find((g) => g.slug === o.guide)?.data.cluster === d.cluster)
   .map((o) => ({ href: esGuiaPath(o), label: o.nav }));
+/* Photographs through the text, the English twin's (owner, 19 Sep 2026). */
+const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
   path={path}
@@ -66,10 +71,15 @@ const hermanos = esGuias
   <QuickNav />
 
   <div class="prose">
-    {e.secciones.map((sec) => (
+    {e.secciones.map((sec, i) => (
       <>
         <h2>{sec.h2}</h2>
-        {sec.parrafos.map((p) => <p>{p}</p>)}
+        {sec.parrafos.map((p, j) => (
+          <>
+            <p>{p}</p>
+            {j === 0 && photoForSection(fotos, i) && <InlinePhoto photo={photoForSection(fotos, i)!} lang="es" />}
+          </>
+        ))}
         {sec.cita && (
           <>
             <blockquote lang="en"><p>{sec.cita.en}</p></blockquote>

@@ -1,4 +1,7 @@
 ---
+import InlinePhoto from '../../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../../lib/page-photos-es';
+import { photoForSection } from '../../../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { serviceGroups, neighborhoodGroups } from '../../../../lib/menus';
@@ -55,6 +58,8 @@ const svc = liveServices()
     return es && label ? { href: es, label } : null;
   })
   .filter((x): x is { href: string; label: string } => !!x);
+/* Photographs through the text, the English twin's (owner, 19 Sep 2026). */
+const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
   path={path}
@@ -100,10 +105,15 @@ const svc = liveServices()
   <LocationMap place={`${n.name}, ${town.name}`} label={`${l.nombre}, ${town.name}`} />
 
   <div class="prose">
-    {l.secciones.map((sec) => (
+    {l.secciones.map((sec, i) => (
       <>
         <h2>{sec.h2}</h2>
-        {sec.parrafos.map((p) => <p>{p}</p>)}
+        {sec.parrafos.map((p, j) => (
+          <>
+            <p>{p}</p>
+            {j === 0 && photoForSection(fotos, i) && <InlinePhoto photo={photoForSection(fotos, i)!} lang="es" />}
+          </>
+        ))}
       </>
     ))}
   </div>

@@ -13,18 +13,17 @@ export const controlDeCucarachas: EsServicio = {
   h1: 'Control de Cucarachas en Bellingham y el Condado de Whatcom',
   title: 'Control de Cucarachas en Bellingham, WA',
   description:
-    'Control de cucarachas en Bellingham y el condado de Whatcom: cucaracha alemana con cebo, cucaracha oriental con control de humedad. Llame al 360-410-2199.',
+    'Control de cucarachas en Bellingham y el condado de Whatcom: la cucaracha alemana se controla con cebo y paciencia, no con aerosoles. Llame al 360-410-2199.',
   answer:
-    'Cuál cucaracha tiene lo decide todo. La alemana se reproduce adentro, pasa de un departamento a otro y resiste casi todos los aerosoles, así que pide cebo y paciencia. La oriental es un problema de espacio bajo el piso húmedo y casi siempre se arregla con la humedad. Identificamos antes de tratar, porque las dos piden lo contrario.',
+    'En el condado de Whatcom la que importa es la alemana. Vive adentro, se reproduce rápido, pasa de un departamento a otro y resiste casi todos los aerosoles, así que pide cebo y paciencia. No es un insecto del espacio bajo el piso ni de la humedad: llega en aparatos, cartón y muebles usados. Cuente con más de una visita.',
   secciones: [
     {
       h2: '¿Cuál cucaracha tengo?',
       parrafos: [
-        'En el condado de Whatcom importan dos, y piden trabajos opuestos. Equivocarse cuesta meses.',
-        'La cucaracha alemana es chica, café claro, con dos rayas oscuras a lo largo del escudo detrás de la cabeza. Es la que importa. Vive completamente adentro, se reproduce rápido, se concentra en cocinas y baños, y en los edificios de varias unidades pasa de un departamento a otro. Una infestación de alemana es una infestación de verdad y no se va sola.',
-        'La cucaracha oriental es más grande, más oscura, casi negra, y notablemente más lenta; aquí a veces le dicen "chinche de agua". Vive en lugares húmedos — espacios bajo el piso, sótanos, alrededor de coladeras, debajo de terrazas y en la hojarasca — y se mete cuando afuera está menos cómodo. No forma poblaciones que se reproduzcan en una cocina seca como la alemana.',
+        'En el condado de Whatcom la que importa es la cucaracha alemana, y el tratamiento solo funciona si va dirigido a donde de verdad vive. Equivocarse cuesta meses.',
+        'La cucaracha alemana es chica, café claro, con dos rayas oscuras a lo largo del escudo detrás de la cabeza. Es la que importa. Vive completamente adentro, se reproduce rápido, se concentra en cocinas y baños, y en los edificios de varias unidades pasa de un departamento a otro. Una infestación de alemana es una infestación de verdad y no se va sola. No es un insecto del espacio bajo el piso ni de la humedad: llega en aparatos, cartón, el mandado y muebles usados, y se queda donde vive la gente.',
         'La cucaracha americana, grande y café rojiza, está ligada a drenajes y coladeras comerciales. Existe aquí, pero mucho menos que en las partes calientes del país, y casi siempre es un asunto comercial.',
-        'La diferencia práctica: una cucaracha chica con rayas en su cocina es un problema urgente que pide cebo. Una grande y oscura en el espacio bajo el piso es un problema de humedad que pide secar. Tratar una como la otra falla.',
+        'Lo práctico: una cucaracha chica con rayas en su cocina es un problema urgente que pide cebo. Una cucaracha que solo aparece en el espacio bajo el piso, en el sótano o afuera merece una foto clara antes de tratar nada, porque la alemana vive adentro.',
       ],
     },
     {
@@ -58,14 +57,6 @@ export const controlDeCucarachas: EsServicio = {
       ],
     },
     {
-      h2: '¿Y la cucaracha oriental?',
-      parrafos: [
-        'Si lo que tiene es grande, oscura y lenta, en el espacio bajo el piso, un sótano, la cochera o junto a una coladera, la conversación cambia por completo. Esta vive de la humedad: está afuera y en huecos húmedos, come materia orgánica que se pudre, y se mete cuando las condiciones la empujan. En este condado eso quiere decir el otoño, cuando empieza la lluvia, y de vez en cuando una racha seca en verano.',
-        'Así que el tratamiento casi no es tratamiento. Corregir la humedad del espacio bajo el piso, limpiar canaletas y hacer que las bajadas descarguen lejos del cimiento, sellar las rendijas y rejillas por donde entran, apartar la hojarasca y la corteza de jardín del edificio y atender el agua estancada hace más que cualquier rociado en el perímetro. Es el mismo argumento que el de la hormiga de humedad y el de la termita de madera húmeda, y muchas veces el mismo espacio bajo el piso.',
-        'Casi todo lo que encontramos alrededor del lago Whatcom — Sudden Valley, Silver Beach, Edgemoor — es oriental y no alemana, ligado a la humedad del espacio bajo el piso y a la hojarasca contra el cimiento. Ahí el arreglo es secar el espacio, no tratar la casa.',
-      ],
-    },
-    {
       h2: '¿Qué pasa en departamentos?',
       parrafos: [
         'La razón más común de que un trabajo de alemana fracase es que el alcance fue un solo departamento. Viajan por los huecos de pared, los ductos de plomería y las corridas eléctricas, así que la unidad que se queja muchas veces no es donde está el centro de la población. Tratarla mientras las de arriba, abajo y a los lados quedan sin tocar empuja a los insectos de lado, y en unas semanas se queja el departamento siguiente, y luego otra vez el primero. En una infestación seria, el alcance honesto incluye revisar las unidades de junto y casi siempre tratarlas.',
@@ -81,7 +72,7 @@ export const controlDeCucarachas: EsServicio = {
     {
       h2: '¿Cómo trabajamos, y cuánto tarda?',
       parrafos: [
-        'Identificamos: alemana u oriental. Encontramos los escondites: los huecos de los aparatos, las esquinas de los gabinetes, las tuberías, y en un edificio las rutas compartidas; ponemos monitores donde sospechamos actividad para saber dónde está de verdad la población y no solo dónde se vio. Colocamos el cebo en muchos puntos chicos en vez de pocos grandes, en los espacios apretados que de verdad usan, y agregamos un regulador de crecimiento donde se justifica, para cortar el ciclo de reproducción. Nada de repelente encima del cebo. Le dejamos por escrito lo que toca de su lado, y damos seguimiento. Con la oriental el orden es otro: humedad y exclusión primero, perímetro después.',
+        'Identificamos qué es y dónde se está reproduciendo. Encontramos los escondites: los huecos de los aparatos, las esquinas de los gabinetes, las tuberías, y en un edificio las rutas compartidas; ponemos monitores donde sospechamos actividad para saber dónde está de verdad la población y no solo dónde se vio. Colocamos el cebo en muchos puntos chicos en vez de pocos grandes, en los espacios apretados que de verdad usan, y agregamos un regulador de crecimiento donde se justifica, para cortar el ciclo de reproducción. Nada de repelente encima del cebo. Le dejamos por escrito lo que toca de su lado, y damos seguimiento.',
         'Semana uno: se coloca el cebo, y muchas veces la actividad parece subir un poco porque salen a comer, que es el tratamiento funcionando. Semanas dos y tres: la actividad visible baja mucho, y es cuando la gente cree que ya terminó y deja de seguir el plan. Semanas tres a seis: eclosionan las cápsulas que pasaron el primer tratamiento y aparecen las crías; es el segundo acto esperado y la razón del seguimiento, no una señal de que algo falló. Semanas seis a diez: con la segunda generación atendida, los monitores se quedan en cero y así siguen.',
         'Confirmar quiere decir monitores en cero en revisiones seguidas, no que nadie haya visto una últimamente. En un edificio de varias unidades, agregue tiempo. Si alguien le dice que una infestación de alemana se resuelve en una visita, esa es la señal más clara de cómo va a ser el resto de lo que le diga.',
       ],
@@ -89,8 +80,8 @@ export const controlDeCucarachas: EsServicio = {
     {
       h2: '¿Qué hago antes de que lleguen, y cuánto cuesta?',
       parrafos: [
-        'Deje de rociar: los repelentes dispersan la población y le estorban al cebo. No tire los aparatos todavía: un refrigerador o un microondas se pueden tratar, y sacar uno infestado por el edificio es como se reparte el problema. Si puede, guarde una en una bolsa cerrada o mándenos una foto clara: la identificación es toda la diferencia entre dos trabajos muy distintos. Fíjese dónde y cuándo las ve; verlas de día indica una población más grande que verlas de noche. Y fíjese si hay chiquitas: los adultos andan, llegan en bolsas y cajas, y a veces aparecen donde no hay infestación, pero las crías no viajan, así que encontrarlas quiere decir que se están reproduciendo ahí.',
-        'Se cotiza después de la visita. Una casa con una población de alemana contenida y encontrada a tiempo es un trabajo sencillo de unas cuantas visitas. Un edificio con una población establecida en varios departamentos es un programa y no un tratamiento, y el alcance honesto incluye a los vecinos. El trabajo de oriental casi siempre sale más barato como control de plagas y puede salir más caro en total, porque el arreglo de verdad es un espacio bajo el piso. La estimación no se cobra y le dice en cuál de las dos situaciones está.',
+        'Deje de rociar: los repelentes dispersan la población y le estorban al cebo. No tire los aparatos todavía: un refrigerador o un microondas se pueden tratar, y sacar uno infestado por el edificio es como se reparte el problema. Si puede, guarde una en una bolsa cerrada o mándenos una foto clara: la identificación decide todo el trabajo. Fíjese dónde y cuándo las ve; verlas de día indica una población más grande que verlas de noche. Y fíjese si hay chiquitas: los adultos andan, llegan en bolsas y cajas, y a veces aparecen donde no hay infestación, pero las crías no viajan, así que encontrarlas quiere decir que se están reproduciendo ahí.',
+        'Se cotiza después de la visita. Una casa con una población de alemana contenida y encontrada a tiempo es un trabajo sencillo de unas cuantas visitas. Un edificio con una población establecida en varios departamentos es un programa y no un tratamiento, y el alcance honesto incluye a los vecinos. La estimación no se cobra y le dice en cuál de esas situaciones está.',
         'En restaurantes, tiendas de comida y residencias, la cucaracha es un asunto de cumplimiento tanto como de plagas. La entrada casi siempre son las entregas en cartón corrugado, y por eso lo más efectivo en casi cualquier negocio es sacar la mercancía de las cajas en el andén en lugar de meter las cajas al almacén: no cuesta nada y quita la vía principal. En esas cuentas el registro importa tanto como el resultado.',
       ],
     },
@@ -110,7 +101,7 @@ export const controlDeCucarachas: EsServicio = {
     },
     {
       q: 'Encontré una cucaracha grande en el sótano. ¿Es lo mismo?',
-      a: 'Probablemente no. Las cucarachas grandes, oscuras y lentas en el espacio bajo el piso o junto a una coladera suelen ser orientales, y son un problema de humedad, no una infestación de la casa. El arreglo es drenar y secar, no tratar adentro una y otra vez.',
+      a: 'No necesariamente. La cucaracha alemana vive adentro, en cocinas, baños y huecos de los aparatos, y no es un insecto del espacio bajo el piso ni del sótano. Una cucaracha que solo aparece en el sótano, el espacio bajo el piso o afuera merece una foto clara para identificarla antes de tratar nada.',
     },
   ],
 };

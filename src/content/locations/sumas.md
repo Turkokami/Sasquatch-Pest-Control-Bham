@@ -150,8 +150,8 @@ of it has been repaired or rebuilt in the last few years.
 
 Older stock carries the standard regional pattern: shallow crawlspaces over bare
 earth, failed vent screens, framing that has taken water and now supports
-moisture ants, and the damp-crawl company of sowbugs, millipedes, springtails
-and Oriental cockroaches. Newer and rebuilt sections tend to be tight envelopes
+moisture ants, and the damp-crawl company of sowbugs, millipedes and
+springtails. Newer and rebuilt sections tend to be tight envelopes
 with a handful of service penetrations closed with expanding foam, which stops
 drafts and does not stop a rodent.
 

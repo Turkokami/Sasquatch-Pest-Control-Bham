@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../lib/page-photos-es';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import QuickNav from '../../../components/QuickNav.astro';
@@ -26,6 +28,8 @@ const answer =
   `Sasquatch Pest Control atiende casas y negocios de los condados de Whatcom y Skagit: roedores, avispas, hormigas, arañas, moscas, abejas, termitas, chinches y más, y además sellamos las entradas para que el problema no vuelva. Hablamos español. Llame o mande un mensaje de texto al ${business.phone} para una visita.`;
 
 const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-control');
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/servicios/');
 ---
 <BaseLayout
   path={path}
@@ -77,6 +81,7 @@ const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-c
       lugar correcto en vez de por todas partes. Y cuarto, cerrar la entrada,
       que es la parte que hace que el trabajo dure.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
 
     <h2>¿Por qué tanto de esto termina en exclusión?</h2>
     <p>
@@ -129,6 +134,7 @@ const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-c
       la especie cambia el tratamiento, el precio y a veces la respuesta de si
       hace falta tratar.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} lang="es" />}
     <p>
       Después vamos a ver. Ahí se decide el trabajo — no se cotiza un paquete
       por teléfono sin haber visto la casa, porque el mismo insecto en dos

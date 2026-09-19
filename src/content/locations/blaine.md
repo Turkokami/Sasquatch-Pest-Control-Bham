@@ -294,8 +294,8 @@ outdoors, commonly in a stump, a fence post or a woodpile. Treating the trail
 indoors without locating that parent is why these jobs get a reputation for
 returning.
 
-Underneath both sits the damp-crawl company — sowbugs, millipedes, springtails,
-silverfish and Oriental cockroaches — none of which are a serious problem in
+Underneath both sits the damp-crawl company — sowbugs, millipedes, springtails
+and silverfish — none of which are a serious problem in
 themselves and all of which are reporting the same condition. Where a crawlspace
 is genuinely wet, the durable answer is drainage and a sound vapor barrier
 rather than repeated treatment, and we would rather say so.

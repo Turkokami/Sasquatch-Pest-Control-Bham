@@ -34,7 +34,7 @@ export const bellingham: EsLugar = {
     {
       h2: 'Hormigas, arañas, avispas y cucarachas',
       parrafos: [
-        'La hormiga de humedad busca madera ya mojada y dice que hay un problema de agua; la carpintera excava galerías y suele tener el nido madre afuera, y en primavera sus aladas se confunden con termitas. Las arañas grandes de septiembre son arañas gigantes de casa, inofensivas; Bellingham nunca ha tenido reclusa parda. Las avispas amarillas cambian a azúcar desde finales de julio, en su tamaño más defensivo, y los avispones de cara blanca a veces se reportan como avispón gigante del norte, que se detectó aquí entre 2019 y 2021 y se declaró erradicado de Estados Unidos en diciembre de 2024. Y dos cucarachas: la alemana, de adentro, y la oriental, del espacio bajo el piso húmedo.',
+        'La hormiga de humedad busca madera ya mojada y dice que hay un problema de agua; la carpintera excava galerías y suele tener el nido madre afuera, y en primavera sus aladas se confunden con termitas. Las arañas grandes de septiembre son arañas gigantes de casa, inofensivas; Bellingham nunca ha tenido reclusa parda. Las avispas amarillas cambian a azúcar desde finales de julio, en su tamaño más defensivo, y los avispones de cara blanca a veces se reportan como avispón gigante del norte, que se detectó aquí entre 2019 y 2021 y se declaró erradicado de Estados Unidos en diciembre de 2024. Y la cucaracha alemana, que vive adentro con la gente — cocinas, baños y los huecos de los aparatos — y no en el espacio bajo el piso.',
       ],
     },
     {

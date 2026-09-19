@@ -146,9 +146,8 @@ Everything moisture-driven follows from that. Moisture ants colonize framing
 that has softened, and finding them is useful information rather than merely a
 problem — the water is the disease and the ants are the symptom. Decay fungus
 runs where the wood stays wet, and decay rather than insects is what actually
-costs structural capacity here. Sowbugs, millipedes, springtails and Oriental
-cockroaches live in the damp and occasionally come up through a gap around a
-pipe.
+costs structural capacity here. Sowbugs, millipedes and springtails live in the
+damp and occasionally come up through a gap around a pipe.
 
 Carpenter ants are the expensive one. They prefer wood that has begun to soften
 and keep a parent colony outdoors — a stump, a fence post, a landscape timber, a

@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../lib/page-photos-es';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import QuickNav from '../../../components/QuickNav.astro';
@@ -51,6 +53,8 @@ const skagit: [string, string, string][] = [
 /* 40–60 palabras. */
 const answer =
   `Sasquatch Pest Control atiende Bellingham y los pueblos del condado de Whatcom a su alrededor — Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas, Sudden Valley, Custer, Deming y Acme — y parte del condado de Skagit. Hablamos español. Llame o mande un mensaje de texto al ${business.phone}.`;
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/areas-de-servicio/');
 ---
 <BaseLayout
   path={path}
@@ -81,6 +85,7 @@ const answer =
 
     <h2>Condado de Whatcom</h2>
     <p><a href="/es/areas-de-servicio/condado-de-whatcom/">El condado de Whatcom completo: clima, épocas de construcción y el año de plagas mes por mes</a>.</p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
     {whatcom.map(([name, slug, note]) => (
       <p>
         <strong>{name}.</strong> {note}{' '}
@@ -89,6 +94,7 @@ const answer =
           : <a href={`/locations/${slug}/`} hreflang="en" lang="en">Página de {name}, en inglés</a>}.
       </p>
     ))}
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} lang="es" />}
     <p>
       También atendemos las comunidades sin incorporar que hay entre estos
       pueblos. Si no ve el suyo, llámenos de todos modos y le decimos si nos

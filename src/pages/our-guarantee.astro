@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../lib/page-photos';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import QuickNav from '../components/QuickNav.astro';
@@ -24,6 +26,8 @@ const terms = [
   ['Non-payment and default', 'Guarantee coverage pauses on an account that is past due and resumes when the balance is cleared.'],
   ['Cancellation', 'Recurring programs can be canceled. There is no long-term contract, and the notice period and any remaining balance are set out in your service agreement.'],
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/our-guarantee/');
 ---
 <BaseLayout
   path={path}
@@ -54,6 +58,7 @@ const terms = [
       it does not cover a new problem that is different from the one you hired us
       for.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
     <p>
       You will sometimes see competitors advertise an unlimited return-visit
       promise with no terms attached anywhere on the site. A promise with no
@@ -92,6 +97,7 @@ const terms = [
       performed against an unprepared room is close to wasted and we would rather
       reschedule than pretend otherwise.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
     <p>
       There is also a third thing that is not a condition but is worth saying: if
       we tell you that a gutter, a vent screen or a door sweep is the actual cause

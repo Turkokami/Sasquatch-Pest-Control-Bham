@@ -109,9 +109,9 @@ quietly taking on moisture for years.
 Everything moisture-driven follows. Moisture ants need timber that has already
 softened, and finding them is a finding about water rather than about ants.
 Decay fungus runs where the wood stays wet, and decay rather than insects is
-what actually costs structural capacity in this climate. Silverfish, sowbugs,
-springtails and Oriental cockroaches live in the damp end and occasionally come
-up through a gap around a pipe.
+what actually costs structural capacity in this climate. Silverfish, sowbugs
+and springtails live in the damp end and occasionally come up through a gap
+around a pipe.
 
 The corrections are drainage and grading rather than pest work: roof water
 discharged well away from the uphill wall, grade that slopes away rather than

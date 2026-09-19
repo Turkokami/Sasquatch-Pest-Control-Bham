@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../lib/page-photos-es';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import QuickNav from '../../components/QuickNav.astro';
@@ -16,6 +18,8 @@ const S = t('es');
    traducción parezca el contrato. */
 const answer =
   'Nuestra Garantía de Servicio 100 % es un compromiso de regresar y volver a tratar. En un programa recurrente activo, si vuelve una plaga cubierta por ese programa entre visitas programadas, usted llama y regresamos sin cargo adicional. No es una promesa de que nunca volverá a ver un insecto, y sus límites están escritos aquí mismo, junto a la promesa.';
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/garantia/');
 ---
 <BaseLayout
   path={path}
@@ -48,6 +52,7 @@ const answer =
       estructurales o a la propiedad causados por plagas, y no cubre un
       problema nuevo distinto de aquel para el que nos contrató.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
     <p>
       A veces verá competidores que anuncian visitas de regreso ilimitadas sin
       ninguna condición escrita en ninguna parte del sitio. Una promesa sin
@@ -87,6 +92,7 @@ const answer =
       cuarto sin preparar casi se desperdicia, y preferimos cambiar la cita que
       fingir lo contrario.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} lang="es" />}
     <p>
       Hay una tercera cosa que no es condición pero vale la pena decir: si le
       decimos que la causa real del problema es una canaleta, una malla de

@@ -1,0 +1,19 @@
+---
+/**
+ * One photograph placed through the text of a Spanish page. English pages get
+ * the same figure from src/lib/rehype-inline-photos.ts, which writes this
+ * markup directly into the compiled Markdown; the two must stay identical so
+ * the one set of styles (global.css, "PHOTOGRAPHS THROUGH THE TEXT") serves
+ * both. The Spanish alt comes from es-galeria.ts, which already carries one
+ * for every gallery photograph.
+ */
+import type { InlinePhoto } from '../lib/page-photos';
+import { ALT_ES } from '../data/es-galeria';
+
+interface Props { photo: InlinePhoto; lang?: 'en' | 'es' }
+const { photo, lang = 'en' } = Astro.props;
+const alt = lang === 'es' ? (ALT_ES[photo.file] ?? photo.alt) : photo.alt;
+---
+<figure class="inline-photo">
+  <img src={photo.file} alt={alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
+</figure>

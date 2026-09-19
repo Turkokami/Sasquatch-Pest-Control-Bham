@@ -180,8 +180,8 @@ Drain flies and fungus gnats around a failing system, a slow drain or a wet spot
 in a yard are a symptom worth reading rather than a pest to be sprayed. When we find them, we talk about the system and the drainage rather than about spraying anything.
 
 The same logic runs through the whole damp-building list that this climate and
-this housing stock produce together: sowbugs, millipedes, springtails,
-silverfish and Oriental cockroaches in an underfloor space that stays wet, and
+this housing stock produce together: sowbugs, millipedes, springtails and
+silverfish in an underfloor space that stays wet, and
 moisture ants in any framing that has been damp long enough to soften. Every one
 of those is telling you about water. Treating them without addressing the water
 is a temporary result on a permanent condition, and on a lightly built cabin

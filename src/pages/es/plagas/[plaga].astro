@@ -1,4 +1,7 @@
 ---
+import InlinePhoto from '../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../lib/page-photos-es';
+import { photoForSection } from '../../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
@@ -61,6 +64,8 @@ const acciones = [
   { href: '/es/servicios/exclusion-y-reparaciones/', label: 'Exclusión y reparaciones — sellarlos afuera en lugar de tratar' },
   { href: '/what-we-use/', label: 'Todo lo que aplicamos, con etiquetas y hojas de seguridad (en inglés)' },
 ];
+/* Photographs through the text, the English twin's (owner, 19 Sep 2026). */
+const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
   path={path}
@@ -101,10 +106,15 @@ const acciones = [
   <p class="verdict" data-boilerplate><strong>{ES_VEREDICTO[en.data.treatment]}</strong></p>
 
   <div class="prose">
-    {e.secciones.map((sec) => (
+    {e.secciones.map((sec, i) => (
       <>
         <h2>{sec.h2}</h2>
-        {sec.parrafos.map((p) => <p>{p}</p>)}
+        {sec.parrafos.map((p, j) => (
+          <>
+            <p>{p}</p>
+            {j === 0 && photoForSection(fotos, i) && <InlinePhoto photo={photoForSection(fotos, i)!} lang="es" />}
+          </>
+        ))}
       </>
     ))}
   </div>

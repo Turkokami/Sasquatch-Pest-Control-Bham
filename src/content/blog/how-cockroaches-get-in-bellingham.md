@@ -18,19 +18,19 @@ Cockroaches have two main routes into a home: they hitchhike, or they crawl thro
 - **Drains and sewer lines** — roaches travel plumbing and can come up through floor drains and poorly sealed connections.
 - **Shared walls and utilities in apartments** — in multi-unit buildings, roaches move between units through wall voids, shared plumbing, and outlets, so a neighbor's infestation can become yours.
 - **Gaps around doors and windows** — worn weather stripping, missing door sweeps, and torn screens leave easy gaps.
-- **Cracks in the foundation and exterior** — small structural openings let outdoor roaches move in, especially as weather cools.
+- **Cracks in the foundation and exterior** — small structural openings let insects move in from outside, especially as weather cools.
 
 ## What kinds of cockroaches do we see in Whatcom County?
 
-The species matters, because it changes how the roaches got in and how they behave. In the Bellingham area, two are most common.
+The species matters, because it changes how the roaches got in and how they behave. In the Bellingham area, the one that matters is the German cockroach.
 
-The **German cockroach** is the small, prolific indoor species most associated with kitchens, bathrooms, and apartments. It is almost always brought in by hitchhiking and spreads fast because a single female can generate a large population quickly. It rarely lives outdoors in our climate, so when you see German cockroaches, they came in on something or through a shared wall.
+The **German cockroach** is the small, prolific indoor species most associated with kitchens, bathrooms, and apartments. It is almost always brought in by hitchhiking and spreads fast because a single female can generate a large population quickly. It does not live outdoors in our climate and it is not a crawlspace insect, so when you see German cockroaches, they came in on something or through a shared wall.
 
-Larger species like the **Oriental cockroach** are more associated with damp, cool areas — crawl spaces, basements, drains, and around foundations — and are drawn indoors by moisture. Knowing which you have shapes the whole treatment approach.
+That is also why a cockroach found only in a crawlspace or outdoors is worth a clear photograph before anything is treated: it is not where this species lives, and the identification shapes the whole treatment approach.
 
 ## Why are cockroaches attracted to my home?
 
-Roaches need three things, and every home provides at least some of each: food, water, and shelter. Food means crumbs, grease, unsealed pantry items, pet food, and even non-obvious sources like cardboard and soap residue. Water is often the biggest driver — leaky pipes, condensation, damp crawl spaces, and standing water in drains are magnets, which is why kitchens and bathrooms are hot spots. Shelter means the warm, dark, tight spaces roaches hide in during the day: behind appliances, inside cabinets, under sinks, and in wall voids. In our damp Pacific Northwest climate, moisture control is one of the most powerful tools for making a home unattractive to roaches.
+Roaches need three things, and every home provides at least some of each: food, water, and shelter. Food means crumbs, grease, unsealed pantry items, pet food, and even non-obvious sources like cardboard and soap residue. Water is often the biggest driver — leaky pipes, condensation, and standing water in drains are magnets, which is why kitchens and bathrooms are hot spots. Shelter means the warm, dark, tight spaces roaches hide in during the day: behind appliances, inside cabinets, under sinks, and in wall voids. In our damp Pacific Northwest climate, moisture control is one of the most powerful tools for making a home unattractive to roaches.
 
 ## Why do cockroaches spread so fast?
 
@@ -62,7 +62,7 @@ Cleanliness is not the deciding factor — access is. Cockroaches most often hit
 
 ### What kind of cockroaches are common in Bellingham?
 
-The two most common in the Whatcom County area are the German cockroach and the Oriental cockroach. German cockroaches are small, breed extremely fast, live indoors in kitchens, bathrooms, and apartments, and are almost always brought in by hitchhiking. Oriental cockroaches are larger and associated with damp, cool areas like crawl spaces, basements, drains, and foundations. Identifying the species shapes the treatment approach.
+The German cockroach is the one that matters in the Whatcom County area. They are small, breed extremely fast, live indoors in kitchens, bathrooms, and apartments, and are almost always brought in by hitchhiking rather than moving in from outside. Because they are an indoor insect, anything found only in a crawlspace or outdoors is worth identifying before it is treated.
 
 ### Does seeing one cockroach mean I have an infestation?
 

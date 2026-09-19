@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../../lib/page-photos';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import QuickNav from '../../components/QuickNav.astro';
@@ -29,6 +31,8 @@ const faqs = [
     a: 'Bellingham and the surrounding Whatcom County communities, including Ferndale, Lynden, Blaine, Birch Bay, Everson, Nooksack, Sumas and Sudden Valley. Coverage detail for each community is on our service areas page.',
   },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/services/');
 ---
 <BaseLayout
   path={path}
@@ -74,6 +78,7 @@ const faqs = [
       we get called to a Whatcom County house for any of those, the honest first
       question is not which product to use — it is where the water is coming from.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
     <p>
       That is why our service list is organized the way it is above, and why
       exclusion and crawlspace work sit alongside treatment rather than as an
@@ -114,6 +119,7 @@ const faqs = [
       so on the phone and point you somewhere useful rather than taking the
       booking.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
     <p>
       We also will not tell you a pest is dangerous when it is not. Hobo spiders
       are the clearest local example — Washington's Department of Health states

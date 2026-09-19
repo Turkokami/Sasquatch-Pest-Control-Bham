@@ -6,6 +6,8 @@
  * Static routes take precedence over the [city] dynamic route, and [city]
  * only enumerates real town slugs, so there is no collision.
  */
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../../lib/page-photos';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { serviceGroups } from '../../lib/menus';
 import AnswerBox from '../../components/AnswerBox.astro';
@@ -46,6 +48,8 @@ const faqs = [
     a: 'Because we have no sustained hard freeze and about thirty-five inches of rain a year. Populations are never reset by winter, and wood stays damp — which is why moisture-driven pests dominate here and why aggressive subterranean termites, fire ants and brown recluse simply are not part of the picture.',
   },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/locations/whatcom-county/');
 ---
 <BaseLayout
   path={path}
@@ -98,6 +102,7 @@ const faqs = [
       nobody considered air-sealing a penetration. Those houses get rodents,
       carpenter ants and moisture ants, and the entry points are structural.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
     <p>
       The newer hillside and edge neighborhoods — Alabama Hill, Barkley, Cordata,
       King Mountain — are a different problem. Cedar siding, vented crawlspaces,
@@ -134,6 +139,7 @@ const faqs = [
       share of the spring calls out there are for something that moved in during
       December.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
 
     <h3>The lake and forest edge</h3>
     <p>
@@ -161,8 +167,8 @@ const faqs = [
       long gray season rather than delivered in summer storms. Wood stays damp,
       and that single fact drives more of our call volume than anything else.
       Dampwood termites need wet wood. Moisture ants need wet wood. Carpenter
-      ants prefer wood that has begun to soften. Silverfish, sowbugs, millipedes
-      and Oriental cockroaches are all humidity-driven.
+      ants prefer wood that has begun to soften. Silverfish, sowbugs and millipedes
+      are all humidity-driven.
     </p>
     <p>
       That figure is Bellingham's, not the county's. Rainfall climbs eastward

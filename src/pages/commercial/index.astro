@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../../lib/page-photos';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import QuickNav from '../../components/QuickNav.astro';
@@ -77,6 +79,8 @@ const writtenVerticals = industryEntries
     label: e.data.h1.replace(/\s*Pest Control.*$/i, '').trim(),
   }))
   .sort((a, b) => a.label.localeCompare(b.label));
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/commercial/');
 ---
 <BaseLayout
   path={path}
@@ -134,6 +138,7 @@ const writtenVerticals = industryEntries
       rather than taking our word for it. And every visit produces a record of
       what was found, what was done, and what needs attention from your side.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
     <p>
       That last point is the one that separates programs. Plenty of operators will
       service a building. Fewer will hand you documentation that survives contact
@@ -184,6 +189,7 @@ const writtenVerticals = industryEntries
       food safety program, documentation is not an add-on — it is the deliverable
       alongside the service.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
 
     <h3>Schools, healthcare and public buildings</h3>
     <p>

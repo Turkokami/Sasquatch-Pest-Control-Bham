@@ -3,7 +3,7 @@ service: cockroach-control
 title: "Cockroach Control in Bellingham, WA"
 description: "Cockroach control for Bellingham and Whatcom County homes and businesses. German roaches need baiting, not spraying — here is why. Call 360-410-2199."
 h1: "Cockroach Control in Bellingham & Whatcom County"
-answer: "Which cockroach you have decides everything. German cockroaches breed indoors, spread between units and resist most sprays, so they need baiting and patience. Oriental cockroaches are a damp-crawlspace problem and the fix is usually moisture. We identify before we treat, because the two need opposite approaches."
+answer: "The German cockroach is the one that matters in Whatcom County. They live indoors, breed fast, spread between units and resist most sprays, so they need baiting and patience rather than spraying. They are not a crawlspace or moisture insect; they arrive in appliances, cardboard and used furniture. Plan on several weeks and more than one visit."
 expert: kristofer-elling
 ready: true
 faqs:
@@ -16,35 +16,33 @@ faqs:
   - q: "I live in an apartment. Will treating my unit be enough?"
     a: "Frequently not. German cockroaches move between units through wall voids, plumbing chases and shared electrical, so treating one apartment while the neighbors go untouched relocates the problem rather than solving it. In a multi-unit building the sensible scope is the building, and responsibility usually sits with the landlord under Washington law."
   - q: "I found a big roach in the basement. Is that the same thing?"
-    a: "Probably not. Large, dark, slow cockroaches in a crawlspace, basement or around a floor drain are usually Oriental cockroaches, and they are a moisture problem rather than an infestation of the living space. The fix there is drainage and drying, not repeated interior treatment."
+    a: "Not necessarily. German cockroaches live indoors, in kitchens, bathrooms and appliance voids, and they are not a crawlspace or basement insect. A cockroach found only in a basement, crawlspace or outdoors is worth a clear photograph so we can identify it before anyone treats anything."
   - q: "Are cockroaches actually a health risk?"
     a: "The best-documented one is allergens. Cockroach proteins in dust are a recognized asthma trigger, particularly for children, and that is a stronger reason to deal with an infestation properly than the contamination people usually worry about."
 ---
 
 ## The identification decides the job
 
-There are two cockroaches that matter in Whatcom County and they call for opposite
-approaches. Getting this wrong wastes months.
+The cockroach that matters in Whatcom County is the German cockroach, and the
+treatment only works if it is aimed at where that species actually lives.
+Getting this wrong wastes months.
 
 **German cockroach.** Small, light brown, with two dark stripes running down the
 shield behind the head. This is the one that matters. It lives entirely indoors,
 it breeds fast, it concentrates in kitchens and bathrooms, and it moves between
 units in multi-family buildings. A German cockroach infestation is a genuine
-infestation and it will not resolve on its own.
-
-**Oriental cockroach.** Larger, darker, almost black, and noticeably slower.
-Sometimes called a waterbug locally. It lives in damp places — crawlspaces,
-basements, around floor drains, under decks and in leaf litter — and it comes
-indoors when the outside gets less comfortable. It does not establish breeding
-populations in a dry kitchen the way a German cockroach does.
+infestation and it will not resolve on its own. It is not a crawlspace or
+moisture insect: it arrives in appliances, cardboard, groceries and used
+furniture, and it stays with people.
 
 **American cockroach.** Large, reddish-brown, associated with sewers, drains and
 commercial floor drains. Present here but far less common than in warmer parts of
 the country, and mostly a commercial issue.
 
-The practical distinction: a small striped cockroach in your kitchen is an urgent
-problem that needs baiting. A large dark one in your crawlspace is a moisture
-problem that needs drying. Treating either like the other fails.
+The practical point: a small striped cockroach in your kitchen is an urgent
+problem that needs baiting. A cockroach found only in a crawlspace, basement or
+outdoors is worth a clear photograph before anyone treats anything, because
+German cockroaches live indoors.
 
 ## German cockroaches, and why they are difficult
 
@@ -162,27 +160,6 @@ rather than letting residue accumulate.
 None of that is a substitute for treatment. All of it makes the treatment work
 faster.
 
-## Oriental cockroaches, which are a different story
-
-If what you have is large, dark and slow, in a crawlspace, basement, garage or
-around a floor drain, the conversation changes completely.
-
-These are moisture-driven. They live outdoors and in damp voids, feed on decaying
-organic material, and come inside when conditions push them. In Whatcom County
-that means autumn, as the rain sets in, and occasionally a dry spell in summer.
-
-So the treatment is mostly not treatment. Correcting crawlspace moisture,
-clearing gutters and getting downspouts discharging away from the foundation,
-sealing the gaps and vents they enter through, moving leaf litter and mulch back
-from the building, and dealing with standing water does more than any perimeter
-spray.
-
-It is the same argument as [moisture ants](/services/ant-control/) and
-[dampwood termites](/services/termite-control/), and frequently the same
-crawlspace. See
-[crawlspace restoration](/services/crawlspace-restoration/) and
-[exclusion and repairs](/services/exclusion-and-repairs/).
-
 ## The health side
 
 Worth being accurate about, because this is one of the few household pests with a
@@ -201,7 +178,8 @@ What they do not do is bite, sting, or pose an acute danger to a household.
 
 ## How we work a cockroach job
 
-**Identify.** German or Oriental. Everything downstream depends on it.
+**Identify.** Confirm what it is and where it is breeding. Everything downstream
+depends on it.
 
 **Find the harborage.** Appliance voids, cabinet corners, plumbing penetrations,
 and in multi-unit buildings the shared routes. Monitors placed where activity is
@@ -223,9 +201,6 @@ above, in writing.
 whether the population is falling rather than relying on whether anyone has seen
 one lately.
 
-For Oriental cockroaches the sequence is different: moisture correction and
-exclusion first, perimeter treatment second.
-
 ## Around the county
 
 **Student and multifamily housing** — Sehome, Happy Valley, the Western campus
@@ -235,18 +210,13 @@ furniture and appliances moving between units in June and September is a reliabl
 vector.
 
 **Older city neighborhoods** — Lettered Streets, Columbia, Sunnyland, York.
-Divided older houses with shared plumbing runs, and damp basements and
-crawlspaces that support Oriental cockroaches.
+Divided older houses with shared plumbing runs, which let a population in one
+unit reach the next.
 
 **Food service and retail** — downtown, Fairhaven and the commercial corridors.
 Deliveries in cardboard are the main entry route, and for these accounts the
 documentation matters as much as the result. See
 [commercial programs](/commercial/).
-
-**Out toward Lake Whatcom.** Almost everything we find in Sudden Valley, Silver
-Beach and Edgemoor is Oriental rather than German — tied to crawlspace moisture
-and leaf litter against the foundation rather than to anything happening in the
-kitchen. The fix is drying the space, not treating the house.
 
 ## What it costs
 
@@ -255,11 +225,7 @@ population caught early is a straightforward job over a few visits. A multi-unit
 building with an established population across several apartments is a program
 rather than a treatment, and the honest scope includes the neighbors.
 
-Oriental cockroach work is usually cheaper as pest control and may be more
-expensive overall, because the real fix is a crawlspace.
-
-The estimate is free, and it will tell you which of those two situations you are
-in.
+The estimate is free, and it will tell you which of those situations you are in.
 
 ## Before we arrive
 
@@ -270,8 +236,8 @@ bait, and they make the job longer.
 Moving an infested appliance out through a building is how a problem spreads.
 
 **Leave a sample if you can.** A cockroach in a sealed bag or a clear photograph
-settles the identification immediately, and identification is the whole
-difference between two very different jobs.
+settles the identification immediately, and the identification decides the
+whole job.
 
 **Note where and when.** Which room, which time of day, and roughly how many.
 Daylight sightings indicate a larger population than night sightings.
@@ -322,24 +288,21 @@ For these accounts the record matters as much as the result — what was found,
 where, what was done, and what remains on the operator's side. That is part of
 our [commercial programs](/commercial/) rather than an extra.
 
-## What people get wrong about the two species
+## What people get wrong
 
-The confusion runs both ways and both directions are expensive.
+Two mistakes account for most of the jobs that drag on.
 
-**Treating an Oriental cockroach problem like a German one.** Repeated interior
-treatment, bait placed in a kitchen where nothing is breeding, and a recurring
-autumn call every year. The insects are coming in from a wet crawlspace or from
-leaf litter against the foundation, and no amount of interior work changes that.
-The money belongs in drainage, vent screening and drying the space.
+**Treating the outside of the building.** Perimeter spraying the outside of a
+building while a population breeds in the kitchen voids. The population compounds
+while the treatment happens somewhere irrelevant, and repellent product around
+the structure does nothing to a species that never goes outdoors.
 
-**Treating a German cockroach problem like an Oriental one.** Perimeter spraying
-the outside of a building while a population breeds in the kitchen voids. This is
-the more damaging error, because the population compounds while the treatment
-happens somewhere irrelevant, and repellent product around the structure does
-nothing to a species that never goes outdoors.
+**Blaming the crawlspace.** German cockroaches are not a crawlspace or moisture
+insect, so treating or drying the crawlspace does nothing for a population
+breeding in the kitchen. The work belongs where they live: appliance voids,
+cabinets, plumbing penetrations and shared walls.
 
-The identification takes a minute and a photograph usually settles it. Small and
-striped in a kitchen is one job. Large and dark near a drain is a different one.
+The identification takes a minute and a photograph usually settles it.
 
 ## The nymphs are the tell
 
@@ -362,10 +325,7 @@ what we look for.
 
 ## Related work
 
-Oriental cockroach work is usually
-[crawlspace restoration](/services/crawlspace-restoration/) and
-[exclusion and repairs](/services/exclusion-and-repairs/) in practice. For
-apartment buildings and food-handling businesses see
+For apartment buildings and food-handling businesses see
 [commercial programs](/commercial/). If the insects you are finding are small,
 fast and in a column rather than scattered, that is more likely
 [ants](/services/ant-control/), and if they are small, dark and jumping, see

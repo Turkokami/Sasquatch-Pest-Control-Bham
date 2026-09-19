@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../lib/page-photos';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import QuickNav from '../components/QuickNav.astro';
@@ -95,6 +97,8 @@ const faqs = [
 ];
 
 const canClaim = business.hasLicensedStaff;
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/about/');
 ---
 <BaseLayout
   path={path}
@@ -157,6 +161,7 @@ const canClaim = business.hasLicensedStaff;
         </p>
       </>
     )}
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
 
     <h2>Our service area</h2>
     <p>
@@ -192,6 +197,7 @@ const canClaim = business.hasLicensedStaff;
       conversations are harder than saying yes, and they are the reason people
       call us back.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
 
     <h2>How we work in the field</h2>
     <p>

@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../lib/page-photos';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import { business } from '../data/business';
@@ -11,6 +13,8 @@ const path = '/network/';
    franchise, we do not reproduce its NAP, photos or license here. */
 const answer =
   'Sasquatch Pest Control is headquartered in Bellingham, Washington, serving Whatcom County, and there is a separately operated Sasquatch franchise serving the greater Houston, Texas area. Each location is licensed, staffed and scheduled independently in its own market.';
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/network/');
 ---
 <BaseLayout
   path={path}
@@ -40,6 +44,7 @@ const answer =
         sasquatchpestcontroltx.com
       </a>.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
 
     <h2>One brand, one standard</h2>
     <p>

@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../lib/page-photos-es';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
 import QuickNav from '../../components/QuickNav.astro';
@@ -59,6 +61,8 @@ const rails = [
   { href: '/es/nosotros/', label: 'Quiénes somos' },
   { href: '/es/contacto/', label: 'Contacto' },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/socios-de-confianza/');
 ---
 
 <BaseLayout
@@ -89,6 +93,7 @@ const rails = [
       un nombre y no veinte. Una página de veinte referencias es un directorio,
       y un directorio que nadie revisó no le sirve de nada a quien lo lee.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
     <p>
       Más abajo hay dos cosas que no son referencias: el equipo de detección con
       perros que contratamos para ciertos trabajos, en los que la cuenta y la
@@ -124,6 +129,7 @@ const rails = [
       <a href="https://www.kingofkingswindowcleaning.com/" rel="nofollow noopener">kingofkingswindowcleaning.com</a>{' '}
       (en inglés) · <a href="tel:+13603036806">(360) 303-6806</a>
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} lang="es" />}
 
     <h2>Detección con perros: <span lang="en">Coastal K9 &amp; Pest Solutions</span></h2>
     <p>

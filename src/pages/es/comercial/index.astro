@@ -11,6 +11,8 @@
  * Sin fotografías, por la misma razón que las páginas por industria: sus pies
  * de foto están en inglés.
  */
+import InlinePhoto from '../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../lib/page-photos-es';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import QuickNav from '../../../components/QuickNav.astro';
@@ -59,6 +61,8 @@ const faqs = [
     a: 'Lecherías y ranchos, procesadoras de alimentos, marinas, restaurantes, escuelas, salud y residencias de adultos mayores, tiendas, edificios de departamentos y asociaciones, administradores de propiedades y edificios públicos en todo el condado de Whatcom.',
   },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/comercial/');
 ---
 <BaseLayout
   path={path}
@@ -101,6 +105,7 @@ const faqs = [
       problema es una barredora de puerta que usted tiene que cambiar y no algo
       que se pueda rociar.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
 
     <h2>Cómo corre un programa</h2>
     <p>
@@ -157,5 +162,6 @@ const faqs = [
       español — o <a href="/es/contacto/">escríbanos desde la página de contacto</a>.
     </p>
     <p>{S.englishOnwardNote}</p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} lang="es" />}
   </div>
 </BaseLayout>

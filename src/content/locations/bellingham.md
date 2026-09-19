@@ -68,7 +68,7 @@ to the block.
 
 The pests follow directly: Norway rats and house mice in the crawl and the
 walls, carpenter and moisture ants in any framing that has taken water, and
-sowbugs, millipedes and Oriental cockroaches in the damp crawl itself. The
+sowbugs and millipedes in the damp crawl itself. The
 correct work is exclusion — sealing the envelope, screening the vents, closing
 the penetrations — with treatment as the part that handles what is already
 inside.
@@ -110,8 +110,8 @@ not a unit-level one, and treating one apartment while the neighbors go
 untreated simply relocates the problem across a shared wall.
 
 Cockroaches — German cockroaches specifically, which are an indoor,
-human-associated species rather than the damp-crawl Oriental kind — are the other
-signature of this belt. They travel in appliances, in cardboard and in kitchen
+human-associated species rather than anything that comes out of a crawlspace —
+are the other signature of this belt. They travel in appliances, in cardboard and in kitchen
 equipment, and they persist because they breed faster than an unplanned
 treatment schedule can knock them back.
 
@@ -265,21 +265,19 @@ are glad to look at a photograph and tell you what you have.
 Paper wasps under eaves and deck rails are the mildest of the three and often do
 not need treating at all if they are somewhere people are not. We will say so.
 
-## Cockroaches, and which one you have
+## Cockroaches, and where they actually live
 
-Worth separating, because two very different insects get the same name here.
+Worth being specific about, because the work goes where the insects are.
 
 German cockroaches are indoor, human-associated, and travel in appliances,
 cardboard and kitchen equipment. They breed fast and are concentrated in the
 multi-unit and rental stock, and they need a coordinated building-level plan
 rather than unit-by-unit treatment.
 
-Oriental cockroaches are a damp-crawlspace insect. They live outdoors and under
-buildings, come up through drains and crawl vents, and are reporting a moisture
-condition rather than a hygiene one. They are common in the prewar flats for
-exactly that reason.
-
-The treatments are genuinely different, so identification comes first.
+They live in the kitchen and bathroom voids rather than under the building, so
+the work is harborage, baiting and the neighboring units. An insect found only
+in a damp crawlspace is a different conversation, which is why identification
+comes first.
 
 ## How we actually work here
 

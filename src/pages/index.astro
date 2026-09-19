@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../lib/page-photos';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { serviceGroups, townGroups } from '../lib/menus';
 import { srcsetFor } from '../lib/images';
@@ -68,6 +70,8 @@ const faqs = [
     a: 'Sasquatch Pest Control is family-owned and operated, founded by Kristofer Elling, and run locally out of Bellingham rather than from a regional call center.',
   },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/');
 ---
 <BaseLayout
   path={path}
@@ -137,6 +141,7 @@ const faqs = [
       who want scheduled visits, and they can be canceled. We do not lock anyone
       into a multi-year term to get a better price on the first visit.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
     <p>
       <strong>We find the cause, not just the pest.</strong> Most of the insects
       we get called about in Whatcom County are downstream of a moisture problem.
@@ -187,6 +192,7 @@ const faqs = [
       of the job. You can read more on our
       <a href="/commercial/">commercial page</a>.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
 
     <h2>What happens when you call</h2>
     <p>

@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../lib/page-photos-es';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { serviceGroups } from '../../lib/menus';
 import AnswerBox from '../../components/AnswerBox.astro';
@@ -30,6 +32,8 @@ const S = t('es');
    respaldado por la misma información que la versión en inglés. */
 const answer =
   `Sasquatch Pest Control es una empresa familiar de control de plagas con sede en ${a.locality}, Washington, que atiende los condados de Whatcom y Skagit. Hablamos español. Llame o mande un mensaje de texto al ${business.phone} para una inspección gratuita.`;
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/');
 ---
 <BaseLayout
   path={path}
@@ -58,6 +62,7 @@ const answer =
       Llame o mande un mensaje de texto al{' '}
       <a href={`tel:${business.phoneE164}`}>{business.phone}</a>.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
 
     <h2>¿Qué hacemos?</h2>
     <p>
@@ -109,6 +114,7 @@ const answer =
       casa, porque el mismo insecto en dos casas distintas puede ser dos
       trabajos distintos.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} lang="es" />}
 
     <h2>¿Por qué el otoño cambia todo aquí?</h2>
     <p>

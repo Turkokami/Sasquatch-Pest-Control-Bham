@@ -315,8 +315,8 @@ A conditioned crawl has a continuous sealed liner over the ground, insulation at
 the perimeter walls rather than between the joists, no open foundation vents,
 and often a small amount of conditioned air or a dehumidifier. The result is a
 space that stays dry, which removes most of the moisture-driven cast that fills
-our older-neighborhood pages: moisture ants, decay fungus, sowbugs, springtails
-and Oriental cockroaches all lose the conditions they need.
+our older-neighborhood pages: moisture ants, decay fungus, sowbugs and
+springtails all lose the conditions they need.
 
 That is a real improvement and it is the single best thing about newer
 construction here.

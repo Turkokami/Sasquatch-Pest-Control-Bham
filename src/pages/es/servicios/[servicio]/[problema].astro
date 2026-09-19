@@ -10,6 +10,9 @@
  *
  * Sin fotografía, por la razón de siempre: los pies de foto están en inglés.
  */
+import InlinePhoto from '../../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../../lib/page-photos-es';
+import { photoForSection } from '../../../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../../components/AnswerBox.astro';
@@ -46,6 +49,8 @@ const S = t('es');
 const hermanos = esProblemas
   .filter((o) => o.service === e.service && o.slug !== e.slug)
   .map((o) => ({ href: esProblemaPath(o), label: o.nav }));
+/* Photographs through the text, the English twin's (owner, 19 Sep 2026). */
+const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
   path={path}
@@ -72,10 +77,15 @@ const hermanos = esProblemas
   ]} />
 
   <div class="prose">
-    {e.secciones.map((sec) => (
+    {e.secciones.map((sec, i) => (
       <>
         <h2>{sec.h2}</h2>
-        {sec.parrafos.map((p) => <p>{p}</p>)}
+        {sec.parrafos.map((p, j) => (
+          <>
+            <p>{p}</p>
+            {j === 0 && photoForSection(fotos, i) && <InlinePhoto photo={photoForSection(fotos, i)!} lang="es" />}
+          </>
+        ))}
         {sec.lista && <ul>{sec.lista.map((i) => <li>{i}</li>)}</ul>}
       </>
     ))}

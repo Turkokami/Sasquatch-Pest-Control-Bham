@@ -10,6 +10,9 @@
  * Sin fotografía: los pies de foto están en inglés, y una página española con
  * un pie de foto en inglés es la mezcla que la revisión 6c del arnés reprueba.
  */
+import InlinePhoto from '../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../lib/page-photos-es';
+import { photoForSection } from '../../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
@@ -43,6 +46,8 @@ const hermanos = esGiros
   .filter((o) => o.slug !== g.slug)
   .map((o) => ({ href: esGiroPath(o), label: o.nav }))
   .sort((a, b) => a.label.localeCompare(b.label, 'es'));
+/* Photographs through the text, the English twin's (owner, 19 Sep 2026). */
+const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
   path={path}
@@ -65,10 +70,15 @@ const hermanos = esGiros
   <QuickNav rails={[{ heading: 'Otros programas comerciales', links: hermanos }]} />
 
   <div class="prose">
-    {g.secciones.map((sec) => (
+    {g.secciones.map((sec, i) => (
       <>
         <h2>{sec.h2}</h2>
-        {sec.parrafos.map((p) => <p>{p}</p>)}
+        {sec.parrafos.map((p, j) => (
+          <>
+            <p>{p}</p>
+            {j === 0 && photoForSection(fotos, i) && <InlinePhoto photo={photoForSection(fotos, i)!} lang="es" />}
+          </>
+        ))}
         {sec.lista && <ul>{sec.lista.map((i) => <li>{i}</li>)}</ul>}
       </>
     ))}

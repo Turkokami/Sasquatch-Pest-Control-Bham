@@ -7,6 +7,8 @@
  * página en español. Un grupo sin ninguna todavía no aparece: un encabezado
  * vacío no le sirve a nadie.
  */
+import InlinePhoto from '../../../components/InlinePhoto.astro';
+import { inlinePhotosForEs } from '../../../lib/page-photos-es';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
@@ -46,6 +48,8 @@ const faqs = [
     a: 'Cada guía lleva una fecha de revisión que la compilación exige, no la memoria de alguien. La página dice esa fecha y nombra sus fuentes con el día en que se leyó cada una.',
   },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosForEs('/es/guias/');
 ---
 <BaseLayout
   path={path}
@@ -81,6 +85,7 @@ const faqs = [
       contesta en una frase, y porque la respuesta exacta no está publicada en
       ningún otro lugar de este condado.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
     <p>
       Esas preguntas tienen respuesta. Casi siempre está escrita en algún lugar
       público — una ley, un código municipal, una regla de una agencia —, y casi
@@ -129,6 +134,7 @@ const faqs = [
       tamaños de letrero concretos. Nada de eso está en una guía nacional, y
       decirlo más o menos bien es peor que no decirlo.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} lang="es" />}
   </div>
 
   <Faq items={faqs} />

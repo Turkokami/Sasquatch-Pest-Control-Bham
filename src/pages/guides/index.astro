@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
@@ -41,6 +43,8 @@ const faqs = [
   },
 ];
 import PhoneText from '../../components/PhoneText.astro';
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/guides/');
 ---
 <BaseLayout
   path={path}
@@ -77,6 +81,7 @@ import PhoneText from '../../components/PhoneText.astro';
       </section>
     );
   })}
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
 
   <p>
     Most of what a pest control company publishes is written to be found rather
@@ -122,6 +127,7 @@ import PhoneText from '../../components/PhoneText.astro';
     disputes, and one a company selling pest control has every reason to leave
     out.
   </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
 
   <h2>How to use them</h2>
 

@@ -1,4 +1,6 @@
 ---
+import InlinePhoto from '../components/InlinePhoto.astro';
+import { inlinePhotosFor } from '../lib/page-photos';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import QuickNav from '../components/QuickNav.astro';
@@ -63,6 +65,8 @@ const rails = [
   { href: '/our-guarantee/', label: 'Our guarantee' },
   { href: '/contact/', label: 'Ask us about a specific product' },
 ];
+/* Photographs through the text (owner, 19 Sep 2026). */
+const inlinePhotos = inlinePhotosFor('/what-we-use/');
 ---
 
 <BaseLayout
@@ -93,6 +97,7 @@ const rails = [
       and if you are relying on one for something that matters, ask us to
       confirm it is still current before you do.
     </p>
+  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
   </div>
 
   <section>
@@ -167,6 +172,7 @@ const rails = [
       the label. If you want to know what a substance would do if a container
       broke in a garage, that is the safety data sheet.
     </p>
+  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
 
     <h2>What we will not tell you</h2>
     <p>

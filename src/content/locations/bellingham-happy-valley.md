@@ -16,8 +16,8 @@ faqs:
     a: "June and September, when leases turn over and secondhand furniture moves between houses. That is the single most effective bed bug transport mechanism in the county, and it is why we push landlords to inspect between tenancies rather than after a complaint."
   - q: "Can you treat just my unit?"
     a: "We can, and for some problems that is genuinely enough. For bed bugs and German cockroaches in a shared building it usually is not, and we will tell you that before taking the work rather than after the third visit."
-  - q: "Are German cockroaches different from the ones in my crawlspace?"
-    a: "Completely. German cockroaches are indoor and human-associated, they arrive in appliances and cardboard, and they breed fast. The ones in a damp crawlspace are Oriental cockroaches, which live outdoors and are reporting a moisture problem. The treatments are not interchangeable."
+  - q: "Where do German cockroaches actually live?"
+    a: "Indoors, with people. They are a kitchen, bathroom and appliance-void insect, they arrive in appliances, cardboard and used furniture, and they breed fast. They are not a crawlspace or moisture insect, so anything found only in a damp crawlspace is worth a photograph before it gets treated as a cockroach problem."
   - q: "Do you work with landlords and property managers?"
     a: "Yes, and multi-unit work is a good share of what we do here. What we ask for is a building-level plan rather than unit-by-unit call-outs, because that is the only version that actually resolves anything in shared housing."
   - q: "Is the inspection free?"
@@ -122,8 +122,7 @@ appointments. Everything else we handle here is free to look at.
 
 ## German cockroaches
 
-The other signature of this neighborhood, and routinely confused with a
-completely different insect.
+The other signature of this neighborhood, and routinely misidentified.
 
 German cockroaches are indoor and human-associated. They do not live outside in
 this climate. They arrive inside things — appliances, cardboard, kitchen
@@ -140,12 +139,10 @@ attention to the harborage rather than the visible surfaces, and follow-up
 timed to the life cycle. Shared kitchens and high occupancy make this harder,
 and student housing has both.
 
-They should not be confused with **Oriental cockroaches**, which are a
-damp-crawlspace insect, live outdoors and under buildings, come up through
-drains and crawl vents, and are reporting a moisture condition rather than a
-hygiene one. Older houses in this neighborhood get those too, and the treatments
-are not interchangeable. Identification comes first and it is the cheapest thing
-we do.
+Because they live indoors with people, an insect found only in a damp
+crawlspace is not this problem, and it is worth a photograph before anything
+gets treated as a cockroach job. Identification comes first and it is the
+cheapest thing we do.
 
 ## The buildings themselves
 
@@ -155,8 +152,7 @@ matter.
 There is older single-family housing, much of it now let to groups, sitting on
 shallow crawlspaces over bare earth with the familiar consequences: moisture
 ants in framing that has softened, decay fungus where it stays wet, and the
-damp-crawl group of sowbugs, millipedes, springtails and Oriental cockroaches
-underneath.
+damp-crawl group of sowbugs, millipedes and springtails underneath.
 
 There are houses divided into units at various points over the decades, where
 the division created new junctions between old framing and new, and those
