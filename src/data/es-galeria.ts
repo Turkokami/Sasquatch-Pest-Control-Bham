@@ -230,7 +230,6 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/g27097.jpg': 'Material de nido de roedor apelmazado en el aislamiento de un espacio bajo el piso',
   '/img/gallery/g27096.jpg': 'Una caja de cartón en una cochera llena de semillas y material de nido guardados por un roedor',
   // Aislamiento
-  '/img/gallery/g26372.jpg': 'Un descanso durante la instalación de aislamiento',
   '/img/gallery/g27149.jpg': 'Aislamiento rosa en un espacio bajo el piso, durante una revisión',
   '/img/gallery/g27148.jpg': 'Un pedazo de aislamiento rosa sobre una barrera de vapor oscura',
   '/img/gallery/g27144.jpg': 'Un hueco en el cimiento junto al aislamiento y la barrera de vapor, una posible entrada de plagas',

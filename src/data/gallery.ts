@@ -169,7 +169,6 @@ const allSections: GallerySection[] = [
     key: 'insulation',
     title: 'Insulation',
     images: [
-      { file: '/img/gallery/g26372.jpg', alt: 'Break from installing insulation', width: 560, height: 746 },
       { file: '/img/gallery/g27149.jpg', alt: 'Pink insulation in a crawlspace being inspected', width: 560, height: 747 },
       { file: '/img/gallery/g27148.jpg', alt: 'A piece of pink insulation on a dark vapor barrier in a crawlspace, documented during an inspection', width: 560, height: 747 },
       { file: '/img/gallery/g27144.jpg', alt: 'A gap in a crawlspace foundation near insulation and a vapor barrier, a potential pest entry point found', width: 560, height: 747 },
