@@ -92,6 +92,7 @@ const allSections: GallerySection[] = [
     key: 'pests',
     title: 'The insects we treat',
     images: [
+      { file: '/img/gallery/thatching-ants-tending-aphids-on-a-thistle.jpg', alt: 'Thatching ants tending black aphids on the stems of a pink-flowered thistle at the edge of a field', width: 560, height: 747 },
       /* Owner's own, 19 Sep 2026. Not identified by the owner, so described, not named. */
       { file: '/img/gallery/long-horned-beetle-close-up.jpg', alt: 'A mottled brown beetle with long segmented antennae, photographed close up from the side on a pale surface', width: 560, height: 420 },
       { file: '/img/gallery/large-brown-spider-on-a-wall.jpg', alt: 'A large brown spider with banded legs on a pale interior wall, its shadow cast beside it', width: 560, height: 747 },
@@ -122,6 +123,7 @@ const allSections: GallerySection[] = [
     key: 'rodents',
     title: 'Rodent work',
     images: [
+      { file: '/img/gallery/rats-feeding-in-horse-stall-bedding.jpg', alt: 'Two gray rats feeding on manure in the bedding of a horse stall against a concrete wall', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026: Skyhawk Trapmate sensors, which he described as 24/7 digital monitoring. Named in the alt only as what the device label reads. */
       { file: '/img/gallery/snap-trap-with-a-wireless-trigger-sensor.jpg', alt: 'A wooden snap trap fitted with a small black Skyhawk Trapmate vibration sensor at its end, which reports when the trap fires', width: 560, height: 315 },
       { file: '/img/gallery/bait-station-with-a-wireless-motion-sensor.jpg', alt: 'A black tamper-resistant rodent bait station with the company label, fitted with a Skyhawk Trapmate motion sensor on its lid', width: 560, height: 995 },
@@ -174,6 +176,9 @@ const allSections: GallerySection[] = [
     key: 'crawlspaces',
     title: 'Crawlspaces',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/new-crawlspace-insulation-and-vapor-barrier.jpg', alt: 'New pink batt insulation held up between the floor joists with wire, over a fresh black vapor barrier, lit by headlamp', width: 560, height: 420 },
+      { file: '/img/gallery/crawlspace-insulation-and-vapor-barrier-with-ductwork.jpg', alt: 'A long crawlspace with insulation between the joists, wrapped ductwork, posts on concrete piers and a black vapor barrier across the ground', width: 560, height: 420 },
       /* Owner's own, 18 Sep 2026: the crew treating crawlspace framing for powderpost beetles. */
       { file: '/img/gallery/technician-treating-crawlspace-framing-for-powderpost-beetles.jpg', alt: 'A technician lying on a crawlspace vapor barrier in coveralls and a respirator, spraying the joists overhead for powderpost beetles', width: 560, height: 420 },
       { file: '/img/gallery/technician-under-ductwork-in-a-crawlspace-powderpost-treatment.jpg', alt: 'A technician with a headlamp working under metal ductwork and old timber framing in a crawlspace during a powderpost beetle treatment', width: 560, height: 420 },
@@ -199,6 +204,7 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      { file: '/img/gallery/bat-behind-an-attic-vent-screen.jpg', alt: 'A bat roosting behind the mesh screen of an attic vent on weathered gray siding', width: 560, height: 747 },
       /* Owner's own, 19 Sep 2026. House numbers on the gable-vent job are blurred. */
       { file: '/img/gallery/technician-on-a-ladder-screening-a-gable-vent.jpg', alt: 'A technician at the top of a tall green extension ladder screening the gable vent of a two-story green townhouse under a clear blue sky', width: 560, height: 995 },
       { file: '/img/gallery/technician-sealing-a-second-story-gable-vent.jpg', alt: 'A technician in a black hat, seen from below, fitting mesh over a second-story gable vent from a green ladder', width: 560, height: 315 },
@@ -266,6 +272,10 @@ const allSections: GallerySection[] = [
     key: 'crew',
     title: 'The crew and the trucks',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/bryce-carter-with-the-service-van.jpg', alt: 'Bryce Carter standing beside the wrapped van on the shore, the water and a forested headland behind him', width: 560, height: 420 },
+      { file: '/img/gallery/service-truck-at-a-cabin-deming-wa.jpg', alt: 'The wrapped pickup parked below the wooden steps of a cabin among tall firs near Deming', width: 560, height: 420 },
+      { file: '/img/gallery/service-truck-at-a-forest-cabin-in-the-foothills.jpg', alt: 'The wrapped pickup parked on gravel below two forest cabins in the Mount Baker foothills, a technician at the tailgate', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026, named by him. The photographer's mark on the portraits is left in place. */
       { file: '/img/gallery/the-crew-with-the-trucks-at-sunset.jpg', alt: 'Five members of the crew standing between a wrapped pickup and a wrapped van at sunset beside the water', width: 560, height: 285 },
       { file: '/img/gallery/tj-portrait.jpg', alt: 'TJ, a technician, in a branded cap with sunglasses and work shirt in front of the ladder-racked van', width: 560, height: 560 },
@@ -313,6 +323,11 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/service-truck-at-the-mt-baker-ski-area-sign.jpg', alt: 'The wrapped pickup parked in front of the Mt. Baker Ski Area stone sign and raven sculpture, tall firs behind', width: 560, height: 338 },
+      { file: '/img/gallery/service-van-below-mount-shuksan.jpg', alt: 'The wrapped van at a high pullout on the Mount Baker Highway, a glaciered peak and forested ridges behind in summer haze', width: 560, height: 357 },
+      { file: '/img/gallery/service-van-on-the-mount-baker-highway-in-wildfire-haze.jpg', alt: 'The wrapped van on a mountain road pullout, jagged peaks and forest softened by haze under a hazy sun', width: 560, height: 248 },
+      { file: '/img/gallery/service-van-on-lummi-island.jpg', alt: 'The wrapped van parked at the water on Lummi Island, a forested shoreline across the channel under a bright sky', width: 560, height: 420 },
       { file: '/img/gallery/deer-walking-past-the-service-van.jpg', alt: 'A black-tailed deer walking across a shaded lot past the parked service van, under tall cedars', width: 560, height: 747 },
       { file: '/img/gallery/service-truck-on-the-mount-baker-highway.jpg', alt: 'A wrapped service truck parked at a high viewpoint on the Mount Baker Highway, a glaciered peak and forested ridges behind it under a bright sun', width: 560, height: 310 },
       /* Owner's own, 19 Sep 2026: mantises and a salamander met on jobs. */

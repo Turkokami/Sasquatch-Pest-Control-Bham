@@ -442,6 +442,13 @@ export const locationPhotosSecond: Record<string, Photo> = {
     caption:
       'At a house in Sudden Valley. Homes here are built into the forested slope above the lake, so the timber and the damp begin at the edge of the driveway rather than at the edge of town.',
   },
+  /* Owner's own, 19 Sep 2026, named by him as Deming. */
+  deming: {
+    file: '/img/work/service-truck-at-a-cabin-deming-wa.jpg',
+    alt: 'The green-and-black wrapped pickup parked on gravel below the wooden steps of a cabin among tall firs and sword ferns',
+    caption:
+      'At a cabin near Deming. Out here the forest runs right up to the steps, so the edge of the woods is the edge of the house, and that is where the pressure comes from.',
+  },
 };
 
 /** Whatcom County. See the note above on why this one county gets a photograph. */
@@ -486,7 +493,16 @@ export const commercialExclusionPhoto: Photo = {
 };
 
 /** Keyed by industry slug — the slugs src/content/industries owns. */
-export const industryPhotos: Record<string, Photo> = {};
+export const industryPhotos: Record<string, Photo> = {
+  /* Owner's own, 19 Sep 2026. He called them rats; the species is not named
+     here because the photograph cannot settle it and the page does not need it. */
+  'dairy-and-livestock': {
+    file: '/img/work/rats-feeding-in-horse-stall-bedding.jpg',
+    alt: 'Two gray rats feeding on manure in wood-shaving bedding against the concrete wall of a horse stall',
+    caption:
+      'Two rats feeding in a horse stall in broad daylight. Manure, spilled feed and deep bedding are food and cover in one place, which is why rodent work on a livestock property starts with the barn routine rather than with the bait.',
+  },
+};
 
 /**
  * THE CREW AND THE TRUCKS — the fallback for a town with no photograph of its
@@ -538,6 +554,13 @@ export const crewPhoto = {
  * list and what each shot needs to show.
  * ------------------------------------------------------------------------ */
 export const speciesPhotos: Record<string, Photo> = {
+  /* THATCHING ANTS, 19 Sep 2026, the owner's photograph and his identification. */
+  'thatching-ant': {
+    file: '/img/work/thatching-ants-tending-aphids-on-a-thistle.jpg',
+    alt: 'Dark ants moving along thistle stems crowded with black aphids, pink thistle flowers around them and a sunlit field behind',
+    caption:
+      'Thatching ants tending aphids on a thistle at the edge of a field. The ants guard the aphids and collect the sugary honeydew they give off, which is why a mound is usually close to plants like this.',
+  },
   /* SIX MORE, 3 Sep 2026, all from the owner's own delivery and all named by
      him. That matters for two of them in particular. The bald-faced hornet is
      the identification this build softened twice, because a large gray

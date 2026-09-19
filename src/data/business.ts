@@ -1498,6 +1498,8 @@ export const people = [
     slug: 'bryce-carter',
     name: 'Bryce Carter',
     jobTitle: 'Pest Management Technician',
+    /* Owner's photograph, 19 Sep 2026, cropped from a shot of Bryce with the van. */
+    portrait: '/img/team/bryce-carter-portrait.jpg',
     credential: 'LI-115142',
     licenseType: 'commercialOperator' as WsdaLicenseType,
     credentialName: WSDA_LICENSE_TYPES.commercialOperator.label,

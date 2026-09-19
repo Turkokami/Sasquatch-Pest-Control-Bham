@@ -36,6 +36,18 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/new-crawlspace-insulation-and-vapor-barrier.jpg': 'Aislante rosa nuevo sujeto con alambre entre las vigas del piso, sobre una barrera de vapor negra nueva, iluminado con linterna frontal',
+  '/img/gallery/crawlspace-insulation-and-vapor-barrier-with-ductwork.jpg': 'Un sótano bajo largo con aislante entre las vigas, ductos forrados, postes sobre bases de concreto y barrera de vapor negra en el suelo',
+  '/img/gallery/rats-feeding-in-horse-stall-bedding.jpg': 'Dos ratas grises comiendo estiércol entre la viruta de la cama de una caballeriza, contra una pared de concreto',
+  '/img/gallery/thatching-ants-tending-aphids-on-a-thistle.jpg': 'Hormigas de montículo cuidando pulgones negros en los tallos de un cardo de flores rosadas al borde de un campo',
+  '/img/gallery/bat-behind-an-attic-vent-screen.jpg': 'Un murciélago posado detrás de la malla de una ventila del ático en un revestimiento gris desgastado',
+  '/img/gallery/bryce-carter-with-the-service-van.jpg': 'Bryce Carter de pie junto a la van rotulada en la orilla, con el agua y un promontorio boscoso detrás',
+  '/img/gallery/service-truck-at-a-cabin-deming-wa.jpg': 'La camioneta rotulada estacionada bajo los escalones de madera de una cabaña entre abetos altos cerca de Deming',
+  '/img/gallery/service-truck-at-a-forest-cabin-in-the-foothills.jpg': 'La camioneta rotulada en la grava bajo dos cabañas en el bosque, en las faldas del Mount Baker, con un técnico en la parte trasera',
+  '/img/gallery/service-truck-at-the-mt-baker-ski-area-sign.jpg': 'La camioneta rotulada frente al letrero de piedra del Mt. Baker Ski Area y la escultura del cuervo, con abetos altos detrás',
+  '/img/gallery/service-van-below-mount-shuksan.jpg': 'La van rotulada en un mirador alto de la carretera Mount Baker, con un pico glaciar y crestas boscosas detrás en la bruma del verano',
+  '/img/gallery/service-van-on-the-mount-baker-highway-in-wildfire-haze.jpg': 'La van rotulada en un mirador de montaña, con picos dentados y bosque suavizados por la bruma bajo un sol velado',
+  '/img/gallery/service-van-on-lummi-island.jpg': 'La van rotulada junto al agua en Lummi Island, con una costa boscosa al otro lado del canal bajo un cielo brillante',
   '/img/gallery/technician-on-a-ladder-screening-a-gable-vent.jpg': 'Un técnico en lo alto de una escalera extensible verde colocando malla en la ventila del frontón de una casa verde de dos pisos, bajo un cielo azul',
   '/img/gallery/technician-sealing-a-second-story-gable-vent.jpg': 'Un técnico con sombrero negro, visto desde abajo, colocando malla sobre la ventila del frontón en un segundo piso desde una escalera verde',
   '/img/gallery/octagonal-gable-vent-with-a-mesh-screen.jpg': 'Una ventila octagonal de frontón entre tejas festoneadas, cubierta con malla de alambre negra atornillada en cada esquina',
