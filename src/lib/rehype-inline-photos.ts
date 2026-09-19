@@ -13,6 +13,7 @@
  * (node_modules/.astro and .astro) or Astro serves the old compiled bodies.
  */
 import { inlinePhotosFor, photoAfterSection } from './page-photos';
+import CAPTIONS from '../data/photo-captions.json';
 
 type Node = { type: string; tagName?: string; properties?: Record<string, unknown>; children?: Node[]; value?: string };
 
@@ -55,7 +56,12 @@ const figure = (p: { file: string; alt: string; width: number; height: number })
       type: 'element',
       tagName: 'figcaption',
       properties: {},
-      children: [{ type: 'text', value: p.alt }],
+      /* The caption says what the photograph MEANS — the condition it shows and
+         why it matters here — which the alt deliberately does not. Owner,
+         19 Sep 2026, on the town-page captions: "I'd like the others to match.
+         Tying the photo to the pest pressure in the area." A photograph with no
+         caption written yet falls back to its description. */
+      children: [{ type: 'text', value: (CAPTIONS as Record<string, { en?: string }>)[p.file]?.en ?? p.alt }],
     },
   ],
 });

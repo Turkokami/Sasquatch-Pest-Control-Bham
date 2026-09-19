@@ -423,7 +423,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/brown-praying-mantis-on-siding.jpg', alt: 'A brown praying mantis with long striped wings climbing white textured siding', width: 560, height: 747 },
       { file: '/img/gallery/green-praying-mantis-in-a-garden-plant.jpg', alt: 'A green praying mantis perched among the stems and leaves of a garden plant', width: 560, height: 1152 },
       { file: '/img/gallery/salamander-in-soil-beside-a-caterpillar.jpg', alt: 'A dark glossy salamander curled in damp soil beside a hairy caterpillar', width: 560, height: 420 },
-      { file: '/img/gallery/service-truck-above-lake-whatcom.jpg', alt: 'The wrapped service truck parked on a hilltop overlooking Lake Whatcom, forested hills and distant snowy peaks under a clear blue sky', width: 560, height: 315 },
+      { file: '/img/gallery/service-truck-at-a-hilltop-above-lake-whatcom.jpg', alt: 'The wrapped service truck parked on a hilltop overlooking Lake Whatcom, forested hills and distant snowy peaks under a clear blue sky', width: 560, height: 315 },
       /* Owner's own, 18 Sep 2026. */
       { file: '/img/gallery/service-van-on-lummi-shore-road.jpg', alt: 'The wrapped service van parked on a gravel shoulder beside the water on Lummi Shore Road, a forested island across the bay under a bright broken sky', width: 560, height: 329 },
       { file: '/img/gallery/garter-snake-at-a-foundation.jpg', alt: 'A striped garter snake, black with yellow-green stripes and orange flecks, sliding along a concrete foundation beside a drain pipe', width: 560, height: 747 },

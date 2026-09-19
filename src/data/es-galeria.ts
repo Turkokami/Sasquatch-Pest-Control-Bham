@@ -152,7 +152,7 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/service-truck-by-a-landscaped-yard-bellingham-wa.jpg': 'La camioneta rotulada junto a un jardín delantero con arbustos rojos y píceas azules en Bellingham',
   '/img/gallery/service-truck-at-a-farm-near-bow-wa.jpg': 'La camioneta rotulada en un camino de grava de una granja cerca de Bow, con campos abiertos y montañas detrás bajo un sol bajo',
   '/img/gallery/service-truck-at-a-home-sudden-valley-wa.jpg': 'La camioneta rotulada en una entrada de adoquines bajo una casa de piedra en Sudden Valley, con el sol bajo atravesando la imagen',
-  '/img/gallery/service-truck-above-lake-whatcom.jpg': 'La camioneta rotulada en una loma con vista al lago Whatcom, colinas boscosas y picos nevados a lo lejos bajo un cielo despejado',
+  '/img/gallery/service-truck-at-a-hilltop-above-lake-whatcom.jpg': 'La camioneta rotulada en una loma con vista al lago Whatcom, colinas boscosas y picos nevados a lo lejos bajo un cielo despejado',
   '/img/gallery/technician-treating-crawlspace-framing-for-powderpost-beetles.jpg': 'Un técnico acostado sobre la barrera de vapor de un sótano bajo, con overol y respirador, rociando las vigas de arriba contra escarabajos anóbidos (carcoma)',
   '/img/gallery/technician-under-ductwork-in-a-crawlspace-powderpost-treatment.jpg': 'Un técnico con linterna frontal trabajando bajo ductos metálicos y vigas viejas en un sótano bajo durante un tratamiento contra escarabajos anóbidos (carcoma)',
   '/img/gallery/rodent-chewed-shifter-boot-in-a-truck.jpg': 'La funda de goma de la palanca de cambios de una camioneta con un agujero irregular roído por un roedor, con el mecanismo a la vista',

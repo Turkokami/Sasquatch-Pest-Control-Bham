@@ -10,12 +10,15 @@
  */
 import type { InlinePhoto } from '../lib/page-photos';
 import { ALT_ES } from '../data/es-galeria';
+import CAPTIONS from '../data/photo-captions.json';
 
 interface Props { photo: InlinePhoto; lang?: 'en' | 'es' }
 const { photo, lang = 'en' } = Astro.props;
 const alt = lang === 'es' ? (ALT_ES[photo.file] ?? photo.alt) : photo.alt;
+const cap = (CAPTIONS as Record<string, { en?: string; es?: string }>)[photo.file];
+const caption = (lang === 'es' ? cap?.es : cap?.en) ?? alt;
 ---
 <figure class="inline-photo" data-boilerplate>
   <img src={photo.file} alt={alt} width={photo.width} height={photo.height} loading="lazy" decoding="async" />
-  <figcaption>{alt}</figcaption>
+  <figcaption>{caption}</figcaption>
 </figure>
