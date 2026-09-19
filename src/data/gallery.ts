@@ -323,6 +323,10 @@ const allSections: GallerySection[] = [
     title: 'The crew and the trucks',
     images: [
       /* Owner's own, 19 Sep 2026. */
+      { file: '/img/gallery/ladder-secured-at-the-gutter-with-a-technician-on-the-roof.jpg', alt: 'An extension ladder set against a house with a stabilizer bracket at the gutter and a leveler at the base, a technician in a harness working on the roof above', width: 560, height: 1212 },
+      { file: '/img/gallery/technician-roped-in-with-a-safety-harness-on-a-roof.jpg', alt: 'A technician on a roof in a full safety harness, paying out a tied-off rope line in Cougar Paws roofing boots, against a clear sky', width: 560, height: 259 },
+      { file: '/img/gallery/ladder-lock-and-gutter-guard-at-the-roof-edge.jpg', alt: 'Looking down the top of a ladder: an anti-slip bracket resting on the gutter to protect it, and a lock clamping the ladder in place', width: 560, height: 1212 },
+      /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/service-truck-on-a-foggy-morning-on-north-shore.jpg', alt: 'The wrapped Chevrolet Colorado parked on a street on a foggy morning, tall poplars and a red maple behind', width: 560, height: 315 },
       { file: '/img/gallery/heat-pressed-sasquatch-logo-transfers.jpg', alt: 'A sheet of freshly printed Sasquatch Pest Control logo transfers and mascot stickers laid out on a counter', width: 560, height: 1152 },
       /* Owner's own, 19 Sep 2026. */

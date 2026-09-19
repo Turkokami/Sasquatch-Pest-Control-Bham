@@ -36,6 +36,9 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/ladder-secured-at-the-gutter-with-a-technician-on-the-roof.jpg': 'Una escalera extensible apoyada en una casa con un estabilizador en la canaleta y un nivelador en la base, con un técnico con arnés trabajando en el techo',
+  '/img/gallery/technician-roped-in-with-a-safety-harness-on-a-roof.jpg': 'Un técnico en un techo con arnés de seguridad completo, soltando una línea de cuerda anclada, con botas para techo Cougar Paws, contra un cielo despejado',
+  '/img/gallery/ladder-lock-and-gutter-guard-at-the-roof-edge.jpg': 'Vista desde lo alto de una escalera: un soporte antideslizante apoyado en la canaleta para protegerla y un seguro que fija la escalera en su lugar',
   '/img/gallery/evan-friese-starting-a-foundation-vent-guard-job.jpg': 'Evan Friese agachado junto a una ventila de cimiento con la caja de la rejilla al lado, con una bahía y dos islas boscosas abajo del jardín',
   '/img/gallery/evan-friese-drilling-a-foundation-for-a-vent-guard.jpg': 'Evan Friese perforando el cimiento de concreto alrededor de una ventila del sótano bajo con un taladro percutor',
   '/img/gallery/evan-friese-fastening-a-foundation-vent-guard.jpg': 'Evan Friese fijando el marco de una rejilla de acero sobre una ventila del sótano bajo con un atornillador de impacto',
