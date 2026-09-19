@@ -199,6 +199,14 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      /* Owner's own, 19 Sep 2026. House numbers on the gable-vent job are blurred. */
+      { file: '/img/gallery/technician-on-a-ladder-screening-a-gable-vent.jpg', alt: 'A technician at the top of a tall green extension ladder screening the gable vent of a two-story green townhouse under a clear blue sky', width: 560, height: 995 },
+      { file: '/img/gallery/technician-sealing-a-second-story-gable-vent.jpg', alt: 'A technician in a black hat, seen from below, fitting mesh over a second-story gable vent from a green ladder', width: 560, height: 315 },
+      { file: '/img/gallery/octagonal-gable-vent-with-a-mesh-screen.jpg', alt: 'An octagonal gable vent set among scalloped shingles, covered with black wire mesh screwed down at each corner', width: 560, height: 315 },
+      { file: '/img/gallery/ladder-to-a-screened-gable-vent-on-a-second-story.jpg', alt: 'A green extension ladder reaching to a screened gable vent at the peak of a second-story dormer', width: 560, height: 315 },
+      { file: '/img/gallery/flush-mount-dryer-vent-covers-on-siding.jpg', alt: 'Black flush-mount dryer and exhaust vent covers fitted on green lap siding above a mulched bed, with a foam cover over a hose bib between them', width: 560, height: 315 },
+      { file: '/img/gallery/rodent-guard-roof-vent-cover.jpg', alt: 'A black slotted metal roof vent cover on a shingled roof, seen from the eave against a gray sky', width: 560, height: 315 },
+      { file: '/img/gallery/service-van-and-lift-sealing-a-stone-chimney.jpg', alt: 'The wrapped service van parked below a boom lift raised to the top of a river-rock chimney, where a technician is sealing around it, near Lake Whatcom', width: 560, height: 995 },
       { file: '/img/gallery/screened-roof-vents-on-a-hip-roof.jpg', alt: 'Roof vents across a dark shingled hip roof between two brick chimneys, each fitted with a black mesh guard', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/crew-on-a-roof-sealing-vents-at-a-waterfront-house.jpg', alt: 'Two technicians in harnesses on the roof of a large gray house above the water, one on the ridge and one on a ladder at the gable, with a third watching from the driveway', width: 560, height: 747 },
@@ -258,6 +266,13 @@ const allSections: GallerySection[] = [
     key: 'crew',
     title: 'The crew and the trucks',
     images: [
+      /* Owner's own, 19 Sep 2026, named by him. The photographer's mark on the portraits is left in place. */
+      { file: '/img/gallery/the-crew-with-the-trucks-at-sunset.jpg', alt: 'Five members of the crew standing between a wrapped pickup and a wrapped van at sunset beside the water', width: 560, height: 285 },
+      { file: '/img/gallery/tj-portrait.jpg', alt: 'TJ, a technician, in a branded cap with sunglasses and work shirt in front of the ladder-racked van', width: 560, height: 560 },
+      { file: '/img/gallery/technician-at-sunset-beside-the-truck-on-lummi-shore.jpg', alt: 'Evan Friese leaning on the wrapped Chevrolet pickup after a long day, the sun setting over the bay on Lummi Shore Road', width: 560, height: 315 },
+      { file: '/img/gallery/service-trucks-on-lummi-shore-road.jpg', alt: 'Two wrapped pickups and a wrapped van lined up on gravel on Lummi Shore Road in golden evening light', width: 560, height: 249 },
+      { file: '/img/gallery/service-van-at-sunrise-on-lummi-shore.jpg', alt: 'The wrapped van at sunrise on the gravel beside the water on Lummi Shore Road, a boat and timber shelters behind', width: 560, height: 286 },
+      { file: '/img/gallery/service-van-on-a-gravel-road-at-golden-hour.jpg', alt: 'The wrapped van with its ladder rack on a gravel road, shot low among yellow wildflowers under a deep blue sky', width: 560, height: 300 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/branded-safety-helmets-and-ear-protection.jpg', alt: 'Three hi-vis yellow Sasquatch Pest Control safety helmets with red-and-black ear defenders, resting on green gear bags', width: 560, height: 420 },
       { file: '/img/gallery/service-truck-by-tall-grass-bellingham-wa.jpg', alt: 'The wrapped service truck parked behind tall summer grass under evergreens and a red maple in Bellingham', width: 560, height: 381 },

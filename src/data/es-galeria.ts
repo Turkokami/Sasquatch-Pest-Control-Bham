@@ -36,6 +36,19 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/technician-on-a-ladder-screening-a-gable-vent.jpg': 'Un técnico en lo alto de una escalera extensible verde colocando malla en la ventila del frontón de una casa verde de dos pisos, bajo un cielo azul',
+  '/img/gallery/technician-sealing-a-second-story-gable-vent.jpg': 'Un técnico con sombrero negro, visto desde abajo, colocando malla sobre la ventila del frontón en un segundo piso desde una escalera verde',
+  '/img/gallery/octagonal-gable-vent-with-a-mesh-screen.jpg': 'Una ventila octagonal de frontón entre tejas festoneadas, cubierta con malla de alambre negra atornillada en cada esquina',
+  '/img/gallery/ladder-to-a-screened-gable-vent-on-a-second-story.jpg': 'Una escalera extensible verde que llega a una ventila con malla en el vértice de una buhardilla de segundo piso',
+  '/img/gallery/flush-mount-dryer-vent-covers-on-siding.jpg': 'Tapas negras empotradas para las salidas de secadora y extractor en un revestimiento verde, con una funda de espuma sobre una llave de agua entre ellas',
+  '/img/gallery/rodent-guard-roof-vent-cover.jpg': 'Una tapa metálica negra con ranuras sobre una ventila en un techo de tejas, vista desde el alero contra un cielo gris',
+  '/img/gallery/service-van-and-lift-sealing-a-stone-chimney.jpg': 'La van rotulada estacionada bajo una plataforma elevadora que llega a lo alto de una chimenea de piedra de río, donde un técnico sella alrededor, cerca del lago Whatcom',
+  '/img/gallery/the-crew-with-the-trucks-at-sunset.jpg': 'Cinco integrantes del equipo de pie entre una camioneta rotulada y una van rotulada al atardecer junto al agua',
+  '/img/gallery/tj-portrait.jpg': 'TJ, técnico, con gorra de la empresa, lentes de sol y camisa de trabajo frente a la van con portaescaleras',
+  '/img/gallery/technician-at-sunset-beside-the-truck-on-lummi-shore.jpg': 'Evan Friese apoyado en la camioneta rotulada después de un día largo, con el sol poniéndose sobre la bahía en Lummi Shore Road',
+  '/img/gallery/service-trucks-on-lummi-shore-road.jpg': 'Dos camionetas y una van rotuladas en fila sobre grava en Lummi Shore Road con la luz dorada de la tarde',
+  '/img/gallery/service-van-at-sunrise-on-lummi-shore.jpg': 'La van rotulada al amanecer sobre la grava junto al agua en Lummi Shore Road, con un bote y refugios de madera detrás',
+  '/img/gallery/service-van-on-a-gravel-road-at-golden-hour.jpg': 'La van rotulada con su portaescaleras en un camino de grava, fotografiada desde abajo entre flores amarillas bajo un cielo azul intenso',
   '/img/gallery/snap-trap-with-a-wireless-trigger-sensor.jpg': 'Una trampa de resorte de madera con un pequeño sensor de vibración Skyhawk Trapmate en un extremo, que avisa cuando la trampa se dispara',
   '/img/gallery/bait-station-with-a-wireless-motion-sensor.jpg': 'Una estación de cebo negra a prueba de manipulación, con la etiqueta de la empresa y un sensor de movimiento Skyhawk Trapmate en la tapa',
   '/img/gallery/screened-roof-vents-on-a-hip-roof.jpg': 'Ventilas en un techo de tejas oscuras entre dos chimeneas de ladrillo, cada una con una rejilla negra de malla',

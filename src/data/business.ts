@@ -1474,6 +1474,9 @@ export const people = [
     slug: 'evan-friese',
     name: 'Evan Friese',
     jobTitle: 'Pest Management Technician',
+    /* Owner's photograph, 19 Sep 2026, delivered named. Tyson's portrait was
+       replaced the same day with one from the same shoot. */
+    portrait: '/img/team/evan-friese-portrait.jpg',
     credential: 'LI-105055',
     licenseType: 'commercialOperator' as WsdaLicenseType,
     credentialName: WSDA_LICENSE_TYPES.commercialOperator.label,
