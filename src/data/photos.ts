@@ -133,6 +133,14 @@ export const servicePhotos: Record<string, Photo> = {
     caption:
       'Treating crawlspace framing for powderpost beetles. The spray is half the job and the smaller half: anobiids keep re-infesting timber for as long as it stays damp, so what ends it is getting the wood dry.',
   },
+  /* ADDED 19 Sep 2026 with the page. The owner's own photograph of a station
+     on an account, with the sensor on the lid — the thing the page is about. */
+  'remote-rodent-monitoring': {
+    file: '/img/work/bait-station-with-a-skyhawk-trapmate-sensor.jpg',
+    alt: 'A black tamper-resistant rodent bait station with the company label, a small white Skyhawk Trapmate sensor fitted to its lid',
+    caption:
+      'A station on a commercial account with the sensor on the lid. The station is where a technician put it and does the same job it always did; the sensor is what reports that something happened at it, and when.',
+  },
   'commercial-pest-control': {
     file: '/img/work/carpenter-ant-frass-in-a-commercial-storage-room.jpg',
     alt: 'A heap of pale sawdust-like carpenter ant frass on the painted floor of a commercial storage room, with stacked cartons, a stepladder and more debris along the wall behind it',

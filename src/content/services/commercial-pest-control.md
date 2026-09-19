@@ -76,6 +76,12 @@ repeated treatment.
 
 ## The record, which is half the service
 
+**Device-level history, where an account takes the add-on.** Sensors on the
+traps and stations report how many interactions each device recorded and when,
+and a trap that fires notifies us so a technician can be sent out rather than
+the device waiting for the next scheduled day. See
+[remote rodent monitoring](/services/remote-rodent-monitoring/).
+
 Worth spelling out, because "we provide documentation" means very different things
 at different companies.
 

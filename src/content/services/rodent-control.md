@@ -162,6 +162,11 @@ believing. They are frequently right, and they are frequently the first sign.
 
 ## How we work a rodent job
 
+On commercial accounts, the devices can carry sensors that count interactions
+and time-stamp them, and that tell us when a trap has fired so somebody is sent
+to service it. That is an add-on rather than part of a residential job — see
+[remote rodent monitoring](/services/remote-rodent-monitoring/).
+
 **Inspection.** We get into the crawlspace and the attic. This is not optional
 and it is not a walk around the outside of the house — the entries and the
 evidence are inside those spaces, and a company quoting rodent work without

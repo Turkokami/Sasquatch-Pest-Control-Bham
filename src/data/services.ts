@@ -207,6 +207,14 @@ export const services: Service[] = [
     category: 'commercial', confirmed: true,
     legacy: ['commercial-pest-control', 'commercial-services'],
   },
+  /* ADDED 19 Sep 2026, owner's call. An add-on to a commercial program rather
+     than a service anyone can buy on its own — the page says so, and the FAQ
+     says so, because sensors on badly placed devices are fast, precise and
+     useless. No legacy URL: the old site never had this. */
+  {
+    slug: 'remote-rodent-monitoring', name: 'Remote Rodent Monitoring', short: 'Remote monitoring',
+    category: 'commercial', confirmed: true,
+  },
 ];
 
 /* ------------------------------------------------------------------ *
