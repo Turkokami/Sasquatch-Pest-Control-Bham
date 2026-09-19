@@ -57,6 +57,8 @@ const allSections: GallerySection[] = [
     key: 'stinging',
     title: 'Wasps, hornets and bees',
     images: [
+      /* Owner's own, 19 Sep 2026, named by him as a yellowjacket nest. */
+      { file: '/img/gallery/yellowjacket-nest-in-an-oak-tree.jpg', alt: 'A large gray paper yellowjacket nest hanging among the leaves of an oak tree against a pale sky', width: 560, height: 420 },
       /* Owner's own, 18 Sep 2026, each named by him. The garage gable nest was first
          labeled European hornets; the owner withdrew that the same day ("bad label"),
          so it is described as a paper nest and nothing more. The bald-faced hornet
@@ -90,6 +92,8 @@ const allSections: GallerySection[] = [
     key: 'pests',
     title: 'The insects we treat',
     images: [
+      /* Owner's own, 19 Sep 2026. He called it some sort of beetle, so no species is named. */
+      { file: '/img/gallery/snouted-beetle-on-a-white-surface.jpg', alt: 'A small dark, scaly beetle with a short snout and elbowed antennae on a white surface', width: 560, height: 758 },
       /* Owner's own, 18 Sep 2026. */
       { file: '/img/gallery/carpenter-ant-swarmers-on-a-painted-sill.jpg', alt: 'A cluster of winged carpenter ant swarmers, black bodies and amber wings, on a white painted sill with a shed wing lying beside them', width: 560, height: 315 },
       { file: '/img/gallery/g27140.jpg', alt: 'A cockroach on a wall surrounded by droppings and staining, evidence of an infestation treated', width: 560, height: 747 },
@@ -188,6 +192,9 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      /* Owner's own, 19 Sep 2026: a rodent shield installed under the siding. */
+      { file: '/img/gallery/rodent-shield-installed-along-a-foundation.jpg', alt: 'A black metal rodent shield fastened along the bottom of the siding on a house, where it meets a rough concrete foundation, seen low along the wall', width: 560, height: 420 },
+      { file: '/img/gallery/rodent-shield-toothed-edge-close-up.jpg', alt: 'Close-up of the toothed lower edge of a black rodent shield pressed against a rough concrete foundation under the siding', width: 560, height: 420 },
       /* Owner's own, 18 Sep 2026. */
       { file: '/img/gallery/screened-crawlspace-vents-on-a-foundation.jpg', alt: 'Two black heavy-mesh screens fitted over crawlspace vents along a gray-sided house foundation', width: 560, height: 315 },
       { file: '/img/gallery/heavy-mesh-crawlspace-vent-screen-close-up.jpg', alt: 'Close-up of a black heavy-gauge mesh screen framed over a crawlspace vent in a concrete foundation', width: 560, height: 315 },
@@ -274,6 +281,11 @@ const allSections: GallerySection[] = [
     key: 'country',
     title: 'The country we work in',
     images: [
+      /* Owner's own, 19 Sep 2026: mantises and a salamander met on jobs. */
+      { file: '/img/gallery/praying-mantis-on-a-textured-post.jpg', alt: 'A tan praying mantis clinging to a black-and-white textured post, its folded forelegs and long antenna in sharp focus', width: 560, height: 1164 },
+      { file: '/img/gallery/brown-praying-mantis-on-siding.jpg', alt: 'A brown praying mantis with long striped wings climbing white textured siding', width: 560, height: 747 },
+      { file: '/img/gallery/green-praying-mantis-in-a-garden-plant.jpg', alt: 'A green praying mantis perched among the stems and leaves of a garden plant', width: 560, height: 1152 },
+      { file: '/img/gallery/salamander-in-soil-beside-a-caterpillar.jpg', alt: 'A dark glossy salamander curled in damp soil beside a hairy caterpillar', width: 560, height: 420 },
       { file: '/img/gallery/service-truck-above-lake-whatcom.jpg', alt: 'The wrapped service truck parked on a hilltop overlooking Lake Whatcom, forested hills and distant snowy peaks under a clear blue sky', width: 560, height: 315 },
       /* Owner's own, 18 Sep 2026. */
       { file: '/img/gallery/service-van-on-lummi-shore-road.jpg', alt: 'The wrapped service van parked on a gravel shoulder beside the water on Lummi Shore Road, a forested island across the bay under a bright broken sky', width: 560, height: 329 },

@@ -36,6 +36,14 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/rodent-shield-installed-along-a-foundation.jpg': 'Un protector metálico negro contra roedores fijado en la parte baja del revestimiento de una casa, donde se une con un cimiento de concreto rugoso',
+  '/img/gallery/rodent-shield-toothed-edge-close-up.jpg': 'Primer plano del borde dentado de un protector negro contra roedores apoyado contra un cimiento de concreto bajo el revestimiento',
+  '/img/gallery/yellowjacket-nest-in-an-oak-tree.jpg': 'Un nido grande de papel gris de avispas chaqueta amarilla colgando entre las hojas de un roble contra un cielo pálido',
+  '/img/gallery/snouted-beetle-on-a-white-surface.jpg': 'Un escarabajo pequeño, oscuro y escamoso, con un hocico corto y antenas acodadas, sobre una superficie blanca',
+  '/img/gallery/praying-mantis-on-a-textured-post.jpg': 'Una mantis religiosa color canela aferrada a un poste texturizado negro y blanco, con las patas delanteras plegadas y una antena larga',
+  '/img/gallery/brown-praying-mantis-on-siding.jpg': 'Una mantis religiosa café con alas largas rayadas trepando por un revestimiento blanco texturizado',
+  '/img/gallery/green-praying-mantis-in-a-garden-plant.jpg': 'Una mantis religiosa verde posada entre los tallos y hojas de una planta de jardín',
+  '/img/gallery/salamander-in-soil-beside-a-caterpillar.jpg': 'Una salamandra oscura y brillante enroscada en tierra húmeda junto a una oruga peluda',
   '/img/gallery/carpenter-ant-swarmers-on-a-painted-sill.jpg': 'Un grupo de hormigas carpinteras aladas, de cuerpo negro y alas ámbar, sobre un alféizar pintado de blanco, con un ala suelta al lado',
   '/img/gallery/screened-crawlspace-vents-on-a-foundation.jpg': 'Dos rejillas negras de malla gruesa colocadas sobre las ventilas del sótano bajo a lo largo de los cimientos de una casa gris',
   '/img/gallery/heavy-mesh-crawlspace-vent-screen-close-up.jpg': 'Primer plano de una malla negra de calibre grueso enmarcada sobre una ventila del sótano bajo en un cimiento de concreto',
