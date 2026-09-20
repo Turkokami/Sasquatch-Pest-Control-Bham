@@ -238,7 +238,6 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/g27152.jpg', alt: 'Concrete rubble and framing in a crawlspace corner, documented during an inspection', width: 560, height: 747 },
       { file: '/img/gallery/g27151.jpg', alt: 'A crawlspace vent opening with gravel and debris in the wood framing', width: 560, height: 747 },
       { file: '/img/gallery/g27110.jpg', alt: 'A bucket trap standing in a garage corner with a ridged plank leaning up to its rim as a walkway, a lidded top plate across the opening', width: 560, height: 747 },
-      { file: '/img/gallery/g27109.jpg', alt: 'A black insulated crawlspace access cover on a metal-lined access well, part of exclusion work', width: 560, height: 420 },
       { file: '/img/gallery/g27088.jpg', alt: 'Vent openings and a gap in a crawlspace foundation providing rodent access', width: 560, height: 420 },
       { file: '/img/gallery/g27078.jpg', alt: 'Mouse droppings scattered across the top of an appliance in a utility room, among loose fittings and a length of ducting, against a plywood wall', width: 560, height: 747 },
       { file: '/img/gallery/g27062.jpg', alt: 'Standing water pooled on a crawlspace vapor barrier, a moisture issue documented', width: 560, height: 420 },
@@ -248,6 +247,10 @@ const allSections: GallerySection[] = [
     key: 'exclusion',
     title: 'Exclusion and metalwork',
     images: [
+      /* An insulated access cover on a lined well: exclusion hardware, not
+         a crawlspace condition, and it was the odd one out on the exclusion
+         page for that reason alone. */
+      { file: '/img/gallery/g27109.jpg', alt: 'A black insulated crawlspace access cover on a metal-lined access well, part of exclusion work', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026: a vent guard on a commercial restaurant. */
       { file: '/img/gallery/failed-louvered-foundation-vent-at-a-restaurant.jpg', alt: 'A galvanized louvered foundation vent with bent blades and open corners at the base of a restaurant wall', width: 560, height: 560 },
       { file: '/img/gallery/vent-guard-frame-fitted-over-an-open-foundation-vent.jpg', alt: 'The steel frame of a vent guard screwed to the foundation around an open crawlspace vent, the timber lintel visible inside', width: 560, height: 560 },

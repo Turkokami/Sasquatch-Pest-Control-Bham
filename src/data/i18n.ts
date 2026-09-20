@@ -170,8 +170,18 @@ export const UI: Record<Lang, Strings> = {
       { href: '/about/', label: 'About' },
       { href: '/contact/', label: 'Contact' },
     ],
+    /* GALLERY, BLOG AND AWARDS MOVED UP HERE 20 Sep 2026, owner's call: "I
+       want the gallery and blog linked in top menu same with awards." They
+       were reachable only from the footer colophon, which is where the 4 Sep
+       audit found the blog with seventy inbound links and every one of them a
+       breadcrumb from a post already inside it. They go on this quieter row
+       rather than into NAV above, because Keystone v3.2 Part 3.5 caps the
+       primary chips at seven and that row is already at seven. */
     utilityNav: [
       { href: '/guides/', label: 'Guides' },
+      { href: '/gallery/', label: 'Gallery' },
+      { href: '/blog/', label: 'Blog' },
+      { href: '/awards/', label: 'Awards' },
       { href: '/our-guarantee/', label: 'Our guarantee' },
       { href: '/trusted-partners/', label: 'Trusted partners' },
       { href: '/network/', label: 'Our network' },
@@ -198,8 +208,14 @@ export const UI: Record<Lang, Strings> = {
        trusted partners (11 Sep 2026), which goes here as in English. /network/
        has no twin, and linking a Spanish reader into English from the
        masthead is the drift this scope was drawn to avoid. */
+    /* Gallery and awards join the row here too (20 Sep 2026), since both have
+       Spanish twins. The blog does not and is not translated — see the note
+       below — so it stays out rather than sending a Spanish reader into
+       English from the masthead. */
     utilityNav: [
       { href: '/es/guias/', label: 'Guías' },
+      { href: '/es/galeria/', label: 'Galería' },
+      { href: '/es/premios/', label: 'Premios' },
       { href: '/es/garantia/', label: 'Nuestra garantía' },
       { href: '/es/socios-de-confianza/', label: 'Socios de confianza' },
     ],

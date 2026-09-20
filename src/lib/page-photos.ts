@@ -240,6 +240,7 @@ function assignAll(): Map<string, InlinePhoto[]> {
   const used = new Map<string, number>();
   const result = new Map<string, InlinePhoto[]>();
   const all = gallery.flatMap((s) => s.images.map((img) => ({ img, section: s.key })));
+  const sectionOfFile = new Map(all.map((c) => [c.img.file, c.section]));
 
   for (const info of readPages()) {
     const seg = info.page.split('/').filter(Boolean);
@@ -305,6 +306,7 @@ function assignAll(): Map<string, InlinePhoto[]> {
        rehype plugin places those every sixth block instead. Two of the blog
        posts are written as one long run of numbered lists. */
     const slots = info.sections.length >= 3 ? slotsFor(info.sections.length) : [0, 1];
+    let fallbacks = 0;
     for (const [n, slot] of slots.entries()) {
       /* His picks take the first slots, in his order; the rest are scored. */
       if (pinned[n]) {
@@ -338,6 +340,16 @@ function assignAll(): Map<string, InlinePhoto[]> {
         if (scenery.length) best = { img: scenery[0].img, score: 0 };
       }
       if (!best) break;
+      /* TWO TRUCKS IS SHARING THE COUNTY, SIX IS A TRUCK CATALOG. Once a
+         page has nothing left in its own sections, every remaining slot would
+         fill with scenery — and with 89 scenery photographs covering 252
+         pages that means the same trucks over and over, which is the other
+         thing the owner asked us to stop. So the page stops instead. Fewer
+         photographs, each one either about the page or worth looking at. */
+      if (topics.length && SCENERY.includes(sectionOfFile.get(best.img.file) ?? '')) {
+        if (fallbacks >= 2) break;
+        fallbacks++;
+      }
       chosen.push(best.img);
       used.set(best.img.file, (used.get(best.img.file) ?? 0) + 1);
     }

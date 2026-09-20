@@ -1,6 +1,4 @@
 ---
-import InlinePhoto from '../components/InlinePhoto.astro';
-import { inlinePhotosFor } from '../lib/page-photos';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import { business } from '../data/business';
@@ -10,11 +8,17 @@ const path = '/network/';
 /* This is the legacy /locations/ brand-network content. The new taxonomy
    claims /locations/ for the geo hub, so this content moved here.
    Keystone Part 14 — site separation is absolute: we link to the Texas
-   franchise, we do not reproduce its NAP, photos or license here. */
+   franchise and we do not take its work as ours.
+
+   That rule used to be written here as "no NAP, photos or license", which the
+   owner has since relaxed twice in the only direction that matters. Their
+   mark, their truck and their own number now appear on this page BECAUSE they
+   are theirs and are labeled as theirs; what stays out is their address, and
+   any of it in our schema, which carries Bellingham alone. The line is not
+   whether their material appears — it is whether a reader could finish this
+   page thinking one business did both. */
 const answer =
   'Sasquatch Pest Control is headquartered in Bellingham, Washington, serving Whatcom County, and there is a separately operated Sasquatch franchise serving the greater Houston, Texas area. Each location is licensed, staffed and scheduled independently in its own market.';
-/* Photographs through the text (owner, 19 Sep 2026). */
-const inlinePhotos = inlinePhotosFor('/network/');
 ---
 <BaseLayout
   path={path}
@@ -67,7 +71,29 @@ const inlinePhotos = inlinePhotosFor('/network/');
         book it through us.
       </figcaption>
     </figure>
-  {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
+    {/* THEIR TRUCK, NOT OURS. Owner, 20 Sep 2026: "Replace that truck image
+        under the Texas franchise photo with the one i provided its his Texas
+        service truck in the woodlands Houston area." A photograph of a
+        Whatcom County road was sitting under the Houston heading, which is
+        the one place on this site where showing our own work reads as a
+        claim about theirs. Their photograph, stored with their mark under
+        /img/network/ rather than in the gallery. */}
+    <figure class="inline-photo">
+      <img
+        src="/img/network/sasquatch-pest-control-truck-the-woodlands-texas.jpg"
+        alt="A green wrapped Sasquatch Pest Control pickup parked on a street in The Woodlands, Texas, in front of a stone and metal-roofed community building under tall pines"
+        width="1400"
+        height="788"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption>
+        The Houston location's own truck, in The Woodlands. The number painted
+        on the fender is a Texas structural pest license, which is the clearest
+        illustration of what this page is saying: same name, same standard,
+        licensed separately in its own state.
+      </figcaption>
+    </figure>
 
     <h2>One brand, one standard</h2>
     <p>
