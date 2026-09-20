@@ -256,7 +256,7 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/g27159.jpg': 'Un tubo y escombro de concreto en un espacio bajo el piso',
   '/img/gallery/g27152.jpg': 'Escombro de concreto y estructura en una esquina del espacio bajo el piso',
   '/img/gallery/g27151.jpg': 'Una ventila del espacio bajo el piso con grava y basura en la madera',
-  '/img/gallery/g27110.jpg': 'Una aspiradora de taller y herramientas listas para trabajar bajo el piso',
+  '/img/gallery/g27110.jpg': 'Una trampa de balde en la esquina de un garaje, con una tabla ranurada apoyada hasta el borde como rampa y una tapa sobre la abertura',
   '/img/gallery/g27109.jpg': 'Una tapa negra aislada sobre un pozo de acceso forrado de metal, parte de un trabajo de exclusión',
   '/img/gallery/g27088.jpg': 'Ventilas y un hueco en el cimiento que dan acceso a los roedores',
   '/img/gallery/g27078.jpg': 'Un pozo de acceso forrado de metal, con tapa, en el cimiento de una casa',

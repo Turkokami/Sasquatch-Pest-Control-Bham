@@ -231,7 +231,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/g27159.jpg', alt: 'A pipe and concrete rubble in a crawlspace inspected', width: 560, height: 747 },
       { file: '/img/gallery/g27152.jpg', alt: 'Concrete rubble and framing in a crawlspace corner, documented during an inspection', width: 560, height: 747 },
       { file: '/img/gallery/g27151.jpg', alt: 'A crawlspace vent opening with gravel and debris in the wood framing', width: 560, height: 747 },
-      { file: '/img/gallery/g27110.jpg', alt: 'A shop vacuum and tools staged for crawlspace work', width: 560, height: 747 },
+      { file: '/img/gallery/g27110.jpg', alt: 'A bucket trap standing in a garage corner with a ridged plank leaning up to its rim as a walkway, a lidded top plate across the opening', width: 560, height: 747 },
       { file: '/img/gallery/g27109.jpg', alt: 'A black insulated crawlspace access cover on a metal-lined access well, part of exclusion work', width: 560, height: 420 },
       { file: '/img/gallery/g27088.jpg', alt: 'Vent openings and a gap in a crawlspace foundation providing rodent access', width: 560, height: 420 },
       { file: '/img/gallery/g27078.jpg', alt: 'A metal-lined crawlspace access well with a lid at a home\'s foundation', width: 560, height: 747 },
