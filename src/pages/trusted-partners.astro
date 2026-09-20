@@ -450,24 +450,32 @@ const inlinePhotos = inlinePhotosFor('/trusted-partners/');
         portrait is his own photograph, already on the about page; the mark and
         the link are his company's. */}
     <figure class="franchise portrait">
-      <img
-        src="/img/team/jorge-bedoya-portrait.jpg"
-        alt="Jorge Bedoya, the consulting entomologist, in a collared shirt"
-        width="800"
-        height="1202"
-        loading="lazy"
-        decoding="async"
-      />
-      <a href="https://nyepestcontrol.com" rel="nofollow noopener">
+      {/* The mark sits in the corner of the portrait rather than under it —
+          owner, 20 Sep 2026: "Put jeorge logo on white background and maybe
+          overlay it on bottom right corner of his profile image." It is
+          flattened onto white in the file as well as backed in CSS, because
+          the artwork is navy and green on transparency and was disappearing
+          into the dark page. */}
+      <div class="portrait-frame">
         <img
-          src="/img/partners/nye-pest-control.png"
-          alt="Nye Pest Control — the letters N, Y and E with a beetle across them"
-          width="160"
-          height="159"
+          src="/img/team/jorge-bedoya-portrait.jpg"
+          alt="Jorge Bedoya, the consulting entomologist, in a collared shirt"
+          width="800"
+          height="1202"
           loading="lazy"
           decoding="async"
         />
-      </a>
+        <a href="https://nyepestcontrol.com" rel="nofollow noopener">
+          <img
+            src="/img/partners/nye-pest-control.png"
+            alt="Nye Pest Control — the letters N, Y and E with a beetle across them"
+            width="160"
+            height="160"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+      </div>
       <figcaption>
         Jorge Bedoya, ACE. He is not our staff and he is not somebody we hand
         you off to — his own work is at nyepestcontrol.com, and he is named
