@@ -1965,6 +1965,28 @@ footer.site .colophon {
   }
 }
 
+/* The franchise mark on /network/. Sized well under the reading column: it is
+   somebody else's logo on our page, a signpost rather than a banner. */
+.franchise {
+  margin: var(--space-4) 0;
+  max-width: 22rem;
+}
+.franchise img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  background: var(--well);
+}
+.franchise figcaption {
+  margin-top: var(--space-2);
+  padding-left: var(--space-2);
+  border-left: 2px solid var(--accent-line);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-snug);
+  color: var(--ink-3);
+}
+
 /* ---------------------------------------------------- §21  awards & press */
 
 /* Sixteen badges from sixteen issuers: 225×225 to 900×1926, on white, on

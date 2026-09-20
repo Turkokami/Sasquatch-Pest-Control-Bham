@@ -42,8 +42,31 @@ const inlinePhotos = inlinePhotosFor('/network/');
       that location directly at{' '}
       <a href="https://sasquatchpestcontroltx.com/" rel="noopener">
         sasquatchpestcontroltx.com
-      </a>.
+      </a>{' '}or <a href="tel:+12816274810">281-627-4810</a>.
     </p>
+    {/* THE TEXAS MARK, owner's call 20 Sep 2026: "Use this for our Texas
+        franchise link." Their artwork, not ours, so it is stored under
+        /img/network/ rather than in the gallery, which holds photographs of
+        this company's own work. The number beside it is theirs as well — it is
+        a tel: link like every other number on this site, and it is nowhere in
+        the schema, which carries Bellingham's number alone. */}
+    <figure class="franchise">
+      <a href="https://sasquatchpestcontroltx.com/" rel="noopener">
+        <img
+          src="/img/network/sasquatch-pest-control-houston-texas.jpg"
+          alt="Sasquatch Pest Control Houston, Texas — the brand mark inside the outline of Texas over the Houston skyline, with the Texas phone number and web address"
+          width="800"
+          height="802"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+      <figcaption>
+        The Houston location's own mark. It is a separate business with its own
+        licensing, crews and schedule; this page is the link to it, not a way to
+        book it through us.
+      </figcaption>
+    </figure>
   {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
 
     <h2>One brand, one standard</h2>
