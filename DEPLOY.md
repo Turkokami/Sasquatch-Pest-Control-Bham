@@ -110,6 +110,29 @@ than a command somebody actually runs.
 
 ## Cutover additions from Keystone v3.2
 
+- **Decide www or not, before cutover, because we are currently betting the
+  wrong way.** Measured 20 Sep 2026: `https://www.sasquatchpestcontrol.com/`
+  returns a 301 to `https://sasquatchpestcontrol.com/`, so the live domain
+  canonicalises to the bare host. This site emits the opposite — `site:` in
+  `astro.config.mjs` and `SITE` in `src/data/business.ts` are both the **www**
+  form, which puts www into every canonical, every sitemap URL, every schema
+  `@id` and the `Sitemap:` line in robots.txt, on 375 pages.
+
+  If the host keeps redirecting www to bare at cutover, every canonical on the
+  site points at a redirect. Two ways to settle it and they are both one line:
+  reverse the redirect so www is the served host, or change those two constants
+  to the bare domain. It has to be a decision rather than a default, and it has
+  to be made before the DNS moves — changing canonicals after Google has
+  indexed them costs a recrawl of the whole site.
+
+- **The new site is not on the real domain yet.** As of 20 Sep 2026
+  `sasquatchpestcontrol.com` still serves the WordPress site; the Astro build is
+  on `sasquatch-pest-control-bham.vercel.app`. That preview is crawlable —
+  robots.txt says `Allow: /` — and relies on the canonical pointing at the real
+  domain to keep it out of the index. That is the correct arrangement only for
+  as long as the canonical target is a page Google can actually fetch and
+  match. Worth a `site:` check on the preview host before cutover.
+
 - **Before cutover, draw the map (13.1 step 5).** Render old → new as one
   colour-coded diagram — keep, new, redirect, restructure — from
   `src/data/legacy-urls.json` joined to the Search Console export in `private/gsc/`,
