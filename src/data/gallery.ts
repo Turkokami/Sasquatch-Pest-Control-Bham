@@ -190,6 +190,13 @@ const allSections: GallerySection[] = [
     key: 'crawlspaces',
     title: 'Crawlspaces',
     images: [
+      /* Kristofer Elling suiting up for a powderpost beetle treatment, named by
+         the owner 20 Sep 2026. The archive had these three as exterior spray
+         work and they are not: there is no sprayer in hand in any of them, and
+         the job they precede is under the house. */
+      { file: '/img/gallery/g27538.jpg', alt: 'Kristofer Elling at the open back of the van in a white protective suit, half-face respirator and a headlamp on his cap', width: 560, height: 746 },
+      { file: '/img/gallery/g27539.jpg', alt: 'Kristofer Elling in a white protective suit and a half-face respirator with pink filters, giving a thumbs up at the open van', width: 560, height: 746 },
+      { file: '/img/gallery/g27540.jpg', alt: 'Kristofer Elling in a protective suit and respirator beside the sprayer rig and hose reel at the side of a house', width: 560, height: 746 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/soaked-and-soiled-insulation-on-a-crawlspace-floor.jpg', alt: 'Pink insulation that has fallen onto a crawlspace floor, soaked and soiled, below a stained concrete wall and a vent', width: 560, height: 747 },
       { file: '/img/gallery/insulation-fallen-from-crawlspace-joists.jpg', alt: 'Pink insulation hanging loose and fallen from the joists of a crawlspace, pieces scattered across a dirty paper barrier', width: 560, height: 747 },
@@ -381,9 +388,6 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/service-van-on-a-farm-road-bow-wa.jpg', alt: 'A wrapped service van parked on a farm road shoulder beside green fields and a gate outside Bow, hills on the horizon', width: 560, height: 340 },
       { file: '/img/gallery/sasquatch-pest-control-service-van-side-view.jpg', alt: 'Side view of the wrapped Sasquatch Pest Control van showing the phone number, free estimates and web address', width: 560, height: 420 },
       { file: '/img/gallery/g27169.jpg', alt: 'A wrapped SUV parked in a driveway lined with trees', width: 560, height: 560 },
-      { file: '/img/gallery/g27540.jpg', alt: 'Technician wearing a respirator while treating a home exterior', width: 560, height: 746 },
-      { file: '/img/gallery/g27539.jpg', alt: 'Technician in a respirator holding treatment spray at a home exterior', width: 560, height: 746 },
-      { file: '/img/gallery/g27538.jpg', alt: 'Technician in a respirator preparing a treatment at a home', width: 560, height: 746 },
       { file: '/img/gallery/g26871.jpg', alt: 'A technician standing with treatment equipment at a home', width: 560, height: 746 },
       { file: '/img/gallery/g27236.jpg', alt: 'A wrapped SUV parked beside an outbuilding at a wooded Whatcom County property', width: 560, height: 420 },
       { file: '/img/gallery/g27143.jpg', alt: 'A rainbow arching over an autumn forest, photographed by a technician in the field', width: 560, height: 747 },

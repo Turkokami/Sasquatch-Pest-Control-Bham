@@ -52,7 +52,7 @@ export const aislamientoDeAtico: EsServicio = {
       h2: '¿Sellan las fugas de aire del techo?',
       parrafos: [
         'No. El sellado de aire no es un trabajo que ofrezcamos, y preferimos decirlo claro porque muchas empresas lo meten en una cotización de aislamiento y el dueño da por hecho que va incluido. Aquí no va incluido.',
-        'Lo que sí tenemos es la capacitación: la cuadrilla terminó el curso de sellado de aire Comfort Ready Home, así que sabemos cómo se ve desde arriba un techo sin sellar y le podemos decir qué está viendo. Con el ático abierto hasta las vigas, es el único momento en la vida de la casa en que se ve cada penetración del techo — lámparas empotradas, extractores del baño, tubos de ventilación, agujeros de cableado, la escotilla y, sobre todo, la parte de arriba de los muros interiores, que suele ser la fuga más grande del edificio y que desaparece bajo el aislamiento.',
+        'Lo que sí hacemos es decirle qué hay. Con el ático despejado hasta las vigas, ese es el único momento en la vida de la casa en que se ven todas las penetraciones del cielo raso, y sería un desperdicio del acceso no decírselo.',
         'Importa por dos razones. El calor que usted pagó se va. Y la humedad que lleva ese aire se condensa en la cubierta fría del techo, lo que con los inviernos produce cubierta húmeda, aislamiento que se degrada y, al final, las condiciones de humedad que traen a los insectos que destruyen la madera. Si lo va a mandar sellar, el momento es con el ático abierto y antes de que baje el material nuevo. Fotografiamos lo que encontramos y se lo pasamos a quien haga el sellado, que será un contratista de climatización o de aislamiento.',
       ],
     },

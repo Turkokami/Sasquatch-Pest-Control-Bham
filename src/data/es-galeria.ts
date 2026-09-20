@@ -282,9 +282,9 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/g26726.jpg': 'Una camioneta rotulada estacionada frente a un local, con una estatua cerca',
   // El equipo y las camionetas
   '/img/gallery/g27169.jpg': 'Una camioneta rotulada estacionada en una entrada bordeada de árboles',
-  '/img/gallery/g27540.jpg': 'Un técnico con respirador tratando el exterior de una casa',
-  '/img/gallery/g27539.jpg': 'Un técnico con respirador y la aspersora en el exterior de una casa',
-  '/img/gallery/g27538.jpg': 'Un técnico con respirador preparando un tratamiento en una casa',
+  '/img/gallery/g27540.jpg': 'Kristofer Elling con traje protector y respirador junto al carro rociador y el carrete de manguera, al costado de una casa',
+  '/img/gallery/g27539.jpg': 'Kristofer Elling con traje protector blanco y respirador de media cara con filtros rosados, haciendo el pulgar arriba junto a la van abierta',
+  '/img/gallery/g27538.jpg': 'Kristofer Elling en la parte trasera abierta de la van, con traje protector blanco, respirador de media cara y linterna en la gorra',
   '/img/gallery/g26871.jpg': 'Un técnico parado con su equipo de tratamiento en una casa',
   '/img/gallery/g27236.jpg': 'Una camioneta rotulada junto a un cobertizo en una propiedad con bosque del condado de Whatcom',
   '/img/gallery/g27143.jpg': 'Un arcoíris sobre un bosque en otoño, fotografiado por un técnico en el campo',

@@ -10,7 +10,7 @@ faqs:
   - q: "Does the insulation really need removing, or can you just add on top?"
     a: "If it is contaminated, it needs removing. Adding new insulation over rodent-fouled material seals the contamination in, does nothing about the odor, and puts good material on top of bad. Where insulation is simply thin but clean and dry, topping up is legitimate and cheaper, and we will say so."
   - q: "Do you air-seal the ceiling before re-insulating?"
-    a: "No. Air sealing is not work we offer, and we would rather say so than let you assume it is included. We are trained in it — the crew has completed the Comfort Ready Home air sealing course — so we know what an unsealed ceiling looks like from above and we will tell you where the leaks are before new material goes over them. Having the work done is a job for a weatherization or insulation contractor, and it is worth doing while the attic is open."
+    a: "No. Air sealing is not work we offer, and we would rather say so than let you assume it is included. What we will do is tell you where the leaks are before new material goes over them, because with the attic stripped back every ceiling penetration is visible. Having the work done is a job for a weatherization or insulation contractor, and it is worth doing while the attic is open."
   - q: "How much insulation should I have?"
     a: "For our climate zone the current recommendation for attics is roughly R-49 to R-60. A great many older Bellingham homes have half that, and a fair number have compressed or fallen material that is performing well below its nominal rating."
   - q: "Will I actually notice a difference?"
@@ -98,10 +98,8 @@ We do not offer air sealing. It is worth saying plainly, because a lot of
 companies fold it into an insulation quote and it is the kind of thing a
 homeowner assumes is included. It is not included here.
 
-What we do have is the training. The crew has completed the Comfort Ready Home
-air sealing course, which means we know what an unsealed ceiling looks like from
-above and can tell you what you are looking at. With the attic stripped back to
-the joists, that is the one moment in the life of the house when every ceiling
+What we will do is tell you what is there. With the attic stripped back to the
+joists, that is the one moment in the life of the house when every ceiling
 penetration is visible, and it would be a waste of the access not to say so.
 
 Here is why it matters. Insulation slows heat conduction. It does not stop air

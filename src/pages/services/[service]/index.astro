@@ -4,7 +4,6 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Photo from '../../../components/Photo.astro';
-import Training from '../../../components/Training.astro';
 import EntryPoints from '../../../components/EntryPoints.astro';
 import RodentInfographic from '../../../components/RodentInfographic.astro';
 import Video from '../../../components/Video.astro';
@@ -19,7 +18,6 @@ import { galleryFor } from '../../../data/gallery';
 import { inlinePhotosFor, dedupePhotos } from '../../../lib/page-photos';
 import { garageDoorSeal, ventGuard, serviceClips } from '../../../data/photos';
 import Clip from '../../../components/Clip.astro';
-import ExpertBlock from '../../../components/ExpertBlock.astro';
 import { liveServices, categories } from '../../../data/services';
 import { townGroups } from '../../../lib/menus';
 import { writtenTowns } from '../../../lib/geo-content';
@@ -124,41 +122,6 @@ const photos = section && {
       image of somebody else's job. */}
   {servicePhotos[s.slug] && <Photo photo={servicePhotos[s.slug]} />}
 
-  {/* TRAINING, ON THE THREE PAGES IT ACTUALLY BEARS ON. Insulation courses
-      belong on the insulation and crawlspace pages; the air-sealing course
-      belongs on exclusion, because air sealing and rodent exclusion are the
-      same skill pointed at two outcomes. Putting the block on all 23 service
-      pages would make it furniture and would be claiming relevance it does
-      not have on, say, the spider page. Each page is filtered to the courses
-      that are about its own subject. */}
-  {s.slug === 'attic-insulation' && (
-    <Training only={['attic', 'air sealing', 'wall', 'roof/ceiling']} />
-  )}
-  {s.slug === 'crawlspace-restoration' && (
-    <Training only={['floor', 'belly', 'air sealing', 'fiber glass']} />
-  )}
-  {s.slug === 'exclusion-and-repairs' && (
-    <>
-      {/* Heading rewritten 2 Sep 2026. It read "Air sealing is the same skill
-          as exclusion", which was true about the skill and wrong about the
-          offer — the owner does not sell air sealing and a heading like that
-          on a service page reads as a service. The training is still worth
-          showing here, because it is why we can tell a sealed building from an
-          unsealed one; it is just not a thing to buy from us. */}
-      <Training
-        only={['air sealing']}
-        heading="Related training we hold"
-      />
-      <Training installers heading="Product certifications we hold" />
-    </>
-  )}
-
-  {/* RidgeGuard is an exclusion product, so it belongs on the rodent page too
-      — that is the service most readers arrive at it through. */}
-  {s.slug === 'rodent-control' && (
-    <Training installers heading="Product certifications we hold" />
-  )}
-
   {s.slug === 'rodent-control' && (
     <Video name={videoForService[s.slug]} heading="The autumn move indoors, on video" />
   )}
@@ -197,8 +160,6 @@ const photos = section && {
       3,000-word floor. Category: {categories[s.category]}.
     </div>
   )}
-
-  <ExpertBlock slug={entry?.data.expert} />
 
   <Faq items={faqs} />
 
