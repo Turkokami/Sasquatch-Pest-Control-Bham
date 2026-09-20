@@ -294,7 +294,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/g27713.jpg', alt: 'Bird exclusion netting installed over an opening in a commercial concrete wall', width: 560, height: 747 },
       { file: '/img/gallery/g27108.jpg', alt: 'A gap where a deck board meets a home\'s siding, a potential pest entry point identified during an inspection', width: 560, height: 747 },
       { file: '/img/gallery/g27087.jpg', alt: 'A plastic louvered dryer vent on a home\'s siding, a spot inspected for pest entry', width: 560, height: 420 },
-      { file: '/img/gallery/g27086.jpg', alt: 'An angled view of a plastic dryer vent on a home\'s siding, checked as a possible pest entry point', width: 560, height: 420 },
+      { file: '/img/gallery/g27086.jpg', alt: 'A white guarded cover fitted over a dryer exhaust vent on lap siding, its perforated screen facing out', width: 560, height: 420 },
       { file: '/img/gallery/g27085.jpg', alt: 'A cracked parged foundation wall with wire mesh, documented during an inspection', width: 560, height: 420 },
       { file: '/img/gallery/g27083.jpg', alt: 'Loose rubble and a gap at a home\'s foundation, a potential rodent entry point found', width: 560, height: 747 },
       { file: '/img/gallery/g27080.jpg', alt: 'A gap where a home\'s siding meets the foundation slab, a potential pest entry point identified during an inspection', width: 560, height: 420 },

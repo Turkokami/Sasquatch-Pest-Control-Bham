@@ -268,7 +268,7 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/g27712.jpg': 'Malla de exclusión puesta sobre un hueco en una pared de estuco',
   '/img/gallery/g27108.jpg': 'Un hueco donde una tabla de la terraza toca el revestimiento de la casa',
   '/img/gallery/g27087.jpg': 'Una ventila de secadora de plástico con persianas en el revestimiento de una casa',
-  '/img/gallery/g27086.jpg': 'Otro ángulo de una ventila de secadora de plástico, revisada como posible entrada de plagas',
+  '/img/gallery/g27086.jpg': 'Una tapa blanca con rejilla colocada sobre la salida del extractor de la secadora en un revestimiento de tablillas, con la malla perforada hacia afuera',
   '/img/gallery/g27085.jpg': 'Un muro de cimiento aplanado y agrietado, con malla de alambre',
   '/img/gallery/g27083.jpg': 'Escombro suelto y un hueco en el cimiento de una casa, una posible entrada de roedores',
   '/img/gallery/g27080.jpg': 'Un hueco donde el revestimiento toca la losa del cimiento',
