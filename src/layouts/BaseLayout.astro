@@ -17,9 +17,25 @@ import '@fontsource/dm-sans/latin-600.css';
 import '@fontsource/dm-sans/latin-800.css';
 import '@fontsource/newsreader/latin-600.css';
 import '@fontsource/newsreader/latin-700.css';
-/* The two faces that paint first — body copy and every heading — are
-   preloaded so the swap happens before the reader has read anything. */
+/* The faces that paint first — body copy, every heading, and the bold inside
+   body copy — are preloaded so the swap happens before the reader has read
+   anything.
+
+   THE BOLD ONE WAS MISSING AND IT COST THE LAB GATE. Measured on the
+   deployment 20 Sep 2026: five of twelve templates failed on CLS 0.202, and
+   Lighthouse named one cause on all of them — "Web font loaded",
+   dm-sans-latin-600-normal.woff2, shifting the whole of <main>. `b` is
+   weight 600 in body copy (§ the type scale), so a page with bold runs in its
+   first screens reflows when that file finally lands. The 400 was preloaded
+   and the 600 was not, which is why the shift was invisible for months on the
+   pages that use bold sparingly.
+
+   It does not reproduce locally. `astro preview` serves the font off
+   localhost with no round trip, so the local gate reads CLS 0.000 on the same
+   build that scores 0.202 on Vercel — the same local-versus-deployed split
+   the lab gate script already warns about for LCP, in the other direction. */
 import sansBody from '@fontsource/dm-sans/files/dm-sans-latin-400-normal.woff2?url';
+import sansBold from '@fontsource/dm-sans/files/dm-sans-latin-600-normal.woff2?url';
 import serifHead from '@fontsource/newsreader/files/newsreader-latin-600-normal.woff2?url';
 import '../styles/global.css';
 import { getCollection } from 'astro:content';
@@ -211,6 +227,7 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <link rel="preload" href={sansBody} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={sansBold} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={serifHead} as="font" type="font/woff2" crossorigin />
 
     {/* The single JSON-LD emitter. No plugin, no second block, ever. */}
