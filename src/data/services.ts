@@ -192,7 +192,7 @@ export const services: Service[] = [
     legacy: ['crawlspace-cleanout', 'insulation-removal', 'attic-restoration'],
   },
   {
-    slug: 'attic-insulation', name: 'Attic Insulation Removal & Replacement', short: 'Attics',
+    slug: 'attic-insulation', name: 'Attic Insulation Removal & Replacement', short: 'Insulation',
     category: 'exclusion', confirmed: true, legacy: ['attic-insulation', 'insulation-replacement'],
   },
 

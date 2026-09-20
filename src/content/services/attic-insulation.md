@@ -3,10 +3,12 @@ service: attic-insulation
 title: "Attic Insulation Removal & Replacement | Bellingham"
 description: "Contaminated attic insulation removal and replacement for Bellingham and Whatcom County after rodent activity. Vacuumed out, treated and re-insulated. 360-410-2199."
 h1: "Attic Insulation Removal & Replacement"
-answer: "After rodents, attic insulation is usually contaminated through rather than in patches. We remove it, treat the surfaces, then re-insulate to current levels. It is the one job on this site that is both the pest fix and the largest efficiency gain available on an older home."
+answer: "After rodents, attic insulation is usually contaminated through rather than in patches. We handle the pest half — trapping, exclusion and the crawlspace work — and bring in a local insulation crew for the attic removal and replacement itself, on one coordinated job with one sequence and one point of contact."
 expert: kristofer-elling
 ready: true
 faqs:
+  - q: "Do you do the attic work yourselves?"
+    a: "The pest half, yes: trapping, exclusion, the crawlspace, and confirming the animals are gone before anything goes back in. The attic removal and re-insulation is done by a local insulation crew we work alongside, because that is their trade and they do it every day. We scope it together, the sequence is ours to get right, and you will know before it starts who is doing which part."
   - q: "Does the insulation really need removing, or can you just add on top?"
     a: "If it is contaminated, it needs removing. Adding new insulation over rodent-fouled material seals the contamination in, does nothing about the odor, and puts good material on top of bad. Where insulation is simply thin but clean and dry, topping up is legitimate and cheaper, and we will say so."
   - q: "Do you air-seal the ceiling before re-insulating?"
@@ -18,7 +20,7 @@ faqs:
   - q: "Do the rodents have to be gone first?"
     a: "Completely, and confirmed over several visits. New insulation installed while a population is active is nesting material you paid for. Exclusion and trapping first, then removal and replacement — any other order means doing it twice."
   - q: "How long does it take and how messy is it?"
-    a: "Most attics are one to two days. Removal is done by vacuum into sealed bags rather than by hand, with the hose run out of a window or hatch, and the work area protected. It is a contained process, but it is not a quiet one."
+    a: "Most attics are one to two days for the insulation crew, after our exclusion and trapping are finished. Removal is by vacuum into sealed bags rather than by hand, with the hose run out of a window or hatch, and the route through the house protected. It is a contained process, but it is not a quiet one."
 ---
 
 ## Why this ends up being a pest page
@@ -65,6 +67,9 @@ before the animals are confirmed gone is arranging to do the job twice.
 Where the animal was not a rodent, that removal is somebody else's job before ours. We do not do bird or wildlife work, so the sequence there is their specialist first, our restoration second, and we will say so plainly rather than starting work over an unresolved problem.
 
 ## What the work involves
+
+Two crews, one job, in this order. Ours does the pest side and the crawlspace;
+the insulation contractor does the attic.
 
 **Removal by vacuum.** Blown-in material is vacuumed into sealed bags rather than
 handled loose, with the hose run out through a window, hatch or gable vent.
@@ -184,19 +189,21 @@ so contamination is frequently more advanced than the owner expects.
 We are a small local company and we would rather tell you the limits of that
 than stretch past them.
 
-**We do this work ourselves** at the scale a small crew should: contaminated
-removal, surface treatment, baffles and ventilation correction, and
-re-insulation on a normal residential attic.
+**We do this work ourselves down below.** Crawlspace insulation and vapor
+barrier, small removals and spot repairs, the trapping and the exclusion, and
+the part that decides whether any of it holds — confirming the animals are gone
+and every roofline entry is closed.
 
-**Beyond that we bring in a local insulation contractor we work with.** A
-full-house removal and replacement, a large or complex attic, or a job needing
-equipment and crew size we do not carry gets handed to people who do that work
-every day. We coordinate it, we stay accountable for the pest side, and you will
-know before anything starts who is doing which part and what each is charging.
+**The attic goes to a local insulation crew we work alongside.** Removal and
+replacement up there is their trade, they do it every day, and they carry the
+equipment and the numbers for it. We scope the job with them and we stay
+accountable for the pest side of it, which is the side that determines when they
+can start.
 
 That is a deliberate choice rather than a gap. A company that says yes to every
 scale of job either turns work away quietly or does the big ones badly, and we
-would rather be straight about which jobs are ours.
+would rather be straight about which jobs are ours. You will know before
+anything starts who is doing which part and what each is charging.
 
 **And some of it is not either of us.** We are not roofers, electricians or
 general contractors, and attics are where that boundary comes up most.
@@ -240,7 +247,7 @@ ahead of the rodent push that comes with the September and October rain.
 **Before winter** is the practical deadline if the driver is comfort or heating
 cost, since the benefit only shows up when the weather does.
 
-The exception is a job beyond our size, which we sub to a local insulation contractor rather than stretch to cover. If a bat colony is involved,
+The attic work is scheduled with the insulation crew rather than by us alone, so the window is theirs as well as ours. If a bat colony is involved,
 the insulation work follows the exclusion window rather than your calendar or
 ours.
 

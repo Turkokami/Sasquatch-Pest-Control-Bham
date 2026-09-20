@@ -18,7 +18,7 @@ export const aislamientoDeAtico: EsServicio = {
   description:
     'Retiro de aislamiento del ático contaminado por roedores y reemplazo a los niveles actuales en Bellingham y el condado de Whatcom. Llame al 360-410-2199.',
   answer:
-    'Después de roedores, el aislamiento del ático casi siempre está contaminado de lado a lado y no por partes. Lo retiramos, tratamos las superficies y volvemos a aislar a los niveles actuales. Es el único trabajo que es a la vez el arreglo de la plaga y la mejora de eficiencia más grande de una casa vieja.',
+    'Después de roedores, el aislamiento del ático casi siempre está contaminado de lado a lado y no por partes. Nosotros hacemos la parte de plagas — trampas, exclusión y el espacio bajo el piso — y traemos a una cuadrilla local de aislamiento para el retiro y el reemplazo del ático, en un solo trabajo coordinado.',
   secciones: [
     {
       h2: '¿Por qué esto es una página de plagas?',
@@ -44,7 +44,7 @@ export const aislamientoDeAtico: EsServicio = {
     {
       h2: '¿Qué implica el trabajo?',
       parrafos: [
-        'El retiro se hace con aspiradora hacia bolsas selladas, no a mano, con la manguera saliendo por una ventana, la escotilla o una rejilla de hastial; el aislamiento en mantas se embolsa en su lugar, y las rutas por dentro de la casa se protegen. Es un proceso contenido, pero no silencioso. Se sacan los nidos, el excremento y todo lo que un animal subió, y se desinfectan las vigas, la cubierta del techo y la estructura donde la contaminación fue más fuerte.',
+        'Son dos cuadrillas en un solo trabajo: la nuestra hace la parte de plagas y el espacio bajo el piso, y el contratista de aislamiento hace el ático. El retiro se hace con aspiradora hacia bolsas selladas, no a mano, con la manguera saliendo por una ventana, la escotilla o una rejilla de hastial; el aislamiento en mantas se embolsa en su lugar, y las rutas por dentro de la casa se protegen. Es un proceso contenido, pero no silencioso. Se sacan los nidos, el excremento y todo lo que un animal subió, y se desinfectan las vigas, la cubierta del techo y la estructura donde la contaminación fue más fuerte.',
         'Revisamos la ventilación: rejillas de sofito libres en lugar de tapadas con aislamiento viejo, deflectores para que el material nuevo no bloquee el aire en los aleros, y la ventilación de cumbrera o de hastial funcionando. Confirmamos la exclusión, porque no tiene sentido aislar un espacio que sigue abierto: cada entrada de la línea del techo se cierra, y ese trabajo va en el mismo proyecto. Y volvemos a aislar a los niveles recomendados, repartido parejo, con la profundidad marcada para que se pueda verificar después.',
       ],
     },
@@ -79,7 +79,7 @@ export const aislamientoDeAtico: EsServicio = {
     {
       h2: '¿Qué hacemos nosotros y qué pasamos a otros?',
       parrafos: [
-        'Hacemos este trabajo a la escala que debe hacer una cuadrilla chica: retiro de material contaminado, tratamiento de superficies, deflectores y corrección de ventilación, y aislamiento nuevo en un ático residencial normal. Más allá de eso traemos a un contratista local de aislamiento con el que trabajamos: un retiro y reemplazo de toda la casa, un ático grande o complicado, o un trabajo que pide equipo y gente que no tenemos. Lo coordinamos, seguimos siendo responsables de la parte de plagas, y usted sabe antes de empezar quién hace qué y cuánto cobra cada uno.',
+        'Abajo el trabajo es nuestro: aislamiento y barrera de vapor en el espacio bajo el piso, retiros chicos y reparaciones puntuales, las trampas, la exclusión, y la parte que decide si todo lo demás aguanta — confirmar que los animales ya no están y que cada entrada de la línea del techo quedó cerrada. El ático va a una cuadrilla local de aislamiento con la que trabajamos: ese retiro y ese reemplazo son su oficio, lo hacen todos los días y traen el equipo y la gente para hacerlo. Cotizamos el trabajo junto con ellos y seguimos siendo responsables de la parte de plagas, que es la que decide cuándo pueden empezar. Usted sabe antes de empezar quién hace qué y cuánto cobra cada uno.',
         'Y hay cosas que no son de ninguno de los dos. No somos techadores, electricistas ni contratistas generales, y en el ático es donde más aparece ese límite. Si la cubierta está húmeda o deteriorada, eso es una pregunta de techo y de ventilación antes que de aislamiento, y aislar encima la empeora. Si hay cableado de perilla y tubo, lo tiene que evaluar un electricista antes de que se sople nada encima. Si la estructura perdió sección por pudrición o por mordidas, es de un carpintero. Preferimos retrasar el trabajo que aislar sobre un problema y entregarle una versión más calientita de él.',
       ],
     },
@@ -92,6 +92,10 @@ export const aislamientoDeAtico: EsServicio = {
     },
   ],
   faqs: [
+    {
+      q: '¿El trabajo del ático lo hacen ustedes?',
+      a: 'La parte de plagas sí: trampas, exclusión, el espacio bajo el piso, y confirmar que los animales ya no están antes de que entre material nuevo. El retiro y el aislamiento del ático los hace una cuadrilla local con la que trabajamos, porque ese es su oficio. Usted sabe desde antes quién hace qué parte.',
+    },
     {
       q: '¿Hay que retirar el aislamiento, o se puede poner encima?',
       a: 'Si está contaminado, hay que retirarlo. Poner material nuevo sobre aislamiento sucio de roedor sella la contaminación y no quita el olor. Si nada más está delgado pero limpio y seco, completarlo es legítimo y más barato, y se lo decimos.',
@@ -106,7 +110,7 @@ export const aislamientoDeAtico: EsServicio = {
     },
     {
       q: '¿Cuánto tarda y qué tanto se ensucia?',
-      a: 'Casi todos los áticos toman uno o dos días. El retiro se hace con aspiradora hacia bolsas selladas, con la manguera por una ventana o la escotilla y el área protegida. Es contenido, aunque no silencioso.',
+      a: 'Casi todos los áticos toman uno o dos días para la cuadrilla de aislamiento, después de que terminan nuestra exclusión y nuestras trampas. El retiro se hace con aspiradora hacia bolsas selladas, con la manguera por una ventana o la escotilla y el área protegida. Es contenido, aunque no silencioso.',
     },
   ],
 };
