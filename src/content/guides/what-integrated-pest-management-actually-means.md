@@ -201,7 +201,7 @@ sentimental. It runs from most durable to least.
 compost pile, a bird feeder twenty feet from the house, fallen fruit under an
 apple tree, laurel hedging pressed against siding, firewood stacked on the
 foundation, a garbage enclosure that does not close. Every one of those is a
-food or harborage supply, and none is affected by a product. UC IPM is explicit
+food or harborage supply, and none is affected by a product. [UC IPM](https://ipm.ucanr.edu/what-is-ipm/) is explicit
 on cockroaches: insecticides "are most effective in controlling cockroaches when
 combined with sanitation and exclusion practices," and removing other food
 sources "will greatly enhance the effects of baits."

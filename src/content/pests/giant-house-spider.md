@@ -269,7 +269,7 @@ Here is the part that a fear-based version of this page could never print.
 
 Work through it. The two species are difficult to separate without a microscope.
 The giant house spider is harmless. And the hobo spider — the one you cannot rule
-out — is not dangerous either: the Washington State Department of Health states
+out — is not dangerous either: the [Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/spiders) states
 that hobo spiders are not considered dangerous as previously thought, and that
 there is no evidence their venom has caused skin necrosis in people.
 

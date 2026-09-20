@@ -48,7 +48,7 @@ reviewBy: 2027-09-01
 Nearly every carpet beetle call starts with beetles on a windowsill, and nearly
 every one of those beetles is harmless.
 
-UC IPM puts it plainly. Adults of all three common species seek out pollen and
+[UC IPM](https://ipm.ucanr.edu/pdf/pestnotes/pncarpetbeetles.pdf) puts it plainly. Adults of all three common species seek out pollen and
 nectar, and they are generally found outdoors. The varied carpet beetle in
 particular is typically seen near windows, on sills, on drapes or on the panes
 themselves. Kentucky's fact sheet says the same thing from the other direction:

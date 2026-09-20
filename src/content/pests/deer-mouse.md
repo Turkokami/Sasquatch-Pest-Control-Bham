@@ -120,7 +120,7 @@ more than a scatter of droppings gives you.
 This is the reason the deer mouse gets its own page rather than a paragraph on
 another one, and it is the section where being precise matters most.
 
-**What the state says.** The Washington State Department of Health states that
+**What the state says.** The [Washington State Department of Health](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus) states that
 hantavirus-infected deer mice shed the virus in urine, saliva and droppings,
 that infected deer mice live throughout the state, and that people are at risk
 for hantavirus pulmonary syndrome in any part of Washington. It gives typically

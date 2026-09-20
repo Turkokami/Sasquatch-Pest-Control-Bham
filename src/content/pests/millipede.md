@@ -50,7 +50,7 @@ replace it, and there is nothing inside a heated house that it eats.
 University of Wisconsin's horticulture extension puts the indoor survival time
 at two to three days and names the reason: lack of moisture. Penn State says
 they cannot long survive the dry atmosphere found within most buildings and adds
-that they do no damage beyond being a nuisance. UC IPM says the same in
+that they do no damage beyond being a nuisance. [UC IPM](https://ipm.ucanr.edu/pmg/pestnotes/pn7472.html) says the same in
 different words — indoors they usually die quickly, from dry conditions and lack
 of food.
 

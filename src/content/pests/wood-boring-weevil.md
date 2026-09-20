@@ -229,7 +229,7 @@ to something else. Speed of colonization is not the same as speed of damage.
 
 Proportion matters here, and the honest framing is unusual for a pest page.
 
-The insect is not the expensive part. The USDA Forest Products Laboratory's
+The insect is not the expensive part. The [USDA Forest Products Laboratory](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf)'s
 figures on decay explain why: substantial toughness is lost by the time decayed
 wood has shed even one percent of its weight, and most strength properties can be
 down by more than half by ten percent weight loss. A member soft enough to host

@@ -82,7 +82,7 @@ restrictions protecting food, food-contact surfaces and packaging materials.
 Note the verb in the middle of that: exclude. The rule is written around keeping
 pests out of the building, not around treating them once they are in.
 
-Penn State Extension's summary of the pest management expectations under the
+[Penn State Extension](https://extension.psu.edu/food-safety-modernization-act-pest-management)'s summary of the pest management expectations under the
 Food Safety Modernization Act lands in the same place — exclusion of pests from
 fully enclosed buildings, measures to prevent establishment where a structure is
 only partly enclosed, and routine monitoring.

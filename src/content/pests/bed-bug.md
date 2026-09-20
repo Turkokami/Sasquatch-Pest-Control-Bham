@@ -65,7 +65,7 @@ problem.
 
 ## They are not a cleanliness problem, and the shame is expensive
 
-Washington's Department of Health describes people bringing bed bugs into their
+[Washington's Department of Health](https://doh.wa.gov/community-and-environment/pests/bed-bugs) describes people bringing bed bugs into their
 homes on infested luggage, furniture, bedding or clothing. That is the whole
 mechanism. There is no dirt in it, no neglect, and no correlation with how a
 household is kept.

@@ -67,7 +67,7 @@ Some of them are doing badly.
 
 The clearest case is the western bumble bee, *Bombus occidentalis*, which was
 once one of the most common and widespread bumble bees in the West. The
-Washington Department of Fish and Wildlife's account of what happened to it is
+[Washington Department of Fish and Wildlife](https://wdfw.wa.gov/species-habitats/species/bombus-occidentalis)'s account of what happened to it is
 stark. Populations crashed in the 1990s. Occupancy across its range fell by
 about 93 percent over roughly two decades. Surveys have since located only a
 handful of populations anywhere in Washington, and those are mostly in remote

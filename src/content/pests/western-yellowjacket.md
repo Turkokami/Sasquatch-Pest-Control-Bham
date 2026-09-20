@@ -74,7 +74,7 @@ protein back to the larvae, which is genuinely useful work in a garden and one
 reason we do not treat every nest we find. The nest enlarges downward as the
 workers excavate the cavity around it.
 
-**Late summer.** Peak. WSU Extension records western yellowjacket nests running
+**Late summer.** Peak. [WSU Extension](https://s3.wp.wsu.edu/uploads/sites/1384/2016/07/Yellowjackets-and-Paper-Wasps.pdf) records western yellowjacket nests running
 to as many as five thousand workers and fifteen thousand cells, and puts the
 maximum in August and September. New queens and males are produced and leave to
 mate.

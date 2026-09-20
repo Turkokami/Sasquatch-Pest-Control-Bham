@@ -98,7 +98,7 @@ feeding gets carried inward and distributed. An insect that genuinely digested
 wood would never take a bait home, which is why baiting is a live option here
 and a dead end against a true wood-feeder.
 
-**The galleries look wrong for a termite.** Penn State Extension describes
+**The galleries look wrong for a termite.** [Penn State Extension](https://extension.psu.edu/carpenter-ants) describes
 carpenter ant workings as smooth-sided and containing no soil particles or fecal
 pellets. Housekeeping is compulsive; the nest is kept clear because the ants live
 in it. Termite workings are the opposite in exactly the way you would expect from

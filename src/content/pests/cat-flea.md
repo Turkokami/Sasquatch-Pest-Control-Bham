@@ -53,7 +53,7 @@ Somebody in Whatcom County finds fleas on a dog and reasonably calls them dog
 fleas. The species is almost certainly *Ctenocephalides felis*, the cat flea,
 and the name is a historical accident rather than a description of its habits.
 
-UC IPM calls it the most common external parasite of domestic cats and dogs
+[UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7419.html) calls it the most common external parasite of domestic cats and dogs
 alike, and states plainly that a flea found on either animal is most likely this
 one. Purdue's public health entomology guidance goes further on the host range:
 alongside cats and dogs it lists chickens, calves, pigs and other livestock,

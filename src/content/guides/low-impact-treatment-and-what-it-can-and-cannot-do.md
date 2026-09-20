@@ -106,7 +106,7 @@ zero.
 **Changing the conditions.** Drying a crawlspace, extending a downspout, cutting
 a hedge back off the siding, lidding a compost bin, picking up fallen fruit,
 moving the pet food. Also zero product, and in this climate it removes whole
-species at once. UC IPM's cockroach guidance is explicit that removing food
+species at once. [UC IPM](https://ipm.ucanr.edu/legacy_assets/pdf/pestnotes/pnants.pdf)'s cockroach guidance is explicit that removing food
 sources "will greatly enhance the effects of baits," and that insecticides work
 best "when combined with sanitation and exclusion practices."
 

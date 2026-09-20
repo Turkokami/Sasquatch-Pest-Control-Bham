@@ -56,7 +56,7 @@ in the wrong direction.
 Start instead with the number, because the number governs everything else. Ohio
 State's extension fact sheet places silverfish in a band of 75 to 95 percent
 relative humidity. Texas A&M's field guide puts what they need to survive at 75
-to 90 percent and describes them as sensitive to moisture. UC IPM's Pest Notes
+to 90 percent and describes them as sensitive to moisture. [UC IPM](https://ipm.ucanr.edu/pdf/pestnotes/pnsilverfish.pdf)'s Pest Notes
 give a preferred range of 71 to 90 degrees with relative humidity above 75
 percent at the warmer end of that.
 

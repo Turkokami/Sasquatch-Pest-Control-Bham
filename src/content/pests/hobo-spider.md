@@ -64,7 +64,7 @@ The hobo spider is the most misrepresented animal in this county, and the
 misrepresentation runs in the direction that sells treatments. So the correction
 goes at the top rather than buried under a description.
 
-The Washington State Department of Health states that hobo spiders are **not
+The [Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/spiders) states that hobo spiders are **not
 considered dangerous as previously thought**. It describes them as shy, retiring
 and reluctant biters, and it says directly that there is no evidence hobo spider
 venom has caused skin necrosis or necrotic wounds in people.

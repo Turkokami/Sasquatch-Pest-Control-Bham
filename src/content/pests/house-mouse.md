@@ -106,7 +106,7 @@ what you believe left it.
 
 The single number worth carrying around is a quarter of an inch.
 
-Washington's Department of Health tells residents that mice can squeeze through
+[Washington's Department of Health](https://doh.wa.gov/community-and-environment/pests/rodents) tells residents that mice can squeeze through
 openings as small as a quarter of an inch. Whatcom County's own rodent guidance
 instructs sealing holes and gaps bigger than a quarter inch. The eXtension
 wildlife damage guidance gives the same threshold and specifies twenty-four-gauge

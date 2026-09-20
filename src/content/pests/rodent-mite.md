@@ -241,7 +241,7 @@ the mechanism, because "it will not work" is less convincing than why.
 Bed bug work is aimed at harborage in and around a bed. Mattress seams, box
 spring corners, frame joints, headboards, bedside furniture, carpet edges,
 baseboards. That is where bed bugs live, that is where they breed, and treating
-those places is exactly right for that insect. Washington's Department of Health
+those places is exactly right for that insect. [Washington's Department of Health](https://doh.wa.gov/community-and-environment/pests/bed-bugs)
 describes bed bugs being carried into homes on luggage, furniture, bedding and
 clothing, which is a description of an insect that arrives with your belongings
 and stays with them.

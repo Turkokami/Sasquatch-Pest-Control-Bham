@@ -46,7 +46,7 @@ ready: true
 Almost every call about this insect is really a call about the back end of it,
 so we will settle that before anything else.
 
-The forceps are a bluff. UC IPM's Pest Notes describe them as a pair of
+The forceps are a bluff. [UC IPM](https://www.maine.gov/dacf/php/gotpests/bugs/factsheets/earwigs-cal.pdf)'s Pest Notes describe them as a pair of
 prominent appendages used in defense and state directly that earwigs do not
 attack humans. There is no venom gland attached to them. There is no sting.
 There is no bite in the sense that matters — no mouthparts driving into skin,

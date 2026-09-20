@@ -65,7 +65,7 @@ century's name you prefer — is the climbing one. Washington Department of Fish
 and Wildlife describes it as similar in overall length to the
 [Norway rat](/pest-library/norway-rat/) but slenderer and darker, with a tail
 longer than the head and body combined, and records it building nests in attics,
-trees and overgrown shrubbery or vines. WDFW adds that it rarely bothers digging
+trees and overgrown shrubbery or vines. [WDFW](https://wdfw.wa.gov/species-habitats/living/species-facts/rats) adds that it rarely bothers digging
 a burrow at all when an off-the-ground site is available.
 
 That single preference reorganizes everything. The entries are at roof height

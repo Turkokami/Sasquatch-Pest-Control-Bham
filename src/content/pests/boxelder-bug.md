@@ -230,7 +230,7 @@ Empty the canister outdoors and seal what is in it, because a proportion of them
 will still be alive.
 
 While we are here, a related point that gets misapplied from a neighboring species:
-the National Pesticide Information Center states that killing one of these
+the [National Pesticide Information Center](https://npic.orst.edu/pest/stinkbug.html) states that killing one of these
 overwintering bugs does not attract more, and that the odor released will not
 attract other bugs. Crush them if you must — you will simply have a mark on the
 wall and a smell in the room, and no further consequence.

@@ -148,7 +148,7 @@ chain of events rather than waving at "damp".
 
 Wood does not decay because it is wet on the outside. It decays because fungi
 colonize it, and fungi need free water inside the cell structure to do that. The
-Forest Products Laboratory sets the threshold at the fiber saturation point,
+[Forest Products Laboratory](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf) sets the threshold at the fiber saturation point,
 which averages around thirty percent moisture content, and states that serious
 decay occurs only above it. Framing lumber in a functioning building sits far
 below that figure.

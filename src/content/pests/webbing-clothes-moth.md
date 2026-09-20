@@ -57,7 +57,7 @@ cotton shirts hanging against it are perfect. A blended sock with thirty percent
 wool is grazed in patches and the rest of the fiber is left as a skeleton.
 
 Hold on to the second half of the rule as well, because it is where the
-exceptions live. UC IPM records that fabrics carrying food, perspiration or urine
+exceptions live. [UC IPM](https://ipm.ucanr.edu/pdf/pestnotes/pnclothesmoths.pdf) records that fabrics carrying food, perspiration or urine
 stains are more subject to damage, and Kentucky adds that synthetics are attacked
 when heavily soiled with food stains or body oils. Soiling puts digestible
 residue onto a fiber that had none.

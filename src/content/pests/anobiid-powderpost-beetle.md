@@ -49,7 +49,7 @@ wrong buildings and the wrong remedy.
 
 The true powderpost beetles are the Lyctidae. Their whole biology is built
 around a feature of hardwood: pores wide enough for a female to insert eggs
-into, in sapwood with enough starch to raise larvae on. UC IPM states the
+into, in sapwood with enough starch to raise larvae on. [UC IPM](https://ipm.ucanr.edu/home-and-landscape/wood-boring-beetles-in-homes/) states the
 constraint directly, that these beetles go after hardwoods because those woods
 have pores they can lay eggs into and softwoods do not. The list of hosts that
 follows is always the same — oak, ash, hickory, mahogany, walnut, bamboo. Those

@@ -132,7 +132,7 @@ changes it. That single fact decides every sensible decision about this insect.
 Native lady beetles are, for practical purposes, incapable of bothering anyone.
 This one is different, and the extension literature is consistent about it.
 
-University of Minnesota Extension states plainly that some can bite hard enough
+[University of Minnesota Extension](https://extension.umn.edu/nuisance-insects/multicolored-asian-lady-beetles) states plainly that some can bite hard enough
 to break human skin, causing minor and short-lived discomfort. Penn State
 records occasional biting of varying intensity.
 

@@ -120,7 +120,7 @@ about wasps does not apply to what you have.
 
 Size is modest. WSU's bulletin describes these nests as often less than a
 hundred cells and possibly four hundred cells and more at the top of the range,
-while UC IPM puts paper wasp colonies generally at fifteen to two hundred
+while [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html) puts paper wasp colonies generally at fifteen to two hundred
 individuals. Colorado State's account of several dozen adults by the end of
 summer, on a comb that has grown to a hundred cells or more, is a good
 description of the typical version on a Bellingham porch.

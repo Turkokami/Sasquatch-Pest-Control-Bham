@@ -208,7 +208,7 @@ both can be reasonable. One of them is a visit. The other is two people, a van
 of materials and a day and a half under a house.
 
 It is also why the material specification matters to the price and to the
-outcome. UC IPM's guidance on rats is that every opening larger than a quarter
+outcome. [UC IPM](https://ipm.ucanr.edu/legacy_assets/pdf/pestnotes/pnrats.pdf)'s guidance on rats is that every opening larger than a quarter
 inch should be closed, and that lightweight chicken wire is not a rodent
 material — rats pass straight through it. Doing it properly means the right mesh
 at the right gauge, fastened to sound substrate. Doing it cheaply means doing it

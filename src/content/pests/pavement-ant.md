@@ -73,7 +73,7 @@ small, dark, and easy to file mentally under "the little black ants."
 
 The measurements are consistent between sources. Utah State puts workers at two
 and a half to three millimeters and dark brown; Penn State gives a slightly
-wider range at two and a half to four millimeters, dark brown to black; UC IPM
+wider range at two and a half to four millimeters, dark brown to black; [UC IPM](https://ipm.ucanr.edu/TOOLS/ANTKEY/pavement.html)
 records them at three-sixteenths of an inch. All three agree the workers are
 monomorphic, meaning every one in the column is the same size as every other.
 That single observation rules out carpenter ants immediately, since a mature

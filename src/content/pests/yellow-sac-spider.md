@@ -58,7 +58,7 @@ in both directions.
 The yellow sac spider is small, pale, easy to miss, and almost never mentioned
 by the companies that will happily sell you a treatment against a hobo spider.
 It is also the spider in a Whatcom County house most likely to actually bite
-somebody. Washington's Department of Health names exactly two spiders in the
+somebody. [Washington's Department of Health](https://doh.wa.gov/community-and-environment/pests/spiders) names exactly two spiders in the
 state as being of medical significance: the black widow, which is a species of
 the drier country east and south of the Cascades and uncommon on this side of
 them, and this one.

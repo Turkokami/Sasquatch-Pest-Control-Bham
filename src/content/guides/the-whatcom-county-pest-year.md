@@ -61,7 +61,7 @@ and they will keep reappearing on every warm day until spring.
 Wasp and hornet colonies are gone. Only mated queens survive, dormant somewhere
 sheltered, and the paper nests in the trees are empty.
 
-Decay in wet timber is slow but not stopped. The Forest Products Laboratory puts
+Decay in wet timber is slow but not stopped. The [Forest Products Laboratory](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf) puts
 decay fungi at their optimum near 77°F, slowing markedly below 50°F. A crawlspace
 in February is at the cold end of that band — which means the process is
 continuing quietly rather than pausing.

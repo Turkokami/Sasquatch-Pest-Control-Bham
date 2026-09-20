@@ -66,7 +66,7 @@ after a walk.
 So this profile does what the library is for. It tells you what the animal is,
 where you genuinely encounter it here, what the risk realistically looks like in
 this corner of the state, and how to take one off correctly. Where you need
-authority beyond that, the Washington State Department of Health is the source
+authority beyond that, the [Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/ticks) is the source
 we cite throughout, and it is where we would send you.
 
 ## What the animal is

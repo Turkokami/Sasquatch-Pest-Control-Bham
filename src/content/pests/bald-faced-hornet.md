@@ -153,7 +153,7 @@ household deciding what to do should be weighing position rather than volume.
 
 This is the most useful thing on the page and it is almost never said.
 
-UC IPM makes a distinction between the two groups of yellowjackets that matters
+[UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html) makes a distinction between the two groups of yellowjackets that matters
 enormously in practice: the aerial nesters do not become scavengers at the end
 of the season. The ground-nesting species flip to sugar and meat scavenging as
 brood rearing winds down, which is what puts them at bins, fallen fruit, cans

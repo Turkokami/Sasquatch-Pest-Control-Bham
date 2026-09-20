@@ -64,7 +64,7 @@ Find the container. Everything else on this page is in service of that.
 Small, flat and slender, which is a different silhouette from most beetles people
 meet indoors.
 
-UC IPM describes slender, flat, brown beetles about one tenth of an inch long.
+[UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7452.html) describes slender, flat, brown beetles about one tenth of an inch long.
 Minnesota gives about one tenth of an inch, slender, flattened, and brownish-red
 to almost black. Penn State gives roughly the same length and a triangular head.
 

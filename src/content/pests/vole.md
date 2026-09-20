@@ -375,7 +375,7 @@ different answer.
 ## Where to go instead
 
 For the horticultural side of this — which is most of it — the useful contacts
-are the WSU Extension Master Gardener program for Whatcom County, which handles
+are the [WSU Extension](https://pubs.extension.wsu.edu/product/vole-management-in-home-backyards-and-gardens-home-garden-series/) Master Gardener program for Whatcom County, which handles
 exactly this kind of question, and the extension publications listed below,
 which are written for a homeowner rather than for a commercial operator.
 

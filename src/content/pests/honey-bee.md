@@ -54,7 +54,7 @@ Two things follow that are worth saying immediately.
 **A great many honey bee calls are not honey bees.** In late summer especially,
 what is at the table is a western yellowjacket. Bees are hairy and rounded;
 yellowjackets are smooth, shiny, narrow-waisted and faster. More usefully, honey
-bees have no interest in your food or your drink. UC IPM's own distinction is
+bees have no interest in your food or your drink. [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn74159.html)'s own distinction is
 that honey bees are less brightly striped than yellowjackets and carry more hair.
 If it is on your plate in September, it is a wasp, and that is
 [wasp and hornet control](/services/wasp-control/).

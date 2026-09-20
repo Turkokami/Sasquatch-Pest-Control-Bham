@@ -228,7 +228,7 @@ waiting for something small, and it has no interest in an object the size of a
 person. The Burke Museum's arachnologist, who has handled tens of thousands of
 spiders across a career, records three bites in forty-four years, all trivial.
 
-The Washington State Department of Health's most useful contribution on the whole
+The [Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/spiders)'s most useful contribution on the whole
 subject of spider bites is a warning that runs the other way: unexplained wounds
 are often misdiagnosed as spider bites, and that misdiagnosis can leave the
 actual condition untreated. If you have a wound that concerns you, the answer is

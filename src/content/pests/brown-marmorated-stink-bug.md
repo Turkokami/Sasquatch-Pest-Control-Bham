@@ -127,7 +127,7 @@ Skamania Counties in the far southwest of the state.
 That is not where the story stopped. WSU's tree fruit entomology program, which
 maintains the state record, had it in 29 counties by November 2020 and 30 by
 December 2022, most of them strung along the I-5 corridor, with a record 9,500
-individuals reported in 2022 alone. WSU Extension in Benton and Franklin Counties
+individuals reported in 2022 alone. [WSU Extension](https://extension.wsu.edu/wam/brown-marmorated-stink-bug-halyomorpha-halys-a-guide-to-identification) in Benton and Franklin Counties
 now describes the insect as present in almost every county in the state.
 
 For here specifically, WSU's Whatcom Ag Monthly is the source worth quoting,

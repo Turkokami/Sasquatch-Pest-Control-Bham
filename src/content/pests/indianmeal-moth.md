@@ -69,7 +69,7 @@ and it costs less.
 
 Small, and unmistakable once you have looked at one properly.
 
-UC IPM describes the forewings as reddish brown with a coppery luster on the
+[UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7452.html) describes the forewings as reddish brown with a coppery luster on the
 outer two-thirds and whitish gray on the inner portion. Clemson gives the same
 two-toned pattern — reddish brown with a copper luster on the outer two-thirds,
 gray on the inner third — and a wingspan of about half an inch. Minnesota puts

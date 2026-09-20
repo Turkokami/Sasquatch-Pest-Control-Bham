@@ -125,7 +125,7 @@ April, persistently damp, with no hot dry stretch to drive moisture back out of
 timber that has taken it on. Wood that gets wet here stays wet, and it stays wet
 across a whole season rather than for a two weeks.
 
-**Temperatures sit in the range decay likes.** The Forest Products Laboratory
+**Temperatures sit in the range decay likes.** The [Forest Products Laboratory](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf)
 gives decay fungi an optimum around 77°F, slowing below 50°F and essentially
 ceasing at about 35°F. A Whatcom County crawlspace spends much of the year in
 the band where decay proceeds — not fast, but continuously, for decades.

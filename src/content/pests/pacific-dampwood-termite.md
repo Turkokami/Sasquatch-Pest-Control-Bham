@@ -70,7 +70,7 @@ nothing about an insect living in a window header eight feet up.
 
 The Pacific Northwest Pest Management Handbooks put the distribution plainly:
 this species is more prevalent in western Washington and Oregon than the
-subterranean species is. WSU Extension bulletin EB0787 goes further and states
+subterranean species is. [WSU Extension](https://owic.oregonstate.edu/sites/default/files/pubs/termites.pdf) bulletin EB0787 goes further and states
 that the subterranean termite occurs only as far north as Seattle in western
 Washington. Whatcom County sits well north of that line. Subterranean termites
 are not impossible here — distributions shift, and material moves around on

@@ -42,7 +42,7 @@ helps or it does not, and the situation is no worse for the attempt.
 Pharaoh ants are the exception, and it is the single most important thing on
 this page. **Insecticide applied to a pharaoh ant colony causes it to bud.** The
 colony splits, queens leave with workers, and new nests establish elsewhere in
-the same building. University of Minnesota Extension states it plainly:
+the same building. [University of Minnesota Extension](https://extension.umn.edu/garden-and-home/home-maintenance/household-insects/ants) states it plainly:
 insecticides can cause pharaoh ants to bud, creating new colonies.
 
 So the householder who buys an aerosol and does what seems obvious turns one

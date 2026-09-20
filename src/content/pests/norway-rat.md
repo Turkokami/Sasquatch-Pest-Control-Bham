@@ -65,7 +65,7 @@ native, both of them here long enough that nobody thinks of them as introduced
 any more. Of the two, the Norway rat is what turns up in most Whatcom County
 buildings.
 
-Washington Department of Fish and Wildlife describes an animal averaging sixteen
+[Washington Department of Fish and Wildlife](https://wdfw.wa.gov/species-habitats/living/species-facts/rats) describes an animal averaging sixteen
 inches nose to tail tip, grayish-brown top and bottom, heavy through the
 shoulders, with a scaly tail slightly shorter than the head and body combined.
 That last detail is the one worth memorizing, because it is the single

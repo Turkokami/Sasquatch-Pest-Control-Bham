@@ -179,7 +179,7 @@ needs to close, latch, and still be openable by somebody who has to get in.
 ### Utility penetrations
 
 Water, gas, electrical, cable, refrigerant lines, irrigation, and every service
-added since the building went up. UC IPM lists openings around water pipes,
+added since the building went up. [UC IPM](https://ipm.ucanr.edu/legacy_assets/pdf/pestnotes/pnrats.pdf) lists openings around water pipes,
 electric wires, sewer pipes, drain spouts and vents among the primary rodent
 routes into buildings, and in our experience almost nobody seals them.
 

@@ -83,7 +83,7 @@ something knocks its nest.
 ## The nest, and why it will not settle the question
 
 An envelope of gray paper wrapped around several tiers of comb, with the way in
-at the bottom. UC IPM's description of the aerial nesters covers both species at
+at the bottom. [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html)'s description of the aerial nesters covers both species at
 once — paper nests attached to the eaves of a building or hanging from the limb
 of a tree, with the entrance normally a hole at the bottom of the nest — and
 WSU's bulletin says the same thing of both, in trees or on the outside eaves of

@@ -353,7 +353,7 @@ Nothing you spray works as reliably as taking the prey away.
 vent screens and utility penetrations. That is exclusion work, and it pays for
 itself against several unrelated problems at once.
 
-**Skip the fogger.** UC IPM's assessment of spider spraying is that control by
+**Skip the fogger.** [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7442.html)'s assessment of spider spraying is that control by
 spraying is only temporary unless it goes along with housekeeping, and that it
 is just as easy and much less toxic to crush the spider. That is a pest control
 authority telling you the product is the weaker option, and on this species we

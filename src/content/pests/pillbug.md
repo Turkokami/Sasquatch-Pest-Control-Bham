@@ -75,7 +75,7 @@ establishing, it is not feeding, and it is not going to be there next week.
 
 Small, oval, armored, and instantly recognizable once you have the shape.
 
-**Size.** UC IPM gives about a third to three-quarters of an inch; Maryland says
+**Size.** [UC IPM](https://ipm.ucanr.edu/home-and-landscape/pillbugs-and-sowbugs/) gives about a third to three-quarters of an inch; Maryland says
 half to three-quarters. Either way, roughly the size of a pencil eraser up to
 about a fingernail.
 

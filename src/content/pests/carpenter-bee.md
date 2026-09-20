@@ -79,7 +79,7 @@ comparison works without the other insect present.
 **Look at the abdomen — the rear section.** A bumble bee is covered in dense hair
 along its whole length, banded in yellow, black, white, orange or brown
 depending on species. A carpenter bee has a furry thorax and then an abdomen
-that is bare, black and glossy. UC IPM puts it as abdomens shinier than a
+that is bare, black and glossy. [UC IPM](https://ipm.ucanr.edu/home-and-landscape/carpenter-bees/) puts it as abdomens shinier than a
 bumble bee's, sometimes with a metallic blue cast. Penn State reduces the whole
 thing to shiny against fuzzy.
 
