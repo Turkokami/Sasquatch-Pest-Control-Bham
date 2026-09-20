@@ -240,7 +240,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/g27110.jpg', alt: 'A bucket trap standing in a garage corner with a ridged plank leaning up to its rim as a walkway, a lidded top plate across the opening', width: 560, height: 747 },
       { file: '/img/gallery/g27109.jpg', alt: 'A black insulated crawlspace access cover on a metal-lined access well, part of exclusion work', width: 560, height: 420 },
       { file: '/img/gallery/g27088.jpg', alt: 'Vent openings and a gap in a crawlspace foundation providing rodent access', width: 560, height: 420 },
-      { file: '/img/gallery/g27078.jpg', alt: 'A metal-lined crawlspace access well with a lid at a home\'s foundation', width: 560, height: 747 },
+      { file: '/img/gallery/g27078.jpg', alt: 'Mouse droppings scattered across the top of an appliance in a utility room, among loose fittings and a length of ducting, against a plywood wall', width: 560, height: 747 },
       { file: '/img/gallery/g27062.jpg', alt: 'Standing water pooled on a crawlspace vapor barrier, a moisture issue documented', width: 560, height: 420 },
     ],
   },

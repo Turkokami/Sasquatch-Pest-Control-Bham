@@ -259,7 +259,7 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/g27110.jpg': 'Una trampa de balde en la esquina de un garaje, con una tabla ranurada apoyada hasta el borde como rampa y una tapa sobre la abertura',
   '/img/gallery/g27109.jpg': 'Una tapa negra aislada sobre un pozo de acceso forrado de metal, parte de un trabajo de exclusión',
   '/img/gallery/g27088.jpg': 'Ventilas y un hueco en el cimiento que dan acceso a los roedores',
-  '/img/gallery/g27078.jpg': 'Un pozo de acceso forrado de metal, con tapa, en el cimiento de una casa',
+  '/img/gallery/g27078.jpg': 'Excremento de ratón esparcido sobre un aparato en un cuarto de servicio, entre conexiones sueltas y un tramo de ducto, contra una pared de madera',
   '/img/gallery/g27062.jpg': 'Agua estancada sobre la barrera de vapor de un espacio bajo el piso',
   // Exclusión y trabajo en metal
   '/img/gallery/g27172.jpg': 'La línea del techo y la canaleta de una casa',

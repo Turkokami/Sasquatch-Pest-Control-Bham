@@ -261,9 +261,19 @@ function assignAll(): Map<string, InlinePhoto[]> {
       return found.img;
     });
 
-    const allowed = ({ img }: { img: GalleryImage }) => {
+    const allowed = ({ img, section }: { img: GalleryImage; section: string }) => {
       /* pinned to some other page */
       if (PINNED_FILES.has(img.file) && !mine.includes(img.file)) return false;
+      /* RULE 4, owner 20 Sep 2026: "No reason for insulation photo to be with
+         un wanted buzzing page check to make sure images are co rolating with
+         pages they are on." He was right, and a penalty was too weak to stop
+         it: an unrelated photograph that had never been used could still beat
+         a fitting one that had, because the use count subtracts faster than
+         the mismatch did. So a page about something now draws from its own
+         sections or from the trucks and the county — which is the fallback he
+         asked for — and nothing else. A page with no topic at all, which means
+         the hubs, keeps the wider pool. */
+      if (topics.length && !topicSections.has(section) && !SCENERY.includes(section)) return false;
       const hits = [...img.alt.matchAll(ANIMAL)];
       if (hits.length) {
         if (isPest) { if (!img.alt.toLowerCase().replace(/-/g, ' ').includes(species)) return false; }
@@ -310,7 +320,8 @@ function assignAll(): Map<string, InlinePhoto[]> {
         let score = overlap * 3;
         if (topics.some((t) => t.prefer.test(cand.img.alt))) score += 4;
         if (topicSections.has(cand.section)) score += 3;
-        else if (NEUTRAL.includes(cand.section)) score += 1;
+        else if (topics.length) score -= 2;               // scenery: honest, but a fallback
+        else if (NEUTRAL.includes(cand.section)) score += 1;   // a hub, with no topic
         else score -= 4;                                  // a section this page is not about
         if (ownTown?.rx.test(cand.img.alt)) score += 6;   // taken in this very town
         if (isPest && cand.section === 'pests') score += 2;

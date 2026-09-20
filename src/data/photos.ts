@@ -356,8 +356,11 @@ export const locationPhotos: Record<string, Photo> = {
     caption:
       'A yellowjacket nest in a soffit corner in Sumas. The giveaway is that it is enclosed — yellowjackets and hornets wrap a nest in a papery envelope, while a paper wasp builds an open umbrella of visible cells. Enclosed nests are found late, because nothing shows from the ground until the colony is loud enough to hear.',
   },
+  /* The lead pointed at the /img/work/ copy of the farm frame, which is not
+     this town: owner, 20 Sep 2026, "This is a house in sudden valley with sun
+     peaking over roof line". The real one lives in the gallery. */
   'sudden-valley': {
-    file: '/img/work/service-truck-at-a-home-sudden-valley-wa.jpg',
+    file: '/img/gallery/service-truck-at-a-home-sudden-valley-wa.jpg',
     alt: 'The wrapped service truck on a paver driveway below a stone-clad house and terraced garden walls, tall evergreens behind, low sun flaring across the frame',
     caption:
       'At a house in Sudden Valley. Homes here are built into the forested slope above the lake, so the timber and the damp begin at the edge of the driveway rather than at the edge of town.',

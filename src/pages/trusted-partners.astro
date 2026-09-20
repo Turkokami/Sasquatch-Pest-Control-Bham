@@ -189,7 +189,30 @@ const inlinePhotos = inlinePhotosFor('/trusted-partners/');
       gutter cleaning and downspout clearing, roof cleaning, moss removal,
       pressure washing, house washing and solar panel cleaning.
     </p>
-  {inlinePhotos[1] && <InlinePhoto photo={inlinePhotos[1]} />}
+    {/* THEIR MARK, NOT OUR CREW. Owner, 20 Sep 2026: "Use this image on
+        trusted partners page not Evan or this photo." A photograph of one of
+        our own technicians was sitting in the middle of somebody else's
+        listing, which reads as though we did the work. Their artwork is
+        stored under /img/partners/ rather than in the gallery, which holds
+        photographs of this company's own jobs. Their phone number is not
+        reproduced here — the link goes to them and they can answer it. */}
+    <figure class="franchise">
+      <a href="https://www.kingofkingswindowcleaning.com/" rel="nofollow noopener">
+        <img
+          src="/img/partners/king-of-kings-window-cleaning.png"
+          alt="King of Kings Window Cleaning — a gold crown above the company name"
+          width="512"
+          height="441"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+      <figcaption>
+        King of Kings' own mark. They are a separate company with their own
+        licensing, crew and schedule — we refer people to them, we do not book
+        or subcontract the work.
+      </figcaption>
+    </figure>
     <p>
       <b>Why we send people to them.</b> Pest work and exterior cleaning run
       into each other constantly, and the overlap is not incidental. Spider
@@ -221,6 +244,25 @@ const inlinePhotos = inlinePhotosFor('/trusted-partners/');
       the responsibility stays with us, and anything applied in Washington is
       applied by us under our own licenses.
     </p>
+    {/* Their mark, sent by the owner 20 Sep 2026, same handling as King of
+        Kings above: their artwork, their link, no phone number of theirs
+        reproduced on our page. */}
+    <figure class="franchise">
+      <a href="https://ck9ps.com/" rel="nofollow noopener">
+        <img
+          src="/img/partners/coastal-k9-pest-solutions.jpg"
+          alt="Coastal K9 Pest Solutions — a dog's head drawn in outline inside a circle, beside the company name and a mosquito"
+          width="800"
+          height="264"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+      <figcaption>
+        Coastal K9's own mark. They are contracted in on detection work rather
+        than referred to — the job stays ours.
+      </figcaption>
+    </figure>
     <p>
       They are based in Aiken, South Carolina, which is exactly why they sit
       here rather than in the list above — that list is for local companies we
@@ -403,6 +445,35 @@ const inlinePhotos = inlinePhotosFor('/trusted-partners/');
       Society of America and reviews species identification and treatment
       protocols for this company.
     </p>
+    {/* Owner, 20 Sep 2026: "Use the picture of George in the trusted partners
+        page and link back to his website", then "This is his logo." The
+        portrait is his own photograph, already on the about page; the mark and
+        the link are his company's. */}
+    <figure class="franchise portrait">
+      <img
+        src="/img/team/jorge-bedoya-portrait.jpg"
+        alt="Jorge Bedoya, the consulting entomologist, in a collared shirt"
+        width="800"
+        height="1202"
+        loading="lazy"
+        decoding="async"
+      />
+      <a href="https://nyepestcontrol.com" rel="nofollow noopener">
+        <img
+          src="/img/partners/nye-pest-control.png"
+          alt="Nye Pest Control — the letters N, Y and E with a beetle across them"
+          width="160"
+          height="159"
+          loading="lazy"
+          decoding="async"
+        />
+      </a>
+      <figcaption>
+        Jorge Bedoya, ACE. He is not our staff and he is not somebody we hand
+        you off to — his own work is at nyepestcontrol.com, and he is named
+        here because who a company asks when it is unsure is worth knowing.
+      </figcaption>
+    </figure>
     <p>
       He is a consultant rather than a member of our staff, which means he does
       not run routes, attend jobs or supervise technicians. And ACE is a
