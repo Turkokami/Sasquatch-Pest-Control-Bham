@@ -234,7 +234,7 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/g27148.jpg': 'Un pedazo de aislamiento rosa sobre una barrera de vapor oscura',
   '/img/gallery/g27144.jpg': 'Un hueco en el cimiento junto al aislamiento y la barrera de vapor, una posible entrada de plagas',
   '/img/gallery/g27060.jpg': 'Tubería forrada de aislamiento y sostenida con alambre en un espacio bajo el piso',
-  '/img/gallery/g27000.jpg': 'Un tubo forrado de aislamiento en un espacio bajo el piso húmedo',
+  '/img/gallery/g27000.jpg': 'Montones profundos de aserrín claro de hormiga carpintera acumulados contra una pared azul de bodega, cubriendo los extremos de los rollos guardados y el piso alrededor',
   '/img/gallery/g26995.jpg': 'Excremento de roedor regado sobre el aislamiento de un espacio bajo el piso',
   '/img/gallery/g26994.jpg': 'Excremento de roedor sobre aislamiento esponjoso',
   '/img/gallery/g26993.jpg': 'Un tubo forrado de aislamiento de aluminio en un espacio bajo el piso',

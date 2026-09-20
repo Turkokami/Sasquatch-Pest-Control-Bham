@@ -352,10 +352,10 @@ export const locationPhotos: Record<string, Photo> = {
       'A yellowjacket nest in a soffit corner in Sumas. The giveaway is that it is enclosed — yellowjackets and hornets wrap a nest in a papery envelope, while a paper wasp builds an open umbrella of visible cells. Enclosed nests are found late, because nothing shows from the ground until the colony is loud enough to hear.',
   },
   'sudden-valley': {
-    file: '/img/work/pest-control-technicians-crawlspace-job-sudden-valley-wa.jpg',
-    alt: 'Two pest control technicians in white protective suits standing beside their vans at a job site among trees',
+    file: '/img/work/service-truck-at-a-home-sudden-valley-wa.jpg',
+    alt: 'The wrapped service truck on a paver driveway below a stone-clad house and terraced garden walls, tall evergreens behind, low sun flaring across the frame',
     caption:
-      'Suited up for a crawlspace job in Sudden Valley. Houses here are built into a wooded hillside, which means steep lots, deep crawlspaces and more contact with the trees than a flat lot has.',
+      'At a house in Sudden Valley. Homes here are built into the forested slope above the lake, so the timber and the damp begin at the edge of the driveway rather than at the edge of town.',
   },
   'mount-vernon': {
     file: '/img/work/sasquatch-pest-control-van-in-a-driveway-mount-vernon-wa.jpg',
@@ -438,12 +438,6 @@ export const locationPhotosSecond: Record<string, Photo> = {
       'At a general pest inspection in Sedro-Woolley. An inspection here nearly always ends up in the crawlspace, because on this town\u2019s housing that is where the useful information is.',
   },
   /* Owner's own, 18 Sep 2026, named by him as Sudden Valley. Captioned to the community only: the house is recognizable. */
-  'sudden-valley': {
-    file: '/img/work/service-truck-at-a-home-sudden-valley-wa.jpg',
-    alt: 'The wrapped service truck on a paver driveway below a stone-clad house and terraced garden walls, tall evergreens behind, low sun flaring across the frame',
-    caption:
-      'At a house in Sudden Valley. Homes here are built into the forested slope above the lake, so the timber and the damp begin at the edge of the driveway rather than at the edge of town.',
-  },
   /* Owner's own, 19 Sep 2026, named by him as Deming. */
   deming: {
     file: '/img/work/service-truck-at-a-cabin-deming-wa.jpg',

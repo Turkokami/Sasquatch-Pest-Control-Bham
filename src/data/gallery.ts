@@ -173,7 +173,6 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/g27148.jpg', alt: 'A piece of pink insulation on a dark vapor barrier in a crawlspace, documented during an inspection', width: 560, height: 747 },
       { file: '/img/gallery/g27144.jpg', alt: 'A gap in a crawlspace foundation near insulation and a vapor barrier, a potential pest entry point found', width: 560, height: 747 },
       { file: '/img/gallery/g27060.jpg', alt: 'Plumbing lines wrapped in insulation and supported with wire in a crawlspace', width: 560, height: 420 },
-      { file: '/img/gallery/g27000.jpg', alt: 'A plumbing pipe wrapped in insulation in a damp crawlspace', width: 560, height: 747 },
       { file: '/img/gallery/g26995.jpg', alt: 'Rodent droppings scattered across crawlspace insulation, evidence of infestation found', width: 560, height: 747 },
       { file: '/img/gallery/g26994.jpg', alt: 'Rodent droppings on fluffy insulation in a crawlspace, a sign of rodent activity documented', width: 560, height: 747 },
       { file: '/img/gallery/g26993.jpg', alt: 'A pipe wrapped in foil insulation in a crawlspace', width: 560, height: 747 },
@@ -307,6 +306,11 @@ const allSections: GallerySection[] = [
     key: 'commercial',
     title: 'Commercial work',
     images: [
+      /* Named by the owner 20 Sep 2026: piles of carpenter ant frass in a
+         warehouse. The archive had it as a wrapped pipe in a crawlspace and
+         filed it under insulation, which is how it ended up captioned as a
+         moisture problem on a page about beetles. */
+      { file: '/img/gallery/g27000.jpg', alt: 'Deep drifts of pale carpenter ant frass banked along a blue warehouse wall, burying the ends of stored rolls and the floor around them', width: 560, height: 747 },
       /* Owner's own, 18 Sep 2026: carpenter ant frass in a commercial facility. A supplier's label is blurred. */
       { file: '/img/gallery/carpenter-ant-frass-in-a-commercial-storage-room.jpg', alt: 'A heap of carpenter ant frass on the floor of a commercial storage room beside stacked cartons and a stepladder', width: 560, height: 415 },
       { file: '/img/gallery/carpenter-ant-frass-along-a-storage-room-wall.jpg', alt: 'Carpenter ant frass drifted along the base of a blue wall in a commercial storage room, piled against stored rolls and tubes', width: 560, height: 747 },
