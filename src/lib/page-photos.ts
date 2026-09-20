@@ -53,6 +53,23 @@ export type InlinePhoto = GalleryImage;
 /** The most any one page gets. Placement decides how many are used. */
 export const MAX_INLINE = 6;
 
+/**
+ * THE MOST ANY ONE PHOTOGRAPH GETS, ANYWHERE. Owner, 20 Sep 2026: "make sure
+ * we don't use images more than 2 or 3 times max. Like evan on truck comes up
+ * alot. We have plenty of photos in gallery to switch out."
+ *
+ * A use count that only subtracted from a score was a preference, and a
+ * preference loses: on a page where nothing else fits, the fifth use of the
+ * same van still won its slot. Measured before this cap, 106 photographs ran
+ * past three uses and the worst ran to six.
+ *
+ * It is a hard stop instead. A photograph at the limit leaves the pool, and
+ * the page takes the next one or takes nothing — fewer photographs on a page
+ * is the price, and it is the right way round. The score still counts uses
+ * below the limit, so the spread happens before the wall rather than at it.
+ */
+export const MAX_USES = 3;
+
 /* Every animal word an alt can carry. A match means the photograph is OF an
    animal (or its nest, or its frass) and falls under rule 1. */
 const ANIMAL =
@@ -236,11 +253,42 @@ function slotsFor(sections: number): number[] {
 
 let ASSIGNED: Map<string, InlinePhoto[]> | null = null;
 
+/**
+ * EVERY PAGE GETS ITS FIRST PHOTOGRAPH BEFORE ANY PAGE GETS ITS SECOND.
+ *
+ * The assignment used to run page by page in path order, which was fine while
+ * a photograph could be reused without limit. Once MAX_USES became a wall,
+ * that order started deciding who ate: /blog/ and /commercial/ come before
+ * /services/ in the alphabet, so they filled six slots each and the crawlspace
+ * restoration page — one of the most important on the site — finished with
+ * none. Fifty pages ended up with nothing.
+ *
+ * So it runs in rounds instead. Round one gives every page its first slot,
+ * round two its second, and so on. Same inputs, same output, every build; the
+ * scarcity now falls on the sixth photograph of a long page rather than on the
+ * first photograph of a short one.
+ */
 function assignAll(): Map<string, InlinePhoto[]> {
   const used = new Map<string, number>();
   const result = new Map<string, InlinePhoto[]>();
   const all = gallery.flatMap((s) => s.images.map((img) => ({ img, section: s.key })));
   const sectionOfFile = new Map(all.map((c) => [c.img.file, c.section]));
+
+  /* Everything about a page that does not change between rounds. */
+  interface Ctx {
+    info: PageInfo;
+    pool: { img: GalleryImage; section: string }[];
+    pinned: GalleryImage[];
+    slots: number[];
+    topics: Topic[];
+    topicSections: Set<string>;
+    ownTown?: { slug: string; rx: RegExp };
+    isPest: boolean;
+    chosen: InlinePhoto[];
+    fallbacks: number;
+    done: boolean;
+  }
+  const contexts: Ctx[] = [];
 
   for (const info of readPages()) {
     const seg = info.page.split('/').filter(Boolean);
@@ -298,26 +346,37 @@ function assignAll(): Map<string, InlinePhoto[]> {
     const topicSections = new Set(topics.flatMap((t) => t.sections));
     const ownTown = town ? TOWN_WORDS.find((w) => w.slug === town) : undefined;
     const pool = all.filter(allowed);
-    const chosen: InlinePhoto[] = [];
-    const taken = (img: GalleryImage) =>
-      chosen.some((c) => c.file === img.file || sameShot(c.file, c.alt, img.file, img.alt));
 
     /* A page with fewer than three sections still gets two photographs: the
        rehype plugin places those every sixth block instead. Two of the blog
        posts are written as one long run of numbered lists. */
     const slots = info.sections.length >= 3 ? slotsFor(info.sections.length) : [0, 1];
-    let fallbacks = 0;
-    for (const [n, slot] of slots.entries()) {
+    contexts.push({
+      info, pool, pinned, slots, topics, topicSections, ownTown, isPest,
+      chosen: [], fallbacks: 0, done: false,
+    });
+  }
+
+  for (let round = 0; round < MAX_INLINE; round++) {
+    for (const c of contexts) {
+      const { info, pool, pinned, slots, topics, topicSections, ownTown, isPest } = c;
+      if (c.done || round >= slots.length) continue;
+      const slot = slots[round];
+      const chosen = c.chosen;
+      const taken = (img: GalleryImage) =>
+        chosen.some((x) => x.file === img.file || sameShot(x.file, x.alt, img.file, img.alt));
+
       /* His picks take the first slots, in his order; the rest are scored. */
-      if (pinned[n]) {
-        chosen.push(pinned[n]);
-        used.set(pinned[n].file, (used.get(pinned[n].file) ?? 0) + 1);
+      if (pinned[round]) {
+        chosen.push(pinned[round]);
+        used.set(pinned[round].file, (used.get(pinned[round].file) ?? 0) + 1);
         continue;
       }
       const near = words(info.sections[slot] ?? info.title);
       let best: { img: GalleryImage; score: number } | null = null;
       for (const cand of pool) {
         if (taken(cand.img)) continue;
+        if ((used.get(cand.img.file) ?? 0) >= MAX_USES) continue;   // spent
         const overlap = [...words(cand.img.alt)].filter((w) => near.has(w)).length;
         let score = overlap * 3;
         if (topics.some((t) => t.prefer.test(cand.img.alt))) score += 4;
@@ -334,12 +393,13 @@ function assignAll(): Map<string, InlinePhoto[]> {
       /* Nothing in the pool is about this text: show the county instead. */
       if (!best || best.score <= 0) {
         const scenery = pool
-          .filter((c) => SCENERY.includes(c.section) && !taken(c.img))
+          .filter((c) => SCENERY.includes(c.section) && !taken(c.img)
+            && (used.get(c.img.file) ?? 0) < MAX_USES)
           .sort((a, b) => (used.get(a.img.file) ?? 0) - (used.get(b.img.file) ?? 0)
             || a.img.file.localeCompare(b.img.file));
         if (scenery.length) best = { img: scenery[0].img, score: 0 };
       }
-      if (!best) break;
+      if (!best) { c.done = true; continue; }
       /* TWO TRUCKS IS SHARING THE COUNTY, SIX IS A TRUCK CATALOG. Once a
          page has nothing left in its own sections, every remaining slot would
          fill with scenery — and with 89 scenery photographs covering 252
@@ -347,14 +407,15 @@ function assignAll(): Map<string, InlinePhoto[]> {
          thing the owner asked us to stop. So the page stops instead. Fewer
          photographs, each one either about the page or worth looking at. */
       if (topics.length && SCENERY.includes(sectionOfFile.get(best.img.file) ?? '')) {
-        if (fallbacks >= 2) break;
-        fallbacks++;
+        if (c.fallbacks >= 2) { c.done = true; continue; }
+        c.fallbacks++;
       }
       chosen.push(best.img);
       used.set(best.img.file, (used.get(best.img.file) ?? 0) + 1);
     }
-    result.set(info.page, chosen);
   }
+
+  for (const c of contexts) result.set(c.info.page, c.chosen);
   return result;
 }
 
