@@ -82,7 +82,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/g27239.jpg', alt: 'A large hornet nest attached to a tank on a gravel pad at a property, found on a call', width: 560, height: 420 },
       { file: '/img/gallery/g27238.jpg', alt: 'A hornet nest opened to reveal the paper comb and larvae during removal', width: 560, height: 420 },
       { file: '/img/gallery/g27237.jpg', alt: 'A technician using a vacuum hose to remove a hornet nest from a tank at a property', width: 560, height: 420 },
-      { file: '/img/gallery/g27231.jpg', alt: 'A paper wasp nest built under the gable peak of a home\'s roofline', width: 560, height: 420 },
+      { file: '/img/gallery/g27231.jpg', alt: 'A gray paper yellowjacket nest tucked into the angle of a gable peak, directly above a diamond-paned attic window', width: 560, height: 420 },
       { file: '/img/gallery/g27230.jpg', alt: 'A close-up of a wasp or yellow jacket nest tucked into the corner of a soffit under a home\'s eave', width: 560, height: 420 },
       { file: '/img/gallery/g27224.jpg', alt: 'A paper wasp nest exposed inside a wall cavity among insulation', width: 560, height: 420 },
       { file: '/img/gallery/g27157.jpg', alt: 'A wasp on a white interior wall', width: 560, height: 747 },
@@ -113,7 +113,6 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/g27140.jpg', alt: 'A cockroach on a wall surrounded by droppings and staining, evidence of an infestation treated', width: 560, height: 747 },
       { file: '/img/gallery/g27139.jpg', alt: 'A cockroach next to a door hinge and frame, evidence of a roach infestation found', width: 560, height: 747 },
       { file: '/img/gallery/g27138.jpg', alt: 'Dead cockroaches on the floor in a corner following a treatment', width: 560, height: 747 },
-      { file: '/img/gallery/g27094.jpg', alt: 'Piles of frass from carpenter ants on a crawlspace beam, a sign of infestation identified', width: 560, height: 747 },
       { file: '/img/gallery/g27093.jpg', alt: 'Carpenter ant frass accumulated on wood framing in a crawlspace', width: 560, height: 747 },
       { file: '/img/gallery/g26864.jpg', alt: 'A green praying mantis on a surface, beneficial wildlife encountered during work', width: 560, height: 420 },
       { file: '/img/gallery/g26863.jpg', alt: 'A green praying mantis climbing a wall, beneficial wildlife encountered during work', width: 560, height: 420 },
@@ -132,6 +131,11 @@ const allSections: GallerySection[] = [
     key: 'rodents',
     title: 'Rodent work',
     images: [
+      /* Named by the owner 20 Sep 2026: rodents chewing the wood frame and
+         the foam beside it. The archive read the blue sheeting in the frame
+         and filed it as vapor barrier work, so it was showing up on
+         insulation pages as an example of a job done right. */
+      { file: '/img/gallery/g26949.jpg', alt: 'A crawlspace rim joist gnawed raw by rodents, with the rigid foam beside it shredded and the taped seam pulled loose', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/pallet-of-rodent-bait-stations.jpg', alt: 'A pallet stacked high with new black tamper-resistant rodent bait stations, delivered to the shop', width: 560, height: 1152 },
       /* Owner's own, 19 Sep 2026. */
@@ -177,7 +181,6 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/g26994.jpg', alt: 'Rodent droppings on fluffy insulation in a crawlspace, a sign of rodent activity documented', width: 560, height: 747 },
       { file: '/img/gallery/g26993.jpg', alt: 'A pipe wrapped in foil insulation in a crawlspace', width: 560, height: 747 },
       { file: '/img/gallery/g26950.jpg', alt: 'Subfloor insulation and a vapor barrier edge in a crawlspace inspected', width: 560, height: 420 },
-      { file: '/img/gallery/g26949.jpg', alt: 'Subfloor insulation and a blue vapor barrier edge in a crawlspace inspected', width: 560, height: 420 },
       { file: '/img/gallery/g26947.jpg', alt: 'Old debris and rodent droppings along a crawlspace edge before insulation work', width: 560, height: 420 },
       { file: '/img/gallery/g26944.jpg', alt: 'Torn insulation hanging beside wiring in a crawlspace', width: 560, height: 747 },
       { file: '/img/gallery/g26927.jpg', alt: 'A crawlspace with subfloor insulation and ductwork above a vapor barrier', width: 560, height: 420 },
@@ -189,6 +192,10 @@ const allSections: GallerySection[] = [
     key: 'crawlspaces',
     title: 'Crawlspaces',
     images: [
+      /* Named by the owner 20 Sep 2026: powderpost beetle frass, not
+         carpenter ant frass. The two look alike in a photograph and the old
+         caption explained the wrong one at length on the ant pages. */
+      { file: '/img/gallery/g27094.jpg', alt: 'Fine powderpost beetle frass sifted along the top of a crawlspace beam where it meets the subfloor above', width: 560, height: 747 },
       /* Kristofer Elling suiting up for a powderpost beetle treatment, named by
          the owner 20 Sep 2026. The archive had these three as exterior spray
          work and they are not: there is no sprayer in hand in any of them, and
