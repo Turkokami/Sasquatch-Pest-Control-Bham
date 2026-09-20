@@ -91,7 +91,19 @@ export const INSPECTION_CLAIMS = [
  *
  * We are NOT structural pest inspectors: we do not perform WDO inspections
  * and we do not issue reports. We ARE certified to TREAT wood-destroying
- * organisms that somebody else's inspection identified.
+ * organisms.
+ *
+ * REFINED BY THE OWNER, 20 Sep 2026: "We are allowed to id powder post
+ * beetles in wood. We just cant do it attached to a home inspection for real
+ * estate sale is all." An earlier version of this note said somebody else
+ * identifies what is in the wood, which was wrong and had made it into a photo
+ * caption. Naming the insect in front of you is ordinary field work for a
+ * licensed applicator. What takes a structural pest inspector is the document
+ * a sale runs on. The distinction is the paperwork and the transaction it
+ * serves, not the act of identification.
+ *
+ * NONE OF THAT CHANGES THE RULES BELOW. The terms are still banned, because
+ * what they name is still the thing we may not sell.
  *
  * A flat ban on the vocabulary above therefore blocks legitimate and
  * commercially valuable copy ("we treat what your inspector found"). So the

@@ -98,6 +98,37 @@ const GRIM = /(dead|carcass|decomposed)/i;
 /* The fallback the owner asked for: the trucks, and the county itself. */
 const SCENERY = ['crew', 'country'];
 
+/* PHOTOGRAPHS THE OWNER PICKED HIMSELF, in the order he wants them down the
+   page. The scoring below is a guess at what belongs next to a paragraph, and
+   it is a decent guess, but it cannot know that the finished black vent covers
+   are the work this company wants judged on. When he names photographs, they
+   go where he says and the scorer fills whatever is left.
+
+   Owner, 20 Sep 2026, on /services/exclusion-and-repairs/: "all the photos
+   except for garage need to be replaced we have much better selection in lower
+   gallery showcase the black vent cover for crawlspace, the roof view attic
+   vent covers, the dryer vents, crawlspace door and exaughst vent cover." The
+   black crawlspace vent cover is the lead photograph (src/data/photos.ts); the
+   other four are pinned here. And on the homepage: "Choose better photo for
+   homepage should be a good one maybe group truck shot or something."
+
+   A PINNED PHOTOGRAPH BELONGS TO ITS PAGE. It comes out of every other page's
+   pool, so a photograph chosen to carry one page is not also decorating three
+   others — which is how the crew-at-sunset shot came to be on six. */
+const PINNED: Record<string, string[]> = {
+  '/': ['/img/gallery/the-crew-with-the-trucks-at-sunset.jpg'],
+  '/services/exclusion-and-repairs/': [
+    '/img/gallery/screened-roof-vents-along-a-ridge.jpg',
+    '/img/gallery/flush-mount-dryer-vent-covers-on-siding.jpg',
+    '/img/gallery/g27109.jpg',
+    '/img/gallery/evan-friese-fitting-an-exhaust-vent-cover.jpg',
+    /* The fifth slot scored its way to a photograph of wet insulation, which
+       is not what this page is selling. Finished metalwork instead. */
+    '/img/gallery/rodent-shield-installed-along-a-foundation.jpg',
+  ],
+};
+const PINNED_FILES = new Set(Object.values(PINNED).flat());
+
 const TOWN_WORDS = towns.map((t) => ({ slug: t.slug, rx: new RegExp(`\\b${t.name.replace(/[-]/g, '[- ]')}\\b`, 'i') }));
 
 /* EVERY PLACE NAME THE PHOTOGRAPHS USE, not only the towns with pages. A town
@@ -220,7 +251,19 @@ function assignAll(): Map<string, InlinePhoto[]> {
     const allowedAnimals = new Set<string>(topics.flatMap((t) => t.animals));
     const lead = leadPhotos(info.page);
 
+    /* The owner's own picks for this page, resolved against the gallery. A
+       name that matches nothing is a typo, and a typo that quietly places no
+       photograph is the failure mode this whole file exists to avoid. */
+    const mine = PINNED[info.page] ?? [];
+    const pinned = mine.map((file) => {
+      const found = all.find((c) => c.img.file === file);
+      if (!found) throw new Error(`PINNED photo not in the gallery: ${file} (${info.page})`);
+      return found.img;
+    });
+
     const allowed = ({ img }: { img: GalleryImage }) => {
+      /* pinned to some other page */
+      if (PINNED_FILES.has(img.file) && !mine.includes(img.file)) return false;
       const hits = [...img.alt.matchAll(ANIMAL)];
       if (hits.length) {
         if (isPest) { if (!img.alt.toLowerCase().replace(/-/g, ' ').includes(species)) return false; }
@@ -252,7 +295,13 @@ function assignAll(): Map<string, InlinePhoto[]> {
        rehype plugin places those every sixth block instead. Two of the blog
        posts are written as one long run of numbered lists. */
     const slots = info.sections.length >= 3 ? slotsFor(info.sections.length) : [0, 1];
-    for (const slot of slots) {
+    for (const [n, slot] of slots.entries()) {
+      /* His picks take the first slots, in his order; the rest are scored. */
+      if (pinned[n]) {
+        chosen.push(pinned[n]);
+        used.set(pinned[n].file, (used.get(pinned[n].file) ?? 0) + 1);
+        continue;
+      }
       const near = words(info.sections[slot] ?? info.title);
       let best: { img: GalleryImage; score: number } | null = null;
       for (const cand of pool) {

@@ -260,7 +260,6 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/g27109.jpg': 'Una tapa negra aislada sobre un pozo de acceso forrado de metal, parte de un trabajo de exclusión',
   '/img/gallery/g27088.jpg': 'Ventilas y un hueco en el cimiento que dan acceso a los roedores',
   '/img/gallery/g27078.jpg': 'Un pozo de acceso forrado de metal, con tapa, en el cimiento de una casa',
-  '/img/gallery/g27075.jpg': 'Una barrera de vapor oscura tendida sobre la tierra de un espacio bajo el piso',
   '/img/gallery/g27062.jpg': 'Agua estancada sobre la barrera de vapor de un espacio bajo el piso',
   // Exclusión y trabajo en metal
   '/img/gallery/g27172.jpg': 'La línea del techo y la canaleta de una casa',
@@ -271,7 +270,7 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/g27086.jpg': 'Una tapa blanca con rejilla colocada sobre la salida del extractor de la secadora en un revestimiento de tablillas, con la malla perforada hacia afuera',
   '/img/gallery/g27085.jpg': 'Un muro de cimiento aplanado y agrietado, con malla de alambre',
   '/img/gallery/g27083.jpg': 'Escombro suelto y un hueco en el cimiento de una casa, una posible entrada de roedores',
-  '/img/gallery/g27080.jpg': 'Un hueco donde el revestimiento toca la losa del cimiento',
+  '/img/gallery/g27080.jpg': 'El hueco debajo de la puerta de un cobertizo, donde el revestimiento de tablas no llega a la orilla de la losa, con corteza y agujas de pino amontonadas contra él',
   '/img/gallery/g27077.jpg': 'Un bajante desaguando junto al cimiento y el revestimiento de una casa',
   '/img/gallery/g27073.jpg': 'Un hueco donde el umbral de una puerta toca una losa de concreto',
   '/img/gallery/g27061.jpg': 'Un hueco en un cimiento de block sellado con espuma',

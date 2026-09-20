@@ -72,11 +72,16 @@ export const servicePhotos: Record<string, Photo> = {
     caption:
       'Working by headlamp under a house in Burlington. Most of what decides a crawlspace job — where they are getting in, what the insulation is doing, whether the vapor barrier is intact — can only be settled from down here.',
   },
+  /* Owner, 20 Sep 2026: the page led on a photograph of a hole. He wanted the
+     finished metalwork instead — "showcase the black vent cover for
+     crawlspace" — and it is the better argument anyway: anyone can find a gap,
+     the question is what gets fitted over it. The four he named after this one
+     are pinned through the body in src/lib/page-photos.ts. */
   'exclusion-and-repairs': {
-    file: '/img/work/crawlspace-foundation-gap-rodent-entry-mount-vernon-wa.jpg',
-    alt: 'A gap where a crawlspace foundation meets the framing above it, with insulation and vapor barrier visible around the opening',
+    file: '/img/gallery/finished-steel-foundation-vent-guard.jpg',
+    alt: 'A finished black steel-mesh guard fastened over a crawlspace vent in a concrete foundation, the drill still lying beside it',
     caption:
-      'An open gap at the foundation line of a home in Mount Vernon. A quarter of an inch is enough for a mouse, and sealing openings like this is what stops the problem coming back after the trapping is done.',
+      'A vent guard fitted over a crawlspace vent. The mesh is heavy enough that a rat cannot work it and the frame is anchored into the concrete rather than the siding, which is the difference between this and a screen that gets pushed in again next winter.',
   },
   'attic-insulation': {
     file: '/img/work/screened-gable-attic-vent-whatcom-county-wa.jpg',
@@ -318,7 +323,7 @@ export const locationPhotos: Record<string, Photo> = {
        Worth leaving the note, because inventing plausible context from a
        location is exactly the failure this site keeps having to correct. */
     caption:
-      'Mixing up for a powderpost beetle treatment at a house in Lynden, ahead of a wood-destroying organism job. Somebody else identifies what is in the wood; the treatment is the half our WSDA Structural category covers.',
+      'Mixing up for a powderpost beetle treatment at a house in Lynden. Identifying what is in the wood is ordinary field work and we do it; we are not structural pest inspectors, so the written report a real estate sale runs on has to come from one.',
   },
   blaine: {
     /* SWAPPED 2 Sep 2026, owner: the previous photograph was a gable vent shot
