@@ -45,6 +45,7 @@ import {
 } from '../data/photos';
 import { towns } from '../data/towns';
 import HASHES from '../data/photo-hashes.json';
+import CAPTIONS from '../data/photo-captions.json';
 import SECTIONS from '../data/page-sections.json';
 
 export type InlinePhoto = GalleryImage;
@@ -98,6 +99,19 @@ const GRIM = /(dead|carcass|decomposed)/i;
 const SCENERY = ['crew', 'country'];
 
 const TOWN_WORDS = towns.map((t) => ({ slug: t.slug, rx: new RegExp(`\\b${t.name.replace(/[-]/g, '[- ]')}\\b`, 'i') }));
+
+/* EVERY PLACE NAME THE PHOTOGRAPHS USE, not only the towns with pages. A town
+   page may show a photograph that names nowhere, or one that names ITSELF, and
+   nothing else: a van on Lummi Shore Road under a Birch Bay heading tells the
+   reader it was taken in Birch Bay. The towns are checked separately above;
+   these are the landmarks, roads and districts the alts and captions mention. */
+const PLACES = [
+  'Lummi Island', 'Lummi Shore', 'Lummi', 'Chuckanut', 'Lake Whatcom', 'Lake Padden', 'Padden',
+  'Samish', 'Mount Baker', 'Mt. Baker', 'Sandy Point', 'Semiahmoo', 'Point Roberts', 'San Juan',
+  'Edison', 'Eaglemont', 'Squalicum', 'Fairhaven', 'Sehome', 'Cordata', 'Barkley', 'Edgemoor',
+  'Alabama Hill', 'Silver Beach', 'Happy Valley', 'Lettered Streets', 'Whatcom Falls', 'Sudden Valley',
+  'Birch Bay Village', 'Nooksack', 'Skagit', 'Whatcom',
+].map((name) => ({ name, rx: new RegExp(`\\b${name.replace(/\./g, '\\.')}\\b`, 'i') }));
 
 const base = (file: string) => file.replace(/^.*\//, '').replace(/\.(jpe?g|png)$/i, '');
 
@@ -212,7 +226,18 @@ function assignAll(): Map<string, InlinePhoto[]> {
         if (isPest) { if (!img.alt.toLowerCase().replace(/-/g, ' ').includes(species)) return false; }
         else if (!hits.every((m) => allowedAnimals.has(m[1].toLowerCase()))) return false;
       }
-      if (town && !TOWN_WORDS.every((w) => w.slug === town || !w.rx.test(img.alt))) return false;
+      if (town) {
+        /* The caption is what the reader sees under the photograph, so it is
+           checked too — the alt is not the only place a location gets named. */
+        const text = `${img.alt} ${(CAPTIONS as Record<string, { en?: string }>)[img.file]?.en ?? ''}`;
+        const here = towns.find((t) => t.slug === town)?.name ?? '';
+        const nb = seg[2] ? seg[2].replace(/-/g, ' ') : '';
+        const namesElsewhere =
+          TOWN_WORDS.some((w) => w.slug !== town && w.rx.test(text))
+          || PLACES.some((p) => p.rx.test(text)
+            && !new RegExp(`\\b${p.name.replace(/\./g, '\\.')}\\b`, 'i').test(`${here} ${nb}`));
+        if (namesElsewhere) return false;
+      }
       return !lead.some((p) => base(p.file) === base(img.file) || sameShot(p.file, p.alt, img.file, img.alt));
     };
 

@@ -365,9 +365,9 @@ export const locationPhotos: Record<string, Photo> = {
   },
   burlington: {
     file: '/img/work/technician-working-on-crawlspace-ductwork-burlington-wa.jpg',
-    alt: 'A technician working by headlamp on flexible ductwork in a crawlspace beneath a house',
+    alt: 'Travis (TJ) Hansen by headlamp in a crawlspace in Burlington, working under the ducting with a sprayer wand',
     caption:
-      'Ductwork in a crawlspace in Burlington. Flexible duct is one of the first things rodents damage under a house, and torn duct is how a crawlspace problem becomes a heating bill.',
+      'Treating framing for powderpost beetles under a house in Burlington. Anobiids work the damp softwood a crawlspace keeps wet, so the treatment happens where the beetle lives — flat on your back between the ducts and the ground.',
   },
   'sedro-woolley': {
     file: '/img/work/damaged-foundation-vent-screen-rodent-entry-sedro-woolley-wa.jpg',
@@ -430,12 +430,6 @@ export const locationPhotosSecond: Record<string, Photo> = {
     alt: 'Kristofer Elling kneeling on a wet wooden deck beside a house to service a black rodent bait station, with autumn trees and low sun behind',
     caption:
       'Kristofer Elling changing bait stations at a house in Mount Vernon on an autumn morning. The stations are the monitoring half of rodent work: what they show decides where the exclusion goes.',
-  },
-  burlington: {
-    file: '/img/work/technician-in-respirator-for-bed-bug-inspection-burlington-wa.jpg',
-    alt: 'Kristofer Elling in a Sasquatch Pest Control cap with two headlamps, a half-face respirator and black nitrile gloves',
-    caption:
-      'Kristofer Elling kitted up for a bed bug inspection in Burlington. Bed bugs are the one visit we charge for, and the fee comes off the treatment if you go ahead.',
   },
   'sedro-woolley': {
     file: '/img/work/service-van-at-a-general-pest-inspection-sedro-woolley-wa.jpg',
@@ -509,6 +503,17 @@ export const commercialExclusionPhoto: Photo = {
 
 /** Keyed by industry slug — the slugs src/content/industries owns. */
 export const industryPhotos: Record<string, Photo> = {
+  /* THE BOAT JOB, 20 Sep 2026. Owner: "bed bug treatment on a boat only in
+     port a few hrs emergency job". It was filed as a Burlington walkthrough,
+     which was wrong twice — the work was a treatment, and it was not in
+     Burlington. A vessel alongside for an afternoon is the sharpest version of
+     what a waterfront account needs, so it belongs here. */
+  'marinas-and-waterfront': {
+    file: '/img/work/bed-bug-treatment-on-a-boat-in-port.jpg',
+    alt: 'Kristofer Elling in a half-face respirator, cap light and work jacket in a cabin interior, gloved and ready to treat',
+    caption:
+      'Kitted up for a bed bug treatment on a vessel that was alongside for a few hours. On the water the clock is the job: the boat leaves whether or not the work is finished, so an emergency call gets what it needs in one visit rather than a schedule of returns.',
+  },
   /* Owner's own, 19 Sep 2026. He called them rats; the species is not named
      here because the photograph cannot settle it and the page does not need it. */
   'dairy-and-livestock': {
