@@ -121,7 +121,7 @@ rental, it is worth looking for on a house you own.
 
 It is also the right number for rats, which surprises people, because every
 extension source gives a larger figure for the animal itself. University of
-Nebraska Extension, eXtension, UC IPM and WSU Extension all put rats at slightly
+Nebraska Extension, eXtension, [UC IPM](https://ipm.ucanr.edu/home-and-landscape/rats/) and WSU Extension all put rats at slightly
 more than half an inch to pass through, and mice at slightly more than a
 quarter. What reconciles the two is the framing Washington's Department of Fish
 and Wildlife uses: a rat requires a quarter-inch hole to chew larger and squeeze

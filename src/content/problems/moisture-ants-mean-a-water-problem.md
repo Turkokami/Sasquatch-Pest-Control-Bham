@@ -42,7 +42,7 @@ reliably than looking at a wall.
 
 People ask how wet is wet, and the honest answer involves two numbers rather
 than one. Framing lumber in a dry building sits somewhere around twelve percent
-moisture content. The USDA Forest Products Laboratory places serious decay above
+moisture content. The [USDA Forest Products Laboratory](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf) places serious decay above
 the fiber saturation point of wood, which averages about thirty percent, and
 treats air-dry timber held under roughly twenty percent as carrying a sensible
 margin against fungal damage.

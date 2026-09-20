@@ -64,7 +64,7 @@ independent quote is simply a cleaner arrangement for everybody.
 
 ## What our license actually covers
 
-Our people hold Washington State Department of Agriculture licenses — a
+Our people hold [Washington State Department of Agriculture](https://agr.wa.gov/services/licenses-permits-and-certificates/pesticide-license-and-recertification/pesticide-and-spi-licensing/commercial-applicators/structural-pest-inspectors) licenses — a
 commercial applicator license, which under the state's Pesticide Application
 Act attaches to the business of applying pesticides to the land of another,
 and commercial operator licenses, which attach to the employees doing the

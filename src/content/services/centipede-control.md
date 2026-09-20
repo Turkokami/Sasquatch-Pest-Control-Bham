@@ -93,7 +93,7 @@ meet a foundation, and follow it. Some find a gap.
 
 Indoors they are in trouble immediately, and the reason is the exact opposite of
 what people assume. Humidity is what a millipede needs; what it cannot tolerate
-is the dryness of a heated house. UC IPM puts it as millipedes dying quickly
+is the dryness of a heated house. [UC IPM](https://ipm.ucanr.edu/pmg/pestnotes/pn7472.html) puts it as millipedes dying quickly
 indoors from dry conditions and lack of food, and they are generally gone within
 a day or two, usually curled into their characteristic spiral. So a household
 finding dozens of dead millipedes along a wall after a wet week is seeing the end

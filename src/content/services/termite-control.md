@@ -259,7 +259,7 @@ finding. Ask any company you engage for that work which credential they hold,
 and get the number rather than a reassurance.
 
 **We are licensed to treat what that inspection finds.** That is the other half
-of the transaction and it is the half we do. Our WSDA licenses carry the PCO
+of the transaction and it is the half we do. Our [WSDA](https://agr.wa.gov/services/licenses-permits-and-certificates/pesticide-license-and-recertification/pesticide-and-spi-licensing/commercial-applicators/structural-pest-inspectors) licenses carry the PCO
 Structural category, which covers the control of pests that attack structural
 material — fungus, termites, carpenter ants and wood-boring beetles. So where a
 licensed structural pest inspection has identified dampwood or subterranean

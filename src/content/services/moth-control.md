@@ -141,7 +141,7 @@ storage are.
 **The Indianmeal moth** is effectively the only one that matters here. Distinctive
 once you know it: the outer two-thirds of the forewing carries a reddish-brown
 coppery luster and the inner third is pale gray, so the wing reads as two colors
-meeting along a line. UC IPM and Clemson Extension both describe the split at
+meeting along a line. [UC IPM](https://ipm.ucanr.edu/pdf/pestnotes/pnclothesmoths.pdf) and Clemson Extension both describe the split at
 those proportions, and it is the single feature that settles the identification —
 a moth about half an inch across the wings with a pale base and a coppery outer
 portion is this species and not much else. If the whole wing is one dull color,

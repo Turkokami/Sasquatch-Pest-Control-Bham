@@ -197,7 +197,7 @@ For a homeowner: it is still just a bug on a wall in October, and the advice abo
 is the whole advice.
 
 If you are growing commercially and seeing them in numbers, that is worth
-discussing with WSU Extension as well as with us, because the monitoring and
+discussing with [WSU Extension](https://extension.wsu.edu/wam/brown-marmorated-stink-bug-halyomorpha-halys-a-guide-to-identification) as well as with us, because the monitoring and
 management guidance for agricultural settings is theirs and it is better than
 anything a pest control company should be improvising.
 

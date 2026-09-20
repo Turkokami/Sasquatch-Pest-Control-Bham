@@ -51,7 +51,7 @@ is flatter than people expect.
 Rats are the part of this that gets muddled, so it is worth setting out
 carefully. Every extension source we work from gives rats a larger opening than
 mice: University of Nebraska Extension and eXtension put it at slightly more
-than half an inch, WSU Extension gives the same half inch, and UC IPM agrees.
+than half an inch, [WSU Extension](https://wpcdn.web.wsu.edu/wp-extension/uploads/sites/2073/2020/09/Rats-Their-Behavior-Part-1.pdf) gives the same half inch, and UC IPM agrees.
 None of them offers a smaller adult figure, and any page that quotes one for a
 "young" rat is inventing a distinction the literature does not draw.
 

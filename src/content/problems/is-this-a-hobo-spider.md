@@ -94,7 +94,7 @@ visible in a phone photograph of a spider on a wall.
 
 The features people commonly rely on do not settle it. The chevron pattern on
 the abdomen is the test that circulates most widely, and the thing worth
-noticing about it is that neither WSU Extension's identification factsheet nor
+noticing about it is that neither [WSU Extension](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/408/2015/02/PLS-116-How-to-Identify-or-Misidentify-the-Hobo-Spider.pdf)'s identification factsheet nor
 UC IPM's pest note on the species uses it at all. Both skip the markings and go
 to the reproductive structures. Size overlaps as well, and it overlaps in the
 reassuring direction: the giant house spider is generally the larger animal, so

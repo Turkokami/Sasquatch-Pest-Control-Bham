@@ -106,7 +106,7 @@ gaps. Additions, dormers, and changes of material all create junctions.
 
 **And the insects already inside.** There is a second mechanism working
 alongside the building, and it belongs to the brown marmorated stink bug
-specifically. The National Pesticide Information Center records that when one of
+specifically. The [National Pesticide Information Center](https://npic.orst.edu/pest/stinkbug.html) records that when one of
 these insects finds a suitable place to spend the winter, it secretes an odor
 that draws other stink bugs to it. That is a settled insect signaling from a
 shelter it has already approved, and it is the part of the story that accounts

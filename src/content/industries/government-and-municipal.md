@@ -231,7 +231,7 @@ This is the item most often missing from municipal pest bids and the one that
 causes the most friction later, because without it every finding becomes a
 negotiation.
 
-**Documentation and licensing** attached rather than referenced: WSDA license
+**Documentation and licensing** attached rather than referenced: [WSDA](https://agr.wa.gov/services/licenses-permits-and-certificates/pesticide-license-and-recertification/pesticide-and-spi-licensing/commercial-applicators/structural-pest-inspectors) license
 numbers and categories, insurance certificates naming the entity where required,
 and the reporting format the program will produce.
 

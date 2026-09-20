@@ -35,7 +35,7 @@ behind it is far more flexible than it looks, and the rib cage and shoulders
 follow through anything the head clears.
 
 Rats are quoted at a larger opening, and the sources are unanimous about it.
-University of Nebraska Extension, eXtension, UC IPM and WSU Extension all give
+University of Nebraska Extension, eXtension, [UC IPM](https://ipm.ucanr.edu/home-and-landscape/rats/) and WSU Extension all give
 rats slightly more than half an inch to pass through. There is no smaller adult
 figure in that literature and no separate figure for a juvenile, so a page that
 offers one is filling a gap the research left empty.

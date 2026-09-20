@@ -42,7 +42,7 @@ elsewhere. That is why the wasps that ignored you at a June barbecue are in your
 drink in September.
 
 That flip is not universal, and knowing which insects it applies to saves people
-money every year. UC IPM separates the ground- and cavity-nesting yellowjackets
+money every year. [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html) separates the ground- and cavity-nesting yellowjackets
 in the genus *Vespula* from the aerial nesters in *Dolichovespula* — the
 bald-faced hornet and the aerial yellowjacket — and only the first group turns
 scavenger. The aerial species stay predatory right through to the death of the
