@@ -832,10 +832,17 @@ export const garageDoorSeal: PhotoPair = {
   },
   after: {
     file: '/img/work/garage-door-seal-replaced-after-whatcom-county-wa.jpg',
-    alt: 'The same garage door with a dense brush seal fitted along its bottom edge, closing the gap',
+    alt: 'The same garage door fitted with an Xcluder rodent-proof bottom seal, a rubber gasket with a brush strip behind it, closing the gap',
   },
+  /* NAMED BY THE OWNER, 21 Sep 2026: "we should mention the after is a xcluder
+     Rodent proof garage door gasket". The old caption said brush RATHER THAN
+     rubber, which the product he fits contradicts — the Xcluder X2 kit is both:
+     a rubber seal lined with Xcluder's own fill fabric on the
+     outside, and a brush seal on the inside face, held in one retainer. The
+     caption now says what is actually on the door. Manufacturer's description
+     paraphrased, not copied, and none of its superlatives carried over. */
   caption:
-    'The same door, the same morning. A garage door seal is the single most common way a rodent walks into a house in this county, and it is invisible from inside because the door still closes and still looks shut. Brush rather than rubber on a door this age: rubber needs a straight, undamaged edge to seal against, and a brush strip keeps working on an edge that has already been chewed.',
+    'The same door, the same morning. A garage door seal is the single most common way a rodent walks into a house in this county, and it is invisible from inside because the door still closes and still looks shut. What went on is an Xcluder rodent-proof seal: a heavy rubber gasket lined with a fill fabric made to stop rodents chewing through it, with a brush strip behind it on the inside face that follows a worn or uneven slab and closes the small gaps rubber alone leaves.',
 };
 
 /* A clip that belongs to a SERVICE rather than to a species. The nest in this
