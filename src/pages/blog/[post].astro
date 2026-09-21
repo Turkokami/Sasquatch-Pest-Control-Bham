@@ -7,6 +7,9 @@ import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import LinkRail from '../../components/LinkRail.astro';
 import { blogSiblings } from '../../lib/blog';
+import RodentInfographic from '../../components/RodentInfographic.astro';
+
+const INFOGRAPHIC_POSTS = new Set(['rodent-proofing-home-winter-bellingham']);
 
 /* Imported legacy posts. Like guides, these are generated FROM the collection
    rather than from a data row — there is no such thing as a blog route that
@@ -81,6 +84,15 @@ const imported = p.data.imported.toLocaleDateString('en-US', {
   <QuickNav />
 
   <div class="prose"><Content /></div>
+
+  {/* The owner's entry-points drawing, on the posts that are about entry
+      points. Owner, 21 Sep 2026, on the rodent-proofing post: "we should
+      include the entry point image on this page." It is a list keyed by slug
+      rather than a test on the topic, so it only goes where somebody decided it
+      belongs. */}
+  {INFOGRAPHIC_POSTS.has(p.slug) && (
+    <RodentInfographic heading="Every place they get in, on one drawing" />
+  )}
 
   {p.data.faqs && <Faq items={p.data.faqs} />}
 
