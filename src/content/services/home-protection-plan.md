@@ -101,10 +101,12 @@ then per-room pricing. See [bed bug control](/services/bed-bug-control/).
 
 **Bird work and nuisance wildlife**, including bats and squirrels, are not services we offer at all. If that is what you have, we will say so and point you to somebody who does it.
 
-**Wood-destroying pest treatment** for termites and boring beetles is a separate
-scope, because it involves moisture diagnosis and often other trades.
+**Wood-destroying pest treatment** for [termites](/services/termite-control/) and
+[boring beetles](/services/beetle-control/) is a separate scope, because it
+involves moisture diagnosis and often other trades.
 
-**Exclusion, crawlspace and insulation work** is project work, not plan work.
+**Exclusion, [crawlspace](/services/crawlspace-restoration/) and
+[insulation](/services/attic-insulation/) work** is project work, not plan work.
 
 **Structural repair** is not ours at all, and we will tell you when it is what
 you need.
