@@ -104,6 +104,13 @@ const TOPICS: Topic[] = [
     sections: ['commercial', 'rodents'], prefer: /commercial|storage|stall|bait station|pallet/i,
     animals: ['rat', 'rats'] },
   { page: /cockroach|roach/i, sections: ['pests'], prefer: /cockroach/i, animals: ['cockroach', 'cockroaches', 'roach'] },
+  /* BED BUGS HAD NO TOPIC, so the bed bug page was treated like a hub and drew
+     from the whole pool — which is how a chimney job and a cracked foundation
+     ended up beside a paragraph about bites (owner, 21 Sep 2026). The library
+     has no bed bug section; its bed bug work is filed with the crew, so the
+     page draws on the crew and, past that, the usual two-photo fallback. */
+  { page: /bed-?bugs?/i, sections: ['crew'], prefer: /bed bug|cap light|headlamp|respirator/i,
+    animals: ['bug', 'bugs'] },
 ];
 
 /* The work any page may show. */
@@ -138,6 +145,12 @@ const PINNED: Record<string, string[]> = {
      mostly the team working in the crawlspace and the finished insulation
      photos ... ok to also show photos of really damaged insulation in crawl."
      Before and after, alternating, with the crew in the middle. */
+  /* Owner, 21 Sep 2026: "this picture should be replaced with kris with
+     flashlights for inspection." Then the one bed bug job in the library. */
+  '/services/bed-bug-control/': [
+    '/img/gallery/kris-elling-ready-for-a-crawlspace-inspection.jpg',
+    '/img/gallery/bed-bug-treatment-on-a-boat-in-port.jpg',
+  ],
   '/services/attic-insulation/': [
     '/img/gallery/insulation-torn-down-throughout-a-crawlspace.jpg',
     '/img/gallery/new-insulation-in-crawlspace-walls-and-floor.jpg',

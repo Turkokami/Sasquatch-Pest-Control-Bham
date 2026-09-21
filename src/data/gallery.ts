@@ -363,7 +363,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/service-truck-at-a-community-building-alger-wa.jpg', alt: 'The wrapped Chevrolet Colorado parked on gravel beside a low community building and lawn in Alger under a gray sky', width: 560, height: 294 },
       { file: '/img/gallery/service-truck-on-a-sunlit-road-alger-wa.jpg', alt: 'The wrapped Chevrolet Colorado with its ladder rack on a road near Alger, sunlit alders and firs behind', width: 560, height: 271 },
       { file: '/img/gallery/three-service-trucks-in-front-of-cedars.jpg', alt: 'Three wrapped service trucks parked nose to tail in front of tall cedars under a clear blue sky', width: 560, height: 269 },
-      { file: '/img/gallery/kris-elling-ready-for-a-crawlspace-inspection.jpg', alt: 'Kristofer Elling in a cap with twin headlamps and a face mask, ready to go into a crawlspace, beside the wrapped truck', width: 560, height: 747 },
+      { file: '/img/gallery/kris-elling-ready-for-a-crawlspace-inspection.jpg', alt: 'Kristofer Elling in a cap with twin headlamps and a face mask beside the wrapped truck, lights on and ready for an inspection', width: 560, height: 747 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/bryce-carter-with-the-service-van.jpg', alt: 'Bryce Carter standing beside the wrapped van on the shore, the water and a forested headland behind him', width: 560, height: 420 },
       { file: '/img/gallery/service-truck-at-a-cabin-deming-wa.jpg', alt: 'The wrapped pickup parked below the wooden steps of a cabin among tall firs near Deming', width: 560, height: 420 },

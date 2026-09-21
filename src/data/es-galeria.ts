@@ -91,7 +91,7 @@ export const ALT_ES: Record<string, string> = {
   '/img/gallery/service-truck-at-a-community-building-alger-wa.jpg': 'La Chevrolet Colorado rotulada estacionada en la grava junto a un edificio comunitario bajo y un pasto en Alger, bajo un cielo gris',
   '/img/gallery/service-truck-on-a-sunlit-road-alger-wa.jpg': 'La Chevrolet Colorado rotulada con su portaescaleras en un camino cerca de Alger, con alisos y abetos iluminados por el sol detrás',
   '/img/gallery/three-service-trucks-in-front-of-cedars.jpg': 'Tres camionetas de servicio rotuladas estacionadas en fila frente a cedros altos bajo un cielo azul despejado',
-  '/img/gallery/kris-elling-ready-for-a-crawlspace-inspection.jpg': 'Kristofer Elling con gorra de dos linternas frontales y mascarilla, listo para entrar a un sótano bajo, junto a la camioneta rotulada',
+  '/img/gallery/kris-elling-ready-for-a-crawlspace-inspection.jpg': 'Kristofer Elling con gorra de dos lámparas frontales y mascarilla junto a la camioneta rotulada, con las luces encendidas y listo para una revisión',
   '/img/gallery/evan-friese-fitting-an-exhaust-vent-cover.jpg': 'Evan Friese en una escalera colocando una tapa protegida en la salida de un extractor, en el revestimiento de vinilo de una casa de dos pisos',
   '/img/gallery/guarded-exhaust-vent-cover-on-siding.jpg': 'Una tapa de salida de extractor terminada, con rejilla de metal perforado, atornillada sobre la ventila en un revestimiento beige',
   '/img/gallery/leak-staining-running-down-siding.jpg': 'Rayas cafés de manchas de agua bajando por varias hileras de revestimiento gris, sobre la salida de una secadora',
