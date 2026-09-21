@@ -6,6 +6,23 @@ h1: "Multifamily & Apartment Pest Control"
 answer: "In a shared building the unit is not the problem, the building is. Treating one apartment while the adjacent one is untouched relocates a population rather than removing it. The work is scoped by structure, timed around turnover, and documented so an owner, a manager and a tenant can each see what is theirs."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "Visit records"
+    value: "Dated each visit, naming the unit or common area, what was found and done, and whether the cause was structural or housekeeping"
+  - label: "Structural findings"
+    value: "Routed to the owner's maintenance list"
+  - label: "Housekeeping findings"
+    value: "Routed to the tenant, kept apart from building items"
+  - label: "Scope"
+    value: "Set by structure: the unit that called plus the units sharing its walls, chases and voids"
+  - label: "Bed bugs"
+    value: "Adjoining units on all six sides looked at before quoting; verification fee credited if you proceed"
+  - label: "Main work window"
+    value: "Turnover, when units are empty; in Bellingham it books early"
+  - label: "City rental checklist"
+    value: "Bellingham's rental inspection covers foundation openings, screens and gaps at penetrations"
+  - label: "Resident material"
+    value: "Turnover guidance for managers to circulate: no curb furniture, no moving into an unchecked unit"
 faqs:
   - q: "Can you treat just the one unit that complained?"
     a: "We can, and on most problems it is the wrong scope. Rodents, cockroaches and bed bugs all move through shared walls, plumbing chases and utility runs, so treating one apartment while the neighbors are untouched moves the population rather than removing it and produces a second call four weeks later. We will tell you what the correct scope is and let you decide, rather than quoting the small version and returning."

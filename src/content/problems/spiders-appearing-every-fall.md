@@ -7,6 +7,13 @@ h1: "Spiders Appearing Every Fall"
 answer: "Spiders appearing all over the house for a few weeks in autumn is a mating season rather than an infestation. Mature males leave their webs to find females, they walk, and they walk indoors. It peaks over three to six weeks and then stops on its own."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Expect the wave from late August into October; it is males walking to find females, and it tapers off by November"
+  - "Replace worn door sweeps first, especially on garage side doors and basement doors with daylight under them"
+  - "Swap bright white lights by the doors for warmer bulbs or motion sensors so fewer insects pull spiders in"
+  - "Drape a towel over the edge of the tub in September so walkers that fall in can climb out"
+  - "Skip peppermint oil, chestnuts and ultrasonic plug-ins, and put that money toward a door sweep"
+  - "Book sealing and any exterior treatment for the second half of August, before the walk starts; our look at the openings is free"
 faqs:
   - q: "Are they coming inside to get warm?"
     a: "Mostly no, and this is the most persistent myth about it. Spiders do not seek heat, and most of the ones you see are not looking for shelter. They are males walking to find females, and your house happens to be in the way."

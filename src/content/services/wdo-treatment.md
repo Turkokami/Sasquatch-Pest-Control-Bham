@@ -6,6 +6,19 @@ h1: "WDO Treatment for Real Estate Transactions"
 answer: "Your inspector found wood-destroying organisms and you have a closing date. That is the half we do: our WSDA license carries the PCO Structural category, which covers treating the termites, carpenter ants, wood-boring beetles and decay fungus a report lists. We do not issue the report itself, which is a separate credential."
 ready: true
 expert: kristofer-elling
+factsTable:
+  - label: "What it covers"
+    value: "Treating the termites, carpenter ants, wood-boring beetles, moisture ants and decay fungus that an independent inspector documented"
+  - label: "Included"
+    value: "A free visit to look at the listed items, a written quote that separates treatment from repair, targeted treatment and a treatment record"
+  - label: "Not included"
+    value: "Issuing the findings document, which needs a credential we do not hold, and structural repair or carpentry"
+  - label: "We will not"
+    value: "Treat an inactive infestation, sell a soil barrier for dampwood termites, or recommend tenting"
+  - label: "How long it takes"
+    value: "Same-week for most findings; longer where drying or a repair has to come first"
+  - label: "What it costs"
+    value: "No flat figure. Quoted after the free visit from the items listed, access and sequencing, and a closing date is never an upcharge"
 faqs:
   - q: "So what exactly do you do in a real estate transaction?"
     a: "The treatment. Once an inspector has documented what is in the structure, our PCO Structural category is what allows us to treat it — dampwood or subterranean termites, carpenter ants, wood-boring beetles, moisture ants and decay fungus conditions. We work to the closing date."

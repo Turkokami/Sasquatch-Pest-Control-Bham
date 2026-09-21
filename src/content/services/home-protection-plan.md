@@ -6,6 +6,21 @@ h1: "Year-Round Home Protection Plan"
 answer: "A recurring plan makes sense when pest pressure on your property is continuous rather than a single event. Visits are timed to what actually happens here month by month, not to arbitrary quarters. There is no long-term contract, and if a one-time treatment would solve your problem we will tell you that instead."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Scheduled visits for general household pests on properties with continuous outdoor pressure"
+  - label: "Included"
+    value: "Exterior perimeter treatment, web and starter-nest removal, a report each visit, and covered callbacks between visits"
+  - label: "Not included"
+    value: "Bed bugs, wood-destroying pest treatment, exclusion, crawlspace and insulation work, and structural repair"
+  - label: "Visit schedule"
+    value: "Timed to the local pest calendar rather than even quarters, including an early autumn rodent visit"
+  - label: "Guarantee"
+    value: "Covered pests that come back between visits get a return visit at no additional charge, with no cap"
+  - label: "Contract"
+    value: "No long-term contract or early termination fee, just a short notice period"
+  - label: "What it costs"
+    value: "Priced from the property after a free visit, in writing before anything begins"
 faqs:
   - q: "Do I actually need a recurring plan?"
     a: "Often not. If you have one identifiable problem with a fixable cause — a wasp nest, a gap letting rodents in, ants tracking a specific moisture source — a single visit and the repair is the better purchase. Plans earn their place where exterior pressure is continuous, not where one thing needs fixing once."

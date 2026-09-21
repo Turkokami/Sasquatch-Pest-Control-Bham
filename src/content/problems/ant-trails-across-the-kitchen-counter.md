@@ -7,6 +7,14 @@ h1: "Ant Trails Across the Kitchen Counter"
 answer: "A line of ants crossing a counter is a chemical trail laid between a nest and a food source. It is the single most useful thing in the room, and wiping or spraying it destroys the evidence that would otherwise lead straight to the colony."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Before wiping anything, follow the ant line both ways: one end shows what they are eating, the other shows the gap where they come in"
+  - "Note both ends, then wipe the counter with soapy water and cover the food instead of spraying the trail"
+  - "Leave the aerosol under the sink alone, because a repellent spray can split an odorous house ant colony into several smaller nests"
+  - "Pick up pet bowls overnight, rinse the recycling, fix the drip under the sink and clear crumbs from beside appliances"
+  - "If the ants are large and black, or small, pale and swarming near a bathroom, treat it as a different problem from a kitchen trail"
+  - "Call for a free look once the trail keeps coming back: we identify the species, bait beside the route, treat the outdoor nest and seal the entry"
+  - "Expect more ants for the first two to four days after baiting, since that is the bait being carried back to the queen"
 faqs:
   - q: "Why should I not spray the trail?"
     a: "Two reasons. It erases the route that leads us to the nest, and most retail aerosols are repellent, which can cause some species to split the colony and relocate. You end up with several smaller problems in place of one."

@@ -7,6 +7,13 @@ h1: "Is This a Hobo Spider?"
 answer: "Most spiders identified as hobo spiders in Whatcom County are not hobo spiders, and the reputation attached to the name has been substantially walked back. Reliable identification needs magnification, and the practical question — whether a spider in your house is a danger — has a reassuring answer."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Look at the legs from a foot away: visible dark bands rule a hobo spider out, but plain legs prove nothing"
+  - "Catch it with a glass and a stiff card; a small jar of rubbing alcohol keeps it identifiable, while a squashed spider usually is not"
+  - "If you photograph it, shoot from above, from the side and up through the base of a clear container, with something in frame for scale"
+  - "If a wound is worrying you, see a doctor rather than trying to name the spider"
+  - "Cut the numbers indoors by changing bright white lights near doors, fitting door sweeps and knocking webs down weekly for a month"
+  - "Send us the photo or bring the specimen for a free opinion, and call for a visit if a black widow turns up in a woodpile, shed or crawlspace"
 faqs:
   - q: "Are hobo spider bites really dangerous?"
     a: "The evidence behind that reputation has largely fallen apart. The claim rested on a small number of studies that later work did not support, and the agency that once listed the species as medically significant removed it. Current expert opinion does not treat it as dangerous."

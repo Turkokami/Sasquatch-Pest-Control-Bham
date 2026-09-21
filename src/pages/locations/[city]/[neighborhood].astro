@@ -51,6 +51,7 @@ const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.
 const guideLinks = await guideLinksFor(path);
 ---
 <BaseLayout
+  source={entry ? `src/content/locations/${entry.id.replace(/\.md$/, '')}.md` : undefined}
   path={path}
   title={title}
   description={description}

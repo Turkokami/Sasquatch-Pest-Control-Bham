@@ -6,6 +6,19 @@ h1: "Commercial Pest Control Programs in Whatcom County"
 answer: "A commercial program is not a residential visit performed more often. Device placement is mapped, every visit produces a record that stands on its own, and the work is scheduled around your operation. For inspected and audited businesses, the documentation is part of the deliverable rather than an extra."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Recurring pest programs for businesses, with mapped devices and a written record of each visit"
+  - label: "Included"
+    value: "Service reports, a device map, trend data, a corrective action log and staff training, built in"
+  - label: "Not included"
+    value: "The corrective items on your side, such as door seals, drain servicing and waste handling"
+  - label: "Scheduling"
+    value: "Before opening or after close where the operation needs it, set at the start"
+  - label: "Contract"
+    value: "No long-term contract; the agreement states the schedule, scope and a short notice period"
+  - label: "What it costs"
+    value: "Priced from the site; the site assessment and the written program are free"
 faqs:
   - q: "What makes a commercial program different from residential service?"
     a: "Documentation, device mapping, scheduling and scope. A record of what was found and done at each visit, a map showing where every device sits, work timed around your operation rather than ours, and coverage of areas a home program never touches — docks, waste enclosures, utility chases, product storage."

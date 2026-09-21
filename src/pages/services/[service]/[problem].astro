@@ -51,6 +51,7 @@ const guideLinks = await guideLinksFor(path);
 const blogLinks = await blogPostsFor(path);
 ---
 <BaseLayout
+  source={entry ? `src/content/problems/${entry.id.replace(/\.md$/, '')}.md` : undefined}
   path={path}
   title={title}
   description={description}

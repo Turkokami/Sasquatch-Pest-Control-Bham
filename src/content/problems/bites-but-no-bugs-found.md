@@ -7,6 +7,14 @@ h1: "Bites But No Bugs Found"
 answer: "Bites without any insect found is a common and frustrating situation, and it has many possible causes. A thorough search that finds nothing is genuinely useful information, because it redirects the question from what is in the room toward what else could produce the same marks."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Catch anything you see on clear tape or in a sealed bag, and photograph the marks with the date"
+  - "Keep a short log of which nights brought marks, who was affected and where each person slept"
+  - "Note anything that changed: new detergent or bedding, travel, second-hand furniture, a new medication, pets, or noise in the attic or walls"
+  - "Do not strip and launder the bedroom before the search; keep the old sheets unwashed and leave the mattress and room edges as they are"
+  - "Book a verification search of the sleeping area, and mention pets or recent ceiling noise so it can widen to a nest or carpet beetles"
+  - "Expect no treatment unless an arthropod is actually found, because we do not treat a bedroom with nothing in it"
+  - "If the search is clear, set interceptor cups and light encasements, and take the negative result to a doctor if the marks continue"
 faqs:
   - q: "Does finding nothing mean there is nothing?"
     a: "It means no evidence was found where evidence would be expected. For bed bugs that is strong, because they leave spotting, skins and eggs even when the insects hide well. For some other causes it is less conclusive, and we will say which."

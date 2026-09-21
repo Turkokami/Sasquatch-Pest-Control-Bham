@@ -6,6 +6,17 @@ h1: "Beetle & Pantry Pest Control in Whatcom County"
 answer: "Carpet beetles and pantry beetles are both source problems. The adults you see are looking for a way out; the damage is done by larvae feeding somewhere specific — a wool rug, a bird nest in a soffit, a bag of flour at the back of a cupboard. Find the source and the job is short."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Carpet beetles and pantry beetles, traced to where the larvae are feeding"
+  - label: "Included"
+    value: "Finding the feeding site, thorough vacuuming, targeted treatment of harborage, and a follow-up check"
+  - label: "Not included"
+    value: "Spraying food storage or textiles, and removing bird nests, which is bird work we do not take on"
+  - label: "How long it takes"
+    value: "Pantry beetles drop off fast once the source is gone; carpet beetles take months to confirm"
+  - label: "What it costs"
+    value: "Quoted from the visit and usually modest; the estimate is free"
 faqs:
   - q: "I keep finding small beetles on my windowsills. Is that an infestation?"
     a: "Possibly, but not where you are finding them. Adult carpet beetles are drawn to light and to flowers outdoors, so windowsills are where they collect on the way out. The larvae doing the actual damage are somewhere dark and undisturbed — under furniture, in a closet, in a wall void, or in a nest in the eaves."

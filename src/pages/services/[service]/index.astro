@@ -82,6 +82,7 @@ const photos = section && {
 };
 ---
 <BaseLayout
+  source={entry ? `src/content/services/${entry.id.replace(/\.md$/, '')}.md` : undefined}
   videoKey={videoForService[s.slug]}
   path={path}
   title={title}

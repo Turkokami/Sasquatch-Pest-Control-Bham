@@ -7,6 +7,14 @@ h1: "Bed Bugs in a Student Rental"
 answer: "Bed bugs in a student rental have two features that change the job: the building is shared, so a unit is never treated in isolation, and responsibility is split between a landlord and tenants who may not agree about who pays. Both need settling before treatment works."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Keep sleeping in your own bed, because moving to a couch or a housemate's room carries bed bugs into new rooms"
+  - "Confirm it before anyone argues about money: photograph what you find and keep a specimen in a sealed bag or on clear tape"
+  - "Date every finding and keep written notes of when the landlord was told and what was said"
+  - "Agree as a household that nobody sprays or fogs their own room, since one can from the hardware store undoes the treatment for everyone"
+  - "Put encasements on the mattress and box spring, set interceptor cups under the bed legs and run bedding through a hot dryer"
+  - "Book a verification search of the house; we put the finding and a scope that follows the building in writing for tenants and landlord to share"
+  - "Prepare as one household and be home for every follow-up visit, which is timed to the egg hatch and fails if one housemate is missing"
 faqs:
   - q: "Who is supposed to pay for the treatment?"
     a: "That depends on the lease and the circumstances, and we are not attorneys. What we can say is that treatment works best when it is arranged and paid for at the building level, and that arguments over the bill are the main reason these drag on."

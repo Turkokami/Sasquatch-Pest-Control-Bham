@@ -14,6 +14,7 @@ import { photoForSection } from '../../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
+import QuickFacts from '../../../components/QuickFacts.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
@@ -50,6 +51,7 @@ const hermanos = esGuias
 const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
+  source={`src/data/es-guias/${e.slug}.ts`}
   path={path}
   lang="es"
   title={e.title}
@@ -70,6 +72,9 @@ const fotos = inlinePhotosForEs(Astro.url.pathname);
   <AnswerBox text={e.answer} />
 
   <QuickNav />
+
+  {/* Keystone v3.2 §4.3 — ver QuickFacts.astro. */}
+  {e.tabla && <QuickFacts heading="En corto" rows={e.tabla} list={e.pasos} listKind="ol" />}
 
   <div class="prose">
     {e.secciones.map((sec, i) => (

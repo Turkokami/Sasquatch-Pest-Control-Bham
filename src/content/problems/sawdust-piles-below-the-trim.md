@@ -7,6 +7,14 @@ h1: "Sawdust Piles Below the Trim"
 answer: "A small heap of wood debris under trim is almost never sawdust. It is material pushed out of timber by something living in it, and the texture, color and contents of the pile identify which of four possibilities you have before anybody treats anything."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Put a tablespoon of the debris in a sealed bag or small jar, and keep it dry rather than wetting it"
+  - "Spread a little on white paper: coarse fibers with insect parts suggest carpenter ants, floury powder suggests beetles, hard six-sided pellets suggest termites"
+  - "Sweep up the rest of the pile, write down the date, and watch whether it builds back up and how quickly"
+  - "Trace the line straight up from the heap and photograph the slit or hole it falls from, with a coin or pencil tip for scale"
+  - "Note any leak, roof problem, burst pipe or condensation near that trim in recent years, since wet timber is what draws these insects"
+  - "Do not accept a treatment quote for the trim debris until someone has worked out which of the four causes it is"
+  - "Then bring us the sample for a free look at the debris and the timber above it, before anything is quoted"
 faqs:
   - q: "How do I tell carpenter ant frass from beetle powder?"
     a: "Texture. Carpenter ant debris is coarse and fibrous, like shredded wood, and usually contains insect body parts. Wood-boring beetle powder is fine and floury, often gritty between the fingers, with no fragments in it at all."

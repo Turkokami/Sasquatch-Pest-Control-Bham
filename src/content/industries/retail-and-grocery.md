@@ -6,6 +6,23 @@ h1: "Retail & Grocery Pest Control"
 answer: "Retail imports most of its pest problems inside deliveries and stores them in a back room nobody walks. The program is receiving discipline, monitoring the stockroom rather than the sales floor, and exclusion at the dock — worked outside trading hours so a customer never sees any of it."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "Visit records"
+    value: "Dated per visit: finding and location, action, recommendation and recipient, each monitoring device's condition"
+  - label: "Device map"
+    value: "One a person unfamiliar with the store can follow, numbered like the records"
+  - label: "Safety paperwork"
+    value: "Labels and safety documentation for anything applied"
+  - label: "Sales floor findings"
+    value: "Escalated to a named contact that day, recorded as sales floor or stockroom"
+  - label: "Monitoring focus"
+    value: "The back room, dock and stockroom, not the sales floor perimeter"
+  - label: "Visit timing"
+    value: "Outside trading hours; a daytime visit goes back room first and floor last"
+  - label: "Store's side"
+    value: "A receiving standard with a stated rejection point, cardboard baled or removed, splits cleared the same day"
+  - label: "Shared buildings"
+    value: "Where the landlord covers common areas, a dated finding with a location is what moves the request"
 faqs:
   - q: "Will customers ever see you on the floor?"
     a: "Not if it is scheduled properly. Almost all retail work happens before opening or after close, and most of it is in the back room and the dock rather than the sales floor anyway. Where a daytime visit is unavoidable we work receiving and stockroom first and keep the floor to a walk-through in plain uniform."

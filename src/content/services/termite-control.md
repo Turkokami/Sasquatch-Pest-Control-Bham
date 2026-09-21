@@ -6,6 +6,17 @@ h1: "Termite Control & Wood-Boring Beetle Treatment in Whatcom County"
 answer: "Our termites are not the ones you have read about. The Pacific dampwood termite follows water rather than attacking sound lumber, so finding them means a wall or crawlspace has been wet long enough to soften. We treat the insects and identify the moisture, because without the second part the first part does not last."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Pacific dampwood termites and wood-boring beetles, plus the moisture source that let them in"
+  - label: "Included"
+    value: "Identifying the insect, tracing the moisture, mapping the damage, targeted treatment and the moisture finding in writing"
+  - label: "Not included"
+    value: "Soil barriers for dampwood termites, tenting or fumigation, and carpentry where wood needs replacing"
+  - label: "Home sales"
+    value: "We treat what an independent inspector found; we are not licensed structural pest inspectors and do not issue that report"
+  - label: "What it costs"
+    value: "Quoted from a site visit, with the figure in writing before work starts; the estimate is free"
 faqs:
   - q: "Do we even have termites in Whatcom County?"
     a: "Yes, but not the aggressive subterranean species that drives treatment across the South and Midwest. The one here is the Pacific dampwood termite, which needs wood that is already wet. WSU Cooperative Extension bulletin EB0787 states the subterranean termite occurs only as far north as Seattle in western Washington, and this county sits about ninety miles beyond that."

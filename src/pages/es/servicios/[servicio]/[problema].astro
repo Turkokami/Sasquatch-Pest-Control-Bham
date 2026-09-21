@@ -17,6 +17,7 @@ import { photoForSection } from '../../../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../../components/AnswerBox.astro';
+import QuickFacts from '../../../../components/QuickFacts.astro';
 import QuickNav from '../../../../components/QuickNav.astro';
 import Faq from '../../../../components/Faq.astro';
 import LinkRail from '../../../../components/LinkRail.astro';
@@ -54,6 +55,7 @@ const hermanos = esProblemas
 const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
+  source={`src/data/es-problemas/${e.slug}.ts`}
   path={path}
   lang="es"
   title={e.title}
@@ -76,6 +78,9 @@ const fotos = inlinePhotosForEs(Astro.url.pathname);
     { heading: 'El servicio detrás de esto', links: [{ href: `/es/servicios/${es.slug}/`, label: es.h1 }] },
     { heading: 'Problemas relacionados', links: hermanos },
   ]} />
+
+  {/* Keystone v3.2 §4.3 — ver QuickFacts.astro. */}
+  {e.pasos && <QuickFacts heading="Qué hacer, en orden" rows={e.tabla} list={e.pasos} listKind="ol" />}
 
   <div class="prose">
     {e.secciones.map((sec, i) => (

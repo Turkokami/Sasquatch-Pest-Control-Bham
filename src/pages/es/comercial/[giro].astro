@@ -17,6 +17,7 @@ import { photoForSection } from '../../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
+import QuickFacts from '../../../components/QuickFacts.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
@@ -51,6 +52,7 @@ const hermanos = esGiros
 const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
+  source={`src/data/es-comercial/${g.slug}.ts`}
   path={path}
   lang="es"
   title={g.title}
@@ -69,6 +71,9 @@ const fotos = inlinePhotosForEs(Astro.url.pathname);
   <AnswerBox text={g.answer} />
 
   <QuickNav rails={[{ heading: 'Otros programas comerciales', links: hermanos }]} />
+
+  {/* Keystone v3.2 §4.3 — ver QuickFacts.astro. */}
+  {g.tabla && <QuickFacts heading="Lo que se revisa, de un vistazo" rows={g.tabla} />}
 
   <div class="prose">
     {g.secciones.map((sec, i) => (

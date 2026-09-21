@@ -73,6 +73,7 @@ const townPhoto = locationPhotos[t.slug] ?? {
 const blogLinks = await blogPostsFor(path);
 ---
 <BaseLayout
+  source={entry ? `src/content/locations/${entry.id.replace(/\.md$/, '')}.md` : undefined}
   path={path}
   title={title}
   description={description}

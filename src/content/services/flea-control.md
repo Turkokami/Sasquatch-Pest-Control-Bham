@@ -6,6 +6,19 @@ h1: "Flea Control in Bellingham & Whatcom County"
 answer: "Fleas fail to clear for one reason: the pupal stage is armored and waits. Treatment kills adults and larvae, then pupae hatch a week or two later and it looks like nothing worked. The job is a treatment, aggressive vacuuming, a follow-up, and pet treatment from your vet — all four, or it recurs."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Fleas in the house, including cases where the source is an animal under or inside the structure"
+  - label: "Included"
+    value: "Finding the source, adulticide and growth regulator in the focus areas, a vacuum schedule and a follow-up visit"
+  - label: "Not included"
+    value: "Treating your pet, which is your vet's call, and removing wildlife, which is a specialist's job"
+  - label: "How many visits"
+    value: "Two for a contained problem; the follow-up is timed to pupal emergence and is part of the price"
+  - label: "Before we arrive"
+    value: "Vacuum, wash pet bedding hot, clear the floors and pick up pet bowls"
+  - label: "What it costs"
+    value: "Free estimate, set by square footage, carpet and upholstery, and whether an animal source comes first"
 faqs:
   - q: "We treated and two weeks later they were everywhere. Why?"
     a: "The pupal stage. Flea pupae are wrapped in a sticky protective cocoon that most treatments cannot penetrate, and they can wait weeks for a host. Adults emerging after treatment are not a failure — they are the next stage arriving on schedule, which is why a follow-up is part of the plan rather than a rescue."

@@ -6,6 +6,21 @@ h1: "Cockroach Control in Bellingham & Whatcom County"
 answer: "The German cockroach is the one that matters in Whatcom County. They live indoors, breed fast, spread between units and resist most sprays, so they need baiting and patience rather than spraying. They are not a crawlspace or moisture insect; they arrive in appliances, cardboard and used furniture. Plan on several weeks and more than one visit."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "German cockroaches breeding indoors in kitchens, bathrooms, appliance voids and shared walls"
+  - label: "Included"
+    value: "Finding the harborage, gel bait placements, a growth regulator where warranted, monitors and follow-up visits"
+  - label: "Not included"
+    value: "Repellent sprays, foggers or perimeter spraying outside, which scatter or miss an indoor population"
+  - label: "How many visits"
+    value: "More than one, because egg cases hatch after the first treatment"
+  - label: "How long it takes"
+    value: "About six to ten weeks until monitors stay at zero; longer in a multi-unit building"
+  - label: "Before we arrive"
+    value: "Stop spraying, keep the appliances, and cut back stored cardboard"
+  - label: "What it costs"
+    value: "Free estimate from the visit; a multi-unit building is priced as a program that includes the neighbors"
 faqs:
   - q: "Does having cockroaches mean my home is dirty?"
     a: "No. German cockroaches arrive in deliveries, groceries, used appliances, secondhand furniture and through shared walls in multi-unit buildings. Sanitation affects how fast a population grows, not whether one starts. We see them in immaculate homes regularly and we are not going to make you feel bad about it."

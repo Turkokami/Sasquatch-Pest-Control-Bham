@@ -63,6 +63,7 @@ const svc = liveServices()
 const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
+  source={`src/data/es-areas/${l.town}-${l.barrio}.ts`}
   path={path}
   lang="es"
   title={l.title}

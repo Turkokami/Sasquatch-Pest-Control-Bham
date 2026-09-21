@@ -6,6 +6,21 @@ h1: "School & Childcare Pest Control"
 answer: "Washington puts a notification duty on schools before a pesticide application, and exempts baits children cannot reach. That single exemption is why a good school program is built on exclusion and contained bait rather than spraying: it is better pest control and it is the version that does not generate a letter to every parent."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "Site records"
+    value: "Dated per site: finding, location, action, recommendation, and each monitoring device's state"
+  - label: "Notified applications"
+    value: "The record shows what was applied, where and when, and that notice was given"
+  - label: "Notice-exempt work"
+    value: "Exclusion, plus insect and rodent baits children cannot access"
+  - label: "District reporting"
+    value: "A roll-up showing which buildings generate findings and which are quiet"
+  - label: "Term-time work"
+    value: "Monitoring, contained bait servicing, exterior work and response"
+  - label: "Break work"
+    value: "Anything needing notification, plus disruptive or noisy structural work"
+  - label: "Contacts"
+    value: "A named contact at each site, and one at district level who sees the roll-up"
 faqs:
   - q: "Does every treatment mean notifying parents?"
     a: "No, and this is the most useful thing to understand about school work. Insect and rodent baits that children cannot access are exempt from the notification and posting requirements, so a program built on exclusion and contained bait can run continuously without generating a notice every time. Our schools guide sets out what the statute actually says, with the sources linked."

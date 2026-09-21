@@ -7,6 +7,14 @@ h1: "Rats in the Crawlspace"
 answer: "A crawlspace is the most attractive part of most Whatcom County homes to a rat: dark, undisturbed, insulated and connected to the outside by vents. Unlike a wall cavity it is habitat rather than a route, which changes both the work and the cleanup."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Listen for noise under the floor in the evening and toward morning, and note any musty ammonia smell or droppings in the garage or low cabinets"
+  - "If you go under yourself, ventilate first, wet material down with disinfectant, wear a fitted respirator and never sweep dry droppings"
+  - "Do not put bait under the house; a rat that dies in the floor structure has to be dealt with twice"
+  - "Clear what is feeding them: spilled bird seed, pet and chicken feed in bags, open compost, fallen fruit, bins without lids"
+  - "Call for the free visit, which goes the length of the crawlspace and around the exterior rather than peering in from the hatch"
+  - "Expect two to four weeks of trapping, with vents, the hatch and foundation penetrations sealed alongside as activity drops"
+  - "Leave insulation replacement until last, and only if contamination is widespread rather than a few droppings on sound batts"
 faqs:
   - q: "How do rats get into a crawlspace in the first place?"
     a: "Most often through a failed vent screen, a crawl hatch that does not close properly, or a gap where a pipe or cable passes through the foundation. Norway rats will also burrow along a foundation and come up where the concrete ends."

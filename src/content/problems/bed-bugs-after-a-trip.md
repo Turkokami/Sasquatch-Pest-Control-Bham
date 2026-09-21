@@ -7,6 +7,13 @@ h1: "Bed Bugs After a Trip"
 answer: "Bed bugs travel in luggage, and the days immediately after you get home are when an introduction is easiest to stop. Handling the bags before they reach a bedroom, and confirming whether anything is actually present, are the two things that decide how big this becomes."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Unpack the travel bags in a garage, a bathtub or on a hard floor, and keep the suitcase out of every bedroom"
+  - "Bag the washable travel clothes, then run everything that can take it through a hot dryer for at least thirty minutes"
+  - "Empty and vacuum the case along seams, zips and wheel housings, empty the vacuum outside in a sealed bag, and store the luggage away from bedrooms"
+  - "Do not spray the luggage, fog the room, move to the sofa or throw out the mattress, since each spreads a fresh introduction further"
+  - "Watch the bed for a couple of months for dark spotting, blood smears and shed skins, with a light encasement on and interceptor cups under the legs"
+  - "If signs appear, book a verification search; the fee comes off the treatment, and we will not sell a treatment for a house with nothing confirmed"
 faqs:
   - q: "What should I do with the suitcase right now?"
     a: "Keep it out of bedrooms. Work in a garage, a bathtub or on a hard floor, put all washable items straight into a sealed bag for hot laundering, and run everything that can take it through a hot dryer cycle for at least thirty minutes."

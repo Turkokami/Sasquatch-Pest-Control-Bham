@@ -6,6 +6,23 @@ h1: "Berry & Food Processing Pest Control"
 answer: "A processing plant is judged on its record as much as its condition. The work is a documented program: sealed where the building allows, monitored where it does not, and a dated history an auditor can follow. In this county the defining feature is a harvest that arrives all at once and changes the building for six weeks."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "Visit records"
+    value: "Each visit logs findings, action taken, recommendations and who got them, plus the state of every monitoring device"
+  - label: "Device map"
+    value: "Drawn so someone new to the plant can follow it, numbered to match the visit log"
+  - label: "Supporting documents"
+    value: "Licenses and categories the work fell under, with labels and safety data for anything used"
+  - label: "Visit frequency"
+    value: "Written into the site program, then raised at harvest with added monitoring at intake and waste"
+  - label: "Interior findings"
+    value: "Passed to your named contact the same day, never held for a monthly summary"
+  - label: "Production areas"
+    value: "Worked in sanitation windows and shutdowns; during a run, only exterior, dock and monitoring work"
+  - label: "Who fixes structure"
+    value: "Dock exclusion goes in during the late-winter-to-spring off-season; the plant keeps seals and door closers maintained"
+  - label: "Sanitation side"
+    value: "Drains on a documented cleaning program, and culls on a schedule that holds through harvest"
 faqs:
   - q: "Can you work inside a plant during a production run?"
     a: "Some of it, and the rest is scheduled around the run. Interior work in production and packaging areas belongs in sanitation windows and shutdowns, and anything applied has to suit a food-handling setting. What can happen during a run is exterior work, dock and perimeter attention, and monitoring. We would rather build the program around your schedule than ask you to stop for ours."

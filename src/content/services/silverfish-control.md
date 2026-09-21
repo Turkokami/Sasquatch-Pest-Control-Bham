@@ -6,6 +6,17 @@ h1: "Silverfish Control in Bellingham & Whatcom County"
 answer: "Silverfish are a humidity problem wearing an insect costume. They need damp air to survive and cannot establish in a genuinely dry space, so the durable fix is drying the areas they live in — crawlspace, bathroom, basement — rather than repeated treatment of the ones you see."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Silverfish and firebrats, and the humid spaces that let them survive"
+  - label: "Included"
+    value: "Moisture readings, treatment in voids, plumbing runs and the crawlspace, dusts in dry voids, and sealing gaps"
+  - label: "Not included"
+    value: "Crawlspace restoration, which is its own project when the crawlspace is the reservoir"
+  - label: "How long it takes"
+    value: "A few months rather than weeks, tracking the humidity"
+  - label: "What it costs"
+    value: "Quoted from the visit; modest when the source is a bathroom void"
 faqs:
   - q: "Why do I keep finding them in the bathtub and sink?"
     a: "Not because they came up the drain. They are drawn to the humidity in a bathroom, and once inside a smooth-sided basin they cannot climb out — silverfish cannot grip a glazed vertical surface. So the tub collects them and makes a small population look like a large one."

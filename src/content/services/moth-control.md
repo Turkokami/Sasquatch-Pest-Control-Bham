@@ -6,6 +6,19 @@ h1: "Moth Control in Bellingham & Whatcom County"
 answer: "There are two moth problems and they have nothing to do with each other. Clothes moths eat wool, silk and fur in dark undisturbed places. Pantry moths breed in stored food and fly around the kitchen. Which one you have decides everything, and the moth flying at your lamp is almost certainly neither."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Clothes moths in wool, silk and fur, and pantry moths breeding in stored food"
+  - label: "Included"
+    value: "Finding the source, cleaning and vacuuming, harborage treatment, pheromone monitors and a follow-up"
+  - label: "Not included"
+    value: "Spraying clothes or bedding, fogging a pantry, or treating a valuable textile directly"
+  - label: "How many visits"
+    value: "More than one; both moths have hidden stages, so the plan includes a follow-up"
+  - label: "Before we arrive"
+    value: "Leave the closet or pantry as it is and check for webbing"
+  - label: "What it costs"
+    value: "Generally modest and priced by the area and textiles involved; free estimate"
 faqs:
   - q: "A moth flew out of my closet. Are my clothes at risk?"
     a: "Maybe, and the useful check is the webbing rather than the moth. Clothes moth larvae leave silk — tubes, mats or small portable cases — on the fabric they are feeding on. If you find webbing along a seam, under a collar or at the back of a shelf, that is a real infestation. A single moth without webbing may be nothing."

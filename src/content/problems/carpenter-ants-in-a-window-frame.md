@@ -7,6 +7,14 @@ h1: "Carpenter Ants in a Window Frame"
 answer: "A window frame is where carpenter ants show up because it is where wood gets wet. What you are seeing is nearly always a satellite nest in softened timber, supplied by a parent colony outdoors, and the frame is telling you about a water problem as much as an insect one."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Watch the sill in the hour after dusk, and look for coarse fibrous frass with insect parts piled below a slot in the trim"
+  - "Leave the opening the frass comes out of unsealed, since it marks exactly where the gallery runs"
+  - "Skip the hardware store aerosol on the window, because a repellent at the nest can split the colony into new sites"
+  - "Do not cut the trim open to look until someone has decided whether the frame is being repaired anyway"
+  - "Look for how water reaches the window: cracked sealant, lifted flashing, a flat sill, overflowing gutters or sprinklers hitting the wall"
+  - "Call for a free visit: we treat the satellite nest and trails with non-repellent products and walk the grounds for the parent colony in stumps, deadwood or woodpiles"
+  - "Have a joiner fix the wet sill, trim or flashing, or the ants will come back to the same frame"
 faqs:
   - q: "Why a window and not somewhere else?"
     a: "Because windows are where water gets into wood. Failed sealant, worn flashing, a sill without enough slope and years of driven rain all leave the framing damp, and carpenter ants specifically want timber that has already begun to soften."

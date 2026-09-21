@@ -7,6 +7,14 @@ h1: "Fungus Gnats in Houseplants"
 answer: "Fungus gnats are a watering problem wearing an insect costume. The larvae live in the top inch of constantly damp potting soil, feeding on fungi and organic matter, so the reliable fix is letting that layer dry out rather than spraying anything at the adults."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Check the potting soil with a finger and water only once the top inch or two has gone genuinely dry"
+  - "Empty every saucer, and water from below where the pot allows"
+  - "Put a yellow sticky trap at soil level in each affected pot, change it weekly and count the catch"
+  - "Top-dress the worst pots with a half-inch of grit, and add a Bti drench in week three if you want to speed things up"
+  - "Skip spraying the adults, bug bombs and peroxide drenches; none of them changes the wet soil the larvae live in"
+  - "If trap counts have not fallen by the end of week three, or gnats appear in rooms with no plants, look for a leak, a wet crawlspace or a blocked condensate drain"
+  - "Call us once the source looks structural, or for a greenhouse or seedlings losing stock; a windowsill of houseplants does not need a visit"
 faqs:
   - q: "Will they hurt my plants?"
     a: "On established houseplants, rarely. Larvae feed mainly on fungi and decaying organic matter in the soil. Heavy populations can damage seedlings, cuttings and very fine root systems, but a mature plant generally shrugs them off."

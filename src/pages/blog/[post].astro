@@ -43,6 +43,7 @@ const imported = p.data.imported.toLocaleDateString('en-US', {
 });
 ---
 <BaseLayout
+  source={p ? `src/content/blog/${p.id.replace(/\.md$/, '')}.md` : undefined}
   path={path}
   title={p.data.title}
   description={p.data.description}

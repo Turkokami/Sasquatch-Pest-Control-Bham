@@ -50,6 +50,7 @@ const siblings = all
   .map((e) => ({ href: `/commercial/${e.data.industry}/`, label: e.data.h1 }));
 ---
 <BaseLayout
+  source={entry ? `src/content/industries/${entry.id.replace(/\.md$/, '')}.md` : undefined}
   path={path}
   title={d.title}
   description={d.description}

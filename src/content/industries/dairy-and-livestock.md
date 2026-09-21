@@ -6,6 +6,21 @@ h1: "Dairy & Livestock Pest Control in Whatcom County"
 answer: "On a dairy the pest problem is a feed problem. Rodents live on spilled grain and supplement, and no amount of treatment outpaces an open feed room. We seal the buildings that can be sealed, defend the ones that cannot, and work fly pressure at the breeding sites rather than on the adults."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "Visit records"
+    value: "Dated each visit: what was found, what was done, device locations and contents, and advice for the farm's side"
+  - label: "Device map"
+    value: "Provided wherever devices are in use, readable by somebody who has never walked the farm"
+  - label: "Visit timing"
+    value: "Set around milking, feed delivery and scrape times, usually as a fixed window, not a fixed day"
+  - label: "Visit frequency"
+    value: "What the farm actually needs, agreed after the walk and stated in the written program"
+  - label: "Devices"
+    value: "Structural voids and locked stations that livestock and product cannot reach"
+  - label: "Sealed or defended"
+    value: "Milk house, shop, offices and control rooms get closed; pole barns get a monitored perimeter"
+  - label: "Farm's side"
+    value: "Feed spillage cleared on a schedule someone owns, bagged product off the floor, a named report recipient"
 faqs:
   - q: "Can you actually rodent-proof a pole barn?"
     a: "No, and anybody who says otherwise has not looked at one. A pole building with a gravel floor and a roll-up door was never going to be sealed. What we quote instead is protection for the things that matter inside it — the feed room, the shop, the wiring, the panel — and a monitored program around the buildings that can genuinely be closed."

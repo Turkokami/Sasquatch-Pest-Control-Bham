@@ -6,6 +6,17 @@ h1: "Stink Bug & Overwintering Pest Control in Whatcom County"
 answer: "Stink bugs, boxelder bugs and conifer seed bugs all do the same thing: gather on warm south and west walls in October and work into the building to overwinter. They do not breed indoors, bite, or damage anything. The fix is sealing the gaps in late summer, and the treatment window closes once they are inside."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Stink bugs, boxelder bugs and conifer seed bugs that overwinter in walls and attics"
+  - label: "Included"
+    value: "Exterior treatment on the walls they gather on, plus sealing windows, siding laps, soffits, vents and penetrations"
+  - label: "Not included"
+    value: "Treating inside wall voids, which leaves dead insects that feed carpet beetles"
+  - label: "Timing"
+    value: "Late August into September, before they gather; by November they are already inside"
+  - label: "What it costs"
+    value: "Priced by how much wall and how many gaps need work; free estimate"
 faqs:
   - q: "Why do they pile onto one wall of my house every October?"
     a: "They are looking for a warm, sheltered place to spend winter, and they find it by heat. South and west elevations hold afternoon sun longest, so that is where they gather before working into gaps around siding, windows, soffits and vents. It is the same wall every year for the same reason."

@@ -7,6 +7,13 @@ h1: "Wasp Nest in a Wall Void"
 answer: "A wasp nest inside a wall void is hidden, and the single worst response is sealing the entrance. A colony blocked from its own doorway will often chew inward through drywall into the room. The nest is treated through the hole it uses, then closed once activity has stopped."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Watch the hole from a safe distance on a warm afternoon to confirm a steady two-way stream into the siding or soffit"
+  - "Do not foam, caulk, tape or board over the entrance while wasps use it, or they may chew inward through the drywall"
+  - "Photograph the insects from a distance, because honey bees in a wall need a beekeeper rather than treatment"
+  - "Keep people off the flight path, close windows on that side, and do no drilling, painting or pressure washing on that wall"
+  - "If wasps turn up indoors, keep that room's door shut and still leave the outside hole open"
+  - "Call for treatment through the existing hole from outside at dusk or early morning, with sealing on a later visit once traffic stops"
 faqs:
   - q: "Why can I not just fill the hole?"
     a: "Because the colony is still inside and needs a way out. Wasps blocked at their entrance will work at the surrounding material, and in a wall the softest direction is inward through drywall into your room. We see this happen."

@@ -7,6 +7,14 @@ h1: "Moisture Ants Mean a Water Problem"
 answer: "Moisture ants only nest in wood that is genuinely wet and already decaying. Finding them is useful information rather than bad luck: they mark the location of a water problem precisely, and the repair that fixes the water is what removes them."
 ready: true
 expert: kristofer-elling
+steps:
+  - "If small winged ants swarm indoors, vacuum them up; they do not bite and will not start a nest inside the house"
+  - "Before clearing them all, keep a dozen in a sealed bag or jar so identification is not guesswork"
+  - "Note the exact baseboard gap, window return, light fitting or fan the swarm came out of, and do not seal it yet, because it leads to the wet wood"
+  - "Look for the water: grade falling toward the house, short downspouts, a hose bib, a slow leak under a shower or toilet, a fan venting into the attic"
+  - "Do not have the ants sprayed while the wood stays wet; the site is recolonized within a season or two and the rot carries on unseen"
+  - "Book the free visit, where we look for water before ants, from the crawlspace sill plate to the roof penetrations and the grade outside"
+  - "Fix the water and replace decayed timber first; treatment from us comes after, and only if anything is left"
 faqs:
   - q: "What actually is a moisture ant?"
     a: "A group of small yellowish or light brown ants that nest only in wood with high moisture content and active decay. Unlike carpenter ants they will not colonize sound dry timber, which is why their presence is so specific a signal."

@@ -121,6 +121,7 @@ const actionLinks = [
 
 ---
 <BaseLayout
+  source={p ? `src/content/pests/${p.id.replace(/\.md$/, '')}.md` : undefined}
   videoKey={videoForPest[species.slug]}
   path={path}
   title={p.data.title}

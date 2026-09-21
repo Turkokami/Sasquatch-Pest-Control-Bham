@@ -6,6 +6,21 @@ h1: "Bed Bug Treatment & Control in Bellingham & Whatcom County"
 answer: "We confirm bed bugs before anyone pays to treat for them. A $150 verification visit establishes what you actually have, and it is credited toward treatment if you go ahead — so it costs nothing if you do. Treatment is $395 per room with common areas included."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Bed bugs confirmed by a proper search of the sleeping areas, then treated room by room"
+  - label: "Verification visit"
+    value: "$150, credited in full toward treatment if you go ahead"
+  - label: "What it costs"
+    value: "$395 per room, with common areas such as hallways and living rooms included"
+  - label: "Included"
+    value: "A written prep list, treatment aimed at harborage, and the planned follow-up visits, which are part of the price"
+  - label: "Not included"
+    value: "Bat bugs, where the colony above the ceiling needs a bat specialist; we do not do bat work"
+  - label: "How many visits"
+    value: "More than one; a second visit is timed to when the eggs hatch"
+  - label: "Before we arrive"
+    value: "Follow the prep list and do not bomb, spray or throw out the mattress; an unprepared room gets rescheduled"
 faqs:
   - q: "How much does bed bug treatment cost?"
     a: "The verification visit is $150, and it is credited in full toward treatment if you proceed — so if we find bed bugs and you treat, it costs you nothing. Treatment is $395 per room, with common areas such as hallways and living rooms included rather than counted as additional rooms."

@@ -7,6 +7,13 @@ h1: "Yellowjackets in the Lawn"
 answer: "Yellowjackets nesting in the ground are the wasp situation most likely to injure somebody on a residential property, because the nest stays invisible until a mower or a foot disturbs it, and the colony defends an underground entrance in numbers and follows whoever disturbed it a surprising distance."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Stand about twenty feet back on a warm day and watch for the flight line that drops into one hole in the ground"
+  - "Mark the spot with a cane or bucket several feet away, never at the hole, and tell anyone who mows or does yard work"
+  - "Do not pour gasoline or boiling water down the entrance, block it, or go at it with a flashlight at night"
+  - "If the mower hits a nest, keep moving away, get children and pets indoors, and leave the mower there for the day"
+  - "Treat many stings, trouble breathing, swelling away from the sting or widespread hives as a medical emergency first"
+  - "Let a late-season nest in a far corner die with the frosts; call us when one sits by a mowing line, path, play area or someone with a sting allergy"
 faqs:
   - q: "How do I find the entrance without getting stung?"
     a: "Watch from a distance in good light. Traffic in and out converges on a single hole, and a steady stream of insects arriving on the same line will show you where it is from twenty feet away. Never probe the ground to look."

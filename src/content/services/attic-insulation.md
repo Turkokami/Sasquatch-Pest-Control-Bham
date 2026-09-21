@@ -6,6 +6,19 @@ h1: "Attic Insulation Removal & Replacement"
 answer: "After rodents, attic insulation is usually contaminated through rather than in patches. We handle the pest half — trapping, exclusion and the crawlspace work — and bring in a local insulation crew for the attic removal and replacement itself, on one coordinated job with one sequence and one point of contact."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Attic insulation fouled by rodents, taken out and replaced once the animals are confirmed gone"
+  - label: "Who does what"
+    value: "We do the trapping, exclusion and crawlspace insulation ourselves; a local insulation crew we work alongside removes and replaces the attic insulation"
+  - label: "Included"
+    value: "Vacuum removal into sealed bags, debris removal, disinfection where it was worst, a ventilation check and new insulation with the depth marked"
+  - label: "Not included"
+    value: "Air sealing, roofing, electrical work on knob-and-tube wiring, and carpentry on decayed framing"
+  - label: "How long it takes"
+    value: "One to two days for the insulation crew in most attics, after our exclusion and trapping are done"
+  - label: "What it costs"
+    value: "Priced from square footage, existing insulation, contamination and access; free estimate, in writing before anything starts"
 faqs:
   - q: "Do you do the attic work yourselves?"
     a: "The pest half, yes: trapping, exclusion, the crawlspace, and confirming the animals are gone before anything goes back in. The attic removal and re-insulation is done by a local insulation crew we work alongside, because that is their trade and they do it every day. We scope it together, the sequence is ours to get right, and you will know before it starts who is doing which part."

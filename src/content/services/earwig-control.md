@@ -6,6 +6,17 @@ h1: "Earwig, Sowbug & Pillbug Control in Whatcom County"
 answer: "Earwigs live outdoors in damp mulch, leaf litter and under anything lying on the ground. They wander indoors and die there without breeding, so interior spraying achieves very little. What works is drying and clearing the first few feet around the foundation, and closing the gaps they come through."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Earwigs, sowbugs and pillbugs living in the damp band around the foundation"
+  - label: "Included"
+    value: "Perimeter and harborage treatment, closing entry routes, and advice on pulling mulch back from the siding"
+  - label: "Not included"
+    value: "Treating the house interior, an annual plan for pillbugs, or spraying a whole garden"
+  - label: "Timing"
+    value: "Clearing habitat in early spring, before numbers build toward the midsummer peak"
+  - label: "What it costs"
+    value: "Generally modest, set by perimeter length, harborage and any exclusion work; free estimate"
 faqs:
   - q: "Do earwigs actually go in your ears?"
     a: "No. It is a very old folk name with no basis, and there is no meaningful risk of it. They are looking for tight, dark, humid spaces to hide in during the day, and an ear is neither the sort of space they seek nor somewhere they can do anything if they got there."

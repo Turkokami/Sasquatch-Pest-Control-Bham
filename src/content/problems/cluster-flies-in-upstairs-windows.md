@@ -7,6 +7,14 @@ h1: "Cluster Flies in Upstairs Windows"
 answer: "Cluster flies are overwintering insects, not a hygiene problem. They breed in lawns and fields, gather on sunlit walls in October, and enter attics and wall voids to spend the winter. They reappear indoors on warm days, which is why they seem to keep coming back."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Check the flies: slow dull gray ones at the glass are cluster flies, while shiny fast metallic ones point to something dead in a cavity"
+  - "Vacuum the sluggish flies off the upstairs windows and tip the contents outside into a sealed bag, since some are still alive"
+  - "Do not spray the window glass or set off a bug bomb, which leaves the several hundred flies in the wall untouched"
+  - "Seal around the upstairs window frames from inside, and keep the attic hatch, light fittings and fan surrounds closed"
+  - "Do not leave dead flies piling up in the attic, where they feed carpet beetles and larder beetles"
+  - "Have us look, at no charge, at the walls the flies gather on, the openings at height and the attic for dead flies"
+  - "Put the exterior treatment in the diary for late August into early September, because by mid-October the flies are already in the wall"
 faqs:
   - q: "Are they coming from something dead in the wall?"
     a: "Almost certainly not. That is a different fly. Cluster flies develop in soil as parasites of earthworms and have nothing to do with carrion or waste. Blow flies, which are shiny and metallic, are the ones that indicate a dead animal."

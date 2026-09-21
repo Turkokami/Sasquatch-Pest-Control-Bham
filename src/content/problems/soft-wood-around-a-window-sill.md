@@ -7,6 +7,14 @@ h1: "Soft Wood Around a Window Sill"
 answer: "Wood that gives under a probe around a window sill is decay, and decay is a water problem. Insects may or may not be involved, and the question that matters first is how far the softness extends, because that decides whether this is a repair or a repaint."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Push a blunt screwdriver or awl into the sill at several points, including both ends, the underside and the trim below, and mark where it gives"
+  - "Probe a spot you know is sound so you can feel what firm timber should be like"
+  - "Look for the water: cracked sealant, missing head flashing, a flat sill, no drip edge, or a gutter, downspout or sprinkler above"
+  - "If the softness is on the inside of an aluminum-framed window, suspect condensation and say so when you call"
+  - "Do not fill and repaint wood that a probe sinks into; it traps the moisture and hides how far the decay goes"
+  - "Call for a free visit to see whether carpenter ants, moisture ants, dampwood termites or beetles are in the sill; treating them is our part"
+  - "Leave cutting out and replacing the decayed wood to a carpenter, with the water entry fixed at the same time"
 faqs:
   - q: "How do I test how bad it is?"
     a: "Push something blunt into the wood at several points — a screwdriver or an awl, firmly but without hammering. Sound timber resists and barely marks. Softened wood gives. Wood that lets the tool sink in has lost its strength and will not recover."

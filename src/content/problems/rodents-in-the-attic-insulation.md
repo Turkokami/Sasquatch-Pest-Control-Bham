@@ -7,6 +7,14 @@ h1: "Rodents in the Attic Insulation"
 answer: "Insulation is the best nesting material most buildings contain, which is why attic rodent activity concentrates in it. The damage is to thermal performance as much as to hygiene, and the decision that matters is whether the material can be cleaned or has to come out."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Note when the noise happens: overhead after dark points to rodents, while daytime activity suggests a squirrel, bat or bird, which we do not handle"
+  - "From outside, look along the roofline for soffit and fascia gaps, open rafter tails, damaged gable vent screens and branches touching the roof"
+  - "Before going up, ventilate the attic, wet droppings and nesting down with disinfectant, and wear a fitted respirator and gloves"
+  - "Do not blow new insulation over the old; covering contaminated material keeps the odor and sets up a second job"
+  - "Book the free attic assessment, which covers the roofline and the connected voids, including the crawlspace below"
+  - "Work in order: trap the animals out, close the roofline and cut back branches, then decide whether the insulation stays or goes"
+  - "Once it is resolved, move anything you care about out of cardboard and into rigid sealed containers"
 faqs:
   - q: "How do rodents get into an attic at all?"
     a: "Usually at the roofline rather than the ground. Gaps where the soffit meets the fascia, open rafter tails, unscreened gable and roof vents, the junction where an addition's roof meets a wall, and branches that let a climber reach the roof directly."

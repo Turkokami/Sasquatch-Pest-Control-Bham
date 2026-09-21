@@ -70,6 +70,7 @@ const acciones = [
 const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
+  source={`src/data/es-plagas/${e.slug}.ts`}
   path={path}
   lang="es"
   title={e.title}

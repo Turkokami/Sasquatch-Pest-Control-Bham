@@ -49,6 +49,7 @@ import Footer from '../components/Footer.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import MobileActionBar from '../components/MobileActionBar.astro';
 import LeadForm from '../components/LeadForm.astro';
+import CONTENT_DATES from '../data/content-dates.json';
 
 /* `guideTopics` is Omitted as well as title/description: it is not a page's
    business what the guides collection contains. It is the Organization's
@@ -110,6 +111,14 @@ interface Props extends Omit<PageSchemaInput, 'title' | 'description' | 'guideTo
    * Texas enquiries to the separately run franchise).
    */
   leadForm?: boolean;
+  /**
+   * The repo path of the file this page is written from, e.g.
+   * 'src/content/pests/norway-rat.md'. When given, the page shows a visible
+   * "Last updated" date and carries it as dateModified — taken from that
+   * file's own git history by scripts/content-dates.mjs, never typed by hand
+   * (Keystone v3.2 §6.6). An explicit dateModified still wins.
+   */
+  source?: string;
 }
 
 const {
@@ -121,8 +130,18 @@ const {
   lang = 'en',
   altPath,
   leadForm = true,
+  source,
   ...schemaProps
 } = Astro.props;
+
+/* The last real edit to this page's source, from git — see content-dates.mjs. */
+const modified: string | Date | undefined =
+  schemaProps.dateModified ?? (source ? (CONTENT_DATES as Record<string, string>)[source] : undefined);
+if (modified) schemaProps.dateModified = modified;
+const modifiedDate = modified ? new Date(typeof modified === 'string' ? `${modified}T12:00:00Z` : modified) : undefined;
+const modifiedLabel = modifiedDate
+  ? modifiedDate.toLocaleDateString(lang === 'es' ? 'es-US' : 'en-US', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+  : '';
 
 if (canonicalTo && !noindex) {
   throw new Error(
@@ -245,6 +264,13 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
       <div class="wrap">
         {schemaProps.breadcrumbs?.length ? <Breadcrumbs items={schemaProps.breadcrumbs} /> : null}
         <slot />
+        {/* Keystone v3.2 §6.6: a visible last-updated date, from git. */}
+        {modifiedDate && (
+          <p class="updated">
+            {lang === 'es' ? 'Actualizado el ' : 'Last updated '}
+            <time datetime={modifiedDate.toISOString().slice(0, 10)}>{modifiedLabel}</time>
+          </p>
+        )}
         {leadForm && <LeadForm />}
       </div>
     </main>

@@ -6,6 +6,19 @@ h1: "Wasp Nest Removal & Hornet Control in Bellingham & Whatcom County"
 answer: "Colonies here peak in late August and September, which is when nearly all the stings happen. We remove ground nests, aerial nests and the wall-void nests that are genuinely dangerous to attempt yourself. If you have a nest near a door, a walkway or a play area, that moves to the front of our schedule."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Yellowjacket, bald-faced hornet and paper wasp nests in the ground, in the open and inside walls"
+  - label: "Included"
+    value: "Finding the nest, treating it early or at dusk, taking down accessible nests, and sealing the entrance once the colony is dead"
+  - label: "Not included"
+    value: "Killing honey bees; a swarm goes to a beekeeper and a wall colony is a removal and repair job"
+  - label: "Priority"
+    value: "Nests near a door, a walkway or a play area move to the front of the schedule"
+  - label: "Return visit"
+    value: "A wall-void colony that is still active gets a second visit under our 100% Service Guarantee"
+  - label: "What it costs"
+    value: "Free estimate given before work starts; height, access and wall voids raise the price"
 faqs:
   - q: "Why are wasps suddenly everywhere in late summer?"
     a: "A colony starts with one queen in spring and grows all season, so August and September is simply when it is largest. The diet shift belongs to the Vespula yellowjackets — the ground and wall nesters — which swap hunting insects for sugar and meat as brood rearing winds down. UC IPM records that the aerial nesters in the genus Dolichovespula, meaning the bald-faced hornet and the aerial yellowjacket, stay predatory to the end and never make that switch."

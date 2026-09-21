@@ -7,6 +7,14 @@ h1: "Sealing a Quarter-Inch Foundation Gap"
 answer: "A quarter of an inch is the threshold that matters, because that is roughly what a house mouse needs. Sealing a gap that size properly means a material an animal cannot chew, fastened into sound substrate, rather than a bead of sealant or a plug of foam."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Walk the whole foundation line slowly on a dry day in good light, pulling back shrubs and moving stored material off the wall"
+  - "Follow every pipe and cable to the hole where it enters, starting with the gap around copper pipe at the foundation"
+  - "Sit in the dark crawlspace or garage in daylight for a couple of minutes and look for daylight showing through"
+  - "Close each quarter-inch-or-wider gap that leads somewhere with hardware cloth, sheet metal or mortar, never caulk or foam on its own"
+  - "Check nothing is living in the crawlspace or walls before sealing; if rodents are there, trap them out first"
+  - "Screen crawl vents with quarter-inch metal mesh rather than boarding them over"
+  - "Hand the roofline and anything on a ladder to us, along with a free walk of the full envelope"
 faqs:
   - q: "Is a quarter inch really enough for a mouse?"
     a: "Yes. A house mouse passes through an opening around a quarter of an inch, because the skull is the limiting dimension and the body follows. Rats are given slightly more than half an inch to pass through, but a quarter inch is enough for one to gnaw the opening up to a size that fits, so the same number governs both."

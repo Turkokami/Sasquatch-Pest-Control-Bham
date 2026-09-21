@@ -33,6 +33,7 @@ const siblings = (await getCollection('guides'))
 const blogLinks = await blogPostsFor(path);
 ---
 <BaseLayout
+  source={g ? `src/content/guides/${g.id.replace(/\.md$/, '')}.md` : undefined}
   path={path}
   title={g.data.title}
   description={g.data.description}

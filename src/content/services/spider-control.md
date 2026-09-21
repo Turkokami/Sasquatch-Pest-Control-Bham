@@ -6,6 +6,19 @@ h1: "Spider Control in Bellingham & Whatcom County"
 answer: "Nearly every large spider found indoors here in fall is a giant house spider, and it is harmless. We treat the exterior, remove webbing and reduce the insect prey that draws them, and we will tell you when what you have does not need treating at all. Identification comes before anyone recommends a service."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Spiders and webbing on eaves, entries, porches, garages, crawlspaces and outbuildings"
+  - label: "Included"
+    value: "Identification, web and egg sac removal, advice on prey and lighting, and targeted exterior treatment"
+  - label: "Not included"
+    value: "Blanket interior spraying, or a September treatment for males wandering in the mating season"
+  - label: "Timing"
+    value: "Spring and early summer, when web removal and treatment do the most good"
+  - label: "Guarantee"
+    value: "Backed by our 100% Service Guarantee"
+  - label: "What it costs"
+    value: "Free estimate, sized by the physical work: height, eaves, outbuildings and neglected spaces"
 faqs:
   - q: "Are hobo spiders dangerous?"
     a: "The Washington State Department of Health states that hobo spiders are not considered dangerous as previously thought, and that evidence does not support a link between their bite and skin necrosis. The necrosis claim came from early research that later work did not confirm. Most large spiders found indoors here are giant house spiders anyway."

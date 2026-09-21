@@ -25,4 +25,8 @@ export interface EsServicio {
   answer: string;
   secciones: { h2: string; parrafos: string[] }[];
   faqs: { q: string; a: string }[];
+  /** Keystone v3.2 §4.3 — tabla y pasos, escritos desde la propia página y
+   *  desde la tabla de su gemela inglesa, sin datos nuevos. */
+  tabla?: { label: string; value: string }[];
+  pasos?: string[];
 }

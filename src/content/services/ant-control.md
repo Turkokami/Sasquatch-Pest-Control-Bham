@@ -6,6 +6,19 @@ h1: "Ant & Carpenter Ant Control in Bellingham & Whatcom County"
 answer: "Odorous house ants are the ant most homes here actually have, and the one a hardware-store spray makes worse — repellents split the colony rather than killing it. Carpenter ants are about three calls in ten and are what damages the building. Moisture ants mean water. Identification decides the treatment, because the three want different work."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Odorous house ants, carpenter ants and moisture ants, identified to species before anything is treated"
+  - label: "Included"
+    value: "Finding the nest, non-repellent products and baits, correcting conditions, sealing entry routes and follow-up checks"
+  - label: "Not included"
+    value: "Fixing the failed gutter or leaking supply line behind moisture ants, which is another trade"
+  - label: "How long it takes"
+    value: "Weeks rather than days for carpenter ants; two to three weeks for odorous house ants"
+  - label: "Before we arrive"
+    value: "Leave the ant trail alone and do not spray it; we follow it to the nest"
+  - label: "What it costs"
+    value: "Free estimate, with the figure in writing before work starts"
 faqs:
   - q: "What is the difference between carpenter ants and moisture ants?"
     a: "Carpenter ants are large, usually black, and excavate galleries in wood that may be sound or slightly damp. Moisture ants are smaller, yellowish to brown, and only nest in wood that is already wet. Carpenter ants are a structural problem; moisture ants are a symptom of a water problem, and the fix is the leak."

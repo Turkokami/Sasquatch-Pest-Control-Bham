@@ -6,6 +6,7 @@ import { photoForSection } from '../../../lib/page-photos';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { serviceGroups } from '../../../lib/menus';
 import AnswerBox from '../../../components/AnswerBox.astro';
+import QuickFacts from '../../../components/QuickFacts.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
@@ -33,6 +34,7 @@ const rails = esServicios
 const fotos = inlinePhotosForEs(Astro.url.pathname);
 ---
 <BaseLayout
+  source={`src/data/es-servicios/${s.slug}.ts`}
   path={path}
   lang="es"
   title={s.title}
@@ -62,6 +64,9 @@ const fotos = inlinePhotosForEs(Astro.url.pathname);
     },
     { heading: 'Otros servicios', groups: serviceGroups('es', path) },
   ]} />
+
+  {/* Keystone v3.2 §4.3 — ver QuickFacts.astro. */}
+  {s.tabla && <QuickFacts heading={`${s.nav ?? s.h1}: el trabajo de un vistazo`} rows={s.tabla} />}
 
   <div class="prose">
     {s.secciones.map((sec, i) => (

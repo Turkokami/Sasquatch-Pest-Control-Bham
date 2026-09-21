@@ -6,6 +6,19 @@ h1: "Pest Exclusion & Repairs in Bellingham & Whatcom County"
 answer: "Exclusion is the physical work of closing the gaps pests use to get into a building. Treatment manages a population; exclusion removes the access. On most Whatcom County homes it is the highest-value hour we spend on the property, and it reduces rodents, wasps, spiders and overwintering insects at the same time."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Closing the gaps that let rodents, wasps, spiders and overwintering insects into the building"
+  - label: "Included"
+    value: "A walk outside and through the crawlspace and attic, then hardware cloth, sheet metal, mortar and vent covers fixed to sound substrate"
+  - label: "Not included"
+    value: "Roofing, siding replacement, structural framing repair, plumbing and drainage excavation"
+  - label: "Order of work"
+    value: "If animals are inside, trapping comes first and sealing follows once it is quiet"
+  - label: "Timing"
+    value: "August and early September, before rodents move in; spring is the second-best window"
+  - label: "What it costs"
+    value: "Quoted from the walk-through, mostly by access; the estimate is free"
 faqs:
   - q: "What size gap actually matters?"
     a: "A quarter inch is the working number — roughly a pencil. A house mouse needs about that. Rats are given slightly more than half an inch in the extension literature, but a quarter inch is all one needs to get its teeth on an edge and gnaw the hole to size, so the standard does not change. Bellingham's rental inspection checklist flags foundation openings larger than a quarter inch as an infestation risk."

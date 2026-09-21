@@ -3160,3 +3160,11 @@ footer.site ul:has(a) li {
     border-top: 0;
   }
 }
+
+/* The last-updated line at the foot of the page body (§6.6). Quiet on
+   purpose: it is a fact for the reader who wants it, not a headline. */
+.updated {
+  margin: var(--space-4) 0 0;
+  font-size: var(--fs-xs);
+  color: var(--ink-3);
+}

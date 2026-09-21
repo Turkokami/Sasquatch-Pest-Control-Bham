@@ -7,6 +7,14 @@ h1: "Bugs on the South Wall Every October"
 answer: "Insects massing on a sunlit south or west wall in October are looking for somewhere to spend the winter. Several species do it at once, they use the same gaps, and the work that reduces it is exterior sealing plus a treatment timed to late summer rather than autumn."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Photograph one bug from the wall on a flat surface beside something for scale, so the species can be named"
+  - "Vacuum the ones that get indoors with a spare vacuum or a stocking in the hose, and empty it outside sealed"
+  - "Do not crush stink bugs, spray inside or fog the rooms, because none of it reaches the bugs dormant in the wall"
+  - "Close the indoor gaps they emerge from, such as window frame edges, recessed lights, fan surrounds and the attic hatch"
+  - "Trim plants touching the sunny wall, clear leaf litter from the foundation and keep ivy off the siding"
+  - "Call for a free look at the south and west walls: we find the openings at height, check the attic for dead bugs and set a sealing plan"
+  - "Book the exterior treatment of those walls for late August or early September, before they move in; applied in late October it mostly misses them"
 faqs:
   - q: "What are they actually doing on the wall?"
     a: "Warming up and gathering. A sunlit wall radiates heat on an autumn afternoon, which draws them out of the surrounding landscape and concentrates them. From there they work into any gap and settle into the cavity behind it."

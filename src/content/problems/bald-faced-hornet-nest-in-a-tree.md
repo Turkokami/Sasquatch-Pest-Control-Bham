@@ -7,6 +7,13 @@ h1: "Bald-Faced Hornet Nest in a Tree"
 answer: "A bald-faced hornet nest is the large gray paper football in a tree or shrub. It looks like the most serious wasp problem on a property and is frequently the least urgent, because the colony is annual, it is often found at leaf fall when it is already finishing, and it is not reused."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Stay outside the roughly ten-foot radius around the nest, and keep family and visiting trades off its flight line"
+  - "Check the season: a hornet nest first spotted at leaf fall has hung there all summer, and the colony is already finishing"
+  - "Check the position: a nest by a door, path, play area or work area, low in a hedge, or on a building should come out"
+  - "Do not knock, spray, shoot, burn or wrap the hornet nest, and never go at it from a ladder"
+  - "If anyone in the house carries an epinephrine autoinjector for stings, treat a nest near living space as urgent"
+  - "Call for a free look when position makes it a hazard: we treat at dusk or before dawn in full protective gear and take the paper shell down on a later visit"
 faqs:
   - q: "Is it as dangerous as it looks?"
     a: "It is a defended nest and it should be respected within about ten feet. Away from that radius the colony is not interested in you. The risk is far more about proximity and disturbance than about the nest simply existing."

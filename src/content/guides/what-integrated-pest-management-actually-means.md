@@ -29,6 +29,23 @@ sources:
 relatedTo:
   - "/services/*"
   - "/commercial/"
+factsTable:
+  - label: "What IPM is"
+    value: "A decision process: identify the species, monitor, set a threshold, change conditions, then treat narrowly"
+  - label: "Action threshold"
+    value: "EPA's term for the pest level at which presence becomes a nuisance, a health hazard or an economic threat"
+  - label: "Where zero is right"
+    value: "Bed bugs anywhere, cockroaches in commercial kitchens, rodents in food handling areas, stored-product pests in audited facilities"
+  - label: "Order of tools"
+    value: "Sanitation and habitat first, then exclusion, moisture, mechanical control, and chemicals last"
+  - label: "When chemicals are used"
+    value: "Baits before sprays, crack and crevice before broadcast, target-specific where an effective option exists"
+  - label: "Quarterly perimeter spray"
+    value: "Not IPM on its own, since it runs on a calendar instead of on a finding"
+  - label: "House monitoring"
+    value: "Same spots checked each visit plus what the homeowner reports; logged trap counts belong to commercial work"
+  - label: "Record of what was applied"
+    value: "Washington law gives the land owner a copy: product, EPA registration number, amount, concentration, date and times"
 faqs:
   - q: "Does IPM mean no pesticides are used?"
     a: "No. Every published definition puts pesticides in the toolkit and treats them as one option among several rather than the first one reached for. EPA describes control as using the most effective, lowest risk options once a threshold has been crossed."

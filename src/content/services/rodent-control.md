@@ -6,6 +6,19 @@ h1: "Rodent Control & Mouse Exterminator in Bellingham & Whatcom County"
 answer: "Rodent control here is exclusion first and trapping second. We find how they are getting in, seal those entries, trap the animals already inside, then clean up the contamination they left. Trapping alone empties a house temporarily; sealing a quarter-inch gap in the foundation is what actually ends it."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Norway rats, roof rats, house mice and deer mice in the crawlspace, attic and walls"
+  - label: "Included"
+    value: "Finding and sealing the entries, trapping along mapped routes, return visits until it is quiet, and cleanup"
+  - label: "Not included"
+    value: "Nuisance wildlife larger than a rat, which is not work we take on"
+  - label: "How long it takes"
+    value: "Exclusion in one to two days; trapping runs one to three weeks with return visits"
+  - label: "Timing"
+    value: "August and early September, before the rain drives them in"
+  - label: "What it costs"
+    value: "Free estimate, set by access, crawlspace clearance, how much needs sealing and how far contamination spread"
 faqs:
   - q: "Why do rodents come indoors in the fall here?"
     a: "It is the rain rather than the cold. Whatcom County does not get a hard freeze, so rodents are not driven in by temperature the way they are elsewhere. What drives them in is water — as the ground saturates through September and October, burrows flood and the dry space under your floor becomes the best available option."

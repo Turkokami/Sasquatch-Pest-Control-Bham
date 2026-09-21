@@ -7,6 +7,14 @@ h1: "Crawlspace Vent Screening"
 answer: "Crawlspace vents are the most common way rodents get under a Whatcom County house. The original screening corrodes or gets broken, and a failed vent is not a small gap — it is a doorway. Rescreening in metal is the highest-value exclusion work on most older buildings here."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Walk the whole foundation with a flashlight and find every vent, including the one behind a shrub, under a deck or buried by a raised bed"
+  - "At each vent, push gently on the mesh and check the bottom edge: corroded metal breaks, brittle plastic cracks, and fiberglass screen stops no rodent"
+  - "Look around each opening for smear marks, small droppings, a worn track or gnawed edges, and photograph anything you are unsure of"
+  - "Shine a light into the crawl area before closing a single vent; droppings, runs or nesting material down there mean trapping comes first"
+  - "Do not board, foam or plug the vents shut, because the crawlspace needs that airflow to stay dry"
+  - "Rescreen in quarter-inch galvanized or stainless hardware cloth, fastened every three or four inches around the edge rather than at the corners"
+  - "If you would rather hand it over, our free visit walks every vent, the crawl hatch and each penetration before anything is quoted"
 faqs:
   - q: "Can I just cover the vent with something?"
     a: "Not if it blocks airflow. Crawl vents exist to keep the underfloor space dry, and closing them off creates a moisture problem that costs more than the rodents would. The material has to exclude animals while still ventilating."

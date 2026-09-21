@@ -6,6 +6,17 @@ h1: "Centipede & Millipede Control in Whatcom County"
 answer: "Centipedes and millipedes are both telling you the same thing: somewhere is too damp. House centipedes are predators that eat silverfish, roaches and spiders, so their arrival usually means there is prey worth eating. Dry the space, reduce the prey, close the gaps, and both leave."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "House centipedes and millipedes, and the damp conditions that bring them indoors"
+  - label: "Included"
+    value: "Moisture checks, perimeter treatment for migrations, harborage treatment, and advice on drying and sealing"
+  - label: "Not included"
+    value: "A recurring plan for a few house centipedes, or broad interior spraying along baseboards"
+  - label: "Timing"
+    value: "Perimeter work set up ahead of the October and November millipede migrations"
+  - label: "What it costs"
+    value: "Quoted from the property and usually modest; the estimate is free"
 faqs:
   - q: "What is the fast one with all the legs in my bathroom?"
     a: "A house centipede — long legs, gray-yellow with dark stripes, and startlingly quick. It is a predator, it eats silverfish, small roaches, spiders and other insects, and it does no damage to anything. Its presence usually means there is a prey population worth eating somewhere in the building."

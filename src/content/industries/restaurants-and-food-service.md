@@ -6,6 +6,23 @@ h1: "Restaurant & Food Service Pest Control"
 answer: "A restaurant is judged on a walkthrough that happens without warning, so the program has to hold on any given Tuesday rather than on a scheduled one. Most of the work is drains, deliveries and the back door. Visits are scheduled around service, and findings reach you the same day rather than in a monthly summary."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "Visit records"
+    value: "A dated entry each visit covering what was found, what was done, and what was recommended to whom"
+  - label: "Device map"
+    value: "Where devices are used, a map that a stranger to the kitchen could follow"
+  - label: "Paperwork on file"
+    value: "Licensing and product documentation for anything applied, ready when somebody asks for the program"
+  - label: "Health inspector's focus"
+    value: "Droppings or activity in storage and prep, gaps at the back door, the dumpster area, and program records"
+  - label: "Visit timing"
+    value: "Before opening or after close, vehicles off the frontage, technicians in plain uniform"
+  - label: "Cockroach clearance"
+    value: "Two or three visits close together at the start, then recurring prevention"
+  - label: "Findings"
+    value: "Reach you the same day"
+  - label: "Who fixes structure"
+    value: "Exclusion items split in the program between what we do and what a landlord or contractor must do"
 faqs:
   - q: "Will anyone see you working?"
     a: "Not if it is planned properly. Most restaurant visits happen before opening or after close, vehicles can stay off the frontage, and technicians work in plain uniform rather than anything conspicuous. Where daytime access is unavoidable we work back of house first and keep the front to a walk-through. Discretion is a scheduling problem rather than a technique problem, and it is designed in at the start."

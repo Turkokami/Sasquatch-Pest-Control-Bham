@@ -6,6 +6,23 @@ h1: "Government & Municipal Pest Control"
 answer: "Public buildings are a mixed estate bought through a formal process and answerable to people who can ask questions in public. The work is one program across many building types, documented per site, priced so it survives a bid, and delivered by a local crew rather than dispatched from another region."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "Records"
+    value: "Dated per building: findings, actions, recommendations and who they went to, plus an estate-level roll-up"
+  - label: "Device layout"
+    value: "Monitoring layout and numbering that a person unfamiliar with the building can follow"
+  - label: "Licensing"
+    value: "WSDA license numbers and categories plus insurance certificates, attached to the bid rather than referenced"
+  - label: "Visit frequency"
+    value: "Stated separately for each building in the base program, not pooled into one estate figure"
+  - label: "Out-of-scope work"
+    value: "Priced from a schedule of rates: exclusion, stinging insect callouts, bed bug responses, one-off treatments"
+  - label: "Visit timing"
+    value: "Built around public hours and bookings; disruptive work goes into a closed period agreed ahead"
+  - label: "Who fixes structure"
+    value: "Exclusion is in the program; drainage, roof and gutter items go to the capital list as dated written recommendations"
+  - label: "Contacts"
+    value: "One named contact with an escalation route, plus a named person for each major building"
 faqs:
   - q: "Do you bid public contracts?"
     a: "Yes. We are a small local company, which has consequences worth stating up front: we can hold a genuine service standard across a municipal estate in this county, and we are not the right answer for an award spanning several counties or requiring crews we do not carry. We would rather say that at the bid than win it and underperform."

@@ -7,6 +7,13 @@ h1: "Scratching in the Walls at Night"
 answer: "Scratching inside a wall after dark is almost always a rodent using the cavity as a route rather than living in it. The timing, the height and the character of the sound narrow it down quickly, and the fix is finding the way in rather than treating the wall."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Write down the clock time the scratching starts and stops on two nights: onset near dusk and again before dawn fits rats or mice"
+  - "Listen for height: low near the floor points to the crawlspace, high at the ceiling line to the attic, and sound that travels means a run"
+  - "Dust flour or talc overnight at the crawl hatch, under the sink or along the baseboard of the loudest room to catch prints"
+  - "Keep poison out of the cavity you can hear, and do not cut into that wall looking for the animal"
+  - "Skip ultrasonic plug-ins, and do not take a quiet week as the end of it; the rodent has often just moved"
+  - "Then call: the free rodent visit goes into the crawlspace and up to the attic hatch, and the work runs find the way in, trap, then seal"
 faqs:
   - q: "Does the time of night tell you anything?"
     a: "It tells us a lot. Activity starting within an hour of dusk and again before dawn fits rats and mice. Sustained daytime noise in the roof usually points to something we do not handle, and we will say so rather than sell you a rodent job."

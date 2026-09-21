@@ -6,6 +6,17 @@ h1: "Remote Rodent Monitoring for Commercial Accounts"
 answer: "Remote monitoring puts a sensor on the traps and stations your program already runs. Interactions are counted and time-stamped, trend logs go into your service reports, and a trap that fires notifies us, so a technician is dispatched to service it rather than the device waiting for the next scheduled visit."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Sensors on the rodent traps and bait stations in an existing commercial program"
+  - label: "Included"
+    value: "Interaction counts and times per device, trend logs in your service reports, and a technician sent when a trap fires"
+  - label: "Not included"
+    value: "Residential accounts, and naming the species or finding the entry point, which the service visits still do"
+  - label: "What your site needs"
+    value: "No Wi-Fi, power or IT work; the hub reports over cellular and the sensors run on batteries"
+  - label: "What it costs"
+    value: "Quoted per site as an add-on, by how many devices you run and how they are placed"
 faqs:
   - q: "Is this available on a residential account?"
     a: "No. It is an add-on to a commercial program, because what it produces — interaction counts, times, trend logs across many devices — is what an audited or inspected business needs and what a house does not."

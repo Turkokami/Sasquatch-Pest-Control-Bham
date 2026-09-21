@@ -6,6 +6,23 @@ h1: "Healthcare & Senior Living Pest Control"
 answer: "These buildings run continuously and hold people who cannot easily move away from a problem, so the program is built on exclusion, monitoring and containment rather than on application. Every visit is documented, findings are escalated the same day, and the work is scheduled to be invisible to residents and patients."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "Visit records"
+    value: "Dated per visit: what turned up and where, what was done, what was advised and to whom, each device's state"
+  - label: "Device map"
+    value: "Numbered consistently with the visit record, clear to a person who does not know the building"
+  - label: "Also on file"
+    value: "Licenses, product labels and safety documentation for anything applied"
+  - label: "Escalation"
+    value: "Interior findings go to the named contact on shift the same day"
+  - label: "Visit timing"
+    value: "Around meal service, shift changes, therapy and clinical schedules, not through them"
+  - label: "Devices"
+    value: "Out of reach of residents, visitors and pets, and out of sight from corridors"
+  - label: "Bed bug reports"
+    value: "Reporting room and adjoining rooms checked before quoting; verification fee credited toward treatment"
+  - label: "Facility's side"
+    value: "Admission checks on furniture and belongings, drains on a documented cleaning program, notice of building works"
 faqs:
   - q: "Can you work in occupied resident rooms?"
     a: "Yes, and how it is done matters more than what is used. Room work is scheduled with staff, coordinated around the resident rather than around our route, and leans on inspection, containment and mechanical control. Anything applied is matched to an occupied healthcare setting and to the label. Where a room cannot be treated safely while occupied, we say so and work with the facility on the alternative."

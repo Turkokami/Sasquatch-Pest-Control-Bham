@@ -6,6 +6,17 @@ h1: "Wood-Boring Bee & Beetle Control in Whatcom County"
 answer: "Hole size tells you which insect. Round holes about half an inch across in fascia or deck rails are carpenter bees. Holes the size of a pencil lead in crawlspace joists, with fine powder below, are wood-boring beetles — and in this county those are a moisture problem before they are an insect problem."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Carpenter bees in exposed softwood, and wood-boring beetles in crawlspace framing"
+  - label: "Included"
+    value: "Measuring holes, a frass test for activity, moisture readings, gallery or borate treatment, then filling and sealing"
+  - label: "Not included"
+    value: "Fumigation, treating old inactive damage, recurring beetle plans, and replacing decayed members, which is carpentry"
+  - label: "Timing"
+    value: "Carpenter bee holes are treated and filled in late summer or autumn, once the new generation is out"
+  - label: "What it costs"
+    value: "Quoted from the visit; bee work is usually contained, beetle work depends on the moisture"
 faqs:
   - q: "How do I know if the damage is active or old?"
     a: "Fresh frass is the test. Active galleries push out powder or pellets continuously, so clear the area beneath a hole, wait a couple of weeks, and see whether more appears. Old exit holes in a dry beam can sit unchanged for decades, and treating them achieves nothing."

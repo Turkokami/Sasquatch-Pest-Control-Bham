@@ -19,6 +19,23 @@ sources:
 relatedTo:
   - "/services/*"
   - "/commercial/"
+factsTable:
+  - label: "The pest"
+    value: "Sets whether the job is one visit or a cycle timed to the insect's development, as with fleas and bed bugs"
+  - label: "Building shape"
+    value: "Perimeter, height and the number of junctions move a quote more than square footage does"
+  - label: "Crawlspace access"
+    value: "The biggest swing in this county: clearance, standing water, stored boxes and distance from the hatch"
+  - label: "How long it has run"
+    value: "Turns a pest job into a materials job, such as replacing soiled insulation and vapor barrier"
+  - label: "Treatment vs exclusion"
+    value: "A treatment is priced as a visit; sealing and crawlspace work are priced like small construction jobs"
+  - label: "Recurring plans"
+    value: "Pay off where pressure is continuous; a problem with a shape, like one wasp nest, is a one-off"
+  - label: "Phone estimates"
+    value: "Honest only as a range with stated assumptions; a firm figure needs someone to see the building"
+  - label: "Bed bug pricing"
+    value: "The one service with published figures, because its scope is counted in rooms"
 faqs:
   - q: "Why will nobody publish a price for this?"
     a: "Because the same words describe wildly different jobs. Two neighbors who both say they have mice can need an afternoon of screening or a week of crawlspace work, and a number printed on a page would be wrong for whichever of them read it second."

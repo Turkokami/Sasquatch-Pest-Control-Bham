@@ -7,6 +7,14 @@ h1: "Droppings in the Kitchen"
 answer: "Droppings in a kitchen mean an animal is feeding there, not merely passing through. Their size, freshness and distribution tell you what it is and how long it has been going on, and the response is cleanup, trapping and closing the route it used."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Leave a representative patch of droppings undisturbed if you can, and note their size, freshness and where in the kitchen they sit"
+  - "Do not sweep or vacuum dry droppings: ventilate the room, spray them with disinfectant, let it soak, then pick up with disposable towels"
+  - "Throw out food in cardboard, paper or thin film from the affected cupboard and anything gnawed; wash the outside of glass, metal and rigid containers"
+  - "Move dry goods into rigid containers with proper lids so the kitchen stops feeding anything"
+  - "Pull out a bottom drawer and shine a light at the back of the cabinet for gaps around the pipes and lines"
+  - "If you trap yourself, set several snap traps tight to the walls on the runs the droppings show; skip glue boards and bait stations in a kitchen"
+  - "Then have the building looked at rather than the room: our free rodent visit covers the connected voids, the crawlspace and the exterior"
 faqs:
   - q: "How do I tell a mouse from a rat by the droppings?"
     a: "Size mostly. Mouse droppings are around a quarter inch, pointed at both ends and left in large numbers. Rat droppings are half an inch or more with blunter ends and appear in smaller quantities because there are fewer animals producing them."

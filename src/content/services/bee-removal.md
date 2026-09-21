@@ -6,6 +6,17 @@ h1: "Bee Removal in Bellingham & Whatcom County"
 answer: "We do not kill honey bees. Most calls about bees turn out to be yellowjackets, and most genuine bee calls need a beekeeper or nothing at all. Where an established honey bee colony is inside a structure, that is a removal and repair job — the comb has to come out or it causes worse problems than the bees did."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Telling bees from yellowjackets, and closing up the structure after a honey bee colony has been removed"
+  - label: "Included"
+    value: "Free identification, a pointer to a beekeeper for swarms and colonies, and sealing the cavity and entry points afterward"
+  - label: "Not included"
+    value: "Killing honey bees, or spraying a wall colony and leaving the comb inside"
+  - label: "Who does the cut-out"
+    value: "Often a beekeeper who specializes in removals, sometimes with a contractor for the repair; their pricing is their own"
+  - label: "What it costs"
+    value: "Identification is free; sealing work is quoted in writing from a visit"
 faqs:
   - q: "Will you exterminate the bees in my wall?"
     a: "Not if they are honey bees. Poisoning a colony inside a wall leaves the comb and honey behind, which then melts, ferments, stains through the drywall and attracts other pests for years. It is worse than the bees. The right answer is removal of the colony and the comb, then repair."

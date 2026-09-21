@@ -7,6 +7,14 @@ h1: "Dampwood Termites in a Crawlspace"
 answer: "Dampwood termites in a crawlspace are a wood-decay problem before they are an insect problem. They require timber that is already wet, so finding them means finding the water, and the treatment only holds once the moisture that made the wood habitable has been corrected."
 ready: true
 expert: kristofer-elling
+steps:
+  - "Keep a dozen swarmers or shed wings in a sealed bag; that settles termite versus carpenter ant without guesswork"
+  - "Do not bother killing the swarmers on the windowsill, since they die within hours and the colony that sent them is untouched"
+  - "Note where they emerged: inside a room or on an interior sill points into the structure, while an exterior light may just mean a nearby stump"
+  - "Look for the water at the foundation: downspouts discharging there, grade falling toward the house, a dripping hose bib, a slow leak under a bathroom"
+  - "Do not leave it another season if the floor above sags or feels springy, or there is standing water in the crawl area"
+  - "Book the free visit: the whole crawlspace gone over with a light, the structural timber probed and the water traced before any quote"
+  - "Fix the water first or alongside our borate treatment of the wood, and leave a failed sill plate or post to a builder; soil treatment is the wrong tool for dampwood"
 faqs:
   - q: "Are dampwood termites as serious as other termites?"
     a: "They are limited by moisture, which is a real constraint, but the timber they occupy is structural — sill plates, joists, posts and beams. The damage matters because of where it is, and because the decay that let them in matters too."

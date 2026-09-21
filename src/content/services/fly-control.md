@@ -6,6 +6,19 @@ h1: "Fly & Gnat Control in Bellingham & Whatcom County"
 answer: "Flies are a symptom. Killing the adults you can see changes nothing, because something is breeding somewhere — and which species you have tells us where to look. The exception is cluster flies, which breed outdoors and overwinter in your walls, so that one is exclusion rather than treatment."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Cluster, fruit, drain, phorid and blow flies and fungus gnats, traced to where they breed"
+  - label: "Included"
+    value: "Identifying the species, finding and correcting the breeding site, targeted treatment where it helps, and sealing gaps"
+  - label: "Not included"
+    value: "Repairing a broken drain line under a slab, which is a plumber's job"
+  - label: "Cluster flies"
+    value: "Sealing before October, booked in late summer; spraying inside wall voids is not the fix"
+  - label: "How long it takes"
+    value: "Days once the source is dealt with"
+  - label: "What it costs"
+    value: "Free estimate; one drain is a small job, cluster flies are priced by the sealing needed"
 faqs:
   - q: "Hundreds of sluggish flies appear at my upstairs windows on sunny winter days. What are they?"
     a: "Cluster flies. They gather on warm south and west walls in October, work into the wall voids and attic to overwinter, and get fooled by warm spells into moving toward light instead of outside. There is no source inside your house to remove — the larvae develop outdoors in soil — so the fix is sealing, not spraying."

@@ -6,6 +6,23 @@ h1: "Marina & Waterfront Pest Control"
 answer: "A marina is not one building. It is a yard, a row of sheds, and several hundred private spaces the operator does not control, sitting in salt air that destroys ordinary exclusion material. The work is the shared structures, the gear storage, and an honest split of what is yours and what belongs to a slip holder."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "Visit records"
+    value: "Dated per visit: findings, actions, device locations, and recommendations for the operator and for tenants"
+  - label: "Operator or tenant"
+    value: "Each finding marked in writing as an operator item or a slip holder item, every visit"
+  - label: "Operator's scope"
+    value: "Shared buildings, gear storage structures, the yard and its margins, waste handling, and tenant rules"
+  - label: "Vessel owner's scope"
+    value: "The inside of the boat, its stores, its cover, and its winter housekeeping"
+  - label: "Exclusion material"
+    value: "Stainless mesh, matched fasteners, heavier gauge and marine-rated sealants in place of galvanized"
+  - label: "Best work window"
+    value: "Between haul-out and spring commissioning, when the yard is full, static and quiet"
+  - label: "Devices"
+    value: "Placed beyond reach of the public and pets, with a map someone new to the site can follow"
+  - label: "Birds"
+    value: "Not handled; gull work goes to a named specialist"
 faqs:
   - q: "Whose problem is a rodent on a boat — ours or the owner's?"
     a: "The boat is the owner's and the ground it sits on is yours, and almost every dispute we are asked into lives in that gap. What a marina can control is the shared structures, the gear storage, the waste handling and the yard, and those are what drive the population. We will say plainly which findings sit on your side and which belong to a slip holder, in writing, because that distinction is the whole management problem here."

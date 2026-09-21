@@ -6,6 +6,19 @@ h1: "Crawlspace Cleanout & Restoration in Whatcom County"
 answer: "After rodents or long-running moisture, a crawlspace needs more than a treatment. We remove contaminated insulation and debris, treat the surfaces, install a proper vapor barrier, screen the vents and re-insulate. Done in the right order, it ends the pest problem and dries the framing above it at the same time."
 expert: kristofer-elling
 ready: true
+factsTable:
+  - label: "What it covers"
+    value: "Crawlspaces fouled by rodents or long-running moisture, cleaned out and closed up"
+  - label: "Included"
+    value: "Removing contaminated insulation and debris, surface treatment, a sealed vapor barrier, vent screens, an access door and new insulation"
+  - label: "Not included"
+    value: "Structural framing repair, foundation work, drainage excavation, plumbing and roofing"
+  - label: "Order of work"
+    value: "Rodents out and confirmed quiet first, then removal, treatment, moisture work and re-insulation"
+  - label: "How long it takes"
+    value: "One to three days for most homes, depending on square footage, clearance and how much comes out"
+  - label: "What it costs"
+    value: "Free estimate from the site visit, set mostly by clearance height, square footage and contamination"
 faqs:
   - q: "Do I actually need my crawlspace insulation replaced?"
     a: "Only if it is contaminated or has lost its function. Insulation that has been used as rodent nesting, saturated with urine, or fallen off the joists is doing nothing for you and is holding moisture against the wood. Insulation that is dry, intact and in place stays where it is — we are not going to sell you a replacement you do not need."
