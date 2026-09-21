@@ -34,7 +34,7 @@ export const suddenValley: EsLugar = {
     {
       h2: 'Lo que hacen la pendiente y la construcción',
       parrafos: [
-        'Un espacio bajo el piso en pendiente no drena parejo: el agua baja por la tierra y encuentra el extremo bajo, que queda húmedo mucho después que lo demás, con las vigas de arriba tomando humedad por años, y ahí siguen las hormigas de humedad, la pudrición y las termitas de madera húmeda. Los arreglos son más de drenaje que de plagas. Y las terrazas se pegan a la casa por un larguero que en estas casas muchas veces está sin tapajuntas: es el defecto estructural más común que encontramos aquí, y vale revisarlo en cualquier casa de esa época.',
+        'Un espacio bajo el piso en pendiente no drena parejo: el agua baja por la tierra y encuentra el extremo bajo, que queda húmedo mucho después que lo demás, con las vigas de arriba tomando humedad por años, y ahí siguen las hormigas de humedad, la pudrición y las termitas de madera húmeda. Mantenga la madera por debajo del contenido de humedad que el [Laboratorio de Productos Forestales del USDA marca en su Manual de la Madera](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf) como umbral de pudrición y nada de eso empieza. Los arreglos son más de drenaje que de plagas. Y las terrazas se pegan a la casa por un larguero que en estas casas muchas veces está sin tapajuntas: es el defecto estructural más común que encontramos aquí, y vale revisarlo en cualquier casa de esa época.',
       ],
     },
     {

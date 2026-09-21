@@ -53,7 +53,7 @@ export const quienPagaElControlDePlagasEnUnaRenta: EsGuia = {
     {
       h2: 'Las chinches de cama son otro caso',
       parrafos: [
-        'Llegan cargadas — en el equipaje, un mueble de segunda mano, una bolsa que pasó una noche en otro lado —, así que la pregunta de dónde vinieron es difícil de verdad, y por eso esos pleitos se amargan. Y en un edificio de varias unidades no respetan el límite entre una renta y la siguiente: se mueven por las paredes, bajo las puertas y por los huecos de tubería y cableado. Pague quien pague, un tratamiento definido por el edificio da mejor resultado que uno definido por la queja, y quien está en posición de coordinarlo casi siempre es el arrendador o la administración.',
+        'Llegan cargadas — en el equipaje, un mueble de segunda mano, una bolsa que pasó una noche en otro lado —, así que la pregunta de dónde vinieron es difícil de verdad, y por eso esos pleitos se amargan. Y en un edificio de varias unidades no respetan el límite entre una renta y la siguiente: se mueven por las paredes, bajo las puertas y por los huecos de tubería y cableado. [UC IPM](https://ipm.ucanr.edu/home-and-landscape/bed-bugs/) dice lo mismo de los edificios de departamentos: como el insecto viaja entre unidades contiguas, el control tiene que incluir a los vecinos y no solo a quien se quejó. Pague quien pague, un tratamiento definido por el edificio da mejor resultado que uno definido por la queja, y quien está en posición de coordinarlo casi siempre es el arrendador o la administración.',
       ],
     },
     {

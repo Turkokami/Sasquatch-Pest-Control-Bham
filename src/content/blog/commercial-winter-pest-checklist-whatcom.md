@@ -88,7 +88,7 @@ For facilities under health department, WSDA, or other oversight, documentation 
 
 **What to document:** the date and scope of every service visit; pest activity observed by species, location, and quantity; corrective actions and who took them; monitoring station locations and results; complaints and resolutions; and exclusion work performed.
 
-**Who needs it:** Restaurants and food service typically keep 12 months of records for county health department compliance. FDA-regulated food facilities need it under the Food Safety Modernization Act. Healthcare facilities need it for accreditation and state licensing. Schools and childcare need it under Washington State's Healthy Schools Act IPM rules.
+**Who needs it:** Restaurants and food service typically keep 12 months of records for county health department compliance. FDA-regulated food facilities need it under the Food Safety Modernization Act. Healthcare facilities need it for accreditation and state licensing. Schools and childcare need it under Washington State's Healthy Schools Act IPM rules. The school piece is spelled out by [Washington's Department of Health](https://doh.wa.gov/community-and-environment/schools/pesticides): a written pest control policy, notice to interested parents before an indoor or outdoor application, posting at the treated area, and records kept afterward.
 
 Sasquatch commercial service includes written records of the service performed on each visit, suitable for regulatory documentation, along with monitoring station mapping and records, corrective action documentation, exclusion work, and no long-term contracts.
 

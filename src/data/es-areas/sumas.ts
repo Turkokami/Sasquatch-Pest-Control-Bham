@@ -43,7 +43,7 @@ export const sumas: EsLugar = {
     {
       h2: 'El pueblo, las hormigas y el año en Sumas',
       parrafos: [
-        'La vivienda de Sumas mezcla casas viejas — espacios bajo el piso sobre tierra desnuda, mallas rotas, cochinillas y milpiés en lo húmedo — con lo reparado o reconstruido en los últimos años, apretado y con pasos cerrados con espuma. En campo abierto el efecto de la cosecha es marcado, y con la lluvia de otoño septiembre y octubre deciden el año. Las hormigas carpinteras tienen el nido madre afuera, y una alada se distingue de una termita por la cintura angosta y las alas de largos distintos.',
+        'La vivienda de Sumas mezcla casas viejas — espacios bajo el piso sobre tierra desnuda, mallas rotas, cochinillas y milpiés en lo húmedo — con lo reparado o reconstruido en los últimos años, apretado y con pasos cerrados con espuma. En campo abierto el efecto de la cosecha es marcado, y con la lluvia de otoño septiembre y octubre deciden el año. Los promedios de treinta años de temperatura y lluvia de las estaciones cercanas están en las [Normales Climáticas de Estados Unidos de NOAA](https://www.ncei.noaa.gov/access/us-climate-normals/), y explican por qué el invierno nunca reinicia las poblaciones aquí. Las hormigas carpinteras tienen el nido madre afuera, y una alada se distingue de una termita por la cintura angosta y las alas de largos distintos.',
         'En invierno toca el trabajo de roedores adentro, en casas y en bodegas; la primavera es para planear lo estructural de un edificio comercial, porque en verano llegan juntos el pico de carga y el de avispas; y en el otoño la presión de las bodegas viene de los patios y las orillas.',
       ],
     },

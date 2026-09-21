@@ -22,7 +22,7 @@ export const controlDePlagasEnEscuelasDeWashington: EsGuia = {
     {
       h2: 'A quién aplica',
       parrafos: [
-        'El RCW 17.21.415 está dentro de la Ley de Aplicación de Pesticidas de Washington y cubre las escuelas públicas de kínder a doceavo y las guarderías con licencia. Esa segunda categoría sorprende: una guardería chica con licencia no queda exenta por ser chica, y quien la maneja como negocio de casa y no como instalación suele llevarse la sorpresa.',
+        'El RCW 17.21.415 está dentro de la Ley de Aplicación de Pesticidas de Washington y cubre las escuelas públicas de kínder a doceavo y las guarderías con licencia. Esa segunda categoría sorprende: una guardería chica con licencia no queda exenta por ser chica, y quien la maneja como negocio de casa y no como instalación suele llevarse la sorpresa. El [Departamento de Salud del estado](https://doh.wa.gov/community-and-environment/schools/pesticides) mantiene un resumen en lenguaje sencillo de esos mismos deberes de aviso y letreros, y es la página que conviene darle a un director o a quien maneja una guardería.',
       ],
     },
     {

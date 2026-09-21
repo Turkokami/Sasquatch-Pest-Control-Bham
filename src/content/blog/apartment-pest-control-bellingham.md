@@ -35,6 +35,8 @@ Multi-unit buildings share far more than a roof. The features that make apartmen
 - **High turnover** means furniture and boxes move in and out constantly — a common way bed bugs and cockroaches arrive.
 - **One neglected unit** can reinfest a whole floor, which is why treating a single apartment rarely holds.
 
+[Washington's Department of Health](https://doh.wa.gov/community-and-environment/pests/bed-bugs) makes that point about bed bugs specifically: they ride in on secondhand furniture and luggage, then move between apartments through cracks and ventilation ducts.
+
 ## Which pests invade Bellingham apartments in spring?
 
 As the Pacific Northwest warms up in April and May, a predictable lineup shows up in Whatcom County rentals.

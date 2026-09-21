@@ -26,7 +26,7 @@ export const piquetesSinChinches: EsProblema = {
       h2: 'Por qué un piquete solo dice poco',
       parrafos: [
         'La reacción de la piel a un piquete cambia muchísimo de una persona a otra. Con la chinche de cama, buena parte de la gente no reacciona, y en quien sí, la marca puede salir días después: dos personas en la misma cama, una llena de marcas y la otra con nada.',
-        'También pasa al revés. Los dermatólogos son claros en que ninguna lesión se identifica como piquete de chinche solo por cómo se ve, y la famosa fila de tres es un patrón aproximado, no un diagnóstico. Una marca dice que algo pasa, no qué, y no alcanza para tratar una recámara.',
+        'También pasa al revés. Los dermatólogos son claros en que ninguna lesión se identifica como piquete de chinche solo por cómo se ve, y la famosa fila de tres es un patrón aproximado, no un diagnóstico. Una marca dice que algo pasa, no qué, y no alcanza para tratar una recámara. La EPA pone identificar la plaga antes de decidir [si de verdad hace falta un pesticida](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide), y un cuarto sin ningún artrópodo confirmado es el caso más claro que hay.',
       ],
     },
     {

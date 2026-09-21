@@ -52,7 +52,7 @@ Timing significantly impacts cost. A nest addressed in May when it is small cost
 
 ### Bed bugs
 
-Bed bug work is the one area where scope is predictable enough to quote in advance, and pricing information for it lives on our bed bug page rather than here. Whole-home heat treatment and multi-visit chemical programs are priced differently, and the number of rooms involved is the main driver. Be cautious with unusually cheap bed bug quotes — very low-priced bed bug treatment almost never works, and a failed treatment costs more than doing it properly the first time.
+Bed bug work is the one area where scope is predictable enough to quote in advance, and pricing information for it lives on our bed bug page rather than here. Whole-home heat treatment and multi-visit chemical programs are priced differently, and the number of rooms involved is the main driver. Be cautious with unusually cheap bed bug quotes — very low-priced bed bug treatment almost never works, and a failed treatment costs more than doing it properly the first time. [UC IPM](https://ipm.ucanr.edu/home-and-landscape/bed-bugs/) is direct that insecticide applications on their own will not clear an infestation and that a confirmed one belongs with trained professionals, which is roughly what a bargain quote leaves out.
 
 ### Dampwood termites and wood-destroying insects
 

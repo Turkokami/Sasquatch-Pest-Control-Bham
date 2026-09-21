@@ -73,7 +73,7 @@ Yes, for prevention. The strategies here are genuinely effective and don't requi
 
 ### What attracts carpenter ants to a Pacific Northwest home?
 
-Moisture-damaged wood. Carpenter ants don't eat wood — they excavate it, and strongly prefer wood softened by moisture. A dry, sound crawl space with no wood-to-soil contact is dramatically less attractive to them.
+Moisture-damaged wood. Carpenter ants don't eat wood — they excavate it, and strongly prefer wood softened by moisture. [UC IPM's carpenter ant pages](https://ipm.ucanr.edu/home-and-landscape/carpenter-ants/) put it the same way: the ants excavate rather than consume the wood, and their galleries usually begin where water or decay has already damaged it. A dry, sound crawl space with no wood-to-soil contact is dramatically less attractive to them.
 
 ### How do I keep rodents out of my home?
 

@@ -44,7 +44,7 @@ Wasps and hornets build nests out of chewed wood fiber that looks like paper. Pa
 
 ## How does their behavior and sting differ?
 
-Bees are defensive rather than aggressive, and a honeybee sting costs the bee its life, so they sting only when they feel truly threatened. Wasps and hornets are predators that can sting again and again, and they grow markedly more aggressive in late summer and early fall as colonies peak. For anyone with a sting allergy, that seasonal aggression makes early nest removal a genuine safety issue, not just a nuisance fix.
+Bees are defensive rather than aggressive, and a honeybee sting costs the bee its life, so they sting only when they feel truly threatened. Wasps and hornets are predators that can sting again and again, and they grow markedly more aggressive in late summer and early fall as colonies peak. A wasp's stinger carries no barb and a colony turns more defensive as it grows and its food supply tightens, both of which [UC IPM sets out in its note on social wasps](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html). For anyone with a sting allergy, that seasonal aggression makes early nest removal a genuine safety issue, not just a nuisance fix.
 
 ## Which of these are common around Bellingham homes?
 

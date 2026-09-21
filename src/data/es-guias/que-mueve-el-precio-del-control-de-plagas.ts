@@ -54,7 +54,7 @@ export const queMueveElPrecioDelControlDePlagas: EsGuia = {
     {
       h2: 'Tratamiento, reparación y la línea entre los dos',
       parrafos: [
-        'Un tratamiento es una aplicación, y su costo lo domina la visita; dos tratamientos en propiedades parecidas caen en lugares parecidos. La exclusión y el trabajo bajo el piso son construcción — malla, lámina, mortero, barrera de vapor y horas en espacios apretados — y se cotizan como una obra chica. Por eso una cotización de roedores puede no parecerse a una de arañas y las dos ser razonables. UC IPM dice que toda abertura mayor de un cuarto de pulgada se debe cerrar y que la malla de gallinero no sirve: hacerlo barato es hacerlo dos veces. En roedores, la exclusión suele ser una cifra más grande que un tratamiento y un total más chico que tratar varias veces.',
+        'Un tratamiento es una aplicación, y su costo lo domina la visita; dos tratamientos en propiedades parecidas caen en lugares parecidos. La exclusión y el trabajo bajo el piso son construcción — malla, lámina, mortero, barrera de vapor y horas en espacios apretados — y se cotizan como una obra chica. Por eso una cotización de roedores puede no parecerse a una de arañas y las dos ser razonables. UC IPM dice que toda abertura mayor de un cuarto de pulgada se debe cerrar y que la malla de gallinero no sirve: hacerlo barato es hacerlo dos veces. Ese par de puntos viene de la [nota de UC IPM sobre ratas](https://ipm.ucanr.edu/legacy_assets/pdf/pestnotes/pnrats.pdf). En roedores, la exclusión suele ser una cifra más grande que un tratamiento y un total más chico que tratar varias veces.',
       ],
     },
     {

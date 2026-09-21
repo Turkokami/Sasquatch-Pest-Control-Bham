@@ -16,7 +16,7 @@ export const nidoDeAvisponEnUnArbol: EsProblema = {
     {
       h2: 'El nido que todos reconocen',
       parrafos: [
-        'De todos los insectos que pican en una casa, este es el que más alarma: una estructura gris, en capas, de papel, del tamaño de un balón de fútbol americano o más, colgando a la vista en un árbol o un seto. Parece algo que hay que atender hoy mismo, y muchas veces no lo es. A pesar del nombre no es un avispón verdadero: es una avispa amarilla grande, negra y blanco marfil, pariente de las que anidan en el suelo, con la cara pálida que le da el nombre. Un nido maduro puede tener varios cientos de obreras, con una sola entrada abajo.',
+        'De todos los insectos que pican en una casa, este es el que más alarma: una estructura gris, en capas, de papel, del tamaño de un balón de fútbol americano o más, colgando a la vista en un árbol o un seto. Parece algo que hay que atender hoy mismo, y muchas veces no lo es. A pesar del nombre no es un avispón verdadero: es una avispa amarilla grande, negra y blanco marfil, pariente de las que anidan en el suelo, con la cara pálida que le da el nombre. Por eso [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html) lo trata junto con las avispas amarillas y las demás avispas sociales, y no con los avispones. Un nido maduro puede tener varios cientos de obreras, con una sola entrada abajo.',
       ],
     },
     {

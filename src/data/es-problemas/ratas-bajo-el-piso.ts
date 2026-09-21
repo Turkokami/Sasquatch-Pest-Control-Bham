@@ -51,7 +51,7 @@ export const ratasBajoElPiso: EsProblema = {
     {
       h2: 'Rata o ratón, bajo el piso',
       parrafos: [
-        'Piden respuestas distintas. El excremento de ratón es como un grano de arroz y en cantidad; el de rata mide media pulgada o más, con puntas romas. La rata deja manchas grasosas y caminos claros, y jala aislamiento por varias vigas; el ratón hace nidos del tamaño de un puño. El ratón pasa por un cuarto de pulgada y la rata agranda una abertura de ese tamaño, así que la norma de sellado es la misma, pero cambian las trampas y cuántas.',
+        'Piden respuestas distintas. El excremento de ratón es como un grano de arroz y en cantidad; el de rata mide media pulgada o más, con puntas romas. La rata deja manchas grasosas y caminos claros, y jala aislamiento por varias vigas; el ratón hace nidos del tamaño de un puño. El ratón pasa por un cuarto de pulgada y la rata agranda una abertura de ese tamaño, así que la norma de sellado es la misma, pero cambian las trampas y cuántas. En su página sobre ratas, [UC IPM](https://ipm.ucanr.edu/home-and-landscape/rats/) deja el paso de una rata en poco más de media pulgada.',
       ],
     },
     {

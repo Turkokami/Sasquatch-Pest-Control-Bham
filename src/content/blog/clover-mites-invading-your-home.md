@@ -14,7 +14,7 @@ Let's break down what clover mites are, why they show up, and how you can keep t
 
 ## What are clover mites?
 
-Clover mites (*Bryobia praetiosa*) are reddish-brown arachnids that feed on plant juices. They are small but not microscopic — an adult is roughly the size of a pinhead, about the width of a pen tip, which is why you can see them clearly on a white window sill but not make out any detail. One of the easiest ways to identify them is by their **extra-long front legs**, which are almost as long as the body and are often mistaken for antennae.
+Clover mites (*Bryobia praetiosa*) are reddish-brown arachnids that feed on plant juices. They are small but not microscopic — an adult is roughly the size of a pinhead, about the width of a pen tip, which is why you can see them clearly on a white window sill but not make out any detail. One of the easiest ways to identify them is by their **extra-long front legs**, which are almost as long as the body and are often mistaken for antennae. Getting that identification right first is step one of the five the [National Pesticide Information Center](https://npic.orst.edu/pest/), run jointly by Oregon State University and the EPA, sets out for any pest problem.
 
 They live primarily outdoors and only come near a building when outdoor conditions change or when they're looking for shelter.
 

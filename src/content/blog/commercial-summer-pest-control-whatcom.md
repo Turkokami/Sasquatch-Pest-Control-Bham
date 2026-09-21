@@ -27,7 +27,7 @@ Different property types face different threats, but these are the summer heavy-
 
 ## What is actually at risk for my business?
 
-For a commercial property, pests threaten far more than comfort. Food-service and retail businesses face health-code violations, failed inspections, and the reputational damage of a customer spotting a pest — which travels fast on review sites. There is liability exposure when wasps sting a customer. There is product loss in warehouses and groceries when stored-product pests or rodents contaminate inventory. And there is the structural and equipment damage rodents cause over time. For most businesses, the cost of prevention is a rounding error next to the cost of any one of these outcomes.
+For a commercial property, pests threaten far more than comfort. Food-service and retail businesses face health-code violations, failed inspections, and the reputational damage of a customer spotting a pest — which travels fast on review sites. What an inspector measures a kitchen against is ultimately the [FDA Food Code](https://www.fda.gov/food/retail-food-protection/fda-food-code), the model document Washington and its counties draw their own food safety rules from. There is liability exposure when wasps sting a customer. There is product loss in warehouses and groceries when stored-product pests or rodents contaminate inventory. And there is the structural and equipment damage rodents cause over time. For most businesses, the cost of prevention is a rounding error next to the cost of any one of these outcomes.
 
 ## What does proactive commercial pest management look like?
 

@@ -66,7 +66,7 @@ export const controlDeCucarachas: EsServicio = {
     {
       h2: '¿Son un riesgo para la salud?',
       parrafos: [
-        'Es de las pocas plagas de casa con un efecto en la salud bien documentado. El principal son los alérgenos: las proteínas de la cucaracha se acumulan en el polvo de la casa y son un detonante reconocido del asma, con la evidencia más fuerte en niños que viven en edificios de varias unidades. Es mejor razón para resolver una infestación bien que la contaminación en la que la gente suele pensar. También cargan bacterias de una superficie a otra después de pasar por drenajes y huecos, así que las superficies donde se prepara comida en una cocina infestada piden más cuidado. Lo que no hacen es picar ni representar un peligro inmediato.',
+        'Es de las pocas plagas de casa con un efecto en la salud bien documentado. El principal son los alérgenos: las proteínas de la cucaracha se acumulan en el polvo de la casa y son un detonante reconocido del asma, con la evidencia más fuerte en niños que viven en edificios de varias unidades. [UC IPM](https://ipm.ucanr.edu/home-and-landscape/cockroaches/) nombra ese mismo vínculo entre alérgeno y asma en su guía de cucarachas. Es mejor razón para resolver una infestación bien que la contaminación en la que la gente suele pensar. También cargan bacterias de una superficie a otra después de pasar por drenajes y huecos, así que las superficies donde se prepara comida en una cocina infestada piden más cuidado. Lo que no hacen es picar ni representar un peligro inmediato.',
       ],
     },
     {

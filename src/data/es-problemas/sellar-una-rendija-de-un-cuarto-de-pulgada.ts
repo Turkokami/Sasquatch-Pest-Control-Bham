@@ -16,7 +16,7 @@ export const sellarUnaRendijaDeUnCuartoDePulgada: EsProblema = {
     {
       h2: 'Por qué un cuarto de pulgada',
       parrafos: [
-        'Un ratón casero pasa por una abertura de más o menos un cuarto de pulgada: lo que limita es el cráneo, y el cuerpo sigue por donde pasa la cabeza. A la rata las fuentes de extensión le dan un poco más de media pulgada, pero el Departamento de Pesca y Vida Silvestre de Washington explica que le basta un hoyo de un cuarto de pulgada para morderlo más grande y pasar. El umbral que protege un edificio es el tamaño en que un animal puede meter los dientes en una orilla, no el tamaño en que cabe.',
+        'Un ratón casero pasa por una abertura de más o menos un cuarto de pulgada: lo que limita es el cráneo, y el cuerpo sigue por donde pasa la cabeza. A la rata las fuentes de extensión le dan un poco más de media pulgada, pero el Departamento de Pesca y Vida Silvestre de Washington explica que le basta un hoyo de un cuarto de pulgada para morderlo más grande y pasar. Entre esas fuentes de extensión está [UC IPM](https://ipm.ucanr.edu/home-and-landscape/rats/), que publica la misma cifra. El umbral que protege un edificio es el tamaño en que un animal puede meter los dientes en una orilla, no el tamaño en que cabe.',
         'Las dos agrandan lo que encuentran: madera, plástico, espuma, mortero blando y el forro de los cables les sirven. La regla práctica es si el hoyo mide un cuarto de pulgada o más y si lleva a alguna parte; si las dos cosas son ciertas, se cierra con algo que no se pueda morder.',
       ],
     },

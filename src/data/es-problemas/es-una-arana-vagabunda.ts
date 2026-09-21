@@ -30,7 +30,7 @@ export const esUnaAranaVagabunda: EsProblema = {
     {
       h2: 'Por qué identificarla es difícil de verdad',
       parrafos: [
-        'Nos mandan fotos para confirmar, y casi siempre no se puede con la imagen: separar estas arañas de embudo pide aumento y ver las estructuras reproductivas. El dibujo en el abdomen, la prueba que más circula, no lo usan ni WSU ni UC IPM. Y el tamaño apunta en la dirección tranquilizadora: la araña gigante de casa suele ser la más grande.',
+        'Nos mandan fotos para confirmar, y casi siempre no se puede con la imagen: separar estas arañas de embudo pide aumento y ver las estructuras reproductivas. El dibujo en el abdomen, la prueba que más circula, no lo usan ni WSU ni UC IPM. La [ficha de identificación de la Extensión de WSU](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/408/2015/02/PLS-116-How-to-Identify-or-Misidentify-the-Hobo-Spider.pdf) se salta las marcas y va directo a las estructuras reproductivas. Y el tamaño apunta en la dirección tranquilizadora: la araña gigante de casa suele ser la más grande.',
         'Las patas con anillos oscuros descartan a la vagabunda, que las tiene de un color parejo; al revés no sirve, porque muchas arañas inofensivas tienen patas lisas. Lo que más ayuda es verla por abajo, a través de un recipiente transparente: en el esternón la vagabunda tiene una franja pálida por el centro, y la gigante de casa tiene pares de manchas pálidas a los lados. Aun así, los aracnólogos casi nunca la identifican a especie sin un ejemplar y un microscopio.',
       ],
     },

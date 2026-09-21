@@ -39,7 +39,7 @@ export const sellarUnEdificioAntesDelOtono: EsGuia = {
         'El cimiento y la viga de borde, dando toda la vuelta, bajo: en las casas viejas de Bellingham, ochenta años de asentamiento dejan rendijas reales, y la tierra pegada al revestimiento es entrada y humedad a la vez.',
         'Las ventilas del espacio bajo el piso: si la malla está entera, si es de metal y si es lo bastante fina; los reemplazos muchas veces son malla de ventana, que no detiene a un roedor.',
         'La tapa de acceso: tiene que cerrar, quedar trabada y poder abrirse.',
-        'Las entradas de servicios — agua, gas, electricidad, cable, refrigerante —, que UC IPM pone entre las rutas principales de los roedores: el problema es el hueco alrededor del tubo.',
+        'Las entradas de servicios — agua, gas, electricidad, cable, refrigerante —, que UC IPM pone entre las rutas principales de los roedores: el problema es el hueco alrededor del tubo. Esa [nota de UC IPM sobre ratas](https://ipm.ucanr.edu/legacy_assets/pdf/pestnotes/pnrats.pdf) nombra los huecos de tubos de agua, cables eléctricos, drenaje, bajadas de agua y ventilas, y casi nadie los sella.',
         'Las salidas de la secadora y del baño: las tapas de plástico se rajan y dejan de cerrar, y el ducto detrás es una ruta abrigada hacia adentro.',
         'El alero y la fascia: por aquí entran los insectos que invernan, y por eso tantos edificios siguen con el problema después de que alguien selló todo lo que alcanzaba desde el suelo.',
         'El techo, las ventilas y la chimenea: ventilas con malla dañada, el punto donde un techo bajo toca una pared alta, y cualquier rama que toca el techo.',

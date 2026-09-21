@@ -31,7 +31,7 @@ export const controlDePlagasComercial: EsServicio = {
     {
       h2: '¿Qué quiere decir manejo integrado de plagas en la práctica?',
       parrafos: [
-        'El término se usa muy suelto, así que esto es lo que quiere decir en un sitio y no en un folleto. Primero, revisar e identificar: qué hay, dónde y cuánto. La especie decide todo lo demás, y un programa que consiste en "rociamos el perímetro cada mes" no es un programa.',
+        'El término se usa muy suelto, así que esto es lo que quiere decir en un sitio y no en un folleto. La [introducción de la EPA al manejo integrado de plagas](https://www.epa.gov/ipm/introduction-integrated-pest-management) plantea la misma secuencia con la que trabajamos. Primero, revisar e identificar: qué hay, dónde y cuánto. La especie decide todo lo demás, y un programa que consiste en "rociamos el perímetro cada mes" no es un programa.',
         'Monitoreo con umbrales: dispositivos que dicen si la presión sube o baja, y un nivel de actividad acordado que dispara una acción. El monitoreo es la diferencia entre responder a una queja y ver una tendencia tres semanas antes. Medidas sin químicos antes que las químicas: exclusión, corrección de limpieza, quitar escondites, mantenimiento de coladeras, manejo de basura y trabajo físico con dispositivos. En un negocio eso hace casi todo el trabajo que dura. Aplicación dirigida donde se justifica, en el lugar que dice la biología y en la cantidad que pide la situación, registrada con producto, dosis, lugar y técnico. Y revisión: los datos se ven a lo largo del tiempo, para que un problema que se repite en un área reciba atención estructural en lugar de un tratamiento repetido.',
       ],
     },

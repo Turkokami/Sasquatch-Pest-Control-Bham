@@ -25,7 +25,7 @@ export const chinchesDespuesDeUnViaje: EsProblema = {
       parrafos: [
         'Las maletas no entran a una recámara hasta que se atiendan. Desempaque en la cochera, el cuarto de lavado o la tina, donde lo que caiga se ve, y nunca sobre la cama. Lo lavable va directo a una bolsa cerrada y llega así a la máquina.',
         'Luego la secadora, que hace más que el lavado: treinta minutos en alto es una buena referencia, y lo que no se lava, como zapatos o bolsas de tela, muchas veces la aguanta. La chinche y sus huevos mueren con temperaturas sostenidas de alrededor de 120 grados Fahrenheit, y una secadora de casa en alto pasa eso con holgura; el lavado no lo garantiza, porque buena parte del ciclo va más frío.',
-        'Vacíe la maleta por completo, aspírela en costuras, cierres y la caja de las ruedas, y tire lo aspirado afuera en bolsa cerrada. Guárdela en la cochera o el sótano, y no rocíe nada adentro: algunos productos de tienda repelen, y eso dispersa en vez de matar.',
+        'Vacíe la maleta por completo, aspírela en costuras, cierres y la caja de las ruedas, y tire lo aspirado afuera en bolsa cerrada. Guárdela en la cochera o el sótano, y no rocíe nada adentro: algunos productos de tienda repelen, y eso dispersa en vez de matar. El material sobre chinches de [UC IPM](https://ipm.ucanr.edu/home-and-landscape/bed-bugs/) sostiene lo mismo de los aerosoles de mostrador y de los nebulizadores.',
       ],
     },
     {

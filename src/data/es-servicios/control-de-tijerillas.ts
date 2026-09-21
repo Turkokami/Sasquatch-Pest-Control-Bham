@@ -23,7 +23,7 @@ export const controlDeTijerillas: EsServicio = {
       h2: '¿Por qué importa que vivan afuera?',
       parrafos: [
         'Porque cambia todo el trabajo. La tijerilla — en otras partes le dicen cortapicos o tijereta — es un animal de afuera que a veces termina adentro por accidente. Necesita humedad constante, tanta que una casa seca y con calefacción la mata en unos días. No se reproduce adentro, no come nada de su casa y no forma poblaciones en las paredes como una plaga de interior de verdad. Cada tijerilla que encuentra en un baño entró de afuera en el último día o dos.',
-        'Así que rociar adentro trata insectos que se iban a morir de todos modos y no toca la población que los produce. Lo que funciona es cambiar las condiciones en los primeros pies alrededor del cimiento y cerrar las rutas de entrada. Lo mismo vale para las cochinillas — las que se hacen bolita y sus parientes que no —, que aparecen en los mismos lugares por las mismas razones.',
+        'Así que rociar adentro trata insectos que se iban a morir de todos modos y no toca la población que los produce. La [EPA](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide) pide empezar por preguntarse si de verdad hace falta un pesticida, y si quitarle al insecto lo que necesita bastaría. Lo que funciona es cambiar las condiciones en los primeros pies alrededor del cimiento y cerrar las rutas de entrada. Lo mismo vale para las cochinillas — las que se hacen bolita y sus parientes que no —, que aparecen en los mismos lugares por las mismas razones.',
       ],
     },
     {

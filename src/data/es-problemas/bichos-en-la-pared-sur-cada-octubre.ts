@@ -42,7 +42,7 @@ export const bichosEnLaParedSurCadaOctubre: EsProblema = {
       h2: 'Por qué su edificio',
       parrafos: [
         'La orientación manda: las paredes al sur y al oeste reciben el sol de la tarde; las del norte casi no se ven afectadas. El revestimiento claro se calienta fácil, y el de vinilo deja canales abiertos en el perfil J, justo donde se juntan. Y los alrededores cuentan: arces para la chinche del arce, coníferas para la de la semilla, huertos, moras y jardines para la apestosa, pasto para la mosca de racimo.',
-        'Hay un segundo mecanismo, propio de la chinche apestosa marmoleada. El Centro Nacional de Información sobre Pesticidas registra que cuando una encuentra un buen lugar para el invierno, suelta un olor que atrae a otras. Eso explica que una casa de la calle las junte año tras año mientras la de al lado nunca: las primeras reclutan, y la orientación y las aberturas deciden si había adónde. Nada de esto tiene que ver con cómo se cuida la casa.',
+        'Hay un segundo mecanismo, propio de la chinche apestosa marmoleada. El Centro Nacional de Información sobre Pesticidas registra que cuando una encuentra un buen lugar para el invierno, suelta un olor que atrae a otras. Eso explica que una casa de la calle las junte año tras año mientras la de al lado nunca: las primeras reclutan, y la orientación y las aberturas deciden si había adónde. Ese centro lo operan Oregon State y la EPA, y lo explica en su [ficha de la chinche apestosa marmoleada](https://npic.orst.edu/pest/stinkbug.html). Nada de esto tiene que ver con cómo se cuida la casa.',
       ],
     },
     {

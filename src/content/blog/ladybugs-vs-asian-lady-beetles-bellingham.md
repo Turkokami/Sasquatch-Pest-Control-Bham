@@ -65,7 +65,7 @@ Prioritize the sunny south- and west-facing walls and their windows first. That'
 
 ## Should I be worried about killing beneficial ladybugs?
 
-It's a fair concern, and it's part of why we favor exclusion over broad spraying. Native ladybugs are genuinely beneficial and don't invade homes, so a strategy built around sealing entry points and gently removing indoor beetles protects the good bugs in your garden while keeping the invasive ones out of your living room. If treatment is warranted, targeted exterior applications on the specific walls beetles are using are far more sensible than blanketing the yard.
+It's a fair concern, and it's part of why we favor exclusion over broad spraying. The EPA asks [the same question ahead of any product](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide) — shut off food, water, and the ways in, then look at what is genuinely left to treat. Native ladybugs are genuinely beneficial and don't invade homes, so a strategy built around sealing entry points and gently removing indoor beetles protects the good bugs in your garden while keeping the invasive ones out of your living room. If treatment is warranted, targeted exterior applications on the specific walls beetles are using are far more sensible than blanketing the yard.
 
 ## When should I call Sasquatch about lady beetles?
 

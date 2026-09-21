@@ -17,7 +17,7 @@ export const mosquitosEnLasPlantas: EsProblema = {
     {
       h2: 'En realidad no es una plaga',
       parrafos: [
-        'Mosquitas oscuras que se levantan cuando riega, que caminan sobre la tierra de la maceta y que aparecen en las ventanas. Es de las quejas más comunes que hay dentro de una casa y de las menos serias. Es síntoma de un hábito de riego, no de una invasión del edificio: sus larvas viven en la capa de arriba de la tierra y comen hongos, algas y materia en descomposición, que abundan cuando la tierra está mojada todo el tiempo. Donde la tierra se seca seguido, no completan una generación.',
+        'Mosquitas oscuras que se levantan cuando riega, que caminan sobre la tierra de la maceta y que aparecen en las ventanas. Es de las quejas más comunes que hay dentro de una casa y de las menos serias. Es síntoma de un hábito de riego, no de una invasión del edificio: sus larvas viven en la capa de arriba de la tierra y comen hongos, algas y materia en descomposición, que abundan cuando la tierra está mojada todo el tiempo. Donde la tierra se seca seguido, no completan una generación. Quitar la condición que sostiene a una plaga antes de echar mano de un producto es el primer paso del [manejo integrado de plagas](https://www.epa.gov/ipm/introduction-integrated-pest-management) que plantea la EPA.',
         'Somos una empresa de control de plagas diciéndole que probablemente no necesita una empresa de control de plagas. Sigue siendo la respuesta correcta, y lo útil que podemos hacer aquí es darle el método que funciona.',
       ],
     },

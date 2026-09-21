@@ -32,7 +32,7 @@ export const chinchesEnUnaRentaDeEstudiantes: EsProblema = {
     {
       h2: 'Confirmarlo antes de discutir',
       parrafos: [
-        'En una casa compartida conviene saber si de verdad son chinches antes de hablar de dinero, porque muchos casos sospechosos son otra cosa. Busque manchitas oscuras en sábanas y costuras, mudas pálidas y el insecto, café rojizo, plano, del tamaño de una semilla de manzana. Los piquetes son la señal menos confiable: que un compañero tenga ronchas y el de junto nada no prueba que solo un cuarto esté afectado. Lo que más se confunde con ellas aquí es la larva del escarabajo de alfombra y el escarabajo araña. Si encuentra algo, guárdelo en cinta transparente: una muestra termina la discusión.',
+        'En una casa compartida conviene saber si de verdad son chinches antes de hablar de dinero, porque muchos casos sospechosos son otra cosa. Busque manchitas oscuras en sábanas y costuras, mudas pálidas y el insecto, café rojizo, plano, del tamaño de una semilla de manzana. Esas mismas señales vienen en la [página de chinches del Departamento de Salud de Washington](https://doh.wa.gov/community-and-environment/pests/bed-bugs), que es algo neutral para ponerle enfrente a un compañero o al dueño. Los piquetes son la señal menos confiable: que un compañero tenga ronchas y el de junto nada no prueba que solo un cuarto esté afectado. Lo que más se confunde con ellas aquí es la larva del escarabajo de alfombra y el escarabajo araña. Si encuentra algo, guárdelo en cinta transparente: una muestra termina la discusión.',
       ],
     },
     {
