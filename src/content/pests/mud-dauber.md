@@ -111,7 +111,7 @@ genuinely medically significant spider in this region and doing it for nothing.
 Because there is nothing to treat, and the extension guidance says so about as
 plainly as extension guidance ever says anything.
 
-Purdue's advice for mud dauber nests found on a home is to ignore them or remove
+[Purdue's advice](https://extension.entm.purdue.edu/publications/E-253/E-253.html) for mud dauber nests found on a home is to ignore them or remove
 them with a putty knife, on the stated grounds that these wasps do not defend
 their nests and there is therefore little to no risk of stings. That is not a
 hedge. That is a land-grant entomology department telling homeowners the answer

@@ -31,7 +31,11 @@ anyone finds out that a device did something.
 The equipment is [Skyhawk Trapmate](https://trapmate.ai/). A small unit clips to
 a snap trap or to the lid of a tamper-resistant bait station and reports
 activity at that device. On a site running dozens of devices across a building
-and its yard, that turns a monthly walk into a running record.
+and its yard, that turns a monthly walk into a running record. The
+tamper-resistant station is not a house preference, incidentally: the
+[EPA's restrictions on rodenticide products](https://www.epa.gov/rodenticides/restrictions-rodenticide-products)
+are the reason bait sits inside a protected, secured block rather than loose, and
+a sensor on the lid leaves that arrangement exactly as it was.
 
 **It goes on the devices you already have.** That is the part worth knowing
 before anyone quotes you: Skyhawk's sensors mount to existing traps and

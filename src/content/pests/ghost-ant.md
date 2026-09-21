@@ -241,8 +241,10 @@ together and why both resist the treatment that works on ordinary ants.
 Ghost ants are a tropical species and their limit is cold, not competition.
 
 In Florida and Hawaii they live outdoors year-round and are a genuine landscape
-and structural pest. Moving north, the outdoor populations disappear and what
-remains are indoor ones — colonies inside heated buildings and greenhouses,
+and structural pest. The Florida half of that is documented by
+[University of Florida IFAS Extension](https://edis.ifas.ufl.edu/publication/IN532).
+Moving north, the outdoor populations disappear and what remains are indoor
+ones — colonies inside heated buildings and greenhouses,
 which are effectively small pieces of the tropics maintained at expense through
 a northern winter.
 

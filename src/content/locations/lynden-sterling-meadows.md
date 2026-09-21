@@ -142,7 +142,10 @@ produces a wet corner nobody expected.
 
 The reason it matters to us is that a persistently damp crawlspace, or ground
 that no longer falls away from a foundation, is the beginning of the moisture
-story that carpenter ants, wood-boring beetles and decay depend on. On a house
+story that carpenter ants, wood-boring beetles and decay depend on. How wet wood
+has to be before decay starts is set out in the USDA's [Wood
+Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf), and a
+house this new should be nowhere near it. On a house
 this new that should not be happening yet, and where we find it we will say so
 plainly, because it is a building issue rather than a pest one and it is much
 cheaper to address early.

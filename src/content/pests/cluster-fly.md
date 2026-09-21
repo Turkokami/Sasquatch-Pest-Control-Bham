@@ -62,7 +62,7 @@ Adult cluster flies emerge in spring, feed on nectar and plant material, and lay
 eggs on soil that contains earthworms. The larvae that hatch are parasitoids:
 they find an earthworm, enter it, and develop inside it. When development is
 complete they pupate, and the next generation of adults emerges from the ground.
-Penn State records three to four generations, sometimes more, across a season;
+[Penn State Extension](https://extension.psu.edu/cluster-flies) records three to four generations, sometimes more, across a season;
 Utah State puts it at up to four. So a population builds through the summer and
 peaks going into autumn.
 

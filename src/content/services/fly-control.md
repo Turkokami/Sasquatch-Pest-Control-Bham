@@ -173,7 +173,11 @@ around drain grates. It accumulates where nobody cleans because nobody can reach
 and whether the pad beneath it is ever washed. If the pad under a dumpster never gets washed, it will keep breeding flies no matter what is done inside.
 
 **Doors and air movement.** Door sweeps, self-closing doors, air curtains and
-screening on anything that opens to the outside.
+screening on anything that opens to the outside. That list is not ours — the
+[FDA Food Code](https://www.fda.gov/food/retail-food-protection/fda-food-code)
+names screens, self-closing doors and air curtains as the ways a food
+establishment is expected to protect an outer opening, so a propped dock door is
+a code question before it is a fly question.
 
 **Phorid flies as a plumbing signal.** Worth repeating: a persistent phorid
 population in a commercial kitchen frequently indicates a broken drain line under

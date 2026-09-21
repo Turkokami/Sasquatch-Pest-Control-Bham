@@ -197,7 +197,10 @@ here. So does "termites" used as a single scary noun, when the species we
 actually deal with in Whatcom County are dampwood and subterranean termites,
 with quite different biology and quite different implications. A company that
 does not know which one it is looking at is not qualified to tell you what it
-means.
+means. On the spiders, the
+[Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/spiders)
+is the quick check: brown recluse are not established anywhere in Washington,
+and widow spiders belong to the drier country east of the Cascades.
 
 **A promise that sounds absolute.** Nobody can commit to a building never having
 another insect in it, and any assurance phrased that way either has conditions

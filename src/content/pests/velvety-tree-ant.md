@@ -61,7 +61,7 @@ requires knowing that there is a second answer available.
 
 Start with color, because this is the one feature that settles it across a room.
 
-Utah State Extension's description is a brownish-black head, a yellowish-red
+[Utah State Extension's description](https://extension.usu.edu/planthealth/ipm/structural-pest-id-guide/velvety-tree-ant) is a brownish-black head, a yellowish-red
 thorax, and a velvety black abdomen. Held on a fingertip in decent light, the
 insect reads as banded: dark at the front, distinctly rust or brick in the
 middle, dark again at the back. Nothing else likely to be walking along a

@@ -90,7 +90,10 @@ tucked into corners and along the top plates rather than as obvious damage.
 **Deer mice.** More likely where a property adjoins woodland or open ground, and
 more seasonal. They are the species that makes careful handling of dry nesting
 material worthwhile, and we treat all attic material to that standard rather
-than trying to tell them apart by eye.
+than trying to tell them apart by eye. The reason is
+[hantavirus](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus),
+which the Washington State Department of Health links to the deer mouse here and
+to breathing dust stirred up out of an enclosed space.
 
 **Something else entirely.** Attics are also where squirrels, bats and birds end
 up, and all three are outside what we do. If that is what you have, we will say

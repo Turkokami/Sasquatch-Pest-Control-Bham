@@ -224,8 +224,11 @@ work.
 
 **Wasps and hornets**, which on a farm are mostly an access and safety problem:
 nests in equipment sheds, in the eaves over a working door, inside a piece of
-machinery that has stood still for a month. August and September are the weeks
-for it.
+machinery that has stood still for a month. [UC IPM's note on yellowjackets and
+other social wasps](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html) describes
+both halves of that — nests in wall and ceiling voids and under eaves, and
+defensive behavior rising as the season goes on. August and September are the
+weeks for it.
 
 **Birds** in open buildings are a real problem on some sites, but bird work is not
 something we take on; we will say so and point you to a specialist. The feed

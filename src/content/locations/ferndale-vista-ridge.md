@@ -133,7 +133,9 @@ Timing is the part that goes wrong. Too early and the exterior work has faded
 before they arrive; too late and they are already on the wall. The date shifts by a fortnight or more from one
 year to the next depending on how the first cold afternoons fall, so it is a
 thing to have arranged in advance rather than to chase once the beetles are
-already on the siding.
+already on the siding. Nothing about that is guesswork: the low temperatures that
+start it show up in the [National Weather Service's Seattle-office
+forecast](https://www.weather.gov/sew/) days before the beetles do.
 
 ## Rodents from open ground
 

@@ -131,8 +131,11 @@ when the site is busiest. A nest by a fuel dock or a gate is treated as urgent.
 the ordinary reason that there is more for them to eat — insects come off the
 water in numbers and the structures give endless anchor points. Webbing on
 railings, under docks and across covered vessels is largely a cosmetic and
-customer-perception problem, and it is managed rather than solved. It is also,
-for most marinas, the single most visible pest issue members comment on.
+customer-perception problem, and it is managed rather than solved. The
+[Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/spiders)
+is plain that spiders rarely bite and that very few of ours are harmful to
+people, which is why this stays a housekeeping item. It is also, for most
+marinas, the single most visible pest issue members comment on.
 
 **Cluster flies and overwintering insects** gather on sunlit walls in autumn and
 work into the shared buildings through the same gaps everything else uses.

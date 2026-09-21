@@ -72,7 +72,9 @@ because the answers diverge sharply.
 
 **Yellowjackets** are the most common wall-void occupant here. Smooth, bright
 yellow and black, fast, and arriving in a steady stream at a single point. The
-colony can be large by late season.
+colony can be large by late season. UC IPM lists wall voids and other enclosed
+cavities among their usual nest sites in its
+[pest note on social wasps](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html).
 
 **Paper wasps** occasionally use a void but more often build the small open
 nests under eaves and rails. Slimmer, longer-legged, and less numerous.

@@ -109,8 +109,11 @@ the hill.
 For any building that has taken water at some point, the sequence matters more
 than the product. Wet insulation comes out rather than being treated around — it
 holds moisture, accelerates decay in the framing above it and makes excellent
-nesting material. The space gets dried properly. The vapor barrier is
-re-established over clean ground. Only then does exclusion hold.
+nesting material. The space gets dried properly. Why material that stays wet
+keeps growing things is laid out plainly in the [EPA's mold
+course](https://www.epa.gov/mold/mold-course-chapter-2), and it is the reason
+the drying step cannot be skipped. The vapor barrier is re-established over
+clean ground. Only then does exclusion hold.
 
 ## The older residential stock
 

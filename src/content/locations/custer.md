@@ -69,7 +69,10 @@ That changes when the ground is worked. Cutting, mowing, harvest and clearing
 remove the cover across a large area within a short period, and the population
 that has spent the summer in it has to go somewhere. What it goes to is the
 nearest structure offering shelter and food, and on a Custer property that is
-usually a shop or a barn rather than the house.
+usually a shop or a barn rather than the house. [WSU Extension's Whatcom County
+office](https://extension.wsu.edu/whatcom/) is the place to look for what is
+grown around here and when it comes off, and that calendar tells you more about
+when the trouble starts than the thermometer does.
 
 The house typically comes second, a few weeks later, once the outbuildings are
 occupied and crowded. By then people have often already noticed droppings in the

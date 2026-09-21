@@ -28,7 +28,9 @@ the law first and the building second, and that is not a complaint — it produc
 better pest control than the alternative.
 
 Washington requires notice before a pesticide application at a school, posting
-at the treated location, and records kept afterwards. It also exempts insect and
+at the treated location, and records kept afterwards; the
+[Washington State Department of Health](https://doh.wa.gov/community-and-environment/schools/pesticides)
+sets out those duties for schools and daycares. It also exempts insect and
 rodent baits that children cannot access from those notification and posting
 requirements.
 

@@ -109,7 +109,11 @@ dosing by weight, the species restrictions and the interactions are your vet's
 call, not a pest control company's. That is not caution for its own sake:
 **several products that are safe for dogs are seriously harmful to cats**, and
 misapplied over-the-counter treatments cause real veterinary emergencies every
-year.
+year. If you want a second opinion on a product before it goes anywhere near an
+animal, the
+[National Pesticide Information Center](https://npic.orst.edu/pest/) — run by
+Oregon State University under a cooperative agreement with the EPA — publishes
+pest-by-pest pages and will take the question directly.
 
 What matters practically is that both halves have to happen. Treating the house
 while the pet stays untreated means the pet re-seeds the house continuously.

@@ -93,7 +93,9 @@ job that has to include the neighbors, while a larger, slower roach coming up
 from a damp crawlspace or a floor drain is a moisture and exclusion problem that
 baiting alone will not settle. Identifying which one is on the glue board before
 quoting is the difference between a program that ends it and a program that
-repeats.
+repeats. [UC IPM separates the species](https://ipm.ucanr.edu/home-and-landscape/cockroaches/)
+that live and breed indoors from the ones that come up out of drains and damp
+ground, and states that identifying which is present decides the control method.
 
 **Bed bugs**, the highest-stakes problem in multifamily and the one most often
 under-scoped. See below.

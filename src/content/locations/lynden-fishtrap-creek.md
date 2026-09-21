@@ -72,7 +72,9 @@ than merely used.
 
 That caution is the practical difference: a rat will avoid an unfamiliar object
 in its run for days, so an approach that works on mice within a night can read
-as complete failure on rats for a week.
+as complete failure on rats for a week. [UC's IPM notes on
+rats](https://ipm.ucanr.edu/home-and-landscape/rats/) describe the same
+wariness, and it is why we do not judge a set of placements after one night.
 
 The routes in are ordinary. Corroded crawlspace vent screens. Service
 penetrations. The bottom corners of a garage door. A crawl hatch resting

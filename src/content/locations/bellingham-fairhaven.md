@@ -239,7 +239,10 @@ crawlspace, the volume is high.
 They are giant house spiders — harmless, long established across western
 Washington, and the large ones people find are wandering males looking for mates
 rather than an invasion. Brown recluse has never been recorded in this part of
-the state and the species is not established anywhere in Washington.
+the state and the species is not established anywhere in Washington. The state
+Department of Health [keeps a page on the spiders people actually find
+here](https://doh.wa.gov/community-and-environment/pests/spiders), and it says
+the same.
 
 What reduces the population is unglamorous and effective: clearing exterior
 webbing, dealing with harborage under porches, decks and in crawl vents,

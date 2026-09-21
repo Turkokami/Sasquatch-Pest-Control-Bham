@@ -119,7 +119,9 @@ That caution is the practical difference. A rat will avoid an unfamiliar object
 in its run for days, so a placement strategy that works overnight on mice reads
 as failure on rats for a week, until somebody realizes what they are actually
 dealing with. We work it out from the droppings, the gnawing, the runs and the
-smell before anything goes down.
+smell before anything goes down. Anybody who wants to read ahead of us can start
+with [UC's IPM material on rats](https://ipm.ucanr.edu/home-and-landscape/rats/),
+which sets out the same signs and habits.
 
 ## Wells, septic and where things can go
 

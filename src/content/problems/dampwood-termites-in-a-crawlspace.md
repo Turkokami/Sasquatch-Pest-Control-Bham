@@ -32,7 +32,10 @@ cause.
 
 Unlike species that build tubes from soil into a dry building, dampwood termites
 need timber with high moisture content — wood that is already wet, and usually
-already decaying. They do not create that condition. They find it.
+already decaying. They do not create that condition. They find it. The USDA
+Forest Products Laboratory sets out that relationship between wet timber and
+what colonizes it in its chapter on the
+[biodeterioration of wood](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf).
 
 So when we find dampwood termites in a crawlspace, we are looking at two
 problems stacked together. There is an insect in structural timber, and behind

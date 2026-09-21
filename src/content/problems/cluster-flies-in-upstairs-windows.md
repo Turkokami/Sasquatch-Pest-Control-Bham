@@ -176,7 +176,10 @@ building with one usually has several.
 **Stink bugs.** Shield-shaped, brown or green, congregating on sunlit walls in
 October and using the identical gaps. The brown marmorated species is the one
 that has become widespread, and it produces the characteristic odor when
-disturbed or vacuumed.
+disturbed or vacuumed. The
+[National Pesticide Information Center](https://npic.orst.edu/pest/stinkbug.html),
+run by Oregon State University with the EPA, describes the same autumn move
+indoors and is clear that the bugs neither bite nor damage the building.
 
 **Boxelder bugs.** Black with red or orange markings, gathering in large numbers
 on warm walls, particularly where there are maples or boxelders nearby.

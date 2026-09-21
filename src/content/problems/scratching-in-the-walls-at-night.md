@@ -180,7 +180,11 @@ couple of hundred feet get the traffic.
 self-inflicted problem we get called to fix. The animal dies where you cannot
 reach it, and a decomposing rodent inside a closed cavity produces a smell that
 lasts for weeks and attracts flies on top of it. Sometimes the only remedy is
-opening the wall to find it.
+opening the wall to find it. It is also worth knowing that the EPA's
+[restrictions on rodenticide products](https://www.epa.gov/rodenticides/restrictions-rodenticide-products)
+keep loose pellets out of consumer products and require the bait to be sold
+inside a tamper-resistant station, which is not something that goes into a
+cavity in the first place.
 
 **Do not rely on ultrasonic devices.** They are widely sold and there is no
 credible evidence they work. Animals habituate to sound quickly, and a rodent

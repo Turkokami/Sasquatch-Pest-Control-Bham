@@ -123,7 +123,10 @@ spilled feed accumulating at the end of a bunk, the bedding in a calf hutch that
 has not been turned, the drainage low point where nothing dries out. Finding and
 correcting those does more than any spray program, and on the operations where
 we get real results it is because somebody agreed to change a management
-practice rather than because we applied something new.
+practice rather than because we applied something new. Much of the research
+behind that advice comes through [WSU Extension in Whatcom
+County](https://extension.wsu.edu/whatcom/), which works with the dairies and
+berry growers here directly.
 
 Where treatment has a place it is as support: targeted work on resting surfaces
 rather than blanket application, baiting placed away from feed and water, and

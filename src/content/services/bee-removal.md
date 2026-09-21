@@ -37,7 +37,10 @@ almost always a yellowjacket.
 **Yellowjackets** are smooth, shiny, brightly marked with a narrow waist, and
 noticeably faster and more assertive. They are hunting protein early in the season
 and sugar late, which is exactly why they show up at your table in September. They
-sting repeatedly. See [wasp and hornet control](/services/wasp-control/).
+sting repeatedly. [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html) sets
+out that same seasonal shift from meat to sweets, which is the reason the insect
+bothering a plate of food is a yellowjacket and not a honey bee. See
+[wasp and hornet control](/services/wasp-control/).
 
 **Bumble bees** are large, round and very hairy, often with bands of yellow, black
 and sometimes orange. Slow, loud and famously placid.

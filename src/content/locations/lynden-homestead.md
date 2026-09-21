@@ -100,7 +100,10 @@ The adult crane flies in autumn — long-legged, conspicuous, frequently indoors
 not the part worth treating.
 
 Most of this is turf management rather than pest control, and where that is the
-honest answer we will say so and tell you what to ask a groundskeeper.
+honest answer we will say so and tell you what to ask a groundskeeper. [WSU
+Extension's Whatcom County program](https://extension.wsu.edu/whatcom/)
+publishes on crane fly and chafer in local turf, and it is a better starting
+point than anything we could sell you.
 
 ## The creek corridor and the park margin
 

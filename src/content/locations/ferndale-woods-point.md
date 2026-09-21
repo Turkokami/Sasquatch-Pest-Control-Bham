@@ -169,7 +169,9 @@ suits the household.
 
 Where there is a version of the job that uses less, or nothing at all — a
 repair rather than a treatment, a bait rather than a spray, hardware rather
-than chemistry — we will offer it before you have to ask.
+than chemistry — we will offer it before you have to ask. That is not a house
+style; it is the order the EPA recommends in its [guidance on whether a pesticide
+is needed](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide).
 
 And we will turn up when we said, or tell you before the time we said that we
 cannot. Waiting in for somebody who does not come is a genuine imposition and

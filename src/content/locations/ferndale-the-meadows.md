@@ -221,7 +221,11 @@ spiders than a new subdivision does, and the autumn is when people notice.
 
 Most of what turns up indoors is giant house spiders, and what people are
 seeing is males moving to find females rather than an infestation. That is why
-they appear singly, at speed, across a floor, in September and October.
+they appear singly, at speed, across a floor, in September and October. For
+anybody who would rather not take our word for it, the state health department
+[describes Washington's
+spiders](https://doh.wa.gov/community-and-environment/pests/spiders) without the
+theatrics.
 
 Reducing them is largely a matter of reducing what they eat and where they get
 in: the same exclusion work as everything else, plus attention to exterior

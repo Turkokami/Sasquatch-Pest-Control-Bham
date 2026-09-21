@@ -44,7 +44,8 @@ replaces it properly. Somebody's dog digs at one.
 
 And a failed vent screen is not a small defect. The opening behind it is sized
 for airflow, which means it is very generously sized for an animal. Extension
-guidance gives a rat slightly more than half an inch to pass through and a mouse
+guidance from [UC IPM](https://ipm.ucanr.edu/home-and-landscape/rats/)
+gives a rat slightly more than half an inch to pass through and a mouse
 slightly more than a quarter, and a torn vent screen leaves far more room than
 either. A crawl vent with a hole in it is, functionally, a door left open.
 

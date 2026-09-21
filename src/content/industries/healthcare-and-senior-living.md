@@ -38,8 +38,10 @@ and none of them chose the situation.
 That combination pushes the whole program toward the same answer: close the
 building, monitor it closely enough to find things early, contain what is found,
 and reserve anything else for the narrow set of situations that genuinely
-require it. It is the approach we would argue for anyway. Here it is not
-optional.
+require it. That ordering — thresholds, monitoring, prevention, and the least
+risky control before any broadcast application — is how the
+[EPA defines integrated pest management](https://www.epa.gov/ipm/introduction-integrated-pest-management).
+It is the approach we would argue for anyway. Here it is not optional.
 
 ## The categories inside one heading
 

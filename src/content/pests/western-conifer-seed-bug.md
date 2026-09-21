@@ -178,7 +178,7 @@ mouthparts are built for one job.
 
 It does not reproduce. Egg-laying happens on needles, in early summer, outdoors.
 
-It does not damage the structure. Utah State states it in as few words as
+It does not damage the structure. [Utah State Extension](https://extension.usu.edu/planthealth/research/western-conifer-seed-bug-leptoglossus-occidentalis) states it in as few words as
 possible: the western conifer seed bug does not damage homes. There is no chewing,
 no boring, no nesting and no tunneling, because the animal is not equipped for any
 of it.

@@ -58,7 +58,10 @@ penetrations, and the underfloor space of anything on posts.
 Where droppings need clearing in an enclosed space, we will tell you to
 ventilate first and avoid sweeping or vacuuming dry material. That is the
 sensible precaution whatever the risk turns out to be in a given building, and
-it costs nothing to do properly.
+it costs nothing to do properly. Deer mice are the reason for it, and the
+[state's hantavirus
+page](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus) is
+where that cleanup advice comes from.
 
 **Spiders and centipedes** are heavier here than anywhere in the city except the
 lake shore, and for a straightforward reason: damp wooded ground produces

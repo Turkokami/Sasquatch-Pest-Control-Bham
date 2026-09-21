@@ -229,6 +229,9 @@ The seasonal driver is the same as the rest of the county — the autumn rain
 floods outdoor burrows and everything looks for somewhere dry — but the
 consequence is sharper here, because the underfloor space of a lightly built
 house is warmer, drier and less disturbed than almost anything else available.
+When that starts in a given year tracks the rain, which the [National Weather
+Service forecast office in Seattle](https://www.weather.gov/sew/) covers for
+this stretch of coast.
 
 Once inside that cavity, the damage runs to insulation, ducting and wiring, and
 the smell that eventually appears in a bedroom is usually something that died in

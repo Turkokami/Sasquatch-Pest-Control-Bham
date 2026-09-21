@@ -63,7 +63,10 @@ dinner" line of three that gets repeated everywhere is a rough pattern rather
 than a diagnostic feature.
 
 So a mark on skin tells you something is happening. It does not tell you what,
-and it cannot be the whole basis for treating a bedroom.
+and it cannot be the whole basis for treating a bedroom. The EPA puts
+identifying the pest ahead of reaching for a product in its guidance on
+[whether you really need a pesticide](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide),
+and a room with no confirmed arthropod in it is the clearest case there is.
 
 ## What a proper search establishes
 

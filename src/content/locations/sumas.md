@@ -304,7 +304,10 @@ plainly.
 
 The flood history is the obvious part, but the ordinary Whatcom County pattern
 runs underneath it regardless: no sustained hard freeze, a long wet season, and
-wood that never fully dries. Populations are never reset by winter, and damp
+wood that never fully dries. Both halves of that are in the record — [NOAA's US
+Climate Normals](https://www.ncei.noaa.gov/access/us-climate-normals/) give the
+thirty-year averages for temperature and rainfall at stations near here.
+Populations are never reset by winter, and damp
 framing supports the whole moisture-driven cast — moisture ants, decay fungus,
 dampwood termites, silverfish and the crawlspace insects.
 

@@ -44,7 +44,9 @@ Northwest, and they deserve their place: they have one of the very few genuinely
 severe stings among ants in this region. But the extension guidance is equally
 clear about where they are, and it is not here. The greatest number of colonies
 occurs along the Columbia and Snake river areas — the dry side of the state,
-where the soil suits them.
+where the soil suits them. Both halves of that are set out in
+[PNW 624](https://pubs.extension.wsu.edu/product/identification-and-habits-of-key-ant-pests-in-the-pacific-northwest/),
+the WSU Extension ant key covering Washington, Oregon and Idaho.
 
 So this page exists for two readers. Somebody heading east to camp, fish, boat
 or work, who ought to know what a cleared circle of bare sandy ground means. And

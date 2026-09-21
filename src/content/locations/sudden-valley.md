@@ -249,6 +249,9 @@ moisture for years.
 Everything moisture-driven follows from that. Moisture ants colonize framing
 that has softened. Decay fungus runs where the wood stays wet, and decay rather
 than insects is what actually costs structural capacity in this climate.
+Keep framing below the moisture content the [USDA Forest Products Laboratory's
+Wood Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf)
+identifies as the threshold for decay and none of that starts.
 Sowbugs, millipedes and springtails live in the damp end and occasionally come
 up into the house. Dampwood termites need exactly these
 conditions and nothing else.

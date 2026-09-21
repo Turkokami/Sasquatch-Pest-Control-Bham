@@ -47,7 +47,9 @@ in a large share of them the floor of that crawlspace is still soil.
 That single condition drives more of our work here than anything else. Bare
 earth puts ground moisture continuously into the space and into the joists
 above it, in a climate that supplies about thirty-five inches of rain a year
-across a long gray season. The framing above never fully dries.
+across a long gray season. The framing above never fully dries. That figure comes
+from NOAA's [US Climate Normals](https://www.ncei.noaa.gov/access/us-climate-normals/)
+rather than from us.
 
 Everything moisture-driven follows. Moisture ants colonize wood that has
 softened. Decay fungus runs where it stays wet, and decay rather than insects is

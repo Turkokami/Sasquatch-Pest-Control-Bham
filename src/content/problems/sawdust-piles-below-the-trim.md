@@ -77,7 +77,10 @@ Carpenter ant frass contains insect parts. Discarded legs, wing fragments from
 spent reproductives, pieces of head and thorax from dead colony members. The
 colony housekeeps by pushing everything out through the same slits it uses for
 debris, so the pile is a mixture of wood fiber and body parts. Finding fragments
-in the pile is close to conclusive.
+in the pile is close to conclusive. UC IPM describes that mixture of wood fiber
+and body parts on its
+[carpenter ant page](https://ipm.ucanr.edu/home-and-landscape/carpenter-ants/),
+and it is the detail that separates them from beetles faster than anything else.
 
 Beetle powder contains nothing but powder. No fragments, no fibers, no
 inclusions.

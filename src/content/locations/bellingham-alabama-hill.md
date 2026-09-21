@@ -168,7 +168,11 @@ produces insects in quantity and everything that eats insects follows.
 
 Where droppings need clearing in an enclosed space, ventilate it first and avoid
 sweeping or vacuuming dry material — a sensible precaution regardless of what the
-risk turns out to be in a given building, and free to observe.
+risk turns out to be in a given building, and free to observe. Washington's
+Department of Health [says the same about handling rodent
+droppings](https://doh.wa.gov/community-and-environment/pests), and the page is
+worth two minutes before anybody opens a crawl hatch that has been shut all
+winter.
 
 The treeline is permanent and it is a large part of why people live here.
 Nothing applied to a property changes it. What changes the outcome is the

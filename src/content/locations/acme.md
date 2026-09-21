@@ -122,7 +122,10 @@ Getting that wrong costs a fortnight. A rat will avoid an unfamiliar object in
 its run for days, so a placement strategy that works on mice reads as failure
 on rats until somebody realizes what they are actually dealing with. We work it
 out from the droppings, the gnawing, the runs and the smell before anything
-gets deployed.
+gets deployed. [The University of California's IPM program on
+rats](https://ipm.ucanr.edu/home-and-landscape/rats/) sets out the same
+behavior, and it is worth reading before you buy traps for a South Fork
+property.
 
 There is a seasonal shape to it as well. Farm ground supports large outdoor
 populations quite happily through the warmer months, and those animals only

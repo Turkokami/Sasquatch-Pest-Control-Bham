@@ -39,6 +39,12 @@ moisture content supports [dampwood termites](/services/termite-control/),
 of which can establish in dry lumber. Add a failed vent screen and you have
 [rodents](/services/rodent-control/) as well, in a space nobody looks at.
 
+Mold follows the same water, and the
+[EPA's mold course](https://www.epa.gov/mold/mold-course-chapter-2) puts the
+mechanism plainly: growth needs a moisture source, and taking that source away is
+the control. It is why sheeting on the ground does more for a musty crawlspace
+than anything applied to the framing above it.
+
 The crawlspace is where the majority of a Whatcom County pest problem physically
 lives, and it is the part of the house homeowners have least information about.
 

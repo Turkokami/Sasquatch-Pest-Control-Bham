@@ -51,7 +51,10 @@ brochure, and it is worth being specific about what it means in practice.
 On the lake side of a property we lead with exclusion, habitat modification and
 contained placements rather than anything broadcast. We look at the forecast
 before scheduling exterior work, because applying anything ahead of heavy
-weather in a catchment is a poor decision regardless of what a label permits.
+weather in a catchment is a poor decision regardless of what a label permits. The
+forecast in question is the one the [National Weather Service puts out from its
+Seattle office](https://www.weather.gov/sew/), the office responsible for this
+corner of the state.
 Rodent control products, where they are used at all, go in tamper-resistant,
 weather-protected stations rather than anywhere open. And where the correct
 answer is a drainage correction, a regrade, a gutter repair or removing the wet

@@ -192,7 +192,9 @@ The seasonal pattern is the Bellingham one, sharpened by the housing.
 Through summer, rats live outdoors perfectly well — in blackberry, under
 decking, in the greenbelt margins and along the creek corridors. Then the rain
 sets in through late September and October, burrows flood, and that whole
-population needs somewhere dry within a few weeks.
+population needs somewhere dry within a few weeks. That turn is not folklore: the
+[National Weather Service office in Seattle](https://www.weather.gov/sew/)
+publishes it, and you can see it coming a fortnight out.
 
 Student housing at that exact moment is newly reoccupied, full of food, warm,
 and frequently has a refuse situation that has not yet settled. It is a good

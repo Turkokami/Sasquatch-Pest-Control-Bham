@@ -167,8 +167,11 @@ genuinely well-documented health effect.
 
 The main one is **allergens**. Cockroach proteins accumulate in household dust and
 are a recognized asthma trigger, with the strongest evidence in children in
-multi-unit housing. That is a better reason to resolve an infestation properly
-than the contamination angle people usually reach for.
+multi-unit housing.
+[UC IPM](https://ipm.ucanr.edu/home-and-landscape/cockroaches/) names the same
+allergen and asthma link in its cockroach guidance. That is a better reason to
+resolve an infestation properly than the contamination angle people usually reach
+for.
 
 They also mechanically carry bacteria across surfaces, having traveled through
 drains and voids, so food-contact surfaces in an infested kitchen warrant more

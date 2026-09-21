@@ -43,7 +43,7 @@ ready: true
 There is no other insect in this library that identifies itself by odor, and
 this one does it so reliably that it is worth leading with.
 
-Crush half a dozen workers on a fingertip and smell them. WSU's publication on
+Crush half a dozen workers on a fingertip and smell them. [WSU's publication](https://pubs.extension.wsu.edu/product/odorous-house-ant/) on
 the species describes the result as rotten coconut or blue cheese; Utah State
 Extension uses the same coconut comparison. It comes from glands at the rear of
 the abdomen, and once you have smelled it you will not need a second opinion

@@ -178,6 +178,10 @@ An earwig in your bathroom has left the conditions it needs and has a very short
 future regardless of what anyone applies. Treating interior baseboards puts
 product where people live to kill insects that were not going to survive
 the week, and it does nothing to the population outside that keeps supplying more.
+The [EPA](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide)
+asks householders to start with whether a pesticide is warranted at all, and
+whether taking away what the pest needs would settle it instead. For an animal
+already dying of dryness on your bathroom floor, that is not a close question.
 
 A vacuum handles the ones you find. The perimeter work handles the reason they
 keep appearing.

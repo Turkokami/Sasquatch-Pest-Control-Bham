@@ -258,7 +258,10 @@ the harbor; house mice everywhere; and deer mice in the more rural properties
 toward the county line. Where droppings need cleaning up in an enclosed space we
 will tell you to ventilate first and avoid sweeping or vacuuming dry material,
 because that is the sensible precaution regardless of what the risk turns out to
-be in any given building.
+be in any given building. State health guidance on
+[hantavirus](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus)
+is where that precaution comes from, and deer mice are the reason it applies out
+toward the county line rather than at the harbor.
 
 ## Drayton Harbor and the tidal ground
 

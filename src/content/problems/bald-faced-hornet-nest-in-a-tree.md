@@ -42,7 +42,9 @@ spends money on it.
 
 Despite the name, bald-faced hornets are not true hornets. They are a large
 black and white species of yellowjacket, closely related to the ones that nest
-in the ground, and their behavior sits between the two.
+in the ground, and their behavior sits between the two. UC IPM handles them
+under [yellowjackets and other social wasps](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html)
+rather than under hornets, for that reason.
 
 They are markedly larger than a common yellowjacket, patterned in black and
 ivory white rather than yellow, with the pale face that gives them their name.

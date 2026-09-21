@@ -110,6 +110,9 @@ accordingly.
 That matters because of what damp wood permits. Carpenter ants excavate
 galleries far more readily in softened timber than in sound timber. Wood-boring
 beetles and decay fungi need moisture content that dry framing never reaches.
+Those thresholds are set out in the Forest Products Laboratory's [Wood
+Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf), which is
+worth a look if somebody has told you decay is simply what old houses do.
 
 And moisture ants — which most people have never heard of and which we find
 constantly in this stock — are not really a pest problem at all. They nest in

@@ -71,7 +71,9 @@ compact pavement ant.
 This is the part worth carrying away from the page.
 
 The extension guidance says they nest in **wood in various stages of decay**, in
-**cavities in sound wood**, or in **soil beneath stones and wood**.
+**cavities in sound wood**, or in **soil beneath stones and wood**. That nesting
+list comes from [PNW 624](https://pubs.extension.wsu.edu/product/identification-and-habits-of-key-ant-pests-in-the-pacific-northwest/),
+the WSU Extension key to ant pests in this region.
 
 Read that carefully, because it is the same distinction that governs the whole
 of this site's approach to ants in structures. This species uses damage that is

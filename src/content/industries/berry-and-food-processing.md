@@ -137,7 +137,10 @@ building.
 lines, the underside of equipment, the gap at a plinth, a cracked floor holding
 residue, a mop store, a wet corner behind a tank. The tell is that they are
 present in a specific area and stay there. Spraying them accomplishes nothing;
-finding and removing the film accomplishes everything.
+finding and removing the film accomplishes everything. The
+[EPA takes the same line](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide)
+on whether a pesticide is needed at all: take away the food, water and shelter
+first.
 
 **House flies and blow flies** are an exterior problem coming in: waste, culls,
 standing water in the yard, and open doors. The work is waste handling, drainage

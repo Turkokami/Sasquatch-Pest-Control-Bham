@@ -48,7 +48,10 @@ worth doing. **The insulation comes out.** Wet fiberglass does not recover; it
 holds moisture, it accelerates decay in the joists above it, and it is excellent
 nesting material. Treating around it is money spent on the wrong problem.
 **The space gets dried.** Properly, with attention to the framing rather than
-just the surface. **The vapor barrier gets re-established** over clean ground.
+just the surface. The [EPA's explanation of why mold
+grows](https://www.epa.gov/mold/mold-course-chapter-2) is a short read on why
+that drying has to happen quickly and why wet material left in place does not
+recover. **The vapor barrier gets re-established** over clean ground.
 
 Only then is exclusion and treatment durable. Doing it the other way around —
 sealing and treating a wet, insulated crawl — produces a building that is still

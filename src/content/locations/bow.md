@@ -57,6 +57,9 @@ is available is the nearest structure — your house, your shop, your barn.
 
 Then, a few weeks later, the autumn rain arrives, the low ground saturates,
 burrows flood, and it happens again with everything that was still outdoors.
+The monthly averages in NOAA's [US Climate
+Normals](https://www.ncei.noaa.gov/access/us-climate-normals/) show how abruptly
+the wet season arrives in this valley.
 
 So the rodent calendar here runs on cutting and rainfall rather than on cold,
 and the decisive weeks are September through November. Work done before that

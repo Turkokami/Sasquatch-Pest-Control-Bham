@@ -253,7 +253,10 @@ than the infestation.
 Bed bugs are not known to transmit disease to people. What they cause is
 localized skin reaction, and in some people a stronger allergic response.
 Scratched bites can become secondarily infected, which is the most common actual
-medical complication and an ordinary one.
+medical complication and an ordinary one. That is the state's position too — the
+[Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/bed-bugs)
+treats bed bugs as a nuisance and a skin-irritation problem rather than a
+disease-carrying one.
 
 The larger harm is usually sleep and stress. People who know there are insects
 in their bed stop sleeping properly, and that has real consequences over weeks.

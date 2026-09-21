@@ -135,9 +135,12 @@ that never dries out, the base of a post where a deck meets the house.
 Cedar is worth a specific mention because there is a great deal of it in this
 area, in siding, trim, decking and outbuildings. Cedar's reputation for
 durability is about decay resistance, not insect resistance, and once a cedar
-member has taken on moisture it is perfectly workable for an ant. A cedar shake
-wall on the shaded north side of a house at the forest edge is a common place to
-find galleries.
+member has taken on moisture it is perfectly workable for an ant. The [USDA
+Forest Products Laboratory's Wood
+Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf) sets out
+what cedar heartwood actually resists, which is fungal decay rather than
+anything with mandibles. A cedar shake wall on the shaded north side of a house
+at the forest edge is a common place to find galleries.
 
 Treating without addressing the water buys a season. The colony goes, the damp
 wood stays, and something occupies it again. On a wooded property, where the

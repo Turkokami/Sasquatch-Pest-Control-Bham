@@ -190,7 +190,9 @@ Nothing in that group bites, reproduces inside, or harms the building itself,
 which is why the response is sealing combined with exterior work timed to the
 narrow window ahead of the wave. Too early and it has faded; too late and they are already on the wall. Because the trigger is weather rather than a date, the right
 week shifts from season to season, and the only reliable way to catch it is to
-have the visit on the calendar before the first cold snap arrives.
+have the visit on the calendar before the first cold snap arrives. We book that
+week off the [Seattle forecast office's](https://www.weather.gov/sew/) outlook
+rather than off the calendar.
 
 The same autumn is when the field rodents arrive, for the reasons above. A
 house closed properly in August has a very different first winter from one

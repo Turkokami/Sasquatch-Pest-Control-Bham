@@ -153,7 +153,8 @@ only visible in a dusty vapor barrier.
 **Gnaw damage.** Rat gnawing is coarse, with visible individual tooth marks and
 real material removal. Mouse gnawing is fine and shallow.
 
-**Openings used.** A mouse gets through a quarter-inch gap. Extension guidance
+**Openings used.** A mouse gets through a quarter-inch gap.
+[UC IPM](https://ipm.ucanr.edu/home-and-landscape/rats/)
 puts a rat at slightly more than half an inch to pass through, though state
 wildlife guidance is clear that a quarter inch is enough for one to gnaw an
 opening up to size, and a rat is far more capable of enlarging what it finds.

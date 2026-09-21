@@ -137,7 +137,10 @@ sensible at ground level is sometimes coming up rather than in.
 Waste handling in a shared rear yard is the other half. Bins that do not close,
 stored cardboard, and food waste held between collections will support a
 population no treatment will out-run, and where several businesses share a yard
-it needs to be agreed rather than assumed.
+it needs to be agreed rather than assumed. Washington's Department of Health
+[takes the same line on rodents and
+waste](https://doh.wa.gov/community-and-environment/pests), which is useful when
+a shared yard needs a decision out of several tenants at once.
 
 ## Condominiums above the harbor
 

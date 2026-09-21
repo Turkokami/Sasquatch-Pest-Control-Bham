@@ -81,7 +81,9 @@ the produce prep area for a shift is a fly breeding site inside the building.
 
 **Deli, bakery and prepared foods** are commercial kitchens inside a shop, with
 drains, equipment voids and organic film, and they behave exactly as a
-restaurant's back of house does.
+restaurant's back of house does. Grocery stores sit alongside restaurants in the
+scope of the [FDA Food Code](https://www.fda.gov/food/retail-food-protection/fda-food-code),
+so a deli counter is held to food-service standards, not shop standards.
 
 **Chillers and freezers.** Cold does not kill what is in the product, it pauses
 it, so a stored product insect that goes into a cold store alive comes out

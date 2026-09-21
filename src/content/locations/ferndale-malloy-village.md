@@ -232,7 +232,9 @@ this site, which is unusual and is meant to be.
 
 And where there is a version of a job that uses less or nothing at all — a
 repair rather than a treatment, a bait rather than a spray — that is worth
-asking for, and we will offer it before you have to.
+asking for, and we will offer it before you have to. The EPA puts that question
+first as well, in a [short page on whether a pesticide is needed at
+all](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide).
 
 ## Bed bugs in attached housing
 

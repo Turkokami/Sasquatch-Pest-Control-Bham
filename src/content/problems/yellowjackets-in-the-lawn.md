@@ -57,7 +57,10 @@ them you can predict where a nest will be on most properties.
 
 **Abandoned rodent burrows.** By far the most common. The cavity already exists,
 it is the right size, it drains, and it has a defensible entrance. Any property
-with vole or mouse activity in the ground has candidate sites everywhere.
+with vole or mouse activity in the ground has candidate sites everywhere. UC
+IPM's [yellowjacket pest note](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html)
+names the old rodent burrow as the typical starting point for a ground colony
+too.
 
 **Banks and slopes.** Sloped ground drains well and offers a horizontal entrance
 that stays dry. The bank at the edge of a lawn, the side of a ditch, the

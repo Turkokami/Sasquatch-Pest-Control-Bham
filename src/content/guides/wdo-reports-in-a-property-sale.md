@@ -67,7 +67,10 @@ Two things follow from that list.
 **Decay fungus is on it.** In this climate that is the finding we encounter most,
 and it is frequently the most consequential. Wood that has been wet long enough
 for rot to establish has lost strength permanently, and it does not recover on
-drying.
+drying. The Forest Products Laboratory is blunt about the timing in its
+[work on wood biodeterioration](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf):
+a large share of the strength is gone in the early stages, before the timber
+looks obviously rotten, which is why a probe tells you more than a look does.
 
 **Carpenter ants are on it.** Homeowners tend to file carpenter ants under
 nuisance insects rather than under structural pests. In a transaction they are

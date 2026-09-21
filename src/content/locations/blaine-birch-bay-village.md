@@ -98,7 +98,9 @@ people notice is the mounds and a spongy, lifting lawn.
 They need different handling, and treating for the wrong one wastes a season.
 The clue is in the workings: surface runways with clipped vegetation means
 voles, mounds of pushed-up soil means moles, and a lawn can genuinely have
-both.
+both. If you want a second opinion on which you are looking at, [WSU
+Extension's Whatcom County office](https://extension.wsu.edu/whatcom/) covers
+both animals and is local.
 
 Neither of them enters buildings often, which is worth saying because the panic
 about them is usually disproportionate. Voles occasionally get into a crawl

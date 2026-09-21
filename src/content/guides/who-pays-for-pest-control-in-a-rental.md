@@ -159,6 +159,9 @@ Second, in a multi-unit building they do not respect the boundary between one
 tenancy and the next. They move along wall lines, under doors, and through the
 gaps around plumbing and wiring. A treatment scoped to one unit while the unit
 next door is untreated is frequently money spent twice.
+[UC IPM](https://ipm.ucanr.edu/home-and-landscape/bed-bugs/) says the same of
+apartment buildings: because the insects travel between adjoining units, control
+has to take in the neighbors and not only the unit that complained.
 
 That has a practical implication that cuts across the responsibility argument:
 whoever is paying, treatment scoped to the **building** produces a better

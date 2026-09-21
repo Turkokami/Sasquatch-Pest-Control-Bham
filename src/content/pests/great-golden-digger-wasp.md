@@ -53,7 +53,7 @@ expensive.
 A digger wasp has none of that. One female, one burrow, no workers. She gains
 nothing by stinging a person and loses her afternoon's work. Field observers
 describe watching them from a few feet away without any reaction — solitary
-wasps, as the University of Wisconsin's field station puts it, are frequently
+wasps, as [the University of Wisconsin's field station](https://uwm.edu/field-station/bug-of-the-week/great-golden-digger-wasp-family-sphecidae/) puts it, are frequently
 pretty laid-back.
 
 ## The burrow and the soil

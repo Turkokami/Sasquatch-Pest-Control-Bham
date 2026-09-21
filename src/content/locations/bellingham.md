@@ -63,8 +63,10 @@ oversize and none of them ever sealed.
 The alleys matter too. Alley-served neighborhoods concentrate garbage, and
 garbage concentrates rats. A block where every can sits out on the same alley
 on the same night supports a population that no amount of interior work will
-touch. On these streets the conversation frequently has to widen from one house
-to the block.
+touch. [The Washington State Department of Health's guidance on rodent
+pests](https://doh.wa.gov/community-and-environment/pests) puts the same
+emphasis on removing food and shelter before anything else. On these streets the
+conversation frequently has to widen from one house to the block.
 
 The pests follow directly: Norway rats and house mice in the crawl and the
 walls, carpenter and moisture ants in any framing that has taken water, and

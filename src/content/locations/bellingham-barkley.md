@@ -181,7 +181,11 @@ back to leave a dry band at the base of the wall, irrigation heads adjusted so
 they are not spraying the building, and planting trimmed off the structure. In a
 managed community those decisions belong to the association and its landscaper,
 which is exactly why they need to be written down rather than mentioned in
-passing to a resident.
+passing to a resident. Whether a treatment is needed at all is a question the
+EPA [walks through step by
+step](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide), and
+here the answer is nearly always an instruction to a landscaper rather than a
+product.
 
 Water features and drainage in plaza areas deserve the same attention. Standing
 water in a low corner or a poorly draining planter is a straightforward asset to

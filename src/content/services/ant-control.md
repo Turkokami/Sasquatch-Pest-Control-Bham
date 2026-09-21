@@ -84,6 +84,10 @@ a stump, a fallen log, a standing dead tree, a woodpile, a landscape timber.
 Radiating from it are satellite colonies containing workers and older larvae,
 which tolerate drier conditions and are quite happy inside your wall void, your
 attic, your door frame, or the void behind a bathtub.
+[UC IPM](https://ipm.ucanr.edu/home-and-landscape/carpenter-ants/) describes the
+same two-part arrangement — a parent nest holding the queen and the brood, with
+satellite nests of workers and older larvae that get by in drier wood — which is
+why locating one nest is not the same as locating the colony.
 
 Kill a satellite and the parent replaces it. Spray a trail and you have removed
 foragers the colony can afford to lose. The only treatment that ends it is one

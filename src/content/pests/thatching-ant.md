@@ -53,7 +53,7 @@ that people remember.
 
 ## Recognizing them
 
-PNW 624, the WSU, OSU and University of Idaho extension key for this region,
+[PNW 624](https://pubs.extension.wsu.edu/product/identification-and-habits-of-key-ant-pests-in-the-pacific-northwest/), the WSU, OSU and University of Idaho extension key for this region,
 gives the identification in a few lines and they are worth quoting closely
 because the details are what separate this ant from the one people fear.
 

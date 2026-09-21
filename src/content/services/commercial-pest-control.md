@@ -48,7 +48,10 @@ than negotiated every visit.
 ## Integrated pest management, in practice
 
 The term gets used loosely, so here is what it actually means on a site rather
-than in a brochure.
+than in a brochure. The
+[EPA's introduction to integrated pest management](https://www.epa.gov/ipm/introduction-integrated-pest-management)
+sets out the same sequence we work to — identify the pest, watch the numbers, act
+on the conditions, and reach for a product only when the situation warrants one.
 
 **Inspection and identification first.** What is present, where, and in what
 numbers. Species drives everything downstream, and a program built on "we spray

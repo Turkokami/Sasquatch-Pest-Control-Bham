@@ -25,7 +25,9 @@ faqs:
 
 A processing plant is audited on its records over a year. A restaurant is judged
 on a walkthrough that arrives without an appointment, looks at what is there
-that day, and writes down what it sees.
+that day, and writes down what it sees. The rules behind that walkthrough trace
+back to the [FDA Food Code](https://www.fda.gov/food/retail-food-protection/fda-food-code),
+the model state and local regulators build their own food rules from.
 
 That difference shapes everything. There is no preparing for it, because the
 point of it is that you cannot. So the only strategy that works is a building

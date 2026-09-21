@@ -77,7 +77,9 @@ does no harm.
 
 **Do not spray anything into your luggage.** Retail products are not effective
 against bed bugs in this situation, and some of them are repellent, which can
-scatter insects rather than kill them.
+scatter insects rather than kill them. That is not just our view of it: UC IPM's
+[bed bug material](https://ipm.ucanr.edu/home-and-landscape/bed-bugs/) takes the
+same position on over-the-counter aerosols and on foggers.
 
 ## What to look for over the following weeks
 

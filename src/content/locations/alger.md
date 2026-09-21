@@ -87,7 +87,10 @@ the point where a service line enters, and the underfloor space of any outbuildi
 Where droppings need clearing in an enclosed space, we will tell you to
 ventilate the area first and avoid sweeping or vacuuming dry material. That is
 the sensible precaution regardless of what the risk turns out to be in any
-particular building, and it costs nothing to do it properly.
+particular building, and it costs nothing to do it properly. Deer mice are the
+species behind that advice, and the [Washington State Department of Health page
+on hantavirus](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus)
+explains why it matters in rural buildings like the ones out here.
 
 The work that actually changes the outcome is at the interface rather than in
 the woods. Trim the branch bridging to the roof. Screen the vents with material

@@ -97,7 +97,10 @@ one corner.
 None of that is treatable in the way a building is. What changes it is storage
 practice: material up off the ground on racks where possible, pallets stacked
 and rotated rather than left to settle, a managed gap between stored material
-and the building wall, and vegetation cut back off the fence line.
+and the building wall, and vegetation cut back off the fence line. UC's IPM
+program [makes the same point about
+harborage](https://ipm.ucanr.edu/home-and-landscape/rats/): take away the
+sheltered voids and there is much less left to control.
 
 We put those findings in writing rather than quietly servicing around them. A
 client who racks their material sees a difference in a season. A client who does

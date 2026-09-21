@@ -91,7 +91,12 @@ beneath them or streaking down a joist.
 **The moisture requirement is the whole story.** Anobiids need wood with elevated
 moisture content, and they will **re-infest the same timber generation after
 generation** as long as it stays damp. This is why crawlspace beetle problems
-recur endlessly under repeated treatment and stop when the space is dried.
+recur endlessly under repeated treatment and stop when the space is dried. The
+USDA Forest Products Laboratory's
+[Wood Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf) makes
+the same point from the timber side: the durable control for both decay and the
+organisms that live in damp wood is holding the moisture content down, not
+repeating a treatment.
 
 It is exactly the same argument as
 [dampwood termites](/services/termite-control/) and

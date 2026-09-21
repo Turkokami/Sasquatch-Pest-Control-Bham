@@ -38,7 +38,11 @@ persistently wet. Where soil stays damp, they thrive. Where it dries out
 regularly, they cannot complete a generation.
 
 That is the whole mechanism, and it means the solution is a watering change
-rather than a treatment. We are aware this is a page from a pest control company
+rather than a treatment. Removing the condition that supports a pest before
+reaching for a product is the first move in
+[integrated pest management](https://www.epa.gov/ipm/introduction-integrated-pest-management)
+as the EPA sets it out, and fungus gnats are about as clean an example as the
+approach gets. We are aware this is a page from a pest control company
 telling you that you probably do not need a pest control company. It is still
 the accurate answer, and the useful thing we can do here is give you the method
 that works.

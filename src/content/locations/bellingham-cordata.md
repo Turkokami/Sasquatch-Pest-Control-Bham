@@ -70,7 +70,9 @@ unsealed top plate.
 
 None of that is a defect. It is a set of small, cheap oversights that only
 matter because they sit on the outside of a warm dry box in a county where the
-rain drives everything indoors in October. Sealing them properly is a finite
+rain drives everything indoors in October. NOAA's [US Climate
+Normals](https://www.ncei.noaa.gov/access/us-climate-normals/) put numbers on
+that October turn. Sealing them properly is a finite
 job with an end point, and once it is done it stays done.
 
 ## Landscaping is the other half

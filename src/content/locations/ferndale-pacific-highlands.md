@@ -157,7 +157,9 @@ underneath.
 
 The one people miss is the roof. Where the green corridor carries mature trees
 and a branch reaches a roofline, that is a bridge over everything sealed at
-ground level, and rats climb well.
+ground level, and rats climb well. Climbing is ordinary behavior for a roof rat,
+as [UC's IPM guidance on rats](https://ipm.ucanr.edu/home-and-landscape/rats/)
+describes, which is why a well-sealed foundation on its own can disappoint.
 
 Closing those is a morning of hardware per house and it does not repeat. It is
 the highest-value work available on this housing.

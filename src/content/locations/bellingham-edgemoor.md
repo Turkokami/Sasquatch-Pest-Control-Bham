@@ -177,6 +177,10 @@ Where droppings need clearing in an enclosed space — a shed, a crawlspace, a
 garage that has been shut up — ventilate the area first and avoid sweeping or
 vacuuming dry material. That is a sensible precaution regardless of what the risk
 turns out to be in a given building, and it costs nothing to do it that way.
+Deer mice are the species Washington associates with hantavirus, and the state's
+[guidance on cleaning up after
+them](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus) is
+short and worth reading before you start.
 
 The prevention window is August, when the ground and crawlspaces are dry, the
 exterior is accessible, and the movement has not begun. On a property with

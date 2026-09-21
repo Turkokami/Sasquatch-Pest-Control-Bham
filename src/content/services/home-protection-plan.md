@@ -135,8 +135,11 @@ sting happens.
 
 **Early autumn** is the critical one. As the ground saturates through late
 September and October, rodents move indoors — driven by water rather than cold.
-This is the visit that prevents a winter rodent problem, and it is the reason the
-schedule is not evenly spaced.
+NOAA's [US Climate Normals](https://www.ncei.noaa.gov/access/us-climate-normals/)
+show how steeply average monthly rainfall climbs here between late summer and
+October, and that climb is what the animals are responding to. This is the visit
+that prevents a winter rodent problem, and it is the reason the schedule is not
+evenly spaced.
 
 **Mid-autumn** brings the overwintering insects — cluster flies, boxelder bugs
 and conifer seed bugs piling onto south-facing walls looking for a way in.

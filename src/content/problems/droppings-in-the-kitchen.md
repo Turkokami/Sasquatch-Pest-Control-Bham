@@ -123,7 +123,11 @@ one.
 Do not sweep and do not vacuum dry droppings or nesting material. Both actions
 put fine particulate into the air in a small enclosed room, and that is the
 route by which the small health risks associated with rodent waste actually
-reach people. In this region the species of note for that is the deer mouse, and
+reach people. Washington's Department of Health makes that point directly in its
+[hantavirus guidance](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus):
+the hazard is in the dust raised from droppings, urine and nesting material
+rather than in the droppings themselves. In this region the species of note for
+that is the deer mouse, and
 because you cannot reliably tell a deer mouse dropping from a house mouse
 dropping by eye, the sensible course is to handle all of it the same way.
 

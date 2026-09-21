@@ -82,7 +82,11 @@ woodwork, and voids that are effectively invisible.
 Highly predaceous, and then omnivorous on top of that.
 
 The extension guidance lists honeydew, nuts, grains and a wide range of
-household foods alongside the insect prey. In practice the household complaint
+household foods alongside the insect prey. That diet comes from
+[PNW 624](https://pubs.extension.wsu.edu/product/identification-and-habits-of-key-ant-pests-in-the-pacific-northwest/),
+the ant key WSU Extension publishes for the Pacific Northwest.
+
+In practice the household complaint
 is usually greasy or protein foods — a thief ant trail into a pantry very often
 leads to something oily rather than something sweet, which is a useful clue when
 the smaller ants are being sorted out.

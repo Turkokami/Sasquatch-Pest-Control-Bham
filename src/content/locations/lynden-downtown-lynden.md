@@ -46,7 +46,10 @@ most common assumption about them is wrong.
 House flies and stable flies develop in moist organic material — manure packs,
 soiled bedding, silage spoilage, feed waste, wet margins around waterers. There
 is a great deal of that within a short flight of the town, and adults travel
-considerably further than most people assume from where they were bred.
+considerably further than most people assume from where they were bred. Fly
+management around dairies is long-standing ground for [WSU Extension in Whatcom
+County](https://extension.wsu.edu/whatcom/), and their material is written for
+the people producing the flies rather than the people receiving them.
 
 So a premises can be run immaculately, with the bins right and the doors right
 and the cleaning right, and still receive flies in numbers, because the supply

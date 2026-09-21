@@ -113,7 +113,8 @@ reputation among people who do this work.
 The nest is under concrete. There is no access to it, no way to place a bait
 where the colony will find it reliably, and no structural repair that reaches
 it. The extension guidance says as much directly: nests under concrete slabs are
-problematic because they are difficult to treat.
+problematic because they are difficult to treat. The source there is WSU
+Extension's [PNW 624](https://pubs.extension.wsu.edu/product/identification-and-habits-of-key-ant-pests-in-the-pacific-northwest/).
 
 That means the realistic approach is usually not "find and destroy the colony".
 It is:

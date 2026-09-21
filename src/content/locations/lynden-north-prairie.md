@@ -104,6 +104,9 @@ dry, moving it before it warms through, cleaning up the wet edges around
 waterers and along bunk lines, managing the silage face so spoilage does not
 sit, and using larvicide where the material genuinely cannot be moved. Adult
 control has a place, and its place is on top of that rather than instead of it.
+None of that is our invention — [WSU Extension in Whatcom
+County](https://extension.wsu.edu/whatcom/) has been telling dairies the same
+thing for years.
 
 The reason to care beyond comfort is production. Stable flies in particular
 affect animal behavior and intake, so this is a farm-performance question

@@ -283,6 +283,10 @@ If you are finding **small round exit holes in timber** — joists, subfloor, si
 plates, furniture — with fine powder beneath them, that is a wood-boring beetle
 rather than a carpet or pantry beetle. In Whatcom County the common one is the
 anobiid powderpost beetle, and it is genuinely common in damp crawlspaces here.
+The pairing with damp is not incidental: the Forest Products Laboratory's
+[account of wood biodeterioration](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf)
+places anobiids among the wood borers that need a raised moisture content in the
+timber they attack.
 
 The distinction matters because the driver is moisture rather than food storage
 or fabric, and the fix is drying the space rather than cleaning a cupboard. See

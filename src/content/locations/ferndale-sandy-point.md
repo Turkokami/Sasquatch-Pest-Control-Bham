@@ -112,7 +112,9 @@ stretches, with no heating cycle and no air movement, it has even less.
 
 That is how a house on well-drained sand ends up with the same softened rim
 joist, the same fouled insulation and the same fungal growth as a house in a
-wet inland valley — by an entirely different route.
+wet inland valley — by an entirely different route. Growth like that needs
+nothing but moisture and time, which is the whole of the EPA's [explanation of
+why mold appears](https://www.epa.gov/mold/mold-course-chapter-2) where it does.
 
 A ground-contact vapor barrier over the soil is the single most effective thing
 on most of these properties. It is building work rather than treatment, it is

@@ -69,7 +69,10 @@ unsealed top plate.
 
 None of this is a defect in the building. It is a set of small, cheap
 oversights that only matter because they are on the outside of a warm dry box in
-a county where the rain drives everything indoors in October.
+a county where the rain drives everything indoors in October. Whatcom County's
+forecasts come from the [National Weather Service office in
+Seattle](https://www.weather.gov/sew/), and the week their rain arrives is the
+week our phone starts.
 
 ## The old core is a different city
 

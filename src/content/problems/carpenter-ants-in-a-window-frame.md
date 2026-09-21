@@ -34,7 +34,8 @@ Carpenter ants do not attack sound, dry timber by preference. They excavate
 galleries in wood that has already begun to soften — wood that has been damp
 long enough for decay to start breaking down its structure and make it workable.
 Sound Douglas fir is hard going. Timber that has been wet for three winters is
-not.
+not. [UC IPM's account of carpenter ants](https://ipm.ucanr.edu/home-and-landscape/carpenter-ants/)
+describes the same preference for wood softened by moisture and decay.
 
 A window is the place in a wall assembly most likely to be in that condition.
 It is a hole cut through the weather envelope, closed with a system of sealant,

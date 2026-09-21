@@ -49,7 +49,9 @@ temperatures that shut every other ant down, and it has the field entirely to
 itself for a few weeks each year.
 
 The regional extension guide puts it plainly: homeowners become aware of these
-ants in early spring when other ants have not begun foraging.
+ants in early spring when other ants have not begun foraging. That guide is
+[PNW 624](https://pubs.extension.wsu.edu/product/identification-and-habits-of-key-ant-pests-in-the-pacific-northwest/),
+issued by WSU Extension with Oregon State and the University of Idaho.
 
 ## The names, and what they mean
 

@@ -103,7 +103,10 @@ sugar, which matters because it changes which bait works.
 **Carpenter ants.** Not really in this category, and easy to separate on size:
 they are much larger, generally black, and their presence indoors points at
 nesting in the structure rather than foraging from outside. If the ants on your
-counter are big, that is a different page and a different job.
+counter are big, that is a different page and a different job. UC IPM keeps a
+[page on carpenter ants](https://ipm.ucanr.edu/home-and-landscape/carpenter-ants/)
+with the size and the nesting habit set out, which settles most kitchen-table
+arguments about whether the big black one matters.
 
 The distinction we care about most is nuisance versus structural. Most kitchen
 trails are nuisance ants, which is genuinely good news: they are not damaging

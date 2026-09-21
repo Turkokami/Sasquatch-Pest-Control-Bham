@@ -207,7 +207,9 @@ What actually reduces vole pressure is removing the cover they depend on:
 keeping grass short around the base of young trees, pulling mulch back from
 trunks rather than mounding it against them, and guarding the stems of anything
 newly planted. That is work anybody can do in an afternoon and it is more
-effective than anything we would apply.
+effective than anything we would apply. The advice is [WSU Extension's for this
+county](https://extension.wsu.edu/whatcom/) as much as ours, and on a place with
+young fruit trees it is worth acting on before winter.
 
 ## Wells, septic systems and where things can go
 

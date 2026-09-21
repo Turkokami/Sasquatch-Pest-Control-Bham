@@ -161,7 +161,10 @@ different response.
 
 They are small enough to use openings a homeowner will not consider an opening,
 they come in as the weather turns rather than living inside all year, and they
-are the local species associated with hantavirus. That last point changes the
+are the local species associated with hantavirus. Washington's health department
+[sets out what that means and what it does
+not](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus).
+That last point changes the
 handling rather than the anxiety level — the risk is low, and it is managed by
 not disturbing dry droppings and nesting material, ventilating a closed space
 first, wetting the material rather than sweeping or vacuuming it dry, and

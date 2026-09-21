@@ -255,7 +255,10 @@ sealing removes the individuals and leaves the door open behind them.
 
 Insulation is the part people underestimate. Rodents tunnel through blown-in
 material, contaminate it and flatten it, and once that has happened the insulation
-has stopped doing the job it was installed for. Where it is bad enough, removing
+has stopped doing the job it was installed for. The [Washington State Department
+of Health's pest pages](https://doh.wa.gov/community-and-environment/pests)
+cover the health side of that mess, which is worth reading before anybody crawls
+in to pull it out. Where it is bad enough, removing
 and replacing it is part of the repair rather than an upsell — and everyone on
 staff has completed installer training for that reason.
 

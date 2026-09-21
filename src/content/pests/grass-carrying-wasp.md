@@ -47,7 +47,7 @@ convenient tube she could find, and the tube happened to be your window.
 Grass-carrying wasps do not excavate. They take over a cavity that already
 exists — a hollow plant stem, an old beetle tunnel, a nail hole, a weep hole,
 a gap beneath siding, and very often the track of a sliding window or door.
-Extension guidance from Ohio State names window wells, weep holes and gaps
+Extension guidance from [Ohio State](https://bygl.osu.edu/node/2676) names window wells, weep holes and gaps
 beneath siding in the same list, which is a fair description of the average
 house.
 

@@ -158,7 +158,9 @@ Damp basements bring their own list: silverfish, sowbugs and springtails, all
 of which are reporting a moisture condition rather than being problems in their
 own right. Where a basement is genuinely wet, the
 durable answer is drainage rather than repeated treatment, and we would rather
-say so.
+say so. Mold down there runs on the same fuel, which the EPA sets out in [its
+short course on why mold grows](https://www.epa.gov/mold/mold-course-chapter-2):
+wet material and time, nothing more exotic than that.
 
 ## Parking structures
 

@@ -75,6 +75,10 @@ The evidence to look for is the same as anywhere: small dark ink-like spotting
 on sheets and along mattress seams and piping, rusty blood smears, pale shed
 skins collecting in cracks, and the insects themselves — reddish brown, flat,
 oval, roughly apple-seed sized as adults, much smaller and paler when immature.
+Washington's Department of Health sets out the same signs on its
+[bed bug page](https://doh.wa.gov/community-and-environment/pests/bed-bugs),
+which is a neutral thing to put in front of a housemate or a landlord who is not
+yet convinced.
 
 Bites are the least reliable indicator. Reactions differ enormously between
 people, which in a shared house produces a genuinely confusing situation where

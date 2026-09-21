@@ -75,7 +75,10 @@ of an exterior population. Something is supporting that population — a waste
 enclosure that cannot be closed, a landscaped bed against a warm wall, a
 drainage low point that never dries, an adjacent vacant lot, a neighboring
 tenant's receiving practice. Placing more devices inside without changing any of
-that is an indefinite cost with no end date.
+that is an indefinite cost with no end date. That is the approach [the UC
+Statewide IPM Program takes with
+rats](https://ipm.ucanr.edu/home-and-landscape/rats/) as well — the harborage
+and the food come out first, and devices come after.
 
 So a proper first visit here means walking the full perimeter and the yard,
 looking at the waste situation honestly, checking the dock aprons and thresholds

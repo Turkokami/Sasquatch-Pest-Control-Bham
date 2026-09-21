@@ -126,8 +126,9 @@ noticed more when everybody is looking.
 mistaken for something more serious because of their size and speed.
 
 The one worth genuine caution locally is the western black widow, and it is not
-part of the autumn walk at all. The state Department of Health describes it as
-common to eastern Washington, and the range follows the drier, warmer country
+part of the autumn walk at all. The state
+[Department of Health](https://doh.wa.gov/community-and-environment/pests/spiders)
+describes it as common to eastern Washington, and the range follows the drier, warmer country
 east and south of the Cascades, so on this side of them it is uncommon. Where
 one does turn up here it is sitting in an undisturbed dry place — a woodpile, a
 meter box, a crawlspace corner, the underside of stored material — rather than

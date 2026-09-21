@@ -62,6 +62,12 @@ That second category catches people out. A small licensed day care is not
 exempt by virtue of being small, and operators who think of themselves as a
 home business rather than a facility are frequently surprised.
 
+The
+[Washington State Department of Health](https://doh.wa.gov/community-and-environment/schools/pesticides)
+keeps a plain-language summary of the same notification and posting duties, and
+it is the page to hand a principal or a day care operator who is never going to
+sit down with the statute itself.
+
 ## The 48-hour rule
 
 The core requirement: notify interested parents or guardians of students, and
