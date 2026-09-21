@@ -86,6 +86,16 @@ export const controlDeCucarachas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Cucaracha alemana que se reproduce adentro, en cocinas, baños, huecos de aparatos y paredes compartidas' },
+    { label: 'Incluye', value: 'Encontrar los escondites, colocaciones de cebo en gel, un regulador de crecimiento cuando se justifica, monitores y visitas de seguimiento' },
+    { label: 'No incluye', value: 'Rociadores repelentes, bombas de humo o rociar el perímetro por fuera, que dispersan a una población de adentro o no la alcanzan' },
+    { label: 'Cuántas visitas', value: 'Más de una, porque las cápsulas de huevos nacen después del primer tratamiento' },
+    { label: 'Cuánto tarda', value: 'Unas seis a diez semanas hasta que los monitores se quedan en cero; más en un edificio de varias unidades' },
+    { label: 'Antes de que lleguemos', value: 'Deje de rociar, no se deshaga de los aparatos y reduzca el cartón guardado' },
+    { label: 'Cuánto cuesta', value: 'Cotización gratis con la visita; un edificio de varias unidades se cotiza como programa que incluye a los vecinos' },
+  ],
+
   faqs: [
     {
       q: '¿Tener cucarachas quiere decir que mi casa está sucia?',

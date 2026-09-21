@@ -82,6 +82,16 @@ export const piquetesSinChinches: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Atrape lo que vea con cinta transparente o en una bolsa sellada, y fotografíe las marcas con la fecha',
+    'Lleve un registro corto de qué noches aparecieron marcas, a quién le salieron y dónde durmió cada quien',
+    'Anote lo que haya cambiado: detergente o ropa de cama nuevos, viajes, muebles usados, un medicamento nuevo, mascotas, o ruidos en el ático o las paredes',
+    'No desarme ni lave toda la recámara antes de la búsqueda; deje las sábanas usadas sin lavar y el colchón y las orillas del cuarto como están',
+    'Pida una búsqueda de verificación del área donde se duerme, y mencione mascotas o ruidos recientes en el techo para ampliarla a un nido o a escarabajo de alfombra',
+    'No espere tratamiento a menos que de verdad se encuentre un artrópodo, porque no tratamos una recámara donde no hay nada',
+    'Si la búsqueda sale limpia, ponga interceptores y fundas claras, y lleve el resultado negativo al médico si las marcas siguen',
+  ],
+
   faqs: [
     {
       q: '¿No encontrar nada quiere decir que no hay nada?',

@@ -57,6 +57,15 @@ export const chinchesDespuesDeUnViaje: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Desempaque las maletas en la cochera, en la tina o sobre un piso duro, y no meta la maleta a ninguna recámara',
+    'Embolse la ropa lavable del viaje y luego pase todo lo que lo aguante por la secadora caliente por lo menos treinta minutos',
+    'Vacíe y aspire la maleta por las costuras, los cierres y las ruedas, tire lo aspirado afuera en una bolsa sellada, y guarde el equipaje lejos de las recámaras',
+    'No rocíe el equipaje, no use bombas en el cuarto, no se pase al sofá ni tire el colchón, porque cada cosa riega más lejos una llegada reciente',
+    'Vigile la cama un par de meses por manchitas oscuras, rastros de sangre y mudas de piel, con una funda clara puesta e interceptores bajo las patas',
+    'Si aparecen señales, pida una búsqueda de verificación; el cargo se descuenta del tratamiento, y no vendemos tratamiento para una casa sin nada confirmado',
+  ],
+
   faqs: [
     {
       q: '¿La secadora de verdad las mata?',

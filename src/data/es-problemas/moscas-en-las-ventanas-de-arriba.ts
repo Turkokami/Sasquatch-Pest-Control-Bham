@@ -63,6 +63,16 @@ export const moscasEnLasVentanasDeArriba: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Fíjese en las moscas: las grises, opacas y lentas en el vidrio son moscas de racimo, y las brillantes, rápidas y metálicas apuntan a algo muerto en un hueco',
+    'Aspire las moscas aletargadas de las ventanas de arriba y vacíe el contenido afuera en una bolsa sellada, porque algunas siguen vivas',
+    'No rocíe el vidrio ni use una bomba de insecticida, que deja intactas a los cientos de moscas de la pared',
+    'Selle por dentro alrededor de los marcos de las ventanas de arriba, y mantenga cerradas la tapa del ático, las lámparas y los contornos de ventiladores',
+    'No deje que se amontonen moscas muertas en el ático, donde alimentan al escarabajo de alfombra y al de la despensa',
+    'Pídanos que revisemos, sin costo, las paredes donde se juntan las moscas, las aberturas en lo alto y el ático por moscas muertas',
+    'Anote en el calendario el tratamiento exterior para finales de agosto y principios de septiembre, porque para mediados de octubre las moscas ya están en la pared',
+  ],
+
   faqs: [
     {
       q: '¿Vienen de algo muerto en la pared?',

@@ -98,6 +98,23 @@ export const quienPagaElControlDePlagasEnUnaRenta: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'La ley que aplica', value: 'El RCW 59.18.060(4), parte de la lista de deberes del arrendador en la Ley de Arrendamiento Residencial' },
+    { label: 'Al empezar el arrendamiento', value: 'Todo arrendador, incluidas las casas unifamiliares, debe dar un programa razonable de control de plagas cuando entra el inquilino' },
+    { label: 'Durante el arrendamiento', value: 'El arrendador debe controlar la infestación, salvo en una residencia unifamiliar y salvo cuando la causó el inquilino' },
+    { label: 'Rentas unifamiliares', value: 'Sin deber de un programa continuo de plagas, pero el deber de mantener techos, paredes y cimientos sigue aplicando a una casa rentada' },
+    { label: 'Infestación causada por el inquilino', value: 'La ley no la define; depende de los hechos y se decide caso por caso, no la decide una empresa de control de plagas' },
+    { label: 'Rentas en Bellingham', value: 'Los dueños se registran cada año bajo el capítulo 6.15 del BMC, y la lista de seguridad de la ciudad menciona plagas y aberturas por donde entran roedores' },
+    { label: 'Dónde obtener la respuesta legal', value: 'Washington Law Help, un servicio local para inquilinos, cumplimiento de código de la ciudad o el condado, o un abogado si hay disputa' },
+  ],
+  pasos: [
+    'Reporte la infestación al arrendador por escrito, por correo electrónico o con una carta con fecha, y guarde una copia.',
+    'Tome fotos del excremento, del daño y del hueco por donde cree que entró, con fecha en cada foto.',
+    'Describa lo que ha notado, como rasguños en la pared casi todas las noches, en lugar de lo que ha concluido.',
+    'Pregunte por dónde entra la plaga a la vivienda y qué va a cerrar esa abertura, no solo por el tratamiento.',
+    'Lleve un registro de a quién le avisó de las plagas, cuándo le avisó y qué se dijo.',
+    'Lleve la pregunta del contrato y de la responsabilidad a Washington Law Help, a un servicio para inquilinos o a cumplimiento de código.',
+  ],
   faqs: [
     {
       q: '¿Mi arrendador tiene que pagar el control de plagas?',

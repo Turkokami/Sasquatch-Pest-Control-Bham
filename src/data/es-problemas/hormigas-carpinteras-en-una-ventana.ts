@@ -61,6 +61,16 @@ export const hormigasCarpinterasEnUnaVentana: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Observe el alféizar en la hora después del anochecer, y busque aserrín grueso y fibroso con partes de insecto amontonado bajo una ranura de la moldura',
+    'No selle la abertura de donde sale el aserrín, porque marca exactamente por dónde corre la galería',
+    'No use el aerosol de la ferretería en la ventana, porque un repelente en el nido puede dividir la colonia en sitios nuevos',
+    'No abra la moldura para ver hasta que alguien haya decidido si de todos modos se va a reparar el marco',
+    'Busque cómo llega el agua a la ventana: sellador agrietado, tapajuntas levantado, un alféizar plano, canaletas que se desbordan o aspersores que le pegan a la pared',
+    'Pida una visita gratis: tratamos el nido satélite y los caminos con productos no repelentes y recorremos el terreno buscando la colonia madre en tocones, madera muerta o leña',
+    'Haga que un carpintero arregle el alféizar, la moldura o el tapajuntas mojados, o las hormigas volverán al mismo marco',
+  ],
+
   faqs: [
     {
       q: '¿El nido está dentro del marco?',

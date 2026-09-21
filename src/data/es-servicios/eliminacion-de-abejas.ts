@@ -147,6 +147,14 @@ export const eliminacionDeAbejas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Distinguir abejas de avispas amarillas, y cerrar la estructura después de que se retira una colonia de abejas de miel' },
+    { label: 'Incluye', value: 'Identificación gratis, el contacto de un apicultor para enjambres y colonias, y sellar la cavidad y las entradas después' },
+    { label: 'No incluye', value: 'Matar abejas de miel, o rociar una colonia en la pared y dejar el panal adentro' },
+    { label: 'Quién hace el retiro', value: 'Muchas veces un apicultor que se especializa en retiros, a veces con un contratista para la reparación; sus precios son cosa suya' },
+    { label: 'Cuánto cuesta', value: 'La identificación es gratis; el sellado se cotiza por escrito después de una visita' },
+  ],
+
   faqs: [
     {
       q: 'Hay un montón de abejas colgando de mi árbol.',

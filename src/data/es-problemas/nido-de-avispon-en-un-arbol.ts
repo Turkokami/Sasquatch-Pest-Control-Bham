@@ -59,6 +59,15 @@ export const nidoDeAvisponEnUnArbol: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Quédese fuera del radio de unos diez pies alrededor del nido, y mantenga a la familia y a los trabajadores que vengan fuera de su línea de vuelo',
+    'Fíjese en la temporada: un nido de avispón que se ve por primera vez cuando caen las hojas estuvo ahí todo el verano, y la colonia ya va de salida',
+    'Fíjese en la ubicación: un nido junto a una puerta, un camino, un área de juegos o de trabajo, bajo en un seto o pegado a un edificio debe quitarse',
+    'No golpee, rocíe, dispare, queme ni envuelva el nido, y nunca se le acerque desde una escalera',
+    'Si alguien en la casa carga un autoinyector de epinefrina por piquetes, trate como urgente un nido cerca de donde viven',
+    'Pida una revisión gratis cuando la ubicación lo vuelva un peligro: tratamos al anochecer o antes del amanecer con equipo de protección completo y bajamos el cascarón de papel en otra visita',
+  ],
+
   faqs: [
     {
       q: '¿Es tan peligroso como parece?',

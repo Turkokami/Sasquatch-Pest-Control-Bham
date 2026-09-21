@@ -132,6 +132,16 @@ export const controlDeChinches: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Chinches de cama confirmadas con una búsqueda bien hecha en las áreas donde se duerme, y luego tratadas cuarto por cuarto' },
+    { label: 'Visita de verificación', value: '$150, que se descuentan completos del tratamiento si decide seguir' },
+    { label: 'Cuánto cuesta', value: '$395 por cuarto, con las áreas comunes como pasillos y salas incluidas' },
+    { label: 'Incluye', value: 'Una lista de preparación por escrito, tratamiento dirigido a los escondites, y las visitas de seguimiento planeadas, que ya van en el precio' },
+    { label: 'No incluye', value: 'Chinches de murciélago, cuando la colonia arriba del plafón necesita un especialista en murciélagos; nosotros no trabajamos murciélagos' },
+    { label: 'Cuántas visitas', value: 'Más de una; la segunda se programa para cuando nacen los huevos' },
+    { label: 'Antes de que lleguemos', value: 'Siga la lista de preparación y no use bombas, no rocíe ni tire el colchón; un cuarto sin preparar se reprograma' },
+  ],
+
   faqs: [
     {
       q: '¿Cuánto cuesta el tratamiento de chinches?',

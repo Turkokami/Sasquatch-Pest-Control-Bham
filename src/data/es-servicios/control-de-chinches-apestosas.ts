@@ -79,6 +79,14 @@ export const controlDeChinchesApestosas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Chinche apestosa, chinche del arce y chinche de las semillas de coníferas que pasan el invierno en paredes y áticos' },
+    { label: 'Incluye', value: 'Tratamiento exterior en las paredes donde se juntan, más sellado de ventanas, traslapes del revestimiento, sofitos, ventilas y perforaciones' },
+    { label: 'No incluye', value: 'Tratar dentro de los huecos de pared, que deja insectos muertos de los que se alimenta el escarabajo de alfombra' },
+    { label: 'Cuándo conviene', value: 'De finales de agosto a septiembre, antes de que se junten; para noviembre ya están adentro' },
+    { label: 'Cuánto cuesta', value: 'Según cuánta pared y cuántas rendijas hay que trabajar; la cotización no cuesta' },
+  ],
+
   faqs: [
     {
       q: '¿Por qué se amontonan en la misma pared cada octubre?',

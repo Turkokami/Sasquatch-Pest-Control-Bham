@@ -66,6 +66,16 @@ export const sellarUnaRendijaDeUnCuartoDePulgada: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Recorra despacio toda la línea del cimiento en un día seco y con buena luz, apartando arbustos y quitando lo guardado contra la pared',
+    'Siga cada tubo y cable hasta el agujero por donde entra, empezando por la rendija alrededor del tubo de cobre en el cimiento',
+    'Siéntese un par de minutos en el espacio bajo el piso o la cochera a oscuras, de día, y busque luz que se cuele',
+    'Cierre cada rendija de un cuarto de pulgada o más que lleve a algún lado con tela metálica, lámina o mortero, nunca con sellador o espuma solos',
+    'Antes de sellar, confirme que nada vive en el espacio bajo el piso o en las paredes; si hay roedores, primero sáquelos con trampas',
+    'Ponga malla de metal de un cuarto de pulgada en las ventilas en lugar de taparlas con tabla',
+    'Déjenos a nosotros la línea del techo y todo lo que requiera escalera, junto con un recorrido gratis de todo el cascarón de la casa',
+  ],
+
   faqs: [
     {
       q: '¿De verdad a un ratón le basta un cuarto de pulgada?',

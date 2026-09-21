@@ -67,6 +67,16 @@ export const planDeProteccionDelHogar: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Visitas programadas para plagas comunes de la casa en propiedades con presión constante desde afuera' },
+    { label: 'Incluye', value: 'Tratamiento del perímetro exterior, retiro de telarañas y nidos recién empezados, un reporte en cada visita y regresos cubiertos entre visitas' },
+    { label: 'No incluye', value: 'Chinches de cama, tratamiento de plagas que destruyen madera, exclusión, trabajo de espacio bajo el piso y de aislamiento, y reparación estructural' },
+    { label: 'Calendario de visitas', value: 'Al ritmo del calendario local de plagas y no en trimestres parejos, con una visita de roedores a principios del otoño' },
+    { label: 'Garantía', value: 'Si una plaga cubierta regresa entre visitas, volvemos sin cargo adicional y sin límite de veces' },
+    { label: 'Contrato', value: 'Sin contrato a largo plazo ni cargo por cancelar antes, solo un plazo corto de aviso' },
+    { label: 'Cuánto cuesta', value: 'Precio según la propiedad después de una visita gratis, por escrito antes de que empiece cualquier cosa' },
+  ],
+
   faqs: [
     {
       q: '¿De verdad necesito un plan recurrente?',

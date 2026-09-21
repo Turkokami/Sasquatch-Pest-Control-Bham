@@ -80,6 +80,14 @@ export const escarabajosDeAlfombraYDespensa: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Escarabajos de alfombra y de despensa, rastreados hasta donde se alimentan las larvas' },
+    { label: 'Incluye', value: 'Encontrar dónde comen, aspirado a fondo, tratamiento dirigido a los escondites y una revisión de seguimiento' },
+    { label: 'No incluye', value: 'Rociar comida guardada o telas, o quitar nidos de pájaro, que es trabajo de aves que no aceptamos' },
+    { label: 'Cuánto tarda', value: 'Los de despensa bajan rápido una vez que se quita el origen; los de alfombra tardan meses en confirmarse' },
+    { label: 'Cuánto cuesta', value: 'Se cotiza con la visita y suele ser moderado; no se cobra la cotización' },
+  ],
+
   faqs: [
     {
       q: 'Encuentro escarabajitos en los alféizares. ¿Es una infestación?',

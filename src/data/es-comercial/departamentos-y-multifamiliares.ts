@@ -75,6 +75,16 @@ export const departamentosYMultifamiliares: EsGiro = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Registros de visita', value: 'Con fecha en cada visita: la unidad o el área común, qué se encontró y qué se hizo, y si la causa fue de estructura o de limpieza' },
+    { label: 'Hallazgos de estructura', value: 'Pasan a la lista de mantenimiento del dueño' },
+    { label: 'Hallazgos de limpieza', value: 'Pasan al inquilino, separados de los asuntos del edificio' },
+    { label: 'Alcance', value: 'Lo fija la estructura: la unidad que llamó más las que comparten sus paredes, ductos y huecos' },
+    { label: 'Chinches de cama', value: 'Antes de cotizar se revisan las unidades vecinas por los seis lados; la cuota de verificación se abona si sigue adelante' },
+    { label: 'Ventana principal de trabajo', value: 'El cambio de inquilino, con las unidades vacías; en Bellingham esas fechas se llenan pronto' },
+    { label: 'Lista de rentas de la ciudad', value: 'La inspección de rentas de Bellingham revisa aberturas del cimiento, mosquiteros y huecos alrededor de las entradas de servicios' },
+    { label: 'Material para residentes', value: 'Guía de cambio de inquilino para que el administrador la reparta: nada de muebles de la banqueta, nadie se muda a una unidad sin revisar' },
+  ],
   faqs: [
     {
       q: '¿Pueden tratar solo la unidad que se quejó?',

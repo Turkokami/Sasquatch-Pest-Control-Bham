@@ -69,6 +69,16 @@ export const mosquitosEnLasPlantas: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Revise la tierra de la maceta con un dedo y riegue solo cuando la primera o las dos primeras pulgadas estén secas de verdad',
+    'Vacíe todos los platos de las macetas, y riegue desde abajo cuando la maceta lo permita',
+    'Ponga una trampa amarilla pegajosa al nivel de la tierra en cada maceta afectada, cámbiela cada semana y cuente lo atrapado',
+    'Cubra las peores macetas con media pulgada de gravilla, y agregue un riego con Bti en la tercera semana si quiere acelerar',
+    'No rocíe a los adultos ni use bombas o riegos de peróxido; nada de eso cambia la tierra mojada donde viven las larvas',
+    'Si la cuenta de las trampas no ha bajado al final de la tercera semana, o aparecen mosquitos en cuartos sin plantas, busque una fuga, un espacio bajo el piso mojado o un drenaje de condensado tapado',
+    'Llámenos cuando el origen parezca de la construcción, o por un invernadero o almácigos que se están perdiendo; una ventana con plantas no necesita visita',
+  ],
+
   faqs: [
     {
       q: '¿Van a dañar mis plantas?',

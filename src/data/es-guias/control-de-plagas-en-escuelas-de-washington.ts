@@ -104,6 +104,16 @@ export const controlDePlagasEnEscuelasDeWashington: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'A quién cubre la ley', value: 'Escuelas públicas K-12 y guarderías con licencia, bajo el RCW 17.21.415; una guardería chica con licencia no está exenta' },
+    { label: 'De quién es el aviso', value: 'De la escuela. Un contratista debe tener un proceso que lo apoye y agendar alrededor de la ventana de 48 horas' },
+    { label: 'Aviso previo', value: 'Al menos 48 horas antes de una aplicación, a padres o tutores interesados y al personal; se avisa de nuevo si se pasa de las 48 horas' },
+    { label: 'Qué dice un aviso', value: 'Nombre del producto, fecha y hora previstas, lugar, la plaga que se controla, y un nombre y teléfono de contacto' },
+    { label: 'Aviso anual', value: 'Un aviso escrito y completo una vez al año que explique por qué y cómo se usan pesticidas en la escuela' },
+    { label: 'Letreros', value: 'En los terrenos: al menos 4 por 5 pulgadas. En otros espacios: al menos 8.5 por 11, en colores que contrasten. Puestos 24 horas, o más si la etiqueta lo dice' },
+    { label: 'Registros', value: 'Se guardan los registros de aplicación y un resumen anual queda fácil de consultar; no se fija un plazo de conservación en años' },
+    { label: 'Exenciones', value: 'Antimicrobianos, cebos fuera del alcance de los niños, aplicaciones con la escuela cerrada dos o más días seguidos, y emergencias con aviso después' },
+  ],
   faqs: [
     {
       q: '¿Con cuánta anticipación tiene que avisar una escuela?',

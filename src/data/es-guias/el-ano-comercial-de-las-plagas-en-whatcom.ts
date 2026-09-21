@@ -69,6 +69,16 @@ export const elAnoComercialDeLasPlagasEnWhatcom: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Regla para plantas de alimentos', value: 'El 21 CFR 117.35 gira en torno a excluir las plagas de las áreas de una planta de alimentos, con pesticidas usados solo bajo restricciones' },
+    { label: 'Lo que revisa un auditor', value: 'Si la instalación tiene un sistema, si ese sistema produjo datos de tendencia, y si alguien actuó con esos datos' },
+    { label: 'Guardar registros', value: 'Guarde sus propias copias; doce meses es el mínimo práctico común en el servicio de comida' },
+    { label: 'Meses de la envolvente', value: 'Fines de julio y agosto, para sellos del andén, barredoras de puerta, malla metálica en ventilas, aberturas del techo y entradas de servicios' },
+    { label: 'Temporada más difícil', value: 'El otoño, cuando los roedores y los insectos que invernan empujan contra la envolvente en las mismas seis semanas' },
+    { label: 'Ruta sin temporada', value: 'Las plagas de despensa y las cucarachas llegan en el producto, el empaque, el cartón corrugado y las tarimas cualquier día de entrega' },
+    { label: 'Fallas de mantenimiento', value: 'Sellos del andén, barredoras, ubicación de la basura y entradas abiertas quedan por escrito en cada visita para que mantenimiento las arregle' },
+    { label: 'Contrato a plazo', value: 'No se exige a cuentas comerciales ni institucionales; alcance, horarios y registros se acuerdan desde el principio' },
+  ],
   faqs: [
     {
       q: '¿Qué registros de plagas va a pedir una auditoría de inocuidad?',

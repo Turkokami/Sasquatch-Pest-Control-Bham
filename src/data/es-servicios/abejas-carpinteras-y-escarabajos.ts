@@ -63,6 +63,14 @@ export const abejasCarpinterasYEscarabajos: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Abejas carpinteras en madera blanda expuesta, y escarabajos barrenadores en la estructura del espacio bajo el piso' },
+    { label: 'Incluye', value: 'Medir los agujeros, una prueba del aserrín para ver si hay actividad, lecturas de humedad, tratamiento de las galerías o con borato, y luego rellenar y sellar' },
+    { label: 'No incluye', value: 'Fumigación, tratar daño viejo sin actividad, planes recurrentes para escarabajos, y cambiar piezas podridas, que es carpintería' },
+    { label: 'Cuándo conviene', value: 'Los agujeros de abeja carpintera se tratan y se rellenan a finales del verano o en otoño, cuando la generación nueva ya salió' },
+    { label: 'Cuánto cuesta', value: 'Se cotiza con la visita; el trabajo de abejas suele ser acotado, y el de escarabajos depende de la humedad' },
+  ],
+
   faqs: [
     {
       q: 'Una abeja grande se me avienta en la terraza. ¿Va a picar?',

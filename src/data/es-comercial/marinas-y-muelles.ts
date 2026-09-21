@@ -90,6 +90,16 @@ export const marinasYMuelles: EsGiro = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Registros de visita', value: 'Con fecha cada visita: hallazgos, acciones, dónde están los dispositivos y recomendaciones para el operador y para los inquilinos' },
+    { label: 'Operador o inquilino', value: 'Cada hallazgo se marca por escrito como asunto del operador o del inquilino del amarre, en todas las visitas' },
+    { label: 'Alcance del operador', value: 'Edificios compartidos, estructuras de casilleros, el patio y sus orillas, el manejo de la basura y las reglas para inquilinos' },
+    { label: 'Alcance del dueño del barco', value: 'El interior de la embarcación, sus provisiones, su funda y su orden durante el invierno' },
+    { label: 'Material de exclusión', value: 'Malla de acero inoxidable, fijaciones del mismo metal, calibre más grueso y selladores para uso marino en lugar de galvanizado' },
+    { label: 'Mejor ventana de trabajo', value: 'Entre el varado y la puesta en servicio de primavera, cuando el patio está lleno, quieto y en calma' },
+    { label: 'Dispositivos', value: 'Fuera del alcance del público y de las mascotas, con un plano que puede seguir alguien nuevo en el sitio' },
+    { label: 'Aves', value: 'No las atendemos; el trabajo con gaviotas pasa a un especialista que le nombramos' },
+  ],
   faqs: [
     {
       q: 'Un roedor en un barco, ¿es problema nuestro o del dueño?',

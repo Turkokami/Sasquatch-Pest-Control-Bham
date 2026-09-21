@@ -63,6 +63,15 @@ export const avispasAmarillasEnElPasto: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'En un día caluroso, párese a unos veinte pies y busque la línea de vuelo que baja a un solo agujero en el suelo',
+    'Marque el lugar con una vara o una cubeta a varios pies de distancia, nunca en el agujero, y avísele a quien corte el pasto o trabaje el jardín',
+    'No eche gasolina ni agua hirviendo por la entrada, no la tape, y no se acerque de noche con una linterna',
+    'Si la podadora le pega a un nido, siga alejándose, meta a los niños y las mascotas a la casa, y deje la podadora ahí el resto del día',
+    'Muchos piquetes, dificultad para respirar, hinchazón lejos del piquete o ronchas por todo el cuerpo son primero una emergencia médica',
+    'Un nido de fin de temporada en una esquina lejana se muere con las heladas; llámenos cuando esté junto a donde se corta el pasto, un camino, un área de juegos o alguien alérgico a los piquetes',
+  ],
+
   faqs: [
     {
       q: '¿Puedo echar algo por el hoyo?',

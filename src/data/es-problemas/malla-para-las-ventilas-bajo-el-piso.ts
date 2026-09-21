@@ -53,6 +53,16 @@ export const mallaParaLasVentilasBajoElPiso: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Recorra todo el cimiento con una linterna y encuentre cada ventila, incluida la que está detrás de un arbusto, bajo una terraza o enterrada por una jardinera elevada',
+    'En cada ventila, empuje la malla con cuidado y revise la orilla de abajo: el metal corroído se rompe, el plástico viejo se quiebra y la malla de fibra de vidrio no detiene a ningún roedor',
+    'Busque alrededor de cada abertura manchas grasosas, excremento chico, un camino gastado u orillas mordidas, y fotografíe lo que le deje en duda',
+    'Alumbre el espacio bajo el piso antes de cerrar una sola ventila; excremento, caminos o material de nido ahí abajo significan que primero van las trampas',
+    'No tape las ventilas con tabla, espuma ni tapones, porque el espacio bajo el piso necesita ese aire para mantenerse seco',
+    'Ponga malla nueva de tela metálica galvanizada o inoxidable de un cuarto de pulgada, fijada cada tres o cuatro pulgadas por toda la orilla y no solo en las esquinas',
+    'Si prefiere dejárnoslo, nuestra visita gratis revisa cada ventila, la tapa de acceso y cada perforación antes de cotizar nada',
+  ],
+
   faqs: [
     {
       q: '¿Puedo nada más tapar la ventila con algo?',

@@ -149,6 +149,15 @@ export const exclusionYReparaciones: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Cerrar las rendijas por donde entran al edificio roedores, avispas, arañas e insectos que pasan el invierno' },
+    { label: 'Incluye', value: 'Un recorrido por fuera, por el espacio bajo el piso y por el ático, y luego tela metálica, lámina, mortero y tapas de ventila fijadas a una base firme' },
+    { label: 'No incluye', value: 'Techos, cambio de revestimiento, reparación de estructura, plomería y excavación de drenaje' },
+    { label: 'Orden del trabajo', value: 'Si hay animales adentro, primero van las trampas y el sellado sigue cuando todo está en silencio' },
+    { label: 'Cuándo conviene', value: 'Agosto y principios de septiembre, antes de que entren los roedores; la primavera es la segunda mejor ventana' },
+    { label: 'Cuánto cuesta', value: 'Se cotiza con el recorrido, sobre todo según el acceso; la cotización es gratis' },
+  ],
+
   faqs: [
     {
       q: '¿Qué tamaño de rendija importa de verdad?',

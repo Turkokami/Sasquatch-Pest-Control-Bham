@@ -79,6 +79,16 @@ export const bichosEnLaParedSurCadaOctubre: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Fotografíe un bicho de la pared sobre una superficie plana junto a algo que dé escala, para poder nombrar la especie',
+    'Aspire los que entren con una aspiradora aparte o con una media en la manguera, y vacíela afuera en una bolsa sellada',
+    'No aplaste las chinches apestosas, no rocíe adentro ni use bombas en los cuartos, porque nada de eso llega a los bichos dormidos en la pared',
+    'Cierre por dentro las rendijas por donde salen, como las orillas de los marcos de ventana, las luces empotradas, los contornos de ventiladores y la tapa del ático',
+    'Recorte las plantas que tocan la pared soleada, quite la hojarasca del cimiento y mantenga la hiedra fuera del revestimiento',
+    'Pida una visita gratis a las paredes sur y oeste: buscamos las aberturas en lo alto, revisamos el ático por bichos muertos y armamos un plan de sellado',
+    'Aparte el tratamiento exterior de esas paredes para finales de agosto o principios de septiembre, antes de que entren; aplicado a finales de octubre casi no los alcanza',
+  ],
+
   faqs: [
     {
       q: '¿Qué hacen en la pared?',

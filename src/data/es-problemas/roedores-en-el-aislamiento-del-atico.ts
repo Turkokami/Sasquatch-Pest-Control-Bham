@@ -54,6 +54,16 @@ export const roedoresEnElAislamientoDelAtico: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Anote cuándo se oye el ruido: arriba después de oscurecer apunta a roedores, mientras que de día sugiere ardilla, murciélago o pájaro, que no atendemos',
+    'Desde afuera, revise la línea del techo buscando huecos en sofito y fascia, puntas de viga abiertas, mallas de ventila de hastial dañadas y ramas que tocan el techo',
+    'Antes de subir, ventile el ático, moje el excremento y el nido con desinfectante, y use respirador ajustado y guantes',
+    'No sople aislamiento nuevo encima del viejo; tapar material contaminado conserva el olor y deja armado un segundo trabajo',
+    'Pida la evaluación gratis del ático, que cubre la línea del techo y los huecos conectados, incluido el espacio bajo el piso de abajo',
+    'Trabaje en orden: sacar a los animales con trampas, cerrar la línea del techo y recortar ramas, y luego decidir si el aislamiento se queda o se va',
+    'Una vez resuelto, pase lo que le importe de cajas de cartón a recipientes rígidos y sellados',
+  ],
+
   faqs: [
     {
       q: '¿Cómo llegan los roedores al ático?',

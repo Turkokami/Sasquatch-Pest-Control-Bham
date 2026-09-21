@@ -77,6 +77,16 @@ export const tiendasYSupermercados: EsGiro = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Registros de visita', value: 'Con fecha por visita: hallazgo y lugar, acción, recomendación y quién la recibió, y la condición de cada dispositivo de monitoreo' },
+    { label: 'Plano de dispositivos', value: 'Uno que puede seguir alguien que no conoce la tienda, numerado como los registros' },
+    { label: 'Papeles de seguridad', value: 'Etiquetas y hojas de seguridad de cualquier producto aplicado' },
+    { label: 'Hallazgos en el piso de venta', value: 'Se avisan ese mismo día a un contacto nombrado, anotados como piso de venta o bodega' },
+    { label: 'Foco del monitoreo', value: 'La trastienda, el andén y la bodega, no el perímetro del piso de venta' },
+    { label: 'Horario de visitas', value: 'Fuera del horario de venta; una visita de día empieza por la trastienda y deja el piso para el final' },
+    { label: 'Parte de la tienda', value: 'Un estándar de recibo con un punto de rechazo claro, el cartón empacado o retirado, y los empaques rotos retirados el mismo día' },
+    { label: 'Edificios compartidos', value: 'Donde el dueño cubre las áreas comunes, un hallazgo con fecha y lugar es lo que hace avanzar la petición' },
+  ],
   faqs: [
     {
       q: '¿Los clientes nos van a ver trabajando?',

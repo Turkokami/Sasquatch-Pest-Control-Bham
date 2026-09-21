@@ -82,6 +82,16 @@ export const tratamientoDeBajoImpacto: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Control de plagas ecológico', value: 'No tiene definición legal; ninguna agencia lo otorga, y NPIC dice que ningún regulador define el término «verde»' },
+    { label: 'Orgánico', value: 'Lo define el Programa Orgánico Nacional del USDA para la producción agrícola, no como calificación de seguridad en el hogar' },
+    { label: 'Natural', value: 'No dice nada del peligro; el riesgo depende de la toxicidad y la exposición, no del origen de un material' },
+    { label: 'Exención de riesgo mínimo', value: 'Exentos de registro federal bajo la sección 25(b) de FIFRA; la EPA no revisa si estos productos son seguros o funcionan' },
+    { label: 'Control de menor impacto', value: 'La exclusión, que no usa producto, luego cambiar las condiciones, cebos fuera de alcance, y grietas y huecos en vez de aplicación general' },
+    { label: 'Seguro para niños y mascotas', value: 'No es algo que nadie pueda afirmar; la EPA prohíbe en las etiquetas de productos registrados afirmaciones de seguridad como «no tóxico»' },
+    { label: 'Rocíos naturales mensuales', value: 'Doce aplicaciones al año pueden meter más material en un edificio que un solo cebo bien colocado' },
+    { label: 'Dónde se acaba el bajo impacto', value: 'Chinches de cama, cucaracha alemana en edificios compartidos, un edificio abierto en temporada de roedores, infestaciones estructurales activas' },
+  ],
   faqs: [
     {
       q: '¿Hay una definición legal de control de plagas ecológico?',

@@ -69,6 +69,15 @@ export const rasgunosEnLasParedesDeNoche: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Anote la hora en que empiezan y terminan los rasguños durante dos noches: si empiezan al anochecer y vuelven antes del amanecer, cuadra con ratas o ratones',
+    'Fíjese en la altura: bajo, cerca del piso, apunta al espacio bajo el piso; arriba, en la línea del techo, al ático; y un ruido que se desplaza indica una ruta',
+    'Espolvoree harina o talco durante la noche en la tapa de acceso, bajo el fregadero o a lo largo del zoclo del cuarto más ruidoso para ver huellas',
+    'No meta veneno en el hueco que oye, y no abra esa pared buscando al animal',
+    'Olvídese de los aparatos ultrasónicos, y no tome una semana tranquila como el final; muchas veces el roedor solo se cambió de lugar',
+    'Después llame: la visita gratis de roedores entra al espacio bajo el piso y sube hasta la tapa del ático, y el trabajo va en orden: encontrar la entrada, trampas, sellar',
+  ],
+
   faqs: [
     {
       q: '¿Se va a ir solo?',

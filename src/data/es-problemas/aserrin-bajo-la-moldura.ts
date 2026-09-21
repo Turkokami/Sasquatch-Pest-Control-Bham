@@ -56,6 +56,16 @@ export const aserrinBajoLaMoldura: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Ponga una cucharada del polvo en una bolsa sellada o un frasquito, y manténgalo seco en lugar de mojarlo',
+    'Extienda un poco sobre papel blanco: fibras gruesas con partes de insecto apuntan a hormiga carpintera, polvo como harina a escarabajos, y bolitas duras de seis lados a termitas',
+    'Barra el resto del montón, anote la fecha y fíjese si vuelve a crecer y qué tan rápido',
+    'Siga la línea hacia arriba desde el montón y fotografíe la ranura o el agujero de donde cae, con una moneda o la punta de un lápiz para dar escala',
+    'Anote cualquier gotera, problema de techo, tubo reventado o condensación cerca de esa moldura en los últimos años, porque la madera mojada es lo que atrae a estos insectos',
+    'No acepte una cotización de tratamiento por el polvo de la moldura hasta que alguien haya definido cuál de las cuatro causas es',
+    'Luego tráiganos la muestra para una revisión gratis del polvo y de la madera de arriba, antes de cotizar nada',
+  ],
+
   faqs: [
     {
       q: '¿Cómo distingo el aserrín de hormiga carpintera del polvo de escarabajo?',

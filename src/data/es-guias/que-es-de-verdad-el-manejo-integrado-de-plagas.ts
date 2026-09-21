@@ -90,6 +90,16 @@ export const queEsDeVerdadElManejoIntegradoDePlagas: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué es el manejo integrado', value: 'Un proceso de decisión: identificar la especie, monitorear, fijar un umbral, cambiar las condiciones y luego tratar de forma acotada' },
+    { label: 'Umbral de acción', value: 'El término de la EPA para el nivel de plaga en que su presencia se vuelve molestia, riesgo para la salud o amenaza económica' },
+    { label: 'Dónde cero es lo correcto', value: 'Chinches de cama en cualquier lugar, cucarachas en cocinas comerciales, roedores donde se maneja comida, plagas de despensa en instalaciones auditadas' },
+    { label: 'Orden de las herramientas', value: 'Primero sanidad y hábitat, luego exclusión, humedad, control mecánico, y los químicos al final' },
+    { label: 'Cuándo se usan químicos', value: 'Cebos antes que rocíos, grietas y huecos antes que aplicación general, y productos específicos para la plaga donde haya una opción eficaz' },
+    { label: 'Rociado trimestral del perímetro', value: 'No es manejo integrado por sí solo, porque va por calendario y no por un hallazgo' },
+    { label: 'Monitoreo en una casa', value: 'Los mismos puntos revisados en cada visita más lo que reporta el dueño; el conteo registrado de trampas es del trabajo comercial' },
+    { label: 'Registro de lo aplicado', value: 'La ley de Washington le da una copia al dueño de la tierra: producto, número de registro de la EPA, cantidad, concentración, fecha y horas' },
+  ],
   faqs: [
     {
       q: '¿Manejo integrado quiere decir que no se usan pesticidas?',

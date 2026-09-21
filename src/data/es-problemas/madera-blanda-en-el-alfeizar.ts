@@ -65,6 +65,16 @@ export const maderaBlandaEnElAlfeizar: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Empuje un desarmador romo o un punzón en el alféizar en varios puntos, incluidos los dos extremos, la parte de abajo y la moldura inferior, y marque dónde cede',
+    'Pruebe un punto que sepa que está sano, para sentir cómo debe estar la madera firme',
+    'Busque el agua: sellador agrietado, falta de tapajuntas arriba, un alféizar plano, sin gotero, o una canaleta, bajante o aspersor encima',
+    'Si lo blando está por dentro de una ventana de marco de aluminio, sospeche condensación y dígalo cuando llame',
+    'No rellene ni vuelva a pintar madera donde el punzón se hunde; encierra la humedad y esconde hasta dónde llega la pudrición',
+    'Pida una visita gratis para ver si hay hormiga carpintera, hormiga de humedad, termita de madera húmeda o escarabajos en el alféizar; tratarlos es lo que nos toca',
+    'Deje a un carpintero cortar y cambiar la madera podrida, con la entrada de agua arreglada al mismo tiempo',
+  ],
+
   faqs: [
     {
       q: '¿Siempre son insectos?',

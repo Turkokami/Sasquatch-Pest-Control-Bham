@@ -158,6 +158,15 @@ export const controlDeRoedores: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Rata noruega, rata de tejado, ratón casero y ratón ciervo en el espacio bajo el piso, el ático y las paredes' },
+    { label: 'Incluye', value: 'Encontrar y sellar las entradas, trampas en las rutas mapeadas, visitas de regreso hasta que todo quede en silencio, y limpieza' },
+    { label: 'No incluye', value: 'Fauna molesta más grande que una rata, que es trabajo que no aceptamos' },
+    { label: 'Cuánto tarda', value: 'La exclusión, de uno a dos días; las trampas corren de una a tres semanas con visitas de regreso' },
+    { label: 'Cuándo conviene', value: 'Agosto y principios de septiembre, antes de que la lluvia los meta' },
+    { label: 'Cuánto cuesta', value: 'Cotización gratis, según el acceso, la altura del espacio bajo el piso, cuánto hay que sellar y hasta dónde llegó la contaminación' },
+  ],
+
   faqs: [
     {
       q: '¿Van a volver?',

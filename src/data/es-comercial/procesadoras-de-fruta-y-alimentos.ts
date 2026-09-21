@@ -94,6 +94,16 @@ export const procesadorasDeFrutaYAlimentos: EsGiro = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Registros de visita', value: 'Cada visita anota lo encontrado, lo que se hizo, las recomendaciones y a quién se dieron, más el estado de cada dispositivo de monitoreo' },
+    { label: 'Plano de dispositivos', value: 'Hecho para que alguien nuevo en la planta lo pueda seguir, con la misma numeración del registro de visitas' },
+    { label: 'Documentos de respaldo', value: 'Las licencias y las categorías bajo las que se hizo el trabajo, con etiquetas y hojas de seguridad de lo que se usó' },
+    { label: 'Frecuencia de visitas', value: 'Por escrito en el programa del sitio, y mayor en la cosecha, con monitoreo extra en la recepción y en los desechos' },
+    { label: 'Hallazgos adentro', value: 'Pasan el mismo día al contacto que usted nombró, nunca guardados para un resumen mensual' },
+    { label: 'Áreas de producción', value: 'Se trabajan en ventanas de sanidad y paros; durante una corrida, solo trabajo de afuera, del andén y de monitoreo' },
+    { label: 'Quién arregla la estructura', value: 'La exclusión del andén se hace en la temporada baja, de fines del invierno a la primavera; la planta mantiene sellos y cierrapuertas' },
+    { label: 'Lado de sanidad', value: 'Coladeras en un programa de limpieza documentado, y la fruta de desecho retirada con un horario que aguante toda la cosecha' },
+  ],
   faqs: [
     {
       q: '¿Pueden trabajar dentro de la planta durante una corrida?',

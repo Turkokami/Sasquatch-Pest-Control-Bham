@@ -82,6 +82,24 @@ export const porQueLosEspaciosBajoElPisoSiguenMojados: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Área de ventilas en Washington', value: '1 pie cuadrado por cada 300 pies cuadrados de espacio bajo el piso según el WAC 51-51-0408, contra 1 en 150 en el código modelo' },
+    { label: 'Con retardador de vapor en el suelo', value: 'Baja a 1 en 1,500 donde un retardador Clase I aprobado cubre el suelo y las aberturas dan ventilación cruzada' },
+    { label: 'Ventila de radón', value: 'Obligatoria por debajo de 1 en 300 o donde se usan persianas operables, y empieza entre la cubierta del suelo y la tierra' },
+    { label: 'Cubierta del suelo', value: 'Polietileno negro de seis milésimas, o un equivalente aprobado, con traslapes de al menos seis pulgadas en las uniones y hasta el muro del cimiento' },
+    { label: 'Pudrición seria', value: 'Ocurre por encima del punto de saturación de la fibra, que en promedio ronda el 30 por ciento de contenido de humedad' },
+    { label: 'Humedad segura', value: 'La madera que se mantiene por debajo de cerca del 20 por ciento no corre riesgo; mantenerla ahí es lo que hace un espacio bajo el piso que funciona' },
+    { label: 'Temperaturas de pudrición', value: 'Óptima cerca de 77°F, más lenta por debajo de 50°F y prácticamente detenida cerca de 35°F, así que aquí un espacio bajo el piso se pudre casi todo el año' },
+    { label: 'Cerrar ventilas en invierno', value: 'Atrapa el vapor del suelo en un espacio ventilado; el calor que se ahorra es poco, y la humedad que se queda en la estructura no' },
+  ],
+  pasos: [
+    'Detenga el agua que llega: bajantes que descarguen lejos de la casa, terreno que baje hacia afuera y el agua de la superficie desviada.',
+    'Separe el suelo del espacio con una cubierta completa de seis milésimas, traslapada y llevada hasta el muro del cimiento.',
+    'Despeje o desentierre las ventilas enterradas, póngales malla metálica de un cuarto de pulgada y coloque una tapa de acceso que cierre.',
+    'Arregle las fallas de plomería, que se ven cuando el espacio bajo el piso ya secó lo suficiente para notarlas.',
+    'Que un constructor reemplace la solera, la viga de borde o el poste que perdió capacidad estructural.',
+    'Ponga el aislamiento nuevo al final, con el espacio ya seco, para que no absorba agua y se vuelva a caer.',
+  ],
   faqs: [
     {
       q: '¿Cuánta ventilación debe tener un espacio bajo el piso?',

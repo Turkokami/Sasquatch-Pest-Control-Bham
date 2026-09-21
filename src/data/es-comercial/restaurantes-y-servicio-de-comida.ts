@@ -82,6 +82,16 @@ export const restaurantesYServicioDeComida: EsGiro = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Registros de visita', value: 'Una entrada con fecha en cada visita: qué se encontró, qué se hizo y qué se le recomendó a quién' },
+    { label: 'Plano de dispositivos', value: 'Donde se usan dispositivos, un plano que alguien ajeno a la cocina podría seguir' },
+    { label: 'Papeles en archivo', value: 'Documentación de licencias y de producto de todo lo aplicado, lista cuando alguien pida ver el programa' },
+    { label: 'Lo que mira el inspector de salud', value: 'Excremento o actividad en el almacén y la preparación, huecos en la puerta de atrás, el área del contenedor y los registros del programa' },
+    { label: 'Horario de visitas', value: 'Antes de abrir o después de cerrar, sin vehículos al frente, técnicos con uniforme sencillo' },
+    { label: 'Eliminar cucarachas', value: 'Dos o tres visitas seguidas al principio, y luego prevención recurrente' },
+    { label: 'Hallazgos', value: 'Le llegan el mismo día' },
+    { label: 'Quién arregla la estructura', value: 'La exclusión se reparte en el programa entre lo que hacemos nosotros y lo que debe hacer el dueño del local o un contratista' },
+  ],
   faqs: [
     {
       q: '¿Alguien los va a ver trabajando?',

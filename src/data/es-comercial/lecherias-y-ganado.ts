@@ -79,6 +79,15 @@ export const lecheriasYGanado: EsGiro = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Registros de visita', value: 'Con fecha cada visita: qué se encontró, qué se hizo, dónde están los dispositivos y qué tienen, y consejos para la parte del rancho' },
+    { label: 'Plano de dispositivos', value: 'Se entrega donde haya dispositivos, y lo entiende alguien que nunca ha recorrido el rancho' },
+    { label: 'Horario de visitas', value: 'Acomodado a la ordeña, la entrega de alimento y el raspado; casi siempre una ventana fija, no un día fijo' },
+    { label: 'Frecuencia de visitas', value: 'La que el rancho de verdad necesita, acordada después del recorrido y puesta en el programa escrito' },
+    { label: 'Dispositivos', value: 'En huecos de la estructura y en estaciones con llave donde el ganado y el producto no llegan' },
+    { label: 'Cerrado o defendido', value: 'El cuarto de leche, el taller, las oficinas y los cuartos de control se cierran; las galeras de postes llevan un perímetro monitoreado' },
+    { label: 'Parte del rancho', value: 'Alimento derramado limpiado con un horario que alguien tiene a cargo, costales fuera del piso, y una persona nombrada que reciba el reporte' },
+  ],
   faqs: [
     {
       q: '¿De verdad se puede cerrar una galera de postes contra roedores?',

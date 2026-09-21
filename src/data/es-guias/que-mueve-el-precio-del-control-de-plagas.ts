@@ -83,6 +83,16 @@ export const queMueveElPrecioDelControlDePlagas: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'La plaga', value: 'Decide si el trabajo es una visita o un ciclo al ritmo del desarrollo del insecto, como con pulgas y chinches de cama' },
+    { label: 'Forma del edificio', value: 'El perímetro, la altura y el número de uniones mueven una cotización más que los pies cuadrados' },
+    { label: 'Acceso bajo el piso', value: 'La variación más grande en este condado: altura libre, agua estancada, cajas guardadas y distancia desde la tapa' },
+    { label: 'Cuánto tiempo lleva', value: 'Vuelve un trabajo de plagas un trabajo de materiales, como cambiar aislamiento y barrera de vapor sucios' },
+    { label: 'Tratamiento o exclusión', value: 'Un tratamiento se cobra como visita; el sellado y el trabajo bajo el piso se cobran como pequeñas obras' },
+    { label: 'Planes recurrentes', value: 'Valen la pena donde la presión es continua; un problema con forma definida, como un nido de avispas, es de una sola vez' },
+    { label: 'Estimados por teléfono', value: 'Solo son honestos como un rango con los supuestos dichos; una cifra firme necesita que alguien vea el edificio' },
+    { label: 'Precio de chinches de cama', value: 'El único servicio con cifras publicadas, porque su alcance se cuenta en cuartos' },
+  ],
   faqs: [
     {
       q: '¿Por qué nadie publica un precio?',

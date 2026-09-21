@@ -54,6 +54,15 @@ export const aranasCadaOtono: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Espere la ola de finales de agosto a octubre; son machos caminando en busca de hembras, y baja para noviembre',
+    'Cambie primero los barredores de puerta gastados, sobre todo en la puerta lateral de la cochera y en puertas de sótano con luz por debajo',
+    'Cambie las luces blancas brillantes junto a las puertas por focos más cálidos o sensores de movimiento, para que menos insectos atraigan arañas',
+    'En septiembre, cuelgue una toalla sobre la orilla de la tina para que las que caen puedan salir trepando',
+    'Olvídese del aceite de menta, las castañas y los aparatos ultrasónicos, y ponga ese dinero en un barredor de puerta',
+    'Aparte el sellado y cualquier tratamiento exterior para la segunda quincena de agosto, antes de que empiece la caminata; revisar las aberturas no le cuesta',
+  ],
+
   faqs: [
     {
       q: '¿Se meten para calentarse?',

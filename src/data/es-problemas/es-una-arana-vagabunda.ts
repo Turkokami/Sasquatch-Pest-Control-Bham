@@ -61,6 +61,15 @@ export const esUnaAranaVagabunda: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Mire las patas a un pie de distancia: bandas oscuras visibles descartan a la araña vagabunda, pero patas lisas no prueban nada',
+    'Atrápela con un vaso y una tarjeta firme; un frasquito con alcohol la mantiene identificable, mientras que una araña aplastada casi nunca lo es',
+    'Si le toma foto, hágalo desde arriba, de lado y por debajo a través de un recipiente transparente, con algo en el cuadro para dar escala',
+    'Si una herida le preocupa, vea a un médico en vez de intentar nombrar a la araña',
+    'Baje los números adentro cambiando las luces blancas brillantes junto a las puertas, poniendo barredores de puerta y tumbando las telarañas cada semana durante un mes',
+    'Mándenos la foto o traiga el ejemplar para una opinión gratis, y llame para una visita si aparece una viuda negra en la leña, un cobertizo o el espacio bajo el piso',
+  ],
+
   faqs: [
     {
       q: '¿La mordida de la araña vagabunda es peligrosa de verdad?',

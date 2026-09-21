@@ -85,6 +85,15 @@ export const tratamientoParaVentaDeCasa: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Tratar las termitas, hormigas carpinteras, escarabajos barrenadores, hormigas de humedad y hongos de pudrición que documentó un inspector independiente' },
+    { label: 'Incluye', value: 'Una visita gratis para ver los puntos de la lista, una cotización por escrito que separa tratamiento de reparación, tratamiento dirigido y un registro del tratamiento' },
+    { label: 'No incluye', value: 'Emitir el documento de hallazgos, que requiere una credencial que no tenemos, y reparación estructural o carpintería' },
+    { label: 'Lo que no hacemos', value: 'Tratar una infestación inactiva, vender una barrera de suelo para termita de madera húmeda, o recomendar la carpa' },
+    { label: 'Cuánto tarda', value: 'La misma semana para la mayoría de los hallazgos; más cuando primero hay que secar o reparar' },
+    { label: 'Cuánto cuesta', value: 'No hay cifra fija. Se cotiza después de la visita gratis según los puntos de la lista, el acceso y el orden del trabajo, y una fecha de cierre nunca sube el precio' },
+  ],
+
   faqs: [
     {
       q: '¿Qué hacen exactamente en una compraventa?',

@@ -114,6 +114,14 @@ export const controlDeTermitas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Termita de madera húmeda del Pacífico y escarabajos barrenadores, más la fuente de humedad que los dejó entrar' },
+    { label: 'Incluye', value: 'Identificar el insecto, rastrear la humedad, mapear el daño, tratamiento dirigido y el hallazgo de humedad por escrito' },
+    { label: 'No incluye', value: 'Barreras en el suelo para termita de madera húmeda, carpa o fumigación, y carpintería cuando hay que cambiar madera' },
+    { label: 'Venta de casa', value: 'Tratamos lo que encontró un inspector independiente; no somos inspectores estructurales de plagas con licencia y no emitimos ese documento' },
+    { label: 'Cuánto cuesta', value: 'Se cotiza con una visita al sitio, con la cifra por escrito antes de empezar; la cotización es gratis' },
+  ],
+
   faqs: [
     {
       q: '¿De verdad hay termitas en el condado de Whatcom?',

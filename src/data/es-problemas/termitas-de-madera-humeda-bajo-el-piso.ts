@@ -62,6 +62,16 @@ export const termitasDeMaderaHumedaBajoElPiso: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Guarde una docena de enjambradores o alas sueltas en una bolsa sellada; eso decide entre termita y hormiga carpintera sin adivinar',
+    'No se moleste en matar a los enjambradores del alféizar, porque mueren en horas y la colonia que los mandó sigue intacta',
+    'Anote dónde salieron: dentro de un cuarto o en un alféizar interior apunta a la estructura, mientras que una luz de afuera puede indicar solo un tocón cercano',
+    'Busque el agua en el cimiento: bajantes que descargan ahí, terreno que baja hacia la casa, una llave de manguera que gotea, una fuga lenta bajo un baño',
+    'No lo deje otra temporada si el piso de arriba se hunde o se siente esponjoso, o si hay agua estancada en el espacio bajo el piso',
+    'Pida la visita gratis: revisamos todo el espacio bajo el piso con linterna, probamos la madera estructural y rastreamos el agua antes de cotizar',
+    'Arregle el agua antes o junto con nuestro tratamiento de borato en la madera, y deje una solera o un poste fallados a un constructor; el tratamiento de suelo no sirve para la termita de madera húmeda',
+  ],
+
   faqs: [
     {
       q: '¿Son tan serias como otras termitas?',

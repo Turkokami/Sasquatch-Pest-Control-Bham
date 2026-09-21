@@ -77,6 +77,15 @@ export const controlDePolillas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Polilla de la ropa en lana, seda y piel, y polilla de la despensa que se cría en comida guardada' },
+    { label: 'Incluye', value: 'Encontrar el origen, limpieza y aspirado, tratamiento de escondites, monitores de feromona y un seguimiento' },
+    { label: 'No incluye', value: 'Rociar ropa o ropa de cama, poner una bomba en la despensa, o tratar directamente una tela valiosa' },
+    { label: 'Cuántas visitas', value: 'Más de una; las dos polillas tienen etapas escondidas, así que el plan incluye un seguimiento' },
+    { label: 'Antes de que lleguemos', value: 'Deje el clóset o la despensa como está y revise si hay telilla' },
+    { label: 'Cuánto cuesta', value: 'Por lo general moderado, según el área y las telas involucradas; cotización gratis' },
+  ],
+
   faqs: [
     {
       q: 'Salió una polilla de mi clóset. ¿Está en riesgo mi ropa?',

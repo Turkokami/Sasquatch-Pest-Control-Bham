@@ -57,6 +57,15 @@ export const avispasDentroDeUnaPared: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Una tarde calurosa, observe el agujero desde una distancia segura para confirmar un flujo constante de ida y vuelta hacia el revestimiento o el sofito',
+    'No ponga espuma, sellador, cinta ni tabla sobre la entrada mientras las avispas la usan, o pueden abrirse paso hacia adentro por la tablaroca',
+    'Fotografíe los insectos desde lejos, porque las abejas de miel en una pared necesitan un apicultor y no tratamiento',
+    'Mantenga a la gente fuera de la línea de vuelo, cierre las ventanas de ese lado y no taladre, pinte ni lave a presión esa pared',
+    'Si aparecen avispas adentro, mantenga cerrada la puerta de ese cuarto y aun así deje abierto el agujero de afuera',
+    'Pida el tratamiento por el mismo agujero desde afuera, al anochecer o temprano en la mañana, con el sellado en otra visita cuando ya no haya tráfico',
+  ],
+
   faqs: [
     {
       q: '¿Cómo sé que el nido está en la pared y no afuera?',

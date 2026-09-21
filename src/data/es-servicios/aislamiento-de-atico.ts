@@ -91,6 +91,15 @@ export const aislamientoDeAtico: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Aislamiento del ático ensuciado por roedores, retirado y reemplazado una vez confirmado que los animales ya no están' },
+    { label: 'Quién hace qué', value: 'Nosotros hacemos las trampas, la exclusión y el aislamiento del espacio bajo el piso; una cuadrilla local de aislamiento con la que trabajamos retira y reemplaza el del ático' },
+    { label: 'Incluye', value: 'Retiro con aspiradora a bolsas selladas, retiro de escombro, desinfección donde estaba peor, revisión de la ventilación y aislamiento nuevo con la profundidad marcada' },
+    { label: 'No incluye', value: 'Sellado de aire, techos, trabajo eléctrico en cableado de perilla y tubo, y carpintería en estructura podrida' },
+    { label: 'Cuánto tarda', value: 'De uno a dos días para la cuadrilla de aislamiento en la mayoría de los áticos, después de terminar nuestra exclusión y nuestras trampas' },
+    { label: 'Cuánto cuesta', value: 'Precio según los pies cuadrados, el aislamiento que ya hay, la contaminación y el acceso; cotización gratis, por escrito antes de empezar nada' },
+  ],
+
   faqs: [
     {
       q: '¿El trabajo del ático lo hacen ustedes?',

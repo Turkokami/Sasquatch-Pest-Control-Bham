@@ -69,6 +69,14 @@ export const controlDeTijerillas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Tijerillas y cochinillas, las planas y las que se hacen bolita, que viven en la franja húmeda alrededor del cimiento' },
+    { label: 'Incluye', value: 'Tratamiento del perímetro y de escondites, cerrar las rutas de entrada, y consejos para retirar el mantillo del revestimiento' },
+    { label: 'No incluye', value: 'Tratar el interior de la casa, un plan anual para cochinillas, o rociar un jardín entero' },
+    { label: 'Cuándo conviene', value: 'Quitar el hábitat a principios de la primavera, antes de que los números suban hacia el pico de mediados del verano' },
+    { label: 'Cuánto cuesta', value: 'Por lo general moderado, según el largo del perímetro, los escondites y cualquier trabajo de exclusión; cotización gratis' },
+  ],
+
   faqs: [
     {
       q: '¿De verdad las tijerillas se meten en los oídos?',

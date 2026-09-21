@@ -142,6 +142,15 @@ export const controlDeMoscas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Moscas de racimo, de la fruta, de drenaje, fóridas y moscardones, y mosquitos de hongo, rastreados hasta donde se crían' },
+    { label: 'Incluye', value: 'Identificar la especie, encontrar y corregir el sitio de cría, tratamiento dirigido donde ayuda, y sellar rendijas' },
+    { label: 'No incluye', value: 'Reparar una línea de drenaje rota bajo una losa, que le toca al plomero' },
+    { label: 'Moscas de racimo', value: 'Sellar antes de octubre, con la cita hecha a finales del verano; rociar dentro de los huecos de pared no es la solución' },
+    { label: 'Cuánto tarda', value: 'Días, una vez que se atiende el origen' },
+    { label: 'Cuánto cuesta', value: 'Cotización gratis; un solo drenaje es trabajo chico, y las moscas de racimo se cotizan según el sellado necesario' },
+  ],
+
   faqs: [
     {
       q: 'Mato las que veo y vuelven al día siguiente. ¿Por qué?',

@@ -91,6 +91,24 @@ export const comoEscogerUnaEmpresaDeControlDePlagas: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Revisar la licencia', value: 'Gratis y público en la búsqueda del Departamento de Agricultura del Estado de Washington; pida el número y búsquelo usted' },
+    { label: 'Aplicador u operador', value: 'La licencia de aplicador cubre el negocio de aplicar pesticidas; la de operador cubre al empleado que hace el trabajo' },
+    { label: 'Categoría para plagas de la madera', value: 'PCO Structural, para plagas que atacan el material del edificio, como termitas, hormigas carpinteras y escarabajos que perforan la madera' },
+    { label: 'Papeles para una venta', value: 'Requieren un inspector estructural de plagas con licencia que trabaje para una empresa con licencia; no tenemos ninguna de las dos credenciales' },
+    { label: 'Precio antes de una visita', value: 'Un punto de partida, no un precio, porque el estado del espacio bajo el piso y qué tan abierto está el edificio no se juzgan por teléfono' },
+    { label: 'Registros de aplicación', value: 'El aplicador los guarda al menos siete años y le debe una copia al dueño de la tierra tratada' },
+    { label: 'Contratos', value: 'Importa más la salida que el plazo: aviso de cancelación, cargos por terminar antes, descuentos de primera visita que hay que devolver' },
+    { label: 'Quejas', value: 'Van al mismo departamento estatal de agricultura que da las licencias; guarde sus registros y fotos con fecha' },
+  ],
+  pasos: [
+    'Busque usted mismo la licencia de la empresa en el sitio del estado y anote qué categorías tiene.',
+    'Si una venta depende de ello, pregunte si tienen la credencial de inspector estructural de plagas y la licencia de empresa que le corresponde.',
+    'Exija una visita antes de cualquier cifra, y pida el nombre de la especie y no solo del grupo.',
+    'Pregunte qué está causando el problema, y dónde están por escrito las condiciones de una visita de regreso.',
+    'Antes de firmar, pregunte cómo se cancela y cuánto le costaría salirse antes de tiempo.',
+    'Cuando se termine el trabajo, pida el registro de aplicación y guárdelo en un lugar seguro.',
+  ],
   faqs: [
     {
       q: '¿Cómo reviso una licencia de control de plagas en Washington?',

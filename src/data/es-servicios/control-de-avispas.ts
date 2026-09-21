@@ -146,6 +146,15 @@ export const controlDeAvispas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Nidos de avispa amarilla, avispón de cara blanca y avispa papelera en el suelo, al aire libre y dentro de paredes' },
+    { label: 'Incluye', value: 'Encontrar el nido, tratarlo temprano o al anochecer, bajar los nidos alcanzables, y sellar la entrada cuando la colonia ya está muerta' },
+    { label: 'No incluye', value: 'Matar abejas de miel; un enjambre va con un apicultor, y una colonia en la pared es un trabajo de retiro y reparación' },
+    { label: 'Prioridad', value: 'Los nidos junto a una puerta, un pasillo o un área de juegos pasan al frente de la agenda' },
+    { label: 'Visita de regreso', value: 'Una colonia dentro de una pared que sigue activa recibe una segunda visita bajo nuestra Garantía de Servicio 100 %' },
+    { label: 'Cuánto cuesta', value: 'Cotización gratis antes de empezar; la altura, el acceso y los huecos de pared suben el precio' },
+  ],
+
   faqs: [
     {
       q: '¿Puedo esperar a que se muera en invierno?',

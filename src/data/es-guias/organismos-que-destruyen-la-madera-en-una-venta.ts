@@ -91,6 +91,21 @@ export const organismosQueDestruyenLaMaderaEnUnaVenta: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Quién escribe el informe', value: 'Un inspector estructural de plagas con licencia aparte, bajo una licencia de empresa con número de control de inspección del WSDA' },
+    { label: 'Qué informe pide una venta', value: 'El completo, según el WAC 16-228-2045. El específico es para propuestas y presupuestos y no se puede usar en una compraventa' },
+    { label: 'Organismos de la lista', value: 'Hongos, termitas, hormigas carpinteras y escarabajos que perforan la madera; el hongo de pudrición cuenta, y la hormiga carpintera pesa igual que la termita' },
+    { label: 'Dónde entra Sasquatch', value: 'Tratamos los organismos que identificó el informe de otro. No somos inspectores estructurales de plagas y no emitimos ese informe' },
+    { label: 'El agua y la madera', value: 'Las fuentes de humedad van a un contratista de drenaje, un plomero o un techador; la madera que perdió capacidad estructural va a un constructor' },
+    { label: 'Cuándo cotizar el tratamiento', value: 'Gratis, casi siempre en un par de días, y sin depender de cuándo termine su informe el inspector con licencia' },
+    { label: 'Áreas excluidas en un informe', value: 'Un elemento obligatorio que enumera lo que no se pudo ver; un área sin acceso deja un hueco en el cuadro, no un resultado limpio' },
+  ],
+  pasos: [
+    'Pida la cotización del tratamiento mientras el inspector con licencia todavía escribe el informe, en lugar de esperar a que esté final.',
+    'Haga corregir la fuente de agua primero, o al mismo tiempo, para que el constructor que cambie una solera sepa que el drenaje está resuelto antes de cerrar la pared.',
+    'Que el constructor reemplace la solera o la viga de borde que falló antes del tratamiento final, y que la madera nueva se trate con borato antes de taparla.',
+    'Deje el tratamiento de los demás organismos que destruyen la madera para cuando termine el trabajo estructural. En ese punto el trabajo es nuestro.',
+  ],
   faqs: [
     {
       q: '¿Qué es exactamente un organismo que destruye la madera?',

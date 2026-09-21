@@ -77,6 +77,25 @@ export const elAnoDeLasPlagasEnWhatcom: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'El mes que decide el año', value: 'La segunda mitad de agosto, antes del empuje de los roedores, la caminata de las arañas y los insectos que invernan' },
+    { label: 'Ventana del espacio bajo el piso', value: 'Mayo o junio, con la tierra seca: cubierta del suelo, drenaje, bajantes, nivel del terreno y ventilas enterradas' },
+    { label: 'Nidos de avispa', value: 'Más baratos en abril, cuando una reina fundadora sola construye algo del tamaño de una pelota de golf' },
+    { label: 'Ola de arañas', value: 'Desde septiembre los machos maduros entran caminando a buscar pareja, durante tres a seis semanas' },
+    { label: 'Roedores', value: 'Suben desde fines de septiembre, llegan al máximo en octubre y noviembre, y no disminuyen una vez adentro' },
+    { label: 'De enero a marzo', value: 'Tranquilo en llegadas nuevas, ocupado en encontrar lo que entró el otoño pasado y sellarlo' },
+    { label: 'Chinches de cama', value: 'Sin temporada de clima; un pico en septiembre en Bellingham por la llegada de estudiantes, con un eco en junio' },
+    { label: 'Hongos de pudrición', value: 'Activos siempre que la madera esté mojada y a más de unos 50°F, lo que aquí cubre casi todo el año' },
+  ],
+  pasos: [
+    'Aparte una hora a fines de julio o principios de agosto para darle una vuelta lenta a la casa.',
+    'Rodee el cimiento: ventilas libres de tierra y con malla metálica entera, la tapa del espacio bajo el piso con su cierre, y las entradas de tubos y cables cerradas.',
+    'Revise que el terreno baje alejándose de la casa, que la tierra no toque el revestimiento y que cada bajante descargue bien lejos.',
+    'Busque luz bajo cada puerta de afuera, primero la del lado del garaje y las del sótano, y luego revise la línea del techo con binoculares.',
+    'Anote las plantas que tocan paredes o techo, y recorra la franja olvidada junto a la cerca o los árboles buscando nidos en el suelo.',
+    'Si se anima, métase bajo la casa: cubierta del suelo traslapada, sin agua estancada, y la solera firme al picarla con una punta.',
+    'Anote lo que encontró y resuelva la lista en las dos últimas semanas de agosto.',
+  ],
   faqs: [
     {
       q: '¿Cuál es el mejor momento para prevenir plagas aquí?',

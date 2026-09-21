@@ -59,6 +59,16 @@ export const excrementoEnLaCocina: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Si puede, deje sin tocar una parte representativa del excremento, y anote su tamaño, qué tan fresco se ve y en qué parte de la cocina está',
+    'No barra ni aspire el excremento seco: ventile el cuarto, rocíelo con desinfectante, déjelo remojar y luego levántelo con toallas desechables',
+    'Tire la comida en cartón, papel o plástico delgado del gabinete afectado y todo lo mordido; lave por fuera los envases de vidrio, metal y plástico rígido',
+    'Pase la comida seca a recipientes rígidos con buena tapa, para que la cocina deje de alimentar a nadie',
+    'Saque un cajón de abajo y alumbre el fondo del gabinete en busca de huecos alrededor de los tubos y las líneas',
+    'Si pone trampas usted mismo, coloque varias trampas de golpe pegadas a la pared en las rutas que marca el excremento; no use trampas de pegamento ni estaciones de cebo en una cocina',
+    'Después haga revisar el edificio y no solo el cuarto: nuestra visita gratis de roedores cubre los huecos conectados, el espacio bajo el piso y el exterior',
+  ],
+
   faqs: [
     {
       q: '¿Cómo distingo un ratón de una rata por el excremento?',

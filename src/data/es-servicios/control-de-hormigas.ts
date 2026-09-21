@@ -135,6 +135,15 @@ export const controlDeHormigas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Hormiga olorosa de casa, hormiga carpintera y hormiga de humedad, identificadas por especie antes de tratar nada' },
+    { label: 'Incluye', value: 'Encontrar el nido, productos no repelentes y cebos, corregir condiciones, sellar las rutas de entrada y revisiones de seguimiento' },
+    { label: 'No incluye', value: 'Arreglar la canaleta fallada o la línea de agua que gotea detrás de las hormigas de humedad, que es trabajo de otro oficio' },
+    { label: 'Cuánto tarda', value: 'Semanas y no días para la hormiga carpintera; de dos a tres semanas para la hormiga olorosa de casa' },
+    { label: 'Antes de que lleguemos', value: 'No toque el camino de hormigas ni lo rocíe; lo seguimos hasta el nido' },
+    { label: 'Cuánto cuesta', value: 'Cotización gratis, con la cifra por escrito antes de empezar el trabajo' },
+  ],
+
   faqs: [
     {
       q: '¿Cómo sé si son carpinteras?',

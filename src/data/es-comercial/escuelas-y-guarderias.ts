@@ -91,6 +91,15 @@ export const escuelasYGuarderias: EsGiro = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Registros por sitio', value: 'Con fecha por sitio: hallazgo, lugar, acción, recomendación y el estado de cada dispositivo de monitoreo' },
+    { label: 'Aplicaciones con aviso', value: 'El registro muestra qué se aplicó, dónde y cuándo, y que se dio el aviso' },
+    { label: 'Trabajo que no pide aviso', value: 'La exclusión, y los cebos para insectos y roedores a los que los niños no tienen acceso' },
+    { label: 'Reporte del distrito', value: 'Un resumen que muestra qué edificios generan hallazgos y cuáles están tranquilos' },
+    { label: 'Trabajo durante clases', value: 'Monitoreo, servicio de cebos contenidos, trabajo de afuera y respuesta a reportes' },
+    { label: 'Trabajo en vacaciones', value: 'Todo lo que requiere aviso, más el trabajo de estructura ruidoso o que estorba' },
+    { label: 'Contactos', value: 'Un contacto nombrado en cada sitio, y otro a nivel de distrito que ve el resumen' },
+  ],
   faqs: [
     {
       q: '¿Cada tratamiento obliga a avisar a los padres?',

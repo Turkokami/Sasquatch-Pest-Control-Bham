@@ -69,6 +69,16 @@ export const chinchesEnUnaRentaDeEstudiantes: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Siga durmiendo en su propia cama, porque pasarse a un sillón o al cuarto de otro compañero lleva las chinches a cuartos nuevos',
+    'Confírmelo antes de que alguien discuta de dinero: fotografíe lo que encuentre y guarde un ejemplar en una bolsa sellada o en cinta transparente',
+    'Ponga fecha a cada hallazgo y lleve notas por escrito de cuándo se le avisó al casero y qué se dijo',
+    'Acuerden en la casa que nadie rocía ni usa bombas en su propio cuarto, porque una lata de la ferretería echa abajo el tratamiento de todos',
+    'Ponga fundas al colchón y al box spring, interceptores bajo las patas de la cama, y pase la ropa de cama por la secadora caliente',
+    'Pida una búsqueda de verificación de toda la casa; dejamos por escrito el hallazgo y un alcance que sigue al edificio, para que inquilinos y casero lo compartan',
+    'Prepárense como una sola casa y estén presentes en cada visita de seguimiento, que va al ritmo de la eclosión de los huevos y falla si falta un compañero',
+  ],
+
   faqs: [
     {
       q: '¿Quién tiene que pagar el tratamiento?',

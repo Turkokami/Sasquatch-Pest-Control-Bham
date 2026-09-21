@@ -137,6 +137,15 @@ export const controlDeAranas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Arañas y telarañas en aleros, entradas, porches, cocheras, espacios bajo el piso y construcciones anexas' },
+    { label: 'Incluye', value: 'Identificación, retiro de telarañas y sacos de huevos, consejos sobre las presas y la luz, y tratamiento exterior dirigido' },
+    { label: 'No incluye', value: 'Rociar todo el interior, o un tratamiento en septiembre para los machos que andan sueltos en la temporada de apareamiento' },
+    { label: 'Cuándo conviene', value: 'Primavera y principios del verano, cuando quitar telarañas y tratar rinde más' },
+    { label: 'Garantía', value: 'Respaldado por nuestra Garantía de Servicio 100 %' },
+    { label: 'Cuánto cuesta', value: 'Cotización gratis, según el trabajo físico: altura, aleros, construcciones anexas y espacios descuidados' },
+  ],
+
   faqs: [
     {
       q: '¿Hay arañas peligrosas aquí?',

@@ -81,6 +81,16 @@ export const gobiernoYEdificiosPublicos: EsGiro = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Registros', value: 'Con fecha por edificio: hallazgos, acciones, recomendaciones y a quién se dieron, más un resumen de todo el conjunto' },
+    { label: 'Plano de dispositivos', value: 'Ubicación y numeración del monitoreo que puede seguir alguien que no conoce el edificio' },
+    { label: 'Licencias', value: 'Números y categorías de licencia del WSDA y certificados de seguro, anexados a la propuesta y no solo mencionados' },
+    { label: 'Frecuencia de visitas', value: 'Indicada por separado para cada edificio en el programa base, no sumada en una sola cifra del conjunto' },
+    { label: 'Trabajo fuera del alcance', value: 'Con precio de una tabla de tarifas: exclusión, llamadas por insectos que pican, respuesta a chinches de cama, tratamientos únicos' },
+    { label: 'Horario de visitas', value: 'Alrededor del horario al público y las reservaciones; el trabajo que estorba va en un periodo cerrado acordado antes' },
+    { label: 'Quién arregla la estructura', value: 'La exclusión va en el programa; drenaje, techo y canaletas pasan a la lista de capital como recomendaciones escritas con fecha' },
+    { label: 'Contactos', value: 'Un contacto nombrado con una ruta para escalar, más una persona nombrada para cada edificio grande' },
+  ],
   faqs: [
     {
       q: '¿Participan en licitaciones públicas?',

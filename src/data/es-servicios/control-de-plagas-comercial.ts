@@ -73,6 +73,15 @@ export const controlDePlagasComercial: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Programas recurrentes de control de plagas para negocios, con dispositivos en un mapa y un registro por escrito de cada visita' },
+    { label: 'Incluye', value: 'Informes de cada servicio, mapa de dispositivos, datos de tendencia, registro de acciones correctivas y capacitación del personal, todo integrado' },
+    { label: 'No incluye', value: 'Las correcciones que le tocan a usted, como sellos de puertas, mantenimiento de drenajes y manejo de basura' },
+    { label: 'Horario', value: 'Antes de abrir o después de cerrar cuando la operación lo pide, fijado desde el principio' },
+    { label: 'Contrato', value: 'Sin contrato a largo plazo; el acuerdo indica el calendario, el alcance y un plazo corto de aviso' },
+    { label: 'Cuánto cuesta', value: 'Según el sitio; la evaluación del sitio y el programa por escrito son gratis' },
+  ],
+
   faqs: [
     {
       q: '¿Sus registros aguantan una inspección de salud o una auditoría?',

@@ -70,6 +70,15 @@ export const controlDePulgas: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Pulgas en la casa, incluso cuando el origen es un animal debajo o dentro de la estructura' },
+    { label: 'Incluye', value: 'Encontrar el origen, adulticida y regulador de crecimiento en las zonas clave, un calendario de aspirado y una visita de seguimiento' },
+    { label: 'No incluye', value: 'Tratar a su mascota, que lo decide su veterinario, o sacar fauna silvestre, que es trabajo de especialista' },
+    { label: 'Cuántas visitas', value: 'Dos para un problema contenido; el seguimiento se programa para cuando salen las pupas y va incluido en el precio' },
+    { label: 'Antes de que lleguemos', value: 'Aspire, lave en caliente la cama de la mascota, despeje los pisos y levante los platos de la mascota' },
+    { label: 'Cuánto cuesta', value: 'Cotización gratis, según los pies cuadrados, la alfombra y la tapicería, y si primero hay que atender a un animal como origen' },
+  ],
+
   faqs: [
     {
       q: 'Tratamos y a las dos semanas había por todos lados. ¿Por qué?',

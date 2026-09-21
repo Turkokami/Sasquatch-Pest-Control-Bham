@@ -61,6 +61,16 @@ export const hormigasDeHumedadYAgua: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Si hormigas chicas con alas salen en enjambre adentro, aspírelas; no pican y no van a empezar un nido dentro de la casa',
+    'Antes de quitarlas todas, guarde una docena en una bolsa sellada o un frasco para que la identificación no sea adivinanza',
+    'Anote la rendija exacta del zoclo, el retorno de la ventana, la lámpara o el ventilador de donde salió el enjambre, y no la selle todavía, porque lleva a la madera mojada',
+    'Busque el agua: terreno que baja hacia la casa, bajantes cortas, una llave de manguera, una fuga lenta bajo una regadera o un inodoro, un extractor que descarga en el ático',
+    'No haga rociar las hormigas mientras la madera siga mojada; el sitio se vuelve a poblar en una o dos temporadas y la pudrición sigue sin verse',
+    'Pida la visita gratis, donde buscamos el agua antes que las hormigas, desde la solera del espacio bajo el piso hasta las perforaciones del techo y el terreno de afuera',
+    'Arregle el agua y cambie la madera podrida primero; nuestro tratamiento viene después, y solo si queda algo',
+  ],
+
   faqs: [
     {
       q: '¿Están dañando mi casa?',

@@ -79,6 +79,16 @@ export const ratasBajoElPiso: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Escuche ruidos bajo el piso al anochecer y hacia la madrugada, y anote cualquier olor a humedad y amoníaco o excremento en la cochera o en gabinetes bajos',
+    'Si baja usted mismo, ventile primero, moje el material con desinfectante, use un respirador ajustado y nunca barra excremento seco',
+    'No ponga cebo bajo la casa; una rata que muere dentro de la estructura del piso hay que atenderla dos veces',
+    'Quite lo que las alimenta: semilla de pájaro tirada, comida de mascota y de gallinas en bolsas, composta abierta, fruta caída, botes sin tapa',
+    'Pida la visita gratis, que recorre todo el largo del espacio bajo el piso y el exterior en lugar de asomarse desde la tapa',
+    'Espere de dos a cuatro semanas de trampas, con las ventilas, la tapa y las perforaciones del cimiento selladas a la par conforme baja la actividad',
+    'Deje el cambio de aislamiento para el final, y solo si la contaminación es extensa y no unos cuantos excrementos sobre mantas sanas',
+  ],
+
   faqs: [
     {
       q: '¿Tengo que cambiar el aislamiento?',

@@ -53,6 +53,16 @@ export const hormigasEnLaCocina: EsProblema = {
       ],
     },
   ],
+  pasos: [
+    'Antes de limpiar nada, siga la fila de hormigas hacia los dos lados: un extremo muestra qué están comiendo y el otro la rendija por donde entran',
+    'Anote los dos extremos, luego limpie la barra con agua jabonosa y tape la comida en lugar de rociar el camino',
+    'Deje en paz el aerosol de debajo del fregadero, porque un repelente puede dividir una colonia de hormiga olorosa de casa en varios nidos más chicos',
+    'Levante los platos de la mascota en la noche, enjuague el reciclaje, arregle el goteo bajo el fregadero y quite las migajas junto a los aparatos',
+    'Si las hormigas son grandes y negras, o chicas, pálidas y salen en enjambre cerca de un baño, trátelo como un problema distinto al de un camino en la cocina',
+    'Pida una revisión gratis cuando el camino siga regresando: identificamos la especie, ponemos cebo junto a la ruta, tratamos el nido de afuera y sellamos la entrada',
+    'Espere más hormigas los primeros dos a cuatro días después del cebo, porque es el cebo que están cargando hasta la reina',
+  ],
+
   faqs: [
     {
       q: '¿Por qué no debo rociar el rastro?',

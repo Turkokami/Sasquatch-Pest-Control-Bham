@@ -59,6 +59,14 @@ export const controlDeCiempies: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Ciempiés caseros y milpiés, y las condiciones húmedas que los traen adentro' },
+    { label: 'Incluye', value: 'Revisión de humedad, tratamiento perimetral para las migraciones, tratamiento de escondites, y consejos para secar y sellar' },
+    { label: 'No incluye', value: 'Un plan recurrente por unos cuantos ciempiés caseros, o rociar a lo largo de todos los zoclos por dentro' },
+    { label: 'Cuándo conviene', value: 'El trabajo perimetral se deja listo antes de las migraciones de milpiés de octubre y noviembre' },
+    { label: 'Cuánto cuesta', value: 'Se cotiza según la propiedad y suele ser moderado; la cotización es gratis' },
+  ],
+
   faqs: [
     {
       q: '¿Pueden picar los ciempiés?',

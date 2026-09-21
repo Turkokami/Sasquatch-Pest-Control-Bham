@@ -108,6 +108,15 @@ export const restauracionDeEspacioBajoElPiso: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Espacios bajo el piso ensuciados por roedores o por humedad de mucho tiempo, limpiados y cerrados' },
+    { label: 'Incluye', value: 'Retiro de aislamiento contaminado y escombro, tratamiento de superficies, barrera de vapor sellada, mallas en las ventilas, una puerta de acceso y aislamiento nuevo' },
+    { label: 'No incluye', value: 'Reparación de estructura, trabajo de cimientos, excavación de drenaje, plomería y techos' },
+    { label: 'Orden del trabajo', value: 'Primero sacar a los roedores y confirmar que no hay actividad, luego retiro, tratamiento, trabajo de humedad y aislamiento nuevo' },
+    { label: 'Cuánto tarda', value: 'De uno a tres días en la mayoría de las casas, según los pies cuadrados, la altura libre y cuánto material sale' },
+    { label: 'Cuánto cuesta', value: 'Cotización gratis con la visita al sitio, según sobre todo la altura libre, los pies cuadrados y la contaminación' },
+  ],
+
   faqs: [
     {
       q: '¿De verdad necesito cambiar el aislamiento?',

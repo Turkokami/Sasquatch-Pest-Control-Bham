@@ -83,6 +83,16 @@ export const saludYResidenciasDeMayores: EsGiro = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Registros de visita', value: 'Con fecha por visita: qué apareció y dónde, qué se hizo, qué se aconsejó y a quién, y el estado de cada dispositivo' },
+    { label: 'Plano de dispositivos', value: 'Con la misma numeración del registro de visitas, claro para quien no conoce el edificio' },
+    { label: 'También en archivo', value: 'Licencias, etiquetas de producto y documentación de seguridad de todo lo aplicado' },
+    { label: 'Escalamiento', value: 'Los hallazgos de adentro van el mismo día al contacto nombrado que esté de turno' },
+    { label: 'Horario de visitas', value: 'Alrededor de las comidas, los cambios de turno, las terapias y los horarios clínicos, no en medio de ellos' },
+    { label: 'Dispositivos', value: 'Fuera del alcance de residentes, visitas y mascotas, y fuera de la vista desde los pasillos' },
+    { label: 'Reportes de chinches', value: 'Antes de cotizar se revisan el cuarto que reportó y los cuartos vecinos; la cuota de verificación se abona al tratamiento' },
+    { label: 'Parte de la residencia', value: 'Revisión de muebles y pertenencias al ingreso, coladeras en un programa de limpieza documentado, y aviso de obras en el edificio' },
+  ],
   faqs: [
     {
       q: '¿Pueden trabajar en cuartos ocupados por residentes?',

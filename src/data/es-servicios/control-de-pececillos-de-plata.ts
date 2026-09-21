@@ -67,6 +67,14 @@ export const controlDePececillosDePlata: EsServicio = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué cubre', value: 'Pececillos de plata y pececillos de fuego, y los espacios húmedos que les permiten sobrevivir' },
+    { label: 'Incluye', value: 'Lecturas de humedad, tratamiento en huecos, recorridos de tubería y el espacio bajo el piso, polvos en huecos secos, y sellado de rendijas' },
+    { label: 'No incluye', value: 'Restauración del espacio bajo el piso, que es un proyecto aparte cuando ese espacio es el depósito' },
+    { label: 'Cuánto tarda', value: 'Unos meses y no semanas, siguiendo la humedad' },
+    { label: 'Cuánto cuesta', value: 'Se cotiza con la visita; moderado cuando el origen es el hueco de un baño' },
+  ],
+
   faqs: [
     {
       q: '¿Son peligrosos?',

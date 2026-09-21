@@ -75,6 +75,21 @@ export const sellarUnEdificioAntesDelOtono: EsGuia = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Cuándo sellar', value: 'De las dos últimas semanas de julio al final de agosto, antes de que insectos y roedores empiecen a tantear el edificio' },
+    { label: 'Recordatorio en el calendario', value: 'La tercera semana de julio, lo último para agendar la exclusión y que quede terminada a tiempo' },
+    { label: 'Cuándo entran las plagas', value: 'Más o menos de la tercera semana de septiembre a la primera de noviembre, insectos y roedores por las mismas aberturas' },
+    { label: 'Sellar a fines de octubre', value: 'Encierra lo que ya está en el hueco de la pared; los roedores mueren donde no se alcanzan y los insectos muertos alimentan a los escarabajos de alfombra' },
+    { label: 'Malla contra roedores', value: 'Malla de alambre de un cuarto de pulgada. La de media pulgada detiene ratas pero deja pasar ratones, y las ratas cruzan la malla de gallinero' },
+    { label: 'Aberturas solo para insectos', value: 'Basta con sellador y malla mosquitera, porque los insectos que invernan no pueden roer' },
+    { label: 'Ventilas y hoyos sin explicación', value: 'Ponga malla a todo lo que existe para que pase el aire; cierre del todo cualquier abertura cuyo propósito nadie sepa' },
+    { label: 'Hacerlo usted o encargarlo', value: 'Barredoras de puerta, sellos del garaje y entradas a nivel del suelo los puede hacer usted; escalera, línea del techo y bajo la casa vale encargarlos' },
+  ],
+  pasos: [
+    'Revise si el edificio ya tiene población: excremento, marcas de roído, insectos en las ventanas el invierno pasado, avispas yendo y viniendo en el revestimiento.',
+    'Atienda lo que está adentro antes de sellar: trampee los roedores y confirme que el edificio está tranquilo.',
+    'Cierre de abajo hacia arriba: línea del cimiento, ventilas, entradas de servicios y puertas, y la línea del techo al final para sacar la escalera una sola vez.',
+  ],
   faqs: [
     {
       q: '¿Cuándo exactamente se debe hacer este trabajo?',
