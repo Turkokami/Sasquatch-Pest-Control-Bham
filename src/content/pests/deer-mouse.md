@@ -6,6 +6,27 @@ species: 'deer-mouse'
 treatment: 'treat'
 answer: "The deer mouse is the hantavirus species in Washington and an animal of woodland edge, cabins, sheds, garages and crawlspaces rather than kitchens. A white belly with a hard edge and a furred two-tone tail separate it from a house mouse. Never dry-sweep or vacuum its droppings."
 confusedWith: ['house-mouse']
+idTable:
+  - label: "Belly and flanks"
+    value: "White underside, legs and feet, with a sharp line where the brown back stops"
+  - label: "Tail"
+    value: "Furred and sharply two-toned, dark above and light beneath"
+  - label: "How to tell it from a house mouse"
+    value: "Bigger eyes and ears and a furred bicolor tail; a house mouse is one gray tone with a bare, scaly tail"
+  - label: "Where it lives here"
+    value: "Woodland edge, cabins, sheds, garages, barns, trailers and crawlspaces rather than kitchens"
+  - label: "Home range"
+    value: "A third of an acre to four acres or more, so it visits a building rather than settling in a cupboard"
+  - label: "Health risk"
+    value: "The hantavirus carrier in Washington — cases are rare, but its droppings are never swept or vacuumed"
+  - label: "Damage"
+    value: "Nests in mattresses, upholstery, clothing and insulation; chews wiring in stored vehicles"
+signs:
+  - "A hoard of seeds, nuts or pet food packed into a boot, glove, drawer, tool tray or engine bay"
+  - "Droppings along shelf edges in a cabin, shed or trailer that has been shut for months"
+  - "Shredded nesting material in a mattress, cushion, stored sofa or box of linens"
+  - "Chewed corners on stored boxes and nesting under the cowling of a mower, tractor or boat"
+  - "Tunneled or compressed insulation in the crawlspace or attic"
 faqs:
   - q: "How likely is hantavirus in western Washington, honestly?"
     a: "Uncommon, and weighted heavily to the other side of the mountains. Washington's health department guideline records 58 cases statewide through 2022 and notes that roughly 70 percent of them reported exposure in eastern Washington. It is a reason to use a method, not a reason to be frightened."

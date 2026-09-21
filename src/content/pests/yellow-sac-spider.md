@@ -5,6 +5,27 @@ description: "The small pale spider in the silk pocket where your ceiling meets 
 h1: "Yellow Sac Spider — Cheiracanthium spp."
 treatment: depends
 confusedWith: ['giant-house-spider']
+idTable:
+  - label: "Size"
+    value: "Females 5 to 10 millimeters, males 4 to 8 — roughly a quarter to half an inch"
+  - label: "Color"
+    value: "Pale cream, light yellow or faintly greenish, with a darker head end and legs"
+  - label: "Legs"
+    value: "Dark tufts at the tips that look like small socks"
+  - label: "How to tell it from a giant house spider"
+    value: "Far smaller and pale, high on walls and ceilings; the house spider is brown, big and at floor level"
+  - label: "Web"
+    value: "No capture web — a small closed silk pocket where walls meet walls or ceilings"
+  - label: "Bite"
+    value: "A bee-sting pain, redness and itching that settle in a day or two; the necrosis story is not supported"
+  - label: "Do we treat it"
+    value: "Depends — worth acting on in bedrooms or with repeated bites, not for one on a wall"
+signs:
+  - "Small flattened pockets of dense white silk in ceiling corners and along window heads"
+  - "Silk retreats behind picture frames, at the top of door casings and in curtain folds"
+  - "A pale spider walking across a ceiling or wall at night"
+  - "A sudden sharp sting when pulling on a sleeve or rolling over in bed"
+  - "More retreats appearing in bedroom corners as autumn nights cool"
 answer: "The yellow sac spider is a small pale hunter that spends the day in a silk pocket in a ceiling corner and hunts at night without a web. Washington's health department lists it as one of only two spiders of medical significance in the state. Its bite stings and then fades; the necrosis reputation is not supported."
 ready: true
 reviewBy: 2027-09-02

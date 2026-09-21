@@ -5,6 +5,29 @@ description: "Cluster fly larvae are parasites of earthworms, so the fly at your
 h1: "Cluster Fly — Pollenia spp."
 treatment: depends
 confusedWith: []
+idTable:
+  - label: "Size"
+    value: "Slightly larger than a common house fly"
+  - label: "Color and markings"
+    value: "Dull gray with black markings on the abdomen; golden-yellow hairs on the thorax give a faint gold sheen"
+  - label: "Behavior"
+    value: "Slow and sluggish — bumps against glass, crawls as much as it flies, easy to catch by hand"
+  - label: "How to tell it from a blow fly"
+    value: "Dull, slow and gray-gold, where the blow flies that mean something died are shiny metallic blue or green"
+  - label: "Where it breeds"
+    value: "Outdoors only — the larvae develop inside earthworms in soil, never in the house"
+  - label: "When you see it"
+    value: "On sunlit south and west walls in October; at upstairs windows on warm spells from November to February"
+  - label: "Damage"
+    value: "Cannot damage the house, though dead flies in a void can feed carpet beetles"
+  - label: "Do we treat it"
+    value: "Depends — an exterior application in late August or early September; never indoors; sealing is what lasts"
+signs:
+  - "Slow, dark flies at the same two or three upstairs windows on warm winter days"
+  - "A dozen or more flies on an upper-floor windowsill in January or February"
+  - "Flies gathering in numbers on sunlit south and west walls on mild October afternoons"
+  - "Flies emerging at a window frame edge, recessed light, bathroom fan surround or attic hatch"
+  - "An accumulation of dead flies in the attic or behind a soffit"
 answer: "Cluster flies are slow dark flies that overwinter inside buildings and reappear at upper windows on warm winter days. Their larvae develop outdoors as parasites of earthworms, so there is no breeding site indoors and nothing about cleanliness is involved. Sealing before autumn is the durable answer."
 ready: true
 reviewBy: 2027-09-02

@@ -6,6 +6,27 @@ species: 'silverfish'
 treatment: 'depends'
 answer: "Silverfish are wingless, scale-covered insects that need sustained high humidity. Extension figures put the band they occupy at roughly seventy-five to ninety-five percent relative humidity, so a space held below about fifty percent stops supporting them. They graze starch: paper, book bindings, wallpaper paste, sized fabric. They damage no structure."
 confusedWith: []
+idTable:
+  - label: "Size"
+    value: "About three eighths to half an inch, occasionally reaching three quarters"
+  - label: "Shape and color"
+    value: "Flat, wingless and carrot-shaped; silver to pearl gray from scales that rub off"
+  - label: "Antennae and tail"
+    value: "Two long antennae in front, three long bristles trailing behind"
+  - label: "Silverfish or firebrat"
+    value: "Silver and in cool damp spaces; a firebrat is mottled brown-gray and wants heat"
+  - label: "Humidity it needs"
+    value: "Roughly 75 to 95 percent relative humidity; held below about 50 percent, a space stops supporting it"
+  - label: "What it damages"
+    value: "Starchy contents — paper, book bindings, wallpaper paste, sized fabric — never the structure"
+  - label: "Do we treat it"
+    value: "Depends — drying the space comes first; treatment is a holding action where a collection is at risk"
+signs:
+  - "Several stranded in the bathtub or basin each morning"
+  - "Paper with grazed, irregular patches and small ragged holes rather than clean round bores"
+  - "Book spines on a basement shelf with notched, frayed edges"
+  - "Original wallpaper lifting at the seams in a damp room"
+  - "Scales, cast skins and small dark droppings in cupboards and stored boxes"
 faqs:
   - q: "What relative humidity do I need to hold to stop them?"
     a: "Ohio State's extension fact sheet puts the range silverfish occupy at 75 to 95 percent relative humidity, and Texas A&M gives 75 to 90 percent as what they need to survive. A space held steadily below about 50 percent sits well outside that, which is the number worth aiming a dehumidifier at."

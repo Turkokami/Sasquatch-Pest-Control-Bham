@@ -5,6 +5,28 @@ description: "The climbing rat of attics and rooflines in Whatcom County — how
 h1: "Roof Rat — The Climber in the Attic"
 treatment: treat
 confusedWith: ['norway-rat']
+idTable:
+  - label: "Size"
+    value: "Similar overall length to a Norway rat but slenderer; five to ten ounces, sleek and agile"
+  - label: "Tail"
+    value: "Longer than the head and body combined — the most reliable single check against a Norway rat"
+  - label: "Face and ears"
+    value: "Pointed muzzle; ears long enough to reach and cover the eyes when folded forward"
+  - label: "Droppings"
+    value: "About half an inch, slender and often slightly curved — smaller than a Norway rat's"
+  - label: "Where it lives"
+    value: "Off the ground — attics, trees, overgrown shrubbery and vines; it rarely digs a burrow"
+  - label: "Where in the county"
+    value: "Mostly the coastal edge and waterfronts, and any property with trees touching the roof"
+  - label: "When pressure builds"
+    value: "From late September, peaking through October and November"
+signs:
+  - "Noise overhead after dark, starting within an hour of dusk and moving along the ceiling line"
+  - "Droppings on the tops of stored boxes rather than beside them"
+  - "Dark smudging from oil and grit at height along top plates, over beams and at the edge of a soffit return"
+  - "Gnawed rims on plastic tote lids stored in a loft"
+  - "Fruit opened on the branch with the flesh taken, often overnight and high in the tree"
+  - "A ceiling stain with no plumbing above it and no roof leak to explain it"
 answer: "The roof rat is the less common of our two rats and the one that lives above you. It climbs branches, cables and rough siding, enters at soffits and vents, and nests in attic insulation rather than in burrows. Look at the roofline first; a crawlspace search will miss it."
 ready: true
 faqs:

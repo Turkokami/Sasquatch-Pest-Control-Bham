@@ -5,6 +5,29 @@ description: "A bumble bee nest under a shed or in old insulation is a temporary
 h1: "Bumble Bees in Whatcom County — Bombus spp."
 treatment: we-do-not
 confusedWith: ['honey-bee', 'carpenter-bee']
+idTable:
+  - label: "Size"
+    value: "About 0.4 to 1.0 inches, robust and stout"
+  - label: "Color and fur"
+    value: "Very hairy all over, banded black and yellow, with orange, red or white on some species"
+  - label: "How to tell it from a carpenter bee"
+    value: "Furry to the tip of the abdomen; a carpenter bee is glossy and bare at the rear"
+  - label: "How to tell it from a honey bee"
+    value: "A honey bee is slimmer, smaller and amber-brown, with fine hair rather than fur"
+  - label: "Nest"
+    value: "Loose cluster of ball-like wax cells in old rodent burrows, compost, insulation or under sheds"
+  - label: "Colony"
+    value: "A few dozen to a few hundred bees; dies out by autumn and the nest is never reused"
+  - label: "Stings"
+    value: "Very mild in temperament; can sting more than once, but only if the nest is seriously disturbed"
+  - label: "Do we treat it"
+    value: "No — we do not treat bumble bees; roping off the area and waiting is the answer"
+signs:
+  - "Large furry bees flying in and out of a hole in a bank, lawn or under a shrub"
+  - "Bees coming and going from the gap under a shed, deck or outbuilding floor"
+  - "Bees working into a compost heap, a folded tarp or an old bird box"
+  - "Bees entering loose insulation through a small gap in a wall, crawlspace or garage ceiling"
+  - "A loud, slow bee working flowers on a cold, damp or overcast morning"
 answer: "We do not treat bumble bees. Washington has at least 23 species, several are in documented decline, and the western bumble bee has all but disappeared from its former range. Colonies are small, annual, and dead by autumn, and the nest is never used again, so waiting is almost always the right answer."
 ready: true
 reviewBy: 2027-09-02

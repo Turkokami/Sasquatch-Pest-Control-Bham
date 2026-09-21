@@ -5,6 +5,27 @@ description: "The flea on dogs here is the cat flea, and most of the population 
 h1: "Cat Flea — The Species on Both Cats and Dogs"
 treatment: treat
 confusedWith: []
+idTable:
+  - label: "Size and shape"
+    value: "About an eighth of an inch, dark reddish-brown, flattened side to side"
+  - label: "Movement"
+    value: "Jumps a foot or more, and is hard to crush between two fingers"
+  - label: "Hosts"
+    value: "Cats and dogs alike, plus livestock, raccoons, opossums and coyotes"
+  - label: "Where the population is"
+    value: "About ninety-five percent is eggs, larvae and pupae in the house, not adults on the pet"
+  - label: "How to tell it from a springtail"
+    value: "A springtail is soft, collapses when pressed and turns up around damp, not animals"
+  - label: "Bites"
+    value: "Itchy small red marks, several in a row, on the ankles and lower legs"
+  - label: "Do we treat it"
+    value: "Yes — the building, alongside a vet treating the pet; wildlife sources come first"
+signs:
+  - "Dark specks combed from the pet onto white paper that smear rusty red when moistened"
+  - "Fleas jumping onto ankles soon after moving into a house that stood empty"
+  - "Rows of itchy bites around the ankles and lower legs"
+  - "Flea dirt in the carpet or bedding where the animal lies"
+  - "Sudden biting in one part of a house with no pets, after noise under the floor or overhead stopped"
 answer: "Nearly every flea in a Whatcom County home is the cat flea, whatever animal it came in on. Around ninety-five percent of the population is eggs, larvae and pupae in carpet and bedding rather than adults on the pet, and pupae can wait months before emerging."
 ready: true
 faqs:

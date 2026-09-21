@@ -5,6 +5,26 @@ description: "Ants trailing indoors in late winter when nothing else is active. 
 h1: "False Honey Ant — Prenolepis imparis"
 treatment: rarely-warranted
 confusedWith: ['odorous-house-ant', 'moisture-ant', 'pavement-ant']
+idTable:
+  - label: "Size and color"
+    value: "Two to four millimeters, yellow to brown, all workers one size"
+  - label: "Thorax"
+    value: "A constriction gives it an obvious hourglass shape viewed from above"
+  - label: "When you see it"
+    value: "February and March, when no other ant is foraging; largely quiet by high summer"
+  - label: "How to tell it from other ants"
+    value: "The season and the hourglass thorax; large black ants indoors in January point to carpenter ants instead"
+  - label: "Nest"
+    value: "Deep in soil outdoors; it trails into buildings in poor weather rather than nesting in them"
+  - label: "Harm"
+    value: "Contaminates food it reaches, but no stings and no damage to buildings"
+  - label: "Do we treat it"
+    value: "Rarely warranted — trim what touches the wall and seal the gap; bait only if you want it gone today"
+signs:
+  - "A trail of small brown ants into the kitchen in February or early March"
+  - "Ants appearing on the first mild, wet spell after a cold stretch"
+  - "A line running up the outside wall and into a shrub, ivy or climber touching the building"
+  - "The trail entering beside a pipe under a sink, at a threshold corner or through a vent gasket"
 answer: "Ants trailing into a house in February or March, when no other ant is active, are almost certainly false honey ants. Also called small honey ants or winter ants, they forage in cold conditions that shut every other species down, nest outdoors in soil, and rarely warrant treatment."
 ready: true
 expert: kristofer-elling

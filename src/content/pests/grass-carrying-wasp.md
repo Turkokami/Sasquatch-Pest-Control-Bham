@@ -5,6 +5,27 @@ description: "Dry grass stuffed into a sliding window channel is a grass-carryin
 h1: "Grass-Carrying Wasp — Isodontia spp."
 treatment: rarely-warranted
 confusedWith: ['european-paper-wasp', 'great-golden-digger-wasp']
+idTable:
+  - label: "Size and color"
+    value: "Three-quarters of an inch to an inch, black or very dark, sometimes with a faint sheen on the wings"
+  - label: "Waist"
+    value: "A conspicuously slender stalk between thorax and abdomen, like two parts joined by a wire"
+  - label: "How to tell it from other wasps"
+    value: "By the nest material: grass means this wasp, mud a mud dauber, paper cells a social wasp"
+  - label: "Nest"
+    value: "Dry grass packed into an existing cavity — window tracks, weep holes, gaps under siding, hollow tubes"
+  - label: "When you see it"
+    value: "July and August while provisioning; the grass is usually found in autumn"
+  - label: "Stings"
+    value: "Rarely, if ever — a solitary female with no colony to defend"
+  - label: "Do we treat it"
+    value: "Rarely warranted — clear the track and close or screen the cavity; nothing needs spraying"
+signs:
+  - "Dry grass cut to length and packed into a sliding window or door track"
+  - "Blades of grass sticking out of a weep hole, a gap under siding or an open rail end"
+  - "A motionless green cricket or young katydid in the track alongside the grass"
+  - "A slim dark wasp flying low with a long blade of grass trailing beneath her"
+  - "A slider that will not run or close properly in the track come autumn"
 answer: "Dry grass packed into a sliding window track, a weep hole or a gap under siding is the nest of a grass-carrying wasp. She is solitary, she does not defend the nest, and she rarely stings. Clearing the track and closing the cavity is the whole job — nothing here needs spraying."
 ready: true
 expert: kristofer-elling

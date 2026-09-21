@@ -5,6 +5,26 @@ description: "Tiny winged ants emerging indoors near lights, and a sting nobody 
 h1: "Ponerine Ant — Hypoponera punctatissima"
 treatment: depends
 confusedWith: ['thief-ant', 'pharaoh-ant', 'moisture-ant']
+idTable:
+  - label: "Size and color"
+    value: "Two to three millimeters, yellow to brown, workers all one size"
+  - label: "Waist"
+    value: "A single thick, broad node"
+  - label: "Sting"
+    value: "A real one, described as quite painful; allergic reactions are possible"
+  - label: "What you actually see"
+    value: "Tiny winged females indoors at a window or light — workers stay underground"
+  - label: "How to tell it from a thief ant"
+    value: "Thief ants are smaller, have no meaningful sting and forage in a visible trail; this ant leaves no trail"
+  - label: "Nest"
+    value: "Underground, usually under a concrete slab, with fewer than a hundred workers"
+  - label: "Do we treat it"
+    value: "Depends — sealing the entry route is the real work; a colony under a slab often cannot be reached"
+signs:
+  - "A painful sting indoors with no ant trail or nest anywhere to be found"
+  - "A few tiny winged insects at a window or light fitting in a basement or ground-floor room"
+  - "Winged insects concentrated along one stretch of baseboard, a slab edge or an expansion joint"
+  - "A cluster of incidents over several evenings or a couple of weeks, then nothing for a long time"
 answer: "Ponerine ants are small subtropical ants established in Pacific Northwest urban areas. Their colonies live underground, often beneath concrete slabs, and the only stage most people ever meet is the winged females emerging indoors toward lights — which can sting, painfully."
 ready: true
 expert: kristofer-elling

@@ -5,6 +5,27 @@ description: "The largest spider most Whatcom County households ever meet indoor
 h1: "Giant House Spider — The Big One in the Bathtub"
 treatment: rarely-warranted
 confusedWith: ['hobo-spider']
+idTable:
+  - label: "Size"
+    value: "Body half an inch to an inch; the largest adults reach about four inches across the legs"
+  - label: "Color"
+    value: "Brown to grayish-brown with somewhat hairy legs; markings vary a great deal"
+  - label: "How to tell it from a hobo spider"
+    value: "Only reliably under a microscope; three or four pairs of pale spots on the sternum rule the hobo out"
+  - label: "Web"
+    value: "A flat, non-sticky sheet with a tube at one edge, low in garages, crawlspaces and window wells"
+  - label: "When you see it"
+    value: "Mid-summer to early fall, when mature males wander at night looking for females"
+  - label: "Bites"
+    value: "Not known to pose any threat to people"
+  - label: "Do we treat it"
+    value: "Rarely — mainly heavy populations in a used garage or crawlspace, or a household with a real fear"
+signs:
+  - "A large, fast brown spider stuck in a bathtub or sink overnight"
+  - "Dusty flat sheets of silk with a funnel at one edge in the corners of garages, sheds and basements"
+  - "Webbing in window wells, under decks and along the outside of the foundation"
+  - "Pale, papery egg sacs behind stored boxes, under shelf lips or in the folds of an old tarp"
+  - "Spiders running across the floor at night in late summer and autumn"
 answer: "The giant house spider is the large, fast, brown spider that appears indoors here in autumn, and it is harmless. WSU Extension reports it outnumbers the hobo spider about three to one west of the Cascades. Separating the two reliably requires a microscope, and for safety purposes it does not matter."
 ready: true
 reviewBy: 2027-09-01

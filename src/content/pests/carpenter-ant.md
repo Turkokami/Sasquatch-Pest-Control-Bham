@@ -6,6 +6,30 @@ species: 'carpenter-ant'
 treatment: 'treat'
 answer: "Carpenter ants are large black ants that tunnel through wood to nest in it without eating any of it. A colony here runs a parent nest outdoors, usually in decaying wood within about a hundred yards, and satellite nests inside buildings. Indoor activity in winter means one is already in the structure."
 confusedWith: ['moisture-ant', 'odorous-house-ant']
+idTable:
+  - label: "Size"
+    value: "Workers a quarter to half an inch, in several sizes in one nest; queens to three quarters of an inch"
+  - label: "Color"
+    value: "Black, with legs that read reddish-brown on white paper under a lamp"
+  - label: "Thorax and waist"
+    value: "One smooth unbroken curve along the top of the thorax; a single node at the waist"
+  - label: "How to tell it from a moisture ant"
+    value: "Much larger and black rather than yellowish, with no notch in the thorax profile"
+  - label: "How to tell winged ones from termites"
+    value: "Elbowed antennae, front wings longer than hind wings, and a pinched waist"
+  - label: "Nest"
+    value: "Parent colony in decaying wood outdoors, often within a hundred yards; satellites inside buildings"
+  - label: "Damage"
+    value: "Excavates wood for shelter without eating it; rarely significant in one season, serious over years"
+  - label: "Do we treat it"
+    value: "Yes — at both the satellite and the parent colony, and the water gets corrected"
+signs:
+  - "A pile of coarse wood shavings mixed with insect parts and shed wings below an opening"
+  - "Shavings caught in spider webbing in a crawlspace or garage"
+  - "Winged ants emerging at an interior window in March, April or May"
+  - "Large black ants trailing along fence lines, driveway edges or a branch touching the roof, mostly at night"
+  - "A faint dry rustling in a wall void, most noticeable at night in a quiet room"
+  - "Clean, smooth-sided galleries with no soil or pellets when trim comes off"
 faqs:
   - q: "If they do not eat the wood, what happens to it?"
     a: "It gets carried outside. Workers chew the fibers loose, haul the shavings to an opening and drop them, which is why a colony produces a pile of debris rather than a hollow you can see from the room. The wood is removed rather than consumed."

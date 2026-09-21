@@ -6,6 +6,28 @@ species: 'millipede'
 treatment: 'rarely-warranted'
 answer: "A millipede indoors cannot feed or breed and dies within a couple of days from water loss. Mass movements across foundations follow heavy autumn rain saturating the soil they live in, and they end on their own. Two pairs of legs per segment, slow, harmless, and eating decayed leaves outdoors."
 confusedWith: ['pillbug']
+idTable:
+  - label: "Size"
+    value: "Commonly about an inch long; larger ones in this region reach two inches"
+  - label: "Body and color"
+    value: "Long, segmented and round in cross-section; dark brown to nearly black"
+  - label: "Legs"
+    value: "Two pairs per body segment, moving in a slow wave down the body"
+  - label: "How to tell it from a centipede"
+    value: "A centipede is flattened, fast, has one pair of legs per segment and hunts; a millipede coils and waits"
+  - label: "How to tell it from a pillbug"
+    value: "A pillbug has seven pairs of legs and rolls into a ball; a millipede coils flat into a spiral"
+  - label: "When you see it"
+    value: "October and November, in the days after heavy rain saturates the ground"
+  - label: "Harm"
+    value: "Cannot bite and damages nothing; some release a fluid that stains and can irritate skin or eyes"
+  - label: "Do we treat it"
+    value: "Rarely warranted — indoors it dies within two or three days, so a broom or vacuum is the answer"
+signs:
+  - "Dozens or hundreds along the foundation, piled at corners and door thresholds after a wet week"
+  - "Slow, dark, worm-like animals crossing a garage or hallway floor"
+  - "Dead ones along a baseboard, still coiled like small dark washers"
+  - "Stains left on a floor or baseboard where one was crushed"
 faqs:
   - q: "How long will a millipede survive inside my house?"
     a: "Two or three days at most. University of Wisconsin horticulture gives that figure directly and attributes it to lack of moisture, and Penn State notes they cannot long survive the dry atmosphere inside most buildings. There is nothing indoors for them to eat either."

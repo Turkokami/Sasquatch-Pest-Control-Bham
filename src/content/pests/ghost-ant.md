@@ -5,6 +5,26 @@ description: "A tiny ant with a dark head and a pale, near-invisible body. Tropi
 h1: "Ghost Ant — Tapinoma melanocephalum"
 treatment: depends
 confusedWith: ['odorous-house-ant', 'pavement-ant', 'moisture-ant']
+idTable:
+  - label: "Size"
+    value: "1.3 to 1.5 millimeters, every worker the same size"
+  - label: "Color"
+    value: "Deep dark brown head and thorax; milky, near-translucent legs and rear section"
+  - label: "Antennae"
+    value: "Twelve segments thickening gradually toward the tip, with no abrupt club"
+  - label: "How to tell it from an odorous house ant"
+    value: "Crush one: an odorous house ant smells strongly of rotten coconut and is larger, brown to black"
+  - label: "Where it lives here"
+    value: "Only in heated buildings and greenhouses — not established outdoors in the Pacific Northwest"
+  - label: "Nests"
+    value: "Many small nests in wall voids, pot soil, behind skirting and around plumbing; spreads by budding"
+  - label: "Do we treat it"
+    value: "Depends on a confirmed identification; if it is one, sugar bait only and never a spray"
+signs:
+  - "A dark speck of an ant with a faint pale blur behind it, trailing in a kitchen or bathroom"
+  - "Thin, persistent trails along bench legs, irrigation lines or where a wall meets the floor"
+  - "Ants moving in the potting media or at the pot rim of recently arrived plants"
+  - "Activity near condensation, a slow leak under a sink or an over-watered planter"
 answer: "The ghost ant is a tiny tropical species with a dark head and thorax and a pale, translucent body. It is not established outdoors in the Pacific Northwest and survives here only in heated buildings and greenhouses. Most tiny pale ants reported in Whatcom County turn out to be something else."
 ready: true
 expert: kristofer-elling

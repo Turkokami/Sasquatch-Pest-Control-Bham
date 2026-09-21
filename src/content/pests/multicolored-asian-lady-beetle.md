@@ -5,6 +5,27 @@ description: "The ladybugs swarming your south wall in October are a different i
 h1: "Multicolored Asian Lady Beetle — Not the Ladybug You Grew Up With"
 treatment: depends
 confusedWith: ['brown-marmorated-stink-bug', 'boxelder-bug', 'cluster-fly', 'carpet-beetle']
+idTable:
+  - label: "Size and shape"
+    value: "Around seven millimeters, domed and oval"
+  - label: "Color and spots"
+    value: "Pale yellow-orange to deep red, with anywhere from no spots to eighteen"
+  - label: "How to tell it from a native ladybug"
+    value: "A whitish segment behind the head with a black M or W mark — and natives never mass on houses"
+  - label: "When you see it"
+    value: "Gathering on sunlit south and southwest walls from early October; indoors on mild winter days"
+  - label: "Bites and stains"
+    value: "Can nip hard enough to break skin; releases a smelly yellow fluid that stains when disturbed"
+  - label: "Damage"
+    value: "None — it does not feed, breed or damage anything indoors"
+  - label: "Do we treat it"
+    value: "Depends — sealing plus a timed exterior treatment helps heavy cases; wall voids are never sprayed"
+signs:
+  - "Hundreds of orange beetles covering a pale, sun-facing wall on an October afternoon"
+  - "Beetles working into gaps around window trim, siding laps, soffits and vents"
+  - "Beetles appearing at windows and light fittings indoors on warm days in January or February"
+  - "Yellow spots and stains on paint, curtains or upholstery where beetles were disturbed or crushed"
+  - "An unpleasant smell where a group has been swept or squashed"
 answer: "The multicolored Asian lady beetle is an introduced predatory beetle that gathers on sun-warmed walls in October and overwinters inside buildings. It does not breed indoors or damage anything, but unlike native ladybugs it will bite, and it stains surfaces with a yellow fluid when disturbed."
 ready: true
 reviewBy: 2027-09-04

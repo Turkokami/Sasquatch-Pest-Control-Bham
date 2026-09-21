@@ -20,6 +20,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
+import QuickFacts from '../../components/QuickFacts.astro';
 import QuickNav from '../../components/QuickNav.astro';
 import Faq from '../../components/Faq.astro';
 import LinkRail from '../../components/LinkRail.astro';
@@ -69,6 +70,9 @@ const siblings = all
       render without one rather than repeat the same scissor lift nine times
       and imply nine different jobs. */}
   {industryPhotos[d.industry] && <Photo photo={industryPhotos[d.industry]} />}
+
+  {/* Keystone v3.2 §4.3: what an auditor or inspector checks, as a table. */}
+  {d.factsTable && <QuickFacts heading="What gets checked, at a glance" rows={d.factsTable} />}
 
   <div class="prose"><Content /></div>
 

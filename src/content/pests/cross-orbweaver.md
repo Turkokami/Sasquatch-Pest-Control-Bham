@@ -5,6 +5,27 @@ description: "The large spider in the wheel-shaped web across your back door is 
 h1: "Cross Orbweaver — The Garden Spider You Walked Into"
 treatment: we-do-not
 confusedWith: []
+idTable:
+  - label: "Size"
+    value: "Females 6.5 to 20 mm in the body; males 5.5 to 13 mm"
+  - label: "Markings"
+    value: "Pale spots forming a rough cross on the abdomen; body yellow, brown or dark gray, and color varies widely"
+  - label: "Web"
+    value: "A vertical wheel with spokes and a sticky spiral, up to about 40 cm across, rebuilt most nights"
+  - label: "How to tell it from a funnel weaver"
+    value: "A wheel hung vertically in open air, not a flat sheet with a tube at one edge low down"
+  - label: "When you see it"
+    value: "Adults from late summer through fall, most noticeable in early September"
+  - label: "Bites"
+    value: "Harmless to people — slightly unpleasant at worst, and rarely manages it"
+  - label: "Do we treat it"
+    value: "No — a beneficial outdoor predator that dies off with the weather; we will clean accumulated webbing"
+signs:
+  - "A large wheel-shaped web across a doorway, gate or path, back again the morning after you clear it"
+  - "A patterned, grape-sized spider sitting motionless in the middle of the web"
+  - "Orb webs clustered around a porch or door light that runs all night"
+  - "Webs strung between shrubs, along fence lines, or between a downspout and a railing"
+  - "Domed silk egg cocoons under loose bark, behind shutters or under a windowsill lip in late September"
 answer: "The big patterned spider in a wheel-shaped web outside your door in September is a cross orbweaver, and it is harmless. It rebuilds that web nightly, it does not come indoors to live, and the whole generation dies off by winter. We do not treat for them."
 ready: true
 reviewBy: 2027-09-01

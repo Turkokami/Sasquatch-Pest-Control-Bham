@@ -5,6 +5,28 @@ description: "The long-legged spider in the basement corner is harmless, eats ot
 h1: "Cellar Spider — Pholcus phalangioides"
 treatment: rarely-warranted
 confusedWith: ['giant-house-spider']
+idTable:
+  - label: "Body"
+    value: "Small, pale tan or yellow and elongated — 7 to 8 millimeters in females, about 6 in males"
+  - label: "Legs"
+    value: "Thread-thin and very long; a female's forelegs run to about 50 millimeters"
+  - label: "Posture"
+    value: "Hangs upside down under a loose, irregular tangle of web"
+  - label: "How to tell it from a giant house spider"
+    value: "Hair-thin legs, slow reach and an inverted tangle; the house spider is brown, thick-legged, fast and uses a funnel"
+  - label: "Harvestman or spider"
+    value: "This one is a true spider; harvestmen have one body section, no silk and no venom"
+  - label: "Venom and bites"
+    value: "The deadliest-venom story is an urban legend; not known to be harmful to people"
+  - label: "When you see it"
+    value: "All year in heated buildings — it has no season"
+  - label: "Do we treat it"
+    value: "Rarely — it eats other spiders; heavy webbing is a cleaning and exclusion job"
+signs:
+  - "Loose, dusty gray tangles of web in upper corners of basements, garages and crawlspaces"
+  - "A pale long-legged spider hanging inverted behind a water heater or above a garage door track"
+  - "A spider that shakes itself into a blur in the web when you get close"
+  - "A female holding a loose ball of eggs in her jaws"
 answer: "The cellar spider is the small-bodied, long-legged spider that hangs upside down in a loose web in basement and garage corners. It is harmless, it preys on other spiders, and the claim that it carries the world's most powerful venom is an urban legend with nothing behind it."
 ready: true
 reviewBy: 2027-09-02

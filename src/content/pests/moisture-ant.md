@@ -6,6 +6,27 @@ species: 'moisture-ant'
 treatment: 'depends'
 answer: "Moisture ants are small yellow to light brown ants that colonize wood already in an advanced stage of decay. They cannot establish in sound dry lumber, so finding them locates a long-running water problem precisely. The useful response is drying and repairing that timber rather than treating the ants."
 confusedWith: ['carpenter-ant']
+idTable:
+  - label: "Size"
+    value: "Three to five millimeters — every worker in the colony the same size"
+  - label: "Color"
+    value: "Yellow through amber to fairly dark brown, most often the pale end here"
+  - label: "How to tell it from a carpenter ant"
+    value: "Carpenter ants are black, larger and mixed in size, with a smooth thorax curve rather than a notch"
+  - label: "Nest"
+    value: "Spongy, layered carton of chewed wood and soil that fills the cavity"
+  - label: "Where it lives"
+    value: "Only in wood already at an advanced stage of decay — sills, rim joists, wet posts"
+  - label: "Swarm season"
+    value: "Late summer to early autumn, roughly August into October"
+  - label: "Do we treat it"
+    value: "Depends on the repair — fixing the water and replacing rotten wood comes first"
+signs:
+  - "A sudden cloud of small winged ants inside a room in late summer or early autumn"
+  - "Small pale yellow ants in timber that a screwdriver sinks into without resistance"
+  - "Soft layers of papery carton, like damp cardboard, packed into a wall cavity or joist bay"
+  - "A citronella or lemon smell when ants are crushed or the nest is disturbed"
+  - "Rotten framing nearby showing cubical cracking, dark staining or white or brown fungal growth"
 faqs:
   - q: "Why is finding these ants described as useful?"
     a: "Because they only occupy wood that is already rotting, their position marks decayed structural timber to within a few inches. A damp meter gives you a reading across a wall surface. A colony gives you the exact member that has failed."

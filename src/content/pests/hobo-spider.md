@@ -5,6 +5,28 @@ description: "The necrotic-bite reputation did not survive replication. What the
 h1: "Hobo Spider — The Reputation and the Evidence"
 treatment: rarely-warranted
 confusedWith: ['giant-house-spider']
+idTable:
+  - label: "Size"
+    value: "Roughly one to one and three-quarter inches including the legs"
+  - label: "Color"
+    value: "Brown, drab and hairy-legged; coloring varies and is unreliable for identification"
+  - label: "Legs"
+    value: "Uniformly colored — visible dark rings on the legs rule it out"
+  - label: "How to tell it from a giant house spider"
+    value: "Only with a microscope; a light stripe down the sternum, where the giant house spider shows paired spots"
+  - label: "Web"
+    value: "A flat horizontal sheet with a funnel at one edge, at ground level in dark, damp spots"
+  - label: "When you see it"
+    value: "Late August through October, when mature males walk at night looking for females"
+  - label: "Health risk"
+    value: "Not considered dangerous by the state health department; no evidence its venom causes necrosis"
+  - label: "Do we treat it"
+    value: "Rarely warranted — sealing, a door sweep and a vacuum do more than any spray"
+signs:
+  - "Sheet-and-funnel webs in window wells, especially ones filled with leaf litter"
+  - "Webs along the foundation line, under a deck lip or behind stacked firewood"
+  - "Funnel webs in the corners of unfinished basements and among stored material in a garage"
+  - "Brown spiders crossing the floor at night between late August and October"
 answer: "The hobo spider's reputation for causing necrotic wounds is not supported by evidence. Washington's health department states it is not considered dangerous as previously thought, and that no evidence links its venom to skin necrosis. It is uncommon indoors here, and finding one warrants no treatment."
 ready: true
 reviewBy: 2027-09-01

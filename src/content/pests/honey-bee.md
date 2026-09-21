@@ -5,6 +5,27 @@ description: "Honey bees are not a pest control job. How to tell a temporary swa
 h1: "Honey Bees in Whatcom County"
 treatment: we-do-not
 confusedWith: ['bumble-bee']
+idTable:
+  - label: "Size and color"
+    value: "Slim, roughly half an inch, amber and brown with fine hair rather than dense fur"
+  - label: "How to tell it from a bumble bee"
+    value: "A bumble bee is much larger, round and furry, banded black and yellow"
+  - label: "How to tell it from a yellowjacket"
+    value: "Hairier and less brightly striped; it ignores your food and drink"
+  - label: "Swarm or colony"
+    value: "A swarm hangs in the open and leaves within a day or two; a colony shows weeks of traffic at one opening"
+  - label: "When swarms appear"
+    value: "Spring into early summer, mostly in the warmer weeks from late April"
+  - label: "Stings"
+    value: "Reluctant — a worker dies when it stings; swarms are extremely docile"
+  - label: "Do we treat it"
+    value: "No, never — a swarm needs nobody, and a wall colony needs a beekeeper and a carpenter"
+signs:
+  - "A dense cluster of bees hanging on a branch, fence rail, wall or car mirror"
+  - "Steady two-way traffic at one small opening in the building, continuing for weeks"
+  - "A continuous low hum through a wall from inside a quiet room, most obvious at night"
+  - "A patch of wall or ceiling that feels warm"
+  - "Single bees at an indoor window, or a dark stain seeping through drywall or down siding"
 answer: "Honey bees are not something we treat. A swarm hanging in the open is temporary, docile and generally gone within a day or two without anyone doing anything. An established colony inside a wall is a structural job, because the comb and honey have to come out with the bees."
 ready: true
 sources:

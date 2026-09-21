@@ -5,6 +5,27 @@ description: "Euophryum confine only eats wood that fungi have already rotted, w
 h1: "Wood-Boring Weevil — Euophryum confine"
 treatment: depends
 confusedWith: ['anobiid-powderpost-beetle']
+idTable:
+  - label: "Size and color"
+    value: "About two and a half to three millimeters; cylindrical, dark brown to nearly black"
+  - label: "Head"
+    value: "A long snout with elbowed antennae hinged partway along it"
+  - label: "How to tell it from a powderpost beetle"
+    value: "Ragged, slit-like exit holes and wood a screwdriver sinks into; beetle holes are clean circles in firm wood"
+  - label: "Frass"
+    value: "Gritty, pellet-like and coarse rather than floury"
+  - label: "What it needs"
+    value: "Timber that decay fungi have already broken down — never sound seasoned wood"
+  - label: "What the finding means"
+    value: "The member has decayed and water has been arriving for years"
+  - label: "Do we treat it"
+    value: "Depends — structural members usually need replacing, and the water fix matters most"
+signs:
+  - "Oval or slit-shaped exit holes with ragged edges in damp framing"
+  - "Small gritty pellets of frass below the holes"
+  - "Timber around the holes that gives when a blunt probe is pushed in"
+  - "Small snouted adults running on the surface of damp wood, a vapor barrier or a sill plate"
+  - "Discoloration, cubical cracking or a stringy white fungal mat in the same member"
 answer: "The wood-boring weevil is a small snouted beetle introduced from New Zealand that can only develop in timber fungi have already broken down. It is routinely mistaken for a powderpost beetle because the holes and powder look similar. Finding one tells you decay is present and has been for some time."
 ready: true
 sources:

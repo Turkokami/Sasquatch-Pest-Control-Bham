@@ -5,6 +5,29 @@ description: "A speck-sized yellowish ant that nests in walls and masonry and ro
 h1: "Thief Ant — Solenopsis molesta"
 treatment: depends
 confusedWith: ['pharaoh-ant', 'ghost-ant', 'odorous-house-ant']
+idTable:
+  - label: "Size"
+    value: "1.3 to 1.8 millimeters, every worker the same size — often mistaken for moving specks"
+  - label: "Color"
+    value: "Yellowish or light brown through to dark brown"
+  - label: "How to tell it from a pharaoh ant"
+    value: "A long two-segment club at the antenna tip; a pharaoh ant's club has three — a hand-lens check"
+  - label: "Nest"
+    value: "Soil, under objects and rotting wood outdoors; woodwork and masonry voids indoors"
+  - label: "What draws it"
+    value: "More often grease and protein than sugar"
+  - label: "Winged ants"
+    value: "Mid-summer to early autumn"
+  - label: "Health"
+    value: "No danger to people; an intermediate host for a poultry tapeworm, which matters around coops"
+  - label: "Do we treat it"
+    value: "Depends — a cupboard problem gets advice; a colony in the building gets baited"
+signs:
+  - "A faint line of moving specks along a counter edge or worktop"
+  - "A trail emerging where a baseboard meets the floor, or from the back of a cabinet"
+  - "Trails leading behind an oven or to something oily rather than to sweets"
+  - "The same thin trail wiped away and returning every few weeks"
+  - "Tiny yellowish ants most active after dark"
 answer: "Thief ants are among the smallest ants in the Pacific Northwest at under two millimeters, yellowish to brown, and named for stealing food and brood from other ant colonies. They nest in soil, rotten wood and the woodwork and masonry of houses, and they are routinely mistaken for pharaoh ants."
 ready: true
 expert: kristofer-elling

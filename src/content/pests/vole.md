@@ -6,6 +6,28 @@ species: 'vole'
 treatment: 'we-do-not'
 answer: "Voles are short-tailed, blunt-faced rodents that live in surface runways under grass and ground cover, feeding on plants and gnawing bark at the base of shrubs and young trees. They rarely enter buildings. Vole damage in a lawn or a landscape is not structural pest work and we do not take it on."
 confusedWith: []
+idTable:
+  - label: "Size and build"
+    value: "Five to eight inches overall; compact and heavy, short legs, no visible neck"
+  - label: "Face, ears and tail"
+    value: "Blunt face, small eyes, ears half buried in fur, and a short furred tail"
+  - label: "Color"
+    value: "Blackish brown to grayish brown"
+  - label: "Vole or mole"
+    value: "Voles eat plants and leave surface runways and open holes; moles eat worms and throw up rounded mounds"
+  - label: "Species here"
+    value: "Townsend's vole, west of the Cascades"
+  - label: "Indoors"
+    value: "A poor climber that usually stays out of buildings"
+  - label: "Do we treat it"
+    value: "No — lawn and landscape damage is not our work"
+signs:
+  - "Narrow runways an inch or two wide under the grass, worn to bare or matted soil between small open holes"
+  - "Fresh green grass clippings cut and left lying in the runways"
+  - "Greenish droppings about three-sixteenths of an inch long near the runs"
+  - "Irregular patches of short, crossed gnaw marks on bark at the base of shrubs and young trees"
+  - "Tulips that never come up and hostas grazed to the crown"
+  - "A lawn that looks scored and thinned across a wide area once the grass lifts in spring"
 faqs:
   - q: "Is this a vole or a mole?"
     a: "Different animals with different diets. Oregon State Extension puts it plainly: moles hunt worms, grubs and insects rather than eating plants, while voles graze grass and gnaw shrubs and stems near their holes and runways. Mole mounds are rounded and volcano-shaped; voles leave surface runs and small open holes."

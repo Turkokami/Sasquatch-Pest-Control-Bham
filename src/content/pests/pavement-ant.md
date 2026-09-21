@@ -6,6 +6,27 @@ species: 'pavement-ant'
 treatment: 'depends'
 answer: "Pavement ants are small dark ants that nest in soil beneath slabs and push fine craters of excavated dirt up through the cracks. They damage nothing structurally, forage indoors at ground level, and respond reliably to bait. The mass fights on sidewalks in spring are territorial and need nothing done."
 confusedWith: ['odorous-house-ant']
+idTable:
+  - label: "Size"
+    value: "Two and a half to about four millimeters, all workers one size"
+  - label: "Color"
+    value: "Dark brown to black"
+  - label: "Waist and thorax"
+    value: "Two raised waist nodes and a pair of short spines at the rear of the thorax"
+  - label: "Head"
+    value: "Parallel grooves on the head and thorax, so it looks finely combed"
+  - label: "How to tell it from an odorous house ant"
+    value: "That ant has one hidden node, a smooth head, a coconut smell when crushed and builds no mounds"
+  - label: "Nest"
+    value: "In soil under slabs, pavers and driveways, pushing dirt craters up through the cracks"
+  - label: "Do we treat it"
+    value: "Depends — outdoor craters and spring fights need nothing; persistent indoor trails get baited"
+signs:
+  - "Small conical heaps of fine soil in driveway joints and slab cracks that return after sweeping"
+  - "A seething mass of fighting ants on a sidewalk or patio on a mild spring afternoon"
+  - "Trails entering at ground level — slider thresholds, baseboards, ground-floor window trim"
+  - "A dense trail by morning that was not there the evening before"
+  - "Ants around the pet bowl, crumbs under a toe-kick or grease behind the range"
 faqs:
   - q: "What are the little piles of dirt along my driveway?"
     a: "Excavated soil. The colony is in the ground beneath the slab and carries its spoil up through the nearest crack or expansion joint, which leaves a fine crater that rebuilds within a day or two of being swept away."

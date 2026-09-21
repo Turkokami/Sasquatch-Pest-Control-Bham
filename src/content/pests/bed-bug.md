@@ -5,6 +5,30 @@ description: "Why bites cannot confirm bed bugs, which physical evidence can, an
 h1: "Bed Bug — What Confirms It, and What Does Not"
 treatment: treat
 confusedWith: ['carpet-beetle']
+idTable:
+  - label: "Size"
+    value: "About three-sixteenths of an inch — roughly half a pencil eraser"
+  - label: "Color and shape"
+    value: "Reddish-brown, oval and flat; swollen, longer and brighter red after feeding"
+  - label: "Movement"
+    value: "Walks quickly; cannot fly and cannot jump"
+  - label: "How to tell it from a carpet beetle"
+    value: "Smooth oval body and dark spotting on bedding — carpet beetle larvae are bristly and leave none"
+  - label: "Where it lives"
+    value: "Close to a sleeper: mattress seams, box spring, frame joints, headboard"
+  - label: "Bites"
+    value: "Cannot confirm it — about thirty percent of people never react"
+  - label: "Health risk"
+    value: "No known cases of infectious disease spread by bites; the toll is on sleep"
+  - label: "Do we treat it"
+    value: "Yes, after a paid verification visit, with follow-ups planned from the start"
+signs:
+  - "Dark, ink-like spots soaked into mattress seams, piping or the tape edge of a box spring"
+  - "Small raised dark specks on a painted slat, frame joint or the wall behind a headboard"
+  - "Pale, translucent bug-shaped cast skins in the deepest part of a seam or joint"
+  - "Pearly eggs about a millimeter long cemented in cracks, which will not brush off"
+  - "Live flat reddish-brown insects in seams, joints or loose baseboard"
+  - "Insects caught in interceptor cups under the bed legs"
 answer: "Bed bugs cannot be diagnosed from bites, because reactions differ from person to person and roughly thirty percent of people never react at all. Confirmation comes from fecal spotting, cast skins, eggs and live insects. They arrive on luggage and furniture, and they have nothing whatever to do with housekeeping."
 ready: true
 faqs:

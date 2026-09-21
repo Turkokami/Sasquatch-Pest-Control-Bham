@@ -6,6 +6,7 @@ import { photoForSection } from '../../../lib/page-photos';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
+import QuickFacts from '../../../components/QuickFacts.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import LinkRail from '../../../components/LinkRail.astro';
@@ -105,6 +106,15 @@ const fotos = inlinePhotosForEs(Astro.url.pathname);
       frases fijas elegidas por un enum, idéntica en cada ficha con el mismo
       veredicto por diseño. */}
   <p class="verdict" data-boilerplate><strong>{ES_VEREDICTO[en.data.treatment]}</strong></p>
+
+  {e.tabla && (
+    <QuickFacts
+      heading={`${e.nombre}: de un vistazo`}
+      rows={e.tabla}
+      listHeading="Señales de que los tiene"
+      list={e.senales}
+    />
+  )}
 
   <div class="prose">
     {e.secciones.map((sec, i) => (

@@ -5,6 +5,24 @@ description: "The pantry moth is one package, not a building problem. Why the la
 h1: "Indianmeal Moth — Find the Package, Not the Room"
 treatment: rarely-warranted
 confusedWith: ['webbing-clothes-moth']
+idTable:
+  - label: "Size"
+    value: "A small moth with a wingspan of about half an inch"
+  - label: "Wings"
+    value: "Two-toned: whitish gray on the inner portion, reddish brown with a coppery luster on the outer two-thirds"
+  - label: "Larva"
+    value: "Pale caterpillar, whitish with a greenish, pinkish or yellow hue, around half an inch when grown"
+  - label: "How to tell it from a clothes moth"
+    value: "Flies toward light and webs food; the clothes moth is plain gold or buff, shuns light and webs wool"
+  - label: "Source"
+    value: "One infested package — often birdseed, dry pet food, dried decor or a forgotten bag of grain"
+  - label: "Do we treat it"
+    value: "Rarely warranted — finding and discarding the source is nearly the whole job, and no spraying near food"
+signs:
+  - "Silk webbing on the surface of grain, flour, cereal, seed or dried fruit, leaving it clumped or matted"
+  - "Small two-toned moths flying near a lamp, range hood or window in the evening"
+  - "Cocoons and pale caterpillars at the wall-ceiling junction or the top of a door frame, often far from food"
+  - "Webbing in the folds of a bag, or in a sack of birdseed or pet food in the garage"
 answer: "The Indianmeal moth is the pantry moth, and an infestation is a package rather than a building. Larvae spin silk webbing through stored food, then wander far from it to pupate, which is why cocoons appear at ceiling corners. Finding and discarding the source is nearly the whole job."
 ready: true
 faqs:

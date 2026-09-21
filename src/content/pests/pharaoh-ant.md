@@ -5,6 +5,25 @@ description: "A tiny yellow indoor ant with many queens that never swarms. Spray
 h1: "Pharaoh Ant — Monomorium pharaonis"
 treatment: treat
 confusedWith: ['ghost-ant', 'odorous-house-ant', 'pavement-ant']
+idTable:
+  - label: "Size and color"
+    value: "About two millimeters, yellow or light brown, sometimes with a darker abdomen"
+  - label: "Workers"
+    value: "All one size — a trail with big and small workers mixed is some other ant"
+  - label: "Colony"
+    value: "Many queens and many small connected nests; spreads by splitting, never by swarming"
+  - label: "How to tell it from an odorous house ant"
+    value: "The odorous house ant is brown to black, slightly larger, and smells of rotten coconut when crushed"
+  - label: "Where it lives here"
+    value: "Only inside heated buildings — apartments, care settings, food premises"
+  - label: "Do we treat it"
+    value: "Yes, with slow-acting bait over weeks — never with sprays, which make the colony bud"
+signs:
+  - "Trails of tiny yellow ants so small that single ones look like specks on the counter"
+  - "Ants that go quiet after spraying, then turn up in new rooms or a neighboring unit"
+  - "Activity that bounces between adjoining apartments after one unit is treated"
+  - "A first appearance in a store room or receiving area after goods or furniture arrived"
+  - "Ants at crumbs, pet food, spilled syrup or grease behind an appliance"
 answer: "Pharaoh ants are tiny yellow indoor ants with many queens per colony. They never swarm; instead large colonies split and spread through a building. Spraying them causes that splitting, so baiting is the only approach that works, and it is the one ant where the wrong treatment reliably makes things worse."
 ready: true
 expert: kristofer-elling

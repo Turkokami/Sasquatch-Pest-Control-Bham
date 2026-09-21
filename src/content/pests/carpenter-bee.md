@@ -5,6 +5,27 @@ description: "The big bee at your deck in northwest Washington is almost always 
 h1: "Carpenter Bee — Xylocopa spp."
 treatment: rarely-warranted
 confusedWith: ['bumble-bee']
+idTable:
+  - label: "Body"
+    value: "Large and dark, with a furry thorax and a bare, black, glossy abdomen, sometimes metallic blue"
+  - label: "How to tell it from a bumble bee"
+    value: "Shiny against fuzzy — a bumble bee is hairy along its whole length"
+  - label: "Males"
+    value: "Pale patch on the face; hover and charge near the nest but have no sting"
+  - label: "Hole"
+    value: "One near-perfect circle just under half an inch, turning at a right angle along the grain"
+  - label: "Wood it picks"
+    value: "Bare, weathered softwood; it avoids well-painted timber"
+  - label: "How common here"
+    value: "Uncommon in northwest Washington — the large bee reported here is nearly always a bumble bee"
+  - label: "Do we treat it"
+    value: "Rarely warranted — a genuine find is usually a fascia repair and a coat of paint"
+signs:
+  - "A round, drilled-looking hole just under half an inch across in bare fascia, rail or beam end"
+  - "Coarse pale sawdust dropped directly below the entrance"
+  - "A dark stain streaking down the board beneath the hole"
+  - "A male bee hovering near the same patch of wood and darting at anyone who passes"
+  - "Fresh woodpecker damage tearing open a board where galleries run behind it"
 answer: "Carpenter bees are uncommon in northwest Washington, and the large bee people report here is nearly always a bumble bee. A genuine carpenter bee leaves one perfectly round half-inch hole in bare softwood with a gallery turning along the grain behind it. Most of that damage is a repair rather than a treatment."
 ready: true
 sources:

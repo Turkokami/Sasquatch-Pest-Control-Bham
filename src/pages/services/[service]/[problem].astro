@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
+import QuickFacts from '../../../components/QuickFacts.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Faq from '../../../components/Faq.astro';
 import Cta from '../../../components/Cta.astro';
@@ -81,6 +82,11 @@ const blogLinks = await blogPostsFor(path);
       a phone. Four of twenty-three problem pages have one — src/data/photos.ts
       records which candidates were rejected on looking at them and why. */}
   {problemPhotos[p.slug] && <Photo photo={problemPhotos[p.slug]} />}
+
+  {/* Keystone v3.2 §4.3: what to do, in order, as a real ordered list. */}
+  {entry?.data.steps && (
+    <QuickFacts heading="What to do, in order" rows={entry.data.factsTable} list={entry.data.steps} listKind="ol" />
+  )}
 
   {Body ? (
     <div class="prose"><Body /></div>

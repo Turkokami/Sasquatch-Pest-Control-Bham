@@ -5,6 +5,29 @@ description: "Medium brown ants with spined shoulders that nest in decaying wood
 h1: "Aphaenogaster Ants — Aphaenogaster spp."
 treatment: rarely-warranted
 confusedWith: ['carpenter-ant', 'moisture-ant', 'pavement-ant']
+idTable:
+  - label: "Size"
+    value: "Four to six millimeters, every worker the same size"
+  - label: "Color"
+    value: "Brown to reddish-brown in most species; long-legged and leggy in motion"
+  - label: "Thorax"
+    value: "A pair of spines on the rear upper thorax, visible under a hand lens"
+  - label: "How to tell it from a carpenter ant"
+    value: "Smaller and all one size, with spines — a carpenter ant has an evenly rounded thorax and no spines"
+  - label: "How to tell it from a pavement ant"
+    value: "Up to twice as long, no fine grooves on head and thorax, and no sand piles on paving"
+  - label: "Nest"
+    value: "Wood already decaying, existing cavities, or soil under stones and boards"
+  - label: "Stings or bites"
+    value: "A weak sting that rarely penetrates skin; bites only if the nest is disturbed"
+  - label: "Do we treat it"
+    value: "Rarely — the wet or decaying wood it lives in is the thing worth fixing"
+signs:
+  - "Winged ants swarming from late summer into fall"
+  - "Winged ants emerging from a gap in a wall, floor joint or around a light fitting"
+  - "A colony in a stump, soft landscape timber or the base of a fence post"
+  - "Ants under stones, slabs, boards or the bottom course of a woodpile"
+  - "Ants in softened framing, such as a damp crawlspace sill or wood under a leaking shower"
 answer: "Aphaenogaster are medium-sized brown to reddish-brown ants with a pair of spines on the rear of the thorax. They nest in decaying wood, in cavities in sound wood, and in soil under stones, and most people only notice them when the winged forms swarm in late summer."
 ready: true
 expert: kristofer-elling

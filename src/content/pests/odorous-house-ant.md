@@ -6,6 +6,27 @@ species: 'odorous-house-ant'
 treatment: 'depends'
 answer: "Odorous house ants are small dark ants that smell strongly of rotten coconut when crushed. They damage nothing structurally, but colonies carry many queens and split into new nests when disturbed, so a repellent spray can turn one trail into several. Baiting is the response that works."
 confusedWith: ['carpenter-ant', 'pavement-ant']
+idTable:
+  - label: "Size"
+    value: "A sixteenth to an eighth of an inch, all workers about the same size"
+  - label: "Color"
+    value: "Brown to black and unshiny"
+  - label: "Smell"
+    value: "Rotten coconut or blue cheese when several are crushed — the fastest identification"
+  - label: "Waist"
+    value: "A single flattened node hidden under the abdomen, so it seems to have no waist"
+  - label: "How to tell it from a pavement ant"
+    value: "Pavement ants have two waist nodes, grooved heads, and throw up soil mounds at slab cracks"
+  - label: "Damage"
+    value: "No structural damage — food contamination and persistent nuisance only"
+  - label: "Do we treat it"
+    value: "Depends — brief trails often end alone; established indoor colonies get baited, never sprayed"
+signs:
+  - "A trail of small dark ants to a sink, dishwasher seal or pet bowl"
+  - "Ants appearing overnight in the kitchen after heavy rain"
+  - "Several separate points of activity in different rooms, especially after spraying"
+  - "Ants active indoors on mild days through winter"
+  - "Ants tending aphids on roses, birches or shrubs beside the house"
 faqs:
   - q: "What exactly does the smell resemble?"
     a: "WSU describes it as rotten coconut or blue cheese, and Utah State uses the same coconut comparison. Crush several on a fingertip rather than one, since a single small worker does not release much. It is the fastest identification available."

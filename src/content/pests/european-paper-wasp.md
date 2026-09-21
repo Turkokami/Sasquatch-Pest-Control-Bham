@@ -5,6 +5,27 @@ description: "An introduced wasp that reached Washington in the late 1990s. It b
 h1: "European Paper Wasp"
 treatment: rarely-warranted
 confusedWith: ['western-yellowjacket', 'aerial-yellowjacket']
+idTable:
+  - label: "Size and color"
+    value: "About half an inch, black and yellow striped"
+  - label: "Antennae"
+    value: "Bright orange — the only paper wasp here with them"
+  - label: "How to tell it from a yellowjacket"
+    value: "Slim, thin-waisted, with long hind legs trailing in flight; yellowjackets look short and stocky"
+  - label: "Nest"
+    value: "One layer of open cells on a short stalk with no paper envelope, usually under a hundred cells"
+  - label: "Where it nests"
+    value: "Grills, tube ends, railing undersides, vents, meter boxes, mailboxes and light fixtures"
+  - label: "Stings"
+    value: "Rarely — almost always when a nest is disturbed without the person knowing it was there"
+  - label: "Do we treat it"
+    value: "Rarely warranted; only nests where hands go, over doorways or in vents are worth removing"
+signs:
+  - "A comb the size of a coaster on the underside of a barbecue lid"
+  - "An upside-down umbrella of open hexagonal cells under an eave, soffit or deck rail"
+  - "Wasps going in and out of a patio furniture leg, fence rail end or gate post"
+  - "Slender yellow and black wasps cruising a fence line with their back legs dangling"
+  - "Old paper comb left in a sheltered cavity from the previous year"
 answer: "The European paper wasp arrived in Washington in the late 1990s and is now common across this county. It builds an open comb of bare cells with no paper envelope, in cavities and under railings, and it is far less defensive than the yellowjacket it resembles. Most nests can be left."
 ready: true
 sources:

@@ -5,6 +5,29 @@ description: "The banded-antenna stink bug on your February windowsill got in la
 h1: "Brown Marmorated Stink Bug — The One That Actually Matters"
 treatment: depends
 confusedWith: ['western-conifer-seed-bug', 'boxelder-bug']
+idTable:
+  - label: "Size and shape"
+    value: "12 to 17 millimeters, a marbled gray-brown shield"
+  - label: "Antennae"
+    value: "Pale bands near the tip — the first mark WSU's Whatcom guide looks for"
+  - label: "Shoulder edge"
+    value: "Smooth front margin; several native stink bugs have a toothed edge there"
+  - label: "Other marks"
+    value: "Light and dark banded abdomen edge; iridescent green pitting on head and shoulders"
+  - label: "Telling it from a conifer seed bug"
+    value: "The seed bug is longer and narrower, has a leaf-like widening on the hind leg and flies noisily"
+  - label: "Indoors"
+    value: "Dormant from October to spring; no feeding, no breeding and no damage inside"
+  - label: "Why it matters"
+    value: "A serious crop pest of apples, pears, peaches and other produce — worth reporting to WSU"
+  - label: "Do we treat it"
+    value: "Depends — an exterior application in late August helps, but we will not treat the wall void"
+signs:
+  - "Shield-shaped brown bugs gathering on sunny south or west walls in late September and October"
+  - "A single bug on an inside window during a mild spell in winter"
+  - "A sharp coriander or burnt-rubber smell when one is disturbed or vacuumed"
+  - "Bugs working into window-frame joints, siding laps, soffit returns or gable vents"
+  - "A final flurry of bugs at the windows in spring as survivors try to leave"
 answer: "The brown marmorated stink bug is an introduced insect that enters buildings in autumn to spend the winter dormant. It does not feed, breed or damage anything indoors. Its real significance is agricultural — it is a serious crop pest — and the household fix is sealing gaps in late summer."
 ready: true
 reviewBy: 2027-09-02

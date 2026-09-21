@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import AnswerBox from '../../../components/AnswerBox.astro';
+import QuickFacts from '../../../components/QuickFacts.astro';
 import QuickNav from '../../../components/QuickNav.astro';
 import Photo from '../../../components/Photo.astro';
 import EntryPoints from '../../../components/EntryPoints.astro';
@@ -148,6 +149,12 @@ const photos = section && {
       interchangeable and why the SVG keeps the page that has to rank. */}
   {s.slug === 'exclusion-and-repairs' && (
     <RodentInfographic heading="What we seal, and where it is" />
+  )}
+
+  {/* Keystone v3.2 §4.3 and §4A.5: the scope of the job — what is included,
+      what is not, what it costs — as a real table. See QuickFacts.astro. */}
+  {entry?.data.factsTable && (
+    <QuickFacts heading={`${s.short}: the job at a glance`} rows={entry.data.factsTable} />
   )}
 
   {Body ? (

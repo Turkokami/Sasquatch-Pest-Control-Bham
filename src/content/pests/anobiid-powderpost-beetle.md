@@ -5,6 +5,27 @@ description: "The beetle in damp framing here is an anobiid, not the true powder
 h1: "Anobiid Powderpost Beetle — Hemicoelus gibbicollis"
 treatment: depends
 confusedWith: ['wood-boring-weevil']
+idTable:
+  - label: "Size"
+    value: "Two to five millimeters — an eighth to a quarter of an inch"
+  - label: "Color and shape"
+    value: "Reddish to chocolate brown, cylindrical, head tucked under a hood-like thorax"
+  - label: "How to tell it from a wood-boring weevil"
+    value: "No snout, clean round exit holes, and wood that is damp but still firm to a probe"
+  - label: "Frass"
+    value: "Gritty between finger and thumb, not talc-fine like a true powderpost beetle's"
+  - label: "Wood it attacks"
+    value: "Softwood framing and plywood subfloor above roughly fourteen percent moisture"
+  - label: "When you see it"
+    value: "Adults emerge June through August; larvae spend four to six years in the wood"
+  - label: "Do we treat it"
+    value: "Depends — only if frass is still moving and the wood is still damp enough"
+signs:
+  - "Small round exit holes in joists, sill plates or subfloor, varying slightly in size"
+  - "Gritty pale powder collecting on the vapor barrier, a duct top or a beam flange"
+  - "Fresh frass reappearing a few weeks after the timber below was brushed clean"
+  - "Pale, sharp-edged new holes appearing in summer"
+  - "A small brown cylindrical beetle on a light or windowsill near the crawl hatch in July"
 answer: "Small round exit holes and gritty powder in crawlspace framing here are anobiid beetles, not the true powderpost beetles most articles describe. Those need hardwood pores our Douglas fir does not have. Anobiids need damp wood instead, so drying the space is what actually ends the cycle."
 ready: true
 sources:

@@ -5,6 +5,27 @@ description: "Black bugs with red lines massing on a sunny wall in autumn are bo
 h1: "Boxelder Bug — Red Lines, Big Numbers, No Damage"
 treatment: rarely-warranted
 confusedWith: ['brown-marmorated-stink-bug']
+idTable:
+  - label: "Size and shape"
+    value: "About half an inch, flat and elongated"
+  - label: "Color and markings"
+    value: "Dark gray to black, with thin bright red or orange lines that form a rough X at rest"
+  - label: "Nymphs"
+    value: "Smaller, wingless and bright red — the same species, not a second insect"
+  - label: "How to tell it from a stink bug"
+    value: "Narrow with red pinstriping and packed in a crowd; the stink bug is a mottled brown shield with no red"
+  - label: "When you see it"
+    value: "Clustering on sunlit walls in autumn, then again in March or April trying to leave"
+  - label: "Damage"
+    value: "None to the structure; body fluids and droppings can stain light fabrics and walls"
+  - label: "Do we treat it"
+    value: "Rarely — sealing gaps before the end of August does more than any spray"
+signs:
+  - "Dozens or hundreds of dark, red-lined bugs packed together on a sunny south or west wall in October"
+  - "Small bright red nymphs mixed in among the adults"
+  - "Bugs working into window-frame joints, lifted siding laps or soffit returns"
+  - "Stains on pale curtains, trim or upholstery where they have walked or been crushed"
+  - "Sluggish bugs on sunny indoor windowsills in early spring"
 answer: "Boxelder bugs are flat black insects with thin red lines that gather in dense clusters on sunlit walls each autumn, then overwinter in cavities. They eat nothing indoors, reproduce only on maples and boxelders outside, and damage nothing but light-colored fabric they walk across."
 ready: true
 reviewBy: 2027-09-02

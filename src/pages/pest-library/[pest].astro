@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AnswerBox from '../../components/AnswerBox.astro';
+import QuickFacts from '../../components/QuickFacts.astro';
 import Video from '../../components/Video.astro';
 import { videoForPest } from '../../data/videos';
 import QuickNav from '../../components/QuickNav.astro';
@@ -176,11 +177,22 @@ const actionLinks = [
      duplicate-sentence scanner on a sentence no author wrote. */}
   <p class="verdict" data-boilerplate><strong>{VERDICT[p.data.treatment]}</strong></p>
 
+  {/* Keystone v3.2 §4.3: the identification table and the signs list, as
+      real markup near the top — see QuickFacts.astro. */}
+  {p.data.idTable && (
+    <QuickFacts
+      heading={`${species.name} at a glance`}
+      rows={p.data.idTable}
+      listHeading="Signs you have them"
+      list={p.data.signs}
+    />
+  )}
+
   <div class="prose"><Content /></div>
 
   {/* Filed under the name people actually use for this ant. */}
   {videoForPest[species.slug] && (
-    <Video name={videoForPest[species.slug]} heading={`${species.common}, on video`} />
+    <Video name={videoForPest[species.slug]} heading={`${species.name}, on video`} />
   )}
 
   <Faq items={p.data.faqs} />

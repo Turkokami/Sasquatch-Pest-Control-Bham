@@ -5,6 +5,29 @@ description: "The red-and-black ants building a thatch mound of grass in your ya
 h1: "Thatching Ants — Formica spp."
 treatment: depends
 confusedWith: ['carpenter-ant', 'moisture-ant', 'velvety-tree-ant']
+idTable:
+  - label: "Size"
+    value: "4 to 9 millimeters, with big and small workers mixed in one colony"
+  - label: "Color"
+    value: "Often bi-colored red and black; some species are plain brown or black"
+  - label: "How to tell it from a carpenter ant"
+    value: "A notch or dip on top of the thorax in profile — a carpenter ant's is smoothly rounded"
+  - label: "Nest"
+    value: "A dome of dried grass, needles and small stems over soil or a rotten log, in a sunny spot"
+  - label: "Bites or stings"
+    value: "No sting — it bites hard, then sprays formic acid into the wound"
+  - label: "Indoors"
+    value: "Rarely nests in homes; foragers come in after sweet material"
+  - label: "Winged ants"
+    value: "Late summer into early fall"
+  - label: "Do we treat it"
+    value: "Depends — only where a mound conflicts with a lawn, path, play area or foundation"
+signs:
+  - "A low dome of dried grass and conifer needles in open, sunny ground, its surface always freshly reworked"
+  - "Large red-and-black ants swarming out when a mound is disturbed or mowed over"
+  - "A burning bite, out of proportion to the mark, after kneeling or sitting near a bank"
+  - "Heavy ant trails up a shrub or fruit tree where aphids are being tended"
+  - "Winged ants indoors in late summer or early fall"
 answer: "A dome of dried grass and plant stems in a sunny part of the yard, worked by large red-and-black ants, is a thatching ant mound. They rarely nest in buildings. What they do is bite hard and spray formic acid into the bite, which is the complaint we usually hear."
 ready: true
 expert: kristofer-elling

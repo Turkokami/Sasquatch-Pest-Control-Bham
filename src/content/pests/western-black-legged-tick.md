@@ -5,6 +5,27 @@ description: "Tick control is not a service we sell. What Ixodes pacificus is, w
 h1: "Western Black-Legged Tick — Not a Service We Sell"
 treatment: we-do-not
 confusedWith: []
+idTable:
+  - label: "Size"
+    value: "Unfed adult female about a sesame seed; nymph about a poppy seed; males smaller and darker"
+  - label: "Color"
+    value: "Reddish-brown body behind a darker shield; a fed female swells gray-green, like a bean"
+  - label: "Legs"
+    value: "Eight, as a nymph and adult — an arachnid, not an insect"
+  - label: "Where you meet it"
+    value: "Brushy trail edges, leaf litter, logs and unmown margins — rarely a mown lawn"
+  - label: "When it is active"
+    value: "Adults late fall to early spring; nymphs peak around May and June"
+  - label: "Health risk"
+    value: "Carries Lyme disease and anaplasmosis here; zero to seven Lyme cases a year are acquired in-state"
+  - label: "Do we treat it"
+    value: "No — we sell no tick control or yard spray"
+signs:
+  - "A small dark tick attached head-first that does not brush off"
+  - "A smooth, pale, bean-shaped object on the skin with legs that look too small for it"
+  - "Ticks on a dog around the neck, in the ears, in the leg folds or between the toes"
+  - "A slow-walking eight-legged speck on clothing after a walk through brush"
+  - "A child unsteady on their feet after a camping trip — look through the hair for a tick"
 answer: "We do not treat properties for ticks and do not sell a tick program. The western black-legged tick is the Washington species that can carry Lyme disease, though the state reports only zero to seven locally acquired cases a year. Fine-tipped tweezers, close to the skin, steady upward pull."
 ready: true
 faqs:

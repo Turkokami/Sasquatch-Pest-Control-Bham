@@ -62,6 +62,18 @@ const base = {
   updated: z.coerce.date().optional(),
   /** Set true only once the page clears 3,000 unique words. */
   ready: z.boolean().default(false),
+  /**
+   * KEYSTONE v3.2 §4.3 SNIPPET SHAPE, shared by every page type that needs it
+   * (21 Sep 2026). `factsTable` renders as a labeled table near the top — the
+   * scope of a service job, the rules on a compliance guide, what an auditor
+   * looks for on a vertical. `steps` renders as an ordered list — what to do,
+   * in order, on a problem page. Both are written from the page's own prose;
+   * see QuickFacts.astro. Pest profiles use their own `idTable` and `signs`.
+   */
+  factsTable: z
+    .array(z.object({ label: z.string().min(2).max(40), value: z.string().min(2).max(200) }))
+    .min(3).max(8).optional(),
+  steps: z.array(z.string().min(8).max(220)).min(3).max(7).optional(),
 };
 
 export const collections = {
@@ -188,6 +200,18 @@ export const collections = {
         .array(z.object({ label: z.string().min(4), url: z.string().url(), read: z.coerce.date() }))
         .min(1, 'a species profile must cite at least one source it was written from'),
       reviewBy: z.coerce.date(),
+      /**
+       * KEYSTONE v3.2 §4.3 SNIPPET SHAPE for a pest profile: an identification
+       * table and a list of signs, as real markup a search engine can lift.
+       * Built 21 Sep 2026 from each profile's OWN prose — every cell restates
+       * something the page already says, so the table cannot drift from the
+       * text or introduce a fact nobody checked. Short cells by design: the
+       * table is a summary, the prose is the explanation.
+       */
+      idTable: z
+        .array(z.object({ label: z.string().min(2).max(40), value: z.string().min(2).max(160) }))
+        .min(4).max(8).optional(),
+      signs: z.array(z.string().min(8).max(180)).min(3).max(7).optional(),
     }),
   }),
 

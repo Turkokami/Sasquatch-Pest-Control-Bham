@@ -5,6 +5,29 @@ description: "The flat brown beetle in the flour gets into sealed packaging thro
 h1: "Sawtoothed Grain Beetle — Flat Enough to Walk In"
 treatment: rarely-warranted
 confusedWith: ['carpet-beetle']
+idTable:
+  - label: "Size"
+    value: "About a tenth of an inch long — roughly the size of a printed comma"
+  - label: "Shape and color"
+    value: "Slender and flattened; brownish-red to almost black"
+  - label: "Key feature"
+    value: "Six saw-like teeth along each side of the thorax, visible with a hand lens or phone macro"
+  - label: "Carpet beetle or grain beetle"
+    value: "A carpet beetle is oval, domed and mottled, often at a window; this one is flat, plain brown and in the food"
+  - label: "Flight"
+    value: "Does not fly and is not drawn to light — beetles you find mean food nearby"
+  - label: "Where the source hides"
+    value: "Pet food, birdseed, livestock feed, nuts and old flour at the back of a shelf"
+  - label: "Harm"
+    value: "No bite, no venom, no disease — it spoils food rather than people"
+  - label: "Do we treat it"
+    value: "Rarely warranted; clearing it means finding and discarding the infested package"
+signs:
+  - "Small flat brown beetles walking through flour, cereal, dried fruit or pet food"
+  - "Fine dusty debris in a container, with no silk webbing binding it together"
+  - "Beetles inside packages that were never opened, having walked in through folded seams"
+  - "Meal or crumbs in cabinet seams, under shelf liners or in shelf-support holes with beetles in them"
+  - "Flour with a stale, slightly sharp smell"
 answer: "This is the small flat brown beetle found in flour, cereal, dried fruit and pet food, named for six saw-like teeth along each side of its thorax. It is flat enough to enter unopened packaging through folded seams rather than chewing in, and clearing an infestation means finding the package."
 ready: true
 faqs:

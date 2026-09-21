@@ -5,6 +5,27 @@ description: "Hard mud tubes on a garage wall or under an eave are mud dauber ne
 h1: "Mud Daubers — Sceliphron and Chalybion"
 treatment: rarely-warranted
 confusedWith: ['grass-carrying-wasp', 'european-paper-wasp', 'great-golden-digger-wasp']
+idTable:
+  - label: "Appearance"
+    value: "Long thread waist; black with yellow markings and yellow legs, or metallic blue-black"
+  - label: "Nest"
+    value: "Hard finger-sized mud tubes, often plastered over into a lump the size of a fist"
+  - label: "How to tell it from a paper wasp"
+    value: "Paper wasps build open gray papery cells on a stalk; mud daubers build only with mud"
+  - label: "Where it nests"
+    value: "Dry sheltered walls and ceilings — carports, garages, eaves, rafters, under decks"
+  - label: "When it is active"
+    value: "Roughly early summer to the end of August in this county"
+  - label: "Stings"
+    value: "Very rarely — one female per nest, no colony and no nest defense"
+  - label: "Do we treat it"
+    value: "No — scrape nests off with a putty knife; we do not treat them"
+signs:
+  - "Hard tubes of dried mud stuck to a garage wall, porch ceiling or eave"
+  - "A rounded mud lump the size of a fist on a rafter or outbuilding wall"
+  - "Neat round holes in an old mud nest, left where the young wasp chewed out"
+  - "A lone thread-waisted wasp at a garage or shop window trying to get out"
+  - "Gas grill flames burning yellow instead of blue after the grill sat unused all summer"
 answer: "Hard mud tubes stuck to a sheltered wall, eave or rafter are mud dauber nests. They are solitary wasps that stock each cell with paralyzed spiders, they do not defend the nest, and they very rarely sting. A putty knife and a bucket is the whole treatment."
 ready: true
 expert: kristofer-elling

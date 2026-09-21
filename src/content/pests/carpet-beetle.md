@@ -5,6 +5,30 @@ description: "The beetles on your windowsill eat pollen and harm nothing. The br
 h1: "Carpet Beetle — The Adults Are Not the Problem"
 treatment: depends
 confusedWith: ['bed-bug', 'webbing-clothes-moth']
+idTable:
+  - label: "Adults"
+    value: "One sixteenth to one eighth of an inch, oval, black or mottled with white, brown and yellow scales"
+  - label: "Larvae"
+    value: "One eighth to one quarter of an inch, tan to brown, tapered and densely bristly"
+  - label: "Which stage does damage"
+    value: "Only the larvae — adults feed on pollen and nectar and head for the windows"
+  - label: "What larvae eat"
+    value: "Wool, felt, fur, silk, feathers, leather, hair, lint, old nests and dead insects"
+  - label: "How to tell it from a clothes moth"
+    value: "Bristly hollow skins and no webbing; silk patches or tubes mean moth"
+  - label: "How to tell it from bed bugs"
+    value: "No dark spotting on the mattress, and skins in the carpet rather than at bed seams"
+  - label: "Health"
+    value: "Cannot bite; larval hairs can cause an allergic skin rash in some people"
+  - label: "Do we treat it"
+    value: "Depends — most fabric cases are a cleaning job; a nest or carcass in a void is ours"
+signs:
+  - "Small round beetles on windowsills, drapes or panes in spring"
+  - "Brown, hollow, bristly cast skins piled at a rug edge, closet floor or baseboard line"
+  - "Thinned, grazed patches in carpet pile where furniture never moves"
+  - "Damage at the collars and cuffs of wool clothing put away since a move"
+  - "Slow, tapered bristly larvae that curl when touched"
+  - "Beetles returning every spring in a house with no wool, pointing to a nest or dead insects in a void"
 answer: "Adult carpet beetles feed on pollen and nectar and collect at windows on their way out, so killing them changes nothing. The larvae are bristly, tapered and hidden, they digest keratin, and the brown hollow skins they shed while molting are the most reliable evidence a household can find."
 ready: true
 faqs:

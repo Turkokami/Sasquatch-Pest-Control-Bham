@@ -5,6 +5,30 @@ description: "What a house mouse needs to get in, how far it travels, what it ge
 h1: "House Mouse — Small, Local, and Quick to Multiply"
 treatment: treat
 confusedWith: ['deer-mouse']
+idTable:
+  - label: "Size"
+    value: "Body about two and a half to just under four inches, tail another two and three quarters to four; under an ounce"
+  - label: "Color"
+    value: "Gray to gray-brown above, only slightly paler beneath, blending rather than switching"
+  - label: "Tail"
+    value: "About as long as head and body, scaly, nearly hairless and one color all the way round"
+  - label: "How to tell it from a deer mouse"
+    value: "A deer mouse has a sharply white belly, bigger eyes and ears, and a furred two-tone tail"
+  - label: "Droppings"
+    value: "An eighth to a quarter inch, pointed at both ends"
+  - label: "Range"
+    value: "Seldom more than thirty feet from its nest; gets through a quarter-inch gap"
+  - label: "When it moves in"
+    value: "From late September, hardest through October and November, elevated all winter"
+  - label: "Health"
+    value: "Linked to LCM, salmonella and leptospirosis — not the hantavirus Washington reports"
+signs:
+  - "Small droppings pointed at both ends in a drawer, a low cupboard or on top of a stored box"
+  - "A corner chewed open on a cereal box, or a pinholed bag of rice leaving a trail of grains"
+  - "Light, quick scurrying low in a wall around dusk and again before dawn"
+  - "Small tucked heaps of finely shredded paper, insulation fiber or fabric"
+  - "A faint, persistent smell in a closed cupboard or utility cabinet that matches nothing stored there"
+  - "A cat or dog that keeps returning to the same spot along a wall or cabinet"
 answer: "A house mouse needs about a quarter inch of gap, seldom travels more than thirty feet from its nest, and breeds fast enough that a single autumn arrival becomes a household by spring. It is not the hantavirus mouse in Washington — that is the deer mouse — but it warrants acting on early."
 ready: true
 faqs:

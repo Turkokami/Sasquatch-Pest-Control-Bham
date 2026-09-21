@@ -23,4 +23,9 @@ export interface EsPlaga {
   answer: string;
   secciones: { h2: string; parrafos: string[] }[];
   faqs: { q: string; a: string }[];
+  /** Tabla de identificación y señales (Keystone v3.2 §4.3). Escritas desde la
+   *  propia ficha — en español desde la tabla inglesa de la misma especie, sin
+   *  añadir datos que ninguna de las dos páginas dice. */
+  tabla?: { label: string; value: string }[];
+  senales?: string[];
 }

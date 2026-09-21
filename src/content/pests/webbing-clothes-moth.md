@@ -5,6 +5,27 @@ description: "The larvae eat keratin and nothing else, which explains why one sw
 h1: "Webbing Clothes Moth — Why Only Some Garments Get Eaten"
 treatment: depends
 confusedWith: ['indianmeal-moth', 'carpet-beetle']
+idTable:
+  - label: "Adult size and color"
+    value: "About half an inch across the wings; plain gold, buff or tan with no markings"
+  - label: "Larva"
+    value: "Creamy-white caterpillar up to half an inch, dark head, feeding under patches of silk"
+  - label: "What it eats"
+    value: "Keratin — wool, silk, fur, feathers, felt; cotton and synthetics only when soiled"
+  - label: "Light"
+    value: "Avoids light and heads for shadow; a moth at a lamp or window is almost certainly another species"
+  - label: "Moth or carpet beetle"
+    value: "Silk webbing means moth; bristly brown cast skins with no webbing mean carpet beetle"
+  - label: "Adults"
+    value: "Do not feed and do no damage — the larva does all of it"
+  - label: "Do we treat it"
+    value: "Depends — usually a cleaning job; treatment where a nest in the structure is feeding it"
+signs:
+  - "Silk patches, tubes or a gritty mat of fiber and droppings on a wool surface"
+  - "Holes clustered under collars, in cuffs, along folds and in seams"
+  - "A wool rug grazed at the edge under the sofa but untouched in the walked-on center"
+  - "Small plain gold moths fluttering low and ducking into shadow when a closet light comes on"
+  - "Tiny droppings the color of the fabric the larvae were eating"
 answer: "Webbing clothes moth larvae digest keratin, so they feed on wool, silk, fur, feathers and felt and ignore cotton and synthetics unless those are soiled. Adults neither feed nor fly to light. Damage happens in dark undisturbed storage, and laundering before putting things away prevents most of it."
 ready: true
 faqs:

@@ -5,6 +5,27 @@ description: "The ground-nesting wasp behind most late-summer stings here. Why A
 h1: "Western Yellowjacket"
 treatment: depends
 confusedWith: ['aerial-yellowjacket', 'european-paper-wasp']
+idTable:
+  - label: "Size"
+    value: "Three-eighths to five-eighths of an inch, short and stocky"
+  - label: "Color and body"
+    value: "Bright yellow and black, hairless and shiny, with a blunt-ended abdomen"
+  - label: "How to tell it from a paper wasp"
+    value: "A paper wasp is slimmer, trails long legs in flight and builds an open comb; this one nests underground"
+  - label: "Nest"
+    value: "Underground, most often an old rodent burrow; also banks, rockeries and voids under sheds and steps"
+  - label: "Worst months"
+    value: "August and September, with up to five thousand workers per nest"
+  - label: "Stings"
+    value: "Can sting repeatedly, and a disturbed ground colony pours out in numbers"
+  - label: "Do we treat it"
+    value: "Depends on where the nest sits relative to mowing lines, paths and people"
+signs:
+  - "Steady traffic of yellow and black wasps in and out of a single small hole in the ground"
+  - "A repeated flight line on a warm afternoon, dropping into one point on a lawn or bank"
+  - "Wasps working over fallen fruit, bins and food at an outdoor table from mid-August"
+  - "Stings when a mower passes the same spot"
+  - "A single large, sluggish wasp at a window in late autumn or on a mild February day"
 answer: "The western yellowjacket nests in the ground, usually in an abandoned rodent burrow, and it is the wasp responsible for most August and September stings here. Whether it needs treating depends almost entirely on where the nest sits relative to where people walk, mow and eat."
 ready: true
 sources:

@@ -6,6 +6,27 @@ species: 'rodent-mite'
 treatment: 'treat'
 answer: "Rodent mites live on mice and rats. When the host dies or the nest is abandoned, they disperse through the building and bite whoever is there. The marks get mistaken for bed bugs, and bed bug treatment does nothing. Finding and removing the nest is what ends it."
 confusedWith: ['bed-bug']
+idTable:
+  - label: "Size"
+    value: "About the size of the period at the end of a printed sentence"
+  - label: "What it is"
+    value: "An eight-legged arachnid that lives on rats and mice, not an insect"
+  - label: "When it bites people"
+    value: "After its rodent hosts are trapped, poisoned, die or leave — often two to four weeks later"
+  - label: "How to tell it from bed bugs"
+    value: "Sudden onset in one room with nothing found on the bed — no spotting, shed skins or eggs"
+  - label: "Survival without a host"
+    value: "Cannot live on people; unfed females last on the order of ten days"
+  - label: "Health"
+    value: "The house mouse mite carries rickettsialpox, reported mostly from the northeastern US"
+  - label: "Do we treat it"
+    value: "Yes — at the nest: treat it, remove it and close the opening; bed bug treatment does nothing"
+signs:
+  - "Itchy marks starting suddenly in one room, often an upstairs bedroom, with no travel or new furniture"
+  - "Biting that begins a few weeks after rodent noise stopped or a trapping job ended"
+  - "Tiny moving specks on a pale pillowcase or sheet of white paper"
+  - "A feeling of something crawling on the skin, with nothing found on the bed after a proper search"
+  - "Droppings, gnawing, odor or shredded nesting material in the attic, soffit or wall above the room"
 faqs:
   - q: "Why did the biting start right after the rodents were dealt with?"
     a: "Because that is the trigger rather than a coincidence. Texas A&M AgriLife records that these infestations are sometimes first noticed following extermination, or after the natural hosts have died or left the structure. The mites lose their host and disperse looking for another."

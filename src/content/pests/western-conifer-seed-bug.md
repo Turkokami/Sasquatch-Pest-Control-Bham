@@ -5,6 +5,26 @@ description: "The big brown bug that flew at your lamp with a buzz has flared hi
 h1: "Western Conifer Seed Bug — Alarming and Entirely Harmless"
 treatment: rarely-warranted
 confusedWith: ['brown-marmorated-stink-bug']
+idTable:
+  - label: "Size"
+    value: "About half to three quarters of an inch — nine to eighteen millimeters"
+  - label: "Hind legs"
+    value: "A flattened, leaf-like paddle partway down each one — the whole identification"
+  - label: "Color and shape"
+    value: "Long, narrow, brown to reddish-brown with a faint pale zigzag; orange and black underneath"
+  - label: "How to tell it from a stink bug"
+    value: "The stink bug is a broad shield with banded antennae and plain legs; this one is narrow with paddles"
+  - label: "When you see it"
+    value: "September to November, peaking in a warm early-October week; strays on warm winter days"
+  - label: "Bites or stings"
+    value: "No sting, no disease, and it does not damage homes or breed indoors"
+  - label: "Do we treat it"
+    value: "Rarely warranted — late-summer sealing does more than any indoor treatment"
+signs:
+  - "A large brown insect flying at a lamp with a buzz like a wasp"
+  - "Bugs gathered on sunlit south and west walls in early October"
+  - "Single insects turning up indoors on warm days in January or February"
+  - "A faint pine-like smell when one is disturbed or crushed"
 answer: "The western conifer seed bug is a large brown insect with flattened, leaf-like hind legs that feeds on conifer seeds and comes indoors in autumn to overwinter. It does not bite, sting, breed indoors or damage a building. It flies noisily, which is the entire basis of its reputation."
 ready: true
 reviewBy: 2027-09-02

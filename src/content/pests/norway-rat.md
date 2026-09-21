@@ -5,6 +5,27 @@ description: "The ground-level rat of Whatcom County crawlspaces — telling it 
 h1: "Norway Rat — The One Under Your Floor"
 treatment: treat
 confusedWith: ['roof-rat']
+idTable:
+  - label: "Size"
+    value: "About sixteen inches nose to tail tip; seven to eighteen ounces, heavy through the shoulders"
+  - label: "Tail"
+    value: "Scaly, and shorter than the head and body combined — the detail that separates it from a roof rat"
+  - label: "Face and ears"
+    value: "Blunt muzzle; ears do not reach the eyes when folded forward"
+  - label: "Droppings"
+    value: "Three-quarters of an inch to an inch, blunt-ended and capsule-shaped"
+  - label: "Where it lives"
+    value: "At ground level — burrows, crawlspaces, under decks and the lower floors of buildings"
+  - label: "When it moves in"
+    value: "Autumn, when the rain floods the ground it was living in"
+  - label: "Health"
+    value: "Associated with Seoul virus and leptospirosis, not the deer mouse hantavirus"
+signs:
+  - "Burrow entrances two to four inches across along a foundation, smooth-edged and clear of leaves and webbing"
+  - "A fan of loose soil below an entrance and a worn path running away toward food or water"
+  - "Capsule-shaped droppings three-quarters of an inch or longer, often near deck skirting"
+  - "Gnawed edges on vents, skirting or doors, where a quarter-inch gap has been chewed up to size"
+  - "Movement heard low in the walls or under the floor rather than overhead"
 answer: "The Norway rat is the common rat in Whatcom County and it works at ground level. It burrows, it lives under floors and decks rather than in roofs, and it moves indoors when autumn rain floods the ground it was living in. Sealing the building is the durable half; trapping only empties it."
 ready: true
 faqs:

@@ -5,6 +5,29 @@ description: "The yellow wasp that builds an enclosed paper nest above ground ra
 h1: "Aerial Yellowjacket"
 treatment: depends
 confusedWith: ['bald-faced-hornet', 'western-yellowjacket']
+idTable:
+  - label: "Size"
+    value: "Workers about half an inch, with a blunt abdomen; queens larger, seen mainly in spring and autumn"
+  - label: "Color"
+    value: "Yellow and black bands, stout-bodied — the coloring of a ground yellowjacket"
+  - label: "How to tell it from a bald-faced hornet"
+    value: "Same kind of gray paper nest, but the insects are yellow and black, not black with ivory-white markings"
+  - label: "Telling it from a ground yellowjacket"
+    value: "It nests above the ground, so there is no entrance hole in the lawn to find"
+  - label: "Nest"
+    value: "Enclosed gray paper envelope, entrance at the bottom; often smaller, lower and less tidy than a hornet nest"
+  - label: "Stings or bites"
+    value: "Extremely defensive at the nest, and defenders sometimes bite and sting at once"
+  - label: "At your table"
+    value: "No — it does not turn scavenger in late summer"
+  - label: "Do we treat it"
+    value: "Depends on where the nest is; a high, out-of-the-way nest can be left alone"
+signs:
+  - "A gray paper nest inside a dense hedge or shrub, often found by a hedge trimmer"
+  - "A paper nest tucked under a soffit, deck, porch roof or shed rafter"
+  - "Yellow and black wasps flying a steady line to a point above waist height"
+  - "Two-way traffic at the underside of a nest on a mild afternoon"
+  - "Wasps using a gap in a soffit, siding or an unscreened gable vent"
 answer: "The aerial yellowjacket builds an enclosed gray paper nest in a shrub, a tree, an eave or a void, and it is yellow rather than black and white. That combination gets it mistaken for a bald-faced hornet by its nest and for a ground yellowjacket by its color."
 ready: true
 sources:

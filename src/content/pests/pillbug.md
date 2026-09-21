@@ -5,6 +5,27 @@ description: "The roly-poly under your threshold is a land crab breathing throug
 h1: "Pillbug — Armadillidium vulgare"
 treatment: rarely-warranted
 confusedWith: ['millipede']
+idTable:
+  - label: "Size"
+    value: "About a third to three-quarters of an inch — pencil eraser to fingernail"
+  - label: "Shape and color"
+    value: "Oval and domed with overlapping hard plates; slate gray to nearly black"
+  - label: "Legs"
+    value: "Seven pairs, short and pale, tucked underneath — it is a crustacean, not an insect"
+  - label: "When disturbed"
+    value: "Closes into a tight sphere; a sowbug cannot, and has two small tails sticking out behind"
+  - label: "How to tell it from a millipede"
+    value: "A millipede is long and worm-like with two pairs of legs per segment and coils into a flat spiral"
+  - label: "When you see it indoors"
+    value: "October into December, a day or two after heavy rain"
+  - label: "Do we treat it"
+    value: "Rarely warranted — it dies indoors within days, harms nothing, and a broom is enough"
+signs:
+  - "Small gray armored animals at a door threshold or garage floor after a storm week"
+  - "Animals that roll into a ball when touched"
+  - "Dead ones on the floor that feel like tiny shells rather than squashed insects"
+  - "Crowds of them under boards, pots, bark mulch or leaf litter against the foundation"
+  - "Ragged holes chewed in seedlings or low fruit sitting on wet soil in spring"
 answer: "A pillbug is a crustacean rather than an insect, breathing through gill-like structures that have to stay wet. It cannot hold moisture in a heated house, so the ones indoors are already dying, and they damage nothing. Seven pairs of legs, rolls into a ball, and lives outdoors in mulch and leaf litter."
 ready: true
 reviewBy: 2027-09-02

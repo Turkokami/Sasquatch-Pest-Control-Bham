@@ -5,6 +5,26 @@ description: "The big orange-legged wasp dragging a paralyzed katydid across you
 h1: "Great Golden Digger Wasp — Sphex ichneumoneus"
 treatment: we-do-not
 confusedWith: ['grass-carrying-wasp', 'western-yellowjacket']
+idTable:
+  - label: "Size"
+    value: "Large — big enough to carry a katydid several times her own bulk"
+  - label: "Color and markings"
+    value: "Rust-orange legs, orange abdomen with a dark rear, smoky wings, short golden hair on the thorax"
+  - label: "How to tell it from a yellowjacket"
+    value: "One orange-legged female working alone, not a stream of banded yellow and black wasps from one hole"
+  - label: "Nest"
+    value: "A single vertical burrow in dry, warm, sandy or gravelly ground with sparse cover"
+  - label: "When you see it"
+    value: "Roughly July into early September here, peaking in the hottest, driest weeks"
+  - label: "Stings"
+    value: "Generally will not — solitary, with no nest to defend"
+  - label: "Do we treat it"
+    value: "No — a beneficial predator and flower visitor; we will say so rather than sell a service"
+signs:
+  - "A large orange-legged wasp dragging a paralyzed katydid or cricket across a driveway or path"
+  - "A neat round hole, pencil to finger width, in bare ground with a small fan of soil beside it"
+  - "Burrows along a gravel drive edge, a sandy bank or the bare strip beside a shed or slab"
+  - "A single wasp loosening soil and backing out of the hole to scatter it clear of the entrance"
 answer: "A large wasp with rust-orange legs hauling a paralyzed katydid across bare ground is a great golden digger wasp. She is solitary, she digs a burrow in dry sandy soil, and she does not defend it. We do not treat these, and we will say so rather than sell you a service."
 ready: true
 expert: kristofer-elling

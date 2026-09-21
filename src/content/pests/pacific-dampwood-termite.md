@@ -5,6 +5,27 @@ description: "The termite of northwest Washington attacks only wood that is alre
 h1: "Pacific Dampwood Termite"
 treatment: treat
 confusedWith: ['carpenter-ant']
+idTable:
+  - label: "Winged swarmers"
+    value: "Over an inch including wings; brownish body, four long smoky wings well past the abdomen"
+  - label: "Soldiers"
+    value: "About three quarters of an inch, heavy reddish-brown to near-black head with oversized jaws"
+  - label: "Nymphs"
+    value: "White to cream, soft, roughly half an inch, and never seen unless the wood is opened"
+  - label: "How to tell it from a carpenter ant"
+    value: "Straight beaded antennae, no pinched waist, and four wings of about equal length"
+  - label: "Where it lives"
+    value: "Only in timber that is already wet — sill plates, rim joists, deck ledgers, leaky framing"
+  - label: "When it flies"
+    value: "Warm evenings in late summer or fall, especially a day or two after rain"
+  - label: "Mud tubes"
+    value: "None — it lives inside the wet wood, so tubes point to a different termite"
+signs:
+  - "Large winged insects at a porch light or lit window on a mild September or October evening"
+  - "Small heaps of same-sized shed wings on an indoor sill or on the crawlspace vapor barrier"
+  - "Hard, gritty pellets about a millimeter long and faintly six-sided below a kick-out hole"
+  - "Galleries packed with dark material, running across the grain as well as along it"
+  - "Wood that lets a screwdriver sink in where it should stop"
 answer: "The Pacific dampwood termite is the termite of northwest Washington, and it only attacks wood that is already wet. Finding one is news about a water problem that has been running for years. Mud tubes are not the sign here, and most termite advice online describes a different insect entirely."
 ready: true
 sources:

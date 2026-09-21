@@ -5,6 +5,29 @@ description: "The big black and white wasp with the gray football nest is a yell
 h1: "Bald-Faced Hornet"
 treatment: depends
 confusedWith: ['aerial-yellowjacket']
+idTable:
+  - label: "What it really is"
+    value: "A large yellowjacket in the genus Dolichovespula, not a true hornet"
+  - label: "Size"
+    value: "13 to 20 millimeters by caste — a worker around three quarters of an inch"
+  - label: "Color and markings"
+    value: "Black with ivory-white face, banding and leg markings; no yellow anywhere"
+  - label: "Telling it from an aerial yellowjacket"
+    value: "Look at the insect, not the nest: black and white here, banded yellow and black there"
+  - label: "Nest"
+    value: "Gray layered paper football with the entrance low on the underside, in trees, shrubs or eaves"
+  - label: "Colony size"
+    value: "About one hundred to four hundred workers by late summer"
+  - label: "Scavenging"
+    value: "Stays a predator all season and is not the wasp at your picnic table"
+  - label: "Do we treat it"
+    value: "Depends on position — near a door or at head height, yes; high in an open tree, often not"
+signs:
+  - "A gray, football-shaped paper nest in a tree, shrub, eave or open outbuilding"
+  - "Large black and white wasps flying in and out of a single hole at the bottom of the nest"
+  - "A nest that shows up in a bare tree once the leaves drop in autumn"
+  - "A golf-ball-sized starter nest under a porch roof or eave in spring"
+  - "Black and white wasps working flowers or hunting along a fence line in late summer"
 answer: "The bald-faced hornet is not a hornet. It is a large black and white yellowjacket in the genus Dolichovespula, and the gray football-shaped paper nest hanging in a tree or under an eave is its work. Whether it needs treating comes down to where that nest hangs and how late the season is."
 ready: true
 sources:

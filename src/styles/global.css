@@ -3096,3 +3096,67 @@ footer.site li a {
 footer.site ul:has(a) li {
   margin: 0;
 }
+
+/* ------------------------------------------- §25  quick facts (snippet shape) */
+
+/* The at-a-glance table and its list near the top of a page — Keystone v3.2
+   §4.3. Labels in a narrow column, facts beside them; on a phone the two
+   stack, because a two-column table at 390px squeezes the fact into a ribbon. */
+.quickfacts {
+  margin: var(--space-5) 0;
+  padding: var(--space-4);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--well);
+}
+.quickfacts h2 {
+  margin-top: 0;
+}
+.quickfacts table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+}
+.quickfacts th,
+.quickfacts td {
+  padding: var(--space-2) var(--space-3);
+  border-top: 1px solid var(--rule);
+  text-align: left;
+  vertical-align: top;
+}
+.quickfacts tr:first-child th,
+.quickfacts tr:first-child td {
+  border-top: 0;
+}
+.quickfacts th {
+  width: 32%;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.quickfacts h3 {
+  margin: var(--space-4) 0 var(--space-2);
+  font-size: var(--fs-h3);
+}
+.quickfacts ul,
+.quickfacts ol {
+  margin: 0;
+  padding-left: 1.2em;
+}
+.quickfacts li + li {
+  margin-top: var(--space-1);
+}
+@media (max-width: 34rem) {
+  .quickfacts th,
+  .quickfacts td {
+    display: block;
+    width: auto;
+    padding: var(--space-1) 0;
+  }
+  .quickfacts th {
+    padding-top: var(--space-3);
+  }
+  .quickfacts td {
+    border-top: 0;
+  }
+}

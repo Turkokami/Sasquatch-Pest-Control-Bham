@@ -6,6 +6,27 @@ species: 'velvety-tree-ant'
 treatment: 'treat'
 answer: "Velvety tree ants have a dark head, a reddish thorax and a black velvety abdomen. They nest in dead wood, stumps and cavities in living trees, and move into buildings much as carpenter ants do. They excavate less, smell sharply when crushed, and are routinely misidentified as carpenter ants."
 confusedWith: ['carpenter-ant', 'odorous-house-ant']
+idTable:
+  - label: "Size"
+    value: "About an eighth to a quarter of an inch, workers of several sizes in one column"
+  - label: "Color"
+    value: "Banded — brownish-black head, yellowish-red thorax, velvety black abdomen"
+  - label: "How to tell it from a carpenter ant"
+    value: "The red is a band across the body, not the legs; crushed workers smell sharp and sour"
+  - label: "Nest"
+    value: "Hollows in trees, stumps and logs; indoors in damp wall voids and foam insulation"
+  - label: "Damage"
+    value: "Mines wood less than a carpenter ant and leaves far less debris; tunnels in foam"
+  - label: "Bites"
+    value: "Aggressive at the nest — a painful bite with secretions sprayed on the intruder"
+  - label: "When it is active"
+    value: "Builds through spring, peaks in the warm months, runs at night, falls away from November"
+signs:
+  - "Long, well-defined trails at night along fence rails, retaining walls, cable runs and branches touching the house"
+  - "Tunneling in foam board at a rim joist or in the foam sleeve on a heat pump line set"
+  - "A faint, persistent foul smell in one room that matches nothing stored there"
+  - "Shallow, irregular workings in damp wood with little debris below them"
+  - "Ants traveling up maples, birches, roses or fruit trees carrying a heavy aphid or scale load"
 faqs:
   - q: "How do I tell this apart from a carpenter ant?"
     a: "Color, in three bands. Utah State describes a brownish-black head, a yellowish-red thorax and a velvety black abdomen. A western carpenter ant is black throughout with reddish legs, and its body is not banded along its length."

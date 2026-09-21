@@ -5,6 +5,26 @@ description: "Large red seed-collecting ants with one of the few severe stings i
 h1: "Harvester Ant — Pogonomyrmex spp."
 treatment: depends
 confusedWith: ['thatching-ant', 'carpenter-ant', 'pavement-ant']
+idTable:
+  - label: "Size"
+    value: "Six to eight millimeters, with every worker the same size"
+  - label: "Color"
+    value: "Reddish or reddish brown in most species"
+  - label: "The beard"
+    value: "A fringe of long hairs under the head, used to carry sand — no other ant here has one"
+  - label: "How to tell it from a thatching ant"
+    value: "A bare cleared circle in sandy ground, not a mound of grass and plant material; it stings rather than bites"
+  - label: "Where it lives"
+    value: "Mostly along the Columbia and Snake rivers, in sandy soil; uncommon in Whatcom County"
+  - label: "Sting"
+    value: "Rather severe, somewhat like a honey bee or yellowjacket — though few people are stung"
+  - label: "Do we treat it"
+    value: "Depends — only a nest in ground people use, treated directly; never open ground nobody uses"
+signs:
+  - "A cleared disc of bare ground with a single entrance hole in the middle"
+  - "Small stones and seed chaff scattered around the nest opening"
+  - "Large reddish ants of one size carrying seeds across open sandy ground"
+  - "A bare circle standing out in otherwise vegetated ground on a river bar or dry bank"
 answer: "Harvester ants are large reddish ants that collect seeds and nest only in sandy soil of a particular texture. They deliver one of the few genuinely severe stings among Pacific Northwest ants. Colonies are concentrated along the Columbia and Snake rivers rather than in this corner of the state."
 ready: true
 expert: kristofer-elling

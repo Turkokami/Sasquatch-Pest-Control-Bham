@@ -1,0 +1,54 @@
+---
+/**
+ * QUICK FACTS — a summary table and, optionally, a list, near the top of a
+ * page. Keystone v3.2 §4.3 "snippet shape": each page type carries the real
+ * markup a search engine or an answer engine can lift whole — a table for an
+ * identification or a scope, an ordered list for steps, a plain list for
+ * signs. Built 21 Sep 2026 for the pest library first; the service, problem,
+ * vertical and compliance pages reuse it.
+ *
+ * NOT data-boilerplate. Every cell is page-specific and written from that
+ * page's own prose, so it is content and it counts — which is the point.
+ *
+ * The table is a <th scope="row"> / <td> pair per row rather than a header
+ * row across the top: it is a set of labeled facts about one thing, which is
+ * how a screen reader should announce it and how a snippet reads.
+ */
+import { langForPath } from '../lib/offer';
+
+interface Row { label: string; value: string }
+interface Props {
+  /** Visible heading above the table, e.g. "Norway rat at a glance". */
+  heading: string;
+  rows?: Row[];
+  /** Optional list under the table. */
+  listHeading?: string;
+  list?: string[];
+  /** 'ol' for steps in order, 'ul' for signs or items with no order. */
+  listKind?: 'ol' | 'ul';
+}
+const { heading, rows, listHeading, list, listKind = 'ul' } = Astro.props;
+const es = langForPath(Astro.url.pathname) === 'es';
+const List = listKind;
+---
+<section class="quickfacts" aria-labelledby="quickfacts-h">
+  <h2 id="quickfacts-h">{heading}</h2>
+  {rows && rows.length > 0 && <table aria-labelledby="quickfacts-h">
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          <th scope="row">{r.label}</th>
+          <td>{r.value}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>}
+  {list && list.length > 0 && (
+    <>
+      {listHeading && <h3>{listHeading}</h3>}
+      <List>
+        {list.map((item) => <li>{item}</li>)}
+      </List>
+    </>
+  )}
+</section>

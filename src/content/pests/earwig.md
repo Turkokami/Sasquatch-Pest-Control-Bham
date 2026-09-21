@@ -6,6 +6,27 @@ species: 'earwig'
 treatment: 'rarely-warranted'
 answer: "The European earwig is a nocturnal outdoor insect that shelters in mulch, leaf litter and under boards against a foundation, and hunts aphids and soft-bodied insects at night. Its forceps are defensive and carry no venom. It does not breed indoors and damages nothing in a building."
 confusedWith: []
+idTable:
+  - label: "Size"
+    value: "About five-eighths of an inch, up to three-quarters"
+  - label: "Color and body"
+    value: "Light to dark reddish-brown with pale legs; flattened and elongate for wedging into gaps"
+  - label: "Forceps"
+    value: "A pair at the tail end — curved on males, straighter on females; defensive, with no venom"
+  - label: "How to tell it from a rove beetle"
+    value: "Check the tail: forceps mean earwig, and nothing else in a house here carries them"
+  - label: "Where it lives"
+    value: "Outdoors in mulch, leaf litter and under boards against the foundation; it does not breed indoors"
+  - label: "When you see it"
+    value: "Active at night; the population peaks around August and September"
+  - label: "Do we treat it"
+    value: "Rarely warranted — clearing mulch from the siding and fitting a door sweep usually does it"
+signs:
+  - "Earwigs in the bathroom, laundry or kitchen, usually after a warm night"
+  - "A scatter of them when you lift a board, pot or paver in a garden bed during the day"
+  - "The mulch bed against the house moving with them an hour after sunset"
+  - "Dahlias, strawberries, lettuce or seedlings with irregular holes and chewed edges"
+  - "Corn silk chewed back, followed by poorly filled ears"
 faqs:
   - q: "Do earwigs crawl into people's ears?"
     a: "No. Penn State's extension fact sheet describes the belief as a widespread superstition and states plainly that these insects do not crawl into the human ear. The name is centuries old and the story attached to it was never true."
