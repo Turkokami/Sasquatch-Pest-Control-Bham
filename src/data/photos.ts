@@ -780,11 +780,17 @@ export const problemPhotos: Record<string, Photo> = {
     caption:
       'What the complaint actually looks like. This is a corner of exterior trim in autumn, and every one of those insects is looking for a way behind it. The number on the wall is the useful signal: it is the last point at which sealing and a correctly timed exterior treatment can still do anything.',
   },
+  /* Owner, 21 Sep 2026: the photograph here was "a torn out yellow jackets nest
+     in a shed not insulation". It now lives in the gallery's stinging section
+     under its real name, and this page leads on actual rodent runs in attic
+     insulation — the same frame as the rodent control page, with its own
+     caption. The old caption also claimed installer training for the whole
+     staff; that is gone with it. */
   'rodents-in-the-attic-insulation': {
-    file: '/img/work/insulation-shredded-and-nested-by-rodents-whatcom-county-wa.jpg',
-    alt: 'A mass of shredded insulation pulled into a rough nest inside a building cavity',
+    file: '/img/work/rodent-tunneling-blown-in-attic-insulation-sumas-wa.jpg',
+    alt: 'Blown-in attic insulation with runs and tunnels pushed through it, photographed by torchlight',
     caption:
-      'Insulation shredded and worked into a nest inside a cavity. Once material is in this condition it has stopped insulating, and it is why removal and replacement is part of the repair on a bad job rather than an extra — everyone on staff has completed installer training for that reason.',
+      'Runs through blown-in attic insulation in Sumas. Every channel is compressed and fouled along its whole length, which is why contaminated attic insulation comes out rather than getting topped up, and why the animals have to be confirmed gone before anything new goes in.',
   },
   'wasp-nest-in-a-wall-void': {
     file: '/img/work/paper-wasp-comb-removed-from-a-wall-void-whatcom-county-wa.jpg',

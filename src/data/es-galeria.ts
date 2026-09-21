@@ -36,6 +36,7 @@ export const TITULOS: Record<string, string> = {
 
 export const ALT_ES: Record<string, string> = {
   /* Fotos del dueño, 18 sep 2026. */
+  '/img/gallery/yellowjacket-nest-torn-out-of-a-shed.jpg': 'Un nido de avispa chaqueta amarilla arrancado de la pared de un cobertizo, en pedazos sobre el piso, con su envoltura de papel gris y café abierta en capas',
   '/img/gallery/failed-louvered-foundation-vent-at-a-restaurant.jpg': 'Una ventila de cimiento galvanizada con persianas dobladas y esquinas abiertas, al pie de la pared de un restaurante',
   '/img/gallery/vent-guard-frame-fitted-over-an-open-foundation-vent.jpg': 'El marco de acero de una rejilla protectora atornillado al cimiento alrededor de una ventila abierta, con el dintel de madera a la vista',
   '/img/gallery/vent-guard-installed-on-a-restaurant-foundation.jpg': 'La rejilla protectora terminada, de malla negra gruesa en un marco de acero soldado, sobre la ventila del cimiento de un restaurante',

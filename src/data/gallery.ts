@@ -57,6 +57,9 @@ const allSections: GallerySection[] = [
     key: 'stinging',
     title: 'Wasps, hornets and bees',
     images: [
+      /* Named by the owner 21 Sep 2026: a yellowjacket nest torn out of a shed.
+         The archive had it as rodent-shredded insulation on an attic page. */
+      { file: '/img/gallery/yellowjacket-nest-torn-out-of-a-shed.jpg', alt: 'A yellowjacket nest torn out of a shed wall and lying in pieces on the floor, its layered gray-tan paper envelope broken open', width: 560, height: 315 },
       /* Owner's own, 19 Sep 2026. */
       { file: '/img/gallery/black-and-yellow-wasp-close-up.jpg', alt: 'A close-up of a black wasp with thin yellow bands and yellow legs standing on white painted trim', width: 560, height: 1212 },
       /* Owner's own, 19 Sep 2026. */
