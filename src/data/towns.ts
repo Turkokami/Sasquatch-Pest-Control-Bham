@@ -457,6 +457,38 @@ export const towns: Town[] = [
     ],
   },
   {
+    /* LUMMI ISLAND, owner's call 21 Sep 2026: "U want lummi island listed as a
+       area pages pls". Built once he had answered the three things a page could
+       not guess at: the island is booked any day like the mainland, there is
+       NO ferry surcharge or minimum, and the work out there is rodents and
+       exclusion, wasps and yellowjackets, seasonal homes, and carpenter ants
+       with the moisture behind them.
+
+       Geography checked 21 Sep 2026, not recalled: the county ferry Whatcom
+       Chief from Gooseberry Point, on Lummi Nation land, is a six-minute
+       crossing; the island is about 8.7 miles long, steep and wooded at the
+       south end and lower at the north; its population roughly doubles in
+       summer with second-home owners; Legoe Bay on the west side is the
+       reef-net fishery. The old WordPress site had a Lummi Island page, and its
+       URL now redirects here instead of to the county page. */
+    slug: 'lummi-island',
+    name: 'Lummi Island',
+    county: 'Whatcom County',
+    /* No distanceMi or direction, on purpose: placement() would turn them into
+       "about N miles west of Bellingham, roughly M minutes for our crews",
+       and a drive-time estimate that ignores a ferry is wrong for an island.
+       The page body describes the crossing instead. */
+    housing: 'rural',
+    kind: 'community',
+    pestPressures: [
+      'mice and rats in cabins and seasonal homes left closed over winter',
+      'carpenter ants in damp, shaded, wood-framed buildings under the trees',
+      'yellowjackets and paper wasps through late summer',
+      'moisture in crawlspaces and siding on the weather side',
+    ],
+    landmarks: ['the Whatcom Chief ferry from Gooseberry Point', 'Legoe Bay', 'the wooded south end of the island'],
+  },
+  {
     slug: 'deming',
     name: 'Deming',
     county: 'Whatcom County',

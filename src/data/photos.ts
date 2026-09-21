@@ -370,6 +370,13 @@ export const locationPhotos: Record<string, Photo> = {
     caption:
       'At a house in Sudden Valley. Homes here are built into the forested slope above the lake, so the timber and the damp begin at the edge of the driveway rather than at the edge of town.',
   },
+  /* The one photograph taken on the island itself, owner-supplied 19 Sep 2026. */
+  'lummi-island': {
+    file: '/img/gallery/service-van-on-lummi-island.jpg',
+    alt: 'The wrapped van parked at the water on Lummi Island, a forested shoreline across the channel under a bright sky',
+    caption:
+      'On Lummi Island, off the ferry and at the water. The crossing from Gooseberry Point is the only way over, so a visit is planned around the boat — and it is priced exactly like a job on the mainland, with no surcharge for the trip.',
+  },
   'mount-vernon': {
     file: '/img/work/sasquatch-pest-control-van-in-a-driveway-mount-vernon-wa.jpg',
     alt: 'A wrapped Sasquatch Pest Control van parked on a wet driveway lined with tall evergreens',
