@@ -44,7 +44,7 @@ changes how long it honestly takes to find.
 
 ## Carpenter ants at scale
 
-Edgemoor produces more carpenter ant work per property than anywhere else we
+Edgemoor produces more [carpenter ant](/pest-library/carpenter-ant/) work per property than anywhere else we
 operate, and the reason is straightforward: the neighborhood has more of what
 they want.
 
@@ -221,7 +221,7 @@ gardening across a large area in late summer, that is a genuine risk — the col
 is at maximum size and defensiveness in exactly the weeks the grounds get the
 most attention.
 
-Bald-faced hornets build the large gray paper nests in trees, and on a wooded lot
+[Bald-faced hornets](/pest-library/bald-faced-hornet/) build the large gray paper nests in trees, and on a wooded lot
 they are often not noticed until autumn leaf fall, by which point the colony is
 finishing naturally.
 
@@ -243,7 +243,7 @@ wind-driven rain in a way a sheltered inland wall never does, and it takes it at
 the joints — window heads, trim returns, deck ledgers, the top of a rake board.
 Water that gets behind cladding at those points keeps a narrow band of framing
 damp through the winter without ever showing on the inside. That band is what
-carpenter ants and moisture ants are looking for, and it is the reason a house
+carpenter ants and [moisture ants](/pest-library/moisture-ant/) are looking for, and it is the reason a house
 on the bluff can have an ant problem while an identical house two streets inland
 does not.
 

@@ -71,7 +71,7 @@ ready: true
 ## What you are actually holding
 
 Size settles most of these before anything else does. The WSU Clark County
-Master Gardener sheet puts western carpenter ant workers between a quarter and
+Master Gardener sheet puts western [carpenter ant](/pest-library/carpenter-ant/) workers between a quarter and
 a half inch, with queens reaching three quarters of an inch, and describes them
 as black except for reddish legs. Get one onto a sheet of white paper under a
 lamp and the legs read reddish-brown rather than dark, which is a quicker check
@@ -80,9 +80,9 @@ than most people expect.
 Two structural features finish the identification when size is ambiguous.
 Viewed from the side, the upper surface of the thorax is one smooth unbroken
 curve — evenly convex, in WSU's phrase. That single arc is the mark that
-separates this genus from the moisture ants, whose thoracic outline carries a
+separates this genus from the [moisture ants](/pest-library/moisture-ant/), whose thoracic outline carries a
 visible notch or dip partway along. And the waist between thorax and abdomen
-carries a single node rather than a pair, which is what rules out pavement ants
+carries a single node rather than a pair, which is what rules out [pavement ants](/pest-library/pavement-ant/)
 and most of the small kitchen species at a glance.
 
 Then there is the thing that confuses people more than any other detail: within

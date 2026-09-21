@@ -128,8 +128,8 @@ the sill plate to the top plate without a firestop, so something entering at
 grade has an uninterrupted route to the attic. And a century of accumulated
 utility penetrations, each drilled oversize and none of them ever sealed.
 
-The pests follow directly. Norway rats and house mice in the crawl and the
-walls. Carpenter and moisture ants in any framing that has taken water. The
+The pests follow directly. [Norway rats](/pest-library/norway-rat/) and house mice in the crawl and the
+walls. Carpenter and [moisture ants](/pest-library/moisture-ant/) in any framing that has taken water. The
 damp-crawl company underneath — sowbugs, millipedes, springtails and silverfish
 — all of which are reporting a moisture condition rather than being a problem in
 their own right.
@@ -188,7 +188,7 @@ disease and the ants are the symptom. Treating them without correcting the
 source produces a new colony in the same timber, which on low-lying Mount Vernon
 property is a common and expensive outcome.
 
-Carpenter ants excavate galleries to nest and prefer wood that has begun to
+[Carpenter ants](/pest-library/carpenter-ant/) excavate galleries to nest and prefer wood that has begun to
 soften. A mature colony almost always keeps its parent nest outdoors — a stump,
 a fence post, a landscape timber, a woodpile — with satellite nests inside the
 structure. The satellites are what people see, and treating them while the

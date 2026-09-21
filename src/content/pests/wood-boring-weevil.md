@@ -140,7 +140,7 @@ a period measured in years. Only then can this insect use it.
 So a weevil in a joist is not the beginning of a story. It is a late chapter, and
 the earlier chapters happened whether anybody noticed them or not.
 
-That puts it in the same category as the moisture ant: an organism whose real
+That puts it in the same category as the [moisture ant](/pest-library/moisture-ant/): an organism whose real
 value to a household is diagnostic. It marks the failed timber precisely, which
 is more than a meter sweep across a surface can do, and it marks it as failed
 rather than merely damp.

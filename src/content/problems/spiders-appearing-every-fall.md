@@ -117,7 +117,7 @@ The autumn walkers here are a fairly consistent cast.
 most of the alarm. Males walking in autumn are what people find in bathtubs and
 running across floors at night. Harmless.
 
-**Other funnel weavers**, including the hobo spider, which is closely related and
+**Other funnel weavers**, including the [hobo spider](/pest-library/hobo-spider/), which is closely related and
 whose fearsome reputation has been substantially retracted by the researchers and
 agencies that once promoted it.
 
@@ -257,7 +257,7 @@ here is roughly how the spider year runs in this county.
 
 **January to March.** Very little visible. Overwintering adults are inactive,
 egg sacs are waiting, and the few spiders indoors are established residents like
-cellar spiders. A good time for sealing work, because nothing is moving and the
+[cellar spiders](/pest-library/cellar-spider/). A good time for sealing work, because nothing is moving and the
 weather is bad enough that indoor jobs are welcome.
 
 **April and May.** Egg sacs hatch and enormous numbers of tiny spiderlings

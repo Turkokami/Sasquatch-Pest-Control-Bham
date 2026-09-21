@@ -66,7 +66,7 @@ long legs, long antennae, a body under two inches but a leg span that makes it
 look considerably larger. It moves in fast bursts and stops dead, which is
 precisely the behavior people find alarming.
 
-**What it does.** It hunts. Silverfish, small cockroaches, spiders, ants, larvae,
+**What it does.** It hunts. [Silverfish](/pest-library/silverfish/), small cockroaches, spiders, ants, larvae,
 and other soft-bodied insects. It is one of the more effective predators that
 lives in buildings, and unlike almost everything else on this website it is
 actively reducing your other pest problems.
@@ -215,7 +215,7 @@ Where the work is perimeter treatment and harborage reduction ahead of a
 migration season, it is a small job. Where the reservoir is a wet crawlspace, the
 pest treatment is the minor part and the
 [restoration](/services/crawlspace-restoration/) is the real project — and it
-resolves silverfish, moisture ants and wood-destroying insects at the same time.
+resolves silverfish, [moisture ants](/pest-library/moisture-ant/) and wood-destroying insects at the same time.
 
 Where the answer is a dehumidifier and a bathroom fan that actually works, we will
 tell you that. The estimate is free.
@@ -297,7 +297,7 @@ Some pests tell you about food — cockroaches, pantry beetles, ants at a spill.
 Some tell you about access — rodents, wasps in a wall void. And some tell you
 almost nothing about themselves and a great deal about the building.
 
-Centipedes, millipedes, silverfish, sowbugs, pillbugs, moisture ants and dampwood
+Centipedes, millipedes, silverfish, sowbugs, [pillbugs](/pest-library/pillbug/), moisture ants and dampwood
 termites are all in that third group. None of them can establish without sustained
 moisture, and none of them is doing much harm on its own. What they collectively
 indicate is that part of the structure is holding water — and that condition is

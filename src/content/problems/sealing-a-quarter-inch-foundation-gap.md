@@ -37,7 +37,7 @@ faqs:
 The number gets repeated so often that it sounds like a slogan, so it is worth
 explaining where it comes from.
 
-A house mouse can pass through an opening of roughly a quarter of an inch. The
+A [house mouse](/pest-library/house-mouse/) can pass through an opening of roughly a quarter of an inch. The
 limiting factor is the skull — a mouse cannot compress its head — but the body
 behind it is far more flexible than it looks, and the rib cage and shoulders
 follow through anything the head clears.

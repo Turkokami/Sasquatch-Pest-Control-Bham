@@ -121,7 +121,7 @@ city rather than for a homeowner. We will say which it is.
 These streets have big trees, and people arrive at the conversation braced to
 be told they are the problem. They are usually not.
 
-A living, healthy mature tree is rarely a carpenter ant nest. What supports
+A living, healthy mature tree is rarely a [carpenter ant](/pest-library/carpenter-ant/) nest. What supports
 colonies is standing deadwood, old stumps, fallen limbs left at the back of a
 lot, punky wood at the base of an ageing tree, and the landscape timber that
 accumulates on a settled property — ties, raised beds, old deck framing, fence
@@ -144,7 +144,7 @@ which is why people check the wrong things first.
 
 Damp matters because of what it permits. Carpenter ants excavate softened wood
 far more readily than sound wood. Wood-boring beetles and decay fungi need
-moisture content that dry framing never reaches. And moisture ants — which we
+moisture content that dry framing never reaches. And [moisture ants](/pest-library/moisture-ant/) — which we
 find regularly on ground like this — are not really a pest problem at all: they
 nest in wood that is already wet and decaying, so finding them is a moisture
 report rather than an infestation.
@@ -248,7 +248,7 @@ find.
 
 Multicolored Asian lady beetles and brown marmorated stink bugs do the same
 thing on the same walls. Spiders come in for their own reasons and get noticed
-at the same time; most of what turns up is giant house spiders, and the autumn
+at the same time; most of what turns up is [giant house spiders](/pest-library/giant-house-spider/), and the autumn
 activity is males moving to find females rather than an infestation arriving.
 
 No member of that group bites, breeds under your roof, or damages anything

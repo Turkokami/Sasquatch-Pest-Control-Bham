@@ -317,7 +317,7 @@ all of them are covered by everything above.
 
 **Funnel weavers.** A flat horizontal sheet with a tube at one edge, low down —
 window wells, foundation lines, ground vegetation, the corner of a shed. This is
-the giant house spider and its relatives, and it is the group whose males come
+the [giant house spider](/pest-library/giant-house-spider/) and its relatives, and it is the group whose males come
 indoors in autumn.
 
 **Cellar spiders.** Loose, messy, three-dimensional tangles in the corners of
@@ -382,7 +382,7 @@ different look — heavier black and yellow banding, often a zigzag ribbon of wh
 silk down the middle of the web — and they are also harmless.
 
 The other regular mix-up is with funnel weavers, which happens indirectly: people
-who have read about hobo spiders assume any large spider in autumn might be one,
+who have read about [hobo spiders](/pest-library/hobo-spider/) assume any large spider in autumn might be one,
 and then apply that worry to an orb weaver. The two groups are not close
 relatives and they are trivially easy to separate by the web alone. A wheel with
 spokes, hung vertically in the open air, is an orb weaver. A flat sheet with a

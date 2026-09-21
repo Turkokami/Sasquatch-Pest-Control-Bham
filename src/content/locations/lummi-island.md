@@ -77,7 +77,7 @@ job, and that is worth a proper look before anybody pulls it out by hand.
 
 ## Carpenter ants under the trees
 
-The south end in particular is timber country, and carpenter ants are the pest
+The south end in particular is timber country, and [carpenter ants](/pest-library/carpenter-ant/) are the pest
 that follows it. They do not eat wood. They excavate galleries in wood that
 moisture has already softened, which is why the problem on the island tends to
 be a particular corner of a building rather than the whole house.

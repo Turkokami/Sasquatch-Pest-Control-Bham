@@ -14,7 +14,7 @@ Every infestation — rodents, ants, roaches, termites, spiders — requires thr
 
 ## Foundation and exterior perimeter
 
-Every pest that ends up inside first crossed this zone. Walk your entire foundation and look for **cracks** (seal even hairline cracks with masonry sealant), **gaps around utility penetrations** (seal with copper mesh, hardware cloth, or caulk; use hardware cloth first for gaps over a quarter inch), and **wood-to-soil contact** (maintain at least 6 inches of clearance between any wood element and soil — a direct pathway for carpenter ants and termites). Fit foundation vents and weep holes with quarter-inch hardware cloth to keep rodents out while maintaining airflow.
+Every pest that ends up inside first crossed this zone. Walk your entire foundation and look for **cracks** (seal even hairline cracks with masonry sealant), **gaps around utility penetrations** (seal with copper mesh, hardware cloth, or caulk; use hardware cloth first for gaps over a quarter inch), and **wood-to-soil contact** (maintain at least 6 inches of clearance between any wood element and soil — a direct pathway for [carpenter ants](/pest-library/carpenter-ant/) and termites). Fit foundation vents and weep holes with quarter-inch hardware cloth to keep rodents out while maintaining airflow.
 
 ## Vegetation management
 

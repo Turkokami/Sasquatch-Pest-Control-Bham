@@ -69,7 +69,7 @@ garden, and you buy a quiet couple of months. That is the whole reason this work
 gets a reputation for coming back, and it is why the first visit here is
 investigative before it is anything else.
 
-Frass tells you what you are dealing with. Carpenter ants push shavings out, so
+Frass tells you what you are dealing with. [Carpenter ants](/pest-library/carpenter-ant/) push shavings out, so
 the debris below a gallery is fibrous and often has insect parts in it — quite
 different from the fine powder under a wood-boring beetle hole or the hard
 pellets a dampwood termite leaves behind.
@@ -120,7 +120,7 @@ condition would be alone.
 A **stepped or partly excavated crawlspace** does not drain evenly. Groundwater
 travels downhill, arrives at the uphill wall, and collects at the low end of the
 crawl. That end stays damp for months after the rest has dried, and the joists
-and subfloor above it are what soften. Where we find moisture ants or decay in a
+and subfloor above it are what soften. Where we find [moisture ants](/pest-library/moisture-ant/) or decay in a
 house on this hill, that is nearly always where they are.
 
 Access compounds it. The crawl hatch is commonly at the high, dry, convenient
@@ -263,7 +263,7 @@ different conversation entirely.
 
 ## Spiders, and the September phone call
 
-Giant house spiders bring the autumn calls. They are harmless, they have been
+[Giant house spiders](/pest-library/giant-house-spider/) bring the autumn calls. They are harmless, they have been
 established across western Washington for generations, and the big fast ones
 found indoors are wandering males looking for mates rather than anything coming
 in for warmth. A spider stranded in a bath is a male that got in and could not

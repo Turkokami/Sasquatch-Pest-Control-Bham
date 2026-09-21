@@ -141,7 +141,7 @@ vegetation, you are looking at that instead.
 into bare ground and carries katydids. Same family, same solitary habit, no
 interest in your window.
 
-The four-way test is quick. Grass means this wasp. Mud means a mud dauber.
+The four-way test is quick. Grass means this wasp. Mud means a [mud dauber](/pest-library/mud-dauber/).
 Paper cells mean a social wasp. A hole in bare ground with no structure at all
 means a digger.
 
@@ -290,7 +290,7 @@ look at the whole elevation than clear one track and leave.
 Nearly every wasp question we are asked comes down to this one fact, and almost
 nobody has been told it.
 
-A **social** wasp — yellowjacket, bald-faced hornet, aerial yellowjacket, paper
+A **social** wasp — yellowjacket, [bald-faced hornet](/pest-library/bald-faced-hornet/), [aerial yellowjacket](/pest-library/aerial-yellowjacket/), paper
 wasp — lives in a colony with a queen and workers. Workers are expendable and
 defense is part of the job. Approach the nest and you are met, because the
 colony has something to protect and individual lives are cheap to it.

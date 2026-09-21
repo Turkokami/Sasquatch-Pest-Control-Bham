@@ -59,8 +59,8 @@ faqs:
 
 ## The ant nobody has a name for
 
-Most of the ants in this library arrive with a name attached. Carpenter ant.
-Pavement ant. Odorous house ant. The name usually tells you the important thing
+Most of the ants in this library arrive with a name attached. [Carpenter ant](/pest-library/carpenter-ant/).
+Pavement ant. [Odorous house ant](/pest-library/odorous-house-ant/). The name usually tells you the important thing
 about the animal.
 
 This one does not have that. The regional extension key lists it simply as
@@ -112,7 +112,7 @@ and the second one matters more:
 **That timber is decaying, or has a cavity in it.** Much bigger problem, and the
 one worth spending money on.
 
-That puts this species in the same diagnostic category as moisture ants: the
+That puts this species in the same diagnostic category as [moisture ants](/pest-library/moisture-ant/): the
 insect is a symptom, and treating it while leaving the wet wood is treating a
 smoke alarm.
 

@@ -129,7 +129,7 @@ galleries.
 ## Telling them from winged carpenter ants
 
 This is the identification that goes wrong most often in Whatcom County, and it
-goes wrong in both directions. Carpenter ant swarmers are also large, also
+goes wrong in both directions. [Carpenter ant](/pest-library/carpenter-ant/) swarmers are also large, also
 winged, also alarming, and also turn up around a building. Three field marks
 separate them and none needs magnification.
 
@@ -446,6 +446,6 @@ through what the space itself is telling you. Where it is at a window,
 [soft wood around a window
 sill](/services/termite-control/soft-wood-around-a-window-sill/) covers the
 probe test and how far the damage usually runs. The same wet timber supports
-moisture ants, which is [ant control](/services/ant-control/), and correcting
+[moisture ants](/pest-library/moisture-ant/), which is [ant control](/services/ant-control/), and correcting
 the conditions is generally
 [crawlspace restoration](/services/crawlspace-restoration/).

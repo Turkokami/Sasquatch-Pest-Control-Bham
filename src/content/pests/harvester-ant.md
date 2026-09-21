@@ -193,8 +193,8 @@ in wood. Does not sting.
 on the head and thorax, and piles of excavated sand along paving. Can sting,
 mildly, usually only if trapped against skin.
 
-The quick sorting question is the nest. Mound of plant material: thatching ant.
-Galleries in wood: carpenter ant. Sand piles on a patio: pavement ant. Bare
+The quick sorting question is the nest. Mound of plant material: [thatching ant](/pest-library/thatching-ant/).
+Galleries in wood: [carpenter ant](/pest-library/carpenter-ant/). Sand piles on a patio: [pavement ant](/pest-library/pavement-ant/). Bare
 cleared circle in sandy ground with chaff around it: harvester ant, and you are
 probably not in Whatcom County.
 

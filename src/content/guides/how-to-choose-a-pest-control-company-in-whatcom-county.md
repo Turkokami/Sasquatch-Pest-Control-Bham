@@ -107,7 +107,7 @@ Washington pest control license record shows the license type, its status, its
 expiration date, and the categories the holder carries. For structural work the
 two that matter are PCO General, which covers general structural and household
 pest control, and PCO Structural, which WSDA describes as the control of pests
-that attack structural material — fungus, termites, carpenter ants and
+that attack structural material — fungus, termites, [carpenter ants](/pest-library/carpenter-ant/) and
 wood-boring beetles.
 
 That second one is worth asking about specifically. If your problem is in the
@@ -165,7 +165,7 @@ the work.
 
 **"What species is it?"** Ask before any figure is discussed. The answer should
 be a species or a straightforward "I want to look at this properly before I say."
-"Ants" is not an answer — odorous house ants, moisture ants and carpenter ants
+"Ants" is not an answer — [odorous house ants](/pest-library/odorous-house-ant/), [moisture ants](/pest-library/moisture-ant/) and carpenter ants
 are three different jobs with three different prices and one of them is really a
 building repair. A company that quotes before identifying is quoting a product,
 not solving a problem.

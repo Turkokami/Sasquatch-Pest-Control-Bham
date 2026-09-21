@@ -69,7 +69,7 @@ generations of telephone and cable, a redundant oil line, an abandoned chimney
 thimble. Each drilled generously by whoever was doing that job on that day, and
 essentially none of them sealed.
 
-The pests follow from that list without much mystery. Norway rats and house mice under the floor and inside the walls. Carpenter and moisture ants in framing that has
+The pests follow from that list without much mystery. [Norway rats](/pest-library/norway-rat/) and house mice under the floor and inside the walls. Carpenter and [moisture ants](/pest-library/moisture-ant/) in framing that has
 taken water. Sowbugs, millipedes, springtails and silverfish
 in the damp space underneath, every one of which is reporting a
 moisture condition rather than being a problem in its own right.
@@ -84,7 +84,7 @@ Without the first part you are buying the same service again next autumn.
 If there is one insect that defines older Sedro-Woolley property, this is it,
 and the reason is simply age.
 
-Carpenter ants do not eat wood. They excavate galleries in it to nest, and they
+[Carpenter ants](/pest-library/carpenter-ant/) do not eat wood. They excavate galleries in it to nest, and they
 strongly prefer wood that has already begun to soften. A house that has stood
 for a hundred years in this climate has almost certainly had water into the
 framing somewhere — a gutter that overflowed for a decade, a window flashing

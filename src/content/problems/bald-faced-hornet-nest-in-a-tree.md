@@ -35,7 +35,7 @@ faqs:
 
 Of all the stinging insect situations on a residential property, this is the one
 that produces the most immediate alarm, and it is easy to see why. A mature
-bald-faced hornet nest is a gray, layered, papery structure the size of a
+[bald-faced hornet](/pest-library/bald-faced-hornet/) nest is a gray, layered, papery structure the size of a
 football or larger, hanging visibly in a tree, a hedge, a shrub or occasionally
 against a building.
 
@@ -153,7 +153,7 @@ insects here — commonly cited as roughly a ten-foot radius, though it varies
 with the colony, the weather and the time of season. Within that, disturbance
 provokes a response. Beyond it, they are largely indifferent to people.
 
-They can sting repeatedly, unlike a honey bee. Some individuals will also spray
+They can sting repeatedly, unlike a [honey bee](/pest-library/honey-bee/). Some individuals will also spray
 defensive fluid toward the eyes of a perceived threat at the nest, which is
 unpleasant and worth knowing about.
 

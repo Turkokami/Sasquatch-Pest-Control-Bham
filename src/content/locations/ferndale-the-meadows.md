@@ -119,7 +119,7 @@ original deck framing. Fence posts. A stump left when something came down.
 Fallen limbs stacked at the back. Firewood that has been in the same place long
 enough to have gone soft at the bottom.
 
-Carpenter ants do not eat wood — they excavate galleries in it to nest, and they
+[Carpenter ants](/pest-library/carpenter-ant/) do not eat wood — they excavate galleries in it to nest, and they
 take softened, damp wood far more readily than sound dry timber. Every item in
 that list is exactly what they want, and every one of them is within a short
 distance of a building.
@@ -211,7 +211,7 @@ faced hornets build the large gray paper nests people photograph; European
 paper wasps build small open combs under railings and deck rails and are far
 less inclined to defend them.
 
-Honey bees are not our work. If a colony has established in a wall or a chimney
+[Honey bees](/pest-library/honey-bee/) are not our work. If a colony has established in a wall or a chimney
 we will identify it and point you at somebody who removes them properly.
 
 ## Spiders, and the fall wandering
@@ -219,7 +219,7 @@ we will identify it and point you at somebody who removes them properly.
 Established lots with mature planting, outbuildings and a deck produce more
 spiders than a new subdivision does, and the autumn is when people notice.
 
-Most of what turns up indoors is giant house spiders, and what people are
+Most of what turns up indoors is [giant house spiders](/pest-library/giant-house-spider/), and what people are
 seeing is males moving to find females rather than an infestation. That is why
 they appear singly, at speed, across a floor, in September and October. For
 anybody who would rather not take our word for it, the state health department

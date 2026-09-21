@@ -176,7 +176,7 @@ into gaps around trim and vents, and overwinter in wall voids and attics —
 appearing indoors on mild winter days in numbers that seem impossible relative
 to any opening anybody can find.
 
-Multicolored Asian lady beetles and brown marmorated stink bugs do the same
+[Multicolored Asian lady beetles](/pest-library/multicolored-asian-lady-beetle/) and [brown marmorated stink bugs](/pest-library/brown-marmorated-stink-bug/) do the same
 thing on the same walls at the same time.
 
 Of the three, only the lady beetle bites, and it amounts to a pinch. None of
@@ -259,7 +259,7 @@ problem at once.
 Access is the constraint. Some of these need equipment, and some need doing at
 a time when there is nobody underneath.
 
-Honey bees are separate and we do not treat them. In berry and dairy country
+[Honey bees](/pest-library/honey-bee/) are separate and we do not treat them. In berry and dairy country
 pollinators are worth more than we are, and a colony in a wall or an old
 chimney needs somebody who removes them properly.
 

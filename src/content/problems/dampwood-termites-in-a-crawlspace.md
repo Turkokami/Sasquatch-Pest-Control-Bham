@@ -73,7 +73,7 @@ They are rarely seen unless timber is opened.
 **Soldiers.** Distinguished by a large dark head and prominent mandibles,
 defending the colony. Also only found inside the wood.
 
-The confusion is nearly always with carpenter ant swarmers, and the distinction
+The confusion is nearly always with [carpenter ant](/pest-library/carpenter-ant/) swarmers, and the distinction
 is straightforward once you know it. A termite has a broad, straight-sided body
 with no pinched waist, straight bead-like antennae, and four wings of about
 equal length. A carpenter ant swarmer has an obvious narrow waist, elbowed
@@ -138,11 +138,11 @@ of the damp-building picture, and it is worth looking at all of it at once.
 Decay fungi in the timber, sometimes visible as discoloration, a white or brown
 growth, or a cubical cracking pattern where the wood has broken down.
 
-Moisture ants, which occupy exactly the same conditions and are frequently found
+[Moisture ants](/pest-library/moisture-ant/), which occupy exactly the same conditions and are frequently found
 alongside — small, yellowish, and another reliable indicator of wet decaying
 wood.
 
-Springtails, sowbugs, millipedes and silverfish in numbers, all of which need
+Springtails, sowbugs, millipedes and [silverfish](/pest-library/silverfish/) in numbers, all of which need
 moisture and none of which persist in a dry space.
 
 Standing water or a saturated vapor barrier, or no vapor barrier at all.

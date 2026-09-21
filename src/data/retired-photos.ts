@@ -20,6 +20,11 @@ export const BIRD_WORK_IMAGES = new Set<string>([
   '/img/gallery/g27715.jpg',
   '/img/gallery/g27714.jpg',
   '/img/gallery/g27713.jpg',
+  /* Found 21 Sep 2026 by the photo-label audit: filed as exclusion mesh over a
+     stucco gap, and actually commercial bird netting on a ceiling beam. Bird
+     work is retired, so it goes with the rest of that job rather than being
+     relabeled. */
+  '/img/gallery/g27712.jpg',
   '/img/gallery/g27716.jpg',
   '/img/gallery/g27731.jpg',
   '/img/gallery/g27730.jpg',

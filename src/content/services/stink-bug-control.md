@@ -112,7 +112,7 @@ specifically, use a vacuum you can empty outside immediately, because the odor
 transfers into the canister and then into every room you subsequently vacuum. A
 stocking or filter insert in the hose, discarded afterward, is the tidy version.
 
-Boxelder bugs stain too — their crushed bodies leave marks on light-colored walls,
+[Boxelder bugs](/pest-library/boxelder-bug/) stain too — their crushed bodies leave marks on light-colored walls,
 curtains and upholstery.
 
 Conifer seed bugs also produce an odor, milder than a stink bug's.
@@ -229,7 +229,7 @@ landing, more of them getting in.
 household version and the production version, and boxelder bugs in quantity where
 maples are present.
 
-**Lake Whatcom's wooded shoreline** — Sudden Valley, Silver Beach, Edgemoor. Western conifer seed bugs dominate here for the obvious reason, and they
+**Lake Whatcom's wooded shoreline** — Sudden Valley, Silver Beach, Edgemoor. [Western conifer seed bugs](/pest-library/western-conifer-seed-bug/) dominate here for the obvious reason, and they
 are the species most often reported as something more alarming than they are.
 
 **Waterfront and seasonal** — Blaine, Birch Bay and Semiahmoo. Houses closed up
@@ -289,7 +289,7 @@ noisy flier, and the species most often reported to us as something alarming.
 Nymphs are bright red and cluster on sunlit surfaces in numbers, which alarms
 people more than the adults do.
 
-**Dark, hairy, sluggish, and a fly rather than a bug** — cluster fly. See
+**Dark, hairy, sluggish, and a fly rather than a bug** — [cluster fly](/pest-library/cluster-fly/). See
 [fly control](/services/fly-control/).
 
 None of them bites. None of them damages the structure. The only practical

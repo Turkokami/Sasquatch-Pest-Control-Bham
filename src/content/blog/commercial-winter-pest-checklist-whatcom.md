@@ -12,10 +12,10 @@ Winter in Whatcom County isn't a break from pest pressure — it's a shift in wh
 
 Commercial facilities attract pests for reasons homes don't: high delivery volumes, heavy foot traffic, large food storage areas, complex building systems, and often 24-hour operations that supply heat and food around the clock. A pest sighting by a customer, patient, student, or health inspector carries consequences far beyond discomfort. In winter specifically:
 
-- **Rodents:** House mice and Norway rats are the dominant concern. Cold outdoor temperatures drive them toward heated buildings, with food storage, loading docks, and mechanical rooms as prime targets.
+- **Rodents:** House mice and [Norway rats](/pest-library/norway-rat/) are the dominant concern. Cold outdoor temperatures drive them toward heated buildings, with food storage, loading docks, and mechanical rooms as prime targets.
 - **Cockroaches:** German cockroaches in commercial kitchens are indifferent to outdoor temperatures and live in warm, food-rich spaces year-round.
 - **Stored-product pests:** Indian meal moths, grain beetles, and weevils infest dry goods. Winter is peak season for discovering infestations that developed quietly in fall.
-- **Overwintering insects:** Stink bugs, cluster flies, and boxelder bugs shelter in walls and attics, emerging on warm days to create nuisance issues.
+- **Overwintering insects:** Stink bugs, cluster flies, and [boxelder bugs](/pest-library/boxelder-bug/) shelter in walls and attics, emerging on warm days to create nuisance issues.
 
 ## What should be on your exterior checklist?
 
@@ -86,7 +86,7 @@ Different facility types face different pressures and service frequencies.
 
 For facilities under health department, WSDA, or other oversight, documentation is both a compliance requirement and a liability protection tool.
 
-**What to document:** the date and scope of every service visit; pest activity observed by species, location, and quantity; corrective actions and who took them; monitoring station locations and results; complaints and resolutions; and exclusion work performed.
+**What to document:** the date and scope of every service visit; pest activity observed by species, location, and quantity; corrective actions and who took them; monitoring station locations and results; complaints and resolutions; and [exclusion work](/services/exclusion-and-repairs/) performed.
 
 **Who needs it:** Restaurants and food service typically keep 12 months of records for county health department compliance. FDA-regulated food facilities need it under the Food Safety Modernization Act. Healthcare facilities need it for accreditation and state licensing. Schools and childcare need it under Washington State's Healthy Schools Act IPM rules. The school piece is spelled out by [Washington's Department of Health](https://doh.wa.gov/community-and-environment/schools/pesticides): a written pest control policy, notice to interested parents before an indoor or outdoor application, posting at the treated area, and records kept afterward.
 

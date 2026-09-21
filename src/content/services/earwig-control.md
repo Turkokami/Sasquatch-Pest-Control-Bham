@@ -68,7 +68,7 @@ more. No venom, no sting, no medical relevance.
 do not burrow into them, and the name is simply very old.
 
 **Sowbugs and pillbugs** are not insects at all — they are terrestrial crustaceans,
-with gill-like breathing structures that require constant humidity. Pillbugs roll
+with gill-like breathing structures that require constant humidity. [Pillbugs](/pest-library/pillbug/) roll
 into a ball when disturbed; sowbugs do not. Both eat decaying plant material and
 neither damages anything indoors.
 
@@ -287,7 +287,7 @@ because the advice runs against standard landscaping practice.
 Bark mulch does exactly what it is meant to: it holds moisture in the soil and
 moderates temperature. Held against a building it also creates a permanently damp,
 dark, insulated strip at ground level directly against the siding — which is
-precisely the habitat earwigs, sowbugs, pillbugs and millipedes all require.
+precisely the habitat earwigs, sowbugs, pillbugs and [millipedes](/pest-library/millipede/) all require.
 
 Landscapers install it to the wall because it looks finished. Nobody is doing
 anything wrong; the consequence is simply not part of the design conversation.

@@ -34,7 +34,7 @@ faqs:
 
 ## Why it is the window
 
-Carpenter ants around a window frame is one of the most frequent calls we take
+[Carpenter ants](/pest-library/carpenter-ant/) around a window frame is one of the most frequent calls we take
 in this county, and the reason is not really about ants at all. It is about
 water.
 

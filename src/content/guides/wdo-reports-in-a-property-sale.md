@@ -64,7 +64,7 @@ Here is the sequence we see, several times a year, and it wastes the same
 two weeks every time.
 
 A sale is under way. Somebody's report comes back with findings — dampwood
-termites in the sill plate, carpenter ant galleries in a rim joist, decay in a
+termites in the sill plate, [carpenter ant](/pest-library/carpenter-ant/) galleries in a rim joist, decay in a
 crawlspace. The buyer's lender wants it addressed. Everybody starts phoning
 pest control companies.
 
@@ -159,7 +159,7 @@ A report with findings on it usually generates three separate pieces of work,
 and confusing them is where money gets wasted.
 
 **One: the water.** Almost every wood-destroying organism finding in this county
-sits behind a moisture problem. Dampwood termites and moisture ants require wet
+sits behind a moisture problem. Dampwood termites and [moisture ants](/pest-library/moisture-ant/) require wet
 wood. Decay fungus requires wet wood. Carpenter ants prefer timber that has
 already begun to soften. The water is the cause and the organism is the
 consequence, so a treatment applied to a building that stays wet is a treatment

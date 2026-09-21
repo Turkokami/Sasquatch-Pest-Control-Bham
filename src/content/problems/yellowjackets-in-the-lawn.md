@@ -64,7 +64,7 @@ them you can predict where a nest will be on most properties.
 
 **Abandoned rodent burrows.** By far the most common. The cavity already exists,
 it is the right size, it drains, and it has a defensible entrance. Any property
-with vole or mouse activity in the ground has candidate sites everywhere. UC
+with [vole](/pest-library/vole/) or mouse activity in the ground has candidate sites everywhere. UC
 IPM's [yellowjacket pest note](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html)
 names the old rodent burrow as the typical starting point for a ground colony
 too.
@@ -248,7 +248,7 @@ Traffic in and out of a single small hole in numbers is the signature.
 burrows, under sheds and in compost. They are large, round and densely furry,
 and the colony is small — dozens rather than thousands. They are important
 pollinators, they are not aggressive away from the nest, and the colony dies out
-naturally in late summer. We will not treat a bumble bee nest that can
+naturally in late summer. We will not treat a [bumble bee](/pest-library/bumble-bee/) nest that can
 reasonably be left, and we will say so.
 
 **Mining and solitary bees** produce small mounds of fine soil with a central

@@ -53,7 +53,7 @@ are treating a deck rail for a crawlspace problem.
 
 ## Carpenter bees
 
-**What they look like.** Large, roughly bumble bee sized, but with a **shiny,
+**What they look like.** Large, roughly [bumble bee](/pest-library/bumble-bee/) sized, but with a **shiny,
 hairless black abdomen** — that is the distinguishing feature. Bumble bees are
 fuzzy all over. Carpenter bees have a densely haired thorax and a bare, glossy
 rear.
@@ -66,7 +66,7 @@ actually has.
 **What they do.** Females excavate a nearly perfect round entrance hole into
 unfinished or weathered softwood, then turn and tunnel along the grain, creating a
 gallery where eggs are laid in provisioned cells. They do not eat the wood —
-they excavate it, like carpenter ants, and the sawdust is pushed out.
+they excavate it, like [carpenter ants](/pest-library/carpenter-ant/), and the sawdust is pushed out.
 
 **The bluffing male.** The bee that hovers and darts at you when you walk past the
 deck is a male defending territory, and males have no stinger. It is entirely
@@ -391,6 +391,6 @@ Anobiid beetle findings almost always lead to
 [exclusion and repairs](/services/exclusion-and-repairs/). The same moisture
 supports [dampwood termites](/services/termite-control/) and
 [moisture ants](/services/ant-control/), so these are frequently found together.
-If the large bee at your deck turns out to be a bumble bee or a honey bee rather
+If the large bee at your deck turns out to be a bumble bee or a [honey bee](/pest-library/honey-bee/) rather
 than a carpenter bee, see [bee removal](/services/bee-removal/) — and the answer
 there is usually to leave them alone.

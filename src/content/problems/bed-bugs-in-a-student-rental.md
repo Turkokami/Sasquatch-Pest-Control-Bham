@@ -34,7 +34,7 @@ faqs:
 
 ## Two things make this different
 
-Bed bugs behave the same way everywhere. What changes in a student rental is the
+[Bed bugs](/pest-library/bed-bug/) behave the same way everywhere. What changes in a student rental is the
 context around them, and it changes the outcome more than the biology does.
 
 The first is the building. Most student housing in Bellingham is shared in some
@@ -93,7 +93,7 @@ people, which in a shared house produces a genuinely confusing situation where
 one housemate has obvious welts and another sleeping ten feet away has nothing
 at all. That is normal and it is not evidence that only one room is affected.
 
-The things most often mistaken for them in this housing stock are carpet beetle
+The things most often mistaken for them in this housing stock are [carpet beetle](/pest-library/carpet-beetle/)
 larvae, spider beetles, and skin reactions with a non-insect cause. Getting that
 wrong in either direction is expensive.
 

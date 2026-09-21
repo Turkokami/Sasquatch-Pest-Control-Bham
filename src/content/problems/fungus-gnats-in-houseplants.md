@@ -192,7 +192,7 @@ support them.
 
 **A wet crawlspace.** A saturated underfloor space with a failed or absent vapor
 barrier produces fungus gnats and a whole community of other moisture-driven
-insects — springtails, sowbugs, millipedes, silverfish. If you have all of those
+insects — springtails, sowbugs, [millipedes](/pest-library/millipede/), [silverfish](/pest-library/silverfish/). If you have all of those
 along with the gnats, the crawlspace is worth looking at rather than the plants.
 
 **A blocked condensate drain** on a heat pump or an air handler, which produces a

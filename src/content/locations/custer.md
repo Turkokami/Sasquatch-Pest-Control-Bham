@@ -193,14 +193,14 @@ and both see seals, flashing and fasteners age faster than they would inland.
 
 Ant work on a Custer property is really water work wearing a different name.
 
-Carpenter ants do not eat wood. They hollow it out to nest in, and they go for
+[Carpenter ants](/pest-library/carpenter-ant/) do not eat wood. They hollow it out to nest in, and they go for
 wood that has already been softened by moisture rather than sound framing. On
 acreage that means the predictable places where water has been getting in slowly
 and nobody has had reason to look: a sill plate under an outside tap, framing
 around a window on the weather side, the rim joist above a crawlspace that never
 properly dries, the base of a post where a shop wall meets the slab.
 
-Moisture ants are a plainer signal still. They need consistently wet wood to nest
+[Moisture ants](/pest-library/moisture-ant/) are a plainer signal still. They need consistently wet wood to nest
 in, so finding them is close to proof that there is water in that timber, not a
 suggestion of it.
 
@@ -213,7 +213,7 @@ workbench in a building nobody stands still in.
 
 Spiders are the thing people ask about most and worry about most unnecessarily.
 There are no medically significant spiders established in Whatcom County. Giant
-house spiders and cross orbweavers account for nearly all of what turns up, and
+house spiders and [cross orbweavers](/pest-library/cross-orbweaver/) account for nearly all of what turns up, and
 the autumn rush indoors is males wandering to find females rather than anything
 moving in.
 

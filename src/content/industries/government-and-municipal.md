@@ -98,7 +98,7 @@ pattern — a food building that sits idle accumulates a population and then ope
 with the public in it.
 
 **Libraries and community centers.** Low pest pressure structurally, high
-consequence socially. Also the buildings where a bed bug report is most likely
+consequence socially. Also the buildings where a [bed bug](/pest-library/bed-bug/) report is most likely
 to become a public conversation, dealt with below.
 
 **Offices and administration.** Break rooms, deliveries, cardboard, and the
@@ -147,8 +147,8 @@ out of order.
 
 ## Rodents across an estate
 
-Inside Bellingham the picture is rats. Norway rats at ground level working
-foundations, drains, service voids and the ground around waste; roof rats where
+Inside Bellingham the picture is rats. [Norway rats](/pest-library/norway-rat/) at ground level working
+foundations, drains, service voids and the ground around waste; [roof rats](/pest-library/roof-rat/) where
 roofline access, trees or utility runs allow it. Facilities out through the
 county see more mice off surrounding open ground, and any building against a
 greenbelt, a park margin or a field is on the county pattern regardless of which

@@ -193,13 +193,13 @@ is a treatment, and all of it outperforms one over a season.
 ## What it eats, and what it competes with
 
 A giant house spider takes whatever walks or blunders onto its sheet: flies,
-small moths, beetles, ants, sowbugs, silverfish, midges, and a steady stream of
+small moths, beetles, ants, sowbugs, [silverfish](/pest-library/silverfish/), midges, and a steady stream of
 the smaller arthropods that live in a damp Pacific Northwest crawlspace. In a
 garage or an outbuilding this adds up to real volume across a season.
 
 It also eats other spiders, including smaller funnel weavers, and this is where
 the animal earns its place in an honest account. UC IPM records that in parts of
-the Pacific Northwest this species has competitively displaced the hobo spider —
+the Pacific Northwest this species has competitively displaced the [hobo spider](/pest-library/hobo-spider/) —
 the one with the reputation. Whatever the mechanism, the practical shape of it is
 that where giant house spiders are well established, the spider people are
 actually afraid of is scarcer.

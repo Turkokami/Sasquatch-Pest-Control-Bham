@@ -75,7 +75,7 @@ under the house for something unrelated and came back up with news.
 
 Understanding the pattern makes the response make sense.
 
-Norway rats are the usual species in this situation. They are burrowers by
+[Norway rats](/pest-library/norway-rat/) are the usual species in this situation. They are burrowers by
 preference and they operate at ground level, which is exactly what a crawlspace
 offers on the inside of a building.
 
@@ -290,7 +290,7 @@ reinforce each other.
 Damp ground supports the insects that other things eat. Damp insulation loses
 its function and becomes more attractive as nesting material rather than less.
 A wet space corrodes vent screens faster. And moisture in a crawlspace produces
-its own separate list of problems — moisture ants, springtails, sowbugs and
+its own separate list of problems — [moisture ants](/pest-library/moisture-ant/), springtails, sowbugs and
 decay in the framing, which in this climate takes structural capacity faster
 than rodents do.
 
@@ -310,7 +310,7 @@ points worth having first.
 
 The main concern with rodent droppings and nesting material is airborne
 particulate from dry material, and the local species that matters for that is
-the deer mouse rather than the rat. Either way the handling is the same:
+the [deer mouse](/pest-library/deer-mouse/) rather than the rat. Either way the handling is the same:
 ventilate the space before you go in, do not sweep or dry-vacuum, wet material
 down with a disinfectant solution before disturbing it, use a fitted respirator
 rather than a paper mask, wear gloves, and bag material rather than piling it.

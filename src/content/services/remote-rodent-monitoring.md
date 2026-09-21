@@ -132,7 +132,7 @@ This matters more than the feature list, and we would rather say it here than
 have you find out later.
 
 A sensor reports that something happened at a device. It does not identify what
-tripped it. It does not know whether you have Norway rats moving in from a
+tripped it. It does not know whether you have [Norway rats](/pest-library/norway-rat/) moving in from a
 greenbelt or house mice breeding in a wall void, and those are opposite jobs.
 It does not find the gap under the dock leveler that let them in, and sealing
 that gap is still the work that ends the problem rather than managing it.
@@ -182,4 +182,4 @@ monitoring to something that already works.
 Call or text [360-410-2199](tel:+13604102199) and ask for a commercial walkthrough. See
 [commercial pest control](/services/commercial-pest-control/) for how the
 programs are built and documented, and [rodent control](/services/rodent-control/)
-for the exclusion work that ends a rodent problem rather than measuring it.
+for the [exclusion work](/services/exclusion-and-repairs/) that ends a rodent problem rather than measuring it.

@@ -248,14 +248,14 @@ before the maintenance rather than after.
 
 ## Ants, and the ones that mean something
 
-Ants along a foundation here are usually odorous house ants or pavement ants
+Ants along a foundation here are usually [odorous house ants](/pest-library/odorous-house-ant/) or pavement ants
 foraging on a warm, irrigated line. A nuisance rather than damage, and they
 respond to baiting along the trail. Spraying a trail often splits the colony
 and makes the next month worse, so an immediate visible result is the wrong
 measure.
 
-Carpenter ants are a different animal and mean something different — they
-excavate galleries in wood. Moisture ants are a report about wet timber rather
+[Carpenter ants](/pest-library/carpenter-ant/) are a different animal and mean something different — they
+excavate galleries in wood. [Moisture ants](/pest-library/moisture-ant/) are a report about wet timber rather
 than a pest problem at all, and where we find them the answer is a moisture
 repair rather than a treatment.
 

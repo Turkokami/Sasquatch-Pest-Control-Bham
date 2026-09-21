@@ -119,7 +119,7 @@ requires the same careful approach.
 Crush one and smell it.
 
 That sounds crude and it is the single most useful field test for small dark
-ants in this region, because odorous house ants are common, they are the most
+ants in this region, because [odorous house ants](/pest-library/odorous-house-ant/) are common, they are the most
 frequent answer, and the smell is unmistakable once you have met it. Somewhere
 between rotten coconut and blue cheese, strong out of all proportion to the size
 of the insect.
@@ -133,7 +133,7 @@ guess.
 For most ants, getting the species slightly wrong costs you some efficiency.
 With this group it can cost you the job, because of one behavior.
 
-Ghost ants and pharaoh ants both spread by **budding**. Rather than a mated
+Ghost ants and [pharaoh ants](/pest-library/pharaoh-ant/) both spread by **budding**. Rather than a mated
 queen flying off to found a colony alone, one or more queens simply walk out of
 the nest with a retinue of workers and start another one nearby. The colony does
 not need a mating flight to multiply and it does not need to leave the building.
@@ -198,7 +198,7 @@ engine to do and a bad basis for a treatment.
 
 So the practical value is the sorting. Small dark ant with a strong smell when
 crushed: odorous house ant. Small brown ant with grooved head and thorax and
-sand piles on the patio: pavement ant. Very small yellowish ant with a long
+sand piles on the patio: [pavement ant](/pest-library/pavement-ant/). Very small yellowish ant with a long
 two-segmented antennal club: thief ant. Small yellow ant in a heated building
 with many queens and no swarming: pharaoh ant. Very small ant with a dark front
 and a pale, near-invisible back half: ghost ant, and worth confirming.

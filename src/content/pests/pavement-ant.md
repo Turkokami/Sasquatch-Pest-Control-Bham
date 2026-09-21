@@ -83,7 +83,7 @@ excavated dirt.
 
 Once you have seen a few of them the pattern is unmistakable and it is
 diagnostic on its own. No other ant we deal with in Whatcom County housing
-produces neat craters along a hard edge in that particular way. Moisture ants
+produces neat craters along a hard edge in that particular way. [Moisture ants](/pest-library/moisture-ant/)
 throw up soil mounds too, but in open ground and around timber rather than along
 a concrete joint. Carpenter ants produce fibrous shavings and no soil at all.
 
@@ -231,9 +231,9 @@ under a toe-kick, or grease behind a range.
 ## One queen, and what that changes
 
 There is a structural fact about this species that decides most of the practical
-advice, and it is the opposite of the situation with the odorous house ant.
+advice, and it is the opposite of the situation with the [odorous house ant](/pest-library/odorous-house-ant/).
 
-UC IPM states that pavement ants usually have only one functional queen per
+UC IPM states that [pavement ants](/pest-library/pavement-ant/) usually have only one functional queen per
 colony. Utah State agrees, describing colonies of thousands of workers with a
 single queen. That single reproductive is the whole colony's future, and it
 means a fragment of workers cut off from her is a group of ants that will die

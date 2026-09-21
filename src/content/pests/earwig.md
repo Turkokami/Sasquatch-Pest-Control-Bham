@@ -219,7 +219,7 @@ UC IPM describes earwigs as voracious feeders on soft-bodied insects such as
 aphids and insect eggs, states that they have been shown to be important
 predators of aphids, and says they can exert significant biological control
 under some circumstances. WSU's Hortsense lists their prey as aphids, mites,
-thrips, leafhoppers, centipedes, millipedes, caterpillars, insect eggs and
+thrips, leafhoppers, centipedes, [millipedes](/pest-library/millipede/), caterpillars, insect eggs and
 whiteflies, and concludes that at moderate levels the earwig probably does far
 more good than bad in most gardens.
 

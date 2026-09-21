@@ -268,7 +268,7 @@ anything else.
 A share of the overwintering population dies in the void, and in a building that
 has had this for years the accumulation can be considerable.
 
-Dead insects are food. Carpet beetles and larder beetles breed in an
+Dead insects are food. [Carpet beetles](/pest-library/carpet-beetle/) and larder beetles breed in an
 accumulation of fly carcasses in an attic or a soffit, and their larvae disperse
 into the rooms below, where they damage wool and stored textiles. Penn State
 makes the point specifically as an argument against indoor insecticide use:

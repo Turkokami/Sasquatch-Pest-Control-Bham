@@ -66,7 +66,7 @@ looks like it.
 ## She is solitary, and that is the whole safety answer
 
 Every genuinely dangerous stinging insect on this site is social. A
-yellowjacket or a bald-faced hornet has a colony, workers whose job includes
+yellowjacket or a [bald-faced hornet](/pest-library/bald-faced-hornet/) has a colony, workers whose job includes
 defense, and a nest worth dying for. That is what makes an accidental approach
 expensive.
 

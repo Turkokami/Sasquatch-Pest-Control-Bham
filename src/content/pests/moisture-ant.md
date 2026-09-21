@@ -68,7 +68,7 @@ Most species in this library are here because of what they do to a building.
 This one earns its place because of what it tells you about one.
 
 WSU's extension bulletin on the group is unusually direct for a pest
-publication. Moisture ants require moisture to survive. Their colonies occur in
+publication. [Moisture ants](/pest-library/moisture-ant/) require moisture to survive. Their colonies occur in
 decayed logs and stumps, sometimes in soil, and where they turn up in a structure
 the colony started in wood already at an advanced stage of decay. They are, in
 WSU's own framing, not a primary structural pest, and long-term control depends
@@ -90,7 +90,7 @@ single most common way money gets wasted on this species in Whatcom County.
 
 Small, and that is the first thing. WSU gives pest species of this group as
 three to five millimeters — roughly an eighth to a fifth of an inch, which is a
-fraction of a carpenter ant. Workers are monomorphic, so unlike carpenter ants
+fraction of a [carpenter ant](/pest-library/carpenter-ant/). Workers are monomorphic, so unlike carpenter ants
 every individual in the column is the same size as every other.
 
 Color runs yellow through amber to a fairly dark brown. The paler end is the
@@ -366,7 +366,7 @@ the company is part of reading the finding.
 
 Springtails in very large numbers, which are harmless and are themselves a
 reliable damp indicator. Sowbugs and pillbugs, which cannot persist anywhere dry.
-Millipedes, centipedes and silverfish. Fungus-feeding beetles working the same
+Millipedes, centipedes and [silverfish](/pest-library/silverfish/). Fungus-feeding beetles working the same
 decayed material. Spiders in quantity, because all of the above is food.
 
 And in the wood itself, the decay that started the sequence — visible in a

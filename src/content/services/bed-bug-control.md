@@ -40,7 +40,7 @@ faqs:
 
 ## Verification first, and why we charge for it
 
-Most pest companies will book a bed bug treatment off a phone call. We will not,
+Most pest companies will book a [bed bug](/pest-library/bed-bug/) treatment off a phone call. We will not,
 and the reason is that a meaningful share of the calls we get about bed bugs are
 not bed bugs.
 

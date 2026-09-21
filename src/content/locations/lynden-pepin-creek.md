@@ -183,7 +183,7 @@ edge of open ground it is a busy one.
 From late September the sunny elevations collect the seasonal crowd. Cluster
 flies — which breed outdoors in soil and have nothing to do with hygiene —
 gather on warm walls, work into gaps, and overwinter in voids. Multicolored
-Asian lady beetles and brown marmorated stink bugs do the same. On a new
+Asian lady beetles and [brown marmorated stink bugs](/pest-library/brown-marmorated-stink-bug/) do the same. On a new
 subdivision with open ground around it there is nothing to intercept them.
 
 Nothing in that group bites, reproduces inside, or harms the building itself,
@@ -338,5 +338,5 @@ for later.
 You get a plain account of what is active, what is a route rather than a
 source, which items may be a builder's responsibility rather than yours, and
 what should be done before the next time ground nearby is worked. The
-assessment costs nothing beyond bed bug verification if that ever applies, and
+assessment costs nothing beyond [bed bug](/pest-library/bed-bug/) verification if that ever applies, and
 nothing about the work requires a term agreement.

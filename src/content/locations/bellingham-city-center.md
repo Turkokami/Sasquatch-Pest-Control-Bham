@@ -154,7 +154,7 @@ anybody who goes and looks — and the reason a proper first survey downtown tak
 longer than people expect. A great deal of the useful information is in a space
 nobody has properly examined in years.
 
-Damp basements bring their own list: silverfish, sowbugs and springtails, all
+Damp basements bring their own list: [silverfish](/pest-library/silverfish/), sowbugs and springtails, all
 of which are reporting a moisture condition rather than being problems in their
 own right. Where a basement is genuinely wet, the
 durable answer is drainage rather than repeated treatment, and we would rather
@@ -199,7 +199,7 @@ What resolves it is mapping which units are affected, identifying the likely
 source, treating in one coordinated pass, and following up on an interval
 matched to the insect rather than to the invoice.
 
-Bed bugs and German cockroaches are the two that most reward this and punish the
+[Bed bugs](/pest-library/bed-bug/) and German cockroaches are the two that most reward this and punish the
 alternative hardest. Both move readily between units and both are far cheaper to
 resolve early and thoroughly than late and piecemeal.
 

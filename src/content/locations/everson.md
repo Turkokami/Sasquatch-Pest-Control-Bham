@@ -167,7 +167,7 @@ older and newer residential stock.
 
 The older housing carries the familiar Whatcom County pattern: shallow
 crawlspaces over bare earth, foundation vents that rusted through years ago,
-framing that has taken water at some point and now supports moisture ants, and
+framing that has taken water at some point and now supports [moisture ants](/pest-library/moisture-ant/), and
 stud cavities that let something entering at grade reach the attic without
 crossing a room.
 
@@ -192,7 +192,7 @@ already decaying, so finding them is useful information rather than merely a
 problem. The ants are the symptom and the water is the cause, and treating
 without correcting produces a new colony in the same wood.
 
-Carpenter ants are the expensive ones. They excavate galleries to nest, prefer
+[Carpenter ants](/pest-library/carpenter-ant/) are the expensive ones. They excavate galleries to nest, prefer
 wood that has begun to soften, and a mature colony almost always has a parent
 nest outdoors — a stump, a fence post, a landscape timber, a woodpile — with
 satellites inside the structure. Treating the satellite without locating the
@@ -260,7 +260,7 @@ the wrong problem entirely.
 Away from the farms and the river, Everson gets the same household list as
 everywhere else in the county.
 
-Giant house spiders bring the September and October phone calls, and the answer
+[Giant house spiders](/pest-library/giant-house-spider/) bring the September and October phone calls, and the answer
 is reassuring: they are harmless, established throughout western Washington, and
 the large fast ones people find are males wandering in search of mates rather
 than anything responding to cold. There is no brown recluse here and never has

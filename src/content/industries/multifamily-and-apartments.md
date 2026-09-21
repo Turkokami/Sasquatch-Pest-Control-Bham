@@ -87,7 +87,7 @@ drilled oversize and never closed, and additions where two envelopes meet badly.
 
 **Rats rather than mice**, inside the city. This is worth stating because the
 assumption runs the other way. In the built-up parts of Bellingham the rodent
-work is Norway rats at ground level and roof rats wherever trees, fences or
+work is [Norway rats](/pest-library/norway-rat/) at ground level and [roof rats](/pest-library/roof-rat/) wherever trees, fences or
 utility lines reach a roofline. Mice take over toward the greenbelts and out in
 the county, not in the middle of town.
 
@@ -117,7 +117,7 @@ ground, and states that identifying which is present decides the control method.
 **Bed bugs**, the highest-stakes problem in multifamily and the one most often
 under-scoped. See below.
 
-**Ants**, mostly odorous house ants, which is the ant most buildings here
+**Ants**, mostly [odorous house ants](/pest-library/odorous-house-ant/), which is the ant most buildings here
 actually have. Worth knowing because it is the species where a repellent spray
 causes the colony to bud — fragmenting and relocating rather than dying — so a
 well-meaning tenant with a hardware-store bottle converts one nest into several

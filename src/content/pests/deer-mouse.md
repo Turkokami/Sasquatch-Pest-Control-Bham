@@ -73,7 +73,7 @@ The most useful thing to understand about this species is where it belongs.
 
 A house mouse is a building animal. It has lived alongside people for so long
 that a heated structure is effectively its habitat, and it settles into one and
-stays. A deer mouse is not that. UC IPM describes *Peromyscus maniculatus* as
+stays. A [deer mouse](/pest-library/deer-mouse/) is not that. UC IPM describes *Peromyscus maniculatus* as
 the most abundant and widely distributed mammal in North America, living across
 forest, grassland, scrubland and farmland, and notes that it is not common in
 urban and residential areas unless there are large or numerous parks and fields

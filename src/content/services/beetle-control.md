@@ -37,11 +37,11 @@ faqs:
 The service covers two groups of insects that have nothing in common except that
 both are source problems and both get treated wrong.
 
-**Fabric pests** — carpet beetles and their dermestid relatives. The larvae feed on
+**Fabric pests** — [carpet beetles](/pest-library/carpet-beetle/) and their dermestid relatives. The larvae feed on
 keratin and other animal proteins: wool, silk, fur, feathers, leather, and
 crucially, dead insects and animal remains.
 
-**Pantry pests** — sawtoothed grain beetles, flour beetles, drugstore and cigarette
+**Pantry pests** — [sawtoothed grain beetles](/pest-library/sawtoothed-grain-beetle/), flour beetles, drugstore and cigarette
 beetles, and the [Indianmeal moth](/services/moth-control/), which is a moth
 rather than a beetle but behaves identically and turns up in the same cupboard.
 
@@ -293,7 +293,7 @@ situations and only one of them is on this page.
 If you are finding **small round exit holes in timber** — joists, subfloor, sill
 plates, furniture — with fine powder beneath them, that is a wood-boring beetle
 rather than a carpet or pantry beetle. In Whatcom County the common one is the
-anobiid powderpost beetle, and it is genuinely common in damp crawlspaces here.
+[anobiid powderpost beetle](/pest-library/anobiid-powderpost-beetle/), and it is genuinely common in damp crawlspaces here.
 The pairing with damp is not incidental: the Forest Products Laboratory's
 [account of wood biodeterioration](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf)
 places anobiids among the wood borers that need a raised moisture content in the

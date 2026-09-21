@@ -142,7 +142,7 @@ stink bugs entirely. That is more than a taxonomic footnote: it is why they cann
 chew, cannot bore, and cannot do anything to a structure at all.
 
 **Not a bed bug**, which we mention only because the two words sit close together
-in an anxious search and the answer is worth having quickly. A bed bug is small,
+in an anxious search and the answer is worth having quickly. A [bed bug](/pest-library/bed-bug/) is small,
 oval, wingless and reddish-brown, it does not gather on the outside of a house, and
 nothing about a boxelder bug's behavior resembles it.
 
@@ -284,7 +284,7 @@ overwintering stink bugs.
 
 What we will not do is treat the wall void once they are in it. Very little reaches
 a dormant insect wedged in a cavity, and a treatment that worked would leave an
-accumulation of dead insects in an inaccessible space for carpet beetles to breed
+accumulation of dead insects in an inaccessible space for [carpet beetles](/pest-library/carpet-beetle/) to breed
 in. Swapping a staining nuisance for a fabric-destroying one is a poor trade at any
 price.
 
@@ -378,7 +378,7 @@ Given everything above, there are still three situations where we would rather
 hear from you.
 
 **When the identification is not settled.** A dense group of dark insects on a wall
-is worth a photograph, because a boxelder bug and a brown marmorated stink bug
+is worth a photograph, because a boxelder bug and a [brown marmorated stink bug](/pest-library/brown-marmorated-stink-bug/)
 carry entirely different implications — one is a nuisance and one is worth
 reporting to WSU. Photograph one on a flat surface next to a coin, and the answer
 usually takes seconds.

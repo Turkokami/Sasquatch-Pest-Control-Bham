@@ -71,7 +71,7 @@ faqs:
 
 If you are reading this because a large dark bee is working around your deck,
 your eaves or your fence in Whatcom County, the probability sits heavily on one
-side: it is a bumble bee.
+side: it is a [bumble bee](/pest-library/bumble-bee/).
 
 That is not a hedge and it is not a way of talking you out of a service call. It
 is the distribution. The USDA Forest Service places the genus *Xylocopa* across
@@ -126,7 +126,7 @@ Then the answer is to leave it, and that is the whole answer.
 WSU's management line for the genus is short — none recommended — and the
 reasoning behind it is not sentimental. Bumble bees are among the most effective
 pollinators available to a garden here, they buzz-pollinate tomatoes and
-blueberries in a way honey bees cannot, and several Washington species are in
+blueberries in a way [honey bees](/pest-library/honey-bee/) cannot, and several Washington species are in
 documented decline.
 
 Temperament is not the problem people expect either. WSU describes Pacific
@@ -172,7 +172,7 @@ opened.
 
 **The sawdust.** Coarse, pale, and dropped directly below the entrance. It is
 excavated material rather than digested material — carpenter bees do not eat
-wood any more than carpenter ants do — so it looks like sawdust because that is
+wood any more than [carpenter ants](/pest-library/carpenter-ant/) do — so it looks like sawdust because that is
 effectively what it is.
 
 **The staining.** A dark streak below the hole is common and it is not decay. It

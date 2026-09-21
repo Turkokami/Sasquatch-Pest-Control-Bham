@@ -65,7 +65,7 @@ ready: true
 ## The ant nobody names correctly
 
 There is a good chance that if you have this insect, somebody has already told
-you that you have carpenter ants.
+you that you have [carpenter ants](/pest-library/carpenter-ant/).
 
 It is an easy mistake and an old one. This is a big, dark, wood-associated ant
 that turns up in the same places, moves into the same buildings, and produces
@@ -97,7 +97,7 @@ comparison once you will not make it again.
 The rest of the structure is genuinely similar to a carpenter ant, which is why
 color has to do the work. Utah State records a single node on the waist and an
 evenly rounded thorax — the same smooth unbroken arc that separates carpenter
-ants from moisture ants. Both genera are polymorphic, so a colony produces
+ants from [moisture ants](/pest-library/moisture-ant/). Both genera are polymorphic, so a colony produces
 workers of several sizes from the same queen and a column will contain small
 individuals and large ones together. The Pacific Northwest handbook puts the
 regional Liometopum species between about an eighth and a quarter of an inch,
@@ -185,7 +185,7 @@ about can be the one supplying the building.
 The second is the distance. The Pacific Northwest handbook records these ants
 nesting primarily outdoors and running trails extending several hundred meters
 to reach structures. That is a considerably wider radius than most people
-picture, and much wider than the thirty-foot world a pavement ant occupies. The
+picture, and much wider than the thirty-foot world a [pavement ant](/pest-library/pavement-ant/) occupies. The
 tree that matters is not necessarily in your yard, on your lot line, or anywhere
 you would have thought to look.
 

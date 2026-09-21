@@ -78,7 +78,7 @@ survive.
 
 One local source worth naming, because it does not apply anywhere else we work.
 The beaches here accumulate driftwood, and driftwood that has sat wet on a shore
-for years is carpenter ant habitat by the time it is picked up. A load carried
+for years is [carpenter ant](/pest-library/carpenter-ant/) habitat by the time it is picked up. A load carried
 home for a firepit, a border, a bit of landscaping or a woodshed brings the
 colony with it and sets it down against a building. We find carpenter ants
 started this way in Blaine more than anywhere else in the county, and the tell
@@ -155,7 +155,7 @@ The housing runs from prewar and postwar stock near the original core out
 through midcentury development to newer building on the edges. The older houses
 carry the familiar Whatcom County pattern: shallow crawlspaces, bare soil, vent
 screens that rusted out years ago, and framing that has taken water somewhere
-and now supports moisture ants.
+and now supports [moisture ants](/pest-library/moisture-ant/).
 
 Carpenter ants are the persistent one. There is a lot of cedar in this town, a
 lot of it is now fifty years weathered, and softened cedar trim and fascia is
@@ -253,7 +253,7 @@ flies belong to summer.
 **Carpenter ants and moisture ants** track the same water problems described
 above, and in this exposure the water problems are common.
 
-**Rodents** are the constant. Norway rats along the shoreline, the riprap and
+**Rodents** are the constant. [Norway rats](/pest-library/norway-rat/) along the shoreline, the riprap and
 the harbor; house mice everywhere; and deer mice in the more rural properties
 toward the county line. Where droppings need cleaning up in an enclosed space we
 will tell you to ventilate first and avoid sweeping or vacuuming dry material,

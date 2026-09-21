@@ -84,7 +84,7 @@ that is what you have, it is worth a second look.
 
 The other insects that get confused with fleas are springtails — tiny, jumping,
 and associated with damp, appearing in bathrooms and around houseplants — and
-carpet beetle larvae, which cause skin irritation that gets read as bites. Both
+[carpet beetle](/pest-library/carpet-beetle/) larvae, which cause skin irritation that gets read as bites. Both
 are common and neither needs flea treatment.
 
 ## Where they come from

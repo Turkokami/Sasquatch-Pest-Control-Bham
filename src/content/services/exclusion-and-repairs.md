@@ -56,7 +56,7 @@ your crawlspace, seal the crawlspace.
 
 ## A quarter of an inch
 
-That is the number worth remembering. A house mouse gets through roughly a
+That is the number worth remembering. A [house mouse](/pest-library/house-mouse/) gets through roughly a
 quarter inch — about a pencil. Both species can also work a gap considerably
 smaller than the body looks, because the skull is the limiting dimension and it
 is flatter than people expect.
@@ -153,7 +153,7 @@ something that has to move.
 
 Mesh size is a real trade-off rather than a detail. Quarter-inch hardware cloth
 stops rodents and passes airflow, but it is an open door to a wasp queen or a
-cluster fly, so on a vent that has to do both jobs we back the rodent mesh with a
+[cluster fly](/pest-library/cluster-fly/), so on a vent that has to do both jobs we back the rodent mesh with a
 finer insect screen and accept the slight loss of ventilation.
 
 What does not work on its own:

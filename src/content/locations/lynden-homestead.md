@@ -72,7 +72,7 @@ winter. A ring of bark stripped at ground level will kill a young ornamental
 outright, and it happens under long grass or snow where nobody sees it.
 
 The tell is in the workings. Winding surface trails with clipped vegetation,
-appearing when long grass is cut short, means voles. Pushed-up soil means
+appearing when long grass is cut short, means [voles](/pest-library/vole/). Pushed-up soil means
 moles. A property can have both.
 
 Neither is much of a building problem — voles occasionally enter a crawlspace
@@ -199,7 +199,7 @@ vegetation contact is worth as much as most foundation work.
 
 ## Carpenter ants and the landscape timber
 
-Carpenter ants here mostly come out of wood on the ground rather than out of a
+[Carpenter ants](/pest-library/carpenter-ant/) here mostly come out of wood on the ground rather than out of a
 forest.
 
 They do not eat wood — they excavate galleries in it to nest, and they take
@@ -229,7 +229,7 @@ hazard for grounds staff as much as for residents, and a nest along a bank, a
 verge or a rough edge is worth reporting rather than stepping around.
 
 Aerial nests in soffits, sheds and under deck rails are more visible and easier
-to deal with. Bald-faced hornets build the large gray paper nests people
+to deal with. [Bald-faced hornets](/pest-library/bald-faced-hornet/) build the large gray paper nests people
 photograph; European paper wasps build small open combs under railings and are
 markedly less inclined to defend them.
 

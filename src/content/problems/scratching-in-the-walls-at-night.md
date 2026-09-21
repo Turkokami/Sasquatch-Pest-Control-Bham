@@ -77,7 +77,7 @@ open door between the two spaces. Low noise almost always means the underfloor
 space is worth looking at first.
 
 **High in the wall, or at the ceiling line.** Usually something moving between a
-wall cavity and the attic, using the top plate the same way. Roof rats in
+wall cavity and the attic, using the top plate the same way. [Roof rats](/pest-library/roof-rat/) in
 particular are comfortable climbing and will happily work the vertical cavities
 of a house.
 
@@ -101,7 +101,7 @@ continuously and get worn down on whatever is available, which regrettably
 includes timber, plastic and cable sheathing. Gnawing is the sound that should
 move a job up your list, because it is the one that ends in damage.
 
-**Fast scurrying.** Light, quick and brief — typically mice. A house mouse
+**Fast scurrying.** Light, quick and brief — typically mice. A [house mouse](/pest-library/house-mouse/)
 weighs less than an ounce and sounds like it.
 
 **Heavier, slower movement, sometimes with a thump.** More consistent with rats.

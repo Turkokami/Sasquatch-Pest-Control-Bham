@@ -70,7 +70,7 @@ ready: true
 
 ## The insect is the gauge, not the fault
 
-There is a version of this page that would open by describing what silverfish
+There is a version of this page that would open by describing what [silverfish](/pest-library/silverfish/)
 chew and how quickly they multiply. It would be accurate and it would send you
 in the wrong direction.
 
@@ -392,7 +392,7 @@ a food-chain event, not a second infestation.
 [Centipede and millipede work](/services/centipede-control/) is the same
 moisture conversation from the other end.
 
-Springtails in large numbers, sowbugs, pillbugs and millipedes all sit in the
+Springtails in large numbers, sowbugs, [pillbugs](/pest-library/pillbug/) and [millipedes](/pest-library/millipede/) all sit in the
 same envelope. So do the wood-destroying organisms, which is the part with a
 budget attached.
 

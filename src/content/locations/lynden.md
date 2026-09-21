@@ -155,7 +155,7 @@ Paper wasps under eaves, in equipment cabs and inside idle machinery are milder
 and often better left alone if they are out of the way, though a nest inside a
 tractor cab is a genuine hazard and gets dealt with.
 
-Carpenter ants and moisture ants work the older timber-framed buildings,
+[Carpenter ants](/pest-library/carpenter-ant/) and [moisture ants](/pest-library/moisture-ant/) work the older timber-framed buildings,
 particularly anywhere a roof or a gutter has been leaking into a post or a
 sill. On a barn the ants are usually telling you something about water before
 they are telling you anything about ants, and the useful visit is the one where
@@ -253,7 +253,7 @@ winter rather than discovering it in April.
 The residential side of Lynden gets the same domestic set as anywhere in the
 county, and the reassuring answers are worth stating.
 
-Giant house spiders produce the September and October calls. They are harmless,
+[Giant house spiders](/pest-library/giant-house-spider/) produce the September and October calls. They are harmless,
 established throughout western Washington, and the large fast ones people find
 indoors are wandering males looking for mates rather than an invasion. There is
 no brown recluse in this state's northwest corner and never has been. Exterior

@@ -132,9 +132,9 @@ The category is not the answer. "Ants" is not an identification. In a Whatcom
 County kitchen in April, a trail of small dark ants is most likely odorous house
 ants, and the correct response is a bait matched to what the colony is currently
 feeding on plus a look at what is drawing them. If the same trail turns out to
-be moisture ants, the correct response is a moisture investigation, because
+be [moisture ants](/pest-library/moisture-ant/), the correct response is a moisture investigation, because
 moisture ants are a symptom of wet, decaying wood and treating them without
-fixing the water is buying a year. If it is carpenter ants, the question becomes
+fixing the water is buying a year. If it is [carpenter ants](/pest-library/carpenter-ant/), the question becomes
 whether you are looking at a parent colony outside in a stump or a satellite
 inside a wall, and the answer changes the whole job.
 
@@ -144,7 +144,7 @@ looking at.
 
 The rodent version is the same. Rat and mouse droppings are distinguishable by
 size and shape, the gnawing is different, the entry sizes are different, and the
-bait station placement that works for one is wasted on the other. Norway rats
+bait station placement that works for one is wasted on the other. [Norway rats](/pest-library/norway-rat/)
 and roof rats use different parts of a building. A technician who says "we'll
 put out some stations" without having established which animal is present has
 skipped the step the entire method rests on.

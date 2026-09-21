@@ -12,7 +12,7 @@ This is one of the classic fall calls we get across Bellingham, Ferndale, Lynden
 
 ## Are these actually ladybugs, or something else?
 
-Most people call any small, round, spotted beetle a "ladybug," but there's an important distinction. True native ladybugs (lady beetles) are beneficial garden insects that quietly eat aphids and generally keep to themselves. The beetles that swarm homes in fall are almost always the multicolored Asian lady beetle (*Harmonia axyridis*), a species introduced to control crop pests that has since spread widely and become a household nuisance. They look similar enough to fool most people at a glance, which is why homeowners are often surprised to learn the "ladybugs" invading their house are a different, invasive species with some distinctly un-ladybug-like habits.
+Most people call any small, round, spotted beetle a "ladybug," but there's an important distinction. True native ladybugs (lady beetles) are beneficial garden insects that quietly eat aphids and generally keep to themselves. The beetles that swarm homes in fall are almost always the [multicolored Asian lady beetle](/pest-library/multicolored-asian-lady-beetle/) (*Harmonia axyridis*), a species introduced to control crop pests that has since spread widely and become a household nuisance. They look similar enough to fool most people at a glance, which is why homeowners are often surprised to learn the "ladybugs" invading their house are a different, invasive species with some distinctly un-ladybug-like habits.
 
 ## How do I tell an Asian lady beetle from a native ladybug?
 

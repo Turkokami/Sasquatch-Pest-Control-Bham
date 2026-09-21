@@ -174,7 +174,7 @@ Landscape ties. Raised beds. Old fence posts. A stump left when something came
 down. Fallen limbs stacked at the back. Firewood that has been in the same
 place long enough to have gone soft at the bottom. Pallets behind the shop.
 
-Carpenter ants do not eat wood — they excavate galleries in it to nest, and
+[Carpenter ants](/pest-library/carpenter-ant/) do not eat wood — they excavate galleries in it to nest, and
 they take softened, damp wood far more readily than sound dry timber. Every
 item on that list is exactly what they want, and every one is close to a
 building.
@@ -238,7 +238,7 @@ Rural properties with outbuildings, mature planting and open ground around them
 produce more spiders indoors than a town lot does, and autumn is when people
 notice.
 
-Most of what turns up is giant house spiders. What people are seeing is males
+Most of what turns up is [giant house spiders](/pest-library/giant-house-spider/). What people are seeing is males
 moving to find females rather than an infestation arriving, which is why they
 appear singly, at speed, across a floor, in September and October.
 
@@ -264,7 +264,7 @@ hornets build the large gray paper nests people photograph; European paper
 wasps build small open combs under railings and are far less inclined to defend
 them.
 
-Honey bees are not our work, and in berry country they are worth more than we
+[Honey bees](/pest-library/honey-bee/) are not our work, and in berry country they are worth more than we
 are. A colony in a wall gets identified and referred.
 
 ## Firewood, and the thing nearly everyone does

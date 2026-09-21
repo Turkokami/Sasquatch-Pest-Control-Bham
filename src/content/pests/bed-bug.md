@@ -220,7 +220,7 @@ fails.
 This is the confusion that costs the most money in both directions, and it is
 worth separating carefully.
 
-A carpet beetle larva is elongated rather than oval, bristly rather than smooth,
+A [carpet beetle](/pest-library/carpet-beetle/) larva is elongated rather than oval, bristly rather than smooth,
 and it moves like a tiny caterpillar rather than scuttling. It is often golden or banded brown. It lives at carpet edges, in
 closet floors, under furniture and in stored wool and textiles, feeding on animal
 fiber, lint, pet hair and feathers rather than on blood.

@@ -119,8 +119,8 @@ purchase from the initial clearance, and it should be described as one.
 
 ## Rodents in a restaurant
 
-Inside Bellingham the rodent picture is rats — Norway rats at ground level using
-foundations, drains and voids, and roof rats where trees, wires or a fence reach
+Inside Bellingham the rodent picture is rats — [Norway rats](/pest-library/norway-rat/) at ground level using
+foundations, drains and voids, and [roof rats](/pest-library/roof-rat/) where trees, wires or a fence reach
 a roofline. Mice are more of a county animal than a city one, which surprises
 people.
 
@@ -295,7 +295,7 @@ else available for the same money.
 ## The year in food service
 
 **Spring.** Small fly pressure begins as temperatures rise. Ants appear,
-predominantly odorous house ants, and a repellent spray from a cash-and-carry
+predominantly [odorous house ants](/pest-library/odorous-house-ant/), and a repellent spray from a cash-and-carry
 will split the colony rather than kill it.
 
 **Summer.** Peak fly pressure, patio and outdoor service adding exposure, waste

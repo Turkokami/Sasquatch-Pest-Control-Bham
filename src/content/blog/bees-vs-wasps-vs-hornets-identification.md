@@ -40,7 +40,7 @@ Honeybees build nests of wax comb, usually inside a cavity like a hollow tree, w
 
 ### Wasp and hornet nests
 
-Wasps and hornets build nests out of chewed wood fiber that looks like paper. Paper wasps make open, umbrella-shaped nests with visible cells. Yellowjackets and bald-faced hornets build fully enclosed nests — footballs in the air or hidden chambers in the ground and walls. Paper, not wax, means wasp or hornet.
+Wasps and hornets build nests out of chewed wood fiber that looks like paper. Paper wasps make open, umbrella-shaped nests with visible cells. Yellowjackets and [bald-faced hornets](/pest-library/bald-faced-hornet/) build fully enclosed nests — footballs in the air or hidden chambers in the ground and walls. Paper, not wax, means wasp or hornet.
 
 ## How does their behavior and sting differ?
 
@@ -75,7 +75,7 @@ Both are wasps, and they're closely related. Yellowjackets are smaller and typic
 
 ### Do carpenter bees damage homes?
 
-They can. Carpenter bees bore round holes into wood — decks, eaves, and railings — to nest, and repeated use of the same timber can cause cosmetic and structural wear over time. They are much less common in the Bellingham area than in warmer parts of the country, so a large bee hovering near your woodwork is more often a bumblebee. If you see one actually drilling into the wood, it is worth having somebody come out and take a look.
+They can. [Carpenter bees](/pest-library/carpenter-bee/) bore round holes into wood — decks, eaves, and railings — to nest, and repeated use of the same timber can cause cosmetic and structural wear over time. They are much less common in the Bellingham area than in warmer parts of the country, so a large bee hovering near your woodwork is more often a bumblebee. If you see one actually drilling into the wood, it is worth having somebody come out and take a look.
 
 ### Should I get rid of bees in my yard?
 

@@ -141,7 +141,7 @@ wiring and upholstery rather than anything obvious.
 
 ## Carpenter ants out of the driftwood
 
-Carpenter ants are on the Blaine list for a reason the owner of this company
+[Carpenter ants](/pest-library/carpenter-ant/) are on the Blaine list for a reason the owner of this company
 gave directly: on this shoreline a meaningful share of them come out of beach
 wood rather than out of the forest.
 
@@ -196,7 +196,7 @@ sheltered ledges.
 The pest consequence is not really the birds. It is what accumulates: nesting
 material in gutters and drains, droppings on surfaces, and the insects that
 live in old nests and then move inward when the nest is abandoned. Bird mites
-and carpet beetles both do this, and both are frequently diagnosed as something
+and [carpet beetles](/pest-library/carpet-beetle/) both do this, and both are frequently diagnosed as something
 else entirely because the connection to a nest twenty feet up is not obvious.
 
 Keeping gulls off a roof is bird work, which we do not take on. Where a nest is
@@ -248,7 +248,7 @@ Anywhere with a high rate of people arriving and leaving with luggage has a bed
 bug exposure, and a good deal of the housing on the spit is let short-term or
 lent to visitors between owner stays.
 
-Two things are worth understanding about that. The first is that bed bugs have
+Two things are worth understanding about that. The first is that [bed bugs](/pest-library/bed-bug/) have
 nothing whatever to do with cleanliness — they arrive in a bag, they are a
 transport problem, and an immaculate property is exactly as exposed as any
 other. Nobody should feel accused by finding them.

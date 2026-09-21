@@ -152,13 +152,13 @@ material, and sealing a building around it simply traps the conditions in place.
 
 The ant work here follows the buildings rather than the fields.
 
-Carpenter ants do not eat wood. They excavate it to nest in, and they strongly
+[Carpenter ants](/pest-library/carpenter-ant/) do not eat wood. They excavate it to nest in, and they strongly
 prefer wood that is already softened by moisture. In practice that means the
 places on a rural building where water has been getting in quietly for years: a
 sill plate under a leaking hose bib, the framing around a poorly flashed window,
 a section of rim joist above a crawlspace that never dries out.
 
-Moisture ants are an even more direct signal. Finding them is close to a
+[Moisture ants](/pest-library/moisture-ant/) are an even more direct signal. Finding them is close to a
 guarantee that there is a genuine water problem in that timber, because they need
 consistently damp wood to nest in at all.
 
@@ -243,7 +243,7 @@ people expect.
 
 Scratching and scurrying overhead after dark, in short bursts, is usually roof
 rats or mice in the attic or a ceiling void. Heavier, slower movement lower in the
-building is more often Norway rats in a crawlspace or wall base. Rapid activity
+building is more often [Norway rats](/pest-library/norway-rat/) in a crawlspace or wall base. Rapid activity
 at dusk and again before dawn fits rodents; something moving during the middle of
 the day is more likely a squirrel, and that is a different job.
 

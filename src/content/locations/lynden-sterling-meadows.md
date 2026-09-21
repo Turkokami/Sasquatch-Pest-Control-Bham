@@ -142,7 +142,7 @@ produces a wet corner nobody expected.
 
 The reason it matters to us is that a persistently damp crawlspace, or ground
 that no longer falls away from a foundation, is the beginning of the moisture
-story that carpenter ants, wood-boring beetles and decay depend on. How wet wood
+story that [carpenter ants](/pest-library/carpenter-ant/), wood-boring beetles and decay depend on. How wet wood
 has to be before decay starts is set out in the USDA's [Wood
 Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf), and a
 house this new should be nowhere near it. On a house
@@ -197,7 +197,7 @@ Cluster flies are Lynden's particular version. They breed outdoors in soil,
 have nothing to do with hygiene or waste, gather on warm walls, work into gaps,
 and overwinter in wall voids and attics — then appear indoors on mild winter
 days in numbers that seem impossible relative to any visible opening.
-Multicolored Asian lady beetles and brown marmorated stink bugs do the same on
+[Multicolored Asian lady beetles](/pest-library/multicolored-asian-lady-beetle/) and [brown marmorated stink bugs](/pest-library/brown-marmorated-stink-bug/) do the same on
 the same walls.
 
 The lady beetle can deliver a small bite; the stink bug cannot. Neither raises

@@ -51,7 +51,7 @@ across a long gray season. The framing above never fully dries. That figure come
 from NOAA's [US Climate Normals](https://www.ncei.noaa.gov/access/us-climate-normals/)
 rather than from us.
 
-Everything moisture-driven follows. Moisture ants colonize wood that has
+Everything moisture-driven follows. [Moisture ants](/pest-library/moisture-ant/) colonize wood that has
 softened. Decay fungus runs where it stays wet, and decay rather than insects is
 what actually costs structural capacity here. Sowbugs, millipedes, springtails
 and silverfish live in the damp and occasionally come up into the house through
@@ -126,7 +126,7 @@ buying.
 
 ## Rats, and the Bellingham autumn
 
-Norway rats are the most common single reason anyone in this neighborhood calls
+[Norway rats](/pest-library/norway-rat/) are the most common single reason anyone in this neighborhood calls
 us, and the local pattern is not the one national material describes.
 
 Through spring and summer they live outdoors and do well. Himalayan blackberry
@@ -161,7 +161,7 @@ overflowing down a wall for years, a downspout discharging at the foundation, a
 porch roof that has leaked quietly, siding in contact with soil, or a sill plate
 sitting too close to grade.
 
-Carpenter ants prefer wood that has begun to soften and keep a parent nest
+[Carpenter ants](/pest-library/carpenter-ant/) prefer wood that has begun to soften and keep a parent nest
 outdoors — a stump, a fence post, a landscape timber, a woodpile — with satellite
 nests inside the structure. The satellites are what people see. Treating those
 while the parent sits untouched in the back garden is why this work gets a

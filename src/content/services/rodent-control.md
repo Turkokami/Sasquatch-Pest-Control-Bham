@@ -42,7 +42,7 @@ done.
 
 Two things happen here, in order. **The rain moves them.** We do not get a
 sustained hard freeze, but we do get roughly thirty-five inches of rain, and
-through the dry part of summer Norway rats live outdoors perfectly well — in
+through the dry part of summer [Norway rats](/pest-library/norway-rat/) live outdoors perfectly well — in
 blackberry, under decking, in woodpiles, along creek corridors and greenbelts,
 in the field margins out toward Lynden and Everson. Then the rain sets in around
 late September, the ground saturates, burrows flood, and every one of those
@@ -83,7 +83,7 @@ is often confined to one part of a house while a rat problem involves the whole
 structure.
 
 **Deer mouse.** White belly, distinctly bicolored tail, larger eyes and ears
-than a house mouse. Common in rural and forest-edge properties: Sudden Valley,
+than a [house mouse](/pest-library/house-mouse/). Common in rural and forest-edge properties: Sudden Valley,
 the Lake Whatcom shoreline, Edgemoor, and the farm country north and east of the
 city. Deer mice matter for one specific reason, covered below under health.
 
@@ -304,7 +304,7 @@ cleanup is part of the job rather than something we hand back to you.
 Two numbers worth having before the geography, both from our own call volume.
 
 **Between the rats it runs about sixty-forty in favor of roof rats.** That is
-not the split most people expect, and it changes where a job starts: roof rats
+not the split most people expect, and it changes where a job starts: [roof rats](/pest-library/roof-rat/)
 work the upper half of a building, so a roof rat house is a roofline, soffit and
 overhanging-branch problem, while a Norway rat house is a foundation, crawlspace
 and drain problem. Guessing wrong means sealing the wrong half.

@@ -35,7 +35,7 @@ and it gets the pest pressure of both at once.
 
 The practical result is that a Deming property has two separate sources of
 trouble working on it from opposite directions, on different schedules, with
-different fixes. The farm ground sends rodents. The forest sends carpenter ants.
+different fixes. The farm ground sends rodents. The forest sends [carpenter ants](/pest-library/carpenter-ant/).
 The two problems overlap in the calendar but almost never in the solution, and
 treating them as one job is how people end up disappointed.
 
@@ -189,7 +189,7 @@ insects that cannot reproduce there.
 
 Spiders are the most reported and least dangerous item on this list. Nothing
 with a medically significant bite has established itself this far north, and the
-two species behind nearly every call — the giant house spider and the cross
+two species behind nearly every call — the [giant house spider](/pest-library/giant-house-spider/) and the cross
 orbweaver — are harmless to people.
 
 A forest-edge property gets more of them for a simple reason: there are more
@@ -212,7 +212,7 @@ mower or a brush cutter goes over it, and on wooded acreage there is a great dea
 of ground where that can happen. If there is regular clearing on the property, it
 is worth knowing where the activity is in July rather than meeting it in August.
 
-We do not treat honey bees and will say so. A swarm is a beekeeper's job and
+We do not treat [honey bees](/pest-library/honey-bee/) and will say so. A swarm is a beekeeper's job and
 there are people locally who will collect one.
 
 ## Crawlspaces under a canopy

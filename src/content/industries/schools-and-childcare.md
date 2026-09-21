@@ -100,7 +100,7 @@ area, and whatever the campus backs onto.
 
 Whatcom County schools sit in two different situations and it changes the work.
 
-Campuses inside Bellingham face the city picture: rats, Norway rats at ground
+Campuses inside Bellingham face the city picture: rats, [Norway rats](/pest-library/norway-rat/) at ground
 level and roof rats where trees or roof lines give access. Campuses out through
 Lynden, Everson, Nooksack, Sumas, and the rural districts face the county
 picture, which is mice in volume off surrounding field and hedgerow, with no
@@ -142,7 +142,7 @@ By volume the thing a school actually rings about is ants in a classroom, and it
 is worth setting out because the instinct is to treat it and the instinct is
 wrong.
 
-The ant is almost always the odorous house ant — "sugar ants" locally — which is
+The ant is almost always the [odorous house ant](/pest-library/odorous-house-ant/) — "sugar ants" locally — which is
 the ant most buildings in this county have. It does no structural damage. What
 makes it a school problem is that classrooms are full of small food sources in
 a hundred places: snacks in desks and cubbies, a birthday party last Thursday,
@@ -170,7 +170,7 @@ pressure.
 
 Crawlspaces under older wings, boiler rooms and tunnels, and additions where two
 envelopes meet badly all produce the conditions this county specializes in:
-standing damp, wet framing, and the moisture ants and decay that follow. Where a
+standing damp, wet framing, and the [moisture ants](/pest-library/moisture-ant/) and decay that follow. Where a
 crawlspace is shared or continuous under a wing, a population under one
 classroom has the floor of all of them.
 

@@ -86,7 +86,7 @@ matching. A trail with obvious big and small workers in it is a useful early
 clue.
 
 **Color.** Many species here are **bi-colored, red and black**. Some are
-uniformly brown or black, which is where the confusion with carpenter ants
+uniformly brown or black, which is where the confusion with [carpenter ants](/pest-library/carpenter-ant/)
 begins.
 
 **The thorax.** This is the one that settles it. Thatching ants possess **a
@@ -235,7 +235,7 @@ saw it.
 ## What we would actually do
 
 Identification first, from a specimen or a good photograph, because the answer
-for thatching ants, carpenter ants and moisture ants are three different jobs.
+for thatching ants, carpenter ants and [moisture ants](/pest-library/moisture-ant/) are three different jobs.
 
 Then location. Where is the nest, where are the trails, and what is the actual
 conflict — the mound itself, foraging indoors, or ants farming aphids on a

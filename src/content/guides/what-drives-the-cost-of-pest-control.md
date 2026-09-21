@@ -388,7 +388,7 @@ is still open.
 
 **Interior treatment for overwintering insects.** Once cluster flies or stink
 bugs are dormant in a wall cavity, very little applied indoors reaches them, and
-what does succeed leaves an accumulation of dead insects that carpet beetles
+what does succeed leaves an accumulation of dead insects that [carpet beetles](/pest-library/carpet-beetle/)
 develop in. The extension consensus on this is unusually unanimous.
 
 **Treating the wrong thing entirely.** A lawn application aimed at cluster

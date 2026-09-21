@@ -123,7 +123,7 @@ something else. Speed and shine are the two things to look at.
 
 ## Why timing decides everything
 
-There is one honest thing to say about cluster fly work and it is about the
+There is one honest thing to say about [cluster fly](/pest-library/cluster-fly/) work and it is about the
 calendar.
 
 The effective intervention is an exterior treatment applied to the walls they
@@ -203,7 +203,7 @@ hind legs. Alarming to find and completely harmless.
 in sheltered spots, sometimes in attics and lofts. A single wasp in an upstairs
 room in March is usually one of these rather than a nest.
 
-The reason this matters is efficiency. The exclusion work is identical for all of
+The reason this matters is efficiency. The [exclusion work](/services/exclusion-and-repairs/) is identical for all of
 them — the same soffit gaps, the same window surrounds, the same vents at height
 — and the exterior treatment window is the same too. Doing it once addresses the
 whole group, which changes the economics of the job considerably.
@@ -220,7 +220,7 @@ A substantial proportion of the overwintering population dies in the void. In a
 building that has had this for years, that means an accumulation of dead flies
 in an attic, a soffit or a wall cavity — sometimes a considerable one.
 
-Dead insects are food. Carpet beetles and larder beetles feed on them, breed in
+Dead insects are food. [Carpet beetles](/pest-library/carpet-beetle/) and larder beetles feed on them, breed in
 the accumulation, and then disperse. Their larvae end up in the rooms below,
 where they damage wool, textiles and stored goods, and where the shed bristly
 hairs of carpet beetle larvae cause skin irritation in some people that is

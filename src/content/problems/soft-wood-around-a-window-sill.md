@@ -132,7 +132,7 @@ stump, a log or a woodpile.
 **Moisture ants.** Small and yellowish, occupying wood that is properly wet
 rather than merely damp. They build a distinctive spongy carton material from
 chewed wood and soil. They are a strong indicator of a serious water problem and
-are less structurally aggressive than carpenter ants.
+are less structurally aggressive than [carpenter ants](/pest-library/carpenter-ant/).
 
 **Dampwood termites.** Larger, requiring high moisture content, and cutting
 galleries across the grain as well as along it. Their galleries tend to be packed

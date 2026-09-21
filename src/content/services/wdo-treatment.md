@@ -86,7 +86,7 @@ and **PCO General**.
 
 PCO Structural is the relevant one here. In the state's own terms it covers the
 control of pests that attack structural material, including fungus, termites,
-carpenter ants and wood-boring beetles. That is a treatment authority, and it is
+[carpenter ants](/pest-library/carpenter-ant/) and wood-boring beetles. That is a treatment authority, and it is
 what allows us to work on the findings in front of you.
 
 The license numbers are published on our about page next to the names of the
@@ -337,7 +337,7 @@ true.
 
 Check the deck where it attaches to the house. Ledger flashing is a chronic
 defect in this housing stock, it is expensive when it fails, and it produces
-exactly the wet framing that dampwood termites and moisture ants require.
+exactly the wet framing that dampwood termites and [moisture ants](/pest-library/moisture-ant/) require.
 
 None of this replaces a proper examination by somebody licensed to do it. It
 does mean you will not be surprised by the document when it arrives, and you

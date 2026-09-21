@@ -97,7 +97,7 @@ people notice is the mounds and a spongy, lifting lawn.
 
 They need different handling, and treating for the wrong one wastes a season.
 The clue is in the workings: surface runways with clipped vegetation means
-voles, mounds of pushed-up soil means moles, and a lawn can genuinely have
+[voles](/pest-library/vole/), mounds of pushed-up soil means moles, and a lawn can genuinely have
 both. If you want a second opinion on which you are looking at, [WSU
 Extension's Whatcom County office](https://extension.wsu.edu/whatcom/) covers
 both animals and is local.
@@ -171,7 +171,7 @@ most of what happens at the foundation.
 
 ## Carpenter ants and the wood around the house
 
-Blaine carries carpenter ant pressure and the Village has its own version of
+Blaine carries [carpenter ant](/pest-library/carpenter-ant/) pressure and the Village has its own version of
 it: mature landscape timber, decades-old decks and fences, landscape ties, and
 stored firewood, all of it now soft in the places that stay damp.
 
@@ -211,7 +211,7 @@ eye. On common ground that is a maintenance-crew hazard as much as a resident
 one, and it is worth reporting rather than stepping around.
 
 Aerial nests under eaves, in soffits and inside outbuildings are more visible
-and easier. Bald-faced hornets build the large gray paper nests people
+and easier. [Bald-faced hornets](/pest-library/bald-faced-hornet/) build the large gray paper nests people
 photograph; European paper wasps build small open combs under railings and deck
 rails and are markedly less defensive.
 

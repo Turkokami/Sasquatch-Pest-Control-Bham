@@ -109,7 +109,7 @@ the lowest point available. A crawlspace stepped into that slope is dry at one
 end and persistently damp at the other, with the joists above the wet end
 quietly taking on moisture for years.
 
-Everything moisture-driven follows. Moisture ants need timber that has already
+Everything moisture-driven follows. [Moisture ants](/pest-library/moisture-ant/) need timber that has already
 softened, and finding them is a finding about water rather than about ants.
 Decay fungus runs where the wood stays wet, and decay rather than insects is
 what actually costs structural capacity in this climate. Silverfish, sowbugs
@@ -130,7 +130,7 @@ housing stock that is often, and it costs us the recurring service.
 There is a great deal of cedar in this neighborhood and it is old enough to
 matter.
 
-Carpenter ants do not eat wood; they excavate galleries in it to nest, and they
+[Carpenter ants](/pest-library/carpenter-ant/) do not eat wood; they excavate galleries in it to nest, and they
 strongly prefer material that has begun to soften. Fifty or more years of
 weather does exactly that to cedar trim, fascia, deck framing, fence posts and
 the bottom edge of siding.
@@ -299,7 +299,7 @@ or a path and appearing indoors near the floor.
 Neither is telling you anything about the building. Moisture ants and carpenter
 ants are; these two are simply foraging. That distinction matters because it
 decides whether the conversation is about a treatment or about a repair, and
-selling somebody a structural investigation for a pavement ant trail would be as
+selling somebody a structural investigation for a [pavement ant](/pest-library/pavement-ant/) trail would be as
 dishonest as ignoring a moisture ant finding.
 
 Winged carpenter ants in spring get called in as termites more often than anything else we identify. The

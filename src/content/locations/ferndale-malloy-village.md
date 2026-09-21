@@ -142,16 +142,16 @@ solid containers costs nothing at all.
 Irrigated planting against a foundation is standard in developments of this
 kind, and it produces the most common non-rodent call we get here.
 
-Odorous house ants and pavement ants forage along a watered, warm foundation
+[Odorous house ants](/pest-library/odorous-house-ant/) and pavement ants forage along a watered, warm foundation
 line and come indoors along it. They are a nuisance rather than a structural
 problem, and they respond to the right approach quickly — which is baiting
 along the trail rather than spraying the trail, because a sprayed trail
 frequently splits a colony into several and makes the following month worse.
 
-Carpenter ants are a different matter and the identification is the point.
+[Carpenter ants](/pest-library/carpenter-ant/) are a different matter and the identification is the point.
 Carpenter ants excavate galleries in wood, and finding them indoors means
 something about moisture or a nearby colony rather than a passing trail.
-Moisture ants mean wet wood specifically. Three insects that look broadly
+[Moisture ants](/pest-library/moisture-ant/) mean wet wood specifically. Three insects that look broadly
 similar to most people, with three different meanings.
 
 Watering the foundation less, and keeping a gap between planting and siding,

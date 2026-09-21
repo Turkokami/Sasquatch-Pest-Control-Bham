@@ -182,7 +182,7 @@ in a yard are a symptom worth reading rather than a pest to be sprayed. When we 
 The same logic runs through the whole damp-building list that this climate and
 this housing stock produce together: sowbugs, millipedes, springtails and
 silverfish in an underfloor space that stays wet, and
-moisture ants in any framing that has been damp long enough to soften. Every one
+[moisture ants](/pest-library/moisture-ant/) in any framing that has been damp long enough to soften. Every one
 of those is telling you about water. Treating them without addressing the water
 is a temporary result on a permanent condition, and on a lightly built cabin
 over bare earth the water is usually not hard to find.
@@ -249,7 +249,7 @@ trapping against an open building.
 Ant calls here divide cleanly into two kinds and the distinction decides the
 whole approach.
 
-Odorous house ants and pavement ants come in from outside, usually along the
+[Odorous house ants](/pest-library/odorous-house-ant/) and pavement ants come in from outside, usually along the
 slab edge, the sill, or a service penetration, drawn by whatever is available in
 a kitchen. They are a nuisance rather than a structural signal, and they respond
 to a combination of exterior treatment and closing the specific route they are
@@ -262,7 +262,7 @@ skirting that traps damp against a rim joist. Finding them means finding a water
 problem, and treating them without correcting it produces a new colony in the
 same timber.
 
-Carpenter ants take the middle ground, preferring softened wood and keeping a
+[Carpenter ants](/pest-library/carpenter-ant/) take the middle ground, preferring softened wood and keeping a
 parent colony outdoors in a stump, a woodpile or a section of deck framing that
 stays wet. The satellites indoors are what people notice.
 

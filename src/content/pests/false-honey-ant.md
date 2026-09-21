@@ -343,17 +343,17 @@ county can be late January in a mild year and well into March in a hard one.
 ## What the season is actually telling you
 
 There is a wider point here that applies beyond this species, and it is the
-reason this page exists rather than a line on the odorous house ant entry.
+reason this page exists rather than a line on the [odorous house ant](/pest-library/odorous-house-ant/) entry.
 
 The calendar is diagnostic. An insect indoors in February is a much narrower set
 of possibilities than an insect indoors in July, and using the time of year
 properly removes most of the guesswork before anybody looks at anything.
 
 February and March: this ant, or overwintering invaders waking up in a wall, or
-— the one that matters — carpenter ants active in a heated structure.
+— the one that matters — [carpenter ants](/pest-library/carpenter-ant/) active in a heated structure.
 
 April and May: carpenter ant swarms, the first odorous house ant activity, and
-moisture ants where there is decay.
+[moisture ants](/pest-library/moisture-ant/) where there is decay.
 
 Midsummer: pavement ants, thatching ants, everything at once.
 

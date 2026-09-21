@@ -58,7 +58,7 @@ If you get a large number of slow, dark, slightly hairy flies at upstairs window
 on the first warm day of winter, you have cluster flies, and almost everything
 above does not apply.
 
-**They do not breed in your house.** Cluster fly larvae develop outdoors, in soil,
+**They do not breed in your house.** [Cluster fly](/pest-library/cluster-fly/) larvae develop outdoors, in soil,
 as parasites of earthworms. There is no source indoors to find and no sanitation
 problem to fix. Your house is not dirty and there is nothing rotting in the wall.
 

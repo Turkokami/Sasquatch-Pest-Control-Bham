@@ -154,7 +154,7 @@ gets produced when somebody asks.
 ## Rats, where they do turn up
 
 The section above is about mice because mice are the volume problem out here,
-but Norway rats are the ones that do the structural damage when a farm has
+but [Norway rats](/pest-library/norway-rat/) are the ones that do the structural damage when a farm has
 them, and they concentrate differently.
 
 Rats want a burrow in workable ground near a reliable food and water source, so
@@ -274,7 +274,7 @@ managed rather than reacted to.
 ## The year on a Whatcom County farm
 
 **Late winter into spring.** The quiet-looking part of the year and one of the
-most useful. This is when the exclusion work on the sealable buildings actually
+most useful. This is when the [exclusion work](/services/exclusion-and-repairs/) on the sealable buildings actually
 gets done, because the weather allows it and nothing else is competing for the
 time. It is also when a rodent population that moved in over the autumn is most
 visible, because the evidence has been accumulating in a shop nobody has been

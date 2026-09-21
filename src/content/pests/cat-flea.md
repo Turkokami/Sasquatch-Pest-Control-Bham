@@ -314,7 +314,7 @@ specific job to do.
 
 ## How the property gets treated
 
-**Confirm the insect first.** Springtails and carpet beetle larvae are the two
+**Confirm the insect first.** Springtails and [carpet beetle](/pest-library/carpet-beetle/) larvae are the two
 things most often reported as fleas in this county, and neither responds to any of
 this. A flea is laterally flattened, dark, hard to crush, and jumps.
 

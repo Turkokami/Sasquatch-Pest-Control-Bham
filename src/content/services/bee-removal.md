@@ -38,7 +38,7 @@ Most calls we receive about bees are about yellowjackets.
 
 The confusion is understandable — yellow and black, flying, stinging — but the
 distinction decides everything, because we treat yellowjackets and we do not kill
-honey bees.
+[honey bees](/pest-library/honey-bee/).
 
 **Honey bees** are golden brown, fuzzy, and moderately sized. They visit flowers.
 They have no interest in your food, your drink, your bin or your barbecue. They
@@ -70,7 +70,7 @@ This is a firm position and worth explaining rather than just asserting.
 pounds of wax comb, brood and honey. Kill the bees and all of that stays in the
 cavity. Without the colony maintaining it, the comb warms, the honey ferments and
 runs, and it soaks into the drywall and framing — producing staining, odor, and a
-long-term food source that attracts ants, wax moths, carpet beetles and rodents.
+long-term food source that attracts ants, wax moths, [carpet beetles](/pest-library/carpet-beetle/) and rodents.
 Households that pay to have a wall colony poisoned frequently pay again a year
 later for a considerably messier job.
 
@@ -133,7 +133,7 @@ thing that produces the year-later phone call.
 
 Our default recommendation is to leave them, and here is why that is not laziness.
 
-Bumble bee colonies are small — dozens to a few hundred individuals rather than
+[Bumble bee](/pest-library/bumble-bee/) colonies are small — dozens to a few hundred individuals rather than
 tens of thousands. They are annual: the colony dies out in autumn and only new
 queens overwinter, elsewhere. **The nest is never reused.** They are docile unless
 the nest is directly disturbed, and they are among the most effective pollinators

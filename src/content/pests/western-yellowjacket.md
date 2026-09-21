@@ -170,7 +170,7 @@ predict.
 
 **Abandoned rodent burrows** are the first choice, and every source we work from
 says so. The cavity is already excavated, it is the right volume, it drains, and
-its mouth is small enough to defend. A property with vole, mouse or mole history
+its mouth is small enough to defend. A property with [vole](/pest-library/vole/), mouse or mole history
 is a property with candidate sites throughout.
 
 **Banks, slopes and cut edges.** Sloped ground drains and offers a horizontal
@@ -312,7 +312,7 @@ moving backwards over uneven ground in the dark.
 
 ## Stings, and when it stops being a pest control question
 
-Yellowjackets do not lose the sting the way a honey bee does, so one insect can
+Yellowjackets do not lose the sting the way a [honey bee](/pest-library/honey-bee/) does, so one insect can
 sting repeatedly, and a disturbed ground colony recruits.
 
 A normal reaction is sharp pain, redness and local swelling that builds over a

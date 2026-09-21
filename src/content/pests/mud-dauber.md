@@ -205,14 +205,14 @@ with does most of the work.
 
 **Mud tubes or a mud lump** — mud dauber. Solitary. No defense. Scrape it off.
 
-**Dry grass stuffed into a gap or a window track** — grass-carrying wasp.
+**Dry grass stuffed into a gap or a window track** — [grass-carrying wasp](/pest-library/grass-carrying-wasp/).
 Solitary, harmless, and covered on its own page.
 
 **Gray papery cells, open, hexagonal, on a short stalk** — a paper wasp. Social,
 mildly defensive, and worth a conversation if it is above a door.
 
-**A gray papery ball or a football-shaped enclosed nest** — bald-faced hornet or
-aerial yellowjacket. Social, genuinely defensive, and this is the one to leave
+**A gray papery ball or a football-shaped enclosed nest** — [bald-faced hornet](/pest-library/bald-faced-hornet/) or
+[aerial yellowjacket](/pest-library/aerial-yellowjacket/). Social, genuinely defensive, and this is the one to leave
 alone and call about.
 
 **A hole in the ground with steady two-way traffic** — most likely a

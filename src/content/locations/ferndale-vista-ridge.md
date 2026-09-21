@@ -96,7 +96,7 @@ about which problems they remove.
 
 The moisture-driven work largely goes away. Crawlspaces here are drier, so
 there is much less decay, far fewer wood-boring beetles, and very little of the
-softened framing that carpenter ants prefer. Moisture ants — which are a report
+softened framing that [carpenter ants](/pest-library/carpenter-ant/) prefer. [Moisture ants](/pest-library/moisture-ant/) — which are a report
 about wet wood rather than a pest in their own right — are rare up here and
 common on the valley floor.
 
@@ -228,7 +228,7 @@ Exterior lighting concentrates flying insects, and where the insects are, the
 spiders that eat them follow. Modern siding, trim, and the sheltered vertical
 faces around entries, gables and soffits give them somewhere to build.
 
-The autumn wave is mostly giant house spiders, and what people see is males
+The autumn wave is mostly [giant house spiders](/pest-library/giant-house-spider/), and what people see is males
 moving to find females — which is why they appear singly, at speed, across a
 floor, in September and October, rather than as an accumulation.
 

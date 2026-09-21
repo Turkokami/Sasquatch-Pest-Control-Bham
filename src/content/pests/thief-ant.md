@@ -80,7 +80,7 @@ the one species where confusion is expensive.
 
 **The antennal club.** This is the diagnostic and it is worth learning. The last
 segments of the antenna are enlarged into a club, and in the thief ant that club
-is **unusually long and made of two segments**. In the pharaoh ant it is three.
+is **unusually long and made of two segments**. In the [pharaoh ant](/pest-library/pharaoh-ant/) it is three.
 
 That single character separates the two species that matter most in this size
 range, and it is why we would rather have three ants in a bag than a photograph
@@ -129,7 +129,7 @@ voids, the gap behind a baseboard, mortar joints, the space around a pipe
 sleeve, the cavity behind a tiled splashback.
 
 Colonies run from many hundreds to a few thousand workers, which is modest
-compared with a pavement ant or a thatching ant colony and large enough to be a
+compared with a [pavement ant](/pest-library/pavement-ant/) or a [thatching ant](/pest-library/thatching-ant/) colony and large enough to be a
 persistent nuisance.
 
 Swarming happens from mid-summer to early autumn, and unlike pharaoh ants they

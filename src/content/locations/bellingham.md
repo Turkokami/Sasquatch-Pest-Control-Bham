@@ -68,8 +68,8 @@ pests](https://doh.wa.gov/community-and-environment/pests) puts the same
 emphasis on removing food and shelter before anything else. On these streets the
 conversation frequently has to widen from one house to the block.
 
-The pests follow directly: Norway rats and house mice in the crawl and the
-walls, carpenter and moisture ants in any framing that has taken water, and
+The pests follow directly: [Norway rats](/pest-library/norway-rat/) and house mice in the crawl and the
+walls, carpenter and [moisture ants](/pest-library/moisture-ant/) in any framing that has taken water, and
 sowbugs and millipedes in the damp crawl itself. The
 correct work is exclusion — sealing the envelope, screening the vents, closing
 the penetrations — with treatment as the part that handles what is already
@@ -83,7 +83,7 @@ and T1-11 siding, generous soffit and ridge venting, split levels, and daylight
 basements cut into the grade.
 
 Cedar is the recurring theme. It weathers beautifully and it softens, and softened
-cedar is exactly what carpenter ants want. Fifty years in, the fascia, the trim
+cedar is exactly what [carpenter ants](/pest-library/carpenter-ant/) want. Fifty years in, the fascia, the trim
 boards and the bottom edge of the siding are frequently punky enough to host a
 satellite colony, and the parent colony is usually in a stump or a standing dead
 tree at the property line rather than in the house at all. Treating the kitchen

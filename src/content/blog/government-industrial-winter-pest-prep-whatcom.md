@@ -20,11 +20,11 @@ The stakes are also higher. A pest problem in a government office, food-handling
 
 ### Rodents
 
-Rats and mice are the number one winter threat for facilities. They're driven indoors by cold, they breed quickly, and in an industrial setting they can contaminate product, gnaw wiring (a genuine fire and downtime risk), and shred insulation and packaging. In our region, Norway rats work lower levels and drainage areas while roof rats and mice exploit higher and smaller access points — so a facility has to defend both.
+Rats and mice are the number one winter threat for facilities. They're driven indoors by cold, they breed quickly, and in an industrial setting they can contaminate product, gnaw wiring (a genuine fire and downtime risk), and shred insulation and packaging. In our region, [Norway rats](/pest-library/norway-rat/) work lower levels and drainage areas while [roof rats](/pest-library/roof-rat/) and mice exploit higher and smaller access points — so a facility has to defend both.
 
 ### Overwintering insects
 
-Cluster-forming insects like stink bugs, cluster flies, boxelder bugs, and Asian lady beetles seek sheltered wall voids and warm interiors to overwinter, and large sun-facing facility walls are prime aggregation sites. They're less damaging than rodents but can become a serious nuisance in offices and workspaces — and in food or clean environments they're simply unacceptable.
+Cluster-forming insects like stink bugs, cluster flies, [boxelder bugs](/pest-library/boxelder-bug/), and Asian lady beetles seek sheltered wall voids and warm interiors to overwinter, and large sun-facing facility walls are prime aggregation sites. They're less damaging than rodents but can become a serious nuisance in offices and workspaces — and in food or clean environments they're simply unacceptable.
 
 ### Stored-product and moisture pests
 

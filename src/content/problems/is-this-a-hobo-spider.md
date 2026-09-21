@@ -39,7 +39,7 @@ worried about their children or their dog.
 
 So we will answer that first, plainly: no spider that commonly lives in Whatcom
 County homes presents a meaningful danger to a healthy person. The species most
-often called a hobo spider is usually not one, and the hobo spider itself is no
+often called a [hobo spider](/pest-library/hobo-spider/) is usually not one, and the hobo spider itself is no
 longer regarded by the people who study this as medically significant.
 
 The longer version is worth reading, because the reputation attached to this
@@ -104,7 +104,7 @@ the abdomen is the test that circulates most widely, and the thing worth
 noticing about it is that neither [WSU Extension](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/408/2015/02/PLS-116-How-to-Identify-or-Misidentify-the-Hobo-Spider.pdf)'s identification factsheet nor
 UC IPM's pest note on the species uses it at all. Both skip the markings and go
 to the reproductive structures. Size overlaps as well, and it overlaps in the
-reassuring direction: the giant house spider is generally the larger animal, so
+reassuring direction: the [giant house spider](/pest-library/giant-house-spider/) is generally the larger animal, so
 a big frightening spider is an argument against the hobo rather than for it.
 
 Leg banding deserves a paragraph of its own, because a real character has been
@@ -207,7 +207,7 @@ orb weaver here. Outdoors, seasonal, harmless and worth admiring.
 
 **A loose, messy, three-dimensional tangle** in a corner of a ceiling, a
 crawlspace or a garage, with a very long-legged spider hanging upside down in
-it. Cellar spider.
+it. [Cellar spider](/pest-library/cellar-spider/).
 
 **A small, dense, irregular tangle low down in a dark undisturbed place** —
 under a shelf, behind stored material, in the corner of a crawlspace — with a

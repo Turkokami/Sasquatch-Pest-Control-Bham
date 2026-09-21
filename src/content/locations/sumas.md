@@ -150,7 +150,7 @@ of it has been repaired or rebuilt in the last few years.
 
 Older stock carries the standard regional pattern: shallow crawlspaces over bare
 earth, failed vent screens, framing that has taken water and now supports
-moisture ants, and the damp-crawl company of sowbugs, millipedes and
+[moisture ants](/pest-library/moisture-ant/), and the damp-crawl company of sowbugs, millipedes and
 springtails. Newer and rebuilt sections tend to be tight envelopes
 with a handful of service penetrations closed with expanding foam, which stops
 drafts and does not stop a rodent.
@@ -177,7 +177,7 @@ useful information: the water is the problem and the ants are the symptom.
 Treating without correcting the source produces a new colony in the same wood,
 which on flood-affected property is a particularly common outcome.
 
-Carpenter ants carve their nests out of wood, and they favor wood that has already started to soften. The parent colony is nearly always outdoors — a stump, a fence post, a
+[Carpenter ants](/pest-library/carpenter-ant/) carve their nests out of wood, and they favor wood that has already started to soften. The parent colony is nearly always outdoors — a stump, a fence post, a
 landscape timber, a woodpile — with satellites inside the structure. The
 satellites are what people see, and treating them without locating the parent is
 why these jobs develop a reputation for coming back.
@@ -252,7 +252,7 @@ schedule that leaves the source in place.
 
 ## Spiders and the domestic list
 
-The household side of Sumas is the standard regional set. Giant house spiders
+The household side of Sumas is the standard regional set. [Giant house spiders](/pest-library/giant-house-spider/)
 generate the autumn calls and are harmless — the large fast ones are wandering
 males, not an invasion, and there is no brown recluse in this state's northwest
 corner. Silverfish, sowbugs and millipedes belong to the damp crawl and are

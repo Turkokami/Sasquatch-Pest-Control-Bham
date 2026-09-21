@@ -66,7 +66,7 @@ track nights from earlier in the week.
 
 It also means the reverse is true: marks that look exactly like bites are
 frequently not bites at all. Dermatologists are clear that no skin lesion can be
-identified as a bed bug bite by appearance alone, and the "breakfast, lunch and
+identified as a [bed bug](/pest-library/bed-bug/) bite by appearance alone, and the "breakfast, lunch and
 dinner" line of three that gets repeated everywhere is a rough pattern rather
 than a diagnostic feature.
 
@@ -369,7 +369,7 @@ been any noise, droppings or activity in the structure.
 
 We will search the sleeping area properly — the mattress, the box spring, the
 frame, the headboard and the surroundings — and, where the picture suggests it,
-the wider structure for a nest or for carpet beetles.
+the wider structure for a nest or for [carpet beetles](/pest-library/carpet-beetle/).
 
 Then you get a plain account of what was and was not found, what we think it
 means, and what we would do next.

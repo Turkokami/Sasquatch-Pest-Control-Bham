@@ -42,7 +42,7 @@ Don't skip the exclusion. Trapping alone without sealing entry points is like ba
 
 ### Ant control
 
-A single interior treatment for odorous house ants sits at the low end. Carpenter ants cost more, because the work involves locating the nest and any moisture-damaged wood supporting it rather than simply treating a trail. An ongoing quarterly prevention program is priced per visit and typically works out lower per treatment than repeated one-off calls.
+A single interior treatment for [odorous house ants](/pest-library/odorous-house-ant/) sits at the low end. [Carpenter ants](/pest-library/carpenter-ant/) cost more, because the work involves locating the nest and any moisture-damaged wood supporting it rather than simply treating a trail. An ongoing quarterly prevention program is priced per visit and typically works out lower per treatment than repeated one-off calls.
 
 ### Wasps, yellow jackets, and hornets
 
@@ -52,7 +52,7 @@ Timing significantly impacts cost. A nest addressed in May when it is small cost
 
 ### Bed bugs
 
-Bed bug work is the one area where scope is predictable enough to quote in advance, and pricing information for it lives on our bed bug page rather than here. Whole-home heat treatment and multi-visit chemical programs are priced differently, and the number of rooms involved is the main driver. Be cautious with unusually cheap bed bug quotes — very low-priced bed bug treatment almost never works, and a failed treatment costs more than doing it properly the first time. [UC IPM](https://ipm.ucanr.edu/home-and-landscape/bed-bugs/) is direct that insecticide applications on their own will not clear an infestation and that a confirmed one belongs with trained professionals, which is roughly what a bargain quote leaves out.
+[Bed bug](/pest-library/bed-bug/) work is the one area where scope is predictable enough to quote in advance, and pricing information for it lives on our bed bug page rather than here. Whole-home heat treatment and multi-visit chemical programs are priced differently, and the number of rooms involved is the main driver. Be cautious with unusually cheap bed bug quotes — very low-priced bed bug treatment almost never works, and a failed treatment costs more than doing it properly the first time. [UC IPM](https://ipm.ucanr.edu/home-and-landscape/bed-bugs/) is direct that insecticide applications on their own will not clear an infestation and that a confirmed one belongs with trained professionals, which is roughly what a bargain quote leaves out.
 
 ### Dampwood termites and wood-destroying insects
 

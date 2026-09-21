@@ -34,7 +34,7 @@ faqs:
 
 ## An ant that works as a diagnosis
 
-Most pest findings tell you that something got in. Moisture ants tell you
+Most pest findings tell you that something got in. [Moisture ants](/pest-library/moisture-ant/) tell you
 something quite specific about the building itself, and that makes them unusual
 and, in an odd way, useful.
 
@@ -71,7 +71,7 @@ support a colony, the moisture has generally been present for a matter of years.
 
 They are easy to mistake for other small ants until you know the tells.
 
-Small — noticeably smaller than a carpenter ant, and smaller than most of the
+Small — noticeably smaller than a [carpenter ant](/pest-library/carpenter-ant/), and smaller than most of the
 ants that come into a kitchen. Yellowish, light amber or pale brown rather than
 black or dark red, which is the most reliable field mark. Slow-moving and not
 especially defensive. Frequently found in dense concentration in one place
@@ -202,7 +202,7 @@ ants are usually not traveling alone.
 
 Springtails, in very large numbers, which are harmless and are themselves a
 reliable damp indicator. Sowbugs and pillbugs, which need moisture to survive
-and cannot persist in a dry space. Millipedes and centipedes. Silverfish.
+and cannot persist in a dry space. Millipedes and centipedes. [Silverfish](/pest-library/silverfish/).
 Various fungus-feeding beetles.
 
 Above that layer, everything that eats those things: spiders in quantity, and

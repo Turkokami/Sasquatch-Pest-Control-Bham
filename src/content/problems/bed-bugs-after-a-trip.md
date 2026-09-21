@@ -33,7 +33,7 @@ faqs:
 
 ## The window that matters
 
-Bed bugs move by being carried. They do not fly, they do not travel far on their
+[Bed bugs](/pest-library/bed-bug/) move by being carried. They do not fly, they do not travel far on their
 own, and essentially every residential introduction arrives in something
 somebody brought into the building — most often luggage, occasionally
 second-hand furniture, sometimes a bag that spent a night somewhere else.
@@ -188,7 +188,7 @@ have searched thoroughly and found no insect evidence at all, because that is
 useful information to take to a doctor.
 
 The reason identification matters so much here is cost. Bed bug work is
-expensive relative to most pest jobs, and treating a carpet beetle problem as a
+expensive relative to most pest jobs, and treating a [carpet beetle](/pest-library/carpet-beetle/) problem as a
 bed bug problem is an expensive error in both directions.
 
 ## Why we charge to verify

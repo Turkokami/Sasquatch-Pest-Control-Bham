@@ -78,7 +78,7 @@ make the calendar visible enough that somebody might.
 
 Nothing much is moving into buildings. What people notice now is what got in
 during the autumn: rodents established in a crawlspace or an attic, and
-overwintering insects — cluster flies, stink bugs, boxelder bugs, ladybird
+overwintering insects — cluster flies, stink bugs, [boxelder bugs](/pest-library/boxelder-bug/), ladybird
 beetles — roused by a mild spell and appearing at upstairs windows. Those are
 not new arrivals. They are the autumn population being woken by warm weather,
 and they will keep reappearing on every warm day until spring.
@@ -125,11 +125,11 @@ great deal in September.
 
 **Growth, and the best month nobody uses.**
 
-Insect populations build. Wasp colonies expand quietly. Carpenter ant activity
+Insect populations build. Wasp colonies expand quietly. [Carpenter ant](/pest-library/carpenter-ant/) activity
 becomes visible — this is when frass appears below trim and workers turn up on
 counters after dark, because the colony is provisioning.
 
-Dampwood termite and moisture ant findings surface as people open up buildings
+Dampwood termite and [moisture ant](/pest-library/moisture-ant/) findings surface as people open up buildings
 for summer work and look at timber they have not looked at since last year.
 
 The ground begins to dry, which makes crawlspace and exterior work practical for

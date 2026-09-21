@@ -80,7 +80,7 @@ nothing is happening for the first week.
 
 **What they are.** *Camponotus modoc* is the common one here — large, matte
 black, workers ranging from about a quarter to over half an inch in the same
-colony, because carpenter ants are polymorphic. That size variation is a useful
+colony, because [carpenter ants](/pest-library/carpenter-ant/) are polymorphic. That size variation is a useful
 field mark. A single evenly-sized column of ants is probably not carpenter ants.
 
 **They do not eat wood.** This is the most common misconception and it changes
@@ -139,7 +139,7 @@ in this business.
 usually yellowish to light brown rather than black. Some produce a distinctly
 citrus or lemony smell when crushed.
 
-**What they mean.** Moisture ants excavate only wood that is already
+**What they mean.** [Moisture ants](/pest-library/moisture-ant/) excavate only wood that is already
 water-damaged and beginning to decay. They cannot establish in sound dry lumber.
 So their presence inside a structure is diagnostic: there is, or has recently
 been, a persistent water source in that location.
@@ -315,7 +315,7 @@ structural problem bed bugs do: a colony does not respect unit boundaries. Wall
 voids, utility chases and shared plumbing runs connect units, and treating one
 apartment while the adjacent one goes untouched simply moves the nest.
 
-Odorous house ants are the species that most often turn a single complaint into
+[Odorous house ants](/pest-library/odorous-house-ant/) are the species that most often turn a single complaint into
 a building-wide program, precisely because repellent treatment causes budding.
 A well-meaning maintenance response with a consumer spray can convert one nest
 into several across a floor, and by the time we are called the problem is

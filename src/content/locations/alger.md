@@ -40,7 +40,7 @@ about the pest work here.
 ## Carpenter ants, which are the defining problem
 
 There is more cedar and more weathered wood per property here than anywhere else
-on our Skagit run, and carpenter ants follow it.
+on our Skagit run, and [carpenter ants](/pest-library/carpenter-ant/) follow it.
 
 They do not eat wood. They excavate galleries in it to nest, and they strongly
 prefer material that has begun to soften — which is precisely what cedar trim,
@@ -80,7 +80,7 @@ open lot in town an animal has to cross exposed ground to reach a building; here
 it does not, and the population outside is permanent regardless of anything done
 to the property.
 
-Deer mice come in off the wooded margins, along with Norway rats and house mice.
+Deer mice come in off the wooded margins, along with [Norway rats](/pest-library/norway-rat/) and house mice.
 They find the crawl vents, the skirting, the gap where a deck meets the house,
 the point where a service line enters, and the underfloor space of any outbuilding.
 
@@ -197,7 +197,7 @@ find them the useful conversation is about the drainage and the system, not
 about an application.
 
 The wider damp-building list follows the same logic. Sowbugs, millipedes,
-springtails and silverfish in a crawlspace are all reporting moisture. Moisture ants in framing mean the wood is already wet and
+springtails and silverfish in a crawlspace are all reporting moisture. [Moisture ants](/pest-library/moisture-ant/) in framing mean the wood is already wet and
 already decaying, and treating them without correcting the water produces a new
 colony in the same timber.
 

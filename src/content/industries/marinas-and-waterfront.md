@@ -117,7 +117,7 @@ this is the reservoir that everything else is drawing from.
 **Stored equipment and cradles.** Anything that has stood in one place for a
 season, particularly if it is covered.
 
-Norway rats are the species that most often makes a marina problem visible —
+[Norway rats](/pest-library/norway-rat/) are the species that most often makes a marina problem visible —
 they burrow in workable ground near reliable food, and the ground around waste
 handling and along a rip-rap edge is exactly that. Mice are the broader
 background pressure, especially where the site backs onto vegetation or open
@@ -133,7 +133,7 @@ than take the booking.
 
 The overlap is real, though. A fish-cleaning station or an open waste area that
 feeds gulls feeds rats too, and an abandoned nest on a shed roof sends mites and
-carpet beetles inward into whatever is below it. Both of those are ours.
+[carpet beetles](/pest-library/carpet-beetle/) inward into whatever is below it. Both of those are ours.
 
 ## Wasps, spiders and the seasonal nuisance
 
@@ -282,7 +282,7 @@ Blaine has one local peculiarity worth naming. Driftwood accumulates on the
 beaches here, and driftwood that has sat wet on a shore for years is carpenter
 ant habitat by the time anybody picks it up. A load carried up for a firepit, a
 border or a woodshed brings the colony with it and sets it down against a
-building. We find carpenter ants started that way more often in Blaine than
+building. We find [carpenter ants](/pest-library/carpenter-ant/) started that way more often in Blaine than
 anywhere else in the county, and the tell is a nest that is outdoors, recent, and
 nowhere near the water damage that normally explains one.
 

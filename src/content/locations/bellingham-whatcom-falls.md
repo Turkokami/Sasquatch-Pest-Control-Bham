@@ -184,7 +184,7 @@ A crawlspace that is merely damp in August can hold standing water in February,
 and a lot of the housing stock sits at a level where that is normal rather than
 exceptional.
 
-What follows from a wet underfloor space is predictable. Moisture ants, which
+What follows from a wet underfloor space is predictable. [Moisture ants](/pest-library/moisture-ant/), which
 want wood that is already wet and are a symptom of a water problem rather than a
 pest problem in their own right. Springtails, sowbugs and millipedes in numbers.
 Silverfish. Decay in joists and beams, which in this climate takes structural
@@ -203,7 +203,7 @@ that way.
 
 ## Carpenter ants from the forest side
 
-The park's forest supplies carpenter ants the way the creek supplies rodents,
+The park's forest supplies [carpenter ants](/pest-library/carpenter-ant/) the way the creek supplies rodents,
 and the pattern here is worth distinguishing from the neighborhood's other
 timber pests.
 
@@ -232,7 +232,7 @@ margins between kept garden and wild ground — which describes the boundary of
 nearly every property here. Colonies peak in August and September, and that is
 also when people are outside using the ground where the nests are.
 
-Bald-faced hornets take the gray paper nests in trees, and along a wooded
+[Bald-faced hornets](/pest-library/bald-faced-hornet/) take the gray paper nests in trees, and along a wooded
 boundary they are frequently not spotted until the leaves come down, by which
 point the colony is finishing on its own.
 

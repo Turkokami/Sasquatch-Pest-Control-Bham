@@ -129,7 +129,7 @@ what a repellent does, to a species that answers disturbance by dividing.
 The PNW Insect Management Handbook makes the same point for the region and does
 not hedge it: over-the-counter sprays are highly repellent to ants and may scatter
 them throughout a structure, and baits are the best approach for ants in a
-structure, especially odorous house ants.
+structure, especially [odorous house ants](/pest-library/odorous-house-ant/).
 
 If you take one thing from this profile, take that. Do not spray this ant.
 
@@ -239,7 +239,7 @@ piece of work from the outset.
 
 **Identify before choosing anything.** The smell test plus the hidden node takes
 under a minute and it determines the entire approach, since the response for this
-species is close to the opposite of the response for a carpenter ant.
+species is close to the opposite of the response for a [carpenter ant](/pest-library/carpenter-ant/).
 
 **Bait, matched to the season.** WSU points to sugar-based baits with slow-acting
 active ingredients in bait stations, and slow is the operative word — the material
@@ -383,7 +383,7 @@ ants do not smell of coconut. And the implication is entirely different: one is 
 nuisance in a kitchen, the other is excavating structural wood.
 
 **Pavement ants.** The confusion that actually happens, because both are small
-and dark and both come indoors to forage. Utah State gives pavement ants at two
+and dark and both come indoors to forage. Utah State gives [pavement ants](/pest-library/pavement-ant/) at two
 and a half to three millimeters, dark brown, with two nodes on the waist rather
 than one, a pair of spines on the thorax, and heavy sculpturing on the head and
 thorax that forms parallel grooves. The habits separate them too: pavement ants

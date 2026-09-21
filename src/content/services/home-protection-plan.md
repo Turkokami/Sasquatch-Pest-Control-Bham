@@ -50,7 +50,7 @@ structure changes what is happening outside it, and managing that is ongoing wor
 by nature.
 
 **It makes sense when there is history.** A house that has had rodents twice, or
-carpenter ants in successive springs, has demonstrated something about its site
+[carpenter ants](/pest-library/carpenter-ant/) in successive springs, has demonstrated something about its site
 that is unlikely to change on its own.
 
 **It makes sense for rentals and second homes**, where nobody is present to
@@ -158,7 +158,7 @@ October, and that climb is what the animals are responding to. This is the visit
 that prevents a winter rodent problem, and it is the reason the schedule is not
 evenly spaced.
 
-**Mid-autumn** brings the overwintering insects — cluster flies, boxelder bugs
+**Mid-autumn** brings the overwintering insects — cluster flies, [boxelder bugs](/pest-library/boxelder-bug/)
 and conifer seed bugs piling onto south-facing walls looking for a way in.
 
 **Winter** is quiet outside, which makes it the right time for the structural

@@ -92,7 +92,7 @@ shrubs and are less likely in a wall, though not impossible.
 **Honey bees** are the important exception. If what is entering your wall is a
 furry, amber and brown, moderately slow insect arriving in very large numbers,
 and particularly if the activity has been there for more than one season, that
-is a honey bee colony and it is a completely different situation. Honey bees are
+is a [honey bee](/pest-library/honey-bee/) colony and it is a completely different situation. Honey bees are
 not a pest control job. The colony belongs to a beekeeper, and the comb and
 stored honey must be removed from the cavity — several pounds of honey left in a
 wall will ferment, seep through drywall, stain and attract a second wave of
@@ -205,7 +205,7 @@ is worth knowing so it is not mistaken for a new problem.
 
 A nest contains dead brood, dead adults and the paper structure itself, and that
 material is food for a small community of scavenging insects. Within weeks of a
-colony being treated or dying naturally, it is normal to see carpet beetles,
+colony being treated or dying naturally, it is normal to see [carpet beetles](/pest-library/carpet-beetle/),
 larder beetles or small moths appearing in the room adjacent to the cavity —
 sometimes at a window, sometimes crawling out at a ceiling fitting.
 
@@ -329,7 +329,7 @@ to leave it.
 
 ## What we do
 
-We identify the insect first, because honey bees and bumble bees do not get
+We identify the insect first, because honey bees and [bumble bees](/pest-library/bumble-bee/) do not get
 treated and yellowjackets do.
 
 We read the entrance and work out what the cavity behind it is likely to be,

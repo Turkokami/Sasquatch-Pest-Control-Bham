@@ -107,14 +107,14 @@ Low ground near a river means a water table closer to the surface than it is on
 the ridges, and an old under-floor space over bare soil will hold moisture
 accordingly.
 
-That matters because of what damp wood permits. Carpenter ants excavate
+That matters because of what damp wood permits. [Carpenter ants](/pest-library/carpenter-ant/) excavate
 galleries far more readily in softened timber than in sound timber. Wood-boring
 beetles and decay fungi need moisture content that dry framing never reaches.
 Those thresholds are set out in the Forest Products Laboratory's [Wood
 Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf), which is
 worth a look if somebody has told you decay is simply what old houses do.
 
-And moisture ants — which most people have never heard of and which we find
+And [moisture ants](/pest-library/moisture-ant/) — which most people have never heard of and which we find
 constantly in this stock — are not really a pest problem at all. They nest in
 wood that is already wet and decaying. Finding them is useful information: it
 means there is a genuine moisture problem in that timber, and the ants are the
@@ -211,7 +211,7 @@ Old houses with generous under-floor spaces and a lot of ground-level openings
 produce more spiders indoors than new houses do, and downtown gets a noticeable
 wave of them in the autumn.
 
-Most of what people find is giant house spiders, which look alarming and are
+Most of what people find is [giant house spiders](/pest-library/giant-house-spider/), which look alarming and are
 not. The fall activity is males moving to find females rather than an
 infestation arriving, which is why they turn up singly, at speed, in the middle
 of a floor, in September and October.

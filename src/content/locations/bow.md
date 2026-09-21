@@ -48,7 +48,7 @@ This is the local mechanism that catches people out, and it has nothing to do
 with temperature.
 
 Open ground supports a large resident rodent population all season: voles, deer
-mice, house mice and Norway rats living in field margins, ditch banks, hedgerows
+mice, house mice and [Norway rats](/pest-library/norway-rat/) living in field margins, ditch banks, hedgerows
 and the crop itself. Nobody sees them and nobody has a problem.
 
 Then a field is cut. Cover that existed in the morning is bare dirt by evening,
@@ -112,7 +112,7 @@ farmhouse that has grown three times over a century, there are a lot of them.
 Underneath, the usual regional pattern: shallow crawlspaces over bare earth,
 vapor barriers that are absent or have been pushed aside, foundation vents whose
 screens failed decades ago, and framing that has taken water somewhere and now
-supports moisture ants.
+supports [moisture ants](/pest-library/moisture-ant/).
 
 The porch, the mudroom and the utility addition are worth specific attention.
 They are commonly the least well built parts of a rural house, frequently on
@@ -194,7 +194,7 @@ inside.
 The western and northern edge of the area rises into wooded ground, and property
 up there behaves like forest edge rather than farmland.
 
-Carpenter ants in softened cedar, with the parent colony out in a stump, a dead
+[Carpenter ants](/pest-library/carpenter-ant/) in softened cedar, with the parent colony out in a stump, a dead
 limb or a woodpile rather than in the house. Rodents using continuous cover to
 reach the buildings. Heavier spider and centipede pressure, driven by abundant
 insect production in damp wooded ground.

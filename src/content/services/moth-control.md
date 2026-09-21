@@ -52,7 +52,7 @@ an open door and are circling a light.
 
 ## Clothes moths
 
-**The two species.** The webbing clothes moth is the common one, leaving silk
+**The two species.** The [webbing clothes moth](/pest-library/webbing-clothes-moth/) is the common one, leaving silk
 tubes and mats on the fabric. The casemaking clothes moth constructs a small
 portable case it drags around and feeds from — finding those little cases attached
 to a garment or a rug is unmistakable once seen.

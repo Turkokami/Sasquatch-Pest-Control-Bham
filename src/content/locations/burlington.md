@@ -180,16 +180,16 @@ backing onto open ground, which describes a lot of properties here.
 
 ## Ant control in Burlington, and the damp list
 
-Odorous house ants and pavement ants come in along the slab edge, the sill and
+[Odorous house ants](/pest-library/odorous-house-ant/) and pavement ants come in along the slab edge, the sill and
 service penetrations, drawn by whatever is available in a kitchen. In the newer
 subdivisions an irrigation system keeps the bed against the house permanently
 damp and the bark mulch never dries, which is most of the reason they are there.
 
-Moisture ants are a different message. They colonize wood that is already wet, so
+[Moisture ants](/pest-library/moisture-ant/) are a different message. They colonize wood that is already wet, so
 finding them means finding a water problem, and treating without correcting it
 produces a new colony in the same timber.
 
-Carpenter ants take the middle ground and keep a parent colony outdoors. On
+[Carpenter ants](/pest-library/carpenter-ant/) take the middle ground and keep a parent colony outdoors. On
 newer lots that parent is frequently a landscape timber, a fence post or a
 stump left from clearing.
 

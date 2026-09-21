@@ -100,7 +100,7 @@ more seasonal. They are the species that makes careful handling of dry nesting
 material worthwhile, and we treat all attic material to that standard rather
 than trying to tell them apart by eye. The reason is
 [hantavirus](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus),
-which the Washington State Department of Health links to the deer mouse here and
+which the Washington State Department of Health links to the [deer mouse](/pest-library/deer-mouse/) here and
 to breathing dust stirred up out of an enclosed space.
 
 **Something else entirely.** Attics are also where squirrels, bats and birds end

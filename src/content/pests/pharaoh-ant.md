@@ -81,7 +81,7 @@ speck.
 
 **Monomorphic**, meaning every worker in the colony is the same size. A trail
 containing obviously large and obviously small workers is not this species — it
-is more likely a carpenter or thatching ant.
+is more likely a carpenter or [thatching ant](/pest-library/thatching-ant/).
 
 **Many queens.** Colonies possess many queens rather than one, which is the
 structural fact behind everything else. There is no single queen to kill and no
@@ -362,7 +362,7 @@ it three weeks in.
 
 We do not see pharaoh ants often here, and that is worth saying plainly rather
 than implying a threat that is not there. The common indoor ant in Whatcom
-County is the odorous house ant by a wide margin.
+County is the [odorous house ant](/pest-library/odorous-house-ant/) by a wide margin.
 
 Where the risk sits is in particular building types rather than particular
 towns. Multifamily housing across Bellingham, Ferndale and Lynden. Care and

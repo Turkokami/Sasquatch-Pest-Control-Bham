@@ -156,7 +156,7 @@ being on a maintenance cycle rather than treated as a one-time capital job.
 The other coastal feature is gulls, and the pest consequence of gulls is
 usually not the birds. It is nesting material in gutters and drains, and the
 insects that live in an old nest and then move inward when it is abandoned —
-bird mites and carpet beetles in particular, both of which get diagnosed as
+bird mites and [carpet beetles](/pest-library/carpet-beetle/) in particular, both of which get diagnosed as
 something else because nobody connects them to a nest on the parapet.
 
 ## Older stock, and what age actually changes
@@ -269,7 +269,7 @@ treating several units on an assumption.
 Retail and food premises downtown get a family of problems that residential
 buildings almost never see, and they walk in through the delivery door.
 
-Indianmeal moths, sawtoothed grain beetles, weevils and the rest live in dry
+[Indianmeal moths](/pest-library/indianmeal-moth/), [sawtoothed grain beetles](/pest-library/sawtoothed-grain-beetle/), weevils and the rest live in dry
 goods — flour, grain, pulses, nuts, dried fruit, pet food, birdseed, spices.
 They arrive already inside sealed packaging, because the infestation started
 upstream in storage or transit, and they emerge on a shelf weeks later.

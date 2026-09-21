@@ -51,7 +51,7 @@ up to a building, and on an ordinary city block an animal has to cross open
 ground to reach a house. Here, along the arboretum boundary, it does not.
 
 **Deer mice** come off the wooded margins in a way they simply do not in the
-flat parts of the city, along with Norway rats and house mice using the same
+flat parts of the city, along with [Norway rats](/pest-library/norway-rat/) and house mice using the same
 cover. They find crawl vents, gaps where a deck meets a building, service
 penetrations, and the underfloor space of anything on posts.
 
@@ -97,14 +97,14 @@ condition would be on its own.
 
 **Sloped crawlspaces** collect water at the low end and hold it long after the
 rest has dried. The framing above that low end is what softens, which is where
-the moisture ants and the decay fungus will be. On a stepped or partly excavated
+the [moisture ants](/pest-library/moisture-ant/) and the decay fungus will be. On a stepped or partly excavated
 crawl the access is often at the high end, which means the evidence is at the
 far end from the hatch and a report written without going in is worth very
 little.
 
 **Retaining walls and terracing** hold moisture against structure. Where they
 are old and wooden they become parent colony sites in their own right, which
-makes them worth a specific look on any carpenter ant job here.
+makes them worth a specific look on any [carpenter ant](/pest-library/carpenter-ant/) job here.
 
 **Decks over grade** create a sheltered, dry, undisturbed space underneath that
 is excellent harborage, and they attach at a ledger. Ledger flashing is a

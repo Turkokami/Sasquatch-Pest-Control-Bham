@@ -163,7 +163,7 @@ part of the job rather than an upsell.
 ## Carpenter ants, and the timber on the other side
 
 The forest on the valley walls does what forest does everywhere in this county:
-it maintains a very large number of carpenter ant colonies that have nothing to
+it maintains a very large number of [carpenter ant](/pest-library/carpenter-ant/) colonies that have nothing to
 do with anybody's house until they expand.
 
 A mature colony establishes itself outdoors in a stump, a fallen log or the
@@ -231,7 +231,7 @@ anyone thought about sealing a building envelope. Post-and-pier foundations,
 board crawlspace hatches, penetrations drilled generously and never closed,
 screening that has corroded from the ground side. None of that is damage. It is
 a building doing what it was built to do, in an era with different
-expectations. Exclusion work on these places is patient and detailed, and it
+expectations. [Exclusion work](/services/exclusion-and-repairs/) on these places is patient and detailed, and it
 is where most of the benefit is.
 
 **The newer construction** — and there is more of it than there was, as the
@@ -267,7 +267,7 @@ faced hornets build the gray paper footballs people photograph; European paper
 wasps build the small open combs under railings and window frames and are far
 less inclined to defend them.
 
-Honey bees are a different matter entirely and we do not treat them. If a swarm
+[Honey bees](/pest-library/honey-bee/) are a different matter entirely and we do not treat them. If a swarm
 has moved into a wall we will say so and point you at somebody who removes them
 properly.
 

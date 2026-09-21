@@ -60,7 +60,7 @@ rice, tapered at both ends. Produced in genuinely large numbers — a single mou
 leaves dozens in a day — and scattered rather than deposited in one place. This
 is by a wide margin the most common finding in a kitchen.
 
-**Deer mouse.** Similar in size to a house mouse and difficult to separate on
+**Deer mouse.** Similar in size to a [house mouse](/pest-library/house-mouse/) and difficult to separate on
 the droppings alone. Context helps: deer mice are more likely where a property
 adjoins woodland, open ground or a greenbelt, and they are more strongly
 seasonal. Their droppings and nesting material warrant more careful handling,
@@ -68,8 +68,8 @@ which we come to below.
 
 **Rat.** Half an inch to three quarters, distinctly thicker, with blunter or
 rounded ends rather than sharp points. Fewer of them, because rats are larger
-animals in smaller numbers. Norway rat droppings tend to be more capsule-shaped;
-roof rat droppings are somewhat more slender and curved. Either way, if what you
+animals in smaller numbers. [Norway rat](/pest-library/norway-rat/) droppings tend to be more capsule-shaped;
+[roof rat](/pest-library/roof-rat/) droppings are somewhat more slender and curved. Either way, if what you
 are looking at is obviously larger than a grain of rice, the job changes.
 
 **Not a rodent at all.** Cockroach droppings are much smaller, closer to coarse

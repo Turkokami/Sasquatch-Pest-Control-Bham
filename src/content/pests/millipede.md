@@ -65,7 +65,7 @@ ready: true
 
 ## This is a weather event, and it has already ended
 
-A millipede in your hallway is not living there. It cannot live there. It got in
+A [millipede](/pest-library/millipede/) in your hallway is not living there. It cannot live there. It got in
 during a wet week, it is losing water through its cuticle faster than it can
 replace it, and there is nothing inside a heated house that it eats.
 
@@ -334,7 +334,7 @@ stays productive through the cold months. Nothing gets reset.
 ## The wider group this belongs to
 
 Millipedes sit in a small set of animals that share one requirement and one
-message. Silverfish, sowbugs, pillbugs, springtails and the moisture-following
+message. [Silverfish](/pest-library/silverfish/), sowbugs, [pillbugs](/pest-library/pillbug/), springtails and the moisture-following
 ants all need sustained damp, none of them can hold a population in a dry space,
 and none of them causes structural harm on its own.
 

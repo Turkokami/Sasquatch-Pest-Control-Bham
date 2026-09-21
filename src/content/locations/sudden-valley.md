@@ -43,7 +43,7 @@ ones producing the work.
 
 If Sudden Valley has one defining pest, this is it.
 
-Carpenter ants do not eat wood. They excavate galleries in it to nest, and they
+[Carpenter ants](/pest-library/carpenter-ant/) do not eat wood. They excavate galleries in it to nest, and they
 strongly prefer wood that has begun to soften — which is precisely what
 weathered cedar trim, fascia, deck framing and the bottom edge of siding become
 after several decades in this climate.
@@ -117,7 +117,7 @@ Steep lots change the building envelope in ways that matter.
 A daylight basement means part of the foundation is buried and part is exposed,
 and the transition between them is where water and insects both find their way
 in. Sloped crawlspaces collect water at the low end and stay wet there long
-after the rest has dried, which is the classic moisture ant and decay fungus
+after the rest has dried, which is the classic [moisture ant](/pest-library/moisture-ant/) and decay fungus
 situation. Retaining walls and timber terracing hold moisture against structure
 and, when they are wooden and old, become parent colony sites in their own
 right.
@@ -252,7 +252,7 @@ than insects is what actually costs structural capacity in this climate.
 Keep framing below the moisture content the [USDA Forest Products Laboratory's
 Wood Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf)
 identifies as the threshold for decay and none of that starts.
-Sowbugs, millipedes and springtails live in the damp end and occasionally come
+Sowbugs, [millipedes](/pest-library/millipede/) and springtails live in the damp end and occasionally come
 up into the house. Dampwood termites need exactly these
 conditions and nothing else.
 

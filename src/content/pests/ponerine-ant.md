@@ -225,7 +225,7 @@ the visit.
 something we can promise to eliminate, and we will not sell a program built on
 implying otherwise.
 
-**Seal.** Which is exclusion work, it is permanent, and it is the thing that
+**Seal.** Which is [exclusion work](/services/exclusion-and-repairs/), it is permanent, and it is the thing that
 actually reduces the stings.
 
 ## What we will not sell you
@@ -352,7 +352,7 @@ answer.
 We would rather set the expectation for this one in advance, because it is a
 species where a customer can easily pay for a result nobody can deliver.
 
-The assessment is free, as it is for everything except bed bug verification. On
+The assessment is free, as it is for everything except [bed bug](/pest-library/bed-bug/) verification. On
 this species that visit is mostly investigation: confirming what stung
 somebody, working out where the insects are entering, and looking at the slab
 edges, joints and penetrations that could be the route.

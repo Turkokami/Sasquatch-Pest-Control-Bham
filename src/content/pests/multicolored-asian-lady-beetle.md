@@ -282,7 +282,7 @@ sun-facing surface, and the surface is your house.
 ## Around this county
 
 This is one of the two insects the owner of this company names when asked what
-autumn looks like here, the other being the brown marmorated stink bug, and the
+autumn looks like here, the other being the [brown marmorated stink bug](/pest-library/brown-marmorated-stink-bug/), and the
 two arrive on the same walls within days of each other.
 
 The pressure is heaviest where there is a lot of open ground producing them and
@@ -328,7 +328,7 @@ allergic reactions in some people, and a pet that eats a mouthful can get mouth
 irritation.
 
 Do not let anybody spray the aggregation inside your walls — the carcasses feed
-carpet beetles, which are a worse problem than the beetles were.
+[carpet beetles](/pest-library/carpet-beetle/), which are a worse problem than the beetles were.
 
 What works is sealing the openings, and exterior treatment timed to late
 September or early October, before they arrive.

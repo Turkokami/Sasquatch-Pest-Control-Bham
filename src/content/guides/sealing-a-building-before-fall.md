@@ -141,7 +141,7 @@ that they are not living or reproducing indoors in the first place.
 
 And the version that appears to succeed is worse than the version that does not.
 Penn State makes the point explicitly for cluster flies: killing them where they
-sit leaves carcasses, carcasses feed carpet beetles and larder beetles, and the
+sit leaves carcasses, carcasses feed [carpet beetles](/pest-library/carpet-beetle/) and larder beetles, and the
 larvae disperse into the rooms below to work on wool and stored textiles. You
 would be trading a harmless nuisance for a destructive one, in a space you
 cannot get into.

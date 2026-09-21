@@ -43,7 +43,7 @@ As the Pacific Northwest warms up in April and May, a predictable lineup shows u
 
 ### Ants
 
-Odorous house ants, pavement ants, and moisture-loving carpenter ants start foraging indoors, trailing along baseboards toward kitchens and bathrooms. In apartments, an ant trail often crosses between units, which is why store-bought sprays usually just split the colony and make it worse.
+[Odorous house ants](/pest-library/odorous-house-ant/), [pavement ants](/pest-library/pavement-ant/), and moisture-loving [carpenter ants](/pest-library/carpenter-ant/) start foraging indoors, trailing along baseboards toward kitchens and bathrooms. In apartments, an ant trail often crosses between units, which is why store-bought sprays usually just split the colony and make it worse.
 
 ### Spiders
 

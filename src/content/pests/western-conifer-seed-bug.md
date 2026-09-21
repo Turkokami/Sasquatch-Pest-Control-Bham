@@ -240,7 +240,7 @@ Consider what a treatment can act on. By the time anyone is upset enough to call
 which is October, or more often January — the population is inside a wall cavity.
 Very little reaches an insect wedged dormant in a void. If a product did reach
 them, the result would be a quantity of dead insects in an inaccessible space,
-which becomes food for carpet beetles that then move into the living space and eat
+which becomes food for [carpet beetles](/pest-library/carpet-beetle/) that then move into the living space and eat
 wool. You would have traded a harmless nuisance for a destructive one, and paid for
 the privilege.
 

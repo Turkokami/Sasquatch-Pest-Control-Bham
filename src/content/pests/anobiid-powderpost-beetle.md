@@ -421,7 +421,7 @@ in range the whole time. Nothing is failing this winter because of a beetle.
 
 What raises the stakes is company. Timber damp enough for anobiids year after
 year tends to get wetter rather than drier, and the organisms that follow —
-[dampwood termites](/pest-library/pacific-dampwood-termite/), moisture ants,
+[dampwood termites](/pest-library/pacific-dampwood-termite/), [moisture ants](/pest-library/moisture-ant/),
 decay fungi — take capacity out of the same members. The beetle is frequently
 the cheapest warning you will get, arriving before any of the expensive things do.
 

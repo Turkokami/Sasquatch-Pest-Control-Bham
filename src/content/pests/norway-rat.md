@@ -311,7 +311,7 @@ vacuum droppings or nesting material. Washington's health department directs
 airing an enclosed space for at least thirty minutes, wetting the material with a
 ten percent bleach solution and leaving it ten minutes, then wiping up with paper
 towels while wearing gloves and bagging everything. Because you cannot tell a
-deer mouse dropping from a house mouse dropping by eye, that method is the right
+[deer mouse](/pest-library/deer-mouse/) dropping from a [house mouse](/pest-library/house-mouse/) dropping by eye, that method is the right
 one for all rodent waste regardless of what you think left it.
 
 ## Trapping, including where it fails

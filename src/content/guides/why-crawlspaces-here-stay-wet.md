@@ -304,7 +304,7 @@ is a specialist job.
 The expensive items are structural. Replacing a section of sill plate or rim
 joist that has lost capacity is a builder's work with real cost attached, and it
 is the thing that arrives if the cheap items are neglected for long enough.
-Full crawlspace restoration — removing insulation, sanitizing, replacing the
+Full [crawlspace restoration](/services/crawlspace-restoration/) — removing insulation, sanitizing, replacing the
 barrier, reinsulating — is a substantial project, sometimes exactly right and
 frequently oversold.
 

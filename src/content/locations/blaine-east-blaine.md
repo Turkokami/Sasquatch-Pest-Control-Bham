@@ -134,7 +134,7 @@ in six weeks.
 Where East Blaine backs onto standing timber and mature hedgerow, carpenter
 ants become a spring and summer story in their own right.
 
-Carpenter ants do not eat wood. They excavate galleries in it to nest, and
+[Carpenter ants](/pest-library/carpenter-ant/) do not eat wood. They excavate galleries in it to nest, and
 their natural habitat is stumps, fallen logs, standing deadwood and the soft
 punky wood at the base of living trees. A treeline behind a property supports a
 number of colonies that have nothing at all to do with the house.
@@ -193,7 +193,7 @@ surface of a lawn and to anything whose roots get disturbed, not to the plants
 themselves.
 
 The tell is in the workings. Winding surface trails with clipped vegetation,
-appearing when long grass is cut short, means voles. Mounds of pushed-up soil
+appearing when long grass is cut short, means [voles](/pest-library/vole/). Mounds of pushed-up soil
 and a lawn that lifts underfoot means moles. A property can have both, and
 frequently does.
 
@@ -238,7 +238,7 @@ hornets build the large gray paper nests people photograph; European paper
 wasps build small open combs under railings and are far less inclined to defend
 them.
 
-Honey bees are not our work. If a colony is in a wall we will say so and point
+[Honey bees](/pest-library/honey-bee/) are not our work. If a colony is in a wall we will say so and point
 you at somebody who removes them properly.
 
 ## The autumn crowd on the sunny wall

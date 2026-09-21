@@ -152,8 +152,8 @@ finding with a location on it does not.
 
 ## Rodents in retail
 
-Inside Bellingham the picture is rats — Norway rats at ground level working
-foundations, drains and voids, roof rats where the roofline, a fence line or
+Inside Bellingham the picture is rats — [Norway rats](/pest-library/norway-rat/) at ground level working
+foundations, drains and voids, [roof rats](/pest-library/roof-rat/) where the roofline, a fence line or
 trees give access. Sites out toward the county see more mice off surrounding
 open ground.
 
@@ -294,7 +294,7 @@ outcome. It removes one standard reason for a poor one.
 **Late winter to spring.** Structural work at the dock and the service
 penetrations, while the building is quiet and the weather allows exterior work.
 
-**Spring.** Ants — predominantly odorous house ants — in break rooms and around
+**Spring.** Ants — predominantly [odorous house ants](/pest-library/odorous-house-ant/) — in break rooms and around
 any food display. Small fly pressure begins.
 
 **Summer.** Fly pressure at its peak, waste volume up, doors propped in warm

@@ -56,7 +56,7 @@ for.
 Pick a small quantity up between finger and thumb, or better, put some on a
 sheet of white paper where you can see it properly.
 
-**Coarse and fibrous, like shredded wood or wood wool.** Carpenter ants. The
+**Coarse and fibrous, like shredded wood or wood wool.** [Carpenter ants](/pest-library/carpenter-ant/). The
 material is excavated rather than eaten, so it retains a fibrous structure, and
 individual pieces are visibly wood shavings rather than powder.
 

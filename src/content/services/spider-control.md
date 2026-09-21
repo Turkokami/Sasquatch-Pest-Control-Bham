@@ -40,7 +40,7 @@ Start here, because it is the single most useful thing on this page and because
 the pest control trade has spent two decades getting it wrong in a direction that
 happens to sell treatments.
 
-The hobo spider has a reputation in the Pacific Northwest for causing necrotic
+The [hobo spider](/pest-library/hobo-spider/) has a reputation in the Pacific Northwest for causing necrotic
 skin lesions. That reputation traces to research published in the 1980s and 90s
 which was subsequently not supported by later work. The Washington State
 Department of Health now states plainly that hobo spiders are **not considered
@@ -68,7 +68,7 @@ It is also a useful animal to have around. It is territorial, it takes a
 continuous volume of insects, and it will take other spiders. What we are not
 going to tell you is that it hunts hobo spiders down, which is the version of
 this that circulates and which we cannot source. What is sourceable is [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7488.html)'s
-observation that in parts of the Pacific Northwest the giant house spider has
+observation that in parts of the Pacific Northwest the [giant house spider](/pest-library/giant-house-spider/) has
 competitively displaced the hobo spider. Whatever is happening between the two
 of them, the practical shape of it is that where the big harmless one is well
 established, the one carrying the reputation is scarcer.
@@ -191,7 +191,7 @@ most good, rather than blanket interior spraying.
 
 **Older Bellingham** — Lettered Streets, Columbia, Sunnyland, York, South Hill.
 Unsealed crawlspaces, original single-glazed windows and a century of settlement
-gaps make for a lot of interior harborage. Cellar spiders in the crawlspace,
+gaps make for a lot of interior harborage. [Cellar spiders](/pest-library/cellar-spider/) in the crawlspace,
 giant house spiders in the living space.
 
 **Against the treeline.** Sudden Valley, Silver Beach, Edgemoor and the Whatcom Falls corridor.

@@ -235,7 +235,7 @@ before anybody else does. A walk of the grounds in the last week of August is
 worth more than any treatment, and it costs nothing.
 
 **Overwintering insects on sunlit walls** in October — cluster flies, stink bugs,
-boxelder bugs, ladybird beetles — entering wall voids and attics and then
+[boxelder bugs](/pest-library/boxelder-bug/), ladybird beetles — entering wall voids and attics and then
 appearing in classrooms on warm days through the winter. The remedy is sealing,
 timed for late summer.
 
@@ -243,7 +243,7 @@ timed for late summer.
 foraging indoors. Kitchens and staff rooms take these.
 
 **Moisture-driven insects** in older buildings with crawlspaces — springtails,
-sowbugs, silverfish, and the ants that want wet wood. These are a building
+sowbugs, [silverfish](/pest-library/silverfish/), and the ants that want wet wood. These are a building
 maintenance finding rather than a pest finding, and treating them without
 addressing the water is a recurring cost.
 
@@ -385,7 +385,7 @@ that the notification list is current for the year. If it is autumn, the
 building should already be closed, and what remains is monitoring. If it is
 winter, the useful work is administrative: confirm the annual notification went
 out, check the records are where somebody could find them, and put the summer
-exclusion work in next year's budget while the reason for it is fresh.
+[exclusion work](/services/exclusion-and-repairs/) in next year's budget while the reason for it is fresh.
 
 ## What we do
 

@@ -170,7 +170,7 @@ considerably more in February with contaminated insulation in it.
 
 ## Bed bugs are their own situation
 
-Bed bugs come up more than anything else in rental disputes, and they are worth
+[Bed bugs](/pest-library/bed-bug/) come up more than anything else in rental disputes, and they are worth
 separating out for two reasons.
 
 First, they arrive by being carried. Luggage, second-hand furniture, a bag that
@@ -224,7 +224,7 @@ city and the private inspectors both work from — names them in four places:
   and insects
 - Under the owner's obligations, pest or rodent harborage or infestation, and
   visible evidence of rodents or insects such as bed bugs, ants, cockroaches or
-  silverfish
+  [silverfish](/pest-library/silverfish/)
 
 So a city inspection can fail a unit on pests, or on the openings that let them
 in. It is still not a pest inspection in the sense of somebody looking for a
@@ -336,7 +336,7 @@ calls come, and it is the worst time to be starting a dispute: the population is
 growing weekly, the exterior work is weather-dependent, and the crawlspace is
 wet.
 
-The cheapest version of this entire problem is exclusion work done in late
+The cheapest version of this entire problem is [exclusion work](/services/exclusion-and-repairs/) done in late
 August, before the push. Almost nobody does it then, because in August nothing
 is wrong. For a landlord with several properties it is the single highest-return
 piece of maintenance in the calendar, and it is genuinely cheaper than the

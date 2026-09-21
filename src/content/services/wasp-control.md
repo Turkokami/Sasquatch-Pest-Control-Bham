@@ -42,7 +42,7 @@ understanding why makes the whole season predictable.
 A yellowjacket or hornet colony is annual. It starts in spring with a single
 overwintered queen building a nest the size of a golf ball and raising the first
 few workers herself. Through summer those workers take over and the colony
-compounds. By late August a western yellowjacket nest that was invisible in June
+compounds. By late August a [western yellowjacket](/pest-library/western-yellowjacket/) nest that was invisible in June
 can hold thousands of individuals, and the colony is at maximum size, maximum
 defensiveness and maximum food demand all at once.
 
@@ -57,7 +57,7 @@ drink in September.
 That flip is not universal, and knowing which insects it applies to saves people
 money every year. [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html) separates the ground- and cavity-nesting yellowjackets
 in the genus *Vespula* from the aerial nesters in *Dolichovespula* — the
-bald-faced hornet and the aerial yellowjacket — and only the first group turns
+[bald-faced hornet](/pest-library/bald-faced-hornet/) and the aerial yellowjacket — and only the first group turns
 scavenger. The aerial species stay predatory right through to the death of the
 colony, hunting flies and caterpillars in September exactly as they did in June.
 
@@ -225,7 +225,7 @@ are important pollinators, and they are rarely worth treating. Where a nest is i
 a genuinely bad location we will discuss it, but the default answer is to leave
 them.
 
-The insects that get mistaken for bees most often are the European paper wasp and
+The insects that get mistaken for bees most often are the [European paper wasp](/pest-library/european-paper-wasp/) and
 various hoverflies, which are harmless mimics.
 
 ## How we work a wasp job

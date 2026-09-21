@@ -22,7 +22,7 @@ Start outside, at ground level, and walk the full perimeter of your home slowly.
 
 - Cracks in concrete or masonry foundation — even hairline cracks allow ant and earwig entry
 - Gaps where siding meets the foundation, a common rodent entry point in Whatcom County homes
-- Any wood framing in direct contact with soil, prime carpenter ant habitat
+- Any wood framing in direct contact with soil, prime [carpenter ant](/pest-library/carpenter-ant/) habitat
 - Gaps around utility penetrations: gas lines, electrical conduit, cable, and water lines
 - Evidence of rodent burrowing: smooth-edged holes in soil, disturbed soil, tunnels
 - Moisture accumulation at the foundation line — poor drainage invites ants, earwigs, and slugs
@@ -75,7 +75,7 @@ What to do: replace weatherstrip that no longer makes contact (self-adhesive foa
 
 Once the exterior is handled, move inside to where pest pressure first becomes visible.
 
-In the **kitchen**: store pantry and pet food in sealed containers (cardboard and paper bags are easily penetrated); don't leave pet bowls out overnight; check under the sink for leaks and gaps around pipes; clean behind and under the refrigerator and stove, where coils, drip trays, and grease attract ants; and seal the gap between the countertop backsplash and wall, a prime odorous house ant travel corridor.
+In the **kitchen**: store pantry and pet food in sealed containers (cardboard and paper bags are easily penetrated); don't leave pet bowls out overnight; check under the sink for leaks and gaps around pipes; clean behind and under the refrigerator and stove, where coils, drip trays, and grease attract ants; and seal the gap between the countertop backsplash and wall, a prime [odorous house ant](/pest-library/odorous-house-ant/) travel corridor.
 
 In **bathrooms**: no leaks under sinks or at toilet bases (moisture creates carpenter ant and silverfish habitat inside walls); intact caulk around the tub or shower surround; no gaps where vanity plumbing enters the floor or wall; a working exhaust fan vented to the exterior; and intact grout.
 
@@ -99,7 +99,7 @@ The single most impactful change most Bellingham homeowners can make is pulling 
 
 Beyond the general checklist, here's the seasonal watch list as spring unfolds:
 
-- **March–April, ant season begins.** Odorous house ants and pavement ants emerge first, often in late February. Watch for trails along counters, windowsills, and baseboards. Carpenter ant foragers become active in March; if you see large black ants inside near wood structures, have someone come out and take a look. Don't spray — baiting is far more effective, and the wrong product makes it worse.
+- **March–April, ant season begins.** Odorous house ants and [pavement ants](/pest-library/pavement-ant/) emerge first, often in late February. Watch for trails along counters, windowsills, and baseboards. Carpenter ant foragers become active in March; if you see large black ants inside near wood structures, have someone come out and take a look. Don't spray — baiting is far more effective, and the wrong product makes it worse.
 - **April–May, wasp and yellow jacket queens.** Queen wasps emerge from overwintering in March and April. A single queen starting a nest in April will have 300 to 500 workers by June and thousands by August. A lone large wasp investigating your eaves or soffits in spring is a queen scouting nest sites, and addressing entry points now is far easier than treating a colony later.
 - **April–June, rodent activity peaks.** Rodents that sheltered over winter reach peak activity in spring. Exclusion work done now prevents the next generation from establishing.
 - **May–June, spiders move indoors.** As exterior spider populations grow, more move toward homes seeking insects. Switching exterior lights to yellow-spectrum bulbs reduces the insect prey that draws them.

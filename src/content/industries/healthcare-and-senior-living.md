@@ -94,8 +94,8 @@ program is scoped by area rather than by site.
 
 ## What actually turns up
 
-**Rodents**, and inside Bellingham that means rats — Norway rats at ground level
-using foundations, drains and service voids, roof rats where roofline access
+**Rodents**, and inside Bellingham that means rats — [Norway rats](/pest-library/norway-rat/) at ground level
+using foundations, drains and service voids, [roof rats](/pest-library/roof-rat/) where roofline access
 exists. Facilities out toward Lynden, Everson and the rural districts see more
 mice, off surrounding open ground. The routes are structural and predictable:
 loading and kitchen doors, utility penetrations, roof plant, and the ceiling
@@ -108,7 +108,7 @@ through plumbing chases exactly as they do in an apartment block.
 **Small flies** from drains and organic film — kitchen, dish area, laundry,
 sluice rooms and mop stores. As everywhere, the adults are not the problem.
 
-**Ants**, predominantly odorous house ants, drawn to break rooms, resident
+**Ants**, predominantly [odorous house ants](/pest-library/odorous-house-ant/), drawn to break rooms, resident
 kitchenettes and anywhere food is stored in small amounts in many places.
 
 **Bed bugs**, which are the highest-stakes item in senior living and are dealt

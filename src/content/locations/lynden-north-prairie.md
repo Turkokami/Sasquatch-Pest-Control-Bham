@@ -231,11 +231,11 @@ before August is worth having, and it costs nothing to have somebody look while
 they are on the property.
 
 Aerial nests in barn eaves, equipment sheds and around doorways are more
-visible and generally easier. Bald-faced hornets build the large gray paper
-nests people photograph; European paper wasps build small open combs under
+visible and generally easier. [Bald-faced hornets](/pest-library/bald-faced-hornet/) build the large gray paper
+nests people photograph; [European paper wasps](/pest-library/european-paper-wasp/) build small open combs under
 rails and are markedly less defensive.
 
-Honey bees are not our work. On a farm with berry ground, pollinators are worth
+[Honey bees](/pest-library/honey-bee/) are not our work. On a farm with berry ground, pollinators are worth
 more than we are, and if there is a colony in a structure we will identify it
 and point you at somebody who removes them properly.
 

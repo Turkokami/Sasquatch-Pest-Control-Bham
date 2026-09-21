@@ -67,7 +67,7 @@ What is less well known is what it does to the rest of the population.
 
 Most retail ant sprays are repellent formulations. They create a treated zone
 that ants avoid rather than cross. For some species, and particularly for
-odorous house ants — one of the most common small ants in this region — that
+[odorous house ants](/pest-library/odorous-house-ant/) — one of the most common small ants in this region — that
 disturbance can trigger budding: the colony splits, satellite groups relocate,
 and new queens establish separate centers.
 
@@ -223,7 +223,7 @@ summer and come in for the winter.
 This is the least common of the group and the one that takes longest, because
 the treatment has to reach a nest nobody can see.
 
-**Under a stump or a piece of buried wood.** More often a carpenter ant
+**Under a stump or a piece of buried wood.** More often a [carpenter ant](/pest-library/carpenter-ant/)
 situation, but small species use these too.
 
 The relevance is practical: where we find the nest, the work is proportionate
@@ -288,7 +288,7 @@ sometimes visibly more, recruiting to the bait. This is the part people find
 hardest to sit through and it is the part that determines the outcome.
 
 From roughly day four to day ten, numbers fall away as the material reaches the
-brood and the queens. For a straightforward pavement ant or field ant situation
+brood and the queens. For a straightforward [pavement ant](/pest-library/pavement-ant/) or field ant situation
 this is often the end of it.
 
 Odorous house ants can take longer — two to three weeks is not unusual — because

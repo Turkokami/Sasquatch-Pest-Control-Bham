@@ -104,7 +104,7 @@ points sitting exactly where the insects are gathering.
 **Height.** Taller buildings present more warm surface and have more openings at
 height where nobody has ever looked.
 
-**Surroundings.** Boxelder and maples for boxelder bugs. Conifers for seed bugs.
+**Surroundings.** Boxelder and maples for [boxelder bugs](/pest-library/boxelder-bug/). Conifers for seed bugs.
 Orchards, berry fields, ornamental trees and gardens for stink bugs. Lawn and
 pasture for cluster flies. A rural or edge-of-town property with any of these
 nearby will see more than a house in the middle of a subdivision.
@@ -113,7 +113,7 @@ nearby will see more than a house in the middle of a subdivision.
 gaps. Additions, dormers, and changes of material all create junctions.
 
 **And the insects already inside.** There is a second mechanism working
-alongside the building, and it belongs to the brown marmorated stink bug
+alongside the building, and it belongs to the [brown marmorated stink bug](/pest-library/brown-marmorated-stink-bug/)
 specifically. The [National Pesticide Information Center](https://npic.orst.edu/pest/stinkbug.html) records that when one of
 these insects finds a suitable place to spend the winter, it secretes an odor
 that draws other stink bugs to it. That is a settled insect signaling from a
@@ -317,7 +317,7 @@ night. Harmless despite looking alarming.
 **Small, domed, red, orange or yellow with spots.** Ladybird beetle. Aggregates
 in large numbers, particularly in attics.
 
-**A fly rather than a bug — dull, slow, bumping at glass.** Cluster fly.
+**A fly rather than a bug — dull, slow, bumping at glass.** [Cluster fly](/pest-library/cluster-fly/).
 
 **Shiny, fast and metallic blue or green.** Not part of this group at all. That
 is a blow fly, and in numbers indoors it usually means something has died in a

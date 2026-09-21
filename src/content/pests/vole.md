@@ -59,7 +59,7 @@ ready: true
 
 ## Read the verdict first
 
-This profile exists because voles get confused with things we do handle, and
+This profile exists because [voles](/pest-library/vole/) get confused with things we do handle, and
 because the wrong diagnosis here sends people to the wrong trade and sometimes to
 an unnecessary treatment. It does not exist to sell you anything.
 

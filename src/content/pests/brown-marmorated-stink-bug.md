@@ -294,7 +294,7 @@ the population is behind the siding rather than on it.
 **Once they are in, we will not treat the void.** Not because it is difficult, but
 because it is the wrong thing to do. Very little reaches an insect wedged dormant
 in a cavity, and a treatment that succeeds leaves a mass of dead insects in an
-inaccessible space. Penn State spells out the consequence: carpet beetles feed on
+inaccessible space. Penn State spells out the consequence: [carpet beetles](/pest-library/carpet-beetle/) feed on
 the dead stink bugs and then go after woolens and stored dry goods. You would be
 trading a harmless nuisance for a destructive one.
 

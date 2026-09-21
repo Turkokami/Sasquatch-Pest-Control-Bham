@@ -172,7 +172,7 @@ touching roofs and reaching balconies.
 
 Every one of those is doing pest work. A permanently damp bed against a wall,
 under mulch that never dries, is what produces the spring ant call — odorous
-house ants and pavement ants entering along the slab edge or the sill. Planting
+house ants and [pavement ants](/pest-library/pavement-ant/) entering along the slab edge or the sill. Planting
 against a wall gives cover right to the building. A branch touching a roof is a
 bridge.
 
@@ -219,7 +219,7 @@ The envelopes here are good. Continuous housewrap, proper sheathing, sealed sill
 plates, decent flashing, and none of the accumulated century of openings that
 makes an old house a puzzle. Crawlspaces where they exist are frequently sealed
 and conditioned rather than vented, which removes most of the moisture-driven
-cast that fills our older-neighborhood pages — moisture ants, decay fungus,
+cast that fills our older-neighborhood pages — [moisture ants](/pest-library/moisture-ant/), decay fungus,
 sowbugs and springtails all lose the conditions they need.
 
 That means a Barkley building rarely has the structural problems we spend our
@@ -299,7 +299,7 @@ building — and where the honest answer is that this needs to go to the
 association, we will give you something in writing that makes that conversation
 easier.
 
-Assessment is free for every pest we handle except bed bug verification, which
+Assessment is free for every pest we handle except [bed bug](/pest-library/bed-bug/) verification, which
 is charged and then credited against the treatment. Nothing here requires a term
 agreement.
 

@@ -118,7 +118,7 @@ you have seen the tail difference you will never need the rest.
 
 Habitat is a strong prior. Deer mice are animals of woodland edge, field margin
 and outbuilding, so a Sudden Valley cabin, a Lake Whatcom shoreline property, a
-seasonal home at the edge of forest or a barn out toward Everson is deer mouse
+seasonal home at the edge of forest or a barn out toward Everson is [deer mouse](/pest-library/deer-mouse/)
 country. A downtown apartment, a Sunnyland kitchen or a student rental near
 campus is house mouse country. Neither rule is absolute and both are useful.
 

@@ -211,7 +211,7 @@ decompose, and the odor from a substantial colony is not subtle.
 
 **And the residue keeps attracting insects.** Wax, dead brood and fermenting
 honey are a long-term food source in a warm dry cavity. What arrives to eat it —
-ants, wax moths, carpet beetles, larder beetles — is a second problem that can
+ants, wax moths, [carpet beetles](/pest-library/carpet-beetle/), larder beetles — is a second problem that can
 run for years after the bees are gone.
 
 Households that pay to have a wall colony poisoned frequently pay again the
@@ -334,7 +334,7 @@ famously placid away from the nest. Colonies are small — dozens to a few hundr
 — and strictly annual. The colony dies out in autumn, only new queens overwinter,
 and the nest is never reused.
 
-That last point is why the recommendation for a bumble bee nest in a compost
+That last point is why the recommendation for a [bumble bee](/pest-library/bumble-bee/) nest in a compost
 heap, under a shed or in wall insulation is nearly always to leave it. The
 situation ends by itself within a season, and the insect is among the most
 effective pollinators in this region.

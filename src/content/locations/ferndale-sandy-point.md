@@ -203,7 +203,7 @@ is that it waits, we will say that too.
 
 ## Carpenter ants and beach wood
 
-Carpenter ants are on the list for this whole shoreline, and here the source is
+[Carpenter ants](/pest-library/carpenter-ant/) are on the list for this whole shoreline, and here the source is
 frequently not a forest.
 
 They do not eat wood — they excavate galleries in it to nest, and they take
@@ -231,13 +231,13 @@ happens outdoors between June and September, on decks and docks right where the
 nests are. A nest in a soffit above a deck is a different problem from the same
 nest on the back of a garage.
 
-Bald-faced hornets build the large gray paper nests people photograph; European
+[Bald-faced hornets](/pest-library/bald-faced-hornet/) build the large gray paper nests people photograph; European
 paper wasps build small open combs under railings, dock rails and window frames
 and are far less inclined to defend them. Yellowjackets in the ground along
 banks and verges are the ones that put people in an emergency room, because
 they are found by machine rather than by eye.
 
-Honey bees we do not treat. If a colony has taken up residence in a wall we
+[Honey bees](/pest-library/honey-bee/) we do not treat. If a colony has taken up residence in a wall we
 will identify it and point you at somebody who removes them properly.
 
 ## Seasonal occupancy and the missing early warning

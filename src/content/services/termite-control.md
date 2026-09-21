@@ -102,7 +102,7 @@ The two get confused constantly, especially during spring and fall swarms, and
 the distinction changes the entire approach.
 
 **Waist.** Termites are broad through the middle with no obvious narrowing.
-Carpenter ants have a sharply pinched waist. This is the easiest field mark.
+[Carpenter ants](/pest-library/carpenter-ant/) have a sharply pinched waist. This is the easiest field mark.
 
 **Wings.** A termite's four wings are all roughly the same length and extend
 well past the body. An ant's front pair is noticeably longer than the back pair.
@@ -274,7 +274,7 @@ of the transaction and it is the half we do. Our [WSDA](https://agr.wa.gov/servi
 Structural category, which covers the control of pests that attack structural
 material — fungus, termites, carpenter ants and wood-boring beetles. So where a
 licensed structural pest inspection has identified dampwood or subterranean
-termites, carpenter ants, wood-boring beetles, moisture ants or a decay fungus
+termites, carpenter ants, wood-boring beetles, [moisture ants](/pest-library/moisture-ant/) or a decay fungus
 condition, we are the people who come and treat it.
 
 So the order of operations in a Whatcom County sale is straightforward. An

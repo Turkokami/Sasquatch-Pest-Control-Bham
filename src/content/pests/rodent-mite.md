@@ -72,7 +72,7 @@ ready: true
 Somebody starts getting itchy marks overnight. It is one room, usually a
 bedroom, often upstairs. Nothing has changed — no travel, no secondhand
 furniture, no guest. The bed has been stripped and searched more than once and
-there is nothing on it. A bed bug treatment has sometimes already happened and
+there is nothing on it. A [bed bug treatment](/services/bed-bug-control/) has sometimes already happened and
 made no difference at all.
 
 And two or three weeks before it started, there was a rodent problem in that
@@ -148,7 +148,7 @@ what people actually notice — a sense of something traveling on skin or across
 pale surface rather than a bug being seen.
 
 **Multiple stages feed on blood.** CDC's control manual records that for the
-house mouse mite the protonymphs, deutonymphs and adults all take blood, which
+[house mouse](/pest-library/house-mouse/) mite the protonymphs, deutonymphs and adults all take blood, which
 means the population arriving in a room is not just adults.
 
 **Generations are short.** The same manual gives a complete generation for the
@@ -267,7 +267,7 @@ describes bed bugs being carried into homes on luggage, furniture, bedding and
 clothing, which is a description of an insect that arrives with your belongings
 and stays with them.
 
-Rodent mites are not in any of that. They are in a nest, in a structural cavity,
+[Rodent mites](/pest-library/rodent-mite/) are not in any of that. They are in a nest, in a structural cavity,
 and the room is where they end up rather than where they live. Treating the
 bedroom removes the individuals present at that moment. The nest is untouched
 and keeps releasing more, so the marks resume within days and the household

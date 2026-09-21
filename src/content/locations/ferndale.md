@@ -83,7 +83,7 @@ smaller lots, mature trees and a set of commercial buildings on shared walls.
 Here the problems look like the ones we deal with in Bellingham's older
 neighborhoods: short crawlspaces with dirt floors, foundation vents that rusted
 out decades ago, framing that has taken water at some point and now hosts
-moisture ants, and commercial buildings where a rodent population is genuinely
+[moisture ants](/pest-library/moisture-ant/), and commercial buildings where a rodent population is genuinely
 shared between tenants who each assume it is somebody else's problem.
 
 Older Ferndale houses also carry the region's other classic issue, which is that
@@ -207,7 +207,7 @@ Late winter brings the overwintering insects out of the walls on the first mild
 afternoon — cluster flies and stink bugs at south-facing windows, which is what
 generates most of our February phone calls in the rural parts of town.
 
-Spring is ants. Odorous house ants and pavement ants become active as soon as the ground warms, and in the irrigated subdivisions they turn up indoors before anyone has seen them outdoors.
+Spring is ants. [Odorous house ants](/pest-library/odorous-house-ant/) and pavement ants become active as soon as the ground warms, and in the irrigated subdivisions they turn up indoors before anyone has seen them outdoors.
 
 Early summer is wasp foundation. A queen starts a nest somewhere sheltered in
 April or May, and the difference between dealing with it then and dealing with it
@@ -244,7 +244,7 @@ onto field or brush, which describes a great many Ferndale properties.
 **Ants.** Along irrigated foundations in the newer neighborhoods, where a
 sprinkler system keeps the bed against the house permanently damp and the bark
 mulch never dries. Odorous house ants and pavement ants come in through the
-slab edge and the sill; carpenter ants are more of a problem in the older stock
+slab edge and the sill; [carpenter ants](/pest-library/carpenter-ant/) are more of a problem in the older stock
 and the wooded lots east of town.
 
 **Cluster flies and stink bugs.** Rural and edge-of-field properties get the

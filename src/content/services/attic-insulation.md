@@ -194,7 +194,7 @@ performance-driven, and often follows a specific soffit entry.
 than house mice, and outbuildings that may need including. The species matters
 beyond identification: the
 [Washington State Department of Health](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus)
-names the deer mouse as the animal that carries hantavirus in this state, and its
+names the [deer mouse](/pest-library/deer-mouse/) as the animal that carries hantavirus in this state, and its
 advice is to dampen droppings and nesting material rather than stir them up dry,
 which is how we handle that material out here.
 

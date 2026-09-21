@@ -271,7 +271,7 @@ leaves no residue at all. It is not a soft option — it is a demanding,
 equipment-heavy process — but the exposure profile is close to zero.
 
 **Vacuuming and steam.** Genuinely effective on cluster flies at a window, on
-overwintering beetles, on carpet beetle and clothes moth material, on spider egg
+overwintering beetles, on [carpet beetle](/pest-library/carpet-beetle/) and clothes moth material, on spider egg
 sacs, and as the first step on a bed bug job. It physically removes the animal
 rather than waiting for it to encounter something.
 
@@ -343,8 +343,8 @@ vegetation are the ones with the clearest potential to reach them. Timing,
 placement and simply not treating flowering material are the tools, and they
 cost nothing.
 
-Honey bees are not a pest and we do not treat them. A honey bee colony in a wall
-is a beekeeper's job and gets referred as one. Bumble bees nesting in a bank or
+[Honey bees](/pest-library/honey-bee/) are not a pest and we do not treat them. A honey bee colony in a wall
+is a beekeeper's job and gets referred as one. [Bumble bees](/pest-library/bumble-bee/) nesting in a bank or
 under a shed are a nuisance for a few weeks in one season and then gone, and in
 most cases the correct advice is to leave them.
 

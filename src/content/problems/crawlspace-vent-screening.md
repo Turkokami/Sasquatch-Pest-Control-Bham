@@ -79,7 +79,7 @@ Close the vents on a traditional crawlspace and that moisture has nowhere to go.
 What follows is predictable and expensive: humidity rises, framing takes on
 moisture, decay establishes in the sill plate, rim joist and joists, insulation
 loses its function, and the whole community of moisture-driven insects moves in —
-moisture ants, springtails, sowbugs, millipedes, silverfish, and in the worst
+[moisture ants](/pest-library/moisture-ant/), springtails, sowbugs, millipedes, [silverfish](/pest-library/silverfish/), and in the worst
 cases dampwood termites. Structural decay in this climate takes capacity out of
 a building faster than rodents do.
 
@@ -100,7 +100,7 @@ The specification matters more than the labor here, and most of the failures we
 find are material choices rather than workmanship.
 
 **Galvanized or stainless hardware cloth, quarter-inch mesh.** This is the
-answer for the great majority of situations. Quarter-inch because a house mouse
+answer for the great majority of situations. Quarter-inch because a [house mouse](/pest-library/house-mouse/)
 gets through anything larger. Metal because rodents chew, and galvanized or
 stainless because this climate destroys unprotected steel.
 

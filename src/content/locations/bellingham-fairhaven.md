@@ -85,7 +85,7 @@ generations of plumbing, each one drilled generously and none of them sealed.
 The masonry itself is not the vulnerability. What matters is that behind and
 above the brick, the floor structure, the roof structure and much of the interior
 framing are timber, and that timber is subject to exactly the same moisture and
-carpenter ant problems as a wooden house. A brick wall does not protect a wet
+[carpenter ant](/pest-library/carpenter-ant/) problems as a wooden house. A brick wall does not protect a wet
 joist.
 
 Roof level deserves specific mention. Flat and low-slope roofs on these
@@ -142,7 +142,7 @@ that is absent or has been pushed aside by whoever last ran a pipe. Ground
 moisture goes straight into the space and into the joists above it, continuously,
 in a climate that supplies plenty.
 
-Everything moisture-driven follows from that. Moisture ants colonize framing
+Everything moisture-driven follows from that. [Moisture ants](/pest-library/moisture-ant/) colonize framing
 that has softened, and finding them is useful information rather than merely a
 problem — the water is the disease and the ants are the symptom. Decay fungus
 runs where the wood stays wet, and decay rather than insects is what actually
@@ -236,7 +236,7 @@ Every September the phone starts about large fast spiders indoors, and in a
 district with this much greenbelt, this much mature planting and this much old
 crawlspace, the volume is high.
 
-They are giant house spiders — harmless, long established across western
+They are [giant house spiders](/pest-library/giant-house-spider/) — harmless, long established across western
 Washington, and the large ones people find are wandering males looking for mates
 rather than an invasion. Brown recluse has never been recorded in this part of
 the state and the species is not established anywhere in Washington. The state

@@ -200,7 +200,7 @@ medical reputation of any kind.
 
 WSU's fact sheet puts it at roughly one to one and three-quarter inches including
 the legs, which makes it a medium-sized spider by local standards and noticeably
-smaller than the giant house spider it is confused with. It is brown, hairy-legged
+smaller than the [giant house spider](/pest-library/giant-house-spider/) it is confused with. It is brown, hairy-legged
 rather than glossy, and drab. Coloration varies enough that WSU Extension warns
 directly against using it for identification: most non-arachnologists try to use
 color as a diagnostic feature, and it is one of the least reliable characters

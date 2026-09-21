@@ -169,14 +169,14 @@ the highest-value work available on this housing.
 The most common non-rodent call here is ants along a foundation, and it is
 usually a nuisance rather than damage.
 
-Odorous house ants and pavement ants forage along warm, watered foundation
+[Odorous house ants](/pest-library/odorous-house-ant/) and pavement ants forage along warm, watered foundation
 lines and come indoors along them, typically on the side of the house that gets
 both irrigation and afternoon sun. Baiting along the trail resolves it. Spraying
 the trail frequently splits the colony and makes the following month worse,
 which is why a visible immediate result is not the measure to judge it by.
 
-Carpenter ants are a different animal with a different meaning — they excavate
-galleries in wood — and moisture ants are a report about wet timber rather than
+[Carpenter ants](/pest-library/carpenter-ant/) are a different animal with a different meaning — they excavate
+galleries in wood — and [moisture ants](/pest-library/moisture-ant/) are a report about wet timber rather than
 a pest problem in their own right. Three insects that look similar to most
 people and mean three different things, which is why identification comes
 before treatment.

@@ -82,7 +82,7 @@ landscaping is doing more pest work than most residents realize.
 
 **Irrigated beds against warm walls.** A drip line or a spray head keeping a bed
 damp against the foundation, under bark mulch that never fully dries, produces
-exactly the conditions odorous house ants and pavement ants want. They then
+exactly the conditions [odorous house ants](/pest-library/odorous-house-ant/) and pavement ants want. They then
 enter along the slab edge, through the sill, or via one of the penetrations
 above, and appear in a kitchen. In spring this is the single most common call we
 take from this neighborhood.
@@ -95,7 +95,7 @@ right to the wall.
 thinks about them. Five years later a branch is touching a roof and a shrub is
 pressed against a vent.
 
-**Landscape timber and retained beds.** Softening timber is carpenter ant
+**Landscape timber and retained beds.** Softening timber is [carpenter ant](/pest-library/carpenter-ant/)
 nesting material, and on a newer lot it is frequently the only such material
 available, which makes it the parent colony site by default.
 
@@ -317,7 +317,7 @@ A conditioned crawl has a continuous sealed liner over the ground, insulation at
 the perimeter walls rather than between the joists, no open foundation vents,
 and often a small amount of conditioned air or a dehumidifier. The result is a
 space that stays dry, which removes most of the moisture-driven cast that fills
-our older-neighborhood pages: moisture ants, decay fungus, sowbugs and
+our older-neighborhood pages: [moisture ants](/pest-library/moisture-ant/), decay fungus, sowbugs and
 springtails all lose the conditions they need.
 
 That is a real improvement and it is the single best thing about newer

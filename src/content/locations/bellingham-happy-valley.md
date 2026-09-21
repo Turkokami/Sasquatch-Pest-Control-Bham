@@ -41,7 +41,7 @@ scope far more than it is about products.
 
 ## Turnover is the transport mechanism
 
-Bed bugs and, to a lesser extent, German cockroaches move with belongings. They
+[Bed bugs](/pest-library/bed-bug/) and, to a lesser extent, German cockroaches move with belongings. They
 do not fly, they do not travel far under their own power, and they do not appear
 spontaneously in a clean building. They arrive in things people carry.
 
@@ -152,7 +152,7 @@ matter.
 There is older single-family housing, much of it now let to groups, sitting on
 shallow crawlspaces over bare earth with the familiar consequences: moisture
 ants in framing that has softened, decay fungus where it stays wet, and the
-damp-crawl group of sowbugs, millipedes and springtails underneath.
+damp-crawl group of sowbugs, [millipedes](/pest-library/millipede/) and springtails underneath.
 
 There are houses divided into units at various points over the decades, where
 the division created new junctions between old framing and new, and those
@@ -213,7 +213,7 @@ Every September the calls start, and in a neighborhood that has just refilled
 with people who have not lived through a Pacific Northwest autumn before, the
 volume is high.
 
-These are giant house spiders. They are harmless, they are long established
+These are [giant house spiders](/pest-library/giant-house-spider/). They are harmless, they are long established
 across western Washington, and the large fast ones people find are wandering
 males looking for mates rather than an invasion moving indoors for warmth. The
 ones stranded in a bath are males that got in and could not climb out.
