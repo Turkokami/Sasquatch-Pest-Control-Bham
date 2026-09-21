@@ -297,6 +297,26 @@ if (run('links')) {
   if (!bad) ok('every internal href resolves');
 }
 
+/* ---------- 1c · raw link syntax leaking into a page ----------
+   Added 21 Sep 2026 after it happened. The Spanish pages write a citation as
+   `[texto](https://…)` inside a string, and the templates convert it to an
+   anchor — but only in the fields routed through inlineLinks(). A citation
+   placed in a summary answer, an FAQ answer or a list item rendered as literal
+   brackets on five live pages, and nothing caught it, because the text was
+   still valid HTML. Any `](http` in a built page means some field printed its
+   raw source. */
+if (run('links')) {
+  console.log('\n1c · raw link syntax');
+  let leaks = 0;
+  for (const p of pages) {
+    const at = p.html.search(/\]\(https?:\/\//);
+    if (at < 0) continue;
+    leaks++;
+    fail(`${p.url} prints raw link syntax: …${p.html.slice(Math.max(0, at - 40), at + 40).replace(/\s+/g, ' ')}…`);
+  }
+  if (!leaks) ok('no page prints a [text](url) link as literal text');
+}
+
 /* ---------- 1b · asset-reference crawler ---------- */
 if (run('assets')) {
   console.log('\n1b · asset-reference crawler');

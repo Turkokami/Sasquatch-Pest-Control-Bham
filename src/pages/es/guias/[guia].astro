@@ -92,7 +92,7 @@ const fotos = inlinePhotosForEs(Astro.url.pathname);
             <p>{sec.cita.es}</p>
           </>
         )}
-        {sec.lista && <ul>{sec.lista.map((i) => <li>{i}</li>)}</ul>}
+        {sec.lista && <ul>{sec.lista.map((i) => <li set:html={inlineLinks(i)} />)}</ul>}
         {sec.despues && sec.despues.map((p) => <p set:html={inlineLinks(p)} />)}
       </>
     ))}

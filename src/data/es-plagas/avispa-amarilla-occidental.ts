@@ -22,7 +22,7 @@ export const avispaAmarillaOccidental: EsPlaga = {
       h2: 'El año, en un solo arco',
       parrafos: [
         'La colonia dura unos siete meses y luego desaparece, y cada etapa explica algo que la gente nota. En primavera, una sola reina fecundada que pasó el invierno bajo la corteza, en la hojarasca o en una estructura sale y empieza el nido sola: un sobre de papel chiquito en un hueco, sus huevos y su primera cría; en ese momento toda la colonia es un insecto. A principios del verano salen las primeras obreras, a las tres semanas más o menos, y se encargan de buscar comida y construir; la reina ya no sale y solo pone. Siguen siendo docenas. A mitad del verano el crecimiento se multiplica: las obreras cazan insectos y arañas y llevan proteína a las larvas — trabajo de verdad útil en un jardín, y una razón de que no tratemos cada nido que encontramos —, y el nido crece hacia abajo conforme excavan.',
-        'A finales del verano llega el pico: el boletín de WSU registra nidos de avispa amarilla occidental de hasta cinco mil obreras y quince mil celdas, con el máximo en agosto y septiembre. Salen reinas y machos nuevos a aparearse. Y en otoño la colonia se derrumba: las obreras, los machos y la reina fundadora mueren, solo las reinas nuevas fecundadas sobreviven en otro lado, y el nido abandonado se deshace bajo tierra en el invierno. No se vuelve a usar, aunque el lugar le puede servir a otra reina, porque lo que le sirvió a una colonia le sirve a otra.',
+        'A finales del verano llega el pico: el [boletín de WSU](https://s3.wp.wsu.edu/uploads/sites/1384/2016/07/Yellowjackets-and-Paper-Wasps.pdf) registra nidos de avispa amarilla occidental de hasta cinco mil obreras y quince mil celdas, con el máximo en agosto y septiembre. Salen reinas y machos nuevos a aparearse. Y en otoño la colonia se derrumba: las obreras, los machos y la reina fundadora mueren, solo las reinas nuevas fecundadas sobreviven en otro lado, y el nido abandonado se deshace bajo tierra en el invierno. No se vuelve a usar, aunque el lugar le puede servir a otra reina, porque lo que le sirvió a una colonia le sirve a otra.',
       ],
     },
     {
@@ -102,7 +102,7 @@ export const avispaAmarillaOccidental: EsPlaga = {
   faqs: [
     {
       q: '¿Por qué solo son un problema en agosto?',
-      a: 'Porque es cuando la colonia está más grande y con más hambre al mismo tiempo. La [extensión de WSU](https://s3.wp.wsu.edu/uploads/sites/1384/2016/07/Yellowjackets-and-Paper-Wasps.pdf) pone el pico en agosto y septiembre, con hasta cinco mil obreras, y para entonces la cría ya bajó y se acabó la comida fácil que les daba.',
+      a: 'Porque es cuando la colonia está más grande y con más hambre al mismo tiempo. La extensión de WSU pone el pico en agosto y septiembre, con hasta cinco mil obreras, y para entonces la cría ya bajó y se acabó la comida fácil que les daba.',
     },
     {
       q: '¿La colonia regresa al mismo agujero la próxima primavera?',

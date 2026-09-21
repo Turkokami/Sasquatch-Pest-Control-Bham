@@ -10,12 +10,12 @@ export const aranaVagabunda: EsPlaga = {
   description:
     'La fama de mordidas necróticas no sobrevivió a los estudios. Lo que dicen hoy el departamento de salud de Washington y WSU, y qué significa encontrar una.',
   answer:
-    'La fama de la araña vagabunda por causar heridas necróticas no tiene respaldo en la evidencia. El [Departamento de Salud de Washington](https://doh.wa.gov/community-and-environment/pests/spiders) dice que no se considera tan peligrosa como se creía y que ninguna evidencia liga su veneno con la necrosis de la piel. Aquí es poco común adentro, y encontrar una no pide tratamiento.',
+    'La fama de la araña vagabunda por causar heridas necróticas no tiene respaldo en la evidencia. El Departamento de Salud de Washington dice que no se considera tan peligrosa como se creía y que ninguna evidencia liga su veneno con la necrosis de la piel. Aquí es poco común adentro, y encontrar una no pide tratamiento.',
   secciones: [
     {
       h2: 'Primero, la corrección',
       parrafos: [
-        'La araña vagabunda (en inglés, hobo spider) es el animal más mal representado de este condado, y la mala representación va en la dirección que vende tratamientos. Por eso la corrección va arriba. El Departamento de Salud del estado de Washington dice que no se considera peligrosa como se pensaba antes, la describe como tímida, retraída y renuente a morder, y dice directamente que no hay evidencia de que su veneno haya causado necrosis ni heridas necróticas en personas. Es la agencia de salud del estado donde usted está parado: no es un blog contrario ni una lectura de minoría, ni algo que afirmamos por nuestra cuenta.',
+        'La araña vagabunda (en inglés, hobo spider) es el animal más mal representado de este condado, y la mala representación va en la dirección que vende tratamientos. Por eso la corrección va arriba. El [Departamento de Salud del estado de Washington](https://doh.wa.gov/community-and-environment/pests/spiders) dice que no se considera peligrosa como se pensaba antes, la describe como tímida, retraída y renuente a morder, y dice directamente que no hay evidencia de que su veneno haya causado necrosis ni heridas necróticas en personas. Es la agencia de salud del estado donde usted está parado: no es un blog contrario ni una lectura de minoría, ni algo que afirmamos por nuestra cuenta.',
         'El manual regional de extensión que publican juntos WSU, Oregon State y la Universidad de Idaho va más lejos y usa la palabra "exonerada": registra que las investigaciones recientes indican que su mordida no es más peligrosa que la de casi cualquier otra araña, y que los CDC la quitaron de su lista. Revisamos la guía actual de los CDC sobre arañas venenosas el día que se escribió esta página: nombra a la viuda negra y a la reclusa café, y a nada más. La fama de las lesiones necróticas se construyó sobre evidencia que no aguantó, y las agencias que la cargaban la retiraron.',
       ],
     },
