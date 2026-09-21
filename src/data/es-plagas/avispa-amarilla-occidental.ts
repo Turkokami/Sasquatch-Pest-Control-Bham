@@ -86,7 +86,7 @@ export const avispaAmarillaOccidental: EsPlaga = {
   faqs: [
     {
       q: '¿Por qué solo son un problema en agosto?',
-      a: 'Porque es cuando la colonia está más grande y con más hambre al mismo tiempo. La extensión de WSU pone el pico en agosto y septiembre, con hasta cinco mil obreras, y para entonces la cría ya bajó y se acabó la comida fácil que les daba.',
+      a: 'Porque es cuando la colonia está más grande y con más hambre al mismo tiempo. La [extensión de WSU](https://s3.wp.wsu.edu/uploads/sites/1384/2016/07/Yellowjackets-and-Paper-Wasps.pdf) pone el pico en agosto y septiembre, con hasta cinco mil obreras, y para entonces la cría ya bajó y se acabó la comida fácil que les daba.',
     },
     {
       q: '¿La colonia regresa al mismo agujero la próxima primavera?',

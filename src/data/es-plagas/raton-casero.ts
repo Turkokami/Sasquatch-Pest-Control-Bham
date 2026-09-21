@@ -27,7 +27,7 @@ export const ratonCasero: EsPlaga = {
     {
       h2: 'Un cuarto de pulgada, y una moneda que no lo es',
       parrafos: [
-        'El Departamento de Salud de Washington dice que los ratones pasan por aberturas de apenas un cuarto de pulgada; el condado pide sellar todo lo de más de eso; eXtension especifica malla de un cuarto de pulgada calibre veinticuatro. UC IPM es más preciso: un ratón casero pasa bajo una rendija de un cuarto de pulgada de alto y por aberturas de tres octavos de ancho. La referencia física es un lápiz hexagonal, que mide un cuarto de pulgada entre caras y se puede meter en una rendija sospechosa.',
+        'El [Departamento de Salud de Washington](https://doh.wa.gov/community-and-environment/pests/rodents) dice que los ratones pasan por aberturas de apenas un cuarto de pulgada; el condado pide sellar todo lo de más de eso; eXtension especifica malla de un cuarto de pulgada calibre veinticuatro. UC IPM es más preciso: un ratón casero pasa bajo una rendija de un cuarto de pulgada de alto y por aberturas de tres octavos de ancho. La referencia física es un lápiz hexagonal, que mide un cuarto de pulgada entre caras y se puede meter en una rendija sospechosa.',
         'Lo que no hay que usar es "del tamaño de una moneda de diez centavos": la Casa de Moneda la publica en 0.705 pulgadas, casi tres veces un cuarto de pulgada. Quien sella a esa medida no cierra casi nada. Nosotros también usamos esa frase en textos viejos; el número siempre estuvo bien, la comparación nunca.',
       ],
     },

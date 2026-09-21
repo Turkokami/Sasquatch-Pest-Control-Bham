@@ -15,7 +15,7 @@ export const rataDeTecho: EsPlaga = {
     {
       h2: 'La otra rata',
       parrafos: [
-        'Casi todo lo que se escribe de ratas trata al animal como una sola especie, y en un condado con las dos esa suposición manda a la gente a la mitad equivocada del edificio. Rattus rattus — rata negra, rata de barco o rata de techo — es la trepadora. El Departamento de Pesca y Vida Silvestre de Washington (WDFW) la describe de largo parecido a la noruega pero más delgada y oscura, con la cola más larga que la cabeza y el cuerpo, y registra que anida en áticos, árboles y enredaderas crecidas; casi nunca se molesta en cavar si hay un sitio lejos del suelo.',
+        'Casi todo lo que se escribe de ratas trata al animal como una sola especie, y en un condado con las dos esa suposición manda a la gente a la mitad equivocada del edificio. Rattus rattus — rata negra, rata de barco o rata de techo — es la trepadora. El [Departamento de Pesca y Vida Silvestre de Washington](https://wdfw.wa.gov/species-habitats/living/species-facts/rats) (WDFW) la describe de largo parecido a la noruega pero más delgada y oscura, con la cola más larga que la cabeza y el cuerpo, y registra que anida en áticos, árboles y enredaderas crecidas; casi nunca se molesta en cavar si hay un sitio lejos del suelo.',
         'Esa preferencia lo reorganiza todo: las entradas están a la altura del techo, las rutas son cables, ramas y tuberías, el nido está en el aislamiento del ático y las trampas van en maderas horizontales a ocho pies. Un técnico que la busca en el espacio bajo el piso puede pasar una hora bien hecha sin encontrar nada mientras ella duerme arriba del techo de la recámara.',
       ],
     },

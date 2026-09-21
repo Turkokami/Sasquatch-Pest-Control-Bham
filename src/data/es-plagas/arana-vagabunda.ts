@@ -10,7 +10,7 @@ export const aranaVagabunda: EsPlaga = {
   description:
     'La fama de mordidas necróticas no sobrevivió a los estudios. Lo que dicen hoy el departamento de salud de Washington y WSU, y qué significa encontrar una.',
   answer:
-    'La fama de la araña vagabunda por causar heridas necróticas no tiene respaldo en la evidencia. El Departamento de Salud de Washington dice que no se considera tan peligrosa como se creía y que ninguna evidencia liga su veneno con la necrosis de la piel. Aquí es poco común adentro, y encontrar una no pide tratamiento.',
+    'La fama de la araña vagabunda por causar heridas necróticas no tiene respaldo en la evidencia. El [Departamento de Salud de Washington](https://doh.wa.gov/community-and-environment/pests/spiders) dice que no se considera tan peligrosa como se creía y que ninguna evidencia liga su veneno con la necrosis de la piel. Aquí es poco común adentro, y encontrar una no pide tratamiento.',
   secciones: [
     {
       h2: 'Primero, la corrección',

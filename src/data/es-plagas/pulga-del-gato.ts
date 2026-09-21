@@ -16,7 +16,7 @@ export const pulgaDelGato: EsPlaga = {
     {
       h2: 'La pulga de perro que no lo es',
       parrafos: [
-        'Alguien en el condado encuentra pulgas en su perro y, con razón, les dice pulgas de perro. La especie casi seguro es Ctenocephalides felis, la pulga del gato: el nombre es un accidente histórico. UC IPM la llama el parásito externo más común de gatos y perros por igual, y Purdue suma entre sus huéspedes gallinas, becerros y cerdos, y entre los silvestres coyotes, mapaches y tlacuaches. La verdadera pulga de perro existe y aparece a veces; el tratamiento no cambia.',
+        'Alguien en el condado encuentra pulgas en su perro y, con razón, les dice pulgas de perro. La especie casi seguro es Ctenocephalides felis, la pulga del gato: el nombre es un accidente histórico. [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7419.html) la llama el parásito externo más común de gatos y perros por igual, y Purdue suma entre sus huéspedes gallinas, becerros y cerdos, y entre los silvestres coyotes, mapaches y tlacuaches. La verdadera pulga de perro existe y aparece a veces; el tratamiento no cambia.',
       ],
     },
     {

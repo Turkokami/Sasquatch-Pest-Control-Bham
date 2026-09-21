@@ -57,7 +57,7 @@ export const aranaGiganteDeCasa: EsPlaga = {
     {
       h2: 'Por qué la identificación importa menos de lo que parece',
       parrafos: [
-        'Aquí está lo que una versión basada en el miedo nunca imprimiría. Las dos especies son difíciles de separar sin microscopio; la gigante es inofensiva; y la vagabunda, la que no se puede descartar, tampoco es peligrosa: el Departamento de Salud de Washington dice que no se considera tan peligrosa como se creía y que no hay evidencia de que su veneno haya causado necrosis en la piel. Si las dos ramas de la duda terminan en un animal inofensivo, la duda no lleva ningún riesgo: puede no identificar la araña de su tina y no perder nada.',
+        'Aquí está lo que una versión basada en el miedo nunca imprimiría. Las dos especies son difíciles de separar sin microscopio; la gigante es inofensiva; y la vagabunda, la que no se puede descartar, tampoco es peligrosa: el [Departamento de Salud de Washington](https://doh.wa.gov/community-and-environment/pests/spiders) dice que no se considera tan peligrosa como se creía y que no hay evidencia de que su veneno haya causado necrosis en la piel. Si las dos ramas de la duda terminan en un animal inofensivo, la duda no lleva ningún riesgo: puede no identificar la araña de su tina y no perder nada.',
         'La identificación sigue importando por dos razones que no son de peligro: por honestidad, porque una empresa que nombra una especie con seguridad desde el otro lado del cuarto le está diciendo algo que no sabe; y porque acertar es como la corrección llega a todos. Y la cifra de WSU es la útil: al oeste de las Cascadas, la gigante supera a la vagabunda unas tres a una. La probabilidad ya está del lado tranquilizador antes de agarrar una lupa.',
       ],
     },

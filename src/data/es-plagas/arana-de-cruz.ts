@@ -55,7 +55,7 @@ export const aranaDeCruz: EsPlaga = {
     {
       h2: 'La mordida, en breve',
       parrafos: [
-        'La ficha de NatureMapping describe la mordida como un poco desagradable e inofensiva para las personas, y Utah State registra a estas arañas como sin riesgo conocido para la salud y benéficas. La entrada de Penn State, la más cautelosa de las tres, anota que las mordidas verificadas pueden dar dolor, hinchazón y enrojecimiento, con reacciones que cambian de persona a persona. Juntas: una mordida sería desagradable y sin consecuencias, y es difícil que le pase. Es un animal que espera algo chico en el centro de su tela, sin ningún interés en un objeto del tamaño de una persona. Y si alguna herida le preocupa, el Departamento de Salud de Washington recuerda que muchas se atribuyen mal a arañas: vaya al médico, no a cazar arañas.',
+        'La ficha de NatureMapping describe la mordida como un poco desagradable e inofensiva para las personas, y Utah State registra a estas arañas como sin riesgo conocido para la salud y benéficas. La entrada de Penn State, la más cautelosa de las tres, anota que las mordidas verificadas pueden dar dolor, hinchazón y enrojecimiento, con reacciones que cambian de persona a persona. Juntas: una mordida sería desagradable y sin consecuencias, y es difícil que le pase. Es un animal que espera algo chico en el centro de su tela, sin ningún interés en un objeto del tamaño de una persona. Y si alguna herida le preocupa, el [Departamento de Salud de Washington](https://doh.wa.gov/community-and-environment/pests/spiders) recuerda que muchas se atribuyen mal a arañas: vaya al médico, no a cazar arañas.',
       ],
     },
     {

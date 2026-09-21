@@ -64,7 +64,7 @@ export const garrapataDePatasNegras: EsPlaga = {
   faqs: [
     {
       q: '¿Ofrecen control de garrapatas?',
-      a: 'No. El control de garrapatas no está entre los servicios de esta compañía, y rociar el patio es mala respuesta para un animal que se encuentra en un sendero y no en su pasto. Esta página existe para identificar la especie y mandarlo a la guía del Departamento de Salud de Washington.',
+      a: 'No. El control de garrapatas no está entre los servicios de esta compañía, y rociar el patio es mala respuesta para un animal que se encuentra en un sendero y no en su pasto. Esta página existe para identificar la especie y mandarlo a la guía del [Departamento de Salud de Washington](https://doh.wa.gov/community-and-environment/pests/ticks).',
     },
     {
       q: '¿Uso vaselina, barniz de uñas o un cerillo caliente?',

@@ -1,4 +1,5 @@
 ---
+import { inlineLinks } from '../../../../lib/inline-links';
 /**
  * Páginas de problema en español, debajo de su servicio.
  *
@@ -82,7 +83,7 @@ const fotos = inlinePhotosForEs(Astro.url.pathname);
         <h2>{sec.h2}</h2>
         {sec.parrafos.map((p, j) => (
           <>
-            <p>{p}</p>
+            <p set:html={inlineLinks(p)} />
             {j === 0 && photoForSection(fotos, i) && <InlinePhoto photo={photoForSection(fotos, i)!} lang="es" />}
           </>
         ))}

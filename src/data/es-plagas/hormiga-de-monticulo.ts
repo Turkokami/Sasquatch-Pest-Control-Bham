@@ -21,7 +21,7 @@ export const hormigaDeMonticulo: EsPlaga = {
     {
       h2: 'Cómo reconocerlas',
       parrafos: [
-        'La PNW 624, la clave de extensión de WSU, OSU y la Universidad de Idaho para esta región, da la identificación en pocas líneas, y los detalles son lo que separa a esta hormiga de la que la gente teme. Son grandes, de 4 a 9 milímetros, y las obreras de una colonia vienen en varios tamaños; una fila con obreras grandes y chicas mezcladas es una buena primera pista. Muchas especies de aquí son de dos colores, rojo y negro; algunas son cafés o negras parejas, y ahí empieza la confusión con la carpintera.',
+        'La PNW 624, la clave de [extensión de WSU](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/415/2014/12/antpests.pdf), OSU y la Universidad de Idaho para esta región, da la identificación en pocas líneas, y los detalles son lo que separa a esta hormiga de la que la gente teme. Son grandes, de 4 a 9 milímetros, y las obreras de una colonia vienen en varios tamaños; una fila con obreras grandes y chicas mezcladas es una buena primera pista. Muchas especies de aquí son de dos colores, rojo y negro; algunas son cafés o negras parejas, y ahí empieza la confusión con la carpintera.',
         'Lo que la resuelve es el tórax: la hormiga de montículo tiene una muesca o hundimiento en la parte de arriba. De lado, el perfil se hunde; el de la carpintera es redondeado y liso. En la clave de extensión, Formica también se separa por dónde nacen las antenas, cerca de la orilla de la placa del frente de la cabeza, que ya es cosa de lupa y no de banqueta, pero es con lo que se identifica un ejemplar.',
       ],
     },

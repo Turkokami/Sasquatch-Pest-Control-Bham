@@ -15,7 +15,7 @@ export const hormigaFaraon: EsPlaga = {
     {
       h2: 'La hormiga donde lo obvio sale al revés',
       parrafos: [
-        'Casi todos los problemas de hormigas aguantan un poco de improvisación: alguien rocía la fila, ayuda o no ayuda, y la situación no queda peor por el intento. La hormiga faraón es la excepción, y es lo más importante de esta página. El insecticida aplicado a una colonia de hormiga faraón la hace dividirse: salen reinas con obreras y se instalan nidos nuevos en otras partes del mismo edificio. La extensión de la Universidad de Minnesota lo dice claramente: los insecticidas pueden hacer que la hormiga faraón se divida y forme colonias nuevas.',
+        'Casi todos los problemas de hormigas aguantan un poco de improvisación: alguien rocía la fila, ayuda o no ayuda, y la situación no queda peor por el intento. La hormiga faraón es la excepción, y es lo más importante de esta página. El insecticida aplicado a una colonia de hormiga faraón la hace dividirse: salen reinas con obreras y se instalan nidos nuevos en otras partes del mismo edificio. La [extensión de la Universidad de Minnesota](https://extension.umn.edu/garden-and-home/home-maintenance/household-insects/ants) lo dice claramente: los insecticidas pueden hacer que la hormiga faraón se divida y forme colonias nuevas.',
         'Así que la familia que compra un aerosol y hace lo que parece obvio convierte un nido en varios, repartidos por huecos donde cuesta más llegar. El problema empeora de una manera que no se ve de inmediato, y lo que sí se ve — unos días sin hormigas — parece un éxito. Por eso esta página empieza por el tratamiento y no por la identificación.',
       ],
     },

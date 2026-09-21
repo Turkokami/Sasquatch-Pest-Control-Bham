@@ -10,7 +10,7 @@ export const aranaSacoAmarilla: EsPlaga = {
   description:
     'La arañita pálida del saquito de seda donde el techo toca la pared. Washington la considera de importancia médica, y las historias de necrosis siguen mal.',
   answer:
-    'La araña saco amarilla es una cazadora chica y pálida que pasa el día en un saquito de seda en un rincón del techo y caza de noche. El Departamento de Salud de Washington la pone entre las dos arañas de importancia médica del estado. Su mordida arde y se quita; la fama de necrosis no se sostiene.',
+    'La araña saco amarilla es una cazadora chica y pálida que pasa el día en un saquito de seda en un rincón del techo y caza de noche. El [Departamento de Salud de Washington](https://doh.wa.gov/community-and-environment/pests/spiders) la pone entre las dos arañas de importancia médica del estado. Su mordida arde y se quita; la fama de necrosis no se sostiene.',
   secciones: [
     {
       h2: 'Por qué esta tiene su propia página',

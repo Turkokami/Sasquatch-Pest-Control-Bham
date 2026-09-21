@@ -15,7 +15,7 @@ export const rataNoruega: EsPlaga = {
     {
       h2: 'La rata que de verdad está aquí',
       parrafos: [
-        'Washington tiene exactamente dos especies de rata establecidas, y las dos llegaron en barco: la extensión de WSU nombra a la rata noruega y a la rata negra, ninguna nativa. De las dos, la noruega es la que aparece en la mayoría de los edificios del condado de Whatcom. El Departamento de Pesca y Vida Silvestre de Washington (WDFW) la describe de unas dieciséis pulgadas de la nariz a la punta de la cola, café grisáceo, pesada de los hombros, con una cola escamosa un poco más corta que la cabeza y el cuerpo juntos — la medida que la separa de la especie con la que la confunden.',
+        'Washington tiene exactamente dos especies de rata establecidas, y las dos llegaron en barco: la extensión de WSU nombra a la rata noruega y a la rata negra, ninguna nativa. De las dos, la noruega es la que aparece en la mayoría de los edificios del condado de Whatcom. El [Departamento de Pesca y Vida Silvestre de Washington](https://wdfw.wa.gov/species-habitats/living/species-facts/rats) (WDFW) la describe de unas dieciséis pulgadas de la nariz a la punta de la cola, café grisáceo, pesada de los hombros, con una cola escamosa un poco más corta que la cabeza y el cuerpo juntos — la medida que la separa de la especie con la que la confunden.',
         'Lo que la hace importar es dónde vive: es un animal de suelo. WDFW registra que anida al nivel del suelo o debajo, y en los pisos bajos, con madrigueras de menos de dieciocho pulgadas de hondo y unos tres pies de largo, con entradas de dos a cuatro pulgadas. Todo lo que hace en una propiedad sale de esa preferencia, y también dónde hay que buscarla.',
       ],
     },
