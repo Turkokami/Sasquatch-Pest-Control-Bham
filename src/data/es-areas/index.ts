@@ -22,6 +22,7 @@ import { everson } from './everson';
 import { sumas } from './sumas';
 import { nooksack } from './nooksack';
 import { acme } from './acme';
+import { lummiIsland } from './lummi-island';
 import { deming } from './deming';
 import { custer } from './custer';
 import { suddenValley } from './sudden-valley';
@@ -77,6 +78,7 @@ export const esLugares: EsLugar[] = [
   sumas,
   nooksack,
   acme,
+  lummiIsland,
   deming,
   custer,
   suddenValley,
