@@ -83,11 +83,16 @@ export const servicePhotos: Record<string, Photo> = {
     caption:
       'A vent guard fitted over a crawlspace vent. The mesh is heavy enough that a rat cannot work it and the frame is anchored into the concrete rather than the siding, which is the difference between this and a screen that gets pushed in again next winter.',
   },
+  /* Owner, 21 Sep 2026: the insulation page was "using the worst photos" and
+     should lead with the crew working in the crawlspace and the finished
+     installs. It led on a screened gable vent, which is exclusion work and
+     showed no insulation at all. The crawlspace is also the half of this work
+     that is ours — the attic goes to the insulation crew we work alongside. */
   'attic-insulation': {
-    file: '/img/work/screened-gable-attic-vent-whatcom-county-wa.jpg',
-    alt: 'A gable attic vent fitted with dark mesh screening, with a ladder leaning against the shingled gable below it',
+    file: '/img/gallery/technician-finishing-a-crawlspace-insulation-install.jpg',
+    alt: 'A technician with a headlamp bagging offcuts in a crawlspace after new insulation was installed in the floor joists and the frame',
     caption:
-      'A gable vent screened from the outside. This is the cheap half of an attic job and the half most often skipped — new insulation blown in under an unscreened vent is material bought for whatever moves in next.',
+      'Finishing a crawlspace insulation job: new batts up in the joists and the framed wall, and the offcuts bagged and carried out rather than left on the vapor barrier. Crawlspace insulation is the half of this work our own crew does start to finish.',
   },
   'spider-control': {
     file: '/img/work/spider-cluster-on-glass-whatcom-county-wa.jpg',

@@ -134,6 +134,17 @@ const SCENERY = ['crew', 'country'];
    others — which is how the crew-at-sunset shot came to be on six. */
 const PINNED: Record<string, string[]> = {
   '/': ['/img/gallery/the-crew-with-the-trucks-at-sunset.jpg'],
+  /* Owner, 21 Sep 2026: "the insulation page is using the worst photos, apply
+     mostly the team working in the crawlspace and the finished insulation
+     photos ... ok to also show photos of really damaged insulation in crawl."
+     Before and after, alternating, with the crew in the middle. */
+  '/services/attic-insulation/': [
+    '/img/gallery/insulation-torn-down-throughout-a-crawlspace.jpg',
+    '/img/gallery/new-insulation-in-crawlspace-walls-and-floor.jpg',
+    '/img/gallery/g26923.jpg',
+    '/img/gallery/soaked-and-soiled-insulation-on-a-crawlspace-floor.jpg',
+    '/img/gallery/finished-crawlspace-with-new-vapor-barrier.jpg',
+  ],
   '/services/exclusion-and-repairs/': [
     '/img/gallery/screened-roof-vents-along-a-ridge.jpg',
     '/img/gallery/flush-mount-dryer-vent-covers-on-siding.jpg',
