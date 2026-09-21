@@ -27,7 +27,7 @@ export const departamentosYMultifamiliares: EsGiro = {
     {
       h2: 'Lo que de verdad aparece',
       parrafos: [
-        'Los roedores son el problema principal, y entran casi siempre por la misma lista corta: la ventila del espacio bajo el piso con la malla corroída, la rendija entre el revestimiento y el cimiento, la entrada de servicios abierta, la barredora gastada. La cucaracha usa las columnas de cocinas y baños como un pasillo vertical, y la especie cambia el trabajo: la que se cría adentro es un trabajo de cebo de todo el edificio, vecinos incluidos; la grande que sube de un espacio húmedo es de humedad y exclusión.',
+        'Los roedores son el problema principal, y entran casi siempre por la misma lista corta: la ventila del espacio bajo el piso con la malla corroída, la rendija entre el revestimiento y el cimiento, la entrada de servicios abierta, la barredora gastada. La cucaracha usa las columnas de cocinas y baños como un pasillo vertical, y la especie cambia el trabajo: la que se cría adentro es un trabajo de cebo de todo el edificio, vecinos incluidos; la grande que sube de un espacio húmedo es de humedad y exclusión. [UC IPM distingue](https://ipm.ucanr.edu/home-and-landscape/cockroaches/) las especies que viven y se crían adentro de las que suben de drenajes y tierra húmeda, y pone la identificación como lo que decide el método de control.',
         'Con la hormiga olorosa, un inquilino bien intencionado con una botella repelente de la ferretería convierte un nido en varios dentro de una pared compartida. Las avispas en balcones y entradas son un asunto de responsabilidad. Y las chinches de cama van aparte.',
       ],
     },

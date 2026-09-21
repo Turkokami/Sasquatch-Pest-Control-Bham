@@ -25,6 +25,7 @@ import { restauracionDeEspacioBajoElPiso } from './restauracion-de-espacio-bajo-
 import { aislamientoDeAtico } from './aislamiento-de-atico';
 import { tratamientoParaVentaDeCasa } from './tratamiento-para-venta-de-casa';
 import { controlDePlagasComercial } from './control-de-plagas-comercial';
+import { monitoreoRemotoDeRoedores } from './monitoreo-remoto-de-roedores';
 import { planDeProteccionDelHogar } from './plan-de-proteccion-del-hogar';
 import { abejasCarpinterasYEscarabajos } from './abejas-carpinteras-y-escarabajos';
 import { escarabajosDeAlfombraYDespensa } from './escarabajos-de-alfombra-y-despensa';
@@ -52,6 +53,7 @@ export const esServicios: EsServicio[] = [
   aislamientoDeAtico,
   tratamientoParaVentaDeCasa,
   controlDePlagasComercial,
+  monitoreoRemotoDeRoedores,
   planDeProteccionDelHogar,
   abejasCarpinterasYEscarabajos,
   escarabajosDeAlfombraYDespensa,

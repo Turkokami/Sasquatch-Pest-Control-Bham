@@ -23,7 +23,7 @@ export const avispaExcavadoraDorada: EsPlaga = {
     {
       h2: 'Es solitaria, y esa es toda la respuesta de seguridad',
       parrafos: [
-        'Todos los insectos con aguijón de verdad peligrosos de este sitio son sociales. Una avispa amarilla o un avispón cara blanca tiene una colonia, obreras cuyo trabajo incluye defender, y un nido por el que vale la pena morir; eso es lo que hace caro un acercamiento accidental. La excavadora no tiene nada de eso: una hembra, una madriguera, ninguna obrera. No gana nada picando a una persona, y pierde el trabajo de su tarde. Los observadores de campo describen verlas a unos pies sin ninguna reacción — las avispas solitarias, como dice la estación de campo de la Universidad de Wisconsin, muchas veces son bastante tranquilas. Su aguijón es para paralizar grillos.',
+        'Todos los insectos con aguijón de verdad peligrosos de este sitio son sociales. Una avispa amarilla o un avispón cara blanca tiene una colonia, obreras cuyo trabajo incluye defender, y un nido por el que vale la pena morir; eso es lo que hace caro un acercamiento accidental. La excavadora no tiene nada de eso: una hembra, una madriguera, ninguna obrera. No gana nada picando a una persona, y pierde el trabajo de su tarde. Los observadores de campo describen verlas a unos pies sin ninguna reacción — las avispas solitarias, como dice [la estación de campo de la Universidad de Wisconsin](https://uwm.edu/field-station/bug-of-the-week/great-golden-digger-wasp-family-sphecidae/), muchas veces son bastante tranquilas. Su aguijón es para paralizar grillos.',
       ],
     },
     {

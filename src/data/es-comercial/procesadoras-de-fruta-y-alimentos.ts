@@ -52,7 +52,7 @@ export const procesadorasDeFrutaYAlimentos: EsGiro = {
     {
       h2: 'Moscas en un sitio de alimentos',
       parrafos: [
-        'En una planta las moscas se ganan en el criadero, y el criadero casi siempre está dentro del programa de sanidad y no afuera del edificio. La mosca de drenaje, la fórida y la de la fruta se crían en película orgánica: coladeras, la parte de abajo del equipo, un piso rajado con residuo, el cuarto de trapeadores, una esquina mojada detrás de un tanque. La señal es que están en un área concreta y no se mueven de ahí. La mosca casera es un problema de afuera que entra por la basura, el desecho, el agua estancada y las puertas abiertas. Le decimos dónde se están criando de verdad, aunque la respuesta sea levantar un equipo o limpiar bien una coladera y no algo que nosotros apliquemos.',
+        'En una planta las moscas se ganan en el criadero, y el criadero casi siempre está dentro del programa de sanidad y no afuera del edificio. La mosca de drenaje, la fórida y la de la fruta se crían en película orgánica: coladeras, la parte de abajo del equipo, un piso rajado con residuo, el cuarto de trapeadores, una esquina mojada detrás de un tanque. La señal es que están en un área concreta y no se mueven de ahí. La mosca casera es un problema de afuera que entra por la basura, el desecho, el agua estancada y las puertas abiertas. Le decimos dónde se están criando de verdad, aunque la respuesta sea levantar un equipo o limpiar bien una coladera y no algo que nosotros apliquemos. Es la misma línea que sigue la EPA sobre [si de verdad hace falta un pesticida](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide): primero se quitan la comida, el agua y el refugio.',
       ],
     },
     {

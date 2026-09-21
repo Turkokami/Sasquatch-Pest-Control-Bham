@@ -64,7 +64,7 @@ export const gobiernoYEdificiosPublicos: EsGiro = {
     {
       h2: 'Cómo se compra, y qué debe llevar una propuesta',
       parrafos: [
-        'Un programa base definido por edificio, con áreas, frecuencia y reporte de cada uno por separado, para que la adjudicación se compare y se pueda agregar o quitar un edificio sin renegociar. Una tabla de tarifas para lo que queda fuera — exclusión, una llamada por avispas, una respuesta de chinches —, que es lo que más falta en las propuestas municipales y lo que más fricción causa después. Las licencias del WSDA y los certificados de seguro anexados. Y una declaración honesta de capacidad: somos una empresa local chica que sostiene un estándar real en Whatcom y Skagit con el mismo equipo, y para varios condados no somos la respuesta correcta.',
+        'Un programa base definido por edificio, con áreas, frecuencia y reporte de cada uno por separado, para que la adjudicación se compare y se pueda agregar o quitar un edificio sin renegociar. Una tabla de tarifas para lo que queda fuera — exclusión, una llamada por avispas, una respuesta de chinches —, que es lo que más falta en las propuestas municipales y lo que más fricción causa después. Las licencias del [WSDA](https://agr.wa.gov/services/licenses-permits-and-certificates/pesticide-license-and-recertification/pesticide-and-spi-licensing/commercial-applicators/structural-pest-inspectors) y los certificados de seguro anexados. Y una declaración honesta de capacidad: somos una empresa local chica que sostiene un estándar real en Whatcom y Skagit con el mismo equipo, y para varios condados no somos la respuesta correcta.',
       ],
     },
     {

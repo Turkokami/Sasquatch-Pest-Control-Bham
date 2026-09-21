@@ -15,7 +15,7 @@ export const restaurantesYServicioDeComida: EsGiro = {
     {
       h2: 'Juzgado un martes cualquiera',
       parrafos: [
-        'A una planta procesadora la auditan por sus registros de un año. A un restaurante lo juzga una visita que llega sin cita, ve lo que hay ese día y anota lo que ve. No hay forma de prepararse, porque de eso se trata; la única estrategia que sirve es un edificio y un programa que aguanten un día normal: un martes de febrero en que se está surtiendo la cámara, alguien faltó y nadie esperaba a nadie. La pregunta útil no es si estamos listos para el inspector, sino qué hace este edificio cuando nadie lo está viendo, y la respuesta casi siempre son tres cosas.',
+        'A una planta procesadora la auditan por sus registros de un año. A un restaurante lo juzga una visita que llega sin cita, ve lo que hay ese día y anota lo que ve. Las reglas de esa visita vienen del [Código de Alimentos de la FDA](https://www.fda.gov/food/retail-food-protection/fda-food-code), el modelo sobre el que el estado y el condado arman sus propias reglas de comida. No hay forma de prepararse, porque de eso se trata; la única estrategia que sirve es un edificio y un programa que aguanten un día normal: un martes de febrero en que se está surtiendo la cámara, alguien faltó y nadie esperaba a nadie. La pregunta útil no es si estamos listos para el inspector, sino qué hace este edificio cuando nadie lo está viendo, y la respuesta casi siempre son tres cosas.',
       ],
     },
     {

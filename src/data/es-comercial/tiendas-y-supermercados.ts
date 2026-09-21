@@ -29,7 +29,7 @@ export const tiendasYSupermercados: EsGiro = {
     {
       h2: 'Supermercados y tiendas de comida',
       parrafos: [
-        'La tienda de comida suma los problemas de un restaurante y mucha más superficie. Una caja de merma de fruta que se queda un turno atrás del área de preparación es un criadero de moscas adentro. La salchichonería y la panadería son cocinas comerciales con sus coladeras y su película. El frío de las cámaras pausa lo que trae el producto, no lo mata, y la actividad está en sus orillas tibias. Y el alimento para mascotas y el alpiste son la categoría de más riesgo de la tienda: los costales rotos y la mercancía lenta al fondo de un anaquel sostienen escarabajos o polillas que luego aparecen en pasillos lejanos.',
+        'La tienda de comida suma los problemas de un restaurante y mucha más superficie. Una caja de merma de fruta que se queda un turno atrás del área de preparación es un criadero de moscas adentro. La salchichonería y la panadería son cocinas comerciales con sus coladeras y su película, y el [Código de Alimentos de la FDA](https://www.fda.gov/food/retail-food-protection/fda-food-code) pone a la tienda de comida junto al restaurante, así que ese mostrador se mide como servicio de comida y no como tienda. El frío de las cámaras pausa lo que trae el producto, no lo mata, y la actividad está en sus orillas tibias. Y el alimento para mascotas y el alpiste son la categoría de más riesgo de la tienda: los costales rotos y la mercancía lenta al fondo de un anaquel sostienen escarabajos o polillas que luego aparecen en pasillos lejanos.',
       ],
     },
     {

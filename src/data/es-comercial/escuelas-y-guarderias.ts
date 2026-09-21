@@ -17,7 +17,7 @@ export const escuelasYGuarderias: EsGiro = {
     {
       h2: 'La ley le da forma al programa',
       parrafos: [
-        'Casi todo el trabajo comercial lo moldea el edificio; el escolar lo moldea primero la ley, y eso produce mejor control de plagas. Washington pide aviso antes de aplicar un pesticida en una escuela, un letrero en el lugar tratado y registros después, y exenta de aviso y letrero los cebos para insectos y roedores que los niños no pueden alcanzar.',
+        'Casi todo el trabajo comercial lo moldea el edificio; el escolar lo moldea primero la ley, y eso produce mejor control de plagas. Washington pide aviso antes de aplicar un pesticida en una escuela, un letrero en el lugar tratado y registros después, y exenta de aviso y letrero los cebos para insectos y roedores que los niños no pueden alcanzar. Esos deberes de escuelas y guarderías, con la misma exención, los explica el [Departamento de Salud de Washington](https://doh.wa.gov/community-and-environment/schools/pesticides).',
         'Esa exención es la bisagra. Un programa que se apoya en rociar genera un aviso cada vez: cartas, preguntas, un letrero y un encargado de instalaciones contestando llamadas. Uno de exclusión y cebo contenido hace el mismo trabajo, mejor a nuestro juicio, sin nada de eso; lo demás se deja para cuando de verdad hace falta, en vacaciones. El detalle de la ley — plazos, letreros, la excepción de emergencia y a quién alcanza — está con sus fuentes en nuestra guía de control de plagas en las escuelas de Washington, por ahora solo en inglés.',
       ],
     },

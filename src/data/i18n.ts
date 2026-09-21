@@ -68,6 +68,7 @@ export const PAGE_PAIRS: Record<string, string> = {
   '/services/': '/es/servicios/',
   '/commercial/': '/es/comercial/',
   '/services/rodent-control/': '/es/servicios/control-de-roedores/',
+  '/services/remote-rodent-monitoring/': '/es/servicios/monitoreo-remoto-de-roedores/',
   '/services/wasp-control/': '/es/servicios/control-de-avispas/',
   '/services/ant-control/': '/es/servicios/control-de-hormigas/',
   '/services/spider-control/': '/es/servicios/control-de-aranas/',
