@@ -250,7 +250,7 @@ const allSections: GallerySection[] = [
       /* An insulated access cover on a lined well: exclusion hardware, not
          a crawlspace condition, and it was the odd one out on the exclusion
          page for that reason alone. */
-      { file: '/img/gallery/g27109.jpg', alt: 'A black insulated crawlspace access cover on a metal-lined access well, part of exclusion work', width: 560, height: 420 },
+      { file: '/img/gallery/g27109.jpg', alt: 'A black powder-coated aluminum crawlspace door set into a metal-lined access well at the base of a white-sided house', width: 560, height: 420 },
       /* Owner's own, 19 Sep 2026: a vent guard on a commercial restaurant. */
       { file: '/img/gallery/failed-louvered-foundation-vent-at-a-restaurant.jpg', alt: 'A galvanized louvered foundation vent with bent blades and open corners at the base of a restaurant wall', width: 560, height: 560 },
       { file: '/img/gallery/vent-guard-frame-fitted-over-an-open-foundation-vent.jpg', alt: 'The steel frame of a vent guard screwed to the foundation around an open crawlspace vent, the timber lintel visible inside', width: 560, height: 560 },
