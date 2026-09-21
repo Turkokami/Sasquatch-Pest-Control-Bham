@@ -15,7 +15,7 @@ export const ratonCasero: EsPlaga = {
     {
       h2: 'Qué es un ratón casero',
       parrafos: [
-        'Mus musculus es chico, café grisáceo arriba y apenas más claro abajo, de ojos chicos, hocico puntiagudo y una cola casi pelona, de un solo color, más o menos tan larga como la cabeza y el cuerpo. Pesa menos de una onza; Cornell da el cuerpo en unas dos pulgadas y media a casi cuatro, más otras tres o cuatro de cola. No es nativo y afuera le va mal compitiendo con nuestros ratones; en lo que es muy bueno es en vivir dentro de los edificios de la gente, al punto de que una casa moderna es, en la práctica, su hábitat. Y no viaja: se instala en un territorio chico dentro de una estructura, come, anida y se reproduce ahí. Casi todo lo que sale mal al atenderlo viene de tratarlo como un animal que recorre distancias.',
+        'Mus musculus es chico, café grisáceo arriba y apenas más claro abajo, de ojos chicos, hocico puntiagudo y una cola casi pelona, de un solo color, más o menos tan larga como la cabeza y el cuerpo. Pesa menos de una onza; Cornell da el cuerpo en unas dos pulgadas y media a casi cuatro, más otras dos y tres cuartos a cuatro de cola. No es nativo y afuera le va mal compitiendo con nuestros ratones; en lo que es muy bueno es en vivir dentro de los edificios de la gente, al punto de que una casa moderna es, en la práctica, su hábitat. Y no viaja: se instala en un territorio chico dentro de una estructura, come, anida y se reproduce ahí. Casi todo lo que sale mal al atenderlo viene de tratarlo como un animal que recorre distancias.',
       ],
     },
     {
@@ -78,6 +78,24 @@ export const ratonCasero: EsPlaga = {
         'Si el excremento es más grande que un grano de arroz y de puntas chatas, es una rata, y cambian las trampas y las medidas. Si se parece a pimienta molida gruesa, no es un roedor. Mientras tanto, pase lo seco a recipientes rígidos y díganos qué encontró; alguien revisará el edificio y no solo el cuarto.',
       ],
     },
+  ],
+  tabla: [
+    { label: 'Tamaño', value: 'Cuerpo de unas dos pulgadas y media a casi cuatro, más dos y tres cuartos a cuatro de cola; menos de una onza' },
+    { label: 'Color y marcas', value: 'Gris a café grisáceo arriba, apenas más claro abajo, sin un cambio marcado entre los dos' },
+    { label: 'Cola', value: 'Más o menos tan larga como la cabeza y el cuerpo, escamosa, casi pelona y de un solo color alrededor' },
+    { label: 'Cómo distinguirlo del ratón ciervo', value: 'El ratón ciervo tiene la panza muy blanca, ojos y orejas más grandes y una cola peluda de dos colores' },
+    { label: 'Excremento', value: 'De un octavo a un cuarto de pulgada, con las dos puntas afiladas' },
+    { label: 'Distancia que recorre', value: 'Casi nunca a más de treinta pies de su nido; pasa por una rendija de un cuarto de pulgada' },
+    { label: 'Cuándo entra', value: 'Desde finales de septiembre, más fuerte en octubre y noviembre, y alto todo el invierno' },
+    { label: 'Riesgo para la salud', value: 'Asociado con LCM, salmonela y leptospirosis; no con el hantavirus que reporta Washington' },
+  ],
+  senales: [
+    'Excremento chico con las dos puntas afiladas en un cajón, una alacena baja o encima de una caja guardada',
+    'Una esquina roída en una caja de cereal, o una bolsa de arroz con agujeritos que deja un rastro de granos',
+    'Carreritas ligeras y rápidas abajo en una pared al anochecer y otra vez antes del amanecer',
+    'Montoncitos escondidos de papel, fibra de aislamiento o tela finamente deshebrados',
+    'Un olor tenue que no se va en una alacena cerrada o un gabinete de servicio, sin nada guardado que lo explique',
+    'Un gato o un perro que regresa una y otra vez al mismo punto de una pared o gabinete',
   ],
   faqs: [
     {

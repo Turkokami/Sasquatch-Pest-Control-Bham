@@ -83,6 +83,22 @@ export const termitaDeMaderaHumeda: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Aladas', value: 'Más de una pulgada contando las alas; cuerpo café y cuatro alas largas y ahumadas que pasan bien del abdomen' },
+    { label: 'Soldados', value: 'Unos tres cuartos de pulgada, cabeza pesada café rojizo a casi negra con mandíbulas enormes' },
+    { label: 'Ninfas', value: 'Blancas a crema, blandas, de una media pulgada, y nunca se ven si no se abre la madera' },
+    { label: 'Cómo distinguirla de la carpintera', value: 'Antenas rectas como cuentas, sin cintura angosta y cuatro alas de largo casi igual' },
+    { label: 'Dónde vive', value: 'Solo en madera que ya está mojada: soleras, vigas de borde, largueros de terraza, estructura con goteras' },
+    { label: 'Cuándo vuela', value: 'Tardes tibias de finales del verano o del otoño, sobre todo un día o dos después de llover' },
+    { label: 'Tubos de lodo', value: 'Ninguno: vive dentro de la madera mojada, así que los tubos apuntan a otra termita' },
+  ],
+  senales: [
+    'Insectos grandes con alas en la luz del porche o una ventana iluminada en una tarde templada de septiembre u octubre',
+    'Montoncitos de alas sueltas del mismo tamaño en un alféizar de adentro o sobre la barrera de vapor del espacio bajo el piso',
+    'Bolitas duras y arenosas de un milímetro, algo hexagonales, debajo de un agujero de expulsión',
+    'Galerías llenas de material oscuro, que cruzan la veta además de seguirla',
+    'Madera donde un desarmador se hunde en lugar de detenerse',
+  ],
   faqs: [
     {
       q: '¿Tengo que buscar tubos de lodo en mi cimiento?',

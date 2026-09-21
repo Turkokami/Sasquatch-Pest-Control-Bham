@@ -69,6 +69,21 @@ export const avispaExcavadoraDorada: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Grande: lo bastante para cargar un katídido varias veces más voluminoso que ella' },
+    { label: 'Color y marcas', value: 'Patas color óxido, abdomen anaranjado con la parte de atrás oscura, alas ahumadas y pelo dorado corto en el tórax' },
+    { label: 'Cómo distinguirla de la avispa amarilla', value: 'Una sola hembra de patas anaranjadas trabajando sola, no un chorro de avispas con bandas amarillas y negras saliendo de un agujero' },
+    { label: 'Nido', value: 'Una sola madriguera vertical en tierra seca, caliente, arenosa o de grava, con poca vegetación' },
+    { label: 'Cuándo se ve', value: 'Más o menos de julio a principios de septiembre aquí, con el pico en las semanas más calientes y secas' },
+    { label: 'Pica', value: 'Por lo general no: es solitaria y no tiene nido que defender' },
+    { label: '¿La tratamos?', value: 'No: es una depredadora benéfica que también visita flores; se lo decimos en lugar de venderle un servicio' },
+  ],
+  senales: [
+    'Una avispa grande de patas anaranjadas arrastrando un katídido o un grillo paralizado por la entrada de coches o un camino',
+    'Un agujero redondo y limpio, del ancho de un lápiz a un dedo, en tierra pelona con un abanico chico de tierra al lado',
+    'Madrigueras a la orilla de una entrada de grava, en un talud arenoso o en la franja pelona junto a un cobertizo o una losa',
+    'Una sola avispa aflojando tierra y saliendo de reversa del agujero para echarla lejos de la entrada',
+  ],
   faqs: [
     {
       q: '¿Es peligrosa?',

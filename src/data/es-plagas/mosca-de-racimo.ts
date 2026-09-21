@@ -68,6 +68,23 @@ export const moscaDeRacimo: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Un poco más grande que una mosca doméstica común' },
+    { label: 'Color y marcas', value: 'Gris opaco con marcas negras en el abdomen; pelos amarillo dorado en el tórax le dan un brillo dorado leve' },
+    { label: 'Comportamiento', value: 'Lenta y torpe: choca con el vidrio, camina tanto como vuela y se atrapa fácil con la mano' },
+    { label: 'Cómo distinguirla de una mosca azul', value: 'Opaca, lenta y gris dorada; las moscas azules que avisan de un animal muerto son de azul o verde metálico brillante' },
+    { label: 'Dónde se cría', value: 'Solo afuera: la larva crece dentro de lombrices en la tierra, nunca en la casa' },
+    { label: 'Cuándo se ve', value: 'En paredes sur y oeste asoleadas en octubre; en ventanas del piso de arriba en rachas tibias de noviembre a febrero' },
+    { label: 'Daño', value: 'No puede dañar la casa, aunque las moscas muertas en un hueco pueden alimentar escarabajos de alfombra' },
+    { label: '¿La tratamos?', value: 'Depende: una aplicación exterior a finales de agosto o principios de septiembre; nunca adentro; lo que dura es sellar' },
+  ],
+  senales: [
+    'Moscas oscuras y lentas en las mismas dos o tres ventanas de arriba en días tibios de invierno',
+    'Una docena o más de moscas en el alféizar de un piso alto en enero o febrero',
+    'Moscas juntándose en cantidad en paredes sur y oeste asoleadas en tardes templadas de octubre',
+    'Moscas saliendo por la orilla del marco de una ventana, una lámpara empotrada, el contorno del extractor del baño o la tapa del ático',
+    'Moscas muertas acumuladas en el ático o detrás de un sofito',
+  ],
   faqs: [
     {
       q: '¿Tener moscas de racimo quiere decir que mi casa está sucia?',

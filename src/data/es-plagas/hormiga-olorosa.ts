@@ -89,6 +89,22 @@ export const hormigaOlorosa: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De un dieciseisavo a un octavo de pulgada, con las obreras más o menos del mismo tamaño' },
+    { label: 'Color y marcas', value: 'Café a negra, sin brillo' },
+    { label: 'Olor', value: 'A coco podrido o queso azul al aplastar varias; es la identificación más rápida' },
+    { label: 'Cintura', value: 'Un solo nudo aplanado escondido debajo del abdomen, así que parece no tener cintura' },
+    { label: 'Cómo distinguirla de la de pavimento', value: 'La de pavimento tiene dos nudos en la cintura, la cabeza con surcos y saca montoncitos de tierra en las grietas de losas' },
+    { label: 'Daño', value: 'Ningún daño a la estructura; solo contamina la comida y es una molestia que no se va' },
+    { label: '¿La tratamos?', value: 'Depende: las filas breves muchas veces se acaban solas; las colonias ya instaladas adentro llevan cebo, nunca rociado' },
+  ],
+  senales: [
+    'Una fila de hormiguitas oscuras hacia el fregadero, el empaque del lavaplatos o el plato de la mascota',
+    'Hormigas que aparecen de la noche a la mañana en la cocina después de una lluvia fuerte',
+    'Varios puntos de actividad separados en distintos cuartos, sobre todo después de rociar',
+    'Hormigas activas adentro en los días templados de todo el invierno',
+    'Hormigas cuidando pulgones en rosales, abedules o arbustos junto a la casa',
+  ],
   faqs: [
     {
       q: '¿A qué huele exactamente?',

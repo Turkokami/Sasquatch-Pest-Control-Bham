@@ -67,6 +67,22 @@ export const pulgaDelGato: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y forma', value: 'Cerca de un octavo de pulgada, café rojizo oscuro, aplanada de lado a lado' },
+    { label: 'Movimiento', value: 'Salta un pie o más, y cuesta aplastarla entre dos dedos' },
+    { label: 'Huéspedes', value: 'Gatos y perros por igual, además de ganado, mapaches, tlacuaches y coyotes' },
+    { label: 'Dónde está la población', value: 'Cerca del noventa y cinco por ciento son huevos, larvas y pupas en la casa, no adultos en la mascota' },
+    { label: 'Cómo distinguirla de un colémbolo', value: 'El colémbolo es blando, se desbarata al apretarlo y aparece donde hay humedad, no donde hay animales' },
+    { label: 'Pica o muerde', value: 'Marquitas rojas que dan comezón, varias en fila, en los tobillos y la parte baja de las piernas' },
+    { label: '¿La tratamos?', value: 'Sí: el edificio, mientras un veterinario trata a la mascota; primero se atiende la fauna que la trae' },
+  ],
+  senales: [
+    'Puntitos oscuros que salen de la mascota al peinarla sobre papel blanco y se corren rojo óxido al mojarlos',
+    'Pulgas que brincan a los tobillos poco después de mudarse a una casa que estuvo vacía',
+    'Filas de piquetes con comezón alrededor de los tobillos y la parte baja de las piernas',
+    'Excremento de pulga en la alfombra o la cama donde se acuesta el animal',
+    'Piquetes repentinos en una parte de una casa sin mascotas, después de que paró un ruido debajo del piso o arriba',
+  ],
   faqs: [
     {
       q: 'Mi perro tiene pulgas. ¿Por qué se llama pulga del gato?',

@@ -84,6 +84,23 @@ export const topillo: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y cuerpo', value: 'De cinco a ocho pulgadas en total; compacto y pesado, patas cortas, sin cuello visible' },
+    { label: 'Cara, orejas y cola', value: 'Cara chata, ojos chicos, orejas medio enterradas en el pelo y una cola corta y peluda' },
+    { label: 'Color y marcas', value: 'Café negruzco a café grisáceo' },
+    { label: '¿Topillo o topo?', value: 'El topillo come plantas y deja caminitos en la superficie y agujeros abiertos; el topo come lombrices y saca montículos redondos' },
+    { label: 'Especie de aquí', value: 'El topillo de Townsend, al oeste de las Cascadas' },
+    { label: 'Adentro de la casa', value: 'Trepa mal y casi siempre se queda fuera de los edificios' },
+    { label: '¿Lo tratamos?', value: 'No: el daño al césped y al jardín no es trabajo nuestro' },
+  ],
+  senales: [
+    'Caminitos angostos de una o dos pulgadas bajo el pasto, gastados hasta la tierra pelona o aplastada entre agujeritos abiertos',
+    'Recortes frescos de pasto verde, cortados y dejados en los caminitos',
+    'Excremento verdoso de unos tres dieciseisavos de pulgada cerca de los caminos',
+    'Parches irregulares de marcas cortas y cruzadas de dientes en la corteza, en la base de arbustos y árboles jóvenes',
+    'Tulipanes que nunca salen y hostas comidas hasta la corona',
+    'Un césped que se ve rayado y ralo en un área amplia cuando el pasto se levanta en primavera',
+  ],
   faqs: [
     {
       q: '¿Es un topillo o un topo?',

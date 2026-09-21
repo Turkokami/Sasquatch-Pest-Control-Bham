@@ -81,6 +81,22 @@ export const aranaVagabunda: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Más o menos de una a una y tres cuartos pulgadas contando las patas' },
+    { label: 'Color', value: 'Café, opaca y de patas peludas; el color varía y no sirve para identificarla' },
+    { label: 'Patas', value: 'De un solo color: anillos oscuros visibles en las patas la descartan' },
+    { label: 'Cómo distinguirla de la gigante de casa', value: 'Solo con microscopio; una franja clara en el centro del esternón, donde la gigante muestra manchas en pares' },
+    { label: 'Telaraña', value: 'Una sábana plana horizontal con un embudo en una orilla, a nivel del suelo en lugares oscuros y húmedos' },
+    { label: 'Cuándo se ve', value: 'De finales de agosto a octubre, cuando los machos maduros caminan de noche buscando hembras' },
+    { label: 'Riesgo para la salud', value: 'El departamento de salud del estado no la considera peligrosa; no hay evidencia de que su veneno cause necrosis' },
+    { label: '¿La tratamos?', value: 'Casi nunca hace falta: sellar, un burlete en la puerta y la aspiradora hacen más que cualquier rociado' },
+  ],
+  senales: [
+    'Telas de sábana y embudo en pozos de ventana, sobre todo los llenos de hojarasca',
+    'Telas a lo largo del cimiento, bajo la orilla de una terraza o detrás de leña apilada',
+    'Telas de embudo en las esquinas de sótanos sin terminar y entre cosas guardadas en un garaje',
+    'Arañas cafés atravesando el piso de noche entre finales de agosto y octubre',
+  ],
   faqs: [
     {
       q: '¿La araña vagabunda es peligrosa?',

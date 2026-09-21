@@ -70,6 +70,22 @@ export const avispaPapeleraEuropea: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y color', value: 'Más o menos media pulgada, con rayas negras y amarillas' },
+    { label: 'Antenas', value: 'Anaranjado brillante: es la única avispa papelera de aquí que las tiene' },
+    { label: 'Cómo distinguirla de la avispa amarilla', value: 'Delgada, de cintura fina, con las patas traseras largas colgando al volar; la avispa amarilla se ve corta y robusta' },
+    { label: 'Nido', value: 'Una sola capa de celdas abiertas sobre un tallito corto, sin sobre de papel, casi siempre de menos de cien celdas' },
+    { label: 'Dónde anida', value: 'Asadores, puntas de tubos, la parte de abajo de barandales, ventilas, cajas de medidor, buzones y lámparas' },
+    { label: 'Pica', value: 'Rara vez; casi siempre cuando alguien molesta un nido sin saber que estaba ahí' },
+    { label: '¿La tratamos?', value: 'Pocas veces hace falta; solo vale quitar los nidos donde van las manos, sobre las puertas o en ventilas' },
+  ],
+  senales: [
+    'Un panal del tamaño de un portavasos en la parte de abajo de la tapa del asador',
+    'Una sombrilla al revés de celdas hexagonales abiertas bajo un alero, un sofito o el barandal de una terraza',
+    'Avispas entrando y saliendo de la pata de un mueble de patio, la punta de un riel de cerca o un poste de portón',
+    'Avispas delgadas, amarillas y negras, recorriendo una cerca con las patas traseras colgando',
+    'Panal viejo de papel que quedó del año anterior en un hueco protegido',
+  ],
   faqs: [
     {
       q: '¿Cómo la distingo de una avispa amarilla sin acercarme?',

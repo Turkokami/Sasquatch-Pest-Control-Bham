@@ -62,6 +62,22 @@ export const chincheDelArce: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y forma', value: 'Más o menos media pulgada, plana y alargada' },
+    { label: 'Color y marcas', value: 'Gris oscuro a negro, con líneas delgadas de rojo o anaranjado vivo que forman una X irregular en reposo' },
+    { label: 'Ninfas', value: 'Más chicas, sin alas y rojo vivo: la misma especie, no otro insecto' },
+    { label: 'Cómo distinguirla de la apestosa', value: 'Angosta, con rayitas rojas y apretada en grupo; la apestosa es un escudo café moteado sin nada de rojo' },
+    { label: 'Cuándo se ve', value: 'Juntándose en paredes asoleadas en otoño, y otra vez en marzo o abril tratando de salir' },
+    { label: 'Daño', value: 'Ninguno a la estructura; sus fluidos y su excremento pueden manchar telas y paredes claras' },
+    { label: '¿La tratamos?', value: 'Rara vez: tapar rendijas antes de que termine agosto rinde más que cualquier rociado' },
+  ],
+  senales: [
+    'Docenas o cientos de chinches oscuras con líneas rojas, apretadas en una pared asoleada al sur o al oeste en octubre',
+    'Ninfas chicas de color rojo vivo mezcladas entre los adultos',
+    'Chinches colándose por las juntas de los marcos de ventana, traslapes levantados del revestimiento o las esquinas del sofito',
+    'Manchas en cortinas, molduras o tapicería claras por donde caminaron o donde se aplastaron',
+    'Chinches lentas en los alféizares asoleados de adentro a principios de la primavera',
+  ],
   faqs: [
     {
       q: '¿Qué son los insectos negros con líneas rojas de mi pared?',

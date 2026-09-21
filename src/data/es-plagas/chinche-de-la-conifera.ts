@@ -64,6 +64,21 @@ export const chincheDeLaConifera: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De media a tres cuartos de pulgada, más o menos: de nueve a dieciocho milímetros' },
+    { label: 'Patas traseras', value: 'Una paleta aplanada como hoja a medio camino de cada una: con eso basta para identificarla' },
+    { label: 'Color y forma', value: 'Larga, angosta, café a café rojizo con un zigzag claro y tenue; anaranjada y negra por debajo' },
+    { label: 'Cómo distinguirla de la apestosa', value: 'La apestosa es un escudo ancho con antenas de bandas y patas lisas; esta es angosta y tiene paletas' },
+    { label: 'Cuándo se ve', value: 'De septiembre a noviembre, con el pico en una semana tibia de principios de octubre; sueltas en días tibios de invierno' },
+    { label: '¿Muerde o pica?', value: 'No pica, no transmite enfermedades, no daña casas ni se cría adentro' },
+    { label: '¿La tratamos?', value: 'Pocas veces hace falta: sellar a finales del verano hace más que cualquier tratamiento de adentro' },
+  ],
+  senales: [
+    'Un insecto café grande volando hacia una lámpara con un zumbido como de avispa',
+    'Chinches juntas en paredes asoleadas del sur y del oeste a principios de octubre',
+    'Insectos sueltos que aparecen adentro en días tibios de enero o febrero',
+    'Un olor leve como a pino cuando se molesta o se aplasta una',
+  ],
   faqs: [
     {
       q: '¿La chinche de la conífera muerde o pica?',

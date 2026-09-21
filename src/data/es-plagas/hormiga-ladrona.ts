@@ -79,6 +79,23 @@ export const hormigaLadrona: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De 1.3 a 1.8 milímetros, todas iguales de tamaño; muchas veces parecen puntitos que se mueven' },
+    { label: 'Color y marcas', value: 'De amarillenta o café claro hasta café oscuro' },
+    { label: 'Cómo distinguirla de la faraón', value: 'Una maza larga de dos segmentos en la punta de la antena; la de la faraón tiene tres, y se ve con lupa' },
+    { label: 'Nido', value: 'Afuera en tierra, debajo de objetos y en madera podrida; adentro en huecos de carpintería y mampostería' },
+    { label: 'Qué la atrae', value: 'Más seguido la grasa y la proteína que el azúcar' },
+    { label: 'Hormigas con alas', value: 'De mediados del verano a principios del otoño' },
+    { label: 'Riesgo para la salud', value: 'No es peligrosa para la gente; es huésped intermedio de una tenia de las aves de corral, que importa junto a un gallinero' },
+    { label: '¿La tratamos?', value: 'Depende: un problema de alacena recibe consejos; una colonia dentro del edificio recibe cebo' },
+  ],
+  senales: [
+    'Una línea tenue de puntitos que se mueven por la orilla de la barra o la cubierta',
+    'Una fila que sale donde el zoclo se junta con el piso, o de la parte de atrás de un gabinete',
+    'Filas que van detrás del horno o hacia algo grasoso y no hacia lo dulce',
+    'La misma fila delgada que se limpia y regresa cada pocas semanas',
+    'Hormiguitas amarillentas más activas después del anochecer',
+  ],
   faqs: [
     {
       q: '¿Por qué se llama hormiga ladrona?',

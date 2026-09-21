@@ -74,6 +74,21 @@ export const hormigaCosechadora: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De seis a ocho milímetros, con todas las obreras del mismo tamaño' },
+    { label: 'Color y marcas', value: 'Rojiza o café rojizo en la mayoría de las especies' },
+    { label: 'La barba', value: 'Un fleco de pelos largos debajo de la cabeza para cargar arena; ninguna otra hormiga de aquí lo tiene' },
+    { label: 'Cómo distinguirla de la de montículo', value: 'Un círculo pelón y limpio en tierra arenosa, no un montículo de pasto y plantas; pica en vez de morder' },
+    { label: 'Dónde vive aquí', value: 'Sobre todo por los ríos Columbia y Snake, en tierra arenosa; poco común en el condado de Whatcom' },
+    { label: 'Pica o muerde', value: 'Pica bastante fuerte, algo como una abeja de miel o una avispa amarilla, aunque a poca gente le pican' },
+    { label: '¿La tratamos?', value: 'Depende: solo un nido en terreno que la gente usa, tratado directo; nunca campo abierto que nadie pisa' },
+  ],
+  senales: [
+    'Un disco de tierra pelona y despejada con un solo agujero de entrada en el centro',
+    'Piedritas y cascarillas de semillas regadas alrededor de la entrada del nido',
+    'Hormigas rojizas grandes, todas de un tamaño, cargando semillas por terreno arenoso abierto',
+    'Un círculo pelón que resalta en terreno con vegetación, en una playa de río o una ladera seca',
+  ],
   faqs: [
     {
       q: '¿Hay hormiga cosechadora en el condado de Whatcom?',

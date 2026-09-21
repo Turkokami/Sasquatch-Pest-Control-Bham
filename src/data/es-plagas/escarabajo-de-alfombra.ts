@@ -61,6 +61,24 @@ export const escarabajoDeAlfombra: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Adultos', value: 'De un dieciseisavo a un octavo de pulgada, ovalados, negros o moteados con escamas blancas, cafés y amarillas' },
+    { label: 'Larvas', value: 'De un octavo a un cuarto de pulgada, canela a café, ahusadas y cubiertas de cerdas' },
+    { label: 'Qué etapa hace daño', value: 'Solo las larvas; los adultos comen polen y néctar y se van a las ventanas' },
+    { label: 'Qué comen las larvas', value: 'Lana, fieltro, piel, seda, plumas, cuero, pelo, pelusa, nidos viejos e insectos muertos' },
+    { label: 'Frente a la polilla de la ropa', value: 'Mudas huecas con cerdas y nada de telaraña; parches o tubos de seda quieren decir polilla' },
+    { label: 'Cómo distinguirlo de la chinche de cama', value: 'Sin manchas oscuras en el colchón, y las mudas en la alfombra en lugar de en las costuras de la cama' },
+    { label: 'Salud', value: 'No muerde; los pelos de la larva pueden causar un sarpullido alérgico en algunas personas' },
+    { label: '¿La tratamos?', value: 'Depende: casi todo lo de telas se resuelve limpiando; un nido o un animal muerto en un hueco es trabajo nuestro' },
+  ],
+  senales: [
+    'Escarabajitos redondos en alféizares, cortinas o vidrios en primavera',
+    'Mudas cafés, huecas y con cerdas amontonadas en la orilla de un tapete, el piso de un clóset o a lo largo del zoclo',
+    'Parches ralos y comidos en el pelo de la alfombra donde los muebles nunca se mueven',
+    'Daño en cuellos y puños de ropa de lana guardada desde una mudanza',
+    'Larvas lentas, ahusadas y con cerdas que se enroscan al tocarlas',
+    'Escarabajos que vuelven cada primavera a una casa sin lana, señal de un nido o insectos muertos en un hueco',
+  ],
   faqs: [
     {
       q: 'Aspiro los escarabajos del alféizar cada semana y el daño sigue. ¿Por qué?',

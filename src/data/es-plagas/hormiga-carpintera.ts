@@ -95,6 +95,24 @@ export const hormigaCarpintera: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Obreras de un cuarto a media pulgada, de varios tamaños en un mismo nido; reinas de hasta tres cuartos de pulgada' },
+    { label: 'Color y marcas', value: 'Negra, con patas que se ven café rojizo sobre papel blanco bajo una lámpara' },
+    { label: 'Tórax y cintura', value: 'Una sola curva lisa y sin cortes arriba del tórax; un solo nudo en la cintura' },
+    { label: 'Cómo distinguirla de la de humedad', value: 'Mucho más grande, y negra en vez de amarillenta, sin muesca en el perfil del tórax' },
+    { label: 'Aladas o termitas', value: 'Antenas dobladas en codo, alas de adelante más largas que las de atrás y cintura angosta' },
+    { label: 'Nido', value: 'Colonia madre en madera podrida afuera, muchas veces a menos de cien yardas; nidos satélite dentro de los edificios' },
+    { label: 'Daño', value: 'Excava madera para refugiarse sin comérsela; rara vez es grave en una temporada, pero sí con los años' },
+    { label: '¿La tratamos?', value: 'Sí, tanto en el nido satélite como en la colonia madre, y además se corrige el problema de agua' },
+  ],
+  senales: [
+    'Un montón de virutas gruesas de madera mezcladas con partes de insectos y alas sueltas, debajo de una abertura',
+    'Virutas atrapadas en telarañas en el espacio bajo el piso o en la cochera',
+    'Hormigas con alas saliendo en una ventana de adentro en marzo, abril o mayo',
+    'Hormigas negras grandes en fila por cercas, orillas de la entrada de autos o una rama que toca el techo, sobre todo de noche',
+    'Un crujido seco y leve dentro de una pared, que se nota más de noche en un cuarto callado',
+    'Galerías limpias y de paredes lisas, sin tierra ni bolitas, al quitar una moldura',
+  ],
   faqs: [
     {
       q: 'Si no se comen la madera, ¿qué pasa con ella?',

@@ -59,6 +59,22 @@ export const mariquitaAsiatica: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y forma', value: 'Unos siete milímetros, ovalada y en forma de domo' },
+    { label: 'Color y marcas', value: 'De amarillo anaranjado pálido a rojo intenso, con cero a dieciocho puntos' },
+    { label: 'Cómo distinguirla de una nativa', value: 'Una parte blancuzca detrás de la cabeza con una M o W negra; y las nativas nunca se amontonan en casas' },
+    { label: 'Cuándo se ve', value: 'Juntándose en paredes sur y suroeste asoleadas desde principios de octubre; adentro en días templados de invierno' },
+    { label: 'Mordida y manchas', value: 'Puede pellizcar tan fuerte que rompe la piel; si se le molesta suelta un líquido amarillo apestoso que mancha' },
+    { label: 'Daño', value: 'Ninguno: adentro no come, no se reproduce ni daña nada' },
+    { label: '¿La tratamos?', value: 'Depende: sellar y una aplicación exterior a tiempo ayudan en casos fuertes; los huecos de pared nunca se rocían' },
+  ],
+  senales: [
+    'Cientos de escarabajos anaranjados cubriendo una pared clara que da al sol en una tarde de octubre',
+    'Escarabajos metiéndose en rendijas alrededor de molduras de ventanas, traslapes del revestimiento, sofitos y ventilas',
+    'Escarabajos que aparecen en ventanas y lámparas adentro en días tibios de enero o febrero',
+    'Puntos y manchas amarillas en pintura, cortinas o tapizados donde se molestaron o aplastaron escarabajos',
+    'Un olor desagradable donde se barrió o aplastó un grupo',
+  ],
   faqs: [
     {
       q: '¿De verdad muerden las mariquitas asiáticas?',

@@ -86,6 +86,21 @@ export const hormigaFaraon: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y color', value: 'Unos dos milímetros, amarilla o café claro, a veces con el abdomen más oscuro' },
+    { label: 'Obreras', value: 'Todas de un tamaño; una fila con obreras grandes y chicas mezcladas es otra hormiga' },
+    { label: 'Colonia', value: 'Muchas reinas y muchos nidos chicos conectados; se extiende dividiéndose, nunca por enjambres' },
+    { label: 'Cómo distinguirla de la olorosa', value: 'La olorosa es café a negra, un poco más grande, y aplastada huele a coco podrido' },
+    { label: 'Dónde vive aquí', value: 'Solo dentro de edificios con calefacción: departamentos, centros de cuidado, negocios de comida' },
+    { label: '¿La tratamos?', value: 'Sí, con cebo de acción lenta durante semanas; nunca con rociado, que hace que la colonia se divida' },
+  ],
+  senales: [
+    'Filas de hormiguitas amarillas tan chicas que una sola parece un puntito en la barra',
+    'Hormigas que se calman después de rociar y luego salen en cuartos nuevos o en el departamento de al lado',
+    'Actividad que brinca entre departamentos vecinos después de tratar uno',
+    'Una primera aparición en una bodega o área de recepción después de que llegó mercancía o muebles',
+    'Hormigas en migajas, comida de mascota, jarabe derramado o grasa detrás de un aparato',
+  ],
   faqs: [
     {
       q: '¿Por qué rociar es la respuesta equivocada?',

@@ -62,6 +62,22 @@ export const pececilloDePlata: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De unos tres octavos a media pulgada, a veces hasta tres cuartos' },
+    { label: 'Forma y color', value: 'Plano, sin alas y en forma de zanahoria; plateado a gris perla por escamas que se desprenden' },
+    { label: 'Antenas y cola', value: 'Dos antenas largas adelante y tres cerdas largas atrás' },
+    { label: 'Pececillo de plata o del fuego', value: 'Plateado y en lugares frescos y húmedos; el pececillo del fuego es café grisáceo moteado y busca calor' },
+    { label: 'Humedad que necesita', value: 'Más o menos 75 a 95 por ciento de humedad relativa; debajo de unos 50 por ciento, el espacio deja de sostenerlo' },
+    { label: 'Qué daña', value: 'Lo que tiene almidón: papel, encuadernaciones, pegamento de papel tapiz, telas con apresto; nunca la estructura' },
+    { label: '¿Lo tratamos?', value: 'Depende: primero se seca el espacio; el tratamiento solo contiene el problema donde una colección está en riesgo' },
+  ],
+  senales: [
+    'Varios atrapados en la tina o el lavabo cada mañana',
+    'Papel raspado en parches irregulares con agujeritos disparejos, no perforaciones limpias y redondas',
+    'Lomos de libros en un estante del sótano con orillas mordisqueadas y deshilachadas',
+    'Papel tapiz original despegándose en las juntas en un cuarto húmedo',
+    'Escamas, mudas y excremento oscuro y chico en alacenas y cajas guardadas',
+  ],
   faqs: [
     {
       q: '¿Qué humedad relativa tengo que mantener para detenerlos?',

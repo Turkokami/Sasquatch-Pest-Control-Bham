@@ -66,6 +66,22 @@ export const tijerilla: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Unos cinco octavos de pulgada, hasta tres cuartos' },
+    { label: 'Color y cuerpo', value: 'Café rojizo claro a oscuro con patas pálidas; plana y alargada para meterse en rendijas' },
+    { label: 'Pinzas', value: 'Un par en la punta de la cola: curvas en los machos, más rectas en las hembras; de defensa y sin veneno' },
+    { label: 'Cómo distinguirla de un estafilínido', value: 'Mire la cola: pinzas quieren decir tijerilla, y nada más en una casa de aquí las tiene' },
+    { label: 'Dónde vive', value: 'Afuera en mantillo, hojarasca y debajo de tablas junto al cimiento; no se reproduce adentro' },
+    { label: 'Cuándo se ve', value: 'Activa de noche; la población llega al máximo hacia agosto y septiembre' },
+    { label: '¿La tratamos?', value: 'Rara vez hace falta: quitar el mantillo del revestimiento y poner un burlete en la puerta casi siempre basta' },
+  ],
+  senales: [
+    'Tijerillas en el baño, el cuarto de lavado o la cocina, casi siempre después de una noche tibia',
+    'Un montón que se dispersa al levantar de día una tabla, maceta o adoquín en un arriate',
+    'El mantillo junto a la casa moviéndose con ellas una hora después de la puesta del sol',
+    'Dalias, fresas, lechuga o plántulas con agujeros irregulares y orillas mordidas',
+    'Pelos del elote comidos hasta atrás, y después mazorcas mal granadas',
+  ],
   faqs: [
     {
       q: '¿Las tijerillas se meten en los oídos?',

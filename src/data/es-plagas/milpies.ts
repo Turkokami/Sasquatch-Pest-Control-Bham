@@ -60,6 +60,22 @@ export const milpies: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Casi siempre de una pulgada de largo; los más grandes de esta región llegan a dos pulgadas' },
+    { label: 'Cuerpo y color', value: 'Largo, en segmentos y redondo en corte; café oscuro a casi negro' },
+    { label: 'Patas', value: 'Dos pares por segmento del cuerpo, que se mueven en una onda lenta a lo largo del cuerpo' },
+    { label: 'Cómo distinguirlo del ciempiés', value: 'El ciempiés es aplanado, rápido, tiene un par de patas por segmento y caza; el milpiés se enrosca y espera' },
+    { label: 'Cómo distinguirlo de la cochinilla', value: 'La cochinilla tiene siete pares de patas y se hace bolita; el milpiés se enrosca plano en espiral' },
+    { label: 'Cuándo se ve', value: 'Octubre y noviembre, en los días después de que una lluvia fuerte satura la tierra' },
+    { label: 'Daño', value: 'No puede morder y no daña nada; algunos sueltan un líquido que mancha y puede irritar la piel o los ojos' },
+    { label: '¿Lo tratamos?', value: 'Rara vez vale la pena: adentro se muere en dos o tres días, así que la respuesta es la escoba o la aspiradora' },
+  ],
+  senales: [
+    'Docenas o cientos junto al cimiento, amontonados en esquinas y umbrales después de una semana mojada',
+    'Animales oscuros, lentos, como gusanos, cruzando el piso de la cochera o de un pasillo',
+    'Muertos a lo largo del zoclo, todavía enroscados como rondanitas oscuras',
+    'Manchas en el piso o el zoclo donde se aplastó uno',
+  ],
   faqs: [
     {
       q: 'Aparecieron cientos junto a mi cimiento en una noche. ¿Es una infestación?',

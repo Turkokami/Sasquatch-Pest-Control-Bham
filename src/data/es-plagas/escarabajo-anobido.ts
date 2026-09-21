@@ -74,6 +74,22 @@ export const escarabajoAnobido: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De dos a cinco milímetros: de un octavo a un cuarto de pulgada' },
+    { label: 'Color y forma', value: 'Café rojizo a chocolate, cilíndrico, con la cabeza metida bajo un tórax como capucha' },
+    { label: 'Frente al gorgojo de la madera', value: 'Sin hocico, agujeros de salida redondos y limpios, y madera húmeda pero todavía firme al picarla' },
+    { label: 'Polvo', value: 'Arenoso entre los dedos, no fino como talco como el de un líctido' },
+    { label: 'Madera que ataca', value: 'Estructura de madera blanda y subpiso de triplay con más de catorce por ciento de humedad, más o menos' },
+    { label: 'Cuándo se ve', value: 'Los adultos salen de junio a agosto; las larvas pasan de cuatro a seis años en la madera' },
+    { label: '¿La tratamos?', value: 'Depende: solo si el polvo sigue cayendo y la madera sigue lo bastante húmeda' },
+  ],
+  senales: [
+    'Agujeritos redondos de salida en viguetas, soleras o subpiso, de tamaño un poco variable',
+    'Polvo claro y arenoso juntándose sobre la barrera de vapor, encima de un ducto o en el ala de una viga',
+    'Polvo fresco que reaparece unas semanas después de haber limpiado con brocha la madera de abajo',
+    'Agujeros nuevos, claros y de orilla filosa, que aparecen en verano',
+    'Un escarabajito café y cilíndrico en una luz o un alféizar cerca de la entrada al espacio bajo el piso en julio',
+  ],
   faqs: [
     {
       q: '¿Es lo mismo que una carcoma de la madera dura?',

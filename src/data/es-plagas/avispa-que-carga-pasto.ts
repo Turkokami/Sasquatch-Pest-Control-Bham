@@ -66,6 +66,22 @@ export const avispaQueCargaPasto: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y color', value: 'De tres cuartos de pulgada a una pulgada, negra o muy oscura, a veces con un brillo leve en las alas' },
+    { label: 'Cintura', value: 'Un tallo muy delgado y notorio entre el tórax y el abdomen, como dos partes unidas por un alambre' },
+    { label: 'Cómo distinguirla de otras avispas', value: 'Por el material del nido: pasto es esta avispa, lodo es una avispa de lodo, celdas de papel es una avispa social' },
+    { label: 'Nido', value: 'Pasto seco apretado en un hueco que ya existía: rieles de ventana, agujeros de drenaje, rendijas bajo el revestimiento, tubos huecos' },
+    { label: 'Cuándo se ve', value: 'En julio y agosto, mientras abastece las celdas; el pasto casi siempre se encuentra en otoño' },
+    { label: 'Pica', value: 'Rara vez, si acaso: es una hembra solitaria sin colonia que defender' },
+    { label: '¿La tratamos?', value: 'Casi nunca: se limpia el riel y se cierra el hueco o se le pone malla; no hay que rociar nada' },
+  ],
+  senales: [
+    'Pasto seco cortado a la medida y apretado en el riel de una ventana o puerta corrediza',
+    'Hojas de pasto saliendo de un agujero de drenaje, una rendija bajo el revestimiento o la punta abierta de un barandal',
+    'Un grillo verde o un katídido joven inmóvil en el riel junto al pasto',
+    'Una avispa delgada y oscura volando bajo con una hoja larga de pasto colgando debajo',
+    'Una puerta corrediza que en otoño ya no corre ni cierra bien en su riel',
+  ],
   faqs: [
     {
       q: 'Hay pasto saliendo del marco de mi ventana. ¿Qué lo puso ahí?',

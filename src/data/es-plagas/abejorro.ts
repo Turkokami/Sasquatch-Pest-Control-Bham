@@ -77,6 +77,23 @@ export const abejorro: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De unas 0.4 a 1.0 pulgadas, robusto y grueso' },
+    { label: 'Color y pelaje', value: 'Muy peludo por todos lados, con bandas negras y amarillas, y anaranjado, rojo o blanco en algunas especies' },
+    { label: 'Cómo distinguirlo de la carpintera', value: 'Peludo hasta la punta del abdomen; la abeja carpintera es brillante y pelona en la parte de atrás' },
+    { label: 'Cómo distinguirlo de la abeja de miel', value: 'La abeja de miel es más delgada, más chica y café ámbar, con pelo fino en lugar de pelaje' },
+    { label: 'Nido', value: 'Racimo suelto de celdas de cera como bolitas, en madrigueras viejas de roedor, composta, aislamiento o bajo cobertizos' },
+    { label: 'Colonia', value: 'De unas docenas a unos cientos de abejas; muere en otoño y el nido nunca se vuelve a usar' },
+    { label: 'Pica', value: 'De temperamento muy suave; puede picar más de una vez, pero solo si se molesta en serio el nido' },
+    { label: '¿La tratamos?', value: 'No: a los abejorros no los tratamos; acordonar el área y esperar es la respuesta' },
+  ],
+  senales: [
+    'Abejas grandes y peludas entrando y saliendo de un agujero en un talud, en el pasto o debajo de un arbusto',
+    'Abejas yendo y viniendo por la rendija bajo el piso de un cobertizo, una terraza o una construcción anexa',
+    'Abejas metiéndose en una pila de composta, una lona doblada o una casita de pájaro vieja',
+    'Abejas entrando al aislamiento suelto por una rendija chica en una pared, el espacio bajo el piso o el techo del garaje',
+    'Una abeja grande y lenta trabajando flores en una mañana fría, húmeda o nublada',
+  ],
   faqs: [
     {
       q: 'Hay un nido de abejorros debajo de mi cobertizo. ¿Qué hago?',

@@ -79,6 +79,22 @@ export const aranaSacoAmarilla: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Hembras de 5 a 10 milímetros y machos de 4 a 8: más o menos de un cuarto a media pulgada' },
+    { label: 'Color', value: 'Crema pálido, amarillo claro o levemente verdoso, con la parte de la cabeza y las patas más oscuras' },
+    { label: 'Patas', value: 'Mechones oscuros en las puntas que parecen calcetines chiquitos' },
+    { label: 'Cómo distinguirla de la gigante de casa', value: 'Mucho más chica y pálida, alta en paredes y techos; la gigante es café, grande y anda a ras del piso' },
+    { label: 'Telaraña', value: 'No teje tela para cazar: hace una bolsita cerrada de seda donde se juntan dos paredes o la pared y el techo' },
+    { label: 'Mordida', value: 'Dolor como de piquete de abeja, enrojecimiento y comezón que se calman en un día o dos; lo de la necrosis no tiene respaldo' },
+    { label: '¿La tratamos?', value: 'Depende: vale la pena en recámaras o con mordidas repetidas, no por una sola araña en la pared' },
+  ],
+  senales: [
+    'Bolsitas planas de seda blanca y densa en las esquinas del techo y a lo largo de la parte alta de las ventanas',
+    'Refugios de seda detrás de cuadros, arriba del marco de las puertas y en los pliegues de las cortinas',
+    'Una araña pálida caminando de noche por el techo o una pared',
+    'Un dolor repentino y agudo, como piquete, al jalar una manga o darse vuelta en la cama',
+    'Más refugios apareciendo en las esquinas de las recámaras conforme se enfrían las noches de otoño',
+  ],
   faqs: [
     {
       q: '¿La araña saco amarilla es peligrosa?',

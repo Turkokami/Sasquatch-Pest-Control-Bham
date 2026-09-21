@@ -60,6 +60,20 @@ export const palomillaDeLaHarina: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Una palomilla chica, de más o menos media pulgada con las alas abiertas' },
+    { label: 'Alas', value: 'De dos tonos: gris blancuzco en la parte de adentro y café rojizo con brillo cobrizo en los dos tercios de afuera' },
+    { label: 'Larva', value: 'Oruga pálida, blancuzca con tono verdoso, rosado o amarillo, de una media pulgada ya crecida' },
+    { label: 'Diferencia con la polilla de la ropa', value: 'Vuela hacia la luz y teje seda en la comida; la de la ropa es dorada o beige lisa, huye de la luz y teje en la lana' },
+    { label: 'Origen', value: 'Un solo paquete infestado: muchas veces alpiste, comida seca de mascota, adornos secos o una bolsa olvidada de grano' },
+    { label: '¿La tratamos?', value: 'Rara vez hace falta: encontrar y tirar el origen es casi todo el trabajo, y nada de rociar cerca de comida' },
+  ],
+  senales: [
+    'Seda en la superficie de granos, harina, cereal, semillas o fruta seca, que los deja apelmazados',
+    'Palomillas chicas de dos tonos volando cerca de una lámpara, la campana de la estufa o una ventana en la tarde',
+    'Capullos y orugas pálidas donde la pared se junta con el techo o arriba del marco de una puerta, muchas veces lejos de la comida',
+    'Seda en los dobleces de una bolsa, o en un costal de alpiste o comida de mascota en la cochera',
+  ],
   faqs: [
     {
       q: '¿Por qué hay capullos en el techo si la comida está en un gabinete?',

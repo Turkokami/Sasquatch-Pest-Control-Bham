@@ -71,6 +71,22 @@ export const avispaDeLodo: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Aspecto', value: 'Cintura larga como hilo; negra con marcas amarillas y patas amarillas, o negro azulado metálico' },
+    { label: 'Nido', value: 'Tubos duros de lodo del tamaño de un dedo, muchas veces cubiertos hasta formar una bola del tamaño de un puño' },
+    { label: 'Cómo distinguirla de la papelera', value: 'La papelera hace celdas abiertas, grises y de papel sobre un tallito; la de lodo construye solo con lodo' },
+    { label: 'Dónde anida', value: 'Paredes y techos secos y protegidos: cocheras, garajes, aleros, vigas y debajo de terrazas' },
+    { label: 'Cuándo está activa', value: 'Más o menos de principios del verano a finales de agosto en este condado' },
+    { label: 'Pica', value: 'Muy rara vez: una hembra por nido, sin colonia y sin defensa del nido' },
+    { label: '¿La tratamos?', value: 'No: los nidos se raspan con una espátula; no los tratamos' },
+  ],
+  senales: [
+    'Tubos duros de lodo seco pegados a la pared de un garaje, el techo de un porche o un alero',
+    'Una bola redonda de lodo del tamaño de un puño en una viga o en la pared de una construcción anexa',
+    'Agujeros redondos y limpios en un nido viejo de lodo, por donde salió mordiendo la avispa joven',
+    'Una avispa solitaria de cintura de hilo en la ventana de un garaje o un taller tratando de salir',
+    'Llamas amarillas en vez de azules en un asador de gas que estuvo sin usar todo el verano',
+  ],
   faqs: [
     {
       q: '¿Me va a picar una avispa de lodo?',

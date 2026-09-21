@@ -77,6 +77,23 @@ export const avispaAmarillaAerea: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Obreras de media pulgada, con el abdomen romo; las reinas son más grandes y se ven sobre todo en primavera y otoño' },
+    { label: 'Color', value: 'Bandas amarillas y negras, cuerpo robusto: la coloración de una avispa amarilla de tierra' },
+    { label: 'Frente al avispón cara blanca', value: 'El mismo tipo de nido gris de papel, pero el insecto es amarillo y negro, no negro con marcas blanco marfil' },
+    { label: 'Frente a la avispa amarilla de tierra', value: 'Anida sobre el suelo, así que no hay ningún agujero de entrada en el pasto que buscar' },
+    { label: 'Nido', value: 'Sobre cerrado de papel gris con la entrada abajo; muchas veces más chico, más bajo y menos ordenado que el de un avispón' },
+    { label: 'Pica o muerde', value: 'Muy defensiva en el nido, y las que lo defienden a veces muerden y pican al mismo tiempo' },
+    { label: 'En su mesa', value: 'No: no se vuelve carroñera a finales del verano' },
+    { label: '¿La tratamos?', value: 'Según dónde esté el nido; uno alto y fuera del paso se puede dejar en paz' },
+  ],
+  senales: [
+    'Un nido gris de papel dentro de un seto o arbusto tupido, muchas veces descubierto con la podadora de setos',
+    'Un nido de papel metido bajo un sofito, una terraza, el techo de un porche o una viga de cobertizo',
+    'Avispas amarillas y negras volando en línea constante hacia un punto arriba de la cintura',
+    'Tráfico de ida y vuelta por la parte de abajo de un nido en una tarde templada',
+    'Avispas usando una rendija en un sofito, en el revestimiento o una ventila de hastial sin malla',
+  ],
   faqs: [
     {
       q: 'Hay un nido de papel colgando en mi seto. ¿Es de avispón?',

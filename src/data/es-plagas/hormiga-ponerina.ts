@@ -74,6 +74,21 @@ export const hormigaPonerina: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y color', value: 'De dos a tres milímetros, amarilla a café, obreras todas de una misma medida' },
+    { label: 'Cintura', value: 'Un solo nudo grueso y ancho' },
+    { label: 'Pica o muerde', value: 'Tiene aguijón de verdad, descrito como bastante doloroso; puede haber reacciones alérgicas' },
+    { label: 'Lo que se ve de verdad', value: 'Hembritas con alas adentro en una ventana o una lámpara; las obreras se quedan bajo tierra' },
+    { label: 'Cómo distinguirla de la ladrona', value: 'La ladrona es más chica, no tiene un aguijón que importe y busca comida en fila visible; esta no deja fila' },
+    { label: 'Nido', value: 'Bajo tierra, casi siempre debajo de una losa de concreto, con menos de cien obreras' },
+    { label: '¿La tratamos?', value: 'Depende: el trabajo de verdad es sellar la ruta de entrada; una colonia bajo una losa muchas veces no se alcanza' },
+  ],
+  senales: [
+    'Un piquete doloroso adentro sin ninguna fila ni nido por ningún lado',
+    'Unos cuantos insectos diminutos con alas en una ventana o lámpara de un sótano o cuarto de planta baja',
+    'Insectos con alas concentrados en un tramo de zoclo, la orilla de una losa o una junta de expansión',
+    'Varios incidentes en unas cuantas noches o un par de semanas, y luego nada por mucho tiempo',
+  ],
   faqs: [
     {
       q: 'Algo me picó adentro y no encuentro hormigas. ¿Qué fue?',

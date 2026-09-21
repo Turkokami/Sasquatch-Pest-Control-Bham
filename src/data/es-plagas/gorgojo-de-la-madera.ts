@@ -68,6 +68,22 @@ export const gorgojoDeLaMadera: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y color', value: 'De dos y medio a tres milímetros, más o menos; cilíndrico, café oscuro a casi negro' },
+    { label: 'Cabeza', value: 'Un hocico largo, con las antenas acodadas articuladas a medio camino' },
+    { label: 'Frente a la carcoma', value: 'Agujeros de salida irregulares como ranuras y madera en la que se hunde un desarmador; los del escarabajo son círculos limpios en madera firme' },
+    { label: 'Polvo', value: 'Arenoso, en bolitas y grueso, no como harina' },
+    { label: 'Qué necesita', value: 'Madera que los hongos de pudrición ya deshicieron; nunca madera sana y curada' },
+    { label: 'Qué quiere decir encontrarlo', value: 'La pieza está podrida y le ha estado llegando agua por años' },
+    { label: '¿La tratamos?', value: 'Depende: las piezas estructurales casi siempre hay que reemplazarlas, y lo que más importa es arreglar el agua' },
+  ],
+  senales: [
+    'Agujeros de salida ovalados o en forma de ranura, de orillas irregulares, en madera húmeda de la estructura',
+    'Bolitas chicas y arenosas de polvo debajo de los agujeros',
+    'Madera alrededor de los agujeros que cede cuando se empuja un punzón sin filo',
+    'Adultos chicos con hocico corriendo sobre madera húmeda, una barrera de vapor o una solera',
+    'Decoloración, grietas en cubitos o una capa blanca y fibrosa de hongo en la misma pieza',
+  ],
   faqs: [
     {
       q: '¿Cuál es la diferencia entre este y un escarabajo de la carcoma?',

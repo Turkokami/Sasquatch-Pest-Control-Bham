@@ -66,6 +66,22 @@ export const polillaDeLaRopa: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y color del adulto', value: 'Una media pulgada de alas abiertas; dorada, beige o canela lisa, sin marcas' },
+    { label: 'Larva', value: 'Oruga blanco crema de hasta media pulgada, cabeza oscura, que come debajo de parches de seda' },
+    { label: 'Qué come', value: 'Queratina: lana, seda, piel, plumas, fieltro; algodón y sintéticos solo si están sucios' },
+    { label: 'Luz', value: 'Evita la luz y busca la sombra; una polilla en una lámpara o ventana casi seguro es otra especie' },
+    { label: 'Polilla o escarabajo de alfombra', value: 'La seda quiere decir polilla; mudas cafés con cerdas y sin seda quieren decir escarabajo de alfombra' },
+    { label: 'Adultos', value: 'No comen ni hacen daño; todo el daño es de la larva' },
+    { label: '¿La tratamos?', value: 'Depende: casi siempre es trabajo de limpieza; tratamiento donde la alimenta un nido en la estructura' },
+  ],
+  senales: [
+    'Parches o tubos de seda, o una capa arenosa de fibra y excremento, sobre una superficie de lana',
+    'Agujeros juntos debajo de cuellos, en puños, en los dobleces y en las costuras',
+    'Un tapete de lana raspado en la orilla debajo del sillón pero intacto en el centro que se pisa',
+    'Polillitas doradas lisas que revolotean bajo y se esconden en la sombra al prender la luz del clóset',
+    'Excremento diminuto del color de la tela que comían las larvas',
+  ],
   faqs: [
     {
       q: 'Salió una polillita del clóset. ¿Seguro tengo un problema?',

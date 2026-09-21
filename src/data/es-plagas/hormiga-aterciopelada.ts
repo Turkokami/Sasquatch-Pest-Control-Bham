@@ -90,6 +90,22 @@ export const hormigaAterciopelada: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De un octavo a un cuarto de pulgada, con obreras de varios tamaños en la misma fila' },
+    { label: 'Color y marcas', value: 'A bandas: cabeza negra parduzca, tórax rojo amarillento y abdomen negro aterciopelado' },
+    { label: 'Cómo distinguirla de la carpintera', value: 'El rojo es una banda en el cuerpo y no en las patas; aplastadas, las obreras huelen fuerte y agrio' },
+    { label: 'Nido', value: 'Huecos de árboles, tocones y troncos; adentro, en paredes húmedas y en aislamiento de espuma' },
+    { label: 'Daño', value: 'Excava la madera menos que una carpintera y deja muchos menos restos; hace túneles en la espuma' },
+    { label: 'Pica o muerde', value: 'Agresiva en el nido: da una mordida dolorosa y rocía secreciones sobre el intruso' },
+    { label: 'Cuándo se ve', value: 'Aumenta en primavera, llega al máximo en los meses tibios, anda de noche y baja desde noviembre' },
+  ],
+  senales: [
+    'Filas largas y bien marcadas de noche por travesaños de cercas, muros de contención, cables y ramas que tocan la casa',
+    'Túneles en la placa de espuma de una viga de borde o en la funda de espuma de la línea de una bomba de calor',
+    'Un olor feo, leve y constante en un cuarto, que no corresponde a nada guardado ahí',
+    'Galerías poco hondas e irregulares en madera húmeda, con pocos restos debajo',
+    'Hormigas que suben por arces, abedules, rosales o frutales cargados de pulgones o escamas',
+  ],
   faqs: [
     {
       q: '¿Cómo la distingo de una hormiga carpintera?',

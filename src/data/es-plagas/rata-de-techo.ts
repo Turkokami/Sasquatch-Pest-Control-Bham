@@ -74,6 +74,23 @@ export const rataDeTecho: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Largo total parecido al de la rata noruega pero más esbelta; de cinco a diez onzas, lisa y ágil' },
+    { label: 'Cola', value: 'Más larga que la cabeza y el cuerpo juntos; es la prueba sola más confiable contra la rata noruega' },
+    { label: 'Cara y orejas', value: 'Hocico puntiagudo; orejas tan largas que le llegan a los ojos y los tapan al doblarlas hacia adelante' },
+    { label: 'Excremento', value: 'Una media pulgada, delgado y muchas veces un poco curvo; más chico que el de la rata noruega' },
+    { label: 'Dónde vive', value: 'Lejos del suelo: áticos, árboles, arbustos crecidos y enredaderas; casi nunca cava madriguera' },
+    { label: 'Dónde en el condado', value: 'Sobre todo en la orilla de la costa y los frentes de agua, y en cualquier propiedad con árboles que tocan el techo' },
+    { label: 'Cuándo sube la presión', value: 'Desde finales de septiembre, con el máximo en octubre y noviembre' },
+  ],
+  senales: [
+    'Ruido arriba después de oscurecer, que empieza en la primera hora tras el anochecer y corre a lo largo del techo del cuarto',
+    'Excremento encima de las cajas guardadas y no al lado',
+    'Manchas oscuras de grasa y mugre en lo alto, sobre las soleras de arriba, encima de vigas y en la orilla del remate de un sofito',
+    'Orillas roídas en las tapas de cajas de plástico guardadas en el ático',
+    'Fruta abierta en la rama con la pulpa comida, muchas veces de noche y en lo alto del árbol',
+    'Una mancha en el techo de un cuarto sin tuberías arriba ni gotera del tejado que la explique',
+  ],
   faqs: [
     {
       q: '¿De verdad hay ratas de techo en el condado de Whatcom?',

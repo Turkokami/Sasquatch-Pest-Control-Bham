@@ -73,6 +73,22 @@ export const aranaDeCruz: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Hembras de 6.5 a 20 mm de cuerpo; machos de 5.5 a 13 mm' },
+    { label: 'Marcas', value: 'Manchas claras que forman una cruz irregular en el abdomen; cuerpo amarillo, café o gris oscuro, y el color varía mucho' },
+    { label: 'Telaraña', value: 'Una rueda vertical con rayos y una espiral pegajosa, de hasta unos 40 cm, que rehace casi todas las noches' },
+    { label: 'Cómo distinguirla de las de embudo', value: 'Una rueda colgada en vertical al aire libre, no una sábana plana con un tubo en una orilla, abajo cerca del suelo' },
+    { label: 'Cuándo se ve', value: 'Adultas de finales del verano al otoño, más notorias a principios de septiembre' },
+    { label: 'Mordida', value: 'Inofensiva para la gente: cuando mucho algo molesta, y rara vez lo logra' },
+    { label: '¿La tratamos?', value: 'No: es una depredadora benéfica de afuera que muere con el frío; sí limpiamos la telaraña acumulada' },
+  ],
+  senales: [
+    'Una telaraña grande en forma de rueda atravesando una puerta, un portón o un camino, y otra vez ahí la mañana después de quitarla',
+    'Una araña con dibujo, del tamaño de una uva, quieta en el centro de la tela',
+    'Telarañas de rueda juntas alrededor de una luz de porche o de puerta que se queda prendida toda la noche',
+    'Telas tendidas entre arbustos, a lo largo de cercas o entre un bajante y un barandal',
+    'Capullos de seda abombados con huevos, bajo corteza suelta, detrás de postigos o bajo la orilla de un alféizar a finales de septiembre',
+  ],
   faqs: [
     {
       q: '¿La araña de cruz es peligrosa?',

@@ -93,6 +93,23 @@ export const hormigaDeMonticulo: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De 4 a 9 milímetros, con obreras grandes y chicas mezcladas en la misma colonia' },
+    { label: 'Color y marcas', value: 'Muchas veces de dos colores, rojo y negro; algunas especies son café o negras parejas' },
+    { label: 'Cómo distinguirla de la carpintera', value: 'Una muesca o hundimiento arriba del tórax visto de lado; el de la carpintera es redondeado y liso' },
+    { label: 'Nido', value: 'Un domo de pasto seco, agujas y tallitos sobre tierra o un tronco podrido, en un lugar soleado' },
+    { label: 'Pica o muerde', value: 'No tiene aguijón: muerde fuerte y luego rocía ácido fórmico en la herida' },
+    { label: 'Adentro de la casa', value: 'Rara vez anida en casas; las obreras entran buscando cosas dulces' },
+    { label: 'Hormigas con alas', value: 'De finales del verano a principios del otoño' },
+    { label: '¿La tratamos?', value: 'Depende: solo donde un montículo choca con el césped, un camino, un área de juegos o el cimiento' },
+  ],
+  senales: [
+    'Un domo bajo de pasto seco y agujas de coníferas en terreno abierto y soleado, con la superficie siempre recién removida',
+    'Hormigas grandes rojo con negro saliendo en masa cuando se molesta un montículo o se le pasa la podadora',
+    'Una mordida que arde, desproporcionada para la marca, después de hincarse o sentarse cerca de una ladera',
+    'Filas gruesas de hormigas subiendo a un arbusto o frutal donde cuidan pulgones',
+    'Hormigas con alas adentro de la casa a finales del verano o principios del otoño',
+  ],
   faqs: [
     {
       q: '¿Las hormigas de montículo pican?',

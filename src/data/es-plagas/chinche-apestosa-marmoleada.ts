@@ -68,6 +68,23 @@ export const chincheApestosaMarmoleada: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y forma', value: 'De 12 a 17 milímetros, un escudo marmoleado gris café' },
+    { label: 'Antenas', value: 'Bandas claras cerca de la punta: la primera seña que busca la guía de WSU para Whatcom' },
+    { label: 'Borde del hombro', value: 'Borde delantero liso; varias chinches apestosas nativas tienen ahí un borde dentado' },
+    { label: 'Otras marcas', value: 'Orilla del abdomen con bandas claras y oscuras; puntitos verdes iridiscentes en la cabeza y los hombros' },
+    { label: 'Frente a la chinche de la conífera', value: 'La de la conífera es más larga y angosta, tiene un ensanche como hoja en la pata trasera y vuela ruidosa' },
+    { label: 'Adentro', value: 'Dormida de octubre a la primavera; adentro no come, no se cría ni hace daño' },
+    { label: 'Por qué importa', value: 'Una plaga seria de manzanas, peras, duraznos y otros cultivos; vale la pena reportarla a WSU' },
+    { label: '¿La tratamos?', value: 'Depende: una aplicación exterior a finales de agosto ayuda, pero no vamos a tratar el hueco de la pared' },
+  ],
+  senales: [
+    'Chinches cafés en forma de escudo juntándose en paredes asoleadas al sur o al oeste a finales de septiembre y en octubre',
+    'Una sola chinche en una ventana de adentro durante un rato templado del invierno',
+    'Un olor fuerte a cilantro o a hule quemado cuando se molesta o se aspira una',
+    'Chinches metiéndose en las uniones de los marcos de ventana, los traslapes del revestimiento, los remates del sofito o las ventilas del hastial',
+    'Una última oleada de chinches en las ventanas en primavera, cuando las sobrevivientes tratan de salir',
+  ],
   faqs: [
     {
       q: '¿Cómo la distingo de las chinches apestosas nativas que ya teníamos?',

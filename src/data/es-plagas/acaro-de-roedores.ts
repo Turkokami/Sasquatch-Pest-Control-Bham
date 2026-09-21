@@ -70,6 +70,22 @@ export const acaroDeRoedores: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Más o menos del tamaño del punto final de una oración impresa' },
+    { label: 'Qué es', value: 'Un arácnido de ocho patas que vive sobre ratas y ratones; no es un insecto' },
+    { label: 'Cuándo pica a la gente', value: 'Después de que sus roedores se atrapan, se envenenan, mueren o se van, muchas veces de dos a cuatro semanas después' },
+    { label: 'Cómo distinguirlo de la chinche de cama', value: 'Empieza de golpe en un solo cuarto y no se encuentra nada en la cama: ni manchas, ni mudas, ni huevos' },
+    { label: 'Sin huésped', value: 'No puede vivir sobre la gente; las hembras sin comer duran del orden de diez días' },
+    { label: 'Salud', value: 'El ácaro del ratón casero transmite la rickettsiosis variceliforme, reportada sobre todo en el noreste de Estados Unidos' },
+    { label: '¿La tratamos?', value: 'Sí, en el nido: se trata, se retira y se cierra la entrada; un tratamiento de chinche de cama no hace nada' },
+  ],
+  senales: [
+    'Marcas con comezón que empiezan de golpe en un cuarto, muchas veces una recámara de arriba, sin viajes ni muebles nuevos',
+    'Piquetes que empiezan unas semanas después de que dejó de oírse a los roedores o terminó un trabajo de trampeo',
+    'Puntitos diminutos que se mueven sobre una funda de almohada clara o una hoja de papel blanco',
+    'La sensación de algo caminando sobre la piel, sin encontrar nada en la cama después de buscar bien',
+    'Excremento, roeduras, olor o material de nido deshecho en el ático, el sofito o la pared arriba del cuarto',
+  ],
   faqs: [
     {
       q: '¿Por qué empezaron los piquetes justo después de atender a los roedores?',

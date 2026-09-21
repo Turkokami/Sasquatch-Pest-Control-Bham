@@ -78,6 +78,23 @@ export const avisponCaraBlanca: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Qué es en realidad', value: 'Una avispa amarilla grande del género Dolichovespula, no un avispón verdadero' },
+    { label: 'Tamaño', value: 'De 13 a 20 milímetros según la casta; una obrera anda en unos tres cuartos de pulgada' },
+    { label: 'Color y marcas', value: 'Negro con la cara, las bandas y las marcas de las patas blanco marfil; nada de amarillo' },
+    { label: 'Cómo distinguirlo de la avispa aérea', value: 'Mire el insecto, no el nido: aquí blanco y negro, allá bandas amarillas y negras' },
+    { label: 'Nido', value: 'Balón gris de papel en capas, con la entrada abajo, en árboles, arbustos o aleros' },
+    { label: 'Tamaño de la colonia', value: 'De unas cien a cuatrocientas obreras a finales del verano' },
+    { label: '¿Busca su comida?', value: 'Sigue siendo depredador toda la temporada y no es la avispa de su mesa de picnic' },
+    { label: '¿La tratamos?', value: 'Según la posición: cerca de una puerta o a la altura de la cabeza, sí; alto en un árbol abierto, muchas veces no' },
+  ],
+  senales: [
+    'Un nido gris de papel en forma de balón en un árbol, un arbusto, un alero o una construcción anexa abierta',
+    'Avispas grandes, blancas y negras, entrando y saliendo de un solo agujero en la parte de abajo del nido',
+    'Un nido que aparece en un árbol pelón cuando se caen las hojas en otoño',
+    'Un nido inicial del tamaño de una pelota de golf bajo el techo de un porche o un alero en primavera',
+    'Avispas blancas y negras trabajando flores o cazando a lo largo de una cerca a finales del verano',
+  ],
   faqs: [
     {
       q: '¿El avispón cara blanca es de verdad un avispón?',

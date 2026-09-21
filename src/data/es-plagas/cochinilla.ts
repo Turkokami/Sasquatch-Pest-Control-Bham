@@ -60,6 +60,22 @@ export const cochinilla: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De un tercio a tres cuartos de pulgada, más o menos: de un borrador de lápiz a una uña' },
+    { label: 'Forma y color', value: 'Ovalada y abombada, con placas duras traslapadas; gris pizarra a casi negra' },
+    { label: 'Patas', value: 'Siete pares, cortas y claras, recogidas por debajo: es un crustáceo, no un insecto' },
+    { label: 'Al molestarla', value: 'Se cierra en una bolita apretada; la porqueta no puede, y tiene dos colitas que salen por detrás' },
+    { label: 'Cómo distinguirla de un milpiés', value: 'El milpiés es largo, como gusano, con dos pares de patas por segmento, y se enrolla en espiral plana' },
+    { label: 'Cuándo se ve adentro', value: 'De octubre a diciembre, un día o dos después de una lluvia fuerte' },
+    { label: '¿La tratamos?', value: 'Pocas veces vale la pena: adentro se muere en días, no daña nada y basta con una escoba' },
+  ],
+  senales: [
+    'Animalitos grises con coraza en el umbral de una puerta o el piso del garaje después de una semana de tormentas',
+    'Animalitos que se hacen bolita al tocarlos',
+    'Muertas en el piso, que se sienten como conchitas y no como insectos aplastados',
+    'Montones de ellas debajo de tablas, macetas, mantillo de corteza u hojarasca junto al cimiento',
+    'Agujeros irregulares mordidos en plántulas o en fruta baja que descansa sobre tierra mojada en primavera',
+  ],
   faqs: [
     {
       q: '¿La cochinilla es un insecto?',

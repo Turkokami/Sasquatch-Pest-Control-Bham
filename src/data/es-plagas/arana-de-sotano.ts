@@ -74,6 +74,22 @@ export const aranaDeSotano: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Cuerpo', value: 'Chico, canela pálido o amarillo y alargado: de 7 a 8 milímetros en las hembras y unos 6 en los machos' },
+    { label: 'Patas', value: 'Delgadísimas como hilo y muy largas; las delanteras de una hembra llegan a unos 50 milímetros' },
+    { label: 'Postura', value: 'Cuelga al revés debajo de una maraña de tela suelta e irregular' },
+    { label: 'Cómo distinguirla de la gigante de casa', value: 'Patas como pelo, alcance lento y maraña al revés; la gigante es café, de patas gruesas, rápida y usa un embudo' },
+    { label: '¿Opilión o araña?', value: 'Esta es una araña de verdad; los opiliones tienen una sola sección del cuerpo, no hacen seda y no tienen veneno' },
+    { label: 'Veneno y mordidas', value: 'Lo del veneno más potente del mundo es una leyenda urbana; no se sabe que haga daño a la gente' },
+    { label: 'Cuándo se ve', value: 'Todo el año en edificios con calefacción: no tiene temporada' },
+    { label: '¿La tratamos?', value: 'Rara vez: se come a otras arañas; la tela abundante se resuelve limpiando y cerrando entradas' },
+  ],
+  senales: [
+    'Marañas sueltas de tela gris y polvosa en las esquinas altas de sótanos, garajes y espacios bajo el piso',
+    'Una araña pálida de patas largas colgada al revés detrás del calentador de agua o arriba del riel de la puerta del garaje',
+    'Una araña que se sacude hasta volverse un borrón en la tela cuando uno se acerca',
+    'Una hembra cargando entre las mandíbulas una bolita suelta de huevos',
+  ],
   faqs: [
     {
       q: '¿Es cierto que tienen el veneno más mortal pero no pueden morder?',

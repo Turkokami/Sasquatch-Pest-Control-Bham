@@ -73,6 +73,23 @@ export const hormigaAphaenogaster: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De cuatro a seis milímetros, con todas las obreras del mismo tamaño' },
+    { label: 'Color', value: 'Café a café rojizo en casi todas las especies; de patas largas, se ve patona al moverse' },
+    { label: 'Tórax', value: 'Un par de espinas en la parte alta de atrás del tórax, visibles con lupa' },
+    { label: 'Frente a la hormiga carpintera', value: 'Más chica, todas de un tamaño y con espinas; la carpintera tiene el tórax redondeado parejo y sin espinas' },
+    { label: 'Frente a la hormiga de pavimento', value: 'Hasta el doble de larga, sin surcos finos en la cabeza y el tórax, y sin montoncitos de arena en el pavimento' },
+    { label: 'Nido', value: 'Madera que ya se está pudriendo, huecos que ya existen o tierra bajo piedras y tablas' },
+    { label: 'Pica o muerde', value: 'Un aguijón débil que rara vez atraviesa la piel; muerde solo si se molesta el nido' },
+    { label: '¿La tratamos?', value: 'Rara vez: lo que vale la pena arreglar es la madera mojada o podrida donde vive' },
+  ],
+  senales: [
+    'Hormigas aladas enjambrando de finales del verano al otoño',
+    'Aladas saliendo de una rendija en una pared, una junta del piso o alrededor de una lámpara',
+    'Una colonia en un tocón, una madera de jardín blanda o la base de un poste de cerca',
+    'Hormigas debajo de piedras, losas, tablas o la hilera de abajo de un montón de leña',
+    'Hormigas en madera de la estructura reblandecida, como una solera húmeda del espacio bajo el piso o la madera bajo una regadera que gotea',
+  ],
   faqs: [
     {
       q: '¿Cómo se llama de verdad esta hormiga?',

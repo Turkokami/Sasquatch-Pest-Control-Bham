@@ -91,6 +91,22 @@ export const hormigaDePavimento: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De dos y medio a unos cuatro milímetros, todas las obreras de la misma medida' },
+    { label: 'Color y marcas', value: 'Café oscuro a negra' },
+    { label: 'Cintura y tórax', value: 'Dos nudos levantados en la cintura y un par de espinas cortas atrás del tórax' },
+    { label: 'Cabeza', value: 'Surcos paralelos en la cabeza y el tórax, que la hacen ver finamente peinada' },
+    { label: 'Cómo distinguirla de la olorosa', value: 'La olorosa tiene un nudo escondido, cabeza lisa, huele a coco al aplastarla y no hace montoncitos' },
+    { label: 'Nido', value: 'En la tierra debajo de losas, adoquines y entradas de autos, sacando cráteres de tierra por las grietas' },
+    { label: '¿La tratamos?', value: 'Depende: los cráteres de afuera y las peleas de primavera no necesitan nada; las filas que siguen adentro llevan cebo' },
+  ],
+  senales: [
+    'Montoncitos cónicos de tierra fina en juntas de la entrada de autos y grietas de losas, que vuelven después de barrer',
+    'Una masa hirviente de hormigas peleando en la banqueta o el patio en una tarde templada de primavera',
+    'Filas que entran a nivel del suelo: umbrales de puertas corredizas, zoclos, molduras de ventanas de planta baja',
+    'Una fila densa en la mañana que no estaba la noche anterior',
+    'Hormigas junto al plato de la mascota, migajas bajo la base de los gabinetes o grasa detrás de la estufa',
+  ],
   faqs: [
     {
       q: '¿Qué son los montoncitos de tierra a lo largo de mi entrada?',

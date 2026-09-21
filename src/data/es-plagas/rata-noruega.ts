@@ -81,6 +81,22 @@ export const rataNoruega: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Unas dieciséis pulgadas de la nariz a la punta de la cola; de siete a dieciocho onzas, pesada de los hombros' },
+    { label: 'Cola', value: 'Escamosa y más corta que la cabeza y el cuerpo juntos; es el detalle que la separa de la rata de techo' },
+    { label: 'Cara y orejas', value: 'Hocico chato; las orejas no le llegan a los ojos al doblarlas hacia adelante' },
+    { label: 'Excremento', value: 'De tres cuartos de pulgada a una pulgada, de puntas romas y en forma de cápsula' },
+    { label: 'Dónde vive', value: 'A nivel del suelo: madrigueras, espacios bajo el piso, debajo de terrazas y los pisos bajos de los edificios' },
+    { label: 'Cuándo entra', value: 'En otoño, cuando la lluvia inunda la tierra donde vivía' },
+    { label: 'Riesgo para la salud', value: 'Asociada con el virus Seúl y la leptospirosis, no con el hantavirus del ratón ciervo' },
+  ],
+  senales: [
+    'Entradas de madriguera de dos a cuatro pulgadas junto al cimiento, de orilla lisa y sin hojas ni telarañas',
+    'Un abanico de tierra suelta debajo de una entrada y un camino gastado que se aleja hacia comida o agua',
+    'Excremento en forma de cápsula de tres cuartos de pulgada o más, muchas veces cerca del faldón de la terraza',
+    'Orillas roídas en ventilas, faldones o puertas, donde una rendija de un cuarto de pulgada se royó hasta darle tamaño',
+    'Movimiento que se oye abajo en las paredes o debajo del piso, no arriba',
+  ],
   faqs: [
     {
       q: '¿Cómo sé si tengo rata noruega o rata de techo?',

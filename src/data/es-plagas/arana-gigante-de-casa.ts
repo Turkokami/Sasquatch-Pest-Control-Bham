@@ -81,6 +81,22 @@ export const aranaGiganteDeCasa: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Cuerpo de media pulgada a una pulgada; los adultos más grandes llegan a unas cuatro pulgadas contando las patas' },
+    { label: 'Color', value: 'Café a café grisáceo, con patas algo peludas; las marcas varían mucho' },
+    { label: 'Cómo distinguirla de la vagabunda', value: 'Solo con seguridad bajo el microscopio; tres o cuatro pares de manchas claras en el esternón descartan a la vagabunda' },
+    { label: 'Telaraña', value: 'Una sábana plana y no pegajosa con un tubo en una orilla, abajo en garajes, espacios bajo el piso y pozos de ventana' },
+    { label: 'Cuándo se ve', value: 'De mediados del verano a principios del otoño, cuando los machos maduros andan de noche buscando hembras' },
+    { label: 'Mordida', value: 'No se sabe que represente ningún peligro para la gente' },
+    { label: '¿La tratamos?', value: 'Pocas veces: sobre todo poblaciones grandes en un garaje o espacio bajo el piso en uso, o una familia con miedo real' },
+  ],
+  senales: [
+    'Una araña café, grande y rápida atrapada en la tina o el lavabo durante la noche',
+    'Sábanas planas y polvosas de seda con un embudo en una orilla, en las esquinas de garajes, cobertizos y sótanos',
+    'Tela en pozos de ventana, debajo de terrazas y a lo largo del cimiento por fuera',
+    'Sacos de huevos claros, como de papel, detrás de cajas guardadas, bajo la orilla de repisas o en los pliegues de una lona vieja',
+    'Arañas cruzando el piso de noche a finales del verano y en otoño',
+  ],
   faqs: [
     {
       q: '¿La araña gigante de casa es peligrosa?',

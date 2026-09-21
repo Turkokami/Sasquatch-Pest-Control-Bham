@@ -61,6 +61,22 @@ export const garrapataDePatasNegras: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Hembra adulta sin comer como una semilla de ajonjolí; ninfa como una de amapola; los machos, más chicos y oscuros' },
+    { label: 'Color', value: 'Cuerpo café rojizo detrás de un escudo más oscuro; una hembra llena se hincha gris verdosa, como un frijol' },
+    { label: 'Patas', value: 'Ocho, de ninfa y de adulta: es un arácnido, no un insecto' },
+    { label: 'Dónde se encuentra', value: 'Orillas de senderos con maleza, hojarasca, troncos y bordes sin cortar; rara vez en un pasto podado' },
+    { label: 'Cuándo está activa', value: 'Adultas de finales del otoño a principios de la primavera; ninfas con el pico en mayo y junio' },
+    { label: 'Riesgo para la salud', value: 'Transmite aquí la enfermedad de Lyme y la anaplasmosis; de cero a siete casos de Lyme al año se adquieren en el estado' },
+    { label: '¿La tratamos?', value: 'No: no vendemos control de garrapatas ni rociado de jardín' },
+  ],
+  senales: [
+    'Una garrapata chica y oscura prendida de cabeza que no se quita sacudiéndola',
+    'Un objeto liso, claro y con forma de frijol sobre la piel, con patas que se ven demasiado chicas para él',
+    'Garrapatas en un perro alrededor del cuello, en las orejas, en los pliegues de las patas o entre los dedos',
+    'Un puntito de ocho patas caminando despacio en la ropa después de pasar entre maleza',
+    'Un niño que camina inestable después de un campamento: búsquele una garrapata entre el pelo',
+  ],
   faqs: [
     {
       q: '¿Ofrecen control de garrapatas?',

@@ -79,6 +79,22 @@ export const ratonCiervo: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Panza y costados', value: 'Panza, patas y pies blancos, con una línea marcada donde termina el café del lomo' },
+    { label: 'Cola', value: 'Peluda y claramente de dos colores, oscura arriba y clara abajo' },
+    { label: 'Cómo distinguirlo del ratón casero', value: 'Ojos y orejas más grandes y cola peluda de dos colores; el casero es de un solo tono gris con la cola pelona y escamosa' },
+    { label: 'Dónde vive aquí', value: 'Orillas de bosque, cabañas, cobertizos, cocheras, graneros, remolques y espacios bajo el piso, más que cocinas' },
+    { label: 'Territorio', value: 'De un tercio de acre a cuatro acres o más, así que visita un edificio en vez de instalarse en una alacena' },
+    { label: 'Riesgo para la salud', value: 'Es el portador del hantavirus en Washington; los casos son raros, pero su excremento nunca se barre ni se aspira' },
+    { label: 'Daño', value: 'Anida en colchones, tapizados, ropa y aislamiento; roe cables en vehículos guardados' },
+  ],
+  senales: [
+    'Una reserva de semillas, nueces o comida de mascota metida en una bota, un guante, un cajón, una caja de herramientas o el motor',
+    'Excremento en las orillas de los estantes de una cabaña, cobertizo o remolque cerrado por meses',
+    'Material de nido deshebrado en un colchón, un cojín, un sillón guardado o una caja de blancos',
+    'Esquinas roídas en cajas guardadas y nidos debajo de la cubierta del motor de una podadora, tractor o lancha',
+    'Aislamiento con túneles o aplastado en el espacio bajo el piso o el ático',
+  ],
   faqs: [
     {
       q: '¿Qué tan probable es el hantavirus en el oeste de Washington, en serio?',

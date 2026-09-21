@@ -70,6 +70,24 @@ export const chincheDeCama: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Unos tres dieciseisavos de pulgada: más o menos la mitad de un borrador de lápiz' },
+    { label: 'Color y forma', value: 'Café rojizo, ovalada y plana; después de comer se hincha, se alarga y se pone de un rojo más vivo' },
+    { label: 'Movimiento', value: 'Camina rápido; no vuela y no brinca' },
+    { label: 'Frente al escarabajo de alfombra', value: 'Cuerpo ovalado y liso, y manchas oscuras en la ropa de cama; la larva del escarabajo tiene cerdas y no deja ninguna' },
+    { label: 'Dónde vive', value: 'Cerca de quien duerme: costuras del colchón, box spring, uniones de la base de la cama, cabecera' },
+    { label: 'Piquetes', value: 'No la confirman: cerca del treinta por ciento de la gente nunca reacciona' },
+    { label: 'Riesgo para la salud', value: 'No hay casos conocidos de enfermedades infecciosas transmitidas por sus piquetes; lo que cobra es el sueño' },
+    { label: '¿La tratamos?', value: 'Sí, después de una visita de verificación pagada, con seguimientos planeados desde el principio' },
+  ],
+  senales: [
+    'Manchas oscuras, como de tinta, absorbidas en las costuras del colchón, el ribete o la cinta de la orilla del box spring',
+    'Puntitos oscuros y abultados en una tablilla pintada, una unión de la base o la pared detrás de la cabecera',
+    'Mudas claras y translúcidas con forma de chinche en lo más hondo de una costura o una unión',
+    'Huevos color perla de un milímetro pegados en rendijas, que no se quitan cepillando',
+    'Insectos vivos, planos y café rojizo, en costuras, uniones o un zoclo suelto',
+    'Insectos atrapados en vasos interceptores bajo las patas de la cama',
+  ],
   faqs: [
     {
       q: '¿Un médico o una foto pueden decirme que son piquetes de chinche?',

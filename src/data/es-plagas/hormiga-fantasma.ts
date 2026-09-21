@@ -75,6 +75,21 @@ export const hormigaFantasma: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De 1.3 a 1.5 milímetros, todas las obreras del mismo tamaño' },
+    { label: 'Color y marcas', value: 'Cabeza y tórax café muy oscuro; patas y parte de atrás lechosas, casi transparentes' },
+    { label: 'Antenas', value: 'Doce segmentos que se engrosan poco a poco hacia la punta, sin una maza marcada' },
+    { label: 'Cómo distinguirla de la olorosa', value: 'Aplaste una: la olorosa huele fuerte a coco podrido y es más grande, café a negra' },
+    { label: 'Dónde vive aquí', value: 'Solo en edificios con calefacción e invernaderos; no está establecida afuera en el noroeste del Pacífico' },
+    { label: 'Nido', value: 'Muchos nidos chicos en huecos de paredes, tierra de macetas, detrás de zoclos y junto a la plomería; se extiende dividiéndose' },
+    { label: '¿La tratamos?', value: 'Depende de confirmar la especie; si lo es, solo cebo dulce y nunca un rociado' },
+  ],
+  senales: [
+    'Una hormiguita como punto oscuro con una mancha pálida y tenue detrás, en fila en la cocina o el baño',
+    'Filas delgadas y constantes por las patas de las mesas de cultivo, las líneas de riego o donde la pared se junta con el piso',
+    'Hormigas moviéndose en la tierra o en la orilla de la maceta de plantas recién llegadas',
+    'Actividad junto a condensación, una fuga lenta debajo del fregadero o una maceta con demasiada agua',
+  ],
   faqs: [
     {
       q: '¿Hay hormiga fantasma en Washington?',

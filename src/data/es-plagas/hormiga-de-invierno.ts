@@ -73,6 +73,21 @@ export const hormigaDeInvierno: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y color', value: 'De dos a cuatro milímetros, amarilla a café, todas las obreras de un tamaño' },
+    { label: 'Tórax', value: 'Un estrechamiento le da una forma clara de reloj de arena vista desde arriba' },
+    { label: 'Cuándo se ve', value: 'En febrero y marzo, cuando ninguna otra hormiga busca comida; casi quieta para el pleno verano' },
+    { label: 'Cómo distinguirla de otras hormigas', value: 'Por la temporada y el tórax de reloj de arena; hormigas negras grandes adentro en enero apuntan a la carpintera' },
+    { label: 'Nido', value: 'Hondo en la tierra, afuera; con mal clima entra en fila a los edificios, pero no anida en ellos' },
+    { label: 'Daño', value: 'Contamina la comida que alcanza, pero no pica ni daña edificios' },
+    { label: '¿La tratamos?', value: 'Rara vez hace falta: recorte lo que toca la pared y selle la rendija; cebo solo si la quiere fuera hoy mismo' },
+  ],
+  senales: [
+    'Una fila de hormiguitas cafés hacia la cocina en febrero o a principios de marzo',
+    'Hormigas que aparecen con la primera racha templada y mojada después de un tramo frío',
+    'Una fila que sube por la pared de afuera y entra a un arbusto, hiedra o enredadera que toca el edificio',
+    'La fila entrando junto a un tubo debajo del fregadero, en la esquina de un umbral o por el empaque de una ventila',
+  ],
   faqs: [
     {
       q: '¿Por qué tengo hormigas en febrero?',

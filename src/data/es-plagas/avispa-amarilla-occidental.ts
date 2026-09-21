@@ -83,6 +83,22 @@ export const avispaAmarillaOccidental: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De tres a cinco octavos de pulgada, corta y robusta' },
+    { label: 'Color y cuerpo', value: 'Amarillo brillante y negro, sin pelo y lustrosa, con el abdomen romo en la punta' },
+    { label: 'Cómo distinguirla de la papelera', value: 'La papelera es más delgada, vuela con las patas largas colgando y hace un panal abierto; esta anida bajo tierra' },
+    { label: 'Nido', value: 'Bajo tierra, casi siempre en una madriguera vieja de roedor; también en taludes, jardines de roca y huecos bajo cobertizos y escalones' },
+    { label: 'Peores meses', value: 'Agosto y septiembre, con hasta cinco mil obreras por nido' },
+    { label: 'Pica', value: 'Puede picar varias veces, y una colonia de tierra molestada sale en grandes números' },
+    { label: '¿La tratamos?', value: 'Depende de dónde queda el nido respecto a por dónde se corta el pasto, se camina y anda la gente' },
+  ],
+  senales: [
+    'Tráfico constante de avispas amarillas y negras entrando y saliendo de un solo agujerito en la tierra',
+    'Una línea de vuelo repetida en una tarde tibia, bajando a un mismo punto del pasto o de un talud',
+    'Avispas sobre fruta caída, botes de basura y comida en una mesa de afuera desde mediados de agosto',
+    'Piquetes cada vez que la podadora pasa por el mismo lugar',
+    'Una sola avispa grande y lenta en una ventana a finales del otoño o en un día templado de febrero',
+  ],
   faqs: [
     {
       q: '¿Por qué solo son un problema en agosto?',

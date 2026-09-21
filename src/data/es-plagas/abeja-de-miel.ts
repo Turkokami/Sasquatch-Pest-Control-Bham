@@ -79,6 +79,22 @@ export const abejaDeMiel: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño y color', value: 'Delgada, de más o menos media pulgada, ámbar y café, con pelo fino y no pelaje denso' },
+    { label: 'Cómo distinguirla del abejorro', value: 'El abejorro es mucho más grande, redondo y peludo, con bandas negras y amarillas' },
+    { label: 'Cómo distinguirla de la avispa amarilla', value: 'Más peluda y de rayas menos vivas; no le hace caso a su comida ni a su bebida' },
+    { label: 'Enjambre o colonia', value: 'Un enjambre cuelga al aire libre y se va en un día o dos; una colonia muestra semanas de tráfico en una sola abertura' },
+    { label: 'Cuándo salen los enjambres', value: 'De la primavera a principios del verano, sobre todo en las semanas más tibias desde finales de abril' },
+    { label: 'Pica', value: 'De mala gana: la obrera muere al picar, y los enjambres son sumamente mansos' },
+    { label: '¿La tratamos?', value: 'No, nunca: un enjambre no necesita a nadie, y una colonia en la pared necesita un apicultor y un carpintero' },
+  ],
+  senales: [
+    'Un racimo denso de abejas colgado de una rama, el riel de una cerca, una pared o el espejo de un carro',
+    'Tráfico constante de ida y vuelta en una sola abertura chica del edificio, que sigue por semanas',
+    'Un zumbido bajo y continuo a través de una pared en un cuarto callado, más claro de noche',
+    'Un pedazo de pared o de techo que se siente tibio',
+    'Abejas sueltas en una ventana de adentro, o una mancha oscura que se filtra por la tablaroca o escurre por el revestimiento',
+  ],
   faqs: [
     {
       q: '¿Van a matar las abejas de mi pared?',

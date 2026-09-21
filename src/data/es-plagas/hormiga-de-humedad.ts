@@ -91,6 +91,22 @@ export const hormigaDeHumedad: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'De tres a cinco milímetros, y todas las obreras de la colonia miden lo mismo' },
+    { label: 'Color y marcas', value: 'De amarillo a ámbar y hasta café bastante oscuro; aquí casi siempre del lado pálido' },
+    { label: 'Cómo distinguirla de la carpintera', value: 'La carpintera es negra, más grande y de tamaños mezclados, con el tórax en curva lisa y no con muesca' },
+    { label: 'Nido', value: 'Un cartón esponjoso en capas, de madera masticada y tierra, que llena el hueco' },
+    { label: 'Dónde vive aquí', value: 'Solo en madera que ya está muy podrida: soleras, vigas de borde, postes mojados' },
+    { label: 'Temporada de enjambre', value: 'De finales del verano a principios del otoño, más o menos de agosto a octubre' },
+    { label: '¿La tratamos?', value: 'Depende de la reparación; primero se arregla el agua y se cambia la madera podrida' },
+  ],
+  senales: [
+    'Una nube repentina de hormiguitas con alas dentro de un cuarto a finales del verano o principios del otoño',
+    'Hormiguitas amarillo pálido en madera donde un desarmador se hunde sin resistencia',
+    'Capas blandas de un cartón como papel, parecido a una caja mojada, metidas en el hueco de una pared o entre vigas',
+    'Un olor a citronela o a limón al aplastar las hormigas o al molestar el nido',
+    'Madera podrida cerca con grietas en cubitos, manchas oscuras u hongos blancos o cafés',
+  ],
   faqs: [
     {
       q: '¿Por qué dicen que encontrar estas hormigas es útil?',

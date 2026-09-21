@@ -65,6 +65,23 @@ export const escarabajoDentadoDeLosGranos: EsPlaga = {
       ],
     },
   ],
+  tabla: [
+    { label: 'Tamaño', value: 'Más o menos un décimo de pulgada de largo: del tamaño de una coma impresa' },
+    { label: 'Forma y color', value: 'Delgado y aplanado; café rojizo a casi negro' },
+    { label: 'Seña clave', value: 'Seis dientes como de serrucho a cada lado del tórax, visibles con lupa o con el macro del teléfono' },
+    { label: '¿De alfombra o de granos?', value: 'El de alfombra es ovalado, abombado y moteado, muchas veces en una ventana; este es plano, café liso y está en la comida' },
+    { label: 'Vuelo', value: 'No vuela y no lo atrae la luz: si encuentra escarabajos, hay comida cerca' },
+    { label: 'Dónde se esconde la fuente', value: 'Alimento de mascotas, semilla para pájaros, alimento para ganado, nueces y harina vieja al fondo de una repisa' },
+    { label: 'Daño', value: 'No muerde, no tiene veneno ni transmite enfermedades: echa a perder la comida, no a la gente' },
+    { label: '¿La tratamos?', value: 'Casi nunca hace falta; acabar con él es encontrar el paquete infestado y tirarlo' },
+  ],
+  senales: [
+    'Escarabajitos planos y cafés caminando en harina, cereal, fruta seca o alimento de mascotas',
+    'Residuo fino y polvoso en un recipiente, sin telaraña de seda que lo amarre',
+    'Escarabajos dentro de paquetes que nunca se abrieron, que entraron caminando por las costuras dobladas',
+    'Harina o migajas en las juntas de la alacena, bajo el forro de las repisas o en los agujeros de los soportes, con escarabajos adentro',
+    'Harina con olor a viejo, un poco agrio',
+  ],
   faqs: [
     {
       q: '¿Cómo se metieron a una bolsa que nunca abrí?',
