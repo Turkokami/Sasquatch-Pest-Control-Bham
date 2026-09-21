@@ -1,6 +1,6 @@
 ---
 town: sudden-valley
-title: "Pest Control in Sudden Valley, WA"
+title: "Pest Control & Exterminator in Sudden Valley, WA"
 description: "Pest control and exclusion for Sudden Valley — carpenter ants in cedar and forest-edge rodents, inside the Lake Whatcom watershed. Call 360-410-2199."
 h1: "Pest Control in Sudden Valley, Washington"
 answer: "Sudden Valley is 1970s cedar built into a working forest edge, inside the watershed that supplies Bellingham's drinking water. That combination sets the job: carpenter ants in softened cedar, rodents off the treeline, damp crawlspaces on sloped lots, and real restraint about what we put on the ground."

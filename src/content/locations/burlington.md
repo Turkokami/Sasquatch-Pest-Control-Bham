@@ -1,7 +1,7 @@
 ---
 town: burlington
-title: "Pest Control in Burlington, WA"
-description: "Commercial and residential pest control for Burlington — retail corridor, distribution, big-box roofs and newer subdivisions. Call 360-410-2199."
+title: "Pest Control & Exterminator in Burlington, WA"
+description: "Pest control in Burlington — rodent, mouse and ant control for homes, the retail corridor and distribution buildings. Call or text 360-410-2199."
 h1: "Pest Control in Burlington, Washington"
 answer: "Burlington is the commercial heart of Skagit County, and most of our work here is commercial. Large-format retail, distribution and food service with big flat roofs, constant dock traffic and yard margins that feed the population. Around it, newer housing built on former farm ground."
 ready: true
@@ -178,7 +178,7 @@ cavities with easy access — and landscaping that has not matured enough to
 compete for the space. Yellowjackets also nest in the ground along lawn edges
 backing onto open ground, which describes a lot of properties here.
 
-## Ants and the damp list
+## Ant control in Burlington, and the damp list
 
 Odorous house ants and pavement ants come in along the slab edge, the sill and
 service penetrations, drawn by whatever is available in a kitchen. In the newer
@@ -257,7 +257,7 @@ who do best are the ones who assume exposure is normal for any property with
 turnover and build detection into the week, rather than treating each incident
 as an anomaly.
 
-## The residential edges and the ground behind them
+## Rodent and mouse control on the residential edges
 
 One thing worth spelling out for anyone living on the newer edges of town.
 

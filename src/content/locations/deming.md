@@ -1,6 +1,6 @@
 ---
 town: deming
-title: "Pest Control in Deming, WA"
+title: "Pest Control & Exterminator in Deming, WA"
 description: "Pest control and exclusion for Deming — farm-ground rats and mice, a heavy carpenter ant season, and the autumn beetle and stink bug wave. Call 360-410-2199."
 h1: "Pest Control in Deming, Washington"
 answer: "Deming sits where farmland meets standing timber, and it gets the pest pressure of both. Rats and mice off the farm ground year round, a heavy carpenter ant season through spring and summer out of the forest itself, and lady beetles, stink bugs and spiders arriving together every autumn."

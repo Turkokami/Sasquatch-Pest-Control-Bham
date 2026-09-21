@@ -1,8 +1,8 @@
 ---
 service: termite-control
-title: "Termite & Wood-Destroying Pest Control in WA"
+title: "Termite & Wood-Boring Beetle Treatment | Bellingham WA"
 description: "Dampwood termite and wood-boring beetle control for Bellingham and Whatcom County. We find the moisture source that let them in. Call or text 360-410-2199."
-h1: "Termite & Wood-Destroying Pest Control in Whatcom County"
+h1: "Termite Control & Wood-Boring Beetle Treatment in Whatcom County"
 answer: "Our termites are not the ones you have read about. The Pacific dampwood termite follows water rather than attacking sound lumber, so finding them means a wall or crawlspace has been wet long enough to soften. We treat the insects and identify the moisture, because without the second part the first part does not last."
 expert: kristofer-elling
 ready: true

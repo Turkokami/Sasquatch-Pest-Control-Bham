@@ -1,6 +1,6 @@
 ---
 town: acme
-title: "Pest Control in Acme, WA"
+title: "Pest Control & Exterminator in Acme, WA"
 description: "Pest control and exclusion for Acme and the South Fork Valley — river rodents, damp crawlspaces, carpenter ants and the autumn beetles. Call 360-410-2199."
 h1: "Pest Control in Acme, Washington"
 answer: "Acme sits on the South Fork Nooksack, and the river is what makes the work here different. A high water table keeps crawlspaces damp, the riparian corridor carries rodents along the valley floor, and farm ground and standing timber press in from either side of one road."

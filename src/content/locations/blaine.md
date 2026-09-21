@@ -1,6 +1,6 @@
 ---
 town: blaine
-title: "Pest Control in Blaine, WA"
+title: "Pest Control & Exterminator in Blaine, WA"
 description: "Pest control and exclusion for Blaine, Semiahmoo and the harbor — marina rodents, salt exposure and homes standing empty. Call 360-410-2199."
 h1: "Pest Control in Blaine, Washington"
 answer: "Blaine is a border town, a working harbor and a seasonal-home community at once, and each of those brings its own problem. Rodents through the marina and the freight corridor, salt working on every building envelope, and houses that sit empty for months at a time."

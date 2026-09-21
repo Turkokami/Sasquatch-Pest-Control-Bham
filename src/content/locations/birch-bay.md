@@ -1,6 +1,6 @@
 ---
 town: birch-bay
-title: "Pest Control in Birch Bay, WA"
+title: "Pest Control & Exterminator in Birch Bay, WA"
 description: "Pest control and exclusion for Birch Bay — vacation rentals, converted cabins and shoreline property. Rodents, wasps and bed bugs. Call or text 360-410-2199."
 h1: "Pest Control in Birch Bay, Washington"
 answer: "Birch Bay is a recreation community that turned into a year-round one, and the housing has not entirely caught up. Lightly built cabins now lived in through the winter, a large vacation rental economy with constant guest turnover, and shoreline exposure that works on every building out here."

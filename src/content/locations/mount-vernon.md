@@ -1,7 +1,7 @@
 ---
 town: mount-vernon
-title: "Pest Control in Mount Vernon, WA"
-description: "Pest control and exclusion for Mount Vernon — historic downtown blocks, riverfront housing and farmland on every side. Call or text 360-410-2199."
+title: "Pest Control & Exterminator in Mount Vernon, WA"
+description: "Pest control in Mount Vernon — rodent and ant control for historic downtown blocks, riverfront homes and the farmland edges. Call or text 360-410-2199."
 h1: "Pest Control in Mount Vernon, Washington"
 answer: "Mount Vernon is the largest place we work in Skagit County and it splits three ways. A genuine historic downtown where rodent populations are shared between buildings, older riverfront housing on the low ground, and newer subdivisions backing straight onto farmland that empties twice a year."
 ready: true
@@ -85,7 +85,7 @@ Deliveries are the third. Cardboard and pallets arriving from elsewhere bring
 what traveled with them, and in a shared block one tenant's receiving practice
 becomes everybody's problem.
 
-## The river and the low ground
+## Rodent control on the river and the low ground
 
 The Skagit is a serious river with a long flood history, and Mount Vernon sits
 against it behind a dike and floodwall system.
@@ -178,7 +178,7 @@ population with a very short walk to your garage in February, which is why we
 would rather scope the outbuilding alongside the house where the owner of one
 will talk to the owner of the other.
 
-## Ants, and what they are telling you
+## Ant control in Mount Vernon, and what the ants are telling you
 
 Two ants matter here and they get confused constantly.
 

@@ -1,6 +1,6 @@
 ---
 town: nooksack
-title: "Pest Control in Nooksack, WA"
+title: "Pest Control & Exterminator in Nooksack, WA"
 description: "Pest control and exclusion for Nooksack — berry-field rodents, overwintering cluster flies and lady beetles, and rural crawlspaces. Call 360-410-2199."
 h1: "Pest Control in Nooksack, Washington"
 answer: "Nooksack is a very small town surrounded by berry acreage, and the fields set the calendar. Harvest and field work push rodents toward buildings, and the same open country sends cluster flies, stink bugs and lady beetles onto warm walls each autumn looking for somewhere to overwinter."

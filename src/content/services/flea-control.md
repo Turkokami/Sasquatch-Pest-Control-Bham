@@ -1,6 +1,6 @@
 ---
 service: flea-control
-title: "Flea Control in Bellingham, WA"
+title: "Flea Exterminator & Treatment in Bellingham, WA"
 description: "Flea treatment for Bellingham and Whatcom County homes. The pupal stage is why they come back — here is what actually resolves it. Call 360-410-2199."
 h1: "Flea Control in Bellingham & Whatcom County"
 answer: "Fleas fail to clear for one reason: the pupal stage is armored and waits. Treatment kills adults and larvae, then pupae hatch a week or two later and it looks like nothing worked. The job is a treatment, aggressive vacuuming, a follow-up, and pet treatment from your vet — all four, or it recurs."

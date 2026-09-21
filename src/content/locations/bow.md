@@ -1,6 +1,6 @@
 ---
 town: bow
-title: "Pest Control in Bow, WA"
+title: "Pest Control & Exterminator in Bow, WA"
 description: "Pest control and exclusion for Bow and the Edison farmland — field rodents, cluster flies and salt exposure down to Samish Bay. Call 360-410-2199."
 h1: "Pest Control in Bow, Washington"
 answer: "Bow is open farm country running down to Samish Bay, and the work reflects it. Field rodents moving twice a year on the harvest and the rain, cluster flies by the thousand in sunny walls, older farmhouses with additions, and salt exposure on anything close to the water."

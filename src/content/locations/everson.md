@@ -1,6 +1,6 @@
 ---
 town: everson
-title: "Pest Control in Everson, WA"
+title: "Pest Control & Exterminator in Everson, WA"
 description: "Pest control and exclusion for Everson and the Goshen corridor — flood-recovery crawlspaces and feed-room rodents. Call or text 360-410-2199."
 h1: "Pest Control in Everson, Washington"
 answer: "Everson sits on the Nooksack, and water shapes the pest work here more than anything else. Buildings that have taken flood water, crawlspaces rebuilt afterwards, and displaced rodents moving off saturated ground. Around that, small farm country with the feed-room and fly problems that come with it."

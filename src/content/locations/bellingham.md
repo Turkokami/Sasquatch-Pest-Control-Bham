@@ -1,6 +1,6 @@
 ---
 town: bellingham
-title: "Pest Control in Bellingham, WA"
+title: "Pest Control & Exterminator in Bellingham, WA"
 description: "Local pest control and exclusion for Bellingham homes and businesses — every neighborhood from the Lettered Streets to Barkley. Call or text 360-410-2199."
 h1: "Pest Control in Bellingham, Washington"
 answer: "Sasquatch Pest Control is based on the Guide Meridian and works every Bellingham neighborhood. The job here changes street by street: prewar crawlspaces on the flats, cedar and forest edge on the hillsides, and high-turnover rentals near the university. We find the entry point before we treat anything."

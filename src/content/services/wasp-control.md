@@ -1,8 +1,8 @@
 ---
 service: wasp-control
-title: "Wasp & Hornet Control in Bellingham, WA"
+title: "Wasp Nest Removal & Hornet Control in Bellingham, WA"
 description: "Wasp, yellowjacket and bald-faced hornet nest removal in Bellingham and Whatcom County. Fast, safe removal of ground, aerial and wall-void nests. Call 360-410-2199."
-h1: "Wasp & Hornet Control in Bellingham & Whatcom County"
+h1: "Wasp Nest Removal & Hornet Control in Bellingham & Whatcom County"
 answer: "Colonies here peak in late August and September, which is when nearly all the stings happen. We remove ground nests, aerial nests and the wall-void nests that are genuinely dangerous to attempt yourself. If you have a nest near a door, a walkway or a play area, that moves to the front of our schedule."
 expert: kristofer-elling
 ready: true

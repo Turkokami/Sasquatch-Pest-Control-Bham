@@ -1,8 +1,8 @@
 ---
 service: bed-bug-control
-title: "Bed Bug Control in Bellingham, WA"
+title: "Bed Bug Exterminator & Treatment in Bellingham, WA"
 description: "Bed bug treatment for Bellingham and Whatcom County — $150 verification visit, then $395 per room with common areas included. Call or text 360-410-2199."
-h1: "Bed Bug Control in Bellingham & Whatcom County"
+h1: "Bed Bug Treatment & Control in Bellingham & Whatcom County"
 answer: "We confirm bed bugs before anyone pays to treat for them. A $150 verification visit establishes what you actually have, and it is credited toward treatment if you go ahead — so it costs nothing if you do. Treatment is $395 per room with common areas included."
 expert: kristofer-elling
 ready: true

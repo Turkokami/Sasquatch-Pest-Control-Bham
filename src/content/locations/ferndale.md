@@ -1,6 +1,6 @@
 ---
 town: ferndale
-title: "Pest Control in Ferndale, WA"
+title: "Pest Control & Exterminator in Ferndale, WA"
 description: "Pest control and exclusion for Ferndale homes, farms and industry — new subdivisions, the old downtown core and the Cherry Point corridor. Call 360-410-2199."
 h1: "Pest Control in Ferndale, Washington"
 answer: "Ferndale is the fastest-changing part of our territory, and most of its new housing stands on ground that was farmland a decade ago. The field mice and rats did not leave when the fields did. We work the whole city, from the Main Street core out to Cherry Point."

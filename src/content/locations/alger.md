@@ -1,6 +1,6 @@
 ---
 town: alger
-title: "Pest Control in Alger, WA"
+title: "Pest Control & Exterminator in Alger, WA"
 description: "Pest control and exclusion for Alger — forest-edge rodents, carpenter ants in cedar and outbuildings on rural acreage. Call or text 360-410-2199."
 h1: "Pest Control in Alger, Washington"
 answer: "Alger is forest-edge country at the top of our Skagit run. Scattered rural housing on acreage, a lot of it cedar and a lot of it built against standing timber, which sets the work: carpenter ants in softened wood, rodents pushing in off the treeline, and outbuildings nobody can seal."

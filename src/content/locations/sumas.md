@@ -1,6 +1,6 @@
 ---
 town: sumas
-title: "Pest Control in Sumas, WA"
+title: "Pest Control & Exterminator in Sumas, WA"
 description: "Pest control and exclusion for Sumas — border freight and warehousing, flood-rebuilt housing and feed-room rodents. Call 360-410-2199."
 h1: "Pest Control in Sumas, Washington"
 answer: "Sumas is a very small town carrying a large commercial footprint. An international truck crossing with the freight, staging and warehousing that come with it, farm ground on every side, and housing that has been through serious flooding and rebuilt since."

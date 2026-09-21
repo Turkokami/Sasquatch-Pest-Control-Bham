@@ -1,6 +1,6 @@
 ---
 town: lynden
-title: "Pest Control in Lynden, WA"
+title: "Pest Control & Exterminator in Lynden, WA"
 description: "Pest control and exclusion for Lynden homes, dairies and berry operations — feed-room rodents, flies and cluster flies. Call 360-410-2199."
 h1: "Pest Control in Lynden, Washington"
 answer: "Lynden is farm country and the pest work reflects it. Rodents in feed rooms and equipment sheds, fly pressure around livestock, cluster flies by the thousand in south-facing walls, and a downtown of older brick and timber buildings. We run scheduled route days up the Guide Meridian."

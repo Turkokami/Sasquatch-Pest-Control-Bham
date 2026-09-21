@@ -1,6 +1,6 @@
 ---
 town: lummi-island
-title: "Pest Control on Lummi Island, WA"
+title: "Pest Control & Exterminator on Lummi Island, WA"
 description: "Pest control on Lummi Island: mice in closed-up cabins, carpenter ants under the trees and late-summer yellowjackets. No ferry surcharge. Call 360-410-2199."
 h1: "Pest Control on Lummi Island, Washington"
 answer: "Yes, we work on Lummi Island, and it costs the same as the mainland — no ferry surcharge and no trip minimum. The island's problems follow its buildings: mice in cabins closed over winter, carpenter ants in damp framing under the trees, and yellowjackets through the long outdoor summer."

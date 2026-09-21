@@ -1,8 +1,8 @@
 ---
 service: rodent-control
-title: "Rodent & Mouse Control in Bellingham, WA"
-description: "Rat and mouse control for Bellingham and Whatcom County homes — inspection, exclusion, trapping and crawlspace cleanup. Call or text 360-410-2199."
-h1: "Rodent & Mouse Control in Bellingham & Whatcom County"
+title: "Rodent Control & Mouse Removal in Bellingham, WA"
+description: "Rodent control and mouse exterminator service for Bellingham and Whatcom County — exclusion, trapping and crawlspace cleanup. Call or text 360-410-2199."
+h1: "Rodent Control & Mouse Exterminator in Bellingham & Whatcom County"
 answer: "Rodent control here is exclusion first and trapping second. We find how they are getting in, seal those entries, trap the animals already inside, then clean up the contamination they left. Trapping alone empties a house temporarily; sealing a quarter-inch gap in the foundation is what actually ends it."
 expert: kristofer-elling
 ready: true

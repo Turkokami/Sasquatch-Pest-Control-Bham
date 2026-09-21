@@ -1,7 +1,7 @@
 ---
 town: sedro-woolley
-title: "Pest Control in Sedro-Woolley, WA"
-description: "Pest control and exclusion for Sedro-Woolley — old mill-town housing, river corridor rodents and carpenter ants in aging framing. Call 360-410-2199."
+title: "Pest Control & Exterminator in Sedro-Woolley, WA"
+description: "Pest control in Sedro-Woolley — rodent and mouse control along the river, carpenter ants in mill-town framing, wasp and bee removal. Call 360-410-2199."
 h1: "Pest Control in Sedro-Woolley, Washington"
 answer: "Sedro-Woolley is an old mill town and the building stock tells you so. Dense prewar and early postwar housing on shallow crawlspaces, a downtown of connected commercial buildings, the Skagit corridor along one side and the forest edge beginning on the other."
 ready: true
@@ -185,7 +185,7 @@ Old commercial buildings also carry old openings — an abandoned pipe run, a
 filled coal chute, a service entry from a utility that no longer exists, a void
 above a suspended ceiling nobody has looked into in decades. Tracking those down is the bulk of the job, which is why a first downtown visit done properly runs longer than owners expect.
 
-## The river corridor
+## Rodent control along the river corridor
 
 The Skagit runs along the town and the dike and drainage system that manages it
 runs with it.

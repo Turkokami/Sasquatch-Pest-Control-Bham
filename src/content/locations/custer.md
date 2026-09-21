@@ -1,6 +1,6 @@
 ---
 town: custer
-title: "Pest Control in Custer, WA"
+title: "Pest Control & Exterminator in Custer, WA"
 description: "Pest control and exclusion for Custer — field rodents, outbuildings and shops, cluster flies in open country, and rural crawlspaces. Call 360-410-2199."
 h1: "Pest Control in Custer, Washington"
 answer: "Custer is unincorporated open country rather than a town, and that shapes the work. Properties here are acreage with outbuildings, most on a well and a septic system, exposed to wind off the fields. Field rodents, cluster flies and wasps account for most of what we are called about."
