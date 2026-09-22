@@ -29,6 +29,42 @@ indexed.
 "Crawled/Discovered – currently not indexed" is a **content-quality signal**,
 not a technical bug. The fix is consolidation, not more pages.
 
+### Cite the extension service that covers this county — owner's steer, 22 Sep 2026
+
+> "I like us citing the extension offices lets make sure we follow that trend
+> so we are citable online."
+
+Every page carries one primary authority named in a visible sentence and linked
+at the point of the claim (Keystone v3.2 §6.5). WHICH authority is now a house
+rule rather than a free choice, because a regional land-grant source is both
+more useful to a reader here and more quotable by the answer engines that are
+starting to send traffic:
+
+**Regional first, for anything about pests, buildings or seasons in this
+county.** In order of preference:
+1. WSU Extension — the county offices, Hortsense, Pestsense, the publications
+   store (PNW bulletins such as PNW 624), and its specialists' factsheets.
+2. The Pacific Northwest Insect Management Handbook, which WSU, Oregon State
+   and the University of Idaho publish together.
+3. Oregon State — including NPIC, which OSU runs with the EPA, and Solve Pest
+   Problems.
+
+**National or state-agency where the claim is genuinely theirs**, and it often
+is — do not force a regional source onto a federal fact:
+- EPA for pesticide law, label rules, rodenticide restrictions and the
+  definition of IPM.
+- FDA for the Food Code; USDA's Forest Products Laboratory for wood, moisture
+  and decay thresholds.
+- Washington DOH for disease and public health; WSDA for licensing; NOAA and
+  the National Weather Service for climate and rainfall.
+- UC IPM is a good source and is already used widely here. It is California:
+  prefer a PNW equivalent for anything seasonal or distributional, and keep UC
+  IPM for biology and method that does not change with the state line.
+
+The mix is reported per page type by harness check 9 ("of those PNW"). It is a
+diagnostic, never a quota — a page citing the EPA for a federal rule is correct
+and should not be "upgraded" to look regional.
+
 ## Hard rules
 
 1. **No template variables in body copy.** Ever. The current live site renders

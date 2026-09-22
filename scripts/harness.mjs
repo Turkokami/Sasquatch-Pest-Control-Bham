@@ -1300,13 +1300,24 @@ if (run('backlog')) {
     blog: { need: ['list'], label: 'paragraph + list' },
   };
   const AUTH = /href=["']https?:\/\/[^"']*(\.gov\b|\.gov\/|\.edu\b|\.edu\/|extension\.|\.extension|wsu\.edu|oregonstate\.edu|ipm\.ucanr)/i;
+  /* REGIONAL FIRST, owner's steer 22 Sep 2026: "I like us citing the extension
+     offices lets make sure we follow that trend so we are citable online."
+     A claim about what happens in this county carries more weight from the
+     extension service that covers this county than from a national page saying
+     the same thing. This column counts pages citing a Pacific Northwest
+     land-grant source: WSU (Hortsense, Pestsense, the pubs store), Oregon State
+     (NPIC, Solve Pest Problems), Idaho, or the PNW Handbooks the three publish
+     together. Diagnostic like the rest of check 9 — a national source is often
+     the right one (EPA for a label rule, FDA for the Food Code, the health
+     department for a disease), so this is a mix to watch, not a target. */
+  const REGIONAL = /href=["']https?:\/\/[^"']*(wsu\.edu|cahnrs|oregonstate\.edu|orst\.edu|uidaho\.edu|pnwhandbooks\.org)/i;
   const DATED = /(last updated|updated on|reviewed on|last reviewed|review(ed)? by|actualizad[oa]|revisad[oa])/i;
   const rows = new Map();
   for (const p of indexable) {
     const type = pageType(p.url) ?? 'other';
     const main = p.html.slice(p.html.indexOf('<main'), p.html.indexOf('</main>'));
     const body = main.replace(/<([a-z]+)[^>]*\sdata-boilerplate\b[^>]*>[\s\S]*?<\/\1>/gi, ' ');
-    const r = rows.get(type) ?? { n: 0, shape: 0, auth: 0, dated: 0 };
+    const r = rows.get(type) ?? { n: 0, shape: 0, auth: 0, dated: 0, regional: 0 };
     r.n++;
     const spec = SHAPE[type];
     if (spec) {
@@ -1314,13 +1325,14 @@ if (run('backlog')) {
       if (spec.need.every((k) => has[k])) r.shape++;
     }
     if (AUTH.test(body)) r.auth++;
+    if (REGIONAL.test(body)) r.regional++;
     if (DATED.test(main)) r.dated++;
     rows.set(type, r);
   }
-  console.log('  \x1b[2mpage type        pages  shape            with shape  cited authority  visible date\x1b[0m');
+  console.log('  \x1b[2mpage type        pages  shape            with shape  cited authority  of those PNW  visible date\x1b[0m');
   for (const [type, r] of [...rows.entries()].sort((a, b) => b[1].n - a[1].n)) {
     const spec = SHAPE[type];
-    console.log(`  \x1b[2m${type.padEnd(16)} ${String(r.n).padStart(5)}  ${(spec ? spec.label : 'paragraph').padEnd(26)} ${spec ? String(r.shape).padStart(4) : '   —'}  ${String(r.auth).padStart(15)}  ${String(r.dated).padStart(12)}\x1b[0m`);
+    console.log(`  \x1b[2m${type.padEnd(16)} ${String(r.n).padStart(5)}  ${(spec ? spec.label : 'paragraph').padEnd(26)} ${spec ? String(r.shape).padStart(4) : '   —'}  ${String(r.auth).padStart(15)}  ${String(r.regional).padStart(12)}  ${String(r.dated).padStart(12)}\x1b[0m`);
   }
 }
 

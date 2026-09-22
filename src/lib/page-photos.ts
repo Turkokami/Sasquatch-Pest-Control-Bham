@@ -153,8 +153,12 @@ const PINNED: Record<string, string[]> = {
   ],
   '/services/attic-insulation/': [
     '/img/gallery/insulation-torn-down-throughout-a-crawlspace.jpg',
+    /* Owner, 22 Sep 2026: "swap this photo for ones of crew in the crawlspace
+       installing the insulation." The crew suited up beside the van came out;
+       this is the one photograph in the library of somebody actually working a
+       crawlspace insulation job, so it moves off the lead slot to here. */
+    '/img/gallery/technician-finishing-a-crawlspace-insulation-install.jpg',
     '/img/gallery/new-insulation-in-crawlspace-walls-and-floor.jpg',
-    '/img/gallery/g26923.jpg',
     '/img/gallery/soaked-and-soiled-insulation-on-a-crawlspace-floor.jpg',
     '/img/gallery/finished-crawlspace-with-new-vapor-barrier.jpg',
   ],

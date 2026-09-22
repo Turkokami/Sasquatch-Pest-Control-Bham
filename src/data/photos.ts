@@ -89,10 +89,10 @@ export const servicePhotos: Record<string, Photo> = {
      showed no insulation at all. The crawlspace is also the half of this work
      that is ours — the attic goes to the insulation crew we work alongside. */
   'attic-insulation': {
-    file: '/img/gallery/technician-finishing-a-crawlspace-insulation-install.jpg',
-    alt: 'A technician with a headlamp bagging offcuts in a crawlspace after new insulation was installed in the floor joists and the frame',
+    file: '/img/gallery/new-crawlspace-insulation-and-vapor-barrier.jpg',
+    alt: 'New pink batt insulation held up between the floor joists with wire, over a fresh black vapor barrier, lit by headlamp',
     caption:
-      'Finishing a crawlspace insulation job: new batts up in the joists and the framed wall, and the offcuts bagged and carried out rather than left on the vapor barrier. Crawlspace insulation is the half of this work our own crew does start to finish.',
+      'A crawlspace insulation job finished: new batts held up between the joists with wire, over a fresh vapor barrier across the ground. Crawlspace insulation is the half of this work our own crew does start to finish, and the photograph further down the page is one of them doing it.',
   },
   'spider-control': {
     file: '/img/work/spider-cluster-on-glass-whatcom-county-wa.jpg',
