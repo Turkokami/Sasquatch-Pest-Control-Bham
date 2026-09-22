@@ -299,6 +299,10 @@ forklift, a mower, a delivery driver or somebody moving stock is going to
 encounter without warning, and the colony is at its largest and most defensive in
 late summer — exactly when yard activity peaks.
 
+Oregon State runs [Solve Pest Problems](https://solvepestproblems.oregonstate.edu/)
+as a plain-language regional guide, and stinging insects around a property are
+part of what it addresses.
+
 **They also take wall and soffit cavities** on metal buildings, entering through
 a gap in cladding, a failed vent screen or the junction where a roof meets a
 wall. On a large building that nest can be twenty feet up and completely

@@ -81,7 +81,7 @@ reviewBy: 2027-09-01
 ## The rat that is actually here
 
 Washington has exactly two established rat species, and both arrived on ships.
-WSU Extension puts it plainly: the Norway rat and the black rat, neither of them
+[WSU Extension](https://wpcdn.web.wsu.edu/wp-extension/uploads/sites/2073/2020/09/Rats-Their-Behavior-Part-1.pdf) puts it plainly: the Norway rat and the black rat, neither of them
 native, both of them here long enough that nobody thinks of them as introduced
 any more. Of the two, the Norway rat is what turns up in most Whatcom County
 buildings.

@@ -185,7 +185,7 @@ where it turns up against the wall. Loose or separated baseboard. Outlet and
 switch plates. The backs of pictures and mirrors. Any upholstered chair somebody
 naps in.
 
-The Pacific Northwest handbook makes the point that low-level infestations stay
+The [Pacific Northwest handbook](https://pnwhandbooks.org/insect/structural-health/public-health/public-health-bed-bug) makes the point that low-level infestations stay
 near the bed and spread outward through the dwelling as the population grows.
 That is why extent matters so much to what a job costs: an early one is
 contained, and a long-running one is not.

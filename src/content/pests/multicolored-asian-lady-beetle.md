@@ -76,7 +76,9 @@ is that they are charming and lucky and eat aphids.
 This is a different insect. *Harmonia axyridis*, the multicolored Asian lady
 beetle, was introduced to North America as a biological control agent for aphids
 and is now established across most of the continent. Outdoors it does exactly the
-job it was brought here to do and does it well. The difficulty is entirely about
+job it was brought here to do and does it well, and [WSU
+Hortsense](https://hortsense.cahnrs.wsu.edu/fact-sheet/common-insects-and-mites-asian-lady-beetle/) lists the adults and the larvae as aphid predators in
+Washington gardens. The difficulty is entirely about
 what it does in October, and about two habits that native lady beetles do not
 share.
 

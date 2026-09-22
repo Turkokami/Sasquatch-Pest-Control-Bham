@@ -302,7 +302,7 @@ somebody notices the traffic.
 
 ## Who to call
 
-Start with the WSU Honey Bees and Pollinators Program, which maintains a
+Start with the [WSU Honey Bees and Pollinators Program](https://bees.wsu.edu/outreach/swarms/), which maintains a
 county-by-county list of swarm removal contacts for Washington — beekeeping
 associations with swarm teams, and individual collectors. The beekeepers
 association covering Whatcom County is the other route to the same people, and

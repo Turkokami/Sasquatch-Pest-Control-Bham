@@ -283,7 +283,7 @@ strip, positioned exactly where you least want the population.
 strip against the building, which in a Northwest autumn never dries on its own.
 
 **Get things off the soil.** Boards, pallets, pots, tarps, landscape fabric,
-firewood stacked flat. The Pacific Northwest handbook's list for this group
+firewood stacked flat. The [Pacific Northwest handbook's](https://pnwhandbooks.org/insect/structural-health/nuisance-household/nuisance-household-pillbug-sowbug) list for this group
 starts with removing organic matter such as grass clippings, leaf litter and
 bedding mulches, and that is the highest-yield hour anybody spends on this.
 

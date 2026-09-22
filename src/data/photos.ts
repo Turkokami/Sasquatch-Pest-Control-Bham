@@ -66,11 +66,15 @@ export const servicePhotos: Record<string, Photo> = {
     caption:
       'Rodent runs pushed through blown-in attic insulation at a home in Sumas. Tunneling like this is usually the first thing found above a ceiling where somebody has been hearing movement at night.',
   },
+  /* Owner, 22 Sep 2026: "id prefer a different photo here". The page led on a
+     dark headlamp shot of two technicians, which shows the conditions but not
+     the work. This is a crawlspace after the work: insulation up, ductwork
+     run, barrier down the full length. */
   'crawlspace-restoration': {
-    file: '/img/work/technician-headlamp-crawlspace-burlington-wa.jpg',
-    alt: 'A technician in a respirator working by headlamp in a dark crawlspace beneath a house',
+    file: '/img/gallery/crawlspace-insulation-and-vapor-barrier-with-ductwork.jpg',
+    alt: 'A long crawlspace with insulation between the joists, wrapped ductwork, posts on concrete piers and a black vapor barrier across the ground',
     caption:
-      'Working by headlamp under a house in Burlington. Most of what decides a crawlspace job — where they are getting in, what the insulation is doing, whether the vapor barrier is intact — can only be settled from down here.',
+      'A crawlspace with the work finished, lit down its length: insulation held up between the joists, duct wrapped, and barrier laid over the whole floor rather than the middle of it. The edges are where a barrier job is won or lost, which is why this one runs to the foundation on every side.',
   },
   /* Owner, 20 Sep 2026: the page led on a photograph of a hole. He wanted the
      finished metalwork instead — "showcase the black vent cover for

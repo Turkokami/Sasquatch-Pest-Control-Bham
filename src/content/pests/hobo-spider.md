@@ -221,7 +221,7 @@ useful measures against it are all at floor height.
 
 Less common than the name recognition suggests, and this matters.
 
-WSU Extension's identification factsheet reports that in the Pacific region west
+[WSU Extension's identification factsheet](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/408/2015/02/PLS-116-How-to-Identify-or-Misidentify-the-Hobo-Spider.pdf) reports that in the Pacific region west
 of the Cascade Mountains, the giant house spider outnumbers the hobo spider by
 about three to one. UC IPM goes further, noting that the larger species has
 competitively displaced hobo spiders across parts of the Pacific Northwest.

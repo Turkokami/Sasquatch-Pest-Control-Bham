@@ -111,6 +111,10 @@ food supply. Metal bins with tight lids, spillage cleaned rather than swept
 aside, and pallets kept off the wall so runways stay visible do more than any
 program. Where an owner does that, everything else works.
 
+Farm guidance for this county is published by [WSU Extension's Whatcom County
+office](https://extension.wsu.edu/whatcom/), and it is written for the people
+working the ground rather than for a national audience.
+
 **Equipment and wiring** are the priority that persuades skeptics. Rodent damage
 to harness wiring, shop electrics and machinery parked for the season is
 expensive and sometimes dangerous.

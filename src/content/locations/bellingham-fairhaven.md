@@ -225,6 +225,10 @@ the workers have switched from protein to sugar. By August a patio can be a
 genuine customer-experience problem rather than a hygiene one. Some of the fix
 is physical, some is waste timing, and very little of it is something applied.
 
+Wasps sit under structural and health pests in the [PNW Insect Management
+Handbook](https://pnwhandbooks.org/insect/structural-health), written jointly by
+WSU, Oregon State and the University of Idaho for this part of the country.
+
 Lodging in the district brings the bed bug exposure that comes with any guest
 turnover. It is a transport problem rather than a hygiene one, and the operators
 who handle it best build detection into the routine rather than treating each

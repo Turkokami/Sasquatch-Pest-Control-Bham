@@ -49,6 +49,7 @@ import Footer from '../components/Footer.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import MobileActionBar from '../components/MobileActionBar.astro';
 import LeadForm from '../components/LeadForm.astro';
+import ListenButton from '../components/ListenButton.astro';
 import CONTENT_DATES from '../data/content-dates.json';
 
 /* `guideTopics` is Omitted as well as title/description: it is not a page's
@@ -263,6 +264,9 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
     <main id="main">
       <div class="wrap">
         {schemaProps.breadcrumbs?.length ? <Breadcrumbs items={schemaProps.breadcrumbs} /> : null}
+        {/* Owner's idea, 22 Sep 2026 — see ListenButton.astro. Hidden until a
+            browser says it can speak, so it never promises what it cannot do. */}
+        <ListenButton />
         <slot />
         {/* Keystone v3.2 §6.6: a visible last-updated date, from git. */}
         {modifiedDate && (

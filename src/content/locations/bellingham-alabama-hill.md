@@ -189,6 +189,10 @@ undergrowth, the wooded margins, decking with a gap beneath, woodpiles and
 compost. Then the rain sets in through late September and October, the ground
 saturates, burrows flood, and everything needs somewhere dry within a few weeks.
 
+Brambles, woodpiles and compost are a yard question before they are a house
+question, and WSU's [Hortsense](https://hortsense.cahnrs.wsu.edu/) factsheets
+are written for exactly that side of it — home gardens and landscapes.
+
 A fifty-year-old house on a slope with an open vent screen and a stepped
 crawlspace is a good answer to that problem.
 

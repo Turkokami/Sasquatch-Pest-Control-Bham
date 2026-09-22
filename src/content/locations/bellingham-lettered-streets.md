@@ -134,6 +134,10 @@ along the alleys and vacant corners, decking with a gap underneath, woodpiles,
 compost, fruit trees, bird feeders and the creek corridors give them everything
 they need, and most residents never see one.
 
+Backyard fruit and compost are garden management questions as much as pest
+ones, and [Hortsense](https://hortsense.cahnrs.wsu.edu/) is where WSU publishes
+its home garden and landscape advice.
+
 Then the rain sets in. Somewhere between late September and early November the
 ground saturates, burrows flood, and that entire outdoor population needs
 somewhere dry within a few weeks. Your crawlspace is dry. Your garage is dry.

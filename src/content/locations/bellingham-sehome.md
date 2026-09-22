@@ -299,6 +299,10 @@ a bank. A nest in a slope beside a path or a set of steps is invisible until
 somebody disturbs it, and by late summer the colony is at its largest and most
 defensive.
 
+Stinging insects around a house are one of the subjects in WSU's
+[Pestsense](https://pestsense.cahnrs.wsu.edu/) collection, written for
+Washington households rather than for the country as a whole.
+
 That is a genuine hazard in a neighborhood where a lot of people are walking
 narrow paths and stairs between buildings, and where a good share of residents
 are new to the area and would not recognize the warning signs.

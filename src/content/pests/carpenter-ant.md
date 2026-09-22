@@ -70,8 +70,8 @@ ready: true
 
 ## What you are actually holding
 
-Size settles most of these before anything else does. The WSU Clark County
-Master Gardener sheet puts western [carpenter ant](/pest-library/carpenter-ant/) workers between a quarter and
+Size settles most of these before anything else does. The [WSU Clark County
+Master Gardener sheet](https://s3.wp.wsu.edu/uploads/sites/2079/2014/02/CarpenterAnts.pdf) puts western [carpenter ant](/pest-library/carpenter-ant/) workers between a quarter and
 a half inch, with queens reaching three quarters of an inch, and describes them
 as black except for reddish legs. Get one onto a sheet of white paper under a
 lamp and the legs read reddish-brown rather than dark, which is a quicker check

@@ -91,6 +91,10 @@ anything we can apply. Owners who do that see results. Owners who do not are
 paying us to manage a symptom, and we tell them so at the first visit rather
 than the fourth.
 
+Small farms in this county have [WSU Extension's Whatcom County
+program](https://extension.wsu.edu/whatcom/) behind them for the dairy, berry
+and pasture side of the work.
+
 **Wiring is the priority that convinces people.** Rodent damage to equipment
 harness, shop electrics and barn circuits is expensive and occasionally
 dangerous, and machinery parked for the season is especially vulnerable. A warm

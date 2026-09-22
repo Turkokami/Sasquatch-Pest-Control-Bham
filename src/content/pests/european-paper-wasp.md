@@ -76,7 +76,7 @@ anybody's neighbor is doing with their bins. It is a species that was not here.
 
 *Polistes dominula* is European. It reached North America in the 1970s, first
 recorded near Boston, and moved west across the northern states over the
-following two decades. WSU PestSense dates its introduction into Washington to
+following two decades. [WSU PestSense](https://pestsense.cahnrs.wsu.edu/fact-sheet/european-paper-wasp/) dates its introduction into Washington to
 the late 1990s, and by the time WSU's own extension bulletin on yellowjackets
 and paper wasps was written it was already being described as widespread and
 abundant throughout the state. Colorado, for comparison, got its first record in

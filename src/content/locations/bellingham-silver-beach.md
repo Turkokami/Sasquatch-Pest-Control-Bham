@@ -164,6 +164,10 @@ Spider and centipede pressure is among the heaviest in the city, because damp
 wooded ground beside water produces insects in enormous quantity and everything
 that eats insects follows.
 
+For spiders and the rest of that group the regional reference is the [PNW
+Insect Management Handbook](https://pnwhandbooks.org/insect/structural-health),
+assembled by the three Northwest land-grant universities.
+
 The fix is at the interface rather than in the woods: trim the branch bridging
 to the roof, screen the vents with material that will last, close the deck gap,
 pull planting and woodpiles back off the building. Trapping alone against a

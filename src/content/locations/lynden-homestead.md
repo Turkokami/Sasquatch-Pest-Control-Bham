@@ -95,6 +95,10 @@ lawn with a heavy larval population is a lawn worth tunneling under, so the
 grub problem usually arrives first and the mole arrives because of it. Removing
 the animal while the food source stays put simply invites the next one.
 
+Lawn and turf pests have their own factsheets in WSU's
+[Hortsense](https://hortsense.cahnrs.wsu.edu/), which is the place to read
+about grubs before anybody treats a lawn.
+
 The adult crane flies in autumn — long-legged, conspicuous, frequently indoors
 — are harmless. They do not bite, they do not damage anything, and they are
 not the part worth treating.

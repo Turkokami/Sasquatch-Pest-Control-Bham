@@ -178,6 +178,10 @@ cavities with easy access — and landscaping that has not matured enough to
 compete for the space. Yellowjackets also nest in the ground along lawn edges
 backing onto open ground, which describes a lot of properties here.
 
+On the agricultural side of the fence, the county's extension work is run out
+of [WSU Extension in Skagit County](https://extension.wsu.edu/skagit/), which
+publishes for growers and homeowners alike.
+
 ## Ant control in Burlington, and the damp list
 
 [Odorous house ants](/pest-library/odorous-house-ant/) and pavement ants come in along the slab edge, the sill and

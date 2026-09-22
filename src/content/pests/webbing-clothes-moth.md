@@ -114,7 +114,7 @@ why this page spends more words on searching than on spraying.
 The adult is small and unremarkable. UC IPM gives a wingspan of about half an
 inch and a resting length of roughly a quarter inch, gold in color, with reddish
 golden hairs on the top of the head and a row of golden hairs fringing the wings.
-The Pacific Northwest handbook describes them as yellow or tan and about half an
+The [Pacific Northwest handbook](https://pnwhandbooks.org/insect/structural-health/nuisance-household/nuisance-household-clothes-moth) describes them as yellow or tan and about half an
 inch across the wings. Kentucky calls them beige or buff, with narrow wings
 fringed with small hairs.
 

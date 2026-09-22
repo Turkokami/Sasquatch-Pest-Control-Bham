@@ -125,8 +125,8 @@ turns up on a windowsill and nobody can tell what produced them.
 
 One naming note, because it causes confusion when people go looking. Older
 extension material — including the UC IPM key cited on this page — calls this
-insect *Tetramorium caespitum*. Newer material, including the Pacific Northwest
-handbook, calls it *Tetramorium immigrans*. It is the same animal on your
+insect *Tetramorium caespitum*. Newer material, including the [Pacific Northwest
+handbook](https://pnwhandbooks.org/node/8085/print), calls it *Tetramorium immigrans*. It is the same animal on your
 driveway. The name moved, not the ant.
 
 ## The sidewalk wars

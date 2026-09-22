@@ -176,6 +176,10 @@ foundation line can be seen and reached, keep material off the siding rather
 than resting against it, and accept that where a bed runs tight to a building
 the wall behind it cannot be inspected and will not be.
 
+What to plant and how close to the wall to put it are questions [WSU
+Extension's Whatcom County office](https://extension.wsu.edu/whatcom/) takes
+from gardeners in this county.
+
 Irrigation matters here too. On free-draining sand, planting gets watered, and
 water applied against a foundation is the beginning of the moisture story that
 carpenter ants and wood-boring insects need.

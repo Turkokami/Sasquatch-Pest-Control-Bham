@@ -140,6 +140,10 @@ traffic is obvious. They exist from spring, small and quiet, in soffit voids, at
 roofline junctions, in outbuildings, under deck rails, and in the ground along
 verges and boundary banks.
 
+Gardeners who want to read up on them first can start with
+[Hortsense](https://hortsense.cahnrs.wsu.edu/), the WSU factsheet library for
+home gardens and landscapes.
+
 A walk of the eaves, the soffit line, the outbuildings and the boundary ground
 in June finds most of them while they are still simple to deal with and before
 anybody has walked into one. It costs nothing, we would rather do it than not,

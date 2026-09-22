@@ -136,7 +136,7 @@ once you have seen both.
 Almost nobody discovers this species by finding a worker. What happens instead is
 that a room suddenly fills with small winged ants.
 
-WSU puts reproductive swarming in late summer to early autumn, which in this
+[WSU](https://wpcdn.web.wsu.edu/wp-ecommerce/uploads/sites/2/product-3898-sku-EB1382E.pdf) puts reproductive swarming in late summer to early autumn, which in this
 county means roughly August into October and frequently on the first properly
 warm day after a wet spell. The emergence is concentrated — a mature colony
 releases its reproductives in one event rather than trickling them out — so the

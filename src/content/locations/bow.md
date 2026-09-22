@@ -55,6 +55,10 @@ Then a field is cut. Cover that existed in the morning is bare dirt by evening,
 and the entire population living in it needs somewhere else within hours. What
 is available is the nearest structure — your house, your shop, your barn.
 
+Growers with a question about what is coming off the ground and when have
+[WSU Extension's Skagit County office](https://extension.wsu.edu/skagit/) down
+the road, and it is the right first call for the cropping side of this.
+
 Then, a few weeks later, the autumn rain arrives, the low ground saturates,
 burrows flood, and it happens again with everything that was still outdoors.
 The monthly averages in NOAA's [US Climate

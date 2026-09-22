@@ -170,7 +170,7 @@ rough order of how often it turns out to be the answer:
 
 **Birdseed.** This is the single most under-suspected reservoir on properties in
 this county, and it is usually a large sack in a garage or a shed that nobody has
-emptied to the bottom in a year. Kentucky and the Pacific Northwest handbook both
+emptied to the bottom in a year. Kentucky and the [Pacific Northwest handbook](https://pnwhandbooks.org/insect/structural-health/nuisance-household/nuisance-household-flour-moth) both
 name bird seed explicitly. If you feed birds, look here first, before you throw
 out a single thing from the cupboard.
 

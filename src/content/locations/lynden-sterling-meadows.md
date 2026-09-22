@@ -170,6 +170,10 @@ Irrigation matters as much. New landscaping gets watered heavily to establish,
 and water applied against a foundation starts the moisture problem this ground
 otherwise would not have.
 
+Oregon State's [Solve Pest Problems](https://solvepestproblems.oregonstate.edu/)
+takes the same questions about planting, mulch and water from the gardener's
+end, for this region rather than another one.
+
 ## Heat pumps, line sets and modern mechanicals
 
 Houses here carry equipment older housing does not, and it introduces routes

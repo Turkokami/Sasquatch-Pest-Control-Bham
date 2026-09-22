@@ -190,6 +190,10 @@ The useful work is finding the parent colony rather than treating what walks
 past a baseboard, and on these lots it is frequently in the landscaping rather
 than in the woods.
 
+Timber, firewood and planting close to a house all sit on the landscape side of
+this, and WSU's [Hortsense](https://hortsense.cahnrs.wsu.edu/) factsheets are
+written for that ground.
+
 One detail specific to a development of this age is the deck. A great many
 of these houses gained a deck at some point in the last forty years, built up
 close against the siding, and the space beneath it is almost never screened.

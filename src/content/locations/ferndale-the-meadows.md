@@ -168,6 +168,10 @@ and in numbers, weeks before there is any cold to blame. A property with nothing
 at all in July has a genuine problem by late August, and nothing about the house
 changed.
 
+When the ground behind you gets worked is a farming question before it is a
+pest one, and [WSU Extension in Whatcom County](https://extension.wsu.edu/whatcom/)
+is the office that works with the growers running it.
+
 The useful consequence is that it is predictable. The sealing work is worth
 doing before the ground behind you is next worked rather than after.
 

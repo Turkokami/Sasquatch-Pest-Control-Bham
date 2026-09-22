@@ -327,7 +327,7 @@ laundering in hot water or dry cleaning kills all stages.
 **Freeze what cannot be washed.** UC IPM gives two weeks below eighteen degrees
 Fahrenheit for an object sealed in a plastic bag, and ten to fourteen days for
 trophies and mounted specimens. Kentucky gives zero degrees for at least a week,
-or seventy-two hours at minus twenty. The Pacific Northwest handbook, writing
+or seventy-two hours at minus twenty. The [Pacific Northwest handbook](https://pnwhandbooks.org/insect/structural-health/nuisance-household/nuisance-household-carpet-beetle-hide-beetle), writing
 about material in storage, gives three or four days in a freezer before
 discarding. Bag it, press the air out, and give a valuable item a second freeze
 after it has warmed fully through.

@@ -216,6 +216,9 @@ What we can influence is the last stretch. Firewood stacked against a wall.
 Landscape timbers and old retaining structures rotting quietly at the back of a
 garden. Fence posts failing at ground level. Deck framing that has been wet for
 years. Branches bridging from the treeline to a roof.
+How to handle rotting garden timber and yard waste without feeding the problem
+is the kind of thing [WSU Extension in Whatcom
+County](https://extension.wsu.edu/whatcom/) advises households on.
 
 Inside the building the tell is a satellite nest rather than a colony: coarse
 frass beneath a window, workers on a counter after dark, a dry rustle in a wall

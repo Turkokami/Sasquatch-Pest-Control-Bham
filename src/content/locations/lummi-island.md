@@ -106,6 +106,9 @@ be left if they are out of the way. We will tell you which you have before
 anything is treated, and a nest nowhere near anyone may not need treating at
 all.
 
+WSU's [Pestsense](https://pestsense.cahnrs.wsu.edu/) library covers yellowjackets
+and the rest of the household list for readers in this state.
+
 ## Moisture on the weather side
 
 The same wet winters that bring the carpenter ants shape the crawlspaces. A

@@ -60,6 +60,10 @@ summer into autumn rather than the middle of winter, which is when most people
 expect it. By the time it is properly cold, the animals that were going to come
 inside have usually been inside for weeks.
 
+The berry side of that calendar is documented locally by [WSU Extension in
+Whatcom County](https://extension.wsu.edu/whatcom/), which works with the
+operations growing the fruit.
+
 ## What that looks like at a building
 
 The first structures to take it are the ones nearest the field and least sealed:

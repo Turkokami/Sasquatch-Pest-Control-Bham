@@ -175,6 +175,10 @@ gap underneath, woodpiles, compost, chicken coops, bird feeders and the creek
 corridors, and the city supports a substantial outdoor population that most
 residents never see.
 
+Blackberry is a management job in its own right, and local guidance on cutting
+it back comes from [WSU Extension's Whatcom County
+office](https://extension.wsu.edu/whatcom/).
+
 Then the rain arrives. Somewhere between late September and early November the
 ground saturates, burrows flood, and that entire outdoor population needs
 somewhere dry. Your crawlspace is dry. Your garage is dry. The soffit space above

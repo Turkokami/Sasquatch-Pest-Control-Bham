@@ -215,6 +215,10 @@ corridors, the vegetated margins and, downtown specifically, the alleys and
 their waste. Then the rain sets in through late September and October, the
 ground saturates, burrows flood, and the population needs somewhere dry.
 
+WSU keeps a household factsheet library called
+[Pestsense](https://pestsense.cahnrs.wsu.edu/), and rats and mice are among the
+subjects it covers for Washington homes.
+
 Downtown also has a geographic driver that its density alone does not explain.
 Whatcom Creek runs through the district on its way to the bay, and a vegetated
 creek corridor is a continuous sheltered travel route with water along the whole

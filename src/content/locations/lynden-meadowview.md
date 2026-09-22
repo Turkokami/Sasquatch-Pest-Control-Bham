@@ -58,6 +58,10 @@ the middle of August, and why the householder is convinced something must have
 changed about the house. Nothing changed about the house. Something changed
 about the field.
 
+[WSU Extension's Whatcom County office](https://extension.wsu.edu/whatcom/) is
+the local source on how this ground is cropped and when, which is the half of
+the problem that is not yours.
+
 Because it is event-driven, it is predictable, and that is the useful part. The
 closing-up work is worth doing before the ground behind you is next worked
 rather than after the animals are already inside.

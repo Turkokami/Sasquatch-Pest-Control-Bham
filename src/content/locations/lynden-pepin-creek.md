@@ -65,6 +65,10 @@ construction one.
 Both are predictable, which is the useful part. The work to close a building is
 worth doing before the next time ground is disturbed, not after.
 
+What gets grown on the remaining fields, and on what schedule, is [WSU
+Extension Whatcom County's](https://extension.wsu.edu/whatcom/) area rather than
+ours.
+
 ## Tight is not sealed
 
 New construction here is good at what it was designed for: air, weather and

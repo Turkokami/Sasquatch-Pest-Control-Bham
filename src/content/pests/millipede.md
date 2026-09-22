@@ -172,7 +172,7 @@ largest where that material is deepest. For most of the year they are invisible,
 because they are under things and active at night.
 
 Then the ground saturates. Penn State links their movement to cooler weather or
-heavy rain. The Pacific Northwest handbook puts it in regional terms: under wet
+heavy rain. The [Pacific Northwest handbook](https://pnwhandbooks.org/insect/structural-health/nuisance-household/nuisance-household-millipede) puts it in regional terms: under wet
 conditions, millipedes move toward foundations to get away from wet soil. When
 the pore space in the litter layer fills with water, the animals leave it, and
 because the trigger is weather rather than anything individual, they all leave at

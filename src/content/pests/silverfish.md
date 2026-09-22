@@ -103,7 +103,7 @@ on hygrometers rather than on products.
 describe as teardrop or carrot-shaped. Wingless.
 
 **Size.** UC IPM gives about half an inch, occasionally reaching three quarters.
-The PNW handbook, writing for this region, gives about three eighths of an inch,
+The [PNW handbook](https://pnwhandbooks.org/insect/structural-health/nuisance-household/nuisance-household-silverfish), writing for this region, gives about three eighths of an inch,
 which is closer to what turns up in a Bellingham bathroom.
 
 **Color.** Silver to pearl gray, from a coat of fine detachable scales. Rub one

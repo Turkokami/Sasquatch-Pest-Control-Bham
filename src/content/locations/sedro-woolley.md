@@ -227,6 +227,10 @@ up against the siding. Trapping alone against a treeline is a subscription
 rather than a result, and we would rather say that at the first visit than at
 the fourth.
 
+For the yard and acreage side of that work, [WSU Extension's Skagit County
+office](https://extension.wsu.edu/skagit/) is the service that advises
+property owners in this county.
+
 Our routes do thin out as you go further east up the valley. For an address well
 beyond town, call and ask rather than assuming — we will tell you honestly
 whether we run there.

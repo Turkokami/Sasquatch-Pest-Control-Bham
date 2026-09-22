@@ -212,6 +212,11 @@ properties. Those are the nests that cause genuine incidents, because they are
 invisible until a mower or a child finds them, and the colony peaks in late
 summer when everybody is outdoors.
 
+The [WSU Extension publications store](https://pubs.extension.wsu.edu/) is
+where the university puts its regional bulletins on yard and household pests,
+and it is a better starting point here than anything written for the East
+Coast.
+
 The cheap intervention is a spring walk of the eaves and the lawn edges, when a
 founding nest is trivially dealt with. By August the same nest is a different
 conversation.

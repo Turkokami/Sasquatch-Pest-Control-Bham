@@ -94,6 +94,10 @@ seasonal in the same way it is on farmland: when the verge is cut or cleared,
 the animals living in it relocate that week, and the nearest structures with a
 gap in them are where they go.
 
+Cutting schedules, cover and what grows along a verge are all extension
+subjects, and in this county that work belongs to [WSU Extension's Whatcom
+office](https://extension.wsu.edu/whatcom/).
+
 None of that can be fixed at the source, which is why the work here is entirely
 about the building. What matters is whether there is a route in, and on
 uniformly built housing the routes are consistent enough to be found quickly.

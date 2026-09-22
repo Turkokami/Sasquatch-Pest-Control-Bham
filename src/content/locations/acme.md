@@ -132,7 +132,10 @@ populations quite happily through the warmer months, and those animals only
 come at buildings when something changes — the ground is worked, cover is cut,
 a food source moves into storage, or the weather turns. Cutting and harvest
 strip cover from a great deal of ground in a short space of time, and the
-animals living in it have to go somewhere within the week.
+animals living in it have to go somewhere within the week. For what happens on
+the farm side of the fence, [WSU Extension's Whatcom County
+office](https://extension.wsu.edu/whatcom/) is the local publisher on crops,
+pasture and the pests that arrive with them.
 
 ## When the river comes up
 

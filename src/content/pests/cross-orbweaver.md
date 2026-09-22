@@ -281,7 +281,7 @@ The verdict at the top of this page says we do not treat for cross orbweavers.
 That is a real position rather than a rhetorical one, and here is the reasoning
 behind it.
 
-WSU's own Hortsense fact sheet classifies spiders in the home landscape as
+[WSU's own Hortsense fact sheet](https://hortsense.cahnrs.wsu.edu/fact-sheet/spiders/) classifies spiders in the home landscape as
 beneficial natural enemies rather than pests, notes that Washington has more than
 800 spider species and that a typical pesticide-free garden supports twenty to
 twenty-five of them, and lists them as predators of aphids, mites, caterpillars,

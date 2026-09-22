@@ -86,6 +86,10 @@ The useful consequence is that this is predictable. If the ground behind you is
 worked, the work to close the building should be done before it is worked
 rather than after the animals are already in.
 
+The Northwest bulletins behind advice of that kind are published through the
+[WSU Extension publications store](https://pubs.extension.wsu.edu/), which is
+worth a look if you farm or manage ground yourself.
+
 ## Suburban buildings meeting rural pressure
 
 The buildings here were, for the most part, detailed as town houses — and there

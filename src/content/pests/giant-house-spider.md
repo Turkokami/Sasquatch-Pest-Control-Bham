@@ -99,7 +99,7 @@ pose any threat to humans.
 
 ## Where it lives
 
-This is a western Washington animal specifically. WSU records it as common in
+This is a western Washington animal specifically. [WSU](https://pestsense.cahnrs.wsu.edu/fact-sheet/giant-house-spider/) records it as common in
 Washington homes west of the Cascade Mountains, along with the coastal regions of
 Oregon and British Columbia, and absent from the country east of the Cascades.
 Whatcom County sits comfortably inside that range.

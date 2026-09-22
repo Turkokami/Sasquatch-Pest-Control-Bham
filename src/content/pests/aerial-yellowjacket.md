@@ -87,7 +87,7 @@ all.
 ## What it is
 
 A yellowjacket, in the strict sense — same subfamily, same enclosed paper
-architecture, same annual colony. WSU Hortsense lists it among the state's
+architecture, same annual colony. [WSU Hortsense](https://hortsense.cahnrs.wsu.edu/fact-sheet/vespidae-paper-wasps-yellowjackets-hornets-and-potter-wasps/) lists it among the state's
 common social wasps as one of the species with relatively stout bodies and
 distinct yellow and black banded coloring.
 

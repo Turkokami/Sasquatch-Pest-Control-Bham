@@ -12,6 +12,25 @@ const { lang = 'en' } = Astro.props;
 const es = lang === 'es';
 
 const a = business.address;
+
+/* The networks, named from their own URLs so the list stays one list. Google
+   is the Business Profile rather than a social network, and it sits last
+   because it is where the reviews are. */
+const NETWORK: [RegExp, string][] = [
+  [/facebook\.com/i, 'Facebook'],
+  [/instagram\.com/i, 'Instagram'],
+  [/linkedin\.com/i, 'LinkedIn'],
+  [/nextdoor\.com/i, 'Nextdoor'],
+  [/tiktok\.com/i, 'TikTok'],
+  [/youtube\.com|youtu\.be/i, 'YouTube'],
+];
+const socialLinks = [
+  ...business.socials.map((href) => ({
+    href,
+    label: NETWORK.find(([rx]) => rx.test(href))?.[1] ?? new URL(href).hostname.replace(/^www\./, ''),
+  })),
+  ...(isReady(business.gbpUrl) ? [{ href: business.gbpUrl as string, label: 'Google' }] : []),
+];
 /* Every built town, not the first ten. builtTowns() returns thirteen, and the
    three the slice removed were all in Skagit County — which is how Alger,
    Mount Vernon and Sedro-Woolley ended up with six inbound links each and no
@@ -142,6 +161,30 @@ const colophon = COLOPHON.flatMap((c) => {
             </p>
           )
         )}
+      </div>
+      {/* FOLLOW US — owner, 22 Sep 2026: "we need to give links to all our
+          socials on bottom insta, nextdoor, linkedin, tiktok, youtube,
+          google". The list is business.socials plus the Google Business
+          Profile, which is the same list published as the Organization's
+          sameAs, so the footer and the schema cannot drift apart.
+
+          TikTok and YouTube are NOT here yet: no URL for either exists in
+          business.ts, and a social link is the one kind of link that must not
+          be guessed — a wrong handle sends customers to a stranger. They
+          appear the moment their URLs are added, with no further edit here.
+
+          The label is the network's name rather than an icon, because an icon
+          font is a download and an unlabeled icon is a guess for anyone using
+          a screen reader. rel="me" is the honest markup for "this profile is
+          also us", and nofollow keeps the footer from voting for them on all
+          375 pages. */}
+      <div>
+        <h3>{es ? 'Síganos' : 'Follow us'}</h3>
+        <ul>
+          {socialLinks.map((l) => (
+            <li><a href={l.href} rel="me nofollow noopener">{l.label}</a></li>
+          ))}
+        </ul>
       </div>
       <div>
         <h3>{es ? 'Horario' : 'Hours'}</h3>

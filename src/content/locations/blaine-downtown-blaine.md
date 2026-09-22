@@ -233,6 +233,10 @@ Access is the practical constraint, and it is worth saying plainly that some of
 these need equipment and some need doing at a time when there is nobody
 underneath.
 
+Nests in and on buildings fall under the structural and health pest section of
+the [PNW Insect Management Handbook](https://pnwhandbooks.org/insect/structural-health),
+the reference the three Northwest land-grant universities maintain together.
+
 ## Bed bugs in an attached building
 
 Bed bugs downtown follow the building rather than the household, and that is

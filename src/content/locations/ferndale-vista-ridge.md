@@ -177,6 +177,10 @@ The irrigation matters as much. New landscaping gets watered heavily to
 establish, and water applied against a foundation is the start of the moisture
 story that this ridge otherwise does not have.
 
+Mulch depth, irrigation and what to plant where are garden decisions, and WSU
+publishes its guidance on them through
+[Hortsense](https://hortsense.cahnrs.wsu.edu/).
+
 ## Heat pumps, line sets and modern mechanicals
 
 Newer houses here carry equipment that older ones do not, and it introduces

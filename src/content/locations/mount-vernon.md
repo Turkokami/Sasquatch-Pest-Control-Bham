@@ -178,6 +178,10 @@ population with a very short walk to your garage in February, which is why we
 would rather scope the outbuilding alongside the house where the owner of one
 will talk to the owner of the other.
 
+Growers and storage operators in the valley have [WSU Extension's Skagit County
+office](https://extension.wsu.edu/skagit/) for the cropping and storage end of
+this, which is the half no householder controls.
+
 ## Ant control in Mount Vernon, and what the ants are telling you
 
 Two ants matter here and they get confused constantly.

@@ -224,6 +224,10 @@ buildings within a few weeks. Field harvest matters here in a way it does not in
 Bellingham — cutting a field removes cover overnight and the displaced population
 goes somewhere, and what it goes to is the nearest structure.
 
+The farming calendar that drives all of that is documented locally by [WSU
+Extension's Whatcom County office](https://extension.wsu.edu/whatcom/), which
+works with the growers on this ground.
+
 Winter is interior work, damage assessment and crawlspace remediation: soiled
 insulation, chewed ducting, the smell in a bedroom that turns out to be
 something dead in a wall cavity.

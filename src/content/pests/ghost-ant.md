@@ -58,8 +58,8 @@ faqs:
 
 The ghost ant is a real insect and it is a genuine structural pest. It is also
 tropical, it is not established outdoors anywhere in the Pacific Northwest, and
-the regional extension guide to the key ant pests of Washington, Oregon and
-Idaho does not include it.
+the [regional extension guide to the key ant pests of Washington, Oregon and
+Idaho](https://pubs.extension.wsu.edu/product/identification-and-habits-of-key-ant-pests-in-the-pacific-northwest/) does not include it.
 
 So this page starts where a page about it should start in this county: if you
 have a tiny pale ant in a Whatcom County house, it is far more likely to be

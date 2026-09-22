@@ -83,7 +83,7 @@ your rim joist for a season and get nowhere.
 
 What does work that timber is the Anobiidae, and the regional handbooks name the
 species: *Hemicoelus gibbicollis*, the western deathwatch beetle. Oregon State's
-PNW 326 describes it as most abundant along the Pacific Northwest coast and
+[PNW 326](https://entomology.oregonstate.edu/sites/agscid7/files/entomology/Powderpost_Beetles.pdf) describes it as most abundant along the Pacific Northwest coast and
 records it in unpainted Douglas fir in barns and bridges. WSU's own bulletin on
 anobiids in structures makes it the primary damaging species in this state and
 says the other anobiids present do not cause serious problems.

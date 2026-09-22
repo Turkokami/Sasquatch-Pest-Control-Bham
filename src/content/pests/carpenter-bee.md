@@ -80,8 +80,8 @@ as far as New York. That is where the volume of carpenter bee content comes
 from, and it is where the volume of carpenter bee damage is. Northwest
 Washington is not in the middle of that map.
 
-What this corner of the state does have, in real numbers, is bumble bees. WSU's
-home garden bulletin counts at least twenty-three species in Washington and
+What this corner of the state does have, in real numbers, is bumble bees. [WSU's
+home garden bulletin](https://wpcdn.web.wsu.edu/wp-extension/uploads/sites/2053/2022/08/Washington-Bumble-Bees-in-Home-Yards-and-Gardens-pdf.pdf) counts at least twenty-three species in Washington and
 names the black-tailed, fuzzy-horned and Vosnesensky bumble bees among the
 common ones on this side of the mountains. The university's Hortsense sheet puts
 the state total higher still, at twenty-nine. Either way, the large fuzzy bee in

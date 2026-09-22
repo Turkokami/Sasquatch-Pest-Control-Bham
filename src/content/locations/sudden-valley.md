@@ -174,6 +174,11 @@ until the leaves come down.
 the mildest of the three, and where they are somewhere nobody goes we will often
 recommend leaving them alone rather than treating for the sake of it.
 
+Oregon State runs the [National Pesticide Information
+Center](https://npic.orst.edu/pest/) with the EPA, and its pest pages are a
+neutral place to read before anything gets applied in a watershed like this
+one.
+
 The seasonal shift matters everywhere but especially here. Early in the summer
 colonies are feeding protein to brood and are largely uninterested in people.
 From late July they switch to sugar, the colony is at maximum size, and that is

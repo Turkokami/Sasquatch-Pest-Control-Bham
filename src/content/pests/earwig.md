@@ -170,7 +170,7 @@ Every one of those is outside. None of them is in your kitchen.
 
 Stated flatly, because it is the fact that decides the verdict.
 
-The Pacific Northwest handbook says that earwigs do not establish breeding
+The [Pacific Northwest handbook](https://pnwhandbooks.org/insect/structural-health/nuisance-household/nuisance-household-earwig) says that earwigs do not establish breeding
 populations inside homes. They are outdoor animals that wander in, and indoors
 they are in the wrong environment: dry heated air, no damp harborage, nothing
 they recognize as food in useful quantity, nowhere to make a soil cell. What

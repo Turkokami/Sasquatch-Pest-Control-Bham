@@ -332,7 +332,7 @@ match, no cigarette, no hot needle. No twisting it counterclockwise, which is a
 persistent piece of internet advice with nothing behind it. And no waiting to see
 whether it drops off.
 
-Keeping the tick is reasonable. Washington State University's veterinary hospital
+Keeping the tick is reasonable. [Washington State University's veterinary hospital](https://hospital.vetmed.wsu.edu/2023/06/01/ticks/)
 suggests preserving a tick in alcohol so it can help with diagnosis if illness
 follows, and the same logic applies to a person: a tick in a sealed bag with the
 date written on it is more useful to a physician than a recollection.

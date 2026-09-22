@@ -181,7 +181,9 @@ circular.
 **Three — find an adult if you can.** Snout or no snout. Conclusive.
 
 **Four — check the moisture.** Anobiids sit in a band of roughly thirteen to
-eighteen percent, which is damp-but-sound territory. Weevil timber has generally
+eighteen percent, the range the [Pacific Northwest
+handbook](https://pnwhandbooks.org/insect/structural-health/wood-infesting-insect/wood-infesting-beetle) gives for timber open to attack, which is damp-but-sound
+territory. Weevil timber has generally
 been well beyond that for years and may have dried back since.
 
 **Five — look for the fungus.** Discoloration, cubical cracking, a stringy white

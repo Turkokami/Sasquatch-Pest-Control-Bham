@@ -263,7 +263,7 @@ than the one somebody was trying to solve.
 Bumble bees have a bad reputation they mostly do not earn, and one genuine
 capability worth knowing.
 
-WSU describes Pacific Northwest bumble bees as very mild in temperament, and
+[WSU](https://wpcdn.web.wsu.edu/wp-extension/uploads/sites/2053/2022/08/Washington-Bumble-Bees-in-Home-Yards-and-Gardens-pdf.pdf) describes Pacific Northwest bumble bees as very mild in temperament, and
 notes that they will not attack unless the nest is seriously disturbed or
 threatened. A bumble bee working a flowering shrub beside a walkway is not a
 hazard and does not become one because you walk past it.

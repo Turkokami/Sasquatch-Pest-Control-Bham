@@ -146,6 +146,10 @@ Yellowjackets additionally nest in the ground along lawn edges, in the base of
 skirting and under decking, and those are the ones that produce genuine
 incidents, because they are invisible until something disturbs them.
 
+WSU's [Pestsense](https://pestsense.cahnrs.wsu.edu/) factsheets deal with
+wasps and the other pests that turn up around Washington houses, which is a
+better fit for a Whatcom rental than a national page.
+
 ## The bay, the berm and the exposure
 
 The shallow bay and its tidal flats shape the shoreline properties more than

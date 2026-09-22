@@ -85,6 +85,10 @@ started this way in Blaine more than anywhere else in the county, and the tell
 is that the nest is outdoors, recent, and nowhere near the water damage that
 usually explains one.
 
+Oregon State's [Solve Pest Problems](https://solvepestproblems.oregonstate.edu/)
+walks through carpenter ants and the wood they choose, for readers on this side
+of the country.
+
 ## Houses that stand empty
 
 A large share of Blaine and Semiahmoo property is seasonal, second homes, or

@@ -194,7 +194,10 @@ decking, in the greenbelt margins and along the creek corridors. Then the rain
 sets in through late September and October, burrows flood, and that whole
 population needs somewhere dry within a few weeks. That turn is not folklore: the
 [National Weather Service office in Seattle](https://www.weather.gov/sew/)
-publishes it, and you can see it coming a fortnight out.
+publishes it, and you can see it coming a fortnight out. The
+vegetation side of the same problem — brambles, ground cover, what to cut and
+when — is what [WSU Extension in Whatcom
+County](https://extension.wsu.edu/whatcom/) advises on locally.
 
 Student housing at that exact moment is newly reoccupied, full of food, warm,
 and frequently has a refuse situation that has not yet settled. It is a good

@@ -131,8 +131,8 @@ hard wing covers meeting in a straight line down the back; a seed bug's wings
 overlap and end in a membranous section. It is a two-second check.
 
 **A brown marmorated stink bug.** The most common mix-up and the most consequential
-one, because those two calls should end differently. WSU's identification
-publication FS079E lists the western conifer seed bug among the insects people
+one, because those two calls should end differently. [WSU's identification
+publication FS079E](https://pubs.extension.wsu.edu/product/pest-watch-brown-marmorated-stink-bug-home-garden-series/) lists the western conifer seed bug among the insects people
 mistake for the stink bug, and separates them on the obvious grounds: the stink bug
 is a broad shield with banded antennae, and this is a narrow brown insect with
 paddle legs.

@@ -221,6 +221,10 @@ gardening across a large area in late summer, that is a genuine risk — the col
 is at maximum size and defensiveness in exactly the weeks the grounds get the
 most attention.
 
+Ground-nesting wasps are the sort of yard problem WSU writes up in
+[Hortsense](https://hortsense.cahnrs.wsu.edu/), its factsheet set for home
+gardens and landscapes.
+
 [Bald-faced hornets](/pest-library/bald-faced-hornet/) build the large gray paper nests in trees, and on a wooded lot
 they are often not noticed until autumn leaf fall, by which point the colony is
 finishing naturally.

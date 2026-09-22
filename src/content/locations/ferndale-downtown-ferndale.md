@@ -231,6 +231,10 @@ shop entrance or a shared walkway is a hazard to people who never chose to be
 near it, and dealing with it needs equipment and a time when there is nobody
 underneath.
 
+For the household version of the same question, WSU keeps factsheets on wasps
+and other indoor and outdoor nuisances at
+[Pestsense](https://pestsense.cahnrs.wsu.edu/).
+
 Honey bees are a separate matter and we do not treat them. An old chimney or
 wall cavity with a colony in it needs somebody who removes them properly, and
 we will point you at one.

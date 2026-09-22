@@ -198,6 +198,10 @@ Because every house shares the detail, a good nesting year produces nests up
 and down a street rather than at one address, which residents reasonably find
 alarming and which is entirely normal.
 
+The regional reference on nesting insects in buildings is the [PNW Insect
+Management Handbook](https://pnwhandbooks.org/insect/structural-health), kept
+up by WSU with Oregon State and the University of Idaho.
+
 Ground nests along the green corridors and pond margins are the ones that cause
 injuries, because they are found by mower rather than by eye. On amenity ground
 that is a maintenance hazard as much as a resident one and is worth reporting.

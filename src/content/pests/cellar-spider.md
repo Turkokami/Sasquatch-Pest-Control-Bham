@@ -116,8 +116,8 @@ matters below — they have no venom of any kind. None at all.
 
 **Crane flies** — family Tipulidae. Insects. Six legs, two wings, and in British
 and some Canadian usage the name daddy longlegs refers to these and to nothing
-else. In this county the relevant one is the European crane fly, and WSU
-Hortsense records the adults emerging from lawns and pastures from late August
+else. In this county the relevant one is the European crane fly, and [WSU
+Hortsense](https://hortsense.cahnrs.wsu.edu/fact-sheet/european-crane-fly/) records the adults emerging from lawns and pastures from late August
 through September, mosquito-like with long legs, about an inch long. The
 grub-stage larvae in the sod are called leatherjackets and they are a turf
 problem; the adult that blunders around a porch light in September is harmless

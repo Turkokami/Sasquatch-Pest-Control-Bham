@@ -35,6 +35,10 @@ crop-loss problem with a harvest window that does not move. Neither is a
 nuisance call, and neither is served by a technician arriving with a sprayer
 and a script.
 
+The [WSU Extension publications store](https://pubs.extension.wsu.edu/) is
+where the university's bulletins for this region are published, and it is a
+better reference for farm ground than anything national.
+
 We run Lynden on scheduled route days rather than as same-day fill-in work,
 because the drive is two lanes of road shared with tractors, trucks and feed
 haulers and because farm visits have to fit the operation's own timetable. That

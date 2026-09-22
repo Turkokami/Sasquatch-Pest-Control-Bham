@@ -47,6 +47,10 @@ prefer material that has begun to soften — which is precisely what cedar trim,
 fascia, deck framing, fence posts and the bottom edge of siding become after a
 few decades in this climate.
 
+Carpenter ants in buildings get regional coverage in the [PNW Insect
+Management Handbook](https://pnwhandbooks.org/insect/structural-health), which
+WSU produces together with Oregon State and the University of Idaho.
+
 The critical part, and the part most treatment misses, is the colony structure.
 A mature population here almost always has a **parent nest outdoors**: a stump
 left from clearing, a standing dead tree, a fallen log, a landscape timber, a

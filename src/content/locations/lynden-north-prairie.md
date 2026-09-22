@@ -42,6 +42,10 @@ barn cannot. What can be done on farm ground is to protect the buildings that
 matter, manage the material that produces the problem, and be honest about the
 rest.
 
+WSU puts its extension bulletins out through a
+[publications store](https://pubs.extension.wsu.edu/), and that is where the
+written material behind advice of this kind sits.
+
 ## Two kinds of building, and only one can be closed
 
 Every operation out here has both, and separating them is the first thing we

@@ -82,6 +82,10 @@ second, once those buildings are full. Sealing the house alone concentrates the
 population instead of removing it, which is why we quote the site rather than
 the building.
 
+Anyone farming the ground west of the highway can take the crop and livestock
+end of this to [WSU Extension's Whatcom County
+office](https://extension.wsu.edu/whatcom/), which serves growers here.
+
 ## Carpenter ants are the spring and summer story
 
 This is the pest that defines Deming, and the reason is the timber.

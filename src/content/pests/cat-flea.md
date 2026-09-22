@@ -264,7 +264,7 @@ products out. The person qualified to weigh all of that is a veterinarian who ha
 the animal in front of them, and the answer legitimately differs between two dogs
 in the same household.
 
-The Pacific Northwest handbook, which is written for exactly this region, states
+The [Pacific Northwest handbook](https://pnwhandbooks.org/insect/structural-health/public-health/public-health-flea), which is written for exactly this region, states
 that success depends on simultaneous treatment of the pets and the premises.
 Purdue splits the same job the same way: the veterinarian for the animal, the
 pest control operator for the structure.

@@ -1,0 +1,131 @@
+---
+/**
+ * LISTEN TO THIS PAGE — owner's idea, 22 Sep 2026: "is it possible to make it
+ * so the customers can click a button to listen to the text on the website,
+ * like some articles come with a listen to this article button."
+ *
+ * It is, and it costs nothing. This uses the speech synthesis built into the
+ * browser, so:
+ *   - no third-party script, no account, no per-play fee, nothing to renew;
+ *   - no audio files to generate, which matters on a site where 250 pages
+ *     changed in a day — pre-rendered MP3s would have gone stale by morning;
+ *   - nothing loads or runs until somebody presses the button, so it costs a
+ *     reader who never uses it exactly one button;
+ *   - the voice is the reader's own, in their language, at their speed.
+ *
+ * The trade is voice quality: a paid service (ElevenLabs, Speechify,
+ * ReadSpeaker) sounds better than what a browser ships. That is a monthly bill
+ * and a third party inside the page, so it is the owner's call rather than a
+ * default. This works today, everywhere, for nothing.
+ *
+ * WHAT IT READS: the heading, the quick answer, the at-a-glance table and the
+ * body prose, in the order they appear. Not the menus, the rails, the form,
+ * the CTA or the footer — a reader listening wants the article, not the
+ * furniture. Anything marked data-boilerplate is skipped for the same reason.
+ *
+ * NO BUTTON WHERE THERE IS NO SPEECH. It renders hidden and the script reveals
+ * it only if the browser supports speechSynthesis, so nothing promises a
+ * feature that will not work. Without JavaScript it stays hidden.
+ *
+ * CHROME'S FIFTEEN-SECOND BUG is why the text is spoken in sentence-sized
+ * pieces rather than one long utterance: Chrome stops a long utterance partway
+ * with no error. Queuing short ones is the workaround every implementation of
+ * this ends up at.
+ */
+import { langForPath } from '../lib/offer';
+const es = langForPath(Astro.url.pathname) === 'es';
+const label = es ? 'Escuchar esta página' : 'Listen to this page';
+const stopLabel = es ? 'Detener' : 'Stop';
+---
+<div class="listen" hidden data-listen data-boilerplate>
+  <button type="button" data-listen-play aria-live="polite">
+    <span aria-hidden="true">▶</span> {label}
+  </button>
+  <button type="button" data-listen-stop hidden>
+    <span aria-hidden="true">■</span> {stopLabel}
+  </button>
+</div>
+
+<script is:inline data-listen-script define:vars={{ playLabel: label, stopLabel }}>
+  (() => {
+    const box = document.querySelector('[data-listen]');
+    if (!box || !('speechSynthesis' in window)) return;
+    const play = box.querySelector('[data-listen-play]');
+    const stop = box.querySelector('[data-listen-stop]');
+    box.hidden = false;
+
+    /* The article, in document order, minus the furniture. */
+    const read = () => {
+      const main = document.getElementById('main');
+      if (!main) return [];
+      const nodes = main.querySelectorAll(
+        'h1, .answer p, .quickfacts th, .quickfacts td, .quickfacts li, .prose h2, .prose h3, .prose p, .prose li, .faq h3, .faq p',
+      );
+      const out = [];
+      for (const el of nodes) {
+        if (el.closest('[data-boilerplate], nav, form, footer, .cta, .quicknav, .linkrail')) continue;
+        const t = (el.textContent || '').replace(/\s+/g, ' ').trim();
+        if (t) out.push(t);
+      }
+      return out;
+    };
+
+    /* Sentence-sized pieces: Chrome truncates a long utterance. */
+    const pieces = (blocks) => {
+      const out = [];
+      for (const b of blocks) {
+        for (const s of b.match(/[^.!?]+[.!?]*/g) || [b]) {
+          const t = s.trim();
+          if (!t) continue;
+          if (out.length && (out[out.length - 1] + ' ' + t).length < 180) out[out.length - 1] += ' ' + t;
+          else out.push(t);
+        }
+      }
+      return out;
+    };
+
+    let queue = [];
+    let i = 0;
+    const lang = document.documentElement.lang || 'en-US';
+
+    const speakNext = () => {
+      if (i >= queue.length) return finish();
+      const u = new SpeechSynthesisUtterance(queue[i++]);
+      u.lang = lang;
+      u.rate = 1;
+      u.onend = speakNext;
+      u.onerror = finish;
+      speechSynthesis.speak(u);
+    };
+    const finish = () => {
+      speechSynthesis.cancel();
+      queue = [];
+      i = 0;
+      stop.hidden = true;
+      play.innerHTML = '<span aria-hidden="true">▶</span> ' + playLabel;
+    };
+
+    play.addEventListener('click', () => {
+      if (speechSynthesis.speaking && !speechSynthesis.paused) {
+        speechSynthesis.pause();
+        play.innerHTML = '<span aria-hidden="true">▶</span> ' + playLabel;
+        return;
+      }
+      if (speechSynthesis.paused) {
+        speechSynthesis.resume();
+        play.innerHTML = '<span aria-hidden="true">❚❚</span> ' + stopLabel.replace(stopLabel, playLabel);
+        return;
+      }
+      queue = pieces(read());
+      i = 0;
+      if (!queue.length) return;
+      stop.hidden = false;
+      play.innerHTML = '<span aria-hidden="true">❚❚</span> ' + playLabel;
+      speakNext();
+    });
+
+    stop.addEventListener('click', finish);
+    /* Leaving the page should not leave a voice talking in a background tab. */
+    window.addEventListener('pagehide', () => speechSynthesis.cancel());
+  })();
+</script>

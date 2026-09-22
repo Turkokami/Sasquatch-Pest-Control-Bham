@@ -176,6 +176,10 @@ house ants and [pavement ants](/pest-library/pavement-ant/) entering along the s
 against a wall gives cover right to the building. A branch touching a roof is a
 bridge.
 
+Oregon State's [Solve Pest Problems](https://solvepestproblems.oregonstate.edu/)
+sets out the same landscape choices for households in this region, ants along a
+foundation among them.
+
 The corrections are landscaping decisions rather than treatments: mulch pulled
 back to leave a dry band at the base of the wall, irrigation heads adjusted so
 they are not spraying the building, and planting trimmed off the structure. In a

@@ -197,6 +197,10 @@ fallen fruit left on the ground, or pet food bowls outside are each a
 concentrated food source at the near end of a corridor that already has traffic
 on it, and any of them will make your lot the attractive end of the strip.
 
+Oregon State's [Solve Pest Problems](https://solvepestproblems.oregonstate.edu/)
+covers the yard and garden end of rodent work for this region, fruit and feeders
+included.
+
 ## Wildlife that is not our trade
 
 A greenbelt corridor through a town brings animals into gardens that a

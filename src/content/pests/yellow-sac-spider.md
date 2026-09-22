@@ -128,8 +128,8 @@ There are two species involved in most of North America. Penn State describes
 *Cheiracanthium inclusum*, the agrarian sac spider, across much of the country,
 and *C. mildei*, a European arrival, now established throughout the United
 States north of Virginia, Utah and California — which includes all of
-Washington. The regional handbook that WSU, Oregon State and the University of
-Idaho publish jointly lists both under the yellow-legged sac spider for the
+Washington. The [regional handbook that WSU, Oregon State and the University of
+Idaho publish jointly](https://pnwhandbooks.org/insect/structural-health/public-health/public-health-spider) lists both under the yellow-legged sac spider for the
 Pacific Northwest. For a household the two behave identically and nothing turns
 on which one is on the ceiling.
 

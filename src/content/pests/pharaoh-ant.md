@@ -173,7 +173,10 @@ genuine and unglamorous part of the job and we will say so.
 ## Where they turn up around here
 
 Pharaoh ants are an indoor species at this latitude — heated, occupied buildings
-with year-round warmth. They do not overwinter outdoors in Whatcom County.
+with year-round warmth. They do not overwinter outdoors in Whatcom County. That
+reading matches [WSU's guide to the key ant pests of the Pacific
+Northwest](https://pubs.extension.wsu.edu/product/identification-and-habits-of-key-ant-pests-in-the-pacific-northwest/), which treats this ant as a resident of heated structures rather
+than one that nests in the ground outdoors.
 
 That focuses the risk on particular buildings rather than particular
 neighborhoods:

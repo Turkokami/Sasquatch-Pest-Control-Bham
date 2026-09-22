@@ -259,6 +259,10 @@ problem at once.
 Access is the constraint. Some of these need equipment, and some need doing at
 a time when there is nobody underneath.
 
+Stinging insects in and on buildings have a Northwest reference of their own:
+the [PNW Insect Management Handbook](https://pnwhandbooks.org/insect/structural-health),
+published jointly by the region's three land-grant universities.
+
 [Honey bees](/pest-library/honey-bee/) are separate and we do not treat them. In berry and dairy country
 pollinators are worth more than we are, and a colony in a wall or an old
 chimney needs somebody who removes them properly.

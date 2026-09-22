@@ -139,6 +139,11 @@ until something goes over it, and on a property where mowing is a routine job th
 is a realistic way to be badly stung. If there is regular mowing, it is worth
 locating the activity in July rather than meeting it in August.
 
+Stinging insects on and around buildings are handled in the structural and
+health pest volume of the [PNW Insect Management
+Handbook](https://pnwhandbooks.org/insect/structural-health), a joint WSU,
+Oregon State and University of Idaho publication.
+
 We do not treat honey bees and we will tell you so. A swarm is a beekeeper's
 call, and there are people locally who will come and collect one.
 

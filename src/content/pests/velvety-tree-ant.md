@@ -337,7 +337,7 @@ than visiting.
 Worth saying, because the honest answer is that it is sometimes not settled in
 the field.
 
-The Pacific Northwest handbook records two species in the region — the red and
+The [Pacific Northwest handbook](https://pnwhandbooks.org/insect/structural-health/wood-infesting-insect/wood-infesting-ant) records two species in the region — the red and
 black one described on this page, and an entirely dark brown species commonly
 called the pine tree ant. Both nest in wood, both trail long distances, both
 smell when crushed, and both are managed the same way.

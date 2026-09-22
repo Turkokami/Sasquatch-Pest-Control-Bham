@@ -72,7 +72,7 @@ faqs:
 Almost everything people believe about this insect follows from a word that does
 not apply to it.
 
-It is not a hornet. WSU Hortsense states the point without hedging — technically
+It is not a hornet. [WSU Hortsense](https://hortsense.cahnrs.wsu.edu/fact-sheet/vespidae-paper-wasps-yellowjackets-hornets-and-potter-wasps/) states the point without hedging — technically
 a yellowjacket, not a hornet — and it belongs to the genus *Dolichovespula*,
 which makes it a first cousin of the aerial yellowjacket and a slightly more
 distant relative of the ground-nesting species that causes most of the trouble
