@@ -1092,7 +1092,14 @@ export const business = {
   },
 
   socials: [
-    'https://www.facebook.com/sasquatchpestcontrol',
+    /* Corrected by the owner, 22 Sep 2026: the handle above this one
+       (/sasquatchpestcontrol) was NOT this company's page. It was inherited
+       with the rest of the old site's data and never checked, which is the
+       whole argument for never guessing a social URL — a plausible handle
+       that belongs to somebody else is worse than no link, because it sends
+       customers and search engines to a stranger and calls it us. This URL
+       came from the owner. */
+    'https://www.facebook.com/SasquatchPestControlPNW',
     'https://www.instagram.com/sasquatchpestcontrol',
     'https://www.linkedin.com/in/sasquatch-pest-control-7009412b6',
     'https://nextdoor.com/page/sasquatch-pest-control-bellingham-wa',

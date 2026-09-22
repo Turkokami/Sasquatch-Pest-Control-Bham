@@ -4,6 +4,7 @@ import { footerServices, categories } from '../data/services';
 import { writtenTowns } from '../lib/geo-content';
 import { PAGE_PAIRS } from '../data/i18n';
 import { esServicios } from '../data/es-servicios';
+import SocialIcon from './SocialIcon.astro';
 
 interface Props {
   lang?: 'en' | 'es';
@@ -162,30 +163,9 @@ const colophon = COLOPHON.flatMap((c) => {
           )
         )}
       </div>
-      {/* FOLLOW US — owner, 22 Sep 2026: "we need to give links to all our
-          socials on bottom insta, nextdoor, linkedin, tiktok, youtube,
-          google". The list is business.socials plus the Google Business
-          Profile, which is the same list published as the Organization's
-          sameAs, so the footer and the schema cannot drift apart.
-
-          TikTok and YouTube are NOT here yet: no URL for either exists in
-          business.ts, and a social link is the one kind of link that must not
-          be guessed — a wrong handle sends customers to a stranger. They
-          appear the moment their URLs are added, with no further edit here.
-
-          The label is the network's name rather than an icon, because an icon
-          font is a download and an unlabeled icon is a guess for anyone using
-          a screen reader. rel="me" is the honest markup for "this profile is
-          also us", and nofollow keeps the footer from voting for them on all
-          375 pages. */}
-      <div>
-        <h3>{es ? 'Síganos' : 'Follow us'}</h3>
-        <ul>
-          {socialLinks.map((l) => (
-            <li><a href={l.href} rel="me nofollow noopener">{l.label}</a></li>
-          ))}
-        </ul>
-      </div>
+      {/* Hours sits beside the address deliberately: they are the two blocks
+          short enough to share a row, and the three list blocks below each
+          take the full width. */}
       <div>
         <h3>{es ? 'Horario' : 'Hours'}</h3>
         <ul>
@@ -193,14 +173,68 @@ const colophon = COLOPHON.flatMap((c) => {
           <li>{es ? 'Sáb–Dom: 8:00 a. m. – 4:00 p. m.' : 'Sat–Sun: 8:00 AM – 4:00 PM'}</li>
         </ul>
       </div>
-      <div>
+      {/* FOLLOW US — owner, 22 Sep 2026: "we need to give links to all our
+          socials on bottom insta, nextdoor, linkedin, tiktok, youtube,
+          google". The list is business.socials plus the Google Business
+          Profile, which is the same list published as the Organization's
+          sameAs, so the footer and the schema cannot drift apart.
+
+          ICONS, NOT WORDS — owner, same day: "here are social icons so you
+          can use the ones you need to make the links the buttons instead of
+          text." An earlier note here argued for words on the grounds that an
+          icon font is a download and an unlabeled icon is a guess for a
+          screen reader. Both halves of that are answered rather than ignored:
+          the marks are inline SVG, so nothing is downloaded, and each link
+          still carries the network's name as real text (.vh) beside the
+          drawing. Five stacked words were five more rows in a footer he had
+          just asked to shorten; as marks they are one row.
+
+          TikTok and YouTube are NOT here yet: no URL for either exists in
+          business.ts, and a social link is the one kind of link that must not
+          be guessed — a wrong handle sends customers to a stranger. Their
+          icons are already drawn, so each appears the moment its URL lands,
+          with no further edit here. The Facebook URL in business.ts was wrong
+          for exactly this reason until the owner corrected it on 22 Sep 2026.
+
+          rel="me" is the honest markup for "this profile is also us", and
+          nofollow keeps the footer from voting for them on all 438 pages. */}
+      <div class="follow">
+        <h3>{es ? 'Síganos' : 'Follow us'}</h3>
+        <ul class="social">
+          {socialLinks.map((l) => (
+            <li>
+              <a href={l.href} rel="me nofollow noopener" title={l.label}>
+                <SocialIcon name={l.label} />
+                <span class="vh">{l.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="services">
         <h3>{es ? 'Servicios' : 'Services'}</h3>
         <ul>
           {services.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
           <li><a href={es ? '/es/servicios/' : '/services/'}>{es ? 'Todos los servicios' : 'All services'}</a></li>
         </ul>
       </div>
-      <div>
+      {/* THE TOWNS GET THEIR OWN ROW, 22 Sep 2026. Owner: "we should re
+          structure this bottom menu so its not so long."
+
+          It was long for a layout reason, not a content one. The grid above
+          has four tracks; adding Follow us made five blocks, so this one — the
+          longest list on the site — dropped to a second row and rendered as a
+          single narrow column eighteen rows deep. Given the full width it
+          flows into as many aligned columns as fit (§24), which is three rows
+          on a desktop and three columns on a phone.
+
+          Every written town stays. The note above on writtenTowns() explains
+          what happened the last time this list was trimmed to look tidy:
+          three Skagit towns lost every site-chrome link they had while every
+          Whatcom town kept 219. Shortening the footer by removing links is a
+          ranking decision wearing a design costume. Shortening it by laying
+          the same links out properly costs nothing. */}
+      <div class="areas">
         <h3>{es ? 'Áreas de servicio' : 'Service areas'}</h3>
         <ul>
           {towns.map((t) => <li>{t.href ? <a href={t.href}>{t.name}</a> : t.name}</li>)}
