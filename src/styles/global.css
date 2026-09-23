@@ -1315,6 +1315,69 @@ ul.rail.rail-chips {
   }
 }
 
+/* ------------------------------------------------- §13b  back to top */
+
+/* The jump-to-top control — src/components/BackToTop.astro, which carries the
+   reasoning. Three things this has to get right:
+
+   IT MUST NOT COVER THE CALL BAR. The bar above owns the bottom of a phone
+   screen and is the thing this trade converts on; a floating chip sitting on
+   top of "Call now" would cost real money. Below 48rem this lifts by the
+   bar's full height — 3rem of button, 0.75rem of padding top and bottom, plus
+   whatever the home indicator takes — and the two numbers move together.
+
+   IT IS BEHIND THE BAR IN THE STACK ANYWAY, at z-index 35 against the bar's
+   40, so that if a future change ever does bring them into contact, the call
+   button is the one that wins rather than this.
+
+   IT IS A 44px TARGET, like everything else that is not inline in prose. The
+   arrow inside is 20px; the rest is the padding that makes it tappable. */
+.totop {
+  position: fixed;
+  right: var(--gutter);
+  bottom: 1.25rem;
+  z-index: 35;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0;
+  background: var(--inv-bg);
+  color: var(--inv-ink);
+  border: 1px solid var(--inv-marker);
+  border-radius: 50%;
+  cursor: pointer;
+  /* A floating control needs to read as lifted off the page it covers; this
+     is the only shadow on the site for that reason. */
+  box-shadow: 0 2px 10px rgb(0 0 0 / 35%);
+}
+.totop:hover {
+  background: var(--inv-well);
+  color: var(--inv-link-hover);
+}
+/* Inside the chip, on its own black — outside, the ring lands on whatever the
+   page happens to be behind it, which is the same argument as .skip. */
+.totop:focus-visible {
+  outline: 2px solid var(--focus-inverse);
+  outline-offset: -4px;
+}
+[hidden].totop {
+  display: none;
+}
+
+@media (max-width: 47.99rem) {
+  .totop {
+    bottom: calc(4.5rem + env(safe-area-inset-bottom, 0) + 0.75rem);
+  }
+}
+
+@media print {
+  .totop {
+    display: none;
+  }
+}
+
 /* ----------------------------------------------------------- §14  header */
 
 header.site {

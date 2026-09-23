@@ -1,0 +1,95 @@
+---
+/**
+ * BACK TO TOP — owner, 23 Sep 2026: "lets add a jump to top button when
+ * people are scrolling so they can jump back to top of page."
+ *
+ * WHY A BUTTON AND NOT A LINK. An `<a href="#top">` would work without
+ * JavaScript, which is the usual argument for it. But it would also add one
+ * more link to all 438 pages' link graph, and this control does not point at
+ * a page — it moves the viewport. A button says that; a link would have to be
+ * explained. Anyone without JavaScript still has Home, Cmd-Up, and the top of
+ * the scrollbar, so nothing is actually lost.
+ *
+ * IT DOES NOT EXIST UNTIL THERE IS SOMEWHERE TO GO BACK TO. Rendered hidden,
+ * revealed by the script only once the reader is roughly two screens down —
+ * and only on a page long enough for that to mean anything. A jump-to-top
+ * button on a screen that does not scroll is a control that does nothing,
+ * which is worse than no control at all.
+ *
+ * IT MOVES FOCUS, NOT JUST THE VIEWPORT. Scrolling to the top leaves a
+ * keyboard user's focus wherever it was, so the next Tab drops them back into
+ * the middle of the page they just left — the button appears to do nothing
+ * and then betrays them. Focus moves to the masthead, so Tab continues from
+ * the top the way the eye expects.
+ *
+ * LAST IN THE DOCUMENT, like MobileActionBar and for the same reason: it is
+ * position:fixed, so source order does not decide where it paints, and this
+ * keeps it out of the tab order until a keyboard reader has been through the
+ * actual page.
+ *
+ * WHERE IT SITS. Clear of the phone's fixed call bar (§13), which owns the
+ * bottom of a small screen and must never be covered — the offset below is
+ * that bar's height, and the two numbers move together.
+ */
+import { langForPath } from '../lib/offer';
+const es = langForPath(Astro.url.pathname) === 'es';
+const label = es ? 'Volver al principio' : 'Back to top';
+---
+<button type="button" class="totop" hidden data-totop data-boilerplate>
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="20" height="20">
+    <path
+      d="M12 5.5 5.2 12.3l1.6 1.6 4.1-4.1V19h2.2V9.8l4.1 4.1 1.6-1.6z"
+      fill="currentColor"
+    />
+  </svg>
+  <span class="vh">{label}</span>
+</button>
+
+<script is:inline data-totop-script>
+  (() => {
+    const btn = document.querySelector('[data-totop]');
+    if (!btn) return;
+
+    /* Two screens down, and never on a page too short to scroll properly. */
+    const SHOW_AFTER = () => Math.max(600, window.innerHeight * 1.5);
+
+    let shown = false;
+    let queued = false;
+
+    const update = () => {
+      queued = false;
+      const scrollable =
+        document.documentElement.scrollHeight - window.innerHeight > 400;
+      const past = window.scrollY > SHOW_AFTER();
+      const want = scrollable && past;
+      if (want === shown) return;
+      shown = want;
+      btn.hidden = !want;
+    };
+
+    /* Passive, and never more than once a frame: this runs on every scroll
+       event on every page, and a listener that does layout work on each one
+       is how a smooth page starts to stutter on a cheap phone. */
+    const onScroll = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(update);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    update();
+
+    btn.addEventListener('click', () => {
+      /* Honour a reader who has asked the system for less motion: for them a
+         long smooth scroll is not a flourish, it is a symptom trigger. */
+      const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: still ? 'auto' : 'smooth' });
+
+      /* preventScroll so moving focus does not fight the scroll that is
+         already on its way. */
+      const first = document.querySelector('header.site a');
+      if (first) first.focus({ preventScroll: true });
+    });
+  })();
+</script>
