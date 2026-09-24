@@ -64,6 +64,13 @@ interface Props extends Omit<PageSchemaInput, 'title' | 'description' | 'guideTo
   /** Pass false only on the homepage, where the brand is the subject. */
   brandSuffix?: boolean;
   /**
+   * The image that will be this page's Largest Contentful Paint, preloaded in
+   * the head so its fetch starts with the document rather than when the
+   * parser reaches it. See the note beside the link tag: pass it only for an
+   * image that really is the largest thing on the first screen.
+   */
+  preloadImage?: { srcset: string; sizes: string };
+  /**
    * Routes stand up before their content exists. A page without a body that
    * clears the 3,000-word floor is NOT indexable — shipping it open would be
    * exactly the thin-content pattern the rebuild exists to remove. The
@@ -133,6 +140,7 @@ const {
   altPath,
   leadForm = true,
   source,
+  preloadImage,
   ...schemaProps
 } = Astro.props;
 
@@ -250,6 +258,28 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
     <link rel="preload" href={sansBody} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={sansBold} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={serifHead} as="font" type="font/woff2" crossorigin />
+
+    {/* THE LARGEST-PAINT IMAGE, ANNOUNCED IN THE HEAD. A page that passes
+        preloadImage has one image that decides its LCP; this starts fetching
+        it from the first bytes of the document rather than when the preload
+        scanner reaches the <img> further down. The image tag keeps its own
+        fetchpriority="high" — this is about WHEN the fetch starts, not how it
+        is prioritized once queued.
+
+        Only ever pass this for an image that is genuinely the largest thing
+        on the first screen. A preload for something below the fold spends
+        early bandwidth — the same bandwidth three fonts above are already
+        competing for — on something nobody is waiting to see, and makes the
+        real LCP later rather than sooner. */}
+    {preloadImage && (
+      <link
+        rel="preload"
+        as="image"
+        imagesrcset={preloadImage.srcset}
+        imagesizes={preloadImage.sizes}
+        fetchpriority="high"
+      />
+    )}
 
     {/* The single JSON-LD emitter. No plugin, no second block, ever. */}
     <script type="application/ld+json" set:html={ld} is:inline />
