@@ -28,7 +28,10 @@ import { business } from '../data/business';
 const path = '/';
 /* The hero is this page's LCP element (lab gate, 10 Sep 2026). */
 const heroSrcset = srcsetFor('/img/sasquatch-hero-banner.jpg');
-const heroSizes = '(min-width: 76rem) 72rem, 100vw';
+/* Matches the frame in §5: 60rem once the desktop breakpoint is in, full
+   width below it. It said 72rem — a width nothing on the page has ever had —
+   which told the browser to fetch a bigger variant than it would ever show. */
+const heroSizes = '(min-width: 64rem) 60rem, 100vw';
 
 /* The old homepage opened with "Tap any category below to see the full
    details" — 15 words, and an instruction rather than an answer. This is a

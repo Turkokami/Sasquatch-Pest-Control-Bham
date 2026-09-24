@@ -168,6 +168,10 @@
      number in this comment would otherwise have quietly become a lie. 640px
      of column at 18.4px comes to 68 characters, so the value stands. */
   --measure: 40rem;
+  /* THE FRAME, which is a different question from the reading line.
+     Below the desktop breakpoint they are the same thing: the column fills
+     the screen and there is nothing either side of it. The override in §5 is
+     where they part company. */
   --maxw: var(--measure);
   --gutter: clamp(1.15rem, 4vw, 2.25rem);
 
@@ -327,13 +331,32 @@ textarea:focus-visible {
   padding-inline: var(--gutter);
 }
 
-/* The article frame, and it is deliberately the same width as the chrome.
-   An earlier pass had the masthead and footer running wider than the reading
-   column, which put three different left edges on one screen — the kind of
-   near-miss that reads as sloppy without a reader ever working out why. One
-   column, one edge, top to bottom. */
+/* A WIDER FRAME ON A DESKTOP SCREEN — owner, 24 Sep 2026: "lets expand the
+   field of view so less forest is visible so its not so long n narrow reading
+   the page."
+
+   He is right about the symptom and the fix is not what it first looks like.
+   Everything on the page was pinned to --measure, so on a 1440px screen the
+   site occupied 712px and the forest took the other half; at 1920 it took
+   nearly two thirds. But widening --measure is the one thing that must not
+   happen: 40rem at the 18.4px cap measures 68 characters, and the band where
+   long-form stops being tiring tops out around 75. Stretch the paragraphs to
+   fill a 1400px screen and every line becomes a hunt for where the next one
+   starts.
+
+   So the two jobs are separated. --measure stays the reading line. --maxw is
+   now the frame, and on a desktop screen it is much wider: the masthead, the
+   hero, the rails, the photographs, the tables and the footer fill it, while
+   the paragraphs keep their 68 characters and their left edge.
+
+   THE ONE-LEFT-EDGE RULE STILL HOLDS, and it is the reason this is a frame
+   rather than a free-for-all. The note this replaces recorded an earlier pass
+   where the masthead and footer ran wider than the article and put three
+   different left edges on one screen. There is still exactly one: the chrome,
+   the article and the prose all start at the same x. What changed is where
+   things are allowed to END. */
 main > .wrap {
-  max-width: calc(var(--measure) + 2 * var(--gutter));
+  max-width: calc(var(--maxw) + 2 * var(--gutter));
   /* The article's own top space, held here rather than on whatever happens to
      come first. It used to sit on .crumbs, so the two pages with no
      breadcrumb trail — the homepage and the 404 — opened with their H1 or
@@ -345,8 +368,53 @@ main {
   padding-bottom: var(--space-2);
 }
 
+/* The frame opens up once there is a screen worth opening it on. 64rem is the
+   width at which a 68rem frame stops being cropped by the viewport and starts
+   being a choice. Below it, --maxw stays equal to --measure and nothing about
+   a phone or a tablet changes. */
+@media (min-width: 64rem) {
+  :root {
+    --maxw: 60rem;
+    /* THE READING LINE COMES UP TOO, BUT ONLY TO THE TOP OF THE BAND.
+       40rem measures 68 characters at the 18.4px cap; 44rem measures about
+       75, which is where the 65–75 band ends and not one character past it.
+       That is the whole permitted move — the difference between a column that
+       looks mean on a large screen and one that is tiring to read is about
+       seven characters, and everything beyond them is the tiring side. */
+    --measure: 44rem;
+  }
+}
+
 .prose {
   max-width: var(--measure);
+}
+
+/* WHAT FILLS THE REST OF THE FRAME. Once --maxw is wider than --measure there
+   is a strip to the right of every paragraph, and whether that reads as a
+   margin or as a mistake depends entirely on what sits in it.
+
+   The rule is what the block CONTAINS, not what it looks like. Anything
+   holding running text — the quick answer, the FAQ, the expert note, the
+   sources, the disclaimers — stays on the reading line, because widening
+   those is the exact move the comment on --measure forbids. Everything that
+   is a grid, a table, a map, a video or a banner takes the full frame: none
+   of them is read line by line, all of them were being squeezed into a column
+   sized for prose, and they are what gives the strip a reason to exist.
+
+   The result is one left edge, a text column that ends where text should end,
+   and furniture that runs to the frame. */
+@media (min-width: 64rem) {
+  .rail,
+  .tablewrap,
+  .videoblock,
+  .mapblock,
+  .listing,
+  .team,
+  .entrypoints,
+  .ep-list,
+  .cta {
+    max-width: var(--maxw);
+  }
 }
 
 /* Skip link — visually out of the way, fully visible the moment it has
