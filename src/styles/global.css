@@ -374,14 +374,34 @@ main {
    a phone or a tablet changes. */
 @media (min-width: 64rem) {
   :root {
-    --maxw: 60rem;
-    /* THE READING LINE COMES UP TOO, BUT ONLY TO THE TOP OF THE BAND.
-       40rem measures 68 characters at the 18.4px cap; 44rem measures about
-       75, which is where the 65–75 band ends and not one character past it.
-       That is the whole permitted move — the difference between a column that
-       looks mean on a large screen and one that is tiring to read is about
-       seven characters, and everything beyond them is the tiring side. */
-    --measure: 44rem;
+    --maxw: 58rem;
+
+    /* THE TYPE GROWS SO THE COLUMN CAN, 24 Sep 2026. Owner, on seeing the
+       first attempt: "Black margin got bigger but the text didnt adjust."
+
+       He was right, and the first attempt had the relationship backwards. It
+       widened the frame to 60rem and left the text at 44rem, so the space the
+       frame gained became black panel instead of content — a bigger margin,
+       which is not what anybody asked for.
+
+       Line length is not a width, it is a CHARACTER COUNT: width divided by
+       the width of a character. So there are two ways to reach a longer line,
+       and only one of them costs readability. Widening the column alone buys
+       width at the price of characters. Growing the type at the same time
+       buys width and keeps the count nearly where it was.
+
+       At the 18.4px cap, 40rem measured 68 characters. At this 20.8px cap,
+       52rem measures about 80. That is past the 65–75 band this file has
+       defended from the start, and it is a deliberate, owner-directed trade:
+       a desktop screen is further from the eye than a phone, the larger type
+       is easier to read at that distance, and 80 characters at 20.8px is a
+       far better deal than 80 characters would have been at 18.4px.
+
+       The two numbers move TOGETHER. Widening --measure here without raising
+       the type is the change he rejected; raising the type without widening
+       --measure just makes a narrow column shout. */
+    --measure: 52rem;
+    --fs-body: clamp(1.0625rem, 1rem + 0.3vw, 1.3rem);
   }
 }
 
