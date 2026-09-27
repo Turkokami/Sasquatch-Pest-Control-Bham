@@ -1140,10 +1140,15 @@ export const business = {
        smaller, single-source figure is the more persuasive one precisely
        because it is verifiable. Owner agreed 2 Sep 2026. */
     value: 4.9 as Owed<number>,
-    count: 342 as Owed<number>,
+    /* 342 -> 348, read 27 Sep 2026 from the owner's own Business Profile —
+       the screen showed "You manage this Business Profile" beside
+       "4.9 ★ (348)", which is the verified pull this field requires and the
+       only thing that may move it. The post-launch audit had reported 343 on
+       26 Sep; the profile itself is the source of record, not the audit. */
+    count: 348 as Owed<number>,
     source: 'Google Business Profile',
     /** The date the figure above was read. A rating with no date rots. */
-    read: '2026-09-02',
+    read: '2026-09-27',
 
     /* SCHEMA ELIGIBILITY — false, and this is NOT a data gap.
        -----------------------------------------------------------------------
