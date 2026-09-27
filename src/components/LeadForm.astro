@@ -181,6 +181,25 @@ const frameId = `inline-${f.id}`;
       <a href={src} rel="noopener">open the form on its own page</a>.
     </p>
   )}
+
+  {/* AT THE POINT OF COLLECTION, not only in the footer. This is the element
+      that asks for a name, a phone number and an email address, so the note
+      saying what happens to them belongs beside it — a policy somebody has to
+      go looking for is a policy nobody reads. */}
+  <p class="leadform-fallback">
+    {lang === 'es' ? (
+      <>
+        Al enviarlo, usted acepta que lo contactemos por teléfono, mensaje de
+        texto o correo sobre su solicitud. Vea nuestra{' '}
+        <a href="/es/privacidad/">política de privacidad</a>.
+      </>
+    ) : (
+      <>
+        By sending this you agree that we may contact you by phone, text or
+        email about your enquiry. See our <a href="/privacy/">privacy policy</a>.
+      </>
+    )}
+  </p>
 </aside>
 
 {/* The loader. Inline and tiny, so it costs nothing on the pages where the

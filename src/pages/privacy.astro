@@ -1,0 +1,204 @@
+---
+/**
+ * PRIVACY POLICY — written 27 Sep 2026, after the post-launch audit found the
+ * form collecting names, phone numbers and email addresses on a site with no
+ * privacy page at all. GoHighLevel's text-message registration expects one
+ * too, and GA4 went in the same day.
+ *
+ * WRITTEN FROM WHAT THE STACK ACTUALLY DOES, not from a template. Every
+ * processor named here was verified in this repo or in the built output:
+ *
+ *   GoHighLevel   the form is an iframe from link.sasquatchpestcontrol.com,
+ *                 the company's own GHL sub-account (business.ts:1113).
+ *   Google        gtag.js from googletagmanager.com, property G-L1268CMD4H
+ *                 (src/components/Analytics.astro).
+ *   Vercel        the host. Every host keeps request logs.
+ *   YouTube       only on pages with a film, only after the reader clicks the
+ *                 poster, and through youtube-nocookie.com.
+ *
+ * WHAT IS DELIBERATELY NOT HERE. The audit mentioned GorillaDesk and Pest AI
+ * as processors. Neither appears anywhere in this repository, so neither is
+ * named: a privacy policy that lists a company you do not use is as wrong as
+ * one that omits a company you do. If they handle customer data, add them —
+ * that is an owner fact, not a repo fact.
+ *
+ * THE RETENTION SECTION SAYS WHAT IS TRUE WITHOUT INVENTING A NUMBER.
+ * Washington requires commercial pesticide applicators to keep application
+ * records, and the owner should confirm the exact period from the WSDA rule
+ * and put the figure in. A made-up "we keep records for 3 years" would be a
+ * published commitment nobody checked.
+ *
+ * THIS IS NOT LEGAL ADVICE and the page does not pretend to be. It describes
+ * this business's actual practice in plain words. A lawyer should read it
+ * before it is relied on, particularly the text-message consent language,
+ * which has to match what the form itself says at the point of submission.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import { business } from '../data/business';
+
+const path = '/privacy/';
+const a = business.address;
+
+/* The date this text last changed. Explicit rather than git-derived, because
+   a policy's date is a statement about the policy and not about the file. */
+const updated = '2026-09-27';
+
+const answer =
+  'This page explains what Sasquatch Pest Control collects when you use this website, who processes it, and how to ask us to delete it. In short: we collect what you type into our contact form, basic usage statistics through Google Analytics, and standard server logs. We do not sell your information, and we do not share it for advertising.';
+---
+<BaseLayout
+  path={path}
+  title="Privacy Policy"
+  description="What Sasquatch Pest Control collects through this website, who processes it, how long we keep it, and how to ask us to delete it."
+  kind="page"
+  dateModified={updated}
+  leadForm={false}
+>
+  <h1>Privacy Policy</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>What we collect</h2>
+
+    <p>
+      <strong>What you send us.</strong> The form on this site asks for your
+      name, phone number and email address, and gives you a box to describe
+      the problem. If you call or text <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, we have your number
+      and whatever you tell us. If you email <a href={`mailto:${business.email}`}>{business.email}</a>, we have your
+      email address and your message.
+    </p>
+
+    <p>
+      <strong>How the site is used.</strong> Google Analytics records that a
+      page was viewed, roughly where in the world the visitor was, what kind
+      of device they used, and which site sent them. It also records when
+      somebody taps a phone number on this site, so we can tell which pages
+      lead to calls. We do not see who you are from this — it is counts, not
+      names.
+    </p>
+
+    <p>
+      <strong>Server logs.</strong> Our host records the ordinary details of
+      every request: the page, the time, the browser, the IP address. This is
+      how every website on the internet works, and it is how a host handles
+      abuse and outages.
+    </p>
+
+    <h2>Who else handles it</h2>
+
+    <p>
+      Four companies touch data from this site, and each one does a specific
+      job:
+    </p>
+
+    <ul>
+      <li>
+        <strong>GoHighLevel</strong> runs our contact form and holds the
+        enquiries that come through it. The form is theirs, embedded in our
+        page, so what you type goes to them and then to us.
+      </li>
+      <li>
+        <strong>Google</strong> provides Analytics, described above.
+      </li>
+      <li>
+        <strong>Vercel</strong> hosts the site and keeps the request logs.
+      </li>
+      <li>
+        <strong>YouTube</strong> appears only on pages with a film, and only
+        after you click the picture to start it. Until you click, nothing is
+        loaded from YouTube and it does not know you were here. We use their
+        no-cookie player.
+      </li>
+    </ul>
+
+    <h2>Phone calls and text messages</h2>
+
+    <p>
+      If you give us your phone number, we use it to answer you and to arrange
+      and confirm service. That may be a call or a text, whichever suits.
+    </p>
+
+    <p>
+      We do not send marketing texts, and we do not sell or share your number
+      with anyone who wants to. If we ever text you and you would rather we
+      did not, reply <strong>STOP</strong> and we will stop. Reply
+      <strong>HELP</strong> if you need to reach us about it. Your carrier may
+      charge for messages.
+    </p>
+
+    <h2>Cookies</h2>
+
+    <p>
+      Google Analytics sets cookies to tell one visit from another. Nothing
+      else on this site sets one — there is no advertising network here, no
+      tracking pixel, and no session cookie, because the site has nothing to
+      log into.
+    </p>
+
+    <p>
+      You can refuse cookies in your browser settings, or install Google's own
+      <a href="https://tools.google.com/dlpage/gaoptout" rel="nofollow noopener">opt-out add-on</a>.
+      The site works normally either way.
+    </p>
+
+    <h2>How long we keep it</h2>
+
+    <p>
+      Enquiries that do not become jobs are kept while they are still useful
+      to follow up, and then deleted. Records for work we have actually done
+      are kept for as long as Washington requires a commercial pesticide
+      applicator to keep application records, and for as long as we need them
+      to honour the guarantee on that work. Analytics data is kept for
+      fourteen months and then aggregated.
+    </p>
+
+    <h2>What we do not do</h2>
+
+    <p>
+      We do not sell your information. We do not trade or rent it to other
+      companies, we do not share it with advertisers, and we do not pass it to
+      other pest control companies as a lead. The only time your details leave
+      the companies named above is if the law requires it.
+    </p>
+
+    <h2>Asking us to delete your information</h2>
+
+    <p>
+      Email <a href={`mailto:${business.email}`}>{business.email}</a> or call <a href={`tel:${business.phoneE164}`}>{business.phone}</a> and ask. Tell us the name
+      and number you used so we can find you. We will delete what we are not
+      required to keep, and tell you plainly what we have to hold on to and
+      why.
+    </p>
+
+    <p>
+      You can also ask us what we hold about you, and we will send it to you.
+    </p>
+
+    <h2>Children</h2>
+
+    <p>
+      This is a business site for homeowners and property managers. It is not
+      directed at children, and we do not knowingly collect anything from
+      anyone under thirteen. If you believe a child has sent us something, call
+      and we will delete it.
+    </p>
+
+    <h2>Changes to this page</h2>
+
+    <p>
+      If what we do changes, this page changes with it, and the date at the
+      bottom moves. We do not quietly rewrite it.
+    </p>
+
+    <h2>Who to contact</h2>
+
+    <p>
+      Sasquatch Pest Control L.L.C.<br />
+      {a.street}<br />
+      {a.locality}, {a.region} {a.postalCode}<br />
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a><br />
+      <a href={`mailto:${business.email}`}>{business.email}</a>
+    </p>
+  </div>
+</BaseLayout>

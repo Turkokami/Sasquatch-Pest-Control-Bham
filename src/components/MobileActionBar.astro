@@ -60,7 +60,11 @@ const label = offerLabelShort(freeInspectionForPath(path), lang);
    /trusted-partners/ left the set on 11 Sep 2026, when BaseLayout began
    rendering the form at the foot of every page: it has one now. /network/
    stays out, and passes leadForm={false} to the layout on purpose. */
-const NO_FORM = new Set(['/network/']);
+/* The two privacy pages joined on 27 Sep 2026. They pass leadForm={false}
+   deliberately: a page explaining what happens to the details you hand over
+   is the one page that should not also be asking for them. The bar still
+   offers the form — it just sends the reader to /contact/ for it. */
+const NO_FORM = new Set(['/network/', '/privacy/', '/es/privacidad/']);
 const hasFormOnPage = !NO_FORM.has(path);
 const contactPath = lang === 'es' ? '/es/contacto/' : '/contact/';
 const formHref = hasFormOnPage ? `#${LEAD_FORM_ID}` : `${contactPath}#${LEAD_FORM_ID}`;

@@ -1,0 +1,181 @@
+---
+/**
+ * POLÍTICA DE PRIVACIDAD — el espejo en español de /privacy/.
+ *
+ * Existe porque el sitio se declara es-US y publica cincuenta páginas en
+ * español: una política que solo existe en inglés le dice al lector en
+ * español que las reglas no son para él. Se traduce el contenido completo, no
+ * un resumen — una política abreviada es una política distinta.
+ *
+ * Las advertencias de /privacy/ valen igual aquí: los procesadores nombrados
+ * se verificaron en este repositorio, GorillaDesk y Pest AI no aparecen y por
+ * eso no se nombran, y el periodo de conservación no inventa una cifra.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import { business } from '../../data/business';
+
+const path = '/es/privacidad/';
+const a = business.address;
+const updated = '2026-09-27';
+
+const answer =
+  'Esta página explica qué recoge Sasquatch Pest Control cuando usted usa este sitio web, quién procesa esa información y cómo pedirnos que la borremos. En resumen: recogemos lo que usted escribe en nuestro formulario de contacto, estadísticas básicas de uso a través de Google Analytics y registros normales del servidor. No vendemos su información y no la compartimos para publicidad.';
+---
+<BaseLayout
+  path={path}
+  lang="es"
+  altPath="/privacy/"
+  title="Política de privacidad"
+  description="Qué recoge Sasquatch Pest Control a través de este sitio web, quién lo procesa, cuánto tiempo lo guardamos y cómo pedir que lo borremos."
+  kind="page"
+  dateModified={updated}
+  leadForm={false}
+>
+  <h1>Política de privacidad</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Qué recogemos</h2>
+
+    <p>
+      <strong>Lo que usted nos envía.</strong> El formulario de este sitio pide
+      su nombre, su teléfono y su correo electrónico, y le da un espacio para
+      describir el problema. Si llama o manda un mensaje de texto al
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, tenemos su número y lo que nos cuente. Si escribe a
+      <a href={`mailto:${business.email}`}>{business.email}</a>, tenemos su correo y su mensaje.
+    </p>
+
+    <p>
+      <strong>Cómo se usa el sitio.</strong> Google Analytics registra que se
+      vio una página, más o menos desde qué parte del mundo, con qué tipo de
+      aparato y qué sitio lo mandó aquí. También registra cuándo alguien toca
+      un número de teléfono en este sitio, para saber qué páginas producen
+      llamadas. Eso no nos dice quién es usted — son conteos, no nombres.
+    </p>
+
+    <p>
+      <strong>Registros del servidor.</strong> Nuestro proveedor guarda los
+      datos normales de cada visita: la página, la hora, el navegador y la
+      dirección IP. Así funciona cualquier sitio web, y así se atienden los
+      abusos y las fallas.
+    </p>
+
+    <h2>Quién más maneja esta información</h2>
+
+    <p>Cuatro empresas tocan datos de este sitio, cada una con un trabajo concreto:</p>
+
+    <ul>
+      <li>
+        <strong>GoHighLevel</strong> opera nuestro formulario de contacto y
+        guarda las solicitudes que llegan por ahí. El formulario es de ellos,
+        insertado en nuestra página, así que lo que usted escribe pasa por
+        ellos y luego llega a nosotros.
+      </li>
+      <li><strong>Google</strong> provee Analytics, descrito arriba.</li>
+      <li>
+        <strong>Vercel</strong> aloja el sitio y guarda los registros de
+        visitas.
+      </li>
+      <li>
+        <strong>YouTube</strong> aparece solo en páginas con video, y solo
+        después de que usted hace clic en la imagen para verlo. Hasta ese
+        momento no se carga nada de YouTube y YouTube no sabe que usted estuvo
+        aquí. Usamos su reproductor sin cookies.
+      </li>
+    </ul>
+
+    <h2>Llamadas y mensajes de texto</h2>
+
+    <p>
+      Si usted nos da su número, lo usamos para contestarle y para coordinar y
+      confirmar el servicio. Puede ser por llamada o por mensaje, lo que le
+      sirva mejor.
+    </p>
+
+    <p>
+      No mandamos mensajes de publicidad, y no vendemos ni compartimos su
+      número con nadie que quiera hacerlo. Si alguna vez le mandamos un mensaje
+      y prefiere que no, conteste <strong>STOP</strong> y dejamos de hacerlo.
+      Conteste <strong>HELP</strong> si necesita comunicarse con nosotros por
+      ese motivo. Su compañía telefónica puede cobrarle por los mensajes.
+    </p>
+
+    <h2>Cookies</h2>
+
+    <p>
+      Google Analytics usa cookies para distinguir una visita de otra. Nada más
+      en este sitio pone una: no hay red de publicidad, no hay píxel de
+      rastreo y no hay cookie de sesión, porque el sitio no tiene dónde
+      iniciar sesión.
+    </p>
+
+    <p>
+      Usted puede rechazar las cookies en la configuración de su navegador, o
+      instalar el
+      <a href="https://tools.google.com/dlpage/gaoptout" rel="nofollow noopener">complemento de exclusión</a>
+      del propio Google. El sitio funciona igual de las dos maneras.
+    </p>
+
+    <h2>Cuánto tiempo lo guardamos</h2>
+
+    <p>
+      Las solicitudes que no se convierten en trabajo se guardan mientras
+      todavía sirven para dar seguimiento, y después se borran. Los registros
+      del trabajo que sí hicimos se guardan durante el tiempo que Washington
+      exige que un aplicador comercial conserve los registros de aplicación, y
+      durante el tiempo que los necesitemos para responder por la garantía de
+      ese trabajo. Los datos de Analytics se guardan catorce meses y después se
+      agregan.
+    </p>
+
+    <h2>Lo que no hacemos</h2>
+
+    <p>
+      No vendemos su información. No la intercambiamos ni la rentamos a otras
+      empresas, no la compartimos con anunciantes y no la pasamos a otras
+      compañías de control de plagas como contacto de venta. Sus datos solo
+      salen de las empresas nombradas arriba si la ley lo exige.
+    </p>
+
+    <h2>Cómo pedir que borremos su información</h2>
+
+    <p>
+      Escriba a <a href={`mailto:${business.email}`}>{business.email}</a> o llame al <a href={`tel:${business.phoneE164}`}>{business.phone}</a> y pídalo. Díganos
+      el nombre y el número que usó para poder encontrarlo. Borramos lo que no
+      estemos obligados a conservar, y le decimos con claridad qué tenemos que
+      guardar y por qué.
+    </p>
+
+    <p>
+      También puede pedirnos qué información tenemos sobre usted, y se la
+      mandamos.
+    </p>
+
+    <h2>Menores</h2>
+
+    <p>
+      Este es un sitio de negocio para dueños de casa y administradores de
+      propiedades. No está dirigido a menores y no recogemos a sabiendas
+      información de nadie menor de trece años. Si cree que un menor nos mandó
+      algo, llámenos y lo borramos.
+    </p>
+
+    <h2>Cambios en esta página</h2>
+
+    <p>
+      Si cambia lo que hacemos, esta página cambia con ello y la fecha de abajo
+      se mueve. No la reescribimos en silencio.
+    </p>
+
+    <h2>A quién contactar</h2>
+
+    <p>
+      Sasquatch Pest Control L.L.C.<br />
+      {a.street}<br />
+      {a.locality}, {a.region} {a.postalCode}<br />
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a><br />
+      <a href={`mailto:${business.email}`}>{business.email}</a>
+    </p>
+  </div>
+</BaseLayout>

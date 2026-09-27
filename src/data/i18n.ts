@@ -98,6 +98,7 @@ export const PAGE_PAIRS: Record<string, string> = {
   '/awards/': '/es/premios/',
   '/trusted-partners/': '/es/socios-de-confianza/',
   '/our-guarantee/': '/es/garantia/',
+  '/privacy/': '/es/privacidad/',
   '/about/': '/es/nosotros/',
   '/contact/': '/es/contacto/',
 };
