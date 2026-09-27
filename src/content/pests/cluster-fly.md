@@ -421,3 +421,19 @@ the whole job on all of them, is [fly control](/services/fly-control/). The
 sealing itself is [exclusion and repairs](/services/exclusion-and-repairs/), and
 the other insects using the same gaps on the same schedule are covered under
 [stink bug control](/services/stink-bug-control/).
+
+## Getting ahead of next autumn
+
+Cluster flies are a timing problem more than a treatment problem. The gaps
+they use are open all year and the flies only care about them for about three
+weeks, so the work that counts — sealing, and an exterior application on the
+sunny elevations before the first cold snap — has to be done months before
+anybody notices a fly.
+
+That is difficult to remember and easy to miss by a fortnight, which is why it
+sits inside our [Year-Round Home Protection
+Plan](/services/home-protection-plan/) rather than being sold as an autumn
+call-out. If flies in the upstairs windows are the only pest you ever see, a
+single sealing job is the better buy and the plan is not for you. We would
+rather establish which it is before you spend anything, so the first visit is
+free — [book a look](/contact/) and we will walk the elevations with you.

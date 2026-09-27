@@ -419,3 +419,20 @@ the numbers bother you. And if what you actually have is a broad mottled shield
 with white-banded antennae, read the [brown marmorated stink
 bug](/pest-library/brown-marmorated-stink-bug/) page instead, because that one has
 somewhere to be reported.
+
+## If you would rather not meet them at all
+
+Nothing on this page is urgent. A seed bug is a large, slow, harmless insect
+that wandered in through a gap, and vacuuming it is a complete response.
+
+The gap is the part worth attention, and not because of this insect. The same
+quarter-inch under a window that admits a seed bug in October admits the
+beetles and flies that arrive on the same schedule, and the ants that come
+looking in spring. Closing it once is [exclusion and
+repairs](/services/exclusion-and-repairs/); keeping the outside of a building
+under steady attention, with the timing handled for you, is our [Year-Round
+Home Protection Plan](/services/home-protection-plan/).
+
+For one bug a week on a windowsill, neither is necessary, and we would rather
+say that than sell you something. If the numbers are past that,
+[ask us to take a look](/contact/) — the assessment costs nothing.

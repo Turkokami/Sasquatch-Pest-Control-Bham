@@ -439,3 +439,20 @@ it does smell, so use a vacuum.
 The insect matters — genuinely, and more than most things in this library — but it
 matters to a berry field rather than to your drywall. Photograph one for WSU,
 vacuum the rest, and call somebody in August about the gaps.
+
+## About that call in August
+
+The sentence above is the whole strategy and it is the one people act on in
+November, which is six weeks past useful. If your house took them in last
+autumn it will take them in again, because nothing about the house changed.
+
+Two ways to handle it. Book the sealing on its own as
+[exclusion and repairs](/services/exclusion-and-repairs/) — that is the
+permanent half and it is a fine thing to buy once. Or, if this house also
+produces ants in spring and wasps in midsummer, put the late-summer exterior
+work on a schedule with our [Year-Round Home Protection
+Plan](/services/home-protection-plan/), which times each visit to the month
+that matters for each pest instead of to even quarters.
+
+We will tell you which one fits after looking at the building, and looking is
+free. [Get in touch](/contact/) before the weather turns rather than after.

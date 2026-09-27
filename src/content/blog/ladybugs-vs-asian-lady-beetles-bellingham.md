@@ -71,6 +71,10 @@ It's a fair concern, and it's part of why we favor exclusion over broad spraying
 
 If you're seeing large clusters year after year, if beetles are working their way into living spaces from inside the walls, or if you can't pin down all the entry points on a two-story home, it's worth a call. A thorough exclusion job seals a lot of hard-to-reach gaps, and getting all of them is what turns a beetle-filled fall into a quiet one. We come out and take a look, work on sealing the building envelope, and apply targeted exterior treatment only where it makes sense.
 
+Year after year is the phrase that matters there. A single bad autumn is worth one visit and some sealing. A wall that fills up every October is telling you the property sits somewhere these beetles like, and that does not change by itself — the same gaps take in cluster flies, boxelder bugs and stink bugs on roughly the same schedule, and the exterior work that helps has a window of about two weeks that moves with the weather rather than the calendar.
+
+That is what our [Year-Round Home Protection Plan](/services/home-protection-plan/) is for: the timing is our problem instead of yours, and anything covered that turns up between visits brings us back at no extra charge. It is not the right purchase for everybody, and if one round of sealing would settle it we will tell you so rather than put you on a schedule. The visit where we work that out is free — [call or text 360-410-2199](tel:+13604102199) and we will look at the walls before you spend anything.
+
 ## Common questions
 
 ### How can I tell an Asian lady beetle from a real ladybug?

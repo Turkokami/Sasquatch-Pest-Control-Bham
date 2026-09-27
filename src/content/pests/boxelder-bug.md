@@ -425,3 +425,17 @@ biting. They stain, so use a vacuum rather than your hand.
 
 The one thing that changes next winter is closing the gaps in late summer, and the
 one thing we would talk you out of is cutting down a maple to solve it.
+
+## When it is worth having somebody else do it
+
+Boxelder bugs rarely justify a visit on their own. Where they start to is when
+they are the third thing on the same wall — bugs in October, ants in April,
+wasps under the eave in July — because at that point you are not solving one
+problem repeatedly, you are managing a property with steady outdoor pressure.
+
+Our [Year-Round Home Protection Plan](/services/home-protection-plan/) exists
+for that shape of problem, with the exterior work timed to when each of those
+actually happens here. For a single autumn crowd on a single wall it is the
+wrong purchase and we will tell you so. Worth a phone call either way: the
+visit to work out which it is is free, and it is a short conversation. Reach
+us on [360-410-2199](tel:+13604102199).

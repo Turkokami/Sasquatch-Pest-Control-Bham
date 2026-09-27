@@ -343,3 +343,19 @@ calendar. The trigger is the first run of cold nights followed by a warm, still
 afternoon, which is when the beetles gather on sunlit walls in numbers. Treat
 before that and the residual has weathered; treat after it and most of the
 population is already in the building.
+
+## If it happens every year
+
+A wall that gathers beetles once is an event. A wall that gathers them every
+October is a property in a place they like, and that does not change on its
+own. Sealing is still the durable half — it is the only thing that reduces
+next year's numbers rather than this year's — but the timing above is the part
+homeowners almost never catch, because it depends on a forecast rather than a
+date.
+
+That is the case our [Year-Round Home Protection
+Plan](/services/home-protection-plan/) is built for: the exterior visit lands
+in the window rather than in the month, and anything that gets past it between
+visits is covered. If your pressure is a one-off, it is not worth buying, and
+we will say so. Either way the first look costs nothing —
+[call or text us](/contact/) and we will tell you which of the two you have.

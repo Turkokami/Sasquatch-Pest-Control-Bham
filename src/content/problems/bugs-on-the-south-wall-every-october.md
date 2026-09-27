@@ -404,3 +404,11 @@ structure.
 Assessment is free, there is no term agreement, and if you call in December we
 will tell you plainly that the useful treatment window has passed, what to do in
 the meantime, and when to call back.
+
+Where the wall does this every single year, the sealing is the permanent half
+and the timing is the half that keeps slipping. Both sit inside our
+[Year-Round Home Protection Plan](/services/home-protection-plan/), which puts
+the late-summer exterior visit on the calendar so it is not something you have
+to remember on the right warm afternoon. It is the right purchase for a
+property with steady outside pressure and the wrong one for a single bad
+autumn, and after a look at the building we will tell you which yours is.
