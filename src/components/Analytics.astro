@@ -1,0 +1,132 @@
+---
+/**
+ * GOOGLE ANALYTICS 4 — installed 27 Sep 2026, owner-supplied property.
+ *
+ * The post-launch audit's finding was blunt and correct: nothing on this site
+ * was measured. 438 pages, a phone number, a form, and no way to answer which
+ * page produced a call. Analytics cannot be backfilled — it starts the day it
+ * is installed — so every day without it was launch data gone for good.
+ *
+ * WHAT IS MEASURED, and it is deliberately narrow:
+ *
+ *   call_click   a tap on any tel: link, anywhere on the site, with the page
+ *                it happened on. This is the conversion for this trade. Most
+ *                customers phone; the form is the minority path.
+ *   form_view    the lead form scrolled into view. NOT a submission — see the
+ *                honest limit below.
+ *   listen_start somebody pressed "Listen to this page". Cheap to record and
+ *                the only way to learn whether that feature earns its place.
+ *
+ * THE FORM SUBMISSION IS NOT TRACKED HERE, and pretending otherwise would be
+ * worse than the gap. The form is a GoHighLevel iframe on another origin;
+ * this page cannot see inside it, and a "submit" event fired from out here
+ * would be a guess. Real submission tracking is configured GHL-side. What
+ * this does record is that the form was seen, which at least gives the
+ * denominator.
+ *
+ * WHY THE SCRIPT IS async AND LAST. This site measures 99/100 with 0ms of
+ * blocking time, and gtag.js is roughly 90KB of third-party JavaScript — the
+ * single heaviest thing that has ever been added to these pages. async means
+ * it never blocks parsing or painting, and the tag sits at the end of body so
+ * it is queued after everything a reader is waiting for. The measurement is
+ * worth some cost; it is not worth the number the whole performance section
+ * of this stylesheet exists to protect. Re-run the lab gate after changing
+ * anything here.
+ *
+ * NOT LOADED IN DEVELOPMENT. A local build hitting the production property
+ * would pollute the owner's data with our own page views — which is the same
+ * reason GA4's "internal traffic" exclusion exists and is on the setup list.
+ *
+ * IP anonymization is not configured because GA4 does it by default and always
+ * — there is no switch, unlike Universal Analytics. Recorded so nobody adds a
+ * dead parameter believing it does something.
+ */
+import { business } from '../data/business';
+
+const id = business.ga4;
+/* import.meta.env.PROD is false for `astro dev`, true for `astro build`. */
+const enabled = Boolean(id) && import.meta.env.PROD;
+---
+{enabled && (
+  <>
+    <script is:inline define:vars={{ id }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', id);
+
+      /* THE TAG IS FETCHED AFTER THE PAGE HAS LOADED, and this was measured
+         rather than assumed. With the ordinary async snippet — the one Google
+         hands you — the same build scored:
+
+              without gtag   98    LCP 2.41s   TBT 0ms
+              with gtag      94    LCP 3.08s   TBT 23ms
+
+         async means it does not BLOCK, but it is still fetched immediately on
+         discovery, so 90KB of it competes with the hero image and the fonts
+         for a throttled connection. Four points and two thirds of a second of
+         Largest Contentful Paint, paid by every visitor, to measure the
+         visit.
+
+         Waiting for `load` puts the fetch after everything a reader is
+         waiting for, so it competes with nothing. requestIdleCallback then
+         waits for a gap in the main thread, with a timeout so it cannot be
+         postponed forever on a busy page.
+
+         WHAT THIS COSTS, stated plainly: somebody who opens a page and leaves
+         before `load` fires is not counted. On a site that paints in about a
+         second that is a small slice, and undercounting the very shortest
+         visits is a better trade than making every visit slower. Events fired
+         before the tag arrives are NOT lost — dataLayer above queues them and
+         gtag.js drains the queue when it loads. */
+      (() => {
+        const fetchTag = () => {
+          const s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+          document.head.appendChild(s);
+        };
+        const whenIdle = () =>
+          'requestIdleCallback' in window
+            ? requestIdleCallback(fetchTag, { timeout: 3000 })
+            : setTimeout(fetchTag, 1200);
+        if (document.readyState === 'complete') whenIdle();
+        else window.addEventListener('load', whenIdle, { once: true });
+      })();
+
+      (() => {
+        /* One delegated listener rather than one per link: a page can carry a
+           dozen tel: links (masthead, sticky bar, CTA, footer) and binding
+           each would be a dozen listeners for one event. */
+        document.addEventListener('click', (e) => {
+          const a = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
+          if (!a) return;
+          gtag('event', 'call_click', {
+            page_path: location.pathname,
+            link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80),
+          });
+        }, { passive: true });
+
+        document.addEventListener('click', (e) => {
+          const b = e.target && e.target.closest && e.target.closest('[data-listen-play]');
+          if (b) gtag('event', 'listen_start', { page_path: location.pathname });
+        }, { passive: true });
+
+        /* Fires once, when the form is actually on screen. An IntersectionObserver
+           rather than a scroll handler, because this runs on every page. */
+        const form = document.getElementById('lead-form');
+        if (form && 'IntersectionObserver' in window) {
+          const io = new IntersectionObserver((entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              gtag('event', 'form_view', { page_path: location.pathname });
+              io.disconnect();
+            }
+          }, { threshold: 0.3 });
+          io.observe(form);
+        }
+      })();
+    </script>
+  </>
+)}

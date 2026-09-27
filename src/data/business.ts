@@ -39,6 +39,19 @@ export const SITE = 'https://www.sasquatchpestcontrol.com' as const;
 
 export const business = {
   name: 'Sasquatch Pest Control',
+  /**
+   * The GA4 Measurement ID, supplied by the owner 27 Sep 2026.
+   *
+   * NOT A SECRET, and it does not belong in an environment variable: gtag
+   * publishes it in the page source of every site that uses it, so hiding it
+   * here would buy nothing and cost the ability to see what is deployed by
+   * reading the repo. Real secrets — the GHL keys, the database URL — live in
+   * the host's environment and are not in this file either.
+   *
+   * Consumed by src/components/Analytics.astro, which loads nothing in
+   * development. Empty string switches analytics off site-wide.
+   */
+  ga4: 'G-L1268CMD4H',
   /* The registered entity name, exactly as the state Business License spells
      it — periods and all. `name` above stays the trading name; this is what
      goes in the schema `legalName` and on anything contractual. */

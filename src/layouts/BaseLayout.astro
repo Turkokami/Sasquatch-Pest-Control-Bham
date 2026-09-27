@@ -51,6 +51,7 @@ import MobileActionBar from '../components/MobileActionBar.astro';
 import LeadForm from '../components/LeadForm.astro';
 import ListenButton from '../components/ListenButton.astro';
 import BackToTop from '../components/BackToTop.astro';
+import Analytics from '../components/Analytics.astro';
 import CONTENT_DATES from '../data/content-dates.json';
 
 /* `guideTopics` is Omitted as well as title/description: it is not a page's
@@ -292,5 +293,9 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
         reader is far enough down for it to mean something, and placed after
         the action bar so it sits clear of it on a phone. */}
     <BackToTop />
+    {/* Last thing on the page, deliberately — see Analytics.astro. It is
+        third-party JavaScript on a site that measures 99/100, so it loads
+        async and queues behind everything a reader is waiting for. */}
+    <Analytics />
   </body>
 </html>
