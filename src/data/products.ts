@@ -99,7 +99,12 @@ export const products: PesticideProduct[] = [
   { slug: 'resolv-soft-bait', name: 'Resolv Soft Bait', epaReg: '7173-297', actives: ['Bromadiolone'], kind: 'Rodenticide', target: 'Rats and mice', label: '/docs/products/resolv-soft-bait-label.pdf', sds: '/docs/products/resolv-soft-bait-sds.pdf', retired: false },
   { slug: 'contrac-all-weather-blox', name: 'Contrac All-Weather Blox', epaReg: null, actives: ['Bromadiolone'], kind: 'Rodenticide', target: 'Rats and mice', label: '/docs/products/contrac-all-weather-blox-label.pdf', sds: '/docs/products/contrac-all-weather-blox-sds.pdf', retired: false },
   { slug: 'maki-mini-bait-blocks', name: 'Maki Mini Bait Blocks', epaReg: null, actives: ['Bromadiolone'], kind: 'Rodenticide', target: 'Rats and mice', label: '/docs/products/maki-mini-bait-blocks-label.pdf', sds: '/docs/products/maki-mini-bait-blocks-sds.pdf', retired: false },
-  { slug: 'victor-mole-gopher-repellent', name: 'Victor Mole & Gopher Repellent', epaReg: null, actives: ['Castor oil'], kind: 'Repellent', target: 'Moles and gophers', label: null, sds: '/docs/products/victor-mole-gopher-repellent-sds.pdf', retired: false },
+  /* RETIRED 27 Sep 2026, from the post-launch audit. Listing a mole and
+     gopher repellent on /what-we-use/ tells a reader we treat moles, which
+     contradicts /services/ — where "Why we won't sell you mole trapping"
+     explains the Washington trap law and refuses the work. A product list is
+     a claim about what we do. */
+  { slug: 'victor-mole-gopher-repellent', name: 'Victor Mole & Gopher Repellent', epaReg: null, actives: ['Castor oil'], kind: 'Repellent', target: 'Moles and gophers', label: null, sds: '/docs/products/victor-mole-gopher-repellent-sds.pdf', retired: true },
   { slug: 'cb-80', name: 'CB-80 Insecticide', epaReg: '279-3393', actives: ['Pyrethrins', 'Piperonyl butoxide'], kind: 'Aerosol', target: 'Flushing and contact', label: '/docs/products/cb-80-label.pdf', sds: '/docs/products/cb-80-sds.pdf', retired: false },
   { slug: 'bifen-lp-granules', name: 'Bifen LP Insecticide Granules', epaReg: '53883-124', actives: ['Bifenthrin'], kind: 'Granule', target: 'Lawn and landscape insects', label: '/docs/products/bifen-lp-granules-label.pdf', sds: null, retired: false },
   { slug: 'cb-80-extra', name: 'CB-80 Extra', epaReg: '9444-175', actives: ['Pyrethrins', 'Piperonyl butoxide'], kind: 'Aerosol', target: 'Flushing and contact', label: '/docs/products/cb-80-extra-label.pdf', sds: '/docs/products/cb-80-extra-sds.pdf', retired: true },

@@ -537,6 +537,11 @@
       "permanent": true
     },
     {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
       "source": "/meridian-bellingham-wa-pest-control/",
       "destination": "/locations/bellingham/",
       "permanent": true

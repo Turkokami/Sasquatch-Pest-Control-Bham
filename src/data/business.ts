@@ -149,9 +149,22 @@ export const business = {
    * what a map surface reads to place a pin. */
   geo: { lat: 48.824214 as Owed<number>, lng: -122.486571 as Owed<number> },
 
+  /* SUNDAY OPENS AT TEN, not at eight. Corrected 27 Sep 2026 from the
+     post-launch audit: Saturday and Sunday were merged into one row here, so
+     every page, /contact/ and the openingHoursSpecification in the schema all
+     published an 8 AM Sunday opening. Somebody calling at half past eight on
+     a Sunday got no answer, and Google cross-checks published hours against
+     the Business Profile.
+
+     THIS IS THE ONLY PLACE HOURS ARE WRITTEN. They used to be typed again as
+     English and Spanish sentences in the footer, on both contact pages and on
+     the Spanish home page — five copies, none of which moved when this one
+     did, which is exactly how the wrong Sunday survived. Everything that
+     prints hours now formats them from this array (src/lib/hours.ts). */
   hours: [
     { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], open: '08:00', close: '18:00' },
-    { days: ['Saturday', 'Sunday'], open: '08:00', close: '16:00' },
+    { days: ['Saturday'], open: '08:00', close: '16:00' },
+    { days: ['Sunday'], open: '10:00', close: '16:00' },
   ],
 
   /* ---------------------------------------------------------------- *

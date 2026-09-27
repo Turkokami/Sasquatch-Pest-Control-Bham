@@ -36,11 +36,16 @@ const title = person && isReady(person.jobTitle as string | '__PENDING__')
 
    .expert was already display:flex with a gap and a single child. It was
    built for this. */
+/* THE id ON THE <aside> IS WHAT MAKES THIS PERSON'S SCHEMA @id RESOLVE.
+   Their Person node is anchored at /about/#<slug> (src/lib/schema.ts). An @id
+   is allowed to be opaque, but once it is shaped like a URL a consumer may
+   fetch it — and until 27 Sep 2026 every one of them landed on a 404, because
+   they pointed at /kristofer-elling/ and pages like that were never built. */
 const portrait = person && 'portrait' in person ? (person.portrait as string) : null;
 const psize = portrait ? intrinsicSize(portrait) : null;
 ---
 {show && person && (
-  <aside class="expert" data-boilerplate>
+  <aside class="expert" id={person.slug} data-boilerplate>
     {portrait && psize && (
       /* The alt names the person and their role rather than describing the
          photograph. A screen reader reaching this hears who it is, which is

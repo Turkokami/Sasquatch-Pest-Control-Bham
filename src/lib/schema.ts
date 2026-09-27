@@ -52,8 +52,18 @@ export const ID = {
   /** A video embedded on a page. Anchored to the page it plays on, because
       the same film could appear on two pages and each needs its own node. */
   video: (path: string) => `${SITE}${path}#video`,
-  person: (slug: string) => `${SITE}/${slug}/#person`,
-  credential: (slug: string) => `${SITE}/${slug}/#credential`,
+  /* ANCHORED WHERE THE PERSON ACTUALLY IS. These were `${SITE}/${slug}/#person`
+     — /kristofer-elling/#person — and no such page exists, so the post-launch
+     audit found every Person and credential @id resolving to a 404. An @id is
+     allowed to be an opaque identifier, but once it is shaped like a URL a
+     consumer may fetch it, and handing it a 404 is worse than saying nothing.
+     /about/ renders every publishable person through ExpertBlock, which now
+     carries id={slug}, so these land on the block they describe.
+
+     If per-person bio pages are ever built, move these back — that is the
+     stronger E-E-A-T answer. This is the honest one available today. */
+  person: (slug: string) => `${SITE}/about/#${slug}`,
+  credential: (slug: string) => `${SITE}/about/#${slug}-credential`,
   /** The subject of a location page — the town or neighborhood itself. */
   place: (path: string) => `${SITE}${path}#place`,
   /** The sitewide catalog of what this company sells. */

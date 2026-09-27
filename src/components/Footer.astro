@@ -5,6 +5,7 @@ import { writtenTowns } from '../lib/geo-content';
 import { PAGE_PAIRS } from '../data/i18n';
 import { esServicios } from '../data/es-servicios';
 import SocialIcon from './SocialIcon.astro';
+import { hoursLines } from '../lib/hours';
 
 interface Props {
   lang?: 'en' | 'es';
@@ -169,8 +170,9 @@ const colophon = COLOPHON.flatMap((c) => {
       <div>
         <h3>{es ? 'Horario' : 'Hours'}</h3>
         <ul>
-          <li>{es ? 'Lun–Vie: 8:00 a. m. – 6:00 p. m.' : 'Mon–Fri: 8:00 AM – 6:00 PM'}</li>
-          <li>{es ? 'Sáb–Dom: 8:00 a. m. – 4:00 p. m.' : 'Sat–Sun: 8:00 AM – 4:00 PM'}</li>
+          {/* Formatted from business.hours — see src/lib/hours.ts for why
+              these are not typed out here any more. */}
+          {hoursLines(es ? 'es' : 'en').map((line) => <li>{line}</li>)}
         </ul>
       </div>
       {/* FOLLOW US — owner, 22 Sep 2026: "we need to give links to all our

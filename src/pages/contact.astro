@@ -5,6 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import AnswerBox from '../components/AnswerBox.astro';
 import LeadForm from '../components/LeadForm.astro';
 import { business, isReady } from '../data/business';
+import { hoursLinesLong } from '../lib/hours';
 
 const path = '/contact/';
 const a = business.address;
@@ -51,7 +52,7 @@ const inlinePhotos = inlinePhotosFor('/contact/');
   {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} />}
 
     <h2>Business hours</h2>
-    <p>Monday–Friday: 8:00 AM – 6:00 PM<br />Saturday–Sunday: 8:00 AM – 4:00 PM</p>
+    <p>{hoursLinesLong('en').map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>
 
   </div>
 </BaseLayout>

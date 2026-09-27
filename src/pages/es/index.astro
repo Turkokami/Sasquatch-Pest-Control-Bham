@@ -9,6 +9,7 @@ import { business, isReady } from '../../data/business';
 import { t } from '../../data/i18n';
 import { esServicios } from '../../data/es-servicios';
 import { esLugares, esPathOf } from '../../data/es-areas';
+import { hoursSentence } from '../../lib/hours';
 
 /* Los menús de arriba (QuickNav): los servicios con página en español y los
    pueblos con página en español, sin los barrios. */
@@ -168,10 +169,8 @@ const inlinePhotos = inlinePhotosForEs('/es/');
     <p>
       {a.street}<br />{a.locality}, {a.region} {a.postalCode}
     </p>
-    <p>
-      Horario: lunes a viernes de 8:00 a. m. a 6:00 p. m.; sábado y domingo de
-      8:00 a. m. a 4:00 p. m.
-    </p>
+    {/* No trailing period: the sentence already ends in "p. m." */}
+    <p>Horario: {hoursSentence('es')}</p>
 
     <div data-boilerplate>
     <h2>Pida una inspección</h2>

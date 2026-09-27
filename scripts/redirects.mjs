@@ -101,6 +101,11 @@ redirects.push(
   { from: '/blaine-wa/', to: '/locations/blaine/', code: 301 },
   { from: '/blaine-wa-pest-control/', to: '/locations/blaine/', code: 301 },
   { from: '/guarantee/', to: '/our-guarantee/', code: 301 },
+  /* The old Yoast sitemap index. Google has crawled /sitemap_index.xml for
+     years and it 404s on the new site; the post-launch audit flagged it on
+     27 Sep 2026. Pointing it at the real sitemap index keeps that crawl path
+     alive instead of teaching Googlebot that a known-good URL is now gone. */
+  { from: '/sitemap_index.xml', to: '/sitemap.xml', code: 301 },
 );
 
 /* PATH COLLISION — deliberate, not a redirect.
@@ -265,9 +270,14 @@ if (fs.existsSync(dist)) {
   const deadTargets = [];
   for (const r of redirects) {
     const clean = r.to.split('?')[0];
+    /* A target with a file extension is a FILE, not a page directory.
+       /sitemap.xml lives at dist/sitemap.xml, not dist/sitemap.xml/index.html,
+       and resolving it the page way reported a live file as a dead target. */
     const file = clean === '/'
       ? path.join(dist, 'index.html')
-      : path.join(dist, clean.replace(/^\/|\/$/g, ''), 'index.html');
+      : /\.[a-z0-9]+$/i.test(clean)
+        ? path.join(dist, clean.replace(/^\//, ''))
+        : path.join(dist, clean.replace(/^\/|\/$/g, ''), 'index.html');
     if (!fs.existsSync(file)) deadTargets.push(`${r.from} → ${r.to}`);
   }
   if (deadTargets.length) {

@@ -2809,12 +2809,21 @@ footer.site .colophon {
   font-weight: 600;
   border-bottom: 2px solid var(--rule-2);
 }
-/* The first column is a label, not data — set like one. */
-.cmp tbody td:first-child {
+/* The first column is a label, not data — set like one. It is a
+   <th scope="row"> rather than a <td><b>, which is what associates each data
+   cell in the row with the thing it is describing: the post-launch audit's
+   one accessibility finding was td-has-header on this table, where a screen
+   reader reading "A visit" had no way to know it was the answer to "What is
+   bought". text-align and font-weight are stated because a th defaults to
+   centered and bold, and this column was neither. */
+.cmp tbody th[scope='row'] {
   color: var(--ink-2);
   white-space: nowrap;
+  text-align: left;
+  font-weight: 600;
 }
-.cmp tbody tr:last-child td {
+.cmp tbody tr:last-child td,
+.cmp tbody tr:last-child th {
   border-bottom: 0;
 }
 

@@ -6,6 +6,7 @@ import AnswerBox from '../../components/AnswerBox.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import { business } from '../../data/business';
 import { t } from '../../data/i18n';
+import { hoursLinesLong } from '../../lib/hours';
 
 const path = '/es/contacto/';
 const a = business.address;
@@ -48,7 +49,7 @@ const inlinePhotos = inlinePhotosForEs('/es/contacto/');
     <p>{a.street}<br />{a.locality}, {a.region} {a.postalCode}</p>
 
     <h2>Horario</h2>
-    <p>Lunes a viernes: 8:00 a. m. – 6:00 p. m.<br />Sábado y domingo: 8:00 a. m. – 4:00 p. m.</p>
+    <p>{hoursLinesLong('es').map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>
 
     <h2>Formulario</h2>
     <p>

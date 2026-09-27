@@ -243,7 +243,7 @@ into an estate total. That makes the award comparable and lets a body add or
 remove a building without renegotiating.
 
 **A schedule of rates** for work outside the base scope — exclusion, a
-wildlife or stinging insect callout, a bed bug response, a one-off treatment.
+stinging insect or rodent callout, a bed bug response, a one-off treatment.
 This is the item most often missing from municipal pest bids and the one that
 causes the most friction later, because without it every finding becomes a
 negotiation.
