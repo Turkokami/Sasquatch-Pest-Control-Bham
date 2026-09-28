@@ -104,4 +104,4 @@ Early to mid fall, before winter pressure peaks. Exclusion work and monitoring i
 
 ### Do you work with commercial and government facilities in Whatcom County?
 
-Yes. We provide commercial and institutional pest management for government buildings, warehouses, industrial plants, and other facilities throughout Bellingham, Ferndale, Lynden, and the surrounding Whatcom County area. Our approach is exclusion-first and IPM-based, with the monitoring and documentation that support audits and compliance. Call us and we'll come out and take a look — no contracts, no scare tactics, and no hidden fees.
+Yes. We provide commercial and institutional pest management for government buildings, warehouses, industrial plants, and other facilities throughout Bellingham, Ferndale, Lynden, and the surrounding Whatcom County area. Our approach is exclusion-first and IPM-based, with the monitoring and documentation that support audits and compliance. [Call us](tel:+13604102199) and we'll come out and take a look — no contracts, no scare tactics, and no hidden fees.

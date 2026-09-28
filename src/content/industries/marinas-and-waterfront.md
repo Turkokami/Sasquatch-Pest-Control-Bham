@@ -300,4 +300,4 @@ the device map, the split between operator and tenant items, and the housekeepin
 that will decide the result. Then we run it and adjust it when the site says so.
 
 There is no long-term contract requirement. For a site walk, or a straight answer
-about whether something is worth doing at all, call or text.
+about whether something is worth doing at all, call or text [360-410-2199](tel:+13604102199).

@@ -359,4 +359,4 @@ monitored, device map and numbering, visit frequency and timing against the
 building's rhythm, escalation route for interior findings, the reporting
 package, and the housekeeping and receiving items that will decide the result.
 
-There is no long-term contract requirement. For a walk, call or text.
+There is no long-term contract requirement. For a walk, call or text [360-410-2199](tel:+13604102199).

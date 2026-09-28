@@ -347,4 +347,4 @@ reporting, a schedule of rates for out-of-scope work, and the housekeeping items
 that will decide the result.
 
 For a walk, or a straight answer about whether a scope you have been given is
-the right shape, call or text.
+the right shape, call or text [360-410-2199](tel:+13604102199).

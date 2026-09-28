@@ -69,7 +69,7 @@ It's a fair concern, and it's part of why we favor exclusion over broad spraying
 
 ## When should I call Sasquatch about lady beetles?
 
-If you're seeing large clusters year after year, if beetles are working their way into living spaces from inside the walls, or if you can't pin down all the entry points on a two-story home, it's worth a call. A thorough exclusion job seals a lot of hard-to-reach gaps, and getting all of them is what turns a beetle-filled fall into a quiet one. We come out and take a look, work on sealing the building envelope, and apply targeted exterior treatment only where it makes sense.
+If you're seeing large clusters year after year, if beetles are working their way into living spaces from inside the walls, or if you can't pin down all the entry points on a two-story home, it's [worth a call](tel:+13604102199). A thorough exclusion job seals a lot of hard-to-reach gaps, and getting all of them is what turns a beetle-filled fall into a quiet one. We come out and take a look, work on sealing the building envelope, and apply targeted exterior treatment only where it makes sense.
 
 Year after year is the phrase that matters there. A single bad autumn is worth one visit and some sealing. A wall that fills up every October is telling you the property sits somewhere these beetles like, and that does not change by itself — the same gaps take in cluster flies, boxelder bugs and stink bugs on roughly the same schedule, and the exterior work that helps has a window of about two weeks that moves with the weather rather than the calendar.
 
@@ -103,4 +103,4 @@ Beetles that made it into wall voids and attics before you sealed will settle in
 
 ### Do you handle lady beetle problems in Bellingham and Whatcom County?
 
-Yes. We deal with fall Asian lady beetle invasions throughout Bellingham, Ferndale, Lynden, Blaine, and the surrounding Whatcom County communities. Our approach centers on coming out to look at the walls they're using, sealing the building envelope, and targeted exterior treatment where it helps. Give us a call and we'll work out where the beetles are gathering and getting in.
+Yes. We deal with fall Asian lady beetle invasions throughout Bellingham, Ferndale, Lynden, Blaine, and the surrounding Whatcom County communities. Our approach centers on coming out to look at the walls they're using, sealing the building envelope, and targeted exterior treatment where it helps. [Give us a call](tel:+13604102199) and we'll work out where the beetles are gathering and getting in.
