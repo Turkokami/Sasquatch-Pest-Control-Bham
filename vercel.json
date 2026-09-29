@@ -1643,6 +1643,10 @@
       "destination": "https://squatch-office-hub-nine.vercel.app/office"
     },
     {
+      "source": "/office/:path*/",
+      "destination": "https://squatch-office-hub-nine.vercel.app/office/:path*/"
+    },
+    {
       "source": "/office/:path*",
       "destination": "https://squatch-office-hub-nine.vercel.app/office/:path*"
     }
