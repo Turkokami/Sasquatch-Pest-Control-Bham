@@ -43,6 +43,7 @@ import { business, SITE, isReady } from '../data/business';
 import { t, altPathFor } from '../data/i18n';
 import { graphScript, type PageSchemaInput } from '../lib/schema';
 import { buildTitle, buildDescription } from '../lib/seo';
+import { intrinsicSize } from '../lib/images';
 import PhoneBar from '../components/PhoneBar.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -191,11 +192,36 @@ const canonical = `${SITE}${canonicalTo ?? schemaProps.path}`;
    all, because a platform with no og:image falls back to its own layout.
    Guarded like every other owed field; harness check 1b fails on any
    referenced asset that was not built. */
-const ogImage = schemaProps.image?.src
-  ? `${SITE}${schemaProps.image.src}`
+const ogImagePath = schemaProps.image?.src
+  ? schemaProps.image.src
   : isReady(business.socialImage)
-    ? `${SITE}${business.socialImage}`
+    ? (business.socialImage as string)
     : null;
+const ogImage = ogImagePath ? `${SITE}${ogImagePath}` : null;
+
+/* THE DIMENSIONS, AND THEY ARE THE WHOLE REASON SHARED LINKS SHOWED NO
+   PICTURE. og:image was correct on all 440 pages — absolute URL, real file,
+   1200x630 — and the cards still came up blank, which is the complaint the
+   owner kept raising.
+
+   Facebook, LinkedIn and Nextdoor do not block on fetching the image. They
+   draw the card from the tags they have, and queue the image for measurement
+   afterwards. With no og:image:width and og:image:height there is nothing to
+   lay out, so the FIRST person to share a URL gets a card with no picture —
+   and that is the share that matters, because the next one is served from
+   their cache.
+
+   Read from the file at build time rather than typed, so they cannot be
+   wrong: intrinsicSize parses the JPEG header. Nothing here is a promise
+   about an image that does not exist — harness check 1b already fails any
+   referenced asset that was not built.
+
+   og:image:alt is for the reader using a screen reader on somebody else's
+   timeline, and secure_url exists because some older consumers look for it
+   before og:image. */
+const ogSize = ogImagePath ? intrinsicSize(ogImagePath) : null;
+const ogType = ogImagePath?.endsWith('.png') ? 'image/png' : 'image/jpeg';
+const ogAlt = schemaProps.image?.alt ?? `${business.name} — family-owned pest control and exclusion in Whatcom County`;
 
 /* The guides corpus, for the Organization's knowsAbout. Read from the
    collection rather than from a parallel list in a data file, so it cannot
@@ -240,10 +266,16 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
     <meta property="og:description" content={finalDesc} />
     <meta property="og:url" content={canonical} />
     {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImage && <meta property="og:image:secure_url" content={ogImage} />}
+    {ogImage && <meta property="og:image:type" content={ogType} />}
+    {ogSize && <meta property="og:image:width" content={String(ogSize.width)} />}
+    {ogSize && <meta property="og:image:height" content={String(ogSize.height)} />}
+    {ogImage && <meta property="og:image:alt" content={ogAlt} />}
     <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
     <meta name="twitter:title" content={finalTitle} />
     <meta name="twitter:description" content={finalDesc} />
     {ogImage && <meta name="twitter:image" content={ogImage} />}
+    {ogImage && <meta name="twitter:image:alt" content={ogAlt} />}
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
