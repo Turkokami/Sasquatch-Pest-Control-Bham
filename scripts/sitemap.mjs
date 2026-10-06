@@ -139,8 +139,20 @@ fs.writeFileSync(path.join(DIR, 'sitemap.xml'), index);
    indexed carry noindex, which is the correct mechanism. Disallowing a URL
    in robots.txt prevents the crawl, which prevents the crawler from ever
    SEEING the noindex — the opposite of the intent. */
+/* ONE Disallow, and it is the exception the paragraph above does not cover.
+   vercel.json rewrites /office/* to the Squatch-Bot Dispatch board on another
+   Vercel project. That HTML is not ours and never passes through BaseLayout,
+   so it cannot carry a noindex meta tag — the mechanism the note above
+   correctly prefers is simply not available on those URLs. Meanwhile the
+   proxy makes them look like part of this site to a crawler.
+
+   The board holds customer names, money figures and drafted replies. The
+   right answer is that it should not be reachable from the public domain at
+   all; until it moves to its own subdomain this keeps crawlers off it. The
+   board's own login gate is the real protection and this is the belt. */
 const robots = `User-agent: *
 Allow: /
+Disallow: /office/
 
 Sitemap: ${SITE}/sitemap.xml
 `;
