@@ -154,7 +154,7 @@ finding. Sustained moisture in framing produces decay that continues
 indefinitely, and decay rather than insects is what actually costs structural
 capacity in this climate. The moisture thresholds that decay needs are set out
 in the [USDA Wood
-Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf), and they
+Handbook](https://research.fs.usda.gov/treesearch/37440), and they
 are the reason a crawlspace that never dries is a structural question rather
 than a pest one. Where we find it, the honest answer often involves a
 contractor, and the pest treatment is the small part of the project.

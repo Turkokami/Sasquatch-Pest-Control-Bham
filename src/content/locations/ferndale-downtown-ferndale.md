@@ -111,7 +111,7 @@ That matters because of what damp wood permits. [Carpenter ants](/pest-library/c
 galleries far more readily in softened timber than in sound timber. Wood-boring
 beetles and decay fungi need moisture content that dry framing never reaches.
 Those thresholds are set out in the Forest Products Laboratory's [Wood
-Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf), which is
+Handbook](https://research.fs.usda.gov/treesearch/37440), which is
 worth a look if somebody has told you decay is simply what old houses do.
 
 And [moisture ants](/pest-library/moisture-ant/) — which most people have never heard of and which we find

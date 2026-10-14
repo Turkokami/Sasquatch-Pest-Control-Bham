@@ -376,7 +376,7 @@ a crawlspace or wall cavity supports fungal decay in the framing, degrades
 insulation performance, and creates conditions for the wood-destroying insects
 covered elsewhere on this site. Wood carrying more than about twenty percent
 moisture content is wood that decay fungi can work in — the figure comes from the
-USDA's [Wood Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf)
+USDA's [Wood Handbook](https://research.fs.usda.gov/treesearch/37440)
 — and an unventilated crawlspace under an older house here reaches it without
 difficulty.
 

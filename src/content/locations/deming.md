@@ -141,7 +141,7 @@ area, in siding, trim, decking and outbuildings. Cedar's reputation for
 durability is about decay resistance, not insect resistance, and once a cedar
 member has taken on moisture it is perfectly workable for an ant. The [USDA
 Forest Products Laboratory's Wood
-Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf) sets out
+Handbook](https://research.fs.usda.gov/treesearch/37440) sets out
 what cedar heartwood actually resists, which is fungal decay rather than
 anything with mandibles. A cedar shake wall on the shaded north side of a house
 at the forest edge is a common place to find galleries.

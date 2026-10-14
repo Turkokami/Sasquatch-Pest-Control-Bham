@@ -216,7 +216,7 @@ An unoccupied house has no heating cycle, no air movement and no one opening a
 door. Marine air is humid year-round on this shoreline, and a cold, still,
 unventilated under-floor space in that air will hold moisture regardless of how
 well the ground drains. The USDA's [Wood
-Handbook](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf) is the
+Handbook](https://research.fs.usda.gov/treesearch/37440) is the
 reference for what sustained moisture does to framing, and it does not care how
 the water got there.
 

@@ -42,7 +42,7 @@ That is decay, and decay in a building is always a water story.
 
 Wood does not soften on its own. It softens because decay fungi have colonized
 it, and those fungi need the wood genuinely wet — the
-[USDA Forest Products Laboratory](https://www.fpl.fs.usda.gov/documnts/fplgtr/fpl_gtr190.pdf)
+[USDA Forest Products Laboratory](https://research.fs.usda.gov/treesearch/37440)
 puts serious decay at moisture content above the fiber saturation
 point, which averages around thirty percent. The number worth remembering is
 the safe one rather than the dangerous one: wood held below about twenty
