@@ -47,8 +47,13 @@ const inlinePhotos = inlinePhotosFor('/services/');
 
   <QuickNav />
 
+  {/* The id is what the four legacy category hubs land on. Before this they
+      redirected to /services/?category=household and the like — a query
+      parameter nothing on a static site reads, so all four dropped the reader
+      at the top of the full service list. An anchor works with no JavaScript
+      and puts them on the right group. See scripts/redirects.mjs. */}
   {grouped.map((g) => (
-    <section>
+    <section id={g.key}>
       <h2>{g.label}</h2>
       <ul class="rail">
         {g.items.map((s) => (

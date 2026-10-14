@@ -473,22 +473,22 @@
     },
     {
       "source": "/rodents-birds-bellingham/",
-      "destination": "/services/?category=rodents-birds",
+      "destination": "/services/#rodents-birds",
       "permanent": true
     },
     {
       "source": "/stinging-flying-insects-bellingham/",
-      "destination": "/services/?category=stinging-flying",
+      "destination": "/services/#stinging-flying",
       "permanent": true
     },
     {
       "source": "/household-bugs-bellingham/",
-      "destination": "/services/?category=household",
+      "destination": "/services/#household",
       "permanent": true
     },
     {
       "source": "/termites-structural-bellingham/",
-      "destination": "/services/?category=structural",
+      "destination": "/services/#structural",
       "permanent": true
     },
     {

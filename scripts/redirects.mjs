@@ -82,8 +82,17 @@ const cats = {
   'household-bugs-bellingham': 'household',
   'termites-structural-bellingham': 'structural',
 };
+/* AN ANCHOR, NOT A QUERY PARAMETER. These four read
+   `/services/?category=${cat}` and that parameter was inert: this is a static
+   site, nothing reads it at build time or in the browser, so all four legacy
+   hubs dropped the reader at the top of the whole service list. The social
+   bot reported exactly that symptom for /household-bugs-bellingham/ on 14 Oct
+   2026 — a post promising household bug information landing on everything.
+
+   /services/#household works with no JavaScript, because the category
+   sections now carry their key as an id. */
 for (const [old, cat] of Object.entries(cats)) {
-  redirects.push({ from: `/${old}/`, to: `/services/?category=${cat}`, code: 301 });
+  redirects.push({ from: `/${old}/`, to: `/services/#${cat}`, code: 301 });
 }
 
 /* Known one-offs found in the audit. */
@@ -269,7 +278,12 @@ const dist = path.join(root, 'dist');
 if (fs.existsSync(dist)) {
   const deadTargets = [];
   for (const r of redirects) {
-    const clean = r.to.split('?')[0];
+    /* Strip the fragment as well as the query. A target of /services/#household
+       is the page /services/ — the anchor is resolved in the browser and
+       never reaches the server, so testing for a directory called
+       "services/#household" reported a live page as a dead target. Same
+       mistake as the file-extension one below, in the other direction. */
+    const clean = r.to.split('?')[0].split('#')[0];
     /* A target with a file extension is a FILE, not a page directory.
        /sitemap.xml lives at dist/sitemap.xml, not dist/sitemap.xml/index.html,
        and resolving it the page way reported a live file as a dead target. */
