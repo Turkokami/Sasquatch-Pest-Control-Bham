@@ -2,14 +2,19 @@
 /**
  * PRIVACY POLICY — written 27 Sep 2026, after the post-launch audit found the
  * form collecting names, phone numbers and email addresses on a site with no
- * privacy page at all. GoHighLevel's text-message registration expects one
+ * privacy page at all. The platform's text-message registration expects one
  * too, and GA4 went in the same day.
  *
  * WRITTEN FROM WHAT THE STACK ACTUALLY DOES, not from a template. Every
  * processor named here was verified in this repo or in the built output:
  *
- *   GoHighLevel   the form is an iframe from link.sasquatchpestcontrol.com,
- *                 the company's own GHL sub-account (business.ts:1113).
+ *   Pest AI       the form is an iframe from link.sasquatchpestcontrol.com.
+ *                 Pest AI is a white-labeled GoHighLevel (owner, 15 Oct
+ *                 2026), which is why business.ts calls that host a GHL
+ *                 domain and why it is a CNAME to LeadConnector. Both are
+ *                 named on the page: Pest AI is who we contract with, the
+ *                 HighLevel platform is where the data actually sits, and a
+ *                 reader asking who holds their phone number deserves both.
  *   Google        gtag.js from googletagmanager.com, property G-L1268CMD4H
  *                 (src/components/Analytics.astro).
  *   Vercel        the host. Every host keeps request logs.
@@ -94,9 +99,11 @@ const answer =
 
     <ul>
       <li>
-        <strong>GoHighLevel</strong> runs our contact form and holds the
-        enquiries that come through it. The form is theirs, embedded in our
-        page, so what you type goes to them and then to us.
+        <strong>Pest AI</strong> runs our contact form and holds the enquiries
+        that come through it. The form is theirs, embedded in our page, so
+        what you type goes to them and then to us. Pest AI is built on
+        GoHighLevel's LeadConnector platform, which means your details sit on
+        that platform as well.
       </li>
       <li>
         <strong>Google</strong> provides Analytics, described above.
