@@ -1,0 +1,76 @@
+# Tell Bing about new and changed pages, without anybody remembering to.
+#
+# TWO TRIGGERS, AND THE FIRST IS THE ONE THAT MATTERS. Pages only change when
+# a deploy happens, so a push to main is the honest moment to submit — within
+# a minute or two of the page actually existing. The daily schedule is a
+# safety net for the case where a push fails here but succeeds on Vercel, or
+# where somebody edits through the GitHub web interface while this workflow
+# is red.
+#
+# A daily run that finds nothing exits in about a minute and submits nothing,
+# which is the intended outcome on most days. The script compares the built
+# sitemap against the last state it successfully submitted and sends only the
+# difference — blasting all 378 URLs every morning is how a host teaches a
+# search engine to ignore it.
+#
+# GOOGLE IS NOT IN HERE. Google does not participate in IndexNow and has no
+# public API for submitting ordinary pages; their Indexing API covers job
+# postings and livestreams only. For Google the mechanism is the sitemap,
+# which the build regenerates every time. See DEPLOY.md.
+
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths:
+      # Only when something that can change a published URL changes. A README
+      # edit should not trigger a submission run.
+      - 'src/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'package.json'
+  schedule:
+    # 07:00 UTC — midnight Pacific, after any evening deploy has settled.
+    - cron: '0 7 * * *'
+  workflow_dispatch: {}
+
+concurrency:
+  # Two runs submitting at once would race on the state file.
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    permissions:
+      # The run records what it submitted and commits that file back.
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - run: npm ci
+
+      # The sitemap is a build artifact, so it has to be built before it can
+      # be read. This is also a free check that main still builds.
+      - run: npm run build
+
+      - name: Submit new and changed URLs
+        run: npm run indexnow
+
+      - name: Record what was submitted
+        run: |
+          if git diff --quiet -- src/data/indexnow-state.json; then
+            echo "no state change — nothing was submitted"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/indexnow-state.json
+          git commit -m "IndexNow: record submitted URLs [skip ci]"
+          git push

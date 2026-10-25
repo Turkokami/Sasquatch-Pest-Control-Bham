@@ -145,3 +145,35 @@ than a command somebody actually runs.
 - **Submit to Bing Webmaster Tools and enable IndexNow for Bing (Part 14).** The
   Bing index gates Microsoft Copilot. It does nothing for Google and is never
   described as a Google step. Needs the owner's login.
+
+### Daily submission — how it is wired, 25 Oct 2026
+
+IndexNow is live and automated. `.github/workflows/indexnow.yml` runs on every
+push to `main` that can change a URL, and again at 07:00 UTC daily as a safety
+net. It builds the site, compares the fresh sitemap against
+`src/data/indexnow-state.json`, and submits only what is new or whose
+`lastmod` moved — then commits the state back so the next run does not
+resubmit the same pages.
+
+The key lives at `public/71a6faccb532ad39cbb971256e961755.txt` and must stay
+reachable at the domain root; IndexNow rejects any submission it cannot
+verify there. It is public by design — the key proves control of the host,
+and it is not a secret.
+
+Run it by hand with `npm run indexnow` (`-- --dry` to preview, `-- --all` to
+force a full resubmit).
+
+**Bing, Yandex, Seznam and Naver consume this. Google does not.** Google has
+never joined IndexNow, their Indexing API accepts JobPosting and
+BroadcastEvent only — using it for ordinary pages is against its terms — and
+the old sitemap ping endpoint was retired in 2023. For Google the mechanisms
+are the sitemap, which the build regenerates every time, and the Request
+Indexing button in Search Console for a page that genuinely cannot wait.
+Anything that claims to instantly index a page on Google is selling
+something, and this file will not pretend otherwise.
+
+**Checking what Google has actually indexed** is a separate job from
+submitting. The Search Console URL Inspection API reports index status for up
+to 2,000 URLs a day, read-only, and needs an OAuth client or service account
+tied to the owner's verified property. That is the piece still to set up; it
+cannot be done from the repository alone.

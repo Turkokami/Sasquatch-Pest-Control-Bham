@@ -18,7 +18,8 @@
     "slugs": "node scripts/slugs.mjs",
     "redirects:emit": "node scripts/redirects.mjs --emit",
     "redirects:check": "node scripts/redirects.mjs --check",
-    "lab-gate": "node scripts/lab-gate.mjs"
+    "lab-gate": "node scripts/lab-gate.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@fontsource/dm-sans": "^5.3.0",
