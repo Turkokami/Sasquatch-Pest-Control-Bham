@@ -1,14 +1,14 @@
 ---
 service: stink-bug-control
 title: "Stink Bug & Overwintering Pest Control | Whatcom"
-description: "Stink bug, boxelder bug and conifer seed bug control for Bellingham and Whatcom County. They pile onto south walls in October — here is the fix. 360-410-2199."
+description: "Stink bug, boxelder bug, lady beetle and seed bug control in Bellingham and Whatcom County. They pile onto south walls in October — here is the fix. 360-410-2199."
 h1: "Stink Bug & Overwintering Pest Control in Whatcom County"
-answer: "Stink bugs, boxelder bugs and conifer seed bugs all do the same thing: gather on warm south and west walls in October and work into the building to overwinter. They do not breed indoors, bite, or damage anything. The fix is sealing the gaps in late summer, and the treatment window closes once they are inside."
+answer: "Stink bugs, boxelder bugs, Asian lady beetles and conifer seed bugs all do the same thing: gather on warm south and west walls in October and work into the building to overwinter. They do not breed indoors, bite, or damage anything. The fix is sealing the gaps in late summer, and the treatment window closes once they are inside."
 expert: kristofer-elling
 ready: true
 factsTable:
   - label: "What it covers"
-    value: "Stink bugs, boxelder bugs and conifer seed bugs that overwinter in walls and attics"
+    value: "Stink bugs, boxelder bugs, Asian lady beetles and conifer seed bugs that overwinter in walls and attics"
   - label: "Included"
     value: "Exterior treatment on the walls they gather on, plus sealing windows, siding laps, soffits, vents and penetrations"
   - label: "Not included"
@@ -34,7 +34,7 @@ faqs:
 
 ## One behavior, several insects
 
-Four different insects generate almost identical calls in this county every
+Five different insects generate almost identical calls in this county every
 autumn, and they all want the same thing.
 
 **Brown marmorated stink bug.** Shield-shaped, mottled brown, with distinctive
@@ -50,6 +50,15 @@ far more alarming.
 
 **Boxelder bug.** Black with distinct red or orange markings, gathering in large
 aggregations on sunny walls. Associated with boxelder and other maples.
+
+**Multicolored Asian lady beetle.** Orange to deep red, rounder than the others,
+with a small black M or W marking on the pale area behind the head — the detail
+that separates it from the native ladybugs in your garden, which do not gather on
+houses. Invasive, and the only one on this list that will nip hard enough to be
+felt. Disturbed or crushed, it releases a yellow fluid that stains paint and
+fabric. There is a full account on the
+[Asian lady beetle](/pest-library/multicolored-asian-lady-beetle/) page, including
+how to tell it from a beneficial one before anybody treats anything.
 
 **Cluster flies**, which behave identically and get their own treatment on the
 [fly control](/services/fly-control/) page.
