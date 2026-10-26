@@ -8,7 +8,7 @@ expert: kristofer-elling
 ready: true
 factsTable:
   - label: "What it covers"
-    value: "Odorous house ants, carpenter ants and moisture ants, identified to species before anything is treated"
+    value: "Odorous house ants, carpenter ants and moisture ants, plus the uncommon species below — identified before anything is treated"
   - label: "Included"
     value: "Finding the nest, non-repellent products and baits, correcting conditions, sealing entry routes and follow-up checks"
   - label: "Not included"
@@ -173,6 +173,18 @@ damp structural wood, and can be aggressive.
 
 **Thatching and field ants.** Common outdoors on rural and forest-edge property.
 Rarely a structural concern, occasionally a yard one.
+
+**The uncommon ones, which we do handle when they are genuinely what you have.**
+[Ghost ants](/pest-library/ghost-ant/) are tiny and pale-legged and get sugar
+bait only, never a spray. [Thief ants](/pest-library/thief-ant/) in a cupboard
+usually get advice rather than a treatment; a colony in the building gets
+baited. [Harvester ants](/pest-library/harvester-ant/) are treated only where
+the nest sits in ground people actually use — open ground nobody walks on is
+left alone. A [ponerine ant](/pest-library/ponerine-ant/) problem is mostly a
+sealing job, and a colony under a slab often cannot be reached at all.
+
+Each of those depends on a confirmed identification first, which is the same
+rule as the three above and the reason this page keeps saying it.
 
 ## Why the hardware-store approach usually fails
 

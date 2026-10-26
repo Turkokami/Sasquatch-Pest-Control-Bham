@@ -3,7 +3,7 @@ service: wdo-treatment
 title: "WDO Treatment for Home Sales | Whatcom County"
 description: "Your inspector found wood-destroying organisms. We are licensed to treat them — termites, carpenter ants, beetles and decay fungus. Call or text 360-410-2199."
 h1: "WDO Treatment for Real Estate Transactions"
-answer: "Your inspector found wood-destroying organisms and you have a closing date. That is the half we do: our WSDA license carries the PCO Structural category, which covers treating the termites, carpenter ants, wood-boring beetles and decay fungus a report lists. We do not issue the report itself, which is a separate credential."
+answer: "Your inspector found wood-destroying organisms and you have a closing date. That is the half we do: our WSDA license carries the PCO Structural category, which covers treating the termites, carpenter ants, wood-boring beetles, weevils and decay fungus a report lists. We do not issue the report itself, which is a separate credential."
 ready: true
 expert: kristofer-elling
 factsTable:
