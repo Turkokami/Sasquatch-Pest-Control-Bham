@@ -945,6 +945,26 @@ export const business = {
    *  rating so a reader can check the 4.9 for themselves. */
   gbpUrl: 'https://maps.google.com/?cid=18341881106700002288' as Owed<string>,
 
+  /**
+   * THE GORILLADESK CUSTOMER PORTAL, where an existing customer signs in to
+   * see their schedule, history and invoices. Owner asked for it 26 Oct 2026.
+   *
+   * PENDING because the URL cannot be derived or guessed. GorillaDesk gives
+   * each company its own portal address, chosen once when the portal is
+   * activated and permanent afterwards — their own documentation says it
+   * cannot be changed later. So there is no pattern to infer from the company
+   * name, and a wrong sign-in link is the same class of mistake as a wrong
+   * social handle: it sends a paying customer to somebody else's login box.
+   *
+   * It is also a Pro-plan feature, so the portal may need activating before a
+   * URL exists at all.
+   *
+   * Everything downstream is already wired: the footer link, the /contact/
+   * section and the privacy disclosure all appear the moment this is filled
+   * in, and render nothing while it is PENDING. Fill it here and rebuild.
+   */
+  customerPortal: PENDING as Owed<string>,
+
   /* INSULATION AND AIR-SEALING TRAINING. Certificates supplied by the owner,
      2 Sep 2026, and read off the certificates themselves rather than from a
      description of them — issuer, exact course title, date and CEU value are

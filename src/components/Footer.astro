@@ -94,9 +94,24 @@ const COLOPHON: { en: string; label: string; es: string }[] = [
   /* A privacy policy nobody can find is not a privacy policy. Footer on every
      page, and again beside the form that does the collecting. */
   { en: '/privacy/', label: 'Privacy', es: 'Privacidad' },
+  /* The customer portal. Not a page on this site — it is the GorillaDesk
+     sign-in for existing customers — so it is filtered out below unless
+     business.customerPortal holds a real URL. An empty "Sign in" link is
+     worse than none: it teaches a customer the feature does not work. */
+  { en: '__PORTAL__', label: 'Customer sign-in', es: 'Acceso de clientes' },
   { en: '/network/', label: 'Our network', es: 'Nuestra red' },
 ];
 const colophon = COLOPHON.flatMap((c) => {
+  /* The portal is an external sign-in, not a route on this site, and it only
+     exists once the owner has activated it in GorillaDesk. Both languages get
+     the same URL — the portal itself is GorillaDesk's interface and we do not
+     control what language it renders in, so promising a Spanish one here
+     would be a claim about somebody else's software. */
+  if (c.en === '__PORTAL__') {
+    return isReady(business.customerPortal)
+      ? [{ href: business.customerPortal as string, label: es ? c.es : c.label }]
+      : [];
+  }
   if (!es) return [{ href: c.en, label: c.label }];
   if (PAGE_PAIRS[c.en]) return [{ href: PAGE_PAIRS[c.en], label: c.es }];
   return c.en === '/what-we-use/' ? [{ href: c.en, label: c.es }] : [];

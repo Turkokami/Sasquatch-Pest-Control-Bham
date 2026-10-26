@@ -54,5 +54,27 @@ const inlinePhotos = inlinePhotosFor('/contact/');
     <h2>Business hours</h2>
     <p>{hoursLinesLong('en').map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>
 
+    {/* Existing customers only, and it renders nothing until the portal URL
+        is real — see business.customerPortal. Placed here rather than in the
+        masthead because somebody looking for their own account comes to the
+        contact page; a sign-in link in the main menu would mostly be seen by
+        people who do not have an account and cannot use it. */}
+    {isReady(business.customerPortal) && (
+      <>
+        <h2>Already a customer?</h2>
+        <p>
+          <a href={business.customerPortal as string} rel="noopener">Sign in to your account</a>{' '}
+          to see your upcoming visits, your service history and your invoices.
+          The portal is run by GorillaDesk, the software we schedule and invoice
+          with, so it opens on their site rather than this one.
+        </p>
+        <p>
+          If you cannot get in, call or text{' '}
+          <a href={`tel:${business.phoneE164}`}>{business.phone}</a> and we will
+          sort it out — we would rather do that than have you reset a password.
+        </p>
+      </>
+    )}
+
   </div>
 </BaseLayout>
