@@ -956,14 +956,23 @@ export const business = {
    * name, and a wrong sign-in link is the same class of mistake as a wrong
    * social handle: it sends a paying customer to somebody else's login box.
    *
-   * It is also a Pro-plan feature, so the portal may need activating before a
-   * URL exists at all.
+   * Supplied by the owner 26 Oct 2026 and verified by loading it: the page
+   * reads "Welcome to your secure account portal. Sasquatch Pest Control,
+   * 5051 Guide Meridian, Bellingham, WA 98226, 360-410-2199" — the right
+   * company, the right address and the right number, not merely an HTTP 200.
    *
-   * Everything downstream is already wired: the footer link, the /contact/
-   * section and the privacy disclosure all appear the moment this is filled
-   * in, and render nothing while it is PENDING. Fill it here and rebuild.
+   * A LINK RATHER THAN THE WIDGET, deliberately. GorillaDesk also ships a
+   * JavaScript embed that injects an in-page launcher. It was read before
+   * being refused: 15KB of third-party script, and a position:fixed launcher
+   * anchored at bottom:18px — which is exactly where the mobile call bar
+   * sits, the one control on this site that must never be covered (§13). A
+   * plain link costs nothing, cannot collide with anything, works with
+   * JavaScript switched off, and goes to the same portal. If an in-page
+   * launcher is ever genuinely wanted, the widget exposes
+   * GorillaDesk('showPortal') so it can be driven from a real button rather
+   * than from their floating one.
    */
-  customerPortal: PENDING as Owed<string>,
+  customerPortal: 'https://client.gorilladesk.com/sasquatchpestcontrol' as Owed<string>,
 
   /* INSULATION AND AIR-SEALING TRAINING. Certificates supplied by the owner,
      2 Sep 2026, and read off the certificates themselves rather than from a
