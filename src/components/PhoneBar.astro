@@ -1,5 +1,5 @@
 ---
-import { business } from '../data/business';
+import { business, isReady } from '../data/business';
 import { t, type Lang } from '../data/i18n';
 
 interface Props {
@@ -18,9 +18,31 @@ const S = t(lang);
 <div class="phonebar" data-boilerplate>
   <div class="wrap">
     <span>{S.phoneBarTagline}</span>
-    <span>
+    <span class="phonebar-right">
       {lang === 'es' ? 'Llame o mande un mensaje' : 'Call or text'}{' '}
       <a href={`tel:${business.phoneE164}`}>{business.phone}</a>
+      {/* CUSTOMER SIGN-IN, at the top of every page — owner, 26 Oct 2026:
+          "I want customer log in on top of page easily visible make it a
+          button."
+
+          It is an OUTLINED chip rather than a filled one, and that is the
+          whole design decision. The lime fill is reserved for calling (§10),
+          because a call is what this trade converts on and two solid buttons
+          side by side would make the reader choose. An existing customer
+          looking for their invoice will find this; somebody with a wasp nest
+          should still see the phone number first.
+
+          It leaves the site, so rel="noopener" and the label says whose
+          sign-in it is — "Sign in" alone would be a question. */}
+      {isReady(business.customerPortal) && (
+        <a
+          class="portal-chip"
+          href={business.customerPortal as string}
+          rel="noopener"
+        >
+          {lang === 'es' ? 'Acceso de clientes' : 'Customer sign-in'}
+        </a>
+      )}
     </span>
   </div>
 </div>

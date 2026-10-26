@@ -1287,6 +1287,35 @@ ul.rail.rail-chips {
   padding-block: 0.5rem;
   color: var(--inv-ink-2);
 }
+/* THE CUSTOMER SIGN-IN CHIP in the top bar. Outlined, never filled: the lime
+   solid is the call button's (§10), and putting two solid buttons side by
+   side would make a reader with a wasp nest stop and choose. This one is for
+   somebody who already knows what they came for.
+
+   The bar is already 44px tall because .phonebar a carries min-height in
+   §24, so this adds no height to the first screen — which matters on a page
+   whose first screen is already busy. It sits last in the flex row and wraps
+   below the phone number on a narrow phone rather than squeezing it. */
+.portal-chip {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.85rem;
+  padding-inline: 0.7rem;
+  border: 1px solid var(--inv-marker);
+  border-radius: var(--radius-sm);
+  /* Overrides the bold marker colour .phonebar a sets, so the phone number
+     stays the loudest thing in the bar. */
+  color: var(--inv-ink) !important;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.portal-chip:hover,
+.portal-chip:focus-visible {
+  background: var(--inv-marker);
+  color: var(--inv-bg) !important;
+}
+
 .phonebar a {
   color: var(--inv-marker);
   font-weight: 600;
