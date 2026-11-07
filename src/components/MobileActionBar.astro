@@ -64,7 +64,7 @@ const label = offerLabelShort(freeInspectionForPath(path), lang);
    deliberately: a page explaining what happens to the details you hand over
    is the one page that should not also be asking for them. The bar still
    offers the form — it just sends the reader to /contact/ for it. */
-const NO_FORM = new Set(['/network/', '/privacy/', '/es/privacidad/']);
+const NO_FORM = new Set(['/network/', '/privacy/', '/es/privacidad/', '/image-use/']);
 const hasFormOnPage = !NO_FORM.has(path);
 const contactPath = lang === 'es' ? '/es/contacto/' : '/contact/';
 const formHref = hasFormOnPage ? `#${LEAD_FORM_ID}` : `${contactPath}#${LEAD_FORM_ID}`;

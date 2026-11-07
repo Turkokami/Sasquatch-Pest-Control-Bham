@@ -668,6 +668,41 @@ function logoNode() {
   };
 }
 
+/**
+ * Licensing fields for a photograph THIS COMPANY TOOK.
+ *
+ * Search Console's Image Metadata report fell from about 215 valid items to
+ * 9 at launch: the new site's ImageObjects carried url, caption and
+ * dimensions and nothing else, and Google needs at least one of creator,
+ * creditText, copyrightNotice or license before a photograph qualifies.
+ * license and acquireLicensePage are what earn the "Licensable" badge.
+ *
+ * THE EXCLUSION LIST IS THE IMPORTANT PART. Award badges, press marks and
+ * partner logos live under /img/awards/, /img/press/, /img/partners/ and
+ * /img/network/, and they belong to the organizations that issued them.
+ * Stamping "© Sasquatch Pest Control" onto a newspaper's award badge in
+ * machine-readable markup would be a false claim about somebody else's
+ * property — made in the one format built for machines to believe without
+ * reading. So those paths get nothing, and the fields apply only to the
+ * photographs taken on jobs.
+ *
+ * The year is the build year rather than per-photograph, because the
+ * photographs do not carry individual capture dates in this repository and
+ * inventing one per image would be worse than a notice that is current.
+ */
+const NOT_OURS = ['/img/awards/', '/img/press/', '/img/partners/', '/img/network/'];
+
+function imageLicense(src: string) {
+  if (NOT_OURS.some((dir) => src.startsWith(dir))) return {};
+  return {
+    creator: { '@id': ID.local },
+    creditText: business.name,
+    copyrightNotice: `© ${new Date().getFullYear()} ${isReady(business.legalName) ? business.legalName : business.name}`,
+    license: `${SITE}/image-use/`,
+    acquireLicensePage: `${SITE}/image-use/`,
+  };
+}
+
 function websiteNode() {
   return {
     '@type': 'WebSite',
@@ -865,6 +900,7 @@ export function buildGraph(input: PageSchemaInput) {
         caption: image.alt,
         width: image.width,
         height: image.height,
+        ...imageLicense(image.src),
       })
     : undefined;
   if (imageNode) nodes.push(imageNode);

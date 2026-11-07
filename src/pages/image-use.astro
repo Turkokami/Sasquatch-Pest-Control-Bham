@@ -1,0 +1,119 @@
+---
+/**
+ * IMAGE USE — the license page the ImageObject nodes point at.
+ *
+ * Why it exists: Search Console's Image Metadata report fell from ~215 valid
+ * items to 9 at launch, because the new site's ImageObjects carry only url,
+ * caption and dimensions. Google needs at least one of creator, creditText,
+ * copyrightNotice or license before a photograph qualifies, and `license`
+ * has to resolve to a page that states the terms. This is that page.
+ *
+ * WHAT IT DOES NOT DO: grant a license this company has not agreed to. The
+ * terms below are the conservative, true ones — the photographs are the
+ * company's own work, they may not be reused without asking, and the way to
+ * ask is published. No Creative Commons claim, no "free for editorial use",
+ * nothing invented to make the markup look generous. A license page that
+ * promises more than the owner intends is worse than no license page.
+ *
+ * SCOPE MATTERS AND IS STATED. The award badges, partner logos and press
+ * marks on this site belong to the organizations that issued them. Claiming
+ * copyright over somebody else's badge in machine-readable markup would be a
+ * false statement about a third party's property, so the licensing fields are
+ * applied only to photographs taken by this company — see imageLicense() in
+ * src/lib/schema.ts, which excludes those folders by path.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import { business } from '../data/business';
+
+const path = '/image-use/';
+const year = new Date().getFullYear();
+
+const answer =
+  'The photographs on this site were taken by Sasquatch Pest Control on real jobs in Whatcom and Skagit County. They are our own work and are not stock. You are welcome to ask to use one — press, schools and other trades usually get a yes — but please ask first and credit us.';
+---
+<BaseLayout
+  path={path}
+  title="Image Use & Licensing"
+  description="The photographs on this site are Sasquatch Pest Control's own work, taken on real jobs in Whatcom County. How to ask to use one, and what we ask in return."
+  kind="page"
+  leadForm={false}
+>
+  <h1>Image Use &amp; Licensing</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <h2>Whose photographs these are</h2>
+
+    <p>
+      Nearly every photograph on this site was taken by us, on a job, in
+      Whatcom or Skagit County. The crawlspaces are real crawlspaces. The
+      nests were removed from somebody's eave. The insects were photographed
+      where they were found, not bought from a library — which is why some of
+      them are less tidy than stock photography and more useful than it.
+    </p>
+
+    <p>
+      Those photographs are © {year} Sasquatch Pest Control L.L.C. and all
+      rights in them are reserved.
+    </p>
+
+    <h2>What is not ours</h2>
+
+    <p>
+      Award badges, press marks and partner logos on this site belong to the
+      organizations that issued them — the publications, the award programs
+      and the other companies we work alongside. We display them with
+      permission where permission was needed. Nothing on this page grants you
+      any right to those, and we cannot grant one.
+    </p>
+
+    <h2>Asking to use one</h2>
+
+    <p>
+      Email <a href={`mailto:${business.email}`}>{business.email}</a> or call{' '}
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>. Tell us which
+      photograph and what it is for. We answer quickly and the answer is
+      usually yes.
+    </p>
+
+    <p>
+      We say yes most readily to local press, schools, extension and master
+      gardener programs, other pest control companies using an image to teach
+      rather than to advertise, and anybody writing about a pest who needs a
+      picture of the real thing.
+    </p>
+
+    <p>
+      We say no to a competitor presenting our work as theirs. That has
+      happened, and it is the reason this page is specific rather than vague.
+    </p>
+
+    <h2>What we ask in return</h2>
+
+    <ul>
+      <li>Credit us as <strong>Sasquatch Pest Control</strong>.</li>
+      <li>
+        Link back to the page you took it from, where you are publishing
+        somewhere that can carry a link.
+      </li>
+      <li>
+        Do not alter a photograph in a way that changes what it shows. Crop
+        it, resize it, fit it to your layout — but a photograph of damage is
+        evidence of something, and editing it into evidence of something else
+        is the one use we would object to.
+      </li>
+      <li>
+        Do not imply we endorse you, or that we did work we did not do.
+      </li>
+    </ul>
+
+    <h2>If you think we have used yours</h2>
+
+    <p>
+      Tell us and we will take it down the same day while we check. We would
+      rather lose an image for a week than keep one we had no right to — the
+      argument above only works if it runs both ways.
+    </p>
+  </div>
+</BaseLayout>
