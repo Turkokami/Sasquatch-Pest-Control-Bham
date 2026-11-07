@@ -241,7 +241,7 @@ export const RETIRED_TO_EXCLUSION = ['bat-exclusion', 'bat-removal', 'bird-contr
   /* Found in the Search Console export on 13 Sep 2026 — indexed, never in the
      sitemap, and 404ing on cutover without a rule. bat-management-services
      alone carried 112 clicks. */
-  'bat-management-services', 'racoon-removal-services', 'skunk-management-services', 'opossum-management-services', 'squirrel-management-services'] as const;
+  'bat-management-services', 'racoon-removal-services', 'skunk-management-services', 'opossum-management-services', 'squirrel-management-services', 'squirrel-services'] as const;
 
 /**
  * PESTS WITH NO SPOKE OF THEIR OWN — legacy service URLs discovered in the

@@ -447,6 +447,11 @@
       "permanent": true
     },
     {
+      "source": "/squirrel-services/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
       "source": "/cricket-control/",
       "destination": "/pest-library/",
       "permanent": true
@@ -1959,6 +1964,116 @@
     {
       "source": "/mole-control/",
       "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-welcome-wa/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-kendall-wa/",
+      "destination": "/locations/whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-fairhaven-wa/",
+      "destination": "/locations/bellingham/fairhaven/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-van-zandt-wa/",
+      "destination": "/locations/acme/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-wickersham-wa/",
+      "destination": "/locations/acme/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-geneva-wa/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-bay-view-wa/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-clear-lake-wa/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-edison-wa/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-la-conner-wa/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-samish-island-wa/",
+      "destination": "/locations/skagit-county/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-lummi-island-wa/",
+      "destination": "/locations/lummi-island/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-sedro-woolley-wa/",
+      "destination": "/locations/sedro-woolley/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-sandy-point-wa/",
+      "destination": "/locations/ferndale/sandy-point/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-everson-wa/",
+      "destination": "/locations/everson/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-mt-vernon-wa/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-burlington-wa/",
+      "destination": "/locations/burlington/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-acme-wa/",
+      "destination": "/locations/acme/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-bow-wa/",
+      "destination": "/locations/bow/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-alger-wa/",
+      "destination": "/locations/alger/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-ferndale-wa/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us-thank-you/",
+      "destination": "/contact/",
       "permanent": true
     }
   ],
