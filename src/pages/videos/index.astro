@@ -1,0 +1,87 @@
+---
+/**
+ * THE VIDEO LIBRARY — owner asked for this on 22 Sep 2026 ("shouldn't we
+ * have a video library page with the embed from the sasquatch youtube
+ * channel"). It waited on the channel URL, which arrived 7 Nov; a link to a
+ * channel is the one kind of link that must not be guessed.
+ *
+ * It also answers the Search Console finding that none of the films were on
+ * a watch page. This hub lists them; each film has its own page where it is
+ * the subject.
+ *
+ * NO CHANNEL EMBED, deliberately. A YouTube channel widget is a third-party
+ * iframe that loads on arrival, sets cookies before anybody has asked for
+ * anything, and renders a grid this page already renders from local posters.
+ * The channel is linked instead, which is what the owner actually wanted —
+ * a way to reach the rest of the films — at no cost to a reader who does not
+ * click. Every player on this site is a click-to-load facade for the same
+ * reason.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import Cta from '../../components/Cta.astro';
+import { videos } from '../../data/videos';
+import { business, isReady } from '../../data/business';
+import { intrinsicSize } from '../../lib/images';
+
+const path = '/videos/';
+const channel = business.socials.find((u) => /youtube\.com/i.test(u));
+
+const items = Object.entries(videos).map(([key, v]) => ({
+  key,
+  ...v,
+  size: intrinsicSize(v.poster),
+}));
+
+const answer =
+  `Short films from Sasquatch Pest Control, shot on real jobs in Whatcom County: what carpenter ant damage actually looks like inside a structure, why cluster flies appear at upstairs windows, and how autumn rodent pressure starts. Each one has its own page, and nothing loads from YouTube until you press play.`;
+---
+<BaseLayout
+  path={path}
+  title="Video Library | Sasquatch Pest Control"
+  description="Short films from Sasquatch Pest Control — carpenter ants, sugar ants, cluster flies and autumn rodents, shot on real jobs in Whatcom County."
+  kind="page"
+>
+  <h1>Video Library</h1>
+  <AnswerBox text={answer} />
+
+  <div class="prose">
+    <p>
+      These were filmed on jobs around Bellingham and Whatcom County rather
+      than staged. They are short — none runs longer than three minutes — and
+      each one sits on its own page with what it shows written underneath.
+    </p>
+  </div>
+
+  <ul class="listing">
+    {items.map((v) => (
+      <li>
+        <a href={`/videos/${v.key}/`}>
+          <img
+            src={v.poster}
+            alt={v.alt}
+            width={v.size.width}
+            height={v.size.height}
+            loading="lazy"
+            decoding="async"
+          />
+          <b>{v.title}</b>
+        </a>
+        <p>{v.caption} <span class="dur">{v.duration}</span></p>
+      </li>
+    ))}
+  </ul>
+
+  {isReady(channel) && (
+    <div class="prose">
+      <h2>The rest of them</h2>
+      <p>
+        Everything we have filmed is on our{' '}
+        <a href={channel} rel="me noopener">YouTube channel</a>, including
+        clips that have not been written up here yet.
+      </p>
+    </div>
+  )}
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

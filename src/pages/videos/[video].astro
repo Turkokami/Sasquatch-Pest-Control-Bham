@@ -1,0 +1,90 @@
+---
+/**
+ * A WATCH PAGE — one per film, where the video is the subject of the page
+ * rather than an illustration near the foot of one.
+ *
+ * Why these exist: Search Console's Video indexing report showed 0 of 11
+ * videos indexed, every one for the reason "Video isn't on a watch page."
+ * Google will not treat a film as a video result when it is a supporting
+ * element on a page about something else — it wants a page whose main
+ * content is that video. The films were only ever embedded near the end of
+ * a service or library page, so none qualified.
+ *
+ * WHAT MAKES A WATCH PAGE, and all of it is here: the video is the first
+ * thing after the H1, the H1 is the video's own title, the description
+ * describes the film rather than the service, and the VideoObject in the
+ * graph is emitted by BaseLayout from the same videoKey the player uses, so
+ * the markup and the thing on screen cannot describe different films.
+ *
+ * NO FABRICATED TRANSCRIPT. Google's guidance likes one, and the sweep
+ * suggested it. We do not have transcripts for these films and inventing
+ * text that claims to be what somebody said on camera is not a thing this
+ * site will do. When real transcripts exist they belong here.
+ *
+ * The player is the same click-to-load facade used everywhere else, so a
+ * watch page still loads nothing from Google until somebody presses play.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Video from '../../components/Video.astro';
+import Cta from '../../components/Cta.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import { videos } from '../../data/videos';
+import { liveServices } from '../../data/services';
+
+export function getStaticPaths() {
+  return Object.keys(videos).map((key) => ({ params: { video: key }, props: { key } }));
+}
+
+const { key } = Astro.props;
+const v = videos[key as keyof typeof videos];
+const path = `/videos/${key}/`;
+
+/* Where this film's subject is covered properly. The watch page is a place
+   to watch; the service page is where somebody decides to call. Keyed by
+   hand because five films do not need a resolver, and a wrong guess here
+   would send a reader about carpenter ants to the rodent page. */
+const RELATED: Record<string, string[]> = {
+  'carpenter-ants': ['/services/ant-control/', '/pest-library/carpenter-ant/'],
+  'sugar-ants': ['/services/ant-control/', '/pest-library/odorous-house-ant/'],
+  flies: ['/services/fly-control/', '/pest-library/cluster-fly/'],
+  'fall-rodents': ['/services/rodent-control/', '/services/exclusion-and-repairs/'],
+  'autumn-film': ['/about/', '/services/'],
+};
+const names = new Map(liveServices().map((s) => [`/services/${s.slug}/`, s.name]));
+const related = (RELATED[key] ?? []).map((href) => ({
+  href,
+  label: names.get(href) ?? href.replace(/^\/|\/$/g, '').split('/').pop()!.replace(/-/g, ' '),
+}));
+
+const others = Object.entries(videos)
+  .filter(([k]) => k !== key)
+  .map(([k, other]) => ({ href: `/videos/${k}/`, label: other.title }));
+---
+<BaseLayout
+  path={path}
+  title={`${v.title} | Video`}
+  description={v.description}
+  kind="article"
+  videoKey={key}
+  dateModified={v.uploaded}
+>
+  <h1>{v.title}</h1>
+
+  <Video name={key as keyof typeof videos} eager />
+
+  <div class="prose">
+    <p>{v.caption}</p>
+    <p>
+      Filmed by Sasquatch Pest Control in Whatcom County. Running time{' '}
+      {v.duration}.
+    </p>
+  </div>
+
+  {related.length > 0 && (
+    <LinkRail heading="What this film is about" links={related} />
+  )}
+
+  <LinkRail heading="More of our films" links={others} />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>

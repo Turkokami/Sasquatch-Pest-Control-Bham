@@ -32,8 +32,19 @@ interface Props {
   /** Key into src/data/videos.ts. */
   name: keyof typeof videos;
   heading?: string;
+  /**
+   * The poster is the LCP element on this page, so load it eagerly.
+   *
+   * Everywhere else a film sits near the foot of a page about something
+   * else, where a lazy poster is right: it costs nothing until the reader
+   * scrolls to it. On a /videos/ watch page the film IS the page and its
+   * poster is the first thing painted — the harness's performance
+   * precondition flagged all five for exactly that. Default stays lazy so
+   * the common case is unchanged.
+   */
+  eager?: boolean;
 }
-const { name, heading } = Astro.props;
+const { name, heading, eager = false } = Astro.props;
 const v = videos[name];
 const { width, height } = intrinsicSize(v.poster);
 const domId = `vid-${v.id}`;
@@ -53,7 +64,8 @@ const watch = `https://www.youtube.com/watch?v=${v.id}`;
           height={height}
           srcset={srcsetFor(v.poster)}
           sizes={srcsetFor(v.poster) ? '(min-width: 44rem) 40rem, calc(100vw - 2.5rem)' : undefined}
-          loading="lazy"
+          loading={eager ? 'eager' : 'lazy'}
+          fetchpriority={eager ? 'high' : undefined}
           decoding="async"
         />
         <span class="videoplay" aria-hidden="true"></span>

@@ -85,6 +85,11 @@ const towns = cities.map((t) => {
    still be one click from every label. */
 const COLOPHON: { en: string; label: string; es: string }[] = [
   { en: '/gallery/', label: 'Gallery', es: 'Galería' },
+  /* English only for now: the films are in English and there are no Spanish
+     watch pages, so PAGE_PAIRS has no entry and the flatMap below drops this
+     row on Spanish pages rather than sending a Spanish reader to an English
+     one. */
+  { en: '/videos/', label: 'Videos', es: 'Videos' },
   { en: '/blog/', label: 'Blog', es: 'Blog' },
   { en: '/what-we-use/', label: 'What we apply', es: 'Lo que aplicamos (en inglés)' },
   { en: '/awards/', label: 'Awards & press', es: 'Premios y prensa' },

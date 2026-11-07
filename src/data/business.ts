@@ -1158,6 +1158,12 @@ export const business = {
     'https://www.instagram.com/sasquatchpestcontrol',
     'https://www.linkedin.com/in/sasquatch-pest-control-7009412b6',
     'https://nextdoor.com/page/sasquatch-pest-control-bellingham-wa',
+    /* Supplied by the owner 7 Nov 2026 and verified by loading it: the page
+       titles itself "Sasquatch Pest Control - YouTube". Outstanding since 22
+       Sep, when the footer icons went in and YouTube was deliberately left
+       out rather than guessed. The icon is already drawn, so it appears here
+       with no further edit — which is what that guard was built for. */
+    'https://www.youtube.com/@sasquatchpestcontrol',
   ] as string[],
 
   /* Off-page. NEVER hand-entered — populated only from a verified GBP pull. */
