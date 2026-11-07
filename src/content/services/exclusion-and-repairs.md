@@ -27,7 +27,7 @@ faqs:
   - q: "Is exclusion worth it if I am already on a treatment plan?"
     a: "It is usually worth more. A recurring treatment manages pressure on a property and has to keep being paid for. Exclusion is bought once and keeps working. If you are choosing between them for a rodent problem, close the gaps first — that is the honest answer even though it is the smaller recurring number for us."
   - q: "Do you do the structural repairs too?"
-    a: "We do pest-related repair — vent screening, crawlspace access doors, sealing penetrations, damaged soffit and trim, vapor barrier, insulation. We are not general contractors. Where the fix is roofing, siding replacement, plumbing or structural framing, we will tell you plainly and hand it off rather than working around it."
+    a: "We do pest-related repair — vent screening, crawlspace access doors, sealing penetrations, damaged soffit and trim, vapor barrier and crawlspace insulation. Attic insulation removal and replacement is done by a local insulation crew we work alongside, not by us; we do the pest half and the sequencing. We are not general contractors either. Where the fix is roofing, siding replacement, plumbing or structural framing, we will tell you plainly and hand it off rather than working around it."
   - q: "When is the best time to have exclusion done?"
     a: "August and early September, before the rain drives rodents indoors. Sealing a house in late October means sealing animals inside it, so at that point exclusion has to follow trapping rather than lead it. Spring is the second-best window, after overwintering pests leave and before wasps establish."
   - q: "How long does exclusion last?"
@@ -221,8 +221,16 @@ We are not general contractors and we will not pretend otherwise to keep a job.
 
 We do pest-related repair: vent screening and replacement, crawlspace access
 doors, sealing penetrations, damaged soffit and trim where it is the entry point,
-vapor barrier, insulation removal and replacement, and the exclusion materials
-described above.
+vapor barrier, crawlspace insulation, and the exclusion materials described
+above.
+
+**Attic insulation is the exception, and it is worth being exact about.** We do
+not remove and replace attic insulation ourselves. A local insulation crew we
+work alongside does that part, because it is their trade and they do it every
+day. We do the pest half — trapping, exclusion, confirming the animals are gone
+— and the sequence, so the attic is not re-insulated over a problem that is
+still live. [Attic insulation](/services/attic-insulation/) sets out who does
+which part and in what order.
 
 We do not do roofing, siding replacement, structural framing repair, plumbing or
 drainage excavation. When the honest fix is one of those, we say so, describe it

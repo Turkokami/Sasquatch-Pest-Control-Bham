@@ -81,7 +81,7 @@ export const exclusionYReparaciones: EsServicio = {
       h2: 'Lo que no hacemos',
       parrafos: [
         'No somos contratistas generales y no vamos a hacer como que sí para quedarnos con un trabajo.',
-        'Hacemos las reparaciones relacionadas con plagas: malla y reemplazo de rejillas, puertas de acceso al espacio bajo el piso, sellado de penetraciones, sofito y moldura dañados cuando son la entrada, barrera de vapor, retiro y reemplazo de aislamiento, y los materiales de exclusión de arriba.',
+        'Hacemos las reparaciones relacionadas con plagas: malla y reemplazo de rejillas, puertas de acceso al espacio bajo el piso, sellado de penetraciones, sofito y moldura dañados cuando son la entrada, barrera de vapor, aislamiento del espacio bajo el piso, y los materiales de exclusión de arriba. El aislamiento del ático es la excepción y vale la pena decirlo con precisión: ese retiro y reemplazo no lo hacemos nosotros, lo hace una cuadrilla local de aislamiento con la que trabajamos, porque es su oficio y lo hacen todos los días. Nosotros hacemos la parte de plagas —trampeo, exclusión y confirmar que los animales ya no están— y el orden del trabajo, para que no se vuelva a aislar un ático sobre un problema todavía vivo.',
         'No hacemos techos, reemplazo de revestimiento, reparación de estructura, plomería ni excavación de drenaje. Cuando el arreglo honesto es uno de esos, se lo decimos, se lo describimos con suficiente claridad para que pueda pedir una cotización con sentido, y donde podemos le decimos quién hace bien ese trabajo aquí.',
         'Esa distinción importa más cuando hay pudrición. La madera que perdió sección estructural hay que reemplazarla, y ponerle malla encima es cosmético. Preferimos perder el trabajo de sellado que sellar una solera podrida y darlo por terminado.',
       ],
@@ -173,7 +173,7 @@ export const exclusionYReparaciones: EsServicio = {
     },
     {
       q: '¿También hacen las reparaciones estructurales?',
-      a: 'Hacemos las reparaciones relacionadas con plagas: malla de rejillas, puertas de acceso, sellado de penetraciones, sofito y moldura dañados, barrera de vapor y aislamiento. No somos contratistas generales. Cuando el arreglo es de techo, revestimiento, plomería o estructura, se lo decimos claro y lo pasamos a quien corresponde.',
+      a: 'Hacemos las reparaciones relacionadas con plagas: malla de rejillas, puertas de acceso, sellado de penetraciones, sofito y moldura dañados, barrera de vapor y aislamiento del espacio bajo el piso. El retiro y reemplazo del aislamiento del ático lo hace una cuadrilla local de aislamiento con la que trabajamos, no nosotros; nosotros hacemos la parte de plagas y el orden del trabajo. Tampoco somos contratistas generales. Cuando el arreglo es de techo, revestimiento, plomería o estructura, se lo decimos claro y lo pasamos a quien corresponde.',
     },
     {
       q: '¿Cuánto dura la exclusión?',
