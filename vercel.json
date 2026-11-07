@@ -2075,6 +2075,16 @@
       "source": "/contact-us-thank-you/",
       "destination": "/contact/",
       "permanent": true
+    },
+    {
+      "source": "/🕷️-tiny-black-spiders-in-washington-state-what-you-need-to-know-🕸/",
+      "destination": "/services/spider-control/",
+      "permanent": true
+    },
+    {
+      "source": "/%F0%9F%95%B7%EF%B8%8F-tiny-black-spiders-in-washington-state-what-you-need-to-know-%F0%9F%95%B8/",
+      "destination": "/services/spider-control/",
+      "permanent": true
     }
   ],
   "rewrites": [
