@@ -440,7 +440,17 @@ function organizationNode(guideTopics: GuideTopic[]) {
   const radiusMi = serviceRadiusMiles();
   const geoReady = isReady(business.geo.lat) && isReady(business.geo.lng);
   return clean({
-    '@type': ['Organization', 'LocalBusiness', 'PestControlService'],
+    /* PestControlService IS NOT A SCHEMA.ORG TYPE. It reads like one and SEO
+       advice repeats it, but https://schema.org/PestControlService returns
+       404 — checked 7 Nov 2026, after Search Console reported an "Incorrect
+       value type" error on this graph. An invented type is ignored at best;
+       at worst it invalidates the node that carries it.
+
+       HomeAndConstructionBusiness is the real parent for a trade that works
+       on buildings, and it exists: https://schema.org/HomeAndConstructionBusiness
+       returns 200. What the company actually does is said in `description`,
+       `knowsAbout` and the service catalog, which is where it belongs. */
+    '@type': ['Organization', 'LocalBusiness', 'HomeAndConstructionBusiness'],
     '@id': ID.local,
     name: business.name,
     legalName: isReady(business.legalName) ? business.legalName : undefined,
@@ -664,6 +674,18 @@ function websiteNode() {
     '@id': ID.site,
     url: `${SITE}/`,
     name: business.name,
+    /* THE NAMES PEOPLE ACTUALLY TYPE. The Nov 2026 Search Console sweep found
+       branded clicks down 67% and the exact brand term not ranking first,
+       with Google apparently mixing in the Texas franchise and directory
+       listings for an un-geo'd query. alternateName tells Google the geo
+       variants are the same entity as this site rather than competitors for
+       it. It is a hint, not a lever — but it is the honest one available, and
+       it costs nothing. */
+    alternateName: [
+      'Sasquatch Pest Control Bellingham',
+      'Sasquatch Pest Control WA',
+      'Sasquatch Pest Control Whatcom County',
+    ],
     publisher: { '@id': ID.local },
     /* Both, because the site is both: the WebSite node is one node shared by
        every page, so it states the set and each WebPage states its own. */
@@ -1003,7 +1025,19 @@ export function buildGraph(input: PageSchemaInput) {
       name: v.title,
       description: v.description,
       thumbnailUrl: abs(v.poster),
-      uploadDate: v.uploaded,
+      /* FULL ISO-8601 WITH AN OFFSET. The date alone — "2022-11-08" — drew
+         two warnings per video in Search Console ("uploadDate is missing a
+         timezone" and "Invalid datetime value"), on all four pages carrying a
+         VideoObject. Google's VideoObject documentation asks for a date with
+         a time and a zone; a bare date is accepted into the graph and then
+         flagged.
+
+         -08:00 is Pacific Standard, which is what Whatcom County keeps in
+         November and what the source dates were recorded in. The time of day
+         is not known to the minute and does not need to be — it is a publish
+         date, not an event — so it is pinned to 09:00 local rather than
+         invented more precisely than the fact deserves. */
+      uploadDate: `${v.uploaded}T09:00:00-08:00`,
       duration: v.durationIso,
       embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`,
       publisher: { '@id': ID.org },

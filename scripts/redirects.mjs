@@ -95,6 +95,30 @@ for (const [old, cat] of Object.entries(cats)) {
   redirects.push({ from: `/${old}/`, to: `/services/#${cat}`, code: 301 });
 }
 
+/* SUPERSEDED BLOG POSTS, read from their own frontmatter.
+   -------------------------------------------------------------------------
+   Until Nov 2026 these built as pages carrying noindex AND a canonical to a
+   different page. Google's Search Console sweep found 53 of them under
+   "Excluded by noindex", and the two hints contradict each other: noindex
+   says drop this, a cross-page canonical says credit that one. Worse, some
+   legacy URLs redirected INTO a noindexed page, so the equity stopped dead.
+
+   A 301 says the single thing both were reaching for. The source of truth is
+   the post's own `supersededBy`, the same field blog/[post].astro filters on,
+   so a page and its rule cannot disagree — add the field and the post stops
+   building and starts redirecting in the same commit. */
+const blogDir = path.join(root, 'src/content/blog');
+for (const file of fs.readdirSync(blogDir).filter((f) => f.endsWith('.md'))) {
+  const md = fs.readFileSync(path.join(blogDir, file), 'utf8');
+  /* Both quote styles: three of the 56 use double quotes, and a
+     single-quote-only pattern silently skipped them — which showed up as
+     three legacy URLs pointing at pages that no longer build. Matching the
+     frontmatter loosely here is safer than assuming it is uniform. */
+  const to = (md.match(/^supersededBy:\s*['"]([^'"]+)['"]/m) || [])[1];
+  if (!to) continue;
+  redirects.push({ from: `/blog/${file.replace(/\.md$/, '')}/`, to, code: 301 });
+}
+
 /* Known one-offs found in the audit. */
 redirects.push(
   { from: '/pest-control-services/', to: '/services/', code: 301 },
@@ -115,6 +139,17 @@ redirects.push(
      27 Sep 2026. Pointing it at the real sitemap index keeps that crawl path
      alive instead of teaching Googlebot that a known-good URL is now gone. */
   { from: '/sitemap_index.xml', to: '/sitemap.xml', code: 301 },
+
+  /* 404s Google is still crawling — Search Console sweep, 7 Nov 2026. Each
+     one had equity pointing at it and was dead-ending. */
+  { from: '/lady-bug-control/', to: '/services/stink-bug-control/', code: 301 },
+  { from: '/service-areas/ferndale-wa/', to: '/locations/ferndale/', code: 301 },
+  { from: '/service-areas/mt-vernon-wa/', to: '/locations/mount-vernon/', code: 301 },
+  { from: '/pest-control-sudden-valley-wa/', to: '/locations/sudden-valley/', code: 301 },
+  /* Person pages that never existed on this site. The Person nodes live on
+     /about/, which is where their @ids were repointed in Sep. */
+  { from: '/kristofer-elling/', to: '/about/', code: 301 },
+  { from: '/profile/travis-hansen/', to: '/about/', code: 301 },
 );
 
 /* PATH COLLISION — deliberate, not a redirect.
@@ -149,6 +184,34 @@ if (fs.existsSync(legacyFile)) {
   }
   unchanged = legacy.unchanged ?? [];
   liveInventory = legacy.live ?? [];
+}
+
+/* ---- collapse chains through a superseded post -------------------------
+   A legacy URL mapped to /blog/<slug>/ before that post was superseded now
+   points at a rule rather than a page: old → /blog/x/ → /services/y/. The
+   chain check below would reject the map, and rightly — Google follows a
+   chain but discounts it, and the Nov 2026 Search Console sweep named this
+   exact case ("Point it straight at the guide").
+
+   Rather than hand-editing legacy-urls.json every time a post is retired,
+   the destination is resolved here: if a target is a superseded post, the
+   rule inherits that post's final destination. One hop, always, and nobody
+   has to remember. */
+const supersededTargets = new Map(
+  redirects
+    .filter((r) => r.from.startsWith('/blog/'))
+    .map((r) => [r.from, r.to]),
+);
+let collapsed = 0;
+for (const r of redirects) {
+  if (r.from.startsWith('/blog/')) continue;
+  const final = supersededTargets.get(r.to);
+  if (!final) continue;
+  r.to = final;
+  collapsed++;
+}
+if (collapsed) {
+  console.log(`collapsed ${collapsed} chain(s) through a superseded blog post`);
 }
 
 /* ---- integrity checks: no chains, no duplicate sources, no self-loops ---- */

@@ -492,6 +492,301 @@
       "permanent": true
     },
     {
+      "source": "/blog/bed-bug-infestations/",
+      "destination": "/services/bed-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bed-bugs-holiday-travel-whatcom/",
+      "destination": "/services/bed-bug-control/bed-bugs-after-a-trip/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/black-spiders-washington-state/",
+      "destination": "/services/spider-control/is-this-a-hobo-spider/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/brown-recluse-spiders/",
+      "destination": "/services/spider-control/is-this-a-hobo-spider/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bumble-bees-in-washington-state/",
+      "destination": "/services/bee-removal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/carpenter-ants-vs-sugar-ants-bellingham/",
+      "destination": "/services/ant-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/combating-fleas/",
+      "destination": "/services/flea-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/combatting-rodent-invaders/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/common-pests-bellingham-wa/",
+      "destination": "/locations/bellingham/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/defending-lynden-homes-pest-control/",
+      "destination": "/locations/lynden/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dont-remove-wasp-nest-yourself-bellingham/",
+      "destination": "/services/wasp-control/wasp-nest-in-a-wall-void/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/earwigs-millipedes-clover-mites-bellingham/",
+      "destination": "/services/earwig-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/eco-friendly-pest-control-bellingham/",
+      "destination": "/guides/low-impact-treatment-and-what-it-can-and-cannot-do/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/eco-friendly-pest-control-in-bellingham/",
+      "destination": "/guides/low-impact-treatment-and-what-it-can-and-cannot-do/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fall-rodent-prevention-bellingham/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/flea-season-pacific-northwest/",
+      "destination": "/services/flea-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fortifying-homes-in-blaine-wa-the-essence-of-effective-pest-control/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/household-bugs-bellingham/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-cockroaches-get-in-bellingham/",
+      "destination": "/services/cockroach-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-choose-pest-control-whatcom/",
+      "destination": "/guides/how-to-choose-a-pest-control-company-in-whatcom-county/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-identify-termites/",
+      "destination": "/services/termite-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-know-if-you-have-bed-bugs-bellingham/",
+      "destination": "/services/bed-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/identifying-pest-activity/",
+      "destination": "/pest-library/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/keeping-your-home-pest-free-in-ferndale-wa/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/know-your-bees/",
+      "destination": "/services/carpenter-bee-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/landlord-pest-control-washington/",
+      "destination": "/guides/who-pays-for-pest-control-in-a-rental/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/more-spiders-fall-bellingham/",
+      "destination": "/services/spider-control/spiders-appearing-every-fall/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mud-dauber-wasps-in-washington-state-natures-non-aggressive-pollinators/",
+      "destination": "/pest-library/mud-dauber/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pest-control-in-blaine-wa/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pest-control-in-ferndale-wa/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pest-trends-whatcom-county-year-in-review/",
+      "destination": "/guides/the-whatcom-county-pest-year/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/preventative-pest-control/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rats-vs-mice-bellingham/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rodent-entry-points-bellingham/",
+      "destination": "/services/exclusion-and-repairs/sealing-a-quarter-inch-foundation-gap/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rodent-proofing-home-winter-bellingham/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sasquatch-pest-control-defending-against-stink-bugs/",
+      "destination": "/services/stink-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/spider-control-bellingham-wa/",
+      "destination": "/services/spider-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stinging-flying-insects-bellingham/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/stink-bugs-fall-bellingham/",
+      "destination": "/services/stink-bug-control/bugs-on-the-south-wall-every-october/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/termites-bellingham-wa/",
+      "destination": "/services/termite-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/termites-structural-bellingham/",
+      "destination": "/services/wdo-treatment/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-blaine-peace-arch-a-symbol-of-unity/",
+      "destination": "/locations/blaine/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-sasquatch-advantage-in-preventative-pest-control/",
+      "destination": "/services/home-protection-plan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-ultimate-guide-to-rodent-control-how-to-find-the-best-pest-control-services-near-you/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/the-vital-role-of-proper-pest-control-in-bow-wa/",
+      "destination": "/locations/bow/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tiny-black-spiders-in-washington/",
+      "destination": "/services/spider-control/is-this-a-hobo-spider/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/understanding-bed-bugs-bites-identification/",
+      "destination": "/services/bed-bug-control/bites-but-no-bugs-found/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/understanding-wasps-vs-yellowjackets/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unwanted-buzzing-how-to-locate-the-best-beehive-exterminator-near-you/",
+      "destination": "/services/bee-removal/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wasp-sting/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/weevils-in-your-pantry/",
+      "destination": "/services/beetle-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-is-integrated-pest-management/",
+      "destination": "/guides/what-integrated-pest-management-actually-means/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-is-rodent-exclusion/",
+      "destination": "/services/exclusion-and-repairs/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/when-do-wasps-build-nests-bellingham/",
+      "destination": "/services/wasp-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-ants-invade-homes-spring-bellingham/",
+      "destination": "/services/ant-control/ant-trails-across-the-kitchen-counter/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-do-i-have-millipedes-in-my-home/",
+      "destination": "/services/centipede-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-earwigs-are-invading-your-home/",
+      "destination": "/services/earwig-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/why-powder-post-beetle-treatment-is-critical-after-flooding/",
+      "destination": "/services/wdo-treatment/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/yellow-jackets/",
+      "destination": "/services/wasp-control/yellowjackets-in-the-lawn/",
+      "permanent": true
+    },
+    {
       "source": "/pest-control-services/",
       "destination": "/services/",
       "permanent": true
@@ -539,6 +834,36 @@
     {
       "source": "/sitemap_index.xml",
       "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/lady-bug-control/",
+      "destination": "/services/stink-bug-control/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/ferndale-wa/",
+      "destination": "/locations/ferndale/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/mt-vernon-wa/",
+      "destination": "/locations/mount-vernon/",
+      "permanent": true
+    },
+    {
+      "source": "/pest-control-sudden-valley-wa/",
+      "destination": "/locations/sudden-valley/",
+      "permanent": true
+    },
+    {
+      "source": "/kristofer-elling/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/profile/travis-hansen/",
+      "destination": "/about/",
       "permanent": true
     },
     {
@@ -1033,12 +1358,12 @@
     },
     {
       "source": "/what-is-integrated-pest-management/",
-      "destination": "/blog/what-is-integrated-pest-management/",
+      "destination": "/guides/what-integrated-pest-management-actually-means/",
       "permanent": true
     },
     {
       "source": "/eco-friendly-pest-control-bellingham/",
-      "destination": "/blog/eco-friendly-pest-control-bellingham/",
+      "destination": "/guides/low-impact-treatment-and-what-it-can-and-cannot-do/",
       "permanent": true
     },
     {
@@ -1213,7 +1538,7 @@
     },
     {
       "source": "/how-to-choose-pest-control-whatcom/",
-      "destination": "/blog/how-to-choose-pest-control-whatcom/",
+      "destination": "/guides/how-to-choose-a-pest-control-company-in-whatcom-county/",
       "permanent": true
     },
     {

@@ -78,7 +78,23 @@ const inlinePhotos = inlinePhotosFor('/');
 ---
 <BaseLayout
   path={path}
-  title="Pest Control & Exterminator | Bellingham, WA"
+  {/* BRAND FIRST, 7 Nov 2026. This read "Pest Control & Exterminator |
+      Bellingham, WA", and with the brand suffix appended it rendered as
+      "… | Bellingham, WA | Sasquatch" — the company's own name truncated to
+      one word at the far end of the tag. The Search Console sweep found
+      branded clicks down 67% and the exact brand query not ranking first.
+
+      A homepage is the brand's page. Somebody searching "sasquatch pest
+      control" should see the whole name first, and the keywords still follow
+      it. brandSuffix stays true so the title builder does not re-append it. */}
+  {/* 51 characters, chosen rather than truncated. The first attempt was
+      "… | Bellingham & Whatcom County Exterminator" at 65, which the title
+      builder cut to 60 and silently dropped the keyword off the end. A title
+      that survives the limit is better than one that gets edited by a
+      regular expression. "Whatcom County" is carried by the H1, the
+      description and the Quick Answer, so the tag spends its room on the
+      brand, the city people search, and the word they search with. */}
+  title="Sasquatch Pest Control | Bellingham WA Exterminator"
   description="Family-owned pest control and exterminator service for Bellingham and Whatcom County. Exclusion first, no long-term contracts. Call or text 360-410-2199."
   kind="home"
   videoKey="autumn-film"

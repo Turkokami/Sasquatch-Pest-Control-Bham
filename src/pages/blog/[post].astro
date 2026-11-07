@@ -17,7 +17,24 @@ const INFOGRAPHIC_POSTS = new Set(['rodent-proofing-home-winter-bellingham']);
    only reason the route exists. */
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts.map((p) => ({ params: { post: p.slug }, props: { p } }));
+  /* SUPERSEDED POSTS ARE NO LONGER BUILT. They used to render as a page
+     carrying noindex plus a canonical to a different page, which Google's
+     November 2026 Search Console sweep found on 53 URLs under "Excluded by
+     noindex" — and those two hints contradict each other. noindex says "drop
+     this"; a cross-page canonical says "credit that one instead". Google
+     resolves the pair unpredictably, and some old URLs were redirecting INTO
+     a noindexed page, so the link equity stopped there.
+
+     A 301 says the one thing both were groping at: this moved, go here, take
+     the rankings with you. scripts/redirects.mjs emits one per superseded
+     post, read from the same frontmatter this filter uses, so the page and
+     the rule cannot disagree.
+
+     The post's text is not lost — it is still in the repository, and the
+     target page is where the content was rewritten to. */
+  return posts
+    .filter((p) => !p.data.supersededBy)
+    .map((p) => ({ params: { post: p.slug }, props: { p } }));
 }
 
 const { p } = Astro.props;

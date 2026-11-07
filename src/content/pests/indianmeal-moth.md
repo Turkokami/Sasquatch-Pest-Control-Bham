@@ -290,7 +290,7 @@ beetles crawling at the top of a bag point at a beetle instead. The
 [sawtoothed grain beetle](/pest-library/sawtoothed-grain-beetle/) is the flat one
 that turns up in flour and dried fruit, and the weevils that develop inside a
 grain are covered in our post on
-[weevils in the pantry](/blog/weevils-in-your-pantry/).
+[weevils in the pantry](/services/beetle-control/).
 
 Both can be present at once in a cupboard that has been left alone long enough,
 and both are cleared the same way.

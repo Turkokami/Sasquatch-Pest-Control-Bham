@@ -259,7 +259,7 @@ sign at all.
 
 **Grains with small round exit holes, and material that floats when tipped into
 water**, means a weevil that developed inside the individual kernel. Our post on
-[weevils in the pantry](/blog/weevils-in-your-pantry/) covers those, including
+[weevils in the pantry](/services/beetle-control/) covers those, including
 the snout that makes an adult weevil recognizable.
 
 **Loose flat beetles moving through the material, with fine dusty debris and no

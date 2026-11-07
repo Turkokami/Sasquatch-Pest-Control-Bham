@@ -157,13 +157,14 @@ const inlinePhotos = inlinePhotosFor('/blog/');
         kept intact underneath.
       </p>
       <ul>
+        {/* The title links to the page that REPLACED the post, not to the
+            post. Since Nov 2026 a superseded post is a 301 rather than a
+            page, so linking its old address would send a reader through a
+            redirect to reach exactly where this link already goes. */}
         {archived.map((p) => (
           <li>
-            <a href={`/blog/${p.slug}/`}>{p.data.h1}</a>
-            <p>
-              {p.data.description}{' '}
-              <a class="current" href={p.data.supersededBy}>Current page →</a>
-            </p>
+            <a href={p.data.supersededBy}>{p.data.h1}</a>
+            <p>{p.data.description}</p>
           </li>
         ))}
       </ul>

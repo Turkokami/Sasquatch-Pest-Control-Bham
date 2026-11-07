@@ -42,11 +42,27 @@ const href = (p: Post) => ({ href: `/blog/${p.slug}/`, label: p.data.h1 ?? p.dat
  * pass some of it down to the posts about them.
  */
 export async function blogPostsFor(path: string) {
-  const all = await getCollection('blog');
-  return all
-    .filter((p) => p.data.supersededBy === path)
-    .sort((a, b) => (a.data.h1 ?? a.data.title).localeCompare(b.data.h1 ?? b.data.title))
-    .map(href);
+  /* RETURNS NOTHING SINCE 7 NOV 2026, and the reason is structural rather
+     than a change of mind about the idea.
+     ----------------------------------------------------------------------
+     This filtered for posts whose supersededBy equals THIS page — so every
+     post it ever returned was, by definition, a superseded one. Those posts
+     are no longer built: they 301 to the page that replaced them, which is
+     the page this rail renders on. Every link it produced would therefore be
+     a link from a page, through a redirect, back to itself.
+     The site's own dead-link check caught all 59 of them.
+
+     The relationship the rail was built to express is now carried by the
+     redirect itself, which is a stronger signal than a rail link: the old
+     post's rankings and inbound links are handed to this page outright
+     rather than pointed at from it.
+
+     Kept as a function returning an empty array rather than deleted, because
+     five templates call it and their rails already handle an empty list by
+     rendering nothing. Delete it and its call sites together when somebody
+     is next in these files for another reason. */
+  void path;
+  return [] as ReturnType<typeof href>[];
 }
 
 /**
@@ -65,8 +81,16 @@ export async function blogPostsFor(path: string) {
  * posts times six links, distributed, rather than concentrated on six pages.
  */
 export async function blogSiblings(slug: string, limit = 6) {
-  const all = (await getCollection('blog')).sort((a, b) => a.slug.localeCompare(b.slug));
-  const me = all.find((p) => p.slug === slug);
+  /* Superseded posts are not built any more — they 301 to the page that
+     replaced them (see getStaticPaths in blog/[post].astro). A rail linking
+     to one would be a link to a redirect at best and a dead link at worst,
+     so they are filtered out of the candidate pool here rather than caught
+     later by the harness. `me` is still looked up in the unfiltered list,
+     because the post being rendered may itself be superseded in a build
+     where that changes. */
+  const built = (await getCollection('blog')).sort((a, b) => a.slug.localeCompare(b.slug));
+  const me = built.find((p) => p.slug === slug);
+  const all = built.filter((p) => !p.data.supersededBy);
   const rest = all.filter((p) => p.slug !== slug);
   const target = me?.data.supersededBy;
 
