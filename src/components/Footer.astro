@@ -93,6 +93,14 @@ const COLOPHON: { en: string; label: string; es: string }[] = [
   { en: '/blog/', label: 'Blog', es: 'Blog' },
   { en: '/what-we-use/', label: 'What we apply', es: 'Lo que aplicamos (en inglés)' },
   { en: '/awards/', label: 'Awards & press', es: 'Premios y prensa' },
+  /* English only, and for the same reason the films are: the reviews are
+     fifteen customers' own words, and a translated quotation is not a
+     quotation. PAGE_PAIRS has no entry, so the flatMap below drops this row
+     on Spanish pages rather than sending a Spanish reader to an English one
+     — the `es` label here is never rendered. A Spanish reader reaches the
+     same reviews through the Google rating link in this footer, where it is
+     Google doing the translating and obvious that it did. */
+  { en: '/reviews/', label: 'Customer reviews', es: 'Customer reviews' },
   { en: '/trusted-partners/', label: 'Trusted partners', es: 'Socios de confianza' },
   { en: '/guides/', label: 'Guides', es: 'Guías' },
   { en: '/our-guarantee/', label: 'Guarantee & terms', es: 'Garantía y condiciones' },

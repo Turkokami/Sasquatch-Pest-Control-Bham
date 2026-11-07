@@ -1188,15 +1188,24 @@ export const business = {
        smaller, single-source figure is the more persuasive one precisely
        because it is verifiable. Owner agreed 2 Sep 2026. */
     value: 4.9 as Owed<number>,
-    /* 342 -> 348, read 27 Sep 2026 from the owner's own Business Profile —
-       the screen showed "You manage this Business Profile" beside
-       "4.9 ★ (348)", which is the verified pull this field requires and the
-       only thing that may move it. The post-launch audit had reported 343 on
-       26 Sep; the profile itself is the source of record, not the audit. */
-    count: 348 as Owed<number>,
+    /* 342 -> 348 -> 351. Read 7 Nov 2026 from the owner's own Business
+       Profile: the management screen showed "4.9 ★ (351 reviews)" above
+       "Reply to reviews" and per-review Edit/Delete controls, which is the
+       verified pull this field requires and the only thing that may move it.
+       (348 was the 27 Sep reading off the same screen; the post-launch audit
+       had reported 343 on 26 Sep, and the profile, not the audit, is the
+       source of record.)
+
+       The same screenshots supplied src/data/reviews.ts, which quotes
+       fifteen of these reviews on /reviews/. That page displays this number
+       as text with this date beside it — and still emits no AggregateRating,
+       for the reasons set out immediately below. Quoting reviews changed
+       nothing about schema eligibility; it is the entity controlling the
+       reviews that makes the markup ineligible, not the format. */
+    count: 351 as Owed<number>,
     source: 'Google Business Profile',
     /** The date the figure above was read. A rating with no date rots. */
-    read: '2026-09-27',
+    read: '2026-11-07',
 
     /* SCHEMA ELIGIBILITY — false, and this is NOT a data gap.
        -----------------------------------------------------------------------

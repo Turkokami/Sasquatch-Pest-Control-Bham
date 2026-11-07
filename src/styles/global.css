@@ -3447,5 +3447,97 @@ footer.site ul.social li a:focus-visible {
 }
 .listen button:hover {
   border-color: var(--accent-line);
-  color: var(--ink-1);
+  color: var(--ink);
+}
+
+/* ------------------------------------------- §27  customer reviews */
+
+/* The wall on /reviews/. Fifteen quotes of wildly uneven length — one is two
+   lines, one is a paragraph and a half — so the only workable frame is a card
+   that sizes to its own text, in a grid that starts each column at the top
+   rather than stretching cells to match. Stretching would make the two-line
+   reviews look like something was missing from them. */
+.review-score {
+  font-family: var(--sans);
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+  margin: 0 0 var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--rule);
+}
+/* MULTI-COLUMN, NOT GRID, and the first attempt was grid. Fifteen reviews
+   run from two lines to a full paragraph, and a two-column grid starts every
+   row at the bottom of the tallest card in the row — which left a 130px hole
+   beside the short ones and made the wall look like something had failed to
+   load. Column flow lets each card butt against the one above it. The cost is
+   that reading order down the page becomes column-major, newest down the left
+   and oldest down the right. That is a visual ordering only: the DOM order is
+   still newest first, which is the order a screen reader and a crawler get. */
+.reviews {
+  margin: var(--space-4) 0 var(--space-5);
+}
+/* Two columns only once a column is still wide enough to read in. Below this
+   the quotes run full width, which is the right answer on a phone. */
+@media (min-width: 48rem) {
+  .reviews {
+    columns: 2;
+    column-gap: var(--space-3);
+  }
+}
+/* The green edge is the one piece of brand on the card, and it is a rule
+   rather than a fill: §1's note that the green is an accent and never a large
+   field applies here more than anywhere, because fifteen lime cards would be
+   a traffic hazard. */
+.review {
+  /* break-inside is what makes the column flow usable: without it a quote
+     splits across the column boundary and half a sentence appears at the top
+     of the next column with somebody else's name under it. */
+  break-inside: avoid;
+  margin: 0 0 var(--space-3);
+  padding: var(--space-3);
+  background: var(--well);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--marker);
+  border-radius: var(--radius-sm);
+}
+/* No decorative quotation mark. A glyph before the first word reads as part
+   of the sentence to a screen reader and pushes the real first word out of
+   alignment for everyone else; the card is already visibly a quotation. */
+.review blockquote {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+  color: var(--ink);
+}
+.review blockquote p {
+  margin: 0 0 0.75em;
+}
+.review blockquote p:last-child {
+  margin-bottom: 0;
+}
+.review figcaption {
+  margin-top: var(--space-2);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.review figcaption b {
+  font-family: var(--sans);
+  font-size: var(--fs-sm);
+  color: var(--ink);
+}
+/* The metadata line carries the month, the Local Guide badge and the word
+   "extract". All three are qualifications on the quote above rather than
+   decoration, so they are quiet but never hidden — an extract that does not
+   say it is an extract is the problem it exists to disclose. */
+.review-meta,
+.review-job {
+  font-family: var(--sans);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
 }

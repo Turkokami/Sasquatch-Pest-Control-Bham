@@ -1,0 +1,213 @@
+---
+/**
+ * REVIEWS — the page the GSC sweep asked for, built the only way it is worth
+ * building: real quotes, named and dated, with a link to the place they can
+ * be checked.
+ *
+ * WHY IT EXISTS. /reviews/ was a 404 that other sites and at least one of our
+ * own old pages linked to, and the November 2026 sweep listed it as P3: "Add
+ * a real reviews/testimonials page that points to Google reviews. Do not add
+ * aggregateRating to LocalBusiness." Both halves of that are honored here.
+ *
+ * THE RULE THIS PAGE IS BUILT AROUND. A testimonial page is an advertisement
+ * — the FTC says so plainly — and the thing that makes an advertisement legal
+ * is that every claim in it is true and nothing material is hidden. So the
+ * quotes are verbatim, the mechanics are published below the quotes rather
+ * than assumed, and the one review deliberately left out is named along with
+ * the reason. See the header of src/data/reviews.ts, which carries the full
+ * provenance.
+ *
+ * NO STRUCTURED DATA, AND THAT IS THE POINT. There is no Review node and no
+ * AggregateRating anywhere on this page. Google's Review Snippet guidance
+ * makes a site ineligible for stars when the entity controls the reviews
+ * about itself, and separately forbids republishing another platform's
+ * ratings as structured data. Marking this up would produce no stars and
+ * invite a manual action. The link to the profile is what a reader — and a
+ * crawler — should follow, because that is where the rating actually lives.
+ *
+ * ENGLISH ONLY. There is no /es/ twin and there should not be one: these are
+ * fifteen people's own words and a translated quotation is not a quotation.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import Cta from '../components/Cta.astro';
+import LinkRail from '../components/LinkRail.astro';
+import { business, isReady } from '../data/business';
+import { reviews } from '../data/reviews';
+import { liveServices } from '../data/services';
+
+const path = '/reviews/';
+
+/* The read date on business.rating, written the long way. A rating with no
+   date rots, and the date is the first thing a skeptical reader looks for. */
+const ratingRead = new Date(`${business.rating.read}T12:00:00Z`).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+
+const names = new Map(liveServices().map((s) => [`/services/${s.slug}/`, s.name]));
+const rail = ['/services/rodent-control/', '/services/wasp-control/', '/services/exclusion-and-repairs/'].map(
+  (href) => ({ href, label: names.get(href) ?? href }),
+);
+
+const answer =
+  'Every quote on this page is a Google review of Sasquatch Pest Control, copied word for word from our own Business Profile. Nothing is edited, nothing was paid for, and nothing critical has been removed. The profile itself is one click away, and it is the version that counts.';
+---
+<BaseLayout
+  path={path}
+  title="Customer Reviews in Whatcom County"
+  description="Google reviews of Sasquatch Pest Control from Bellingham and Whatcom County customers, quoted word for word, with a link to the profile they came from."
+  kind="page"
+>
+  <h1>Reviews, in the customers&rsquo; own words</h1>
+  <AnswerBox text={answer} />
+
+  {isReady(business.rating.value) && isReady(business.rating.count) && (
+    <p class="review-score">
+      <strong>{business.rating.value} out of 5</strong> from {business.rating.count} Google
+      reviews, read from the profile on {ratingRead}.{' '}
+      {isReady(business.gbpUrl) && (
+        <a href={business.gbpUrl as string} rel="nofollow noopener">Open the profile and check it</a>
+      )}
+    </p>
+  )}
+
+  <div class="reviews">
+    {reviews.map((r) => (
+      <figure class="review">
+        {/* A blank line in the original becomes a paragraph; a single line
+            break becomes a line break, which is what Google itself renders.
+            Treating both as paragraphs put a paragraph-sized gap into the
+            middle of one reviewer's sentence and made it look like something
+            had been cut out of the quote. */}
+        <blockquote>
+          {r.text.split(/\n{2,}/).filter(Boolean).map((para) => (
+            <p>{para.split('\n').map((line, i) => (i > 0 ? [<br />, line] : line))}</p>
+          ))}
+        </blockquote>
+        <figcaption>
+          <b>{r.name}</b>
+          <span class="review-meta">
+            {r.month}
+            {r.localGuide ? ' · Google Local Guide' : ''}
+            {r.excerpt ? ' · extract' : ''}
+          </span>
+          {r.job && <span class="review-job">{r.job}</span>}
+        </figcaption>
+      </figure>
+    ))}
+  </div>
+
+  <div class="prose">
+    <h2>How this page is put together</h2>
+
+    <p>
+      Anybody can paste nice sentences onto a web page and attribute them to a
+      first name. The only thing that separates this page from that one is the
+      mechanics, so here they are.
+    </p>
+
+    <p>
+      <strong>The words are the customers&rsquo;.</strong> Each quote was
+      transcribed from our own Google Business Profile and nothing in it has
+      been tightened, re-punctuated or spell-checked. One review below spells
+      recommended with one m. One begins a sentence with a word most editors
+      would cut. Both stay, because a quotation somebody improved is no longer
+      evidence of anything.
+    </p>
+
+    <p>
+      <strong>Names are shortened and dates are close.</strong> Google
+      publishes reviewers&rsquo; full names; we publish a first name and an
+      initial, because there is no reason for this site to make a second,
+      longer-lasting copy of somebody&rsquo;s name for our own marketing.
+      Google also shows an age rather than a date — &ldquo;22 weeks
+      ago&rdquo; — so the month beside each quote is worked out from that and
+      is good to within about a week.
+    </p>
+
+    <p>
+      <strong>Two are marked &ldquo;extract&rdquo;.</strong> Google cut those
+      two off behind a &ldquo;view full review&rdquo; link, so what you see is
+      what Google showed us rather than the whole thing. The rest are
+      complete.
+    </p>
+
+    <p>
+      <strong>One review was deliberately left out, and it was a good one.</strong>{' '}
+      A five-star review from the spring thanks us for dealing with the
+      writer&rsquo;s moles. We have a page explaining why we will not sell mole
+      trapping in this state, and putting a testimonial about mole results on
+      our own advertising would contradict it. Leaving out a review for
+      praising us is the opposite of the thing this page is accused of when it
+      goes wrong, which is why it is written down here instead of quietly
+      done.
+    </p>
+
+    <p>
+      <strong>There are no star ratings in the page&rsquo;s code.</strong> It
+      is tempting to add the markup that puts gold stars under a search
+      result. Google does not grant them to a business publishing its own
+      rating about itself, and republishing another platform&rsquo;s ratings as
+      structured data is against the same guidance. So the number above is
+      ordinary text with the date it was read and a link to the source, which
+      is the form a reader can actually verify.
+    </p>
+
+    <h2>How we ask for reviews</h2>
+
+    <p>
+      We ask once, after the work is finished, in the same words, of everyone —
+      the customers who are delighted and the ones who are not.
+    </p>
+
+    <ul>
+      <li>
+        <strong>Nothing is offered in exchange.</strong> No discount, no gift
+        card, no entry in a drawing. An incentive has to be disclosed wherever
+        the review appears, and the simplest way never to have to disclose one
+        is never to offer one.
+      </li>
+      <li>
+        <strong>Nobody is screened first.</strong> There is no
+        &ldquo;how did we do?&rdquo; step that sends the happy customers to
+        Google and routes everyone else to a private complaints form. That
+        practice has a name — review gating — and it is prohibited.
+      </li>
+      <li>
+        <strong>Nobody here writes them.</strong> Not staff, not family, not an
+        agency on our behalf.
+      </li>
+      <li>
+        <strong>We do not try to have bad ones removed.</strong> We reply to
+        them. Our average is 4.9 rather than 5.0, which means reviews exist
+        that are not five stars; they are on the profile linked above, where
+        you can read them alongside what we said back.
+      </li>
+    </ul>
+
+    <h2>If we got it wrong</h2>
+
+    <p>
+      Call before you write it up, if you can bear to. A missed appointment or
+      a treatment that did not hold is usually something we can put right the
+      same week, and we would much rather do that than read about it later.
+      Our guarantee covers the second visit, and it is not conditional on
+      saying anything nice afterwards.
+    </p>
+  </div>
+
+  <LinkRail heading="The work these reviews describe" links={rail} />
+  <LinkRail
+    heading="More about who turns up"
+    links={[
+      { href: '/about/', label: 'The crew, and their license numbers' },
+      { href: '/our-guarantee/', label: 'Our 100% service guarantee' },
+      { href: '/awards/', label: 'Awards and press, and how to check them' },
+    ]}
+  />
+
+  <Cta market="Whatcom County" />
+</BaseLayout>
