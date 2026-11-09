@@ -271,7 +271,10 @@ Scratched bites can become secondarily infected, which is the most common actual
 medical complication and an ordinary one. That is the state's position too — the
 [Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/bed-bugs)
 treats bed bugs as a nuisance and a skin-irritation problem rather than a
-disease-carrying one.
+disease-carrying one. The
+[National Pesticide Information Center's bed bug page](https://npic.orst.edu/pest/bedbug.html),
+run by Oregon State University with the EPA, reaches the same conclusion and is
+the better read if you want the detail behind it.
 
 The larger harm is usually sleep and stress. People who know there are insects
 in their bed stop sleeping properly, and that has real consequences over weeks.

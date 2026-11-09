@@ -89,6 +89,10 @@ in the pile is close to conclusive. UC IPM describes that mixture of wood fiber
 and body parts on its
 [carpenter ant page](https://ipm.ucanr.edu/home-and-landscape/carpenter-ants/),
 and it is the detail that separates them from beetles faster than anything else.
+WSU Extension's
+[Identification and Habits of Key Ant Pests in the Pacific Northwest](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/415/2014/12/antpests.pdf)
+covers the same ants for this corner of the country, which is the version worth
+reading if you are trying to name what is on your floor.
 
 Beetle powder contains nothing but powder. No fragments, no fibers, no
 inclusions.

@@ -297,7 +297,11 @@ rather than a carpet or pantry beetle. In Whatcom County the common one is the
 The pairing with damp is not incidental: the Forest Products Laboratory's
 [account of wood biodeterioration](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf)
 places anobiids among the wood borers that need a raised moisture content in the
-timber they attack.
+timber they attack. The regional treatment of the same insects is in the
+[PNW Insect Management Handbook's structural pest section](https://pnwhandbooks.org/insect/structural-health),
+published jointly by Washington State, Oregon State and the University of Idaho
+— which is the one to read if you want the version written for buildings in this
+climate rather than for timber generally.
 
 The distinction matters because the driver is moisture rather than food storage
 or fabric, and the fix is drying the space rather than cleaning a cupboard. See

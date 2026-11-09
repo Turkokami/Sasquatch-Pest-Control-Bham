@@ -114,7 +114,10 @@ nesting in the structure rather than foraging from outside. If the ants on your
 counter are big, that is a different page and a different job. UC IPM keeps a
 [page on carpenter ants](https://ipm.ucanr.edu/home-and-landscape/carpenter-ants/)
 with the size and the nesting habit set out, which settles most kitchen-table
-arguments about whether the big black one matters.
+arguments about whether the big black one matters. WSU Extension's
+[Identification and Habits of Key Ant Pests in the Pacific Northwest](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/415/2014/12/antpests.pdf)
+is the one to use for telling our small ants apart, because it is keyed to the
+species that live here.
 
 The distinction we care about most is nuisance versus structural. Most kitchen
 trails are nuisance ants, which is genuinely good news: they are not damaging

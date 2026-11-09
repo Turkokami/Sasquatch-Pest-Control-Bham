@@ -100,7 +100,11 @@ attic, your door frame, or the void behind a bathtub.
 [UC IPM](https://ipm.ucanr.edu/home-and-landscape/carpenter-ants/) describes the
 same two-part arrangement — a parent nest holding the queen and the brood, with
 satellite nests of workers and older larvae that get by in drier wood — which is
-why locating one nest is not the same as locating the colony.
+why locating one nest is not the same as locating the colony. For the species
+that actually turn up this far north, WSU Extension's
+[Identification and Habits of Key Ant Pests in the Pacific Northwest](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/415/2014/12/antpests.pdf)
+sets out the same habits against a Pacific Northwest species list rather than a
+Californian one.
 
 Kill a satellite and the parent replaces it. Spray a trail and you have removed
 foragers the colony can afford to lose. The only treatment that ends it is one

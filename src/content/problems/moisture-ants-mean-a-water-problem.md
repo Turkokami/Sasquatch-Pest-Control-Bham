@@ -75,7 +75,11 @@ Small — noticeably smaller than a [carpenter ant](/pest-library/carpenter-ant/
 ants that come into a kitchen. Yellowish, light amber or pale brown rather than
 black or dark red, which is the most reliable field mark. Slow-moving and not
 especially defensive. Frequently found in dense concentration in one place
-rather than trailing across a room.
+rather than trailing across a room. WSU Extension's
+[Identification and Habits of Key Ant Pests in the Pacific Northwest](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/415/2014/12/antpests.pdf)
+works through the same marks for the ants that actually occur in this region,
+which matters more here than a national key does: moisture ants are a wet-
+climate problem and this is a wet climate.
 
 The swarming stage is often the first sighting. Winged reproductives emerge
 indoors, typically in late summer or autumn, and produce a sudden cloud of small
