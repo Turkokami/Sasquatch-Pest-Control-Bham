@@ -69,7 +69,11 @@ continuous volume of insects, and it will take other spiders. What we are not
 going to tell you is that it hunts hobo spiders down, which is the version of
 this that circulates and which we cannot source. What is sourceable is [UC IPM](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7488.html)'s
 observation that in parts of the Pacific Northwest the [giant house spider](/pest-library/giant-house-spider/) has
-competitively displaced the hobo spider. Whatever is happening between the two
+competitively displaced the hobo spider. The regional handbook the three
+Northwest land-grant universities publish together covers the same spiders from
+this side of the question — its
+[structural and public health spider section](https://pnwhandbooks.org/insect/structural-health/public-health/public-health-spider)
+is written for Washington, Oregon and Idaho rather than for California. Whatever is happening between the two
 of them, the practical shape of it is that where the big harmless one is well
 established, the one carrying the reputation is scarcer.
 

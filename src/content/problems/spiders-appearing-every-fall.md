@@ -136,7 +136,10 @@ The one worth genuine caution locally is the western black widow, and it is not
 part of the autumn walk at all. The state
 [Department of Health](https://doh.wa.gov/community-and-environment/pests/spiders)
 describes it as common to eastern Washington, and the range follows the drier, warmer country
-east and south of the Cascades, so on this side of them it is uncommon. Where
+east and south of the Cascades, so on this side of them it is uncommon. The
+[PNW Insect Management Handbook's spider section](https://pnwhandbooks.org/insect/structural-health/public-health/public-health-spider),
+published jointly by Washington State, Oregon State and the University of Idaho,
+treats the same regional split. Where
 one does turn up here it is sitting in an undisturbed dry place — a woodpile, a
 meter box, a crawlspace corner, the underside of stored material — rather than
 crossing a living room in September.
