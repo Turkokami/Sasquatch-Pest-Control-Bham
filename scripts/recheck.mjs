@@ -292,12 +292,23 @@ if (!fs.existsSync(cfgPath)) {
   finding('warn', 'no Search Console export present', 'export Performance → last 16 months and drop the file in private/gsc/');
 } else {
   const cfg = JSON.parse(fs.readFileSync(cfgPath, 'utf8'));
-  const exports_ = fs.readdirSync(gscDir).filter((f) => /gsc-performance.*\.json$/i.test(f)).sort();
+  /* Two shapes, because Search Console hands you a ZIP of CSVs and the first
+     export in this repo had been converted to JSON by hand. Supporting the
+     CSV folder natively means the next export is drag-and-drop: unzip into
+     private/gsc/gsc-performance-YYYY-MM-DD/ and this reads it. Both forms are
+     listed together and the newest date in the name wins, so a hand-converted
+     file and a dropped folder cannot disagree about which is current. */
+  const exports_ = fs.readdirSync(gscDir, { withFileTypes: true })
+    .filter((e) => (e.isFile() && /gsc-performance.*\.json$/i.test(e.name))
+      || (e.isDirectory() && /gsc-performance/i.test(e.name) && fs.existsSync(path.join(gscDir, e.name, 'Queries.csv'))))
+    .map((e) => ({ name: e.name, dir: e.isDirectory() }))
+    .sort((a, b) => (a.name.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? '').localeCompare(b.name.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? ''));
   if (!exports_.length) {
-    say(`${C.dim}private/gsc/ has no gsc-performance*.json${C.off}`);
-    finding('warn', 'no Search Console export present', 'export Performance → last 16 months as JSON into private/gsc/');
+    say(`${C.dim}private/gsc/ has no export (no gsc-performance*.json, no gsc-performance*/ folder with Queries.csv)${C.off}`);
+    finding('warn', 'no Search Console export present', 'Search Console → Performance → last 16 months → Export → unzip into private/gsc/gsc-performance-YYYY-MM-DD/');
   } else {
-    const newest = exports_.at(-1);
+    const newestEntry = exports_.at(-1);
+    const newest = newestEntry.name;
     const stamp = newest.match(/(\d{4}-\d{2}-\d{2})/)?.[1] ?? null;
     const age = stamp ? Math.round((Date.now() - Date.parse(stamp)) / 86400000) : null;
     say(`  export: ${newest}${age !== null ? `  (${age} days old)` : ''}`);
@@ -306,10 +317,47 @@ if (!fs.existsSync(cfgPath)) {
         'the query half of this report describes the past, not the present — re-export before reading movement into it');
     }
 
-    const data = JSON.parse(fs.readFileSync(path.join(gscDir, newest), 'utf8'));
-    const rowsQ = (data.Queries ?? []).slice(1).map(([q, clicks, impr, ctr, pos]) => ({
-      q, clicks: +clicks, impr: +impr, ctr: +ctr, pos: +pos,
-    }));
+    /* A query can contain a comma, so this is a real CSV reader rather than a
+       split(','): it tracks quotes and unescapes the doubled "" form. GSC
+       writes CTR as "0.48%" in CSV and as 0.0048 in the JSON export, so the
+       percent form is divided back to a fraction — otherwise CTR would read
+       100x high for one shape and nobody would notice, because nothing in
+       this report keys off CTR. */
+    const parseCsv = (text) => {
+      const rows = [];
+      let row = [], field = '', q = false;
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+        if (q) {
+          if (c === '"' && text[i + 1] === '"') { field += '"'; i++; }
+          else if (c === '"') q = false;
+          else field += c;
+        } else if (c === '"') q = true;
+        else if (c === ',') { row.push(field); field = ''; }
+        else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+        else if (c !== '\r') field += c;
+      }
+      if (field !== '' || row.length) { row.push(field); rows.push(row); }
+      return rows.filter((r) => r.length > 1 || (r[0] ?? '').trim() !== '');
+    };
+    const num = (v) => {
+      const s = String(v ?? '').trim();
+      if (s.endsWith('%')) return parseFloat(s) / 100;
+      return parseFloat(s.replace(/,/g, '')) || 0;
+    };
+
+    let rowsQ;
+    if (newestEntry.dir) {
+      const csv = parseCsv(fs.readFileSync(path.join(gscDir, newest, 'Queries.csv'), 'utf8'));
+      rowsQ = csv.slice(1).map(([q, clicks, impr, ctr, pos]) => ({
+        q, clicks: num(clicks), impr: num(impr), ctr: num(ctr), pos: num(pos),
+      })).filter((r) => r.q);
+    } else {
+      const data = JSON.parse(fs.readFileSync(path.join(gscDir, newest), 'utf8'));
+      rowsQ = (data.Queries ?? []).slice(1).map(([q, clicks, impr, ctr, pos]) => ({
+        q, clicks: num(clicks), impr: num(impr), ctr: num(ctr), pos: num(pos),
+      })).filter((r) => r.q);
+    }
 
     const brandRe = new RegExp(cfg.brand.join('|'), 'i');
     const moneyRe = new RegExp(cfg.moneyIntent.join('|'), 'i');
