@@ -1312,13 +1312,38 @@ if (run('backlog')) {
      department for a disease), so this is a mix to watch, not a target. */
   const REGIONAL = /href=["']https?:\/\/[^"']*(wsu\.edu|cahnrs|oregonstate\.edu|orst\.edu|uidaho\.edu|pnwhandbooks\.org)/i;
   const DATED = /(last updated|updated on|reviewed on|last reviewed|review(ed)? by|actualizad[oa]|revisad[oa])/i;
+  /* Pages with nothing to cite, counted separately rather than as a shortfall.
+     §6.5 asks for an authority "at the point of the claim". A privacy policy,
+     an image-use notice, a contact page, a photo gallery and a video caption
+     make no claim about a pest, a statute or a treatment, so there is no point
+     of claim to attach a source to. Leaving them in the denominator produced a
+     number that could never honestly reach the top of its range, and a number
+     like that invites the wrong fix — dropping a .gov link into a privacy
+     policy to make the column move. They are reported on their own line below
+     so this is visible rather than quietly deducted.
+     NOT excluded, deliberately: /trusted-partners/ makes factual claims about
+     another company's credentials, and /reviews/ describes the rule it follows.
+     Both can and should carry a source. */
+  const NO_CLAIM = new Set([
+    '/privacy/', '/es/privacidad/', '/image-use/', '/contact/', '/es/contacto/',
+    '/network/', '/gallery/', '/es/galeria/',
+    /* The guarantee pages state a promise this company is making. There is no
+       external authority on what we have undertaken to do, and citing one
+       would be borrowing credibility for a commitment that stands or falls on
+       our own word. The blog index is a list of posts; each post carries its
+       own sources. */
+    '/our-guarantee/', '/es/garantia/', '/blog/',
+  ]);
+  const noClaim = (url) => NO_CLAIM.has(url) || url === '/videos/' || /^\/videos\/[^/]+\/$/.test(url);
+  const exempt = [];
   const rows = new Map();
   for (const p of indexable) {
     const type = pageType(p.url) ?? 'other';
     const main = p.html.slice(p.html.indexOf('<main'), p.html.indexOf('</main>'));
     const body = main.replace(/<([a-z]+)[^>]*\sdata-boilerplate\b[^>]*>[\s\S]*?<\/\1>/gi, ' ');
-    const r = rows.get(type) ?? { n: 0, shape: 0, auth: 0, dated: 0, regional: 0 };
+    const r = rows.get(type) ?? { n: 0, shape: 0, auth: 0, dated: 0, regional: 0, noClaim: 0 };
     r.n++;
+    if (noClaim(p.url)) { r.noClaim++; exempt.push(p.url); }
     const spec = SHAPE[type];
     if (spec) {
       const has = { table: /<table\b[\s\S]*?<th\b/i.test(body), ol: /<ol\b/i.test(body), list: /<(ol|ul)\b/i.test(body) };
@@ -1332,7 +1357,39 @@ if (run('backlog')) {
   console.log('  \x1b[2mpage type        pages  shape            with shape  cited authority  of those PNW  visible date\x1b[0m');
   for (const [type, r] of [...rows.entries()].sort((a, b) => b[1].n - a[1].n)) {
     const spec = SHAPE[type];
-    console.log(`  \x1b[2m${type.padEnd(16)} ${String(r.n).padStart(5)}  ${(spec ? spec.label : 'paragraph').padEnd(26)} ${spec ? String(r.shape).padStart(4) : '   —'}  ${String(r.auth).padStart(15)}  ${String(r.regional).padStart(12)}  ${String(r.dated).padStart(12)}\x1b[0m`);
+    /* The authority column is read against the pages that have something to
+       cite, so the denominator is printed with it whenever it is not r.n. */
+    const owed = r.n - r.noClaim;
+    const authCol = r.noClaim ? `${r.auth} of ${owed}` : String(r.auth);
+    console.log(`  \x1b[2m${type.padEnd(16)} ${String(r.n).padStart(5)}  ${(spec ? spec.label : 'paragraph').padEnd(26)} ${spec ? String(r.shape).padStart(4) : '   —'}  ${authCol.padStart(15)}  ${String(r.regional).padStart(12)}  ${String(r.dated).padStart(12)}\x1b[0m`);
+  }
+  if (exempt.length) {
+    console.log(`  \x1b[2mno claim to cite, so no authority expected (${exempt.length}): ${exempt.sort().join(' ')}\x1b[0m`);
+  }
+  /* --backlog-json <path> writes this table and the per-page misses for
+     scripts/recheck.mjs to read. The point is that the 30-day recheck reports
+     the same numbers this gate does, from the same regexes, instead of keeping
+     a second copy of them that drifts a release later. */
+  const jsonOut = arg('--backlog-json', '');
+  if (jsonOut) {
+    const detail = [];
+    for (const p of indexable) {
+      const type = pageType(p.url) ?? 'other';
+      const main = p.html.slice(p.html.indexOf('<main'), p.html.indexOf('</main>'));
+      const body = main.replace(/<([a-z]+)[^>]*\sdata-boilerplate\b[^>]*>[\s\S]*?<\/\1>/gi, ' ');
+      detail.push({
+        url: p.url, type,
+        auth: AUTH.test(body), regional: REGIONAL.test(body), dated: DATED.test(main),
+        noClaim: noClaim(p.url),
+      });
+    }
+    fs.mkdirSync(path.dirname(jsonOut), { recursive: true });
+    fs.writeFileSync(jsonOut, JSON.stringify({
+      generated: new Date().toISOString(),
+      byType: Object.fromEntries([...rows.entries()].map(([t, r]) => [t, r])),
+      pages: detail,
+    }, null, 1) + '\n');
+    console.log(`  \x1b[2mbacklog JSON written to ${jsonOut}\x1b[0m`);
   }
 }
 

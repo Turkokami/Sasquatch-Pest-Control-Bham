@@ -32,6 +32,7 @@ const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-c
 const inlinePhotos = inlinePhotosForEs('/es/servicios/');
 ---
 <BaseLayout
+  source="src/pages/es/servicios/index.astro"
   path={path}
   lang="es"
   title="Servicios de Control de Plagas en Bellingham"
@@ -77,8 +78,12 @@ const inlinePhotos = inlinePhotosForEs('/es/servicios/');
       muchas veces se resuelve con una foto antes de que alguien salga de la
       oficina. Segundo, por qué está ahí: casi todo lo que nos llaman en este
       condado tiene detrás una rendija, una fuente de humedad o algo de comer.
-      Tercero, tratar lo que ya está adentro, con el producto correcto y en el
-      lugar correcto en vez de por todas partes. Y cuarto, cerrar la entrada,
+      La humedad es una condición que se mide, no una impresión: el
+      <a href="https://research.fs.usda.gov/treesearch/37440" rel="noopener">Wood
+      Handbook del Servicio Forestal de los Estados Unidos</a> pone el contenido
+      de humedad a partir del cual los hongos de pudrición pueden trabajar
+      alrededor del veinte por ciento. Tercero, tratar lo que ya está adentro,
+      con el producto correcto y en el lugar correcto en vez de por todas partes. Y cuarto, cerrar la entrada,
       que es la parte que hace que el trabajo dure.
     </p>
   {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}

@@ -101,6 +101,7 @@ const canClaim = business.hasLicensedStaff;
 const inlinePhotos = inlinePhotosFor('/about/');
 ---
 <BaseLayout
+  source="src/pages/about.astro"
   path={path}
   title="About Sasquatch Pest Control | Bellingham, WA"
   description="Family-owned pest control and exclusion founded by Kristofer Elling, serving Bellingham and Whatcom County with no long-term contracts and a 100% Service Guarantee."
@@ -333,6 +334,18 @@ const inlinePhotos = inlinePhotosFor('/about/');
           first is the one worth explaining, because it is what covers
           wood-destroying organisms and because the industry is routinely vague
           about where its authority ends.
+        </p>
+        {/* The numbers further down this page are published on the owner's
+            confirmation, and the page tells you to check them rather than take
+            our word — so the lookup that lets you do that belongs here, at the
+            claim, not in a sources block at the foot. Keystone v3.2 §6.5. */}
+        <p>
+          Every number below can be checked against the state's own record. The
+          <a href="https://agr.wa.gov/pestfert/licensinged/search" rel="nofollow noopener">WSDA
+          pesticide license search</a> is a public form: put the number in and it
+          returns the license type, its status, its expiry and its categories. If
+          what it shows ever disagrees with what this page says, the state is
+          right and we want to hear about it.
         </p>
         <p>
           PCO Structural covers the control of pests that attack structural

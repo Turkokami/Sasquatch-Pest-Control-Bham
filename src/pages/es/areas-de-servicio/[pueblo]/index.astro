@@ -100,9 +100,18 @@ const breadcrumbs = isC
     ];
 /* Photographs through the text, the English twin's (owner, 19 Sep 2026). */
 const fotos = inlinePhotosForEs(Astro.url.pathname);
+
+/* slugEs before town, and the distinction is not cosmetic. The two county
+   entries are filed under their Spanish slug (condado-de-whatcom.ts), so
+   keying this on l.town alone asked content-dates.json for
+   src/data/es-areas/whatcom-county.ts — a file that has never existed. The
+   lookup missed silently, so both county pages rendered no visible date and
+   carried no dateModified, which is why check 9 counted them short. Every
+   other entry has no slugEs and is unaffected. */
+const fuente = `src/data/es-areas/${l.slugEs ?? l.town}.ts`;
 ---
 <BaseLayout
-  source={`src/data/es-areas/${l.town}.ts`}
+  source={fuente}
   path={path}
   lang="es"
   title={l.title}

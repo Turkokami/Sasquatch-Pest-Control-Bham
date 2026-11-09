@@ -18,7 +18,7 @@ export const moscasEnLasVentanasDeArriba: EsProblema = {
       h2: 'Qué son',
       parrafos: [
         'Las moscas de sus ventanas de arriba en octubre, y otra vez el primer día templado de febrero, son casi seguro moscas de racimo, y no tienen nada que ver con la mosca que la gente se imagina. Son un poco más grandes que la mosca doméstica, gris oscuro y sin brillo, con pelitos cortos dorados en el tórax que se ven de cerca. Son lentas: se atrapan fácil y chocan contra el vidrio en vez de volar con rumbo.',
-        'Su ciclo de vida no pasa por los edificios. La larva se desarrolla en la tierra como parásito de las lombrices, así que la población la producen el pasto, los potreros y las orillas de los campos, y eso no se puede cambiar. Cuando cambia la temporada, los adultos buscan dónde pasar el invierno. Ahí entra su casa.',
+        'Su ciclo de vida no pasa por los edificios. La larva se desarrolla en la tierra como parásito de las lombrices — así lo describe la [Extensión de Penn State](https://extension.psu.edu/cluster-flies) —, así que la población la producen el pasto, los potreros y las orillas de los campos, y eso no se puede cambiar. Cuando cambia la temporada, los adultos buscan dónde pasar el invierno. Ahí entra su casa.',
       ],
     },
     {

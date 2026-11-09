@@ -56,6 +56,7 @@ const answer =
   'Every quote on this page is a Google review of Sasquatch Pest Control, copied word for word from our own Business Profile. Nothing is edited, nothing was paid for, and nothing critical has been removed. The profile itself is one click away, and it is the version that counts.';
 ---
 <BaseLayout
+  source="src/pages/reviews.astro"
   path={path}
   title="Customer Reviews in Whatcom County"
   description="Google reviews of Sasquatch Pest Control from Bellingham and Whatcom County customers, quoted word for word, with a link to the profile they came from."
@@ -107,6 +108,20 @@ const answer =
       Anybody can paste nice sentences onto a web page and attribute them to a
       first name. The only thing that separates this page from that one is the
       mechanics, so here they are.
+    </p>
+
+    {/* The rule this page is written against, linked at the claim rather than
+        in a block at the foot (Keystone v3.2 §6.5). eCFR, not a law firm's
+        summary of it: the codified text is the thing we are actually bound by,
+        and it is short enough to read. */}
+    <p>
+      There is a federal rule behind all of this, and it is worth naming rather
+      than gesturing at. The FTC&rsquo;s
+      <a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465" rel="nofollow noopener">rule
+      on consumer reviews and testimonials</a> (16 CFR Part 465) bans buying
+      reviews, writing your own, suppressing the bad ones and showing only the
+      customers you expect to be kind. Every mechanic described below exists so
+      this page stays on the right side of it.
     </p>
 
     <p>

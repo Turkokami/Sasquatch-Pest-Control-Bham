@@ -53,7 +53,7 @@ export const escarabajosDeAlfombraYDespensa: EsServicio = {
     {
       h2: '¿Pueden picar?',
       parrafos: [
-        'No. El escarabajo de alfombra no pica a las personas. Pero la larva tiene cerdas finas, y algunas personas desarrollan una roncha que da comezón por el contacto con ellas o con las mudas en la ropa de cama, la alfombra o los muebles tapizados. Se parece tanto a picaduras que muchas familias concluyen que tienen chinches de cama.',
+        'No. El escarabajo de alfombra no pica a las personas. Pero la larva tiene cerdas finas, y algunas personas desarrollan una roncha que da comezón por el contacto con ellas o con las mudas en la ropa de cama, la alfombra o los muebles tapizados. Se parece tanto a picaduras que muchas familias concluyen que tienen chinches de cama. La [Extensión de Penn State](https://extension.psu.edu/carpet-beetle-dermatitis) describe esa reacción y la confusión que provoca.',
         'La diferencia importa porque los tratamientos son completamente distintos y un trabajo de chinches es mucho más costoso y molesto. Si tiene "picaduras" sin ninguna evidencia de chinches — ningún insecto vivo, ninguna muda en las costuras, ninguna mancha en el colchón — y sí tiene escarabajos chicos en las ventanas o larvas con cerdas en la alfombra, esta es una explicación probable. Es una de las razones por las que verificamos antes de tratar chinches.',
       ],
     },

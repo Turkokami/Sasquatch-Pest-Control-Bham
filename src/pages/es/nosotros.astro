@@ -32,6 +32,7 @@ const esBedBugException = business.freeInspection.exceptions.includes('bed-bug-c
 const inlinePhotos = inlinePhotosForEs('/es/nosotros/');
 ---
 <BaseLayout
+  source="src/pages/es/nosotros.astro"
   path={path}
   lang="es"
   title="Quiénes Somos | Sasquatch Pest Control"
@@ -75,9 +76,11 @@ const inlinePhotos = inlinePhotosForEs('/es/nosotros/');
     <p>
       No le pedimos que nos crea. Aplicar pesticidas por contrato en el estado
       de Washington requiere licencia del Departamento de Agricultura (WSDA), y
-      el estado publica un buscador gratuito donde cualquiera puede consultar
-      por número de licencia, por persona o por empresa. Le dice el tipo de
-      licencia, si está vigente y en qué categorías.
+      el estado publica un
+      <a href="https://agr.wa.gov/pestfert/licensinged/search" rel="nofollow noopener">buscador
+      de licencias</a> gratuito donde cualquiera puede consultar por número de
+      licencia, por persona o por empresa. Le dice el tipo de licencia, si está
+      vigente y en qué categorías.
     </p>
     <p>
       El Departamento de Labor &amp; Industries publica aparte si la empresa

@@ -238,3 +238,99 @@ tracks; popups and lead magnets (none exist, and 4A.5 keeps it that way).
 instrumentation (4A.6) and an agent-actionable booking path (14) are not ours to
 build inside it; the tel: link is the path an assistant can complete. The
 measurement basis is search data, not call tracking (16.6), which matches §3.
+
+## 12. The 30-day visibility recheck — settled, 9 Nov 2026
+
+The acceptance gate answers "is this build fit to publish". It cannot answer
+whether the published site is still reachable by the crawlers that feed AI
+answers, whether anything is indexed, or whether the queries that earn money
+are moving. Those change without anybody touching the repo, so they get their
+own pass on their own clock: `scripts/recheck.mjs`, via `npm run recheck`,
+scheduled monthly on the 1st.
+
+**Monthly on the 1st, not literally every 30 days.** Cron has no 30-day step —
+`*/30` in the day-of-month field fires on the 1st and the 31st, which is 30
+days apart once and one day apart the next. A fixed day of the month is the
+honest way to say "about every 30 days".
+
+**What it refuses to do, and this is the load-bearing part.** It reports no AI
+visibility score, because there is no such number, and it does not ask an
+assistant what it thinks of us, because that answer varies run to run and a
+single run proves nothing. Average position from a Search Console export is an
+impression-weighted average and must never be described as a rank. Anything it
+could not measure prints as not measured, with the reason.
+
+Query data comes from a manual Search Console export in `private/gsc/`
+(gitignored — owner data, public repo). The script reads the newest export
+present, states its age, and refuses to show month-on-month movement when two
+runs read the same file. There is deliberately no API path: that needs the
+owner's OAuth, which is a decision rather than a script.
+
+**The reports are written to `private/recheck/`, not `reports/`.** `reports/`
+is tracked and this repository is public, and a recheck report quotes the
+owner's queries, clicks and average positions. Derived owner data is still
+owner data, so it lives behind the same exclusion as the export it came from.
+`private/` is ignored by git rather than deleted, so the month-on-month diff
+still works.
+
+The money/brand/informational split is config in `scripts/keywords.json`, not
+logic. `geo` lists the towns that actually have pages; adding an aspirational
+town there would classify its queries as money and overstate the opportunity.
+
+**One copy of the §6.5/§6.6 regexes.** The recheck does not reimplement the
+backlog columns. It shells out to `harness.mjs --only backlog --backlog-json`
+so the monthly report and the gate cannot drift apart.
+
+## 13. Pages with no claim to cite — settled, 9 Nov 2026
+
+§6.5 asks for a primary authority "at the point of the claim". Some pages make
+no claim about a pest, a statute or a treatment, so there is no point of claim
+to attach a source to: the privacy policy, the image-use notice, the contact
+pages, the photo galleries, the video captions, the blog index (each post
+carries its own sources) and both guarantee pages.
+
+The guarantee pages are the ones worth explaining. They state a promise this
+company is making. There is no external authority on what we have undertaken to
+do, and citing one would be borrowing credibility for a commitment that stands
+or falls on our own word.
+
+These are listed in `NO_CLAIM` in harness check 9 and printed on their own line
+under the table, so the exemption is visible rather than quietly deducted.
+Leaving them in the denominator produced a column that could never honestly
+reach the top of its range, and a number like that invites the wrong fix —
+dropping a `.gov` link into a privacy policy to make it move.
+
+**Not exempt, deliberately:** `/trusted-partners/` makes factual claims about
+another company's credentials, and `/reviews/` describes the rule it follows.
+Both can and should carry a source, and both now do.
+
+## 14. Verification links at the claim — settled, 9 Nov 2026
+
+Closing the §6.5 backlog turned up three pages that named an authority in prose
+without linking it, which is the failure mode §6.5 exists to catch: the reader
+is told they can check and then not shown where.
+
+- `/about/` published five WSDA licence numbers and said to verify them at the
+  source, with no link to the source. `pending.mjs` had been asserting that the
+  link was there since 10 Sep 2026. It now is: the WSDA pesticide licence
+  search, at the claim.
+- `/es/nosotros/` described the state's free licence lookup in the same way.
+- `/trusted-partners/` and `/es/socios-de-confianza/` state that Coastal K9 is
+  not licensed in Washington — a claim about a third party, and one a reader can
+  now check in the same public form.
+- `/reviews/` was written against the FTC rule on consumer reviews and
+  testimonials without naming it. It now cites the codified text, 16 CFR Part
+  465 on eCFR, rather than a law firm's summary of it.
+
+**The Spanish tier had dropped citations its English twins carry.** Five
+neighbourhood pages, five hubs and two content pages cited nothing while the
+English version cited a real source. Each was closed by porting the twin's
+authority to the equivalent Spanish claim — not by adding a different source,
+and not by citing something the Spanish text does not actually assert.
+
+**The remaining axis is regional mix, and it is a mix, not a target.** Owner's
+steer of 22 Sep 2026 was to prefer the extension service that covers this
+county. Service, problem, compliance and vertical pages still lean national. A
+national source is frequently the correct one — EPA for a label rule, the FDA
+Food Code, the health department for a disease — so this is watched by the
+recheck and never enforced by the gate.

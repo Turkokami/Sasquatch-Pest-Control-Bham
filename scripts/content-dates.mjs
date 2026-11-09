@@ -27,8 +27,18 @@ import path from 'node:path';
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '..');
 const out = path.join(root, 'src/data/content-dates.json');
-const WATCH = ['src/content', 'src/data/es-servicios', 'src/data/es-problemas', 'src/data/es-areas',
-  'src/data/es-plagas', 'src/data/es-comercial', 'src/data/es-guias'];
+/* src/pages is watched alongside the content collections because the hubs and
+   the utility pages are written directly as .astro — there is no markdown or
+   data file behind /about/, /our-guarantee/ or /reviews/, so before this they
+   had no honest date available and showed none. The same forward-only rule
+   covers them: the date is the last commit that touched that .astro file, so
+   a hub re-dates itself when its own copy changes and not when a page it
+   links to does. A routing-only edit will move the date too, which is the
+   price of reading git rather than trusting a hand-typed value; v3.2 §6.6
+   forbids the hand-typed version, not an honest date that moved for a small
+   edit. */
+const WATCH = ['src/content', 'src/pages', 'src/data/es-servicios', 'src/data/es-problemas',
+  'src/data/es-areas', 'src/data/es-plagas', 'src/data/es-comercial', 'src/data/es-guias'];
 
 const sh = (cmd) => { try { return execSync(cmd, { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }); } catch { return ''; } };
 

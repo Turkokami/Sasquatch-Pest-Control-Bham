@@ -1,0 +1,99 @@
+{
+  "_README": [
+    "Config for scripts/recheck.mjs section 5. Owner-editable: this is a judgement about which queries are worth money to this business, and it belongs to the owner, not to the script.",
+    "Every list is a case-insensitive regex alternation matched against the query text. Regex characters in an entry are live, so a literal dot or plus needs escaping.",
+    "CLASSIFICATION ORDER, which matters: brand wins first, then money, then informational. A query is money if it carries commercial intent OR names a place we serve, because 'rat exterminator bellingham cost' is a money query that happens to contain a question word. Anything left over is reported as unclassified rather than filed under a guess — if that bucket is large, the fix is to add terms here, not to let the script assume.",
+    "geo lists the towns the site actually has pages for, taken from src/content/locations. It is not an aspiration list: adding a town here that we do not serve would classify its queries as money and overstate the opportunity."
+  ],
+
+  "brand": [
+    "sasquatch",
+    "squatch"
+  ],
+
+  "moneyIntent": [
+    "pest control",
+    "pest companies",
+    "pest company",
+    "exterminator",
+    "extermination",
+    "near me",
+    "cost",
+    "price",
+    "pricing",
+    "quote",
+    "estimate",
+    "cheap",
+    "best",
+    "hire",
+    "service",
+    "company",
+    "companies",
+    "removal",
+    "treatment",
+    "inspection",
+    "exclusion",
+    "crawl space",
+    "crawlspace",
+    "attic insulation",
+    "same day",
+    "emergency"
+  ],
+
+  "geo": [
+    "bellingham",
+    "whatcom",
+    "ferndale",
+    "lynden",
+    "blaine",
+    "everson",
+    "nooksack",
+    "sumas",
+    "custer",
+    "deming",
+    "acme",
+    "alger",
+    "bow",
+    "burlington",
+    "birch bay",
+    "lummi island",
+    "sudden valley",
+    "mount vernon",
+    "sedro.woolley",
+    "skagit"
+  ],
+
+  "informational": [
+    "how to",
+    "how do",
+    "how long",
+    "why ",
+    "what is",
+    "what are",
+    "what does",
+    "do .* bite",
+    "are .* dangerous",
+    "identify",
+    "identification",
+    "look like",
+    "pictures",
+    "photos",
+    "vs ",
+    " or ",
+    "difference between",
+    "life cycle",
+    "eggs",
+    "signs of",
+    "get rid of",
+    "diy",
+    "home remedy",
+    "natural"
+  ],
+
+  "opportunity": {
+    "_note": "A query with real impressions but an average position off the first page is being shown to people who are not clicking it. That gap is where a page edit has somewhere to go. These thresholds are a starting shortlist, not a rule — raise minImpressions if the list is noise, lower it if it is empty.",
+    "minImpressions": 500,
+    "minPosition": 11,
+    "show": 20
+  }
+}

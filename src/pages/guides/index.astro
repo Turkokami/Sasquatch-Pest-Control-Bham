@@ -47,6 +47,7 @@ import PhoneText from '../../components/PhoneText.astro';
 const inlinePhotos = inlinePhotosFor('/guides/');
 ---
 <BaseLayout
+  source="src/pages/guides/index.astro"
   path={path}
   title="Guides | Sasquatch Pest Control"
   description="Rules, obligations and building science behind pest problems in Whatcom County — landlord duties, school notification, moisture and the pest year, with sources."
@@ -123,7 +124,9 @@ const inlinePhotos = inlinePhotosFor('/guides/');
     So these pages quote the source, link it, and say when we read it. Where a
     rule does not say what people assume it says, we note that too. The
     Washington landlord duty to control pests during a tenancy, for instance,
-    does not apply to a single-family rental — the carve-out that decides most
+    — <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=59.18.060" rel="noopener">RCW
+    59.18.060</a>, the list of landlord duties in the Residential Landlord-Tenant
+    Act — does not apply to a single-family rental: the carve-out that decides most
     disputes, and one a company selling pest control has every reason to leave
     out.
   </p>
