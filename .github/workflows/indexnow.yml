@@ -65,12 +65,23 @@ jobs:
 
       - name: Record what was submitted
         run: |
-          if git diff --quiet -- src/data/indexnow-state.json; then
-            echo "no state change — nothing was submitted"
-            exit 0
-          fi
+          # `git add` BEFORE the comparison, and compare the index rather than
+          # the working tree. The previous version ran `git diff --quiet` on a
+          # path that was still untracked — and git diff only reports on
+          # tracked files, so it exited 0 ("no change") on every run from
+          # 25 Oct to 9 Nov 2026. The guard swallowed the result, the state
+          # file was never committed, and because the state file was never
+          # committed the next run saw no previous state and resubmitted all
+          # ~380 URLs. Thirty green runs, every one of them a full resubmission
+          # — exactly the noise scripts/indexnow.mjs warns about in its header,
+          # and what Bing was reporting as "IndexNow is in batch mode".
+          # --cached sees a newly added file; the working-tree diff does not.
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/data/indexnow-state.json
+          if git diff --cached --quiet -- src/data/indexnow-state.json; then
+            echo "no state change — nothing was submitted"
+            exit 0
+          fi
           git commit -m "IndexNow: record submitted URLs [skip ci]"
           git push
