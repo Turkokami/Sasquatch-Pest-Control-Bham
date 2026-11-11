@@ -25,7 +25,10 @@ import { liveServices } from '../../data/services';
 
 const path = '/locations/skagit-county/';
 const towns = (await writtenTowns()).filter((t) => t.county === 'Skagit County');
-const townLinks = towns.map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
+/* Phrase anchors, same reasoning and same date as the Whatcom hub — see the
+   note there. Mount Vernon, Burlington and Sedro-Woolley are three of the six
+   towns the keyword task file names, and all three are Skagit. */
+const townLinks = towns.map((t) => ({ href: `/locations/${t.slug}/`, label: `Pest control ${t.name}` }));
 /* All of them — see the note in src/pages/index.astro. */
 const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
 

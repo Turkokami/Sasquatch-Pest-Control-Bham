@@ -41,7 +41,10 @@ station perimeters — an enormous industry built around species that are
 genuinely destructive across the South and East.
 
 That is not our situation, and pretending otherwise is how people in Whatcom
-County end up paying for the wrong thing.
+County end up paying for the wrong thing. If you arrived here looking for a
+[Bellingham exterminator](/) generally rather than for termites specifically,
+the home page is the better place to start — most of what gets called a termite
+in this county turns out to be something else.
 
 **Pacific dampwood termite.** This is the one we find. It is large — swarmers
 run around an inch including wings, which makes them startling — and it is
