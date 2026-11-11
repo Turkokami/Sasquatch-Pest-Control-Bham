@@ -96,7 +96,7 @@ or the drip tray under a fridge is enough to support a population indefinitely.
 The adults are not long-lived; they are simply being replaced continuously from
 a square inch of something nobody thinks of as food.
 
-Drain flies — the small furry grey ones that sit flat on bathroom walls — are
+Drain flies — the small furry gray ones that sit flat on bathroom walls — are
 the same story in a gelatinous film inside a drain. Bleach does not remove that
 film, which is the single most common reason a drain fly problem survives being
 treated, and it is covered in full on

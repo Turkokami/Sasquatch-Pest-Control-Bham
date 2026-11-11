@@ -227,7 +227,7 @@ It is a local name for the same insect this page is about. People searching for
 water ants have almost always found small yellowish or light brown ants coming
 out of damp timber — a bathroom floor, a sill plate, a crawlspace joist — and
 reached for the obvious description. The entomological name is moisture ant,
-and the behaviour behind both names is identical: the colony needs wood that is
+and the behavior behind both names is identical: the colony needs wood that is
 already wet, so it only appears where water has already got in.
 
 Which is why the name is accidentally a good one. A water ant is telling you

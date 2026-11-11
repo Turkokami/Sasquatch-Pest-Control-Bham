@@ -291,9 +291,9 @@ something.
 
 **Structural findings in writing**, with the ones outside your control named as
 such. Doors, drains, grease, waste storage and shared walls cause most of this,
-and most of them belong to a landlord or a neighbour.
+and most of them belong to a landlord or a neighbor.
 
-**A technician who comes back**, because recognising that the ant trail at the
+**A technician who comes back**, because recognizing that the ant trail at the
 dish pit is the same one from March is worth more than any product.
 
 **Documentation you can hand over without preparing it**, which is the whole

@@ -107,7 +107,7 @@ in people or pets. A large one walking across your hand will do nothing at all.
 
 What gives them the reputation is the combination of size, numbers and the
 smell — an insect the size of a thumbnail that arrives by the hundred and
-releases a strong odour when handled reads as dangerous even when it is not.
+releases a strong odor when handled reads as dangerous even when it is not.
 The one thing to be careful about is squashing them, which is a laundry problem
 rather than a safety one.
 

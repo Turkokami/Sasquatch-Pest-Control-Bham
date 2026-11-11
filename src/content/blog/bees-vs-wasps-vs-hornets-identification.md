@@ -32,7 +32,7 @@ Wasps are slim and smooth, with a sharply pinched waist and a shiny body in brig
 
 The fastest test is fuzz. A honey bee is golden-brown and visibly hairy, with a rounded body and a thick waist. A yellow jacket is bright chrome yellow and glossy black, smooth, hairless, and sharply pinched at the waist. At the length of an arm, the honey bee looks soft and the yellow jacket looks like it was made of plastic.
 
-The behaviour separates them just as reliably. A honey bee is working flowers and ignoring you. A yellow jacket is working your plate — meat, sugar, soda cans, the bin — which no bee does. If something is persistently interested in your food in August, it is a yellow jacket, and that is the single most useful rule on this page.
+The behavior separates them just as reliably. A honey bee is working flowers and ignoring you. A yellow jacket is working your plate — meat, sugar, soda cans, the bin — which no bee does. If something is persistently interested in your food in August, it is a yellow jacket, and that is the single most useful rule on this page.
 
 And the consequences are completely different. A honey bee stings once and dies, so she will only do it if genuinely threatened; a colony is a beekeeper's business, not ours, and we will not kill one. A yellow jacket stings repeatedly, recruits the rest of the colony, and will follow you. That is a [wasp control](/services/wasp-control/) job, and if the nest is in the ground it is covered on [yellow jacket nest in the ground](/services/wasp-control/yellowjackets-in-the-lawn/).
 

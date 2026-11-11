@@ -133,7 +133,7 @@ It is brown, hairy, with long banded legs, and a leg span that can reach the
 size of a drink coaster in a mature male. It builds a flat sheet web with a
 funnel retreat at one edge — in a garage corner, under a workbench, behind
 stored boxes, in a crawlspace. It is fast in a straight line and it stops dead,
-which is the behaviour that makes people jump.
+which is the behavior that makes people jump.
 
 It is in the bathtub because it fell in. The glaze is unclimbable and the drain
 is a dead end, so a spider that went looking for water or for a female in the
@@ -188,7 +188,7 @@ because people roll onto one that has come down a wall.
 **Other yellow spiders in Washington.** The one people photograph in the garden
 is usually the goldenrod crab spider — bright lemon or white, sitting
 motionless with its front legs held open on a flower head, waiting for a bee.
-It is an ambush hunter, it changes colour slowly between yellow and white to
+It is an ambush hunter, it changes color slowly between yellow and white to
 match the flower it is sitting on, and it is harmless to people. Young
 [cross orbweavers](/pest-library/cross-orbweaver/) can also look strikingly
 yellow before they darken.
@@ -276,7 +276,7 @@ deliberate hops and turns to look at you. Harmless and rather good company.
 
 **An actual black widow** sits at the bottom of that list in Whatcom County,
 not the top, and the glossy jet-black body with the red hourglass underneath is
-not a judgement call when you see one.
+not a judgment call when you see one.
 
 ## When is spider season in Washington?
 
@@ -284,7 +284,7 @@ Late August to the middle of October, and nothing has gone wrong when it
 happens.
 
 What changes in autumn is not the number of spiders in the building; it is
-their behaviour. The large house-dwelling species mature at the end of summer,
+their behavior. The large house-dwelling species mature at the end of summer,
 and the males then abandon their webs and walk, sometimes for weeks, looking
 for females. A male that spent his whole life in a crawlspace corner is
 suddenly crossing the living room floor in the open at nine in the evening. He
@@ -334,7 +334,7 @@ What actually works is mechanical, and most of it is not a pest control
 purchase. Sweeping webs down and continuing to do it. Door sweeps that meet the
 threshold. Screens intact. Gaps at utility penetrations closed. And the one
 people resist: moving exterior lights away from doors, or switching them to
-warm colour temperatures, because a bright white light above a back door is an
+warm color temperatures, because a bright white light above a back door is an
 insect trap and the spiders are simply following the food.
 
 We do treat for spiders in a few honest situations — a heavy orbweaver load on
