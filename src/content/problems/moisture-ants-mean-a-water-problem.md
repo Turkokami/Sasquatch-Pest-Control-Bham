@@ -221,6 +221,22 @@ So a single moisture ant finding often opens into a broader damp-building
 conversation. That is not us expanding the scope. It is what the finding
 genuinely means.
 
+## What are water ants?
+
+It is a local name for the same insect this page is about. People searching for
+water ants have almost always found small yellowish or light brown ants coming
+out of damp timber — a bathroom floor, a sill plate, a crawlspace joist — and
+reached for the obvious description. The entomological name is moisture ant,
+and the behavior behind both names is identical: the colony needs wood that is
+already wet, so it only appears where water has already got in.
+
+Which is why the name is accidentally a good one. A water ant is telling you
+about water. The insect is the cheap part of what happens next; the wet timber
+is the expensive part, and the order of operations matters — the repair and the
+source come first, and sometimes that is
+[crawlspace restoration](/services/crawlspace-restoration/) work rather than
+pest control at all.
+
 ## Telling them apart from the alternatives
 
 Three things get confused with moisture ants and each changes the answer.

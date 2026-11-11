@@ -168,6 +168,31 @@ If either turns up on your property, the honest advice is to enjoy them. We are
 not going to sell you a treatment for a solitary pollinator, and if someone else
 has offered to, that is worth knowing about them.
 
+## Do sweat bees sting?
+
+Only if you trap one against your skin, and when it happens it is mild — a brief
+sharp prick and a small red mark, usually gone within an hour, with none of the
+swelling a wasp sting produces. Sweat bees are not defensive, they have no
+colony worth defending in most of the species here, and they are not attacking
+you.
+
+They get their name honestly. These are the small bees — often metallic green,
+sometimes dark with pale bands, and generally well under half an inch — that
+land on bare arms and necks on hot days because they are after the salt in
+perspiration. Somebody with one crawling on them brushes at it, pins it against
+skin, and gets stung by an insect that had no intention of stinging anything.
+
+What a sweat bee sting looks like is the thing people search for, and the
+honest answer is that it looks like very little: a pinprick, a small pink mark,
+no visible puncture and no lingering heat. Washing it, and a cold compress if
+it is sore, is the whole treatment. A sting that swells considerably, spreads,
+or produces symptoms away from the site is not a sweat bee question any more —
+that is a medical one, and the same advice applies as for any stinging insect.
+
+We do not treat for sweat bees, and we would rather say why than quote for it.
+They are solitary ground-nesting pollinators, they are gone within weeks, they
+do no damage to a lawn, and a lawn with them in it is doing something right.
+
 ## Wood-boring bees
 
 The other genuine bee-related structural issue, and it belongs on a different

@@ -22,8 +22,10 @@ faqs:
     a: "No. It is a very old folk name with no basis, and there is no meaningful risk of it. They are looking for tight, dark, humid spaces to hide in during the day, and an ear is neither the sort of space they seek nor somewhere they can do anything if they got there."
   - q: "Can those pincers hurt me?"
     a: "Barely. The pincers are defensive and used mainly against other earwigs. A large one can deliver a pinch you would notice on soft skin, and that is the extent of it — no venom, no sting, no bite worth calling a bite."
-  - q: "They keep appearing in my bathroom and kitchen. Are they breeding in the house?"
+  - q: "Why are there earwigs in my bathroom, and are they breeding in the house?"
     a: "Almost certainly not. Earwigs need consistent moisture and outdoor conditions to complete their life cycle, and indoors they dry out and die within days. Persistent appearances mean a large population immediately outside and a route in, not a population under your floor."
+  - q: "What causes earwigs in the house in the first place?"
+    a: "A large population immediately outside the wall and a way through it. Earwigs live in the damp first three feet around a building — mulch, leaf litter, ground cover, stacked wood — and come in under door sweeps, through vents and around sill plates when the ground dries or gets too wet."
   - q: "Why are there so many this year?"
     a: "Wet spring and early summer weather produces good survival, and dense damp ground cover gives them somewhere to build numbers. In this county that combination is common, which is why earwigs are one of the most consistently reported insects here."
   - q: "Are they damaging my garden?"
@@ -103,7 +105,26 @@ outdoor habitat through unscreened vents.
 Move any of those and you will find them. That is not a sign of infestation; it is
 what the outdoors looks like in a wet climate.
 
-## How they get in
+## Why are earwigs in my bathroom?
+
+Because the bathroom is the only room in the house that suits them. Earwigs need
+constant damp to survive, and indoors almost everywhere is too dry. The ones
+that get in head straight for humid rooms and die within a few days in the rest,
+which is why every sighting seems to happen in the same two or three places.
+
+So a bathroom earwig is not evidence of a nest under the floor. It is evidence
+of a population outside the wall and an opening somewhere along the bottom of
+the building. Bathrooms sit at the top of the list because of the shower and the
+sink; laundry rooms, kitchens and basements come next for the same reason. A
+ground-floor bathroom with a damp bed of bark mulch under its window is the
+classic arrangement, and the insects are coming from the mulch, not from the
+plumbing.
+
+The practical consequence is that spraying the bathroom achieves very little.
+The thing to change is the three feet of ground outside it, which is what the
+rest of this page is about.
+
+## What causes earwigs in the house?
 
 They are following moisture and dark, and they are small and flat.
 

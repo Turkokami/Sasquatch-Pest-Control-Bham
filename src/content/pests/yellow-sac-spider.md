@@ -1,6 +1,6 @@
 ---
 species: yellow-sac-spider
-title: "Yellow Sac Spider: The One That Does Bite"
+title: "Yellow Sac Spider in Washington: Bites & Control"
 description: "The small pale spider in the silk pocket where your ceiling meets the wall. Washington calls it medically significant, and the necrosis stories are still wrong."
 h1: "Yellow Sac Spider — Cheiracanthium spp."
 treatment: depends
@@ -299,6 +299,22 @@ more noticeably as the weather cools in autumn.
 Both identifications matter, and for once they matter differently. Getting the
 funnel weaver right saves you an unnecessary treatment. Getting this one right
 occasionally means the bites somebody has been getting have an explanation.
+
+## Yellow sac spiders in Washington homes
+
+They are indoors more than most spiders people worry about, and they are
+upstairs rather than down. A yellow sac spider does not sit in a web waiting;
+it walks walls and ceilings in the dark and tucks itself into a silk pocket in a
+corner at dawn, so the places it is found are the places a hunting spider rests
+— ceiling angles, curtain folds, picture rails, behind headboards.
+
+The state health department records this species in eastern Washington and in
+the Seattle area, and it is present in this county too. It is one of only two
+spiders Washington names as medically significant, which is the whole reason it
+has a page of its own on a site that otherwise spends most of its time telling
+people to leave spiders alone. Where it sits against everything else you might
+have found, including the ones that are not here at all, is set out in
+[common spiders in Washington state](/guides/spiders-in-washington-state/).
 
 ## Where they turn up in this county
 

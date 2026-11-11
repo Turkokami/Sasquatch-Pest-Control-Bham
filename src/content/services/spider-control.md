@@ -58,6 +58,11 @@ not what it was claimed to be is not one of them.
 
 ## What you actually have
 
+If you want the full identification guide rather than the short version — every
+spider found here, which two the state names as medically significant, and
+which of the frightening ones do not live in Washington at all — it is on
+[common spiders in Washington state](/guides/spiders-in-washington-state/).
+
 **Giant house spider.** This is the big one. Large-bodied, long-legged, brown,
 and the spider that produces the majority of "there is an enormous spider in my
 bathtub" calls in Whatcom County. It is a funnel-web weaver, it is harmless to

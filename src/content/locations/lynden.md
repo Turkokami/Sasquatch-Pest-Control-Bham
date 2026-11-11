@@ -22,7 +22,9 @@ faqs:
 ## Working the farm country
 
 Fifteen miles up the Guide Meridian from Bellingham the map changes character
-completely. Lynden sits in the middle of some of the most productive
+completely. Lynden — spelled with a y, though a fair number of people type it
+as Linden when they are looking for us — sits in the middle of some of the most
+productive
 agricultural ground in Washington — dairy above all, plus raspberries,
 blueberries, seed potatoes and the supporting trades that grow up around them —
 and pest control out here is an agricultural service before it is a household

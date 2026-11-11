@@ -1,9 +1,9 @@
 ---
 service: wasp-control
 problem: wasp-nest-in-a-wall-void
-title: "Wasp Nest in a Wall Void"
+title: "Signs of a Wasp Nest in the Wall (and What to Do)"
 description: "Wasps entering a hole in siding or soffit means a nest inside the wall. Why sealing the entrance is the worst thing you can do, and what works. Call 360-410-2199."
-h1: "Wasp Nest in a Wall Void"
+h1: "Wasp Nest in the Wall"
 answer: "A wasp nest inside a wall void is hidden, and the single worst response is sealing the entrance. A colony blocked from its own doorway will often chew inward through drywall into the room. The nest is treated through the hole it uses, then closed once activity has stopped."
 ready: true
 expert: kristofer-elling
@@ -48,7 +48,12 @@ From the colony's point of view it is an excellent site. From yours it has three
 specific problems. You cannot see how big it is. You cannot get to it. And the
 thing separating it from the inside of your house is a sheet of drywall.
 
-## The one thing not to do
+## Why you should never seal the hole first
+
+Because the colony chews inward. Blocked out of its own doorway, a wall-void
+nest works at the material around the opening looking for another exit, and the
+softest material in reach is usually the drywall on the inside. People seal a
+gap in their siding on a Saturday and have wasps in the bedroom by Tuesday.
 
 We will put this before everything else because it is the mistake that turns a
 manageable job into a bad afternoon.
@@ -72,7 +77,17 @@ The same logic applies to spray foam, caulk, tape, a plug of steel wool, or a
 board screwed over the opening. The entrance stays open until the colony is
 dealt with.
 
-## Working out what is in there
+## Signs of a wasp nest in the wall
+
+Four things point to a nest inside the cavity rather than on the outside of the
+building: wasps going in and out at one gap, vent or utility penetration rather
+than landing all over the wall; a dry rustling or chewing sound from inside the
+wall on a quiet evening; a warm, damp or stained patch appearing on interior
+drywall; and single wasps turning up indoors with the windows shut.
+
+The last one is the one people miss. Wall wasps that appear in a room are not
+flying in through a door — they have come the wrong way out of the cavity, which
+means the nest is already on the inside face of the wall.
 
 Before anything is treated, it is worth establishing which insect you have,
 because the answers diverge sharply.

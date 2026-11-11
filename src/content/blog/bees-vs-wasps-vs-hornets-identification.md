@@ -28,6 +28,14 @@ Bees are also essential pollinators, and honeybee populations have struggled in 
 
 Wasps are slim and smooth, with a sharply pinched waist and a shiny body in bright yellow-and-black. In the Bellingham area, the two you'll meet most are **paper wasps**, which build open umbrella-shaped nests under eaves, and **western yellowjackets**, which nest in the ground or in wall voids and swarm food and drinks in late summer. Unlike honeybees, wasps can sting repeatedly, and yellowjackets in particular are quick to defend their nest.
 
+## Honey bee vs. yellow jacket: which one is it?
+
+The fastest test is fuzz. A honey bee is golden-brown and visibly hairy, with a rounded body and a thick waist. A yellow jacket is bright chrome yellow and glossy black, smooth, hairless, and sharply pinched at the waist. At the length of an arm, the honey bee looks soft and the yellow jacket looks like it was made of plastic.
+
+The behavior separates them just as reliably. A honey bee is working flowers and ignoring you. A yellow jacket is working your plate — meat, sugar, soda cans, the bin — which no bee does. If something is persistently interested in your food in August, it is a yellow jacket, and that is the single most useful rule on this page.
+
+And the consequences are completely different. A honey bee stings once and dies, so she will only do it if genuinely threatened; a colony is a beekeeper's business, not ours, and we will not kill one. A yellow jacket stings repeatedly, recruits the rest of the colony, and will follow you. That is a [wasp control](/services/wasp-control/) job, and if the nest is in the ground it is covered on [yellow jacket nest in the ground](/services/wasp-control/yellowjackets-in-the-lawn/).
+
 ## What exactly is a hornet?
 
 Here's the part that confuses people: hornets are just a type of wasp — larger, and often more defensive of their nests. The one you're most likely to see around Bellingham is the **bald-faced hornet**, which despite its name is a large relative of the yellowjacket. It builds the gray, football-shaped paper nests that hang from trees, shrubs, and eaves, and its colonies can grow large and defend the nest vigorously.
@@ -52,6 +60,8 @@ Bees are defensive rather than aggressive, and a honeybee sting costs the bee it
 - **Paper wasps** — open umbrella nests under eaves
 - **Western yellowjackets** — ground and wall nests, aggressive in late summer
 - **Bald-faced hornets** — gray football nests in trees and eaves
+
+The ground-nesting case is the one that hurts people here, because you cannot see it coming. If you think there is a [yellow jacket nest in the ground](/services/wasp-control/yellowjackets-in-the-lawn/) on your property, that page covers how to find the entrance safely and what removal involves.
 
 ## What should you do if you find a nest — and do you have to kill bees?
 

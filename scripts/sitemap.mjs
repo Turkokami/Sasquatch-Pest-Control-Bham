@@ -94,7 +94,15 @@ for (const f of files) {
   const canon = (html.match(/<link\s+rel=["']canonical["'][^>]*href=(["'])((?:(?!\1).)*)\1/i) || [])[2];
   if (canon && canon !== `${SITE}${url}`) { excluded++; continue; }
 
-  byTier.get(tierOf(url)).push({ url, lastmod: fs.statSync(f).mtime.toISOString().slice(0, 10) });
+  /* The page's own title, brand suffix stripped, for llms.txt below. Taken
+     from the built HTML for the same reason the rest of this file is: it is
+     what the page actually says about itself, not a second copy of it. */
+  const title = ((html.match(/<title>([^<]*)<\/title>/i) || [])[1] || '')
+    .replace(/\s*\|\s*Sasquatch(?: Pest Control)?\s*$/, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&#39;|&rsquo;/g, "'")
+    .trim();
+  byTier.get(tierOf(url)).push({ url, title, lastmod: fs.statSync(f).mtime.toISOString().slice(0, 10) });
 }
 
 /* Stale single-file output from before segmentation, so a leftover can never
@@ -164,3 +172,133 @@ console.log(
     written.map((w) => `${w.name.replace(/^sitemap-|\.xml$/g, '')} ${w.count}`).join(' · '),
 );
 console.log('robots.txt — written');
+/* llms.txt — added 11 Nov 2026, and it reverses a settled decision, so the
+   reasoning belongs here as well as in GUARDRAILS §4.
+
+   The old position was that no llms.txt should be built because v2 recorded
+   it as unused by the crawlers it is meant for. That was true and is still
+   mostly true: no major AI crawler has committed to reading this file, and
+   nothing here should be described to the owner as a ranking or citation
+   measure. What changed is that Lighthouse's Agentic Browsing category now
+   audits for its presence at the domain root. So the file has one known
+   consumer — an audit — and the honest claim for it is exactly that.
+
+   WHY IT IS GENERATED RATHER THAN HAND-WRITTEN. A hand-written llms.txt is
+   the second copy of the site, and the recurring defect in this codebase is
+   one list living in two places and drifting. Within a month a static file
+   would be naming a service that has been renamed and omitting pages that
+   have been written. Everything below comes from the built output that the
+   sitemaps are made from, so a page cannot be in one and missing from the
+   other, and the titles are the titles the pages actually carry.
+
+   WHAT IS CURATED, AND WHY IT IS WORTH THE WORDS. The scope block is the
+   one part not derived from the build, and it is the most useful thing in
+   the file. An assistant asked "does Sasquatch do squirrel removal" should
+   be able to find out that the answer is no without inferring it from the
+   absence of a page. Bird work and nuisance wildlife were retired by the
+   owner on 30 Aug and 12 Sep 2026 (RETIRED_TO_EXCLUSION in services.ts,
+   GUARDRAILS §8); moles are refused on the published reasoning; complete
+   WDO inspections are a credential boundary, not a preference. Each line
+   restates something the site already says in prose on a page a reader can
+   open — nothing here is a new claim. */
+const biz = fs.readFileSync('src/data/business.ts', 'utf8');
+const bizName = (biz.match(/^ {2}name: '([^']+)'/m) || [])[1];
+const bizPhone = (biz.match(/^ {2}phone: '([^']+)'/m) || [])[1];
+const bizEmail = (biz.match(/^ {2}email: '([^']+)'/m) || [])[1];
+if (!bizName || !bizPhone || !bizEmail) {
+  console.error('llms.txt — could not read name, phone and email from src/data/business.ts');
+  process.exit(1);
+}
+
+const en = (tier) => (byTier.get(tier) || []).filter((e) => !e.url.startsWith('/es/'));
+const list = (entries) =>
+  entries
+    .slice()
+    .sort((a, b) => a.url.localeCompare(b.url))
+    .map((e) => `- [${e.title || e.url}](${SITE}${e.url})`)
+    .join('\n');
+
+/* The two county hubs sit at /locations/<slug>/ and so land in the cities
+   tier, which is right for a sitemap and wrong for a list of towns. The
+   title pattern is "… in <Town>, WA" everywhere except Lummi Island, which
+   is "on". */
+const COUNTY_HUBS = new Set(['/locations/whatcom-county/', '/locations/skagit-county/']);
+const cityNames = en('cities')
+  .filter((e) => !COUNTY_HUBS.has(e.url))
+  .map((e) => e.title.replace(/^Pest Control(?: & Exterminator)? (?:in|on) /, '').replace(/,? WA$/, ''))
+  .filter(Boolean)
+  .sort();
+
+const llms = `# ${bizName}
+
+> Pest control, rodent exclusion and crawlspace work in Bellingham and the rest
+> of Whatcom County, Washington. Family-run, exclusion-first, and willing to say
+> when a problem does not need treating.
+
+Phone and text: ${bizPhone}
+Email: ${bizEmail}
+Service area: Whatcom County and northern Skagit County, Washington. Service-area
+business with no public storefront.
+Languages: English, and Spanish at ${SITE}/es/
+Licensing: Washington State Department of Agriculture pesticide licenses, numbered
+on ${SITE}/about/ beside a link to the state's own free license lookup.
+
+## What this company does not do
+
+Stated here so it does not have to be inferred from the absence of a page. Each
+line is explained on the site at the page linked.
+
+- No bird work of any kind, residential or commercial. Retired by the owner in
+  2026. See ${SITE}/services/exclusion-and-repairs/
+- No nuisance wildlife: no raccoons, opossums, squirrels or bats.
+- No mole trapping. The reasoning is published rather than hidden, and it is
+  about what is legal and what actually works in this state.
+- No complete WDO inspections, the kind carrying a WSDA inspection control
+  number for a sale or refinance. That needs a Structural Pest Inspector
+  credential this company does not hold. We treat what somebody else
+  identified. See ${SITE}/guides/wdo-reports-in-a-property-sale/
+- No written record of findings in a wood-destroying-organism context, for the
+  same reason.
+- No star ratings published as structured data, and no review gating. See
+  ${SITE}/reviews/ and ${SITE}/review/
+
+## Services
+
+${list(en('services'))}
+
+## Guides
+
+Reference pages written from primary sources, each carrying its citations and a
+review date.
+
+${list(en('guides'))}
+
+## Pest library
+
+Species profiles for the pests found in this county specifically. A species
+appears here only if it would be expected on a Whatcom County job, which is why
+there is no brown recluse and no black widow entry.
+
+${list(en('library'))}
+
+## Commercial
+
+${list(en('commercial'))}
+
+## Towns with their own page
+
+${cityNames.map((n) => `- ${n}`).join('\n')}
+
+Every one of them is linked from ${SITE}/locations/
+
+## Also available
+
+- Full URL list, segmented by page type: ${SITE}/sitemap.xml
+- Crawler policy: ${SITE}/robots.txt — nothing is blocked except the staff board
+`;
+fs.writeFileSync(path.join(DIR, 'llms.txt'), llms);
+console.log(
+  `llms.txt — written (${en('services').length} services, ${en('guides').length} guides, ` +
+    `${en('library').length} library, ${cityNames.length} towns)`,
+);
+

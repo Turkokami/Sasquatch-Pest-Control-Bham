@@ -1,8 +1,8 @@
 ---
 service: rodent-control
-title: "Rodent Control & Mouse Removal in Bellingham, WA"
+title: "Mouse & Rat Exterminator in Bellingham, WA"
 description: "Rodent control and mouse exterminator service for Bellingham and Whatcom County — exclusion, trapping and crawlspace cleanup. Call or text 360-410-2199."
-h1: "Rodent Control & Mouse Exterminator in Bellingham & Whatcom County"
+h1: "Mice & Rat Exterminator in Bellingham & Whatcom County"
 answer: "Rodent control here is exclusion first and trapping second. We find how they are getting in, seal those entries, trap the animals already inside, then clean up the contamination they left. Trapping alone empties a house temporarily; sealing a quarter-inch gap in the foundation is what actually ends it."
 expert: kristofer-elling
 ready: true
@@ -144,6 +144,36 @@ begin removing material, and with rodent incisors growing continuously the
 removal gets done. Half-inch mesh over a crawl vent stops a rat and passes a
 mouse; quarter-inch mesh stops both and denies the rat the edge it needs. That
 is why one figure covers all three species we work on here.
+
+## How to find a mouse nest in your house
+
+Follow the droppings to where they concentrate rather than where they are
+scattered. A nest is a tight ball of shredded insulation, paper, fabric or
+insulation batt, somewhere dark, within about thirty feet of food. In a house
+here that means attic insulation, the back of a kitchen base unit, behind or
+under an appliance, a wall void, a stored box in a garage, or the underside of
+the subfloor in a crawlspace.
+
+The search is a sequence rather than a hunt. Heaviest droppings first — that is
+the nearest the nest gets to open ground. Then rub marks and the greasy smears
+along a joist edge or a pipe run, which point at the travel route. Then the
+quiet places along that route that nobody opens: the gap behind the dishwasher,
+the void under a built-in oven, the insulation above a bathroom ceiling, the
+corner of the garage where the Christmas boxes live.
+
+In practice most nests in this county are found in two places, and both have
+their own page. Attic insulation is the first —
+[rodents in the attic insulation](/services/rodent-control/rodents-in-the-attic-insulation/)
+covers what the damage looks like and when the insulation has to come out. The
+second is a wall void, which is almost always identified by sound rather than
+by sight:
+[scratching in the walls at night](/services/rodent-control/scratching-in-the-walls-at-night/)
+covers how to read it.
+
+One warning worth repeating: if the droppings might be from a deer mouse rather
+than a house mouse, wet them down with disinfectant before you touch anything.
+Do not sweep or vacuum dry droppings. The reasoning is on
+[deer mouse](/pest-library/deer-mouse/).
 
 ## Signs, and what each one tells you
 
@@ -364,6 +394,10 @@ depends on which of those you are, we will say so rather than quietly billing
 whoever called.
 
 ## Commercial rodent work
+
+Rodent abatement on a commercial site is the same work with a paper trail
+around it, and that is most of what
+[commercial pest control](/services/commercial-pest-control/) is buying you.
 
 Commercial accounts differ in what gets documented rather than what gets done.
 Device placement is mapped so an auditor or inspector can see the layout without

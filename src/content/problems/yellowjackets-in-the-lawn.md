@@ -1,9 +1,9 @@
 ---
 service: wasp-control
 problem: yellowjackets-in-the-lawn
-title: "Yellowjackets in the Lawn — Ground Nests"
-description: "A ground nest in a lawn or bank is the most dangerous wasp situation on a residential property. How to find it safely and what removal involves. Call 360-410-2199."
-h1: "Yellowjackets in the Lawn"
+title: "Yellow Jacket Nest in the Ground: Find & Remove"
+description: "How to spot a yellow jacket nest in the ground, why ground wasps get aggressive in late summer, and safe removal in Whatcom County. Call 360-410-2199."
+h1: "Yellow Jacket Nest in the Ground"
 answer: "Yellowjackets nesting in the ground are the wasp situation most likely to injure somebody on a residential property, because the nest stays invisible until a mower or a foot disturbs it, and the colony defends an underground entrance in numbers and follows whoever disturbed it a surprising distance."
 ready: true
 expert: kristofer-elling
@@ -15,7 +15,7 @@ steps:
   - "Treat many stings, trouble breathing, swelling away from the sting or widespread hives as a medical emergency first"
   - "Let a late-season nest in a far corner die with the frosts; call us when one sits by a mowing line, path, play area or someone with a sting allergy"
 faqs:
-  - q: "How do I find the entrance without getting stung?"
+  - q: "How do I find a wasp nest in the ground without getting stung?"
     a: "Watch from a distance in good light. Traffic in and out converges on a single hole, and a steady stream of insects arriving on the same line will show you where it is from twenty feet away. Never probe the ground to look."
   - q: "Can I pour something down the hole?"
     a: "Please do not. Gasoline, boiling water and hardware store foams all put you directly over an entrance you have just angered, at close range, usually in the dark. This is the single most common way people get badly stung."
@@ -27,6 +27,8 @@ faqs:
     a: "Get everyone and any pets indoors and stay in. Disturbed ground colonies stay agitated for hours and will pursue further than you expect. Do not go back for the mower until it has been dealt with."
   - q: "Do they come back to the same hole next year?"
     a: "The same nest is not reused, but the same site often is, because the conditions that suited them — a bank, a rodent burrow, good drainage — are still there. It is worth knowing where last year's was."
+  - q: "Are ground wasps and yellow jackets the same thing?"
+    a: "Here, nearly always. What people call a ground wasp in this county is almost always a yellow jacket. The genuine exceptions are solitary wasps and mining bees, which nest in soil but do not defend a colony and need nothing done about them."
   - q: "What does it cost to have you deal with it?"
     a: "We will quote when we have seen it, because access and depth change the work considerably. Assessment is free, and if the honest answer is to leave a late-season nest alone, that is what we will tell you."
 ---
@@ -89,6 +91,28 @@ nests are found there in the week somebody finally decides to tidy it.
 
 **In retaining walls and rockeries**, using the voids between stones.
 
+## How deep are yellow jacket nests?
+
+Most of the ground nests we open up in this county sit somewhere between six
+inches and two feet down. The colony did not dig that cavity — it moved into one
+that was already there, which is why the depth is set by whatever made the hole
+rather than by the wasps, and why it varies so much from one property to the
+next.
+
+WSU's extension bulletin on [yellowjackets and paper
+wasps](https://s3.wp.wsu.edu/uploads/sites/1384/2016/07/Yellowjackets-and-Paper-Wasps.pdf)
+sets out the annual cycle behind that: a single overwintered queen starts the
+nest in spring in an existing void, and the colony expands to fill the space it
+found. A nest in an old vole run under a lawn edge may be barely under the turf.
+One in the void beneath a decaying root plate can be two feet down with a tunnel
+running sideways before it reaches the chamber.
+
+The depth is not trivia. It decides whether the nest can be reached from the
+entrance at all, how much material it takes, and whether the job is one visit or
+two. It is also the reason the folk remedies fail so reliably: pouring something
+into the hole treats the first few inches of a tunnel and leaves the colony
+intact and furious at the other end of it.
+
 ## Reading the year
 
 The seasonal curve is the single most useful thing to understand about
@@ -115,9 +139,16 @@ four-week window at the end of summer.
 With hard frosts the colony dies. Only newly mated queens survive, dispersing to
 overwinter elsewhere, and the nest is not reused.
 
-## Finding the entrance safely
+## How to find a wasp nest in the ground
 
-If you suspect a ground nest, the way to confirm it is to watch, not to look.
+Watch for the flight line rather than searching the ground. Stand about twenty
+feet back on a warm afternoon with the light across the area, and look for a
+steady stream of wasps arriving on the same path and dropping into one point.
+Two minutes of that will place the entrance precisely. Mark it from a distance
+and keep everybody away.
+
+That is the whole method, and the rest of this section is why each part of it
+matters.
 
 Stand well back — twenty feet is comfortable — with the sun behind you or the
 light across the area rather than in your eyes. Mid-morning through afternoon on
@@ -234,6 +265,27 @@ If somebody has been stung multiple times, or shows any sign of a reaction
 beyond local pain and swelling — difficulty breathing, swelling away from the
 sting site, dizziness, widespread hives — that is a medical emergency and needs
 emergency care immediately rather than a phone call to us.
+
+## Ground wasps vs. yellow jackets: are they the same?
+
+In this county, almost always yes. "Ground wasp" is what people call whatever
+came out of a hole in the lawn at them, and here that is nearly always a yellow
+jacket — a social wasp running a colony of hundreds or thousands that defends a
+single entrance. If something stung you repeatedly out of the ground, that is
+what it was.
+
+The exceptions matter because they change the answer completely. Solitary wasps
+nest in soil as well, and they do not defend anything. The [great golden digger
+wasp](/pest-library/great-golden-digger-wasp/) is the one most likely to alarm
+somebody here — a two-inch wasp dragging paralyzed prey across a driveway to a
+burrow in dry sandy ground — and it is effectively harmless. So are the mining
+bees that throw up little cones of soil across a lawn in spring. Neither is
+worth treating, and we will tell you so rather than sell you a treatment.
+
+The practical test is traffic. A social colony produces a continuous two-way
+stream in and out of one hole. A solitary nest produces one insect, coming and
+going on its own, usually with several separate holes nearby that belong to
+different individuals.
 
 ## Telling them apart from the things they get confused with
 

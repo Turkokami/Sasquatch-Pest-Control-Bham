@@ -10,7 +10,13 @@ Pest control pricing confuses people, and understandably so. Two neighbors with 
 
 One thing we won't do here is publish a price list. Pest control is quoted from the actual property, and a number printed on a web page is a number that will be wrong for most of the people reading it. What follows is the honest version: the factors that move the price, so you can tell a reasonable quote from an unreasonable one.
 
-## Why pest control pricing is so variable
+## How much does pest control cost in Bellingham?
+
+Nobody can answer that honestly without seeing the building, and anybody who gives you a figure over the phone is quoting a different job from the one you have. What we can tell you is what moves the number, which of our services have a published price, and what a quote should contain before you accept it.
+
+The one exception on this site is bed bug work, where the scope is predictable enough to publish, and those figures are on the bed bug page rather than here. Everything else is quoted from the property after a free assessment.
+
+## Pest control prices, and why they vary so much
 
 Before thinking about specific costs, understanding price variation is essential. Several legitimate factors influence pest control expenses.
 
@@ -34,17 +40,17 @@ Some companies employ scare tactics, exaggerating conceivable issues to justify 
 
 ## What drives cost, service by service
 
-### Rodent control and exclusion
+### Mouse and rat exterminator cost
 
 Rodent pricing depends almost entirely on how much exclusion work is involved. Trapping alone is the cheaper end. Sealing the building envelope — locating and closing every entry point around the foundation, utility penetrations, vents, and rooflines — takes materials and hours, and it is what actually ends the problem. Crawl space remediation, where insulation has been soiled and needs removing and replacing, is the most involved and most expensive tier.
 
 Don't skip the exclusion. Trapping alone without sealing entry points is like bailing a sinking boat without patching the hole.
 
-### Ant control
+### Ant exterminator cost
 
 A single interior treatment for [odorous house ants](/pest-library/odorous-house-ant/) sits at the low end. [Carpenter ants](/pest-library/carpenter-ant/) cost more, because the work involves locating the nest and any moisture-damaged wood supporting it rather than simply treating a trail. An ongoing quarterly prevention program is priced per visit and typically works out lower per treatment than repeated one-off calls.
 
-### Wasps, yellow jackets, and hornets
+### Wasp exterminator cost
 
 Cost tracks accessibility and colony size. An exterior nest you can point at from the driveway is a quick job. Multiple nests, difficult height or access, or a large yellow jacket colony inside a wall void all cost more.
 
@@ -58,11 +64,11 @@ Timing significantly impacts cost. A nest addressed in May when it is small cost
 
 Treatment cost depends on the extent of the infestation and how accessible the affected timber is. In our climate, these problems are almost always tied to a moisture source, so the durable fix usually involves addressing that as well — which is a separate cost worth understanding before you commit.
 
-### Spider control
+### Spider control cost
 
 Spiders are among the least expensive problems to address, whether as a one-time interior and exterior treatment or as an ongoing perimeter program priced per quarter.
 
-### Fleas
+### Flea pest control cost
 
 Flea treatment cost depends on whether the interior alone is treated or the yard is included as well, and on the size of the home. Multiple visits are common, because flea life cycles mean a single application rarely catches every stage.
 

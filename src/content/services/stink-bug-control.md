@@ -28,6 +28,10 @@ faqs:
     a: "We will not, and it is worth understanding why. Killing a large number of insects inside a wall void leaves them there, and the accumulation attracts dermestid beetles and other scavengers that then move into the living space. The dead insects become a second, worse problem."
   - q: "When is the right time to deal with this?"
     a: "August and early September, before the gathering starts. Sealing gaps around windows, siding, soffits and vents in late summer prevents the entire following winter. Calling in November means the population is already in the wall, and the honest answer at that point is a vacuum and a plan for next year."
+  - q: "Can stink bugs bite?"
+    a: "No. Their mouthparts are built for piercing plants and drinking sap, not for breaking skin. There is no sting, no venom and no interest in people or pets. The reputation comes from their size, their numbers and the smell rather than from anything they do to you."
+  - q: "What are the stink bug eggs on my window screen?"
+    a: "An egg mass — 20 to 30 pale barrel-shaped eggs glued in neat rows. It does not mean anything is breeding indoors; a screen is simply a flat outdoor surface next to a garden. Scrape them into soapy water and the whole batch is dealt with for nothing."
   - q: "Are brown marmorated stink bugs a problem beyond nuisance?"
     a: "For a house, no. Agriculturally, yes — they are an invasive species that damages tree fruit, berries and vegetable crops, and they are tracked for that reason. For a homeowner in Bellingham the practical issue is still just numbers on a wall."
 ---
@@ -94,6 +98,18 @@ previous October.
 
 **And in spring the survivors leave**, heading back outdoors to feed and breed.
 Nothing about the indoor phase involves reproduction.
+
+## Can stink bugs bite?
+
+No. A stink bug has mouthparts built for piercing plant tissue and drinking sap,
+not for breaking skin, and there is no venom, no sting and no feeding interest
+in people or pets. A large one walking across your hand will do nothing at all.
+
+What gives them the reputation is the combination of size, numbers and the
+smell — an insect the size of a thumbnail that arrives by the hundred and
+releases a strong odor when handled reads as dangerous even when it is not.
+The one thing to be careful about is squashing them, which is a laundry problem
+rather than a safety one.
 
 ## What they do not do
 
@@ -304,6 +320,26 @@ people more than the adults do.
 None of them bites. None of them damages the structure. The only practical
 difference between them indoors is how badly they smell when crushed, and the
 answer for all four is to vacuum rather than find out.
+
+## Stink bug eggs on window screens
+
+A neat raft of 20 to 30 pale barrel-shaped eggs, glued in rows on the underside
+of a leaf — or, often enough to be a common question, on the inside of a window
+screen, a patio umbrella or a piece of garden furniture. They are usually
+elliptical and cream to pale green, and they darken before hatching.
+
+It is worth knowing two things about finding them. First, it does not mean
+anything is breeding inside the house. Stink bugs lay outdoors on or near the
+plants the nymphs will feed on, and a screen is simply a convenient flat
+surface on the outside of a building next to a garden. Second, it is the one
+stage where doing something is easy and effective: scrape the mass off with a
+card into soapy water, or hose the screen, and that is 20 to 30 insects dealt
+with for no money.
+
+The nymphs that hatch look nothing like the adults — small, round, and brightly
+marked in black and orange or red in the early stages, turning spiny later —
+which is why people report them as something else entirely. They are covered on
+[brown marmorated stink bug](/pest-library/brown-marmorated-stink-bug/).
 
 ## Why the same house every year
 

@@ -65,9 +65,43 @@ For a local service business there is no licensing revenue to protect and being
 cited is the whole point. Google-Extended does not control AI Overviews or AI
 Mode anyway; those follow ordinary Googlebot indexing.
 
-There is no `llms.txt` and none should be built — v2 records it as unused by the
-crawlers it is meant for. IndexNow, if it is ever turned on, is a Bing and
-AI-search measure, not a Google one, and must not be described as a Google tactic.
+IndexNow, if it is ever turned on, is a Bing and AI-search measure, not a Google
+one, and must not be described as a Google tactic.
+
+**`llms.txt` — reversed 11 Nov 2026, and the old position is kept here because
+it was right at the time.** v2 recorded the file as unused by the crawlers it is
+meant for, and the entry here read "there is no `llms.txt` and none should be
+built". That was accurate and is still mostly accurate: no major AI crawler has
+committed to reading it, and nothing about this file may be described to the
+owner as a ranking or citation measure.
+
+What changed is that Lighthouse now ships an Agentic Browsing category which
+audits for the file's presence at the domain root. So it has exactly one known
+consumer — an audit — and that is the whole claim for it. It costs one generated
+file and it is now a check the site passes rather than one it fails.
+
+It is **generated** in `scripts/sitemap.mjs`, beside `robots.txt`, from the same
+built output the sitemaps are read from. A hand-written `llms.txt` is the second
+copy of the site, which is the defect this codebase keeps having, and within a
+month it would be naming a renamed service and omitting pages that have been
+written. The one curated part is the scope block, and it is the most useful
+thing in the file: an assistant asked whether this company does squirrel removal
+can read that the answer is no instead of inferring it from a missing page. Every
+line in that block restates something already published in prose on a page it
+links to — bird work and nuisance wildlife (§8), moles, the WDO credential
+boundary (§2), and the review rules (§5).
+
+The rest of the Agentic Browsing category needs no work and one decision. The
+accessibility-tree and layout-stability audits are already covered: harness
+check 7 fails a page with an unnamed interactive element or an `<img>` with no
+alt, check 6 fails an image with no width, height or aspect-ratio, and
+`scripts/check-tap-targets.mjs` measures 44px targets at 390px. **WebMCP is the
+open question and it is the owner's**, not least because the thing an agent
+would want to call — book a visit — happens inside the CRM's iframe on another
+origin. §11 already records that an agent-actionable booking path is not ours to
+build for that reason, and the `tel:` link remains the path an assistant can
+complete. WebMCP would be the mechanism that changes that, and it would need the
+CRM side to cooperate; nothing has been built here on a guess.
 
 ## 5. Reviews (Part 14) — owner acknowledgment wanted
 

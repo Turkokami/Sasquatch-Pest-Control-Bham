@@ -23,7 +23,15 @@ import { liveServices } from '../../data/services';
 
 const path = '/locations/whatcom-county/';
 const towns = (await writtenTowns()).filter((t) => t.county === 'Whatcom County');
-const townLinks = towns.map((t) => ({ href: `/locations/${t.slug}/`, label: t.name }));
+/* Anchor text carries the phrase rather than just the place name, added
+   11 Nov 2026 from the keyword task file. The town pages exist and are
+   written, and competitors with weaker pages rank above them on "pest
+   control ferndale" and the rest; a county hub that links to nineteen of
+   them under bare place names tells a crawler where they are and nothing
+   about what they are for. One block, one link per town, nowhere else on
+   the site — this is a directory of service by town, which is what the
+   anchors now say. */
+const townLinks = towns.map((t) => ({ href: `/locations/${t.slug}/`, label: `Pest control ${t.name}` }));
 /* All of them — see the note in src/pages/index.astro. */
 const svc = liveServices().map((s) => ({ href: `/services/${s.slug}/`, label: s.name }));
 

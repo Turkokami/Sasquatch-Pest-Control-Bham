@@ -169,6 +169,19 @@ glossy black body, the globular abdomen and the red hourglass on the underside.
 It is the one local spider worth treating with respect, and even so, bites are
 rare and serious outcomes rarer.
 
+## Black spiders in Washington state
+
+Dark and unidentified is how most spiders arrive in a conversation, and in this
+county the answer is nearly always an immature giant house spider or hobo
+spider — both are much darker young than grown — or a false widow, which is the
+glossy near-black one in a messy tangle web that gets reported to us as a black
+widow and is not one.
+
+The full ranking, from what we actually find down to the ones that are not here,
+is in [common spiders in Washington
+state](/guides/spiders-in-washington-state/), along with what a real black widow
+looks like and why it is an eastern Washington animal.
+
 ## The brown recluse question
 
 Because it comes up in nearly every conversation: brown recluse spiders do not

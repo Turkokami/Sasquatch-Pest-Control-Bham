@@ -109,6 +109,22 @@ the larger yellow ant, a close relative that shares habits with the structural
 species here. It is not universal across the group, so its absence proves
 nothing, but its presence is a strong confirmation.
 
+## What is moisture ant frass?
+
+Strictly, moisture ants do not produce frass in the sense carpenter ants do.
+What people find and call frass is carton — a spongy, layered material of
+chewed wet wood mixed with soil, packed into the cavity rather than swept out of
+it. If you are looking at damp cardboard-like sheets filling a void, that is a
+moisture ant nest. If you are looking at a clean open gallery with a heap of
+fibrous sawdust below it, that is a carpenter ant and a different problem.
+
+The distinction is worth more than it sounds. Carpenter ant frass is excavated
+spoil — the ants are tunnelling and carrying the debris out, so it piles up
+below the entry point. Carton is construction material; the ants are building
+with it, in place, which is why it fills the space instead of falling out of it.
+One is a heap you find on a windowsill or a joist below; the other is something
+you only see when the cavity is opened.
+
 ## The carton nest
 
 The second identification is the material, and it is genuinely distinctive.
