@@ -387,9 +387,17 @@
     "https://www.sasquatchpestcontrol.com/services/stink-bug-control/": "2026-11-11",
     "https://www.sasquatchpestcontrol.com/services/termite-control/": "2026-11-11",
     "https://www.sasquatchpestcontrol.com/services/wasp-control/": "2026-11-11",
-    "https://www.sasquatchpestcontrol.com/services/wdo-treatment/": "2026-11-11"
+    "https://www.sasquatchpestcontrol.com/services/wdo-treatment/": "2026-11-11",
+    "https://www.sasquatchpestcontrol.com/es/areas-de-servicio/maple-falls/": "2026-11-11",
+    "https://www.sasquatchpestcontrol.com/locations/maple-falls/": "2026-11-11",
+    "https://www.sasquatchpestcontrol.com/es/resena/": "2026-11-11",
+    "https://www.sasquatchpestcontrol.com/review/": "2026-11-11"
   },
   "runs": [
+    {
+      "at": "2026-11-11T18:44:39.134Z",
+      "count": 4
+    },
     {
       "at": "2026-11-11T14:58:59.643Z",
       "count": 388
