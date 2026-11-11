@@ -2,7 +2,7 @@
 industry: restaurants-and-food-service
 title: "Restaurant Pest Control | Bellingham & Whatcom"
 description: "Pest programs for restaurants, cafes and bars in Bellingham and Whatcom County. Cockroaches, drain flies and rodents, worked around service. Call 360-410-2199."
-h1: "Restaurant & Food Service Pest Control"
+h1: "Restaurant Pest Control in Bellingham & Whatcom County"
 answer: "A restaurant is judged on a walkthrough that happens without warning, so the program has to hold on any given Tuesday rather than on a scheduled one. Most of the work is drains, deliveries and the back door. Visits are scheduled around service, and findings reach you the same day rather than in a monthly summary."
 expert: kristofer-elling
 ready: true
@@ -37,6 +37,25 @@ faqs:
   - q: "How is a restaurant program priced?"
     a: "From the walk. The variables are the size of the back of house, how many separate storage and prep areas there are, the state of the drains and the dumpster enclosure, whether there is an active problem to clear before a program starts, and the visit frequency the site needs. Most restaurants sit on a recurring schedule because the pressure is continuous."
 ---
+
+## Health inspection-ready pest control
+
+Inspection-ready means the walkthrough finds nothing it was not already told
+about. Three things get you there: no live activity in food, prep or storage
+areas; a dated record of every visit with what was found and what was done; and
+the structural faults that let pests in written down, with dates, whether or not
+they have been fixed yet.
+
+That last one is the part operators resist and the part that protects them. An
+inspector who finds a gap under a back door will note it either way. An
+inspector who finds it on our report from six weeks ago, with a note that the
+landlord has been asked twice, is looking at a kitchen that is managing the
+problem rather than one that missed it.
+
+What inspection-ready does not mean is a monthly spray. Nothing applied to a
+baseboard survives a floor being cleaned properly, and a program whose only
+evidence of work is a product label is the kind that produces a surprise on a
+Tuesday morning.
 
 ## Judged on an ordinary Tuesday
 
@@ -256,6 +275,33 @@ the water has nowhere to go.
 
 **Vegetation and stored equipment** held against the building, which gives cover
 right up to the wall.
+
+## What restaurants need in a pest program
+
+Five things, and a program missing any of them is a subscription rather than a
+service.
+
+**A scheduled visit frequency that matches the operation**, not a default.
+A high-volume kitchen with a shared waste enclosure is not on the same interval
+as a forty-seat place with its own dumpster.
+
+**Monitoring that produces information**, so the question each visit answers is
+whether activity is rising, falling or static — not whether anybody saw
+something.
+
+**Structural findings in writing**, with the ones outside your control named as
+such. Doors, drains, grease, waste storage and shared walls cause most of this,
+and most of them belong to a landlord or a neighbour.
+
+**A technician who comes back**, because recognising that the ant trail at the
+dish pit is the same one from March is worth more than any product.
+
+**Documentation you can hand over without preparing it**, which is the whole
+subject of the next section.
+
+What is not on the list: a fixed monthly application regardless of findings,
+and devices placed to look thorough. Both cost money and neither answers an
+inspector.
 
 ## The record, and what to have ready
 
