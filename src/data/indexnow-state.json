@@ -391,9 +391,15 @@
     "https://www.sasquatchpestcontrol.com/es/areas-de-servicio/maple-falls/": "2026-11-11",
     "https://www.sasquatchpestcontrol.com/locations/maple-falls/": "2026-11-11",
     "https://www.sasquatchpestcontrol.com/es/resena/": "2026-11-11",
-    "https://www.sasquatchpestcontrol.com/review/": "2026-11-11"
+    "https://www.sasquatchpestcontrol.com/review/": "2026-11-11",
+    "https://www.sasquatchpestcontrol.com/guides/spiders-in-washington-state/": "2026-11-11",
+    "https://www.sasquatchpestcontrol.com/services/fly-control/how-long-do-flies-live/": "2026-11-11"
   },
   "runs": [
+    {
+      "at": "2026-11-11T21:23:37.720Z",
+      "count": 2
+    },
     {
       "at": "2026-11-11T18:44:39.134Z",
       "count": 4
