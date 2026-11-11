@@ -12,6 +12,10 @@ Clover mites don't bite, they don't damage your home, and they don't feed on any
 
 Let's break down what clover mites are, why they show up, and how you can keep them out of your home.
 
+## Are tiny red spiders the same thing as clover mites?
+
+Usually, yes. What people search for as tiny red spiders on a windowsill in this county is almost always a clover mite — eight legs, so the mistake is a reasonable one, but a mite rather than a spider, with one body section instead of two and no web, no bite and no interest in you at all. Where they sit alongside the actual spiders found here is in [common spiders in Washington state](/guides/spiders-in-washington-state/).
+
 ## What are clover mites?
 
 Clover mites (*Bryobia praetiosa*) are reddish-brown arachnids that feed on plant juices. They are small but not microscopic — an adult is roughly the size of a pinhead, about the width of a pen tip, which is why you can see them clearly on a white window sill but not make out any detail. One of the easiest ways to identify them is by their **extra-long front legs**, which are almost as long as the body and are often mistaken for antennae. Getting that identification right first is step one of the five the [National Pesticide Information Center](https://npic.orst.edu/pest/), run jointly by Oregon State University and the EPA, sets out for any pest problem.

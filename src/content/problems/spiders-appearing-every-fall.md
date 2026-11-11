@@ -111,7 +111,10 @@ without a treatment having been involved.
 
 ## Which spiders
 
-The autumn walkers here are a fairly consistent cast.
+The autumn walkers here are a fairly consistent cast. If you are trying to put a
+name to one rather than understand the season, start from
+[common spiders in Washington state](/guides/spiders-in-washington-state/),
+which covers all of them side by side.
 
 **Giant house spiders.** The large, fast, brown, long-legged ones that produce
 most of the alarm. Males walking in autumn are what people find in bathtubs and
