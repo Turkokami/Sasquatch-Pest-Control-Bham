@@ -75,6 +75,14 @@ export const services: Service[] = [
     problems: [
       { slug: 'cluster-flies-in-upstairs-windows', title: 'Cluster flies in the upstairs windows' },
       { slug: 'fungus-gnats-in-houseplants', title: 'Fungus gnats in houseplants' },
+      /* Added 11 Nov 2026 from the keyword task file. "How long do flies live"
+         and its variants are the largest single informational volume anywhere
+         in this market, and the competitor who holds it does so with a short
+         question post rather than a long guide — so it sits at the problem
+         tier, where the word band is 700–1,400, rather than in /guides/. The
+         page's real argument is that the lifespan is the wrong number and the
+         seven-day replacement rate is the right one. */
+      { slug: 'how-long-do-flies-live', title: 'How long do flies live?' },
     ],
   },
   {
