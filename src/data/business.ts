@@ -98,11 +98,36 @@ export const business = {
   logoImage: '/img/sasquatch-pest-control-logo.png' as Owed<string>,
   socialImage: '/img/sasquatch-social.jpg' as Owed<string>,
 
-  /* NAP — normalized. The live site renders "Guide Meridian rd" lowercase on
-     some pages and "Rd" on others. This is the canonical form; it must match
-     the Google Business Profile character for character. */
+  /* NAP — normalized. This is the canonical form; it must match the Google
+     Business Profile character for character.
+
+     address.street — REMOVED 11 Nov 2026, at the owner's instruction.
+     -----------------------------------------------------------------------
+     Sasquatch is a service-area business and the street address is hidden on
+     the Google Business Profile on purpose. The site was publishing it in
+     eleven places: the footer of every page, both contact pages, both privacy
+     pages, the Spanish home and service-area pages, /network/, a homepage FAQ
+     answer — so also inside FAQPage schema — and as `streetAddress` in the
+     LocalBusiness graph. That is a NAP disagreement with the one record
+     Google actually trusts, and it was the site that was wrong.
+
+     THE FIELD IS DELETED RATHER THAN SET TO A SENTINEL. A sentinel would have
+     kept the real string sitting in a public repository while rendering
+     nothing — which hides the address from readers of the site and from
+     nobody else. Deleting it means any future attempt to render a street
+     address is a build error rather than a silent regression.
+
+     Published location is now the city. Locality, region and postcode stay:
+     none of them is a street address, 98226 covers most of Bellingham, and
+     they carry the local relevance signal the street was never the source of.
+
+     THIS IS NOT A PRIVACY GUARANTEE ON ITS OWN. `geo` below still holds the
+     exact coordinate pair at six decimal places, and it reverse-geocodes to
+     the same road — that is recorded in the note on geo itself. If the intent
+     is that the location not be recoverable from this site at all, geo has to
+     go too, and that costs the map pin. Raised with the owner 11 Nov 2026;
+     geo is left in place pending that answer. */
   address: {
-    street: '5051 Guide Meridian Rd',
     locality: 'Bellingham',
     region: 'WA',
     postalCode: '98226',
@@ -143,20 +168,29 @@ export const business = {
    * the rest of the file is padded the same way.
    *
    * THEN CHECKED AGAINST SOMETHING THAT IS NOT US. Reverse geocoding the pair
-   * through OpenStreetMap puts it on Guide Meridian in Whatcom County at
-   * postcode 98226 — the same road and the same postcode as the address field
-   * above. Two independent routes to the same place is the standard this file
-   * asks for everywhere else, and it is met here.
+   * through OpenStreetMap puts it in Whatcom County at postcode 98226 — the
+   * same postcode as the address field above. Two independent routes to the
+   * same place is the standard this file asks for everywhere else, and it is
+   * met here.
    *
-   * THE ADDRESS IS 5051 GUIDE MERIDIAN RD AND NOTHING HERE CHANGES THAT.
-   * Reverse geocoding a coordinate returns whatever street number is nearest
+   * NO STREET NUMBER IS WRITTEN DOWN HERE, and that was true before it was
+   * policy. Reverse geocoding a coordinate returns whatever number is nearest
    * in the geocoder's own data, which on a road like this one can be a
-   * neighboring building. That number was used to confirm the road and the
-   * postcode and for nothing else. It is deliberately not written down in this
-   * comment, because a street number sitting in a file next to the real one is
-   * exactly the sort of thing that gets copied into a citation by somebody
-   * skimming. Owner was explicit about this on 10 Sep 2026: the address is
-   * 5051.
+   * neighboring building, so what it returned was used to confirm the area and
+   * the postcode and for nothing else. It was never recorded in this comment,
+   * because a street number sitting in a file is exactly the sort of thing
+   * that gets copied into a citation by somebody skimming.
+   *
+   * AND SINCE 11 NOV 2026 THERE IS NO STREET ADDRESS IN THIS FILE AT ALL —
+   * see the removal note on `address`. The number the owner confirmed on
+   * 10 Sep 2026 came out of this comment along with the field.
+   *
+   * WHICH LEAVES THIS PAIR AS THE EXPOSURE. Six decimals is about eleven
+   * centimeters, and the reverse geocode above lands it on the right road, so
+   * anyone who wants the address can still recover it from here. That is a
+   * live question for the owner rather than an oversight: removing geo also
+   * removes the map pin, which is a real cost, and it was raised on
+   * 11 Nov 2026 rather than decided here.
    *
    * This unlocks the GeoCoordinates node in the LocalBusiness graph, which is
    * what a map surface reads to place a pin. */
@@ -957,9 +991,11 @@ export const business = {
    * social handle: it sends a paying customer to somebody else's login box.
    *
    * Supplied by the owner 26 Oct 2026 and verified by loading it: the page
-   * reads "Welcome to your secure account portal. Sasquatch Pest Control,
-   * 5051 Guide Meridian, Bellingham, WA 98226, 360-410-2199" — the right
-   * company, the right address and the right number, not merely an HTTP 200.
+   * reads "Welcome to your secure account portal", then the company name, a
+   * Bellingham WA 98226 address and 360-410-2199 — the right company, the
+   * right place and the right number, not merely an HTTP 200. The street line
+   * the portal prints is deliberately not quoted here; since 11 Nov 2026 no
+   * street address is written anywhere in this file (see `address`).
    *
    * A LINK RATHER THAN THE WIDGET, deliberately. GorillaDesk also ships a
    * JavaScript embed that injects an in-page launcher. It was read before

@@ -17,7 +17,7 @@ const S = t('es');
    mandar un mensaje de texto funciona en cualquier idioma y contestamos en
    español. El formulario se queda, con la advertencia encima. */
 const answer =
-  `Puede comunicarse con Sasquatch Pest Control por teléfono o mensaje de texto al ${business.phone}, por correo electrónico a ${business.email}, o con el formulario de esta página. Estamos en ${a.street}, en ${a.locality}, y atendemos en horario de oficina los siete días de la semana. Hablamos español.`;
+  `Puede comunicarse con Sasquatch Pest Control por teléfono o mensaje de texto al ${business.phone}, por correo electrónico a ${business.email}, o con el formulario de esta página. Estamos en ${a.locality} y trabajamos en todo el condado de Whatcom, y atendemos en horario de oficina los siete días de la semana. Hablamos español.`;
 /* Photographs through the text (owner, 19 Sep 2026). */
 const inlinePhotos = inlinePhotosForEs('/es/contacto/');
 ---
@@ -46,8 +46,15 @@ const inlinePhotos = inlinePhotosForEs('/es/contacto/');
     </p>
   {inlinePhotos[0] && <InlinePhoto photo={inlinePhotos[0]} lang="es" />}
 
-    <h2>Nuestra dirección</h2>
-    <p>{a.street}<br />{a.locality}, {a.region} {a.postalCode}</p>
+    {/* "Dónde estamos", no "Nuestra dirección" — mismo cambio que en la
+        página en inglés. Empresa que atiende a domicilio; vea la nota en
+        business.address. */}
+    <h2>Dónde estamos</h2>
+    <p>
+      {a.locality}, {a.region} {a.postalCode}<br />
+      Atendemos a domicilio: nuestros técnicos van a su casa, no hay oficina
+      que visitar. <a href="/es/areas-de-servicio/">Vea los pueblos que atendemos</a>.
+    </p>
 
     <h2>Horario</h2>
     <p>{hoursLinesLong('es').map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>

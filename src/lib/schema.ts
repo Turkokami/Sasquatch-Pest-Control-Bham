@@ -459,9 +459,12 @@ function organizationNode(guideTopics: GuideTopic[]) {
     telephone: business.phone,
     email: business.email,
     foundingDate: isReady(business.foundingYear) ? String(business.foundingYear) : undefined,
+    /* NO streetAddress. Service-area business — the Google Business Profile
+       hides the street on purpose, so emitting it here would have the graph
+       assert a location the profile does not. See the removal note on
+       business.address. City, region, postcode and country only. */
     address: {
       '@type': 'PostalAddress',
-      streetAddress: a.street,
       addressLocality: a.locality,
       addressRegion: a.region,
       postalCode: a.postalCode,

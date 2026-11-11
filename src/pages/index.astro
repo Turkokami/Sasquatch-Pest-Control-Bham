@@ -58,7 +58,10 @@ const cities = townGroups(await writtenTowns());
 const faqs = [
   {
     q: 'Where is Sasquatch Pest Control located?',
-    a: `We are based at ${business.address.street} in ${business.address.locality}, ${business.address.region} ${business.address.postalCode}, and we run routes throughout Whatcom County.`,
+    /* No street address, and the answer says why rather than just going
+       quiet — a "where are you" question answered with a city and nothing
+       else reads evasive. Service-area business; see business.address. */
+    a: `We are based in ${business.address.locality}, ${business.address.region}, and we run routes throughout Whatcom County. We are a service-area business rather than a storefront, so our technicians come to you and there is no walk-in office to visit.`,
   },
   {
     q: 'Do you require a long-term contract?',
