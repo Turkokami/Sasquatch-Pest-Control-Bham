@@ -1,5 +1,5 @@
 ---
-title: "Deer Mouse (Peromyscus maniculatus) in Whatcom County"
+title: "Deer Mice in Washington: Hantavirus & Cleanup"
 description: "The hantavirus species in Washington, and an outdoor animal rather than a kitchen one. How to tell it from a house mouse, and how to clean up safely."
 h1: "Deer Mouse — The One the Health Guidance Is About"
 species: 'deer-mouse'
@@ -94,7 +94,7 @@ That is the animal. It is not the mouse in the pantry of a Sunnyland rental, and
 the difference matters, because the health guidance attached to it is real and
 the wrong species carrying it eventually stops being believed.
 
-## Deer mouse or house mouse
+## Deer mouse vs. house mouse
 
 This is the identification that changes the advice, and it is easy once you know
 what to look at. Both UC IPM publications set out the same features.
@@ -136,10 +136,19 @@ housing of a vehicle, the inside of a barbecue cover, a stored kayak.
 If you find a cache, you have both an identification and a location, which is
 more than a scatter of droppings gives you.
 
-## Hantavirus, stated accurately
+## Are deer mice dangerous?
 
-This is the reason the deer mouse gets its own page rather than a paragraph on
-another one, and it is the section where being precise matters most.
+They carry hantavirus, and that makes them the one rodent here where how you
+clean up matters more than how you trap. Infected deer mice live throughout
+Washington. The risk is breathing contaminated dust, which means droppings and
+nest material get wetted down with disinfectant and wiped, never swept and never
+vacuumed dry.
+
+They are not aggressive, they do not bite people in normal circumstances, and
+the damage they do to a building is ordinary rodent damage. The hazard is
+specific and it is airborne, which is why this animal gets its own page rather
+than a paragraph on another one, and why the rest of this section is about
+being precise.
 
 **What the state says.** The [Washington State Department of Health](https://doh.wa.gov/you-and-your-family/illness-and-disease-z/hantavirus) states that
 hantavirus-infected deer mice shed the virus in urine, saliva and droppings,
