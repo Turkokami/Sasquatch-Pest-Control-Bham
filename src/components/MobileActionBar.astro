@@ -64,7 +64,12 @@ const label = offerLabelShort(freeInspectionForPath(path), lang);
    deliberately: a page explaining what happens to the details you hand over
    is the one page that should not also be asking for them. The bar still
    offers the form — it just sends the reader to /contact/ for it. */
-const NO_FORM = new Set(['/network/', '/privacy/', '/es/privacidad/', '/image-use/']);
+/* /review/ and /es/resena/ joined on 11 Nov 2026, same shape as the privacy
+   pages and for a related reason: the page exists to send a finished customer
+   to Google, and putting a "request a free inspection" form under it turns a
+   thank-you into a second sales pitch. The bar still offers the form, pointed
+   at /contact/, so a reader who arrived here wanting service is not stranded. */
+const NO_FORM = new Set(['/network/', '/privacy/', '/es/privacidad/', '/image-use/', '/review/', '/es/resena/']);
 const hasFormOnPage = !NO_FORM.has(path);
 const contactPath = lang === 'es' ? '/es/contacto/' : '/contact/';
 const formHref = hasFormOnPage ? `#${LEAD_FORM_ID}` : `${contactPath}#${LEAD_FORM_ID}`;

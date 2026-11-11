@@ -1,0 +1,134 @@
+---
+/**
+ * /es/resena/ — el espejo de /review/.
+ *
+ * POR QUÉ ESTA SÍ TIENE GEMELA EN ESPAÑOL Y /reviews/ NO. La página de
+ * reseñas en inglés cita a quince personas palabra por palabra, y una cita
+ * traducida deja de ser una cita; por eso existe solo en inglés y así está
+ * explicado en su encabezado. Esta página no cita a nadie: es una petición y
+ * un enlace. Un cliente que nos llamó en español merece que se la hagamos en
+ * español.
+ *
+ * EL ENLACE LLEVA A UN FORMULARIO DE GOOGLE EN EL IDIOMA DE LA CUENTA del
+ * lector, no al nuestro. Eso no lo controlamos y no se promete aquí.
+ *
+ * LA REGLA DE FONDO ES LA MISMA que en la página en inglés: la norma 16 CFR
+ * Parte 465 de la FTC prohíbe filtrar quién puede dejar reseña. Las dos
+ * salidas — dejar la reseña y llamarnos — se ofrecen juntas, a todos, sin
+ * ninguna pregunta por delante. Si alguien reorganiza esta página para que el
+ * enlace aparezca solo después de un filtro, rompe la ley, no el diseño.
+ */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AnswerBox from '../../components/AnswerBox.astro';
+import LinkRail from '../../components/LinkRail.astro';
+import { business, isReady } from '../../data/business';
+import { t } from '../../data/i18n';
+
+const path = '/es/resena/';
+const S = t('es');
+
+const answer =
+  'Si trabajamos en su casa y quiere decirlo públicamente, el enlace de esta página abre el formulario de reseñas de Google de Sasquatch Pest Control. Toma como un minuto. No damos nada a cambio, se lo pedimos igual a todo el mundo y no escogemos a quién preguntarle.';
+---
+<BaseLayout
+  source="src/pages/es/resena.astro"
+  path={path}
+  leadForm={false}
+  lang="es"
+  title="Déjenos una reseña en Google"
+  description="Deje una reseña en Google para Sasquatch Pest Control de Bellingham. Un enlace, como un minuto. No damos nada a cambio y no filtramos a nadie."
+  kind="page"
+  breadcrumbs={[{ name: 'Inicio', path: '/es/' }, { name: 'Dejar una reseña', path }]}
+>
+  <h1>Déjenos una reseña en Google</h1>
+  <AnswerBox text={answer} />
+
+  {isReady(business.reviewUrl) && (
+    <p class="review-ask">
+      <a class="btn" href={business.reviewUrl as string} rel="nofollow noopener">
+        Escribir una reseña en Google
+      </a>
+    </p>
+  )}
+
+  <div class="prose">
+    <h2>Qué pasa cuando le da al botón</h2>
+
+    <p>
+      Se abre el formulario de Google para nuestra ficha de Bellingham. Hay que
+      tener una cuenta de Google y haber iniciado sesión, porque Google liga
+      cada reseña a una cuenta — no hay manera de saltarse ese paso, y si no ha
+      iniciado sesión lo primero que verá es la página de Google, no la
+      nuestra.
+    </p>
+
+    <p>
+      Lo que usted escriba va directo a Google. No pasa por nosotros, no lo
+      podemos editar y no lo podemos quitar. Se publica con el nombre que use
+      su cuenta de Google, y usted mismo lo puede cambiar o borrar después
+      desde el mismo lugar.
+    </p>
+
+    <p>
+      Con una o dos frases basta. Las que más le sirven a otra persona son las
+      concretas: qué plaga era, en qué parte del condado, y si el problema de
+      verdad no volvió.
+    </p>
+
+    <h2>Si algo salió mal, mejor llámenos</h2>
+
+    <p>
+      Antes de escribirlo, o además de escribirlo, como usted prefiera. Una
+      cita que no se cumplió o un tratamiento que no aguantó casi siempre se
+      arregla la misma semana, y preferimos oírlo de usted que leerlo después.
+      Llame o mande un mensaje de texto al
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, o escriba a
+      <a href={`mailto:${business.email}`}>{business.email}</a>. Hablamos
+      español.
+    </p>
+
+    <p>
+      Nada de esto es condicional. El enlace de arriba no desaparece porque
+      usted nos llame primero, y llamarnos no le compra una versión más
+      discreta de esta página. Nuestra
+      <a href="/es/garantia/">Garantía de Servicio 100%</a> cubre la segunda
+      visita y nunca ha dependido de que usted diga algo bonito después.
+    </p>
+
+    <h2>Lo que no hacemos</h2>
+
+    <ul>
+      <li>
+        <strong>No pagamos por reseñas.</strong> Ni descuento, ni tarjeta de
+        regalo, ni rifa, ni crédito en la siguiente visita.
+      </li>
+      <li>
+        <strong>No filtramos a nadie.</strong> No hay un paso de
+        &ldquo;¿cómo le fue?&rdquo; delante de este enlace que mande a Google a
+        los clientes contentos y a los demás a un formulario privado. Esa
+        práctica se llama filtrado de reseñas y la prohíbe la
+        <a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465" rel="nofollow noopener" lang="en">norma
+        de la FTC sobre reseñas de consumidores</a> (16 CFR Parte 465).
+      </li>
+      <li>
+        <strong>No las escribimos nosotros.</strong> Ni el personal, ni la
+        familia, ni una agencia de nuestra parte.
+      </li>
+      <li>
+        <strong>No tratamos de que quiten las malas.</strong> Las
+        contestamos.
+      </li>
+    </ul>
+  </div>
+
+  <LinkRail
+    heading="También le puede servir"
+    links={[
+      { href: '/es/garantia/', label: 'Nuestra Garantía de Servicio 100%' },
+      { href: '/es/contacto/', label: 'Llámenos, mándenos un mensaje o escríbanos' },
+      { href: '/es/areas-de-servicio/', label: 'Los pueblos que atendemos' },
+    ]}
+  />
+
+  <p class="prose" data-boilerplate>{S.englishOnwardNote}</p>
+</BaseLayout>

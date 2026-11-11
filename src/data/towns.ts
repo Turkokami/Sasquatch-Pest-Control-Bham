@@ -489,6 +489,53 @@ export const towns: Town[] = [
     landmarks: ['the Whatcom Chief ferry from Gooseberry Point', 'Legoe Bay', 'the wooded south end of the island'],
   },
   {
+    /* MAPLE FALLS, added 11 Nov 2026 off the Search Console export rather than
+       off a hunch. /maple-falls-pest-control/ was the old site's page for the
+       upper valley; it has been 301ing to the county hub since the migration
+       and it still drew 3,891 impressions in the last sixteen months — more
+       than any other orphaned geo URL on the property — at an average position
+       in the mid-forties, which is what a redirect to a page about somewhere
+       else earns. The demand is measured; the page is the answer to it.
+
+       NOT A SECOND DEMING, and that is the thing to protect. Both sit on the
+       Mount Baker Highway, and if this page turns into Deming's forest-edge
+       copy ten miles further up, it should not exist. What makes it a separate
+       page is the economy: from Maple Falls up to Glacier the buildings are
+       disproportionately nightly rentals and seasonal cabins — Snowline,
+       Peaceful Valley, Mt. Baker Rim, the county's own cabins at Silver Lake
+       Park — which inverts the calendar every other page on this site is
+       written against. Winter is the busy season here, not the empty one, and
+       guests rather than terrain are the vector for the pest that matters most.
+
+       THE PRESSURES BELOW ARE AN INFERENCE, recorded as one in the same way
+       the Acme row records its own. The owner has not given a Maple Falls
+       brief; rodent-control.md names the town in his routing, and the rest is
+       read off the terrain, the elevation and the building stock. If he ever
+       gives a brief that contradicts this, his brief wins.
+
+       GEOGRAPHY CHECKED 11 NOV 2026, not recalled: an unincorporated CDP at
+       the junction of SR 542 and Silver Lake Road, population 291 at the 2020
+       census, roughly 26 road miles east of Bellingham. Silver Lake Park is
+       the county park a mile north up Silver Lake Road, with camping, cabins
+       and a lodge. The Bay to Baker Trail runs from the junction toward
+       Glacier. */
+    slug: 'maple-falls',
+    name: 'Maple Falls',
+    county: 'Whatcom County',
+    distanceMi: 26,
+    direction: 'east',
+    population: 291,
+    housing: 'rural',
+    kind: 'cdp',
+    pestPressures: [
+      'bed bugs moving through nightly rentals with the guests',
+      'mice and rats into heated buildings once the snow is down',
+      'carpenter ants in cedar and heavy exposed framing',
+      'yellowjackets through the busy end of summer',
+    ],
+    landmarks: ['Silver Lake Park', 'the Mount Baker Highway up toward Glacier', 'the Bay to Baker Trail'],
+  },
+  {
     slug: 'deming',
     name: 'Deming',
     county: 'Whatcom County',

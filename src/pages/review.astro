@@ -1,0 +1,147 @@
+---
+/**
+ * /review/ — the page that asks. One job, one button.
+ *
+ * WHY IT IS SEPARATE FROM /reviews/. That page is for a stranger deciding
+ * whether to call us: fifteen quotes, the mechanics behind them, and a link
+ * to the profile so they can check. This page is for somebody we have already
+ * worked for, usually standing in their own driveway holding a phone. Those
+ * are different readers wanting different things, and the second one was not
+ * served at all — there was no "leave a review" link anywhere on this site
+ * until 11 Nov 2026, while the owner's own short link sat unused in a comment
+ * in business.ts.
+ *
+ * WHY THIS URL. The Map Pack guide of 11 Nov 2026 asked for "/review", and
+ * short is the whole point: this address gets said out loud at a kitchen
+ * table and typed into a phone with one hand. The old WordPress site had
+ * /leave-a-review/, which has been redirecting to /contact/ and now comes
+ * here instead — it carries a small amount of real search history.
+ *
+ * THE RULE THIS PAGE IS BUILT AROUND, and it is the same one as /reviews/.
+ * 16 CFR Part 465 bans review gating: asking "how did we do?" first and then
+ * routing the happy customers to Google and everybody else to a private
+ * complaints form. This page offers both routes at once, to everyone, with
+ * no question in front of either. That is deliberate and it is why the "call
+ * us instead" section is not a smaller, quieter box at the bottom. If anybody
+ * ever reorganizes this page so the review link appears only after a filter,
+ * they have broken the law and not merely the design.
+ *
+ * NO REVIEW OR AGGREGATERATING MARKUP HERE EITHER, same reasoning as
+ * /reviews/ — see the long note at the head of that file and the suppression
+ * note in src/lib/schema.ts.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AnswerBox from '../components/AnswerBox.astro';
+import LinkRail from '../components/LinkRail.astro';
+import { business, isReady } from '../data/business';
+
+const path = '/review/';
+
+const answer =
+  'If we have worked at your place and you are willing to say so publicly, the link on this page opens a Google review box for Sasquatch Pest Control. It takes about a minute. We offer nothing in exchange for one, we ask everybody the same way, and we do not screen who gets asked.';
+---
+<BaseLayout
+  source="src/pages/review.astro"
+  path={path}
+  leadForm={false}
+  title="Leave Us a Google Review"
+  description="Leave a Google review for Sasquatch Pest Control of Bellingham. One link, about a minute. Nothing is offered in exchange and nobody is screened first."
+  kind="page"
+  breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Leave a review', path }]}
+>
+  <h1>Leave us a Google review</h1>
+  <AnswerBox text={answer} />
+
+  {isReady(business.reviewUrl) && (
+    <p class="review-ask">
+      <a class="btn" href={business.reviewUrl as string} rel="nofollow noopener">
+        Write a Google review
+      </a>
+    </p>
+  )}
+
+  <div class="prose">
+    <h2>What happens when you tap that</h2>
+
+    <p>
+      It opens Google&rsquo;s own review box for our Bellingham listing. You
+      will need to be signed in to a Google account, because Google attaches
+      every review to one — there is no version of this that skips that step,
+      and if you are signed out you will see their sign-in page first rather
+      than ours.
+    </p>
+
+    <p>
+      What you write goes straight to Google. It does not come to us first, we
+      cannot edit it, and we cannot take it down. It appears publicly under
+      whatever name your Google account uses, and you can change or delete it
+      yourself afterwards from the same place.
+    </p>
+
+    <p>
+      A sentence or two is plenty. The ones that help somebody the most are the
+      specific ones — which pest, which part of the county, whether the problem
+      actually stayed gone.
+    </p>
+
+    <h2>If something went wrong, call us instead of writing it up</h2>
+
+    <p>
+      And we mean instead of, or before, or as well — whichever you like. A
+      missed appointment or a treatment that did not hold is usually something
+      we can put right the same week, and we would much rather hear it from you
+      than read it later. Call or text
+      <a href={`tel:${business.phoneE164}`}>{business.phone}</a>, or email
+      <a href={`mailto:${business.email}`}>{business.email}</a>.
+    </p>
+
+    <p>
+      Nothing here is conditional. The link above does not disappear if you
+      call us first, and calling us does not buy you a quieter version of this
+      page. Our
+      <a href="/our-guarantee/">100% Service Guarantee</a> covers the return
+      visit, and it has never been conditional on saying anything nice
+      afterwards.
+    </p>
+
+    <h2>What we do not do</h2>
+
+    <ul>
+      <li>
+        <strong>We do not pay for reviews.</strong> No discount, no gift card,
+        no entry in a drawing, no credit on the next visit.
+      </li>
+      <li>
+        <strong>We do not screen anybody first.</strong> There is no
+        &ldquo;how did we do?&rdquo; step in front of this link that sends the
+        happy customers to Google and routes the unhappy ones somewhere
+        private. That practice is called review gating and it is banned by the
+        <a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-465" rel="nofollow noopener">FTC&rsquo;s
+        rule on consumer reviews</a> (16 CFR Part 465).
+      </li>
+      <li>
+        <strong>We do not write them.</strong> Not staff, not family, not an
+        agency on our behalf.
+      </li>
+      <li>
+        <strong>We do not try to have the bad ones removed.</strong> We reply
+        to them.
+      </li>
+    </ul>
+
+    <p>
+      The longer version of all of that, with the fifteen reviews we quote and
+      the one we deliberately left out, is on
+      <a href="/reviews/">our reviews page</a>.
+    </p>
+  </div>
+
+  <LinkRail
+    heading="While you are here"
+    links={[
+      { href: '/reviews/', label: 'Read the reviews we quote, and how we got them' },
+      { href: '/our-guarantee/', label: 'Our 100% Service Guarantee' },
+      { href: '/contact/', label: 'Call, text or email us' },
+    ]}
+  />
+</BaseLayout>

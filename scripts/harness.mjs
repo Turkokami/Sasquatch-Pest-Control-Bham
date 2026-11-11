@@ -124,7 +124,12 @@ const SERP_MEDIAN = {};
    '/es/contacto/' sits here beside '/contact/' because it is the same page in
    the other language, and classifying a pair differently is the single-source
    split this codebase keeps getting bitten by. */
-const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank-you/', '/es/contacto/']);
+/* '/review/' and its Spanish twin joined this set on 11 Nov 2026 for exactly
+   the reason in the sentence above: the page is a button and the four
+   paragraphs needed to use it honestly. Padding it to the 800-word city band
+   would be writing filler around a link, which is the failure the band exists
+   to catch, not an instance of it. */
+const UTILITY = new Set(['/contact/', '/network/', '/404.html', '/404/', '/thank-you/', '/es/contacto/', '/review/', '/es/resena/']);
 const isSpanish = (url) => url === '/es/' || url.startsWith('/es/');
 /* Hubs take the T1 band. '/gallery/' and '/awards/' are here by
    classification, not exemption: each one's job is routing plus an answer —

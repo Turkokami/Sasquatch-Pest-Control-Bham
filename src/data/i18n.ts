@@ -101,6 +101,10 @@ export const PAGE_PAIRS: Record<string, string> = {
   '/privacy/': '/es/privacidad/',
   '/about/': '/es/nosotros/',
   '/contact/': '/es/contacto/',
+  /* /reviews/ has no Spanish twin on purpose — fifteen quotations, and a
+     translated quotation is not a quotation. /review/ quotes nobody; it is a
+     request and a link, so it pairs like every other utility page. */
+  '/review/': '/es/resena/',
 };
 
 /* THE SPECIES PAIRS ARE DERIVED, NOT TYPED. Fifty-three hand-typed rows here

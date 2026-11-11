@@ -979,6 +979,51 @@ export const business = {
    *  rating so a reader can check the 4.9 for themselves. */
   gbpUrl: 'https://maps.google.com/?cid=18341881106700002288' as Owed<string>,
 
+  /** THE WRITE-A-REVIEW LINK. The read link above sends a reader to the
+   *  profile; this one opens the box they type into. They are different URLs
+   *  and the site needs both, which the Map Pack guide of 11 Nov 2026 is what
+   *  finally made obvious — it asked for "a short /review page with a direct
+   *  'Leave a Google review' link", and there was no such link anywhere on
+   *  this site. The owner's own short link had been sitting unused in the
+   *  comment above since September.
+   *
+   *  RESOLVED 11 NOV 2026, the same way gbpUrl was, and the method matters
+   *  because it also answered a question this file had been unable to answer.
+   *  Google's documented pattern for a profile owner is to add `/review` to
+   *  the g.page short link. Followed rather than pasted in:
+   *
+   *    https://g.page/r/CfBjTeWvc4v-EBM/review
+   *      → search.google.com/local/writereview?placeid=ChIJw7hdPWpDyAoR8GNN5a9zi_4
+   *
+   *  THAT IS THE PLACE ID, and until this was traced we had only the CID.
+   *  They identify the same profile — both came out of the one short link the
+   *  owner confirmed on 10 Sep 2026 as the Bellingham listing, not Houston —
+   *  so the Texas separation this site is built around is not at risk here.
+   *  The Place ID is the identifier Google's own tools take as input, so
+   *  having it written down is worth more than this one link.
+   *
+   *  THE RESOLVED ADDRESS RATHER THAN THE SHORT LINK, consistent with gbpUrl.
+   *  One forwarding hop fewer for a reader on a phone outside a customer's
+   *  house, and it does not depend on g.page continuing to resolve — Google
+   *  stopped issuing new short links of that form and existing ones are
+   *  legacy. What is given up is the `laa=nmx-review-solicitation-ia2`
+   *  parameter the short link carries, which tags the visit in Google's own
+   *  analytics as having come from an owner's review request. That is
+   *  reporting detail inside Google, not anything a reviewer or this site
+   *  can see, and it is not worth an extra redirect.
+   *
+   *  A SIGNED-OUT VISITOR LANDS ON A GOOGLE SIGN-IN PAGE — verified, not
+   *  assumed. That is Google's behavior and no link can avoid it: a review
+   *  has to be attached to an account. The /review/ page says so in plain
+   *  words rather than letting it be a surprise.
+   *
+   *  NOTHING ON THIS SITE MAY GATE ON THIS LINK. It is published openly, to
+   *  everybody, with no "how did we do?" step in front of it. See the page
+   *  itself and the mechanics section of /reviews/: review gating is banned
+   *  by 16 CFR Part 465 and this is the file where somebody would be tempted
+   *  to add a second, private link for unhappy customers. Do not. */
+  reviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJw7hdPWpDyAoR8GNN5a9zi_4' as Owed<string>,
+
   /**
    * THE GORILLADESK CUSTOMER PORTAL, where an existing customer signs in to
    * see their schedule, history and invoices. Owner asked for it 26 Oct 2026.

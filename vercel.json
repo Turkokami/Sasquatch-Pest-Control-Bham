@@ -1308,12 +1308,12 @@
     },
     {
       "source": "/maple-falls-pest-control/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/maple-falls/",
       "permanent": true
     },
     {
       "source": "/glacier-wa-pest-control/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/maple-falls/",
       "permanent": true
     },
     {
@@ -1743,7 +1743,7 @@
     },
     {
       "source": "/leave-a-review/",
-      "destination": "/contact/",
+      "destination": "/review/",
       "permanent": true
     },
     {
@@ -1863,7 +1863,7 @@
     },
     {
       "source": "/pest-control-glacier-wa/",
-      "destination": "/locations/whatcom-county/",
+      "destination": "/locations/maple-falls/",
       "permanent": true
     },
     {
