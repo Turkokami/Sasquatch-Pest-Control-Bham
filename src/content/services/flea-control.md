@@ -2,7 +2,7 @@
 service: flea-control
 title: "Flea Exterminator & Treatment in Bellingham, WA"
 description: "Flea treatment for Bellingham and Whatcom County homes. The pupal stage is why they come back — here is what actually resolves it. Call 360-410-2199."
-h1: "Flea Control in Bellingham & Whatcom County"
+h1: "Flea Exterminator in Bellingham & Whatcom County"
 answer: "Fleas fail to clear for one reason: the pupal stage is armored and waits. Treatment kills adults and larvae, then pupae hatch a week or two later and it looks like nothing worked. The job is a treatment, aggressive vacuuming, a follow-up, and pet treatment from your vet — all four, or it recurs."
 expert: kristofer-elling
 ready: true
@@ -72,6 +72,26 @@ upholstery — not the middle of the floor, where fleas do not develop. Empty th
 canister or remove the bag after each session and take it out of the house.
 
 Wash pet bedding in hot water and dry it hot. The dryer does the work.
+
+## Can fleas live in human hair?
+
+No. The cat flea, which is effectively every flea found in a house in this
+county regardless of which animal it came off, is built for moving through fur
+and cannot hold on to or breed on a human head. People do get bitten —
+normally around the ankles and lower legs, because that is the height fleas
+jump to — but a flea does not take up residence on a person.
+
+This matters because it changes what you do. If fleas lived on people, treating
+people would be part of the answer. They do not, so it is not. The population
+is in the carpet, the pet bedding, the upholstery and the first few feet of
+floor, and that is where the work goes. Washing your hair achieves nothing
+against an infestation and shampooing a person is not a flea treatment.
+
+If something genuinely is living in hair, it is almost certainly head lice,
+which is a different insect entirely, is not a pest control job, and is dealt
+with at a pharmacy. The other thing worth ruling out is
+[bites with no bugs found](/services/bed-bug-control/bites-but-no-bugs-found/),
+which is its own situation and has several causes that are not insects at all.
 
 ## What you actually have
 
@@ -202,7 +222,7 @@ scenario described above.
 empty for months with animals under them, and owners who arrive to a house that
 seems suddenly full of fleas.
 
-## What it costs
+## What does flea treatment cost?
 
 Quoted from the property, driven by square footage, how much carpet and
 upholstery there is, and whether an animal source needs resolving first by somebody who does that work.
@@ -213,6 +233,14 @@ crawlspace is really two jobs, and the flea treatment is the smaller half.
 
 Follow-up visits that are part of the plan are part of the price rather than a
 second invoice. The estimate is free.
+
+What moves the figure up and down across all our work, with the numbers we do
+publish, is on [what pest control costs in
+Bellingham](/blog/pest-control-cost-bellingham/) and in the
+[guide to what drives the cost](/guides/what-drives-the-cost-of-pest-control/).
+We will not quote a flea job over the phone from a square footage alone,
+because the thing that decides whether it is one visit or three is the source,
+and that has to be looked at.
 
 ## The seasonal pattern here
 
