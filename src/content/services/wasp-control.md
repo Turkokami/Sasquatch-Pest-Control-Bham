@@ -1,8 +1,8 @@
 ---
 service: wasp-control
-title: "Wasp Nest Removal & Hornet Control in Bellingham, WA"
+title: "Wasp & Hornet Exterminator in Bellingham, WA"
 description: "Wasp, yellowjacket and bald-faced hornet nest removal in Bellingham and Whatcom County. Fast, safe removal of ground, aerial and wall-void nests. Call 360-410-2199."
-h1: "Wasp Nest Removal & Hornet Control in Bellingham & Whatcom County"
+h1: "Wasp Nest Removal & Hornet Exterminator in Whatcom County"
 answer: "Colonies here peak in late August and September, which is when nearly all the stings happen. We remove ground nests, aerial nests and the wall-void nests that are genuinely dangerous to attempt yourself. If you have a nest near a door, a walkway or a play area, that moves to the front of our schedule."
 expert: kristofer-elling
 ready: true
@@ -83,18 +83,41 @@ EB0643 records that abandoned nests decompose over the winter and are not used
 again. That rule holds without qualification for every yellowjacket and hornet
 on this list. It has exactly one local exception, which is covered below.
 
-## What we actually have here
+## Are wasps and yellow jackets the same?
 
-**Bald-faced hornet.** Despite the name this is a yellowjacket, not a true
+A yellow jacket is a wasp — one particular group of them. All yellow jackets are
+wasps; most wasps are not yellow jackets. The word "wasp" covers everything from
+the social colonies that sting people to solitary mud daubers that never do, and
+the difference decides whether anything needs doing at all.
+
+In practice, when somebody here says wasp they usually mean one of three things.
+A yellow jacket, which is black and bright yellow, smooth, and runs a colony of
+hundreds or thousands in the ground or in a wall — these cause nearly all the
+stings. A paper wasp, which is slimmer with long legs trailing in flight and
+builds a small open comb under an eave — much less defensive. Or a bald-faced
+hornet, which despite the name is also a yellow jacket, and builds the big gray
+paper ball in a tree.
+
+So "are wasps and yellow jackets the same" has a useful answer rather than a
+pedantic one: if it is yellow and black, smooth, and there are a lot of them
+going in and out of one hole, it is a yellow jacket and it is the one worth
+taking seriously. If it is long-legged and there are six of them on a small open
+comb, it is a paper wasp and it very often needs nothing. The ground-nesting
+case is covered in full on [yellow jacket nest in the
+ground](/services/wasp-control/yellowjackets-in-the-lawn/).
+
+## Types of wasps in Washington
+
+**[Bald-faced hornet](/pest-library/bald-faced-hornet/).** Despite the name this is a yellowjacket, not a true
 hornet. Large, black and ivory-white, and it builds the football-shaped gray
 paper nest people photograph — hanging from a branch, a soffit, a shrub or
 occasionally a wall. Genuinely defensive within several feet of the nest. This
 is also the insect most often reported to us as a giant hornet.
 
-**Aerial yellowjacket.** Similar enclosed paper nests in shrubs, trees and under
+**[Aerial yellowjacket](/pest-library/aerial-yellowjacket/).** Similar enclosed paper nests in shrubs, trees and under
 eaves, smaller and yellow-marked.
 
-**Western yellowjacket.** The ground nester, and the one responsible for most
+**[Western yellowjacket](/pest-library/western-yellowjacket/).** The ground nester, and the one responsible for most
 stings in this county. It nests in abandoned rodent burrows, under root balls, in
 retaining walls and in landscape voids — meaning the nest is invisible until
 someone runs a mower over it or steps on the entrance. Aggressive when disturbed,
@@ -104,7 +127,7 @@ and highly attracted to food and drink in late summer.
 structures — wall voids, attics and soffits — rather than in the ground. When we
 get a wall-void call, this is often what it is.
 
-**European paper wasp.** Now common across the Pacific Northwest. Slimmer, longer
+**[European paper wasp](/pest-library/european-paper-wasp/).** Now common across the Pacific Northwest. Slimmer, longer
 legs trailing in flight, and easily confused with a yellowjacket by coloring. It
 builds the open, umbrella-shaped comb with visible cells rather than an enclosed
 paper envelope, and it nests in small cavities constantly — under eaves, in
@@ -130,6 +153,17 @@ case against it is suggestive rather than settled.
 
 **Native paper wasps.** Same open comb, browner, generally placid. We frequently
 leave them alone when the location allows it.
+
+**[Mud dauber](/pest-library/mud-dauber/).** Solitary, slim, with the long thread
+waist, and it builds the hard mud tubes under eaves, in sheds and on the inside of
+open outbuildings. It does not defend a nest and it very rarely stings anybody.
+Knocking the tubes down is a cleaning job, not a pest control one.
+
+**[Great golden digger wasp](/pest-library/great-golden-digger-wasp/) and
+[grass-carrying wasp](/pest-library/grass-carrying-wasp/).** Two more solitary
+wasps found here in small numbers. The digger wasp is large enough to alarm
+people — a two-inch wasp hauling a paralyzed katydid to a burrow in dry sandy
+ground — and is harmless. Neither warrants treatment.
 
 ## About the northern giant hornet
 
@@ -328,7 +362,7 @@ And a note on traps — commercial lure traps catch foragers, which reduces
 nuisance around a specific area, but they do not eliminate a colony. They are a
 comfort measure for a deck, not a control method.
 
-## What it costs
+## What does wasp removal cost?
 
 Wasp work is quoted from what the nest is and where it sits, and the range is
 narrower than most of our services because the job is usually bounded.
@@ -342,6 +376,13 @@ a return visit to confirm, and should be followed by sealing the entrance.
 Several nests on one property is common and is usually cheaper per nest than
 calling three times through the season, which is another argument for dealing
 with a property in one visit rather than reacting nest by nest.
+
+What drives the number up and down across all of our work, with the figures we
+do publish, is set out on [what pest control costs in
+Bellingham](/blog/pest-control-cost-bellingham/). We do not quote wasp work
+sight unseen, because a comb you can reach from the ground and a hornet nest at
+the top of a gable are not the same job and pretending otherwise produces a
+number nobody can stand behind.
 
 You get the figure before work starts, and the estimate is free. If we get there
 and find the nest is inactive — which happens, particularly late in the season

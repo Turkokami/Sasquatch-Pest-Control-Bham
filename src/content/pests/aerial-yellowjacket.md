@@ -447,6 +447,6 @@ tree is covered in detail on
 [bald-faced hornet nest in a tree](/services/wasp-control/bald-faced-hornet-nest-in-a-tree/).
 If the wasps turn out to be coming from the ground after all, that is the
 [western yellowjacket](/pest-library/western-yellowjacket/) and
-[yellowjackets in the lawn](/services/wasp-control/yellowjackets-in-the-lawn/).
+[yellow jacket nest in the ground](/services/wasp-control/yellowjackets-in-the-lawn/).
 An open comb with visible cells and no covering is not this species at all —
 see [European paper wasp](/pest-library/european-paper-wasp/).

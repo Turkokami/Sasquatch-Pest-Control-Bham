@@ -53,6 +53,8 @@ Bees are defensive rather than aggressive, and a honeybee sting costs the bee it
 - **Western yellowjackets** — ground and wall nests, aggressive in late summer
 - **Bald-faced hornets** — gray football nests in trees and eaves
 
+The ground-nesting case is the one that hurts people here, because you cannot see it coming. If you think there is a [yellow jacket nest in the ground](/services/wasp-control/yellowjackets-in-the-lawn/) on your property, that page covers how to find the entrance safely and what removal involves.
+
 ## What should you do if you find a nest — and do you have to kill bees?
 
 First, identify before you act. If it's honeybees, don't spray them — they can often be removed alive and relocated by a beekeeper, and killing pollinators should be a last resort. If it's wasps or hornets near doors, decks, play areas, or walls, that's when removal makes sense, and it's best handled by a professional rather than a can of spray.
