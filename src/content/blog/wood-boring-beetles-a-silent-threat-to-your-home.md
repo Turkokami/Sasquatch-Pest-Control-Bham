@@ -8,6 +8,14 @@ imported: 2026-08-31
 
 When people think of wood-destroying pests, termites usually come to mind first. But there's another group of insects that can be just as destructive — wood-boring beetles. These pests tunnel deep into wooden structures, causing damage that often goes unnoticed until it is extensive. At Sasquatch Pest Control we treat these hidden problems before they compromise the wood in your home.
 
+## What are the tiny wood-eating bugs in my house?
+
+In a Whatcom County home, almost always [anobiid powderpost beetles](/pest-library/anobiid-powderpost-beetle/) — small brown beetles a few millimetres long whose larvae live inside damp softwood framing and leave pinhole exit holes and fine frass below. They are not termites. If the wood is hardwood flooring or furniture rather than framing, it is a different family entirely.
+
+The identification matters because it changes the treatment and the bill. Anobiids in crawlspace framing are a moisture problem first: the standard response is borate on bare, accessible wood combined with getting the crawlspace dry, and the Pacific Northwest handbooks are clear that borate alone can take years. Hardwood-infesting beetles call for something else again. And if what you actually have is [termites](/services/termite-control/), the answer is different a third time — in this county that usually means the Pacific dampwood termite, which is also telling you about water.
+
+So the honest first step is naming the insect, not treating the wood. The rest of this post is how to do that.
+
 ## Types of wood-boring beetles
 
 Wood-boring beetles fall into three broad groups — powderpost beetles, round-headed borers, and flat-headed borers — drawn from five scientific families:

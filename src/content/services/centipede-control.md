@@ -24,6 +24,8 @@ faqs:
     a: "House centipedes can, and it is uncommon because they run rather than confront. Where it happens the result is usually a mild localized sting, comparable to a small bee sting, that resolves quickly. They are not aggressive and they are not a meaningful risk in a household."
   - q: "Hundreds of millipedes are along my foundation. What happened?"
     a: "That is a mass migration, and it usually follows heavy autumn rain saturating the soil they live in. They move in numbers looking for drier ground, meet your foundation, and follow it. They cannot survive indoors and will die within a day or two, so the answer is the perimeter rather than the inside."
+  - q: "What attracts millipedes to a house?"
+    a: "Moisture and decaying plant material right against the building. Bark mulch, leaf litter, grass clippings, compost, stacked firewood and damp soil held against the foundation are all habitat, and a building ringed with them has a resident population a few feet from every gap at ground level."
   - q: "How do I tell them apart?"
     a: "Legs and speed. Centipedes have one pair of legs per body segment, are flattened, and move fast. Millipedes have two pairs per segment, are rounded, move slowly, and curl into a tight spiral when disturbed. Centipedes hunt; millipedes eat decaying plant matter."
   - q: "Should I be worried about damage?"
@@ -35,7 +37,10 @@ faqs:
 ## Two very different animals, one message
 
 Both of these turn up for the same underlying reason, and both are worth reading
-as information rather than as an infestation.
+as information rather than as an infestation. If you are here about millipedes
+rather than centipedes, skip to [why there are millipedes in your
+house](#why-are-there-millipedes-in-my-house) and [what attracts
+them](#what-attracts-millipedes).
 
 **Centipedes** are predators. One pair of legs per segment, flattened bodies,
 fast, and equipped with modified front legs that deliver venom to prey. They hunt
@@ -90,7 +95,17 @@ people want to hear. It is still the accurate answer, and the practical
 consequence — deal with the moisture and the prey — is the one that actually
 resolves it.
 
-## Millipedes, and the autumn migrations
+## Why are there millipedes in my house?
+
+Because the soil outside got too wet for them. [Millipedes](/pest-library/millipede/) live in damp ground
+and leaf litter, and when heavy autumn rain saturates it they move in numbers
+looking for somewhere drier, meet your foundation, and follow it until they find
+a gap. They are not infesting the house — they are passing through, and they die
+within a day or two indoors.
+
+That is also why they arrive in such numbers at once. Nothing has built up over
+months inside the building; a population that was always there in the soil has
+been moved by one wet week.
 
 The other common call, and it usually arrives all at once.
 
@@ -123,6 +138,28 @@ events, but a hot August followed by the first real rain will produce a version
 of it, and a household that has been told to expect this only after flooding
 will be looking for a leak that is not there. The insect is responding to the
 moisture in the ground going wrong in either direction.
+
+## What attracts millipedes?
+
+Moisture and rotting plant matter, within a few feet of the wall. Millipedes eat
+decaying leaves and wood, so anything that holds damp organic material against a
+building is habitat: bark mulch, leaf litter, grass clippings, compost, stacked
+firewood, and soil graded up against the siding. The building is incidental —
+they were already living in the yard.
+
+What that means practically is that a millipede problem is a landscaping
+measurement rather than an insect count. A house with a two-foot band of bare,
+well-drained ground at the foundation and the mulch beds held back from it very
+rarely gets them inside, however many are living in the garden. A house with
+mulch piled against the siding and a downspout discharging at the corner will
+get them every wet autumn, and will go on getting them whatever is sprayed.
+
+Leaky hose bibs, blocked gutters, downspouts that end at the foundation and
+irrigation aimed at the wall all do the same thing as mulch: they keep the strip
+of ground the insects live in permanently wet right where the gaps are. Those
+are worth fixing before anything else, and they are the same fixes that work on
+[earwigs](/services/earwig-control/) and sowbugs, which arrive by exactly the
+same route.
 
 ## Garden and soil centipedes
 
