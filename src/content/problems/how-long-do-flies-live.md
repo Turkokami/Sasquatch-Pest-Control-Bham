@@ -2,7 +2,7 @@
 service: fly-control
 problem: how-long-do-flies-live
 title: "How Long Do Flies Live? House and Cluster Flies"
-description: "How long a house fly, fruit fly, cluster fly and fungus gnat actually live — and why the replacement rate matters far more than the lifespan. Call 360-410-2199."
+description: "How long house flies, fruit flies, cluster flies and fungus gnats live — and why the replacement rate matters more than the lifespan. Call 360-410-2199."
 h1: "How Long Do Flies Live?"
 answer: "The useful number is not how long one fly lives but how fast it is replaced. UC IPM puts house fly development at as little as seven days from egg to adult in summer, and one female lays batches of a hundred or more eggs, so a fly problem regrows faster than you can swat it."
 ready: true
