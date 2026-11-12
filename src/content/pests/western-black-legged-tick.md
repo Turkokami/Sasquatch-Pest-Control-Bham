@@ -139,6 +139,10 @@ tick-borne relapsing fever and to sleeping in rustic, rodent-infested cabins in
 mountainous areas. It feeds briefly at night rather than attaching for days, so
 people are often bitten without ever finding a tick.
 
+The full state inventory, with the counts and infection rates from the
+Department of Health's own six-year surveillance, is in
+[ticks in Washington state](/guides/ticks-in-washington/).
+
 For somebody in Bellingham or Ferndale, the practical implication is that the
 Rocky Mountain spotted fever material dominating national tick content is largely
 about ticks that live on the other side of the Cascades. Washington's own data

@@ -32,6 +32,27 @@ export const GUIDE_CLUSTERS = [
     blurb:
       'What arrives when, and the weeks in which doing something about it is cheap rather than expensive.',
   },
+  /* FIFTH CLUSTER, 12 Nov 2026. The four above are all about buildings, rules
+     and timing — what to do and when. None of them is about what the animal
+     IS, and the spiders guide written last week had to be filed under
+     'seasonal' because there was nowhere else to put it.
+
+     That was tolerable for one guide and is not tolerable for five. The
+     regional leaders in this market rank on Pacific Northwest identification
+     content more than on anything else they publish, and the next four guides
+     in the queue — ticks, wasps and hornets, common house bugs, rats — are all
+     the same shape: what lives here, what does not, how to tell them apart,
+     and which of them matters. Filing those under 'the Whatcom County pest
+     year' would make the seasonal cluster mean nothing.
+
+     The spiders guide moves here in the same commit, which is why this is a
+     cluster and not a tag: a guide belongs to exactly one. */
+  {
+    key: 'identification',
+    name: 'What lives here, and what does not',
+    blurb:
+      'Which species actually turn up in this corner of Washington, which ones the internet insists are here and are not, and how to tell the ones that matter from the ones that only look as though they should.',
+  },
   {
     key: 'practice',
     name: 'How the work is done, and how to buy it',

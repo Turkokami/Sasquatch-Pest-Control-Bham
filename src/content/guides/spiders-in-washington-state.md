@@ -1,5 +1,5 @@
 ---
-cluster: seasonal
+cluster: identification
 title: "Common Spiders in Washington State"
 description: "Which spiders actually live in Washington state, which two matter, and which of the frightening ones are not here at all — written for Whatcom County."
 h1: "Common Spiders in Washington State"

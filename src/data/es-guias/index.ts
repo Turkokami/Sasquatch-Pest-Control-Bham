@@ -57,6 +57,14 @@ export const ES_CLUSTERS: Record<GuideClusterKey, { name: string; blurb: string 
     name: 'El año de las plagas en Whatcom',
     blurb: 'Qué llega y cuándo, y las semanas en que atenderlo sale barato y no caro.',
   },
+  /* 12 nov 2026. El grupo existe en inglés desde esta fecha y el tipo obliga a
+     nombrarlo aquí. Todavía no hay ninguna guía en español dentro de él, así
+     que por ahora el nombre solo aparece si alguna se traduce más adelante. */
+  identification: {
+    name: 'Qué vive aquí y qué no',
+    blurb:
+      'Qué especies aparecen de verdad en este rincón de Washington, cuáles insiste el internet en que están aquí sin estarlo, y cómo distinguir las que importan de las que nada más lo parecen.',
+  },
   practice: {
     name: 'Cómo se hace el trabajo, y cómo contratarlo',
     blurb:
