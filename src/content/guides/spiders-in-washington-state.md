@@ -121,8 +121,11 @@ rather than bite unless she is guarding eggs.
 
 If you are east of the mountains and you find one of these in the garage, treat
 it seriously. If you are in Ferndale and you have found a shiny black spider,
-the overwhelming likelihood is that it is a young orbweaver or a false widow,
-and we would far rather look at a photograph than have you reach for anything.
+the overwhelming likelihood is that it is a young orbweaver or a
+[false black widow](/pest-library/false-black-widow/), and we would far rather
+look at a photograph than have you reach for anything. That profile covers the
+difference in detail, because it is the spider behind nearly every widow
+question we are asked.
 
 ## Giant house spider, the big one in the bathtub
 
