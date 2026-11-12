@@ -417,6 +417,23 @@ firewood, and observe that chemical control is temporary without prevention.
 We can spray a foundation line. It is simply not the thing that decides how many
 of these you meet next September.
 
+## Giant house spiders in Washington state
+
+Common here, and only on this side of the mountains. WSU Pestsense states that
+the species is commonly found in and around Washington homes west of the Cascade
+Mountains, and that it is not found east of them. In the Puget Sound region it
+outnumbers the hobo spider and is far more frequently encountered.
+
+That west-side restriction explains a good deal of the confusion in this state.
+Somebody in Spokane and somebody in Bellingham searching the same phrase are
+asking about different animals, and most of the material written for Washington
+does not distinguish between them.
+
+For Whatcom and Skagit counties the implication runs through this whole page:
+the large, fast, brown spider indoors is this one. Not a hobo spider, not a wolf
+spider, and certainly not a brown recluse. The odds are not close, and WSU's own
+abundance figures are the reason.
+
 ## Send us a photograph
 
 Identification costs nothing and it settles most questions in a couple of

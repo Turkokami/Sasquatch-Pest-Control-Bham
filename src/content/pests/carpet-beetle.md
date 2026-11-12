@@ -397,6 +397,37 @@ it is the same principle.
 **Newer construction is not exempt**, because the adults fly in from flowers and
 because a new wool carpet is as edible as an old one.
 
+## Carpet beetle or bed bug?
+
+Look at the evidence rather than at the skin. Bed bugs leave fecal spotting,
+cast skins and eggs around the mattress seams and the frame. Carpet beetles
+leave bristly larvae and shed skins in carpet, under furniture and along
+baseboards. If the bed is clean and the carpet is not, the beetle is the better
+explanation.
+
+The two get confused because of the marks on people, and the marks on people
+are the least reliable thing in this whole subject. Neither insect can be
+identified from a rash, and a doctor cannot do it either.
+
+What separates them in practice:
+
+- **Where the evidence is.** Bed bug evidence concentrates within a few feet of
+  where somebody sleeps. Carpet beetle evidence is spread through the house,
+  heaviest in the undisturbed places nobody vacuums.
+- **What the evidence looks like.** Dark fecal spotting that bleeds into fabric
+  is a bed bug. Translucent, bristly cast skins are a carpet beetle.
+- **The insect itself.** An adult carpet beetle is small, rounded and mottled,
+  and is usually found at a windowsill. A bed bug is flat, oval, reddish-brown,
+  and found near the bed.
+- **What the damage is.** Bed bugs damage nothing at all. Carpet beetles damage
+  wool, silk and felt.
+
+If a careful look at the mattress and frame turns up none of the bed bug signs,
+and there are shed skins in the carpet, that is a real answer rather than a
+guess. The bed bug side is at [bed bug control](/services/bed-bug-control/), and
+[bites, but no bugs found](/services/bed-bug-control/bites-but-no-bugs-found/)
+covers the case where neither one is there.
+
 ## What we will not do
 
 **Broadcast product across the floor of a room people live in.** Application

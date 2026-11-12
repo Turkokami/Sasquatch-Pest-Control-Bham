@@ -441,6 +441,24 @@ a torch beam. The forceps at the tail end settle it in a second.
 If you are unsure, photograph it beside a coin. Identification takes moments and
 it decides everything that follows.
 
+## What attracts silverfish?
+
+Damp first, and starch second. Humidity decides whether they can live in a room
+at all; food only decides which corner of it they use. Paper, cardboard, book
+bindings, wallpaper paste, flour, oats and the sizing in fabric are all on the
+menu, and none of it matters in a space they cannot survive in.
+
+That ordering is the practical point, and it is the reverse of how the question
+is usually asked. Taking the cardboard out of a damp garage moves silverfish
+somewhere else in the same garage. Dropping the humidity in that garage removes
+them.
+
+So the real list of things that attract them is short and it is mostly about
+water: a bathroom with no working extractor, a crawlspace with a failed vapor
+barrier, a laundry vented indoors, a cold exterior wall behind a wardrobe,
+condensation on single glazing, a leak nobody has found yet. The food is
+incidental, and it is everywhere.
+
 ## What we will not sell you
 
 **A treatment schedule instead of a dehumidifier.** If the honest answer to your

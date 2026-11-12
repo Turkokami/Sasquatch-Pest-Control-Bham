@@ -398,6 +398,22 @@ begins, because recruitment to the material is exactly what is supposed to
 happen, and reading that increase as failure is how good treatments get
 abandoned halfway through.
 
+## Do carpenter ants bite?
+
+Yes, rarely, and it does not matter much. A major worker handled roughly can
+pinch hard enough to feel, and may spray formic acid into the broken skin,
+which stings for a minute or two. There is no venom worth the name and no
+disease association. The damage carpenter ants do here is to timber.
+
+This is worth saying plainly because the search volume on the question is
+enormous and the honest answer is dull. People find a very large black ant
+indoors, read something alarming, and arrive at the question of whether it is
+dangerous when the question they need is whether it is nesting in the building.
+
+It almost certainly is not biting anybody. It may well be excavating a wet
+joist. Those are the two facts in the right order, and the rest of this page is
+about the second one.
+
 ## What makes it worse
 
 Spraying the trail, which removes the diagnostic route and leaves the network
