@@ -60,9 +60,11 @@ factsTable:
   - label: "Jobs in the dataset"
     value: "16,368 completed jobs"
   - label: "Jobs in this calendar"
-    value: "1,153 — the reactive, pest-specific subset. Recurring plan stops are excluded"
+    value: "2,777 — the reactive, pest-specific subset. Recurring plan stops are excluded"
   - label: "Where the work was"
     value: "94% Whatcom County, 4.5% Skagit, the rest Island and Snohomish"
+  - label: "Commonest single pest"
+    value: "Odorous house ants — 1,624 jobs, 59% of all reactive pest work in three years"
   - label: "Sharpest season"
     value: "Wasps — 77% of a year's wasp work falls in July, August and September"
   - label: "Flattest"
@@ -82,6 +84,8 @@ faqs:
     a: "No. The underlying export carries customer details because that is how the software writes it, and that file never leaves our own machines. What is published here is counts by pest by month. No names, no addresses, no invoice values, nothing identifying anybody."
   - q: "Does a busy month mean that pest is worse that month?"
     a: "Usually, but not always, and the difference matters. Call volume reflects when people notice a pest as much as when it is most active. Yellowjackets are the clearest case: the nest has been there since spring, and August is when somebody walks into it."
+  - q: "What is the most common pest in Whatcom County?"
+    a: "Odorous house ants, and it is not close. They account for 1,624 jobs across three years in these records — fifty-nine percent of all reactive pest work, more than carpenter ants and wasps combined. The small brown ants trailing across a kitchen counter are the defining pest problem of this county."
   - q: "Why are rodents not in the calendar?"
     a: "Because almost all rodent work here runs on recurring plans rather than one-off calls, and a scheduled visit tells you about the schedule rather than about the pest. Those plan stops ran between 176 and 254 a month across three years, which is a timetable, not a season."
   - q: "How often is this updated?"
@@ -111,11 +115,17 @@ Worth setting out before any figure, because a number without its method is
 decoration.
 
 **What is in the calendar.** Reactive, pest-specific jobs — somebody had a
-problem, called, and we attended. That is 1,153 jobs across the three years,
+problem, called, and we attended. That is 2,777 jobs across the three years,
 and it is the subset that actually tells you something about the county.
 
-**What is deliberately left out.** Recurring plan stops, which are the bulk of
-the book. A monthly rodent service visit in March happened because it was
+**What is deliberately left out.** Two things. Recurring plan stops, which are
+the bulk of the book. And free call-backs — the return visits that come with an
+active program at no charge, whether that is a trap check or a re-treatment.
+There were 2,172 of those across the three years, and every one of them is a
+second visit to a problem already counted. Including them would count the same
+problem twice and inflate whichever months we happened to be busiest in.
+
+On the recurring stops: A monthly rodent service visit in March happened because it was
 scheduled for March, not because anything happened in March. Those stops ran
 between 176 and 254 a month across the whole period — a flat line that is a
 timetable rather than a season. Including them would drown the signal.
@@ -212,6 +222,36 @@ Where to go next: [flea control](/services/flea-control/) and
 [cat flea](/pest-library/cat-flea/).
 
 ## The pests with a long season rather than a sharp one
+
+### Odorous house ants — the commonest problem in this county, by a distance
+
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 4% | 5% | 8% | 10% | **11%** | 11% | 10% | 9% | 9% | 8% | 7% | 7% |
+
+One thousand six hundred and twenty-four jobs across three years — fifty-nine
+percent of every reactive pest call in this calendar, and more than carpenter
+ants and wasps put together. If you want one number from this page, it is that
+one. The commonest pest problem in Whatcom County is a small brown ant in the
+kitchen.
+
+The curve rises through spring to a May and June plateau and then declines
+slowly, and the important feature is the floor rather than the peak: January,
+the quietest month of the year, still carries four percent. It never stops.
+
+That shape is what a long-lived indoor-and-outdoor ant produces. Colonies
+become active and start foraging indoors as the ground warms, which gives the
+spring climb, but odorous house ants will nest in a wall void, under
+insulation, beneath a slab or in a crawlspace quite happily through winter —
+so the work never falls to zero the way wasp work does.
+
+The practical reading: there is no ant season here to prepare for, because it
+is nearly always ant season. What there is instead is a spring window where
+dealing with the trail properly costs less than dealing with it in July.
+
+Where to go next: [odorous house ant](/pest-library/odorous-house-ant/),
+[ant and carpenter ant control](/services/ant-control/), and
+[ant trails across the kitchen counter](/services/ant-control/ant-trails-across-the-kitchen-counter/).
 
 ### Carpenter ants — nine months, no real peak
 
@@ -342,13 +382,15 @@ Where to go next: [rodent control](/services/rodent-control/),
 Rodent plan stops at their winter level, a little bed bug work, essentially no
 wasps or spiders.
 
-**March.** Carpenter ant work begins to climb. First ant calls.
+**March.** Odorous house ant work climbs sharply — the single biggest monthly
+jump in the calendar. Carpenter ant work begins to rise with it.
 
-**April and May.** Carpenter ants rising, first wasp calls appear, powderpost
-beetle work begins. The cheapest month of the year to deal with a wasp nest is
-in here somewhere.
+**April and May.** Odorous house ants reach their peak at 11%, carpenter ants
+rising, first wasp calls appear, powderpost beetle work begins. The cheapest
+month of the year to deal with a wasp nest is in here somewhere.
 
-**June.** Ants peak. Wasp work reaches 12% of its year. Spider work starts.
+**June.** Odorous house ants at their plateau, pavement and moisture ants at
+their peak. Wasp work reaches 12% of its year. Spider work starts.
 
 **July and August.** The busiest stretch by a distance. Wasps at 31% and 33%,
 carpenter ants at their nominal peak, fleas at 26%, powderpost beetles at 17%.

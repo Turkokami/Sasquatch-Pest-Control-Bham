@@ -70,6 +70,15 @@ function parseCsv(text) {
    on patterns rather than on an enumeration. Every pattern below was checked
    against the distinct values actually present in the 2023–2025 exports. */
 const PESTS = [
+  /* OHA is the owner's shorthand for odorous house ants (confirmed 12 Nov
+     2026) and it is the largest pest-specific line in the book — more jobs
+     than carpenter ants and wasps combined. It was sitting in the unmapped
+     bucket until he translated it, which is the argument for never guessing
+     at a service label. Its curve is a genuine spring season (4% in January
+     rising to 11% in May) rather than the flat line a purely scheduled
+     service draws, so it belongs in the calendar. Compare QT GP — quarterly
+     general preventative — which runs 5% to 10% and is a timetable. */
+  [/\boha\b/i, 'Odorous house ants'],
   [/wasp/i, 'Wasps and yellowjackets'],
   [/carpenter ant|pre construct/i, 'Carpenter ants'],
   [/cockroach/i, 'Cockroaches'],
