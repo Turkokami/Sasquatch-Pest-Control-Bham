@@ -67,6 +67,15 @@ export const services: Service[] = [
   {
     slug: 'bee-removal', name: 'Bee Control & Removal', short: 'Bees',
     category: 'stinging-flying', confirmed: true, legacy: ['bee-removal', 'bee-control'],
+    /* First problem page under bee-removal, 12 Nov 2026. "Ground bees" is a
+       14,800-a-month term and "how to remove ground bees" another 6,600, and
+       the honest answer to most of it is that the insect is a pollinator and
+       should be left alone. It sits under bee-removal rather than under
+       wasp-control deliberately: the searcher thinks they have bees, and the
+       page's job is to send two thirds of them away without a treatment. */
+    problems: [
+      { slug: 'ground-bees-or-yellowjackets', title: 'Ground bees or yellowjackets?' },
+    ],
   },
   {
     slug: 'fly-control', name: 'Fly Control', short: 'Flies',
@@ -109,6 +118,12 @@ export const services: Service[] = [
     problems: [
       { slug: 'is-this-a-hobo-spider', title: 'Is this a hobo spider?' },
       { slug: 'spiders-appearing-every-fall', title: 'Spiders appearing every fall' },
+      /* Added 12 Nov 2026. "brown recluse spiders in washington state" is
+         1,600 a month with another 870 across two question variants, and the
+         only page the site had on it was an imported blog post publishing
+         noindex and canonicalled at is-this-a-hobo-spider — so the demand was
+         real and the answer was orphaned. The post now supersedes to here. */
+      { slug: 'brown-recluse-spiders-in-washington', title: 'Are there brown recluse spiders in Washington?' },
     ],
   },
   {
@@ -124,6 +139,14 @@ export const services: Service[] = [
   {
     slug: 'cockroach-control', name: 'Cockroach Control', short: 'Roaches',
     category: 'household', confirmed: true, legacy: ['cockroach-control', 'roach-control', 'german-cockroach-control', 'american-cockroach-control'],
+    /* 12 Nov 2026. "cockroaches in washington" 720 and "are there cockroaches
+       in washington state" 260, both of which a competitor currently holds
+       with a short question post. The page exists to separate the German
+       cockroach, which is nearly every real infestation here, from the wood
+       cockroach that wanders in from a woodpile and never establishes. */
+    problems: [
+      { slug: 'are-there-cockroaches-in-washington', title: 'Are there cockroaches in Washington?' },
+    ],
   },
   {
     slug: 'flea-control', name: 'Flea Control', short: 'Fleas',

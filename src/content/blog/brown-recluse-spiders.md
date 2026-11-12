@@ -4,7 +4,7 @@ description: 'Brown recluse spiders are not established in Washington. What gets
 h1: 'Brown Recluse Spiders: Separating Fact From Fiction in Washington State'
 legacyUrl: '/brown-recluse-spiders/'
 imported: 2026-08-31
-supersededBy: '/services/spider-control/is-this-a-hobo-spider/'
+supersededBy: '/services/spider-control/brown-recluse-spiders-in-washington/'
 ---
 
 Brown recluse spiders are not found in Washington State, yet they are often
