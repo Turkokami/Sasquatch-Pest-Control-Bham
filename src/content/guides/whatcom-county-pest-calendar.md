@@ -57,14 +57,14 @@ factsTable:
     value: "Completed job records from one pest control company working Whatcom and Skagit counties"
   - label: "Period covered"
     value: "1 January 2023 to 31 December 2025 — three full years"
-  - label: "Jobs in the dataset"
-    value: "16,368 completed jobs"
-  - label: "Jobs in this calendar"
-    value: "2,777 — the reactive, pest-specific subset. Recurring plan stops are excluded"
+  - label: "Jobs counted"
+    value: "16,368 completed, of which 2,777 reactive pest jobs form the calendar"
   - label: "Where the work was"
     value: "94% Whatcom County, 4.5% Skagit, the rest Island and Snohomish"
   - label: "Commonest single pest"
     value: "Odorous house ants — 1,624 jobs, 59% of all reactive pest work in three years"
+  - label: "When people first call"
+    value: "41% of a year's new customers arrive in July, August and September; 8% in January and February"
   - label: "Sharpest season"
     value: "Wasps — 77% of a year's wasp work falls in July, August and September"
   - label: "Flattest"
@@ -78,14 +78,14 @@ steps:
 faqs:
   - q: "Where does this data come from?"
     a: "From our own completed job records across Whatcom and Skagit counties, exported and counted. Three years, 16,368 completed jobs. Every figure is a count of work we were actually called out for. Nothing here is modeled, estimated from regional averages, or taken from a national pest chart."
-  - q: "Why publish percentages rather than job counts?"
-    a: "Because the shape of the year is the useful part and the volume is not. Knowing that a third of our wasp work happens in August tells you when wasp season is. Knowing how many wasp jobs we did tells you about our business, which is no help to somebody trying to plan around yellowjackets."
   - q: "Does this include customer information?"
     a: "No. The underlying export carries customer details because that is how the software writes it, and that file never leaves our own machines. What is published here is counts by pest by month. No names, no addresses, no invoice values, nothing identifying anybody."
   - q: "Does a busy month mean that pest is worse that month?"
     a: "Usually, but not always, and the difference matters. Call volume reflects when people notice a pest as much as when it is most active. Yellowjackets are the clearest case: the nest has been there since spring, and August is when somebody walks into it."
   - q: "What is the most common pest in Whatcom County?"
     a: "Odorous house ants, and it is not close. They account for 1,624 jobs across three years in these records — fifty-nine percent of all reactive pest work, more than carpenter ants and wasps combined. The small brown ants trailing across a kitchen counter are the defining pest problem of this county."
+  - q: "When do most people call a pest control company here?"
+    a: "July, August and September. Across 891 new customers in 2025, 41% first made contact in those three months, against 8% across January and February combined. That matches the reactive job data, which peaks in the same stretch, and the two measurements are independent of each other."
   - q: "Why are rodents not in the calendar?"
     a: "Because almost all rodent work here runs on recurring plans rather than one-off calls, and a scheduled visit tells you about the schedule rather than about the pest. Those plan stops ran between 176 and 254 a month across three years, which is a timetable, not a season."
   - q: "How often is this updated?"
@@ -375,6 +375,36 @@ shows.
 Where to go next: [rodent control](/services/rodent-control/),
 [rats and rodents in Washington state](/guides/rats-in-washington/), and
 [sealing a building before fall](/guides/sealing-a-building-before-fall/).
+
+## When people first call, which is a different question
+
+Everything above counts jobs. This counts **new customers** — the month in
+which somebody who had never called us before decided they had a problem.
+
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 4% | 3% | 6% | 7% | 10% | 10% | 14% | 13% | **14%** | 8% | 6% | 5% |
+
+891 new customers across 2025. Forty-one percent of a year's new customers
+arrive in July, August and September; eight percent arrive in January and
+February combined.
+
+Two things make this worth having beside the job counts.
+
+It is **independent of our schedule**. A job happens when we can get there. A
+new customer appears the day somebody decides the problem is bad enough to pay
+somebody. That is as close to a pure demand signal as this data gets.
+
+And it **corroborates the job curve from a different direction**. The reactive
+job data peaks in July and August; new customer sign-ups peak in July, August
+and September. Two measurements, one shape, and neither was derived from the
+other.
+
+One honest limitation: this is a single year, where everything above is three.
+It is published because 891 customers across twelve months is a reasonable
+sample and because the shape matches four other years we have seen charted —
+but it is a one-year figure and it is labeled as one. It becomes a multi-year
+average at the next annual update.
 
 ## The month-by-month short version
 
