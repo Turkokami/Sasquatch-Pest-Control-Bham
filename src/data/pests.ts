@@ -128,6 +128,15 @@ export const PESTS: Pest[] = [
   { slug: 'cross-orbweaver', name: 'Cross orbweaver', scientific: 'Araneus diadematus', group: 'spiders' },
   { slug: 'cellar-spider', name: 'Cellar spider', scientific: 'Pholcus phalangioides', group: 'spiders' },
   { slug: 'yellow-sac-spider', name: 'Yellow sac spider', scientific: 'Cheiracanthium spp.', group: 'spiders' },
+  /* FAMILY-LEVEL, 12 Nov 2026, and deliberately. Washington has a good many
+     native wolf spiders and no single one of them is the animal people mean
+     when they use the word — the name gets applied to any big, fast, hairy
+     spider on a floor. A profile pinned to one species would answer a question
+     nobody is asking. The page's whole argument is that the family lives
+     outdoors on the ground and the indoor animal is a giant house spider, and
+     that argument is about Lycosidae, not about a species. Precedent for a
+     family-level row is `millipede`, below. */
+  { slug: 'wolf-spider', name: 'Wolf spider', scientific: 'Lycosidae', group: 'spiders' },
 
   /* Stinging insects */
   { slug: 'bald-faced-hornet', name: 'Bald-faced hornet', scientific: 'Dolichovespula maculata', group: 'stinging' },
