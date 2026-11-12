@@ -1,40 +1,43 @@
 ---
 # ─────────────────────────────────────────────────────────────────────────────
-# UNPUBLISHED. ready: false means this page builds, renders for review, and
-# publishes noindex with no entry on the guides hub. DO NOT SET ready: true
-# until every [PENDING] marker below has been replaced with a real figure from
-# a GorillaDesk export. The entire value of this page is that the numbers are
-# first-party and true; a calendar carrying invented counts would be worse
-# than no calendar, and would undo the one thing no competitor in this market
-# can copy.
+# DATA LOADED 12 Nov 2026 from GorillaDesk service-lookup exports covering
+# 1 Jan 2023 – 31 Dec 2025, held in private/gorilladesk/ (gitignored — this
+# repository is public and those files carry customer names, addresses and
+# invoice values).
 #
-# WHAT IS NEEDED, exactly — one export, then this page can go live:
-#   A CSV of completed jobs, 1 Jan 2023 to 31 Dec 2026, with one row per job
-#   and these columns: job date, target pest (or job type where no pest is
-#   recorded), city or town, and whether it was a first visit or a recurring
-#   service stop. No names, no addresses, no phone numbers, no invoice values.
-#   Anonymized at export: the page reports counts by pest by month and
-#   nothing else.
+# 16,368 completed jobs in the export. The calendar publishes the REACTIVE
+# subset only — 1,153 pest-specific one-off jobs. Recurring plan stops (6,730
+# Monthly Rodent Service visits and the rest) are excluded on purpose: they
+# record what the schedule was, not when the county had a problem. The method
+# section says so.
 #
-#   From that we derive: jobs per pest per month, the first and last week of
-#   each pest's season, the three-year average so one odd summer does not
-#   distort a month, and the share of first-time calls versus recurring stops.
+# EXCLUDED FROM PUBLICATION, deliberately:
+#   • Mole work. 1,330 jobs 2023–2025 and the largest reactive line in the
+#     book, but the owner confirmed 12 Nov 2026 that mole service is currently
+#     NOT offered and returns later with a BurrowRX carbon monoxide device.
+#     Publishing counts for a service we do not sell would advertise it. The
+#     data is kept; re-include when the service launches.
+#   • Wildlife and bird lines (158 jobs, all 2025). Scope unconfirmed — see
+#     GUARDRAILS and the open question with the owner.
+#   • Species with fewer than ~25 jobs over three years (carpet beetles,
+#     termites, silverfish, moths, lady beetles). Too few to describe a season
+#     honestly, and the page says that rather than drawing a curve through
+#     three dots.
 #
-#   Put the export in private/gsc/ or another gitignored folder and tell me
-#   the path. It never gets committed — this repository is public.
+# STILL TO COME: the 2026 export. When it lands, re-run the scripts, extend to
+# four years, and update `reviewBy` plus the period figures below.
 # ─────────────────────────────────────────────────────────────────────────────
 cluster: seasonal
 title: "The Whatcom County Pest Calendar"
-description: "Which pests we are actually called out for in each month of the year in Whatcom County, counted from our own completed job records rather than estimated."
+description: "Which pests we are actually called out for in each month of the year in Whatcom County, counted from three years of our own completed job records."
 h1: "The Whatcom County Pest Calendar"
-answer: "This calendar is built from Sasquatch Pest Control's own completed job records across Whatcom and Skagit counties, counted by pest and by month. It is not a regional estimate or a national seasonal chart — it is what one company was actually called out for here, and the months it was called."
-ready: false
+answer: "This calendar is built from Sasquatch Pest Control's own completed job records across Whatcom and Skagit counties — three years, 16,368 jobs, counted by pest and by month. It is not a regional estimate or a national seasonal chart. It is what one company was actually called out for here."
+ready: true
 expert: kristofer-elling
 reviewBy: 2027-11-12
-# The job data itself is first-party and has no external source by definition —
-# that is the whole point of the page. These are the references the seasonal
-# biology in each month is checked against, so a count and an explanation never
-# drift apart.
+# The job data is first-party and has no external source by definition — that
+# is the point of the page. These are the references the seasonal biology in
+# each section is checked against, so a count and its explanation cannot drift.
 sources:
   - label: "PNW Insect Management Handbook — structural and health pests"
     url: "https://pnwhandbooks.org/insect/structural-health/public-health/public-health-spider"
@@ -42,132 +45,339 @@ sources:
   - label: "WSU Pestsense — full alphabetic pest list"
     url: "https://pestsense.cahnrs.wsu.edu/alphabetic-list/"
     read: 2026-11-12
-# NOTE WHEN THIS PUBLISHES: the-whatcom-county-pest-year already claims
-# "/services/*", and two seasonal guides on the rail of all 24 service pages is
-# one too many. Decide then which of the two is the wildcard and pin the other.
 relatedTo:
-  - "/services/*"
+  - "/services/wasp-control/"
+  - "/services/ant-control/"
+  - "/services/spider-control/"
+  - "/services/flea-control/"
+  - "/services/cockroach-control/"
+  - "/services/bed-bug-control/"
 factsTable:
   - label: "What the data is"
     value: "Completed job records from one pest control company working Whatcom and Skagit counties"
   - label: "Period covered"
-    value: "[PENDING — fill from the export, e.g. January 2023 to December 2026]"
-  - label: "Jobs counted"
-    value: "[PENDING — total number of completed jobs in the dataset]"
-  - label: "What is counted"
-    value: "One row per completed job: date, target pest, town, and first visit or recurring stop"
-  - label: "What is not in it"
-    value: "No names, no addresses, no invoice values. Counts by pest by month, and nothing else"
-  - label: "What it is not"
-    value: "Not a regional estimate, not a national seasonal chart, and not a forecast"
+    value: "1 January 2023 to 31 December 2025 — three full years"
+  - label: "Jobs in the dataset"
+    value: "16,368 completed jobs"
+  - label: "Jobs in this calendar"
+    value: "1,153 — the reactive, pest-specific subset. Recurring plan stops are excluded"
+  - label: "Where the work was"
+    value: "94% Whatcom County, 4.5% Skagit, the rest Island and Snohomish"
+  - label: "Sharpest season"
+    value: "Wasps — 77% of a year's wasp work falls in July, August and September"
+  - label: "Flattest"
+    value: "Bed bugs and cockroaches, which show no meaningful season at all"
 steps:
-  - "Find the month you are in and read the two or three pests at the top of it — those are what this county is actually calling about now."
+  - "Find the month you are in and read the pests listed against it — those are what this county actually calls about now."
   - "Look one month ahead as well, because almost everything here is cheaper to prevent than to treat."
-  - "Check whether your pest shows a sharp peak or a long flat season; the sharp ones have a narrow window where work pays off."
-  - "Treat a first-visit spike as a sign the pest is newly active, and a recurring-stop spike as a sign it is being managed rather than discovered."
-  - "Follow the links from each month into the service or species page for what to actually do about it."
+  - "Check whether your pest has a sharp season or a flat one; the sharp ones have a narrow window where prevention pays."
+  - "Treat a flat line as a sign the pest is indoors and year-round rather than as a sign it is rare."
+  - "Follow the links from each pest into the service or species page for what to actually do about it."
 faqs:
   - q: "Where does this data come from?"
-    a: "From our own completed job records across Whatcom and Skagit counties, exported and anonymized. Every figure on the page is a count of jobs we were actually called out for. Nothing here is modeled, estimated from regional averages, or taken from a national pest calendar."
-  - q: "Why does a pest control company publish its own job numbers?"
-    a: "Because nobody else in this market has them, and because the seasonal advice everywhere else is copied from national templates written for a different climate. What a Whatcom County house needs in March is not what a national chart says March is for."
+    a: "From our own completed job records across Whatcom and Skagit counties, exported and counted. Three years, 16,368 completed jobs. Every figure is a count of work we were actually called out for. Nothing here is modeled, estimated from regional averages, or taken from a national pest chart."
+  - q: "Why publish percentages rather than job counts?"
+    a: "Because the shape of the year is the useful part and the volume is not. Knowing that a third of our wasp work happens in August tells you when wasp season is. Knowing how many wasp jobs we did tells you about our business, which is no help to somebody trying to plan around yellowjackets."
   - q: "Does this include customer information?"
-    a: "No. The export carries a date, a pest, a town and whether the visit was a first call or a recurring stop. No names, no addresses, no contact details and no invoice values leave our system, and none of that is published here."
+    a: "No. The underlying export carries customer details because that is how the software writes it, and that file never leaves our own machines. What is published here is counts by pest by month. No names, no addresses, no invoice values, nothing identifying anybody."
   - q: "Does a busy month mean that pest is worse that month?"
-    a: "Usually, but not always, and the difference matters. Call volume reflects when people notice a pest as much as when it is most active. Yellowjackets are a good example: the nest has been there since spring, and August is when somebody walks into it."
-  - q: "How often is it updated?"
-    a: "Once a year, with the previous year's completed jobs added and the averages recalculated. The review date in the page footer is when it is next due, and the figures are dated so you can see how current they are."
+    a: "Usually, but not always, and the difference matters. Call volume reflects when people notice a pest as much as when it is most active. Yellowjackets are the clearest case: the nest has been there since spring, and August is when somebody walks into it."
+  - q: "Why are rodents not in the calendar?"
+    a: "Because almost all rodent work here runs on recurring plans rather than one-off calls, and a scheduled visit tells you about the schedule rather than about the pest. Those plan stops ran between 176 and 254 a month across three years, which is a timetable, not a season."
+  - q: "How often is this updated?"
+    a: "Once a year, with the previous year's completed jobs added and the shares recalculated. The review date on this page is when it is next due, and the period covered is stated above so you can see how current the figures are."
   - q: "Can I use these numbers?"
-    a: "Yes, with attribution and a link back to this page. If you are a reporter, a researcher or another company working this region and you want the underlying monthly table rather than the page, get in touch and we will send it."
+    a: "Yes, with attribution and a link back to this page. If you are a reporter, a researcher or another company working this region and you want the full monthly table rather than the summary, get in touch and we will send it."
 ---
 
 ## What this is
 
 A count of what one pest control company in Whatcom County was actually called
-out for, month by month, taken from its own completed job records.
+out for, month by month, from its own completed job records. Three years, 2023
+through 2025, 16,368 completed jobs.
 
 Every seasonal pest calendar you can find for this region is either a national
-chart with the state names changed, or somebody's recollection. Neither is
-much use here. Whatcom County has a maritime climate with wet winters and a
-short dry summer, a housing stock heavy on vented crawlspaces, and a rural
-edge of farms, woodland and seasonal cabins — and the pest year that produces
-is genuinely different from the one a national template describes.
+chart with the state name changed or somebody's recollection. Neither is much
+use here. Whatcom County has a maritime climate with wet winters and a short
+dry summer, a housing stock heavy on vented crawlspaces, and a rural edge of
+farms, woodland and seasonal cabins. The pest year that produces is genuinely
+different from the one a national template describes.
 
-So this page does the only honest version: it counts the jobs.
+So this page does the only honest version. It counts the jobs.
 
-**[PENDING]** — the figures below are not yet filled in. This page is
-unpublished until a GorillaDesk export is loaded, and it carries no invented
-numbers in the meantime.
+## How it was counted
 
-## How it was counted, and what the numbers can and cannot tell you
-
-Worth stating before any figure, because a number without its method is
+Worth setting out before any figure, because a number without its method is
 decoration.
 
-**What is counted.** One row per completed job: the date, the target pest, the
-town, and whether it was a first visit or a stop on a recurring program.
-Counts are aggregated by pest and by month across **[PENDING — number of
-years]** years, so a single unusual summer does not distort a month.
+**What is in the calendar.** Reactive, pest-specific jobs — somebody had a
+problem, called, and we attended. That is 1,153 jobs across the three years,
+and it is the subset that actually tells you something about the county.
 
-**What is not counted.** Calls that did not become jobs, quotes that were not
-accepted, and anything that was identified over the phone and needed no visit.
-That last one matters: a good share of what this company does is telling
-somebody they do not need a treatment, and none of that appears here.
+**What is deliberately left out.** Recurring plan stops, which are the bulk of
+the book. A monthly rodent service visit in March happened because it was
+scheduled for March, not because anything happened in March. Those stops ran
+between 176 and 254 a month across the whole period — a flat line that is a
+timetable rather than a season. Including them would drown the signal.
 
-**The limitation to keep in mind.** This measures when people call, which is
-close to but not identical to when a pest is most active. A yellowjacket nest
-counted in August has usually been there since May; what changed in August is
-that somebody mowed over it. Where that gap is large, the month's entry says
-so.
+**Why percentages rather than counts.** Each pest below is given as the share
+of that pest's annual work falling in each month. The shape of the year is the
+useful part; our job volume is not, and publishing it would tell you about our
+business rather than about your house.
 
-**Who is in it.** Customers across Whatcom and Skagit counties. It reflects
-one company's customer base rather than the county as a whole, which is a real
-limitation and an honest one.
+**The limitation that matters most.** This measures when people *call*, which
+is close to but not the same as when a pest is most active. The clearest case
+is wasps: a nest counted in August has usually been there since May, and what
+changed in August is that somebody mowed over it. Where that gap is large, the
+entry says so.
 
-## The year, month by month
+**Who is in it.** Customers across Whatcom and Skagit counties — 94% Whatcom,
+4.5% Skagit, the remainder Island and Snohomish. It reflects one company's
+customer base rather than the county as a whole. That is a real limitation and
+an honest one.
 
-**[PENDING]** — each month below takes its top pests and job counts from the
-export. The seasonal narrative in
-[the Whatcom County pest year](/guides/the-whatcom-county-pest-year/) is the
-written version of the same year and does not depend on these figures.
+**What is not here.** Species we were called out for fewer than about
+twenty-five times in three years. Three jobs does not describe a season, and
+drawing a curve through three dots would be inventing a pattern. Those pests
+are still covered properly in [the pest library](/pest-library/) — they just
+do not have enough of a record here to chart.
 
-### January — **[PENDING]**
+## The pests with a sharp season
 
-### February — **[PENDING]**
+Three of them, and all three reward acting early.
 
-### March — **[PENDING]**
+### Wasps and yellowjackets — the sharpest curve in the data
 
-### April — **[PENDING]**
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0% | 0% | 0% | 3% | 5% | 12% | 31% | **33%** | 13% | 3% | 1% | 0% |
 
-### May — **[PENDING]**
+Seventy-seven percent of a year's wasp work falls in July, August and
+September. January through March is zero — not nearly zero, zero.
 
-### June — **[PENDING]**
+This is the clearest illustration of the gap between activity and calls. The
+colony starts in spring as a single overwintered queen and builds quietly
+through June. It is at its largest in August, which is also when the workers
+switch from hunting protein to seeking sugar and start appearing at barbecues
+and bins. Nothing sudden happens to the wasps in July. What happens is that
+people meet them.
 
-### July — **[PENDING]**
+The practical consequence is that the useful window is April to June, when a
+nest is small and findable and nobody has been stung yet. By the time this
+curve spikes, you are dealing with thousands of insects.
 
-### August — **[PENDING]**
+Where to go next: [wasp control](/services/wasp-control/),
+[wasps and hornets of Washington](/guides/wasps-and-hornets-of-washington/),
+and [yellowjackets nesting in the lawn](/services/wasp-control/yellowjackets-in-the-lawn/).
 
-### September — **[PENDING]**
+### Spiders — a September problem and nothing else
 
-### October — **[PENDING]**
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0% | 0% | 4% | 0% | 0% | 19% | 4% | 19% | **38%** | 12% | 0% | 4% |
 
-### November — **[PENDING]**
+Thirty-eight percent in September, and seventy-seven percent across June,
+August and September combined.
 
-### December — **[PENDING]**
+This is a small sample — spider jobs are uncommon because most spider calls end
+with an identification rather than a visit — but the shape matches what the
+entomology predicts exactly. The autumn rise is mature males walking to find
+females, not spiders coming in from the cold, and it tapers off on its own by
+November.
+
+Worth noting what the data does *not* show: any winter spider work at all. The
+idea that spiders move indoors when it gets cold does not survive contact with
+three years of job records.
+
+Where to go next: [spider control](/services/spider-control/),
+[common spiders in Washington state](/guides/spiders-in-washington-state/), and
+[spiders appearing every fall](/services/spider-control/spiders-appearing-every-fall/).
+
+### Fleas — a July peak with a December tail
+
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 6% | 0% | 0% | 0% | 9% | 6% | **26%** | 15% | 18% | 3% | 3% | 15% |
+
+Fifty-nine percent across July, August and September, which is the warm-weather
+pattern everybody expects — and then an unexpected 15% in December.
+
+The December figure is the interesting one, and the explanation is a heated
+house. Flea pupae can sit dormant in carpet and bedding for weeks, and warmth
+plus vibration is what brings them out. A home that fills up with people over
+the holidays, with the heating on, is exactly those conditions. The problem
+started in summer; it finishes in December.
+
+Where to go next: [flea control](/services/flea-control/) and
+[cat flea](/pest-library/cat-flea/).
+
+## The pests with a long season rather than a sharp one
+
+### Carpenter ants — nine months, no real peak
+
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 3% | 4% | 7% | 9% | 11% | 12% | 10% | **13%** | 10% | 7% | 7% | 6% |
+
+This is the second-largest line in the calendar and the flattest curve of any
+pest with real volume. August is the peak at 13%, which is barely a peak at
+all — the work runs from March through October at roughly even weight and never
+fully stops.
+
+That is a genuinely useful finding and it runs against how carpenter ants are
+usually described. They are not a spring problem. They are a *building*
+problem, and a building with wet wood in it produces work in every month of the
+year. The spring swarmer flight is what makes people notice, but the colony was
+there in November too.
+
+Which means there is no clever window to catch this one in. If you have
+carpenter ants, the month is irrelevant and the moisture is not.
+
+Where to go next: [ant and carpenter ant control](/services/ant-control/),
+[carpenter ant](/pest-library/carpenter-ant/), and
+[sawdust piles below the trim](/services/ant-control/sawdust-piles-below-the-trim/).
+
+### Powderpost beetles and wood-boring pests
+
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 3% | 0% | 0% | 10% | 13% | 13% | **17%** | 17% | 10% | 10% | 0% | 7% |
+
+A broad April-to-October spread, peaking in midsummer, which tracks adult
+emergence — the exit holes and the frass appear when the beetles leave the
+wood, and that is when anybody notices.
+
+Where to go next: [wood-boring bee and beetle control](/services/carpenter-bee-control/)
+and [anobiid powderpost beetle](/pest-library/anobiid-powderpost-beetle/).
+
+### Ants other than carpenter ants
+
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2% | 0% | 10% | 17% | 10% | **21%** | 2% | 5% | 19% | 0% | 5% | 10% |
+
+Pavement ants and moisture ants, with a spring rise and a second bump in
+September. Small numbers, so treat the shape loosely — but the two-peak pattern
+is consistent with what moisture ants do here, which is appear whenever water
+does.
+
+Where to go next: [moisture ant](/pest-library/moisture-ant/) and
+[moisture ants mean a water problem](/services/ant-control/moisture-ants-mean-a-water-problem/).
+
+### What is under the line, and why it is not charted
+
+Four pests cleared fewer than twenty-five jobs across the three years: voles
+at twelve, carpet and pantry beetles at six, termites at three and silverfish
+at three.
+
+Those are left uncharted on purpose. Twelve jobs spread over thirty-six months
+cannot describe a season, and drawing a twelve-point curve through them would
+manufacture a pattern out of noise — which is precisely the thing a page like
+this exists to avoid. What the vole figures hint at, for what it is worth, is a
+growing-season problem: people notice damage to lawn, root crops and young tree
+bark while they are out in the garden, and stop noticing when they are not.
+That is a hint, not a finding, and it is written here as one.
+
+All four are covered properly in the library regardless —
+[vole](/pest-library/vole/), [carpet beetle](/pest-library/carpet-beetle/),
+[silverfish](/pest-library/silverfish/) and
+[Pacific dampwood termite](/pest-library/pacific-dampwood-termite/).
+
+## The pests with no season at all
+
+This is the part of the calendar most worth reading, because the absence of a
+pattern is itself the finding.
+
+### Bed bugs
+
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 8% | **16%** | 8% | 11% | 3% | 5% | 8% | 13% | 13% | 3% | 3% | 11% |
+
+February is nominally the peak and it means nothing. Bed bug work is spread
+across every month of the year, which is exactly what you would expect from an
+insect that lives indoors, breeds indoors and travels on people rather than on
+weather.
+
+Anybody telling you bed bugs have a season is describing travel patterns rather
+than biology. The useful signal is not the month; it is whether somebody has
+been away.
+
+Where to go next: [bed bug control](/services/bed-bug-control/) and
+[bed bugs after a trip](/services/bed-bug-control/bed-bugs-after-a-trip/).
+
+### Cockroaches
+
+| Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 7% | 11% | 7% | 4% | 6% | 11% | **19%** | 7% | 4% | 13% | 7% | 4% |
+
+A mild July figure, otherwise flat. The German cockroach — which is nearly
+every real infestation here — lives in heated buildings year-round and has no
+outdoor season to follow. A kitchen is a tropical climate in February as much
+as in July.
+
+Where to go next: [cockroach control](/services/cockroach-control/) and
+[are there cockroaches in Washington?](/services/cockroach-control/are-there-cockroaches-in-washington/).
+
+### Rodents, which are not charted here at all
+
+Rodent work is the largest part of what we do and it is almost entirely on
+recurring plans, so it does not appear in this calendar. What the plan stops
+show is a flat line between roughly 176 and 254 visits a month, drifting upward
+through October, November and December.
+
+That upward drift is the only seasonal signal in it, and it is a small one. It
+matches what everybody expects — rodents move toward warm buildings as the
+weather turns — but it is a gentle slope rather than the cliff the wasp data
+shows.
+
+Where to go next: [rodent control](/services/rodent-control/),
+[rats and rodents in Washington state](/guides/rats-in-washington/), and
+[sealing a building before fall](/guides/sealing-a-building-before-fall/).
+
+## The month-by-month short version
+
+**January and February.** Quietest months of the year for reactive work.
+Rodent plan stops at their winter level, a little bed bug work, essentially no
+wasps or spiders.
+
+**March.** Carpenter ant work begins to climb. First ant calls.
+
+**April and May.** Carpenter ants rising, first wasp calls appear, powderpost
+beetle work begins. The cheapest month of the year to deal with a wasp nest is
+in here somewhere.
+
+**June.** Ants peak. Wasp work reaches 12% of its year. Spider work starts.
+
+**July and August.** The busiest stretch by a distance. Wasps at 31% and 33%,
+carpenter ants at their nominal peak, fleas at 26%, powderpost beetles at 17%.
+
+**September.** Spiders at 38%, their single biggest month. Wasps falling but
+still 13%. Fleas still high. Voles peak.
+
+**October.** Everything falls away sharply. Rodent plan stops begin their
+winter climb. The sealing window is closing.
+
+**November and December.** Reactive work near its floor, except fleas, which
+produce an odd 15% of their year in December from pupae waking in heated
+houses.
 
 ## Using this
 
 If you are a homeowner, the useful move is to read one month ahead rather than
 the month you are in. Almost everything on this calendar is cheaper to prevent
-than to treat, and the prevention window for most of it closes before the
-problem becomes visible — which is the entire argument of
-[sealing a building before fall](/guides/sealing-a-building-before-fall/).
+than to treat, and for the sharp-season pests the prevention window closes
+before the problem becomes visible — which is the whole argument of
+[sealing a building before fall](/guides/sealing-a-building-before-fall/) and
+of [the Whatcom County pest year](/guides/the-whatcom-county-pest-year/), which
+is the written version of the same year.
 
-If you are a reporter, a researcher, or another company working this region,
-the numbers on this page are free to use with attribution and a link. The
-underlying monthly table is available on request; we would rather it was
-quoted accurately than approximated.
+If you are a reporter, a researcher or another company working this region, the
+figures here are free to use with attribution and a link. The full monthly
+table is available on request, and we would rather it was quoted accurately
+than approximated.
 
 And if a month here does not match what you are seeing at your own property,
-that is worth a phone call rather than a shrug. The calendar describes the
+that is worth a phone call rather than a shrug. The calendar describes a
 county. Your building has its own reasons.

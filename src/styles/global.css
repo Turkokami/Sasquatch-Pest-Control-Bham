@@ -3365,6 +3365,41 @@ footer.site ul.social li a:focus-visible {
 .quickfacts h2 {
   margin-top: 0;
 }
+/* MARKDOWN TABLES IN BODY COPY, 12 Nov 2026.
+   Until the pest calendar there was not a single table in src/content — the
+   only styled table on the site was .quickfacts, which is generated from
+   frontmatter rather than written in markdown. A data page needs real tables,
+   and an unstyled one renders as browser-default text that looks broken.
+
+   `display: block` plus `overflow-x: auto` is deliberate: the calendar's rows
+   are twelve months wide and will not fit 390px. Scrolling the table is the
+   honest answer; shrinking the type until it fits is not, and transposing to
+   twelve rows per pest would make the page nine times longer on the device
+   most people read it on. */
+.prose table {
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: var(--space-5) 0;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-snug);
+  font-variant-numeric: tabular-nums;
+}
+.prose th,
+.prose td {
+  padding: var(--space-2) var(--space-3);
+  border-top: 1px solid var(--rule);
+  text-align: left;
+  white-space: nowrap;
+}
+.prose thead th {
+  border-top: 0;
+  border-bottom: 1px solid var(--rule);
+  font-weight: 600;
+}
+
 .quickfacts table {
   width: 100%;
   border-collapse: collapse;
