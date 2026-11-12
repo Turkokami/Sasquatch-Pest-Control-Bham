@@ -187,6 +187,13 @@ export const PESTS: Pest[] = [
   { slug: 'earwig', name: 'European earwig', scientific: 'Forficula auricularia', group: 'invaders' },
   { slug: 'pillbug', name: 'Pillbug', scientific: 'Armadillidium vulgare', group: 'invaders' },
   { slug: 'millipede', name: 'Millipede', scientific: '', group: 'invaders' },
+  /* Added 12 Nov 2026. A mite rather than an insect, and the only non-insect
+     in this group, which is the point: "tiny red bugs" and "tiny red spiders"
+     are among the highest-volume pest searches in the country and almost none
+     of that traffic is looking for a spider or an insect. The species belongs
+     in the library on the ordinary test — we find it on Whatcom County jobs
+     every spring and fall, on the sunny elevation, every year. */
+  { slug: 'clover-mite', name: 'Clover mite', scientific: 'Bryobia praetiosa', group: 'invaders' },
 
   /* Fabric and pantry */
   { slug: 'webbing-clothes-moth', name: 'Webbing clothes moth', scientific: 'Tineola bisselliella', group: 'fabric-pantry' },

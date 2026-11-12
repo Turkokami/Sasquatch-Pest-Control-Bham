@@ -251,7 +251,7 @@ turf and the wall so there is nothing to walk in from.
 They are also the reason tiny red spiders is one of the highest-volume spider
 searches in the country while being almost entirely not about spiders. There is
 more on them, including what to do about a wall that gets them every year, on
-[clover mites in Bellingham homes](/blog/clover-mites-invading-your-home/).
+[the clover mite profile](/pest-library/clover-mite/).
 
 ## Black spiders in Washington state, in order of likelihood
 

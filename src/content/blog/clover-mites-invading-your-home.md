@@ -4,6 +4,7 @@ description: "Tiny red specks on your window sills each spring are clover mites,
 h1: "Clover Mites Invading Your Home? Here's What Bellingham Homeowners Need to Know"
 legacyUrl: '/clover-mites-invading-your-home/'
 imported: 2026-08-31
+supersededBy: '/pest-library/clover-mite/'
 ---
 
 If you've started noticing "tiny red spiders" or brown specks crawling along your window sills, walls, or sunny door frames, you're likely dealing with **clover mites**. At Sasquatch Pest Control, we get calls every spring from homeowners across Whatcom County who are surprised by how quickly these tiny creatures can appear by the thousands.
