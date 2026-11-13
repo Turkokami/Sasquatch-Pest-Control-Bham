@@ -64,7 +64,7 @@ factsTable:
   - label: "Commonest single pest"
     value: "Odorous house ants — 1,624 jobs, 59% of all reactive pest work in three years"
   - label: "When people first call"
-    value: "41% of a year's new customers arrive in July, August and September; 8% in January and February"
+    value: "42% of a year's new customers arrive in July, August and September; 7% in January and February"
   - label: "Sharpest season"
     value: "Wasps — 77% of a year's wasp work falls in July, August and September"
   - label: "Flattest"
@@ -85,7 +85,7 @@ faqs:
   - q: "What is the most common pest in Whatcom County?"
     a: "Odorous house ants, and it is not close. They account for 1,624 jobs across three years in these records — fifty-nine percent of all reactive pest work, more than carpenter ants and wasps combined. The small brown ants trailing across a kitchen counter are the defining pest problem of this county."
   - q: "When do most people call a pest control company here?"
-    a: "July, August and September. Across 891 new customers in 2025, 41% first made contact in those three months, against 8% across January and February combined. That matches the reactive job data, which peaks in the same stretch, and the two measurements are independent of each other."
+    a: "July, August and September. Across 891 new customers in 2025, 42% first made contact in those three months, against 7% across January and February combined. That matches the reactive job data, which peaks in the same stretch, and the two measurements are independent of each other."
   - q: "Why are rodents not in the calendar?"
     a: "Because almost all rodent work here runs on recurring plans rather than one-off calls, and a scheduled visit tells you about the schedule rather than about the pest. Those plan stops ran between 176 and 254 a month across three years, which is a timetable, not a season."
   - q: "How often is this updated?"
@@ -385,8 +385,8 @@ which somebody who had never called us before decided they had a problem.
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 4% | 3% | 6% | 7% | 10% | 10% | 14% | 13% | **14%** | 8% | 6% | 5% |
 
-891 new customers across 2025. Forty-one percent of a year's new customers
-arrive in July, August and September; eight percent arrive in January and
+891 new customers across 2025. Forty-two percent of a year's new customers
+arrive in July, August and September; seven percent arrive in January and
 February combined.
 
 Two things make this worth having beside the job counts.
