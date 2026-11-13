@@ -53,6 +53,35 @@ export const services: Service[] = [
     ],
   },
 
+  /* NEW 12 Nov 2026, and like tick control it reverses a published refusal.
+     /pest-library/vole/ ran to 3,879 words explaining that vole damage was not
+     our work, with `treatment: we-do-not`. The owner confirmed it is work we
+     sell, and the job book agrees with him rather than with the page: 12 vole
+     jobs across 2023-2025, eleven of them in 2025, plus a live vole line in
+     Active Services. The page was wrong and the records were right.
+
+     The seasonality is worth recording because it is not the one the biology
+     suggests. Vole damage becomes VISIBLE in spring, when the grass lifts and
+     the winter girdling is exposed. The jobs are Jun-Dec — 2 in June, 2 July,
+     2 August, 3 September, then trailing through December, and zero across
+     January to May. People call when they are out in the garden, not when the
+     damage was done. Too thin to chart (the pest calendar's floor is 25 jobs
+     over the period, and this is 12), so it is prose there and prose here.
+
+     Sold as habitat assessment plus margin trapping rather than as a lawn
+     treatment, because UC IPM and WSU Extension both put the real work in
+     cultural control — mowing, mulch depth, clear circles, trunk guards — and
+     none of that is a pesticide application. The library page keeps saying so.
+
+     No legacy slug: vole-control never existed on the old site, so there is
+     nothing to redirect. Demand is there anyway — "mole vole removal near me"
+     sits at position 2.1 with a 25% click-through, and /pest-library/vole/
+     already draws impressions at position 10. */
+  {
+    slug: 'vole-control', name: 'Vole Control', short: 'Voles',
+    category: 'rodents-birds', confirmed: true, legacy: [],
+  },
+
   /* ---------------- stinging & flying ---------------- */
   {
     slug: 'wasp-control', name: 'Wasp & Hornet Control', short: 'Wasps',

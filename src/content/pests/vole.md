@@ -1,10 +1,10 @@
 ---
 title: "Voles (Microtus spp.) in Whatcom County Lawns"
-description: "Surface runways in the grass and gnawed bark at the base of young trees. What voles do here, how they differ from moles, and why this is not our work."
-h1: "Vole — A Lawn and Landscape Animal, Not a Structural One"
+description: "Surface runways in the grass and gnawed bark at the base of young trees. What voles do here, how they differ from moles, and how we handle them."
+h1: "Voles in Whatcom County Lawns and Landscapes"
 species: 'vole'
-treatment: 'we-do-not'
-answer: "Voles are short-tailed, blunt-faced rodents that live in surface runways under grass and ground cover, feeding on plants and gnawing bark at the base of shrubs and young trees. They rarely enter buildings. Vole damage in a lawn or a landscape is not structural pest work and we do not take it on."
+treatment: 'depends'
+answer: "Voles are short-tailed, blunt-faced rodents living in surface runways under grass and ground cover, feeding on plants and gnawing bark at the base of shrubs and young trees. They rarely enter buildings. We do take vole work on as of November 2026, though habitat management usually does more than any treatment."
 confusedWith: []
 idTable:
   - label: "Size and build"
@@ -20,7 +20,7 @@ idTable:
   - label: "Indoors"
     value: "A poor climber that usually stays out of buildings"
   - label: "Do we treat it"
-    value: "No — lawn and landscape damage is not our work"
+    value: "Yes since November 2026 — habitat work first, then trapping at the margins where it is warranted"
 signs:
   - "Narrow runways an inch or two wide under the grass, worn to bare or matted soil between small open holes"
   - "Fresh green grass clippings cut and left lying in the runways"
@@ -34,7 +34,7 @@ faqs:
   - q: "Do voles get into houses?"
     a: "Very rarely. UC IPM states that voles are poor climbers and usually do not enter homes or other buildings, inhabiting exterior areas instead. If something is moving inside a wall or a crawlspace, it is almost certainly a mouse or a rat rather than a vole."
   - q: "Do you treat voles?"
-    a: "No. This is a lawn, garden and orchard problem rather than a structural pest one, and it sits outside what this company does. The measures that actually work are habitat management and physical barriers, and none of them is a pesticide application."
+    a: "Yes, as of November 2026 — this page said no before that date. What has not changed is which measures actually work: habitat management and physical barriers do most of the real work on voles, and neither is a pesticide application. So we will walk the property, tell you what the mowing, mulch depth and trunk guards should look like, and trap the margins where that is warranted. If habitat work alone will settle it, we will say so."
   - q: "Why did all the damage appear at once in spring?"
     a: "Because it happened out of sight. Voles feed at the base of trunks through winter beneath matted grass, heavy mulch and snow, and UC IPM notes that snow cover lets gnawing extend a foot or more up a trunk. Spring reveals the damage rather than causing it."
   - q: "Why are there suddenly so many this year?"
@@ -63,20 +63,31 @@ This profile exists because [voles](/pest-library/vole/) get confused with thing
 because the wrong diagnosis here sends people to the wrong trade and sometimes to
 an unnecessary treatment. It does not exist to sell you anything.
 
-We are a structural pest control and exclusion company. Our rodent work is about
-what gets inside a building — how it got in, how it comes out, and how the shell
-gets closed. A vole is not doing any of that. It lives in the grass, eats the
-plants, and by UC IPM's own account is a poor climber that usually does not
-enter homes or other buildings at all.
+We are a structural pest control and exclusion company, and most of our rodent
+work is about what gets inside a building — how it got in, how it comes out, and
+how the shell gets closed. A vole is not doing any of that. It lives in the
+grass, eats the plants, and by UC IPM's own account is a poor climber that
+usually does not enter homes or other buildings at all.
 
-So the honest answer is that vole damage in a lawn, a bed, an orchard or a
-nursery row is not our work, and we will say so on the phone rather than after
-driving out. What follows is what we would tell you on that call, at more
-length, because a correct identification and a realistic list of what works is
-worth more than a service call anyway.
+Until November 2026 that was where this page stopped: vole damage was not our
+work and we said so. We now take it on, as
+[vole control](/services/vole-control/), and the correction belongs here at the
+top rather than hidden further down.
+
+What has not changed is the honest order of operations. The measures that
+actually work on voles are cultural — mowing regimes, mulch depth, clear circles
+around trunks, physical guards — and none of them is a pesticide application.
+That is UC IPM's position and WSU Extension's, not a disclaimer we invented. So
+the service starts with walking the property and telling you what the habitat
+should look like, and trapping the margins where that is warranted. If the
+habitat work alone would settle it, you will hear that instead of a quote.
+
+What follows is the longer version of that conversation, because a correct
+identification and a realistic list of what works is worth more than a service
+call either way.
 
 Moles come up constantly in the same conversation and they are a separate animal
-altogether. They are also outside what we do. There is a section on them below,
+altogether. They remain outside what we do. There is a section on them below,
 because telling the two apart is most of the value of this page.
 
 ## What a vole actually is
@@ -173,9 +184,11 @@ healthy points at moles. The two can occur on the same property at the same
 time, and voles will happily use a mole run as a highway, which is how the two
 get blamed for each other.
 
-**Neither is our work.** Moles are outside what this company does. Voles are
-outside what this company does. We are telling you the difference because you
-asked what you have, not because either answer leads to us.
+**One of the two is our work and the other is not.** Voles we take on, as of
+November 2026. Moles remain outside what this company does. So the
+identification is not academic here — it decides whether there is anything we
+can sell you at all, and we would rather get that right on the phone than after
+driving out.
 
 Pocket gophers get raised occasionally and are a much less likely answer on the
 wet side of the Cascades. UC IPM's distinction is still useful if the question
@@ -289,13 +302,15 @@ and most residential lots in this county have at least one within a few yards.
 Stated plainly, because the point of this page is to be useful rather than to
 convert.
 
-**We do not treat voles.** Not in a lawn, not in a bed, not in an orchard, not
-in a nursery. It is not structural pest work, it is not what our licensing is
-organized around, and a company that will treat anything on request is not doing
-you a favor.
+**We do treat voles**, as of November 2026, and this section said the opposite
+before that date. The work is habitat assessment and trapping at the margins
+rather than a broadcast treatment of a lawn, because that is what the evidence
+supports. For a landscape at scale, an orchard block or a nursery row, a
+landscape contractor or an agricultural adviser may still be better placed than
+we are, and we will tell you when that is the case.
 
-**We do not do mole work**, for the same reason plus the fact that it is a
-different animal doing a different thing.
+**We do not do mole work**, which is a different animal doing a different thing.
+That one has not changed.
 
 **We do not offer wildlife or nuisance-animal services** of any kind. Birds,
 bats, squirrels, raccoons and opossums are all somebody else's specialty and
@@ -374,10 +389,10 @@ sold. Voles eat plants. Killing the grubs in a lawn does nothing to them
 whatever — and if grubs were the issue, the animal digging for them would be a
 mole rather than a vole.
 
-## The one case that is ours
+## When a vole gets into a building
 
-There is a narrow exception and it is worth stating so nobody is caught by an
-absolute.
+Worth stating separately, because it is a different job from the one in the
+grass and it is priced differently.
 
 Voles very occasionally get into an outbuilding, a garage, a crawlspace or a
 greenhouse, particularly where a structure sits directly on grade with heavy
@@ -394,17 +409,23 @@ is not a vole. Check the tail and the ears before anything else. A long bare
 tail and prominent ears is a mouse, and that is a different page with a
 different answer.
 
-## Where to go instead
+## Where to go, including to us
 
-For the horticultural side of this — which is most of it — the useful contacts
-are the [WSU Extension](https://pubs.extension.wsu.edu/product/vole-management-in-home-backyards-and-gardens-home-garden-series/) Master Gardener program for Whatcom County, which handles
-exactly this kind of question, and the extension publications listed below,
-which are written for a homeowner rather than for a commercial operator.
+If you want this dealt with, [vole control](/services/vole-control/) is the
+service and the visit that works out whether you need it is free.
+
+If you would rather do it yourself — and for a lot of gardens that is the right
+answer — the useful contacts are the [WSU Extension](https://pubs.extension.wsu.edu/product/vole-management-in-home-backyards-and-gardens-home-garden-series/) Master Gardener program for Whatcom County,
+which handles exactly this kind of question, and the extension publications
+listed below, which are written for a homeowner rather than for a commercial
+operator. Nothing in them is a secret we are hoping you will not find.
 
 For a landscape at scale, an orchard or a nursery block, a landscape contractor
-or an agricultural adviser is better placed than a pest control company, because
-the fix is cultural: mowing regimes, mulch depth, weed control, clear circles and
-trunk guards.
+or an agricultural adviser may still be better placed than a pest control
+company, because at that size the fix is cultural: mowing regimes, mulch depth,
+weed control, clear circles and trunk guards. We will say so rather than take on
+a block we are not the right outfit for.
 
 And if what you actually have turns out to be something in the building rather
-than something in the grass, call us and we will pick it up from there.
+than something in the grass, that has always been our work and the answer
+changes completely.
