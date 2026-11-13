@@ -77,9 +77,19 @@ const previous = fs.existsSync(STATE)
   ? JSON.parse(fs.readFileSync(STATE, 'utf8'))
   : { submitted: {}, runs: [] };
 
+/* FORWARD-ONLY, not merely different. A page is submitted when we have never
+   submitted it, or when its source has been edited since the date we last told
+   an engine about. Comparing with !== instead meant any date that moved
+   BACKWARD counted as a change — which is not hypothetical: when
+   scripts/sitemap.mjs stopped stamping every page with the build date on
+   12 Nov 2026, roughly 390 pages correctly dropped back to their real edit
+   dates, and a !== comparison would have read that correction as 390 changes
+   and blasted the whole site one more time. There is nothing to tell Bing
+   about a page that has not been touched since we last told it. */
 const changed = [];
 for (const [url, lastmod] of current) {
-  if (all || previous.submitted[url] !== lastmod) changed.push(url);
+  const already = previous.submitted[url];
+  if (all || !already || lastmod > already) changed.push(url);
 }
 
 console.log(`sitemap: ${current.size} indexable URLs`);
@@ -121,8 +131,11 @@ for (let i = 0; i < changed.length; i += BATCH) {
   console.log(`submitted ${urlList.length} URLs — HTTP ${res.status}`);
 }
 
+/* Record the later of the two, so the state file only ever moves forward and
+   cannot forget that a page was submitted after its last edit. */
 for (const [url, lastmod] of current) {
-  if (all || previous.submitted[url] !== lastmod) previous.submitted[url] = lastmod;
+  const already = previous.submitted[url];
+  if (!already || lastmod > already) previous.submitted[url] = lastmod;
 }
 previous.runs = [{ at: new Date().toISOString(), count: sent }, ...(previous.runs || [])].slice(0, 20);
 fs.writeFileSync(STATE, JSON.stringify(previous, null, 2) + '\n');
