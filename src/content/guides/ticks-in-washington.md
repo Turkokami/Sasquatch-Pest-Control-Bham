@@ -33,7 +33,7 @@ factsTable:
   - label: "Lone star tick"
     value: "Not established in Washington"
   - label: "Do we treat for ticks"
-    value: "No. Tick work is not on our confirmed service list, and we will say so rather than sell one"
+    value: "Yes since November 2026, as targeted margin work. Not a broadcast whole-yard program, which this tick load does not justify"
 steps:
   - "Check for ticks the same day you come back from tall grass, brush or leaf litter, and keep checking for two to three days."
   - "Remove one with fine-tipped tweezers: grasp as close to the skin as you can and pull straight up with steady pressure."
@@ -58,7 +58,7 @@ faqs:
   - q: "What is the right way to remove a tick?"
     a: "Fine-tipped tweezers, grasped as close to the skin as possible, pulled straight up with steady even pressure. No twisting. The Department of Health specifically warns against matches, petroleum jelly, soap and nail polish, because those can make the tick produce more saliva."
   - q: "Do you treat yards for ticks?"
-    a: "No. Tick work is not on our confirmed service list, and we would rather tell you that than take the job. Keeping grass short and brush and leaf litter back from the used parts of a yard is the honest first answer, and it is one you can do yourself."
+    a: "Yes, as of November 2026, and this guide said no before that date. It is sold as targeted treatment of the margins where ticks quest, not as a broadcast acaricide across a whole property — the tick load described on this page does not justify the broadcast version. Keeping grass short and brush and leaf litter back from the used parts of a yard is still the honest first answer, and it is still one you can do yourself for nothing."
 ---
 
 ## Are there ticks in Washington state?
@@ -308,21 +308,31 @@ response, and we would not propose it.
 
 ## What we do and do not do about ticks
 
-We do not treat for ticks, and this page exists anyway.
+This section said "we do not treat for ticks" until November 2026. We now do,
+and the change is worth setting out precisely, because the numbers above did not
+move when the service list did.
 
-Tick work is not on our confirmed service list. That is a deliberate position
-rather than an oversight: there is no honest case for selling a yard tick
-program in Whatcom County at the exposure levels the state's own surveillance
-describes, and a service page for something we do not do would be the same
-dishonesty as a pest library full of species that do not live here.
+What we sell is [tick control](/services/tick-control/) as **targeted margin
+work** — the boundary where a mown lawn meets taller growth, fence lines, mulch
+beds, the shaded strip nobody walks. Two products carry it, both labeled for
+ticks, and it is usually one visit with
+[mosquito treatment](/services/mosquito-control/) because the ground overlaps.
 
-What we do is the thing underneath several of the tick questions people actually
-ask. A cabin with rodents in the walls is the setting for relapsing fever, and
-rodents in walls is our work. A dog bringing things into a house is usually a
-flea question before it is a tick question, and fleas are our work. Yard habitat
-around a building is part of what we look at on any exterior job.
+What we still will not do is broadcast an acaricide across a whole property. At
+the exposure levels the state's own surveillance describes — the 4.0% infection
+rate and the 68 in-state cases across six years set out earlier on this page —
+that is not a proportionate response, and a service existing does not change the
+arithmetic. Open sunlit turf is poor tick habitat regardless.
 
-And when somebody rings about a tick, the answer is the Department of Health's
-identification service and a doctor if they feel unwell — not a visit from us.
-We would rather be the page that told you that than the company that sold you a
-treatment for it.
+Two further honesties. **The season is the one most people get wrong**, and it
+matters commercially: ticks here quest in spring, so a combined mosquito-and-tick
+program bought in July has missed that year's tick window. And a treated margin
+does not travel — the encounters that matter in this county happen on trail
+edges, so a tick check after a walk still outperforms anything we apply.
+
+Several tick questions also turn out to be other questions. A cabin with rodents
+in the walls is the setting for relapsing fever, and rodents in walls is our
+work. A dog bringing specks into a house is more often a flea question than a
+tick one, and fleas are our work. And when somebody rings having found a tick on
+themselves, the answer is still the Department of Health's identification service
+and a doctor if they feel unwell — not a visit from us.

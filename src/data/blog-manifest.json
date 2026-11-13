@@ -43,11 +43,11 @@
     },
     {
       "slug": "battling-mosquitoes",
-      "why": "mosquito control is not an offered service — it is in RETIRED_TO_LIBRARY"
+      "why": "mosquito control was not an offered service when this decision was made; it became one on 12 Nov 2026 and /services/mosquito-control/ now exists, so the legacy URL redirects there instead of to the pest library hub. The post itself stays excluded on its own merits, not on service scope"
     },
     {
       "slug": "mosquito-control-bellingham-wa",
-      "why": "mosquito control is not an offered service — it is in RETIRED_TO_LIBRARY"
+      "why": "mosquito control was not an offered service when this decision was made; it became one on 12 Nov 2026 and /services/mosquito-control/ now exists, so the legacy URL redirects there instead of to the pest library hub. The post itself stays excluded on its own merits, not on service scope"
     },
     {
       "slug": "free-pest-inspection-bellingham",

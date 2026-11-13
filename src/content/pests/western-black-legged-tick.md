@@ -1,9 +1,9 @@
 ---
 species: western-black-legged-tick
 title: "Western Black-Legged Tick in Whatcom County"
-description: "Tick control is not a service we sell. What Ixodes pacificus is, where you actually meet one here, the real Lyme risk, and how to remove one correctly."
-h1: "Western Black-Legged Tick — Not a Service We Sell"
-treatment: we-do-not
+description: "What Ixodes pacificus is, where you actually meet one in Whatcom County, how much Lyme disease there really is here, and how to remove one correctly."
+h1: "Western Black-Legged Tick in Whatcom County"
+treatment: depends
 confusedWith: []
 idTable:
   - label: "Size"
@@ -19,18 +19,18 @@ idTable:
   - label: "Health risk"
     value: "Carries Lyme disease and anaplasmosis here; zero to seven Lyme cases a year are acquired in-state"
   - label: "Do we treat it"
-    value: "No — we sell no tick control or yard spray"
+    value: "Yes since November 2026, as margin work rather than a whole-yard spray — and often not warranted on a lot with no brushy edge"
 signs:
   - "A small dark tick attached head-first that does not brush off"
   - "A smooth, pale, bean-shaped object on the skin with legs that look too small for it"
   - "Ticks on a dog around the neck, in the ears, in the leg folds or between the toes"
   - "A slow-walking eight-legged speck on clothing after a walk through brush"
   - "A child unsteady on their feet after a camping trip — look through the hair for a tick"
-answer: "We do not treat properties for ticks and do not sell a tick program. The western black-legged tick is the Washington species that can carry Lyme disease, though the state reports only zero to seven locally acquired cases a year. Fine-tipped tweezers, close to the skin, steady upward pull."
+answer: "The western black-legged tick is the Washington species that can carry Lyme disease, though state surveillance found only 4.0% of them infected and very few cases are acquired in-state each year. We do treat property margins for ticks as of November 2026. Remove one with fine-tipped tweezers, close to the skin, pulling steadily upward."
 ready: true
 faqs:
   - q: "Do you offer tick control?"
-    a: "No. Tick control is not among the services this company sells, and a yard spray is a poor answer to an animal you meet on a trail rather than on your grass. This page exists to identify the species and point you at Washington Department of Health guidance instead."
+    a: "Yes, since November 2026, and this page said otherwise before that — so here is the limit on it. We treat the margins of a property, where ticks actually quest: the line where mown grass meets taller growth, fence lines, mulch beds, the shaded strip behind a shed. We do not broadcast a whole lawn, because at this county's tick load that is not proportionate. And it does not follow you onto a trail, which is where most encounters here happen. See tick control."
   - q: "What is the correct way to pull a tick off?"
     a: "Washington's health department says to use fine-tipped tweezers, grasp the tick as close to the skin surface as you can, and pull upward with steady even pressure. Do not twist or jerk, because that is what breaks the mouthparts off in the skin."
   - q: "Should I use petroleum jelly, nail polish or a hot match?"
@@ -65,29 +65,38 @@ sources:
 reviewBy: 2027-09-01
 ---
 
-## We do not treat for ticks
+## Whether treating for this is worth it depends on your property
 
-That is the verdict at the top of this page and it is worth putting in plain
-words before anything else.
+Until November 2026 this page said flatly that we did not treat for ticks. We
+now do, as [tick control](/services/tick-control/), and the correction belongs
+at the top rather than buried — but almost everything the old version argued is
+still true, so it stays.
 
-Sasquatch does not sell tick control. There is no tick program here, no yard
-spray package, and no perimeter service aimed at this animal. If a company has
-told you that a treatment around your house is how you deal with ticks in
-Whatcom County, we would want you to hear a second opinion before you spend
-anything on it.
+What we sell is margin work. Ticks quest at edges: the line where a mown lawn
+stops, a fence line gone over to blackberry, leaf litter under a hedge, tall
+grass beside a path. That is where an application belongs. We do not broadcast
+an entire lawn with an acaricide, because at the tick load this county actually
+carries that is not a proportionate response, and open sunlit turf is poor tick
+habitat anyway.
 
-The reason is not squeamishness about the work. It is that the exposure this
-species actually produces happens away from the treated ground. You meet a
-western black-legged tick on a brushy edge, in tall grass along a fence line, or
-brushing past vegetation on the side of a trail. A product applied to a lawn does
+So the honest answer to "should I treat?" is: it depends on whether you have
+that margin. An acreage outside Everson where the mown part is an island in
+something taller is a different proposition from a fence-to-fence town lot in
+Bellingham, and on the second one a treatment accomplishes very little. We would
+rather tell you that on the phone than after the invoice.
+
+And here is the part no treatment changes. The exposure this species actually
+produces mostly happens away from any ground we could treat. You meet a western
+black-legged tick on a brushy edge, in tall grass along a fence line, or
+brushing past vegetation at the side of a trail. A product applied at home does
 not follow you to Chuckanut or up Galbraith, and a household that believes it is
-covered because the yard was sprayed is worse off than one that checks itself
-after a walk.
+covered because the yard was done is worse off than one that checks itself after
+a walk.
 
-So this profile does what the library is for. It tells you what the animal is,
-where you genuinely encounter it here, what the risk realistically looks like in
-this corner of the state, and how to take one off correctly. Where you need
-authority beyond that, the [Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/ticks) is the source
+So this profile still does what the library is for. It tells you what the animal
+is, where you genuinely encounter it here, what the risk realistically looks
+like in this corner of the state, and how to take one off correctly. Where you
+need authority beyond that, the [Washington State Department of Health](https://doh.wa.gov/community-and-environment/pests/ticks) is the source
 we cite throughout, and it is where we would send you.
 
 ## What the animal is

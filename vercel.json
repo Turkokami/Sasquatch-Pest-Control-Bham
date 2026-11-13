@@ -87,6 +87,16 @@
       "permanent": true
     },
     {
+      "source": "/mosquito-control/",
+      "destination": "/services/mosquito-control/",
+      "permanent": true
+    },
+    {
+      "source": "/mosquito-control-services/",
+      "destination": "/services/mosquito-control/",
+      "permanent": true
+    },
+    {
       "source": "/ant-control/",
       "destination": "/services/ant-control/",
       "permanent": true
@@ -164,6 +174,11 @@
     {
       "source": "/flea-exterminator/",
       "destination": "/services/flea-control/",
+      "permanent": true
+    },
+    {
+      "source": "/tick-control/",
+      "destination": "/services/tick-control/",
       "permanent": true
     },
     {
@@ -458,21 +473,6 @@
     },
     {
       "source": "/springtail-control/",
-      "destination": "/pest-library/",
-      "permanent": true
-    },
-    {
-      "source": "/tick-control/",
-      "destination": "/pest-library/",
-      "permanent": true
-    },
-    {
-      "source": "/mosquito-control/",
-      "destination": "/pest-library/",
-      "permanent": true
-    },
-    {
-      "source": "/mosquito-control-services/",
       "destination": "/pest-library/",
       "permanent": true
     },
@@ -1458,7 +1458,7 @@
     },
     {
       "source": "/mosquito-control-bellingham-wa/",
-      "destination": "/pest-library/",
+      "destination": "/services/mosquito-control/",
       "permanent": true
     },
     {
@@ -1653,7 +1653,7 @@
     },
     {
       "source": "/battling-mosquitoes/",
-      "destination": "/pest-library/",
+      "destination": "/services/mosquito-control/",
       "permanent": true
     },
     {

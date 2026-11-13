@@ -94,9 +94,27 @@ export const services: Service[] = [
       { slug: 'how-long-do-flies-live', title: 'How long do flies live?' },
     ],
   },
+  /* CONFIRMED 12 Nov 2026. This row sat at confirmed: false from the original
+     sign-off, and `mosquito-control` also sat in RETIRED_TO_LIBRARY below,
+     which is the only reason the two did not collide — a confirmed: false row
+     generates no redirect. The owner confirmed the service is now sold, using
+     a botanical product labeled for mosquitoes and ticks plus a bifenthrin
+     granule labeled for ticks and fleas, so both mosquito entries came out of
+     RETIRED_TO_LIBRARY in the same commit. Turning this to true without
+     removing them would fail the redirect integrity check on a duplicate
+     source, which is the check doing its job.
+
+     The demand evidence was already in the Search Console export and nobody
+     had looked: /mosquito-control-services/ carried 2,983 impressions at an
+     average position of 30, and the query "bellingham mosquito control" 461
+     impressions at position 12.8 — with zero clicks, because the URL redirected
+     to the pest library hub, which does not mention mosquitoes. Three
+     Sedro-Woolley mosquito queries add about 1,123 impressions at position 8
+     to 8.6. That is demand we were already ranking for and discarding. */
   {
     slug: 'mosquito-control', name: 'Mosquito Control', short: 'Mosquitoes',
-    category: 'stinging-flying', confirmed: false, legacy: ['mosquito-control'],
+    category: 'stinging-flying', confirmed: true,
+    legacy: ['mosquito-control', 'mosquito-control-services'],
   },
 
   /* ---------------- household ---------------- */
@@ -151,6 +169,28 @@ export const services: Service[] = [
   {
     slug: 'flea-control', name: 'Flea Control', short: 'Fleas',
     category: 'household', confirmed: true, legacy: ['flea-control', 'flea-exterminator'],
+  },
+  /* NEW 12 Nov 2026, and it reverses a published position rather than filling a
+     gap. Three pages said in plain words that we did not treat for ticks —
+     /guides/ticks-in-washington/, /pest-library/western-black-legged-tick/ and
+     the RETIRED_TO_LIBRARY note below. The owner confirmed tick treatment is
+     now sold, so those pages were corrected in the same commit rather than left
+     to contradict this row.
+
+     Sold as margin work, not as a broadcast whole-yard acaricide, and the
+     service page says so. The tick load here does not justify the broadcast
+     version: Dykstra et al. (Emerging Infectious Diseases 26(4)) found 4.0% of
+     western black-legged ticks carrying B. burgdorferi and counted 68 in-state
+     human cases across 2011–2016 for the whole state. The guide's judgment
+     that a whole-yard program is disproportionate here still stands and was
+     kept, because a service existing does not make the arithmetic change.
+
+     Grouped with fleas rather than with mosquitoes on purpose. It is one visit
+     commercially, but a tick is not a flying insect and the categories drive
+     nav; fleas are its nearest neighbor in how people think about it. */
+  {
+    slug: 'tick-control', name: 'Tick Control', short: 'Ticks',
+    category: 'household', confirmed: true, legacy: ['tick-control'],
   },
   {
     slug: 'silverfish-control', name: 'Silverfish Control', short: 'Silverfish',
@@ -279,17 +319,24 @@ export const RETIRED_TO_EXCLUSION = ['bat-exclusion', 'bat-removal', 'bird-contr
  * live sitemap on 31 Aug 2026 that have no equivalent among the 23 live
  * spokes, because Sasquatch does not sell a named service for them.
  *
- * Crickets, springtails and ticks are occasional-invader work absorbed into a
- * general visit rather than sold as a product; mosquito control is not offered
- * at all. None of them justifies a spoke, and none of them should 404 either —
- * the old site ranked for some of these terms.
+ * Crickets and springtails are occasional-invader work absorbed into a general
+ * visit rather than sold as a product. Neither justifies a spoke, and neither
+ * should 404 either — the old site ranked for some of these terms.
+ *
+ * TICKS AND MOSQUITOES LEFT THIS LIST ON 12 Nov 2026, which is the case this
+ * comment was written to guard against and then got right. The last line of it
+ * said not to promote one of these without the owner confirming it is work we
+ * sell; the owner confirmed both, so both were promoted to real spokes with
+ * written pages, and the three pages that said we did not do tick work were
+ * corrected at the same time. The rule held. What it protected against was a
+ * page existing before the service did, and that is still the rule.
  *
  * They 301 to the pest library, which is the honest destination: it tells the
  * visitor what the insect is and how we would actually handle it, without
  * implying a service line that does not exist. Do not promote one of these to
  * a spoke without the owner confirming it is work we sell.
  */
-export const RETIRED_TO_LIBRARY = ['cricket-control', 'springtail-control', 'tick-control', 'mosquito-control', 'mosquito-control-services'] as const;
+export const RETIRED_TO_LIBRARY = ['cricket-control', 'springtail-control'] as const;
 
 export const refusals = [
   {
