@@ -384,9 +384,33 @@
     "https://www.sasquatchpestcontrol.com/locations/maple-falls/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/es/resena/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/review/": "2026-11-12",
-    "https://www.sasquatchpestcontrol.com/services/fly-control/how-long-do-flies-live/": "2026-11-12"
+    "https://www.sasquatchpestcontrol.com/services/fly-control/how-long-do-flies-live/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/guides/common-house-bugs-in-washington/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/guides/rats-in-washington/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/guides/spiders-in-washington-state/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/guides/ticks-in-washington/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/guides/wasps-and-hornets-of-washington/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/guides/whatcom-county-pest-calendar/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/pest-library/carpenter-ant/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/pest-library/carpet-beetle/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/pest-library/clover-mite/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/pest-library/false-black-widow/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/pest-library/giant-house-spider/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/pest-library/hobo-spider/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/pest-library/silverfish/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/pest-library/western-black-legged-tick/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/pest-library/wolf-spider/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/services/bee-removal/ground-bees-or-yellowjackets/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/services/cockroach-control/are-there-cockroaches-in-washington/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/services/spider-control/brown-recluse-spiders-in-washington/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/services/attic-insulation/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/services/crawlspace-restoration/": "2026-11-12"
   },
   "runs": [
+    {
+      "at": "2026-11-13T02:17:24.229Z",
+      "count": 20
+    },
     {
       "at": "2026-11-12T15:50:35.348Z",
       "count": 394
