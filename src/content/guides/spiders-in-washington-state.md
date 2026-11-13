@@ -1,5 +1,5 @@
 ---
-cluster: seasonal
+cluster: identification
 title: "Common Spiders in Washington State"
 description: "Which spiders actually live in Washington state, which two matter, and which of the frightening ones are not here at all — written for Whatcom County."
 h1: "Common Spiders in Washington State"
@@ -121,8 +121,11 @@ rather than bite unless she is guarding eggs.
 
 If you are east of the mountains and you find one of these in the garage, treat
 it seriously. If you are in Ferndale and you have found a shiny black spider,
-the overwhelming likelihood is that it is a young orbweaver or a false widow,
-and we would far rather look at a photograph than have you reach for anything.
+the overwhelming likelihood is that it is a young orbweaver or a
+[false black widow](/pest-library/false-black-widow/), and we would far rather
+look at a photograph than have you reach for anything. That profile covers the
+difference in detail, because it is the spider behind nearly every widow
+question we are asked.
 
 ## Giant house spider, the big one in the bathtub
 
@@ -251,7 +254,7 @@ turf and the wall so there is nothing to walk in from.
 They are also the reason tiny red spiders is one of the highest-volume spider
 searches in the country while being almost entirely not about spiders. There is
 more on them, including what to do about a wall that gets them every year, on
-[clover mites in Bellingham homes](/blog/clover-mites-invading-your-home/).
+[the clover mite profile](/pest-library/clover-mite/).
 
 ## Black spiders in Washington state, in order of likelihood
 

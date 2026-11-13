@@ -26,8 +26,20 @@
  * 70% indexed is a consolidation candidate as a tier) can be read directly.
  * Both languages share a tier: a Spanish city page is a city page.
  *
- * lastmod comes from the file's mtime, which after a clean build is the build
- * time — honest, if coarse. It is deliberately NOT invented per page.
+ * lastmod is the date the page itself declares as dateModified — the last
+ * real edit to its source, read from that file's git history by
+ * scripts/content-dates.mjs (Keystone v3.2 §6.6). It is taken out of the built
+ * HTML for the same reason the title and the robots meta are: what the page
+ * says about itself, not a second copy of it.
+ *
+ * IT USED TO BE THE FILE'S mtime, and that was wrong in a way that was costing
+ * us something (fixed 12 Nov 2026). After a clean build every file's mtime is
+ * the build time, so all 404 URLs claimed to have changed on every build. The
+ * sitemap was telling the truth about nothing — and scripts/indexnow.mjs, which
+ * submits the difference between one build and the next, therefore submitted
+ * every URL every day. Its own run log reads 388, 388, 388. That is what Bing
+ * was reporting back as "IndexNow is in batch mode", and it is the half of
+ * that bug which the fix in .github/workflows/indexnow.yml did not reach.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -80,6 +92,11 @@ const priorityFor = (url) => {
   return '0.6';
 };
 
+/* The page's own dateModified, which BaseLayout writes into its JSON-LD from
+   content-dates.json. A page that declares none falls back to the mtime — in
+   practice only the 404 and any page passed no `source` prop. */
+const declaredDate = (html) => (html.match(/"dateModified":\s*"(\d{4}-\d{2}-\d{2})/) || [])[1] || null;
+
 const byTier = new Map(TIERS.map(([name]) => [name, []]));
 let excluded = 0;
 for (const f of files) {
@@ -102,14 +119,20 @@ for (const f of files) {
     .replace(/&amp;/g, '&')
     .replace(/&#39;|&rsquo;/g, "'")
     .trim();
-  byTier.get(tierOf(url)).push({ url, title, lastmod: fs.statSync(f).mtime.toISOString().slice(0, 10) });
+  byTier.get(tierOf(url)).push({
+    url,
+    title,
+    lastmod: declaredDate(html) ?? fs.statSync(f).mtime.toISOString().slice(0, 10),
+  });
 }
 
 /* Stale single-file output from before segmentation, so a leftover can never
    be served beside the index. */
 for (const f of fs.readdirSync(DIR)) if (/^sitemap-.*\.xml$/.test(f)) fs.unlinkSync(path.join(DIR, f));
 
-const today = new Date().toISOString().slice(0, 10);
+/* Pacific, not UTC: at 4pm in Bellingham, toISOString() already reads tomorrow,
+   and a sitemap dated in the future is a sitemap a crawler is right to doubt. */
+const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
 const written = [];
 let total = 0;
 for (const [tier, entries] of byTier) {

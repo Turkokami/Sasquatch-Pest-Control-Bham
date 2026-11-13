@@ -202,6 +202,32 @@ which is how we handle that material out here.
 through the wet months where an entry point can go unnoticed for a whole season,
 so contamination is frequently more advanced than the owner expects.
 
+## What does attic cleanup actually involve?
+
+Removing contaminated insulation and nesting material, HEPA vacuuming the deck,
+treating the surfaces that need it, and only then re-insulating. The order is
+the whole job. Blowing new insulation over a contaminated deck buries the
+problem instead of solving it, and afterwards nobody can tell what is
+underneath.
+
+People search for attic cleanup as though it were one service. It is really
+four pieces of work that have to happen in sequence, and each is close to
+pointless out of order:
+
+1. **The animals first.** Exclusion and trapping, finished and verified. Attic
+   cleanup done while rodents still have access is cleanup that gets repeated.
+2. **Removal.** Contaminated insulation out, nesting material out, bagged at the
+   hatch rather than carried through the house.
+3. **Cleaning and treatment.** HEPA vacuuming the deck and the framing, then
+   treating where it is warranted.
+4. **Re-insulating.** To the right depth, with the ventilation checked, because
+   insulation installed over blocked soffit vents causes a different problem a
+   few winters later.
+
+That sequence is the same one the crawlspace work follows, for the same reasons.
+It is set out from the other end on
+[crawlspace cleanout and restoration](/services/crawlspace-restoration/).
+
 ## Where we hand off, and to whom
 
 We are a small local company and we would rather tell you the limits of that

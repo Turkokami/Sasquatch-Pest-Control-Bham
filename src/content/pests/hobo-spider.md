@@ -427,6 +427,24 @@ Send it over and we will tell you what we think, and we will tell you when the
 answer is that it cannot be resolved without a microscope. That answer is more
 useful than a confident guess, and considerably more common.
 
+## Hobo spiders in Washington, and in Oregon
+
+They are established across the Pacific Northwest, both states included, and
+have been for decades. What changed is not the range but the risk assessment:
+WSU Extension and the Washington State Department of Health both now treat the
+hobo spider as a species of no medical significance, and the CDC removed it from
+its venomous spiders list.
+
+This is the single most common thing people get wrong when they search for the
+species by state. They find that hobo spiders live in Washington, or in Oregon,
+and read that as confirmation of danger — when the presence was never the
+disputed part.
+
+For a house in Whatcom County the consequences are narrow. Hobo spiders are
+here, they are outnumbered by giant house spiders, you cannot tell the two apart
+without a microscope, and for safety purposes it does not matter which one you
+have. Everything above on this page is the long version of why.
+
 ## What you will not hear from us
 
 We will not tell you that the spider in your window well is a medical threat,

@@ -513,7 +513,7 @@
     },
     {
       "source": "/blog/brown-recluse-spiders/",
-      "destination": "/services/spider-control/is-this-a-hobo-spider/",
+      "destination": "/services/spider-control/brown-recluse-spiders-in-washington/",
       "permanent": true
     },
     {
@@ -524,6 +524,11 @@
     {
       "source": "/blog/carpenter-ants-vs-sugar-ants-bellingham/",
       "destination": "/services/ant-control/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/clover-mites-invading-your-home/",
+      "destination": "/pest-library/clover-mite/",
       "permanent": true
     },
     {
@@ -1568,7 +1573,7 @@
     },
     {
       "source": "/clover-mites-invading-your-home/",
-      "destination": "/blog/clover-mites-invading-your-home/",
+      "destination": "/pest-library/clover-mite/",
       "permanent": true
     },
     {

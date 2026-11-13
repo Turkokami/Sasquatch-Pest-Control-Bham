@@ -339,6 +339,30 @@ work costs. Doing it before listing removes a negotiating lever. Doing it after
 purchase is often the first thing a new owner of an older Bellingham home should
 budget for.
 
+## Does crawl space insulation need replacing after rodents?
+
+Only where it is actually contaminated, and that is a judgment made with a light
+and a camera rather than from the hatch. Insulation that is wet, compacted,
+soiled with urine and droppings, or packed with nesting material has stopped
+insulating and needs to come out. Insulation that is merely old usually does
+not.
+
+The distinction matters because crawl space insulation replacement is the most
+expensive line on most of these jobs, and it is the one easiest to sell on a
+photograph of the worst square foot under the house. We would rather show you
+the whole crawl space and let you see where the contamination actually stops.
+
+What makes it a replacement rather than a clean:
+
+- Batts that have fallen, slumped, or been pulled down into nesting
+- Urine staining and droppings through the fiber rather than sitting on top
+- Wet insulation, which is a moisture problem before it is a pest problem
+- Compaction, which destroys the loft the insulation works by
+- A smell that persists after the droppings have been removed
+
+And what does not: dust, age, a few droppings on the vapor barrier below, or a
+single bay something got into. Those get cleaned, and the rest stays.
+
 ## Questions worth asking any company
 
 If you are getting more than one quote for this work — and you should — these

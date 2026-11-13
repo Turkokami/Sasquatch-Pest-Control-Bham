@@ -128,6 +128,24 @@ export const PESTS: Pest[] = [
   { slug: 'cross-orbweaver', name: 'Cross orbweaver', scientific: 'Araneus diadematus', group: 'spiders' },
   { slug: 'cellar-spider', name: 'Cellar spider', scientific: 'Pholcus phalangioides', group: 'spiders' },
   { slug: 'yellow-sac-spider', name: 'Yellow sac spider', scientific: 'Cheiracanthium spp.', group: 'spiders' },
+  /* FAMILY-LEVEL, 12 Nov 2026, and deliberately. Washington has a good many
+     native wolf spiders and no single one of them is the animal people mean
+     when they use the word — the name gets applied to any big, fast, hairy
+     spider on a floor. A profile pinned to one species would answer a question
+     nobody is asking. The page's whole argument is that the family lives
+     outdoors on the ground and the indoor animal is a giant house spider, and
+     that argument is about Lycosidae, not about a species. Precedent for a
+     family-level row is `millipede`, below. */
+  { slug: 'wolf-spider', name: 'Wolf spider', scientific: 'Lycosidae', group: 'spiders' },
+  /* 12 Nov 2026, and it is NOT a hole in the inclusion standard above.
+     The standard refuses the black widow because we do not expect to find one
+     on a Whatcom County job. Steatoda grossa is the opposite case: the state
+     health department calls it common in Washington, the owner finds it
+     constantly, and it is what nearly every "I found a black widow" photograph
+     turns out to be. Listing it is the honest way to answer the widow question
+     — the page exists to say the real one is an eastern Washington animal, and
+     it can only say that credibly from a species we do claim lives here. */
+  { slug: 'false-black-widow', name: 'False black widow', scientific: 'Steatoda grossa', group: 'spiders' },
 
   /* Stinging insects */
   { slug: 'bald-faced-hornet', name: 'Bald-faced hornet', scientific: 'Dolichovespula maculata', group: 'stinging' },
@@ -178,6 +196,13 @@ export const PESTS: Pest[] = [
   { slug: 'earwig', name: 'European earwig', scientific: 'Forficula auricularia', group: 'invaders' },
   { slug: 'pillbug', name: 'Pillbug', scientific: 'Armadillidium vulgare', group: 'invaders' },
   { slug: 'millipede', name: 'Millipede', scientific: '', group: 'invaders' },
+  /* Added 12 Nov 2026. A mite rather than an insect, and the only non-insect
+     in this group, which is the point: "tiny red bugs" and "tiny red spiders"
+     are among the highest-volume pest searches in the country and almost none
+     of that traffic is looking for a spider or an insect. The species belongs
+     in the library on the ordinary test — we find it on Whatcom County jobs
+     every spring and fall, on the sunny elevation, every year. */
+  { slug: 'clover-mite', name: 'Clover mite', scientific: 'Bryobia praetiosa', group: 'invaders' },
 
   /* Fabric and pantry */
   { slug: 'webbing-clothes-moth', name: 'Webbing clothes moth', scientific: 'Tineola bisselliella', group: 'fabric-pantry' },
