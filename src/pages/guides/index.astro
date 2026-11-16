@@ -49,7 +49,11 @@ const inlinePhotos = inlinePhotosFor('/guides/');
 <BaseLayout
   source="src/pages/guides/index.astro"
   path={path}
-  title="Guides | Sasquatch Pest Control"
+  {/* Subject only — BaseLayout appends the brand via buildTitle, so a title
+      carrying the brand already came out as "Guides | Sasquatch Pest Control |
+      Sasquatch Pest Control". Every other hub index passes a subject-only
+      title; this one did not. Caught 15 Nov 2026. */}
+  title="Pest Control Guides | Whatcom County, WA"
   description="Rules, obligations and building science behind pest problems in Whatcom County — landlord duties, school notification, moisture and the pest year, with sources."
   kind="page"
   faqs={faqs}

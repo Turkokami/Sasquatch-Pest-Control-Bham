@@ -257,17 +257,13 @@ find them on the first warm afternoon in February when everything else is quiet.
 
 **Stored-product insects.** Beetles and moths in feed, seed and dried goods on the acreage. They arrive inside the product rather than through a door, so the work is finding the source lot rather than treating a perimeter.
 
-## Two things we will not sell you
+## One thing we will not sell you
 
 Moles come up constantly on Ferndale acreage and open lots, and we do not do
 mole trapping. Washington's rules on the methods that actually work are
 restrictive, the alternatives sold to homeowners are largely theatre, and we
 would rather send you to somebody who specializes in it than take money for a
 result we cannot stand behind.
-
-We also do not offer scent-detection dog work for bed bugs. It is a real
-discipline with real handlers and it is not something we are set up to provide,
-so if that is what a situation calls for we will say so and point you toward it.
 
 Being clear about the edges of what we do is part of the reason people keep
 calling us back for the things we are good at.
