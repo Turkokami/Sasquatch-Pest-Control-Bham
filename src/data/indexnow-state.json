@@ -41,7 +41,7 @@
     "https://www.sasquatchpestcontrol.com/locations/custer/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/locations/deming/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/locations/everson/": "2026-11-12",
-    "https://www.sasquatchpestcontrol.com/locations/ferndale/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/locations/ferndale/": "2026-11-15",
     "https://www.sasquatchpestcontrol.com/locations/lummi-island/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/locations/lynden/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/locations/mount-vernon/": "2026-11-12",
@@ -271,7 +271,7 @@
     "https://www.sasquatchpestcontrol.com/es/servicios/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/es/socios-de-confianza/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/gallery/": "2026-11-12",
-    "https://www.sasquatchpestcontrol.com/guides/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/guides/": "2026-11-15",
     "https://www.sasquatchpestcontrol.com/image-use/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/locations/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/network/": "2026-11-12",
@@ -404,9 +404,16 @@
     "https://www.sasquatchpestcontrol.com/services/cockroach-control/are-there-cockroaches-in-washington/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/services/spider-control/brown-recluse-spiders-in-washington/": "2026-11-12",
     "https://www.sasquatchpestcontrol.com/services/attic-insulation/": "2026-11-12",
-    "https://www.sasquatchpestcontrol.com/services/crawlspace-restoration/": "2026-11-12"
+    "https://www.sasquatchpestcontrol.com/services/crawlspace-restoration/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/services/mosquito-control/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/services/tick-control/": "2026-11-12",
+    "https://www.sasquatchpestcontrol.com/services/vole-control/": "2026-11-12"
   },
   "runs": [
+    {
+      "at": "2026-11-16T03:11:52.831Z",
+      "count": 5
+    },
     {
       "at": "2026-11-13T02:17:24.229Z",
       "count": 20
