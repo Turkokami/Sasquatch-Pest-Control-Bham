@@ -348,7 +348,7 @@ export const locationPhotos: Record<string, Photo> = {
     file: '/img/work/sasquatch-pest-control-truck-driveway-everson-wa.jpg',
     alt: 'A wrapped Sasquatch Pest Control pickup truck parked on a driveway beside a garage during a service visit',
     caption:
-      'On a service visit in Everson. Everson and the Nooksack valley around it are farm and river country, which keeps rodent and wildlife work steadier here than in town.',
+      'On a service visit in Everson. Everson and the Nooksack valley around it are farm and river country, which keeps rodent work steadier here than in town.',
   },
   sumas: {
     file: '/img/work/yellowjacket-nest-in-soffit-sumas-wa.jpg',

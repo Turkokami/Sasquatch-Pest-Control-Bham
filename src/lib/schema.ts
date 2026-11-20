@@ -344,19 +344,25 @@ function offerCatalogNode() {
     '@id': ID.catalog,
     name: 'Pest control, exclusion and restoration services',
     url: abs('/services/'),
+    /* Keystone v3.2 audit, 20 Nov 2026: `position` is not a property of Offer
+       (108 validator warnings). The order lives on a ListItem and the Offer
+       is its item. */
     itemListElement: liveServices().map((s, i) => ({
-      '@type': 'Offer',
-      '@id': ID.offer(s.slug),
+      '@type': 'ListItem',
       position: i + 1,
-      ...bedBugPricing(s.slug),
-      itemOffered: {
-        '@type': 'Service',
-        '@id': ID.service(`/services/${s.slug}/`),
-        name: s.name,
-        serviceType: categories[s.category],
-        url: abs(`/services/${s.slug}/`),
-        provider: { '@id': ID.local },
-        areaServed: territoryAreas(),
+      item: {
+        '@type': 'Offer',
+        '@id': ID.offer(s.slug),
+        ...bedBugPricing(s.slug),
+        itemOffered: {
+          '@type': 'Service',
+          '@id': ID.service(`/services/${s.slug}/`),
+          name: s.name,
+          serviceType: categories[s.category],
+          url: abs(`/services/${s.slug}/`),
+          provider: { '@id': ID.local },
+          areaServed: territoryAreas(),
+        },
       },
     })),
   };

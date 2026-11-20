@@ -1180,7 +1180,7 @@ export const business = {
            whole reason this was left blank. */
         issuerFull: 'AAC Distributing' as Owed<string>,
         issuerUrl: 'https://aacdistributing.com/' as Owed<string>,
-        appliesTo: 'rodent and wildlife exclusion, including preventative work',
+        appliesTo: 'rodent exclusion, including preventative work',
         via: 'owner-stated' as const,
         stated: '2026-09-02',
       },
