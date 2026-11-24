@@ -11,6 +11,7 @@ import Video from '../../../components/Video.astro';
 import { videoForService } from '../../../data/videos';
 import { servicePhotos } from '../../../data/photos';
 import Faq from '../../../components/Faq.astro';
+import ServiceReviews from '../../../components/ServiceReviews.astro';
 import Cta from '../../../components/Cta.astro';
 import LinkRail from '../../../components/LinkRail.astro';
 import { guideLinksFor } from '../../../lib/guides';
@@ -168,6 +169,9 @@ const photos = section && {
       3,000-word floor. Category: {categories[s.category]}.
     </div>
   )}
+
+  {/* Real Google reviews for this service, five stars only. */}
+  <ServiceReviews slug={s.slug} short={s.short} />
 
   <Faq items={faqs} />
 

@@ -3585,3 +3585,13 @@ footer.site ul.social li a:focus-visible {
   letter-spacing: 0.02em;
   color: var(--ink-3);
 }
+
+/* Service-page review strip (ServiceReviews.astro). Reuses the §27 cards;
+   only the spacing around the block is its own. */
+.service-reviews {
+  margin: var(--space-5) 0;
+}
+.service-reviews .review-score {
+  border-bottom: 0;
+  padding-bottom: 0;
+}

@@ -60,6 +60,9 @@
 export interface Review {
   /** First name and last initial, as published. Never the full name. */
   name: string;
+  /** Google star rating as shown on the profile. Service pages quote five
+      stars only (owner's rule, 24 Nov 2026); /reviews/ shows every one. */
+  stars: 1 | 2 | 3 | 4 | 5;
   /** Google's own relative stamp, exactly as it read on 7 Nov 2026. */
   age: string;
   /** `age` resolved to a calendar month. Approximate to about a week. */
@@ -78,6 +81,7 @@ export interface Review {
 export const reviews: Review[] = [
   {
     name: 'Bret B.',
+    stars: 5,
     age: '3 days ago',
     month: 'November 2026',
     localGuide: true,
@@ -86,6 +90,7 @@ export const reviews: Review[] = [
   },
   {
     name: 'David A.',
+    stars: 5,
     age: '1 week ago',
     month: 'October 2026',
     excerpt: true,
@@ -93,6 +98,7 @@ export const reviews: Review[] = [
   },
   {
     name: 'Peter W.',
+    stars: 5,
     age: '14 weeks ago',
     month: 'August 2026',
     excerpt: true,
@@ -100,6 +106,7 @@ export const reviews: Review[] = [
   },
   {
     name: 'Deborah L.',
+    stars: 5,
     age: '15 weeks ago',
     month: 'July 2026',
     job: 'Hornet & wasp extermination',
@@ -107,6 +114,7 @@ export const reviews: Review[] = [
   },
   {
     name: 'MicSuni T.',
+    stars: 5,
     age: '16 weeks ago',
     month: 'July 2026',
     job: 'Hornet & wasp extermination',
@@ -114,12 +122,14 @@ export const reviews: Review[] = [
   },
   {
     name: 'Oleg V.',
+    stars: 5,
     age: '19 weeks ago',
     month: 'June 2026',
     text: 'Kris and Tyson are exceptional in all the work they do. Were able to get out quick for a rodent infestation and were able to bullet proof the building in quick time for preventative maintenance.\n\nKeep it up',
   },
   {
     name: 'Tammy Y.',
+    stars: 5,
     age: '19 weeks ago',
     month: 'June 2026',
     job: 'Rodent extermination',
@@ -127,6 +137,7 @@ export const reviews: Review[] = [
   },
   {
     name: 'Maria G.',
+    stars: 5,
     age: '22 weeks ago',
     month: 'June 2026',
     localGuide: true,
@@ -135,6 +146,7 @@ export const reviews: Review[] = [
   },
   {
     name: 'Sarah G.',
+    stars: 5,
     age: '22 weeks ago',
     month: 'June 2026',
     job: 'Rodent extermination',
@@ -142,18 +154,21 @@ export const reviews: Review[] = [
   },
   {
     name: 'Bev K.',
+    stars: 5,
     age: '23 weeks ago',
     month: 'May 2026',
     text: 'Best Pest Co in ALL respects: Very Knowledgeable Pest Background; Quality service; Timely service; Integrity & Honesty',
   },
   {
     name: 'David S.',
+    stars: 5,
     age: '23 weeks ago',
     month: 'May 2026',
     text: 'I can’t say enough great things about Sasquatch Pest Control. Kris and Tyson are always so responsive, so helpful and so on-the-ball. We hired them for a rodent infestation, and since they’ve been on contract they’ve helped out with a gnarly sugar ant problem as well — and Kris even ID’d some harmless larval ladybugs for us, offering the sage advice to scrape em off and take ‘em outside where they’ll be happier :-) — and they did all this for free, under the initial rodent contract. They are always on-call for their clients. They won’t upsell you and are transparent and fair about their pricing. We feel so lucky to have found them and can recommend Sasquatch 1000%, without reservations. The best!',
   },
   {
     name: 'Duane A.',
+    stars: 5,
     age: '24 weeks ago',
     month: 'May 2026',
     job: 'Hornet & wasp extermination, Rodent extermination',
@@ -161,21 +176,51 @@ export const reviews: Review[] = [
   },
   {
     name: 'Kara B.',
+    stars: 5,
     age: '27 weeks ago',
     month: 'May 2026',
     text: 'They responded quickly and came out for a free estimate. They took the time to thoroughly inspect the area and explain what changes we could make to help prevent future infestations. In the end, we didn’t even need their services, which really speaks to their honesty and integrity. I truly appreciate their transparency and would highly recommend them to anyone looking for trustworthy, knowledgeable help',
   },
   {
     name: 'Janna C.',
+    stars: 5,
     age: '28 weeks ago',
     month: 'April 2026',
     text: 'Friendly, prompt and gives you all the info you need to know about the service',
   },
   {
     name: 'Andree B.',
+    stars: 5,
     age: '29 weeks ago',
     month: 'April 2026',
     job: 'Hornet & wasp extermination',
     text: 'Great experience. Such an easy gentleman to work with. Quickly took care of our problem with ease',
   },
 ];
+
+/**
+ * SERVICE-PAGE QUOTES — which reviews appear on which /services/<slug>/ page.
+ *
+ * Owner's rule (24 Nov 2026): five stars only. reviewsFor() enforces it, so a
+ * lower-rated review added to the list above can never land on a service page
+ * by accident — it still belongs on /reviews/, which hides nothing.
+ *
+ * ONE PAGE PER REVIEW. Every /services/ page is a sibling of every other, and
+ * the harness fails a 10+ word sentence shared by two siblings (check 3b).
+ * The quote also sits on /reviews/, so a second service page would put it on
+ * three pages and trip the sitewide rule too. Match each review to the job
+ * it actually describes, not to the page that wants filling.
+ */
+export const serviceReviewNames: Record<string, string[]> = {
+  'rodent-control': ['Sarah G.', 'Bret B.', 'Tammy Y.'],
+  'exclusion-and-repairs': ['Oleg V.', 'Peter W.'],
+  'wasp-control': ['Deborah L.', 'MicSuni T.', 'Andree B.'],
+  'ant-control': ['David S.'],
+};
+
+export function reviewsFor(slug: string): Review[] {
+  const wanted = serviceReviewNames[slug] ?? [];
+  return wanted
+    .map((n) => reviews.find((r) => r.name === n))
+    .filter((r): r is Review => !!r && r.stars === 5);
+}

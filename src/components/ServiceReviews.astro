@@ -1,0 +1,52 @@
+---
+/**
+ * ServiceReviews — two or three Google reviews from customers who hired us
+ * for THIS service, rendered as ordinary HTML so search engines and AI
+ * assistants can read them (a third-party review widget is an iframe they
+ * cannot). Same card markup and styles as /reviews/ (global.css §27).
+ *
+ * No Review or AggregateRating markup, for the reason given at length in
+ * src/data/reviews.ts. Five stars only — reviewsFor() enforces that.
+ * Renders nothing when a service has no matched reviews.
+ */
+import { reviewsFor } from '../data/reviews';
+import { business, isReady } from '../data/business';
+
+interface Props {
+  slug: string;
+  short: string;
+}
+const { slug, short } = Astro.props;
+const picks = reviewsFor(slug);
+---
+{picks.length > 0 && (
+  <section class="service-reviews" aria-labelledby="service-reviews-h">
+    <h2 id="service-reviews-h">What our customers wrote on Google</h2>
+    <div class="reviews">
+      {picks.map((r) => (
+        <figure class="review">
+          <blockquote>
+            {r.text.split(/\n{2,}/).filter(Boolean).map((para) => (
+              <p>{para.split('\n').map((line, i) => (i > 0 ? [<br />, line] : line))}</p>
+            ))}
+          </blockquote>
+          <figcaption>
+            <b>{r.name}</b>
+            <span class="review-meta">
+              Google review · {r.month}
+              {r.localGuide ? ' · Google Local Guide' : ''}
+              {r.excerpt ? ' · extract' : ''}
+            </span>
+            {r.job && <span class="review-job">{r.job}</span>}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+    <p class="review-score">
+      <a href="/reviews/">More reviews</a>
+      {isReady(business.gbpUrl) && (
+        <>{' · '}<a href={business.gbpUrl as string} rel="nofollow noopener">Our Google profile</a></>
+      )}
+    </p>
+  </section>
+)}
