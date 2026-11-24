@@ -1317,6 +1317,16 @@
       "permanent": true
     },
     {
+      "source": "/pest-control-maple-falls-wa/",
+      "destination": "/locations/maple-falls/",
+      "permanent": true
+    },
+    {
+      "source": "/rodent-exclusion-bellingham/",
+      "destination": "/services/rodent-control/",
+      "permanent": true
+    },
+    {
       "source": "/glacier-wa-pest-control/",
       "destination": "/locations/maple-falls/",
       "permanent": true
@@ -2107,6 +2117,15 @@
     }
   ],
   "headers": [
+    {
+      "source": "/docs/products/(.*)\\.pdf",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
     {
       "source": "/llms.txt",
       "headers": [
