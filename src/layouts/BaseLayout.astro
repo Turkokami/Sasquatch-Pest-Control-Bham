@@ -11,6 +11,8 @@
    Vite fingerprints and serves from this origin. Only the weights the CSS
    actually uses (sans 400/500/600/800, serif 600/700) and only the Latin
    subset, which covers every character the Spanish pages use. */
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import '@fontsource/dm-sans/latin-400.css';
 import '@fontsource/dm-sans/latin-500.css';
 import '@fontsource/dm-sans/latin-600.css';
@@ -286,6 +288,9 @@ const ld = graphScript({ ...schemaProps, title: finalTitle, description: finalDe
 
     {/* The single JSON-LD emitter. No plugin, no second block, ever. */}
     <script type="application/ld+json" set:html={ld} is:inline />
+    {/* Vercel Web Analytics and Speed Insights: first-party, cookieless. */}
+    <Analytics />
+    <SpeedInsights />
   </head>
   <body>
     {/* Three words, first in the tab order, and the only way a keyboard user
