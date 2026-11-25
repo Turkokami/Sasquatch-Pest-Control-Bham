@@ -70,7 +70,7 @@ const watch = `https://www.youtube.com/watch?v=${v.id}`;
         />
         <span class="videoplay" aria-hidden="true"></span>
         <span class="videolabel">
-          Play<span class="videodur"> · {v.duration}</span>
+          Play video<span class="videodur"> ({v.duration})</span>
         </span>
       </a>
     </div>
@@ -79,7 +79,12 @@ const watch = `https://www.youtube.com/watch?v=${v.id}`;
         press play" — was removed at the owner's request: the runtime is
         already on the play button, and how the embed loads is a thing this
         site does rather than a thing a customer needs told. */}
-    {v.caption && <figcaption>{v.caption}</figcaption>}
+    {/* A plain link to the same film, so the reader can watch it on YouTube
+        itself without loading the player here (25 Nov 2026). */}
+    <figcaption>
+      {v.caption && <>{v.caption}{' '}</>}
+      <a href={watch} rel="noopener">Watch on YouTube</a>.
+    </figcaption>
   </figure>
 </section>
 

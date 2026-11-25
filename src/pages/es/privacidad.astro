@@ -20,7 +20,7 @@ const a = business.address;
 const updated = '2026-09-27';
 
 const answer =
-  'Esta página explica qué recoge Sasquatch Pest Control cuando usted usa este sitio web, quién procesa esa información y cómo pedirnos que la borremos. En resumen: recogemos lo que usted escribe en nuestro formulario de contacto, estadísticas básicas de uso a través de Google Analytics y registros normales del servidor. No vendemos su información y no la compartimos para publicidad.';
+  'Esta página explica qué recoge Sasquatch Pest Control cuando usted usa este sitio web, quién procesa esa información y cómo pedirnos que la borremos. En resumen: recogemos lo que usted escribe en nuestro formulario de contacto, estadísticas básicas de uso a través de Google Analytics si usted lo permite, y registros normales del servidor. No vendemos su información y no la compartimos para publicidad.';
 ---
 <BaseLayout
   path={path}
@@ -52,6 +52,14 @@ const answer =
       aparato y qué sitio lo mandó aquí. También registra cuándo alguien toca
       un número de teléfono en este sitio, para saber qué páginas producen
       llamadas. Eso no nos dice quién es usted — son conteos, no nombres.
+    </p>
+
+    <p>
+      Google Analytics solo funciona si usted pulsa "Permitir" en la barra de
+      la parte inferior de la página. Si su navegador envía Global Privacy
+      Control o Do Not Track, queda apagado a menos que usted lo active. Puede
+      cambiar su respuesta en cualquier momento con el enlace "Opciones de
+      analítica" del pie de página.
     </p>
 
     <p>
@@ -92,6 +100,10 @@ const answer =
         momento no se carga nada de YouTube y YouTube no sabe que usted estuvo
         aquí. Usamos su reproductor sin cookies.
       </li>
+      <li>
+        <strong>Google Maps</strong> aparece en las páginas de cada zona, y solo
+        se carga desde Google después de que usted pulsa "Mostrar el mapa".
+      </li>
     </ul>
 
     <h2>Llamadas y mensajes de texto</h2>
@@ -113,7 +125,7 @@ const answer =
     <h2>Cookies</h2>
 
     <p>
-      Google Analytics usa cookies para distinguir una visita de otra. Nada más
+      Google Analytics, si usted lo permite, usa cookies para distinguir una visita de otra. Nada más
       en este sitio pone una: no hay red de publicidad, no hay píxel de
       rastreo y no hay cookie de sesión, porque el sitio no tiene dónde
       iniciar sesión.

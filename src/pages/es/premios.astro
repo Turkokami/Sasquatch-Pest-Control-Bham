@@ -323,8 +323,8 @@ const rails = [
               </b>
               <span>
                 <span lang="en">{p.publication}</span>
-                {shown(p.published) ? ` · ${esDate(p.published)}` : ''}
-                {shown(p.author) ? ` · ${p.author}` : ''}
+                {shown(p.published) ? `, ${esDate(p.published)}` : ''}
+                {shown(p.author) ? `, ${p.author}` : ''}
               </span>
               <span class="via">
                 {p.via === 'publisher-verified'

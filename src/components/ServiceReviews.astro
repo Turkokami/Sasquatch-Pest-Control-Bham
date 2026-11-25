@@ -33,9 +33,9 @@ const picks = reviewsFor(slug);
           <figcaption>
             <b>{r.name}</b>
             <span class="review-meta">
-              Google review · {r.month}
-              {r.localGuide ? ' · Google Local Guide' : ''}
-              {r.excerpt ? ' · extract' : ''}
+              Google review, {r.month}
+              {r.localGuide ? ', Google Local Guide' : ''}
+              {r.excerpt ? ', extract' : ''}
             </span>
             {r.job && <span class="review-job">{r.job}</span>}
           </figcaption>
@@ -45,7 +45,7 @@ const picks = reviewsFor(slug);
     <p class="review-score">
       <a href="/reviews/">More reviews</a>
       {isReady(business.gbpUrl) && (
-        <>{' · '}<a href={business.gbpUrl as string} rel="nofollow noopener">Our Google profile</a></>
+        <>{', or see '}<a href={business.gbpUrl as string} rel="nofollow noopener">our Google profile</a></>
       )}
     </p>
   </section>

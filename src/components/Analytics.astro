@@ -37,95 +37,157 @@
  * would pollute the owner's data with our own page views — which is the same
  * reason GA4's "internal traffic" exclusion exists and is on the setup list.
  *
+ * CONSENT FIRST, from 25 Nov 2026 (owner-approved). gtag.js is not fetched,
+ * configured or sent anything until the visitor presses "Allow" on the bar
+ * below. The choice is kept in localStorage under `analytics-consent`
+ * (`granted` / `denied`). Global Privacy Control or Do Not Track count as
+ * "denied" unless the visitor opts in from the footer's "Analytics choices"
+ * link, which clears the choice and shows the bar again. Same measurement ID.
+ * The timing notes below still apply once consent is given.
+ *
  * IP anonymization is not configured because GA4 does it by default and always
  * — there is no switch, unlike Universal Analytics. Recorded so nobody adds a
  * dead parameter believing it does something.
  */
 import { business } from '../data/business';
 
+interface Props {
+  lang?: 'en' | 'es';
+}
+const { lang = 'en' } = Astro.props;
+const es = lang === 'es';
 const id = business.ga4;
 /* import.meta.env.PROD is false for `astro dev`, true for `astro build`. */
 const enabled = Boolean(id) && import.meta.env.PROD;
 ---
 {enabled && (
   <>
+    {/* The consent bar. Hidden until the script decides it is needed; plain
+        buttons, both the same size and weight, no wall. */}
+    <div
+      class="consentbar"
+      id="analytics-consent"
+      role="region"
+      aria-label={es ? 'Opciones de analítica' : 'Analytics choice'}
+      hidden
+    >
+      <p>
+        {es
+          ? 'Usamos Google Analytics para ver qué páginas ayudan a la gente. ¿Permite la analítica?'
+          : 'We use Google Analytics to see which pages help people. Allow analytics?'}
+      </p>
+      <div class="consentbar-actions">
+        <button type="button" data-consent="granted">{es ? 'Permitir' : 'Allow'}</button>
+        <button type="button" data-consent="denied">{es ? 'No, gracias' : 'No thanks'}</button>
+      </div>
+    </div>
     <script is:inline define:vars={{ id }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { window.dataLayer.push(arguments); }
-      window.gtag = gtag;
-      gtag('js', new Date());
-      gtag('config', id);
-
-      /* THE TAG IS FETCHED AFTER THE PAGE HAS LOADED, and this was measured
-         rather than assumed. With the ordinary async snippet — the one Google
-         hands you — the same build scored:
-
-              without gtag   98    LCP 2.41s   TBT 0ms
-              with gtag      94    LCP 3.08s   TBT 23ms
-
-         async means it does not BLOCK, but it is still fetched immediately on
-         discovery, so 90KB of it competes with the hero image and the fonts
-         for a throttled connection. Four points and two thirds of a second of
-         Largest Contentful Paint, paid by every visitor, to measure the
-         visit.
-
-         Waiting for `load` puts the fetch after everything a reader is
-         waiting for, so it competes with nothing. requestIdleCallback then
-         waits for a gap in the main thread, with a timeout so it cannot be
-         postponed forever on a busy page.
-
-         WHAT THIS COSTS, stated plainly: somebody who opens a page and leaves
-         before `load` fires is not counted. On a site that paints in about a
-         second that is a small slice, and undercounting the very shortest
-         visits is a better trade than making every visit slower. Events fired
-         before the tag arrives are NOT lost — dataLayer above queues them and
-         gtag.js drains the queue when it loads. */
       (() => {
-        const fetchTag = () => {
-          const s = document.createElement('script');
-          s.async = true;
-          s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
-          document.head.appendChild(s);
+        const KEY = 'analytics-consent';
+        const read = () => { try { return localStorage.getItem(KEY); } catch (e) { return null; } };
+        const write = (v) => { try { localStorage.setItem(KEY, v); } catch (e) {} };
+        const clear = () => { try { localStorage.removeItem(KEY); } catch (e) {} };
+        const bar = document.getElementById('analytics-consent');
+        const optedOutByBrowser =
+          navigator.globalPrivacyControl === true ||
+          navigator.doNotTrack === '1' ||
+          window.doNotTrack === '1';
+
+        let started = false;
+        const start = () => {
+          window['ga-disable-' + id] = false;
+          if (started) return;
+          started = true;
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { window.dataLayer.push(arguments); }
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', id);
+
+          /* THE TAG IS FETCHED AFTER THE PAGE HAS LOADED, and this was
+             measured rather than assumed: with the ordinary async snippet the
+             same build lost four Lighthouse points and two thirds of a second
+             of LCP. Waiting for `load`, then an idle gap, puts the fetch after
+             everything a reader is waiting for. Events fired before the tag
+             arrives are queued in dataLayer and drained when it loads. */
+          const fetchTag = () => {
+            const s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+            document.head.appendChild(s);
+          };
+          const whenIdle = () =>
+            'requestIdleCallback' in window
+              ? requestIdleCallback(fetchTag, { timeout: 3000 })
+              : setTimeout(fetchTag, 1200);
+          if (document.readyState === 'complete') whenIdle();
+          else window.addEventListener('load', whenIdle, { once: true });
+
+          /* One delegated listener rather than one per tel: link. */
+          document.addEventListener('click', (e) => {
+            const a = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
+            if (!a) return;
+            gtag('event', 'call_click', {
+              page_path: location.pathname,
+              link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80),
+            });
+          }, { passive: true });
+
+          document.addEventListener('click', (e) => {
+            const b = e.target && e.target.closest && e.target.closest('[data-listen-play]');
+            if (b) gtag('event', 'listen_start', { page_path: location.pathname });
+          }, { passive: true });
+
+          /* Fires once, when the form is actually on screen. */
+          const form = document.getElementById('lead-form');
+          if (form && 'IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+              for (const entry of entries) {
+                if (!entry.isIntersecting) continue;
+                gtag('event', 'form_view', { page_path: location.pathname });
+                io.disconnect();
+              }
+            }, { threshold: 0.3 });
+            io.observe(form);
+          }
         };
-        const whenIdle = () =>
-          'requestIdleCallback' in window
-            ? requestIdleCallback(fetchTag, { timeout: 3000 })
-            : setTimeout(fetchTag, 1200);
-        if (document.readyState === 'complete') whenIdle();
-        else window.addEventListener('load', whenIdle, { once: true });
-      })();
 
-      (() => {
-        /* One delegated listener rather than one per link: a page can carry a
-           dozen tel: links (masthead, sticky bar, CTA, footer) and binding
-           each would be a dozen listeners for one event. */
-        document.addEventListener('click', (e) => {
-          const a = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
-          if (!a) return;
-          gtag('event', 'call_click', {
-            page_path: location.pathname,
-            link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80),
+        const showBar = (focus) => {
+          if (!bar) return;
+          bar.hidden = false;
+          if (focus) {
+            const first = bar.querySelector('button');
+            if (first) first.focus();
+          }
+        };
+        const hideBar = () => { if (bar) bar.hidden = true; };
+
+        if (bar) {
+          bar.addEventListener('click', (e) => {
+            const b = e.target && e.target.closest && e.target.closest('[data-consent]');
+            if (!b) return;
+            const v = b.getAttribute('data-consent');
+            write(v);
+            hideBar();
+            if (v === 'granted') start();
+            /* Withdrawn after the tag loaded on this page: stop sending. */
+            else window['ga-disable-' + id] = true;
           });
-        }, { passive: true });
-
-        document.addEventListener('click', (e) => {
-          const b = e.target && e.target.closest && e.target.closest('[data-listen-play]');
-          if (b) gtag('event', 'listen_start', { page_path: location.pathname });
-        }, { passive: true });
-
-        /* Fires once, when the form is actually on screen. An IntersectionObserver
-           rather than a scroll handler, because this runs on every page. */
-        const form = document.getElementById('lead-form');
-        if (form && 'IntersectionObserver' in window) {
-          const io = new IntersectionObserver((entries) => {
-            for (const entry of entries) {
-              if (!entry.isIntersecting) continue;
-              gtag('event', 'form_view', { page_path: location.pathname });
-              io.disconnect();
-            }
-          }, { threshold: 0.3 });
-          io.observe(form);
         }
+
+        /* The footer's "Analytics choices" link: forget the choice, ask again. */
+        document.addEventListener('click', (e) => {
+          const a = e.target && e.target.closest && e.target.closest('[data-analytics-choices]');
+          if (!a) return;
+          e.preventDefault();
+          clear();
+          showBar(true);
+        });
+
+        const choice = read();
+        if (choice === 'granted') start();
+        else if (choice === 'denied') {}
+        else if (!optedOutByBrowser) showBar(false);
       })();
     </script>
   </>

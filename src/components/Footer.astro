@@ -297,7 +297,9 @@ const colophon = COLOPHON.flatMap((c) => {
         one place is one edit away from being reachable from none. */}
     <p class="colophon">
       © {new Date().getFullYear()} {business.name}.
-      {colophon.map((c) => <> · <a href={c.href}>{c.label}</a></>)}
+      {colophon.map((c, i) => <>{i === 0 ? ' ' : ', '}<a href={c.href}>{c.label}</a></>)}
+      {/* Reopens the analytics consent bar (Analytics.astro). */}
+      {', '}<a href="#analytics-consent" data-analytics-choices>{es ? 'Opciones de analítica' : 'Analytics choices'}</a>.
     </p>
   </div>
 </footer>

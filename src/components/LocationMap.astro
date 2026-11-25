@@ -129,16 +129,23 @@ const title = lang === 'es' ? `Mapa de ${label}, Washington` : `Map of ${label},
       reads; "Where Fairhaven, Bellingham is" does not. */}
   <h2>{lang === 'es' ? `${label[0].toUpperCase()}${label.slice(1)} en el mapa` : `${label} on the map`}</h2>
   <figure>
-    <div class="mapframe">
-      {/* data-src, not src — the frame is started by the script below. */}
-      <iframe
-        data-src={src}
-        id="location-map"
-        title={title}
-        width="640"
-        height="480"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+    {/* CLICK TO LOAD, from 25 Nov 2026 (owner-approved privacy fix). Nothing
+        is fetched from Google until the reader presses the button: the box
+        holds the place name and a button, and the script below swaps in the
+        iframe on the click. Without JavaScript the "Open in Google Maps" link
+        in the caption is the map. */}
+    <div class="mapframe" id="location-map" data-src={src} data-title={title}>
+      <div class="mapholder">
+        <p>{lang === 'es' ? `Mapa de ${label}, Washington` : `Map of ${label}, Washington`}</p>
+        <button type="button" class="mapbutton">
+          {lang === 'es' ? 'Mostrar el mapa' : 'Show map'}
+        </button>
+        <p class="mapnote">
+          {lang === 'es'
+            ? 'El mapa se carga desde Google al pulsar el botón.'
+            : 'The map loads from Google when you press the button.'}
+        </p>
+      </div>
     </div>
     {lang === 'es' ? (
       <figcaption>
@@ -157,7 +164,9 @@ const title = lang === 'es' ? `Mapa de ${label}, Washington` : `Map of ${label},
   </figure>
 </section>
 
-{/* THE MAP LOADS ON THE READER'S FIRST INTERACTION — from 10 Sep 2026.
+{/* SUPERSEDED 25 Nov 2026: the map now loads only when the reader presses
+    "Show map" (see the note above the frame). The history below is kept.
+    THE MAP LOADED ON THE READER'S FIRST INTERACTION — from 10 Sep 2026.
 
     The paragraph at the top of this file says `loading="lazy"` stopped saving
     the fetch once the block moved up beside the lead form: the frame is near
@@ -177,25 +186,20 @@ const title = lang === 'es' ? `Mapa de ${label}, Washington` : `Map of ${label},
     exactly what that link is there for. One map per page, so one id. */}
 <script is:inline>
   (function () {
-    var frame = document.getElementById('location-map');
-    if (!frame) return;
-    var started = false;
-    function start() {
-      if (started) return;
-      started = true;
-      frame.src = frame.getAttribute('data-src');
-    }
-    ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (ev) {
-      window.addEventListener(ev, start, { once: true, passive: true });
+    var box = document.getElementById('location-map');
+    if (!box) return;
+    var btn = box.querySelector('button');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var f = document.createElement('iframe');
+      f.src = box.getAttribute('data-src');
+      f.title = box.getAttribute('data-title');
+      f.width = '640';
+      f.height = '480';
+      f.referrerPolicy = 'no-referrer-when-downgrade';
+      box.replaceChildren(f);
+      f.focus();
     });
-    window.addEventListener('load', function () { setTimeout(start, 5000); });
-    if (!('IntersectionObserver' in window)) return;
-    var io = new IntersectionObserver(function (entries) {
-      for (var i = 0; i < entries.length; i++) {
-        if (entries[i].isIntersecting) { io.disconnect(); start(); return; }
-      }
-    }, { rootMargin: '0px' });
-    io.observe(frame);
   })();
 </script>
 

@@ -121,8 +121,8 @@ const inlinePhotos = inlinePhotosFor('/what-we-use/');
               <b>{p.name}</b>
               <span class="reg-meta">
                 {p.actives.join(' + ')}
-                {p.epaReg ? <> · EPA Reg. {p.epaReg}</> : null}
-                {' · '}{p.target}
+                {p.epaReg ? <>, EPA Reg. {p.epaReg}</> : null}
+                {', '}{p.target}
               </span>
               <span class="reg-docs">
                 {p.label ? <a href={p.label}>Label (PDF)</a> : <span>Label on request</span>}
@@ -265,9 +265,9 @@ const inlinePhotos = inlinePhotosFor('/what-we-use/');
           {retired.map((p) => (
             <li>
               <b>{p.name}</b> — {p.actives.join(' + ')}
-              {p.epaReg ? <> · EPA Reg. {p.epaReg}</> : null}
-              {p.label ? <> · <a href={p.label}>Label (PDF)</a></> : null}
-              {p.sds ? <> · <a href={p.sds}>SDS (PDF)</a></> : null}
+              {p.epaReg ? <>, EPA Reg. {p.epaReg}</> : null}
+              {p.label ? <>, <a href={p.label}>Label (PDF)</a></> : null}
+              {p.sds ? <>, <a href={p.sds}>SDS (PDF)</a></> : null}
             </li>
           ))}
         </ul>

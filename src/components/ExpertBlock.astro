@@ -63,7 +63,7 @@ const psize = portrait ? intrinsicSize(portrait) : null;
     )}
     <div>
       <b>{person.name}</b>
-      <span>{[title, cred ? `${person.credentialName} (${cred})` : null].filter(Boolean).join(' · ')}</span>
+      <span>{[title, cred ? `${person.credentialName} (${cred})` : null].filter(Boolean).join(', ')}</span>
       {cats && <span class="cats">WSDA categories: {cats}.</span>}
       <p>{person.bio}</p>
     </div>

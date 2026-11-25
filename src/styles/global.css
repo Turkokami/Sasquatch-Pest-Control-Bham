@@ -663,8 +663,8 @@ hr {
 
 blockquote {
   margin: var(--space-4) 0;
+  /* Indented, no colored side bar (25 Nov 2026). */
   padding: 0.1rem 0 0.1rem 1.25rem;
-  border-left: 3px solid var(--accent-line);
   font-family: var(--serif);
   font-size: 1.1em;
   line-height: 1.5;
@@ -704,16 +704,21 @@ a:hover {
 /* An eyebrow: the small uppercase label that names a block without competing
    with the heading above it. Used by the quick answer, the rail headings, the
    source list and the verdict. */
+/* 25 Nov 2026: no uppercase eyebrow labels. The quick answer and verdict
+   carry a plain bold lead-in ("Quick answer:"), and the rail headings are
+   ordinary small headings in sentence case. */
 .answer-box::before,
-.verdict::before,
+.verdict::before {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--ink);
+}
 .sources > h2,
 section[data-boilerplate]:not(.cta) > h2 {
   font-family: var(--sans);
-  font-size: var(--fs-eyebrow);
-  font-weight: 600;
-  letter-spacing: var(--track-eyebrow);
-  text-transform: uppercase;
-  color: var(--ink-3);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--ink-2);
   line-height: 1.3;
 }
 
@@ -734,26 +739,26 @@ section[data-boilerplate]:not(.cta) > h2 {
    the edge reads as lit without taking the button's job. The left edge stays
    heavier than the rest, which is what tells you it is a pull-out rather than
    a panel. */
+/* 25 Nov 2026: plain neutral box — thin full border, light ground, no
+   colored side bar, no glow ring. */
 .answer-box {
-  background: color-mix(in srgb, var(--marker) 7%, var(--surface));
-  border: 1px solid color-mix(in srgb, var(--marker) 30%, transparent);
-  border-left: 3px solid var(--marker);
+  background: var(--well);
+  border: 1px solid var(--rule);
   border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-1), 0 0 0 4px color-mix(in srgb, var(--marker) 7%, transparent);
   padding: var(--space-3) var(--space-4) var(--space-3) var(--space-3);
   margin: 0 0 var(--space-5);
   max-width: var(--measure);
 }
 .answer-box::before {
-  content: "Quick answer";
+  content: "Quick answer:";
   display: block;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.3rem;
 }
 /* The label is CSS content, so harness check 6c (English chrome on /es/
    pages) cannot see it — and it read "Quick answer" on every Spanish page
    until 11 Sep 2026. BaseLayout sets <html lang>, which is what this keys on. */
 :lang(es) .answer-box::before {
-  content: "Respuesta rápida";
+  content: "Respuesta rápida:";
 }
 .answer-box p {
   margin: 0;
@@ -1880,7 +1885,6 @@ footer.site .colophon {
   gap: 1rem;
   background: var(--surface);
   border: 1px solid var(--rule);
-  border-left: 3px solid var(--accent-line);
   border-radius: var(--radius-sm);
   padding: var(--space-3) var(--space-3);
   margin: var(--space-4) 0;
@@ -1969,7 +1973,6 @@ footer.site .colophon {
 .stub {
   background: var(--well);
   border: 1px solid var(--rule);
-  border-left: 3px solid var(--notice);
   border-radius: var(--radius-sm);
   padding: var(--space-3);
   font-size: var(--fs-sm);
@@ -2002,17 +2005,16 @@ footer.site .colophon {
   padding: var(--space-3);
   background: var(--surface);
   border: 1px solid var(--rule);
-  border-left: 3px solid var(--marker);
   border-radius: var(--radius-sm);
   max-width: var(--measure);
 }
 .verdict::before {
-  content: "Our verdict";
+  content: "Our verdict:";
   display: block;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 :lang(es) .verdict::before {
-  content: "Nuestro veredicto";
+  content: "Nuestro veredicto:";
 }
 .verdict strong {
   font-weight: 600;
@@ -2122,8 +2124,6 @@ footer.site .colophon {
 }
 .team figcaption {
   margin-top: var(--space-2);
-  padding-left: var(--space-2);
-  border-left: 2px solid var(--accent-line);
   font-size: var(--fs-sm);
   color: var(--ink-3);
   max-width: 58ch;
@@ -2157,8 +2157,6 @@ footer.site .colophon {
    so a photograph placed in the text reads the same as one placed by hand. */
 .inline-photo figcaption {
   margin-top: var(--space-2);
-  padding-left: var(--space-2);
-  border-left: 2px solid var(--accent-line);
   font-size: var(--fs-xs);
   line-height: var(--lh-snug);
   color: var(--ink-3);
@@ -2203,8 +2201,6 @@ footer.site .colophon {
 }
 .franchise figcaption {
   margin-top: var(--space-2);
-  padding-left: var(--space-2);
-  border-left: 2px solid var(--accent-line);
   font-size: var(--fs-xs);
   line-height: var(--lh-snug);
   color: var(--ink-3);
@@ -2384,13 +2380,11 @@ footer.site .colophon {
   display: grid;
   gap: var(--space-2);
 }
+/* Flat ruled list, not stacked cards (25 Nov 2026). */
 .press li {
   margin: 0;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-left: 3px solid var(--accent-line);
-  border-radius: var(--radius-sm);
-  padding: var(--space-3);
+  border-top: 1px solid var(--rule);
+  padding: var(--space-3) 0;
   display: flex;
   gap: var(--space-3);
   align-items: flex-start;
@@ -2501,8 +2495,6 @@ footer.site .colophon {
 /* Matches .team figcaption in §20 — a caption is a caption, wherever it is. */
 .mapblock figcaption {
   margin-top: var(--space-2);
-  padding-left: var(--space-2);
-  border-left: 2px solid var(--accent-line);
   font-size: var(--fs-sm);
   color: var(--ink-3);
   max-width: 58ch;
@@ -2580,8 +2572,6 @@ footer.site .colophon {
    is, and this one is load-bearing rather than decorative. */
 .leadform-fallback {
   margin-top: var(--space-2);
-  padding-left: var(--space-2);
-  border-left: 2px solid var(--accent-line);
   font-size: var(--fs-sm);
   color: var(--ink-3);
   max-width: 58ch;
@@ -2609,7 +2599,7 @@ footer.site .colophon {
   max-width: var(--measure);
   padding: var(--space-4);
   background: var(--well);
-  border-left: 3px solid var(--accent-line);
+  border: 1px solid var(--rule);
   border-radius: var(--radius-sm);
 }
 .training h2 {
@@ -2770,8 +2760,6 @@ footer.site .colophon {
 }
 .ep-note {
   margin-top: var(--space-3);
-  padding-left: var(--space-2);
-  border-left: 2px solid var(--accent-line);
   font-size: var(--fs-sm);
   color: var(--ink-3);
 }
@@ -2943,8 +2931,6 @@ footer.site .colophon {
 }
 .videoblock figcaption {
   margin-top: var(--space-2);
-  padding-left: var(--space-2);
-  border-left: 2px solid var(--accent-line);
   font-size: var(--fs-sm);
   color: var(--ink-3);
   max-width: 58ch;
@@ -3537,12 +3523,10 @@ footer.site ul.social li a:focus-visible {
      splits across the column boundary and half a sentence appears at the top
      of the next column with somebody else's name under it. */
   break-inside: avoid;
-  margin: 0 0 var(--space-3);
-  padding: var(--space-3);
-  background: var(--well);
-  border: 1px solid var(--rule);
-  border-left: 3px solid var(--marker);
-  border-radius: var(--radius-sm);
+  /* Flat quotation with a thin rule above, not a card (25 Nov 2026). */
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) 0 0;
+  border-top: 1px solid var(--rule);
 }
 /* No decorative quotation mark. A glyph before the first word reads as part
    of the sentence to a screen reader and pushes the real first word out of
@@ -3594,4 +3578,93 @@ footer.site ul.social li a:focus-visible {
 .service-reviews .review-score {
   border-bottom: 0;
   padding-bottom: 0;
+}
+
+/* ------------------------------------------ click-to-load map (25 Nov 2026) */
+/* The placeholder that stands in the map box until the reader presses
+   "Show map". Plain text and one button; LocationMap.astro swaps in the
+   iframe on the click. */
+.mapholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  text-align: center;
+  background: var(--well);
+  color: var(--ink-2);
+}
+.mapholder p {
+  margin: 0;
+}
+.mapholder .mapnote {
+  font-size: var(--fs-sm);
+  color: var(--ink-3);
+}
+.mapbutton,
+.consentbar button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.6rem 1.1rem;
+  font: inherit;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--rule-2);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.mapbutton:hover,
+.consentbar button:hover {
+  border-color: var(--ink-3);
+}
+.mapbutton:focus-visible,
+.consentbar button:focus-visible {
+  outline: 2px solid var(--link-hover);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------- analytics consent bar (25 Nov 2026) */
+/* Bottom of the page, no wall, two buttons of equal weight. On a phone it
+   sits above the fixed call bar rather than over it. */
+.consentbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 45;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2) var(--space-3);
+  padding: var(--space-3);
+  background: var(--surface);
+  color: var(--ink);
+  border-top: 1px solid var(--rule-2);
+  font-size: var(--fs-sm);
+}
+.consentbar[hidden] {
+  display: none;
+}
+.consentbar p {
+  margin: 0;
+  max-width: 46ch;
+}
+.consentbar-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+@media (max-width: 47.99rem) {
+  .consentbar {
+    bottom: calc(3.25rem + env(safe-area-inset-bottom, 0));
+  }
+}
+@media print {
+  .consentbar {
+    display: none;
+  }
 }

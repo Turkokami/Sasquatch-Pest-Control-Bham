@@ -159,7 +159,7 @@ export const UI: Record<Lang, Strings> = {
   en: {
     htmlLang: 'en-US',
     skip: 'Skip to content',
-    phoneBarTagline: 'Family-owned pest control & exclusion · Whatcom & Skagit County',
+    phoneBarTagline: 'Family-owned pest control and exclusion in Whatcom and Skagit County',
     navPrimaryLabel: 'Primary',
     /* SEVEN PRIMARY ITEMS, Keystone v3.2 Part 3.5 (14 Sep 2026): "Four to seven
        primary items. Below four and the tree is hidden; above seven and nothing
@@ -201,7 +201,7 @@ export const UI: Record<Lang, Strings> = {
   es: {
     htmlLang: 'es-US',
     skip: 'Saltar al contenido',
-    phoneBarTagline: 'Control de plagas y exclusión, empresa familiar · Condados de Whatcom y Skagit',
+    phoneBarTagline: 'Control de plagas y exclusión, empresa familiar, en los condados de Whatcom y Skagit',
     navPrimaryLabel: 'Principal',
     /* Generated from PAGE_PAIRS so it can only ever list pages that exist.
        Adding a Spanish page is one line in that map plus a label here; the
