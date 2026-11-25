@@ -10,7 +10,7 @@ factsTable:
   - label: "What it covers"
     value: "Norway rats, roof rats, house mice and deer mice in the crawlspace, attic and walls"
   - label: "Included"
-    value: "Finding and sealing the entries, trapping along mapped routes, return visits until it is quiet, and cleanup"
+    value: "Finding and sealing the entries, trapping along mapped routes, return visits until activity stops, and cleanup"
   - label: "Not included"
     value: "Nuisance wildlife larger than a rat, which is not work we take on"
   - label: "How long it takes"
@@ -93,7 +93,7 @@ sit untouched in a house that has mice.
 
 ## How they are getting in
 
-Every rodent job is really an exclusion job, and exclusion starts with knowing
+Every rodent job is an exclusion job, and exclusion starts with knowing
 where to look. On Whatcom County housing stock, the same short list accounts for
 most of what we find.
 
@@ -157,7 +157,7 @@ the subfloor in a crawlspace.
 The search is a sequence rather than a hunt. Heaviest droppings first — that is
 the nearest the nest gets to open ground. Then rub marks and the greasy smears
 along a joist edge or a pipe run, which point at the travel route. Then the
-quiet places along that route that nobody opens: the gap behind the dishwasher,
+undisturbed places along that route that nobody opens: the gap behind the dishwasher,
 the void under a built-in oven, the insulation above a bathroom ceiling, the
 corner of the garage where the Christmas boxes live.
 
@@ -227,7 +227,7 @@ the numbers the activity justifies. We return to check and reset, because
 populations come out over days rather than at once. Trapping after exclusion —
 not before — so we are not removing animals while the door is still open.
 
-**Monitoring.** We keep the line running until it goes quiet, and quiet means
+**Monitoring.** We keep the line running until activity stops, and that means
 several visits with nothing, not one.
 
 **Cleanup and restoration.** Droppings and contaminated material removed,
@@ -390,7 +390,7 @@ turns exclusion from good practice into a compliance item, and it means a
 landlord who seals the crawlspace is buying two things at once.
 
 We work with tenants, owners and property managers, and where the answer
-depends on which of those you are, we will say so rather than quietly billing
+depends on which of those you are, we will say so rather than silently billing
 whoever called.
 
 ## Commercial rodent work

@@ -55,7 +55,7 @@ faqs:
   - q: "What is the single most valuable thing a facility manager can do?"
     a: "Book the exterior work for late July or August rather than October. Dock seals, door sweeps, vent screening, roofline openings and the grounds walk for ground nests all belong before the autumn push, and every one of them is cheaper and more effective then."
   - q: "Why do stored-product pests always seem to be found in winter?"
-    a: "Because they were established in the autumn and discovered when somebody finally pulled the shelving. The population develops quietly in dry goods through the warm months, and the winter stock count is simply the first time anyone looked behind the pallets."
+    a: "Because they were established in the autumn and discovered when somebody finally pulled the shelving. The population develops in dry goods through the warm months, and the winter stock count is simply the first time anyone looked behind the pallets."
   - q: "Do you need a contract to service a commercial site?"
     a: "No. We work commercial and institutional accounts without a term agreement, on the view that a program should be kept because it is worth keeping. Scheduling, documentation and scope are agreed in advance either way."
 ---
@@ -116,7 +116,7 @@ devices more often than exterior. And â€” the part facilities most often miss â€
 the data those devices produce is expected to be trended and passed to whoever
 coordinates the program so that somebody can act on it.
 
-The practical translation is that an auditor is not really auditing the pest
+The practical translation is that an auditor is not auditing the pest
 control company. They are auditing whether your facility has a system, whether
 the system produced information, and whether anybody did anything with it. A
 folder of visit slips with no trend and no corrective action satisfies the first
@@ -144,7 +144,7 @@ out separately in
 
 ## January and February
 
-**Quiet outside, busy inside, and the best two months for administration.**
+**Slow outside, busy inside, and the best two months for administration.**
 
 Nothing new is arriving. What surfaces now is the autumn's population making
 itself known: rodents established in a service void or a ceiling space, and
@@ -248,7 +248,7 @@ The rodent push begins as nights cool. Outdoor cover dies back, natural food
 declines, and a heated building with a quarter-inch gap becomes a considerably
 better proposition than it was in July. Spiders reach maturity and start
 walking, which on a commercial site is a cosmetic and complaint problem rather
-than a real one. Yellowjacket colonies reach maximum size and maximum
+than a structural one. Yellowjacket colonies reach maximum size and maximum
 defensiveness in precisely the weeks when outdoor work is happening.
 
 In Bellingham specifically, the student return concentrates turnover, travel and
@@ -266,7 +266,7 @@ commonly made by a facility reacting late.
 **The peak of the indoor year, and the point at which prevention has closed.**
 
 Rodent pressure is at its height and stays there. Overwintering insects move
-into wall voids, soffits and ceiling spaces, and the walls go quiet again until
+into wall voids, soffits and ceiling spaces, and the walls go still again until
 the heating wakes them. Wasp colonies collapse with the first hard frosts, and
 nests found now are almost always finished.
 
@@ -281,7 +281,7 @@ next summer's scope, and it is the thing most facilities fail to keep.
 
 ## December
 
-**Settled in, and quiet in a misleading way.**
+**Settled in, and still in a misleading way.**
 
 What is inside is inside, and it does not decline seasonally because the
 building supplies what the weather does not. Holiday trading raises waste volume
@@ -393,7 +393,7 @@ If a facility manager takes one thing from this page, take the sequence.
 
 **January.** Read last year's trend as a whole. Budget the summer work.
 
-**April.** Grounds walk for founding wasp nests. Book contractors.
+**April.** Walk the grounds for founding wasp nests and book contractors.
 
 **May and June.** Groundwork: drainage, dumpster placement, drains, grading.
 
@@ -429,6 +429,6 @@ in November.
 Related reading: [commercial pest control](/services/commercial-pest-control/)
 for the service itself,
 [pest exclusion and repairs](/services/exclusion-and-repairs/) for the work that
-most of this page is really about, and
+most of this page is about, and
 [the Whatcom County pest year](/guides/the-whatcom-county-pest-year/) for the
 residential version of the same calendar.

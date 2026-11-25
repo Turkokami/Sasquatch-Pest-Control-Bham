@@ -17,7 +17,7 @@ steps:
   - "Fix the water first or alongside our borate treatment of the wood, and leave a failed sill plate or post to a builder; soil treatment is the wrong tool for dampwood"
 faqs:
   - q: "Are dampwood termites as serious as other termites?"
-    a: "They are limited by moisture, which is a real constraint, but the timber they occupy is structural — sill plates, joists, posts and beams. The damage matters because of where it is, and because the decay that let them in matters too."
+    a: "They are limited by moisture, which is a constraint, but the timber they occupy is structural — sill plates, joists, posts and beams. The damage matters because of where it is, and because the decay that let them in matters too."
   - q: "Can you treat them if somebody else identified them?"
     a: "Yes. Treatment of wood-destroying organisms is within our licensed categories, and where a buyer's inspector or another professional has identified the finding in their report, we handle the treatment side of it."
   - q: "Do you carry out the inspection yourselves?"
@@ -51,7 +51,7 @@ it there is water that has been present long enough for decay to establish. Of
 the two, the water is generally the more consequential and always the more
 urgent to fix.
 
-That framing matters because it determines what a real solution looks like. A
+That framing matters because it determines what a solution looks like. A
 treatment applied to wet wood in a wet crawlspace is a temporary measure. A
 treatment applied after the water is corrected and the failed timber is replaced
 is a resolution.

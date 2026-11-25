@@ -111,7 +111,7 @@ export const hormigaLadrona: EsPlaga = {
     },
     {
       q: '¿Son peligrosas?',
-      a: 'No para las personas. Son una molestia y contaminan la comida. Una nota real es que sirven de huésped intermedio para una solitaria de las aves de corral, lo que importa si tiene gallinas, no para la cocina.',
+      a: 'No para las personas. Son una molestia y contaminan la comida. Un dato útil es que sirven de huésped intermedio para una solitaria de las aves de corral, lo que importa si tiene gallinas, no para la cocina.',
     },
   ],
 };

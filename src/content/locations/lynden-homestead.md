@@ -62,8 +62,7 @@ season, so it is worth being precise.
 **Moles** work below ground. They tunnel in pursuit of worms and larvae and
 push the spoil to the surface as conical mounds. They eat essentially no plant
 material at all. What a homeowner sees is mounds and a lawn that feels spongy
-or lifts underfoot, and what they conclude is that something is eating the
-grass. Nothing is.
+or lifts underfoot, and what they conclude is that something is eating the grass. Nothing is eating it.
 
 **Voles** work at the surface. They cut shallow runways through the thatch and
 ground cover, leave small clean openings, and do eat plant material — roots,
@@ -263,7 +262,7 @@ reasonably feel they were sold something. Where the answer involves the
 association or the course, we will say so and put it in writing so it can be
 handed over.
 
-## Winter, when the ground is quiet
+## Winter, when the ground is dormant
 
 The season people ignore here is the one where the useful work happens.
 
@@ -277,7 +276,7 @@ the foundation line is visible, the ground is not being irrigated, and a
 crawlspace inspection in January tells you what the wet months are actually
 doing under the floor rather than what a dry July suggests.
 
-If a job here is going to be done once and done properly, the quiet months are
+If a job here is going to be done once and done properly, the slow months are
 when to do it.
 
 ## Placement on a course boundary

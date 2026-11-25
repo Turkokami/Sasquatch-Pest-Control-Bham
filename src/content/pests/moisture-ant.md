@@ -39,7 +39,7 @@ faqs:
   - q: "What is the papery material in the wall cavity?"
     a: "Carton — a spongy layered construction the colony builds from chewed wood and soil. It is quite distinctive and it looks nothing like the clean sanded void a carpenter ant leaves, which makes it a reliable identification on its own."
   - q: "If I fix the leak, do they leave?"
-    a: "Generally the colony fails as the wood dries, and where the decayed section is cut out and replaced it goes with it. What does not happen is the reverse: treating them while the water continues buys a quiet season and nothing more."
+    a: "Generally the colony fails as the wood dries, and where the decayed section is cut out and replaced it goes with it. What does not happen is the reverse: treating them while the water continues buys a season without ants and nothing more."
   - q: "Are they related to the yellow ants in my lawn?"
     a: "Closely. The same genus nests in soil, under stones and patio slabs, and around foundations, feeding on honeydew from root aphids. Those outdoor mounds are harmless and are not a reason to treat anything."
 sources:
@@ -171,7 +171,7 @@ straight line to the wet timber, and by the following week nobody will be able t
 remember which side of the room it started on.
 
 Keep a dozen specimens in a sealed bag while you are at it. An identification
-from a real insect takes half a minute and removes every guess from the visit.
+from the insect itself takes half a minute and removes every guess from the visit.
 
 One further point, because it is misread constantly: the size of the swarm is not
 the size of the problem. It reflects colony maturity and the weather on the day.
@@ -292,7 +292,7 @@ there is close to pointless, and we will tell you which trade you actually need.
 The order that works is the same in every one of those cases: find the water,
 establish how far the damage runs, repair it, replace what has lost strength, and
 only then decide whether anything remains to treat. Reversing that order gets you
-a quiet season, and it removes the marker that was pointing at the decay, which is
+a season without ants, and it removes the marker that was pointing at the decay, which is
 a genuinely bad trade in a sill plate.
 
 ## What they live on, and the lawn ants you can ignore

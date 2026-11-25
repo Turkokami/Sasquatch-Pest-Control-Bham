@@ -17,7 +17,7 @@ The mindset that works: look at the house the way a rodent would. Get low, get u
 
 ## Which materials actually keep rodents out?
 
-This is where most DIY rodent-proofing quietly fails: the wrong materials. Rodents chew straight through expanding foam and standard caulk, so those can't be your barrier — they're only useful for holding a real barrier in place. Use gnaw-resistant materials to block the gap:
+This is where most DIY rodent-proofing fails: the wrong materials. Rodents chew straight through expanding foam and standard caulk, so those can't be your barrier — they're only useful for holding a barrier in place. Use gnaw-resistant materials to block the gap:
 
 - **Steel wool or copper mesh** — packed tightly into gaps around pipes, wires, and small holes. Rodents can't easily chew through it, and copper mesh resists rust better in our damp climate.
 - **Hardware cloth (wire mesh)** — 1/4-inch galvanized mesh for covering vents, weep holes, and larger openings. Standard window screen is not rodent-proof; hardware cloth is.

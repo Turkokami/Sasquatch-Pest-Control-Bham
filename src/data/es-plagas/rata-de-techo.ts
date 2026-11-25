@@ -61,7 +61,7 @@ export const rataDeTecho: EsPlaga = {
     {
       h2: 'Cómo se atrapa a una trepadora',
       parrafos: [
-        'El animal no está en el piso. UC IPM pide para la rata de techo trampas lejos del suelo — repisas, vigas, ramas —: en un ático, soleras, tirantes, vigas junto a una línea de manchas, y el tubo o cable que usa de puente, con las trampas fijadas para que no caigan al aislamiento. Cuente con varias noches de nada: se cree que su miedo a lo nuevo es más marcado que el de la noruega, y poner las trampas sin armar unos días es una técnica real. Y cantidad: un camino con una colonia pide una línea, no un par.',
+        'El animal no está en el piso. UC IPM pide para la rata de techo trampas lejos del suelo — repisas, vigas, ramas —: en un ático, soleras, tirantes, vigas junto a una línea de manchas, y el tubo o cable que usa de puente, con las trampas fijadas para que no caigan al aislamiento. Cuente con varias noches de nada: se cree que su miedo a lo nuevo es más marcado que el de la noruega, y poner las trampas sin armar unos días es una técnica, no una demora. Y cantidad: un camino con una colonia pide una línea, no un par.',
         'Nunca cebo adentro de un techo: un animal que se muere en un sofito queda donde nadie llega sin abrir, con semanas de olor y moscas. Afuera, solo en estaciones a prueba de manipulación y donde la presión lo justifica, con el mismo cuidado de siempre: una rata envenenada sigue moviéndose, lo que se la come se lleva la dosis, y las lechuzas y aguilillas son las que más pierden.',
       ],
     },

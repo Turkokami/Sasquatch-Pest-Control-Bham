@@ -110,7 +110,7 @@ around them.
 **The shop and equipment storage.** Wiring is the expensive one. A rodent-chewed
 harness on a tractor or a mixer is a repair bill and a day lost in the middle of
 whatever season it happens in, and it happens because the shop is warm, dry,
-quiet at night and full of soft material.
+undisturbed at night and full of soft material.
 
 **Electrical panels and control rooms.** Small, warm, undisturbed and full of
 places to nest. Also the place where a failure is worst.
@@ -147,7 +147,7 @@ appropriate to the setting and the label, targeted rodenticide placement in
 structural voids and locked stations. This is the part that is visible, and it
 is the part that does the least good on its own.
 
-**Write down what we found and what we did.** Every visit. See the record
+**Write down what we found and what we did.** We do it on every visit. See the record
 section below, because on a farm this is not paperwork, it is the thing that
 gets produced when somebody asks.
 
@@ -245,7 +245,7 @@ both halves of that — nests in wall and ceiling voids and under eaves, and
 defensive behavior rising as the season goes on. August and September are the
 weeks for it.
 
-**Birds** in open buildings are a real problem on some sites, but bird work is not
+**Birds** in open buildings are a problem on some sites, but bird work is not
 something we take on; we will say so and point you to a specialist. The feed
 spillage that draws them draws rodents as well, and that part is ours.
 
@@ -273,7 +273,7 @@ managed rather than reacted to.
 
 ## The year on a Whatcom County farm
 
-**Late winter into spring.** The quiet-looking part of the year and one of the
+**Late winter into spring.** The slow-looking part of the year and one of the
 most useful. This is when the [exclusion work](/services/exclusion-and-repairs/) on the sealable buildings actually
 gets done, because the weather allows it and nothing else is competing for the
 time. It is also when a rodent population that moved in over the autumn is most

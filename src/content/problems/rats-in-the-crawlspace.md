@@ -21,7 +21,7 @@ faqs:
   - q: "Do I have to replace the insulation?"
     a: "Not always, and we will not pretend otherwise to sell the work. Scattered droppings on an otherwise sound batt do not justify a full replacement. Widespread nesting, saturation with urine or material pulled down across the floor does."
   - q: "Is it dangerous to go under there myself?"
-    a: "There is some real risk and it is manageable. Do not disturb dry droppings or nesting material, ventilate the space first, wet material down rather than sweeping it, and wear a proper respirator rather than a dust mask. Otherwise leave it."
+    a: "There is some risk and it is manageable. Do not disturb dry droppings or nesting material, ventilate the space first, wet material down rather than sweeping it, and wear a proper respirator rather than a dust mask. Otherwise leave it."
   - q: "Why not just put bait under the house?"
     a: "Because you lose control of where the animal dies and you learn nothing about the size of the problem. We trap under buildings so that the rats come out, get counted and get removed rather than decomposing in your floor structure."
   - q: "How long before it is actually over?"
@@ -159,7 +159,7 @@ consistent routes. Mice are light enough that their traces are subtle and often
 only visible in a dusty vapor barrier.
 
 **Gnaw damage.** Rat gnawing is coarse, with visible individual tooth marks and
-real material removal. Mouse gnawing is fine and shallow.
+significant material removal. Mouse gnawing is fine and shallow.
 
 **Openings used.** A mouse gets through a quarter-inch gap.
 [UC IPM](https://ipm.ucanr.edu/home-and-landscape/rats/)
@@ -186,7 +186,7 @@ above it, and it is worth reversing that emphasis for a moment.
 
 **Wiring.** Cable sheathing is a material rodents work on, and a crawlspace is
 full of it — power runs, low-voltage cable, thermostat wiring, sometimes
-communications. This is the damage that carries real consequence and it is
+communications. This is the damage that carries consequence and it is
 entirely invisible from inside the house.
 
 **Ducting.** Flexible duct is easily breached. A hole in a supply run means you

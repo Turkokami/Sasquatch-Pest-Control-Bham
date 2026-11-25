@@ -35,8 +35,7 @@ faqs:
 
 The usual description goes something like this: wasps are going in and out of a
 small hole in the siding, under a soffit, at the corner of a window trim, beside
-a dryer vent, or where a cable enters the wall. There is no nest visible. Just
-traffic.
+a dryer vent, or where a cable enters the wall. There is no nest visible, just traffic.
 
 That is a void nest, and it is one of the more common wasp calls we take here.
 What has happened is that a founding queen in spring found a small opening in
@@ -61,8 +60,7 @@ manageable job into a bad afternoon.
 **Do not seal the entrance while the colony is active.**
 
 It is the intuitive response — the wasps are getting in through that hole, so
-close the hole. What actually happens is that the colony finds itself shut in.
-Wasps chew. They will work at the material around the blocked opening looking
+close the hole. What actually happens is that the colony finds itself shut in, and the wasps chew. They will work at the material around the blocked opening looking
 for a way out, and they will take the path of least resistance.
 
 From inside a wall cavity, the path of least resistance is very often not back

@@ -89,7 +89,7 @@ Treatment removes the rodents you have now; prevention keeps new ones out. In Be
 
 A few well-placed snap traps can handle a minor mouse problem in a sealed home. Call a professional if you're finding droppings in multiple areas, hearing sounds in several locations, still seeing activity weeks after catching some, finding gnawing on structural wood or wiring, seeing actual rats, dealing with heavy harborage like woodpiles and outbuildings, or you can't work out how they're getting in.
 
-At Sasquatch Pest Control, every rodent job starts with coming out and looking properly — which species, where they're active, how they're getting in, and what's making your property attractive. From there we build a species-appropriate plan with clear exclusion recommendations and follow-up. The company was built around straight talk and real solutions, not repeat calls that treat symptoms.
+At Sasquatch Pest Control, every rodent job starts with coming out and looking properly — which species, where they're active, how they're getting in, and what's making your property attractive. From there we build a species-appropriate plan with clear exclusion recommendations and follow-up. The company was built around straight talk and solutions, not repeat calls that treat symptoms.
 
 ## Common questions
 

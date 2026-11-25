@@ -1,6 +1,6 @@
 ---
 species: cellar-spider
-title: "Cellar Spider: The Real Daddy Longlegs Story"
+title: "Cellar Spider: The Daddy Longlegs Story, Corrected"
 description: "The long-legged spider in the basement corner is harmless, eats other spiders, and the story about it having the deadliest venom on earth is pure folklore."
 h1: "Cellar Spider — Pholcus phalangioides"
 treatment: rarely-warranted
@@ -66,7 +66,7 @@ faqs:
     a: "Because they are built that way on purpose. A cellar spider spins an irregular mesh of loose threads rather than a patterned sheet or wheel, and it hangs beneath it upside down. The tangle catches dust, which is why an old one looks gray and abandoned."
   - q: "Why does it shake itself in the web when I get close?"
     a: "That is a defense. Penn State records the spider vibrating rapidly in a circular motion when disturbed, which turns a thin outline into a blur that is genuinely hard to focus on. It costs the animal nothing and it works on birds and on people."
-  - q: "Do they really eat other spiders?"
+  - q: "Do they eat other spiders?"
     a: "Yes. Utah State Extension lists their prey as insects and other arachnids, and describes the group as beneficial. A cellar spider population in a crawlspace is a standing predator on the smaller spiders and insects that live down there with it."
   - q: "How long do they live?"
     a: "Longer than most people assume. Penn State gives about a year to reach maturity and two or more years as an adult, with both sexes active year-round inside a heated building. That is why the same corner can hold the same spider for several winters."
@@ -114,7 +114,7 @@ are not spiders, in the same way that butterflies are insects but are not
 beetles. They build no web, they produce no silk, and — this is the part that
 matters below — they have no venom of any kind. None at all.
 
-**Crane flies** — family Tipulidae. Insects. Six legs, two wings, and in British
+**Crane flies** — family Tipulidae — are insects, with six legs and two wings, and in British
 and some Canadian usage the name daddy longlegs refers to these and to nothing
 else. In this county the relevant one is the European crane fly, and [WSU
 Hortsense](https://hortsense.cahnrs.wsu.edu/fact-sheet/european-crane-fly/) records the adults emerging from lawns and pastures from late August
@@ -386,12 +386,12 @@ agree.
 Rarely worth treating, and never worth treating for what the animal might do,
 because it does not do anything.
 
-There are situations where the work is real. A garage, crawlspace or basement
+There are situations where the work is worth doing. A garage, crawlspace or basement
 carrying years of accumulated webbing that somebody wants back. A seasonal
 property at Birch Bay or Semiahmoo that stood closed through the wet months and
 now has silk across every opening. A commercial site with a legitimate
 appearance standard. A household where somebody's fear of spiders is shaping how
-they use their own home, which is a real problem and not a trivial one.
+they use their own home, which is a problem and not a trivial one.
 
 All four of those are cleaning and exclusion jobs with a spider attached. We are
 happy to do them and we would rather call them what they are.

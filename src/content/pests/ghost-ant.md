@@ -56,7 +56,7 @@ faqs:
 
 ## The honest answer first
 
-The ghost ant is a real insect and it is a genuine structural pest. It is also
+The ghost ant does exist and it is a genuine structural pest. It is also
 tropical, it is not established outdoors anywhere in the Pacific Northwest, and
 the [regional extension guide to the key ant pests of Washington, Oregon and
 Idaho](https://pubs.extension.wsu.edu/product/identification-and-habits-of-key-ant-pests-in-the-pacific-northwest/) does not include it.
@@ -151,7 +151,7 @@ foragers and warns the colony.
 So the identification is not academic. It decides whether the treatment
 concentrates the problem or removes it.
 
-## If it really is a ghost ant
+## If it is a ghost ant
 
 The situation would look like this.
 
@@ -190,7 +190,7 @@ matters more than being quick.
 And if it turned out to be the odorous house ant it almost certainly is, that is
 a much easier conversation and a much cheaper job for the person paying.
 
-## What this page is really for
+## What this page is for
 
 Most people who arrive here will have searched "tiny ants in the house" and
 landed on the most exotic-sounding answer, which is a normal thing for a search
@@ -303,7 +303,7 @@ whether anything is moving in the media.
 shows itself as persistent thin trails along edges — bench legs, irrigation
 lines, the junction of a wall and a floor — rather than as a swarm.
 
-**Report it rather than treating it quietly.** An unusual ant in a nursery is
+**Report it rather than treating it without telling anyone.** An unusual ant in a nursery is
 worth identifying properly, because the business consequence of shipping one
 out to a customer is worse than the cost of a specimen being looked at.
 
@@ -331,7 +331,7 @@ is a normal stage rather than a result.
 
 ## What would make us change our minds about this page
 
-We would rather write this down than quietly revise it later.
+We would rather write this down than silently revise it later.
 
 This page says ghost ants are rare here and usually a misidentification. If that
 stops being true — if we confirm them on jobs in this county more than

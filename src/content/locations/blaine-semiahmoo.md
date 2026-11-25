@@ -16,7 +16,7 @@ faqs:
     a: "It can be treated, but you should understand what that does and does not achieve. In a shared-wall building, voids, chases and soffits run between units, and a population living in that shared space treats your unit as one room of a larger territory. Unit-level work handles what is in your unit. It does not remove the source when the source is in the structure."
   - q: "There are rodents around the marina. Is that normal?"
     a: "It is common wherever there is gear storage, food, waste and continuous cover in one place, and a marina has all four year-round. It is manageable, but it is a site-level problem rather than a boat-level one — sealing one locker while the ones either side of it stay open moves the animals rather than removing them."
-  - q: "Are the carpenter ants really coming out of driftwood?"
+  - q: "Are the carpenter ants coming out of driftwood?"
     a: "Often, yes, and it surprises people. Beach wood that has been sitting damp for years is exactly the softened timber a colony wants, and a large drift pile within a hundred feet of a building is a genuine source. It is one of the few places where clearing material off the ground is most of the treatment."
   - q: "Can you get in while we are away?"
     a: "Yes, and a great deal of our work here is done that way. We will need access arranged in advance through you, a property manager or the HOA, and we will send you what we found and what we did rather than leaving a card on a door nobody is behind."
@@ -156,7 +156,7 @@ satellite colonies outward, and a wall void or a rim joist suits a satellite as
 well as another log does. What is unusual here is how close the source can be
 and how little it looks like a nest.
 
-Practically, that makes ground clearance a real part of treatment on this
+Practically, that makes ground clearance a large part of treatment on this
 shoreline rather than a suggestion. Where large accumulations of beach wood and
 stacked material sit close to a structure, moving them is often the largest
 single thing that can be done, and it is not something we charge for doing.
@@ -197,7 +197,7 @@ Shoreline property attracts shoreline birds, and on the spit that means gulls
 in numbers, along with the nesting they do on flat roofs, parapets and
 sheltered ledges.
 
-The pest consequence is not really the birds. It is what accumulates: nesting
+The pest consequence is not the birds. It is what accumulates: nesting
 material in gutters and drains, droppings on surfaces, and the insects that
 live in old nests and then move inward when the nest is abandoned. Bird mites
 and [carpet beetles](/pest-library/carpet-beetle/) both do this, and both are frequently diagnosed as something

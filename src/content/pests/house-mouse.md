@@ -32,15 +32,15 @@ signs:
 answer: "A house mouse needs about a quarter inch of gap, seldom travels more than thirty feet from its nest, and breeds fast enough that a single autumn arrival becomes a household by spring. It is not the hantavirus mouse in Washington — that is the deer mouse — but it warrants acting on early."
 ready: true
 faqs:
-  - q: "How small an opening does a house mouse really need?"
+  - q: "How small an opening does a house mouse need?"
     a: "About a quarter of an inch, which is the width of a standard pencil. UC IPM puts it more precisely still: mice squeeze under gaps a quarter inch tall and through openings three-eighths of an inch wide. Washington's health department and Whatcom County both use the quarter-inch figure."
   - q: "Do house mice carry hantavirus?"
     a: "Not the hantavirus Washington reports. The state health department attributes hantavirus pulmonary syndrome here to deer mice and names the species directly. House mice are associated with a different virus, LCM, along with salmonella and leptospirosis, so careful cleanup still applies."
-  - q: "I have only seen one mouse. Is that really a problem?"
+  - q: "I have only seen one mouse. Is that a problem?"
     a: "It is worth acting on now rather than later. Females can produce five to ten litters a year of about five or six pups, and those pups are breeding within five or six weeks. The cheapest version of this problem is the one you deal with in week one."
   - q: "Why do the traps in my kitchen catch nothing?"
     a: "Often because they are outside the animal's world. A house mouse seldom goes more than thirty feet from its nest, so traps belong within a few feet of the droppings, tight against a wall, roughly ten feet apart along the active area — not spread evenly around a house."
-  - q: "Can mice really damage the insulation?"
+  - q: "Can mice damage the insulation?"
     a: "They shred it for nests, tunnel runs through it and urinate as they travel, and all three reduce the trapped air that makes insulation work. Mouse damage is patchier than rat damage, which is why the honest recommendation is more often localized cleaning than a full replacement."
   - q: "Is it worth sealing if I am already trapping?"
     a: "Sealing is the part that changes next autumn. Trapping empties a building of the animals in it and leaves the opening they used, so a house that is trapped every October is a house with an unresolved quarter-inch gap somewhere in its shell."
@@ -260,7 +260,7 @@ population in a building of that kind is a building-level population, and
 treating a single unit moves it sideways rather than reducing it.
 
 That has an awkward practical consequence for whoever is calling. A tenant can
-seal the gap behind their own kitchen cabinet and gain something real, because
+seal the gap behind their own kitchen cabinet and gain something worthwhile, because
 that closes the route into the living space. What a tenant cannot do is close the
 foundation vent or the roofline that admitted the animals to the structure, and
 that is where the durable work is. If you are renting, the useful move is to
@@ -283,9 +283,9 @@ through loose fill, and a general urine load along the routes between them,
 because mice are incontinent as they travel rather than depositing in one place.
 
 Each of those reduces the still air the material holds, and trapped air is the
-whole mechanism by which insulation performs. So the loss is real even where the
+whole mechanism by which insulation performs. So the loss is genuine even where the
 material looks broadly intact from the hatch, and in a climate with a long mild
-heating season it is a cost that runs quietly for years rather than announcing
+heating season it is a cost that runs for years rather than announcing
 itself.
 
 Where it goes far enough — nesting distributed through the material, saturation

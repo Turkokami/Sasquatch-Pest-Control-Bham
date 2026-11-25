@@ -259,7 +259,7 @@ underrate before they have lived with it.
 
 The reason to treat this quickly is not medical danger. It is that somebody who
 knows there are insects in their bed stops sleeping, and stops sleeping for
-weeks, and that has real consequences at work and at home. Speed is the kindness
+weeks, and that has consequences at work and at home. Speed is the kindness
 here.
 
 If a reaction is severe or spreading, that is a physician's question rather than
@@ -382,7 +382,7 @@ Performance varies enough that a negative reading from one is worse than having
 no device at all, because it manufactures confidence.
 
 On what a clear search means: it means no evidence was found in the places
-evidence collects, and for this insect that carries real weight, because it is
+evidence collects, and for this insect that carries considerable weight, because it is
 much better at hiding itself than at hiding its spotting and its skins. It is
 not proof against an introduction that arrived last week. Continued monitoring
 for a few weeks is the sensible follow-through, and it is a far better use of
@@ -422,7 +422,7 @@ they would drift out of date.
 The reasoning is short. A meaningful share of bed bug calls are not bed bugs. A
 proper search means stripping a bed, going over both faces of a mattress and box
 spring, taking a frame apart where necessary and working the room edges with a
-light, and that is a real piece of work whether or not it finds anything. Charging
+light, and that is a substantial piece of work whether or not it finds anything. Charging
 for it and crediting it against treatment is what lets it be done thoroughly
 instead of quickly, and it means a household that turns out not to have bed bugs
 has bought a definite answer rather than a treatment.
@@ -443,7 +443,7 @@ That is a structural search rather than a bedroom one, and it is squarely our
 work.
 
 And if a thorough search of the sleeping area turns up no spotting, no skins, no
-eggs and no insects, that is a real result rather than a failed visit. It closes
+eggs and no insects, that is a result rather than a failed visit. It closes
 off the branch that was keeping somebody awake, and it is worth taking to a
 physician as information.
 

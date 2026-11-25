@@ -77,7 +77,7 @@ Bellingham, get a second opinion before you agree to anything.
 ## The moisture point, which is the whole point
 
 A dampwood termite colony cannot establish in sound, dry lumber. It is not
-capable of it. So when we find one in a structure, the finding is not really
+capable of it. So when we find one in a structure, the finding is not
 "you have termites." The finding is **this wood has been wet for a long time.**
 
 In practice the source is almost always on a short list. A gutter that has been
@@ -93,7 +93,7 @@ because it is the same underlying condition producing two different insects.
 It also means the wood was already decaying before the termites arrived. Fungal
 decay does not need an insect, and by the time a colony is established the
 structural loss is usually a combination of both. Which is why treating the
-insects and stopping there gets you a quiet year and the same conversation
+insects and stopping there gets you a year without activity and the same conversation
 later.
 
 We will tell you when the person you actually need is a contractor or a roofer.
@@ -231,8 +231,7 @@ visible evidence you will get that it is running.
 
 ## What it costs
 
-Quoted from the site visit, and the range is wide because the variable is not
-really the insect.
+Quoted from the site visit, and the range is wide because the variable is not the insect.
 
 A single affected area with clear access and an obvious moisture source is a
 contained job. A crawlspace with widespread anobiid activity, standing water, no
@@ -330,7 +329,7 @@ actually tells us.
 
 **Standing water or saturated soil.** The most common finding in older Bellingham
 housing and the root of nearly everything else. Groundwater, a downspout
-discharging under the house, or a plumbing leak that has been running quietly.
+discharging under the house, or a plumbing leak that has been running unnoticed.
 
 **Missing, shredded or unsecured vapor barrier.** Ground moisture evaporates
 straight into the crawlspace and into the framing above it. A functioning barrier

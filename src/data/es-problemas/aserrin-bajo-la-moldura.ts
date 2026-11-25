@@ -77,7 +77,7 @@ export const aserrinBajoLaMoldura: EsProblema = {
     },
     {
       q: '¿Puede ser aserrín de verdad?',
-      a: 'A veces, sí. Una perforación reciente, un hoyo para un cable o una obra arriba de un techo dejan aserrín real, que es parejo, anguloso y no regresa una vez limpio. El desecho que vuelve no es aserrín.',
+      a: 'A veces, sí. Una perforación reciente, un hoyo para un cable o una obra arriba de un techo dejan aserrín común, que es parejo, anguloso y no regresa una vez limpio. El desecho que vuelve no es aserrín.',
     },
     {
       q: '¿Un montón chico quiere decir un problema chico?',

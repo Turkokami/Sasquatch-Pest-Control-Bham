@@ -62,14 +62,14 @@ export const hormigaDeMonticulo: EsPlaga = {
     {
       h2: 'Son depredadoras, y eso vale algo',
       parrafos: [
-        'Una colonia se come una cantidad enorme de otros insectos. En la literatura forestal se les trata como benéficas justo por eso, y en partes de Europa las especies de Formica que hacen montículos están protegidas por esa razón. No vamos a fingir que eso hace aceptable un montículo junto al columpio de un niño, pero sí quiere decir que la respuesta por defecto a "hay un hormiguero al fondo de mi terreno" debería ser dejarlo, y que destruir una colonia grande es una pérdida real y no un acto neutral. Donde el montículo está lejos del paso, casi siempre aconsejamos marcarlo, avisarle a quien corta el pasto y dejarlo en paz.',
+        'Una colonia se come una cantidad enorme de otros insectos. En la literatura forestal se les trata como benéficas justo por eso, y en partes de Europa las especies de Formica que hacen montículos están protegidas por esa razón. No vamos a fingir que eso hace aceptable un montículo junto al columpio de un niño, pero sí quiere decir que la respuesta por defecto a "hay un hormiguero al fondo de mi terreno" debería ser dejarlo, y que destruir una colonia grande es una pérdida y no un acto neutral. Donde el montículo está lejos del paso, casi siempre aconsejamos marcarlo, avisarle a quien corta el pasto y dejarlo en paz.',
       ],
     },
     {
       h2: 'Cuándo sí conviene hacer algo',
       parrafos: [
         'Hay conflictos reales y preferimos nombrarlos: un montículo en un césped que hay que podar; uno junto a un camino, un patio, un área de juegos o un arenero; uno pegado al cimiento, con filas que entran al edificio todo el tiempo; una colonia en un terreno que tiene que cruzar alguien con reacción conocida al veneno de insectos; o búsqueda de comida adentro que se rastrea a un nido concreto. Ahí las hormigas y el uso del terreno no pueden seguir juntos, y el tratamiento se justifica. Lo que no vamos a hacer es tratar un montículo al fondo de dos acres porque alguien lo vio.',
-        'Lo que haríamos: identificar primero, con un ejemplar o una buena foto, porque la de montículo, la carpintera y la de humedad son tres trabajos distintos. Luego ubicar el nido, las filas y el conflicto real — el montículo mismo, la búsqueda de comida adentro o los pulgones en una planta —, que tienen tres respuestas distintas y solo una toca el montículo. Si el montículo tiene que irse, el trabajo es tratar el nido directamente, no rociar alrededor de una casa donde las hormigas no viven: una banda residual en el cimiento hace muy poco contra una colonia a cuarenta pies en terreno abierto. Si el problema es que entran, se encuentra la fila, se cierra la entrada y se usa cebo en lugar de rociar, porque una fila rociada muchas veces parte la colonia y empeora el mes siguiente.',
+        'Lo que haríamos: identificar primero, con un ejemplar o una buena foto, porque la de montículo, la carpintera y la de humedad son tres trabajos distintos. Luego ubicar el nido, las filas y el conflicto concreto — el montículo mismo, la búsqueda de comida adentro o los pulgones en una planta —, que tienen tres respuestas distintas y solo una toca el montículo. Si el montículo tiene que irse, el trabajo es tratar el nido directamente, no rociar alrededor de una casa donde las hormigas no viven: una banda residual en el cimiento hace muy poco contra una colonia a cuarenta pies en terreno abierto. Si el problema es que entran, se encuentra la fila, se cierra la entrada y se usa cebo en lugar de rociar, porque una fila rociada muchas veces parte la colonia y empeora el mes siguiente.',
       ],
     },
     {
@@ -121,7 +121,7 @@ export const hormigaDeMonticulo: EsPlaga = {
     },
     {
       q: '¿Hay que destruir el montículo?',
-      a: 'Muchas veces no. Son hormigas depredadoras que se comen muchísimos otros insectos, y un montículo lejos de donde camina la gente no le hace daño a nadie. Si está en el césped, junto a un camino, un área de juegos o el cimiento, es un conflicto real y vale la pena atenderlo; le decimos cuál de los dos tiene.',
+      a: 'Muchas veces no. Son hormigas depredadoras que se comen muchísimos otros insectos, y un montículo lejos de donde camina la gente no le hace daño a nadie. Si está en el césped, junto a un camino, un área de juegos o el cimiento, es un conflicto y vale la pena atenderlo; le decimos cuál de los dos tiene.',
     },
     {
       q: '¿Por qué están por todos mis arbustos?',

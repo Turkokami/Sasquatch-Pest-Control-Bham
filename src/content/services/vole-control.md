@@ -164,7 +164,7 @@ jobs make a statistic.
 Townsend's vole is the species west of the Cascades, and the conditions here are
 close to ideal for it.
 
-Mild wet winters mean the grass never really stops, so the food supply and the
+Mild wet winters mean the grass never stops, so the food supply and the
 cover persist through the months that would thin a population further east.
 There is no long continuous snowpack here, which caps the worst of the
 above-trunk girdling you see in colder regions, but it also means no hard reset.
@@ -173,7 +173,7 @@ ground and greenbelt — reservoir habitat laced through residential development
 at close range.
 
 Vole populations also cycle, which is why some years are much worse than others
-and why a quiet decade is no guarantee. A year when the numbers are high in the
+and why a decade of low numbers is no guarantee. A year when the numbers are high in the
 reservoir habitat is a year when the margin of your lawn matters more than
 usual.
 

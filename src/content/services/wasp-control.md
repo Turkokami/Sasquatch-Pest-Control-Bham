@@ -23,7 +23,7 @@ faqs:
   - q: "Why are wasps suddenly everywhere in late summer?"
     a: "A colony starts with one queen in spring and grows all season, so August and September is simply when it is largest. The diet shift belongs to the Vespula yellowjackets — the ground and wall nesters — which swap hunting insects for sugar and meat as brood rearing winds down. UC IPM records that the aerial nesters in the genus Dolichovespula, meaning the bald-faced hornet and the aerial yellowjacket, stay predatory to the end and never make that switch."
   - q: "Should I plug the hole where they are going into my siding?"
-    a: "No, and this is the one that causes real damage. A blocked colony does not give up and leave — it chews an alternative exit, and that exit is frequently into the wall cavity and then into the room. Sealing a wall-void nest is how people end up with wasps inside the house."
+    a: "No, and this is the one that causes damage. A blocked colony does not give up and leave — it chews an alternative exit, and that exit is frequently into the wall cavity and then into the room. Sealing a wall-void nest is how people end up with wasps inside the house."
   - q: "Do wasp nests get reused the following year?"
     a: "For yellowjackets, no — WSU bulletin EB0643 states that the abandoned nests decompose over the winter and are not used again. The colony dies at first frost and only newly mated queens survive, starting fresh elsewhere in spring. The European paper wasp is the local exception: Penn State records queens founding colonies early by taking over the previous year's structure, and WSU PestSense says queens occasionally reuse old ones. The colony still dies either way, but the paper can outlast it."
   - q: "Is that a northern giant hornet?"
@@ -177,7 +177,7 @@ County between 2020 and 2021, in the Blaine and Custer area. After three years
 with no confirmed detections, state and federal agriculture officials announced
 in December 2024 that the species had been eradicated from the United States.
 
-So the honest position is this. It was real, it was here, it was taken seriously,
+So the honest position is this. It was confirmed, it was here, it was taken seriously,
 and it was successfully eliminated. It is not something we expect to find on your
 property in 2026.
 

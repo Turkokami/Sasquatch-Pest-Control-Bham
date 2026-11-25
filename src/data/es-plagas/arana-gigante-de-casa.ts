@@ -64,7 +64,7 @@ export const aranaGiganteDeCasa: EsPlaga = {
     {
       h2: 'Si llegara a morderle',
       parrafos: [
-        'La posición de WSU es que su mordida no se conoce como amenaza para las personas, y esa es toda la entrada médica. Que muerda también es más difícil de lo que suena: el aracnólogo del Burke, después de manejar decenas de miles de arañas en cuarenta y cuatro años, registra tres mordidas, todas sin consecuencia, y anota que no tienen razón para morder algo demasiado grande para comérselo. Las que pasan son por presión — un animal apretado contra la piel dentro de una manga, un guante, una bota o una cama —, y sacudir guantes y zapatos guardados en la cochera es sensato por eso y por otras razones. La advertencia útil va al revés: el Departamento de Salud anota que las heridas sin explicación muchas veces se diagnostican mal como picaduras de araña, y que eso puede dejar sin tratar el problema real. Si una herida le preocupa, vaya al médico pronto; nosotros identificamos arañas, no leemos la piel.',
+        'La posición de WSU es que su mordida no se conoce como amenaza para las personas, y esa es toda la entrada médica. Que muerda también es más difícil de lo que suena: el aracnólogo del Burke, después de manejar decenas de miles de arañas en cuarenta y cuatro años, registra tres mordidas, todas sin consecuencia, y anota que no tienen razón para morder algo demasiado grande para comérselo. Las que pasan son por presión — un animal apretado contra la piel dentro de una manga, un guante, una bota o una cama —, y sacudir guantes y zapatos guardados en la cochera es sensato por eso y por otras razones. La advertencia útil va al revés: el Departamento de Salud anota que las heridas sin explicación muchas veces se diagnostican mal como picaduras de araña, y que eso puede dejar sin tratar el problema de fondo. Si una herida le preocupa, vaya al médico pronto; nosotros identificamos arañas, no leemos la piel.',
       ],
     },
     {
@@ -77,7 +77,7 @@ export const aranaGiganteDeCasa: EsPlaga = {
       h2: 'Lo que significa para una casa del condado, y nuestro veredicto',
       parrafos: [
         'Las casas viejas de Bellingham — los Lettered Streets, Sunnyland, Columbia, York, South Hill — tienen espacios bajo el piso sin sellar y cien años de rendijas, y el espacio de abajo funciona de reserva que abastece a la casa todo el año. Junto a los árboles — Sudden Valley, Silver Beach, Whatcom Falls, Edgemoor — la presión de insectos del bosque y del agua da muchas arañas haga uno lo que haga, y ahí la luz exterior pesa más que en cualquier lado. La construcción nueva está mejor sellada y la queja pasa a la tela en aleros y entradas. En el campo, hacia Lynden, Everson, Nooksack y Sumas, hay poblaciones grandes en graneros y cobertizos, donde hacen trabajo útil con las moscas. Y las casas de temporada de Blaine, Birch Bay y Semiahmoo acumulan tela en los meses vacíos. En todas, las rendijas que importan están a ras del piso: la barredora de la puerta de la cochera, los rieles de las corredizas, los pozos de ventana llenos de hojas, la tapa del espacio bajo el piso y los pasos de servicios — que también son rutas de roedores y fugas de calor.',
-        'Casi nunca conviene tratarla, y no por la especie. Hay tres casos donde el trabajo sí vale: una cochera, un cobertizo o un espacio bajo el piso con una población grande en un lugar que la familia usa; un negocio con un estándar de apariencia legítimo; y una casa donde el miedo de alguien a las arañas afecta cómo vive, que es un problema real de calidad de vida. Fuera de eso, lo honesto es una barredora, una luz más cálida, un espacio bajo el piso más seco y una escoba — casi lo que recomiendan las extensiones regionales cuando no tienen nada que vender: Oregon State dice que se saquen las de adentro y se dejen las de afuera, y WSU empieza por quitarlas a mano y sellar, y anota que sin prevención el control químico es temporal. Mándenos una foto desde arriba con una moneda para la escala, y si puede, una del esternón a través de un recipiente; si no se puede resolver sin aumento, se lo diremos en lugar de adivinar.',
+        'Casi nunca conviene tratarla, y no por la especie. Hay tres casos donde el trabajo sí vale: una cochera, un cobertizo o un espacio bajo el piso con una población grande en un lugar que la familia usa; un negocio con un estándar de apariencia legítimo; y una casa donde el miedo de alguien a las arañas afecta cómo vive, que es un problema de calidad de vida. Fuera de eso, lo honesto es una barredora, una luz más cálida, un espacio bajo el piso más seco y una escoba — casi lo que recomiendan las extensiones regionales cuando no tienen nada que vender: Oregon State dice que se saquen las de adentro y se dejen las de afuera, y WSU empieza por quitarlas a mano y sellar, y anota que sin prevención el control químico es temporal. Mándenos una foto desde arriba con una moneda para la escala, y si puede, una del esternón a través de un recipiente; si no se puede resolver sin aumento, se lo diremos en lugar de adivinar.',
       ],
     },
   ],
@@ -88,7 +88,7 @@ export const aranaGiganteDeCasa: EsPlaga = {
     { label: 'Telaraña', value: 'Una sábana plana y no pegajosa con un tubo en una orilla, abajo en garajes, espacios bajo el piso y pozos de ventana' },
     { label: 'Cuándo se ve', value: 'De mediados del verano a principios del otoño, cuando los machos maduros andan de noche buscando hembras' },
     { label: 'Mordida', value: 'No se sabe que represente ningún peligro para la gente' },
-    { label: '¿La tratamos?', value: 'Pocas veces: sobre todo poblaciones grandes en un garaje o espacio bajo el piso en uso, o una familia con miedo real' },
+    { label: '¿La tratamos?', value: 'Pocas veces: sobre todo poblaciones grandes en un garaje o espacio bajo el piso en uso, o una familia con miedo serio' },
   ],
   senales: [
     'Una araña café, grande y rápida atrapada en la tina o el lavabo durante la noche',
@@ -112,7 +112,7 @@ export const aranaGiganteDeCasa: EsPlaga = {
     },
     {
       q: '¿Ustedes tratan la araña gigante de casa?',
-      a: 'Casi nunca, y no por la especie. Donde una cochera o un espacio bajo el piso tiene una población grande con la que la familia convive, o donde alguien de la casa les tiene un miedo serio, hay trabajo real que hacer. Si no, es un trabajo de sellado.',
+      a: 'Casi nunca, y no por la especie. Donde una cochera o un espacio bajo el piso tiene una población grande con la que la familia convive, o donde alguien de la casa les tiene un miedo serio, hay trabajo que hacer. Si no, es un trabajo de sellado.',
     },
   ],
 };

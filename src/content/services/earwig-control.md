@@ -198,7 +198,7 @@ A word on diatomaceous earth, since it is the thing most people have already
 tried by the time they call. It works by abrading the waxy layer on an insect's
 cuticle so that the animal dries out, which means it only does anything while it
 is itself dry. Put down around a foundation here it is useful for as long as the
-weather stays fine, and after the first real rain it cakes and stops working.
+weather stays fine, and after the first heavy rain it cakes and stops working.
 In a dry crawlspace or under a deck it keeps earning its place. Broadcast over
 an open mulch bed in a Whatcom County October it is dust you paid for.
 
@@ -262,17 +262,17 @@ eggs. Nothing is visible above ground and nobody calls.
 This is the cheapest point of the year to change the habitat, because clearing
 mulch and lifting debris in March removes shelter before numbers develop.
 
-**Late spring and early summer.** Growth. Numbers climb steadily, garden damage
+**Late spring and early summer.** This is the growth period. Numbers climb steadily, garden damage
 begins on tender growth, and the first indoor sightings appear.
 
-**Midsummer through early autumn.** Peak. Adults are numerous, active every night,
+**Midsummer through early autumn.** This is the peak. Adults are numerous, active every night,
 and this is when almost all the indoor calls arrive. Also peak garden damage —
 dahlias, strawberries, lettuce and corn silk.
 
 **Autumn.** Numbers fall as conditions cool and adults die off. Survivors move
 down into soil and protected spaces.
 
-**Winter.** Dormant underground.
+**Winter.** They are dormant underground.
 
 The pattern that matters: the population is set in spring by how much damp shelter
 exists around the building, and experienced in August by whoever lives there.

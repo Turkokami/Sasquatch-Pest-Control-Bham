@@ -1,6 +1,6 @@
 ---
 species: harvester-ant
-title: "Harvester Ants: A Real Sting, Mostly East of Here"
+title: "Harvester Ants: A Painful Sting, Mostly East of Here"
 description: "Large red seed-collecting ants with one of the few severe stings in the Pacific Northwest. Common on the Columbia and Snake, uncommon here."
 h1: "Harvester Ant — Pogonomyrmex spp."
 treatment: depends
@@ -56,7 +56,7 @@ faqs:
 
 ## Written for the trip rather than the house
 
-This is the one page in this library that is not really about Whatcom County,
+This is the one page in this library that is not about Whatcom County,
 and it is more useful for being honest about that.
 
 Harvester ants are in the regional key to the key ant pests of the Pacific
@@ -169,7 +169,7 @@ pollinators for alfalfa seed production. It is a highly specialized bit of
 agriculture and the beds represent significant investment.
 
 Harvester ants moving into that ground are a direct conflict with a managed
-pollinator operation, and that is a real problem for the growers concerned.
+pollinator operation, and that is a problem for the growers concerned.
 
 For everybody else, it is a useful illustration: the same ant is a neutral part
 of a grassland, a hazard on a picnic site, and a genuine agricultural pest, all
@@ -208,7 +208,7 @@ On open ground nobody uses, nothing. The species is not damaging anything and
 the sting only matters where people are.
 
 Where a nest is in ground that people actually use — a play area, a path, a
-camping spot, a work area — that is a real conflict and one of the cases where
+camping spot, a work area — that is a conflict and one of the cases where
 treating a nest directly is warranted. Direct treatment of the nest rather than
 a broadcast application, because a broadcast treatment of open sandy ground for
 one colony is disproportionate.

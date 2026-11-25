@@ -19,7 +19,7 @@ export const controlDeCiempies: EsServicio = {
       h2: '¿Qué los distingue?',
       parrafos: [
         'Son animales muy distintos con el mismo mensaje. El ciempiés es depredador: un par de patas por segmento, cuerpo aplanado, rápido, y con las patas de adelante modificadas para inyectar veneno a su presa. Caza insectos y otros invertebrados. El milpiés come materia vegetal que se pudre: dos pares de patas por segmento, cuerpo redondo, lento, y se enrolla en espiral cuando lo molestan. Es completamente inofensivo.',
-        'Ninguno de los dos daña la estructura, la comida, la ropa ni los muebles. Ninguno se reproduce bien en una casa seca y con calefacción. Y los dos necesitan humedad constante, por eso encontrarlos quiere decir que algo en el edificio o en el terreno está guardando agua. En este condado eso los pone en la misma lista que el pececillo de plata, la tijerilla y la hormiga de humedad: plagas cuyo mensaje real es de humedad.',
+        'Ninguno de los dos daña la estructura, la comida, la ropa ni los muebles. Ninguno se reproduce bien en una casa seca y con calefacción. Y los dos necesitan humedad constante, por eso encontrarlos quiere decir que algo en el edificio o en el terreno está guardando agua. En este condado eso los pone en la misma lista que el pececillo de plata, la tijerilla y la hormiga de humedad: plagas cuyo mensaje de fondo es de humedad.',
       ],
     },
     {
@@ -27,7 +27,7 @@ export const controlDeCiempies: EsServicio = {
       parrafos: [
         'El ciempiés de casa, el que produce casi todas las llamadas. Gris amarillento con rayas oscuras, quince pares de patas muy largas, antenas largas, un cuerpo de menos de dos pulgadas pero con tanta envergadura que se ve mucho más grande. Se mueve a arranques rápidos y se para en seco, que es justo lo que asusta.',
         'Lo que hace es cazar: pececillos de plata, cucarachas chicas, arañas, hormigas, larvas y otros insectos de cuerpo blando. Es de los depredadores más efectivos que viven en los edificios, y a diferencia de casi todo lo demás en este sitio, está bajando activamente sus otros problemas de plagas.',
-        '¿Puede picar? En principio sí: las patas de adelante pueden atravesar la piel. En la práctica es raro, porque ante cualquier cosa grande su primera respuesta es correr. Cuando pasa, suele ser un piquete leve y localizado, parecido al de una abeja chica, que se quita pronto. No hay una preocupación médica real.',
+        '¿Puede picar? En principio sí: las patas de adelante pueden atravesar la piel. En la práctica es raro, porque ante cualquier cosa grande su primera respuesta es correr. Cuando pasa, suele ser un piquete leve y localizado, parecido al de una abeja chica, que se quita pronto. No hay una preocupación médica.',
         'Lo útil es lo que significa su presencia. El depredador va donde está la presa, así que una casa que desarrolla una población de ciempiés casi siempre tiene una población de insectos que vale la pena cazar — muy seguido pececillos de plata, que necesitan exactamente la misma humedad. El ciempiés es el mensajero, no el mensaje. Tratarlo mientras quedan la humedad y las presas no cambia nada, porque las condiciones que sostuvieron a uno van a sostener al siguiente. Sabemos que "su bicho rápido y alarmante es benéfico" no es lo que la gente quiere oír; sigue siendo la respuesta correcta.',
       ],
     },
@@ -70,7 +70,7 @@ export const controlDeCiempies: EsServicio = {
   faqs: [
     {
       q: '¿Pueden picar los ciempiés?',
-      a: 'El ciempiés de casa puede, pero es raro porque corre en lugar de enfrentarse. Cuando pasa, suele ser un piquete leve y localizado, como el de una abeja chica, que se quita pronto. No es agresivo y no es un riesgo real en una casa.',
+      a: 'El ciempiés de casa puede, pero es raro porque corre en lugar de enfrentarse. Cuando pasa, suele ser un piquete leve y localizado, como el de una abeja chica, que se quita pronto. No es agresivo y no es un riesgo en una casa.',
     },
     {
       q: '¿Cómo los distingo?',

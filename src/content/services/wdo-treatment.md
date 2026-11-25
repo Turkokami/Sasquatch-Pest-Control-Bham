@@ -114,8 +114,8 @@ barrier around the building, because there is no soil-dwelling colony to
 intercept. Where the damaged member is structural, the honest answer is often
 that a section needs replacing rather than treating, and that is carpentry.
 
-The critical part is the water. A dampwood finding is really a moisture finding
-with insects in it. Treating without correcting the source buys a quiet year.
+The critical part is the water. A dampwood finding is a moisture finding
+with insects in it. Treating without correcting the source buys a year without activity.
 
 ### Western subterranean termite
 
@@ -191,7 +191,7 @@ have been overflowing down one wall for years.
 
 None of those are pests. Every one of them is the reason pests arrive. In this
 climate — no hard freeze, roughly thirty-five inches of rain a year, wood that
-never really dries out — the conducive conditions section is the part that
+never dries out — the conducive conditions section is the part that
 predicts what the house will be dealing with five years from now.
 
 So when we quote, we tell you which items are ours and which are not. Correcting
@@ -234,7 +234,7 @@ We work with a number of Whatcom County agents and we know what makes this easy
 on your side.
 
 You get a quote that distinguishes pest treatment from building repair, so
-nobody is negotiating a credit against a number that quietly includes carpentry.
+nobody is negotiating a credit against a number that includes carpentry.
 You get realistic scheduling rather than an optimistic date, because a missed
 promise on a closing week is worse than an honest longer estimate. You get
 documentation that states what was done. And you get a straight answer when the
@@ -271,7 +271,7 @@ program, and the sale is a poor moment to sign somebody up for one.
 
 ## What drives the cost
 
-We do not publish a flat figure for this work, because the variation is real and
+We do not publish a flat figure for this work, because the variation is large and
 a headline number would be misleading.
 
 The things that move it: how many separate items are on the finding and whether
@@ -341,7 +341,7 @@ exactly the wet framing that dampwood termites and [moisture ants](/pest-library
 
 None of this replaces a proper examination by somebody licensed to do it. It
 does mean you will not be surprised by the document when it arrives, and you
-will have a sense of which items are trivial and which are a real negotiation.
+will have a sense of which items are trivial and which are a serious negotiation.
 
 ## Related work
 

@@ -21,7 +21,7 @@ factsTable:
     value: "Generally modest and priced by the area and textiles involved; free estimate"
 faqs:
   - q: "A moth flew out of my closet. Are my clothes at risk?"
-    a: "Maybe, and the useful check is the webbing rather than the moth. Clothes moth larvae leave silk — tubes, mats or small portable cases — on the fabric they are feeding on. If you find webbing along a seam, under a collar or at the back of a shelf, that is a real infestation. A single moth without webbing may be nothing."
+    a: "Maybe, and the useful check is the webbing rather than the moth. Clothes moth larvae leave silk — tubes, mats or small portable cases — on the fabric they are feeding on. If you find webbing along a seam, under a collar or at the back of a shelf, that is an infestation. A single moth without webbing may be nothing."
   - q: "Do clothes moths fly toward lights?"
     a: "No, and this is the most useful distinguishing fact on this page. Clothes moths avoid light and fly weakly, usually fluttering low and hiding when disturbed. Moths circling a lamp or a porch light are almost always harmless outdoor species. Pantry moths do fly to lights."
   - q: "Do mothballs work?"
@@ -31,7 +31,7 @@ faqs:
   - q: "There are little moths all over my kitchen. What are they?"
     a: "Pantry moths, and the source is a package. Look for webbing and clumping inside grains, flour, cereal, dried fruit, nuts, birdseed or pet food. The give-away is silk webbing binding the contents together — that is not present in uninfested product."
   - q: "Do I have to throw everything out?"
-    a: "No. Throw out what is actually infested, and either freeze or seal the rest. The common mistake is discarding the whole pantry while missing the real source, which is frequently pet food, birdseed or a decorative item nobody thought of as food."
+    a: "No. Throw out what is actually infested, and either freeze or seal the rest. The common mistake is discarding the whole pantry while missing the actual source, which is frequently pet food, birdseed or a decorative item nobody thought of as food."
 ---
 
 ## Two completely different problems
@@ -324,13 +324,12 @@ March.
 kitchen cupboard. Also the season when bulk buying and outdoor birdseed storage
 generate new introductions.
 
-**Autumn.** Storage season. Everything put away now decides what comes out in
+**Autumn.** This is storage season. Everything put away now decides what comes out in
 spring, which makes this the highest-leverage moment of the year: clean before
 storing, use sealed containers, and the following February looks completely
 different.
 
-**Winter.** Indoor heating keeps both groups active. Clothes moth larvae feed
-quietly through the season in undisturbed storage, which is exactly why the
+**Winter.** Indoor heating keeps both groups active. Clothes moth larvae feed through the season in undisturbed storage, which is exactly why the
 damage is a surprise.
 
 ## What it looks like when it is working
@@ -344,7 +343,7 @@ Cleaned and sealed storage staying clean when opened a season later. The absence
 of adults is the weakest signal of the three, because adults are short-lived and
 sporadic anyway.
 
-**For pantry moths.** No webbing in newly opened packages. Monitors quiet over
+**For pantry moths.** No webbing in newly opened packages. Monitors empty over
 several weeks. No new cocoons appearing in ceiling corners or on shelf edges —
 that last one is a good practical indicator, because it means no larvae are
 completing development.

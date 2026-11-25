@@ -87,7 +87,7 @@ under loose flashing. The openings they need are small.
 **They overwinter in the voids.** Wall cavities, attics, and the spaces above
 ceilings, largely inactive. Most of the population is never seen.
 
-**They emerge on warm days.** A mild spell in December, or the first real warmth of
+**They emerge on warm days.** A mild spell in December, or the first warmth of
 spring, raises the temperature in those voids. Some wake, become active, and move
 toward light — which means your windows, your light fixtures, and the inside of
 your house rather than the outside.
@@ -221,7 +221,7 @@ distribution map from what the public sends in: a photograph, a general location
 and the address it was found at, to tfrec.reportBMSB@wsu.edu. Whatcom Ag Monthly
 adds that a suspect insect can be taken to a local extension office instead. When
 the county record rests on a survey that found single figures, one clear
-photograph from a kitchen window is a real contribution to a map that growers
+photograph from a kitchen window is a contribution to a map that growers
 use, and it costs a minute.
 
 That matters here because Whatcom County grows things. For a berry or tree fruit
@@ -369,7 +369,7 @@ house had a problem last winter, this is the month to act on it.
 **September.** Still workable, and the last comfortable point. Gathering begins
 late in the month in a warm year.
 
-**October.** Peak aggregation. Walls covered on sunny afternoons, and insects
+**October.** This is peak aggregation. Walls covered on sunny afternoons, and insects
 working inward daily. Treatment now catches some of what is still outside and
 none of what is already in the cavity.
 

@@ -125,7 +125,7 @@ Four insects get confused with this one, and separating them matters because
 the correct response to each is different.
 
 **A yellowjacket** is banded bright yellow and black, thick-bodied, and comes
-from a colony. It defends. Where one is nesting in a wall void or in the
+from a colony. It defends the nest. Where one is nesting in a wall void or in the
 ground, that is a genuine hazard and it is work we do.
 
 **A European paper wasp** is also banded and is regularly mistaken for a
@@ -183,7 +183,7 @@ opens a window that has been shut all summer, or closes one for the season and
 finds it will not run in the track. The wasp has finished. What is left is the
 nursery.
 
-## Where the cavities are on a real house
+## Where the cavities are on a house
 
 She does not excavate. Everything she uses was already there, and the full list
 is worth knowing because closing them is the entire preventive measure.
@@ -280,7 +280,7 @@ it is a quarter of an inch. An open hollow rail is a wasp nursery this year and
 a route into a soffit the next. A weep hole with no cover is fine; a missing
 chunk of trim beside it is not.
 
-So when we come out for this, what we are really doing is a perimeter walk with
+So when we come out for this, what we are doing is a perimeter walk with
 a specific and useful prompt: something small found a way in, so what else
 could. That is where the value of the visit is, and it is why we would rather
 look at the whole elevation than clear one track and leave.

@@ -230,7 +230,7 @@ to windowsills full of them.
 Quoted from the visit, and it varies more by cause than by species.
 
 A drain fly problem traced to one floor drain is a small job. A cluster fly
-problem is really an exclusion project priced by how much sealing the building
+problem is an exclusion project priced by how much sealing the building
 needs. A blow fly problem is a carcass removal, and the cost depends entirely on
 whether the animal is somewhere reachable.
 
@@ -270,7 +270,7 @@ population emerging on the wrong side of the glass. Vacuum and plan the sealing.
 
 **Spring.** Fungus gnats as houseplants get watered more and greenhouse growing
 starts. Drain flies as activity increases in kitchens and bathrooms that were
-quiet over winter.
+inactive over winter.
 
 **Early summer.** Fruit flies begin as produce moves faster and warmer
 temperatures speed development. House fly pressure builds around agricultural
@@ -307,7 +307,7 @@ is diagnostic, and it points at something decaying in a hidden damp place.
 
 **Medium, gray, active, in kitchens and around waste** — house fly.
 
-**Large, metallic blue or green, slow indoors** — blow fly. Outdoors normal.
+**Large, metallic blue or green, slow indoors** — blow fly. Outdoors, that is normal.
 Indoors in numbers, look for a carcass.
 
 **Large, dark, slow, in quantity at winter windows** — cluster fly. The
@@ -348,7 +348,7 @@ before they start.
 
 ## Light traps, and where they belong
 
-Worth a note because they are frequently sold as a solution and are really a
+Worth a note because they are frequently sold as a solution and are a
 monitoring tool.
 
 An ultraviolet light trap catches flying insects that are already inside. It does

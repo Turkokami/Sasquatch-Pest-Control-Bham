@@ -44,7 +44,7 @@ export const controlDePececillosDePlata: EsServicio = {
       h2: '¿Qué dañan?',
       parrafos: [
         'Ni la casa ni a usted: no pican, no muerden y no transmiten enfermedades. Lo que comen es almidón, y eso resulta incluir cosas que a la gente le importan. El papel y los libros: las encuadernaciones y su pegamento, el apresto de almidón del papel y la superficie de las hojas, dejando parches raspados irregulares y agujeritos desgarrados en lugar de perforaciones limpias. El papel tapiz, en concreto el engrudo de atrás, que en casas viejas con papel original lo despega y lo mancha.',
-        'Fotografías y documentos: las cajas de papeles familiares guardadas en un sótano o un espacio bajo el piso húmedo son la pérdida clásica, y no se recupera. Telas con almidón o apresto de fibras naturales — algodón, lino, seda, rayón —, sobre todo lo que se guardó húmedo; la lana es más asunto de la polilla de la ropa y del escarabajo de alfombra. Y la comida seca en empaques abiertos: harina, cereal, avena y croquetas. Para casi todas las casas es una molestia; para una casa con libros, archivos, arte o textiles guardados en un espacio húmedo, es una pérdida real que se va acumulando.',
+        'Fotografías y documentos: las cajas de papeles familiares guardadas en un sótano o un espacio bajo el piso húmedo son la pérdida clásica, y no se recupera. Telas con almidón o apresto de fibras naturales — algodón, lino, seda, rayón —, sobre todo lo que se guardó húmedo; la lana es más asunto de la polilla de la ropa y del escarabajo de alfombra. Y la comida seca en empaques abiertos: harina, cereal, avena y croquetas. Para casi todas las casas es una molestia; para una casa con libros, archivos, arte o textiles guardados en un espacio húmedo, es una pérdida que se va acumulando.',
       ],
     },
     {
@@ -78,7 +78,7 @@ export const controlDePececillosDePlata: EsServicio = {
   faqs: [
     {
       q: '¿Son peligrosos?',
-      a: 'No. No muerden, no pican y no transmiten enfermedades. Lo que dañan es papel, encuadernaciones, el engrudo del papel tapiz, fotos, telas con almidón y fibras naturales guardadas, que para algunas casas es una pérdida real aunque no sea de salud.',
+      a: 'No. No muerden, no pican y no transmiten enfermedades. Lo que dañan es papel, encuadernaciones, el engrudo del papel tapiz, fotos, telas con almidón y fibras naturales guardadas, que para algunas casas es una pérdida aunque no sea de salud.',
     },
     {
       q: '¿Por qué rociar no lo arregla?',

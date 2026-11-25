@@ -41,9 +41,9 @@ The businesses that stay ahead of summer pests treat pest control as ongoing inf
 
 ## What can my staff do between visits?
 
-Your team is the front line, and a few habits make a real difference. Keep dumpsters closed and positioned away from entrances, and stay on top of the waste and food-debris schedule. Keep exterior doors and loading bays closed when not in use, and check door sweeps and screens. Clean drains and spills promptly, since flies and drain-breeding insects thrive on residue. Store food and dry goods sealed and off the floor.
+Your team is the front line, and a few habits make a difference. Keep dumpsters closed and positioned away from entrances, and stay on top of the waste and food-debris schedule. Keep exterior doors and loading bays closed when not in use, and check door sweeps and screens. Clean drains and spills promptly, since flies and drain-breeding insects thrive on residue. Store food and dry goods sealed and off the floor.
 
-Most importantly, report early sightings immediately rather than waiting. A single wasp nest or a few ants caught early is a quick fix, while the same problem ignored for two weeks in summer becomes a real infestation.
+Most importantly, report early sightings immediately rather than waiting. A single wasp nest or a few ants caught early is a quick fix, while the same problem ignored for two weeks in summer becomes an infestation.
 
 ## When should you set up commercial service?
 

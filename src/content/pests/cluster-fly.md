@@ -141,7 +141,7 @@ whole front of the fly a faint golden sheen. The hair is especially dense on the
 underside between the legs. In good light, on a windowsill, the gold is
 visible without a lens.
 
-**Behavior.** Slow. Genuinely slow: they bump against glass rather than flying
+**Behavior.** They are slow, genuinely slow: they bump against glass rather than flying
 with purpose, they are easy to catch by hand, and they crawl as much as they
 fly. That sluggishness is the single most reported characteristic and it is a
 consequence of a dormant insect that has only partly woken up.
@@ -155,7 +155,7 @@ associated with waste and warm weather. Blow flies proper are shiny metallic
 blue or green. Fungus gnats are tiny, dark and delicate, drifting around
 houseplants. Drain flies are small, fuzzy and sit motionless on bathroom walls.
 The [fly control page](/services/fly-control/) works through the whole set,
-because on flies the species really does decide where to look.
+because on flies the species does decide where to look.
 
 ## The name, and why we list a genus
 
@@ -240,7 +240,7 @@ October, you do not have two problems. You have one set of openings.
 ## What the flies are actually telling you
 
 Since the insect itself is telling you nothing about your housekeeping, it is
-worth asking what it *is* telling you, because there is real information in it.
+worth asking what it *is* telling you, because there is useful information in it.
 
 **Where your envelope leaks at height.** Cluster flies enter high — soffit
 junctions, fascia gaps, roof-to-wall details on additions, gable and roof vents
@@ -305,7 +305,7 @@ October can be startling. The compensation is that the detailing is better and
 the sealing work is straightforward.
 
 **Waterfront and seasonal property** — Blaine, Birch Bay, Semiahmoo. Houses shut
-up through the wet months fill quietly, and the owner arrives in April to
+up through the wet months fill unnoticed, and the owner arrives in April to
 windowsills full of them and no idea what happened.
 
 **Lakeside and greenbelt lots** — Sudden Valley, Silver Beach, Edgemoor. Mixed,
@@ -324,7 +324,7 @@ accumulation is worth clearing while it is dry and empty.
 
 **May through July.** The population is entirely in the ground, invisible,
 running through generations inside earthworms. Nobody thinks about cluster flies
-in June, which is a shame, because this is the quiet stretch in which the
+in June, which is a shame, because this is the slow stretch in which the
 sealing work could be scheduled without any pressure.
 
 **Late August into early September.** The decision window. The last generation
@@ -333,12 +333,12 @@ moved to the walls. This is when an exterior application to the gathering
 elevations does its work and when sealing has the most value per hour. It is
 also, unhelpfully, when nobody has a fly problem and nobody calls.
 
-**October.** The gathering. Mild afternoons put them on the south and west
+**October.** This is the gathering. Mild afternoons put them on the south and west
 walls in numbers, and they work into the gaps over a few weeks. By the end of
 the month the population that will spend the winter in your building is already
 in it, and the treatment window has closed behind them.
 
-**November through February.** Dormancy, punctuated. Every warm spell or heating
+**November through February.** They are dormant, with interruptions. Every warm spell or heating
 run rouses a batch, which emerges at the nearest upper window. This is when the
 calls come, and it is the least productive month of the year to do anything but
 vacuum.

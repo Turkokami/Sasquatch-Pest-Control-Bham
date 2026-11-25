@@ -138,7 +138,7 @@ turned, the drainage low point that never dries.
 Correcting those does more than any spray program. Where treatment has a place
 it is as support — targeted work on resting surfaces, baiting placed away from
 feed and water, and attention to resistance, because rotating nothing is how a
-program quietly stops working after two seasons.
+program stops working after two seasons.
 
 ## Cluster flies and the overwintering crowd
 
@@ -160,7 +160,7 @@ By February, killing the ones in the room accomplishes very little, because
 there are thousands more in the wall. The work that matters happens in late
 August and September on the outside: sealing the gaps, screening the vents, and
 treating the sunny elevations before they move in. Do that and the following
-February is quiet.
+February is pest-free.
 
 Stink bugs and lady beetles behave the same way, and the same sealing deals with them.
 
@@ -317,7 +317,7 @@ may drive, what may be placed, when we may be in a barn. On a house we start
 outside, looking at grade and drainage, the siding-to-foundation transition,
 vents, penetrations and what the surrounding ground is doing. Then the
 crawlspace, properly and with a light, which on a flood-affected property is
-where the real information is. Then the attic and the interior.
+where the useful information is. Then the attic and the interior.
 
 You get a plain account of what we found, what is driving it, what needs doing
 now, what can wait, and which items are a building repair rather than a pest

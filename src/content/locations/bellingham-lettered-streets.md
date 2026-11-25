@@ -12,7 +12,7 @@ faqs:
     a: "Because these houses were built with balloon or near-balloon framing. The stud cavity runs from the sill plate to the top plate with no firestop, so a mouse entering at grade has an unobstructed vertical route to the roof without ever crossing a room."
   - q: "My neighbors have rats too. Does that change what you do?"
     a: "It changes the honest scope. On an alley-served block the population is shared, and one sealed house helps that household without reducing the number of animals on the block. We will still seal your building properly, and we will tell you plainly what it can and cannot achieve alone."
-  - q: "Is a dirt crawlspace really a problem?"
+  - q: "Is a dirt crawlspace a problem?"
     a: "Yes, and it is the single most consequential feature of this housing stock. Bare soil puts ground moisture straight into the space and the joists above it, which is what supports moisture ants, decay fungus and the whole damp-crawl group underneath."
   - q: "How old are these houses actually?"
     a: "A large share predate 1930 and some are considerably older. That matters less as a date than as a construction method — no air sealing, board sheathing that has shrunk, and a century of utility penetrations that were each drilled oversize and never closed."
@@ -162,7 +162,7 @@ Moisture ants are the honest ones. They colonize wood that is already wet and
 already decaying, so finding them is useful information rather than merely a
 problem. On these houses the source is usually a gutter that has been
 overflowing down a wall for years, a downspout discharging at the foundation, a
-porch roof that has leaked quietly, siding in contact with soil, or a sill plate
+porch roof that has leaked unnoticed, siding in contact with soil, or a sill plate
 sitting too close to grade.
 
 [Carpenter ants](/pest-library/carpenter-ant/) prefer wood that has begun to soften and keep a parent nest
@@ -235,7 +235,7 @@ and sealing the house alone leaves it entirely intact.
 So a proper scope here includes the outbuildings, even where the complaint is
 about the kitchen. Sometimes the honest answer is that a garage is beyond
 sealing and the sensible move is to remove what is attracting them and defend
-the house properly. We will say which it is rather than quietly quoting for
+the house properly. We will say which it is rather than silently quoting for
 both.
 
 Stored items are the other half. Cardboard, old furniture, bagged pet food,
@@ -305,7 +305,7 @@ Then the attic, then the interior.
 
 You get a plain account of what we found, what is causing it, what needs doing
 now, what can wait, and which items belong to a contractor, a roofer or a
-drainage specialist rather than to us. On a century-old house a real share of
+drainage specialist rather than to us. On a century-old house a large share of
 the answer is not work we get paid for, and we say it anyway.
 
 Inspections are free for every pest we handle here, bed bugs excepted, and there

@@ -56,12 +56,12 @@ faqs:
     a: "It can. Penn State Extension records blistering at the site, malaise for a few days, and moderate to severe pain that may build over the first hour, with occasional nausea, headache and lethargy. That is a genuinely unpleasant few days and it is not a medical emergency."
   - q: "What about the false widow stories from Britain?"
     a: "Those are about a different spider. The British media panic concerns Steatoda nobilis, which is not established in Washington, and the Burke Museum's own page on it describes the coverage as a flood of misinformation about a practically harmless animal. None of it describes the spider in your garage."
-  - q: "Do false black widows really eat black widows?"
+  - q: "Do false black widows eat black widows?"
     a: "Penn State Extension says they prey on other spiders including true black widows, which is a satisfying thing to know and not a reason to keep one. We mention it because it is sourced; several other things said about this spider online are not, and we leave those alone."
   - q: "Where do they live in a house?"
     a: "Low and undisturbed. Garages, crawlspaces, basements, window wells, behind water heaters, under stored boxes, in the corners of outbuildings. Penn State notes all life stages can be found indoors year-round, which is why the same corner tends to be occupied season after season."
   - q: "Do you treat for them?"
-    a: "Rarely, and most of these calls end with an identification rather than a visit. Where somebody is genuinely frightened, or a garage or crawlspace has a real population in it, there is work worth doing. Where somebody found one spider, there is not, and we will say so."
+    a: "Rarely, and most of these calls end with an identification rather than a visit. Where somebody is genuinely frightened, or a garage or crawlspace has an established population in it, there is work worth doing. Where somebody found one spider, there is not, and we will say so."
 ---
 
 ## This is the spider people mean when they say black widow
@@ -243,7 +243,7 @@ tell them what it is, and that is the end of it. We would rather spend ten
 minutes on that than sell a treatment to somebody who found one spider in a
 garage.
 
-Where there is real work:
+Where there is work:
 
 - **A genuine population** in a garage, crawlspace, outbuilding or window
   wells, with webbing and numbers somebody is living with.

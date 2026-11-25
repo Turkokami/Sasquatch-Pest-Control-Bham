@@ -23,7 +23,7 @@ built on an international border and is most of why it endures as a symbol.
 
 The Peace Arch reflects unity on an international scale. Closer to home, the
 same idea applies at the scale of a single house: a home in Blaine ought to be a
-settled, quiet place to live, and pests are one of the ordinary things that
+settled, peaceful place to live, and pests are one of the ordinary things that
 interrupt that.
 
 Our pest control work in Blaine is built around the challenges coastal homes
@@ -36,4 +36,4 @@ credited toward treatment if you go ahead.
 
 The Blaine Peace Arch stands as a testament to enduring peace between neighbors.
 On a much smaller scale, keeping a house in Blaine free of pests contributes to
-the same thing: a quiet place to live, in a town worth living in.
+the same thing: a peaceful place to live, in a town worth living in.

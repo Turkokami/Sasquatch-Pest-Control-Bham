@@ -32,7 +32,7 @@ Traditional pest control can rely heavily on broad-spectrum chemicals. While eff
 - Pets who groom themselves and explore areas close to the ground
 - Beneficial insects and local pollinators
 
-Our eco-friendly pest control services are designed to protect what matters most while still delivering real results.
+Our eco-friendly pest control services are designed to protect what matters most while still delivering results.
 
 ## Our IPM approach at Sasquatch Pest Control
 

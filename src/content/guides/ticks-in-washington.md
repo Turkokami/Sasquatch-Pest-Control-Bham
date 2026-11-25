@@ -56,7 +56,7 @@ faqs:
   - q: "How common is Lyme disease in Washington?"
     a: "Uncommon. Over the six years of that surveillance period, 16 Lyme cases were reported among Washington residents with exposure in 12 counties, out of 202 tick-borne disease cases in total. Uncommon is not the same as absent, and a bite is still worth taking seriously."
   - q: "What is the right way to remove a tick?"
-    a: "Fine-tipped tweezers, grasped as close to the skin as possible, pulled straight up with steady even pressure. No twisting. The Department of Health specifically warns against matches, petroleum jelly, soap and nail polish, because those can make the tick produce more saliva."
+    a: "Fine-tipped tweezers, grasped as close to the skin as possible, pulled straight up with steady even pressure. Do not twist. The Department of Health specifically warns against matches, petroleum jelly, soap and nail polish, because those can make the tick produce more saliva."
   - q: "Do you treat yards for ticks?"
     a: "Yes, as of November 2026, and this guide said no before that date. It is sold as targeted treatment of the margins where ticks quest, not as a broadcast acaricide across a whole property — the tick load described on this page does not justify the broadcast version. Keeping grass short and brush and leaf litter back from the used parts of a yard is still the honest first answer, and it is still one you can do yourself for nothing."
 ---
@@ -83,7 +83,7 @@ What it found, in one paragraph: six species, dominated by the western
 black-legged tick; a Lyme infection rate in those ticks of around 4%; a strong
 spring peak with almost no summer activity; and 202 human tick-borne disease
 cases over six years, of which 68 were acquired inside Washington. That is a
-real risk and a small one, and it behaves differently here than the national
+risk and a small one, and it behaves differently here than the national
 coverage would lead you to expect.
 
 ## The ticks that actually live here
@@ -210,7 +210,7 @@ Washington animals.
 
 ## Ticks in western Washington versus eastern Washington
 
-The split is real, but it does not run the way most people assume.
+The split exists, but it does not run the way most people assume.
 
 The common assumption is that ticks are a dry-side problem — eastern Washington,
 sagebrush, hot summers. That is partly true and it is not the whole picture.
@@ -302,7 +302,7 @@ unglamorous and mostly free:
   [flea control](/services/flea-control/) rather than alongside anything
   structural.
 
-Broadcast acaricide treatment of a whole yard is a real practice in high-density
+Broadcast acaricide treatment of a whole yard is a common practice in high-density
 tick regions. In a county with this tick load, it is not a proportionate
 response, and we would not propose it.
 

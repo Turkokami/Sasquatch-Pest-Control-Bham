@@ -120,7 +120,7 @@ worth having: most wolf spider species are relatively small, with bodies around
 a centimeter or less. A one-centimeter body is a spider most people would walk
 past without comment.
 
-## Wolf spiders in Washington, and where they really live
+## Wolf spiders in Washington, and where they live
 
 Ground level, outdoors, in the parts of a property nobody looks at.
 
@@ -159,7 +159,7 @@ something to be argued out of. It is the reason this species has a reputation
 out of all proportion to anything it does.
 
 The honest framing is the one we use for most of this library: the animal is
-harmless, the startle is real, and the two facts do not cancel. If a spider in
+harmless, the startle is genuine, and the two facts do not cancel. If a spider in
 the house is costing you sleep, that is a legitimate reason to have something
 done, and nobody here will tell you to simply get over it. But the work that
 follows should be sealing and tidying, not spraying the inside of a house for an
@@ -186,7 +186,7 @@ What a wolf spider bite does not do is cause a spreading, ulcerating wound. That
 belief comes from the brown recluse literature, it has been transplanted onto
 every large brown spider in North America, and it is covered properly on the
 [hobo spider](/pest-library/hobo-spider/) page, where the same false claim did
-real damage for twenty years.
+damage for twenty years.
 
 If a bite blisters, spreads, or you feel ill, see a doctor — not because the
 spider is likely to be the cause, but because the things that actually do that
@@ -288,7 +288,7 @@ Very little, and we would say so on the phone.
 
 There is no sensible treatment program for a wolf spider, because there is no
 wolf spider population in the house to treat. What there is, when somebody calls
-about them, is usually one of three real problems underneath:
+about them, is usually one of three problems underneath:
 
 1. **A gap at ground level.** Fixed by
    [exclusion and repairs](/services/exclusion-and-repairs/), permanently,

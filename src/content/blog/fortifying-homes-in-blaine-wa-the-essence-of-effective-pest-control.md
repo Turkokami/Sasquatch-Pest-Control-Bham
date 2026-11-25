@@ -8,14 +8,14 @@ supersededBy: '/locations/blaine/'
 ---
 
 Nestled in the scenic beauty of Blaine, Washington, residents find solace in the
-quiet of their homes. As members of the Blaine community, understanding what
+peace of their homes. As members of the Blaine community, understanding what
 proper pest control does for a house here is worth a few minutes. This post
 looks at pest control tailored to the challenges homes face in this coastal
 city.
 
 ## Preserving coastal character
 
-Blaine's coastal setting draws people looking for a quiet place to live, and
+Blaine's coastal setting draws people looking for a peaceful place to live, and
 pests can interrupt that quickly. Pest control acts as a buffer, addressing
 residential and commercial buildings alike in a town where the two sit close
 together.
@@ -55,7 +55,7 @@ management that minimizes harm to non-target species and to the local ecosystem.
 That matters more here than in most places, given how close every property is to
 the shoreline and the water.
 
-## Quiet living on the coast
+## Coastal living
 
 A home in Blaine is not just a dwelling; it is a retreat on the coast. Keeping
 it free of pests is part of what makes it one, letting residents enjoy their

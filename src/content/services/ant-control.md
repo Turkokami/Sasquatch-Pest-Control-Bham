@@ -29,7 +29,7 @@ faqs:
   - q: "Why do I see big black ants indoors in winter?"
     a: "Foraging carpenter ants outdoors in summer is normal. Large ants walking around inside during the cold months usually means a satellite colony is already in the structure rather than outside it, because they are not coming in from a stump in January. Winter sightings are worth acting on."
   - q: "What is the sawdust under my window trim?"
-    a: "Almost certainly frass — the shavings carpenter ants push out of their galleries. Real frass is fibrous and usually contains insect body parts, which distinguishes it from drill dust or the fine pellets some wood-boring beetles produce. It marks the gallery, so leave it in place for us to see."
+    a: "Almost certainly frass — the shavings carpenter ants push out of their galleries. Ant frass is fibrous and usually contains insect body parts, which distinguishes it from drill dust or the fine pellets some wood-boring beetles produce. It marks the gallery, so leave it in place for us to see."
   - q: "How long until the ants are gone?"
     a: "Weeks rather than days, and we will not attach a firmer number than that to carpenter ants, because the extension literature does not give one. Expect activity to rise briefly first as bait circulates. Odorous house ants are the species with a well-attested figure, at two to three weeks. Moisture ants go once the water is corrected, and return if it is not."
 ---
@@ -55,8 +55,7 @@ matters structurally. They excavate galleries, maintain satellite colonies
 inside buildings, and the work is finding the nest rather than killing the
 trail.
 
-**Moisture ants are fewer again** — a small share of the year — and they are not
-really a pest problem at all. They are an indicator. They only nest in wood that
+**Moisture ants are fewer again** — a small share of the year — and they are not a pest problem at all. They are an indicator. They only nest in wood that
 is already wet, so finding them inside a wall means water has been getting into
 that wall long enough to soften it. Correct the water and they leave on their
 own, because the thing that made the site habitable is gone.
@@ -124,7 +123,7 @@ midwinter. Winter activity indoors means a satellite colony is already in the
 structure, and that is worth acting on.
 
 **Frass.** Carpenter ants push their excavation waste out of slit-like openings,
-producing small piles of what looks like coarse sawdust. Real frass is fibrous
+producing small piles of what looks like coarse sawdust. Ant frass is fibrous
 and shredded rather than powdery, and it usually contains insect body parts —
 legs, wing fragments, bits of the colony's prey. That last detail is the
 reliable way to tell it from drill dust left by a contractor. If you find it,
@@ -148,8 +147,8 @@ water-damaged and beginning to decay. They cannot establish in sound dry lumber.
 So their presence inside a structure is diagnostic: there is, or has recently
 been, a persistent water source in that location.
 
-In practice, when we find moisture ants in a Whatcom County house, the real
-finding is almost always one of a short list. A failed or overflowing gutter
+In practice, when we find moisture ants in a Whatcom County house, the
+underlying finding is almost always one of a short list. A failed or overflowing gutter
 running down a wall. A downspout discharging against the foundation. A crawlspace
 with no functioning vapor barrier and standing groundwater. Bathroom or kitchen
 plumbing leaking slowly inside a wall. A deck ledger board flashed badly or not
@@ -311,7 +310,7 @@ mature colony inside the structure, not a nest in the yard. It is also when
 moisture ant activity shows up most clearly, because the wet season has just
 finished doing its work on any wall that leaks.
 
-**June through August.** Peak foraging. This is when most people call, and it is
+**June through August.** This is peak foraging. This is when most people call, and it is
 when trails are easiest to follow, which makes it a good time to treat. Colonies
 shift toward protein as brood production peaks, so bait selection changes with
 the season.

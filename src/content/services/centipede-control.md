@@ -58,7 +58,7 @@ water.
 In this county that puts them on the same list as
 [silverfish](/services/silverfish-control/),
 [earwigs](/services/earwig-control/) and
-[moisture ants](/services/ant-control/) — a group of pests whose real message is
+[moisture ants](/services/ant-control/) — a group of pests whose underlying message is
 about damp.
 
 ## House centipedes, which are on your side
@@ -71,8 +71,7 @@ long legs, long antennae, a body under two inches but a leg span that makes it
 look considerably larger. It moves in fast bursts and stops dead, which is
 precisely the behavior people find alarming.
 
-**What it does.** It hunts. [Silverfish](/pest-library/silverfish/), small cockroaches, spiders, ants, larvae,
-and other soft-bodied insects. It is one of the more effective predators that
+**What it does.** It hunts [silverfish](/pest-library/silverfish/), small cockroaches, spiders, ants, larvae, and other soft-bodied insects. It is one of the more effective predators that
 lives in buildings, and unlike almost everything else on this website it is
 actively reducing your other pest problems.
 
@@ -134,7 +133,7 @@ sources are explicit about it. UC IPM frames the general case as migration when
 the food supply dwindles or the living space becomes either too wet or too dry.
 The Alabama extension service records the same mass movement following heavy
 rain that lands after a hot dry spell. Locally that is the smaller of the two
-events, but a hot August followed by the first real rain will produce a version
+events, but a hot August followed by the first heavy rain will produce a version
 of it, and a household that has been told to expect this only after flooding
 will be looking for a leak that is not there. The insect is responding to the
 moisture in the ground going wrong in either direction.
@@ -216,7 +215,7 @@ them do their job in the meantime. They are consuming exactly the insects you
 would otherwise be calling about.
 
 Where we do treat is when the population is large enough to be a genuine
-quality-of-life problem, when someone in the household has a real phobia — which
+quality-of-life problem, when someone in the household has a phobia — which
 is a legitimate reason and not one we dismiss — or when the underlying prey
 population needs dealing with anyway and the centipedes come along with it.
 
@@ -251,7 +250,7 @@ Quoted from the property, and usually modest.
 Where the work is perimeter treatment and harborage reduction ahead of a
 migration season, it is a small job. Where the reservoir is a wet crawlspace, the
 pest treatment is the minor part and the
-[restoration](/services/crawlspace-restoration/) is the real project — and it
+[restoration](/services/crawlspace-restoration/) is the main project — and it
 resolves silverfish, [moisture ants](/pest-library/moisture-ant/) and wood-destroying insects at the same time.
 
 Where the answer is a dehumidifier and a bathroom fan that actually works, we will
@@ -311,13 +310,13 @@ seasonally, particularly in a finished basement or a heavily used lower floor.
 cannot easily be changed — a perimeter program timed to autumn genuinely reduces
 what gets in.
 
-**Where the prey population is the real job** and the centipedes are incidental.
+**Where the prey population is the main job** and the centipedes are incidental.
 Treating a silverfish or cockroach problem resolves both, and that is a legitimate
 service rather than treating a predator.
 
 **Where someone in the household has a genuine phobia.** House centipedes are
 among the most commonly phobia-triggering insects we deal with, and a household
-where somebody cannot use a bathroom at night has a real problem regardless of
+where somebody cannot use a bathroom at night has a problem regardless of
 what the animal does ecologically. We will treat, and we will still tell you what
 the underlying driver is.
 
@@ -351,7 +350,7 @@ the actual message.
 
 ## The seasonal shape
 
-**Winter and early spring.** Both are present but quiet, living in the damp voids
+**Winter and early spring.** Both are present but inactive, living in the damp voids
 and soil. Occasional centipede sightings in bathrooms as they hunt.
 
 **Late spring.** Activity rises with warmth. Centipede sightings increase because

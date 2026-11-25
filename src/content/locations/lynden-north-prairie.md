@@ -17,7 +17,7 @@ faqs:
   - q: "Do we have rats or mice?"
     a: "Both, usually, and on farm ground the rats matter more than most people expect. Mice live locally, breed fast and stay put. Rats range much further, are far more cautious about anything new in a familiar run, and are the ones doing structural damage and chewing wiring in a shop or a pump house."
   - q: "How do we protect the barn owls and the farm cats?"
-    a: "By where anything goes, not by what is chosen. Exterior rodent bait goes in tamper-resistant stations, secured, on a documented map. Secondary poisoning is a real risk and it is the reason we lean on trapping and exclusion inside buildings wherever traps will do the job."
+    a: "By where anything goes, not by what is chosen. Exterior rodent bait goes in tamper-resistant stations, secured, on a documented map. Secondary poisoning is a risk and it is the reason we lean on trapping and exclusion inside buildings wherever traps will do the job."
   - q: "Is exclusion realistic on a barn?"
     a: "Not in the way it is on a house, and we will not pretend otherwise. An open building cannot be sealed. What can be done is closing the buildings that matter most — feed rooms, milk houses, shops, pump houses and grain storage — to a genuine standard, and treating the open structures as the outdoors that they are."
   - q: "What does it cost to have somebody come and look?"
@@ -167,7 +167,7 @@ they carry a risk that the insect products do not.
 An animal that has eaten bait can be eaten by something else. That is how a
 barn owl, a hawk or a farm cat ends up poisoned by a product nobody applied
 anywhere near it, and on a property that actively benefits from having raptors
-around, it is a real cost rather than a theoretical one.
+around, it is a practical cost rather than a theoretical one.
 
 The risk is managed by placement rather than by choice of bait. Exterior
 placements go in tamper-resistant stations, secured, on a documented map of the

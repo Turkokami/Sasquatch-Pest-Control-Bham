@@ -103,7 +103,7 @@ A mouse squeezes through about a quarter of an inch, which is pencil width, and 
 
 Because rodents chew straight through both. Standard caulk and expanding foam are fine for air-sealing, but they're no barrier to a determined rat or mouse. Effective exclusion uses materials rodents can't gnaw through — steel wool or copper mesh packed into gaps, and hardware cloth over vents — with sealant used only to hold those materials in place, not as the barrier itself.
 
-### Does removing food really make a difference if my house is sealed?
+### Does removing food make a difference if my house is sealed?
 
 Yes. Sealing is the priority, but reducing food and water lowers the overall pressure on your home and makes it a less appealing target. Rodents are drawn to easy meals — unsecured pantry food, pet food left out, crumbs, garbage, fallen fruit, and birdseed. Storing food in sealed containers, cleaning up promptly, and fixing leaks all make your property less inviting.
 

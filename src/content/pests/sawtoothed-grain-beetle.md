@@ -131,7 +131,7 @@ in sealed containers is the single most effective preventive step available — 
 does not stop an introduction, but it confines one.
 
 The other movement fact is the useful one. Kentucky states that these beetles
-neither fly nor are attracted to light. They walk. So unlike a pantry moth, they
+neither fly nor are attracted to light. They get around by walking. So unlike a pantry moth, they
 do not distribute themselves across the house, and beetles found in a room mean
 food in that room or very near it.
 
@@ -239,7 +239,7 @@ cast skins, fragments, waste and the fine dust of chewed food, and heavy
 infestation gives flour a stale, slightly sharp smell. That is a quality problem
 rather than a safety one, and it is a perfectly good reason to throw the bag out.
 
-**The real cost is waste and repetition.** A pantry stored in original packaging
+**The cost is waste and repetition.** A pantry stored in original packaging
 loses far more to a single introduction than one stored in jars, because the
 insect walks from box to box. Households that clear an infestation and change
 nothing about storage generally do it again within a year, and that repeated
@@ -331,7 +331,7 @@ bin.
 UC IPM states that insecticides are not recommended for controlling pantry pests,
 and that spraying pesticides on or near food may cause greater harm to a
 household than the pantry pests themselves would. That is a land-grant program
-saying the quiet part out loud and we will not soften it.
+saying the uncomfortable part out loud and we will not soften it.
 
 The reason is straightforward. The insects are inside food. No application
 reaches them there, and any application that got close enough to try would be in
@@ -353,7 +353,7 @@ The cases that genuinely earn a visit:
 the beetles keep appearing. A methodical run through outbuildings, garage
 shelving, feed storage and the containers nobody counts usually resolves it.
 
-**Properties with real storage volume.** Farms, smallholdings, places with
+**Properties with large storage volume.** Farms, smallholdings, places with
 several outbuildings and bulk feed, where the number of candidate containers is
 beyond one person's afternoon.
 
@@ -388,7 +388,7 @@ found walking a fortnight after a clearance is not a verdict on anything. What
 counts is whether the material you kept stays clean and whether the count of what
 you find is falling rather than holding steady.
 
-Give it a season. A cupboard that is quiet in August and infested again in
+Give it a season. A cupboard that is clear in August and infested again in
 November had a reservoir that was never located, and in this county that
 reservoir is more often in a garage or an outbuilding than in the kitchen.
 

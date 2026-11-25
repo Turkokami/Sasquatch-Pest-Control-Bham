@@ -178,7 +178,7 @@ to twenty feet at best, the shell absorbs a great deal of it, and you are
 standing directly beneath an entrance you have just provoked, in the open, with
 nowhere to go.
 
-**Do not shoot it.** People do. It produces the same outcome as knocking it down
+**Do not shoot it.** People do try it. It produces the same outcome as knocking it down
 with the added benefit of holes in something behind it.
 
 **Do not burn it.** A paper nest in a living tree is an obvious fire risk, it

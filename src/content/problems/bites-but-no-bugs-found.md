@@ -34,7 +34,7 @@ faqs:
 
 ## A common and genuinely difficult situation
 
-Marks are appearing overnight. They itch. They look like bites. And the bed, the
+Marks are appearing overnight. They itch and they look like bites. And the bed, the
 mattress, the frame and the room have been gone over repeatedly with nothing to
 show for it.
 
@@ -42,7 +42,7 @@ This is one of the more frustrating things we get called about, and it deserves
 a straight, unhurried answer rather than either a quick reassurance or a quick
 treatment.
 
-The frustration is real: something is happening to somebody's skin, in their own
+The frustration is understandable: something is happening to somebody's skin, in their own
 bed, and the obvious explanation is not confirming itself. People lose sleep
 over this in a very literal sense.
 
@@ -73,7 +73,7 @@ than a diagnostic feature.
 So a mark on skin tells you something is happening. It does not tell you what,
 and it cannot be the whole basis for treating a bedroom. The EPA puts
 identifying the pest ahead of reaching for a product in its guidance on
-[whether you really need a pesticide](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide),
+[whether you need a pesticide](https://www.epa.gov/safepestcontrol/do-you-really-need-use-pesticide),
 and a room with no confirmed arthropod in it is the clearest case there is.
 
 ## What a proper search establishes
@@ -143,7 +143,7 @@ as building over long exposure rather than striking on first contact, in
 some people that produces itchy welts genuinely indistinguishable from bites. No
 bite has occurred. The larvae live in carpet edges, closets, under furniture and
 in stored textiles, feeding on wool, feathers, pet hair and general lint. If a
-search finds larvae or their shed skins, that is a real finding with a real fix.
+search finds larvae or their shed skins, that is a definite finding with a clear fix.
 
 **Contact reactions.** New detergent, fabric softener, a change of bedding,
 mattress materials, a new fabric. These produce marks where fabric touches skin,
@@ -256,7 +256,7 @@ arthropods. That is genuinely useful clinical context and it saves a
 conversation.
 
 The verification fee credits against treatment when there is a treatment. When
-there is not, the fee stands, and it has bought a real answer.
+there is not, the fee stands, and it has bought a clear answer.
 
 ## What we do when the first search is clear
 
@@ -354,7 +354,7 @@ People in this situation are sometimes treated dismissively — by pest control
 companies who take the money and by others who imply the whole thing is
 imagined. Neither is acceptable and neither is what happens here.
 
-Something is producing marks. That is real, it is uncomfortable, and it is worth
+Something is producing marks. That is happening, it is uncomfortable, and it is worth
 getting to the bottom of. Our part of that is narrow and definite: we can
 establish, thoroughly and honestly, whether there is an arthropod in the sleeping
 area or in the structure around it. If there is, we deal with it. If there is

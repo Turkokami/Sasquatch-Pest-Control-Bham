@@ -76,10 +76,7 @@ as complete failure on rats for a week. [UC's IPM notes on
 rats](https://ipm.ucanr.edu/home-and-landscape/rats/) describe the same
 wariness, and it is why we do not judge a set of placements after one night.
 
-The routes in are ordinary. Corroded crawlspace vent screens. Service
-penetrations. The bottom corners of a garage door. A crawl hatch resting
-against an opening. The unscreened space under a deck or porch. And on
-established lots, the planting against the wall that lets something reach all of
+The routes in are ordinary: corroded crawlspace vent screens, service penetrations, the bottom corners of a garage door, a crawl hatch resting against an opening, and the unscreened space under a deck or porch. And on established lots, the planting against the wall that lets something reach all of
 them without crossing open ground.
 
 The one people under-rate on a street of mature trees is the roof. A branch
@@ -88,7 +85,7 @@ well.
 
 ## Where nothing gets applied
 
-Work at a creek boundary has real limits and they are the correct ones.
+Work at a creek boundary has limits and they are the correct ones.
 
 Anything applied to ground that drains to the creek reaches the creek. So the
 perimeter treatment that would be routine around a foundation elsewhere is not
@@ -145,7 +142,7 @@ which is why people check the wrong things first.
 Damp matters because of what it permits. Carpenter ants excavate softened wood
 far more readily than sound wood. Wood-boring beetles and decay fungi need
 moisture content that dry framing never reaches. And [moisture ants](/pest-library/moisture-ant/) — which we
-find regularly on ground like this — are not really a pest problem at all: they
+find regularly on ground like this — are not a pest problem at all: they
 nest in wood that is already wet and decaying, so finding them is a moisture
 report rather than an infestation.
 
@@ -278,7 +275,7 @@ small open combs under railings and are far less defensive.
 Honey bees we do not treat. If there is a colony in a wall we will identify it
 and refer you.
 
-## Deciding whether the creek is really your problem
+## Deciding whether the creek is your problem
 
 Because the corridor is the obvious feature, it gets blamed for everything, and
 on a fair number of jobs along here it is not the answer.

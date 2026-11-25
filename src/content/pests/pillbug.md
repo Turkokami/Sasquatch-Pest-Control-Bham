@@ -201,8 +201,7 @@ phrasing is decaying organic matter, UC IPM's is decaying plant material — whi
 makes them part of the machinery that turns last year's leaves into soil. UC IPM
 notes they will occasionally take seedlings, new roots, lower leaves, and fruit
 or vegetables sitting on the ground, and Idaho compares the feeding damage to
-slug damage, ragged holes chewed between the leaf veins. That is a real
-gardening consideration in a wet spring and it is a separate question from
+slug damage, ragged holes chewed between the leaf veins. That is a gardening consideration in a wet spring and it is a separate question from
 anything happening in a building.
 
 ## The life cycle, briefly, because it is strange
@@ -378,7 +377,7 @@ winter here is wet and mild rather than cold enough to matter.
 garden question comes up, because seedlings and low fruit are vulnerable on wet
 soil at exactly the moment the population is most active.
 
-**June through August.** Largely invisible. A genuinely dry August can produce a
+**June through August.** They are largely invisible. A genuinely dry August can produce a
 small reverse movement toward cool damp rooms, which surprises people who
 associate this animal with rain.
 

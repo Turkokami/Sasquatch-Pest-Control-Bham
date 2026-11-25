@@ -63,7 +63,7 @@ export const hormigaCarpintera: EsPlaga = {
       parrafos: [
         'Muchas veces la colonia madre no está en su terreno. Penn State la ubica en un árbol, un tronco o madera de desecho a menos de unas cien yardas de la casa: un círculo de unos seis acres que, en un lote de Bellingham, incluye a los vecinos y el área verde al final de la cuadra.',
         'No cruzan ese terreno al azar: viajan por las orillas. En un lote de aquí son predecibles — cercas, la base de un muro de contención, la unión de la entrada con el césped, líneas de riego, acometidas de servicios y, sobre todo, cualquier rama o arbusto que toque la casa. Una rama apoyada en el techo es un puente que se salta todo lo que se haya hecho a nivel del suelo, y cortarla muchas veces son los diez minutos más valiosos de todo el trabajo.',
-        'Los caminos se recorren de noche: la hoja de WSU pone la ventana entre la puesta y la salida del sol, de abril a mediados de octubre, y Penn State estrecha las horas más productivas a entre las diez de la noche y las dos de la mañana, de mayo a julio. Y cuando la colonia madre está en un terreno donde no podemos entrar, lo honesto es decirlo: estamos protegiendo un edificio contra la presión de una fuente que no alcanzamos, que es útil y real, pero no es lo mismo que acabar con la colonia.',
+        'Los caminos se recorren de noche: la hoja de WSU pone la ventana entre la puesta y la salida del sol, de abril a mediados de octubre, y Penn State estrecha las horas más productivas a entre las diez de la noche y las dos de la mañana, de mayo a julio. Y cuando la colonia madre está en un terreno donde no podemos entrar, lo honesto es decirlo: estamos protegiendo un edificio contra la presión de una fuente que no alcanzamos, que es útil, pero no es lo mismo que acabar con la colonia.',
       ],
     },
     {
@@ -77,7 +77,7 @@ export const hormigaCarpintera: EsPlaga = {
       h2: '¿Cuánto daño hacen de verdad?',
       parrafos: [
         'Penn State es medida al respecto: el daño estructural por anidación de hormiga carpintera rara vez es significativo. En una temporada y en un solo satélite eso coincide con lo que vemos; una colonia trabajando el marco de una puerta un verano no es un problema estructural.',
-        'La salvedad honesta es el tiempo, y es la razón de que esta ficha diga que se trata. Diez años de una red sin detectar en una viga de borde siempre mojada le quitan sección real a una pieza que carga peso, junto con los hongos que ablandaron la madera; el laboratorio del USDA calcula que la madera con pudrición pierde entre seis y más de cincuenta por ciento de su tenacidad cuando apenas ha perdido uno por ciento de su peso. Nadie tiene que asustarse el primer año, pero conviene actuar el primer año.',
+        'La salvedad honesta es el tiempo, y es la razón de que esta ficha diga que se trata. Diez años de una red sin detectar en una viga de borde siempre mojada le quitan sección importante a una pieza que carga peso, junto con los hongos que ablandaron la madera; el laboratorio del USDA calcula que la madera con pudrición pierde entre seis y más de cincuenta por ciento de su tenacidad cuando apenas ha perdido uno por ciento de su peso. Nadie tiene que asustarse el primer año, pero conviene actuar el primer año.',
       ],
     },
     {

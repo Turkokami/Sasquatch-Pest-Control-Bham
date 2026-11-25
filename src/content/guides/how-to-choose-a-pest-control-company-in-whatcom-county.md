@@ -166,7 +166,7 @@ the work.
 **"What species is it?"** Ask before any figure is discussed. The answer should
 be a species or a straightforward "I want to look at this properly before I say."
 "Ants" is not an answer — [odorous house ants](/pest-library/odorous-house-ant/), [moisture ants](/pest-library/moisture-ant/) and carpenter ants
-are three different jobs with three different prices and one of them is really a
+are three different jobs with three different prices and one of them is a
 building repair. A company that quotes before identifying is quoting a product,
 not solving a problem.
 
@@ -245,8 +245,8 @@ Worth saying, because the licensing section above could give the wrong
 impression. A license is a floor, not a recommendation.
 
 What it establishes is that somebody passed the examinations, carries the
-categories, keeps up the continuing education and pays the fees. Those are real
-things and a company without them should be ruled out immediately. What it says
+categories, keeps up the continuing education and pays the fees. Those are
+requirements and a company without them should be ruled out immediately. What it says
 nothing about is whether the technician will go into your crawlspace, whether
 anyone will identify the ant, whether the recommendation will be honest, or
 whether the company answers the phone in February.
@@ -334,7 +334,7 @@ your street who had the same problem last winter.
 This is the section that makes the rest of the page worth reading, so it is
 specific rather than modest.
 
-**A wood-destroying organism report for a property sale.** Covered above. We do
+**A wood-destroying organism report for a property sale.** This is covered above. We do
 not hold the inspector credential or the company license and cannot produce that
 document. Call a licensed inspector.
 
@@ -348,7 +348,7 @@ which is a drainage conversation rather than a spraying one.
 
 **Free assessment, with one exception.** The pre-service visit is free for
 everything except bed bugs, which carry a paid verification visit — that one is
-credited against the treatment if you proceed, but it is a real charge if you
+credited against the treatment if you proceed, but it is a charge if you
 only want the visit. We would rather say that on this page than have it appear
 on an invoice.
 

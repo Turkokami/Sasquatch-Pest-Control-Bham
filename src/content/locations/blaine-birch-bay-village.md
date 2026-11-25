@@ -41,7 +41,7 @@ is the first thing we work out on site.
 
 ## First, it is not Birch Bay
 
-The names cause real confusion and it is worth separating them.
+The names cause confusion and it is worth separating them.
 
 **Birch Bay** is the unincorporated shoreline community — the beach, the state
 park, the seasonal cabins and the drive along the bay. It has its own page on

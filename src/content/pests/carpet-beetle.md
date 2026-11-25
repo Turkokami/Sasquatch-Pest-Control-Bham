@@ -43,7 +43,7 @@ faqs:
   - q: "There is no wool anywhere in my house, so where are they feeding?"
     a: "Usually on something dead. Kentucky lists bird nests, animal carcasses and dead insects among their foods, and a soffit nest or a pocket of dead cluster flies in a wall cavity is a richer supply than most carpets. When there is no fabric to blame, the question becomes what died and where."
   - q: "How long does a carpet beetle take to grow up?"
-    a: "A long time, and that is why patience is required. UC IPM's table gives the varied carpet beetle a larval stage of 220 to 630 days, against 70 to 94 days for the furniture species and 166 to 330 for the black carpet beetle. A quiet month proves very little against numbers like those."
+    a: "A long time, and that is why patience is required. UC IPM's table gives the varied carpet beetle a larval stage of 220 to 630 days, against 70 to 94 days for the furniture species and 166 to 330 for the black carpet beetle. A month without activity proves very little against numbers like those."
   - q: "What freezing temperature actually kills them?"
     a: "UC IPM gives two weeks in a freezer below eighteen degrees Fahrenheit for an infested object sealed in a plastic bag, and ten to fourteen days for trophies and museum pieces. Kentucky's figures are zero degrees for at least a week, or seventy-two hours in a freezer running at minus twenty."
   - q: "Do I need the whole house treated?"
@@ -197,7 +197,7 @@ than a moth larva will tolerate.
 This is why the [bed bug](/pest-library/bed-bug/) profile sends people here, and
 it deserves careful handling rather than a confident one.
 
-Penn State Extension documents carpet beetle dermatitis as a real clinical
+Penn State Extension documents carpet beetle dermatitis as a recognized clinical
 entity. The larvae of several dermestid genera, *Anthrenus* among them, carry
 lancelet-shaped hairs with sharp ends, and *Anthrenus* species in particular
 carry modified spear-shaped hairs clumped on the rear abdominal segments. The
@@ -282,7 +282,7 @@ beetles at the glass in April and assumes the problem started in April, when in
 fact the larvae have been feeding since the previous year.
 
 The practical consequence is about patience rather than urgency. Against a larval
-stage measured in hundreds of days, a quiet fortnight after a cleaning is not
+stage measured in hundreds of days, a fortnight without activity after a cleaning is not
 evidence of anything, and a clear result has to be judged across a season.
 
 ## Carpet beetle or clothes moth
@@ -349,7 +349,7 @@ check again in a few months. Most households in this situation do not need to pa
 anybody, and we would rather say so than book a visit that adds nothing.
 
 **A treatment job.** Fixed carpet or a large rug where the feeding site is under
-furniture that cannot practically be moved. A collection with real value at risk.
+furniture that cannot practically be moved. A collection with significant value at risk.
 Repeated seasons of damage after genuine cleaning. And, most often, a source
 inside the structure.
 
@@ -423,7 +423,7 @@ What separates them in practice:
   wool, silk and felt.
 
 If a careful look at the mattress and frame turns up none of the bed bug signs,
-and there are shed skins in the carpet, that is a real answer rather than a
+and there are shed skins in the carpet, that is a clear answer rather than a
 guess. The bed bug side is at [bed bug control](/services/bed-bug-control/), and
 [bites, but no bugs found](/services/bed-bug-control/bites-but-no-bugs-found/)
 covers the case where neither one is there.

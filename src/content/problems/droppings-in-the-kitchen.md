@@ -105,7 +105,7 @@ Where they are is as informative as what they are.
 **Concentrated in one place.** A resting or feeding spot rather than a route.
 Look for what is being eaten within a couple of feet of it.
 
-**A line along the back of a cupboard or a run of countertop.** A route. Rodents
+**A line along the back of a cupboard or a run of countertop.** That is a route. Rodents
 travel with a body part in contact with a vertical surface where they can — it
 is a security behavior — so droppings along the back edge of a shelf or the base
 of a wall map their movement rather than their destination.
@@ -255,7 +255,7 @@ closed properly at some point.
 substitute for closing the building. Cat food left out overnight is also one of
 the more common things sustaining the population in the first place.
 
-## What a small number of droppings really means
+## What a small number of droppings means
 
 We get asked this a great deal, usually hopefully, so here is the arithmetic.
 

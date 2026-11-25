@@ -78,7 +78,7 @@ That is not sentiment and it is not us being difficult. It rests on three facts,
 all of which are checkable, and all of which point the same way.
 
 The colony is small. The colony is over by autumn, permanently. And several of
-the species doing this in Whatcom County are in real trouble.
+the species doing this in Whatcom County are in serious trouble.
 
 ## The trouble part, because it is the part people do not know
 
@@ -292,7 +292,7 @@ structural frame that lets a beekeeper lift a honey bee comb intact — it comes
 apart. And the foragers navigate to a fixed location, so a colony moved even a
 short distance leaves its working bees orienting to an empty patch of ground.
 Move it far enough that they do not return and you have stranded them; move it
-close enough that they find it and you have not really moved it.
+close enough that they find it and you have not moved it.
 
 There are people who attempt it and occasionally succeed, usually early in the
 season with a small colony and a well-prepared site. It is not a service we
@@ -306,7 +306,7 @@ nothing, and finishes by autumn.
 
 ## When it genuinely cannot stay
 
-There are real cases, and pretending otherwise would make the rest of this page
+There are genuine cases, and pretending otherwise would make the rest of this page
 less credible.
 
 **A nest in the immediate path of daily use.** Directly beside a back door, in

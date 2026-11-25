@@ -24,7 +24,7 @@ export const controlDePulgas: EsServicio = {
       parrafos: [
         'Casi todas las historias frustrantes de pulgas se reducen a un detalle de biología. La pulga pasa por huevo, larva, pupa y adulto. Las adultas que usted ve son una fracción chica de lo que hay en la casa: casi toda la población son huevos y larvas entre las fibras de la alfombra, las grietas del piso, la cama de la mascota y los muebles tapizados.',
         'El problema es la pupa. Teje un capullo pegajoso que junta polvo y basura, lo que la camufla y — sobre todo — la hace resistente a casi todo lo que se puede aplicar. Adentro, una adulta ya formada puede esperar semanas hasta que algo le avise que llegó un huésped: el calor, el dióxido de carbono y la vibración.',
-        'Así que en casi todos los trabajos pasa lo mismo. Tratamos. Mueren adultas y larvas. Una semana la casa parece limpia. Luego empiezan a salir las pupas que sobrevivieron, y la familia concluye que el tratamiento falló. No falló: esa salida es el siguiente acto esperado, y por eso la visita de seguimiento es parte del plan desde el principio y no un rescate. Una empresa que trata una vez y le dice que ya terminó, o no sabe esto o no se lo está diciendo.',
+        'Así que en casi todos los trabajos pasa lo mismo. Tratamos y mueren adultas y larvas. Una semana la casa parece limpia. Luego empiezan a salir las pupas que sobrevivieron, y la familia concluye que el tratamiento falló. No falló: esa salida es el siguiente acto esperado, y por eso la visita de seguimiento es parte del plan desde el principio y no un rescate. Una empresa que trata una vez y le dice que ya terminó, o no sabe esto o no se lo está diciendo.',
       ],
     },
     {

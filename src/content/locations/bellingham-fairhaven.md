@@ -13,7 +13,7 @@ faqs:
   - q: "Does the greenbelt cause the problem?"
     a: "It supplies it rather than causes it. Padden Creek and the wooded corridor are continuous cover running right up to the buildings, so the pressure is permanent. What decides your outcome is the building envelope, not the greenbelt, which is not going anywhere and should not."
   - q: "Are restaurants here a different job?"
-    a: "Yes. Food service in a century-old building means older drainage, equipment fitted into spaces never designed for it, and voids behind fixtures that cannot easily be reached. Those voids are why a spotless kitchen can still have a problem, and the waste enclosure is usually the real driver."
+    a: "Yes. Food service in a century-old building means older drainage, equipment fitted into spaces never designed for it, and voids behind fixtures that cannot easily be reached. Those voids are why a spotless kitchen can still have a problem, and the waste enclosure is usually the main driver."
   - q: "What is under these old houses?"
     a: "Usually a shallow crawlspace over bare earth, frequently with a vapor barrier that is missing or has been pushed aside. That single condition supports moisture ants, decay fungus and the whole damp-crawl group, and it is where most of our findings here come from."
   - q: "Do the brick buildings have different problems than the wooden ones?"
@@ -27,7 +27,7 @@ faqs:
 ## A district with two halves
 
 Fairhaven is the most architecturally distinct part of Bellingham and, from our
-side of the work, it is really two different jobs that happen to share a name.
+side of the work, it is two different jobs that happen to share a name.
 
 There is the historic commercial core — brick and timber buildings from the boom
 years, built shoulder to shoulder, now holding restaurants, retail, offices and
@@ -107,13 +107,13 @@ Those voids are where German cockroaches persist, and they are the reason a
 kitchen can be immaculate and still have a problem. A spotless surface tells you
 nothing about what is behind the equipment.
 
-**Waste is the second and it is where the real progress sits.** A dumpster with
+**Waste is the second and it is where the progress sits.** A dumpster with
 a broken lid, an enclosure that will not close against the ground, or bins
 staged in an alley overnight will support a rodent population that no service
 schedule overcomes. In a shared block this is doubly true, because one tenant's
 waste practice feeds the population that turns up in the business next door.
 
-We put that in the report rather than quietly servicing around it. Billing
+We put that in the report rather than silently servicing around it. Billing
 monthly while working around an open enclosure would be dishonest, and it also
 does not work.
 
@@ -289,7 +289,7 @@ basement and any shared structure, the ceiling void, and the roof.
 Either way you get a plain account: what we found, what is driving it, what
 needs doing now, what can wait, and which items belong to a builder, a roofer, a
 drainage contractor or a waste provider rather than to us. In a district of
-buildings this old, a real share of the answer is not work we get paid for, and
+buildings this old, a large share of the answer is not work we get paid for, and
 we say it anyway.
 
 Inspections are free for every pest we handle, bed bugs excepted, and there is

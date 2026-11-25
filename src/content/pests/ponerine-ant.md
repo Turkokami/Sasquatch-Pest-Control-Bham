@@ -11,7 +11,7 @@ idTable:
   - label: "Waist"
     value: "A single thick, broad node"
   - label: "Sting"
-    value: "A real one, described as quite painful; allergic reactions are possible"
+    value: "Yes, and described as quite painful; allergic reactions are possible"
   - label: "What you actually see"
     value: "Tiny winged females indoors at a window or light — workers stay underground"
   - label: "How to tell it from a thief ant"
@@ -19,7 +19,7 @@ idTable:
   - label: "Nest"
     value: "Underground, usually under a concrete slab, with fewer than a hundred workers"
   - label: "Do we treat it"
-    value: "Depends — sealing the entry route is the real work; a colony under a slab often cannot be reached"
+    value: "Depends — sealing the entry route is the main work; a colony under a slab often cannot be reached"
 signs:
   - "A painful sting indoors with no ant trail or nest anywhere to be found"
   - "A few tiny winged insects at a window or light fitting in a basement or ground-floor room"
@@ -42,7 +42,7 @@ sources:
 faqs:
   - q: "Something stung me indoors and I cannot find any ants. What was it?"
     a: "If it happened near a window or a light, in a basement or a ground-floor room, and the insect was tiny and winged, a ponerine ant is a strong candidate. The colony is underground and the workers stay there. What comes into a building is winged females, drawn to light, and they can sting."
-  - q: "Do these ants really sting?"
+  - q: "Do these ants sting?"
     a: "Yes, and the extension guidance describes the stings as quite painful. That is unusual for an ant this size in this region — most of our small indoor ants have either no sting or one too weak to matter. This one has a genuine sting and it is the reason the species gets a mention at all."
   - q: "Where is the nest?"
     a: "In soil or rotten wood, usually underground, and very often beneath a concrete slab. That is what makes the species awkward: the regional guidance notes directly that nests under slabs are problematic because they are difficult to treat. There is frequently nothing to find inside the building."
@@ -238,7 +238,7 @@ subscription rather than a solution.
 We will not treat a whole house for a handful of winged insects at a window when
 the answer is a sealed joint and a vacuum.
 
-We will not dismiss the sting either. It is a real sting, it is genuinely
+We will not dismiss the sting either. It is a true sting, it is genuinely
 painful, and somebody reporting it deserves to be told what it probably was
 rather than being told ants do not sting.
 
@@ -299,7 +299,7 @@ is closed, and a treated surface achieves nothing against that.
 of baseboard, one corner of a garage, the base of a particular wall — that is
 where the route is, and it is the only durable thing to act on.
 
-**Turn the light off.** Genuinely. If they are coming to a light, removing the
+**Turn the light off.** If they are coming to a light, removing the
 attractant for the evening reduces the number that make the trip.
 
 **Keep one if you can.** In a bag, under tape, in a container. It settles the

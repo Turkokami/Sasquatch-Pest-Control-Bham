@@ -179,7 +179,7 @@ calls we take. Rain relocates them; cold decides where they end up. The dry,
 heated underside of a house is the nearest available replacement, and it is
 available because of a vent screen that rusted through some years ago.
 
-That gives a real and unusually specific piece of timing advice. The work that
+That gives an unusually specific piece of timing advice. The work that
 prevents a winter of rats is done in the second half of August, on a dry
 crawlspace, with nothing living in it. Almost nobody books it, because in August the house seems fine.
 
@@ -252,9 +252,9 @@ The consequence people underrate is thermal. Insulation works by holding still
 air in a low-density mat, so anything that reduces the loft reduces the
 performance close to proportionally. A crawlspace that has been worked over for
 two winters costs measurably more to heat above, and in a climate with a long
-mild heating season that cost runs quietly for years.
+mild heating season that cost runs for years.
 
-The decision that follows is a real one and it goes both ways. Widespread
+The decision that follows is a genuine one and it goes both ways. Widespread
 contamination — material pulled down across many bays, nesting distributed
 through the space, saturation you can smell, a barrier that has been tunneled
 under and shredded — is a case for taking it out and starting again, which is
@@ -349,7 +349,7 @@ distressing.
 
 ## Rodenticide, stated with the risk attached
 
-Bait has a place on the exterior of a property under real pressure, and the
+Bait has a place on the exterior of a property under pressure, and the
 reason to discuss it openly is that the risk it carries is not to the rat.
 
 Anticoagulant baits kill slowly. An animal that has taken a lethal dose keeps

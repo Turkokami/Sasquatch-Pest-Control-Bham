@@ -63,8 +63,7 @@ faqs:
 ## What you are looking at
 
 A hard tube of dried mud, roughly the length and thickness of a finger, stuck
-to a wall in a place that stays dry. Sometimes one. Sometimes a dozen laid side
-by side and plastered over into a lump the size of a fist.
+to a wall in a place that stays dry. Sometimes there is one, and sometimes a dozen laid side by side and plastered over into a lump the size of a fist.
 
 That is a mud dauber nest, and it is one of the most common things we are asked
 about that needs the least done to it.
@@ -96,9 +95,7 @@ looks like a blob instead, that is why.
 The requirement is a vertical or overhead surface that stays dry and sheltered,
 and that narrows it down to a predictable set of places on any property.
 
-Garage and carport walls. Porch and patio ceilings. The underside of eaves and
-soffits. Exposed rafters and joists in an open outbuilding. Behind shutters. In
-sheds, barns and pump houses. Under decks. Inside anything left open — and this
+They build on garage and carport walls, porch and patio ceilings, the underside of eaves and soffits, and exposed rafters and joists in an open outbuilding. They build behind shutters, in sheds, barns and pump houses, under decks, and inside anything left open — and this
 is the one that causes actual trouble, because "anything" includes stored
 equipment, vent louvres, unused chimneys and the inside of a garden hose reel.
 
@@ -203,7 +200,7 @@ The whole practical value of this page is helping somebody sort a harmless
 solitary wasp from the two or three that are not, and the material each builds
 with does most of the work.
 
-**Mud tubes or a mud lump** — mud dauber. Solitary. No defense. Scrape it off.
+**Mud tubes or a mud lump** — mud dauber. It is solitary and has no defense, so scrape it off.
 
 **Dry grass stuffed into a gap or a window track** — [grass-carrying wasp](/pest-library/grass-carrying-wasp/).
 Solitary, harmless, and covered on its own page.
@@ -302,8 +299,7 @@ early summer to the end of August in this county.
 
 The nests people notice in autumn and winter are finished. The mud has dried
 hard, the cells are sealed, and the occupants are cocoons waiting for spring.
-Nothing is flying in or out, which is why a nest discovered in November feels
-abandoned. It is.
+Nothing is flying in or out, which is why a nest discovered in November feels abandoned, and it is.
 
 That makes winter the easy time to clear an accumulation off an outbuilding, and
 it is also the time when clearing destroys the developing generation. If that

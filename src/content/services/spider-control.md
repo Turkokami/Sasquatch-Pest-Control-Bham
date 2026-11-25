@@ -103,7 +103,7 @@ container so you can look at it from below. WSU's key separates the two on the
 sternum, the plate on the underside between the leg bases: a pale stripe down
 the middle on a hobo spider, three or four pairs of pale spots along the sides
 on a giant house spider or a barn funnel weaver. Spots mean it is not a hobo.
-That is the only field character that does real work, and on an animal moving at
+That is the only field character that does work, and on an animal moving at
 the speed these move it is still not easy.
 
 The practical implication is uncomfortable for the fear-based version of this
@@ -227,7 +227,7 @@ disperse. Almost nobody notices, and it is the cheapest point in the year to
 intervene, because removing egg sacs in late winter prevents a population rather
 than reducing one.
 
-**May through July.** Growth. Populations build alongside their insect prey, and
+**May through July.** This is the growth period. Populations build alongside their insect prey, and
 webbing starts accumulating on eaves, entries and outdoor furniture. This is the
 window where treatment and web removal do the most good and the one most people
 skip.
@@ -269,7 +269,7 @@ the other side.
 Treatment is worth it when webbing is persistent on entries, eaves, porches and
 outdoor living areas and keeps returning after removal. When there is a heavy
 population in a garage, shed or crawlspace that people use regularly. When
-someone in the household has a genuine phobia — that is a real quality-of-life
+someone in the household has a genuine phobia — that is a quality-of-life
 issue and we do not dismiss it. When a commercial site has an appearance
 standard, which for hospitality, healthcare, food handling and retail is a
 legitimate business requirement rather than a preference. And when a spider that
@@ -371,7 +371,7 @@ spraying it, and that the result holds for a season rather than a fortnight.
 
 ## Related work
 
-Because spider numbers track their prey, a spider problem is often really an
+Because spider numbers track their prey, a spider problem is often an
 insect problem — which is why this work frequently overlaps with
 [fly control](/services/fly-control/) and general perimeter treatment. Sealing
 the gaps that let spiders in is

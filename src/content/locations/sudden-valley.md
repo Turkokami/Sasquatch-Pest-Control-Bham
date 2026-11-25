@@ -3,7 +3,7 @@ town: sudden-valley
 title: "Pest Control & Exterminator in Sudden Valley, WA"
 description: "Pest control and exclusion for Sudden Valley — carpenter ants in cedar and forest-edge rodents, inside the Lake Whatcom watershed. Call 360-410-2199."
 h1: "Pest Control in Sudden Valley, Washington"
-answer: "Sudden Valley is 1970s cedar built into a working forest edge, inside the watershed that supplies Bellingham's drinking water. That combination sets the job: carpenter ants in softened cedar, rodents off the treeline, damp crawlspaces on sloped lots, and real restraint about what we put on the ground."
+answer: "Sudden Valley is 1970s cedar built into a working forest edge, inside the watershed that supplies Bellingham's drinking water. That combination sets the job: carpenter ants in softened cedar, rodents off the treeline, damp crawlspaces on sloped lots, and restraint about what we put on the ground."
 ready: true
 expert: kristofer-elling
 faqs:
@@ -12,7 +12,7 @@ faqs:
   - q: "Does being in the Lake Whatcom watershed change what you use?"
     a: "Yes, and we treat that as a genuine constraint rather than a talking point. We favor exclusion, habitat correction and contained placements over anything broadcast, we watch the weather before exterior work, and we are candid when the right answer is a drainage fix rather than an application."
   - q: "Why do carpenter ant treatments here keep coming back?"
-    a: "Because the parent colony was never found. A mature population here keeps its parent nest outdoors in a stump, a dead limb or a landscape timber, with satellites inside the structure. Knock out the satellite and leave the parent twenty feet away, and what you have bought is a quiet month or two."
+    a: "Because the parent colony was never found. A mature population here keeps its parent nest outdoors in a stump, a dead limb or a landscape timber, with satellites inside the structure. Knock out the satellite and leave the parent twenty feet away, and what you have bought is a month or two without ants."
   - q: "Do I need approval from the association for exclusion work?"
     a: "Often, for anything that changes the exterior appearance — vent covers, screening, netting, chimney caps. We are used to working within that. Tell us early if approval is needed so we can specify the work in a way that is likely to be approved rather than having to redo the paperwork."
   - q: "What comes in off the forest edge?"
@@ -56,7 +56,7 @@ The satellites are what people see: workers on a counter, frass under a window,
 a rustling in a wall at night.
 
 Treating the satellite while the parent sits twenty feet away in a stump gets
-you a quiet couple of months. That is the whole reason carpenter ant jobs
+you a couple of months without ants. That is the whole reason carpenter ant jobs
 develop a reputation for coming back.
 
 So the work here is investigative before it is anything else. We are looking for
@@ -87,7 +87,7 @@ Sudden Valley sits in the Lake Whatcom catchment, and Lake Whatcom is the
 drinking water reservoir for Bellingham and much of the surrounding area. A
 great deal of this community drains toward it.
 
-We treat that as a real constraint on how we work rather than as something to
+We treat that as a constraint on how we work rather than as something to
 mention and move past.
 
 In practice it means we lead with exclusion, habitat modification and contained
@@ -206,7 +206,7 @@ here.
 
 **Autumn.** The busiest stretch. The rain returns and rodents move off the forest edge toward
 buildings within a few weeks. Spiders come indoors during the wandering season.
-Exclusion completed now is the difference between a quiet winter and a
+Exclusion completed now is the difference between a pest-free winter and a
 remediation job.
 
 ## Rodents and the underfloor question
@@ -248,7 +248,7 @@ about here, and it is worth treating as its own subject.
 A crawlspace cut into a slope does not drain evenly. Water moves through the
 soil downhill, arrives at the uphill foundation wall, and finds the low end of
 the crawl. What you get is a space that is dry at one end and persistently damp
-at the other, with the joists and subfloor above the wet end quietly taking on
+at the other, with the joists and subfloor above the wet end slowly taking on
 moisture for years.
 
 Everything moisture-driven follows from that. Moisture ants colonize framing
@@ -313,7 +313,7 @@ houses the attic matters, because a soffit transition on a 1970s roofline is a c
 You get a plain account of what is happening and why, what should be done now,
 what is season-restricted and therefore has to wait, and which items are a
 building repair or a tree job rather than a pest treatment. On this housing
-stock a real share of the answer is carpentry and drainage, and we would rather
+stock a large share of the answer is carpentry and drainage, and we would rather
 say that than sell a recurring program around an unresolved water problem.
 
 Inspections are free for everything we handle, bed bugs excepted — those carry a

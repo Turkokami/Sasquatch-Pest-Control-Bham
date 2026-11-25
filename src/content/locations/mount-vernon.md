@@ -16,7 +16,7 @@ faqs:
   - q: "Does the Skagit River affect pest pressure here?"
     a: "Considerably. The river corridor and the dike system are continuous cover running the length of the valley, and the low ground saturates early. Riverfront and low-lying properties see their autumn rodent movement well before the higher ground does."
   - q: "Do you work with downtown restaurants?"
-    a: "Yes. Food service in an old building is a different job from a modern unit — shared structure, older drainage and a waste situation that is often the real driver. We put the housekeeping findings in the report rather than quietly servicing around them."
+    a: "Yes. Food service in an old building is a different job from a modern unit — shared structure, older drainage and a waste situation that is often the main driver. We put the housekeeping findings in the report rather than silently servicing around them."
   - q: "When is the worst time of year here?"
     a: "Late September through November, and harvest sharpens it. Cutting a field removes cover in an afternoon and the displaced population goes to the nearest structure, then the rain floods the low ground and does it again. Those weeks decide the whole winter."
   - q: "Is the visit free?"
@@ -26,7 +26,7 @@ faqs:
 ## The county seat, and three towns inside it
 
 Mount Vernon is the largest place we work south of the county line, and like
-most towns of its age it is really several places sharing a name. From our side
+most towns of its age it is several places sharing a name. From our side
 of the work there are three, and the address tells you which one you are in
 before anything else does.
 
@@ -40,7 +40,7 @@ designed for one being applied to another.
 
 ## Downtown, where the problem belongs to the block
 
-Mount Vernon has a real historic core — masonry and timber commercial buildings,
+Mount Vernon has a historic core — masonry and timber commercial buildings,
 many over a century old, built shoulder to shoulder.
 
 That construction has a consequence people find genuinely surprising. Buildings
@@ -78,7 +78,7 @@ and still have a problem.
 Waste is the second and it is where most of the genuine progress sits. A
 dumpster with a broken lid, an enclosure that cannot be closed, or bins staged
 in an alley overnight will support a rodent population that no service schedule
-overcomes. We put that in the report. Quietly servicing around a waste problem
+overcomes. We put that in the report. Silently servicing around a waste problem
 while billing monthly would be dishonest, and it also does not work.
 
 Deliveries are the third. Cardboard and pallets arriving from elsewhere bring
@@ -317,7 +317,7 @@ exclusion work. On a commercial building it starts with your operating
 constraints instead, because those shape everything after them. Then the
 crawlspace, properly and with a light. Then the attic and the interior.
 
-Afterwards you hear, in plain terms, what we found and why, what has to happen now and what can wait, and which items are repairs to the building rather than pest work. On older Mount Vernon property a real share of the answer is drainage
+Afterwards you hear, in plain terms, what we found and why, what has to happen now and what can wait, and which items are repairs to the building rather than pest work. On older Mount Vernon property a large share of the answer is drainage
 and carpentry, and saying so costs us the recurring service.
 
 Inspections are free for every pest we handle, bed bugs excepted — those carry a

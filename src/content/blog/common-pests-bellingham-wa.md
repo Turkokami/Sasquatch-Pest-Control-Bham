@@ -11,7 +11,7 @@ If you live in Bellingham, Washington, you already know the Pacific Northwest is
 
 ## Why Bellingham's climate creates unique pest pressure
 
-Bellingham sits in a maritime climate zone: mild, wet winters, warm summers, and consistent rainfall. Those conditions do three things that matter for pest control. First, they keep pest populations active longer — the ground rarely freezes deeply enough to kill off rodent burrows, ant colonies, or overwintering insects, so pests don't truly go away in winter, they go quiet and find shelter, often in your home. Second, the moisture creates ideal conditions for wood-destroying organisms like termites and carpenter ants, especially in older homes. Third, our forested surroundings mean constant pest pressure at the perimeter, since neighborhoods back up to greenbelts and undeveloped land.
+Bellingham sits in a maritime climate zone: mild, wet winters, warm summers, and consistent rainfall. Those conditions do three things that matter for pest control. First, they keep pest populations active longer — the ground rarely freezes deeply enough to kill off rodent burrows, ant colonies, or overwintering insects, so pests don't truly go away in winter, they go dormant and find shelter, often in your home. Second, the moisture creates ideal conditions for wood-destroying organisms like termites and carpenter ants, especially in older homes. Third, our forested surroundings mean constant pest pressure at the perimeter, since neighborhoods back up to greenbelts and undeveloped land.
 
 ## Winter pests in Bellingham (December to February)
 
@@ -123,7 +123,7 @@ Yes. Dampwood termites exist throughout Western Washington, including Bellingham
 
 ### Are there dangerous spiders in Whatcom County?
 
-Not really. The Pacific Northwest doesn't have the concentrations of medically significant spiders found elsewhere, and black widows are rarely found west of the Cascades. The hobo spider's reputation for causing serious bites has not survived closer study. Heavy indoor spider populations are a nuisance issue rather than a danger, and they respond well to treatment.
+Very few. The Pacific Northwest doesn't have the concentrations of medically significant spiders found elsewhere, and black widows are rarely found west of the Cascades. The hobo spider's reputation for causing serious bites has not survived closer study. Heavy indoor spider populations are a nuisance issue rather than a danger, and they respond well to treatment.
 
 ### What time of year are wasps worst in Bellingham?
 

@@ -12,7 +12,7 @@ steps:
   - "Listen for height: low near the floor points to the crawlspace, high at the ceiling line to the attic, and sound that travels means a run"
   - "Dust flour or talc overnight at the crawl hatch, under the sink or along the baseboard of the loudest room to catch prints"
   - "Keep poison out of the cavity you can hear, and do not cut into that wall looking for the animal"
-  - "Skip ultrasonic plug-ins, and do not take a quiet week as the end of it; the rodent has often just moved"
+  - "Skip ultrasonic plug-ins, and do not take a week without noise as the end of it; the rodent has often just moved"
   - "Then call: the free rodent visit goes into the crawlspace and up to the attic hatch, and the work runs find the way in, trap, then seal"
 faqs:
   - q: "Does the time of night tell you anything?"
@@ -24,7 +24,7 @@ faqs:
   - q: "Why do you keep talking about the outside of my house?"
     a: "Because that is where the problem is solved. Whatever is in the wall got there through an opening, and until that opening is closed, removing the animal only creates a vacancy. The wall is the symptom and the gap is the cause."
   - q: "It stopped after a few nights. Am I fine?"
-    a: "Not necessarily. Rodents move around a building and a quiet week often means activity has shifted to another part of the structure rather than ended. It is worth a look while you still know roughly where the noise was."
+    a: "Not necessarily. Rodents move around a building and a week without noise often means activity has shifted to another part of the structure rather than ended. It is worth a look while you still know roughly where the noise was."
   - q: "How long does resolving it usually take?"
     a: "For a straightforward mouse situation, often a week or two of trapping alongside the sealing work. Rats can take longer because they are cautious about new objects. Anyone promising same-day elimination inside a wall is guessing."
   - q: "What does it cost to have somebody look?"
@@ -239,7 +239,7 @@ evening. This is the part that decides whether you are calling somebody again
 next October.
 
 Where insulation has been contaminated, we will tell you honestly whether it
-needs to come out or whether it can be left. That is a real cost and we do not
+needs to come out or whether it can be left. That is a cost and we do not
 recommend it lightly, but there are situations where leaving fouled material in
 a roof space is the wrong call, and we would rather have that conversation
 directly.
@@ -297,7 +297,7 @@ than an afternoon spent listening at the wall.
 
 For a mouse situation in a reasonably sound building, the usual shape is a
 couple of weeks: trapping running while the sealing work is done, activity
-dropping off through it, then a quiet check afterwards.
+dropping off through it, then a check afterwards to confirm it has stopped.
 
 Rats take longer, sometimes considerably. They are neophobic — genuinely
 suspicious of anything new in their environment — and a rat that has decided a

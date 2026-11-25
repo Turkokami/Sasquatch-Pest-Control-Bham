@@ -334,7 +334,7 @@ because a struck trap that falls into insulation is lost.
 objects and new foods, and that this neophobia is thought to be more pronounced
 in roof rats than in Norway rats. Of the two species, this is the one that will
 step around a trap for the better part of a week. Setting traps unset for a few
-days, then arming them, is a real technique rather than a delay.
+days, then arming them, is a technique rather than a delay.
 
 **Numbers, not cleverness.** A run that supports a colony needs a line, not a
 pair. Under-trapping produces a small catch and a wary remainder.

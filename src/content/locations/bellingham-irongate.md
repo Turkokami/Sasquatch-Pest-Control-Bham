@@ -17,7 +17,7 @@ faqs:
   - q: "Nobody is here evenings or weekends. Does that matter?"
     a: "A great deal. Long undisturbed stretches are exactly what rodents want, and a problem that would be noticed in a day at a staffed premises runs for weeks here. Monitoring matters more in a building nobody walks at night."
   - q: "Do you provide documentation for insurance or audit?"
-    a: "Yes, and for most industrial accounts that is half the value. Devices mapped and numbered, service records that follow a logical sequence, and findings written plainly — including the housekeeping ones we could quietly service around instead."
+    a: "Yes, and for most industrial accounts that is half the value. Devices mapped and numbered, service records that follow a logical sequence, and findings written plainly — including the housekeeping ones we could silently service around instead."
   - q: "We have no food on site. Why do we still get rodents?"
     a: "Rodents need harborage and water as much as food, and both are usually available. The food is often the break room, a vending area or somebody's desk drawer, and it takes very little to sustain a population that is otherwise living in the yard."
   - q: "Is there a charge to come and quote?"
@@ -102,7 +102,7 @@ program [makes the same point about
 harborage](https://ipm.ucanr.edu/home-and-landscape/rats/): take away the
 sheltered voids and there is much less left to control.
 
-We put those findings in writing rather than quietly servicing around them. A
+We put those findings in writing rather than silently servicing around them. A
 client who racks their material sees a difference in a season. A client who does
 not is paying us to manage a symptom indefinitely, and they deserve to know
 which of those they have chosen.
@@ -113,7 +113,7 @@ This is the factor that most distinguishes Irongate from a retail or hospitality
 setting, and it cuts both ways.
 
 Industrial premises are frequently unoccupied from late afternoon Friday until
-Monday morning, and many are quiet every evening. That is a great deal of
+Monday morning, and many are empty every evening. That is a great deal of
 undisturbed time — exactly the condition rodents prefer — and it means the early
 signals nobody is present to notice go unnoticed for weeks rather than a day.
 
@@ -184,7 +184,7 @@ for them achieves nothing and a good deal of money gets spent that way.
 The work is tracing back to the source lot: starting with whatever has sat
 longest and furthest back, checking spillage in racking seams, under pallets and
 in the corners of a storage area, and being systematic. It is usually one
-damaged bag or an old spill quietly producing adults for months. After that it
+damaged bag or an old spill steadily producing adults for months. After that it
 is rotation, sealed containers where practical, cleaning residue out of seams,
 and monitoring long enough to be sure it is finished.
 
@@ -232,13 +232,13 @@ before us.
 
 ## Documentation
 
-For most accounts here the record is a real part of the value, and it should be
+For most accounts here the record is a large part of the value, and it should be
 built to be read by somebody other than the person who ordered the service.
 
 Devices mapped and numbered so a replacement technician, an insurer or an
 auditor can follow the logic. Service records in a sequence that shows trend
 rather than just attendance. Findings written plainly, including the
-housekeeping, storage and maintenance items that we could quietly work around
+housekeeping, storage and maintenance items that we could silently work around
 instead.
 
 That last part is the difference between a program and a subscription. If the

@@ -101,7 +101,7 @@ moth people meet indoors here looks like that.
 The behavior matters as much as the color. These adults fly to light, which is
 exactly why they get noticed — a household sees them near a lamp, a range hood
 or a window in the evening and concludes the problem is everywhere in the house.
-The flying is real; the spreading is not. Adults disperse; the food source is
+The flying happens; the spreading does not. Adults disperse; the food source is
 still one container.
 
 Adults are short-lived and their only job is reproduction. Clemson records
@@ -118,8 +118,7 @@ notes they produce silk webbing throughout the food source. Clemson adds that
 the larva weaves a tunnel-like case of frass and silk around itself as it feeds.
 
 In practice that means infested grain, flour, cereal, seed or dried fruit looks
-slightly wrong before it looks obviously infested. Clumped. Stringy. Matted at
-the surface, or webbed into the folds of the bag. Tip a suspect bag into a pale
+slightly wrong before it looks obviously infested. It is clumped, stringy, matted at the surface, or webbed into the folds of the bag. Tip a suspect bag into a pale
 bowl and the silk shows against the material immediately.
 
 The larvae themselves are pale caterpillars. Minnesota calls them whitish worms
@@ -220,7 +219,7 @@ and it is answerable.
 ## The season here
 
 Development runs on temperature, and a heated Whatcom County kitchen is warm
-year-round, so this species never really stops.
+year-round, so this species never stops.
 
 UC IPM puts the complete egg-to-adult cycle at about six to eight weeks in warm
 weather, and Kentucky records a life cycle as short as twenty-five days. Clemson
@@ -364,7 +363,7 @@ webbing located, moths still flying. At that point a second pair of eyes and a
 methodical run through the outbuildings, the garage and the less obvious
 containers usually settles it in an hour.
 
-**A property with real storage.** A farm building, a feed store, a large bird
+**A property with large-scale storage.** A farm building, a feed store, a large bird
 seed or grain reservoir, or a household with several outbuildings — where the
 number of candidate containers exceeds what one person will work through.
 
@@ -400,7 +399,7 @@ kept rather than waiting to find out by accident.
 **No fresh cocoons appearing at ceiling lines.** Old ones stay stuck where they
 are, so scrape or vacuum the ones you find so that anything new is obviously new.
 
-**Judge it across a season.** A pantry that is quiet in July and moth-filled again
+**Judge it across a season.** A pantry that is clear in July and moth-filled again
 in September had a reservoir that was never located — most often outside the
 kitchen — and that is worth one more search rather than a treatment.
 

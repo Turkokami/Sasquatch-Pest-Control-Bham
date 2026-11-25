@@ -100,7 +100,7 @@ on hygrometers rather than on products.
 ## What you have in front of you
 
 **Shape.** Flat, tapering from a broad head end to a narrow tail, which people
-describe as teardrop or carrot-shaped. Wingless.
+describe as teardrop or carrot-shaped, and wingless.
 
 **Size.** UC IPM gives about half an inch, occasionally reaching three quarters.
 The [PNW handbook](https://pnwhandbooks.org/insect/structural-health/nuisance-household/nuisance-household-silverfish), writing for this region, gives about three eighths of an inch,
@@ -235,7 +235,7 @@ The PNW handbook makes the point directly: do not store cardboard boxes on
 concrete, because the underside stays damp. That is food, shelter and a humid
 microclimate in one object.
 
-## What they eat, and where the loss is real
+## What they eat, and where the loss matters
 
 Not the house. Starch, and the things starch is in.
 
@@ -453,7 +453,7 @@ is usually asked. Taking the cardboard out of a damp garage moves silverfish
 somewhere else in the same garage. Dropping the humidity in that garage removes
 them.
 
-So the real list of things that attract them is short and it is mostly about
+So the list of things that attract them is short and it is mostly about
 water: a bathroom with no working extractor, a crawlspace with a failed vapor
 barrier, a laundry vented indoors, a cold exterior wall behind a wardrobe,
 condensation on single glazing, a leak nobody has found yet. The food is

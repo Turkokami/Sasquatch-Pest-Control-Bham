@@ -18,7 +18,7 @@ faqs:
     a: "It does, and it is one of the few genuine advantages of a single-era development. When one unit's problem turns out to be a particular detail — a vent type, a garage seal, the way a service was run — the odds are high that the same detail exists on the whole row. We can check it in minutes rather than searching."
   - q: "Do you need to get into my neighbor's unit?"
     a: "Sometimes, and we will always say so rather than pretend otherwise. Where a source sits in a shared void or under an adjoining unit, access matters. Often an HOA or a property manager can arrange it far more easily than a resident can."
-  - q: "Are ants along the foundation a real problem?"
+  - q: "Are ants along the foundation a problem?"
     a: "Usually a nuisance rather than damage, and worth identifying anyway. Odorous house ants and pavement ants along an irrigated foundation are common here and are a different matter from carpenter ants, which excavate wood. The identification decides whether this is a perimeter job or a building one."
   - q: "Does an assessment cost anything?"
     a: "No, other than bed bug verification, which is charged and credited against treatment. In attached housing the assessment is worth having even if you go no further, because it establishes whether the source is in your unit or in the structure — and that changes who should be acting."
@@ -68,7 +68,7 @@ property manager. Where that is possible it is much cheaper per household than
 everybody solving it separately, and it is the only version that finishes.
 
 Where it is not possible — and often it is not, because one owner will not
-engage — there is still real work available on a single unit, and it is worth
+engage — there is still work available on a single unit, and it is worth
 being clear about what it is.
 
 Sealing the shared routes on your side limits what reaches you. That means the
@@ -134,7 +134,7 @@ Daylight means a gap, and a gap at floor level in a space that connects
 directly to the house is the most convenient possible entrance.
 
 Everything else about a garage helps as well, from the pest's point of view. It
-is unheated but sheltered, it is quiet, it holds stored soft material, and
+is unheated but sheltered, it is undisturbed, it holds stored soft material, and
 frequently it holds pet food, birdseed or garden products in bags rather than
 containers.
 

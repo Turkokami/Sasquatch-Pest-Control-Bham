@@ -62,7 +62,7 @@ faqs:
   - q: "Do they use the same nest again the following year?"
     a: "The colony does not survive, but the paper sometimes does. Penn State records queens of this species establishing early by taking over the previous year's structure, and WSU notes new combs built alongside old ones — which makes it the one local exception to the rule that wasp nests are single-use."
   - q: "Is it worth treating them if they are eating my garden pests?"
-    a: "Usually not, and that trade is real. Both Colorado State and Penn State describe this wasp taking caterpillars, sawfly larvae and a wide range of other insects to feed its brood, so a comb under a shed eave is doing unpaid work all summer."
+    a: "Usually not, and that trade-off matters. Both Colorado State and Penn State describe this wasp taking caterpillars, sawfly larvae and a wide range of other insects to feed its brood, so a comb under a shed eave is doing unpaid work all summer."
 ---
 
 ## A wasp that was not here when most of this county was built
@@ -89,7 +89,7 @@ knowledge about wasps in this county — where they nest, how they behave, what
 provokes them — was formed before it arrived and does not describe it.
 
 It also means the identification is worth getting right more often than usual,
-because this insect looks like the species that causes the real trouble here and
+because this insect looks like the species that causes the serious trouble here and
 behaves nothing like it.
 
 ## Why everybody calls it a yellowjacket
@@ -212,7 +212,7 @@ warmer and duller than the sharp black and yellow of the introduced species.
 Antennae: bright orange on *dominula*, dark on the native. And size, since the
 native runs slightly larger.
 
-Does the distinction change what you should do? Almost never. Both are
+Does the distinction change what you should do? It almost never does. Both are
 open-comb wasps with small colonies and low defensiveness, and the honest
 recommendation for both is usually the same. It matters for a different reason:
 the introduced species has been displacing natives across its new range, Penn
@@ -295,7 +295,7 @@ Here is the reason this profile exists.
 Somebody sees a yellow and black wasp going in and out of a hole in the side of
 their house and calls it a yellowjacket. Under that name, the answer is serious:
 a colony in a cavity that cannot be seen, potentially several thousand insects
-by September, a real hazard if the entrance is sealed while it is alive, and a
+by September, a hazard if the entrance is sealed while it is alive, and a
 job for somebody with the right equipment.
 
 Under the correct name, the same situation is usually a few dozen wasps on an

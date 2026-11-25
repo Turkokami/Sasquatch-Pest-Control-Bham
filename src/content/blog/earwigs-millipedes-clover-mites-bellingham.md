@@ -25,9 +25,9 @@ Clover mites feed on grass and plants and tend to migrate indoors by the hundred
 
 ## Are any of them actually harmful?
 
-This is the reassuring part: no, not really. None of these three damage your home's structure the way termites or carpenter ants do. They don't eat wood, chew wiring, or nest destructively. None pose a health threat either. Earwigs don't transmit disease and their pinch is harmless. Millipedes don't bite — some can secrete a mild defensive fluid, so it's best not to handle them bare-handed, but they're not dangerous. Clover mites don't bite people or pets, don't infest food, and feed only on lawn and garden plants; they have no interest in the house at all and can't harm it.
+This is the reassuring part: no. None of these three damage your home's structure the way termites or carpenter ants do. They don't eat wood, chew wiring, or nest destructively. None pose a health threat either. Earwigs don't transmit disease and their pinch is harmless. Millipedes don't bite — some can secrete a mild defensive fluid, so it's best not to handle them bare-handed, but they're not dangerous. Clover mites don't bite people or pets, don't infest food, and feed only on lawn and garden plants; they have no interest in the house at all and can't harm it.
 
-The single real annoyance is that crushed clover mites leave a red stain on light surfaces, so vacuum rather than smash them. Functionally, all three are nuisance invaders: unpleasant to find in numbers, but not a threat.
+The one genuine annoyance is that crushed clover mites leave a red stain on light surfaces, so vacuum rather than smash them. Functionally, all three are nuisance invaders: unpleasant to find in numbers, but not a threat.
 
 ## Why do they sometimes show up in big numbers?
 
@@ -40,7 +40,7 @@ Because all three are moisture-driven outdoor pests, prevention centers on dryin
 1. **Create a dry barrier at the foundation.** Pull mulch, leaf litter, and dense vegetation back from the foundation, and avoid piling heavy organic material against the house. This removes the damp harborage earwigs and millipedes rely on.
 2. **Manage moisture.** Fix leaks and improve drainage so water flows away from the foundation, clean gutters, and reduce excess irrigation near the house. Drier soil at the perimeter makes your home far less inviting.
 3. **Seal entry points.** Close gaps around windows and doors, add or replace weather stripping and door sweeps, repair screens, and seal cracks in the foundation and around utility penetrations. This is especially key for clover mites, which exploit the tiniest openings.
-4. **Mind the lawn-to-foundation edge.** For clover mites, a vegetation-free band a couple of feet wide between a lush lawn and the foundation makes a real difference, since they migrate straight off the grass onto the walls.
+4. **Mind the lawn-to-foundation edge.** For clover mites, a vegetation-free band a couple of feet wide between a lush lawn and the foundation makes a difference, since they migrate straight off the grass onto the walls.
 5. **Vacuum, don't squash.** When they do get in, vacuum them up. This avoids clover mite stains and clears earwigs and millipedes without spreading anything.
 
 ## When should you call Sasquatch?
@@ -49,13 +49,13 @@ These pests are usually a nuisance you can manage with exclusion and moisture co
 
 ## Common questions
 
-### Do earwigs really crawl into your ears?
+### Do earwigs crawl into your ears?
 
 No, that's an old myth with no basis. Earwigs have no interest in ears and don't burrow into them. The pincers on their rear are for defense and handling prey, and at most they deliver a harmless little pinch that doesn't break skin or transmit anything. Earwigs are a moisture-loving nuisance pest, not a danger to people.
 
 ### Are millipedes dangerous or do they bite?
 
-Millipedes don't bite and aren't dangerous. They feed on decaying plant matter, not your home or your food, and they don't damage structures. Some species can secrete a mild defensive fluid if handled, so it's best not to pick them up bare-handed, but they pose no real threat. They tend to wander indoors in numbers after heavy rain or during dry spells as they follow moisture.
+Millipedes don't bite and aren't dangerous. They feed on decaying plant matter, not your home or your food, and they don't damage structures. Some species can secrete a mild defensive fluid if handled, so it's best not to pick them up bare-handed, but they pose no threat. They tend to wander indoors in numbers after heavy rain or during dry spells as they follow moisture.
 
 ### What are the tiny red bugs on my windowsill?
 

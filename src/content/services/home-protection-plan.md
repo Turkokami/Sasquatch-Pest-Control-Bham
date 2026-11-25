@@ -107,7 +107,7 @@ we return at no additional charge under our
 
 ## What it does not cover
 
-Plainly, because a plan that claims to cover everything is not a real document.
+Plainly, because a plan that claims to cover everything is not an honest document.
 
 **Bed bugs** are separate — a paid verification visit credited toward treatment,
 then per-room pricing. See [bed bug control](/services/bed-bug-control/).
@@ -161,7 +161,7 @@ evenly spaced.
 **Mid-autumn** brings the overwintering insects — cluster flies, [boxelder bugs](/pest-library/boxelder-bug/)
 and conifer seed bugs piling onto south-facing walls looking for a way in.
 
-**Winter** is quiet outside, which makes it the right time for the structural
+**Winter** is slow outside, which makes it the right time for the structural
 conversation: what the crawlspace is doing, where the gaps are, what should be
 sealed before spring.
 
@@ -186,7 +186,7 @@ than stopping the day you call.
 
 ## No contract, and why
 
-The long-term contract is standard in this industry and its real function is
+The long-term contract is standard in this industry and its main function is
 retention rather than service quality. A company confident in its work does not
 need a termination penalty to keep customers.
 
@@ -199,8 +199,8 @@ right pressure to be under.
 
 ## What it costs
 
-Priced from the property rather than from a table, because the variables are
-real: square footage, lot size and how much perimeter there is, what is adjacent
+Priced from the property rather than from a table, because the variables
+matter: square footage, lot size and how much perimeter there is, what is adjacent
 — forest edge, greenbelt, farmland or suburb — the pest history, and how much
 exterior structure there is to service.
 
@@ -273,7 +273,7 @@ either way.
 Circumstances change and the plan should be able to follow.
 
 **Scaling scope.** If you add an outbuilding, a shop or a substantial deck, tell
-us and we will re-price rather than quietly under-servicing it. If a problem area
+us and we will re-price rather than silently under-servicing it. If a problem area
 resolves permanently — usually because exclusion work closed it — we will reduce
 the scope rather than keeping the number where it is.
 
@@ -296,7 +296,7 @@ The residential plan described above is built for houses. Businesses and
 multi-unit buildings need something structurally different, and we run those
 separately rather than stretching a home plan to fit.
 
-The differences are real. Device placement gets mapped so an inspector or auditor
+The differences matter. Device placement gets mapped so an inspector or auditor
 can see the layout. Every visit produces a record that stands on its own. Scope
 usually includes areas a home plan never touches — dock doors, waste enclosures,
 utility chases, feed or product storage. And scheduling has to work around the
@@ -318,14 +318,14 @@ last time. That accumulates into a picture of the property: which side of the
 house takes the pressure, whether activity in one area is climbing or falling,
 which interventions actually held, and which entry point keeps reopening.
 
-That record is what lets us tell you in year two that the problem is not really
+That record is what lets us tell you in year two that the problem is not
 pests but a downspout, or that the area we have treated four times needs sealing
 rather than a fifth treatment. Without it, a recurring plan is just repetition —
 which is exactly what recurring service becomes at companies that do not keep
 one.
 
 For rentals, second homes and anywhere the owner is not present, that history is
-also the only real visibility into what has been happening at the property.
+also the only visibility into what has been happening at the property.
 
 ## The honest comparison
 

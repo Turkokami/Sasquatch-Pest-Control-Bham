@@ -58,7 +58,7 @@ export const hormigaDePavimento: EsPlaga = {
     {
       h2: 'Lo que de verdad cuesta tenerlas',
       parrafos: [
-        'Muy poco, y conviene decirlo claro. No excavan madera de la estructura, no muerden cables y no transmiten ninguna enfermedad de importancia en una casa. No son agresivas, y aunque Penn State registra un aguijón en el último segmento del abdomen, que una le pique no es algo que pase en la vida diaria. Lo que hacen es caminar en cantidad sobre donde se prepara la comida, meterse en empaques abiertos y persistir. Es una molestia real y una razón legítima para atenderla; no es un hallazgo estructural, y nadie se lo debería vender como tal.',
+        'Muy poco, y conviene decirlo claro. No excavan madera de la estructura, no muerden cables y no transmiten ninguna enfermedad de importancia en una casa. No son agresivas, y aunque Penn State registra un aguijón en el último segmento del abdomen, que una le pique no es algo que pase en la vida diaria. Lo que hacen es caminar en cantidad sobre donde se prepara la comida, meterse en empaques abiertos y persistir. Es una molestia y una razón legítima para atenderla; no es un hallazgo estructural, y nadie se lo debería vender como tal.',
         'La tierra que sacan de debajo de una losa puede, con los años, contribuir a que se hunda una junta de concreto delgado; es un efecto lento y menor, y la helada, las raíces y una base mal compactada explican casi todo lo que se les culpa.',
       ],
     },

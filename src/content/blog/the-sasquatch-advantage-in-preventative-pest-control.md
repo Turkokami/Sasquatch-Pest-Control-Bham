@@ -17,7 +17,7 @@ supersededBy: '/services/home-protection-plan/'
 
 1. **Cost savings.** Addressing a full-blown infestation is expensive. Preventative measures save you money over time by avoiding extensive damage and the need for intensive treatment.
 
-2. **Health and safety.** Pests pose real health risks, from allergens to the spread of disease. Preventative pest control safeguards the health and well-being of your family.
+2. **Health and safety.** Pests pose health risks, from allergens to the spread of disease. Preventative pest control safeguards the health and well-being of your family.
 
 3. **Peace of mind.** Knowing that your home is looked after against pest pressure provides a genuine sense of security.
 

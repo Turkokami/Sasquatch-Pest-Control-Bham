@@ -292,7 +292,7 @@ outcome. It removes one standard reason for a poor one.
 ## The year in retail
 
 **Late winter to spring.** Structural work at the dock and the service
-penetrations, while the building is quiet and the weather allows exterior work.
+penetrations, while the building is least busy and the weather allows exterior work.
 
 **Spring.** Ants — predominantly [odorous house ants](/pest-library/odorous-house-ant/) — in break rooms and around
 any food display. Small fly pressure begins.

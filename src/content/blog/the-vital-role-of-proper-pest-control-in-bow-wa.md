@@ -7,16 +7,16 @@ imported: 2026-08-31
 supersededBy: '/locations/bow/'
 ---
 
-Nestled in the scenic beauty of Bow, Washington, homeowners value the quiet of
-their surroundings. Along with that quiet comes the intrusion of pests that can
+Nestled in the scenic beauty of Bow, Washington, homeowners value the peace of
+their surroundings. Along with that peace comes the intrusion of pests that can
 disrupt it and, left alone, compromise the house itself. This post covers what
 proper pest control does for a home in Bow and why it is worth doing before it
 is urgent.
 
 ## Protection against property damage
 
-Pests are a real threat to the structure of a home. Dampwood termites and
-carpenter ants work through wood quietly, and rodents chew wiring and insulation
+Pests are a threat to the structure of a home. Dampwood termites and
+carpenter ants work through wood, and rodents chew wiring and insulation
 in places nobody looks until something stops working. Pest control is a
 proactive defense that protects the value and the longevity of a property in
 Bow.

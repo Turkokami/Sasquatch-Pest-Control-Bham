@@ -39,8 +39,7 @@ faqs:
 ## What this county actually processes
 
 Whatcom and Skagit are food-producing counties, and the processing that follows
-the fields is a real part of the commercial work here. Berry receiving, freezing
-and packing. Dairy processing. Potato and vegetable handling on the Skagit side.
+the fields is a large part of the commercial work here. That means berry receiving, freezing and packing, dairy processing, and potato and vegetable handling on the Skagit side.
 Seafood at the water. Bakeries, commissaries, small manufacturers and the cold
 storage that serves all of them.
 
@@ -107,8 +106,7 @@ does most rodent pressure.
 inside drain lines and under equipment plinths. This is a sanitation problem
 wearing a pest problem's clothes, and treating the adults does nothing at all.
 
-**Dry storage and packaging.** Stored product insects, arriving inside the
-product. See below.
+**Dry storage and packaging.** Stored product insects, arriving inside the product, which are covered below.
 
 **Voids and equipment plinths.** Under and behind fixed equipment, in insulated
 panel joints, in the gap between a plinth and the floor. Warm, undisturbed,
@@ -297,7 +295,7 @@ setting and the label, and mechanical control — trapping, exclusion, monitorin
 nothing.
 
 Where a job cannot be done safely in a food environment, we will say so and
-propose the alternative rather than working around the constraint quietly.
+propose the alternative rather than working around the constraint without saying so.
 
 ## The year
 

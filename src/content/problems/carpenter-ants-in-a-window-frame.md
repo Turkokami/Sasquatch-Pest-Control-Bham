@@ -35,7 +35,7 @@ faqs:
 ## Why it is the window
 
 [Carpenter ants](/pest-library/carpenter-ant/) around a window frame is one of the most frequent calls we take
-in this county, and the reason is not really about ants at all. It is about
+in this county, and the reason is not about ants at all. It is about
 water.
 
 Carpenter ants do not attack sound, dry timber by preference. They excavate
@@ -137,7 +137,7 @@ is often the fastest route to the nest.
 
 On a large wooded property this becomes genuinely difficult and we say so
 honestly rather than pretending. A parent colony can be a hundred feet into the
-trees, and searching properly is real work rather than a lap of the house.
+trees, and searching properly is work rather than a lap of the house.
 
 ## The moisture side of the job
 

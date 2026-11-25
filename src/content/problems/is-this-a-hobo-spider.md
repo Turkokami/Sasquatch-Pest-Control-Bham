@@ -15,7 +15,7 @@ steps:
   - "Cut the numbers indoors by changing bright white lights near doors, fitting door sweeps and knocking webs down weekly for a month"
   - "Send us the photo or bring the specimen for a free opinion, and call for a visit if a black widow turns up in a woodpile, shed or crawlspace"
 faqs:
-  - q: "Are hobo spider bites really dangerous?"
+  - q: "Are hobo spider bites dangerous?"
     a: "The evidence behind that reputation has largely fallen apart. The claim rested on a small number of studies that later work did not support, and the agency that once listed the species as medically significant removed it. Current expert opinion does not treat it as dangerous."
   - q: "How can I tell if mine is one?"
     a: "Honestly, from a photograph you usually cannot, and neither can we. Reliable identification requires magnification and examination of features on the underside and the pedipalps. Anyone identifying one confidently from across a room is guessing."
@@ -33,7 +33,7 @@ faqs:
 
 ## The question behind the question
 
-Nobody really wants to know the species. What they want to know is whether the
+Nobody wants to know the species. What they want to know is whether the
 large fast brown spider in the bathtub can hurt them, and whether they should be
 worried about their children or their dog.
 
@@ -107,7 +107,7 @@ to the reproductive structures. Size overlaps as well, and it overlaps in the
 reassuring direction: the [giant house spider](/pest-library/giant-house-spider/) is generally the larger animal, so
 a big frightening spider is an argument against the hobo rather than for it.
 
-Leg banding deserves a paragraph of its own, because a real character has been
+Leg banding deserves a paragraph of its own, because a useful character has been
 buried under a bad folk test. WSU's key uses banding as an exclusion and nothing
 else. Visible dark rings on the legs rule the hobo spider out, because its legs
 are uniformly colored, and that is a genuine piece of information you can use
@@ -117,7 +117,7 @@ many harmless funnel weavers have unremarkable legs too. Ruling a species out is
 not the same as ruling one in, and most of the confident kitchen-table
 identifications made in this region have come from reversing that test.
 
-The one field character that does real work needs the spider on its back, which
+The one field character that does work needs the spider on its back, which
 usually means looking up through the base of a clear container. The sternum is
 the plate on the underside between the leg bases. WSU's key gives the hobo
 spider a pale stripe running down the middle of it, and gives the giant house
@@ -135,8 +135,7 @@ In this region, the large brown spiders found in houses are most often one of
 these.
 
 **Giant house spider.** Closely related to the hobo, considerably more common in
-homes here, and larger — a leg span that genuinely surprises people. Fast, which
-is what makes it alarming. Entirely harmless. This is what the majority of "hobo
+homes here, and larger — a leg span that genuinely surprises people. It is fast, which is what makes it alarming, and it is entirely harmless. This is what the majority of "hobo
 spider" sightings turn out to be. UC IPM goes further than mere abundance and
 records that in parts of the Pacific Northwest this larger species has
 competitively displaced the hobo spider. We say displaced rather than eaten on
@@ -156,7 +155,7 @@ outside in late summer, often across doorways overnight. Striking, completely
 harmless, and one of the more useful animals on a property.
 
 **Wolf spiders.** Ground hunters that do not build webs, sometimes large,
-sometimes seen carrying an egg sac or young. Harmless.
+sometimes seen carrying an egg sac or young, and harmless.
 
 **Black widow.** The western black widow is a Washington spider, and the state
 Department of Health describes it as common to eastern Washington. Its range
@@ -219,8 +218,7 @@ often across a doorway or between shrubs. Orb weaver, almost certainly a cross
 orb weaver here. Outdoors, seasonal, harmless and worth admiring.
 
 **A loose, messy, three-dimensional tangle** in a corner of a ceiling, a
-crawlspace or a garage, with a very long-legged spider hanging upside down in
-it. [Cellar spider](/pest-library/cellar-spider/).
+crawlspace or a garage, with a very long-legged spider hanging upside down in it. That is a [cellar spider](/pest-library/cellar-spider/).
 
 **A small, dense, irregular tangle low down in a dark undisturbed place** —
 under a shelf, behind stored material, in the corner of a crawlspace — with a
@@ -392,7 +390,7 @@ dealing with and worth being told about.
 wave takes the edge off a genuinely difficult few weeks.
 
 **Any situation involving someone with a serious anxiety about spiders.** That is
-a real quality-of-life issue and we do not think it is silly. The approach is the
+a quality-of-life issue and we do not think it is silly. The approach is the
 same — entries, lighting, webs, insects — but the priority is different.
 
 **Crawlspaces and garages** with heavy webbing and populations, where the

@@ -106,7 +106,7 @@ whole point. It requires placement in the right locations, in the right
 quantities, and it requires not spraying repellents over the top of it — which is
 why we ask people to stop treating before we arrive.
 
-Bait aversion is real, so we rotate active ingredients rather than using the same
+Bait aversion does happen, so we rotate active ingredients rather than using the same
 product indefinitely.
 
 ## Where they actually live
@@ -153,7 +153,7 @@ Where the answer depends on which side of that you are, we will say so plainly.
 
 ## Sanitation, honestly
 
-There is a version of this conversation that is really about blame, and we would
+There is a version of this conversation that is about blame, and we would
 rather not have it.
 
 Cockroaches arrive in deliveries, cardboard, groceries, used appliances,
@@ -268,18 +268,17 @@ garages.
 Setting expectations, because this is a service where impatience causes people to
 do counterproductive things.
 
-**Week one.** Bait placed. Activity often appears to increase briefly as insects
+**Week one.** The bait is placed. Activity often appears to increase briefly as insects
 move to feed, which is the treatment working rather than failing.
 
 **Weeks two and three.** Visible activity drops substantially. This is the point
 at which people conclude it is finished and stop cooperating with the plan.
 
-**Weeks three to six.** The egg cases carried through the first treatment hatch.
-Nymphs appear. This is the expected second act and it is why the follow-up exists,
+**Weeks three to six.** The egg cases carried through the first treatment hatch, and nymphs appear. This is the expected second act and it is why the follow-up exists,
 not evidence that anything went wrong.
 
-**Weeks six to ten.** With the second generation dealt with, monitors go quiet
-and stay quiet.
+**Weeks six to ten.** With the second generation dealt with, monitors go empty
+and stay empty.
 
 Confirmation is monitors reading zero over consecutive checks rather than
 somebody not having seen one lately. In a multi-unit building, add time — the

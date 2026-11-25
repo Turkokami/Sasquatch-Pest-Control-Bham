@@ -95,7 +95,7 @@ It is a Whatcom County address on an Eastern Washington infection, and the
 difference is the whole point.
 
 So what are we actually selling? The use of your own garden in August. That is
-a real thing to want and a reasonable thing to pay for. It is simply not a
+a reasonable thing to want and a reasonable thing to pay for. It is simply not a
 medical emergency, and we are not going to dress it up as one.
 
 Whatcom County Health and Community Services is one of the partners listed in

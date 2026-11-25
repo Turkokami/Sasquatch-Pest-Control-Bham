@@ -36,7 +36,7 @@ buildings.
 The housing is uniform, low and consistently built, which makes diagnosis fast.
 A good deal of the ground that matters is common rather than private, which
 decides who should be acting. And the routine self-inspection that a
-pest-control company quietly relies on from most homeowners — somebody putting
+pest-control company silently relies on from most homeowners — somebody putting
 their head into the crawlspace, climbing up to look at a soffit, moving what is
 stacked behind the shed — is not something anybody should be expecting here.
 
@@ -53,7 +53,7 @@ an unrelated reason and finds fouled insulation.
 That early-warning system is doing an enormous amount of work, and it depends
 on somebody being willing and able to get into awkward places.
 
-Getting under a house is hard work. It is low, dirty, cold, and there are real
+Getting under a house is hard work. It is low, dirty, cold, and there are
 hazards — old wiring, standing water, sharp edges, and occasionally an animal
 that is not pleased to see you. Nobody should be doing it to check on
 something, at any age, and certainly nobody should feel they ought to.
@@ -115,7 +115,7 @@ does, and the fixes are small, mechanical and permanent.
 On single-level housing the garage connects directly to the living space and it
 is the most productive place we look.
 
-It is sheltered but unheated, it is quiet, it holds stored soft material, and it
+It is sheltered but unheated, it is undisturbed, it holds stored soft material, and it
 very frequently holds birdseed, pet food, bulbs or garden products in bags
 rather than in solid containers. A gap at a door corner leads straight into
 that, and from there into the house.
@@ -136,7 +136,7 @@ feet, an unexpected encounter with a ground nest while gardening is a
 materially more serious event.
 
 Nests get found in August because that is when the colony is large and the
-traffic is obvious. They exist from spring, small and quiet, in soffit voids, at
+traffic is obvious. They exist from spring, small and inconspicuous, in soffit voids, at
 roofline junctions, in outbuildings, under deck rails, and in the ground along
 verges and boundary banks.
 

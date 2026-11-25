@@ -107,8 +107,8 @@ urgently.
 rather than sluggish. These develop in carrion. A sudden appearance of numbers of
 metallic flies indoors, particularly in one room, frequently means something has
 died in a wall cavity, an attic, a chimney or beneath a floor — often a rodent
-that took bait somewhere it could not be retrieved. That is a real finding with a
-real cause and it is worth investigating rather than swatting.
+that took bait somewhere it could not be retrieved. That is a definite finding with a
+definite cause and it is worth investigating rather than swatting.
 
 **House flies.** Smaller, grayer, active, and associated with waste, food and
 organic matter. A sanitation and exclusion question rather than an overwintering
@@ -298,7 +298,7 @@ goal.
 What works best on these properties is a well-timed exterior treatment on the
 elevations that matter, sealing concentrated on the house rather than every
 structure, and interior sealing so that what does get into the roof space stays
-out of the rooms. That combination is affordable and it makes a real difference.
+out of the rooms. That combination is affordable and it makes a difference.
 Chasing complete elimination across a working property is not.
 
 ## Windows themselves, and why upstairs

@@ -180,7 +180,7 @@ supply, and by October it is feeding a population that then goes looking for
 somewhere dry.
 
 The corrections are unglamorous and they are not ours to make: enough capacity
-for the real occupancy, lids that close, a hard surface rather than ground
+for the actual occupancy, lids that close, a hard surface rather than ground
 contact, and collection matched to the building. Managers who fix it see the
 difference quickly. Those who do not are buying quarterly service against a food
 source they are providing, and we would rather write that in the report than
@@ -281,7 +281,7 @@ resolves anything.
 
 You get a plain account of what we found, what is driving it, what needs doing
 now, what can wait, and which items belong to a builder, a landscaper or a
-drainage contractor rather than to us. On a hillside property a real share of the
+drainage contractor rather than to us. On a hillside property a large share of the
 answer is water management, and saying so costs us the recurring service.
 
 Looking is free for every pest we handle with the single exception of bed bugs,
@@ -331,7 +331,7 @@ channel rather than a single soiled patch, and compressed, soiled material has
 lost most of the R-value somebody is paying to heat against.
 
 In an attic that shows up as staining on a ceiling, a smell that is difficult to
-place, and a heating bill that has quietly climbed. In a crawlspace it shows up
+place, and a heating bill that has slowly climbed. In a crawlspace it shows up
 as insulation hanging loose, because it absorbed moisture and lost its grip, and
 that loose material is then both nesting habitat and a moisture problem in its
 own right.

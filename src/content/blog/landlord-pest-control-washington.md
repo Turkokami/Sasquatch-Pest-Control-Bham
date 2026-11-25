@@ -47,7 +47,7 @@ When a tenant reports pests, treat it as the repair-and-habitability issue the l
 
 ## What happens if a landlord does not address pests?
 
-Ignoring a legitimate pest problem creates real exposure. A serious infestation can implicate the duty to provide habitable housing, and tenants have remedies under the RLTA when landlords fail to make required repairs after proper notice. Beyond the legal remedies, an unaddressed infestation in a multi-unit building can spread between units and turn one complaint into many, multiplying both the cost and the liability. Local code enforcement can also become involved in severe cases. The practical lesson is that prompt, documented, professional response is almost always cheaper than the alternative.
+Ignoring a legitimate pest problem creates legal exposure. A serious infestation can implicate the duty to provide habitable housing, and tenants have remedies under the RLTA when landlords fail to make required repairs after proper notice. Beyond the legal remedies, an unaddressed infestation in a multi-unit building can spread between units and turn one complaint into many, multiplying both the cost and the liability. Local code enforcement can also become involved in severe cases. The practical lesson is that prompt, documented, professional response is almost always cheaper than the alternative.
 
 ## What is the smart approach for Bellingham landlords?
 
@@ -77,7 +77,7 @@ The RLTA sets timeframes for landlords to begin required repairs after receiving
 
 ### What happens if I ignore a pest problem in my rental?
 
-You create real exposure. A serious infestation can implicate the duty to provide habitable housing, and tenants have remedies under the RLTA when landlords fail to make required repairs after proper notice. In multi-unit buildings, an unaddressed infestation can spread between units and multiply the cost and liability, and code enforcement may become involved in severe cases. Prompt, documented, professional response is almost always cheaper than the consequences of ignoring it.
+You create legal exposure. A serious infestation can implicate the duty to provide habitable housing, and tenants have remedies under the RLTA when landlords fail to make required repairs after proper notice. In multi-unit buildings, an unaddressed infestation can spread between units and multiply the cost and liability, and code enforcement may become involved in severe cases. Prompt, documented, professional response is almost always cheaper than the consequences of ignoring it.
 
 ### Does Sasquatch work with landlords and property managers in Whatcom County?
 

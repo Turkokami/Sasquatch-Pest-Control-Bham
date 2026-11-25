@@ -101,7 +101,7 @@ export const controlDePolillas: EsServicio = {
     },
     {
       q: '¿Tengo que tirar todo?',
-      a: 'No. Tire lo que de verdad está infestado, y congele o guarde bien lo demás. El error común es tirar toda la despensa y dejar la fuente real, que muchas veces es la comida de mascota, el alpiste o un adorno.',
+      a: 'No. Tire lo que de verdad está infestado, y congele o guarde bien lo demás. El error común es tirar toda la despensa y dejar la verdadera fuente, que muchas veces es la comida de mascota, el alpiste o un adorno.',
     },
   ],
 };

@@ -54,7 +54,7 @@ export const mariquitaAsiatica: EsPlaga = {
     {
       h2: 'Por qué nuestra respuesta es "depende"',
       parrafos: [
-        'Vale la pena un tratamiento en un edificio que recibe un grupo grande cada año, en una casa con alguien asmático o alérgico, donde las paredes son claras y las manchas están haciendo daño visible, o donde la cantidad adentro a finales del invierno ya es difícil de vivir. Ahí, el trabajo exterior en el momento correcto más el sellado hace una diferencia real. No vale por unas cuantas en un alféizar en febrero: eso es una aspiradora y cinco minutos, y quien le cotice un programa por eso le vende un calendario, no una solución. Y si lo que quiere es que dejen de aterrizar en la pared, nada lo logra: se orientan por una superficie grande que da al sol, y esa superficie es su casa.',
+        'Vale la pena un tratamiento en un edificio que recibe un grupo grande cada año, en una casa con alguien asmático o alérgico, donde las paredes son claras y las manchas están haciendo daño visible, o donde la cantidad adentro a finales del invierno ya es difícil de vivir. Ahí, el trabajo exterior en el momento correcto más el sellado hace una diferencia. No vale por unas cuantas en un alféizar en febrero: eso es una aspiradora y cinco minutos, y quien le cotice un programa por eso le vende un calendario, no una solución. Y si lo que quiere es que dejen de aterrizar en la pared, nada lo logra: se orientan por una superficie grande que da al sol, y esa superficie es su casa.',
         'Es uno de los dos insectos que el dueño de esta empresa nombra cuando le preguntan cómo es el otoño aquí — el otro es la chinche apestosa marmoleada —, y llegan a las mismas paredes con días de diferencia. La presión es más fuerte donde hay mucho terreno abierto que las produce y un edificio expuesto al sol de la tarde, que describe casi toda la orilla agrícola del condado: Lynden, Everson, Nooksack, Sumas y los dos brazos del Nooksack hacia Deming y Acme. Una calle protegida en medio de Bellingham recibe bastante menos, y la orientación importa más que la dirección: dos casas de la misma calle viven cosas muy distintas según hacia dónde da la fachada larga. Y ocho meses del año hace algo útil: adultas y larvas se comen pulgones en cantidad, además de escamas y otros insectos blandos, y el programa de manejo de plagas de la Universidad de California la tiene en su galería de enemigos naturales, no en la de plagas. Por eso no le recomendaríamos intentar eliminarla de su propiedad: el trabajo es sobre el edificio, no sobre el insecto.',
       ],
     },
@@ -78,7 +78,7 @@ export const mariquitaAsiatica: EsPlaga = {
   faqs: [
     {
       q: '¿De verdad muerden las mariquitas asiáticas?',
-      a: 'Sí, y es lo principal que las separa de las mariquitas de siempre. La extensión de Minnesota registra que algunas muerden lo bastante fuerte para romper la piel, con una molestia menor y breve. Es un pellizco, no una lesión: no hay veneno ni nada que tratar, pero es real.',
+      a: 'Sí, y es lo principal que las separa de las mariquitas de siempre. La extensión de Minnesota registra que algunas muerden lo bastante fuerte para romper la piel, con una molestia menor y breve. Es un pellizco, no una lesión: no hay veneno ni nada que tratar, pero sí ocurre.',
     },
     {
       q: '¿Qué es el líquido amarillo que dejan en la pared?',

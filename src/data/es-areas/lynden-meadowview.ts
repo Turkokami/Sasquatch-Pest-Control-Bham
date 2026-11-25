@@ -28,7 +28,7 @@ export const lyndenMeadowview: EsLugar = {
     {
       h2: 'Pozo y fosa, y cómo trabajamos',
       parrafos: [
-        'Muchas propiedades tienen pozo y fosa séptica, y eso decide dónde se coloca y no descarta nada: nada va cerca del pozo ni sobre el campo de drenaje, y se lo decimos antes de trabajar cerca. La limitación honesta aquí es la agenda: le decimos un día, llegamos ese día, y si algo cambia le avisamos antes de que pierda la tarde. Empezamos por el lindero y el refugio — qué hay detrás, qué tan cerca está, si se trabaja y qué hay guardado entre él y los edificios —, luego cada cobertizo en el orden en que quedan respecto al refugio, porque el más cercano al campo casi siempre es el que tiene la población, luego la casa a ras del suelo y el espacio bajo el piso de lado a lado. No vendemos un tratamiento de perímetro recurrente a una propiedad cuyo problema real es un hueco y un taller abierto.',
+        'Muchas propiedades tienen pozo y fosa séptica, y eso decide dónde se coloca y no descarta nada: nada va cerca del pozo ni sobre el campo de drenaje, y se lo decimos antes de trabajar cerca. La limitación honesta aquí es la agenda: le decimos un día, llegamos ese día, y si algo cambia le avisamos antes de que pierda la tarde. Empezamos por el lindero y el refugio — qué hay detrás, qué tan cerca está, si se trabaja y qué hay guardado entre él y los edificios —, luego cada cobertizo en el orden en que quedan respecto al refugio, porque el más cercano al campo casi siempre es el que tiene la población, luego la casa a ras del suelo y el espacio bajo el piso de lado a lado. No vendemos un tratamiento de perímetro recurrente a una propiedad cuyo problema de fondo es un hueco y un taller abierto.',
       ],
     },
   ],

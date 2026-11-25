@@ -63,7 +63,7 @@ export const planDeProteccionDelHogar: EsServicio = {
       h2: '¿Cómo se relaciona con la garantía, y hay contrato?',
       parrafos: [
         'El plan y la garantía son el mismo compromiso dicho de dos maneras. Mientras el plan está activo, si una plaga cubierta regresa entre visitas programadas, volvemos sin cargo adicional, sin límite de visitas de regreso dentro del periodo y sin discusión de si fue demasiado pronto. Hay dos condiciones y están en la página de la garantía, no escondidas: la visita de regreso necesita acceso razonable a las áreas tratadas, y donde identificamos una causa de su lado — una canaleta, una malla, una barredora de puerta — la garantía no sustituye a arreglarla.',
-        'La cobertura se pausa en una cuenta con pago atrasado y se reanuda cuando se pone al corriente. Si cancela a mitad del plan, la cobertura sigue hasta el final del periodo que ya pagó. Y no hay contrato largo: el acuerdo de servicio dice el calendario, el alcance y un aviso previo corto para cancelar. El contrato de largo plazo es lo normal en este oficio y su función real es retener clientes; preferimos ganarnos la siguiente visita.',
+        'La cobertura se pausa en una cuenta con pago atrasado y se reanuda cuando se pone al corriente. Si cancela a mitad del plan, la cobertura sigue hasta el final del periodo que ya pagó. Y no hay contrato largo: el acuerdo de servicio dice el calendario, el alcance y un aviso previo corto para cancelar. El contrato de largo plazo es lo normal en este oficio y su función principal es retener clientes; preferimos ganarnos la siguiente visita.',
       ],
     },
   ],

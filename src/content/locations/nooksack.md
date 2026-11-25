@@ -158,7 +158,7 @@ The ant work here follows the buildings rather than the fields.
 
 [Carpenter ants](/pest-library/carpenter-ant/) do not eat wood. They excavate it to nest in, and they strongly
 prefer wood that is already softened by moisture. In practice that means the
-places on a rural building where water has been getting in quietly for years: a
+places on a rural building where water has been getting in unnoticed for years: a
 sill plate under a leaking hose bib, the framing around a poorly flashed window,
 a section of rim joist above a crawlspace that never dries out.
 
@@ -290,7 +290,7 @@ at night.
 ## What we will not sell you
 
 **A monthly contract for a house with no ongoing pressure.** Plenty of properties
-here have a real, continuous problem because of what surrounds them. Plenty do
+here have a continuous problem because of what surrounds them. Plenty do
 not. If a one-time treatment and some sealing will hold, we will say so.
 
 **Repeated interior fogging for overwintering insects.** They are dormant in a

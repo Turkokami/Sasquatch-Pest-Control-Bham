@@ -23,7 +23,7 @@ faqs:
   - q: "Do they breed inside?"
     a: "No. They are dormant, not reproducing, and they do not feed indoors. That is why the population does not grow through the winter — what you have is what got in, being periodically woken by warm weather."
   - q: "Should I squash the stink bugs?"
-    a: "Better not to, though not for the reason usually given. The National Pesticide Information Center, run by Oregon State University with the US Environmental Protection Agency, states that killing a stink bug does not attract more stink bugs and that the odor released will not attract other bugs. The reasons to avoid it are the lingering smell, the marks the fluid leaves, and the rash skin contact can cause. Vacuum instead."
+    a: "Better not to, though not for the reason usually given. The National Pesticide Information Center, run by Oregon State University with the US Environmental Protection Agency, states that killing a stink bug does not attract more stink bugs and that the odor released will not attract other bugs. The reasons to avoid it are the lingering smell, the marks the fluid leaves, and the rash skin contact can cause. Vacuum them up instead."
   - q: "When does treatment actually work?"
     a: "Late August into early September, applied to the walls they gather on, before they enter. The same treatment in late October is largely wasted because they are already inside the cavity where nothing reaches them."
   - q: "Are they damaging the house?"
@@ -51,7 +51,7 @@ Having gathered, they explore. Anything that offers a crevice gets investigated,
 and any gap that leads into a cavity gets used. Wall voids, attics, soffits, the
 space behind fascia, around window frames, under siding: all of them serve.
 
-Then they become dormant and wait, and the wall goes quiet, and everyone assumes
+Then they become dormant and wait, and the wall goes still, and everyone assumes
 it is over.
 
 ## Who is on your wall
@@ -307,17 +307,17 @@ disturbed.
 them, generally less noticed.
 
 **Elongated black body with sharp red or orange lines forming a pattern on the
-back and wings.** Boxelder bug. Often in dense clusters of dozens, sometimes
+back and wings.** This is a boxelder bug. Often in dense clusters of dozens, sometimes
 hundreds. Look for a maple or boxelder within a hundred feet.
 
 **Large, narrow, brown, with obviously flattened widened sections on the hind
 legs.** Western conifer seed bug. Flies noisily and clumsily, often indoors at
 night. Harmless despite looking alarming.
 
-**Small, domed, red, orange or yellow with spots.** Ladybird beetle. Aggregates
+**Small, domed, red, orange or yellow with spots.** This is a ladybird beetle. Aggregates
 in large numbers, particularly in attics.
 
-**A fly rather than a bug — dull, slow, bumping at glass.** [Cluster fly](/pest-library/cluster-fly/).
+**A fly rather than a bug — dull, slow, bumping at glass.** This is a [cluster fly](/pest-library/cluster-fly/).
 
 **Shiny, fast and metallic blue or green.** Not part of this group at all. That
 is a blow fly, and in numbers indoors it usually means something has died in a

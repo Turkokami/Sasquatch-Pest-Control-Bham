@@ -23,7 +23,7 @@ faqs:
   - q: "We threw out everything in the pantry and they came back. Why?"
     a: "Then a source was missed. It is usually one of four things: pet food, birdseed, a decorative item containing seed or dried botanicals, or a spill in a cupboard seam. Pantry beetles also breed in surprisingly small quantities of material, so a tablespoon of flour in a crack is enough."
   - q: "What is the fuzzy little caterpillar-looking thing in my carpet?"
-    a: "Almost certainly a carpet beetle larva. They are small, tapered, densely bristly, and they shed their skins as they grow — so finding cast skins is often the first real evidence. The larvae do all the damage; the adults do none."
+    a: "Almost certainly a carpet beetle larva. They are small, tapered, densely bristly, and they shed their skins as they grow — so finding cast skins is often the first evidence. The larvae do all the damage; the adults do none."
   - q: "Can carpet beetles bite?"
     a: "No. They cannot bite people. Some people do react to the bristles on the larvae with an itchy rash that gets mistaken for insect bites, which is a genuinely common misdiagnosis — including for bed bugs. It is an irritation, not a bite."
   - q: "Where do carpet beetles come from if I have no wool?"
@@ -60,7 +60,7 @@ called woolly bears. They avoid light and move away from disturbance, so they fe
 in the places nobody looks.
 
 They also **shed their skins repeatedly as they grow**, and those cast skins are
-frequently the first real evidence — they look like tiny hollow versions of the
+frequently the first evidence — they look like tiny hollow versions of the
 larva and accumulate wherever feeding has been happening. If you find cast skins,
 you have found the site.
 
@@ -88,8 +88,7 @@ feathers, dropped food, insect remains and often dead nestlings, and a single
 abandoned nest supports a carpet beetle population for years — feeding new adults
 into the house every spring. This is why nest removal matters more than treatment. That work includes removing old nests rather than just closing the entry.
 
-**A rodent nest or a dead rodent** in a wall void, under a floor or in an attic.
-Same principle. See [rodent control](/services/rodent-control/).
+**A rodent nest or a dead rodent** in a wall void, under a floor or in an attic. The same principle applies. See [rodent control](/services/rodent-control/).
 
 **An accumulation of dead insects** in a wall cavity — which is exactly why we
 refuse to treat overwintering
@@ -109,8 +108,7 @@ The damage looks similar and the treatments differ, so the distinction matters.
 
 **Carpet beetles** graze irregular patches, often thinning the pile rather than
 making clean holes, and they will feed in relatively open and lit areas as well as
-hidden ones. They leave cast skins and fecal pellets roughly the size of a grain
-of salt. No webbing.
+hidden ones. They leave cast skins and fecal pellets roughly the size of a grain of salt, and no webbing.
 
 **Clothes moths** make clean holes, prefer genuinely dark and undisturbed places,
 and leave **silk webbing** — tubes, mats, or small cases the larvae carry around.
@@ -122,7 +120,7 @@ skins, you are on the right page.
 
 ## The rash that is not bites
 
-Worth its own note, because it causes real distress and gets misdiagnosed
+Worth its own note, because it causes distress and gets misdiagnosed
 routinely.
 
 Carpet beetle larvae carry fine bristles, and some people develop an itchy,
@@ -167,7 +165,7 @@ Decorative items — dried flower arrangements, seed pods, ornamental corn, potp
 Spilled material in a cupboard seam or under a shelf liner, where a tablespoon of
 flour supports a population indefinitely.
 
-**Where it usually did not start.** Your housekeeping. Most pantry infestations
+**Where it usually did not start.** It usually did not start with your housekeeping. Most pantry infestations
 arrive already inside a package, having been introduced at a processing or storage
 stage well before you bought it. That is worth saying, because people are
 embarrassed about these calls and they should not be.
@@ -212,7 +210,7 @@ nesting in cedar construction, and a lot of stored natural fiber in second homes
 and holiday properties.
 
 **Rural and agricultural** — Lynden, Everson, Nooksack, Sumas. Stored feed and
-grain at real scale, which makes pantry beetle work a farm-building problem rather
+grain at commercial scale, which makes pantry beetle work a farm-building problem rather
 than a kitchen one.
 
 **Homes with bird feeders**, everywhere. Birdseed storage is the most under-
@@ -230,7 +228,7 @@ rather than structural ones.
 
 The exception is where the carpet beetle source turns out to be a bird nest in a
 soffit or a dead animal in a wall. At that point the beetle treatment is the small
-part, and the real job is getting the nest or the carcass out — [rodent work](/services/rodent-control/) where it is a rodent, and a specialist where it is not.
+part, and the main job is getting the nest or the carcass out — [rodent work](/services/rodent-control/) where it is a rodent, and a specialist where it is not.
 
 Where a valuable rug or textile collection is involved, that is worth saying at
 the estimate, because it changes how carefully the work is scoped.
@@ -249,7 +247,7 @@ under furniture, closet floors, under and behind fixed furniture, baseboard line
 heating vents.
 
 **Look up if there is no fabric.** Soffits, eaves, attic spaces, wall voids and
-chimneys, for the nest or the accumulation that is really feeding the population.
+chimneys, for the nest or the accumulation that is feeding the population.
 This is the step that resolves the cases nobody else has managed to.
 
 **Clean thoroughly.** Vacuuming is a substantial part of the treatment, because it

@@ -118,7 +118,7 @@ decoration.
 problem, called, and we attended. That is 2,777 jobs across the three years,
 and it is the subset that actually tells you something about the county.
 
-**What is deliberately left out.** Two things. Recurring plan stops, which are
+**What is deliberately left out.** Two things are left out. The first is recurring plan stops, which are
 the bulk of the book. And free call-backs — the return visits that come with an
 active program at no charge, whether that is a trap check or a re-treatment.
 There were 2,172 of those across the three years, and every one of them is a
@@ -143,7 +143,7 @@ entry says so.
 
 **Who is in it.** Customers across Whatcom and Skagit counties — 94% Whatcom,
 4.5% Skagit, the remainder Island and Snohomish. It reflects one company's
-customer base rather than the county as a whole. That is a real limitation and
+customer base rather than the county as a whole. That is a limitation and
 an honest one.
 
 **What is not here.** Species we were called out for fewer than about
@@ -166,7 +166,7 @@ Seventy-seven percent of a year's wasp work falls in July, August and
 September. January through March is zero — not nearly zero, zero.
 
 This is the clearest illustration of the gap between activity and calls. The
-colony starts in spring as a single overwintered queen and builds quietly
+colony starts in spring as a single overwintered queen and builds
 through June. It is at its largest in August, which is also when the workers
 switch from hunting protein to seeking sugar and start appearing at barbecues
 and bins. Nothing sudden happens to the wasps in July. What happens is that
@@ -253,14 +253,14 @@ Where to go next: [odorous house ant](/pest-library/odorous-house-ant/),
 [ant and carpenter ant control](/services/ant-control/), and
 [ant trails across the kitchen counter](/services/ant-control/ant-trails-across-the-kitchen-counter/).
 
-### Carpenter ants — nine months, no real peak
+### Carpenter ants — nine months, no clear peak
 
 | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 3% | 4% | 7% | 9% | 11% | 12% | 10% | **13%** | 10% | 7% | 7% | 6% |
 
 This is the second-largest line in the calendar and the flattest curve of any
-pest with real volume. August is the peak at 13%, which is barely a peak at
+pest with meaningful volume. August is the peak at 13%, which is barely a peak at
 all — the work runs from March through October at roughly even weight and never
 fully stops.
 
@@ -353,7 +353,7 @@ Where to go next: [bed bug control](/services/bed-bug-control/) and
 | 7% | 11% | 7% | 4% | 6% | 11% | **19%** | 7% | 4% | 13% | 7% | 4% |
 
 A mild July figure, otherwise flat. The German cockroach — which is nearly
-every real infestation here — lives in heated buildings year-round and has no
+every infestation here — lives in heated buildings year-round and has no
 outdoor season to follow. A kitchen is a tropical climate in February as much
 as in July.
 
@@ -426,7 +426,7 @@ their peak. Wasp work reaches 12% of its year. Spider work starts.
 carpenter ants at their nominal peak, fleas at 26%, powderpost beetles at 17%.
 
 **September.** Spiders at 38%, their single biggest month. Wasps falling but
-still 13%. Fleas still high. Voles peak.
+still 13%. Fleas are still high and voles peak.
 
 **October.** Everything falls away sharply. Rodent plan stops begin their
 winter climb. The sealing window is closing.

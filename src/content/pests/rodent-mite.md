@@ -389,7 +389,7 @@ tail-off as failure is how good work gets abandoned halfway.
 
 ## The disease question, kept in proportion
 
-There is a real association here and it is worth stating accurately rather than
+There is a documented association here and it is worth stating accurately rather than
 either omitting it or leaning on it.
 
 CDC identifies rickettsialpox, caused by *Rickettsia akari*, as transmitted
@@ -440,8 +440,8 @@ it rather than taking a job we should not take.
 
 ## What else produces the same complaint
 
-**Bed bugs**, obviously, and the search that rules them in or out is a real
-piece of work with definite evidence attached — spotting, shed skins, eggs.
+**Bed bugs**, obviously, and the search that rules them in or out is a
+substantial piece of work with definite evidence attached — spotting, shed skins, eggs.
 That is the [bed bug](/pest-library/bed-bug/) page.
 
 **Fleas**, where marks concentrate around ankles and lower legs and there is an

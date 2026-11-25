@@ -60,7 +60,7 @@ faqs:
   - q: "Is the damage serious?"
     a: "Usually not, in any one season. A single female excavates something like four to six inches of gallery in a year. What changes the picture is reuse, because the same tunnel gets extended by successive generations and can reach a considerable length in one board over many years."
   - q: "Should I fill the hole?"
-    a: "Yes, but not while anything is living in it. Sealing an occupied gallery traps developing bees and generally produces a fresh opening beside your repair. The order that works is treat or wait out the season first, confirm it has gone quiet, then plug and finish."
+    a: "Yes, but not while anything is living in it. Sealing an occupied gallery traps developing bees and generally produces a fresh opening beside your repair. The order that works is treat or wait out the season first, confirm activity has stopped, then plug and finish."
   - q: "Do they sting like a wasp if I disturb the deck?"
     a: "No. There is no colony to defend and no coordinated response, which is the practical difference between this insect and a yellowjacket nest in the same rail. A carpenter bee gallery holds one female and her offspring, not a population that will come out together."
   - q: "Are they worth protecting?"
@@ -80,7 +80,7 @@ as far as New York. That is where the volume of carpenter bee content comes
 from, and it is where the volume of carpenter bee damage is. Northwest
 Washington is not in the middle of that map.
 
-What this corner of the state does have, in real numbers, is bumble bees. [WSU's
+What this corner of the state does have, in large numbers, is bumble bees. [WSU's
 home garden bulletin](https://wpcdn.web.wsu.edu/wp-extension/uploads/sites/2053/2022/08/Washington-Bumble-Bees-in-Home-Yards-and-Gardens-pdf.pdf) counts at least twenty-three species in Washington and
 names the black-tailed, fuzzy-horned and Vosnesensky bumble bees among the
 common ones on this side of the mountains. The university's Hortsense sheet puts
@@ -89,7 +89,7 @@ front of you belongs to a genus that is genuinely abundant here, and the one you
 read about online belongs to a genus that mostly is not.
 
 So the first job on this page is the identification, and the second is telling
-you honestly what to do in the minority of cases where it really is a carpenter
+you honestly what to do in the minority of cases where it is a carpenter
 bee.
 
 ## The one difference that settles it
@@ -142,7 +142,7 @@ not a permanent tenant. It is a seasonal one that will resolve without anybody
 spending money.
 
 Where a nest sits somewhere genuinely unworkable — a doorway, a play area, a
-household with a diagnosed sting allergy — that is a real conversation and there
+household with a diagnosed sting allergy — that is a conversation worth having and there
 are things worth doing. Everywhere else, the honest recommendation is a wide
 berth until autumn.
 
@@ -258,7 +258,7 @@ the years.
 So the question to ask about a board is not how many holes are in it this year.
 It is how long this has been going on. A fascia with one fresh hole is nothing.
 The same fascia with a dozen entrances at different ages, some weathered and dark
-and some pale, is carrying a network you cannot see and has probably lost real
+and some pale, is carrying a network you cannot see and has probably lost significant
 section along its length.
 
 **The other escalation is water.** An open gallery in a horizontal exterior

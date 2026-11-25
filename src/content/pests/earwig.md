@@ -64,7 +64,7 @@ ready: true
 
 ## The pincers first, because nothing else gets read until they are dealt with
 
-Almost every call about this insect is really a call about the back end of it,
+Almost every call about this insect is a call about the back end of it,
 so we will settle that before anything else.
 
 The forceps are a bluff. [UC IPM](https://www.maine.gov/dacf/php/gotpests/bugs/factsheets/earwigs-cal.pdf)'s Pest Notes describe them as a pair of
@@ -101,7 +101,7 @@ description that matches what turns up here.
 is the single most useful thing to know about the animal, because it explains
 both where it spends the day and how it gets under a door.
 
-**Habits.** Nocturnal. During daylight they are jammed into something dark and
+**Habits.** They are nocturnal. During daylight they are jammed into something dark and
 humid; after dark they come out and forage. Lift a board in a Bellingham garden
 bed at two in the afternoon and you get a sudden scatter of them, which people
 routinely report as an infestation and which is simply what the ground looks
@@ -149,7 +149,7 @@ precisely what it is sold to do — holds soil moisture and evens out temperatur
 against the siding.
 
 **Leaf litter** banked into beds and against walls, particularly on the shaded
-lots around the lake and along the greenbelts, where it never really dries.
+lots around the lake and along the greenbelts, where it never dries.
 
 **Anything lying flat on soil.** UC IPM's list of daytime refuges is boards,
 loose clods of soil, dense vines and weeds. Add to it, from local experience:
@@ -305,7 +305,7 @@ regardless of whether it was dying.
 **A crop being lost.** Market gardens and berry rows in the Lynden, Everson and
 Nooksack country, where the damage is measurable rather than annoying.
 
-**Where the crawlspace is the real reservoir** and the earwigs are one of
+**Where the crawlspace is the reservoir** and the earwigs are one of
 several things it is producing. Then the moisture work is warranted on its own
 terms and this species comes along with it.
 
@@ -385,7 +385,7 @@ population pressed against it, finding the next gap.
 the evidence that would have told a technician where the harborage was.
 
 **Waiting for a hard winter to fix it.** It is not coming. That is the premise
-of this whole library: without a real freeze, nothing here gets reset, and
+of this whole library: without a hard freeze, nothing here gets reset, and
 population control has to be structural rather than seasonal.
 
 ## What we will not do
@@ -400,7 +400,7 @@ say so.
 
 **Treat a whole garden.** Broadcast work in a planted yard takes out the
 beneficial side of this insect along with everything else in the litter layer,
-and the beneficial side is real.
+and the beneficial side matters.
 
 **Frighten anybody about the pincers.** They are a bluff, we have said so at
 length, and a company that leans on that image to sell a treatment is trading on

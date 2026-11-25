@@ -34,7 +34,7 @@ faqs:
   - q: "Do voles get into houses?"
     a: "Very rarely. UC IPM states that voles are poor climbers and usually do not enter homes or other buildings, inhabiting exterior areas instead. If something is moving inside a wall or a crawlspace, it is almost certainly a mouse or a rat rather than a vole."
   - q: "Do you treat voles?"
-    a: "Yes, as of November 2026 — this page said no before that date. What has not changed is which measures actually work: habitat management and physical barriers do most of the real work on voles, and neither is a pesticide application. So we will walk the property, tell you what the mowing, mulch depth and trunk guards should look like, and trap the margins where that is warranted. If habitat work alone will settle it, we will say so."
+    a: "Yes, as of November 2026 — this page said no before that date. What has not changed is which measures actually work: habitat management and physical barriers do most of the main work on voles, and neither is a pesticide application. So we will walk the property, tell you what the mowing, mulch depth and trunk guards should look like, and trap the margins where that is warranted. If habitat work alone will settle it, we will say so."
   - q: "Why did all the damage appear at once in spring?"
     a: "Because it happened out of sight. Voles feed at the base of trunks through winter beneath matted grass, heavy mulch and snow, and UC IPM notes that snow cover lets gnawing extend a foot or more up a trunk. Spring reveals the damage rather than causing it."
   - q: "Why are there suddenly so many this year?"
@@ -202,7 +202,7 @@ bad year a lawn that looks scored and thinned across a large area once the grass
 lifts in spring. UC IPM notes damage to turf and landscape plantings where the
 dense vegetation they live in gives them cover.
 
-**Bark at the base of woody plants.** This is the one with real financial
+**Bark at the base of woody plants.** This is the one with serious financial
 consequence. UC IPM describes gnaw marks about an eighth of an inch wide and
 three-eighths long, in irregular patches. WSU gives tooth scars generally a
 sixteenth of an inch wide, appearing in a crisscross pattern on the damaged
@@ -350,8 +350,8 @@ it.
 
 **Fence a bed if it is worth fencing.** UC IPM's specification is wire fencing
 or aluminum flashing standing at least twelve inches above ground, quarter-inch
-mesh or smaller, with the bottom edge buried six to ten inches. That is a real
-piece of work and it is only worth it around something valuable.
+mesh or smaller, with the bottom edge buried six to ten inches. That is a
+substantial piece of work and it is only worth it around something valuable.
 
 **Trap, in the runways.** Both sources support it and both are realistic about
 the numbers. WSU describes ordinary mouse traps baited with apple or peanut

@@ -131,10 +131,10 @@ subtle about it.
 Somebody sees the paper nest, calls it a hornet nest, and adjusts their behavior
 to match a reputation.
 
-The costs here are mild but real. It produces a level of alarm out of proportion
+The costs here are mild but present. It produces a level of alarm out of proportion
 to the situation, which occasionally leads to a bad decision made in a hurry —
 knocking a nest out of a shrub, spraying it from directly underneath, going up a
-ladder in a hurry to deal with something that had been quietly ignoring the
+ladder in a hurry to deal with something that had been ignoring the
 household all summer.
 
 It also skews expectations about size. Penn State describes bald-faced hornet
@@ -328,7 +328,7 @@ about this species.
 ## Nest position is what decides the job
 
 This profile carries a verdict of *depends*, and it is the same verdict as its
-two relatives for the same reason: the species is not what decides. Position is.
+two relatives for the same reason: the species is not what decides; position is.
 Sort the nest into one of these and the answer follows.
 
 **High and away.** Well up in a tree, in a shrub at the far boundary, under a
@@ -358,8 +358,7 @@ covered in full on
 takes it out of the realm of judgment.
 
 And the seasonal overlay applies to every one of those. A marginal nest found in
-the third week of September has a few weeks left in it, and waiting is a real
-option that costs nothing. The same nest in the third week of June has the whole
+the third week of September has a few weeks left in it, and waiting is an option that costs nothing. The same nest in the third week of June has the whole
 growth curve ahead of it, and dealing with it then is a smaller piece of work in
 every dimension.
 

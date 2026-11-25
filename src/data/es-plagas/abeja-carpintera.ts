@@ -79,7 +79,7 @@ export const abejaCarpintera: EsPlaga = {
     { label: 'Agujero', value: 'Un círculo casi perfecto de un poco menos de media pulgada, que da vuelta en ángulo recto para seguir la veta' },
     { label: 'Madera que escoge', value: 'Madera blanda sin pintar y desgastada; evita la madera bien pintada' },
     { label: 'Qué tan común es aquí', value: 'Poco común en el noroeste de Washington: la abeja grande que se reporta aquí casi siempre es un abejorro' },
-    { label: '¿La tratamos?', value: 'Casi nunca conviene; un hallazgo real suele ser una reparación de fascia y una mano de pintura' },
+    { label: '¿La tratamos?', value: 'Casi nunca conviene; un hallazgo confirmado suele ser una reparación de fascia y una mano de pintura' },
   ],
   senales: [
     'Un agujero redondo, como taladrado, de un poco menos de media pulgada en una fascia, un barandal o la punta de una viga sin pintar',

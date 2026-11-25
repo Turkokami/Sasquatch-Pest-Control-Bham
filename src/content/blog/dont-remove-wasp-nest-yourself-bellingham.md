@@ -68,7 +68,7 @@ In any of these cases, don't risk it. A single call is a great deal cheaper than
 
 ### Is it ever safe to remove a wasp nest myself?
 
-For a very small, newly started paper-wasp nest in an open, easy-to-reach spot early in spring, some homeowners handle it — but even then there's real risk. Anything involving yellowjackets, hornets, a wall or ground nest, a nest you can't fully see, a ladder, or a household sting allergy should go to a professional.
+For a very small, newly started paper-wasp nest in an open, easy-to-reach spot early in spring, some homeowners handle it — but even then there's risk. Anything involving yellowjackets, hornets, a wall or ground nest, a nest you can't fully see, a ladder, or a household sting allergy should go to a professional.
 
 ### What should I do if I get stung multiple times?
 

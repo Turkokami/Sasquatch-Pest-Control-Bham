@@ -49,7 +49,7 @@ Wood-boring beetles can go undetected for years. Common signs include:
 
 ## The life cycle of wood-boring beetles
 
-The real damage caused by these beetles occurs in the larval stage. After eggs are laid on or in the wood, the larvae hatch and burrow deep inside, feeding on the starches and other organic materials within. Depending on the species and environmental conditions, the larvae can take months or even years to mature before emerging as adults. Once they exit the wood, they mate, lay eggs, and the cycle begins again.
+The damage caused by these beetles occurs in the larval stage. After eggs are laid on or in the wood, the larvae hatch and burrow deep inside, feeding on the starches and other organic materials within. Depending on the species and environmental conditions, the larvae can take months or even years to mature before emerging as adults. Once they exit the wood, they mate, lay eggs, and the cycle begins again.
 
 ## How to prevent and control wood-boring beetles
 

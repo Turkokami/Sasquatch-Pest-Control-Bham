@@ -39,16 +39,16 @@ factsTable:
 faqs:
   - q: "Why will nobody publish a price for this?"
     a: "Because the same words describe wildly different jobs. Two neighbors who both say they have mice can need an afternoon of screening or a week of crawlspace work, and a number printed on a page would be wrong for whichever of them read it second."
-  - q: "Can I get a real number over the phone?"
+  - q: "Can I get a firm number over the phone?"
     a: "You can get a range, and a range is worth having. What you cannot get is a number that survives contact with the building, because the things that move it most are access, construction and extent, and none of those are visible from a phone call."
   - q: "Is a recurring plan cheaper than calling when something happens?"
     a: "It depends entirely on whether your property has continuous pressure. A rural building with outbuildings and a long perimeter genuinely does. A tight in-town house with one seasonal complaint does not, and a plan sold to it is a subscription rather than a service."
   - q: "Why is crawlspace work priced so differently from a treatment?"
     a: "Because it is construction rather than application. The cost is hours and materials, and the hours are set by clearance height, standing water, stored belongings and how far the work area sits from the hatch. Two identical houses can differ by a factor of several on that alone."
-  - q: "Does waiting really make it more expensive?"
+  - q: "Does waiting make it more expensive?"
     a: "Reliably, and usually more than people expect. The pattern is that a pest problem becomes a building problem: rodents become contaminated insulation, a gap at grade becomes wet timber, and at some point the fix stops being ours and starts belonging to another trade."
   - q: "What should I be comparing between two quotes?"
-    a: "Scope rather than headline figures. How many visits are included, what triggers a return, what is excluded and whose trade that belongs to, what products are proposed, and whether the repair work is in the price or is a separate job somebody has quietly left out."
+    a: "Scope rather than headline figures. How many visits are included, what triggers a return, what is excluded and whose trade that belongs to, what products are proposed, and whether the repair work is in the price or is a separate job somebody has silently left out."
   - q: "Should I ask for the cheapest option?"
     a: "Ask instead whether a smaller job would do. Those are different questions. The first invites a corner to be cut somewhere you cannot see; the second is a legitimate request that a good company can usually answer with a shorter scope and an honest explanation."
 ---
@@ -68,7 +68,7 @@ makes sense for their building, and spot one that has been produced by a script
 rather than by somebody who came and looked.
 
 Everything below applies to Whatcom County housing stock and Whatcom County
-weather. Some of it generalizes; the crawlspace section really does not.
+weather. Some of it generalizes; the crawlspace section does not.
 
 ## The pest, and whether the job has a shape or a cycle
 
@@ -96,7 +96,7 @@ they are treating.
 Two further wrinkles belong here. Some species need the treatment placed rather
 than applied — bait in a void, in a chase, behind an appliance — and placement
 takes time that broadcast application does not. And a few problems are cheapest
-when the answer is that nothing needs doing, which is a real outcome and one we
+when the answer is that nothing needs doing, which is an outcome and one we
 will state plainly when it applies.
 
 ## Size, and then construction, which matters more
@@ -147,8 +147,8 @@ What is being measured:
 
 **Clearance.** Working on your back in eighteen inches is a different activity
 from working on your knees in three feet. Everything takes longer — moving,
-cutting, fastening, carrying material in and debris out — and the fatigue is
-real, so the rate of work drops as the day goes on.
+cutting, fastening, carrying material in and debris out — and the fatigue
+adds up, so the rate of work drops as the day goes on.
 
 **Standing water and saturated ground.** A wet crawlspace slows the work,
 requires more protective equipment, and frequently means the underlying problem
@@ -158,7 +158,7 @@ larger than the one that was described on the phone.
 **Stored belongings.** A crawlspace or an attic full of boxes has to be cleared
 before anything can be reached, and clearing is billable time doing nothing that
 resembles pest control. This is the one factor a homeowner can move on their
-own, and moving it is worth real money.
+own, and moving it is worth money.
 
 **Distance from the hatch to the work.** Every trip out for a tool or a length
 of material is made twice. A hatch in the middle of the footprint and a hatch at
@@ -250,7 +250,7 @@ unit's problem is everybody's. In each of those the pressure does not go away,
 so managing it on a schedule costs less per year than responding to it.
 
 **A one-off is the right purchase when the problem has a shape.** A wasp nest.
-A single autumn's spider wave. An overwintering insect complaint that is really
+A single autumn's spider wave. An overwintering insect complaint that is
 a sealing job. A mouse entry that turns out to be one vent. Paying monthly for
 any of those is buying insurance against something that already happened.
 
@@ -276,7 +276,7 @@ of the total. Oregon State adds the obvious companion, which is to get estimates
 from more than one operation and compare what is actually in them.
 
 None of that can happen down a phone line, and it is worth understanding what a
-telephone number really is.
+telephone number is.
 
 A price given before anybody has seen the property is an average with a risk
 premium attached. The company does not know your crawlspace clearance, your
@@ -334,7 +334,7 @@ figures are published because the scope is predictable enough to publish.
 **And deferral has a specific trap in the autumn.** Once something is living
 inside a building, sealing it is no longer the first step — closing a structure
 with an active population inside produces animals that cannot get out. The order
-becomes trap, confirm quiet, then seal, which is more visits and more elapsed
+becomes trap, confirm no activity, then seal, which is more visits and more elapsed
 time than the same sealing done in August on an empty envelope. The work you
 deferred did not merely wait. It acquired a prerequisite.
 
@@ -381,7 +381,7 @@ anything.
 
 **Treating a moisture-driven insect without addressing the water.** Moisture
 ants and dampwood termites are a symptom of a wet building. Treatment without
-drainage work buys a quiet season.
+drainage work buys a season without activity.
 
 **Trapping without sealing.** The population outside is unchanged and the door
 is still open.
@@ -412,7 +412,7 @@ drainage contractor or an afternoon of your own. You get that list before any
 work is agreed, including the parts we are not going to do.
 
 Where a smaller job would do, we will say so. Where the honest answer is that
-the pest problem is really a water problem or a construction problem, we will
+the pest problem is a water problem or a construction problem, we will
 say that too, even though it means quoting less work than you called about.
 There are no term agreements, and the retreatment terms are stated up front
 rather than discovered later.

@@ -63,7 +63,7 @@ garage door bottom seal, particularly on a slab that has settled slightly, which
 is a wide-open door for a mouse and is on almost every house we look at.
 
 Add to those the crawlspace or foundation vents, where the factory screen is
-often a light aluminum mesh that a rat opens with no real effort, and the
+often a light aluminum mesh that a rat opens with little effort, and the
 attic-to-garage transition, which in a lot of production framing has an
 unsealed top plate.
 
@@ -157,7 +157,7 @@ conflict with the site's own hazard controls. Exclusion specified to survive wea
 
 We approach these accounts as a program with a written scope rather than as a
 series of visits, and where the right answer is a housekeeping or sanitation
-correction on the site's side, we put it in the report rather than quietly
+correction on the site's side, we put it in the report rather than silently
 selling more service around it.
 
 ## Manufactured and mobile homes
@@ -195,7 +195,7 @@ the belly is open produces the same call again next October.
 
 Park settings add the shared-population problem familiar from apartments. If the
 homes on either side are open, one sealed home helps that household and does not
-reduce the population in the park. Where a park manager wants a real result, the
+reduce the population in the park. Where a park manager wants a result, the
 work has to be planned at the park level.
 
 ## The Ferndale year
@@ -253,7 +253,7 @@ and the wooded lots east of town.
 
 **Cluster flies and stink bugs.** Rural and edge-of-field properties get the
 overwintering insects hard, in south and west-facing walls, and the residents
-find them on the first warm afternoon in February when everything else is quiet.
+find them on the first warm afternoon in February when everything else is dormant.
 
 **Stored-product insects.** Beetles and moths in feed, seed and dried goods on the acreage. They arrive inside the product rather than through a door, so the work is finding the source lot rather than treating a perimeter.
 

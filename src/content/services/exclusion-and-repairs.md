@@ -14,7 +14,7 @@ factsTable:
   - label: "Not included"
     value: "Roofing, siding replacement, structural framing repair, plumbing and drainage excavation"
   - label: "Order of work"
-    value: "If animals are inside, trapping comes first and sealing follows once it is quiet"
+    value: "If animals are inside, trapping comes first and sealing follows once activity stops"
   - label: "Timing"
     value: "August and early September, before rodents move in; spring is the second-best window"
   - label: "What it costs"
@@ -151,7 +151,7 @@ rodent- and wildlife-proof covers made for that job instead — dryer terminals
 first, and the other utility penetrations where a fabricated patch would foul
 something that has to move.
 
-Mesh size is a real trade-off rather than a detail. Quarter-inch hardware cloth
+Mesh size is a trade-off rather than a detail. Quarter-inch hardware cloth
 stops rodents and passes airflow, but it is an open door to a wasp queen or a
 [cluster fly](/pest-library/cluster-fly/), so on a vent that has to do both jobs we back the rodent mesh with a
 finer insect screen and accept the slight loss of ventilation.
@@ -315,7 +315,7 @@ else's trade.
 
 **Sequencing.** If there is an active population inside, exclusion does not go
 first. Sealing a building with rodents in it produces animals that cannot get out
-and eventually die somewhere inaccessible. The order is trap, confirm quiet, then
+and eventually die somewhere inaccessible. The order is trap, confirm no activity, then
 seal. On an empty structure — a vacant rental at turnover, a seasonal home before
 the wet months — we can seal straight away.
 

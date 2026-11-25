@@ -29,7 +29,7 @@ faqs:
   - q: "Can I get rid of them with what I can afford?"
     a: "Partly. Hot laundering, encasements and interceptor cups are genuinely useful and inexpensive. What they will not do is clear an established population, and retail sprays and foggers usually make the spread worse."
   - q: "What does it cost to find out for sure?"
-    a: "Verification carries a fee, which is credited against treatment if you proceed. It buys a real search rather than a glance, and in shared housing a definite answer is worth having before anybody starts a conversation about money."
+    a: "Verification carries a fee, which is credited against treatment if you proceed. It buys a thorough search rather than a glance, and in shared housing a definite answer is worth having before anybody starts a conversation about money."
 ---
 
 ## Two things make this different
@@ -75,7 +75,7 @@ reason.
 
 ## Confirming it before anybody argues about it
 
-In shared housing there is real value in establishing whether this is actually
+In shared housing there is significant value in establishing whether this is actually
 bed bugs before the conversation about money starts, because a large share of
 suspected cases are something else.
 

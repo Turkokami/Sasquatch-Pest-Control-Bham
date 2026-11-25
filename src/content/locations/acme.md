@@ -256,7 +256,7 @@ house done we will say plainly what that will and will not achieve.
 ## Wasps, and the ones that matter
 
 Yellowjackets in this valley are mostly a late-summer problem and mostly an
-outdoor one, and the nests that cause real trouble are the ones nobody can see.
+outdoor one, and the nests that cause serious trouble are the ones nobody can see.
 
 Ground nests are found by machine rather than by eye — a mower, a brush cutter,
 a tractor working an edge — and that is how people end up in an emergency room.
@@ -276,8 +276,7 @@ properly.
 
 ## What we would rather you did not pay us for
 
-A fair amount of what gets sold as pest control in a valley like this one is
-really moisture work wearing a different hat, and it is worth saying which is
+A fair amount of what gets sold as pest control in a valley like this one is moisture work wearing a different hat, and it is worth saying which is
 which before anybody quotes you.
 
 If the carpenter ants are in a rim joist that has been sitting above bare damp

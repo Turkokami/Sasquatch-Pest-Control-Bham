@@ -75,7 +75,7 @@ Treatment is priced by the room, with common areas included, and we confirm the 
 
 ## Common questions
 
-### Can you really bring bed bugs home from holiday travel?
+### Can you bring bed bugs home from holiday travel?
 
 Yes — holiday travel is one of the most common ways bed bugs spread. They're expert hitchhikers that can't fly or jump but readily climb into luggage, bags, and clothing at hotels, rentals, or a relative's guest room, then ride home with you and settle into your bedroom. A few simple habits — checking where you sleep, keeping luggage off the floor and bed, and unpacking carefully at home — dramatically cut the risk of turning a trip into an infestation.
 

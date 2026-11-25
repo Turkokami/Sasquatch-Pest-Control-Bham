@@ -285,7 +285,7 @@ A program shaped like that costs less than an evenly spread contract, disrupts
 teaching less, and generates far fewer notification events. It requires somebody
 to plan it in May, which is the only genuinely hard part.
 
-## The structural items are the real work
+## The structural items are the main work
 
 A pattern we see in institutional buildings, and schools in particular.
 

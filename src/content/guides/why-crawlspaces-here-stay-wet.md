@@ -220,7 +220,7 @@ of the building. Grade corrected to fall away. Surface water routed off. This is
 outside the crawlspace entirely and it is where the largest volume comes from.
 
 **Two: separate the ground from the space.** A complete, lapped, six-mil ground
-cover extending to the foundation wall. Not fragments. This is the highest-value
+cover extending to the foundation wall, not fragments. This is the highest-value
 item inside the crawlspace and it is not expensive.
 
 **Three: restore the airflow.** Vents cleared, unblocked, dug out where grade has
@@ -302,7 +302,7 @@ Those five between them address the majority of what we find, and none of them
 is a specialist job.
 
 The expensive items are structural. Replacing a section of sill plate or rim
-joist that has lost capacity is a builder's work with real cost attached, and it
+joist that has lost capacity is a builder's work with cost attached, and it
 is the thing that arrives if the cheap items are neglected for long enough.
 Full [crawlspace restoration](/services/crawlspace-restoration/) — removing insulation, sanitizing, replacing the
 barrier, reinsulating — is a substantial project, sometimes exactly right and
@@ -316,7 +316,7 @@ We would rather sell you nothing and have you fix the drainage.
 
 ## Should you seal it instead
 
-The sealed or conditioned crawlspace is a legitimate approach with real
+The sealed or conditioned crawlspace is a legitimate approach with clear
 advantages, and it is also the thing most often done badly.
 
 Done properly it means: vents closed, a continuous Class I vapor retarder
@@ -336,7 +336,7 @@ either way, which is why we suggest doing that first and then deciding.
 ## Two myths worth retiring
 
 **"The vents should be closed in winter to save heat."** This is the most common
-piece of bad advice in circulation locally, and it is usually given with real
+piece of bad advice in circulation locally, and it is usually given with great
 confidence. The heat saved is small; the moisture trapped is not. Ground vapor
 does not stop being produced because the weather turned cold, and with the
 openings blocked it has nowhere to go but into the framing above. Washington's

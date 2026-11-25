@@ -174,9 +174,7 @@ before they arrive; too late and they are already on the wall.
 
 Large lots accumulate timber, and most of it is not thought of as timber.
 
-Landscape ties. Raised beds. Old fence posts. A stump left when something came
-down. Fallen limbs stacked at the back. Firewood that has been in the same
-place long enough to have gone soft at the bottom. Pallets behind the shop.
+It includes landscape ties, raised beds, old fence posts, a stump left when something came down, fallen limbs stacked at the back, firewood that has been in the same place long enough to have gone soft at the bottom, and pallets behind the shop.
 
 [Carpenter ants](/pest-library/carpenter-ant/) do not eat wood — they excavate galleries in it to nest, and
 they take softened, damp wood far more readily than sound dry timber. Every
@@ -302,8 +300,7 @@ The most valuable work here is physical and it finishes: vents, sweeps,
 penetrations, hardware cloth, and the outbuildings done at the same time as the
 house.
 
-The least valuable is a recurring perimeter treatment on a property whose real
-problem is a quarter-inch gap and an open shop. It produces a visible result,
+The least valuable is a recurring perimeter treatment on a property whose problem is a quarter-inch gap and an open shop. It produces a visible result,
 it needs repeating forever, and it never closes the route.
 
 Where the answer to a rodent problem is a morning with a drill rather than a

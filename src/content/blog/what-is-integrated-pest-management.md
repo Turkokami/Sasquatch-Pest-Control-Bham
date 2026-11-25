@@ -59,7 +59,7 @@ No — and it's worth being clear about that, because IPM is sometimes misunders
 
 ## Why does Sasquatch use IPM?
 
-Because it works better and it's the responsible way to do this job. Building our approach around IPM means we start every job by coming out and taking a real look, focus on exclusion and prevention so problems actually stay solved, and treat precisely rather than broadly. It's why we lead with a free visit rather than a sales pitch, and it's a big part of why our work holds up — when you address the root cause, you don't have to keep coming back to spray the same symptom.
+Because it works better and it's the responsible way to do this job. Building our approach around IPM means we start every job by coming out and taking a careful look, focus on exclusion and prevention so problems actually stay solved, and treat precisely rather than broadly. It's why we lead with a free visit rather than a sales pitch, and it's a big part of why our work holds up — when you address the root cause, you don't have to keep coming back to spray the same symptom.
 
 It also fits our whole philosophy: no contracts, no scare tactics, no hidden fees. IPM is honest pest control — we tell you what's actually going on, we deal with the reasons pests are there, and we use the least invasive effective solution. If you're in Bellingham or anywhere in Whatcom County and you want pest control that solves the problem instead of just managing it indefinitely, that's exactly what an IPM approach delivers.
 

@@ -30,7 +30,7 @@ faqs:
     a: "It puts a periodic inspection on the building with a checklist, and pest access points are on it — foundation openings, screens, gaps around penetrations. The practical effect is that exclusion work stops being optional maintenance and becomes a compliance item with a date attached. A landlord who seals the crawlspace is buying two things at once, and it is worth timing that work against the inspection cycle rather than after it."
   - q: "Who is responsible, us or the tenant?"
     a: "Legally that depends on your lease and on state landlord-tenant law, and we are not the people to advise you on it. What we can do is remove the argument about facts: every visit produces a dated record of what was found, where, and what caused it, separating structural items from housekeeping ones. Most disputes we are asked into are disputes about what happened rather than about who pays."
-  - q: "What is the best time to do the real work in a student building?"
+  - q: "What is the best time to do the main work in a student building?"
     a: "Turnover. Units are empty, access is unrestricted, walls and floors are visible, and nobody's belongings are in the way. In Bellingham that window is short and everybody in the trades wants it, so it books early. A building that only ever gets worked on while occupied will always be treated rather than fixed."
   - q: "Do you handle bed bugs in multifamily?"
     a: "Yes, and it is the one problem where scope discipline matters most, because a single unit treated in isolation is close to guaranteed to recur. Bed bug work carries a verification fee that is credited against treatment if you proceed, and in a shared building we will want to inspect adjoining units before quoting rather than after."
@@ -52,7 +52,7 @@ That is the whole of it, and almost every failure in multifamily pest control
 comes from scoping the work to the complaint instead of to the structure.
 Treating unit 4 while units 3 and 5 are untouched does not remove a population.
 It moves it, briefly, and produces a second complaint from a different door in
-about a month — which then looks like a treatment failure and is really a
+about a month — which then looks like a treatment failure and is a
 scoping failure.
 
 So the first conversation on a multifamily account is about the building: how it
@@ -114,8 +114,7 @@ repeats. [UC IPM separates the species](https://ipm.ucanr.edu/home-and-landscape
 that live and breed indoors from the ones that come up out of drains and damp
 ground, and states that identifying which is present decides the control method.
 
-**Bed bugs**, the highest-stakes problem in multifamily and the one most often
-under-scoped. See below.
+**Bed bugs**, the highest-stakes problem in multifamily and the one most often under-scoped, covered below.
 
 **Ants**, mostly [odorous house ants](/pest-library/odorous-house-ant/), which is the ant most buildings here
 actually have. Worth knowing because it is the species where a repellent spray
@@ -167,7 +166,7 @@ is negotiated one door at a time.
 
 Turnover solves that, and in Bellingham the turnover window is short and every
 trade in the county wants it. Which means it has to be booked early and planned
-against, rather than treated as a period when things happen to be quiet.
+against, rather than treated as a period when things happen to be slow.
 
 What belongs in a turnover window:
 
@@ -176,7 +175,7 @@ What belongs in a turnover window:
 - Bed bug inspection of vacated units before anything is moved in
 - Crawlspace and attic work where those are shared
 - Common area and waste area work that is disruptive when occupied
-- Anything requiring the building to be quiet
+- Anything requiring the building to be empty
 
 The rest of the year is program and response. The year's actual progress is made
 in those few weeks.

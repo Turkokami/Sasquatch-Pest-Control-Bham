@@ -65,7 +65,7 @@ faqs:
   - q: "How do I recognize the spider itself?"
     a: "Small and pale — Penn State gives females at 5 to 10 millimeters and males 4 to 8 — in cream, yellow or a faintly greenish shade, with the head end darker than the abdomen. Utah State points to dark tufts at the leg tips that look like little socks."
   - q: "When should I see a doctor about a bite?"
-    a: "If a wound is spreading, worsening after a couple of days, producing pus or fever, or if you have any breathing or swallowing difficulty or facial swelling. Washington's health department warns that unexplained wounds are often misdiagnosed as spider bites, which delays treating what is really there."
+    a: "If a wound is spreading, worsening after a couple of days, producing pus or fever, or if you have any breathing or swallowing difficulty or facial swelling. Washington's health department warns that unexplained wounds are often misdiagnosed as spider bites, which delays treating what is there."
   - q: "Do you treat for yellow sac spiders?"
     a: "Sometimes, and it depends on where they are. A few in a garage are not worth anything. A steady population in bedrooms, where somebody is being bitten in their sleep, is a legitimate reason to clear retreats and treat the harborage rather than to shrug about it."
 ---
@@ -93,8 +93,8 @@ finished. The reputation this spider carries for eating a hole in people's skin
 is the same kind of story the hobo spider carries, built the same way, and it is
 not supported by the evidence either.
 
-Getting both halves right is the whole job of this page. A real bite is a real
-if small thing, and the horror stories are not.
+Getting both halves right is the whole job of this page. The bite does happen and
+is a small thing; the horror stories do not hold up.
 
 ## What it looks like
 
@@ -133,7 +133,7 @@ Idaho publish jointly](https://pnwhandbooks.org/insect/structural-health/public-
 Pacific Northwest. For a household the two behave identically and nothing turns
 on which one is on the ceiling.
 
-## The silk pocket, which is the real field mark
+## The silk pocket, which is the best field mark
 
 You are far more likely to find the retreat than the spider.
 
@@ -415,7 +415,7 @@ This one genuinely depends, and here is what it depends on.
 particularly bedrooms; a household where somebody is getting bitten
 repeatedly; retreats accumulating in ceiling corners faster than they can be
 cleared; or a building where the outdoor population against the walls is heavy
-enough that clearing indoors does not hold. In those cases the work is real —
+enough that clearing indoors does not hold. In those cases the work is substantial —
 retreat removal, harborage treatment, the vegetation and the gaps — and we will
 do it without apologizing for it.
 

@@ -19,7 +19,7 @@ idTable:
   - label: "Bites"
     value: "Not known to pose any threat to people"
   - label: "Do we treat it"
-    value: "Rarely — mainly heavy populations in a used garage or crawlspace, or a household with a real fear"
+    value: "Rarely — mainly heavy populations in a used garage or crawlspace, or a household with a serious fear"
 signs:
   - "A large, fast brown spider stuck in a bathtub or sink overnight"
   - "Dusty flat sheets of silk with a funnel at one edge in the corners of garages, sheds and basements"
@@ -73,7 +73,7 @@ faqs:
   - q: "Should I kill it or put it outside?"
     a: "Neither is required. The Burke Museum points out that true house spiders are indoor animals, so putting one out is not a rescue. A glass and a piece of card moves it wherever you want it, and leaving it alone is a legitimate choice too."
   - q: "Do you treat for giant house spiders?"
-    a: "Rarely, and not on the strength of the species. Where a garage or crawlspace carries a heavy population people are living with, or where someone in the household has a serious fear of spiders, there is real work to do. Otherwise this is a sealing job."
+    a: "Rarely, and not on the strength of the species. Where a garage or crawlspace carries a heavy population people are living with, or where someone in the household has a serious fear of spiders, there is work to do. Otherwise this is a sealing job."
 ---
 
 ## What you are looking at
@@ -195,7 +195,7 @@ is a treatment, and all of it outperforms one over a season.
 A giant house spider takes whatever walks or blunders onto its sheet: flies,
 small moths, beetles, ants, sowbugs, [silverfish](/pest-library/silverfish/), midges, and a steady stream of
 the smaller arthropods that live in a damp Pacific Northwest crawlspace. In a
-garage or an outbuilding this adds up to real volume across a season.
+garage or an outbuilding this adds up to significant volume across a season.
 
 It also eats other spiders, including smaller funnel weavers, and this is where
 the animal earns its place in an honest account. UC IPM records that in parts of
@@ -208,10 +208,10 @@ Which produces an awkward result for the standard version of this page. Killing
 every large brown spider in a basement removes the animal that was suppressing
 the population you were worried about in the first place. We are not going to
 tell anybody they have to live with a four-inch spider on principle. But the
-trade-off is real and it is worth knowing before the decision is made with a
+trade-off matters and it is worth knowing before the decision is made with a
 shoe.
 
-## Egg sacs and the quiet part of the year
+## Egg sacs and the slow part of the year
 
 The season most people never think about is the one where intervention is
 cheapest.
@@ -278,7 +278,7 @@ inclusion test produces confident wrong answers, which is exactly what has
 happened across this region for thirty years.
 
 *Size.* Overlapping, but the odds point away from alarm. The giant house spider
-is the larger animal, so a really big frightening spider is an argument against
+is the larger animal, so a big frightening spider is an argument against
 the hobo rather than for it.
 
 *Color.* WSU calls coloration one of the least reliable characteristics
@@ -330,7 +330,7 @@ sensible for that reason and for several others.
 
 The more useful warning runs the other way. The Washington State Department of
 Health notes that unexplained wounds are often misdiagnosed as spider bites, and
-that the misdiagnosis can leave the real condition untreated. If a wound worries
+that the misdiagnosis can leave the underlying condition untreated. If a wound worries
 you, the answer is a physician promptly, whatever you think put it there. We
 identify spiders; we are not qualified to read skin, and a pest control company
 that offers to is overreaching.
@@ -354,7 +354,7 @@ something back outside that was never outside to begin with. Some will not do
 well out there. That is not an argument for keeping it in the bathroom — it is
 just a reason not to feel that the outdoors is where it belongs.
 
-Killing it is a choice rather than a necessity, and the trade-off is real. These
+Killing it is a choice rather than a necessity, and the trade-off matters. These
 are territorial predators that eat other spiders and a steady volume of insects.
 The one you remove was suppressing something.
 
@@ -401,7 +401,7 @@ garage, shed or crawlspace with a heavy standing population in a space the
 household actually uses, where clearing webbing and egg sacs and dealing with the
 conditions makes a visible difference. A commercial site with a legitimate
 appearance standard. And a household where somebody's fear of spiders is
-affecting how they live — which is a real quality-of-life problem, not a silly
+affecting how they live — which is a quality-of-life problem, not a silly
 one, and it changes the priorities without changing the methods.
 
 Outside those, the honest recommendation is a door sweep, a warmer porch light,

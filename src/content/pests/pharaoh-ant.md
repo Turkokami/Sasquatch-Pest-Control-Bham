@@ -20,7 +20,7 @@ idTable:
     value: "Yes, with slow-acting bait over weeks — never with sprays, which make the colony bud"
 signs:
   - "Trails of tiny yellow ants so small that single ones look like specks on the counter"
-  - "Ants that go quiet after spraying, then turn up in new rooms or a neighboring unit"
+  - "Ants that disappear after spraying, then turn up in new rooms or a neighboring unit"
   - "Activity that bounces between adjoining apartments after one unit is treated"
   - "A first appearance in a store room or receiving area after goods or furniture arrived"
   - "Ants at crumbs, pet food, spilled syrup or grease behind an appliance"
@@ -97,7 +97,7 @@ worldwide inside heated buildings.
 
 Nearly every ant most people meet reproduces the same way: winged reproductives
 leave on a mating flight, mated queens land, shed their wings, and try to found
-a colony alone. Most fail. That is why ordinary ant colonies are separate,
+a colony alone. Most of them fail. That is why ordinary ant colonies are separate,
 territorial, and beatable one at a time.
 
 Pharaoh ants do not do that. **Additional colonies are produced by the splitting
@@ -402,7 +402,7 @@ Because this species declines rather than stops, it is worth agreeing in advance
 what the end of the job looks like.
 
 Activity falling away is the first sign, and it is not the finish. A budding
-population under bait pressure can go quiet for two or three weeks and then show
+population under bait pressure can disappear for two or three weeks and then show
 a small trail somewhere new, which is a remnant nest rather than a failure of
 the treatment.
 

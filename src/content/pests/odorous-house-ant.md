@@ -69,8 +69,7 @@ the species describes the result as rotten coconut or blue cheese; Utah State
 Extension uses the same coconut comparison. It comes from glands at the rear of
 the abdomen, and once you have smelled it you will not need a second opinion
 about this species again. One worker rarely produces enough to register, which is
-why people try the test, smell nothing and conclude they have something else.
-Use several.
+why people try the test, smell nothing and conclude they have something else. Use several workers.
 
 Everything else about the ant is unremarkable, which is precisely why the smell
 matters. WSU gives the workers at a sixteenth to an eighth of an inch; Utah State
@@ -303,7 +302,7 @@ of them actually accomplished.
 
 **A retail aerosol on the trail.** Kills what it lands on, erases the pheromone
 route that would have led to the nest, and carries the specific risk described
-above of splitting the colony. This is the one that does real harm.
+above of splitting the colony. This is the one that does harm.
 
 **A perimeter spray around the outside of the house.** Better placed than the
 aerosol, and occasionally useful, but a repellent barrier applied without knowing
@@ -369,7 +368,7 @@ nothing, with the occasional straggler for a while afterward.
 What indicates a genuine problem is not slow progress but a changed pattern:
 activity appearing in a room that had none, two or three separate points of
 activity where there was one, or a trail re-establishing on a different route
-after going quiet. Those are the signatures of a colony that has divided, and the
+after going inactive. Those are the signatures of a colony that has divided, and the
 response is to look again at where the nests are rather than to reapply the same
 material harder.
 
@@ -409,7 +408,7 @@ Small, uniformly sized, brown-black, one hidden waist node, and unmistakable whe
 crushed. It will not damage your house. It will not respond well to anything you
 spray at it, and spraying is the one intervention with a documented mechanism for
 making the situation worse. Bait it, feed it nothing else, close the route once it
-has gone quiet, and deal with the aphids on the shrubs by the wall.
+has gone inactive, and deal with the aphids on the shrubs by the wall.
 
 And if it turns up once after a downpour and stops of its own accord a week later,
 that is the whole event. Not everything on this list needs a company attached to

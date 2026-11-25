@@ -61,7 +61,7 @@ faqs:
     a: "That a product meeting six conditions under FIFRA section 25(b) does not have to be registered federally. EPA's own guidance notes that the agency does not review exempted products, so the exemption is a paperwork status rather than a finding that a product is safe or that it works."
   - q: "What is genuinely the lowest-impact control?"
     a: "Exclusion, because it uses no product at all. A rescreened crawl vent or a sealed pipe penetration keeps the animal out permanently and cannot be washed into a ditch, tracked onto a floor or reapplied every month."
-  - q: "Are baits really better than spraying?"
+  - q: "Are baits better than spraying?"
     a: "For ants and cockroaches, the published guidance is clear. UC IPM says baits are the only type of insecticide recommended in most ant situations and that properly used they are more effective and safer than sprays, and that perimeter treatments pose more environmental risk than baits in stations."
   - q: "Do you use conventional products?"
     a: "Yes, where they are the right tool, and we would rather say so than imply otherwise. What we control is how little goes out, where it goes, and whether it was needed — which affects exposure far more than which bottle it came from."
@@ -80,9 +80,9 @@ to using it about a service that is identical to the one next door.
 That is the most useful sentence on this page, and it is the one the trade has
 no incentive to write.
 
-None of which means low-impact work is a fiction. Some of it is real, measurable
-and worth paying for. The problem is that the real parts and the marketing parts
-travel under the same word, and the real parts are usually the less profitable
+None of which means low-impact work is a fiction. Some of it is genuine, measurable
+and worth paying for. The problem is that the substantive parts and the marketing parts
+travel under the same word, and the substantive parts are usually the less profitable
 ones. So this page separates them: what genuinely reduces what you and your
 household are exposed to, what is overstated, and where a low-impact approach
 stops being able to do the job.
@@ -101,7 +101,7 @@ any registered product."
 Read that twice. The words that appear all over pest control advertising are
 words that may not appear on the container the product came in.
 
-"Organic" is different, and it is worth being precise. It has a real definition,
+"Organic" is different, and it is worth being precise. It has a definition,
 administered by the USDA National Organic Program, and products allowed in
 organic production are a defined set. But that definition is built for
 agricultural production. It is not a household safety rating, and a material
@@ -261,7 +261,7 @@ technicians using the identical material can produce exposure profiles an order
 of magnitude apart, and the difference is entirely in where they chose to put
 it.
 
-## Non-chemical tools that do real work
+## Non-chemical tools that do work
 
 Worth naming, because they get treated as marginal when several of them are the
 main event.
@@ -301,7 +301,7 @@ that matters more — "home remedies often do not come with labels that tell you
 how to use them, how much, where, and how often. This could lead to overuse and
 harm to people, pets, and the environment."
 
-That is the real risk with a kitchen mixture. Not that it is potent, but that
+That is the risk with a kitchen mixture. Not that it is potent, but that
 there is no dose, no site restriction, no re-entry interval and no warning
 statement, so the natural response to it not working is to use more of it in
 more places. A registered product's label is a constraint, and constraints are
@@ -370,7 +370,7 @@ not sufficient. Baiting works, but it has to be sustained and it has to cover
 the whole affected structure rather than the unit that complained.
 
 **An open building under seasonal rodent pressure.** Exclusion is the answer and
-exclusion takes time — a proper job on an older house is a real day of work, not
+exclusion takes time — a proper job on an older house is a full day of work, not
 a tube of sealant. In the meantime, in October, with a population already
 established, mechanical and chemical control carry the load. Refusing to use
 them because the ideal answer is structural means living with the animal until
@@ -393,7 +393,7 @@ somebody spend a day on the building. Habitat work asks you to move the compost,
 pick the fruit up and cut the hedge back. Bed bug and cockroach preparation asks
 for several hours of genuine effort and largely decides the outcome.
 
-That is a real cost and it is why the low-impact route is not simply the better
+That is a cost and it is why the low-impact route is not simply the better
 route in every household. Somebody managing a rental at a distance, or a person
 who physically cannot do the preparation, is making a different calculation, and
 pretending otherwise is not honesty, it is just a different sales pitch.

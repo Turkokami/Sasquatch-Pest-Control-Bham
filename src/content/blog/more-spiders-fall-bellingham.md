@@ -23,7 +23,7 @@ actually going on and what to do about it.
 
 ## Why do I see so many more spiders in the fall?
 
-It feels like a sudden invasion, but it is really a seasonal shift in behavior,
+It feels like a sudden invasion, but it is a seasonal shift in behavior,
 and mostly it is about spiders that were already around becoming far more
 visible.
 
@@ -111,7 +111,7 @@ local species.
 
 ## How do I keep spiders out of my house this fall?
 
-Spider control is really about two things: making it harder for spiders to get
+Spider control is about two things: making it harder for spiders to get
 in, and removing what draws them, namely other insects. Handle those, and the
 spider population drops on its own.
 

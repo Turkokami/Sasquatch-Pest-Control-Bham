@@ -48,7 +48,7 @@ debris, camouflaging it and — crucially — making it resistant to most of wha
 be applied. Inside, a fully formed adult can wait for weeks until something tells
 it a host has arrived: warmth, carbon dioxide, and physical vibration.
 
-So here is what happens on almost every job. We treat. Adults and larvae die. For
+So here is what happens on almost every job. We treat, and adults and larvae die. For
 about a week the house seems clear. Then the pupae that survived begin hatching,
 and the household concludes the treatment failed.
 
@@ -120,7 +120,7 @@ under a deck or in a crawlspace, rodents in a wall void or attic, or a feral cat
 using the space under a porch. When the animal leaves — or dies — its fleas need a
 new host, and they come inward.
 
-That case is not really a flea job. It is an animal-removal job with a flea treatment attached — [rodent control](/services/rodent-control/) where it is a rodent, and a wildlife specialist where it is not — and
+That case is not a flea job. It is an animal-removal job with a flea treatment attached — [rodent control](/services/rodent-control/) where it is a rodent, and a wildlife specialist where it is not — and
 treating the carpet while an animal is still denning under the floor guarantees a
 repeat.
 
@@ -141,7 +141,7 @@ Flea products for pets are a veterinary matter. The active ingredients, the
 dosing by weight, the species restrictions and the interactions are your vet's
 call, not a pest control company's. That is not caution for its own sake:
 **several products that are safe for dogs are seriously harmful to cats**, and
-misapplied over-the-counter treatments cause real veterinary emergencies every
+misapplied over-the-counter treatments cause veterinary emergencies every
 year. If you want a second opinion on a product before it goes anywhere near an
 animal, the
 [National Pesticide Information Center](https://npic.orst.edu/pest/) — run by
@@ -186,7 +186,7 @@ determines the result.
 
 ## Preparation
 
-Before treatment, and it makes a real difference.
+Before treatment, and it makes a difference.
 
 Vacuum thoroughly and remove the bag or empty the canister outside. Wash all pet
 bedding hot and dry it hot. Clear the floor — toys, shoes, clothing, anything
@@ -229,7 +229,7 @@ upholstery there is, and whether an animal source needs resolving first by someb
 
 A single-story home with a treated pet and a contained problem is a
 straightforward two-visit job. A house with fleas coming from a raccoon under the
-crawlspace is really two jobs, and the flea treatment is the smaller half.
+crawlspace is two jobs, and the flea treatment is the smaller half.
 
 Follow-up visits that are part of the plan are part of the price rather than a
 second invoice. The estimate is free.
@@ -279,7 +279,7 @@ Both work far more slowly than the population reproduces, and both are difficult
 to remove from carpet afterward. If you want to use DE, the sensible places are
 crawlspaces and voids rather than living space.
 
-**Ultrasonic repellers.** No.
+**Ultrasonic repellers.** They have no effect.
 
 **Treating the lawn.** Fleas do not develop in open, sunny grass — it is too dry
 and too hot at the surface. Treating a lawn is money spent where the insects are
@@ -377,7 +377,7 @@ practice is substantially cheaper over a year than reacting to move-in complaint
 
 ## Related work
 
-Where the source is an animal rather than a pet, the real job is removing that animal — [rodent control](/services/rodent-control/) if it is a rodent, a wildlife specialist if it is not — and closing the space is
+Where the source is an animal rather than a pet, the main job is removing that animal — [rodent control](/services/rodent-control/) if it is a rodent, a wildlife specialist if it is not — and closing the space is
 [exclusion and repairs](/services/exclusion-and-repairs/). If what you are finding
 is in a bed rather than around ankles, see
 [bed bug control](/services/bed-bug-control/) — the two get confused and the

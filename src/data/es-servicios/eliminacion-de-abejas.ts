@@ -25,7 +25,7 @@ export const eliminacionDeAbejas: EsServicio = {
       parrafos: [
         'La mayoría de las llamadas que recibimos por abejas son por chaquetas amarillas.',
         'La confusión se entiende — amarillo y negro, vuelan, pican — pero la distinción lo decide todo, porque a la chaqueta amarilla la tratamos y a la abeja melífera no la matamos.',
-        'La abeja melífera es de color café dorado, peluda, de tamaño mediano. Visita flores. No le interesa su comida, su bebida, su bote de basura ni su asador. Pica una sola vez y se muere, así que no tiene ganas de hacerlo. Una "abeja" en un día de campo casi siempre es una chaqueta amarilla.',
+        'La abeja melífera es de color café dorado, peluda, de tamaño mediano, y visita flores. No le interesa su comida, su bebida, su bote de basura ni su asador. Pica una sola vez y se muere, así que no tiene ganas de hacerlo. Una "abeja" en un día de campo casi siempre es una chaqueta amarilla.',
         'La chaqueta amarilla es lisa, brillante, con marcas muy vivas y cintura angosta, y es notablemente más rápida y más atrevida. Caza proteína a principios de temporada y busca azúcar al final, que es exactamente por qué aparece en su mesa en septiembre. Ese cambio de temporada, de carne a dulce, lo describe la [extensión de la Universidad de California](https://ipm.ucanr.edu/PMG/PESTNOTES/pn7450.html), y es la razón de que el insecto que ronda un plato de comida no sea una abeja melífera. Pica una y otra vez.',
         'El abejorro es grande, redondo y muy peludo, muchas veces con bandas amarillas, negras y a veces anaranjadas. Lento, ruidoso y famoso por lo tranquilo.',
         'Las abejas albañiles y las abejas mineras son chicas, solitarias, muchas veces de color azul verdoso metálico u oscuras, y activas en primavera. Sin colonia, sin defensa, y en la práctica sin riesgo de picadura.',
@@ -37,7 +37,7 @@ export const eliminacionDeAbejas: EsServicio = {
       parrafos: [
         'Es una postura firme y vale la pena explicarla en lugar de nada más afirmarla.',
         'En lo práctico, empeora el problema. Una colonia dentro de una pared son kilos de panal de cera, cría y miel. Mate a las abejas y todo eso se queda en el hueco. Sin la colonia cuidándolo, el panal se calienta, la miel se fermenta y escurre, y se mete en el tablaroca y en la estructura — dejando manchas, olor, y una fuente de comida de largo plazo que atrae hormigas, polillas de la cera, derméstidos y roedores. Las familias que pagan para que envenenen una colonia en la pared con frecuencia pagan otra vez un año después por un trabajo bastante más sucio.',
-        'En lo ecológico, es un mal intercambio. La presión sobre los polinizadores es real, y destruir una colonia que funciona y que un apicultor recogería con gusto es difícil de justificar cuando existe un mejor resultado.',
+        'En lo ecológico, es un mal intercambio. Los polinizadores están bajo presión, y destruir una colonia que funciona y que un apicultor recogería con gusto es difícil de justificar cuando existe un mejor resultado.',
         'Y casi siempre hay una mejor opción. Los enjambres se recogen. Las colonias establecidas se retiran como se debe. Ninguna de las dos cosas requiere matar nada.',
       ],
     },
@@ -131,7 +131,7 @@ export const eliminacionDeAbejas: EsServicio = {
     {
       h2: 'Por el condado',
       parrafos: [
-        'El corredor agrícola — Lynden, Everson, Nooksack, Sumas. Las colmenas manejadas son parte del paisaje de trabajo y la polinización de la mora depende de ellas. Aquí la identificación importa más que en ningún otro lado, porque destruir la colonia de producción de alguien es un problema real y no una abstracción.',
+        'El corredor agrícola — Lynden, Everson, Nooksack, Sumas. Las colmenas manejadas son parte del paisaje de trabajo y la polinización de la mora depende de ellas. Aquí la identificación importa más que en ningún otro lado, porque destruir la colonia de producción de alguien es un problema concreto y no una abstracción.',
         'Las casas antiguas de Bellingham, en Lettered Streets, Columbia, Sunnyland y York. Chimeneas sin tapa, sofitos abiertos y huecos de pared en construcción vieja les dan a las exploradoras exactamente el volumen que buscan, y es donde aparecen las colonias establecidas.',
         'Alrededor del lago Whatcom y el borde del bosque — Sudden Valley, Silver Beach, Edgemoor. Abejorros en huecos del suelo y debajo de las terrazas, abejas albañiles en el cedro y en agujeros de escarabajo, y muchas colonias silvestres de abeja melífera en árboles que no son problema de nadie.',
         'Frente al mar, en Blaine, Birch Bay y Semiahmoo. Propiedades cerradas durante meses, donde una colonia se puede establecer a lo largo de un verano y estar bien desarrollada antes de que alguien lo note.',

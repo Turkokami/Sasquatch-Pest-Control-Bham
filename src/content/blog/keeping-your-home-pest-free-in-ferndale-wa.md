@@ -44,14 +44,14 @@ infestation. Here are the ones you are most likely to meet:
 
 5. **Termites and wood-destroying pests.** Dampwood and subterranean termites,
    carpenter ants and wood-boring beetles work through the wooden structure of a
-   house quietly. Catching them early is what limits the damage.
+   house. Catching them early is what limits the damage.
 
 Getting familiar with these gives you a much better chance of spotting a problem
 early and doing something about it before it spreads.
 
 ## The dangers of pests in your home
 
-Pests are not only a nuisance; they carry real risks to health and property.
+Pests are not only a nuisance; they carry risks to health and property.
 Understanding those risks is what makes prevention worth the effort.
 
 1. **Health risks.** A number of pests carry and transmit disease. Rodents are

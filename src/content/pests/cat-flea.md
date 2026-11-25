@@ -83,7 +83,7 @@ and among wild animals coyotes, raccoons and opossums. A true dog flea,
 *Pulex irritans*, is on the Pacific Northwest list and is genuinely uncommon in
 housing here.
 
-The practical value of knowing this is small but real. If somebody tells you that
+The practical value of knowing this is small but useful. If somebody tells you that
 what is in your carpet is a dog flea and that it therefore behaves differently,
 the identification is worth a second look, because the treatment does not change
 and the biology below is what you are actually dealing with.
@@ -100,7 +100,7 @@ Everything frustrating about fleas follows from that ratio.
 
 It explains why a household treats the pet, watches the visible fleas disappear,
 and finds the house full again a fortnight later. It explains why a thorough
-vacuum makes a real dent where a spray on a sofa does not. It explains why the
+vacuum makes a dent where a spray on a sofa does not. It explains why the
 follow-up visit is part of the plan rather than an admission that something went
 wrong. And it explains why a flea job has a household half and a professional
 half, and fails when either one is skipped.
@@ -205,7 +205,7 @@ the jump Purdue measures at a foot or more.
 ## When this does not need us
 
 The library is meant to say so where that is the truth, and with fleas there is a
-real case for it.
+case for it.
 
 A dog comes back from a weekend with somebody else's animals, and two or three
 fleas are combed out over the following days. The pet is on a veterinary
@@ -224,7 +224,7 @@ will not finish it.
 
 ## Where the source is when there is no pet
 
-A flea problem in a house with no animal in it is not really a flea problem. It is
+A flea problem in a house with no animal in it is not a flea problem. It is
 an animal problem with fleas attached, and treating the carpet without resolving
 the source buys a few good weeks.
 

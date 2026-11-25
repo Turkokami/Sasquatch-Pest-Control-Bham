@@ -74,7 +74,7 @@ Store-bought sprays typically kill the roaches you can see while missing the one
 
 ### Are cockroaches dangerous to my family?
 
-They carry real risks beyond being unpleasant. Cockroaches can spread bacteria as they move between drains, garbage, and food surfaces, and they are a well-documented trigger for asthma and allergies — their droppings, shed skins, and body particles become allergens in household dust, which is especially concerning for children and anyone with respiratory conditions. They also contaminate food and surfaces, which is reason enough not to let an infestation build.
+They carry risks beyond being unpleasant. Cockroaches can spread bacteria as they move between drains, garbage, and food surfaces, and they are a well-documented trigger for asthma and allergies — their droppings, shed skins, and body particles become allergens in household dust, which is especially concerning for children and anyone with respiratory conditions. They also contaminate food and surfaces, which is reason enough not to let an infestation build.
 
 ### What attracts cockroaches to my house in the first place?
 

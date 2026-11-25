@@ -124,7 +124,7 @@ to screen a frame that is disintegrating.
 
 We spend a fair amount of time removing previous attempts, so here is the list.
 
-**Fiberglass and plastic insect screening.** Stops flies. Does not stop anything
+**Fiberglass and plastic insect screening.** It stops flies. Does not stop anything
 with teeth. This is the most common material we find failed.
 
 **Standard aluminum window screen.** Marginally better and still chewed through
@@ -253,7 +253,7 @@ Buy quarter-inch galvanized hardware cloth. Cut pieces with a two-inch overlap
 all round. Fasten with screws and fender washers into the framing or with masonry
 fasteners into concrete, at intervals close enough that the mesh cannot be pushed
 in — every three or four inches around the perimeter. Trim the edges cleanly,
-because cut hardware cloth is genuinely sharp. Wear gloves.
+because cut hardware cloth is genuinely sharp, so wear gloves.
 
 The parts most people get wrong: fastening only at the corners, using a mesh size
 that admits mice, and doing it before checking whether anything is already under

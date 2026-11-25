@@ -26,7 +26,7 @@ faqs:
 Custer is not a town in the way Lynden or Blaine are towns. It is an
 unincorporated community — a crossroads, a school, a handful of businesses along
 the highway, and a large amount of farmland and acreage spread around it with no
-real edge to it.
+clear edge to it.
 
 That sounds like a detail about local government. It is actually the most
 important thing about pest control here, because it changes what a property
@@ -79,7 +79,7 @@ occupied and crowded. By then people have often already noticed droppings in the
 shop and decided it was not worth doing anything about, which is the point at
 which the job stops being cheap.
 
-## Outbuildings are the real building stock
+## Outbuildings are the main building stock
 
 On acreage, the shop is where the problem lives.
 
@@ -196,7 +196,7 @@ and both see seals, flashing and fasteners age faster than they would inland.
 
 ## Carpenter ants, moisture ants and soft wood
 
-Ant work on a Custer property is really water work wearing a different name.
+Ant work on a Custer property is water work wearing a different name.
 
 [Carpenter ants](/pest-library/carpenter-ant/) do not eat wood. They hollow it out to nest in, and they go for
 wood that has already been softened by moisture rather than sound framing. On

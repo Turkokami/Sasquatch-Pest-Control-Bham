@@ -13,7 +13,7 @@ faqs:
   - q: "Our apartment complex treats units one at a time. Is that right?"
     a: "For a rodent in a specific unit, often yes. For bed bugs or German cockroaches it is the wrong scope — they travel through wall voids and plumbing chases, so treating one apartment relocates the population. Those need a coordinated pass across the affected units."
   - q: "Is the college a factor the way Western is in Happy Valley?"
-    a: "A smaller one, but real. There is turnover in the rental stock, and turnover moves furniture, which is how bed bugs travel. The difference is that here it is mostly larger managed buildings, which makes a coordinated response easier to organize."
+    a: "A smaller one, but it exists. There is turnover in the rental stock, and turnover moves furniture, which is how bed bugs travel. The difference is that here it is mostly larger managed buildings, which makes a coordinated response easier to organize."
   - q: "We have irrigation and mulch beds. Do those cause ant problems?"
     a: "They are usually the whole reason. An irrigated bed against a warm wall stays permanently damp and the bark never dries, which is close to ideal for the ants that then come in along the slab edge. Pulling mulch back and adjusting a sprinkler head does more than a treatment."
   - q: "Why are there so many wasps in newer construction?"
@@ -104,7 +104,7 @@ mulch back off the foundation, leave a dry band at the base of the wall, adjust
 heads that spray the building, and keep planting off the siding. Where a
 homeowner or an HOA makes those changes the treatment holds. Where they do not,
 we are back next spring, and we would rather say that than take the repeat
-booking quietly.
+booking without comment.
 
 ## The open ground behind the fence
 
@@ -156,7 +156,7 @@ arrange than it is in a neighborhood of individually owned divided houses. When
 a manager will authorize it, the result is genuinely different rather than
 marginally better.
 
-**Bed bugs** are the clearest case. There is real turnover in this rental stock,
+**Bed bugs** are the clearest case. There is steady turnover in this rental stock,
 turnover moves furniture, and furniture is how bed bugs travel. It is a
 transport problem rather than a hygiene one, and any property with regular
 turnover is exposed regardless of how well it is kept. Managers who accept that
@@ -192,7 +192,7 @@ a population that then looks for somewhere dry, which is the buildings the bins
 belong to.
 
 None of that is ours to fix, which is exactly why it goes in the report rather
-than getting quietly serviced around. A manager who corrects capacity, closure
+than getting silently serviced around. A manager who corrects capacity, closure
 and collection frequency sees a difference within a season.
 
 ## Wasps and newer construction
@@ -325,7 +325,7 @@ space that stays dry, which removes most of the moisture-driven cast that fills
 our older-neighborhood pages: [moisture ants](/pest-library/moisture-ant/), decay fungus, sowbugs and
 springtails all lose the conditions they need.
 
-That is a real improvement and it is the single best thing about newer
+That is an improvement and it is the single best thing about newer
 construction here.
 
 What it does not do is exclude anything by itself. The liner is a vapor barrier,

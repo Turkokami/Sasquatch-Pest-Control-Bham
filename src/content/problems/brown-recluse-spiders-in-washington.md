@@ -20,7 +20,7 @@ faqs:
   - q: "Could one have arrived in a shipment?"
     a: "Occasionally, and it happens with a lot of species. A single spider traveling in freight or in somebody's belongings from the Midwest is not a population — it does not breed, it does not spread, and it does not change the answer for the house next door. Established is the word that matters."
   - q: "My doctor said my wound was a brown recluse bite. Were they wrong?"
-    a: "Almost certainly about the spider, and quite possibly right about the wound needing treatment. The Burke Museum describes brown recluse bite as having become shorthand for an unexplained sore, and in Pacific coast states it considers essentially all such reports to be errors. The wound is still real and still worth treating."
+    a: "Almost certainly about the spider, and quite possibly right about the wound needing treatment. The Burke Museum describes brown recluse bite as having become shorthand for an unexplained sore, and in Pacific coast states it considers essentially all such reports to be errors. The wound still needs attention and is still worth treating."
   - q: "Then what causes those wounds?"
     a: "The Burke Museum lists bacterial and fungal infections, lymphatic disorders, delayed hypersensitivity reactions, and bites from ticks and other blood-feeding arthropods. Several of those get worse while somebody waits for a spider bite to heal, which is the practical reason this misidentification matters at all."
   - q: "What is the spider I have then?"
@@ -35,7 +35,7 @@ faqs:
 
 There are no brown recluse spiders in Washington.
 
-Not rare here. Not occasionally here. Not here. The Washington State Department
+They are not rare here, and not occasional here. They are not here at all. The Washington State Department
 of Health states that brown recluse spiders do not live in Washington, and the
 Burke Museum at the University of Washington — which holds the state's
 arachnology reference collection, well over a hundred thousand Washington
@@ -44,7 +44,7 @@ established population is in the south-central United States, most of a
 continent from here.
 
 We state it this flatly because the alternative has a cost. People in this
-county spend real money on treatments for a spider that does not exist here, and
+county spend money on treatments for a spider that does not exist here, and
 rather more importantly, people walk around with untreated skin infections
 because somebody told them it was a spider bite and spider bites take time to
 heal.
@@ -125,7 +125,7 @@ what a description argues about for weeks.
 Nothing, because there is nothing to do, and we will say that on the phone
 rather than after a visit.
 
-Where there is a real spider problem — heavy webbing in a garage, numbers in a
+Where there is a genuine spider problem — heavy webbing in a garage, numbers in a
 crawlspace, a household where somebody is genuinely frightened — that is funnel
 weaver work and it is set out honestly on
 [spider control](/services/spider-control/), including what a treatment achieves

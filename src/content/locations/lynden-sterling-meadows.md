@@ -155,7 +155,7 @@ cheaper to address early.
 Right now the planting here is young, set back and open, and on most of these
 houses the foundation line can be seen and reached the whole way round.
 
-That is a real advantage and it is temporary.
+That is an advantage and it is temporary.
 
 Every mature neighborhood in this county tells the same story: planting
 installed when the houses were new, allowed to grow, and now hard against the
@@ -288,7 +288,7 @@ the part that actually matters.
 
 ## What we would rather not sell you
 
-A recurring perimeter program on a five-year-old house whose real problem is a
+A recurring perimeter program on a five-year-old house whose problem is a
 foamed line set and a garage door gap will produce a visible result forever and
 will never finish.
 

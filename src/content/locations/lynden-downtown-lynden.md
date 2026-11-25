@@ -278,7 +278,7 @@ Utilities may be off, so there is no heating cycle and no air movement. And the
 unit is connected to its neighbors through exactly the same shared voids as
 every occupied one.
 
-What that produces is a quiet, undisturbed reservoir in the middle of a row,
+What that produces is an undisturbed reservoir in the middle of a row,
 supplying the units either side, with nobody in a position to report it.
 
 The practical answer is that a vacant unit should be checked periodically by

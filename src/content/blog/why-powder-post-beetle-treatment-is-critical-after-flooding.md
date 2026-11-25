@@ -17,7 +17,7 @@ Wood-boring beetles favor moist, untreated wood. After flooding, framing members
 
 A note on names, because it matters for what you're actually dealing with. "Powderpost beetle" is used loosely to cover several families, and the true powderpost beetles (Lyctidae) attack hardwood sapwood — oak, ash, hickory — not the Douglas fir and hemlock that framing in this county is built from. The beetle that actually shows up in wet Pacific Northwest softwood framing and crawl space joists is the anobiid, sometimes called the furniture or deathwatch beetle. Anobiids need wood with a high moisture content, which is precisely why a flood raises the risk. Knowing which family you have determines whether treatment is even appropriate.
 
-Once insulation is installed, an infestation can go **undetected for years**, quietly weakening the wood and leading to costly repairs down the road.
+Once insulation is installed, an infestation can go **undetected for years**, weakening the wood and leading to costly repairs down the road.
 
 ## Why treatment should happen *before* insulation installation
 

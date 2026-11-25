@@ -115,7 +115,7 @@ Some clover mite seasons get overwhelming because of a combination of factors:
 
 If clover mites turn up year after year despite the barrier and the sealing, a professional treatment plan is a reasonable next step.
 
-That's where Sasquatch Pest Control comes in. We can handle the inside of the home and the exterior perimeter, and where a severe case really is coming out of the lawn itself, we can put you in touch with a company that treats turf. We know the local pest behavior and the seasonal pattern, and the aim is to stop the migration before it reaches your walls.
+That's where Sasquatch Pest Control comes in. We can handle the inside of the home and the exterior perimeter, and where a severe case is coming out of the lawn itself, we can put you in touch with a company that treats turf. We know the local pest behavior and the seasonal pattern, and the aim is to stop the migration before it reaches your walls.
 
 ## Safe and responsible treatment
 

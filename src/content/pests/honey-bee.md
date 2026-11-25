@@ -176,7 +176,7 @@ connects to living space through a light fitting or an unsealed penetration.
 
 **Staining and seepage**, in a colony that has been there long enough to
 accumulate stores, showing as a dark patch coming through drywall or down siding.
-By that stage there is real weight in the wall.
+By that stage there is considerable weight in the wall.
 
 The older housing in Bellingham's Lettered Streets, Columbia, Sunnyland and York
 gives scouts what they want — uncapped chimneys, open soffits and generous
@@ -226,7 +226,7 @@ pollination.
 ## What a proper removal actually involves
 
 The correct resolution for an established colony is a cut-out, and it is honest
-to say up front that it is a real piece of work.
+to say up front that it is a substantial piece of work.
 
 **The cavity is opened.** From outside where the cladding allows it, from inside
 where it does not. Locating the colony precisely before cutting matters, because
@@ -286,7 +286,7 @@ takes the free, clean outcome off the table entirely. It also rarely reaches a
 colony deep in a cavity, so what you usually get is a partial kill, an agitated
 remainder, and comb nobody now wants to collect.
 
-**Plugging the hole.** Bees shut in a cavity do not give up and die quietly.
+**Plugging the hole.** Bees shut in a cavity do not give up and die.
 They work at the surrounding material looking for another way out, and in a
 building the softest direction is frequently inward. Sealing an active entrance
 is how a colony that was outside becomes a colony inside a room.
@@ -316,7 +316,7 @@ closing the building back up. Those four questions separate a proper removal fro
 a partial one.
 
 We do not name a specific outfit here, and that is deliberate. Referral fees and
-quiet arrangements are how a recommendation stops being a recommendation.
+private arrangements are how a recommendation stops being a recommendation.
 
 ## Honey bee or bumble bee
 

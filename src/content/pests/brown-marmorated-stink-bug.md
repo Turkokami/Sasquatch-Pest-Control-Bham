@@ -28,7 +28,7 @@ signs:
   - "A sharp coriander or burnt-rubber smell when one is disturbed or vacuumed"
   - "Bugs working into window-frame joints, siding laps, soffit returns or gable vents"
   - "A final flurry of bugs at the windows in spring as survivors try to leave"
-answer: "The brown marmorated stink bug is an introduced insect that enters buildings in autumn to spend the winter dormant. It does not feed, breed or damage anything indoors. Its real significance is agricultural — it is a serious crop pest — and the household fix is sealing gaps in late summer."
+answer: "The brown marmorated stink bug is an introduced insect that enters buildings in autumn to spend the winter dormant. It does not feed, breed or damage anything indoors. Its main significance is agricultural — it is a serious crop pest — and the household fix is sealing gaps in late summer."
 ready: true
 reviewBy: 2027-09-02
 sources:
@@ -155,7 +155,7 @@ now describes the insect as present in almost every county in the state.
 
 For here specifically, WSU's Whatcom Ag Monthly is the source worth quoting,
 because it is county-level rather than extrapolated. Its survey found fewer than
-ten adults and no nymphs in Whatcom County in 2017 — a small number, and a real
+ten adults and no nymphs in Whatcom County in 2017 — a small number, but a confirmed
 one. The authors add that established populations are known in British Columbia,
 which they take as strong evidence that the species is established in both Skagit
 and Whatcom Counties.
@@ -282,7 +282,7 @@ the month, and whether the building is a house or a growing operation.
 
 **Late August into early September is when treatment does something.** An exterior
 application to the elevations they gather on, in place before the aggregation
-starts, measurably reduces how many get inside. That is a real service and we
+starts, measurably reduces how many get inside. That is a service and we
 provide it. One honest caveat: it is a residual sitting on siding, and siding here
 gets rained on through autumn, so its useful life is shorter than it would be in a
 dry climate. It is the sealing that keeps working after the product has washed
@@ -371,7 +371,7 @@ hatched eggs. Later instars turn spiny — including on the shoulders, which is 
 useful mark — and already carry pale antennal banding.
 
 **Summer into early autumn.** Five nymphal stages, then new adults. Where the
-season is long enough for a second generation, this is when the numbers really
+season is long enough for a second generation, this is when the numbers
 build, and it is the second brood that supplies the autumn wall.
 
 **October.** Everything above converges on your siding.
@@ -390,8 +390,7 @@ specific enough to be worth setting out.
 
 Orientation first. South and west elevations hold the afternoon sun and radiate it
 into the evening, so that is where the insects concentrate; a north wall is largely
-unvisited. Pale siding warms readily and shows them plainly, which is partly a real
-effect and partly a matter of what you can see against a light background.
+unvisited. Pale siding warms readily and shows them plainly, which is partly an effect and partly a matter of what you can see against a light background.
 
 Height matters, because a taller wall presents more warm surface and more openings
 nobody has ever examined. Vinyl siding is a particular case: its construction

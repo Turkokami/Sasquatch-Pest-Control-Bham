@@ -180,7 +180,7 @@ shape and equal length, pale and translucent, on termites. WSU's own termite
 bulletin makes the identical point from the termite side: both termite wings are
 the same size, while the anterior wings of the ant are considerably larger than
 the posterior ones. Lay the insect on white paper and look at the two wings on
-one side. Matched pair, termite. Mismatched, ant.
+one side. A matched pair means termite; a mismatched pair means ant.
 
 **The waist is pinched.** Ants carry a narrow constriction between thorax and
 abdomen. A termite's body runs straight back from the head with no waist at all,
@@ -273,7 +273,7 @@ mid-October, and Penn State narrows the most productive hours to between ten at
 night and two in the morning, May through July. And where the parent colony sits
 on land we cannot enter, the honest description of the work changes: we are
 managing a building against pressure from a source we cannot reach, which is a
-real and useful thing to do and is not the same as resolving the colony. Anybody
+useful thing to do and is not the same as resolving the colony. Anybody
 who tells you otherwise about a stump on the next lot is describing an outcome
 they do not control.
 
@@ -283,8 +283,7 @@ The pattern here is set by the wet season rather than by winter cold, and it
 concentrates in a short list of places.
 
 **Rim joists and sill plates.** The timber closest to grade in an older
-crawlspace, taking splash-back off a hard surface and sitting in air that never
-really dries between October and April.
+crawlspace, taking splash-back off a hard surface and sitting in air that never dries between October and April.
 
 **Window and door framing**, especially at the bottom corners, and above all
 where a replacement unit was fitted into an old opening without the flashing
@@ -322,7 +321,7 @@ not a structural event.
 The honest qualification is time, and it is the reason this profile carries a
 treat verdict rather than a softer one. Galleries follow the grain and expand
 into the softest available material year on year. Ten years of an unnoticed
-network in a chronically wet rim joist takes real section out of a member that is
+network in a chronically wet rim joist takes significant section out of a member that is
 carrying load, and it does so in company with the decay fungi that softened the
 wood in the first place. By that stage the two causes are not separable and the
 repair is carpentry rather than pest control.

@@ -278,7 +278,7 @@ insects the web was intercepting carry on into the house instead.
 ## Why our verdict is that we do not treat these
 
 The verdict at the top of this page says we do not treat for cross orbweavers.
-That is a real position rather than a rhetorical one, and here is the reasoning
+That is a considered position rather than a rhetorical one, and here is the reasoning
 behind it.
 
 [WSU's own Hortsense fact sheet](https://hortsense.cahnrs.wsu.edu/fact-sheet/spiders/) classifies spiders in the home landscape as

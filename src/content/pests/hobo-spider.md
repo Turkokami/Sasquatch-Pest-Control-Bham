@@ -64,7 +64,7 @@ sources:
 faqs:
   - q: "Is the hobo spider dangerous?"
     a: "The Washington State Department of Health states that hobo spiders are not considered dangerous as previously thought, and that there is no evidence hobo spider venom has caused skin necrosis or necrotic wounds in people. That is the current position of the state health agency, not a minority opinion."
-  - q: "Did the CDC really drop it from the venomous spiders list?"
+  - q: "Did the CDC drop it from the venomous spiders list?"
     a: "Yes. The Pacific Northwest Insect Management Handbook records that the CDC removed the hobo spider from its list, and the current CDC guidance on venomous spiders for outdoor workers names only the black widow and the brown recluse. The hobo spider does not appear on it."
   - q: "Then where did the necrosis claim come from?"
     a: "From a small body of research published in the late 1980s and early 1990s that proposed the species as the Pacific Northwest equivalent of the brown recluse. Later investigators could not reproduce the result, and reviews of the underlying case reports found the spider was rarely captured or identified."
@@ -75,7 +75,7 @@ faqs:
   - q: "How common are they in Whatcom County houses?"
     a: "Less common than people assume. WSU Extension reports that west of the Cascades the giant house spider outnumbers the hobo spider by roughly three to one, and UC IPM notes the larger species has competitively displaced it across parts of the Pacific Northwest."
   - q: "I have a wound I think came from a spider. What should I do?"
-    a: "See a physician about the wound rather than chasing the spider. The health department warns that unexplained wounds are often misdiagnosed as spider bites, which can leave the real condition untreated. Bring the spider if you caught it, but do not wait on identifying it."
+    a: "See a physician about the wound rather than chasing the spider. The health department warns that unexplained wounds are often misdiagnosed as spider bites, which can leave the underlying condition untreated. Bring the spider if you caught it, but do not wait on identifying it."
   - q: "Should I have my house treated because hobo spiders are around?"
     a: "Not on the strength of the species alone. WSU's guidance for funnel weavers leads with sealing gaps, screening, removing webs and reducing clutter, and notes that chemical control is temporary without those measures. The fear that used to justify a treatment here has been withdrawn."
 ---
@@ -141,7 +141,7 @@ and Isbister, volume 44, pages 605 to 607 — asked whether hobo spider bites ca
 dermonecrotic injuries and went back through the literature to see what the
 answer rested on. UC IPM summarizes the result: across everything published,
 there was a single case of a verified bite by a hobo spider that resulted in a
-necrotic skin lesion. One. A verified bite means the spider was caught in the
+necrotic skin lesion, and only one. A verified bite means the spider was caught in the
 act, kept, and identified by somebody competent to identify it, and that standard
 turns out to disqualify almost every case in the file.
 
@@ -180,7 +180,7 @@ justifies a recurring treatment. A spider that is harmless justifies a door
 sweep. It is not hard to work out which one a pest control company would rather
 you believe, and we are including this paragraph on our own website with our own
 phone number at the top of it precisely because the incentive is obvious and we
-would rather name it than benefit quietly from it.
+would rather name it than benefit silently from it.
 
 And there is the name. This species has been called the "aggressive house
 spider" for decades, which sounds like a warning and is in fact a translation
@@ -271,8 +271,8 @@ the genitalia. A character that the two authorities on identifying this species
 do not bother to mention is not a character you can identify it with in a
 kitchen.
 
-*Leg banding, used forwards.* This one needs care, because there is a real
-character underneath a bad folk test. WSU's key uses banding only to rule the
+*Leg banding, used forwards.* This one needs care, because there is a
+useful character underneath a bad folk test. WSU's key uses banding only to rule the
 species **out**: if you can see dark rings around the legs, it is not a hobo
 spider, because hobo legs are uniformly colored. That is a valid exclusion and it
 is worth knowing. What people actually do with it is run it backwards — uniform
@@ -308,7 +308,7 @@ crushed.
 The more useful thing to know is about wounds rather than about spiders. The
 Washington State Department of Health warns that unexplained wounds are often
 misdiagnosed as spider bites, and that this can result in a condition not being
-treated properly. That is a real harm and it runs in the opposite direction from
+treated properly. That is a serious harm and it runs in the opposite direction from
 the one people worry about — not a spider bite mistaken for an infection, but an
 infection mistaken for a spider bite while it goes untreated.
 
@@ -408,7 +408,7 @@ insects, and the insects are the lever.
 
 Where we do treat, it is because somebody has a heavy population in a garage or
 crawlspace they use daily, or because a household includes someone whose fear of
-spiders is genuinely affecting their life. That second one is a real reason and
+spiders is genuinely affecting their life. That second one is a valid reason and
 we do not treat it as a silly one. Neither of those reasons is *this spider is
 dangerous*, because it is not.
 

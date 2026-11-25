@@ -47,7 +47,7 @@ sources:
     read: 2026-09-04
 faqs:
   - q: "Do Asian lady beetles actually bite?"
-    a: "Yes, which is the main thing that separates them from the ladybugs people grew up with. University of Minnesota Extension records that some can bite hard enough to break skin, causing minor and short-lived discomfort. Penn State notes occasional biting too. It is a nip rather than an injury — there is no venom and nothing to treat — but it is real, and telling somebody these are harmless in every respect is simply inaccurate."
+    a: "Yes, which is the main thing that separates them from the ladybugs people grew up with. University of Minnesota Extension records that some can bite hard enough to break skin, causing minor and short-lived discomfort. Penn State notes occasional biting too. It is a nip rather than an injury — there is no venom and nothing to treat — but it does happen, and telling somebody these are harmless in every respect is simply inaccurate."
   - q: "What is the yellow fluid they leave on the wall?"
     a: "Defensive secretion released from the leg joints when the beetle is disturbed, which is why the trade calls it reflex bleeding. Penn State describes it as a stinky yellow chemical that spots walls. It stains paint, fabric and light surfaces, it smells, and on some people it raises a localized welt. It is also the reason squashing them is the worst way to deal with them."
   - q: "How do I tell one from a native ladybug?"
@@ -271,7 +271,7 @@ aggregation, a household with somebody asthmatic or allergic, a property where
 the walls are pale and the staining is doing visible damage, or a place where
 the sheer number indoors in late winter has become genuinely difficult to live
 with. In those cases exterior work at the right moment, combined with sealing,
-makes a real difference and is worth paying for.
+makes a difference and is worth paying for.
 
 **Where it is not:** a handful of beetles on a windowsill in February. That is
 a vacuum cleaner and five minutes, and any company quoting a treatment program

@@ -61,7 +61,7 @@ the difference is measurable.
 somebody other than the owner — an auditor, a customer, an insurer. So the
 program is built to be read: devices mapped and numbered, service records that
 follow a logical sequence, and findings written plainly, including the ones
-about housekeeping and sanitation that we could quietly service around instead.
+about housekeeping and sanitation that we could silently service around instead.
 We put those in the report because a client who fixes a dock housekeeping
 problem gets a better result than one who buys more visits.
 
@@ -91,11 +91,11 @@ order.
 
 Rebuilt buildings also have new geometry. Sections repaired at different times
 meet at junctions that did not previously exist, utilities were rerouted, and
-skirting and venting were sometimes replaced quickly under real pressure. Those
+skirting and venting were sometimes replaced quickly under pressure. Those
 junctions are where we find entry points, and it is why we go underneath rather
 than quoting from the driveway.
 
-Decay fungus is the quiet consequence. Sustained moisture in framing produces
+Decay fungus is the hidden consequence. Sustained moisture in framing produces
 decay that continues long after the water has gone, and decay rather than
 insects is what actually costs structural capacity in this climate. Where we
 find it we say so, and frequently the person you need next is a contractor.
@@ -140,7 +140,7 @@ short and predictable list, and correcting it beats any spray schedule.
 ## Stink bugs and Asian lady beetles
 
 Both are overwintering insects rather than a structural problem, and both are a
-real and recurring Sumas call. They gather on sunlit walls in autumn — south and
+recurring Sumas call. They gather on sunlit walls in autumn — south and
 west faces, warm afternoons — and then work into the building through the same
 small gaps everything else uses. The important thing to know is that once they
 are inside a wall void, treating them there is the wrong move: they die in the
@@ -246,7 +246,7 @@ The work is finding the source. That means tracing back through stock to the
 infested lot, looking at what has been sitting longest and furthest back,
 checking spillage in seams and under racking, and being systematic rather than
 hopeful. In a feed room or a warehouse the source is frequently a single
-forgotten bag or a spill in a corner that has been quietly producing adults for
+forgotten bag or a spill in a corner that has been steadily producing adults for
 months.
 
 After that it is stock rotation, sealed containers, cleaning of the residues in

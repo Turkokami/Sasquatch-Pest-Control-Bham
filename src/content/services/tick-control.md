@@ -95,7 +95,7 @@ allergy stories, **is not established in Washington**.
 
 This is the number that should set your expectations, and it is the reason we
 sell this as margin work rather than as a whole-property acaricide program.
-Broadcast treatment of an entire yard is a real and reasonable practice in
+Broadcast treatment of an entire yard is a reasonable practice in
 places with genuine tick density. At this load it is not proportionate, and we
 will not propose it.
 
@@ -104,7 +104,7 @@ will not propose it.
 The single most useful operational fact on this page.
 
 In that statewide survey, about **91% of the three primary vector species were
-collected between March and May**. Spring. Not the deep summer that most people
+collected between March and May**. That is spring, not the deep summer that most people
 associate with bugs, and not the stretch when the phone actually rings about
 yard treatment.
 
@@ -184,7 +184,7 @@ Chuckanut, along a logging road, in a field on a hunting trip, on a camping
 weekend east of the mountains. A treated margin at home does not follow you onto
 a trail.
 
-So the real protection is behavioral, and it is free. Check yourself the same
+So the main protection is behavioral, and it is free. Check yourself the same
 day you come back from brush, and keep checking for a couple of days. Check the
 dog, particularly around the neck and ears, in the leg folds, and between the
 toes. Keep fine-tipped tweezers somewhere you can find them. If you are unsure
@@ -214,7 +214,7 @@ the phone rather than after the invoice.
 
 **A different problem entirely:** a dog bringing specks into the house is more
 often [fleas](/services/flea-control/) than ticks here. A cabin with rodents in
-the walls raises a tick-borne relapsing fever question that is really a
+the walls raises a tick-borne relapsing fever question that is a
 [rodent](/services/rodent-control/) question, and rodents in walls is long-
 standing work for us. Identification is free in every one of these cases, and it
 is worth doing before anybody treats anything.

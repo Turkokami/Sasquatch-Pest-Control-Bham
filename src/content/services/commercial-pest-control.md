@@ -236,7 +236,7 @@ the constraints.
 
 ## What it costs
 
-Priced from the site rather than from a table, because the variables are real:
+Priced from the site rather than from a table, because the variables matter:
 square footage, sector, how many exterior doors and docks, the number of devices
 the site warrants, service frequency, and how much documentation your sector
 requires.
@@ -328,7 +328,7 @@ that form.
 
 ## What we will tell you that others may not
 
-**When the frequency is too high.** If a site is quiet across every device for a
+**When the frequency is too high.** If a site shows no activity across every device for a
 sustained period, we would rather reduce the schedule than keep billing it. That
 is a genuinely uncomfortable conversation in this industry and it is the right
 one.
@@ -371,7 +371,7 @@ than a default.
 
 That order matters when an inspection is imminent or a complaint has already been
 made, and it is worth saying that a program started in a crisis is more expensive
-than one started in a quiet month — not because we price it differently, but
+than one started in a slow month — not because we price it differently, but
 because the population is larger and the corrective work is more urgent.
 
 ## Small businesses, not just large ones

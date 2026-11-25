@@ -42,7 +42,7 @@ export const hormigaFaraon: EsPlaga = {
     {
       h2: 'Qué comen, y por qué importa',
       parrafos: [
-        'La lista de extensión vale por su amplitud: pan, galletas, pasteles, azúcar, jarabe, hígado, tocino e insectos muertos. Dulce, grasa y proteína, todo, y la preferencia cambia según lo que necesita la colonia. Una población que ignoró un cebo de azúcar el mes pasado puede tomarlo ahora, y al revés. En la práctica, un trabajo puede usar varios tipos de cebo, y un cebo ignorado es información, no un fracaso. También hace que la limpieza importe más que de costumbre: migajas, derrames, comida de mascota puesta, un bote que no cierra y grasa detrás de un aparato compiten con lo que ponemos. Donde el cliente puede reducir la competencia, el cebo funciona más rápido, y es una parte real y poco vistosa del trabajo.',
+        'La lista de extensión vale por su amplitud: pan, galletas, pasteles, azúcar, jarabe, hígado, tocino e insectos muertos. Dulce, grasa y proteína, todo, y la preferencia cambia según lo que necesita la colonia. Una población que ignoró un cebo de azúcar el mes pasado puede tomarlo ahora, y al revés. En la práctica, un trabajo puede usar varios tipos de cebo, y un cebo ignorado es información, no un fracaso. También hace que la limpieza importe más que de costumbre: migajas, derrames, comida de mascota puesta, un bote que no cierra y grasa detrás de un aparato compiten con lo que ponemos. Donde el cliente puede reducir la competencia, el cebo funciona más rápido, y es una parte poco vistosa pero necesaria del trabajo.',
       ],
     },
     {

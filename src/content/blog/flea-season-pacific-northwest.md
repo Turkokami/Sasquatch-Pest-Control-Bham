@@ -34,7 +34,7 @@ If the signs point to fleas, book the animal in with your veterinarian. Skin irr
 
 This is the single most frustrating thing about fleas, and understanding it changes everything. The adult fleas you see on your pet are only a small fraction of the problem — often cited as around 5%. The other 95% is eggs, larvae, and pupae developing in your carpet, pet bedding, furniture, and floor cracks. Treat only the pet and that hidden majority is left untouched, so the infestation rebounds within days.
 
-The pupal stage is the real villain. Fleas in their protective cocoon can lie dormant for weeks — sometimes months — and are shielded from most treatments. They wait for warmth, vibration, and carbon dioxide (a passing pet or person) before emerging. That's why a home can seem flea-free and then suddenly erupt, and why real control means the pet's veterinary treatment and the property being handled together.
+The pupal stage is the villain. Fleas in their protective cocoon can lie dormant for weeks — sometimes months — and are shielded from most treatments. They wait for warmth, vibration, and carbon dioxide (a passing pet or person) before emerging. That's why a home can seem flea-free and then suddenly erupt, and why lasting control means the pet's veterinary treatment and the property being handled together.
 
 ### The flea life cycle — why one-time fixes fail
 

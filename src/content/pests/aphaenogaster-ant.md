@@ -59,8 +59,7 @@ faqs:
 
 ## The ant nobody has a name for
 
-Most of the ants in this library arrive with a name attached. [Carpenter ant](/pest-library/carpenter-ant/).
-Pavement ant. [Odorous house ant](/pest-library/odorous-house-ant/). The name usually tells you the important thing
+Most of the ants in this library arrive with a name attached: [carpenter ant](/pest-library/carpenter-ant/), pavement ant, [odorous house ant](/pest-library/odorous-house-ant/). The name usually tells you the important thing
 about the animal.
 
 This one does not have that. The regional extension key lists it simply as
@@ -150,7 +149,7 @@ generates calls.
 The extension guidance is explicit that these ants are usually only an
 incidental pest for homeowners when the reproductives swarm — which is a fair
 description of a whole class of insect complaint. An animal that has been living
-quietly in a stump or under a slab all year suddenly produces a cloud of winged
+unnoticed in a stump or under a slab all year suddenly produces a cloud of winged
 forms, and the household concludes something has gone wrong.
 
 Nothing has gone wrong. A swarm is a colony reproducing, and it is the one week
@@ -281,7 +280,7 @@ these ants live.
 They collect seeds among the other things they eat, carry them back, and process
 them — and the handling of seed and chaff underground is what "winnow" refers
 to. It is not the specialized seed economy that harvester ants run, where whole
-colonies are organized around stored grain, but it is a real part of the diet.
+colonies are organized around stored grain, but it is a regular part of the diet.
 
 Practically that means they forage over ground rather than following a fixed
 route to a single food source, which is another reason they are less visible
@@ -314,7 +313,7 @@ the ground for a season or more.
 Indoors is much less common, and where it happens it is always the same
 condition: timber that has already been wet long enough to soften. A crawlspace
 sill above damp ground. A rim joist behind failed flashing. Framing under a
-shower that has been leaking quietly.
+shower that has been leaking unnoticed.
 
 ## Why we would rather you called about the wood
 
@@ -330,7 +329,7 @@ So the conversation we would rather have is not about the ants. It is: where is
 that timber, how long has it been wet, what is wetting it, and how far has the
 decay gone. Those questions lead somewhere. Killing a colony of a
 minor-annoyance ant and leaving the wet wood leads nowhere, and it leaves a
-building quietly getting worse behind a solved-looking problem.
+building slowly getting worse behind a solved-looking problem.
 
 That is the same argument this site makes about moisture ants, and it is worth
 making twice because it is the single most common way pest control gets sold in

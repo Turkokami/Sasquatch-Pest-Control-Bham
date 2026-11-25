@@ -91,7 +91,7 @@ edge of the greenbelt. A travel trailer parked under trees since September. A
 seasonal place at Birch Bay shut from October to May.
 
 That is the animal. It is not the mouse in the pantry of a Sunnyland rental, and
-the difference matters, because the health guidance attached to it is real and
+the difference matters, because the health guidance attached to it is serious and
 the wrong species carrying it eventually stops being believed.
 
 ## Deer mouse vs. house mouse
@@ -336,7 +336,7 @@ rural properties this is frequently the most expensive thing the species does.
 **Insulation.** Nesting and tunneling in crawlspace batts and attic material,
 with the same consequence set out on our rodent pages: insulation works by
 holding still air, and anything that compresses it or wets it takes that away.
-Whether it needs removing or cleaning is a real decision and it goes both ways.
+Whether it needs removing or cleaning is a decision and it goes both ways.
 
 **Stored food and seed.** Caching means they move it rather than just eating it,
 so a bag of birdseed can be relocated in useful quantity into somewhere you did

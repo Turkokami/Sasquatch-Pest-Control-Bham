@@ -15,7 +15,7 @@ export const hormigaFantasma: EsPlaga = {
     {
       h2: 'La respuesta honesta primero',
       parrafos: [
-        'La hormiga fantasma es un insecto real y una plaga de estructuras de verdad. También es tropical, no está establecida afuera en ninguna parte del noroeste del Pacífico, y la guía regional de extensión sobre las hormigas plaga clave de Washington, Oregón e Idaho ni siquiera la incluye. Así que esta página empieza donde debe empezar en este condado: si tiene una hormiguita pálida en una casa del condado de Whatcom, lo más probable es que sea otra cosa, y el trabajo útil es saber cuál.',
+        'La hormiga fantasma sí existe y es una plaga de estructuras de verdad. También es tropical, no está establecida afuera en ninguna parte del noroeste del Pacífico, y la guía regional de extensión sobre las hormigas plaga clave de Washington, Oregón e Idaho ni siquiera la incluye. Así que esta página empieza donde debe empezar en este condado: si tiene una hormiguita pálida en una casa del condado de Whatcom, lo más probable es que sea otra cosa, y el trabajo útil es saber cuál.',
         'No es razón para dejarla fuera de la biblioteca. Aparece en edificios con calefacción e invernaderos muy al norte de su área natural, se porta tan distinto de nuestras hormigas comunes que una identificación equivocada lleva a un tratamiento equivocado, y quien de verdad la tiene merece una página precisa y no una genérica.',
       ],
     },

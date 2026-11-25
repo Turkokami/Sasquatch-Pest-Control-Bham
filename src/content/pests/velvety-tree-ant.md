@@ -112,7 +112,7 @@ of dense, fine hair.
 
 In practice, on a live ant in sunlight, the rear section has a soft matte sheen
 rather than the hard gloss of many ants. It is subtle and it is not the check to
-lead with, but it is real, and under a phone camera at full zoom on a specimen
+lead with, but it is reliable, and under a phone camera at full zoom on a specimen
 held still it is obvious. It is also where the common name comes from, which
 helps people remember the species exists.
 
@@ -249,7 +249,7 @@ because the ants forage for sugars and protein and share what they collect
 through the colony, material placed where they are already feeding can be
 carried inward. An insect that genuinely digested cellulose would never do that.
 
-The aphid connection is a real control point and almost nobody mentions it. A
+The aphid connection is a control point and almost nobody mentions it. A
 heavy aphid or scale year on the maples, the birches, the roses or the fruit
 trees keeps a large population close to the building. Managing that infestation
 is managing the ants.
@@ -283,7 +283,7 @@ structure or into a cavity in wood, and that is the end that matters.
 
 Leave it alone until somebody has seen it. Spraying a trail on this species
 removes the single best piece of diagnostic information the property is offering
-and buys about a day of quiet.
+and buys about a day without ants.
 
 ## They defend the nest, and it hurts
 

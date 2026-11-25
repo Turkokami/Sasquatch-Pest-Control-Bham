@@ -156,7 +156,7 @@ considered dangerous as previously thought, and that there is no evidence hobo
 spider venom has caused skin necrosis or necrotic wounds in people. That is a
 state health authority retracting a claim, which is rarer than it should be.
 
-The identification problem is separate and it is real. WSU Puyallup published a
+The identification problem is separate and it matters. WSU Puyallup published a
 whole bulletin on it —
 [how to identify, or misidentify, the hobo spider](https://wpcdn.web.wsu.edu/wp-puyallup/uploads/sites/408/2015/02/PLS-116-How-to-Identify-or-Misidentify-the-Hobo-Spider.pdf)
 — and the short version is that you cannot do it from a photograph, or from the
@@ -329,14 +329,12 @@ Rarely, and we will say so before we quote.
 
 Spiders walk on the tips of their legs and do not groom themselves the way an
 insect does, so they pick up far less residue from a treated surface than a
-cockroach or an ant. A perimeter application has a real but modest effect on
+cockroach or an ant. A perimeter application has a measurable but modest effect on
 them, and most of what it does achieve is indirect — reducing the insects they
 came in to eat.
 
 What actually works is mechanical, and most of it is not a pest control
-purchase. Sweeping webs down and continuing to do it. Door sweeps that meet the
-threshold. Screens intact. Gaps at utility penetrations closed. And the one
-people resist: moving exterior lights away from doors, or switching them to
+purchase. It means sweeping webs down and continuing to do it, door sweeps that meet the threshold, intact screens, and closed gaps at utility penetrations. Then there is the one people resist: moving exterior lights away from doors, or switching them to
 warm color temperatures, because a bright white light above a back door is an
 insect trap and the spiders are simply following the food.
 

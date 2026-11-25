@@ -45,7 +45,7 @@ that supplies Bellingham's drinking water.
 Lake Whatcom is the drinking water source for the city and much of the
 surrounding area, and Silver Beach sits directly on it.
 
-We treat that as a real constraint on method rather than as a line in a
+We treat that as a constraint on method rather than as a line in a
 brochure, and it is worth being specific about what it means in practice.
 
 On the lake side of a property we lead with exclusion, habitat modification and
@@ -107,7 +107,7 @@ Silver Beach falls to the lake, and slope decides where the trouble is.
 Water moves downhill through soil, arrives at the uphill foundation, and finds
 the lowest point available. A crawlspace stepped into that slope is dry at one
 end and persistently damp at the other, with the joists above the wet end
-quietly taking on moisture for years.
+slowly taking on moisture for years.
 
 Everything moisture-driven follows. [Moisture ants](/pest-library/moisture-ant/) need timber that has already
 softened, and finding them is a finding about water rather than about ants.
@@ -139,7 +139,7 @@ The structural point most treatment misses: a mature population keeps a **parent
 nest outdoors** — a stump, a standing dead tree, a fallen log, an old landscape
 timber, a woodpile — with **satellite nests** inside the building. The satellites
 are what people see. Treating those while the parent sits twenty feet away in
-the garden buys a couple of quiet months, and that is the entire reason this
+the garden buys a couple of months without ants, and that is the entire reason this
 work has a reputation for coming back.
 
 So a first visit here is investigative before it is anything else. We are
@@ -280,7 +280,7 @@ crawl rather than reporting from the hatch. Then the attic, then the interior.
 You get a plain account of what we found and what is driving it, what needs
 doing now, what can wait, and which items are a drainage, carpentry or tree job
 rather than a pest treatment. On a converted cabin on a slope in a catchment, a
-real share of the answer is not work we get paid for, and we say it anyway.
+large share of the answer is not work we get paid for, and we say it anyway.
 
 Every pest we handle is free to assess except bed bug verification, which is
 charged and then credited against the treatment. No term agreement is required
@@ -313,10 +313,10 @@ and getting that right first costs nothing.
 ## Seasonal and part-time occupancy
 
 A number of properties here are second homes, family places used at weekends, or
-lettings that run heavily in summer and sit quiet through the winter, and the
+lettings that run heavily in summer and sit empty through the winter, and the
 occupancy pattern changes the risk.
 
-An unoccupied house is quiet, undisturbed and dry while the whole neighborhood is
+An unoccupied house is undisturbed and dry while the whole neighborhood is
 wet outside. Nobody hears the scratching in November, nobody sees the droppings
 in December, and nobody notices the wasp nest in the eave growing through July.
 A problem that would be caught in its first week at an occupied house runs
@@ -331,6 +331,6 @@ and schedule the work around their travel rather than ours.
 
 Wasps deserve a specific mention for lightly used property. A queen founds a
 nest in a sheltered eave in April or May, and with nobody there to notice it the
-colony grows all summer without interruption. The nests we find at quiet
+colony grows all summer without interruption. The nests we find at empty
 lakeside houses in August are routinely larger than anything at an occupied
 address, for exactly that reason.

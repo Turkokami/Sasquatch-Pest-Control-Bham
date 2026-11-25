@@ -32,7 +32,7 @@ Most termite information online is written for the South and does not describe w
 
 If you own a home in Whatcom County, the three things that damage structural wood in this climate, roughly in order of how often they turn up, are:
 
-1. **Moisture-driven decay fungi** — ordinary wood rot. Fungi need wood that is very wet to do real damage: well above the roughly 20 percent moisture content that is considered safe, and closer to the fiber saturation point around 30 percent before serious decay gets going. Persistently wet framing is the single most common cause of structural wood damage in this county.
+1. **Moisture-driven decay fungi** — ordinary wood rot. Fungi need wood that is very wet to do damage: well above the roughly 20 percent moisture content that is considered safe, and closer to the fiber saturation point around 30 percent before serious decay gets going. Persistently wet framing is the single most common cause of structural wood damage in this county.
 2. **Carpenter ants** — extremely common here. They do not eat wood; they excavate galleries in it to nest, and they strongly prefer wood that has already been softened by moisture. Their galleries are smooth and clean, and they push out coarse frass that looks like pencil shavings mixed with insect parts.
 3. **Dampwood termites** — less common than carpenter ants, and, like them, a downstream symptom of a water problem.
 

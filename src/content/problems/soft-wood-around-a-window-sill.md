@@ -49,7 +49,7 @@ the safe one rather than the dangerous one: wood held below about twenty
 percent is not at risk, which is why every practical remedy on this page is
 about keeping timber dry rather than about killing anything.
 
-So the finding is really three findings at once. There is water getting somewhere
+So the finding is three findings at once. There is water getting somewhere
 it should not. It has been there long enough for decay to establish, which is
 generally years rather than months. And the timber involved has lost strength it
 will not get back.
@@ -196,7 +196,7 @@ Filler has a legitimate place: small superficial defects, nail holes, minor
 weathering, in timber that is otherwise sound under a probe. It is not a repair
 for wood that a screwdriver sinks into.
 
-## What a real repair looks like
+## What a proper repair looks like
 
 For reference, since it will be somebody else doing it.
 
@@ -354,7 +354,7 @@ which are where water enters fastest. A sill that is repainted every few years
 rarely fails.
 
 Keep gutters clear and downspouts discharging well away from walls. A remarkable
-share of window decay is really a gutter problem that nobody connected to the
+share of window decay is a gutter problem that nobody connected to the
 window six feet below it.
 
 Cut back vegetation touching the wall. A shrub against siding keeps that

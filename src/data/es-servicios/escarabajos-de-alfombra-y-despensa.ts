@@ -99,7 +99,7 @@ export const escarabajosDeAlfombraYDespensa: EsServicio = {
     },
     {
       q: '¿Qué es el gusanito peludo en mi alfombra?',
-      a: 'Casi seguro una larva de escarabajo de alfombra. Son chicas, afiladas, con muchas cerdas, y mudan de piel mientras crecen, así que encontrar mudas muchas veces es la primera evidencia real. Las larvas hacen todo el daño; los adultos no hacen ninguno.',
+      a: 'Casi seguro una larva de escarabajo de alfombra. Son chicas, afiladas, con muchas cerdas, y mudan de piel mientras crecen, así que encontrar mudas muchas veces es la primera evidencia. Las larvas hacen todo el daño; los adultos no hacen ninguno.',
     },
     {
       q: '¿Hay que tratar toda la casa?',

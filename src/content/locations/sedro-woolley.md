@@ -12,7 +12,7 @@ faqs:
   - q: "My house has a dirt crawlspace. Does that matter?"
     a: "It matters a great deal. Bare earth puts ground moisture straight into the space and into the framing above it, which is what supports moisture ants, decay fungus and the whole damp-crawl group. A sound vapor barrier over clean ground is one of the highest-value things you can do."
   - q: "How often do you get out to Sedro-Woolley?"
-    a: "It sits on scheduled route days rather than same-day availability, because it is a real drive from Bellingham and the last stretch is not freeway. Ask when you call and you will get a straight answer about which day that is."
+    a: "It sits on scheduled route days rather than same-day availability, because it is a long drive from Bellingham and the last stretch is not freeway. Ask when you call and you will get a straight answer about which day that is."
   - q: "Why does my downtown building keep getting rodents after treatment?"
     a: "Because in an old commercial block the buildings are connected — shared walls, common basements and utility runs — so the population belongs to the block rather than to your address. Treating one unit while the neighbors do nothing moves the problem rather than ending it."
   - q: "Does the river affect pest pressure here?"
@@ -88,7 +88,7 @@ and the reason is simply age.
 strongly prefer wood that has already begun to soften. A house that has stood
 for a hundred years in this climate has almost certainly had water into the
 framing somewhere — a gutter that overflowed for a decade, a window flashing
-that failed, a porch roof that leaked quietly, a sill plate close to grade.
+that failed, a porch roof that leaked unnoticed, a sill plate close to grade.
 Those areas are what a colony wants.
 
 The part most treatment gets wrong is the colony structure. A mature population
@@ -97,8 +97,8 @@ landscape timber, a woodpile — with **satellite nests** inside the building. T
 satellites are what people see: workers on a counter, coarse frass below a
 window, a rustling in a wall at night.
 
-Treat the satellite while the parent sits twenty feet away and you get a quiet
-couple of months. That is the entire reason carpenter ant work has a reputation
+Treat the satellite while the parent sits twenty feet away and you get a couple
+of months without ants. That is the entire reason carpenter ant work has a reputation
 for coming back, and it is why our first visit here is investigative before it
 is anything else. We are looking for the parent: the stump nobody thinks about,
 the section of deck framing that stays wet, the old timber retaining wall, the
@@ -303,8 +303,7 @@ stranded in a bathtub are males that got in and could not climb back out.
 The brown recluse does not live in this part of Washington and never has.
 Black widows exist in Washington but belong to the drier country east and south
 of the Cascades. Anyone telling you otherwise while holding a quote is selling
-fear rather than a service, and on old housing there is usually plenty of real
-work to do without inventing any.
+fear rather than a service, and on old housing there is usually plenty of work to do without inventing any.
 
 What actually reduces the population is unglamorous: clearing exterior webbing,
 dealing with harborage under porches and in crawl vents, moving the firewood off
@@ -325,7 +324,7 @@ the interior.
 
 You get a plain account of what we found, what is causing it, what needs doing
 now, what can wait, and which items are a building repair rather than a pest
-treatment. On a century-old house a real share of the answer is carpentry,
+treatment. On a century-old house a large share of the answer is carpentry,
 drainage and roofing, and saying so costs us the recurring service and earns the
 next three referrals.
 

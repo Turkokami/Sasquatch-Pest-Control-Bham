@@ -72,7 +72,7 @@ export const tratamientoParaVentaDeCasa: EsServicio = {
     {
       h2: '¿Cómo funciona el calendario?',
       parrafos: [
-        'Las ventas corren con fechas, así que esta es la secuencia real. El inspector produce su hallazgo. Usted nos lo manda — una foto de las páginas que importan basta para empezar. Muchas veces con eso ya le podemos decir si es un tratamiento sencillo o algo que hay que ver primero, y darle un rango aproximado por teléfono.',
+        'Las ventas corren con fechas, así que esta es la secuencia. El inspector produce su hallazgo. Usted nos lo manda — una foto de las páginas que importan basta para empezar. Muchas veces con eso ya le podemos decir si es un tratamiento sencillo o algo que hay que ver primero, y darle un rango aproximado por teléfono.',
         'Vamos a ver. Esa visita no se cobra y de ahí sale la cotización: revisamos lo que se documentó, si está activo y qué lo está causando. Usted recibe una cotización por escrito que separa el tratamiento de lo que es reparación; si parte del trabajo necesita un contratista, se lo decimos en ese momento y no después de empezar, porque el tiempo de espera de un contratista es lo que más probablemente pone en riesgo una fecha de cierre.',
         'Se programa el tratamiento — para casi todos los hallazgos, la misma semana; donde primero tiene que secarse algo o hacerse una reparación, el orden importa y se lo explicamos. Y usted recibe el registro de lo que se trató, con qué producto y cuándo: el papel para su expediente, el de su agente y el de la venta.',
         'Díganos la fecha de cierre en la primera llamada. Es lo más útil que nos puede dar, y la diferencia entre un calendario cómodo y una carrera casi siempre es que ese dato llegó tarde.',

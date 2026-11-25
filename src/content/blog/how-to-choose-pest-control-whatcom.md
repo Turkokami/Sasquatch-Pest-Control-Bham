@@ -15,7 +15,7 @@ This guide gives you the complete framework for evaluating any pest control comp
 
 ## Why this decision actually matters
 
-**The stakes are real.** Pest control involves licensed chemicals applied to the place where you live, sleep, and feed your family. An undertrained or careless technician can cause harm. A poorly executed treatment can scatter pests to new areas, create resistance in pest populations, and cost you more in the long run.
+**The stakes are high.** Pest control involves licensed chemicals applied to the place where you live, sleep, and feed your family. An undertrained or careless technician can cause harm. A poorly executed treatment can scatter pests to new areas, create resistance in pest populations, and cost you more in the long run.
 
 **Pest problems compound.** The longer an infestation goes unaddressed — or is addressed ineffectively — the more entrenched and expensive it becomes.
 

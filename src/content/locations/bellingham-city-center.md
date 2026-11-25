@@ -76,7 +76,7 @@ above it.
 
 Neither of those is an accusation. It is a description of how the building
 works, and it is the reason we would rather write a finding that names the
-route than quietly bill two separate tenants for the same problem.
+route than silently bill two separate tenants for the same problem.
 
 For property managers, the practical implication is that a mixed-use building
 benefits enormously from a single coordinated program rather than a patchwork of
@@ -174,7 +174,7 @@ levels, and stored or long-parked vehicles provide sheltered, undisturbed
 harborage — a vehicle left for a season is a warm, dry box full of insulation and
 wiring.
 
-Rodent damage to vehicle wiring is a real and expensive outcome that owners
+Rodent damage to vehicle wiring is an expensive outcome that owners
 rarely associate with the building they parked in.
 
 None of this makes a parking structure treatable in the way a building is. What
@@ -234,7 +234,7 @@ and the movement has not started. For a commercial building that means the
 service doors and their thresholds, the roof penetrations, the basement
 openings, the enclosure, and the exterior of every pipe and conduit entry.
 
-A building sealed in August has a quiet winter. One that waits until a tenant
+A building sealed in August has a pest-free winter. One that waits until a tenant
 reports something in November is dealing with an interior problem in an occupied
 premises during trading hours.
 
@@ -309,7 +309,7 @@ pallet accomplishes precisely nothing.
 The work is tracing back to the source. Start with whatever has been sitting
 longest and furthest back, check spillage in shelving seams, under racking and
 in the corners of a stockroom, and be systematic rather than hopeful. In most
-premises the source turns out to be a single damaged bag or an old spill quietly
+premises the source turns out to be a single damaged bag or an old spill steadily
 producing adults for months.
 
 After that it is stock rotation, sealed containers, cleaning residue out of

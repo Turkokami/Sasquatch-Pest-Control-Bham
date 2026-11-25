@@ -47,7 +47,7 @@ export const saludYResidenciasDeMayores: EsGiro = {
     {
       h2: 'Cocina, lavandería y cuarto sucio',
       parrafos: [
-        'Las áreas de servicio cargan casi toda la presión real. La cocina da de comer tres veces al día, todos los días, sin cerrar nunca, y la deciden las mismas tres cosas que en un restaurante: las coladeras, las entregas y la puerta de atrás. La lavandería es tibia, húmeda y llena de material suave, y la pelusa detrás y debajo de las máquinas es escondite además de mantenimiento. Los cuartos sucios son ambientes de coladera y película, y sus moscas se resuelven casi siempre limpiando y no tratando. Y la basura, con más volumen y desechos clínicos en su propio horario, queda en un área de carga que además es el punto estructural más débil del edificio.',
+        'Las áreas de servicio cargan casi toda la presión. La cocina da de comer tres veces al día, todos los días, sin cerrar nunca, y la deciden las mismas tres cosas que en un restaurante: las coladeras, las entregas y la puerta de atrás. La lavandería es tibia, húmeda y llena de material suave, y la pelusa detrás y debajo de las máquinas es escondite además de mantenimiento. Los cuartos sucios son ambientes de coladera y película, y sus moscas se resuelven casi siempre limpiando y no tratando. Y la basura, con más volumen y desechos clínicos en su propio horario, queda en un área de carga que además es el punto estructural más débil del edificio.',
       ],
     },
     {

@@ -56,7 +56,7 @@ you manage a property up this valley, the section you want is the next one.
 Almost every other page on this site is written for a building that is used
 less in winter. Up here a great many are used more.
 
-That single fact reverses most of the normal advice. The quiet, empty months
+That single fact reverses most of the normal advice. The empty months
 when exclusion work is easy to schedule are the summer ones; the months when a
 problem gets discovered and has to be dealt with between bookings are the
 snowy ones. A rodent coming indoors in December is coming into a building with
@@ -159,7 +159,7 @@ rats](/pest-library/norway-rat/) wherever there is sustained rubbish or feed.
 The entry points are the ordinary ones and they are all low: a crawlspace vent
 with failed screening, a gap where a line passes through the rim joist, the
 base of a garage door, the sill under a deck. Every one of them is under the
-snow line from the first real storm onward. That is the whole argument for
+snow line from the first heavy storm onward. That is the whole argument for
 doing this work in the autumn, and it is the single most useful thing on this
 page for anyone who owns a building up here.
 
@@ -227,7 +227,7 @@ snow off the roof in January is not necessarily sealed in April.
 
 ## Wasps through the busy end of summer
 
-Summer up here is not quiet, it is just differently busy — the valley fills up
+Summer up here is not slow, it is just differently busy — the valley fills up
 with people walking, camping and using the trail, and the wasps reach their
 largest and most defensive colonies at exactly that point in the season.
 
@@ -243,7 +243,7 @@ often be left where they are not in anybody's way. We will tell you which one
 you have before treating anything.
 
 We do not treat [honey bees](/pest-library/honey-bee/), here or anywhere, and
-we will say so rather than quietly doing it. A swarm is a beekeeper's job.
+we will say so rather than silently doing it. A swarm is a beekeeper's job.
 
 ## Crawlspaces, outbuildings and water that comes from a well
 
@@ -270,8 +270,7 @@ you book. It is a thirty-second conversation and it changes placement.
 arriving at the heated structure, and bed bug problems surfacing in rentals at
 the worst possible point in the booking calendar.
 
-**April and May.** The thaw. Meltwater in crawlspaces, damage from the winter
-becoming visible, and the first carpenter ant activity as the ground warms.
+**April and May.** The thaw brings meltwater in crawlspaces, damage from the winter becoming visible, and the first carpenter ant activity as the ground warms.
 This is when a season's worth of unnoticed leaking gets found.
 
 **June to August.** Carpenter ants at their peak and wasp colonies building

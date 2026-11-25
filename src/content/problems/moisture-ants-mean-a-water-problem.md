@@ -163,7 +163,7 @@ reason is simple arithmetic.
 The colony is there because the wood is wet. If the wood stays wet, the site
 stays suitable, and it will be recolonized — by the same species, from the same
 sources, generally within a season or two. Treating without repairing buys you a
-quiet year and a repeat call.
+year without ants and a repeat call.
 
 Worse, treating alone removes the indicator. The ants were pointing at a
 structural problem. Silence them and the decay carries on unobserved, which in
@@ -206,8 +206,7 @@ ants are usually not traveling alone.
 
 Springtails, in very large numbers, which are harmless and are themselves a
 reliable damp indicator. Sowbugs and pillbugs, which need moisture to survive
-and cannot persist in a dry space. Millipedes and centipedes. [Silverfish](/pest-library/silverfish/).
-Various fungus-feeding beetles.
+and cannot persist in a dry space. Millipedes, centipedes, [silverfish](/pest-library/silverfish/) and various fungus-feeding beetles.
 
 Above that layer, everything that eats those things: spiders in quantity, and
 the general elevation of insect activity that makes a damp building feel busier

@@ -476,7 +476,7 @@ const allSections: GallerySection[] = [
       { file: '/img/gallery/g26996.jpg', alt: 'A deer standing among trees and yard features on a property, captured', width: 560, height: 747 },
       { file: '/img/gallery/g26991.jpg', alt: 'Two deer under a raised deck, one standing and one lying down, beside a wire cage and a folding metal chair', width: 560, height: 420 },
       { file: '/img/gallery/g26989.jpg', alt: 'A colorful sunset sky over a home and power lines', width: 560, height: 420 },
-      { file: '/img/gallery/g26983.jpg', alt: 'A blacktail buck standing in a driveway across the road, seen through the windshield from the truck on a quiet wooded street', width: 560, height: 747 },
+      { file: '/img/gallery/g26983.jpg', alt: 'A blacktail buck standing in a driveway across the road, seen through the windshield from the truck on a wooded residential street', width: 560, height: 747 },
       { file: '/img/gallery/g26981.jpg', alt: 'A frog on gravel beside a bait station, wildlife encountered during work', width: 560, height: 420 },
     ],
   },

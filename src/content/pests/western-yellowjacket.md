@@ -90,12 +90,12 @@ development and take over foraging and building. The queen stops leaving and
 does nothing but lay. The colony is still small — dozens — and almost nobody
 notices it.
 
-**Midsummer.** Growth compounds. Workers hunt insects and spiders and carry
+**Midsummer.** Growth starts to compound. Workers hunt insects and spiders and carry
 protein back to the larvae, which is genuinely useful work in a garden and one
 reason we do not treat every nest we find. The nest enlarges downward as the
 workers excavate the cavity around it.
 
-**Late summer.** Peak. [WSU Extension](https://s3.wp.wsu.edu/uploads/sites/1384/2016/07/Yellowjackets-and-Paper-Wasps.pdf) records western yellowjacket nests running
+**Late summer.** This is the peak. [WSU Extension](https://s3.wp.wsu.edu/uploads/sites/1384/2016/07/Yellowjackets-and-Paper-Wasps.pdf) records western yellowjacket nests running
 to as many as five thousand workers and fifteen thousand cells, and puts the
 maximum in August and September. New queens and males are produced and leave to
 mate.
@@ -265,7 +265,7 @@ auto-injector for stings, where the calculation is not a judgment call at all.
 
 Done properly, a ground nest is treated rather than dug out.
 
-Protective equipment first, and real equipment — a suit, veil and gloves rather
+Protective equipment first, and proper equipment — a suit, veil and gloves rather
 than a hooded sweatshirt and sunglasses. Yellowjackets are efficient at finding
 the gap in improvised clothing.
 

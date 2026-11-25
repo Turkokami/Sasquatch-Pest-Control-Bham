@@ -204,7 +204,7 @@ frequently does.
 Neither of them is much of a building problem — voles occasionally get into a
 crawlspace or a garage, moles essentially never — which is worth saying because
 the alarm about them is usually out of proportion to what they actually do. On
-a place with fruit trees or ornamental planting the vole damage is real and
+a place with fruit trees or ornamental planting the vole damage is
 worth acting on; the mole hills are a groundskeeping annoyance.
 
 What actually reduces vole pressure is removing the cover they depend on:
@@ -288,8 +288,7 @@ The most valuable work out here is physical and it is finished when it is
 finished: vents, sweeps, penetrations, hardware cloth, and the outbuildings done
 at the same time as the house.
 
-The least valuable is a recurring perimeter treatment on a property whose real
-problem is a quarter-inch gap and an open shop. It will produce a visible
+The least valuable is a recurring perimeter treatment on a property whose problem is a quarter-inch gap and an open shop. It will produce a visible
 result, it will need repeating forever, and it will not close the route.
 
 Where the answer to a rodent problem is a morning with a drill rather than a

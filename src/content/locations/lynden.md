@@ -102,7 +102,7 @@ By February, killing the ones in the room accomplishes very little, because ther
 are thousands more in the wall and they will keep emerging on every sunny day
 until spring. The work that matters is done in late August and September, on the
 outside: sealing the gaps, screening the vents, and treating the sunny elevations
-before the flies move in. Do that, and next February is quiet.
+before the flies move in. Do that, and next February is pest-free.
 
 ## Flies around livestock
 
@@ -128,7 +128,7 @@ margin at the edge of a manure pack, the spot under a leaking waterer, the
 spilled feed accumulating at the end of a bunk, the bedding in a calf hutch that
 has not been turned, the drainage low point where nothing dries out. Finding and
 correcting those does more than any spray program, and on the operations where
-we get real results it is because somebody agreed to change a management
+we get results it is because somebody agreed to change a management
 practice rather than because we applied something new. Much of the research
 behind that advice comes through [WSU Extension in Whatcom
 County](https://extension.wsu.edu/whatcom/), which works with the dairies and
@@ -225,7 +225,7 @@ The work is finding the source. That means tracing back through what is stored,
 starting with whatever has been sitting longest and furthest back, checking the
 spillage in seams, under racking and in the corners of a feed room, and being
 systematic rather than hopeful. On most operations the source turns out to be a
-single forgotten sack or a spill in a corner that has been quietly producing
+single forgotten sack or a spill in a corner that has been steadily producing
 adults for months.
 
 After that it is rotation, sealed containers, cleaning the residue out of seams
@@ -238,7 +238,7 @@ source sitting where it was.
 The most expensive rodent damage on a Lynden property is rarely in the house.
 
 Machinery parked for the season is close to ideal habitat: a warm engine bay,
-insulation, wiring loom, and months of undisturbed quiet. Rodents chew harness
+insulation, wiring loom, and months without disturbance. Rodents chew harness
 wiring, control wiring and insulation, and the bill for a rewired harness on a
 tractor or a mixer wagon is the number that persuades skeptical owners a program
 is worth having.

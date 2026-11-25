@@ -99,7 +99,7 @@ export const queMueveElPrecioDelControlDePlagas: EsGuia = {
       a: 'Porque las mismas palabras describen trabajos muy distintos. Dos vecinos que dicen tener ratones pueden necesitar una tarde de malla o una semana de trabajo bajo el piso, y un número impreso estaría mal para el segundo que lo leyera.',
     },
     {
-      q: '¿Me pueden dar un número real por teléfono?',
+      q: '¿Me pueden dar un número firme por teléfono?',
       a: 'Le podemos dar un rango, y un rango vale la pena. Lo que no se puede es un número que aguante el contacto con el edificio, porque lo que más lo mueve es el acceso, la construcción y la extensión, y nada de eso se ve desde una llamada.',
     },
     {

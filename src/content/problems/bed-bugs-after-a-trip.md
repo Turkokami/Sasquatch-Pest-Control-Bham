@@ -17,7 +17,7 @@ steps:
 faqs:
   - q: "What should I do with the suitcase right now?"
     a: "Keep it out of bedrooms. Work in a garage, a bathtub or on a hard floor, put all washable items straight into a sealed bag for hot laundering, and run everything that can take it through a hot dryer cycle for at least thirty minutes."
-  - q: "Does a hot dryer really kill them?"
+  - q: "Does a hot dryer kill them?"
     a: "Yes, and it is the most reliable domestic tool available. Sustained heat kills all life stages including eggs. The dryer matters more than the wash, so items that cannot be washed but can be tumbled should still go in."
   - q: "How would I know if I brought any back?"
     a: "Look for small dark spotting on sheets and mattress seams, tiny blood smears, shed skins, and bites appearing overnight in a line or cluster. Bites alone are not proof, because people react very differently and some not at all."
@@ -178,8 +178,7 @@ is entirely different.
 **Fleas.** Bites are usually around ankles and lower legs rather than on
 sleeping-exposed skin, and the insect jumps, which a bed bug cannot do.
 
-**Booklice and psocids.** Tiny, pale, associated with damp rather than with beds.
-Harmless.
+**Booklice and psocids.** Tiny, pale, associated with damp rather than with beds, and harmless.
 
 **Skin conditions and other causes.** Contact dermatitis, hives, dry skin
 reactions and any number of other things produce marks that look like bites. We
@@ -205,7 +204,7 @@ substantial piece of work, and doing it properly is the whole value of it.
 The fee comes off the treatment if you proceed, so if something is found you are
 not paying twice.
 
-And it buys you a real answer. The alternative — treating on suspicion — costs
+And it buys you a clear answer. The alternative — treating on suspicion — costs
 considerably more and frequently treats nothing at all.
 
 ## If nothing is found
@@ -239,8 +238,7 @@ Laundry and heat treatment of textiles runs alongside.
 
 And an honest scope: which rooms are involved, and whether adjacent rooms need
 including. In a house, an early single-room introduction usually stays a
-single-room job. In an apartment or a shared building, adjacent units are a real
-consideration and we will say so.
+single-room job. In an apartment or a shared building, adjacent units are a consideration and we will say so.
 
 ## Reducing the risk next time
 
@@ -335,13 +333,12 @@ device at all because it produces false confidence.
 
 ## A word about how this feels
 
-We deal with this problem often enough to say something that is not really about
+We deal with this problem often enough to say something that is not about
 insects.
 
 People find bed bugs uniquely distressing in a way they do not find rodents or
 wasps, and the reason is obvious: it involves the bed, the night, and the sense
-that somewhere private has been intruded upon. Sleep suffers. People check
-constantly, get up in the night with a flashlight, and lose weeks to it.
+that somewhere private has been intruded upon. Sleep suffers, people check constantly, get up in the night with a flashlight, and lose weeks to it.
 
 Two things are worth holding onto. First, this has nothing to do with
 cleanliness, housekeeping or how anybody lives. Bed bugs are moved by travel and

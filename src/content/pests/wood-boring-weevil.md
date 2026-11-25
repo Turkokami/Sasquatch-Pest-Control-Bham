@@ -67,7 +67,7 @@ faqs:
 There is a short list of wood-destroying organisms that turn up in Whatcom
 County buildings, and one of them is almost entirely absent from the material
 published about the Pacific Northwest. It gets found, it gets misidentified as
-something else, and the misidentification quietly changes what happens next.
+something else, and the misidentification changes what happens next.
 
 The insect is *Euophryum confine*, the wood-boring weevil. It is small, it is
 dark, it lives in wet rotted timber, and it is routinely written up as a
@@ -94,7 +94,7 @@ is, and the insect has found that out.
 Its presence in the county is therefore unremarkable rather than alarming. It is
 not an emerging threat, it is not spreading in some newsworthy way, and there is
 no quarantine story attached to it. It is simply a naturalized insect that has
-been quietly occupying rotten wood here for decades while the local pest
+been occupying rotten wood here for decades while the local pest
 literature described something else.
 
 ## Look at the head
@@ -133,14 +133,13 @@ dried, provided the fungal breakdown already happened, and it remains viable in
 material down around twenty percent moisture content, which is drier than the
 decay itself needs.
 
-Read that carefully, because the sequence is the whole point. Water arrives.
-Water stays long enough for decay fungi to establish. Fungi soften the wood over
+Read that carefully, because the sequence is the whole point. Water arrives, and it stays long enough for decay fungi to establish. Fungi soften the wood over
 a period measured in years. Only then can this insect use it.
 
 So a weevil in a joist is not the beginning of a story. It is a late chapter, and
 the earlier chapters happened whether anybody noticed them or not.
 
-That puts it in the same category as the [moisture ant](/pest-library/moisture-ant/): an organism whose real
+That puts it in the same category as the [moisture ant](/pest-library/moisture-ant/): an organism whose significant
 value to a household is diagnostic. It marks the failed timber precisely, which
 is more than a meter sweep across a surface can do, and it marks it as failed
 rather than merely damp.
@@ -178,7 +177,7 @@ beetle. This is free, immediate and correct more often than any other single tes
 **Two — look at the hole outline.** Ragged and irregular against clean and
 circular.
 
-**Three — find an adult if you can.** Snout or no snout. Conclusive.
+**Three — find an adult if you can.** Whether it has a snout or not is conclusive.
 
 **Four — check the moisture.** Anobiids sit in a band of roughly thirteen to
 eighteen percent, the range the [Pacific Northwest
@@ -273,7 +272,7 @@ powderpost beetle, because the error is common and it is not harmless.
 
 **The moisture conversation gets pitched at the wrong level.** An anobiid finding
 sends everybody after a target of drying framing to below roughly fourteen or
-fifteen percent — a real and achievable goal in a crawlspace with a proper ground
+fifteen percent — an achievable goal in a crawlspace with a proper ground
 cover and open vents. A weevil finding means the wood went past that a long time
 ago and stayed there. Aiming at the beetle number in a building that has already
 produced rot is aiming at a line the structure crossed years back.
@@ -364,7 +363,7 @@ job is a repair.
 
 **Whether anything is still alive in there.** Fresh gritty frass appearing after
 an area has been cleaned, or live adults on the surface, versus an old riddled
-board that has been quietly inert.
+board that has been inert.
 
 Where there is active infestation in material worth keeping, treatment is
 straightforward in principle: the accepted approach is to arrest the fungal

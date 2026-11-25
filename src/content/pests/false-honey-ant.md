@@ -11,7 +11,7 @@ idTable:
   - label: "Thorax"
     value: "A constriction gives it an obvious hourglass shape viewed from above"
   - label: "When you see it"
-    value: "February and March, when no other ant is foraging; largely quiet by high summer"
+    value: "February and March, when no other ant is foraging; largely inactive by high summer"
   - label: "How to tell it from other ants"
     value: "The season and the hourglass thorax; large black ants indoors in January point to carpenter ants instead"
   - label: "Nest"
@@ -100,7 +100,7 @@ lens on one it settles the identification quickly.
 the identification work on its own. An established trail of small brown ants in
 February is this species far more often than it is anything else.
 
-By the time high summer arrives they have largely gone quiet, which is the
+By the time high summer arrives they have largely gone inactive, which is the
 reverse of every other ant on this site.
 
 ## Why the cold does not stop them
@@ -303,7 +303,7 @@ There is a commercial hazard specific to this species and it is worth naming.
 
 A treatment carried out in late February against an ant whose activity naturally
 declines through spring will look like it worked, every single time, regardless
-of whether it did anything at all. The ants were going to go quiet anyway.
+of whether it did anything at all. The ants were going to go inactive anyway.
 
 That makes the false honey ant close to ideal for selling a result the season
 delivers. A spring treatment, a summer with no ants — which there would have been

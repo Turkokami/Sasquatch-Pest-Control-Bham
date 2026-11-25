@@ -18,7 +18,7 @@ steps:
 faqs:
   - q: "How do rodents get into an attic at all?"
     a: "Usually at the roofline rather than the ground. Gaps where the soffit meets the fascia, open rafter tails, unscreened gable and roof vents, the junction where an addition's roof meets a wall, and branches that let a climber reach the roof directly."
-  - q: "Does the insulation really need replacing?"
+  - q: "Does the insulation need replacing?"
     a: "Sometimes. Compressed, matted, tunnelled or urine-saturated material has lost most of its function and should come out. Scattered droppings on batts that are otherwise intact and lofted usually do not justify a full replacement, and we will say so."
   - q: "How much heat am I actually losing?"
     a: "More than people expect. Insulation works by trapping air, so material that has been compressed into runs and pulled into nests can lose a large share of its rated value in the affected areas even though it still looks like insulation from the hatch."
@@ -158,7 +158,7 @@ lofted and dry; when the affected area is small enough to deal with in isolation
 or when what you have is old, historic sign from a problem that has already
 ended.
 
-**The in-between case is real and common.** Frequently the right answer is to
+**The in-between case is common.** Frequently the right answer is to
 remove and replace the worst areas, clean and treat the remainder, close the
 building properly, and look again in a year. That is a smaller job than a full
 cleanout and in a lot of houses it is the honest recommendation.
@@ -191,10 +191,7 @@ twice.
 There is a second boundary in this job that gets far less attention than the
 roofline, and in an occupied house it matters just as much.
 
-The ceiling below an attic is full of holes. Recessed light housings. Bathroom
-and kitchen extract fans. The attic hatch itself, which in most houses is a
-sheet of board resting in a rebate. Plumbing vent stacks passing through.
-Electrical boxes. The gap at the top of an interior wall where the drywall stops
+The ceiling below an attic is full of holes: recessed light housings, bathroom and kitchen extract fans, and the attic hatch itself, which in most houses is a sheet of board resting in a rebate. There are plumbing vent stacks passing through, electrical boxes, and the gap at the top of an interior wall where the drywall stops
 short of the top plate. Chimney and flue chases, which are frequently open the
 full height of the building.
 

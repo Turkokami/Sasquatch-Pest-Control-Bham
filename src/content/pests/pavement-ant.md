@@ -190,7 +190,7 @@ alongside the pavement habit.
 **Beneath a slab-on-grade floor**, where the colony is under the building
 itself. Utah State specifically names sub-slab heat ducts as a nest location,
 which is worth knowing because that puts the nest inside the thermal envelope
-and makes activity possible in months when the outdoor colonies have gone quiet.
+and makes activity possible in months when the outdoor colonies have gone dormant.
 
 Foraging range is modest. Utah State gives workers ranging up to about thirty
 feet from the colony, which means that when a trail comes into a kitchen the
@@ -273,7 +273,7 @@ Penn State records a stinger in the final abdominal segment, being stung by one
 is not something that happens in the course of ordinary life.
 
 What they do is walk across food preparation surfaces in numbers, get into open
-packaging, and persist. That is a real nuisance and it is a legitimate reason to
+packaging, and persist. That is a nuisance and it is a legitimate reason to
 deal with it. It is not a structural finding and nobody should be selling it to
 you as one.
 
@@ -396,7 +396,7 @@ nothing edible along it.
 **September and October.** Outdoor resources fall away and pressure on buildings
 rises as the rain returns and shallow soil nests take on water.
 
-**November through January.** Outdoor colonies go quiet. Anything active indoors
+**November through January.** Outdoor colonies go dormant. Anything active indoors
 now is being sustained by warmth — a heated slab, a sub-slab duct run, a boiler
 cupboard — and that changes the search rather than the treatment.
 

@@ -57,7 +57,7 @@ management that minimizes harm to non-target species and to the wider local
 ecosystem. Targeted work, placed where the pest is and nowhere else, is both the
 more responsible approach and the more effective one.
 
-## Quiet living amid nature
+## Rural living amid nature
 
 A home in Lynden is a retreat amid open country. Keeping it free of pests is
 part of what makes that worth having, letting residents enjoy their surroundings

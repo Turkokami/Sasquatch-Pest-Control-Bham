@@ -58,13 +58,13 @@ faqs:
   - q: "What are the black bugs with red lines on my wall?"
     a: "Boxelder bugs, and the count is usually in the dozens or hundreds. The regional handbook puts the adult at about half an inch, dark gray to black across the wings and thorax with thin bright red markings. The very small bright red ones alongside them are the same species, immature."
   - q: "Are they going to damage the house or the furniture?"
-    a: "No. They have sucking mouthparts made for seeds and leaves, so they cannot chew wood, fabric or paper, and they build nothing. The one real cost is marking: their body fluids and droppings stain light-colored walls, curtains and upholstery, which is the argument for a vacuum over a shoe."
+    a: "No. They have sucking mouthparts made for seeds and leaves, so they cannot chew wood, fabric or paper, and they build nothing. The one cost is marking: their body fluids and droppings stain light-colored walls, curtains and upholstery, which is the argument for a vacuum over a shoe."
   - q: "Do boxelder bugs bite?"
     a: "Effectively no. Colorado State Extension records that on rare occasions they have been reported to bite people, which is a long way from a biting insect. Nothing about them carries disease, and no household in this county needs to worry about being bitten by one."
   - q: "Will cutting down the maple stop them?"
     a: "Probably not, and we would not advise it. The regional handbook records that adults fly several miles from their feeding sites, and Minnesota Extension states directly that removing boxelder trees is not a good way to manage them. You would lose a tree and keep most of the insects."
   - q: "Why are there suddenly hundreds when there were none last year?"
-    a: "Numbers swing hard between years. The handbook attributes that to environmental conditions, and in practice a warm dry summer produces a heavy autumn while a cool wet one passes almost unnoticed. A quiet year is not evidence that anything you did worked."
+    a: "Numbers swing hard between years. The handbook attributes that to environmental conditions, and in practice a warm dry summer produces a heavy autumn while a cool wet one passes almost unnoticed. A light year is not evidence that anything you did worked."
   - q: "Can you spray the wall in October and end it?"
     a: "Not with an honest description of the result. By the time the wall is covered, a share of the population is already behind it, and the handbook's own line on this insect is that insecticide treatment has not been very successful. Sealing in late summer is the intervention that changes a winter."
   - q: "Why are they back inside in March?"
@@ -235,7 +235,7 @@ tunneling.
 The one genuine cost is marking. The handbook warns that their body fluids stain
 fabrics and surfaces, and Minnesota Extension adds that they can stain walls,
 curtains and other surfaces with their excrement. On white trim, pale curtains or
-a light sofa arm that is a real annoyance, and it is the whole reason for the
+a light sofa arm that is an annoyance, and it is the whole reason for the
 advice below.
 
 ## Vacuum, do not crush
@@ -335,7 +335,7 @@ an insect's point of view.
 The second is that these are gregarious animals. They gather in dense clusters
 rather than spreading out, both on the wall and in whatever cavity they settle into,
 and a site that has worked before tends to keep working. That is why a household
-can describe the affected corner of the building to us over the phone with real
+can describe the affected corner of the building to us over the phone with great
 precision, year after year, and why we can usually predict which side of the house
 we will be working on before arriving.
 
@@ -348,17 +348,17 @@ experience instead of waiting to see what happens.
 
 The questions arrive in a fairly fixed order and they all have short answers.
 
-**Are they dangerous to a dog or a cat?** No. An animal that eats one is eating an
+**Are they dangerous to a dog or a cat?** They are not. An animal that eats one is eating an
 insect with an unpleasant defensive taste and nothing else. There is no venom and
 no toxicity of consequence, and the usual outcome is a pet that does not try it
 twice.
 
-**Can a child pick one up?** Yes. They are slow, they do not sting, and the rare
+**Can a child pick one up?** Yes, a child can. They are slow, they do not sting, and the rare
 bite reports in the literature involve handled insects rather than aggression. A
 child holding a boxelder bug will end up with an unremarkable insect on a palm and
 possibly a faint smell on their fingers.
 
-**Do they carry disease?** No. They feed on maple seeds. There is no route from a
+**Do they carry disease?** They do not. They feed on maple seeds. There is no route from a
 seed to a person.
 
 **Will they get into food?** They have no interest in it and no equipment for it.
@@ -402,7 +402,7 @@ cannot change anything.
 **A fogger.** It does not reach a wall void, which is where they are, and it puts
 product through the rooms, which is where they mostly are not.
 
-**Ultrasonic devices.** Nothing.
+**Ultrasonic devices.** They do nothing.
 
 **An interior residual through the winter.** They are dormant, not foraging, so
 they are not crossing treated surfaces in any useful pattern.
@@ -414,13 +414,12 @@ is to make the repairs before the end of August, and that is the right instructi
 **Removing a healthy tree**, for the reasons above.
 
 **Anything at all, in a light year.** Some autumns they barely appear. The handbook
-attributes the swing to environmental conditions, and it means a quiet October is
+attributes the swing to environmental conditions, and it means a light October is
 weather rather than an achievement — yours or ours.
 
 ## The short version
 
-Black with red lines, in a crowd, on the sunny wall, in October. Harmless. Not
-breeding indoors, not eating anything, not damaging the structure, effectively not
+Black with red lines, in a crowd, on the sunny wall, in October. They are harmless: not breeding indoors, not eating anything, not damaging the structure, effectively not
 biting. They stain, so use a vacuum rather than your hand.
 
 The one thing that changes next winter is closing the gaps in late summer, and the

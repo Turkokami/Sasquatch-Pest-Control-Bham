@@ -18,7 +18,7 @@ factsTable:
   - label: "Exclusion material"
     value: "Stainless mesh, matched fasteners, heavier gauge and marine-rated sealants in place of galvanized"
   - label: "Best work window"
-    value: "Between haul-out and spring commissioning, when the yard is full, static and quiet"
+    value: "Between haul-out and spring commissioning, when the yard is full, static and undisturbed"
   - label: "Devices"
     value: "Placed beyond reach of the public and pets, with a map someone new to the site can follow"
   - label: "Birds"
@@ -33,7 +33,7 @@ faqs:
   - q: "When is the best time to work a boatyard?"
     a: "Between haul-out and spring commissioning. The yard is at its fullest and its quietest, the vessels are covered and static, and the sheds can be opened up without interrupting anybody. It is also when a rodent population that moved in with the layup is most findable, before it has had a whole winter undisturbed."
   - q: "Do you work around the tenants and the public?"
-    a: "Yes, and it changes the scheduling more than the technical work. A marina has members, visitors and often a restaurant or a chandlery on the same site, so visits are built around when the yard is quiet and placements go where the public and pets cannot reach them. That constraint is normal here and is designed in rather than worked around."
+    a: "Yes, and it changes the scheduling more than the technical work. A marina has members, visitors and often a restaurant or a chandlery on the same site, so visits are built around when the yard is least busy and placements go where the public and pets cannot reach them. That constraint is normal here and is designed in rather than worked around."
   - q: "Is this priced like a commercial building?"
     a: "It is quoted from the walk, and marinas vary more than almost any other account we take. The variables are how many shared structures are in scope, how much gear storage there is, whether the yard stores vessels ashore, the state of the waste handling, and how much of the exclusion has to be specified in marine-grade material. There is no long-term contract requirement."
 ---
@@ -131,7 +131,7 @@ structure means netting and nest work, native birds carry legal protections that
 make that specialist territory, and we would rather name somebody set up for it
 than take the booking.
 
-The overlap is real, though. A fish-cleaning station or an open waste area that
+The overlap does exist, though. A fish-cleaning station or an open waste area that
 feeds gulls feeds rats too, and an abandoned nest on a shed roof sends mites and
 [carpet beetles](/pest-library/carpet-beetle/) inward into whatever is below it. Both of those are ours.
 
@@ -235,7 +235,7 @@ work and the ones most often missed. Vessels come ashore, lockers fill, and the
 population that has been living outdoors through summer is being displaced by
 the first sustained rain. What happens in these weeks decides the winter.
 
-**Winter.** The quiet season on the water and the working season for us. The
+**Winter.** The slow season on the water and the working season for us. The
 yard is full and static, the sheds can be opened without interrupting anybody,
 and exclusion work on the shared buildings is genuinely available. It is also
 when a layup problem is most findable, before it has had months undisturbed.

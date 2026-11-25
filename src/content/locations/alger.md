@@ -8,7 +8,7 @@ ready: true
 expert: kristofer-elling
 faqs:
   - q: "Why do carpenter ant treatments here keep coming back?"
-    a: "Because the parent colony was never found. A mature population keeps its parent nest outdoors — a stump, a dead limb, a fence post, a woodpile — with satellites inside the building. Treating the satellite while the parent sits twenty feet away buys a couple of quiet months."
+    a: "Because the parent colony was never found. A mature population keeps its parent nest outdoors — a stump, a dead limb, a fence post, a woodpile — with satellites inside the building. Treating the satellite while the parent sits twenty feet away buys a couple of months without ants."
   - q: "Can my shop or barn be made rodent-proof?"
     a: "Honestly, no. A pole building with a gravel floor and a roll-up door was never going to be sealed, and quoting as though it could be would be dishonest. What we do is protect the things that matter inside it and defend the buildings that can genuinely be closed."
   - q: "Is Alger actually on your routes?"
@@ -59,7 +59,7 @@ the satellites are what people see — workers crossing a counter, coarse frass
 below a window, a rustling in a wall at night.
 
 Treating the satellite while the parent sits untouched twenty feet away gets you
-a quiet couple of months and a repeat call. That is the whole reason this work
+a couple of months without ants and a repeat call. That is the whole reason this work
 has a reputation for coming back.
 
 So a first visit here is investigative before it is anything else. We walk the
@@ -241,7 +241,7 @@ methods that work are restrictively regulated in Washington.
 that is a recurring cost rather than a solution, and we would rather quote the
 exclusion.
 
-**A recurring program over an unresolved water problem.** Drainage first.
+**A recurring program over an unresolved water problem.** The drainage comes first.
 
 ## The crawlspace, and why we always go under
 
@@ -319,7 +319,7 @@ inside.
 
 You get a plain account of what is happening and why, what needs doing now, what
 can wait, and which items are a building repair, a tree job or a drainage
-correction rather than a pest treatment. On this kind of property a real share
+correction rather than a pest treatment. On this kind of property a large share
 of the answer is not something we get paid for, and we say it anyway.
 
 Coming out and looking is free for everything but bed bugs, and we do not ask anyone to commit to a term.

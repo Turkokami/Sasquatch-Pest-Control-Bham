@@ -2,7 +2,7 @@
 service: cockroach-control
 problem: are-there-cockroaches-in-washington
 title: "Are There Cockroaches in Washington State?"
-description: "Yes, but not the ones people picture. Which cockroach species live in Washington, which one causes nearly every real infestation, and what the outdoor ones are."
+description: "Yes, but not the ones people picture. Which cockroach species live in Washington, which one causes nearly every infestation, and what the outdoor ones are."
 h1: "Cockroaches in Washington State"
 answer: "Yes. WSU names four pest cockroaches in Washington — German, American, brownbanded and Oriental — and describes the German cockroach as the one most commonly found in the Pacific Northwest. Nearly every genuine indoor infestation here is that species. The large outdoor ones people find are usually wood cockroaches, which do not breed inside."
 ready: true
@@ -47,7 +47,7 @@ Alongside those there are native wood cockroaches, which live outdoors, wander
 in, and do not establish. Telling those two situations apart is most of what
 this page is for.
 
-## The German cockroach, which is the real one
+## The German cockroach, which is the one that matters
 
 Small, striped, indoors, and fast.
 
@@ -109,7 +109,7 @@ housekeeping — firewood off the house, leaf litter pulled back, door sweeps th
 touch — and not a treatment. That list is in
 [sealing a building before fall](/guides/sealing-a-building-before-fall/).
 
-## What a real infestation looks like
+## What an infestation looks like
 
 Not the roach. The things around it.
 

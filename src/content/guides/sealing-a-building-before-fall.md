@@ -46,7 +46,7 @@ factsTable:
     value: "Door sweeps, garage seals and ground-level penetrations are DIY; ladder, roofline and under-house work is worth handing over"
 steps:
   - "Check whether the building already holds a population: droppings, gnawing, window insects last winter, wasp traffic on the siding."
-  - "Deal with what is inside before sealing: trap rodents and confirm the building is quiet."
+  - "Deal with what is inside before sealing: trap rodents and confirm there is no activity in the building."
   - "Close from the ground up: foundation line, crawl vents, penetrations and doors, then the roofline last so the ladder comes out once."
 faqs:
   - q: "When exactly should this work be done?"
@@ -347,7 +347,7 @@ the moisture side of the same building.
 
 ## What to do yourself, and what to hand over
 
-There is a real division here and it is mostly about height and confined space.
+There is a division here and it is mostly about height and confined space.
 
 **Reasonable to do yourself.** Door sweeps and thresholds. Garage door seals.
 Sealing around hose bibs, outlets and low-voltage lines. Caulking window and
@@ -380,7 +380,7 @@ at windows in the previous winter, wasp traffic at a specific point on the
 siding. This is a genuinely different question from where the openings are, and
 it is the one people skip.
 
-**Deal with what is inside.** Trap, confirm quiet, then move on. On an empty
+**Deal with what is inside.** Trap, confirm there is no activity, then move on. On an empty
 structure — a vacant rental at turnover, a seasonal property before it closes
 for the winter — this step disappears and sealing can start immediately.
 

@@ -65,7 +65,7 @@ In spring, a nest usually holds just the founding queen and a small comb. Removi
 
 ## What should you do if you find an early nest — and why not knock it down yourself?
 
-It's tempting to grab a can of spray or a broom, but DIY wasp removal is a common way people end up in urgent care. Yellowjackets and hornets defend their nests aggressively and can sting repeatedly, and knocking down a nest often provokes the whole colony at once. Nests hidden in wall voids or underground are especially risky, because you can't see how big they really are.
+It's tempting to grab a can of spray or a broom, but DIY wasp removal is a common way people end up in urgent care. Yellowjackets and hornets defend their nests aggressively and can sting repeatedly, and knocking down a nest often provokes the whole colony at once. Nests hidden in wall voids or underground are especially risky, because you can't see how big they are.
 
 The safer move is to keep your distance, avoid swatting or spraying, and call a professional. Sasquatch will identify the species, locate the full nest, and remove it safely — then help seal the entry points so wasps are less likely to rebuild in the same spot next spring.
 

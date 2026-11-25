@@ -184,7 +184,7 @@ That is why she gets noticed. She has chosen exactly the ground people walk on,
 and the same qualities that make it good tunnelling — dry, warm, compacted but
 workable, sparsely vegetated — are what make it a path in the first place.
 
-Which also points at the only real preventive measure. If a specific patch of
+Which also points at the only preventive measure. If a specific patch of
 bare ground is being used year after year and it genuinely cannot be shared,
 planting it, mulching it heavily or otherwise removing the bare warm surface
 will make it unattractive. She wants exposed soil. Cover it and she goes
@@ -243,7 +243,7 @@ it than pretend there is none.
 
 If burrows are in the middle of a path a child uses barefoot, in a sandpit, or
 in the one patch of ground somebody with a serious sting allergy has to cross
-daily, that is a real conflict rather than a squeamish one. Even then the first
+daily, that is a conflict rather than a squeamish one. Even then the first
 answer is usually physical — cover the ground, reroute the path, mulch the
 strip — because it lasts and a treatment does not.
 

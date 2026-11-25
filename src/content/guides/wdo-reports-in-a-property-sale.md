@@ -178,7 +178,7 @@ Where a sill plate, rim joist, post or beam has gone, it needs cutting out and
 replacing, and that is a carpenter's or a builder's job. Where it is wet but
 still sound under a probe, correcting the water may be enough.
 
-**Three: the organism.** The treatment. Ours.
+**Three: the organism.** This is the treatment, and it is ours.
 
 An efficient transaction runs those in parallel rather than in sequence. The
 common failure is treating first, repairing later, and discovering the repair
@@ -354,7 +354,7 @@ wrong about a licensing boundary is not a paragraph of copy.
 
 It is a question for WSDA or an attorney and it is on our list. Until it is
 answered in writing, we describe our scope conservatively. We mention it here
-rather than quietly, because a company that only discloses the uncertainties
+rather than silently, because a company that only discloses the uncertainties
 which happen to favor it is not being straight with you.
 
 ## A note on refinancing

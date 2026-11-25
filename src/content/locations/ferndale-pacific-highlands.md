@@ -237,7 +237,7 @@ beside occupied houses reliably produces a wave of calls.
 Two things are happening at once. Ground is being cleared and disturbed, which
 displaces whatever was living in it into the nearest buildings within days. And
 a site generates precisely what attracts rodents: stored material, waste,
-cover, and quiet at night.
+cover, and no disturbance at night.
 
 It is temporary, and it helps to know that rather than to assume something has
 permanently changed. The work is the same as always, which is to close the
@@ -281,7 +281,7 @@ recommend, even though it is the smaller invoice.
 
 ## What we would rather you did not pay for
 
-A recurring perimeter treatment on a house whose real problem is a foamed
+A recurring perimeter treatment on a house whose problem is a foamed
 penetration and a green corridor at the back will produce a visible result
 indefinitely and will never finish.
 

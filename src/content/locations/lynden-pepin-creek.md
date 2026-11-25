@@ -107,7 +107,7 @@ permanently wrong.
 
 Two things are happening. Ground is being cleared, which displaces whatever
 lived in it into the nearest buildings. And a site generates exactly what
-attracts rodents: stored material, waste, offcuts, cover, and quiet at night.
+attracts rodents: stored material, waste, offcuts, cover, and no disturbance at night.
 
 It is temporary. What is not temporary is the state of your building, and the
 right response is to close it while the pressure is high rather than to wait
@@ -163,7 +163,7 @@ exactly the way a creek is.
 Right now the planting here is new — small, set back, and open — and on most of
 these houses the foundation line can be seen and reached the whole way round.
 
-That is a real advantage and it is temporary.
+That is an advantage and it is temporary.
 
 Every mature neighborhood in this county tells the same story: planting
 installed when the houses were new, allowed to grow, now hard against the
@@ -221,7 +221,7 @@ None of it is difficult. It is simply newer than most of what gets checked.
 Worth thinking about now rather than in ten years: the restored corridor is
 designed to improve as habitat, and it will.
 
-Riparian planting matures. Cover thickens. The bank stabilizes and holds
+Riparian planting matures, cover thickens, and the bank stabilizes and holds
 vegetation it could not hold before. That is the entire purpose of the work and
 it is good for the creek, the water quality and everything that depends on
 both.
@@ -257,7 +257,7 @@ out before than after.
 
 ## Wasps in new soffits
 
-Wasps in new-construction soffits are a real pattern and this is where it
+Wasps in new-construction soffits are a pattern and this is where it
 shows.
 
 Modern soffit and fascia detailing creates long continuous voids with small
@@ -283,7 +283,7 @@ A phase being cleared, a road being cut, a utility trench, a pond being formed
 its own small wave into whatever is nearest. In a growth area that can happen
 several times across two or three years rather than once at the beginning.
 
-The practical consequence is that judging your house by one quiet season is
+The practical consequence is that judging your house by one slow season is
 misleading in both directions. A first summer with nothing at all does not mean
 the building is closed; it means nothing has been disturbed near you yet.
 

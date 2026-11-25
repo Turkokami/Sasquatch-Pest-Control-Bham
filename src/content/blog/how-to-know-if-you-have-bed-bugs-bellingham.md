@@ -11,7 +11,7 @@ The clearest way to tell if you have bed bugs is to look for physical evidence �
 
 ## What are the first signs of bed bugs?
 
-Bed bugs are quiet, patient, and very good at hiding, so most people don't catch them early. The first thing homeowners in Whatcom County usually notice is waking up with itchy welts they can't explain. But because bites are unreliable, it's better to confirm with evidence you can actually see and touch. Here's what to watch for, roughly in the order people tend to notice it:
+Bed bugs are small, patient, and very good at hiding, so most people don't catch them early. The first thing homeowners in Whatcom County usually notice is waking up with itchy welts they can't explain. But because bites are unreliable, it's better to confirm with evidence you can actually see and touch. Here's what to watch for, roughly in the order people tend to notice it:
 
 - **Bites in lines or small clusters**, often on skin exposed while you sleep — arms, shoulders, neck, and legs. They're small, red, and itchy, and may not appear for a day or two. Treat them as a reason to start looking, not as an answer.
 - **Rusty or reddish stains** on sheets and pillowcases — these are crushed bugs or small smears of blood after they feed.
@@ -35,7 +35,7 @@ If you find live bugs, eggs, or clusters of those dark fecal spots, you very lik
 
 ## Could it be something other than bed bugs?
 
-Yes, and this matters, because the wrong assumption leads to the wrong treatment. In Bellingham homes, itchy bites and small bugs get blamed on bed bugs all the time when the real culprit is something else. Fleas usually bite the ankles and lower legs and are common in homes with pets. Mosquito bites are larger, appear singly, and show up in warmer months. Scabies, a mite that burrows into skin, causes intense itching but isn't an insect you'll find in your mattress. And plain skin irritation or an allergic reaction can mimic bites entirely.
+Yes, and this matters, because the wrong assumption leads to the wrong treatment. In Bellingham homes, itchy bites and small bugs get blamed on bed bugs all the time when the culprit is something else. Fleas usually bite the ankles and lower legs and are common in homes with pets. Mosquito bites are larger, appear singly, and show up in warmer months. Scabies, a mite that burrows into skin, causes intense itching but isn't an insect you'll find in your mattress. And plain skin irritation or an allergic reaction can mimic bites entirely.
 
 The deciding factor is almost always physical evidence in the sleeping area. If you can't find spots, skins, or live bugs after a careful search, bed bugs are less likely — and having someone come out and take a look can settle it quickly.
 

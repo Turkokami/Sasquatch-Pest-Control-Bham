@@ -32,7 +32,7 @@ faqs:
     a: "For houseplants, honestly no — you can fix it yourself with what is above and we would rather tell you so. Where it is a greenhouse, a large collection, or a suspicion that the source is structural, that is worth a visit."
 ---
 
-## Not really a pest problem
+## Not a pest problem
 
 Small dark flies drifting up when you water, sitting on the soil surface,
 appearing at windows, and generally being present in a way they were not a month
@@ -85,7 +85,7 @@ the soil rather than on the plant.
 Where they genuinely cause harm is with seedlings, fresh cuttings, and plants
 with very fine or delicate root systems. Larvae will feed on root hairs and can
 damage or kill young plants outright. Anyone propagating from seed or striking
-cuttings has a real reason to control them.
+cuttings has a valid reason to control them.
 
 Heavy populations can also spread soil-borne pathogens between pots, which
 matters more in a greenhouse or a serious collection than on a windowsill.
@@ -207,7 +207,7 @@ source is somewhere else.
 
 ## The flies that are not fungus gnats
 
-Two lookalikes matter, and one of them is a real finding.
+Two lookalikes matter, and one of them is a definite finding.
 
 **Drain flies.** Small, fuzzy, distinctly moth-like, with broad rounded wings
 held over the body, and a habit of sitting still on walls near sinks and showers
@@ -269,7 +269,7 @@ compare the catch against week one. Expect adult numbers to be similar or
 slightly higher at this stage, because larvae that were already in the soil are
 still emerging.
 
-**Week three.** Numbers on the traps should be visibly falling. Continue.
+**Week three.** Numbers on the traps should be visibly falling. Continue as before.
 Repot anything that has never dried out despite the change, because that pot has
 a drainage problem rather than a watering problem. If you want to speed it up,
 this is the point to add a Bti drench.
@@ -293,7 +293,7 @@ themselves.
 Plants use far less water in low light. The same watering routine that suited a
 plant in July delivers roughly twice what it needs in December, so soil that
 used to dry out in four days now stays damp for ten. Almost every winter fungus
-gnat problem is really this.
+gnat problem is this.
 
 And plants that spent the summer outside come indoors in autumn, frequently
 bringing eggs and larvae with them, into a warm room where the cycle continues

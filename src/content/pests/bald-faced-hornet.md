@@ -6,7 +6,7 @@ h1: "Bald-Faced Hornet"
 treatment: depends
 confusedWith: ['aerial-yellowjacket']
 idTable:
-  - label: "What it really is"
+  - label: "What it is"
     value: "A large yellowjacket in the genus Dolichovespula, not a true hornet"
   - label: "Size"
     value: "13 to 20 millimeters by caste — a worker around three quarters of an inch"

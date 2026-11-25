@@ -12,7 +12,7 @@ This is one of the classic fall calls we get across Bellingham, Ferndale, Lynden
 
 ## Are these actually ladybugs, or something else?
 
-Most people call any small, round, spotted beetle a "ladybug," but there's an important distinction. True native ladybugs (lady beetles) are beneficial garden insects that quietly eat aphids and generally keep to themselves. The beetles that swarm homes in fall are almost always the [multicolored Asian lady beetle](/pest-library/multicolored-asian-lady-beetle/) (*Harmonia axyridis*), a species introduced to control crop pests that has since spread widely and become a household nuisance. They look similar enough to fool most people at a glance, which is why homeowners are often surprised to learn the "ladybugs" invading their house are a different, invasive species with some distinctly un-ladybug-like habits.
+Most people call any small, round, spotted beetle a "ladybug," but there's an important distinction. True native ladybugs (lady beetles) are beneficial garden insects that eat aphids and generally keep to themselves. The beetles that swarm homes in fall are almost always the [multicolored Asian lady beetle](/pest-library/multicolored-asian-lady-beetle/) (*Harmonia axyridis*), a species introduced to control crop pests that has since spread widely and become a household nuisance. They look similar enough to fool most people at a glance, which is why homeowners are often surprised to learn the "ladybugs" invading their house are a different, invasive species with some distinctly un-ladybug-like habits.
 
 ## How do I tell an Asian lady beetle from a native ladybug?
 
@@ -69,7 +69,7 @@ It's a fair concern, and it's part of why we favor exclusion over broad spraying
 
 ## When should I call Sasquatch about lady beetles?
 
-If you're seeing large clusters year after year, if beetles are working their way into living spaces from inside the walls, or if you can't pin down all the entry points on a two-story home, it's [worth a call](tel:+13604102199). A thorough exclusion job seals a lot of hard-to-reach gaps, and getting all of them is what turns a beetle-filled fall into a quiet one. We come out and take a look, work on sealing the building envelope, and apply targeted exterior treatment only where it makes sense.
+If you're seeing large clusters year after year, if beetles are working their way into living spaces from inside the walls, or if you can't pin down all the entry points on a two-story home, it's [worth a call](tel:+13604102199). A thorough exclusion job seals a lot of hard-to-reach gaps, and getting all of them is what turns a beetle-filled fall into a calm one. We come out and take a look, work on sealing the building envelope, and apply targeted exterior treatment only where it makes sense.
 
 Year after year is the phrase that matters there. A single bad autumn is worth one visit and some sealing. A wall that fills up every October is telling you the property sits somewhere these beetles like, and that does not change by itself — the same gaps take in cluster flies, boxelder bugs and stink bugs on roughly the same schedule, and the exterior work that helps has a window of about two weeks that moves with the weather rather than the calendar.
 

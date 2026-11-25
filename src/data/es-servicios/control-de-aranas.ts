@@ -75,7 +75,7 @@ export const controlDeAranas: EsServicio = {
       h2: 'El año de la araña aquí',
       parrafos: [
         'De febrero a abril. Los sacos de huevos del año anterior eclosionan y las arañitas se dispersan. Casi nadie lo nota, y es el momento más barato del año para intervenir, porque quitar sacos de huevos a finales del invierno evita una población en lugar de reducirla.',
-        'De mayo a julio. Crecimiento. Las poblaciones se forman junto con sus presas, y la telaraña empieza a acumularse en los aleros, las entradas y los muebles de afuera. Esta es la ventana en que el tratamiento y el retiro de telarañas hacen más bien, y es la que la mayoría de la gente se salta.',
+        'De mayo a julio es la etapa de crecimiento. Las poblaciones se forman junto con sus presas, y la telaraña empieza a acumularse en los aleros, las entradas y los muebles de afuera. Esta es la ventana en que el tratamiento y el retiro de telarañas hacen más bien, y es la que la mayoría de la gente se salta.',
         'De agosto a octubre. La temporada de andar. Los machos maduros dejan sus redes para buscar hembras, y es cuando aparecen las arañas grandes adentro y cuando llegan las llamadas. Es también, por desgracia, el momento menos productivo para tratar.',
         'De noviembre a enero. La actividad cae de golpe. Las hembras que sobreviven se resguardan y los sacos de huevos pasan el invierno esperando la primavera. Buen momento para el trabajo de limpieza — quitar telaraña del espacio bajo el piso, de las cocheras, de los cobertizos y de los aleros — porque nada la está reconstruyendo de inmediato.',
       ],
@@ -92,7 +92,7 @@ export const controlDeAranas: EsServicio = {
       h2: 'Cuándo sí vale la pena tratar',
       parrafos: [
         'Nos pasamos casi toda esta página convenciéndolo de no hacer trabajo innecesario, así que aquí va el otro lado.',
-        'El tratamiento vale la pena cuando la telaraña persiste en entradas, aleros, porches y áreas de estar al aire libre y sigue regresando después de quitarla. Cuando hay una población fuerte en una cochera, un cobertizo o un espacio bajo el piso que la gente usa seguido. Cuando alguien en la casa tiene una fobia de verdad — es un asunto real de calidad de vida y no lo descartamos. Cuando un sitio comercial tiene un estándar de apariencia, que en hotelería, salud, manejo de alimentos y comercio es un requisito legítimo del negocio y no un gusto. Y cuando de verdad está presente una araña que sí merece atención, como una población de araña saco amarilla en el área donde se vive.',
+        'El tratamiento vale la pena cuando la telaraña persiste en entradas, aleros, porches y áreas de estar al aire libre y sigue regresando después de quitarla. Cuando hay una población fuerte en una cochera, un cobertizo o un espacio bajo el piso que la gente usa seguido. Cuando alguien en la casa tiene una fobia de verdad — es un asunto de calidad de vida y no lo descartamos. Cuando un sitio comercial tiene un estándar de apariencia, que en hotelería, salud, manejo de alimentos y comercio es un requisito legítimo del negocio y no un gusto. Y cuando de verdad está presente una araña que sí merece atención, como una población de araña saco amarilla en el área donde se vive.',
         'Lo que no vamos a hacer es decirle que una araña doméstica gigante en su tina en septiembre es un peligro para su familia.',
       ],
     },

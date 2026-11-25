@@ -48,7 +48,7 @@ summer, when second-home owners from both sides of the border arrive, and many
 of those places are shut from autumn to spring.
 
 A closed house over a wet winter is close to ideal for mice. It is dry, it is
-quiet, nobody disturbs the nest, and there is usually something left in a
+empty, nobody disturbs the nest, and there is usually something left in a
 cupboard. The gap that let them in was often there all along; it simply went
 unnoticed because nobody was home in November to hear anything.
 

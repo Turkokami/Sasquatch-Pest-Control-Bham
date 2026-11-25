@@ -1,7 +1,7 @@
 ---
 species: western-black-legged-tick
 title: "Western Black-Legged Tick in Whatcom County"
-description: "What Ixodes pacificus is, where you actually meet one in Whatcom County, how much Lyme disease there really is here, and how to remove one correctly."
+description: "What Ixodes pacificus is, where you actually meet one in Whatcom County, how much Lyme disease there is here, and how to remove one correctly."
 h1: "Western Black-Legged Tick in Whatcom County"
 treatment: depends
 confusedWith: []
@@ -442,7 +442,7 @@ A pest control company that will sell you a treatment for anything you are worri
 about is not a company doing you a service. Ticks are the clearest example we
 have.
 
-The demand is real, the anxiety is real, and there are products that could be
+The demand exists, the anxiety is understandable, and there are products that could be
 applied to a yard and invoiced. What there is not is a good argument that doing so
 addresses the exposure, because the exposure is on the trail, at the fence line
 and in the brush, and it comes home attached to a person or a dog.

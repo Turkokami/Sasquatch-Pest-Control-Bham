@@ -32,7 +32,7 @@ neighborhood. It is the organizing fact of it.
 Two hundred and forty acres of forest, creek, gorge, trail and open water sit in
 the middle of this part of Bellingham, with Whatcom Creek running through it from
 the Lake Whatcom outlet down toward the bay. Houses face it, back onto it, look
-down into the ravine at it and sit across quiet streets from it. Something in the
+down into the ravine at it and sit across residential streets from it. Something in the
 region of a mile and a half of residential boundary touches public land or the
 creek corridor.
 
@@ -186,8 +186,7 @@ exceptional.
 
 What follows from a wet underfloor space is predictable. [Moisture ants](/pest-library/moisture-ant/), which
 want wood that is already wet and are a symptom of a water problem rather than a
-pest problem in their own right. Springtails, sowbugs and millipedes in numbers.
-Silverfish. Decay in joists and beams, which in this climate takes structural
+pest problem in their own right. Springtails, sowbugs, millipedes and silverfish turn up in numbers. There is decay in joists and beams, which in this climate takes structural
 capacity faster than any insect does. And a general elevation of everything that
 lives on the ground beneath your floor.
 
@@ -213,7 +212,7 @@ timber, stumps, dead limbs in healthy crowns. That reservoir is not going
 anywhere.
 
 What we can influence is the last stretch. Firewood stacked against a wall.
-Landscape timbers and old retaining structures rotting quietly at the back of a
+Landscape timbers and old retaining structures rotting unnoticed at the back of a
 garden. Fence posts failing at ground level. Deck framing that has been wet for
 years. Branches bridging from the treeline to a roof.
 How to handle rotting garden timber and yard waste without feeding the problem
@@ -254,7 +253,7 @@ eats insects follows. Spider volume on these streets is genuinely higher than
 the city average and there is no treatment that changes that for long.
 
 What people notice in September and October is mostly males walking, looking for
-females. It reads as an infestation and it is a mating season. It ends.
+females. It reads as an infestation and it is a mating season. It ends on its own.
 
 The measures that actually reduce what you see indoors are dull: door sweeps and
 weatherstripping, screens repaired, exterior lighting reconsidered or shifted to
@@ -312,10 +311,7 @@ feet of ground you actually control — cover, stored material, timber on soil,
 food sources, the state of any structure sitting near the line. We note where the
 buffer begins so that nothing we recommend puts you on the wrong side of it.
 
-Then the building envelope, methodically. Base of walls and grade. Vents,
-screens and crawl access. Utility penetrations. Deck ledgers and framing
-junctions. Roofline, soffits and anything overhanging. The places an addition
-meets the original house.
+Then we go over the building envelope, methodically: the base of walls and grade, vents, screens and crawl access, utility penetrations, deck ledgers and framing junctions, the roofline, soffits and anything overhanging, and the places an addition meets the original house.
 
 Then underneath, properly and with a light, all the way through rather than a
 look from the hatch — because on this ground the crawlspace usually holds the

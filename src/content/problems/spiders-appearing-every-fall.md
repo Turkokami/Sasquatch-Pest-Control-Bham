@@ -118,7 +118,7 @@ which covers all of them side by side.
 
 **Giant house spiders.** The large, fast, brown, long-legged ones that produce
 most of the alarm. Males walking in autumn are what people find in bathtubs and
-running across floors at night. Harmless.
+running across floors at night. They are harmless.
 
 **Other funnel weavers**, including the [hobo spider](/pest-library/hobo-spider/), which is closely related and
 whose fearsome reputation has been substantially retracted by the researchers and
@@ -188,7 +188,7 @@ spider that has been in the building a while.
 
 ## Why some years are worse
 
-The variation is real and it is predictable in hindsight.
+The variation is large and it is predictable in hindsight.
 
 A warm summer produces more insects, more insects support more spiders, and more
 spiders reach maturity to walk in September. A cool wet summer does the reverse.
@@ -270,7 +270,7 @@ weather is bad enough that indoor jobs are welcome.
 disperse, some of them by ballooning on silk threads. Almost none of this is
 noticed. Insect populations begin to rise.
 
-**June and July.** Growth. Spiders are outdoors, small, and building the webs
+**June and July.** This is the growth period. Spiders are outdoors, small, and building the webs
 that will be conspicuous later. Orb weaver webs start appearing in gardens
 toward the end of this period. Insect numbers peak, which determines how many
 spiders make it to autumn.
@@ -279,16 +279,16 @@ spiders make it to autumn.
 maturing. The last two weeks are the window where preventive work does the most
 good, and the point at which almost nobody thinks about it.
 
-**September.** The wave. Males walking, indoor sightings daily in some houses,
+**September.** This is the wave. Males walking, indoor sightings daily in some houses,
 orb webs across every doorway in the morning. This is when the phone rings.
 
 **October.** Continuing but easing through the month. Egg sacs are laid. Weather
 increasingly suppresses movement.
 
-**November and December.** Effectively over. What you see indoors from here is
+**November and December.** It is effectively over. What you see indoors from here is
 resident rather than transient.
 
-Two things fall out of that. The useful maintenance months are the quiet ones,
+Two things fall out of that. The useful maintenance months are the slow ones,
 and the season you are experiencing in September was determined by a summer you
 have already had.
 
@@ -333,7 +333,7 @@ anything else. Reviewed repeatedly and consistently found not to work.
 
 **Vinegar sprays.** Kills what they land on directly, does nothing afterwards.
 
-**Diatomaceous earth scattered around a room.** A real mechanism against
+**Diatomaceous earth scattered around a room.** A physical mechanism against
 insects that cross it repeatedly, but spiders walk on the tips of their legs and
 cover ground quickly, and it is ineffective once damp. It is also a respiratory
 irritant when scattered loosely indoors.

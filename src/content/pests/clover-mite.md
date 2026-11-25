@@ -169,7 +169,7 @@ Two consequences follow, and both are practical:
    its second run, and treating in October without changing anything outside
    simply books an appointment for April.
 2. **The useful work happens between the waves.** Late spring and late summer,
-   when the wall is quiet, is when a foundation band or a sealing job gets done
+   when the wall is clear, is when a foundation band or a sealing job gets done
    without working through a swarm.
 
 Penn State also notes the part that reframes everything: they cannot reproduce
@@ -185,7 +185,7 @@ or animals. There is no stinging, no skin reaction, nothing transmitted. If
 something is biting you and you are also seeing tiny red specks, those two facts
 are probably unrelated and the biting one is worth running down properly — fleas
 and [rodent mites](/pest-library/rodent-mite/) both produce that complaint and
-both are real.
+both do bite.
 
 **They do not damage the building.** No structural damage, nothing chewed,
 nothing bored, no wood or fabric interest. They are not in the same category as
@@ -194,7 +194,7 @@ side of this trade.
 
 **They do not infest food or fabric.** They have no use for either.
 
-**They do stain.** This is the only real damage they do, and it is not nothing.
+**They do stain.** This is the only damage they do, and it is not nothing.
 A wall or sill wiped with a cloth ends up with a long red smear, and on grout,
 matte paint, unsealed timber, curtain fabric or sill caulk that mark can be
 permanent.
@@ -208,7 +208,7 @@ Vacuum. That is most of the advice.
 
 WSU's recommendation is to clean them off surfaces carefully — a soapy sponge
 or cloth used gently enough not to crush them, or a vacuum with the crevice
-tool. In a real house with a real windowsill and several hundred mites on it,
+tool. In a lived-in house with a windowsill and several hundred mites on it,
 the vacuum is the one that works, because wiping gently enough to avoid crushing
 a hundredth-of-an-inch animal is not a thing most people can do.
 
@@ -228,7 +228,7 @@ On the outside of the building, WSU notes mites can be sprayed directly with
 soapy water, which knocks down what is on the wall at that moment. It is a
 useful way to deal with a bad afternoon. It is not a fix.
 
-## The bare band, which is the only thing that really works
+## The bare band, which is the only thing that works
 
 A strip of ground against the foundation with no grass in it.
 
@@ -285,7 +285,7 @@ present as small and red here.
 **Something that bites.** Not clover mites. Fleas are the common one in this
 county — see [flea control](/services/flea-control/) — and rodent mites turn up
 after a rodent problem has been dealt with and the mites have lost their host.
-Both of those are real bites and both have a different fix.
+Both of those cause bites, and each has a different fix.
 
 **Larger, faster, hunting on a wall.** Possibly a small spider. The
 [spiders in Washington state](/guides/spiders-in-washington-state/) guide covers

@@ -10,7 +10,7 @@ expert: kristofer-elling
 faqs:
   - q: "The house is well maintained. Why is this happening?"
     a: "Usually because the ground around it has changed rather than the building. Planting put in when the house was new is now mature and hard against the walls, over decades of accumulated leaf litter. That is permanent cover touching siding over damp organic material, and it is the most common driver on established lots regardless of how well the house itself is kept."
-  - q: "Do the shrubs really have to come out?"
+  - q: "Do the shrubs have to come out?"
     a: "Almost never entirely. What matters is a genuine gap — daylight and air between the planting and the wall, and the foundation line visible and reachable. That is usually pruning and pulling beds back rather than removal, and it can be staged over a couple of seasons rather than done in one weekend."
   - q: "What is under the deck?"
     a: "Frequently the answer to a rodent problem nobody could otherwise explain. A deck built against a house creates a dry, sheltered, undisturbed space directly against the foundation, and on decks of this age it is almost never screened. It is simultaneously a route in, a place to live, and the one stretch of wall that cannot be inspected."
@@ -28,7 +28,7 @@ faqs:
 
 The Meadows is larger-lot single-family housing that has been in the ground
 long enough to have settled into itself. The houses are solid and mostly well
-kept. The lots are generous. The streets are quiet.
+kept. The lots are generous and the streets see little traffic.
 
 And nearly every pest problem we deal with here is caused by something other
 than the building.
@@ -114,9 +114,7 @@ surprise.
 The planting that matters most for insects is the timber, and on lots this age
 there is a lot of it that nobody thinks about as timber.
 
-Landscape ties. Old raised beds. A retaining wall built of sleepers. The
-original deck framing. Fence posts. A stump left when something came down.
-Fallen limbs stacked at the back. Firewood that has been in the same place long
+It includes landscape ties, old raised beds, a retaining wall built of sleepers, the original deck framing, fence posts, a stump left when something came down, fallen limbs stacked at the back, and firewood that has been in the same place long
 enough to have gone soft at the bottom.
 
 [Carpenter ants](/pest-library/carpenter-ant/) do not eat wood — they excavate galleries in it to nest, and they
@@ -147,7 +145,7 @@ drained away from the building in 1990 may not now.
 None of that announces itself upstairs until it is well advanced. A moisture
 problem under a floor becomes a decay problem, then a carpenter ant or
 wood-boring beetle problem, and by the time it is visible from inside there is
-real repair involved.
+repair work involved.
 
 Going under and looking properly is the point of a first visit here, and it
 frequently changes the recommendation from a treatment to a repair.

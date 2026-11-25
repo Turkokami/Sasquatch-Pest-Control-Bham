@@ -121,7 +121,7 @@ why not every thatching ant complaint comes with a dome to point at.
 
 ## The bite, which is the actual complaint
 
-Almost every call we get about these ants is really a call about being bitten,
+Almost every call we get about these ants is a call about being bitten,
 and the mechanism is worth explaining because it is unusual.
 
 Thatching ants **do not sting**. They have no sting to use. What they do is bite
@@ -210,14 +210,14 @@ grounds.
 We are not going to pretend that makes a mound beside a child's swing set
 acceptable. But it does mean the default answer to "there is an ant mound in the
 back of my property" should be to leave it, and that destroying a large colony
-is a real loss rather than a neutral act.
+is a loss rather than a neutral act.
 
 Where the mound is well away from the traffic on a property, our advice is
 usually to mark it, tell whoever mows, and let it be.
 
 ## When it genuinely warrants action
 
-There are real conflicts and we would rather name them than pretend the answer
+There are genuine conflicts and we would rather name them than pretend the answer
 is always no.
 
 A mound in a lawn that has to be mowed. A mound beside a path, a patio, a play
@@ -318,8 +318,7 @@ season, mark them with a cane or a flag, and tell whoever does the mowing where
 they are. On a property where the work is contracted out, say it at the start of
 the year rather than after somebody has found one the hard way.
 
-Where a mound genuinely sits in ground that has to be mown, that is a real
-conflict and one of the cases where treatment is the right answer. But it is
+Where a mound genuinely sits in ground that has to be mown, that is a conflict and one of the cases where treatment is the right answer. But it is
 worth establishing that it truly cannot be mown around before deciding.
 
 ## Mounds on farm ground and open acreage

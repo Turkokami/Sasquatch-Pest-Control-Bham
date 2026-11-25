@@ -9,7 +9,7 @@ ready: true
 expert: kristofer-elling
 faqs:
   - q: "Why does finding the source take longer on a big lot?"
-    a: "Because a carpenter ant colony's main nest can be well away from the building and still supply it. On a small lot there are a handful of candidates. On two wooded acres there are dozens, and searching them properly is real work rather than a walk around the house."
+    a: "Because a carpenter ant colony's main nest can be well away from the building and still supply it. On a small lot there are a handful of candidates. On two wooded acres there are dozens, and searching them properly is work rather than a walk around the house."
   - q: "Do the big trees need to come out?"
     a: "Almost never, and we would not recommend it. A living mature tree is not usually the nest. What matters is standing deadwood, old stumps, fallen limbs and the softening timber in landscape structures — and most of that can be dealt with without touching a healthy tree."
   - q: "Should the outbuildings be included?"
@@ -101,7 +101,7 @@ A healthy, living mature tree is rarely the problem. Carpenter ants want dead an
 softening wood, which means the material that matters is standing deadwood, dead
 limbs within an otherwise healthy crown, old stumps, and fallen timber. Removing
 a sound Douglas fir because there are ants in the kitchen is an expensive
-misdiagnosis and a real loss, given that those trees are much of why the
+misdiagnosis and a loss, given that those trees are much of why the
 neighborhood is what it is.
 
 What is worth doing is more modest. Dead limbs come out, which is a tree
@@ -118,10 +118,7 @@ conversation with an arborist rather than with us, and we will say so.
 Most Edgemoor addresses have more than one structure, and the outbuildings are
 the single most commonly overlooked part of a scope.
 
-Detached garages, studios and workshops. Greenhouses and potting sheds. Garden
-stores, wood stores and pump houses. Guest accommodation. Pool and equipment
-buildings. Older structures that came with the land and have been repurposed
-several times.
+That means detached garages, studios and workshops, greenhouses and potting sheds, garden stores, wood stores and pump houses, guest accommodation, pool and equipment buildings, and older structures that came with the land and have been repurposed several times.
 
 From a rodent's point of view those are frequently more attractive than the
 house: less disturbed, often unheated but sheltered, full of stored material, and
@@ -137,7 +134,7 @@ trees at all.
 So a proper scope here includes the outbuildings. Sometimes the honest answer is
 that a particular structure is beyond sealing and the sensible course is to
 remove what attracts them and defend the house properly. We will say which it is
-rather than quietly quoting for everything.
+rather than silently quoting for everything.
 
 ## A neighborhood with no single housing era
 
@@ -271,7 +268,7 @@ second residences, a season spent elsewhere. That changes the pest picture in
 one specific way: nothing gets noticed early.
 
 A rodent that enters an occupied house is usually heard within days. In an empty
-house it has weeks of quiet, and what would have been a two-trap job becomes
+house it has weeks undisturbed, and what would have been a two-trap job becomes
 droppings through a pantry, chewed wiring insulation and a contaminated section
 of loft. The same applies to a slow leak feeding an ant colony, or a wasp nest
 building in a soffit above a door nobody uses.
@@ -291,7 +288,7 @@ vehicle can stop. None of that is an obstacle, but it changes what we can bring
 and how long a job takes, so it is worth a sentence when you call.
 
 And the work here is frequently done around people's lives on properties where
-that matters. We schedule around it, we are quiet about what we find, and we do
+that matters. We schedule around it, we are discreet about what we find, and we do
 not put anybody's address in marketing material. That should not be remarkable
 and we mention it because clients occasionally ask.
 

@@ -64,7 +64,7 @@ export const controlDeChinches: EsServicio = {
       h2: '¿Con qué se confunden?',
       parrafos: [
         'La larva del escarabajo de alfombra es la falsa alarma más común: chica, peludita, aparece en la ropa de cama, y en algunas personas causa una irritación de piel que parece picadura.',
-        'La chinche de murciélago es una posibilidad real en las casas viejas de Bellingham con murciélagos en el ático, y es pariente cercana que se ve casi igual. La diferencia importa, porque el arreglo de verdad es sacar la colonia de murciélagos, y eso es trabajo de un especialista en fauna, no nuestro. Tratar la recámara mientras la colonia sigue arriba del techo no resuelve nada.',
+        'La chinche de murciélago es una posibilidad en las casas viejas de Bellingham con murciélagos en el ático, y es pariente cercana que se ve casi igual. La diferencia importa, porque el arreglo de verdad es sacar la colonia de murciélagos, y eso es trabajo de un especialista en fauna, no nuestro. Tratar la recámara mientras la colonia sigue arriba del techo no resuelve nada.',
         'El escarabajo araña, el piojo de los libros y las pulgas completan la lista. Las pulgas en particular se confunden con chinches seguido, y el tratamiento es completamente distinto. Para eso es la visita de verificación.',
       ],
     },
@@ -114,7 +114,7 @@ export const controlDeChinches: EsServicio = {
     {
       h2: '¿Son peligrosas?',
       parrafos: [
-        'No se sabe que las chinches transmitan enfermedades a las personas. Lo que causan es una reacción de piel localizada, y en algunas personas una reacción alérgica más fuerte. Una picadura rascada se puede infectar, que es la complicación médica real más común, y es una complicación común y corriente. Esa es también la postura del estado: el [Departamento de Salud](https://doh.wa.gov/community-and-environment/pests/bed-bugs) trata a la chinche como molestia e irritación de la piel, y no como transmisora de enfermedades. El daño más grande casi siempre es el sueño y el estrés: quien sabe que hay insectos en su cama deja de dormir bien, y eso tiene consecuencias reales en unas semanas. Si alguien en la casa está reaccionando mal a las picaduras, esa conversación es con un médico; nosotros atendemos los insectos.',
+        'No se sabe que las chinches transmitan enfermedades a las personas. Lo que causan es una reacción de piel localizada, y en algunas personas una reacción alérgica más fuerte. Una picadura rascada se puede infectar, que es la complicación médica más común, y es una complicación común y corriente. Esa es también la postura del estado: el [Departamento de Salud](https://doh.wa.gov/community-and-environment/pests/bed-bugs) trata a la chinche como molestia e irritación de la piel, y no como transmisora de enfermedades. El daño más grande casi siempre es el sueño y el estrés: quien sabe que hay insectos en su cama deja de dormir bien, y eso tiene consecuencias reales en unas semanas. Si alguien en la casa está reaccionando mal a las picaduras, esa conversación es con un médico; nosotros atendemos los insectos.',
       ],
     },
     {

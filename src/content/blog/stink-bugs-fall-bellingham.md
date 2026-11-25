@@ -15,7 +15,7 @@ The fall stink bug call is one of our most predictable of the year across Bellin
 
 The brown marmorated stink bug (*Halyomorpha halys*), or BMSB, is an invasive insect that has spread across much of the country and become well established in the Pacific Northwest. It's about the size of a fingernail, shaped like a shield or heraldic crest, and mottled brown with faint lighter bands on the antennae and a distinctive marbled pattern. "Marmorated" literally means marbled.
 
-During spring and summer they live outdoors, feeding on fruit trees, ornamental plants, and garden crops. They're a serious agricultural nuisance, but for most Bellingham homeowners the real problem is what they do in autumn: they gather in large numbers and try to get indoors. The smell is a defense mechanism, a pungent cilantro-meets-old-gym-sock odor released from glands on their abdomen. Crushing, aggressive vacuuming, or even startling them can trigger it, which is why gentle removal matters.
+During spring and summer they live outdoors, feeding on fruit trees, ornamental plants, and garden crops. They're a serious agricultural nuisance, but for most Bellingham homeowners the problem is what they do in autumn: they gather in large numbers and try to get indoors. The smell is a defense mechanism, a pungent cilantro-meets-old-gym-sock odor released from glands on their abdomen. Crushing, aggressive vacuuming, or even startling them can trigger it, which is why gentle removal matters.
 
 ## Why do stink bugs come indoors every fall?
 
@@ -67,7 +67,7 @@ The single highest-value fix is sealing the sunny, south- and west-facing walls 
 
 ## When should I call a professional about stink bugs?
 
-For a handful of bugs on the windows, DIY removal and some fall sealing may be all you need. But it's worth calling us if you're seeing large clusters year after year, if they're getting into living spaces from inside the walls, or if you're not sure where all the entry points are. A thorough exclusion job on a two-story home involves a lot of gaps in hard-to-reach places, and getting them all sealed is what separates a quiet winter from a repeat invasion. Our approach leans heavily on finding the gaps and closing them rather than dousing your home in chemicals: we come out and look at where they're getting in, help seal the building envelope, and apply targeted exterior treatments only where they make sense.
+For a handful of bugs on the windows, DIY removal and some fall sealing may be all you need. But it's worth calling us if you're seeing large clusters year after year, if they're getting into living spaces from inside the walls, or if you're not sure where all the entry points are. A thorough exclusion job on a two-story home involves a lot of gaps in hard-to-reach places, and getting them all sealed is what separates a pest-free winter from a repeat invasion. Our approach leans heavily on finding the gaps and closing them rather than dousing your home in chemicals: we come out and look at where they're getting in, help seal the building envelope, and apply targeted exterior treatments only where they make sense.
 
 ## Common questions
 

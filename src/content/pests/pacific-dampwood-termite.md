@@ -123,7 +123,7 @@ substantial colony in a joist and never see a single individual.
 
 Colonies here are modest by termite standards. There is no vast underground
 network. What there is instead is a population living in one piece of wet
-structural timber, or a group of connected pieces, quietly enlarging its
+structural timber, or a group of connected pieces, slowly enlarging its
 galleries.
 
 ## Telling them from winged carpenter ants
@@ -195,7 +195,7 @@ absolute rather than a preference — EB0787 states that a high moisture level i
 necessary for attack and establishment, and the PNW handbooks say the same
 thing: wet or damp wood is required to infest and establish a colony.
 
-So the discovery is really a moisture discovery with an insect attached to it.
+So the discovery is a moisture discovery with an insect attached to it.
 And it is not a recent moisture discovery either, because the wood generally has
 to have been wet long enough for decay fungi to soften it first.
 
@@ -393,7 +393,7 @@ chemical application alone will not resolve this pest and should be discouraged
 where the underlying moisture problem persists. We agree, and we would rather
 say so before taking money than after.
 
-## Keeping them out, which is really water management
+## Keeping them out, which is water management
 
 Every preventive measure for this species is a building maintenance task. That
 is the honest summary of the whole page.

@@ -15,7 +15,7 @@ export const queEsDeVerdadElManejoIntegradoDePlagas: EsGuia = {
     {
       h2: 'La frase que dejó de querer decir algo',
       parrafos: [
-        'Pregúntele a cualquier empresa de plagas de este condado si hace manejo integrado y le va a decir que sí. Pregúntele qué quiere decir en sus trabajos y casi siempre oirá la descripción de un rocío de perímetro cada trimestre con una barrida de telarañas, más una frase sobre usar lo mínimo de producto. Eso no es manejo integrado: es una aplicación que se repite con un nombre mejor. Vale la pena rescatar el término, porque lo que describe es real, lo definen en público instituciones que no venden producto, y en este clima da mejores resultados que la alternativa.',
+        'Pregúntele a cualquier empresa de plagas de este condado si hace manejo integrado y le va a decir que sí. Pregúntele qué quiere decir en sus trabajos y casi siempre oirá la descripción de un rocío de perímetro cada trimestre con una barrida de telarañas, más una frase sobre usar lo mínimo de producto. Eso no es manejo integrado: es una aplicación que se repite con un nombre mejor. Vale la pena rescatar el término, porque lo que describe existe, lo definen en público instituciones que no venden producto, y en este clima da mejores resultados que la alternativa.',
       ],
     },
     {
@@ -42,7 +42,7 @@ export const queEsDeVerdadElManejoIntegradoDePlagas: EsGuia = {
     {
       h2: 'El monitoreo, dicho honesto',
       parrafos: [
-        'Monitorear es saber qué pasa en lugar de suponer. En el trabajo comercial es real: un plano de dispositivos, cada uno revisado y anotado, tendencias, y es lo que pide un auditor. En el residencial, y esto el oficio no lo dice, es mucho más delgado: nadie anota conteos de trampas cada mes en una casa de tres recámaras, nosotros tampoco. Es un técnico que revisa los mismos lugares, lo que el cliente reporta y la comparación. Sirve, pero un "programa de monitoreo" en una casa casi siempre es una visita programada.',
+        'Monitorear es saber qué pasa en lugar de suponer. En el trabajo comercial es rutina: un plano de dispositivos, cada uno revisado y anotado, tendencias, y es lo que pide un auditor. En el residencial, y esto el oficio no lo dice, es mucho más delgado: nadie anota conteos de trampas cada mes en una casa de tres recámaras, nosotros tampoco. Es un técnico que revisa los mismos lugares, lo que el cliente reporta y la comparación. Sirve, pero un "programa de monitoreo" en una casa casi siempre es una visita programada.',
       ],
     },
     {

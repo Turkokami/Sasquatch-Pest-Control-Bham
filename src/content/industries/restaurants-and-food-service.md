@@ -247,7 +247,7 @@ the load than it does elsewhere, because it introduces nothing into the
 environment.
 
 And where a job genuinely cannot be done safely around food, we will say so and
-propose the alternative rather than working around the constraint quietly.
+propose the alternative rather than working around the constraint without saying so.
 
 ## Grease, waste and the outside of the building
 
@@ -356,7 +356,7 @@ population; the first sustained cold decides where it goes, and a warm kitchen
 with a propped door is the best address on the block. This is when rodent calls
 spike and when the exclusion done in spring pays for itself.
 
-**Winter.** The quiet season for arrivals and the working season for structure:
+**Winter.** The slow season for arrivals and the working season for structure:
 thresholds, penetrations, drain work and the exclusion that cannot be done in a
 busy summer.
 

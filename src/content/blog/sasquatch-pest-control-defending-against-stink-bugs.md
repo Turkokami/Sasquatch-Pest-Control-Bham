@@ -19,7 +19,7 @@ Stink bugs are drawn to light, so it's wise to keep outdoor lighting to a minimu
 
 ## Damage control
 
-These pests don't just annoy — they can do real harm to fruit-bearing crops, vegetables and native vegetation, which is why they're taken seriously as an agricultural problem. Around the house it's different: they don't bite, don't carry disease and don't damage the building, so protecting your garden and keeping them out of the living space is the whole of the job.
+These pests don't just annoy — they can do harm to fruit-bearing crops, vegetables and native vegetation, which is why they're taken seriously as an agricultural problem. Around the house it's different: they don't bite, don't carry disease and don't damage the building, so protecting your garden and keeping them out of the living space is the whole of the job.
 
 ## Prevention and removal
 

@@ -160,7 +160,7 @@ completely unlike the scuttle of anything else that gets into a house.
 animal decides the threat has passed. A dead one stays coiled, which is why the
 ones found along a baseboard days later look like small dark washers.
 
-**Speed.** Slow. Slow enough that a coffee cup is adequate equipment.
+**Speed.** They are slow, slow enough that a coffee cup is adequate equipment.
 
 ## The autumn migration
 

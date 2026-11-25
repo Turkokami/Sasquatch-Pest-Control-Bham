@@ -14,7 +14,7 @@ factsTable:
   - label: "Notice-exempt work"
     value: "Exclusion, plus insect and rodent baits children cannot access"
   - label: "District reporting"
-    value: "A roll-up showing which buildings generate findings and which are quiet"
+    value: "A roll-up showing which buildings generate findings and which are clear"
   - label: "Term-time work"
     value: "Monitoring, contained bait servicing, exterior work and response"
   - label: "Break work"
@@ -31,7 +31,7 @@ faqs:
   - q: "Who do you need from the district on a walk?"
     a: "Whoever owns the buildings and whoever owns the kitchens, because the answers split between them. Facilities knows the envelope, the roof, the crawlspaces and what has been deferred. Nutrition services knows receiving, storage and the dish area. A walk with only one of them produces half a program."
   - q: "How do you handle a classroom report of bed bugs?"
-    a: "Carefully, quickly and quietly. Bed bugs do not establish in classrooms the way they do in housing, so a school finding is usually an introduction from a home rather than an infestation of the building. The response is inspection to confirm, targeted treatment where warranted, and discretion — a rumor moves faster than any treatment and does more damage."
+    a: "Carefully, quickly and discreetly. Bed bugs do not establish in classrooms the way they do in housing, so a school finding is usually an introduction from a home rather than an infestation of the building. The response is inspection to confirm, targeted treatment where warranted, and discretion — a rumor moves faster than any treatment and does more damage."
   - q: "How is a district program priced?"
     a: "By building, from a walk of the estate rather than from a square footage total. The variables are the number and age of the buildings, how many have kitchens, the condition of the envelopes, monitoring density, and visit frequency. Districts usually want a single program across the estate with per-building reporting, and that is how we scope it."
 ---
@@ -84,7 +84,7 @@ it is present in small amounts in a hundred places rather than in one store.
 **Locker rooms, gyms and their storage** are damp, warm, full of soft material
 and rarely emptied.
 
-**Custodial and mechanical spaces** are where a population lives. Warm, quiet,
+**Custodial and mechanical spaces** are where a population lives. Warm, undisturbed,
 undisturbed, with access to the whole building through the service runs.
 
 **Portables and modular classrooms** are their own category and usually the
@@ -235,7 +235,7 @@ from a home where there is a population — rather than an infestation of the
 building itself.
 
 That changes everything about the response. It should be quick, confirmed by
-inspection rather than by a description, targeted, and quiet. A rumor moves
+inspection rather than by a description, targeted, and discreet. A rumor moves
 faster than any treatment and does considerably more damage than the insects
 will, and it lands on a family who did not choose it.
 
@@ -261,7 +261,7 @@ outsider expects.
 
 **The building is often a converted house.** A great many licensed providers
 here operate out of residential stock, which brings the whole residential
-picture with it: a vented crawlspace, a real attic, wood siding, and the
+picture with it: a vented crawlspace, an attic, wood siding, and the
 penetrations of a home rather than the sealed envelope of an institution.
 
 Practically that means a childcare program looks more like careful residential
@@ -316,7 +316,7 @@ an application was made that required notification, the record shows what was
 applied, where, when, and that notice was given.
 
 For a district, the version that matters is the roll-up: which buildings are
-generating findings, which are quiet, and what the pattern says about where the
+generating findings, which are clear, and what the pattern says about where the
 capital money should go. A program that produces twelve identical monthly slips
 tells a facilities director nothing they can act on.
 

@@ -3,7 +3,7 @@ cluster: practice
 title: "What Integrated Pest Management Actually Means"
 description: "IPM is the most abused phrase in this trade. What the definition actually requires, what it looks like on a Whatcom County job, and how to check you are getting it."
 h1: "What Integrated Pest Management Actually Means"
-answer: "Integrated pest management is a decision process, not a product line. It requires identifying the species first, monitoring to know what is really happening, setting a threshold for action, and putting sanitation, exclusion and habitat change ahead of chemicals, with any application targeted rather than broadcast."
+answer: "Integrated pest management is a decision process, not a product line. It requires identifying the species first, monitoring to know what is happening, setting a threshold for action, and putting sanitation, exclusion and habitat change ahead of chemicals, with any application targeted rather than broadcast."
 ready: true
 legalDisclaimer: true
 reviewBy: 2027-09-02
@@ -51,7 +51,7 @@ faqs:
     a: "No. Every published definition puts pesticides in the toolkit and treats them as one option among several rather than the first one reached for. EPA describes control as using the most effective, lowest risk options once a threshold has been crossed."
   - q: "What is an action threshold?"
     a: "EPA defines it as the pest population level at which the pest's presence is a nuisance, a health hazard or an economic threat. Below that line you monitor and change conditions. Above it you act. Most residential work never states the line at all."
-  - q: "How can I tell whether a company is really doing this?"
+  - q: "How can I tell whether a company is doing this?"
     a: "Ask them to name the species rather than the group, ask what is driving it, and see whether anything they recommend is something other than a treatment they sell. A visit that produces no non-chemical recommendation on an older house here is a visit that did not look."
   - q: "Am I entitled to know what was applied?"
     a: "Washington requires a commercial applicator to keep records including the product name, the EPA registration number, the location, the amount and concentration, and the date and times, and to provide a copy of those records to the owner of the land treated."
@@ -60,7 +60,7 @@ faqs:
   - q: "Does IPM cost more?"
     a: "The first visit usually takes longer, and the recommendations frequently point at work another trade does. Over several years it is normally cheaper, because closing a building or fixing drainage is a one-off and a recurring application is not."
   - q: "Do you run a monitoring program on a single-family house?"
-    a: "Not in the formal sense with logged trap counts, and neither does anyone else on ordinary residential work. What exists is a technician checking the same locations each visit and a homeowner reporting. On commercial accounts, documented monitoring is real and expected."
+    a: "Not in the formal sense with logged trap counts, and neither does anyone else on ordinary residential work. What exists is a technician checking the same locations each visit and a homeowner reporting. On commercial accounts, documented monitoring is standard and expected."
 ---
 
 ## The phrase that stopped meaning anything
@@ -74,11 +74,11 @@ necessary.
 That is not integrated pest management. That is a repeating application with a
 better name on it.
 
-The term is worth rescuing, because the thing it describes is real, it is
+The term is worth rescuing, because the thing it describes exists, it is
 defined in public by people with no product to sell, and it genuinely produces
 better outcomes in this climate than the alternative. So this page does three
 things: sets out what the published definitions actually require, describes what
-that looks like on a real job in Bellingham or Ferndale rather than in the
+that looks like on a job in Bellingham or Ferndale rather than in the
 abstract, and gives you a way to check whether the company standing in your
 kitchen is doing it.
 
@@ -120,7 +120,7 @@ monitor the numbers, then decide "whether the pest can be tolerated or whether
 it is a problem that warrants control."
 
 Three independent land-grant and federal sources, three ways of saying the same
-thing. Identify. Watch. Decide. Change the conditions. Treat narrowly and only
+thing: identify, watch and decide, then change the conditions. Treat narrowly and only
 where the decision says to.
 
 ## Identification is not a formality
@@ -163,7 +163,7 @@ is sticky traps in the places insects travel, snap traps or tracking patches set
 and then read, a record of where activity was seen and when, and comparing this
 visit to the last one.
 
-In commercial work this is real. A food handling account has a device map, each
+In commercial work this is routine. A food handling account has a device map, each
 device gets checked and logged, trend lines get looked at, and a rise in counts
 at the back door triggers a look at the back door. That is the version EPA's
 records language describes, and it is the version an auditor asks to see.
@@ -182,7 +182,7 @@ gets recorded, and the answer will tell you which version you are buying.
 
 ## Thresholds, which is the uncomfortable part
 
-The action threshold is the piece of IPM that pest control companies quietly
+The action threshold is the piece of IPM that pest control companies silently
 drop, because it is the piece that says some level of pest presence does not
 warrant a treatment.
 
@@ -384,7 +384,7 @@ Treat that chemically and you are applying product to a building that is
 generating new conditions faster than you can respond to them. Dry the space and
 several problems leave at once and do not come back. That is the hierarchy doing
 what it is supposed to do, and it is the reason a company here that never talks
-about water is not really working on the problem.
+about water is not working on the problem.
 
 ## Two claims to be skeptical of
 
@@ -409,7 +409,7 @@ We do not run logged, trend-tracked monitoring on single-family houses. Our
 residential thresholds are conversations rather than written numbers. We sell
 recurring programs, and a recurring program is exactly the structure that drifts
 toward calendar application if nobody is paying attention — the pressure is
-real, and the check on it is partly yours. And we have a commercial interest in
+there, and the check on it is partly yours. And we have a commercial interest in
 your problem needing a treatment, which is a bias you should assume is present
 in every company that visits you, including this one.
 

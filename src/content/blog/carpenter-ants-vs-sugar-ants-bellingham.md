@@ -91,9 +91,9 @@ means you also have a water-intrusion issue — a slow leak, poor flashing, an
 inadequate crawl-space vapor barrier, or drainage against the foundation.
 Treating the ants without fixing the moisture source is a temporary fix at best.
 
-### Damage accumulates slowly and quietly
+### Damage accumulates slowly and
 
-Carpenter ants work quietly inside walls and structural members. By the time
+Carpenter ants work inside walls and structural members. By the time
 most homeowners notice frass, hollow-sounding wood, or soft spots, the colony
 has often been active for a year or more. We have been out to Bellingham homes
 where colonies had been working through subfloor joists or roof rafters for

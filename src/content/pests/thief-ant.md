@@ -373,7 +373,7 @@ because the honest answer on a thief ant call is frequently a domestic one.
 
 What we charge for is baiting a colony in the fabric of a building — where the
 nest cannot be reached, the trail is persistent, and the food source has already
-been dealt with. That is real work with a real result and it is priced as such.
+been dealt with. That is substantial work with a definite result and it is priced as such.
 
 The line between those two is where the food is. If it is on a shelf, that is a
 cupboard problem. If it has been dealt with and the ants are still coming, the

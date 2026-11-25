@@ -48,7 +48,7 @@ export const ratonCasero: EsPlaga = {
     {
       h2: 'Edificios compartidos',
       parrafos: [
-        'El ratón es el roedor de los departamentos, los dúplex y las casas de estudiantes, y ahí un hueco entre montantes detrás de dos unidades es un solo espacio, y un ducto que sube cuatro pisos es una sola ruta. La población es del edificio, y tratar una unidad la mueve de lado. Un inquilino puede sellar el hueco detrás de su gabinete y ganar algo real; lo que no puede es cerrar la ventila del cimiento o el techo por donde entraron. Si renta, documente qué encuentra y dónde, y plantéelo como asunto del edificio. Para un dueño, el momento más barato para hacerlo bien es entre inquilinos, con la unidad vacía.',
+        'El ratón es el roedor de los departamentos, los dúplex y las casas de estudiantes, y ahí un hueco entre montantes detrás de dos unidades es un solo espacio, y un ducto que sube cuatro pisos es una sola ruta. La población es del edificio, y tratar una unidad la mueve de lado. Un inquilino puede sellar el hueco detrás de su gabinete y ganar algo que vale la pena; lo que no puede es cerrar la ventila del cimiento o el techo por donde entraron. Si renta, documente qué encuentra y dónde, y plantéelo como asunto del edificio. Para un dueño, el momento más barato para hacerlo bien es entre inquilinos, con la unidad vacía.',
       ],
     },
     {

@@ -108,7 +108,7 @@ need nothing more than the entry point closed and the attractant removed.
 mistaken for specks — and attracted to greasy and protein foods more than to
 sugar, which matters because it changes which bait works.
 
-**Carpenter ants.** Not really in this category, and easy to separate on size:
+**Carpenter ants.** Not in this category, and easy to separate on size:
 they are much larger, generally black, and their presence indoors points at
 nesting in the structure rather than foraging from outside. If the ants on your
 counter are big, that is a different page and a different job. UC IPM keeps a
@@ -187,7 +187,7 @@ and at the base of cabinets; and patience with bait.
 chalk lines, coffee grounds and vinegar barriers, which at best move a trail a
 few inches; and perimeter sprays applied without knowing where the nest is.
 
-**Mixed:** diatomaceous earth has a real mechanism and works slowly on dry
+**Mixed:** diatomaceous earth has a physical mechanism and works slowly on dry
 surfaces where ants cross repeatedly, but it is useless once damp and it will
 not reach a colony.
 

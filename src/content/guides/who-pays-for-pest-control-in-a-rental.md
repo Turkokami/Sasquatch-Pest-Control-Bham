@@ -103,7 +103,7 @@ outside the during-tenancy obligation.
 **Four: the tenant-caused exception.** Even where the ongoing duty applies, it
 does not extend to infestation the tenant caused.
 
-Three and four are where nearly every real dispute lives.
+Three and four are where nearly every dispute lives.
 
 ## The single-family carve-out, and what it does not do
 

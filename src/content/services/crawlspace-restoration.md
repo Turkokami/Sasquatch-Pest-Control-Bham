@@ -14,7 +14,7 @@ factsTable:
   - label: "Not included"
     value: "Structural framing repair, foundation work, drainage excavation, plumbing and roofing"
   - label: "Order of work"
-    value: "Rodents out and confirmed quiet first, then removal, treatment, moisture work and re-insulation"
+    value: "Rodents out and confirmed gone first, then removal, treatment, moisture work and re-insulation"
   - label: "How long it takes"
     value: "One to three days for most homes, depending on square footage, clearance and how much comes out"
   - label: "What it costs"
@@ -23,13 +23,13 @@ faqs:
   - q: "Do I actually need my crawlspace insulation replaced?"
     a: "Only if it is contaminated or has lost its function. Insulation that has been used as rodent nesting, saturated with urine, or fallen off the joists is doing nothing for you and is holding moisture against the wood. Insulation that is dry, intact and in place stays where it is — we are not going to sell you a replacement you do not need."
   - q: "Can I clean out the crawlspace myself?"
-    a: "You can, with real precautions. Do not dry-sweep or vacuum rodent droppings — disturbing dried material aerosolizes it, and deer mice in rural Whatcom County are a hantavirus consideration. Ventilate first, wet everything down with a disinfectant, and use gloves and proper respiratory protection. Most people would rather we did it."
+    a: "You can, with proper precautions. Do not dry-sweep or vacuum rodent droppings — disturbing dried material aerosolizes it, and deer mice in rural Whatcom County are a hantavirus consideration. Ventilate first, wet everything down with a disinfectant, and use gloves and proper respiratory protection. Most people would rather we did it."
   - q: "What is the difference between a vapor barrier and encapsulation?"
     a: "A vapor barrier is sheeting over the ground that stops soil moisture evaporating into the structure. Encapsulation seals the whole space including the walls and usually adds conditioning. For most Whatcom County homes a properly installed and sealed ground barrier plus working vents and drainage does the job. We will tell you honestly when the bigger system is not warranted."
   - q: "Will this help with anything besides pests?"
     a: "Yes, and it is a fair part of the value. A dry crawlspace means less decay in the framing above it, insulation that actually performs, and less moisture and odor moving up into the living space. People routinely notice the floors feel warmer afterward."
   - q: "Do I have to get rid of the rodents first?"
-    a: "Always. Restoring a crawlspace that still has an active population means installing new insulation for animals to nest in. The order is exclusion and trapping, confirm it is quiet, then clean and restore. Any company willing to re-insulate before that is done is selling you the same job twice."
+    a: "Always. Restoring a crawlspace that still has an active population means installing new insulation for animals to nest in. The order is exclusion and trapping, confirm they are gone, then clean and restore. Any company willing to re-insulate before that is done is selling you the same job twice."
   - q: "How long does it take?"
     a: "Most residential crawlspaces are one to three days depending on square footage, clearance height and how much material has to come out. Low clearance is the biggest factor — an eighteen-inch crawlspace takes considerably longer to work than one you can move around in."
 ---
@@ -85,7 +85,7 @@ there to check.
 
 This is the single most important thing on this page.
 
-**Rodents out first.** Exclusion and trapping, confirmed quiet over several
+**Rodents out first.** Exclusion and trapping, confirmed clear over several
 visits. New insulation installed while a population is still active is nesting
 material you paid for. Any company willing to re-insulate before the animals are
 gone is arranging to sell you the same job twice.
@@ -161,7 +161,7 @@ sensible drainage, this is the right answer for most homes here and it is
 dramatically cheaper.
 
 **Encapsulation** seals the entire space — ground and walls — and generally adds
-a dehumidifier or conditioned air. It has real applications: a crawlspace with a
+a dehumidifier or conditioned air. It has its uses: a crawlspace with a
 persistent groundwater problem that cannot be drained, or one where ducts and
 equipment live and need to be inside the thermal envelope.
 
@@ -205,7 +205,7 @@ does that work well.
 
 **Older Bellingham, above all.** The Lettered Streets, Columbia, Sunnyland, York and South Hill stock. Post-and-pier, low clearance, bare soil or a barrier from another
 era, and a century of gutter history. The highest concentration of this work in
-the county, and often the only real fix for a recurring insect problem upstairs.
+the county, and often the only fix for a recurring insect problem upstairs.
 
 **Around Lake Whatcom** — Sudden Valley, Silver Beach, Edgemoor. Sloped lots
 push water toward foundations, and 1970s construction against a forest edge
@@ -248,10 +248,10 @@ within a few feet of the structure.
 
 **Occasionally, the unexpected.** Abandoned ducting, a forgotten pet, stored
 belongings from a previous owner, and on older properties the occasional buried
-oil line. We tell you what we find rather than quietly bagging it.
+oil line. We tell you what we find rather than silently bagging it.
 
 Material is removed from the property. Nothing is pushed into a corner and
-covered with new sheeting, which is a real practice and one you would never see.
+covered with new sheeting, which is a common practice and one you would never see.
 
 ## The photographs
 
@@ -295,7 +295,7 @@ at its driest.
 
 Winter is workable and occasionally better for diagnosis, because a drainage
 problem is actually running in February rather than sitting invisible in August.
-If you want to know what your crawlspace really does, that is when to look.
+If you want to know what your crawlspace does, that is when to look.
 
 ## Attics, which are the same job upside down
 

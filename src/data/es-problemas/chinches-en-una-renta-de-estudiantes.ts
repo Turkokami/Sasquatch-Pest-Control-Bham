@@ -19,7 +19,7 @@ export const chinchesEnUnaRentaDeEstudiantes: EsProblema = {
       h2: 'Dos cosas lo hacen distinto',
       parrafos: [
         'La chinche se comporta igual en todas partes; lo que cambia en una renta de estudiantes es el contexto. Lo primero es el edificio: casi toda la vivienda de estudiantes en Bellingham es compartida, una casa de cuatro o cinco recámaras, un dúplex, una casa vieja dividida. La chinche no respeta el límite entre una recámara y otra, y pasa por el zoclo, bajo las puertas y por los huecos de tubos y cables.',
-        'Lo segundo es que nadie es claramente dueño del problema. En una renta con varios inquilinos y un dueño hay una pregunta real sobre quién organiza, quién paga y quién prepara, y suele tardar más en resolverse que el tratamiento.',
+        'Lo segundo es que nadie es claramente dueño del problema. En una renta con varios inquilinos y un dueño hay una pregunta seria sobre quién organiza, quién paga y quién prepara, y suele tardar más en resolverse que el tratamiento.',
       ],
     },
     {

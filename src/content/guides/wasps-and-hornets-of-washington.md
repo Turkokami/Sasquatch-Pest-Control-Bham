@@ -47,7 +47,7 @@ steps:
   - "Leave anything you cannot reach from the ground, and leave anything in a wall void entirely."
   - "Do not plug the hole of a nest in a wall; blocked wasps come through the ceiling instead of giving up."
   - "If nobody is being stung and the nest is away from paths and doors, consider leaving it — the colony dies at the first hard frost."
-  - "Call us for ground nests near a path, wall nests, anything above head height, and anywhere a stung person would be in real trouble."
+  - "Call us for ground nests near a path, wall nests, anything above head height, and anywhere a stung person would be in serious trouble."
 faqs:
   - q: "What wasps live in Washington state?"
     a: "WSU Hortsense names German, western and aerial yellowjackets, the bald-faced hornet, the introduced European paper wasp and the native golden paper wasp, plus a large number of solitary potter and mason wasps. Mud daubers and digger wasps are here too. Only the first group is responsible for most stings."
@@ -62,7 +62,7 @@ faqs:
   - q: "Why are wasps so aggressive in August and September?"
     a: "Because the colony is at its largest and its diet has changed. WSU describes the queen dying in late summer and the workers switching from hunting protein to seeking sugar, which is what puts them on your drink and in your fruit tree. More wasps, closer to people, with less to do."
   - q: "Do wasps do any good?"
-    a: "Quite a lot. WSU describes vespids as dominant generalist pollinators, and paper wasps hunt caterpillars and beetle larvae to feed their young. A paper wasp nest under an eave away from a doorway is doing useful work in the garden, which is a real argument for leaving some nests alone."
+    a: "Quite a lot. WSU describes vespids as dominant generalist pollinators, and paper wasps hunt caterpillars and beetle larvae to feed their young. A paper wasp nest under an eave away from a doorway is doing useful work in the garden, which is an argument for leaving some nests alone."
   - q: "Will a wasp nest come back to the same place next year?"
     a: "The nest itself is not reused. What happens is that the same sheltered spot gets chosen again, so an eave, a wall cavity or a bank that produced a nest this year is likely to produce one next year. That is a reason to deal with the access rather than only the nest."
 ---
@@ -154,7 +154,7 @@ in the open, people meet it by accident. The species page is at
 Native paper wasps and the **golden paper wasp**, which WSU describes as golden
 yellow and active April to October, are far more easygoing. WSU notes paper
 wasps generally do not sting unless the nest is somewhere people pass closely.
-A paper wasp comb under a quiet eave is a genuine case for doing nothing.
+A paper wasp comb under a sheltered eave is a genuine case for doing nothing.
 
 ## Black wasps in Washington, and what they are
 
@@ -181,7 +181,7 @@ nest tells you immediately which you have.
 
 **Potter and mason wasps.** WSU describes them as mostly black or brown with
 yellow or white markings, building mud or sand brood chambers in existing
-cavities. Solitary again.
+cavities. These are solitary too.
 
 The pattern worth noticing: if it is black, slender and alone, it is almost
 certainly solitary and almost certainly not a problem. If it is black and white,
@@ -271,7 +271,7 @@ never reused. The seasonal picture across every pest here is in
 
 Not every nest is a job, and we would rather say which is which.
 
-**Leave it, usually:** a paper wasp comb under a quiet eave away from doors; a
+**Leave it, usually:** a paper wasp comb under a sheltered eave away from doors; a
 bald-faced hornet nest high in a tree at the back of a property; any nest found
 in October that will be dead within weeks; mud dauber tubes; anything solitary.
 

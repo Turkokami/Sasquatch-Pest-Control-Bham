@@ -40,7 +40,7 @@ export const pececilloDePlata: EsPlaga = {
       ],
     },
     {
-      h2: 'Lo que comen, y dónde la pérdida es real',
+      h2: 'Lo que comen, y dónde la pérdida importa',
       parrafos: [
         'La casa no: almidón, y lo que tiene almidón. El papel lo raspan en la superficie en lugar de morderlo, dejando un parche raspado irregular y agujeritos desgarrados, no el agujero redondo y limpio de un insecto que mastica; prefieren el papel satinado y recubierto. Las encuadernaciones y su pegamento, que Ohio State enlista, y en un librero de un sótano húmedo se ve como una orilla dentada y deshilachada en el lomo. El engrudo del papel tapiz, que en las casas viejas de la ciudad quiere decir papel original levantándose en las uniones porque se están comiendo lo de atrás. Fotos y documentos, la pérdida de archivo que no se recupera. Telas naturales con almidón o apresto — algodón, lino, seda, rayón —, primero lo que se guardó húmedo o almidonado, pero no la lana, que es de otro grupo de insectos. Y comida seca en empaques abiertos. Para casi todas las casas es una molestia y nada más; para una casa con cajas de papeles familiares en un sótano sin acondicionar, una biblioteca de trabajo o una colección de textiles, la pérdida es acumulativa, callada y permanente.',
         'La tina es una cubeta: no pueden agarrarse de una superficie vertical vidriada, así que entran al cuarto húmedo, caen por la orilla de la tina o el lavabo y no pueden salir, y todo lo que pasó en la noche sigue ahí a las siete de la mañana. Tres en la tina no quiere decir tres en la casa, ni treinta: quiere decir que hay un refugio húmedo a pocos pasos de ese baño — casi siempre un hueco de pared alrededor de la plomería, a veces el espacio bajo el piso de justo abajo.',

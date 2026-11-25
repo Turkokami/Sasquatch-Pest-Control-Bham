@@ -65,7 +65,7 @@ the original clearing, a standing dead limb, an old landscape timber, a rotting
 fence post, the woodpile. The satellites are what people see indoors.
 
 Treat the satellites and leave the main colony sitting twenty feet away in the
-garden, and you buy a quiet couple of months. That is the whole reason this work
+garden, and you buy a couple of months without ants. That is the whole reason this work
 gets a reputation for coming back, and it is why the first visit here is
 investigative before it is anything else.
 
@@ -153,7 +153,7 @@ planting back off the walls, cutting the branch that bridges to the roof, and
 re-establishing a dry band at the base of the siding.
 
 Where homeowners do that work, treatments hold. Where they do not, we are back,
-and we would rather say so than take the repeat booking quietly.
+and we would rather say so than take the repeat booking without comment.
 
 ## The wooded edge
 
@@ -213,7 +213,7 @@ than a soiled patch, and compressed, fouled material has lost most of the value
 somebody is paying to heat against.
 
 In an attic that shows up as ceiling staining, a smell that is hard to place, and
-a heating bill that has quietly climbed. In a crawlspace it shows up as batts
+a heating bill that has slowly climbed. In a crawlspace it shows up as batts
 hanging loose, because they took on moisture and lost their grip — and that loose
 material is then both nesting habitat and a moisture problem of its own.
 
@@ -306,11 +306,11 @@ soffit line, the branches reaching the roof, the stumps and dead wood on the lot
 the firewood, and the retaining structures.
 
 Then underneath — properly, with a light, working to the low end of a stepped
-crawl rather than reporting from the hatch. Then the attic. Then inside.
+crawl rather than reporting from the hatch. Then the attic, and then inside.
 
 You get a plain account of what we found and what is causing it, what needs doing
 now, what can wait, and which items are carpentry, drainage or tree work rather
-than a pest treatment. On a fifty-year-old hillside house a real share of the
+than a pest treatment. On a fifty-year-old hillside house a large share of the
 answer is not work we get paid for, and we say it anyway.
 
 Looking is free for every pest we handle other than bed bug verification, which

@@ -50,7 +50,7 @@ the evidence.
 In Whatcom County that puts silverfish alongside
 [moisture ants](/services/ant-control/),
 [dampwood termites](/services/termite-control/) and anobiid beetles on the same
-list — a group of pests that are really telling you about water. Roughly thirty-five inches of rain a year across a long gray season, and
+list — a group of pests that are telling you about water. Roughly thirty-five inches of rain a year across a long gray season, and
 crawlspaces that are frequently unsealed, is the whole explanation.
 
 ## What you are looking at
@@ -183,7 +183,7 @@ textiles out of damp spaces into sealed containers.
 
 **Follow up on a realistic timeline**, understanding that the decline is gradual.
 
-## The moisture work, which is the real treatment
+## The moisture work, which is the main treatment
 
 If you do only one thing, do this.
 
@@ -239,7 +239,7 @@ Quoted from the visit, and the shape of the number depends entirely on the cause
 Where the reservoir is a bathroom void and the fix is treatment plus a ventilation
 correction, it is a modest job. Where the reservoir is a crawlspace with no vapor
 barrier and standing water, the pest treatment is the small part and the
-[restoration](/services/crawlspace-restoration/) is the real project.
+[restoration](/services/crawlspace-restoration/) is the main project.
 
 We will tell you which one you have, and where the honest answer is "buy a
 dehumidifier and fix the bath fan," that is what the estimate will say.
@@ -409,7 +409,7 @@ the water heater rather than under the floor.
 
 ## Related work
 
-The real work is usually
+The main work is usually
 [crawlspace cleanout and restoration](/services/crawlspace-restoration/) and
 [exclusion and repairs](/services/exclusion-and-repairs/). The same moisture
 supports [moisture ants](/services/ant-control/) and

@@ -181,7 +181,7 @@ They find shelter by warmth, which is why they end up on the sunlit elevations,
 and Utah State's exclusion advice specifically calls out sealing on the south and
 west-facing sides for exactly that reason.
 
-Once inside they go quiet in a wall cavity, an attic or the space behind a soffit.
+Once inside they settle in a wall cavity, an attic or the space behind a soffit.
 A warm spell rouses some of them, they move toward light, and they arrive in your
 living room in January with no visible route and no explanation — which is the
 sequence that convinces people something is breeding in the structure.
@@ -359,7 +359,7 @@ reasonably concludes the place is overrun. It is the same rate of entry as a
 lived-in house; only the collection method differs.
 
 Year-to-year swings are ordinary too. A warm dry late summer produces a heavy
-autumn, and a cool wet one can pass almost without notice, so a quiet season is
+autumn, and a cool wet one can pass almost without notice, so a light season is
 weather rather than evidence that something worked.
 
 ## What actually happens when we come out
@@ -393,7 +393,7 @@ call, whether or not anything follows.
 **Foggers and total-release products.** They do not reach a wall void, which is
 where the insects are.
 
-**Ultrasonic devices.** Nothing.
+**Ultrasonic devices.** They do nothing.
 
 **A winter interior treatment.** They are dormant. There is nothing for it to act
 on.

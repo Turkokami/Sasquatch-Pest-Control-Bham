@@ -222,7 +222,7 @@ State's [Solve Pest Problems](https://solvepestproblems.oregonstate.edu/), which
 is written for this corner of the country.
 
 Practically, clearing accumulated wood and debris off the ground near the
-building is a real part of treatment on the Point rather than a suggestion, and
+building is a large part of treatment on the Point rather than a suggestion, and
 it is not something we charge for saying.
 
 ## Wasps under the eaves

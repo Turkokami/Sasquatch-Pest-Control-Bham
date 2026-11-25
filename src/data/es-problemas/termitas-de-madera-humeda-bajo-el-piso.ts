@@ -75,7 +75,7 @@ export const termitasDeMaderaHumedaBajoElPiso: EsProblema = {
   faqs: [
     {
       q: '¿Son tan serias como otras termitas?',
-      a: 'Las limita la humedad, que es una restricción real, pero la madera que ocupan es estructural: soleras, vigas y postes. El daño importa por dónde está, y porque la pudrición que las dejó entrar también importa.',
+      a: 'Las limita la humedad, que es una restricción, pero la madera que ocupan es estructural: soleras, vigas y postes. El daño importa por dónde está, y porque la pudrición que las dejó entrar también importa.',
     },
     {
       q: '¿Pueden tratarlas si otro las identificó?',

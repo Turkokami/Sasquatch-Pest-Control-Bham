@@ -74,7 +74,7 @@ long-term food source that attracts ants, wax moths, [carpet beetles](/pest-libr
 Households that pay to have a wall colony poisoned frequently pay again a year
 later for a considerably messier job.
 
-**Ecologically, it is a bad trade.** Pollinator pressure is real, and destroying a
+**Ecologically, it is a bad trade.** Pollinators are under pressure, and destroying a
 functioning colony that a beekeeper would happily collect is difficult to justify
 when a better outcome exists.
 
@@ -156,7 +156,7 @@ Every spring we get calls about these, and they need no service at all.
 **Mason bees** are small, dark or metallic, and solitary — every female is her own
 queen with her own nest, and they have no colony to defend. They nest in existing
 holes: hollow stems, beetle exit holes, and the tubes people put up specifically
-to attract them. They are early-season pollinators of real value in orchards and
+to attract them. They are early-season pollinators of significant value in orchards and
 gardens, they do not damage wood, and they are close to incapable of a meaningful
 sting.
 

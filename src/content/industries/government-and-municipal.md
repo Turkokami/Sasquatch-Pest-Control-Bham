@@ -43,11 +43,7 @@ faqs:
 A municipal estate is not a building type. It is a portfolio, and almost every
 category on this site is somewhere inside it.
 
-City hall and administrative offices. A library. A community or senior center.
-Recreation facilities and a pool. Public works and the maintenance yard. Fleet
-and equipment storage. Parks, shelters, restrooms and concession buildings.
-Sometimes a museum or a historic structure with its own constraints. Sometimes
-a kitchen. Sometimes housing.
+It usually takes in city hall and administrative offices, a library, a community or senior center, recreation facilities and a pool, public works and the maintenance yard, fleet and equipment storage, and parks, shelters, restrooms and concession buildings. Sometimes it also includes a museum or a historic structure with its own constraints, a kitchen, or housing.
 
 Each of those has a different pest picture, a different access pattern and a
 different audience, and the program has to hold across all of it while being
@@ -162,7 +158,7 @@ exterior conditions — waste, vegetation against walls, stored material — tha
 keep pressure on.
 
 The estate view is what makes this efficient. Findings across a dozen buildings
-show a pattern: which structures are generating problems, which are quiet, and
+show a pattern: which structures are generating problems, which are clear, and
 where the capital money should go. A program that produces twelve identical
 monthly slips tells a facilities director nothing they can act on and cannot
 support a budget request.

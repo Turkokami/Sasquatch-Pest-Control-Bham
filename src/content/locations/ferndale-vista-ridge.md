@@ -100,7 +100,7 @@ softened framing that [carpenter ants](/pest-library/carpenter-ant/) prefer. [Mo
 about wet wood rather than a pest in their own right — are rare up here and
 common on the valley floor.
 
-That is real, and it means a large part of what we do downtown is simply not
+That difference matters, and it means a large part of what we do downtown is simply not
 needed in Vista Ridge.
 
 What replaces it is exposure. An elevated, open, sunlit site with wind across
@@ -161,7 +161,7 @@ a specification that closes it can be applied to all of them.
 Right now the planting here is small, set back and open, and the foundation
 line can be seen and reached the whole way round most of these houses.
 
-That is a real advantage and it is temporary.
+That is an advantage and it is temporary.
 
 Every mature neighborhood in this county has the same story: planting installed
 when the houses were new, allowed to grow, and now hard against the siding over

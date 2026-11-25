@@ -28,7 +28,7 @@ Before thinking about specific costs, understanding price variation is essential
 
 **Treatment approach** varies by pest species — baiting, exclusion, chemical treatment, heat treatment, and physical removal each carry distinct costs.
 
-**Access** is a real and often overlooked factor. A nest reachable from the ground is straightforward. The same nest inside a wall void, under a roofline, or at the far end of a tight crawl space takes longer and costs more.
+**Access** is an often overlooked factor. A nest reachable from the ground is straightforward. The same nest inside a wall void, under a roofline, or at the far end of a tight crawl space takes longer and costs more.
 
 **One-off versus ongoing service** changes the shape of the price entirely. A single targeted treatment is priced as one job. A recurring preventive program spreads a lower per-visit cost across the year, and is usually better value for a property with continuous pressure.
 

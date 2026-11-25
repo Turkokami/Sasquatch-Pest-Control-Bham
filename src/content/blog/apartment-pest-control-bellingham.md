@@ -10,7 +10,7 @@ When pests show up in a Bellingham apartment or rental this spring, the fastest 
 
 ## Who is responsible for pest control in a Bellingham rental — the landlord or the tenant?
 
-In many cases, ongoing pest control in a rental is the **landlord's responsibility**, but there are real exceptions. Washington's Residential Landlord-Tenant Act (RCW 59.18) generally requires landlords to keep rental housing fit to live in, which includes dealing with infestations that weren't caused by the tenant — think rodents entering through gaps in the building envelope or ants trailing in from a shared wall. Single-family rentals are treated differently from multi-unit buildings, which is one of the details people most often get wrong.
+In many cases, ongoing pest control in a rental is the **landlord's responsibility**, but there are exceptions. Washington's Residential Landlord-Tenant Act (RCW 59.18) generally requires landlords to keep rental housing fit to live in, which includes dealing with infestations that weren't caused by the tenant — think rodents entering through gaps in the building envelope or ants trailing in from a shared wall. Single-family rentals are treated differently from multi-unit buildings, which is one of the details people most often get wrong.
 
 Responsibility can shift to the tenant when the tenant's own actions clearly caused the problem — leaving food out, letting garbage pile up, or bringing in a used couch that turned out to be infested. Because the line depends on your lease and the specifics, both sides should document everything in writing and check the lease terms and current Washington law rather than assume. This is general information, not legal advice.
 

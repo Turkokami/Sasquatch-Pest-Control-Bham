@@ -59,7 +59,7 @@ faqs:
   - q: "Could this be structural?"
     a: "It can become structural where a population has run for many years in a member that is also wet enough to be decaying. The insects and the decay fungi take capacity out of the same timber at the same time, and by then the two losses cannot be separated by looking."
   - q: "Will painting the wood stop them?"
-    a: "It helps on bare timber that is not yet infested, because a sealed surface gives a female nowhere to lay. It does nothing for larvae already inside, and it is largely irrelevant in a crawlspace, where the framing is unfinished and the real variable is how wet the space is."
+    a: "It helps on bare timber that is not yet infested, because a sealed surface gives a female nowhere to lay. It does nothing for larvae already inside, and it is largely irrelevant in a crawlspace, where the framing is unfinished and the variable that matters is how wet the space is."
 ---
 
 ## The name on the page is the wrong name
@@ -358,7 +358,7 @@ handbooks call sodium borates highly effective against structure-infesting
 anobiids while noting it can take years to bring a population down, which fits a
 five-year larval stage exactly. Borates want bare, accessible wood, which is what
 crawlspace framing is, and they do not pass through paint or a sealer, which is
-a real limitation and worth stating rather than glossing.
+a limitation and worth stating rather than glossing.
 
 Then the part that actually decides the outcome:
 

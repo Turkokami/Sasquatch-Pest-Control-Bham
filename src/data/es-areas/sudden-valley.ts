@@ -28,7 +28,7 @@ export const suddenValley: EsLugar = {
     {
       h2: 'La cuenca, que lo condiciona todo',
       parrafos: [
-        'Sudden Valley está en la cuenca del lago Whatcom, el depósito de agua potable de Bellingham, y buena parte de la comunidad drena hacia él. Lo tomamos como un límite real: empezamos por la exclusión y las colocaciones contenidas y no por nada al voleo, sobre todo del lado del lago; revisamos el pronóstico antes de trabajar afuera; los productos para roedores van en estaciones cerradas y protegidas de la lluvia, escogidos para limitar el riesgo a los búhos, halcones y águilas que cazan la misma población; y cuando la respuesta es el drenaje, una canaleta o sacar la madera mojada, lo decimos aunque no nos paguen.',
+        'Sudden Valley está en la cuenca del lago Whatcom, el depósito de agua potable de Bellingham, y buena parte de la comunidad drena hacia él. Lo tomamos como un límite: empezamos por la exclusión y las colocaciones contenidas y no por nada al voleo, sobre todo del lado del lago; revisamos el pronóstico antes de trabajar afuera; los productos para roedores van en estaciones cerradas y protegidas de la lluvia, escogidos para limitar el riesgo a los búhos, halcones y águilas que cazan la misma población; y cuando la respuesta es el drenaje, una canaleta o sacar la madera mojada, lo decimos aunque no nos paguen.',
       ],
     },
     {
@@ -59,11 +59,11 @@ export const suddenValley: EsLugar = {
     },
     {
       q: '¿Estar en la cuenca del lago Whatcom cambia lo que usan?',
-      a: 'Sí, y lo tomamos como un límite real. Preferimos la exclusión, la corrección del hábitat y las colocaciones contenidas sobre cualquier cosa al voleo, revisamos el clima antes de trabajar afuera y somos francos cuando la respuesta correcta es arreglar el drenaje y no aplicar algo.',
+      a: 'Sí, y lo tomamos como un límite. Preferimos la exclusión, la corrección del hábitat y las colocaciones contenidas sobre cualquier cosa al voleo, revisamos el clima antes de trabajar afuera y somos francos cuando la respuesta correcta es arreglar el drenaje y no aplicar algo.',
     },
     {
       q: '¿Necesito aprobación de la asociación para la exclusión?',
-      a: 'Muchas veces, para lo que cambie la apariencia exterior: tapas de ventila, mallas, redes, capuchones de chimenea. Estamos acostumbrados. Díganos pronto si hace falta para especificar el trabajo de una forma que probablemente se apruebe.',
+      a: 'Muchas veces, para lo que cambie la apariencia exterior: tapas de ventila, mallas, redes, capuchones de chimenea. Estamos acostumbrados a hacerlo. Díganos pronto si hace falta para especificar el trabajo de una forma que probablemente se apruebe.',
     },
     {
       q: '¿Qué baja de la orilla del bosque?',

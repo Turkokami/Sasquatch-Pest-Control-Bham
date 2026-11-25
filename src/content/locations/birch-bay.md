@@ -122,7 +122,7 @@ at several times the cost and with far more disruption to the calendar.
 Bed bugs are the one service where our assessment is not free. There is a
 verification fee, and it is credited against the treatment if you go ahead. We
 charge it because verification is slow, careful work and because free bed bug
-callouts attract speculative visits that push out real appointments. Everything
+callouts attract speculative visits that push out booked appointments. Everything
 else we handle here costs nothing to have us look at.
 
 ## Wasps, and why vacant property gets the worst of it
@@ -163,8 +163,7 @@ here: a bright white fixture on a summer night is doing more to create a spider
 problem than anything else on the property, and changing the fixture is more
 effective than treating for the spiders.
 
-Salt and wind work on the building envelope continuously. Vent screens corrode.
-Fasteners fail. Sealants degrade. Trim and flashing loosen. Every one of those
+Salt and wind work on the building envelope continuously. Vent screens corrode, fasteners fail, sealants degrade, and trim and flashing loosen. Every one of those
 is an entry point, and out here they open faster than they do a few miles
 inland. Any exclusion work worth paying for on this shoreline has to be
 specified for the exposure — stainless mesh and appropriate fasteners rather
@@ -196,7 +195,7 @@ over bare earth the water is usually not hard to find.
 The rental calendar and the pest calendar are the same calendar, which is what
 makes planning possible here.
 
-**Late winter.** The quiet stretch, and the right time for anything disruptive.
+**Late winter.** The slow stretch, and the right time for anything disruptive.
 Overwintering insects appear at sunny windows on mild afternoons. Rodent
 activity indoors is at its peak in properties that were closed up in the autumn,
 and nobody is there to hear it.
@@ -300,8 +299,7 @@ it up the week.
 A visit starts outside and underneath, because on this housing stock that is
 where the answer nearly always is. We look at the skirting and the underfloor
 access, the deck and what is under it, the vents, the additions and their
-junctions, the roofline, and the state of any previous exclusion attempt. Then
-inside.
+junctions, the roofline, and the state of any previous exclusion attempt. Then we go inside.
 
 You get a straight account of what we found and what is driving it, what needs
 doing now, what can wait, and which items belong to a contractor rather than to

@@ -72,7 +72,7 @@ insects feed on animal fibers because those fibers contain a protein the larvae
 can digest. Cotton, linen, viscose, nylon, polyester and acrylic contain none of
 it, and a larva put on a clean cotton shirt will starve on it.
 
-That is why the damage in a real infestation is so selective, and why households
+That is why the damage in an infestation is so selective, and why households
 describe the pattern as though it were malicious. The wool coat is ruined. The
 cotton shirts hanging against it are perfect. A blended sock with thirty percent
 wool is grazed in patches and the rest of the fiber is left as a skeleton.
@@ -104,7 +104,7 @@ The Pacific Northwest handbook specifically flags caution with imported woolens
 and recommends dry cleaning them before they go into storage.
 
 The other route is the one covered further down: a bird or rodent nest already
-inside the structure, quietly supplying feathers and hair for years.
+inside the structure, steadily supplying feathers and hair for years.
 
 Both of those are findable. Neither of them is fixed by treating a room, which is
 why this page spends more words on searching than on spraying.
@@ -124,7 +124,7 @@ Two behavioral facts matter more than the color.
 to lights. Kentucky says adults are seldom seen because they avoid light and
 prefer dark undisturbed areas such as closets, basements and attics. So a moth
 tapping at a lit window, circling a lamp or gathering on a porch light in July is
-almost certainly an outdoor species that came through a door. Discount it.
+almost certainly an outdoor species that came through a door. You can discount it.
 
 **They do not eat.** Kentucky states that clothes moth adults do not feed and
 cause no injury to fabrics. The adult exists to mate and lay eggs. This is the
@@ -212,8 +212,8 @@ Then again in October, when the same items go back in — which is the moment th
 actually decides what next February looks like.
 
 The long gray season also keeps a great deal of textile in storage rather than in
-use, and that is the raw material this insect needs. A drier climate with a real
-summer gets things aired, shaken and moved. Ours does not.
+use, and that is the raw material this insect needs. A drier climate with a
+hot summer gets things aired, shaken and moved. Ours does not.
 
 ## Clothes moth or carpet beetle
 
@@ -246,8 +246,8 @@ first.
 
 The casemaking clothes moth, *Tinea pellionella*, is close to the same size. UC
 IPM describes its wings as more brownish with faint dark colored spots, and the
-hairs on its head as lighter than those of the webbing species. The real
-difference is the larva: it builds a small silken case and carries it around as
+hairs on its head as lighter than those of the webbing species. The
+clearest difference is the larva: it builds a small silken case and carries it around as
 it feeds, enlarging the case as it grows, so what you find is not a mat of silk
 on the fabric but a little tapered tube lying on the surface or attached to it,
 often colored by whatever the larva has been eating.
@@ -409,7 +409,7 @@ naming what counts as evidence and what does not.
 a damaged edge so you have something to compare against, because memory is
 unreliable about whether a hole has grown.
 
-**Monitors quiet across consecutive checks**, not one. A single empty trap in a
+**Monitors empty across consecutive checks**, not one. A single empty trap in a
 cool month means nothing much.
 
 **Storage that opens clean a season later.** This is the strongest signal

@@ -12,13 +12,13 @@ faqs:
   - q: "Why do we keep getting insects in stored product?"
     a: "Because they arrived inside the product rather than through a door. Beetles and moths in grain, flour, seed, pet food and dried goods come in on a pallet, so treating a building perimeter accomplishes nothing. The work is tracing back to the source lot."
   - q: "Do you provide documentation for audits?"
-    a: "Yes, and for most Burlington commercial accounts that is half the value. Devices mapped and numbered, service records that follow a logical sequence, and findings written plainly — including the housekeeping ones we could quietly service around instead."
+    a: "Yes, and for most Burlington commercial accounts that is half the value. Devices mapped and numbered, service records that follow a logical sequence, and findings written plainly — including the housekeeping ones we could silently service around instead."
   - q: "What drives rodent pressure on a retail site?"
     a: "Usually something outside the building. Landscaped islands, vegetated margins, the strip behind a fence line nobody manages, and waste enclosures that cannot be closed properly. The interior problem is generally a symptom of the exterior one."
   - q: "Do you work on residential in Burlington too?"
     a: "Yes. The newer subdivisions have tight envelopes with a handful of unsealed service penetrations, and open ground behind them that empties at harvest. It is a different job from the commercial corridor and usually a straightforward one."
   - q: "How quickly can you get here?"
-    a: "Burlington sits on scheduled route days rather than same-day availability, because it is a real drive from Bellingham. For a commercial account we build the schedule around your operating hours, which usually matters more than the calendar day does."
+    a: "Burlington sits on scheduled route days rather than same-day availability, because it is a long drive from Bellingham. For a commercial account we build the schedule around your operating hours, which usually matters more than the calendar day does."
   - q: "Is there a charge to come and quote?"
     a: "No, for every pest except bed bugs, which carry a verification fee credited against treatment if you proceed. That applies to commercial buildings as well — we will come, walk it properly and put a scope in writing."
 ---
@@ -57,7 +57,7 @@ looks until a tile stains.
 
 **Waste enclosures.** Usually a masonry corral with gates that no longer close
 against the ground, compactors with a leaking seal, and cardboard staged outside
-because the baler is full. This is very often the real driver of everything
+because the baler is full. This is very often the main driver of everything
 else, and it is the thing most likely to be someone else's contract to fix.
 
 **Landscaping and yard margins.** Islands, berms, the vegetated strip along a
@@ -104,7 +104,7 @@ The work is finding the source lot. That means tracing back through stock,
 starting with whatever has been sitting longest and furthest back, checking
 spillage in racking seams, under pallets and in the corners of a storage area,
 and being systematic rather than hopeful. In most warehouses the source is a
-single damaged sack or a spill in a corner that has been quietly producing
+single damaged sack or a spill in a corner that has been steadily producing
 adults for months.
 
 After that it is stock rotation, sealed containers where practical, cleaning
@@ -216,7 +216,7 @@ problem stops within a fortnight.
 
 Both develop fast enough in warm weather that a site missed on Monday is
 producing adults before the weekend. That short cycle is why a fly program built
-on adult knockdown alone quietly fails every summer, and why we spend the first
+on adult knockdown alone fails every summer, and why we spend the first
 visit looking for sources rather than spraying.
 
 ## Roof and mechanical spaces
@@ -325,7 +325,7 @@ receiving times, which usually matters more than which calendar day it is.
 Commercial work here is a written program rather than a series of visits: mapped
 and numbered placements, records that a third party can follow, realistic goals
 stated up front for buildings that cannot be sealed, and findings that include
-the housekeeping and maintenance items rather than quietly routing around them.
+the housekeeping and maintenance items rather than silently routing around them.
 
 Residential work starts outside with the penetrations, the grade, the vents and
 what the ground behind the property is doing, then underneath, then inside.

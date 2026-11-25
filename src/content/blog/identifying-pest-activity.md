@@ -56,7 +56,7 @@ DIY solutions can seem like the cheaper route, but they rarely address the root 
 
 - Recurring infestations, because the entry points were never sealed
 - Health hazards from improper use of pesticides
-- Structural damage that worsens quietly over time
+- Structural damage that worsens over time
 - Repeated spending on DIY attempts that don't hold
 
 Working with a professional means the conditions, the access points, and the population all get addressed together rather than one at a time.

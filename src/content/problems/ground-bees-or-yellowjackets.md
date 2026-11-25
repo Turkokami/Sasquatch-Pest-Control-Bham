@@ -16,7 +16,7 @@ steps:
   - "If it is yellowjackets and the hole is near a path, a gate or anywhere a mower goes, call us rather than dealing with it at dusk yourself."
 faqs:
   - q: "What are ground bees?"
-    a: "Usually solitary mining bees. Each female digs her own short burrow in bare, well-drained soil, provisions it and leaves, so what looks like a colony is really dozens of separate households sharing good ground. They are among the most effective pollinators we have and they are not defending a nest."
+    a: "Usually solitary mining bees. Each female digs her own short burrow in bare, well-drained soil, provisions it and leaves, so what looks like a colony is dozens of separate households sharing good ground. They are among the most effective pollinators we have and they are not defending a nest."
   - q: "How do I know if it is bees or yellowjackets in my lawn?"
     a: "Traffic and holes. Many small holes with one insect each, moving unhurriedly, means mining bees. One hole with a continuous stream of insects in and out, moving fast and directly, means a yellowjacket nest. The insects themselves differ too: bees are furry and rounded, yellowjackets smooth and banded."
   - q: "Do ground bees sting?"
@@ -43,13 +43,13 @@ nothing at all.
 
 The two-minute test:
 
-**Many separate small holes, each with one insect, unhurried.** Mining bees.
+**Many separate small holes, each with one insect, unhurried.** These are mining bees.
 Harmless, seasonal, and finished within weeks.
 
 **One hole, with insects streaming in and out continuously and flying fast and
 straight.** A yellowjacket nest. This is the one that matters.
 
-**One hole, modest traffic, large furry insects.** Bumble bees. Small colony,
+**One hole, modest traffic, large furry insects.** These are bumble bees. Small colony,
 not aggressive, leave it.
 
 ## Mining bees, which are what ground bees usually means
@@ -69,7 +69,7 @@ spring looking for females and account for most of the alarming activity people
 notice, cannot sting at all.
 
 The season is short. Adults are above ground for a few weeks in spring, and by
-early summer the holes are quiet and the lawn has grown over them. The usual
+early summer the holes are inactive and the lawn has grown over them. The usual
 best response is to do nothing and let it happen.
 
 If you want fewer next year, the answer is grass rather than insecticide.
@@ -90,7 +90,7 @@ yellowjacket nest — and they are not inclined to defend it aggressively.
 We do not treat them. That is set out on
 [bee removal](/services/bee-removal/) and on
 [bumble bee](/pest-library/bumble-bee/), and it is policy rather than a favor:
-bumble bee populations are under real pressure and a nest under a shed in July
+bumble bee populations are under pressure and a nest under a shed in July
 is dead of natural causes by October. If a nest is somewhere genuinely
 unworkable — a doorway, a child's sandpit — call us and we will talk about what
 is actually possible, which is usually less than people hope.
@@ -138,7 +138,7 @@ almost certainly bees. The same lawn in late August is a different question.
 
 ## What to do, by situation
 
-**Mining bees, any month.** Nothing. Let the few weeks pass, then thicken the
+**Mining bees, any month.** Do nothing. Let the few weeks pass, then thicken the
 grass if you would rather not have them next year.
 
 **Bumble bees, anywhere reasonable.** Nothing, and the colony is gone by
@@ -146,7 +146,7 @@ autumn.
 
 **Yellowjackets away from paths and doorways.** A legitimate judgment call.
 The colony dies at the first hard frost and nothing overwinters in the nest. If
-nobody has to go near it, leaving it is a real option.
+nobody has to go near it, leaving it is an option.
 
 **Yellowjackets near a path, a gate, a door, a play area or anywhere a mower
 goes.** Deal with it. This is the configuration that injures people.

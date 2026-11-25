@@ -12,7 +12,7 @@ At Sasquatch Pest Control, we work with commercial and institutional properties 
 
 ## Why is winter such a high-pressure season for large facilities?
 
-The same cold that sends rodents into homes sends them into commercial and government buildings — but facilities present a much larger, more complex target. A single warehouse or plant can have dozens of exterior doors, loading docks that stand open for deliveries, expansive rooflines, and a web of utility and pipe penetrations, each a potential entry point. Add interior warmth, food sources in cafeterias or production areas, and quiet, undisturbed storage, and you have an environment pests actively seek out in winter.
+The same cold that sends rodents into homes sends them into commercial and government buildings — but facilities present a much larger, more complex target. A single warehouse or plant can have dozens of exterior doors, loading docks that stand open for deliveries, expansive rooflines, and a web of utility and pipe penetrations, each a potential entry point. Add interior warmth, food sources in cafeterias or production areas, and undisturbed storage, and you have an environment pests actively seek out in winter.
 
 The stakes are also higher. A pest problem in a government office, food-handling operation, healthcare-adjacent site, or industrial facility isn't just a nuisance — it can trigger regulatory issues, failed audits, contamination concerns, damaged inventory, health-and-safety complaints, and reputational harm. That combination of high exposure and high consequence is why winter deserves a deliberate, planned response rather than a scramble after the first sighting.
 
@@ -84,7 +84,7 @@ Cold weather drives rodents and overwintering insects indoors, and large facilit
 
 ### What's the most important winter pest threat for industrial facilities?
 
-Rodents. Rats and mice are driven indoors by cold, breed quickly, and in an industrial setting can contaminate product, gnaw wiring (a real fire and downtime risk), and damage insulation and packaging. Because Norway rats, roof rats, and mice each exploit different access points, facilities have to defend both low and high entry routes. Getting rodents excluded before winter is the single highest-value step most facilities can take.
+Rodents. Rats and mice are driven indoors by cold, breed quickly, and in an industrial setting can contaminate product, gnaw wiring (a fire and downtime risk), and damage insulation and packaging. Because Norway rats, roof rats, and mice each exploit different access points, facilities have to defend both low and high entry routes. Getting rodents excluded before winter is the single highest-value step most facilities can take.
 
 ### What is exclusion, and why is it the foundation of facility pest control?
 

@@ -148,7 +148,7 @@ whether the wood could currently support a population at all.
 
 We do this test rather than quoting from the sight of holes, because "you have
 wood-boring beetles" is an easy and expensive thing to say about a beam that has
-been quietly inert for forty years.
+been inert for forty years.
 
 ## How we work it
 
@@ -167,7 +167,7 @@ grading, deck ledger flashing. This is where the job actually is.
 **Treat where treatment is warranted.** Borate products penetrate bare, accessible
 wood and are well suited to crawlspace framing, sill plates and subfloor —
 unfinished timber that can be reached. They are not effective through paint,
-sealer or finish, which is a real limitation and worth saying.
+sealer or finish, which is a limitation and worth saying.
 
 **For carpenter bees**, treat the gallery, confirm activity has stopped, and only
 then fill and seal.
@@ -236,7 +236,7 @@ eave work happens on a ladder.
 accessible crawlspace framing with borate is a moderate job. Doing it properly
 alongside a vapor barrier, vent screening and drainage correction is a
 [crawlspace restoration](/services/crawlspace-restoration/) project, and that is
-where the real number sits — and the real benefit, because it resolves several
+where most of the cost sits — and the larger benefit, because it resolves several
 problems at once.
 
 Where the damage turns out to be old and inactive, we will tell you that and

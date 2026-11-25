@@ -53,7 +53,7 @@ export const controlDeAvispas: EsServicio = {
       parrafos: [
         'Esto merece su propia sección aquí, porque el condado de Whatcom es donde de verdad pasó, y la memoria local es genuina.',
         'La especie que ahora se llama avispón gigante del norte — que antes se reportó mucho como "avispón asesino" — se confirmó por primera vez en el estado de Washington a finales de 2019, y las detecciones fueron aquí. Entre 2020 y 2021 se localizaron y eliminaron cuatro nidos en el condado de Whatcom, en la zona de Blaine y Custer. Después de tres años sin detecciones confirmadas, las autoridades agrícolas estatales y federales anunciaron en diciembre de 2024 que la especie había sido erradicada de Estados Unidos.',
-        'Así que la posición honesta es esta. Fue real, estuvo aquí, se tomó en serio, y se eliminó con éxito. No es algo que esperemos encontrar en su propiedad en 2026.',
+        'Así que la posición honesta es esta. Se confirmó, estuvo aquí, se tomó en serio, y se eliminó con éxito. No es algo que esperemos encontrar en su propiedad en 2026.',
         'En la práctica, casi todos los reportes que recibimos resultan ser un avispón cara blanca — grande, blanco y negro, y alarmante — o una mosca sierra del olmo, que es un insecto inofensivo que se ve impresionante y ni siquiera es un avispón.',
         'Si de verdad cree que vio uno, repórtelo al Departamento de Agricultura del estado de Washington y no a nosotros. Las agencias todavía quieren los avistamientos, y una foto vale mucho más que una descripción. Lo que no debe hacer es envenenar algo que no puede identificar suponiendo que podría ser uno.',
       ],

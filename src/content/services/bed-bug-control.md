@@ -29,7 +29,7 @@ faqs:
   - q: "Should I throw out my mattress?"
     a: "Almost never, and please do not do it before we have looked. Dragging an infested mattress through the building spreads the problem into hallways and stairwells, and you will have bought a new mattress into a room that is still infested. An encasement after treatment costs a fraction of a replacement."
   - q: "Why is the bed bug visit not free when your other inspections are?"
-    a: "Because a bed bug visit is a genuine search rather than a look around — it takes time, and a real share of them find nothing, which is a useful result but not a billable job. The $150 is credited toward treatment if you proceed, so a customer who actually has bed bugs pays nothing extra for the certainty."
+    a: "Because a bed bug visit is a genuine search rather than a look around — it takes time, and a large share of them find nothing, which is a useful result but not a billable job. The $150 is credited toward treatment if you proceed, so a customer who actually has bed bugs pays nothing extra for the certainty."
   - q: "Do bed bugs mean the place is dirty?"
     a: "No. Bed bugs feed on blood, not crumbs, and they turn up in spotless homes and hotels constantly. They are a travel and furniture problem, not a housekeeping problem. We mention it because the shame around this pest routinely stops people calling for weeks, and the delay is what makes it expensive."
   - q: "How many treatments will it take?"
@@ -139,7 +139,7 @@ in bedding, and they cause skin irritation in some people that looks like bites.
 
 **Bat bugs** are a genuine possibility in older Bellingham housing with attic bat
 activity, and they are close relatives that look extremely similar. The
-distinction matters, because the real treatment is getting the colony out, which is a specialist's job and not ours. Treating the bedroom while a colony sits above the ceiling solves nothing.
+distinction matters, because the main treatment is getting the colony out, which is a specialist's job and not ours. Treating the bedroom while a colony sits above the ceiling solves nothing.
 
 **Spider beetles**, **booklice** and **fleas** round out the list. Fleas in
 particular get confused with bed bugs regularly, and the treatment is completely
@@ -257,8 +257,8 @@ way active insects do, so a second visit timed to hatching is part of the plan.
 Seeing activity in the days after a treatment is normal and is not a sign of
 failure — disturbed insects move more.
 
-**Expect it to take a few weeks to go quiet.** Confirming success means several
-checks with nothing found, not one quiet night.
+**Expect it to take a few weeks for activity to stop.** Confirming success means several
+checks with nothing found, not one night without bites.
 
 ## Are they dangerous?
 
@@ -277,7 +277,7 @@ run by Oregon State University with the EPA, reaches the same conclusion and is
 the better read if you want the detail behind it.
 
 The larger harm is usually sleep and stress. People who know there are insects
-in their bed stop sleeping properly, and that has real consequences over weeks.
+in their bed stop sleeping properly, and that has consequences over weeks.
 It is a legitimate reason to treat this as urgent even though nothing about it
 is medically dangerous — and it is another reason we would rather verify quickly
 than leave someone wondering for a fortnight.
@@ -341,7 +341,7 @@ student neighborhood in June is free for a reason more often than people think.
 If you host guests regularly, the same logic applies in reverse and it is worth
 knowing without being rude about it. Guest bedding washed and dried hot after a
 stay, and a quick look at the seams of the guest bed a few days later, catches
-almost everything that would otherwise establish quietly in a room nobody sleeps
+almost everything that would otherwise establish in a room nobody sleeps
 in for weeks at a time. Infrequently used rooms are where infestations get the
 longest head start.
 

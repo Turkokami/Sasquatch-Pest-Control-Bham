@@ -17,7 +17,7 @@ faqs:
   - q: "What about the trash chute?"
     a: "It is frequently the single most important thing in the building. A chute is a warm vertical shaft with organic residue on every surface, and the room at the bottom is where a whole building's waste concentrates. It deserves specific attention rather than being passed over."
   - q: "Does the underground parking matter?"
-    a: "Yes. It is sheltered, undisturbed at night, connected to the building by stairs and lifts, and it holds vehicles that sit for weeks. Rodent damage to vehicle wiring is a real cost that owners rarely connect to where they parked."
+    a: "Yes. It is sheltered, undisturbed at night, connected to the building by stairs and lifts, and it holds vehicles that sit for weeks. Rodent damage to vehicle wiring is a cost that owners rarely connect to where they parked."
   - q: "Who arranges pest control in a building like ours?"
     a: "Usually the association or the property manager, and that is the right level for it. A building-wide program almost always costs less in total than a patchwork of individual contracts and it is the only version that actually resolves shared problems."
   - q: "Do you charge to assess?"
@@ -327,7 +327,7 @@ population indefinitely, and in a shared building it also feeds pressure that
 reaches other floors.
 
 Confidential waste and paper storage is the third. Bales and boxes awaiting
-collection provide harborage in exactly the quiet, undisturbed corners nobody
+collection provide harborage in exactly the undisturbed corners nobody
 inspects.
 
 Records matter here as much as results. Devices mapped, service history in a

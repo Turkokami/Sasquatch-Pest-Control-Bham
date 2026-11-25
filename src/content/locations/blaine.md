@@ -12,7 +12,7 @@ faqs:
   - q: "Do you service boats and marina structures?"
     a: "We work the shore-side structures, storage buildings and the fixed marina facilities. Rodents in a marina move along dock lines and through storage, so treating one boat while the surrounding buildings go untouched is a temporary result at best."
   - q: "My Blaine house sits empty over the winter. What should I do?"
-    a: "Get the exclusion done in late summer before you leave, rather than discovering the problem in spring. An unoccupied house through a wet Whatcom winter is quiet, undisturbed and dry, which is close to ideal for rodents. Empty houses do not get fewer pests, they get more."
+    a: "Get the exclusion done in late summer before you leave, rather than discovering the problem in spring. An unoccupied house through a wet Whatcom winter is undisturbed and dry, which is close to ideal for rodents. Empty houses do not get fewer pests, they get more."
   - q: "Does the border crossing affect pest pressure?"
     a: "Around the commercial corridor, yes. Freight, staging yards and warehousing move rodents the way they move everything else, and the buildings serving that traffic see pressure a residential street a mile away does not. It is a commercial pest problem rather than a household one."
   - q: "Does salt air change how exclusion work is done?"
@@ -62,8 +62,7 @@ Semiahmoo is its own environment: a narrow sandspit with water on both sides,
 serious wind exposure, resort and condominium structures, and residential
 property with some of the highest salt exposure in the county.
 
-Wind and salt matter more than anything biological out there. Vents work loose.
-Screens corrode. Sealant fails early. Trim and flashing move. Every one of those
+Wind and salt matter more than anything biological out there. Vents work loose, screens corrode, sealant fails early, and trim and flashing move. Every one of those
 is an entry point, and on the spit they open faster than they do a mile inland.
 
 That drives our material choices. Ordinary galvanized hardware cloth is not
@@ -99,7 +98,7 @@ There is a persistent and completely understandable assumption that an empty
 house has fewer pest problems. The opposite is true, and it is one of the most
 useful things we can tell a seasonal owner.
 
-An unoccupied house is quiet. Nothing disturbs anything. Lights do not go on,
+An unoccupied house is left alone, and nothing disturbs anything: lights do not go on,
 doors do not open, floors are not walked on. It is dry inside while the whole
 county is wet outside. Nobody notices a scratching sound in November, nobody
 sees the droppings in December, and nobody spots the wasp nest in the eave
@@ -148,7 +147,7 @@ Programs here are built on documentation and on realistic goals. A warehouse
 with a dock door open eight hours a day is never going to be sealed, so the work
 is a defended perimeter, controlled interior placements, and attention to the
 sanitation and housekeeping points that actually feed the population. We put
-those in the report rather than quietly servicing around them.
+those in the report rather than silently servicing around them.
 
 ## The residential town
 
@@ -223,7 +222,7 @@ resort, and a downtown that swells in summer. Small commercial food accounts
 here have a particular shape.
 
 Seasonality is the first thing. A kitchen running flat out from June to
-September and quietly the rest of the year has a pest profile that tracks that
+September and the rest of the year has a pest profile that tracks that
 curve, and a program built on identical monthly visits year-round is both
 overservicing the winter and underserving the summer. We would rather scale it.
 
@@ -232,9 +231,9 @@ customer-experience problem rather than a hygiene one. Some of the fix is
 physical, some of it is waste handling and timing, and very little of it is
 something applied.
 
-Waste is the third and it is where most of the real progress is available. A
+Waste is the third and it is where most of the progress is available. A
 dumpster with a broken lid, an enclosure that cannot be closed, or bins staged
-outside a back door overnight will support a rodent population that no service schedule overcomes. We put that in the report, because quietly working
+outside a back door overnight will support a rodent population that no service schedule overcomes. We put that in the report, because working
 around it while billing monthly would be dishonest.
 
 ## The other household pests

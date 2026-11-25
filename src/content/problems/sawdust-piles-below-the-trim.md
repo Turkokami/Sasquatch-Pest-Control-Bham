@@ -21,9 +21,9 @@ faqs:
   - q: "Should I clean it up or leave it?"
     a: "Clear it, then mark the date. Whether it comes back, how fast and in what quantity is the single most useful piece of evidence, and it costs you nothing but a week of waiting to collect it."
   - q: "Could it be actual sawdust?"
-    a: "Occasionally, yes. Recent drilling, a hole cut for a cable, or work above a ceiling all leave real sawdust, and it is uniform, angular and does not come back once cleared. Debris that reappears is not sawdust."
+    a: "Occasionally, yes. Recent drilling, a hole cut for a cable, or work above a ceiling all leave ordinary sawdust, and it is uniform, angular and does not come back once cleared. Debris that reappears is not sawdust."
   - q: "Does a small pile mean a small problem?"
-    a: "Not reliably. The pile shows what has been pushed out through one opening, not the size of the gallery behind it. A modest heap can sit beneath a long-established nest that has been excavating quietly for years."
+    a: "Not reliably. The pile shows what has been pushed out through one opening, not the size of the gallery behind it. A modest heap can sit beneath a long-established nest that has been excavating unnoticed for years."
   - q: "Is it termites?"
     a: "It can be. Drywood and dampwood termites produce hard six-sided pellets rather than fibrous debris, and they feel like coarse grit. Where somebody's report has identified a wood-destroying organism, treating it is within what we are certified to do."
   - q: "Why does it matter which one it is?"
@@ -56,11 +56,11 @@ for.
 Pick a small quantity up between finger and thumb, or better, put some on a
 sheet of white paper where you can see it properly.
 
-**Coarse and fibrous, like shredded wood or wood wool.** [Carpenter ants](/pest-library/carpenter-ant/). The
+**Coarse and fibrous, like shredded wood or wood wool.** This points to [carpenter ants](/pest-library/carpenter-ant/). The
 material is excavated rather than eaten, so it retains a fibrous structure, and
 individual pieces are visibly wood shavings rather than powder.
 
-**Fine, soft and floury, like talc or very fine flour.** Wood-boring beetles.
+**Fine, soft and floury, like talc or very fine flour.** This points to wood-boring beetles.
 Larvae eat their way through the timber and what comes out has been through a
 digestive system, so it has no structure left at all. Some species produce a
 slightly gritty version, but the defining quality is that it is a powder rather
@@ -277,7 +277,7 @@ it and we will not pretend it does.
 
 **Work on a wood-destroying organism finding without seeing it ourselves.** We
 treat what is genuinely there. If somebody else's report says one thing and the
-timber says another, we will raise it rather than proceed quietly.
+timber says another, we will raise it rather than proceed.
 
 ## Why identification decides the price
 

@@ -14,7 +14,7 @@ Commercial facilities attract pests for reasons homes don't: high delivery volum
 
 - **Rodents:** House mice and [Norway rats](/pest-library/norway-rat/) are the dominant concern. Cold outdoor temperatures drive them toward heated buildings, with food storage, loading docks, and mechanical rooms as prime targets.
 - **Cockroaches:** German cockroaches in commercial kitchens are indifferent to outdoor temperatures and live in warm, food-rich spaces year-round.
-- **Stored-product pests:** Indian meal moths, grain beetles, and weevils infest dry goods. Winter is peak season for discovering infestations that developed quietly in fall.
+- **Stored-product pests:** Indian meal moths, grain beetles, and weevils infest dry goods. Winter is peak season for discovering infestations that developed in fall.
 - **Overwintering insects:** Stink bugs, cluster flies, and [boxelder bugs](/pest-library/boxelder-bug/) shelter in walls and attics, emerging on warm days to create nuisance issues.
 
 ## What should be on your exterior checklist?

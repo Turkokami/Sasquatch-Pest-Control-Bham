@@ -18,7 +18,7 @@ faqs:
     a: "Yes. In a mixed-use building the routes between the commercial floor and the residential floors above are usually open — risers, extract runs and service penetrations nobody closed. Sealing that path protects everyone in the building, and either party can start it."
   - q: "There are ants in the kitchen every spring. Are they carpenter ants?"
     a: "Sometimes, and often they are odorous house ants or moisture ants instead, which look broadly similar to most people and mean very different things. Moisture ants in particular are a report about wet wood rather than a pest problem in their own right. Identifying which you have decides whether this is a treatment or a repair."
-  - q: "Can the crawlspace really be sealed on a house this old?"
+  - q: "Can the crawlspace be sealed on a house this old?"
     a: "Usually yes, and it is the highest-value work available on this stock. Perimeter skirting can be repaired and screened properly, vents replaced with sound units, and penetrations closed. It is a day's work rather than a rebuild, and it ends routes that have been open for decades."
   - q: "Does it cost anything to have somebody look?"
     a: "No, other than bed bug verification, which is charged and comes off the treatment. On older stock the assessment genuinely takes longer than on a new house, and we would rather spend that time than guess."
@@ -115,7 +115,7 @@ Handbook](https://research.fs.usda.gov/treesearch/37440), which is
 worth a look if somebody has told you decay is simply what old houses do.
 
 And [moisture ants](/pest-library/moisture-ant/) — which most people have never heard of and which we find
-constantly in this stock — are not really a pest problem at all. They nest in
+constantly in this stock — are not a pest problem at all. They nest in
 wood that is already wet and decaying. Finding them is useful information: it
 means there is a genuine moisture problem in that timber, and the ants are the
 symptom rather than the cause. Treating them and leaving the wet wood is
@@ -313,7 +313,7 @@ We start with the perimeter and the ground: skirting, vents, hatch, drainage,
 what is stored against the walls, and how close the cover gets.
 
 Then underneath, properly, with a light, through the whole under-floor space.
-On post-and-pier that is a real inspection rather than a look from the opening,
+On post-and-pier that is a full inspection rather than a look from the opening,
 and it is where most of the answers are.
 
 Then the interior and the roof space, and in an attached or mixed-use building

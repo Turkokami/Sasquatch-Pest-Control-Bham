@@ -100,7 +100,7 @@ spring.
 
 The work that matters happens in late August and September, on the outside:
 sealing the gaps, screening the vents, and treating the sunny elevations before
-they move in. Do that and the following February is quiet. Stink bugs and lady
+they move in. Do that and the following February is pest-free. Stink bugs and lady
 beetles follow the same pattern and respond to the same work.
 
 ## Farmhouses and their additions
@@ -168,7 +168,7 @@ way regularly.
 The work is tracing back to the source: starting with whatever has sat longest
 and furthest back, checking spillage in seams, under racking and in the corners
 of a feed room. It is usually a single forgotten sack or an old spill that has
-been quietly producing adults for months. After that it is rotation, sealed
+been steadily producing adults for months. After that it is rotation, sealed
 containers, cleaning the residue out, and monitoring long enough to be sure.
 
 ## The bay side and the exposure
@@ -176,8 +176,7 @@ containers, cleaning the residue out, and monitoring long enough to be sure.
 Properties closer to Samish Bay pick up a set of coastal factors that inland
 Bow does not.
 
-Salt and wind work on the building envelope continuously. Vent screens corrode.
-Fasteners fail. Sealants degrade. Trim and flashing loosen. Every one of those
+Salt and wind work on the building envelope continuously. Vent screens corrode, fasteners fail, sealants degrade, and trim and flashing loosen. Every one of those
 is an entry point, and out there they open considerably faster than they do a
 few miles inland.
 
@@ -215,7 +214,7 @@ There is a modest amount of food and hospitality business through the area, and
 seasonal trade around it.
 
 Seasonal operations deserve a program that scales with the season rather than an
-identical monthly visit year-round, which overserves the quiet months and
+identical monthly visit year-round, which overserves the slow months and
 underserves the busy ones. Waste handling is where most of the available
 progress sits, as it usually is with food service — a bin that cannot be closed
 or cardboard staged outside will support a rodent population that no service
@@ -257,14 +256,13 @@ stamping and bunching instead of eating.
 Both develop fast. In warm weather the cycle from egg to adult runs a week to
 ten days, which means a breeding site missed on Monday is producing adults
 before the weekend. That short cycle is why fly programs succeed or fail on the
-sites rather than on the adults, and why a program built on knockdown alone
-quietly stops working every summer.
+sites rather than on the adults, and why a program built on knockdown alone stops working every summer.
 
 The sites are usually a small and predictable number: the wet margin of a manure
 pack, the ground under a leaking waterer, feed accumulating at the end of a
 bunk, bedding that has not been turned, the drainage low point that never dries.
 Finding and correcting those does more than any spray schedule, and on the
-operations where we get real results it is because somebody agreed to change a
+operations where we get results it is because somebody agreed to change a
 management practice rather than because we applied something new.
 
 Where treatment has a place it is as support — targeted work on resting surfaces

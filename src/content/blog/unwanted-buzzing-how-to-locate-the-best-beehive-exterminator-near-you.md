@@ -89,7 +89,7 @@ Without the right knowledge and technique, DIY removal can also harm the bees
 themselves. Bees are vital for pollination and the health of ecosystems. Hiring
 a professional means the bees are removed and relocated properly.
 
-In short, attempting DIY beehive removal poses real risks to your safety, to
+In short, attempting DIY beehive removal poses risks to your safety, to
 the safety of others, and to the bees. It is better left to trained people with
 the equipment, knowledge and experience to handle it.
 
@@ -128,7 +128,7 @@ decision.
 Choosing the right company matters for a safe removal. Here is what is worth
 weighing up:
 
-1. **Experience and expertise.** Look for people with real experience of hive
+1. **Experience and expertise.** Look for people with experience of hive
    removal. Ask about the specific methods they use for removal and relocation.
 
 2. **Licensing.** Confirm the company holds the licenses required to do this

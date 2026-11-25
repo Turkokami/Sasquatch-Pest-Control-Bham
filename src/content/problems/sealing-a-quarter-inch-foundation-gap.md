@@ -16,7 +16,7 @@ steps:
   - "Screen crawl vents with quarter-inch metal mesh rather than boarding them over"
   - "Hand the roofline and anything on a ladder to us, along with a free walk of the full envelope"
 faqs:
-  - q: "Is a quarter inch really enough for a mouse?"
+  - q: "Is a quarter inch enough for a mouse?"
     a: "Yes. A house mouse passes through an opening around a quarter of an inch, because the skull is the limiting dimension and the body follows. Rats are given slightly more than half an inch to pass through, but a quarter inch is enough for one to gnaw the opening up to a size that fits, so the same number governs both."
   - q: "Why will caulk not do it?"
     a: "Sealant is a weather material, not a barrier. It has no resistance to gnawing, and a rodent will work through a bead in one night. It has a role sealing the edges of a metal patch and no role as the patch."
@@ -126,9 +126,7 @@ then look at the walls. Daylight coming through shows you exactly where the
 openings are, at their actual size, with no guessing. Almost nobody does this and
 it finds more than any other method.
 
-**Look for evidence.** Greasy smear marks where fur has passed repeatedly. Small
-droppings. Gnawed edges. A worn track in soil or mulch leading to a specific
-point. Nesting material caught at an opening.
+**Look for evidence.** That means greasy smear marks where fur has passed repeatedly, small droppings, gnawed edges, a worn track in soil or mulch leading to a specific point, and nesting material caught at an opening.
 
 **Check the roofline too**, because exclusion work stops halfway if it only
 addresses the ground. Soffit and fascia junctions, gable and roof vents, roof-
@@ -181,7 +179,7 @@ they are temporary at best.
 **Foam backer rod without a metal layer.** Same as foam.
 
 The test to apply to any proposed material is simple: could an animal with strong
-continuously growing incisors work through this given a few nights of quiet
+continuously growing incisors work through this given a few nights of undisturbed
 effort. If the answer is yes, it is not exclusion, it is decoration.
 
 ## The rule about sequence

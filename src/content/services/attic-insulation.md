@@ -22,7 +22,7 @@ factsTable:
 faqs:
   - q: "Do you do the attic work yourselves?"
     a: "The pest half, yes: trapping, exclusion, the crawlspace, and confirming the animals are gone before anything goes back in. The attic removal and re-insulation is done by a local insulation crew we work alongside, because that is their trade and they do it every day. We scope it together, the sequence is ours to get right, and you will know before it starts who is doing which part."
-  - q: "Does the insulation really need removing, or can you just add on top?"
+  - q: "Does the insulation need removing, or can you just add on top?"
     a: "If it is contaminated, it needs removing. Adding new insulation over rodent-fouled material seals the contamination in, does nothing about the odor, and puts good material on top of bad. Where insulation is simply thin but clean and dry, topping up is legitimate and cheaper, and we will say so."
   - q: "Do you air-seal the ceiling before re-insulating?"
     a: "No. Air sealing is not work we offer, and we would rather say so than let you assume it is included. What we will do is tell you where the leaks are before new material goes over them, because with the attic stripped back every ceiling penetration is visible. Having the work done is a job for a weatherization or insulation contractor, and it is worth doing while the attic is open."
@@ -70,7 +70,7 @@ attic to check and you should not have to take anyone's word for it.
 Same rule as the [crawlspace](/services/crawlspace-restoration/), and it is worth
 repeating because getting it wrong is expensive.
 
-**Exclusion and trapping first**, confirmed quiet over several visits. **Then**
+**Exclusion and trapping first**, confirmed clear over several visits. **Then**
 removal, treatment and re-insulation.
 
 New insulation installed into an attic that still has an active population is
@@ -146,7 +146,7 @@ insulation contractor rather than us.
 noticeably better. People report it within a week of cold weather.
 
 **Lower heating cost**, for the same reason. On an older Bellingham home going
-from badly under-insulated to current levels, this is real money annually rather
+from badly under-insulated to current levels, this is money annually rather
 than a rounding error — though anyone quoting you an exact payback figure is
 guessing at your habits.
 
@@ -210,7 +210,7 @@ the whole job. Blowing new insulation over a contaminated deck buries the
 problem instead of solving it, and afterwards nobody can tell what is
 underneath.
 
-People search for attic cleanup as though it were one service. It is really
+People search for attic cleanup as though it were one service. It is
 four pieces of work that have to happen in sequence, and each is close to
 pointless out of order:
 
@@ -245,7 +245,7 @@ accountable for the pest side of it, which is the side that determines when they
 can start.
 
 That is a deliberate choice rather than a gap. A company that says yes to every
-scale of job either turns work away quietly or does the big ones badly, and we
+scale of job either turns work away or does the big ones badly, and we
 would rather be straight about which jobs are ours. You will know before
 anything starts who is doing which part and what each is charging.
 
@@ -320,8 +320,7 @@ sheathing. It needs ducting to the exterior, and it is worth finding.
 older fixtures that cannot be safely covered with insulation and need
 identifying before anything is blown.
 
-**Knob-and-tube wiring.** In prewar Bellingham housing this is a real
-possibility, and it changes the job — it needs an electrician's assessment before
+**Knob-and-tube wiring.** In prewar Bellingham housing this is a possibility, and it changes the job — it needs an electrician's assessment before
 insulation goes over it, and that is not a corner to cut.
 
 **Stored belongings.** Boxes, decorations and the occasional forgotten item,

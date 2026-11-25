@@ -94,7 +94,7 @@ about themselves.
 **Stored-product pests.** Kitchen and pantry insects, which arrive in packaging
 rather than through a gap.
 
-**Fabric pests.** Carpet beetles and clothes moths, which are slow, quiet, and
+**Fabric pests.** Carpet beetles and clothes moths, which are slow, inconspicuous, and
 noticed late.
 
 Then there are ants, which are their own category and the largest single
@@ -117,7 +117,7 @@ starts working its way into window frames, soffits and attics:
 - [Multicolored Asian lady beetle](/pest-library/multicolored-asian-lady-beetle/)
   — not the native lady beetle, and it stains.
 - [Brown marmorated stink bug](/pest-library/brown-marmorated-stink-bug/) —
-  shield-shaped, and the smell is real.
+  shield-shaped, and the smell is strong.
 
 None of them breeds indoors. None of them damages anything. They came in
 through gaps that were there before they arrived, which is why the entire
@@ -178,7 +178,7 @@ under [fly control](/services/fly-control/) and in
 
 ## Fabric, carpet and wool
 
-Slow, quiet, and noticed after the damage.
+They are slow and inconspicuous, and usually noticed only after the damage.
 
 [Carpet beetle](/pest-library/carpet-beetle/) larvae feed on wool, silk, felt,
 feathers, pet hair and the dust under furniture that nobody moves.
@@ -192,7 +192,7 @@ worth knowing before anybody panics about a bedroom.
 
 ## The ones that bite, and the ones that only look as though they should
 
-A short real list and a much longer imaginary one.
+There is a short list of actual threats and a much longer imaginary one.
 
 **Actually bite people here.** [Bed bugs](/pest-library/bed-bug/),
 [cat fleas](/pest-library/cat-flea/),
@@ -260,13 +260,9 @@ they ask about anything else.
 
 A minority, and that is the point of writing the list out.
 
-**Treat, usually.** [Carpenter ants](/pest-library/carpenter-ant/) in a
-structure. [Bed bugs](/services/bed-bug-control/). German cockroaches. Fleas
-with an active host. Dampwood termites and powderpost beetles in sound
-structural wood. A yellowjacket nest somewhere people go.
+**Treat, usually.** This covers [carpenter ants](/pest-library/carpenter-ant/) in a structure, [bed bugs](/services/bed-bug-control/), German cockroaches, fleas with an active host, dampwood termites and powderpost beetles in sound structural wood, and a yellowjacket nest somewhere people go.
 
-**Fix the building instead.** Every autumn invader. Every moisture species.
-Most spiders. Most millipede, sowbug and silverfish complaints.
+**Fix the building instead.** This covers every autumn invader, every moisture species, most spiders, and most millipede, sowbug and silverfish complaints.
 
 **Fix the cupboard instead.** Every stored-product pest.
 

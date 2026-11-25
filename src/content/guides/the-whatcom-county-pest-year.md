@@ -28,7 +28,7 @@ factsTable:
   - label: "Rodents"
     value: "Climb from late September, peak in October and November, and do not decline once inside"
   - label: "January to March"
-    value: "Quiet for new arrivals, busy for finding what got in last autumn and sealing it"
+    value: "Slow for new arrivals, busy for finding what got in last autumn and sealing it"
   - label: "Bed bugs"
     value: "No weather season; a September peak in Bellingham from student move-in, echoed in June"
   - label: "Decay fungi"
@@ -46,9 +46,9 @@ faqs:
     a: "The second half of August, for almost everything. The rodent push has not started, spiders have not begun walking, overwintering insects have not moved in, the ground is dry and the weather is workable. Nobody books it then, because nothing is wrong in August."
   - q: "Why does everything happen in October?"
     a: "Cooling nights and declining outdoor resources. Rodents look for a warm building, spiders reach maturity and start walking, and several insect species look for somewhere to spend the winter. None of it is caused by anything you did."
-  - q: "Is there a quiet season?"
-    a: "Quiet for new arrivals, and not quiet for us. January through March is heavy rodent and exclusion work — it is when people notice what got in during the autumn, and when the sealing that stops it happening again actually gets done. If you want the exterior work booked without competing with the August rush, this is the window."
-  - q: "Do pests really die off in winter?"
+  - q: "Is there a slow season?"
+    a: "Slow for new arrivals, and busy for us. January through March is heavy rodent and exclusion work — it is when people notice what got in during the autumn, and when the sealing that stops it happening again actually gets done. If you want the exterior work booked without competing with the August rush, this is the window."
+  - q: "Do pests die off in winter?"
     a: "Some do. Wasp and hornet colonies collapse with hard frosts, leaving only mated queens. Overwintering insects go dormant rather than dying, and rodents do not slow down at all — they are in a heated building by then."
   - q: "What single month should I put in the calendar?"
     a: "August. Exterior sealing, vent screening, door sweeps and a walk of the grounds for ground nests. It is the month that decides how the following twelve go, and it is the one nobody thinks about."
@@ -74,7 +74,7 @@ make the calendar visible enough that somebody might.
 
 ## January and February
 
-**Quiet for arrivals, busy for discoveries.**
+**Slow for arrivals, busy for discoveries.**
 
 Nothing much is moving into buildings. What people notice now is what got in
 during the autumn: rodents established in a crawlspace or an attic, and
@@ -89,7 +89,7 @@ sheltered, and the paper nests in the trees are empty.
 Decay in wet timber is slow but not stopped. The [Forest Products Laboratory](https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_14_fpl_gtr282.pdf) puts
 decay fungi at their optimum near 77°F, slowing markedly below 50°F. A crawlspace
 in February is at the cold end of that band — which means the process is
-continuing quietly rather than pausing.
+continuing rather than pausing.
 
 **What to do:** interior work. Sealing the penetrations under sinks, behind
 appliances and at cabinet bases, where a crawlspace connects to a kitchen. It is
@@ -125,7 +125,7 @@ great deal in September.
 
 **Growth, and the best month nobody uses.**
 
-Insect populations build. Wasp colonies expand quietly. [Carpenter ant](/pest-library/carpenter-ant/) activity
+Insect populations build. Wasp colonies expand. [Carpenter ant](/pest-library/carpenter-ant/) activity
 becomes visible — this is when frass appears below trim and workers turn up on
 counters after dark, because the colony is provisioning.
 
@@ -206,7 +206,7 @@ the walls starts, when droppings appear in kitchens, and when crawlspaces get
 occupied.
 
 Overwintering insects move into wall voids, attics and soffits, and the walls go
-quiet again.
+still again.
 
 Spiders taper through October and are largely finished by November.
 
@@ -322,7 +322,7 @@ here has a long shoulder rather than a sharp edge.
 **Moisture.** The wet season from October to April keeps timber wet, and wood
 that gets wet here does not get a hot dry stretch to dry out in. That is the
 engine behind every structural pest problem in the county, and it operates all
-winter while everything else is quiet.
+winter while everything else is dormant.
 
 **Resource availability outdoors.** Cover, food and water. When they decline in
 autumn, buildings become comparatively attractive. Nothing about the building
@@ -330,7 +330,7 @@ changed; the alternative got worse.
 
 ## What the preceding season predicts
 
-Year-to-year variation is real and it is mostly set before you notice it.
+Year-to-year variation is large and it is mostly set before you notice it.
 
 A warm summer with good insect numbers produces more spiders reaching maturity,
 and therefore a heavier September.
@@ -408,7 +408,7 @@ a subscription we have to keep justifying.
 
 ## What we will do
 
-Come out in the quiet months and walk the building with you — the crawlspace,
+Come out in the slow months and walk the building with you — the crawlspace,
 the foundation line, the roofline, the grounds — and leave you with a list in
 priority order, with the items that are ours separated from the items that
 belong to a drainage contractor, a roofer or an afternoon of your own.

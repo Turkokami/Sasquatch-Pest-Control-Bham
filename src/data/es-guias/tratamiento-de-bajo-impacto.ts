@@ -17,7 +17,7 @@ export const tratamientoDeBajoImpacto: EsGuia = {
     {
       h2: 'Una frase sin nada detrás',
       parrafos: [
-        'No hay una definición legal de control de plagas ecológico: ninguna agencia la otorga, ninguna norma dice quién la puede usar, y no hay castigo por usarla para un servicio idéntico al de al lado. Es la frase más útil de esta página, y la que el oficio no tiene ningún interés en escribir. Eso no quiere decir que el trabajo de bajo impacto sea una ficción: parte es real, medible y vale la pena pagarlo. El problema es que lo real y lo de venta viajan con la misma palabra, y lo real suele ser lo menos rentable. Esta página los separa.',
+        'No hay una definición legal de control de plagas ecológico: ninguna agencia la otorga, ninguna norma dice quién la puede usar, y no hay castigo por usarla para un servicio idéntico al de al lado. Es la frase más útil de esta página, y la que el oficio no tiene ningún interés en escribir. Eso no quiere decir que el trabajo de bajo impacto sea una ficción: parte es genuina, medible y vale la pena pagarlo. El problema es que lo sustancial y lo de venta viajan con la misma palabra, y lo sustancial suele ser lo menos rentable. Esta página los separa.',
       ],
     },
     {
@@ -57,7 +57,7 @@ export const tratamientoDeBajoImpacto: EsGuia = {
     {
       h2: 'Herramientas sin químicos que hacen trabajo de verdad',
       parrafos: [
-        'El calor, que contra la chinche de cama no deja residuo. La aspiradora, con la mosca de racimo en una ventana y como primer paso con las chinches. Las trampas, que con los roedores muchas veces son todo el trabajo. Y esperar: las colonias de avispas mueren con las heladas y la mosca de racimo de primavera es la del otoño pasado. De los remedios caseros, NPIC dice que nadie ha probado si funcionan y que no traen etiqueta con cuánto ni dónde usarlos, así que el riesgo real es que se usen de más.',
+        'El calor, que contra la chinche de cama no deja residuo. La aspiradora, con la mosca de racimo en una ventana y como primer paso con las chinches. Las trampas, que con los roedores muchas veces son todo el trabajo. Y esperar: las colonias de avispas mueren con las heladas y la mosca de racimo de primavera es la del otoño pasado. De los remedios caseros, NPIC dice que nadie ha probado si funcionan y que no traen etiqueta con cuánto ni dónde usarlos, así que el riesgo es que se usen de más.',
       ],
     },
     {

@@ -254,9 +254,9 @@ reinfested, and a single untreated unit in a treated building will reinfest the
 rest. This is the same shared-structure logic that governs everything else
 downtown, applied to an insect that people are reluctant to report.
 
-That reluctance is the real obstacle. A tenant who does not want to be blamed
+That reluctance is the obstacle. A tenant who does not want to be blamed
 waits, and by the time it is reported the neighbors have it. A landlord who
-treats one apartment quietly and moves on has not finished the job.
+treats one apartment in isolation and moves on has not finished the job.
 
 What works is treating the affected unit and the units around it together, on
 the same schedule, with the corridor and the shared routes included. What also

@@ -171,7 +171,7 @@ guidance on rodents and cleanup as well.
 
 ## West and east of the Cascades
 
-The split is real for rodents, and smaller than it is for some pests.
+The split exists for rodents, and smaller than it is for some pests.
 
 Both rat species occur statewide wherever there is human settlement and
 industry, so the east-west difference for rats is more about building stock and

@@ -21,7 +21,7 @@ faqs:
   - q: "Do you work with landlords and property managers?"
     a: "Yes, and multi-unit work is a good share of what we do here. What we ask for is a building-level plan rather than unit-by-unit call-outs, because that is the only version that actually resolves anything in shared housing."
   - q: "Is the inspection free?"
-    a: "Free for everything except bed bugs, which carry a verification fee credited against treatment if you proceed. We charge it because verification is slow, careful work and because free bed bug callouts attract speculative visits that push out real appointments."
+    a: "Free for everything except bed bugs, which carry a verification fee credited against treatment if you proceed. We charge it because verification is slow, careful work and because free bed bug callouts attract speculative visits that push out booked appointments."
 ---
 
 ## A turnover neighborhood
@@ -117,7 +117,7 @@ waits. That delay costs far more than the treatment would have.
 Our assessment for bed bugs carries a verification fee, credited against
 treatment if you go ahead. We charge it because verification is slow, detailed
 work — genuinely going through a room rather than glancing at it — and because
-free bed bug callouts attract a volume of speculative visits that pushes out real
+free bed bug callouts attract a volume of speculative visits that pushes out booked
 appointments. Everything else we handle here is free to look at.
 
 ## German cockroaches
